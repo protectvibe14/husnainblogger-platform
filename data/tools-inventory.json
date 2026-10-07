@@ -17,7 +17,11 @@
         "long tail keyword ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 2,
@@ -35,7 +39,11 @@
         "informational vs transactional keywords"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 3,
@@ -53,7 +61,11 @@
         "cluster keywords by topic"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 4,
@@ -71,7 +83,11 @@
         "question-based keyword ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 5,
@@ -88,7 +104,11 @@
         "alphabet soup keyword research"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 6,
@@ -106,7 +126,11 @@
         "content gap worksheet"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 7,
@@ -123,7 +147,11 @@
         "holiday content ideas for bloggers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 8,
@@ -140,7 +168,11 @@
         "geo keyword expander"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 9,
@@ -157,7 +189,11 @@
         "keyword scoring template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 10,
@@ -174,7 +210,11 @@
         "unique angle finder for bloggers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 11,
@@ -192,7 +232,11 @@
         "search result preview"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 12,
@@ -209,7 +253,11 @@
         "scannable content checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 13,
@@ -226,7 +274,11 @@
         "anchor text diversity tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 14,
@@ -243,7 +295,11 @@
         "yoast transition words alternative"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 15,
@@ -260,7 +316,11 @@
         "sentence variety checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 16,
@@ -277,7 +337,11 @@
         "find internal links for seo"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 17,
@@ -294,7 +358,11 @@
         "rename images for seo"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 18,
@@ -311,7 +379,11 @@
         "clean permalink generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 19,
@@ -328,7 +400,11 @@
         "text similarity checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 20,
@@ -345,7 +421,11 @@
         "heading structure seo"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 21,
@@ -362,7 +442,11 @@
         "faq structured data generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 22,
@@ -379,7 +463,11 @@
         "article structured data"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 23,
@@ -396,7 +484,11 @@
         "howto json-ld"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 24,
@@ -413,7 +505,11 @@
         "breadcrumb structured data"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 25,
@@ -430,7 +526,11 @@
         "product review structured data"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 26,
@@ -447,7 +547,11 @@
         "open graph meta tags"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 27,
@@ -464,7 +568,11 @@
         "x card validator alternative"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 28,
@@ -481,7 +589,11 @@
         "robots.txt example"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 29,
@@ -498,7 +610,11 @@
         "sitemap xml maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 30,
@@ -515,7 +631,11 @@
         "create html sitemap"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 31,
@@ -532,7 +652,11 @@
         "blog brief template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 32,
@@ -549,7 +673,11 @@
         "blog post structure template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 33,
@@ -566,7 +694,11 @@
         "content hub planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 34,
@@ -583,7 +715,11 @@
         "editorial calendar template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 35,
@@ -600,7 +736,11 @@
         "30 day content challenge"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 36,
@@ -617,7 +757,11 @@
         "multi-part post planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 37,
@@ -634,7 +778,11 @@
         "what to do with old blog posts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 38,
@@ -651,7 +799,11 @@
         "e-e-a-t for bloggers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 39,
@@ -668,7 +820,11 @@
         "on page seo checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 40,
@@ -685,7 +841,11 @@
         "blog idea storage tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 41,
@@ -702,7 +862,11 @@
         "blog writing rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 42,
@@ -719,7 +883,11 @@
         "vs table generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 43,
@@ -736,7 +904,11 @@
         "review box generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 44,
@@ -753,7 +925,11 @@
         "star rating widget"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 45,
@@ -770,7 +946,11 @@
         "twitter share box"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 46,
@@ -787,7 +967,11 @@
         "utm parameter generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 47,
@@ -804,7 +988,11 @@
         "amazon affiliate disclosure"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 48,
@@ -821,7 +1009,11 @@
         "seo meta description examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 49,
@@ -838,7 +1030,11 @@
         "seo title examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 50,
@@ -855,7 +1051,11 @@
         "content hub map generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 51,
@@ -873,7 +1073,11 @@
         "mediavine vs adsense earnings calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 52,
@@ -891,7 +1095,11 @@
         "how much does raptive pay per 1000 pageviews"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 53,
@@ -909,7 +1117,11 @@
         "display ad network comparison tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 54,
@@ -927,7 +1139,11 @@
         "how many pageviews to earn $1000 blogging"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 55,
@@ -945,7 +1161,11 @@
         "etsy seller fee breakdown"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 56,
@@ -963,7 +1183,11 @@
         "etsy seller profit estimator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 57,
@@ -981,7 +1205,11 @@
         "ebay final value fee calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 58,
@@ -999,7 +1227,11 @@
         "poshmark payout calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 59,
@@ -1017,7 +1249,11 @@
         "how much does amazon fba cost per item"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 60,
@@ -1035,7 +1271,11 @@
         "how much do kdp authors earn per book"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 61,
@@ -1053,7 +1293,11 @@
         "pod profit per shirt calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 62,
@@ -1071,7 +1315,11 @@
         "shopify transaction fee calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 63,
@@ -1089,7 +1337,11 @@
         "paypal micropayments fee calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 64,
@@ -1107,7 +1359,11 @@
         "stripe international fee calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 65,
@@ -1125,7 +1381,11 @@
         "gumroad payout calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 66,
@@ -1143,7 +1403,11 @@
         "upwork fee breakdown"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 67,
@@ -1161,7 +1425,11 @@
         "fiverr earnings calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 68,
@@ -1179,7 +1447,11 @@
         "what should i charge per hour freelancing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 69,
@@ -1197,7 +1469,11 @@
         "project pricing calculator for freelancers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 70,
@@ -1215,7 +1491,11 @@
         "copywriter pricing guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 71,
@@ -1233,7 +1513,11 @@
         "video editor pricing per minute"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 72,
@@ -1251,7 +1535,11 @@
         "logo design price calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 73,
@@ -1269,7 +1557,11 @@
         "website design quote calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 74,
@@ -1287,7 +1579,11 @@
         "social media management rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 75,
@@ -1305,7 +1601,11 @@
         "voice over rate calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 76,
@@ -1323,7 +1623,11 @@
         "freelance seo rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 77,
@@ -1341,7 +1645,11 @@
         "virtual assistant pricing packages"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 78,
@@ -1359,7 +1667,11 @@
         "freelancer invoice maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 79,
@@ -1377,7 +1689,11 @@
         "instagram sponsored post rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 80,
@@ -1395,7 +1711,11 @@
         "tiktok creator rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 81,
@@ -1413,7 +1733,11 @@
         "youtube influencer rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 82,
@@ -1431,7 +1755,11 @@
         "podcast cpm calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 83,
@@ -1449,7 +1777,11 @@
         "ugc creator pricing guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 84,
@@ -1467,7 +1799,11 @@
         "newsletter cpm rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 85,
@@ -1485,7 +1821,11 @@
         "content creator rate card"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 86,
@@ -1503,7 +1843,11 @@
         "patreon revenue estimator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 87,
@@ -1521,7 +1865,11 @@
         "substack fee breakdown"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 88,
@@ -1539,7 +1887,11 @@
         "online community pricing calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 89,
@@ -1557,7 +1909,11 @@
         "twitch sub payout"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 90,
@@ -1575,7 +1931,11 @@
         "how much to charge for an ebook"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 91,
@@ -1593,7 +1953,11 @@
         "online course price calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 92,
@@ -1611,7 +1975,11 @@
         "course launch math"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 93,
@@ -1629,7 +1997,11 @@
         "ebook royalty calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 94,
@@ -1647,7 +2019,11 @@
         "coaching program price calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 95,
@@ -1665,7 +2041,11 @@
         "webinar funnel math"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 96,
@@ -1683,7 +2063,11 @@
         "amazon affiliate earnings estimator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 97,
@@ -1701,7 +2085,11 @@
         "best recurring affiliate programs calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 98,
@@ -1719,7 +2107,11 @@
         "earnings per click calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 99,
@@ -1737,7 +2129,11 @@
         "minimum profitable roas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 100,
@@ -1755,7 +2151,11 @@
         "niche selection calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 101,
@@ -1773,7 +2173,11 @@
         "title case for youtube videos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 102,
@@ -1791,7 +2195,11 @@
         "youtube title preview tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 103,
@@ -1809,7 +2217,11 @@
         "youtube title ideas template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 104,
@@ -1827,7 +2239,11 @@
         "title swipe file template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 105,
@@ -1845,7 +2261,11 @@
         "check thumbnail readability"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 106,
@@ -1863,7 +2283,11 @@
         "thumbnail test log"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 107,
@@ -1881,7 +2305,11 @@
         "thumbnail audit checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 108,
@@ -1899,7 +2327,11 @@
         "video description layout"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 109,
@@ -1917,7 +2349,11 @@
         "youtube comment pin ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 110,
@@ -1935,7 +2371,11 @@
         "optimize youtube chapters"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 111,
@@ -1953,7 +2393,11 @@
         "script word count for video length"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 112,
@@ -1971,7 +2415,11 @@
         "script outline builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 113,
@@ -1992,7 +2440,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-276",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 114,
@@ -2010,7 +2462,11 @@
         "youtube analytics tracker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 115,
@@ -2028,7 +2484,11 @@
         "youtube posting streak"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 116,
@@ -2046,7 +2506,11 @@
         "youtube goal tracker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 117,
@@ -2064,7 +2528,11 @@
         "youtube monetization planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 118,
@@ -2082,7 +2550,11 @@
         "is my niche good youtube"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 119,
@@ -2100,7 +2572,11 @@
         "competitor video ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 120,
@@ -2118,7 +2594,11 @@
         "faceless video ideas generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 121,
@@ -2136,7 +2616,11 @@
         "channel content strategy template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 122,
@@ -2154,7 +2638,11 @@
         "youtube playlist strategy"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 123,
@@ -2172,7 +2660,11 @@
         "shorts scripting guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 124,
@@ -2190,7 +2682,11 @@
         "shorts opening lines"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 125,
@@ -2208,7 +2704,11 @@
         "shorts schedule optimizer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 126,
@@ -2226,7 +2726,11 @@
         "stream announcement text"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 127,
@@ -2244,7 +2748,11 @@
         "collect live questions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 128,
@@ -2262,7 +2770,11 @@
         "community post examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 129,
@@ -2280,7 +2792,11 @@
         "youtuber comment replies"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 130,
@@ -2298,7 +2814,11 @@
         "pick giveaway winner free"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 131,
@@ -2316,7 +2836,11 @@
         "youtube join button tiers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 132,
@@ -2334,7 +2858,11 @@
         "creator product ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 133,
@@ -2352,7 +2880,11 @@
         "optimize youtube title seo"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 134,
@@ -2370,7 +2902,11 @@
         "are my tags good youtube"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 135,
@@ -2388,7 +2924,11 @@
         "youtube premiere checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 136,
@@ -2406,7 +2946,11 @@
         "filming setup planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 137,
@@ -2424,7 +2968,11 @@
         "find music for videos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 138,
@@ -2442,7 +2990,11 @@
         "youtube click packaging"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 139,
@@ -2460,7 +3012,11 @@
         "video idea score"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 140,
@@ -2478,7 +3034,11 @@
         "youtube viewer retention tricks"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 141,
@@ -2496,7 +3056,11 @@
         "comment inspired videos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 142,
@@ -2514,7 +3078,11 @@
         "reusable video description"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 143,
@@ -2532,7 +3100,11 @@
         "short thumbnail titles"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 144,
@@ -2550,7 +3122,11 @@
         "video length by niche"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 145,
@@ -2568,7 +3144,11 @@
         "about my channel video script"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 146,
@@ -2586,7 +3166,11 @@
         "youtube optimization checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 147,
@@ -2603,7 +3187,11 @@
         "about section ideas youtube"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 148,
@@ -2620,7 +3208,11 @@
         "youtube end card strategy"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 149,
@@ -2637,7 +3229,11 @@
         "stream setup checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 150,
@@ -2654,7 +3250,11 @@
         "title sentiment analyzer youtube"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 151,
@@ -2672,7 +3272,11 @@
         "tiktok script example"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 152,
@@ -2690,7 +3294,11 @@
         "relatable pov captions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 153,
@@ -2708,7 +3316,11 @@
         "funny comment replies tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 154,
@@ -2726,7 +3338,11 @@
         "tiktok audience questions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 155,
@@ -2744,7 +3360,11 @@
         "tiktok part 1 part 2 ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 156,
@@ -2762,7 +3382,11 @@
         "duet ideas for beginners"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 157,
@@ -2780,7 +3404,11 @@
         "tiktok stitch examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 158,
@@ -2798,7 +3426,11 @@
         "how to title tiktok live"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 159,
@@ -2816,7 +3448,11 @@
         "tiktok live checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 160,
@@ -2834,7 +3470,11 @@
         "branded hashtag challenge ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 161,
@@ -2852,7 +3492,11 @@
         "adapt trends to my niche"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 162,
@@ -2870,7 +3514,11 @@
         "tiktok niche content plan"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 163,
@@ -2888,7 +3536,11 @@
         "how to do tiktok seo"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 164,
@@ -2906,7 +3558,11 @@
         "tiktok search insights"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 165,
@@ -2924,7 +3580,11 @@
         "tiktok storytime format"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 166,
@@ -2942,7 +3602,11 @@
         "grwm talking points"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 167,
@@ -2960,7 +3624,11 @@
         "how to make tutorial tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 168,
@@ -2978,7 +3646,11 @@
         "tiktok shop demo script"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 169,
@@ -2996,7 +3668,11 @@
         "unboxing script example"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 170,
@@ -3014,7 +3690,11 @@
         "tiktok vlog ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 171,
@@ -3032,7 +3712,11 @@
         "tiktok edit transitions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 172,
@@ -3050,7 +3734,11 @@
         "tiktok text hook examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 173,
@@ -3068,7 +3756,11 @@
         "pinned comment examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 174,
@@ -3086,7 +3778,11 @@
         "cover title ideas tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 175,
@@ -3104,7 +3800,11 @@
         "voiceover tips tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 176,
@@ -3122,7 +3822,11 @@
         "tiktok auto voice script"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 177,
@@ -3140,7 +3844,11 @@
         "how long should captions stay on tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 178,
@@ -3158,7 +3866,11 @@
         "commentary tiktok ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 179,
@@ -3176,7 +3888,11 @@
         "carousel post tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 180,
@@ -3194,7 +3910,11 @@
         "photo carousel captions tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 181,
@@ -3212,7 +3932,11 @@
         "fact check tiktok format"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 182,
@@ -3230,7 +3954,11 @@
         "glow up tiktok ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 183,
@@ -3248,7 +3976,11 @@
         "tiktok q&a ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 184,
@@ -3266,7 +3998,11 @@
         "30 days of tiktok ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 185,
@@ -3284,7 +4020,11 @@
         "tiktok profile review"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 186,
@@ -3302,7 +4042,11 @@
         "tiktok profile tips"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 187,
@@ -3320,7 +4064,11 @@
         "tiktok upload schedule"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 188,
@@ -3338,7 +4086,11 @@
         "stand out on tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 189,
@@ -3356,7 +4108,11 @@
         "proven tiktok formats"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 190,
@@ -3374,7 +4130,11 @@
         "ugc creator script template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 191,
@@ -3392,7 +4152,11 @@
         "tiktok shop product title"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 192,
@@ -3410,7 +4174,11 @@
         "tiktok shop description example"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 193,
@@ -3428,7 +4196,11 @@
         "affiliate tiktok ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 194,
@@ -3446,7 +4218,11 @@
         "spark ads hooks"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 195,
@@ -3464,7 +4240,11 @@
         "giveaway rules tiktok"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 196,
@@ -3482,7 +4262,11 @@
         "tiktok question sticker ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 197,
@@ -3500,7 +4284,11 @@
         "authentic tiktok ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 198,
@@ -3517,7 +4305,11 @@
         "tiktok hashtag combo generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 199,
@@ -3534,7 +4326,11 @@
         "tiktok series intro ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 200,
@@ -3551,7 +4347,11 @@
         "live selling script template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 201,
@@ -3569,7 +4369,11 @@
         "instagram hashtag ban list"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 202,
@@ -3587,7 +4391,11 @@
         "hashtag tiers instagram"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 203,
@@ -3605,7 +4413,11 @@
         "why did my instagram reach drop"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 204,
@@ -3623,7 +4435,11 @@
         "cool fonts for instagram captions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 205,
@@ -3641,7 +4457,11 @@
         "highlight icons generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 206,
@@ -3659,7 +4479,11 @@
         "instagram puzzle feed planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 207,
@@ -3677,7 +4501,11 @@
         "how to make feed aesthetic"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 208,
@@ -3695,7 +4523,11 @@
         "highlight names for business"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 209,
@@ -3713,7 +4545,11 @@
         "reels cover text"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 210,
@@ -3731,7 +4567,11 @@
         "how to structure carousel post"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 211,
@@ -3749,7 +4589,11 @@
         "hooks for carousel posts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 212,
@@ -3767,7 +4611,11 @@
         "instagram call to action examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 213,
@@ -3785,7 +4633,11 @@
         "engagement reply ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 214,
@@ -3803,7 +4655,11 @@
         "brand deal pitch message"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 215,
@@ -3821,7 +4677,11 @@
         "instagram growth tracker free"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 216,
@@ -3839,7 +4699,11 @@
         "hashtag analytics tracker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 217,
@@ -3857,7 +4721,11 @@
         "alt text for instagram posts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 218,
@@ -3875,7 +4743,11 @@
         "geotag instagram reach"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 219,
@@ -3893,7 +4765,11 @@
         "how to write collab post"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 220,
@@ -3910,7 +4786,11 @@
         "how to run giveaway instagram"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 221,
@@ -3928,7 +4808,11 @@
         "engaging poll questions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 222,
@@ -3946,7 +4830,11 @@
         "trivia questions stories"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 223,
@@ -3964,7 +4852,11 @@
         "ask me anything prompts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 224,
@@ -3982,7 +4874,11 @@
         "launch countdown post ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 225,
@@ -4000,7 +4896,11 @@
         "story arc planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 226,
@@ -4018,7 +4918,11 @@
         "reels or carousel for engagement"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 227,
@@ -4036,7 +4940,11 @@
         "posting frequency 2026"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 228,
@@ -4054,7 +4962,11 @@
         "find your niche quiz"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 229,
@@ -4072,7 +4984,11 @@
         "caption tone ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 230,
@@ -4090,7 +5006,11 @@
         "ugc outreach template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 231,
@@ -4108,7 +5028,11 @@
         "ask clients for reviews template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 232,
@@ -4126,7 +5050,11 @@
         "link in bio html template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 233,
@@ -4144,7 +5072,11 @@
         "profile optimization checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 234,
@@ -4162,7 +5094,11 @@
         "best posts to pin"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 235,
@@ -4180,7 +5116,11 @@
         "instagram highlights tips"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 236,
@@ -4198,7 +5138,11 @@
         "dm automation template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 237,
@@ -4216,7 +5160,11 @@
         "how to sell via stories"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 238,
@@ -4234,7 +5182,11 @@
         "manychat script template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 239,
@@ -4252,7 +5204,11 @@
         "product launch posts plan"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 240,
@@ -4270,7 +5226,11 @@
         "30 days of content ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 241,
@@ -4288,7 +5248,11 @@
         "pillar content instagram"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 242,
@@ -4306,7 +5270,11 @@
         "aesthetic emoji copy paste"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 243,
@@ -4324,7 +5292,11 @@
         "best hashtag sets 2026"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 244,
@@ -4342,7 +5314,11 @@
         "best time to post planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 245,
@@ -4360,7 +5336,11 @@
         "digital product ideas quiz"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 246,
@@ -4378,7 +5358,11 @@
         "instagram series ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 247,
@@ -4395,7 +5379,11 @@
         "create reels cover online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 248,
@@ -4412,7 +5400,11 @@
         "reels audio search terms"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 249,
@@ -4429,7 +5421,11 @@
         "how to use instagram broadcast channel"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 250,
@@ -4446,7 +5442,11 @@
         "optimize instagram profile name"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 251,
@@ -4464,7 +5464,11 @@
         "capcut 4k export bitrate"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 252,
@@ -4482,7 +5486,11 @@
         "script teleprompter wpm"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 253,
@@ -4500,7 +5508,11 @@
         "ai voiceover says word wrong"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 254,
@@ -4518,7 +5530,11 @@
         "remove umms from captions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 255,
@@ -4536,7 +5552,11 @@
         "subtitle formatting tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 256,
@@ -4554,7 +5574,11 @@
         "subtitle format converter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 257,
@@ -4572,7 +5596,11 @@
         "fix subtitle sync issues"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 258,
@@ -4590,7 +5618,11 @@
         "netflix subtitle cps standard"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 259,
@@ -4608,7 +5640,11 @@
         "capcut karaoke text timing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 260,
@@ -4626,7 +5662,11 @@
         "news lower third template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 261,
@@ -4644,7 +5684,11 @@
         "text pop animation code"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 262,
@@ -4662,7 +5706,11 @@
         "viral caption style copy"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 263,
@@ -4680,7 +5728,11 @@
         "animation timing curve visualizer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 264,
@@ -4698,7 +5750,11 @@
         "ken burns coordinates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 265,
@@ -4716,7 +5772,11 @@
         "slideshow transition timing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 266,
@@ -4734,7 +5794,11 @@
         "exact green screen color"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 267,
@@ -4752,7 +5816,11 @@
         "smooth slow mo frame rate"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 268,
@@ -4770,7 +5838,11 @@
         "music sync video planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 269,
@@ -4788,7 +5860,11 @@
         "audio beat marker tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 270,
@@ -4806,7 +5882,11 @@
         "find gaps in voiceover"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 271,
@@ -4824,7 +5904,11 @@
         "microphone loudness meter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 272,
@@ -4842,7 +5926,11 @@
         "extract still from mp4"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 273,
@@ -4860,7 +5948,11 @@
         "16x9 to 9x16 safe area"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 274,
@@ -4878,7 +5970,11 @@
         "instagram reels size requirements"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 275,
@@ -4896,7 +5992,11 @@
         "voiceover length estimator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 276,
@@ -4914,7 +6014,11 @@
         "cinematic b-roll ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 277,
@@ -4932,7 +6036,11 @@
         "shot by shot storyboard"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 278,
@@ -4950,7 +6058,11 @@
         "vlog shot list ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 279,
@@ -4968,7 +6080,11 @@
         "video pacing guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 280,
@@ -4986,7 +6102,11 @@
         "first 3 seconds hook score"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 281,
@@ -5004,7 +6124,11 @@
         "creative video transitions list"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 282,
@@ -5022,7 +6146,11 @@
         "filter overlay order"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 283,
@@ -5040,7 +6168,11 @@
         "where to add sound effects video"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 284,
@@ -5058,7 +6190,11 @@
         "edit decision list maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 285,
@@ -5076,7 +6212,11 @@
         "podcast to shorts planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 286,
@@ -5094,7 +6234,11 @@
         "clip moment logger"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 287,
@@ -5112,7 +6256,11 @@
         "video quality check before upload"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 288,
@@ -5130,7 +6278,11 @@
         "repurpose video for all platforms"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 289,
@@ -5148,7 +6300,11 @@
         "video export time calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 290,
@@ -5166,7 +6322,11 @@
         "video project size planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 291,
@@ -5184,7 +6344,11 @@
         "render break reminder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 292,
@@ -5202,7 +6366,11 @@
         "freelance editor revision tracker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 293,
@@ -5220,7 +6388,11 @@
         "editing asset naming convention"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 294,
@@ -5238,7 +6410,11 @@
         "top bottom text meme creator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 295,
@@ -5256,7 +6432,11 @@
         "split screen template generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 296,
@@ -5274,7 +6454,11 @@
         "drag comparison slider embed"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 297,
@@ -5292,7 +6476,11 @@
         "commentary video layout"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 298,
@@ -5310,7 +6498,11 @@
         "caption font combinations"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 299,
@@ -5328,7 +6520,11 @@
         "wcag caption contrast"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 300,
@@ -5346,7 +6542,11 @@
         "tiktok title emoji combos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 301,
@@ -5364,7 +6564,11 @@
         "blogging prompt pack"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 302,
@@ -5382,7 +6586,11 @@
         "blog prompt maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 303,
@@ -5400,7 +6608,11 @@
         "text to image prompt creator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 304,
@@ -5418,7 +6630,11 @@
         "ai video script prompt ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 305,
@@ -5436,7 +6652,11 @@
         "content plan maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 306,
@@ -5454,7 +6674,11 @@
         "short ebook structure"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 307,
@@ -5472,7 +6696,11 @@
         "coaching program outline"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 308,
@@ -5490,7 +6718,11 @@
         "webinar ideas for coaches"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 309,
@@ -5508,7 +6740,11 @@
         "newsletter issue plan"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 310,
@@ -5526,7 +6762,11 @@
         "podcast content ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 311,
@@ -5544,7 +6784,11 @@
         "podcast description builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 312,
@@ -5562,7 +6806,11 @@
         "ai blogging workflow"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 313,
@@ -5580,7 +6828,11 @@
         "article publishing steps"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 314,
@@ -5598,7 +6850,11 @@
         "content refresh template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 315,
@@ -5616,7 +6872,11 @@
         "website faq builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 316,
@@ -5634,7 +6894,11 @@
         "cta copy prompts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 317,
@@ -5652,7 +6916,11 @@
         "drip campaign outline"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 318,
@@ -5670,7 +6938,11 @@
         "sales copy structure"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 319,
@@ -5688,7 +6960,11 @@
         "testimonial email generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 320,
@@ -5706,7 +6982,11 @@
         "brand tone prompt builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 321,
@@ -5724,7 +7004,11 @@
         "social media pillars"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 322,
@@ -5742,7 +7026,11 @@
         "content idea matrix template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 323,
@@ -5760,7 +7048,11 @@
         "digital art styles list"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 324,
@@ -5778,7 +7070,11 @@
         "ai image negative prompt list"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 325,
@@ -5796,7 +7092,11 @@
         "prompt checker tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 326,
@@ -5814,7 +7114,11 @@
         "ai transparency statement"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 327,
@@ -5832,7 +7136,11 @@
         "blog to social workflow"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 328,
@@ -5850,7 +7158,11 @@
         "guest post email maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 329,
@@ -5868,7 +7180,11 @@
         "crowdsourced article template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 330,
@@ -5886,7 +7202,11 @@
         "blog workflow sop"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 331,
@@ -5904,7 +7224,11 @@
         "writing guidelines template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 332,
@@ -5922,7 +7246,11 @@
         "chatgpt workflow planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 333,
@@ -5940,7 +7268,11 @@
         "ai brief template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 334,
@@ -5961,7 +7293,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-042",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 335,
@@ -5982,7 +7318,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-043",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 336,
@@ -6000,7 +7340,11 @@
         "product review structure"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 337,
@@ -6018,7 +7362,11 @@
         "affiliate buying guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 338,
@@ -6036,7 +7384,11 @@
         "email subject generator prompts"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 339,
@@ -6054,7 +7406,11 @@
         "client case study format"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 340,
@@ -6072,7 +7428,11 @@
         "ai writing qa"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 341,
@@ -6090,7 +7450,11 @@
         "ai content verification"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 342,
@@ -6108,7 +7472,11 @@
         "viral format swipe file"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 343,
@@ -6126,7 +7494,11 @@
         "bulk creation schedule"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 344,
@@ -6144,7 +7516,11 @@
         "blog launch plan"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 345,
@@ -6162,7 +7538,11 @@
         "blog revenue planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 346,
@@ -6180,7 +7560,11 @@
         "ai tools quiz"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 347,
@@ -6197,7 +7581,11 @@
         "prompt variable generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 348,
@@ -6214,7 +7602,11 @@
         "ai image size guide"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 349,
@@ -6231,7 +7623,11 @@
         "faceless youtube prompt pack"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 350,
@@ -6248,7 +7644,11 @@
         "voiceover prompt templates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 351,
@@ -6266,7 +7666,11 @@
         "best pinterest board names for traffic"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 352,
@@ -6284,7 +7688,11 @@
         "how to write pinterest board descriptions"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 353,
@@ -6302,7 +7710,11 @@
         "pinterest profile bio ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 354,
@@ -6320,7 +7732,11 @@
         "catchy pinterest names"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 355,
@@ -6338,7 +7754,11 @@
         "pinterest image ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 356,
@@ -6356,7 +7776,11 @@
         "idea pin content ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 357,
@@ -6374,7 +7798,11 @@
         "pinterest keyword tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 358,
@@ -6392,7 +7820,11 @@
         "how to write pinterest titles"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 359,
@@ -6410,7 +7842,11 @@
         "pinterest tags generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 360,
@@ -6428,7 +7864,11 @@
         "pinterest seo alt text"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 361,
@@ -6446,7 +7886,11 @@
         "ideal pinterest pin size"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 362,
@@ -6464,7 +7908,11 @@
         "pinterest duplicate pin checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 363,
@@ -6482,7 +7930,11 @@
         "when to post seasonal pins"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 364,
@@ -6500,7 +7952,11 @@
         "profitable pinterest niches"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 365,
@@ -6518,7 +7974,11 @@
         "how often to pin on pinterest"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 366,
@@ -6536,7 +7996,11 @@
         "pinterest headline tester"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 367,
@@ -6554,7 +8018,11 @@
         "free link in bio html"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 368,
@@ -6572,7 +8040,11 @@
         "x profile bio examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 369,
@@ -6590,7 +8062,11 @@
         "x username generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 370,
@@ -6608,7 +8084,11 @@
         "tweet content ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 371,
@@ -6626,7 +8106,11 @@
         "how to write twitter threads"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 372,
@@ -6644,7 +8128,11 @@
         "thread splitter tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 373,
@@ -6662,7 +8150,11 @@
         "twitter text formatter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 374,
@@ -6680,7 +8172,11 @@
         "1/n twitter thread"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 375,
@@ -6698,7 +8194,11 @@
         "trending twitter hashtags"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 376,
@@ -6716,7 +8216,11 @@
         "viral tweet hook examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 377,
@@ -6734,7 +8238,11 @@
         "engaging twitter polls"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 378,
@@ -6752,7 +8260,11 @@
         "spaces title examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 379,
@@ -6770,7 +8282,11 @@
         "what to pin on twitter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 380,
@@ -6788,7 +8304,11 @@
         "witty quote tweets"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 381,
@@ -6806,7 +8326,11 @@
         "x posting strategy"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 382,
@@ -6824,7 +8348,11 @@
         "twitter cover text"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 383,
@@ -6842,7 +8370,11 @@
         "how to write viral tweets"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 384,
@@ -6860,7 +8392,11 @@
         "personal brand statement twitter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 385,
@@ -6878,7 +8414,11 @@
         "twitter quote card"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 386,
@@ -6896,7 +8436,11 @@
         "fb bio examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 387,
@@ -6914,7 +8458,11 @@
         "facebook business page names"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 388,
@@ -6932,7 +8480,11 @@
         "catchy group names facebook"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 389,
@@ -6950,7 +8502,11 @@
         "group rules template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 390,
@@ -6968,7 +8524,11 @@
         "facebook content ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 391,
@@ -6986,7 +8546,11 @@
         "viral reels hooks"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 392,
@@ -7004,7 +8568,11 @@
         "engaging story ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 393,
@@ -7022,7 +8590,11 @@
         "virtual event ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 394,
@@ -7040,7 +8612,11 @@
         "facebook ad copy headlines"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 395,
@@ -7058,7 +8634,11 @@
         "facebook ad copywriting"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 396,
@@ -7076,7 +8656,11 @@
         "do hashtags work on facebook"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 397,
@@ -7094,7 +8678,11 @@
         "social media giveaway ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 398,
@@ -7112,7 +8700,11 @@
         "facebook button text ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 399,
@@ -7130,7 +8722,11 @@
         "facebook banner text"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 400,
@@ -7148,7 +8744,11 @@
         "group activity ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 401,
@@ -7166,7 +8766,11 @@
         "spam checker for subject lines"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 402,
@@ -7184,7 +8788,11 @@
         "catchy email subject lines"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 403,
@@ -7202,7 +8810,11 @@
         "words to avoid in emails"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 404,
@@ -7220,7 +8832,11 @@
         "email preheader examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 405,
@@ -7238,7 +8854,11 @@
         "email button copy generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 406,
@@ -7256,7 +8876,11 @@
         "email subject line preview"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 407,
@@ -7274,7 +8898,11 @@
         "how to write a ps in email marketing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 408,
@@ -7292,7 +8920,11 @@
         "email testing checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 409,
@@ -7310,7 +8942,11 @@
         "b2b cold email opener"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 410,
@@ -7328,7 +8964,11 @@
         "how to write a follow up email"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 411,
@@ -7346,7 +8986,11 @@
         "new subscriber email sequence"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 412,
@@ -7367,7 +9011,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-317",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 413,
@@ -7385,7 +9033,11 @@
         "product launch email examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 414,
@@ -7403,7 +9055,11 @@
         "inactive subscriber email template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 415,
@@ -7421,7 +9077,11 @@
         "cart recovery email sequence"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 416,
@@ -7439,7 +9099,11 @@
         "newsletter section ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 417,
@@ -7457,7 +9121,11 @@
         "how to name a newsletter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 418,
@@ -7475,7 +9143,11 @@
         "email newsletter layout"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 419,
@@ -7493,7 +9165,11 @@
         "sponsor outreach email template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 420,
@@ -7511,7 +9187,11 @@
         "newsletter ad rate calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 421,
@@ -7529,7 +9209,11 @@
         "newsletter repurposing tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 422,
@@ -7547,7 +9231,11 @@
         "webinar registration email"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 423,
@@ -7565,7 +9253,11 @@
         "flash sale email template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 424,
@@ -7583,7 +9275,11 @@
         "testimonial email examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 425,
@@ -7601,7 +9297,11 @@
         "best lead magnets 2026"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 426,
@@ -7619,7 +9319,11 @@
         "lead magnet name ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 427,
@@ -7637,7 +9341,11 @@
         "what is a content upgrade"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 428,
@@ -7655,7 +9363,11 @@
         "quiz title generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 429,
@@ -7673,7 +9385,11 @@
         "lead magnet template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 430,
@@ -7691,7 +9407,11 @@
         "subscribe form copy generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 431,
@@ -7709,7 +9429,11 @@
         "thank you page template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 432,
@@ -7727,7 +9451,11 @@
         "unsubscribe confirmation page"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 433,
@@ -7745,7 +9473,11 @@
         "customer referral email"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 434,
@@ -7763,7 +9495,11 @@
         "contest ideas for blogs"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 435,
@@ -7781,7 +9517,11 @@
         "how to build an email funnel"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 436,
@@ -7799,7 +9539,11 @@
         "brand collaboration pitch"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 437,
@@ -7817,7 +9561,11 @@
         "case study request template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 438,
@@ -7835,7 +9583,11 @@
         "html email signature generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 439,
@@ -7853,7 +9605,11 @@
         "multipart email text generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 440,
@@ -7871,7 +9627,11 @@
         "email timezone scheduler"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 441,
@@ -7889,7 +9649,11 @@
         "email content calendar template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 442,
@@ -7907,7 +9671,11 @@
         "how to write an about page"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 443,
@@ -7925,7 +9693,11 @@
         "how to write an author bio"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 444,
@@ -7943,7 +9715,11 @@
         "comment reply templates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 445,
@@ -7961,7 +9737,11 @@
         "email spam test checklist"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 446,
@@ -7979,7 +9759,11 @@
         "press release example"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 447,
@@ -7997,7 +9781,11 @@
         "podcast pitch examples"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 448,
@@ -8014,7 +9802,11 @@
         "email list building ideas for bloggers"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 449,
@@ -8031,7 +9823,11 @@
         "comment moderation policy template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 450,
@@ -8048,7 +9844,11 @@
         "newsletter sponsor slot planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 451,
@@ -8069,7 +9869,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-071",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 452,
@@ -8087,7 +9891,11 @@
         "freelancer day rate formula"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 453,
@@ -8105,7 +9913,11 @@
         "overdue invoice interest calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 454,
@@ -8123,7 +9935,11 @@
         "rush delivery surcharge calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 455,
@@ -8141,7 +9957,11 @@
         "how to price usage rights"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 456,
@@ -8159,7 +9979,11 @@
         "brand collaboration contract"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 457,
@@ -8177,7 +10001,11 @@
         "creator media kit generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 458,
@@ -8195,7 +10023,11 @@
         "monthly retainer rate calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 459,
@@ -8213,7 +10045,11 @@
         "how to structure freelance payments"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 460,
@@ -8231,7 +10067,11 @@
         "freelance pricing floor calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 461,
@@ -8249,7 +10089,11 @@
         "extra revisions charge"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 462,
@@ -8267,7 +10111,11 @@
         "project cancelled how much to charge"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 463,
@@ -8285,7 +10133,11 @@
         "client nda template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 464,
@@ -8303,7 +10155,11 @@
         "sow template creative work"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 465,
@@ -8321,7 +10177,11 @@
         "creative brief questionnaire template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 466,
@@ -8339,7 +10199,11 @@
         "negotiate higher rate email"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 467,
@@ -8357,7 +10221,11 @@
         "brand collaboration email template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 468,
@@ -8375,7 +10243,11 @@
         "payment reminder email freelance"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 469,
@@ -8393,7 +10265,11 @@
         "1099 tax calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 470,
@@ -8411,7 +10287,11 @@
         "freelance tax deductions calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 471,
@@ -8429,7 +10309,11 @@
         "wedding video packages template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 472,
@@ -8447,7 +10331,11 @@
         "wedding photography packages"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 473,
@@ -8465,7 +10353,11 @@
         "freelance logo rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 474,
@@ -8483,7 +10375,11 @@
         "youtube thumbnail designer cost"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 475,
@@ -8501,7 +10397,11 @@
         "audio editing rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 476,
@@ -8519,7 +10419,11 @@
         "coaching package template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 477,
@@ -8540,7 +10444,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-060",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md"
+      "deprecatedReason": "Lead-approved merge per docs/tool-development/LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 478,
@@ -8558,7 +10466,11 @@
         "best platform to sell digital products fees"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 479,
@@ -8576,7 +10488,11 @@
         "how to invoice hourly work"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 480,
@@ -8594,7 +10510,11 @@
         "client roi calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 481,
@@ -8612,7 +10532,11 @@
         "editing turnaround calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 482,
@@ -8630,7 +10554,11 @@
         "commercial photography pricing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 483,
@@ -8648,7 +10576,11 @@
         "sponsorship exclusivity rates"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 484,
@@ -8666,7 +10598,11 @@
         "paid usage rights calculator ugc"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 485,
@@ -8684,7 +10620,11 @@
         "project scope change pricing"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 486,
@@ -8701,7 +10641,11 @@
         "client vetting checklist freelancer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 487,
@@ -8718,7 +10662,11 @@
         "testimonial wall generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 488,
@@ -8735,7 +10683,11 @@
         "portfolio case study generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 489,
@@ -8752,7 +10704,11 @@
         "client proposal template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 490,
@@ -8769,7 +10725,11 @@
         "freelance discovery call template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 491,
@@ -8786,7 +10746,11 @@
         "referral incentive planner"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 492,
@@ -8803,7 +10767,11 @@
         "creative business names"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 493,
@@ -8820,7 +10788,11 @@
         "personal brand tagline"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 494,
@@ -8837,7 +10809,11 @@
         "linkedin title generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 495,
@@ -8854,7 +10830,11 @@
         "outreach pipeline tracker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 496,
@@ -8871,7 +10851,11 @@
         "annual income goal calculator freelancer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 497,
@@ -8888,7 +10872,11 @@
         "productized service builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 498,
@@ -8905,7 +10893,11 @@
         "consultation booking page template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 499,
@@ -8922,7 +10914,11 @@
         "client handover template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 500,
@@ -8939,7 +10935,11 @@
         "freelance project review template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 501,
@@ -8959,7 +10959,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 502,
@@ -8979,7 +10983,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 503,
@@ -8999,7 +11007,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 504,
@@ -9019,7 +11031,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 505,
@@ -9039,7 +11055,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 506,
@@ -9059,7 +11079,11 @@
       "status": "BUILT",
       "version": "0.1.0",
       "addedDate": "2026-10-01",
-      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+      "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 507,
@@ -9078,7 +11102,11 @@
         "text to speech studio"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 508,
@@ -9097,7 +11125,11 @@
         "background remover online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 509,
@@ -9116,7 +11148,11 @@
         "upscale image without losing quality"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 510,
@@ -9135,7 +11171,11 @@
         "audio transcription tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 511,
@@ -9154,7 +11194,11 @@
         "private text translator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 512,
@@ -9173,7 +11217,11 @@
         "browser text to speech reader"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 513,
@@ -9192,7 +11240,11 @@
         "ecommerce photo background remover"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 514,
@@ -9211,7 +11263,11 @@
         "visa photo maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 515,
@@ -9230,7 +11286,11 @@
         "gemini chatbot free"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 516,
@@ -9249,7 +11309,11 @@
         "strong resume action verbs"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 517,
@@ -9268,7 +11332,11 @@
         "job application cover letter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 518,
@@ -9287,7 +11355,11 @@
         "free ai writing tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 519,
@@ -9306,7 +11378,11 @@
         "linkedin headline ideas"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 520,
@@ -9325,7 +11401,11 @@
         "ai summary generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 521,
@@ -9344,7 +11424,11 @@
         "ai rewriter free"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 522,
@@ -9363,7 +11447,11 @@
         "midjourney prompt helper"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 523,
@@ -9382,7 +11470,11 @@
         "ai video shot list"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 524,
@@ -9404,7 +11496,11 @@
       "version": "0.1.0",
       "mergedInto": "tool-348",
       "deprecatedDate": "2026-10-01",
-      "deprecatedReason": "Duplicate of tool-348 (AI Image Aspect Ratio Planner, ai-workflows); deduped at AI-tools registration per LEAD_DECISIONS.md"
+      "deprecatedReason": "Duplicate of tool-348 (AI Image Aspect Ratio Planner, ai-workflows); deduped at AI-tools registration per LEAD_DECISIONS.md",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 525,
@@ -9423,7 +11519,11 @@
         "music style prompt builder"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 526,
@@ -9442,7 +11542,11 @@
         "resume format checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 527,
@@ -9461,7 +11565,11 @@
         "ai voiceover script template"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 528,
@@ -9480,7 +11588,11 @@
         "chatgpt system prompt"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 529,
@@ -9499,7 +11611,11 @@
         "ai portrait prompt pack"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 530,
@@ -9518,7 +11634,11 @@
         "text logo ai prompt"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 531,
@@ -9537,7 +11657,11 @@
         "narration length estimator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 532,
@@ -9556,7 +11680,11 @@
         "llm pricing calculator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 533,
@@ -9575,7 +11703,11 @@
         "ai image negative prompt"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 534,
@@ -9594,7 +11726,11 @@
         "dalle to midjourney prompt"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 535,
@@ -9613,7 +11749,11 @@
         "prompt quality checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 536,
@@ -9632,7 +11772,11 @@
         "songwriting helper"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 537,
@@ -9651,7 +11795,11 @@
         "hiring question bank"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 538,
@@ -9670,7 +11818,11 @@
         "photo to text converter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 539,
@@ -9689,7 +11841,11 @@
         "fix damaged photos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 540,
@@ -9708,7 +11864,11 @@
         "photo caption ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 541,
@@ -9727,7 +11887,11 @@
         "photo tagging ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 542,
@@ -9746,7 +11910,11 @@
         "review sentiment tool"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 543,
@@ -9765,7 +11933,11 @@
         "personal knowledge search"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 544,
@@ -9784,7 +11956,11 @@
         "seo tag extractor"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 545,
@@ -9803,7 +11979,11 @@
         "music tempo analyzer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 546,
@@ -9822,7 +12002,11 @@
         "simple logo designer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 547,
@@ -9841,7 +12025,11 @@
         "voice cloning online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 548,
@@ -9860,7 +12048,11 @@
         "prompt to video ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 549,
@@ -9879,7 +12071,11 @@
         "business headshot maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 550,
@@ -9898,7 +12094,11 @@
         "text to music ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 551,
@@ -9917,7 +12117,11 @@
         "picture to cartoon converter"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 552,
@@ -9936,7 +12140,11 @@
         "pdf chatbot online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 553,
@@ -9955,7 +12163,11 @@
         "deepfake image detector"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 554,
@@ -9974,7 +12186,11 @@
         "generate images with ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 555,
@@ -9992,7 +12208,11 @@
         "ai script writer for videos"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 556,
@@ -10010,7 +12230,11 @@
         "content repurposer ai free"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 557,
@@ -10028,7 +12252,11 @@
         "youtube hook generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 558,
@@ -10046,7 +12274,11 @@
         "clickable youtube titles ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 559,
@@ -10064,7 +12296,11 @@
         "free ai social media post writer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 560,
@@ -10082,7 +12318,11 @@
         "ai article outline maker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 561,
@@ -10100,7 +12340,11 @@
         "ai product copy generator"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 562,
@@ -10118,7 +12362,11 @@
         "newsletter content generator ai"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 563,
@@ -10136,7 +12384,11 @@
         "instagram hashtag score checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 564,
@@ -10154,7 +12406,11 @@
         "seo title tag analyzer online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 565,
@@ -10172,7 +12428,11 @@
         "creator profile optimization checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 566,
@@ -10190,7 +12450,11 @@
         "email subject line score checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 567,
@@ -10208,7 +12472,11 @@
         "is my content outdated checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 568,
@@ -10226,7 +12494,11 @@
         "analyze cta copy online"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 571,
@@ -10245,7 +12517,11 @@
         "prompt enhancer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 572,
@@ -10264,7 +12540,11 @@
         "action items extractor"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 573,
@@ -10283,7 +12563,11 @@
         "understand code snippet"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 574,
@@ -10302,7 +12586,11 @@
         "make text easier to read"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 575,
@@ -10321,7 +12609,11 @@
         "title score checker"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 576,
@@ -10340,7 +12632,11 @@
         "profile bio optimizer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 569,
@@ -10359,7 +12655,11 @@
         "opening hook analyzer"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     },
     {
       "id": 570,
@@ -10378,7 +12678,11 @@
         "blog readability test"
       ],
       "status": "BUILT",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "enabled": true,
+      "seoTitle": "",
+      "seoDescription": "",
+      "noindex": false
     }
   ],
   "active": 500,
