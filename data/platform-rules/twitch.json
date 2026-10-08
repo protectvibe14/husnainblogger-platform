@@ -1,0 +1,109 @@
+{
+ "platform": "twitch",
+ "rules": [
+  {
+   "ruleId": "twitch-sub-tiers",
+   "platform": "twitch",
+   "rule": "Twitch subscription tiers",
+   "value": "$4.99 / $9.99 / $24.99 per month",
+   "valueUnit": "text",
+   "source": "unil.ink Twitch Affiliate vs Partner 2026",
+   "sourceUrl": "https://unil.ink/blog/twitch-affiliate-vs-partner",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-089"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "twitch-base-split",
+   "platform": "twitch",
+   "rule": "Twitch standard revenue split",
+   "value": "50/50 net revenue split for Affiliates and most Partners",
+   "valueUnit": "text",
+   "source": "unil.ink 2026; shanethegamer 2026 research",
+   "sourceUrl": "https://unil.ink/blog/twitch-affiliate-vs-partner",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-089"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "twitch-plus-program",
+   "platform": "twitch",
+   "rule": "Twitch Plus Program splits",
+   "value": "60/40 at 100 Plus Points; 70/30 at 300 Plus Points (3-month window)",
+   "valueUnit": "text",
+   "source": "shanethegamer 2026 research; stream-rise FAQ 2026",
+   "sourceUrl": "https://www.shanethegamer.com/research/top-streamer-earnings/",
+   "effectiveDate": "2024-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-089"
+   ],
+   "notes": "$100,000 annual cap removed Jan 2024.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "twitch-bits",
+   "platform": "twitch",
+   "rule": "Twitch Bits payout",
+   "value": "$0.01 per bit to the streamer",
+   "valueUnit": "text",
+   "source": "way2earning Twitch Affiliate vs Partner 2026",
+   "sourceUrl": "https://www.way2earning.com/2025/05/twitch-affiliate-vs-partner/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-089"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
