@@ -1,0 +1,55 @@
+---
+/**
+ * Breadcrumbs.astro — breadcrumb navigation.
+ * Owner: MA1-DesignSystem.
+ *
+ * nav[aria-label="Breadcrumb"] > ol > li. The current page is a final <li>
+ * with aria-current="page" and NO link. Separators are CSS (aria-hidden by
+ * construction — they are not in the DOM as text).
+ */
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  items: Crumb[];
+  label?: string;
+  class?: string;
+}
+
+const { items, label = "Breadcrumb", class: cls } = Astro.props;
+---
+<nav class:list={["hb-breadcrumbs", cls]} aria-label={label}>
+  <ol class="hb-breadcrumbs__list">
+    {items.map((item, i) => {
+      const last = i === items.length - 1;
+      return (
+        <li class="hb-breadcrumbs__item">
+          {last || !item.href
+            ? <span class="hb-breadcrumbs__current" aria-current="page">{item.label}</span>
+            : <a class="hb-breadcrumbs__link" href={item.href}>{item.label}</a>}
+        </li>
+      );
+    })}
+  </ol>
+</nav>
+
+<style>
+  .hb-breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--text-sm);
+  }
+  .hb-breadcrumbs__item { display: flex; align-items: center; gap: var(--space-2); }
+  .hb-breadcrumbs__item + .hb-breadcrumbs__item::before {
+    content: "/";
+    color: var(--color-muted);
+  }
+  .hb-breadcrumbs__link { min-height: var(--touch-target); display: inline-flex; align-items: center; }
+  .hb-breadcrumbs__current { color: var(--color-muted); }
+</style>
