@@ -1,0 +1,50 @@
+---
+/**
+ * PlaceholderTemplate.astro — TEMPORARY skeleton.
+ *
+ * Owner: MA1-Registry (placeholder) → replaced by MA1-Templates with the 10
+ * real per-toolType templates (GeneratorTemplate, PlannerTemplate, …).
+ *
+ * Every entry in TEMPLATE_MAP currently points here. It renders enough of the
+ * registry record to prove routing + codegen work end-to-end, and makes it
+ * visually obvious that the real template has not landed yet.
+ *
+ * Props: { tool: ToolRecord, content?: ToolContent }
+ */
+const { tool } = Astro.props;
+const keywords = [tool.primaryKeyword, ...(tool.secondaryKeywords ?? [])]
+  .filter(Boolean)
+  .slice(0, 6);
+---
+
+<section data-template="placeholder" data-tool-id={tool.toolId}>
+  <p class="placeholder-banner">
+    Template skeleton — the <strong>{tool.toolType}</strong> template has not
+    been built yet (MA1-Templates).
+  </p>
+  <h1>{tool.name}</h1>
+  <dl>
+    <div><dt>Category</dt><dd>{tool.category}</dd></div>
+    <div><dt>Tool type</dt><dd>{tool.toolType}</dd></div>
+    <div><dt>Primary keyword</dt><dd>{tool.primaryKeyword}</dd></div>
+    <div><dt>Status</dt><dd>{tool.status}</dd></div>
+    <div><dt>Version</dt><dd>{tool.version}</dd></div>
+  </dl>
+  {keywords.length > 0 && (
+    <ul class="keywords">
+      {keywords.map((kw) => <li>{kw}</li>)}
+    </ul>
+  )}
+</section>
+
+<style>
+  .placeholder-banner {
+    border: 2px dashed currentColor;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  dl > div { display: flex; gap: 0.5rem; }
+  dt { font-weight: 600; }
+  .keywords { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+  .keywords li { border: 1px solid currentColor; border-radius: 999px; padding: 0.15rem 0.6rem; }
+</style>
