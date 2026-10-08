@@ -1,0 +1,305 @@
+---
+/**
+ * ToolShell.astro — shared page shell for all tool templates (REDESIGNED 2026-10-07).
+ *
+ * Owner: MA1-Templates.
+ * Renders the premium page skeleton:
+ *   breadcrumbs → hero (trust badges) → top ad → layout(main + sidebar) →
+ *   tool UI → in-content ad → how-to → why-use → mid ad → methodology →
+ *   examples → FAQ → sponsor card → bottom ad → related tools.
+ *
+ * Sidebar (desktop): table of contents + sidebar ad slots (sticky).
+ * All ad slots render via components/ads/AdSlot.astro (admin-controlled).
+ *
+ * Section order (SEO contract): breadcrumbs → h1 → value prop → tool UI →
+ * how-to → methodology → examples → FAQ → related tools.
+ *
+ * Slots:
+ *  - "tool-ui" (required): the template's interactive island
+ *    (<div data-tool-root>…form + results…</div>).
+ *
+ * What the shell does NOT do (page-level responsibilities, owned by
+ * src/pages/[category]/[tool].astro + BaseLayout):
+ *  - <head> meta (<title>, meta description, canonical, OG) — the page
+ *    reads them from tool.seo; the shell only emits JSON-LD in <body>,
+ *    which is valid HTML.
+ *  - <html lang="en"> and the <main id="main-content"> landmark — the
+ *    layout owns them; the shell's skip links target those ids.
+ */
+import type { ToolDefinition } from '../lib/registry/types.ts';
+import type { ToolContent, FreshnessBannerProps } from './types.ts';
+import Accordion from '../components/ui/Accordion.astro';
+import Button from '../components/ui/Button.astro';
+import FreshnessBanner from './FreshnessBanner.astro';
+import AdSlot from '../components/ads/AdSlot.astro';
+import SponsorCard from '../components/ads/SponsorCard.astro';
+import '../styles/luxury.css';
+
+interface Props {
+  tool: ToolDefinition;
+  content: ToolContent;
+  relatedTools?: ToolDefinition[];
+  freshness?: FreshnessBannerProps;
+}
+
+const { tool, content, relatedTools = [], freshness } = Astro.props;
+
+const h1 = content.title ? content.title.split(" | ")[0].trim() : tool.name;
+const categorySlug = tool.categorySlug;
+const toolPath = `/tools/${categorySlug}/${tool.slug}/`;
+
+// Secondary keywords as pills (multi-keyword SEO signal)
+const kwPills = (tool.secondaryKeywords ?? []).slice(0, 12);
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
+---
+
+<div class="hb-tool-shell" data-tool-page data-tool-id={tool.toolId}>
+  <a class="hb-skip-link" href="#main-content">Skip to main content</a>
+  <a class="hb-skip-link" href="#tool-ui">Skip to tool</a>
+
+  <div id="hb-live-polite" class="hb-visually-hidden" role="status" aria-live="polite"></div>
+  <div id="hb-live-assertive" class="hb-visually-hidden" role="alert" aria-live="assertive"></div>
+
+  <nav class="hb-breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/">Tools</a></li>
+      <li><a href={`/tools/${categorySlug}/`}>{tool.category}</a></li>
+      <li aria-current="page">{tool.name}</li>
+    </ol>
+  </nav>
+
+  <div class="hb-tool-hero hb-tool-hero--v2">
+    <span class="hb-tool-eyebrow">{tool.category} · Free Tool</span>
+    <h1 class="hb-tool-title">{h1}</h1>
+    <p class="hb-tool-value-prop">{content.description}</p>
+    <div class="hb-trust-badges" aria-label="Tool guarantees">
+      <span>⚡ <strong>Instant</strong> results</span>
+      <span>🔒 <strong>100%</strong> private</span>
+      <span>♾️ <strong>Unlimited</strong> use</span>
+      <span>💳 <strong>No</strong> signup</span>
+    </div>
+  </div>
+
+  <AdSlot slot="tool-top" />
+
+  <div class="hb-tool-layout">
+    <main class="hb-tool-main">
+      {freshness && freshness.freshnessState !== 'fresh' && (
+        <FreshnessBanner {...freshness} />
+      )}
+
+      <!-- ================= TOOL UI SLOT ================= -->
+      <section id="tool-ui" class="hb-tool-ui hb-tool-ui--v2" aria-label={`${tool.name} tool`}>
+        <slot name="tool-ui" />
+      </section>
+
+      <AdSlot slot="tool-incontent" />
+
+      <section class="hb-section" aria-labelledby="hb-howto">
+        <h2 id="hb-howto"><span class="hb-sec-num">01</span>How to use {tool.name}</h2>
+        <ol class="hb-steps">
+          {content.howTo.map((step) => <li>{step}</li>)}
+        </ol>
+        {kwPills.length > 0 && (
+          <div class="hb-kw-pills" aria-label="Related keywords">
+            {kwPills.map((kw) => <span>{kw}</span>)}
+          </div>
+        )}
+      </section>
+
+      <section class="hb-section" aria-labelledby="hb-why">
+        <h2 id="hb-why"><span class="hb-sec-num">02</span>Why use this {tool.toolType} tool?</h2>
+        <div class="hb-feat-grid">
+          <div class="hb-feat">
+            <div class="hb-feat__icon">🎯</div>
+            <h3>Built for {tool.primaryKeyword}</h3>
+            <p>Designed around the exact workflow behind "{tool.primaryKeyword}" — no clutter, just results.</p>
+          </div>
+          <div class="hb-feat">
+            <div class="hb-feat__icon">⚡</div>
+            <h3>Instant &amp; free forever</h3>
+            <p>No accounts, no limits, no watermarks. Use it as many times as you need.</p>
+          </div>
+          <div class="hb-feat">
+            <div class="hb-feat__icon">🔒</div>
+            <h3>Private by design</h3>
+            <p>Everything runs in your browser. Your data never leaves your device.</p>
+          </div>
+        </div>
+      </section>
+
+      <AdSlot slot="tool-mid" />
+
+      {content.methodology && (
+        <section class="hb-section" aria-labelledby="hb-method">
+          <h2 id="hb-method"><span class="hb-sec-num">03</span>How it works</h2>
+          <p>{content.methodology}</p>
+        </section>
+      )}
+
+      {content.examples && content.examples.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-examples">
+          <h2 id="hb-examples"><span class="hb-sec-num">04</span>Examples</h2>
+          <ul class="hb-examples">
+            {content.examples.map((ex, i) => (
+              <li class="hb-example" data-example>
+                <div class="hb-example__head">
+                  <strong>{ex.title}</strong>
+                  <Button
+                    variant="secondary"
+                    type="button"
+                    data-example-index={String(i)}
+                  >
+                    Try this example
+                  </Button>
+                </div>
+                {ex.note && <p class="hb-example__note">{ex.note}</p>}
+                <script type="application/json" data-example-payload set:html={JSON.stringify(ex.inputs)} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {content.assumptions && content.assumptions.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-notes">
+          <h2 id="hb-notes"><span class="hb-sec-num">05</span>Good to know</h2>
+          <ul class="hb-notes">
+            {content.assumptions.map((a) => <li>{a}</li>)}
+          </ul>
+        </section>
+      )}
+
+      {content.faqs.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-faq">
+          <h2 id="hb-faq"><span class="hb-sec-num">06</span>Frequently asked questions</h2>
+          <Accordion
+            items={content.faqs.map((f) => ({ question: f.question, answerHtml: f.answer }))}
+          />
+        </section>
+      )}
+
+      <SponsorCard />
+
+      <AdSlot slot="tool-bottom" />
+
+      {relatedTools.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-related">
+          <h2 id="hb-related"><span class="hb-sec-num">07</span>Related tools</h2>
+          <ul class="hb-related hb-related--v2">
+            {relatedTools.map((rel) => (
+              <li>
+                <a href={`/tools/${rel.categorySlug}/${rel.slug}/`}>
+                  <strong>{rel.name}</strong>
+                  <small>{rel.category}</small>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </main>
+
+    <aside class="hb-tool-sidebar" aria-label="Page sidebar">
+      <div class="hb-toc-card">
+        <h3>On this page</h3>
+        <ul class="hb-toc">
+          <li><a href="#tool-ui">Use the tool</a></li>
+          <li><a href="#hb-howto">How to use</a></li>
+          <li><a href="#hb-why">Why use it</a></li>
+          {content.methodology && <li><a href="#hb-method">How it works</a></li>}
+          {content.faqs.length > 0 && <li><a href="#hb-faq">FAQs</a></li>}
+          {relatedTools.length > 0 && <li><a href="#hb-related">Related tools</a></li>}
+        </ul>
+      </div>
+      <AdSlot slot="tool-sidebar-top" />
+      <AdSlot slot="tool-sidebar-bottom" />
+    </aside>
+  </div>
+
+  <AdSlot slot="tool-sticky-mobile" />
+
+  <!-- JSON-LD passthrough: FAQPage auto-generated from faqs + MA3 extras. -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  {(content.jsonLd ?? []).map((node) => (
+    <script type="application/ld+json" set:html={JSON.stringify(node)} />
+  ))}
+</div>
+
+<script>
+  import { initAnalyticsDelegation } from './_analytics.ts';
+  initAnalyticsDelegation();
+</script>
+
+<style>
+  /* v2 premium additions — extends luxury.css */
+  .hb-tool-hero--v2 { text-align: center; padding: var(--space-8) 0 var(--space-2); }
+  .hb-tool-hero--v2 .hb-tool-title { font-size: clamp(2rem, 5vw, 3rem); }
+  .hb-trust-badges {
+    display: flex; gap: var(--space-5); justify-content: center; flex-wrap: wrap;
+    margin-top: var(--space-4); font-family: var(--font-sans);
+    font-size: var(--text-sm); color: var(--color-muted);
+  }
+  .hb-trust-badges strong { color: var(--color-text); }
+
+  .hb-tool-layout {
+    display: grid; grid-template-columns: minmax(0, 1fr) 300px;
+    gap: var(--space-8); align-items: start; margin-top: var(--space-6);
+  }
+  .hb-tool-main { min-width: 0; }
+  .hb-tool-sidebar {
+    display: flex; flex-direction: column; gap: var(--space-5);
+    position: sticky; top: calc(var(--space-6) + 60px);
+  }
+  .hb-toc-card {
+    background: var(--color-surface-raised); border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl); padding: var(--space-5);
+  }
+  .hb-toc-card h3 { font-family: var(--font-sans); font-size: var(--text-base); margin: 0 0 var(--space-3); }
+  .hb-toc { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+  .hb-toc a { color: var(--color-muted); text-decoration: none; font-size: var(--text-sm); font-family: var(--font-sans); }
+  .hb-toc a:hover { color: var(--color-accent-strong); }
+
+  .hb-tool-ui--v2 {
+    background: var(--color-surface-raised); border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl); box-shadow: var(--shadow-lg);
+    padding: var(--space-8);
+  }
+
+  .hb-sec-num { color: var(--color-accent); margin-right: var(--space-2); font-size: 0.85em; }
+  .hb-kw-pills { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+  .hb-kw-pills span {
+    font-family: var(--font-sans); font-size: var(--text-xs);
+    background: var(--color-surface); border: 1px solid var(--color-border);
+    padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill);
+    color: var(--color-muted);
+  }
+  .hb-feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-4); }
+  .hb-feat {
+    background: var(--color-surface-raised); border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl); padding: var(--space-5);
+  }
+  .hb-feat__icon { font-size: var(--text-2xl); }
+  .hb-feat h3 { font-family: var(--font-sans); font-size: var(--text-base); margin: var(--space-2) 0; }
+  .hb-feat p { font-size: var(--text-sm); color: var(--color-muted); margin: 0; }
+  .hb-related--v2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); }
+  .hb-related--v2 a { display: block; text-decoration: none; }
+  .hb-related--v2 strong { display: block; font-family: var(--font-sans); font-size: var(--text-sm); color: var(--color-text); }
+  .hb-related--v2 small { color: var(--color-muted); font-size: var(--text-xs); }
+
+  @media (max-width: 960px) {
+    .hb-tool-layout { grid-template-columns: 1fr; }
+    .hb-tool-sidebar { position: static; }
+    .hb-tool-ui--v2 { padding: var(--space-5); }
+  }
+</style>
