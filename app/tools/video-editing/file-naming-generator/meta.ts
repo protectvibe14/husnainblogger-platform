@@ -1,0 +1,182 @@
+import type { ToolInput, ToolOutput } from '../../../src/lib/registry/types.ts';
+import type { ToolContent } from '../../../src/templates/types.ts';
+
+export const inputs: ToolInput[] = [
+  {
+    id: "project",
+    label: "Project name",
+    type: "text",
+    required: true,
+    placeholder: "launch-video",
+  },
+  {
+    id: "pattern",
+    label: "Naming pattern",
+    type: "select",
+    required: true,
+    options: [
+      "Project · Date · Version",
+      "Date · Project · Scene · Take · Version",
+      "Platform · Project · Date · Version",
+      "Project · Scene · Take · Platform · Version",
+      "Full Production (all tokens)",
+      "Simple (Project · Version)",
+    ],
+  },
+  {
+    id: "date",
+    label: "Shoot/export date",
+    type: "date",
+    required: false,
+  },
+  {
+    id: "version",
+    label: "Version",
+    type: "text",
+    required: false,
+    placeholder: "v1",
+  },
+  {
+    id: "scene",
+    label: "Scene (optional)",
+    type: "text",
+    required: false,
+    placeholder: "scene 3",
+  },
+  {
+    id: "take",
+    label: "Take (optional)",
+    type: "text",
+    required: false,
+    placeholder: "take 2",
+  },
+  {
+    id: "platform",
+    label: "Platform (optional)",
+    type: "text",
+    required: false,
+    placeholder: "TikTok",
+  },
+  {
+    id: "separator",
+    label: "Separator",
+    type: "select",
+    required: true,
+    options: ["_", "-", "."],
+  },
+  {
+    id: "batchVersions",
+    label: "Batch versions (1–12)",
+    type: "number",
+    required: false,
+    placeholder: "1",
+    validation: { min: 1, max: 12 },
+  },
+];
+
+export const outputs: ToolOutput[] = [
+  { id: "fileName", label: "Generated filename", type: "copy" },
+  { id: "patternPreview", label: "Pattern preview", type: "text" },
+  { id: "batchNames", label: "Batch filenames", type: "list" },
+  { id: "warnings", label: "Warnings", type: "list" },
+];
+
+const DESCRIPTION =
+  "Build consistent, searchable filenames with this free video file naming convention tool — pick a pattern, add your details, and copy a clean name. Try it now.";
+
+export const content: ToolContent = {
+  title: "Video File Naming Convention 2026 – Free | HusnainBlogger",
+  description: DESCRIPTION,
+  howTo: [
+    "Enter your Project name — it anchors every filename.",
+    "Choose a Naming pattern from the 6 fixed templates (e.g. “Project · Date · Version”).",
+    "Optionally add the Shoot/export date, Version, Scene, Take, and Platform.",
+    "Pick your Separator: underscore, hyphen, or dot.",
+    "Set Batch versions (1–12) to generate one filename per version, e.g. v01–v03.",
+    "Copy the Generated filename and check Warnings for stripped characters or over-long names.",
+  ],
+  methodology:
+    "Pure string templating: tokens from a fixed bank of 6 patterns are joined " +
+    "with your separator, filesystem-illegal characters (/ \\ : * ? \" < > |) " +
+    "are stripped with a warning, empty optional parts are skipped, and names " +
+    "over 200 characters trigger a length warning. No AI, no file-system access.",
+  examples: [
+    {
+      title: "Launch video export",
+      inputs: { project: "launch-video", pattern: "Project · Date · Version", date: "2026-10-01", version: "v2", separator: "_" },
+      note: "→ launch-video_20261001_v2",
+    },
+    {
+      title: "TikTok take batch",
+      inputs: { project: "doc", pattern: "Project · Scene · Take · Platform · Version", scene: "scene 3", take: "take 2", platform: "TikTok", version: "v1", separator: "-", batchVersions: 3 },
+      note: "→ doc-scene-3-take-2-TikTok-v01 … v03",
+    },
+    {
+      title: "Simple project file",
+      inputs: { project: "trailer", pattern: "Simple (Project · Version)", separator: "_" },
+      note: "→ trailer_v1 (date skipped, version defaults to v1)",
+    },
+  ],
+  faqs: [
+    {
+      question: "What is the best video file naming convention?",
+      answer:
+        "A good convention puts the most-searched token first (project or date), uses one separator consistently, and always includes a version number. This tool applies exactly that with 6 fixed patterns — pick one and use it for every file in the project.",
+    },
+    {
+      question: "Is there a free video file naming convention?",
+      answer:
+        "Yes — this page is free and runs entirely in your browser. Enter your project details, pick a pattern, and copy the generated filename; nothing is uploaded or stored.",
+    },
+    {
+      question: "How to use video file naming convention?",
+      answer:
+        "Enter the project name, choose one of the 6 naming patterns, optionally add date, version, scene, take, and platform, then pick a separator. Copy the generated name and use the same pattern for every asset so files sort and search cleanly.",
+    },
+    {
+      question: "How does a video file naming convention work?",
+      answer:
+        "It joins ordered tokens (project, date, scene, take, platform, version) with a single separator into one predictable string. This tool also strips filesystem-illegal characters, warns on names over 200 characters, and can batch-generate versioned names like v01–v03.",
+    },
+    {
+      question: 'How does the video file naming convention work?',
+      answer:
+        'Enter your details using the inputs above and the video file naming convention calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+    },
+    {
+      question: 'Is the video file naming convention free to use?',
+      answer:
+        'Yes - this video file naming convention is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+    },
+    {
+      question: 'What is a video file naming convention?',
+      answer:
+        'A video file naming convention is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+    },
+  ],
+  assumptions: [
+    "Fixed bank of 6 patterns — template-based, not AI-generated.",
+    "When no date is entered, the literal placeholder YYYYMMDD is used.",
+    "Sanitization is best-effort against common filesystem-illegal characters; check your platform's own rules for edge cases.",
+  ],
+  jsonLd: [
+    {
+      "@type": "SoftwareApplication",
+      name: "Video File Naming Convention 2026 – Free | HusnainBlogger",
+      url: "https://husnainblogger.com/tools/video-editing/file-naming-generator/",
+      applicationCategory: "Utilities",
+      operatingSystem: "Web",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      description: DESCRIPTION,
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
+        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
+        { "@type": "ListItem", position: 3, name: "Video Editing Tools", item: "https://husnainblogger.com/tools/video-editing/" },
+        { "@type": "ListItem", position: 4, name: "File Naming Generator", item: "https://husnainblogger.com/tools/video-editing/file-naming-generator/" },
+      ],
+    },
+  ],
+};
