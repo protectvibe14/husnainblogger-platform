@@ -1,0 +1,147 @@
+---
+/**
+ * CalculatorTemplate.astro — numeric inputs → computed result cards.
+ *
+ * Serves toolType: calculator (63 tools).
+ *
+ * Contract: inputs are rendered as DS Field components; on submit the
+ * shared runtime validates (schema built from ToolInput.validation bounds)
+ * and calls the TOOL LOGIC SLOT. Outputs render as large result cards
+ * (OutputKind number/currency/percent) with per-result copy buttons,
+ * download (txt/csv/json) and share-link actions.
+ *
+ * MA2: replace `demoRun` below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts. Same signature — no template
+ * changes needed.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { CalculatorTemplateProps } from './types.ts';
+
+interface Props extends CalculatorTemplateProps {}
+const { tool, content, relatedTools = [], heroOutputs, freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_INPUTS: ToolInput[] = [
+  { id: 'bill', label: 'Bill amount', type: 'number', required: true, placeholder: 'e.g. 85.50', validation: { min: 0, unit: 'USD' } },
+  { id: 'tipPercent', label: 'Tip percentage', type: 'number', required: true, placeholder: 'e.g. 18', validation: { min: 0, max: 100, unit: '%' } },
+  { id: 'people', label: 'Split between (people)', type: 'number', required: true, placeholder: 'e.g. 2', validation: { min: 1, max: 50 } },
+];
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'tipAmount', label: 'Tip amount', type: 'currency' },
+  { id: 'total', label: 'Total bill', type: 'currency' },
+  { id: 'perPerson', label: 'Per person', type: 'currency' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="calculator">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      <div class="hb-field-grid">
+        {inputs.map((input) => (
+          <Field
+            id={`field-${tool.toolId}-${input.id}`}
+            name={input.id}
+            label={input.label}
+            type={CONTROL[input.type] ?? 'text'}
+            required={input.required}
+            hint={input.placeholder}
+            options={input.options}
+            min={input.validation?.min}
+            max={input.validation?.max}
+            step={input.type === 'number' ? 'any' : undefined}
+            inputMode={input.type === 'number' ? 'decimal' : undefined}
+          />
+        ))}
+      </div>
+
+      <div class="hb-form-actions">
+        <Button type="submit" variant="primary">Calculate</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Calculation results"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: tip calculator. Works on DEMO_INPUTS above only.
+   * Real tools: import logic from app/tools/<category>/<slug>/logic.ts and
+   * adapt its return value to { ok, values } keyed by ToolOutput.id.
+   * ======================================================================= */
+  function demoRun(values: ToolRunValues): ToolRunResult {
+    const bill = Number(values.bill);
+    const tipPercent = Number(values.tipPercent);
+    const people = Math.max(1, Math.round(Number(values.people)));
+    if (!Number.isFinite(bill) || !Number.isFinite(tipPercent) || bill < 0) {
+      return { ok: false, error: 'Enter a valid bill amount and tip percentage.' };
+    }
+    const tipAmount = (bill * tipPercent) / 100;
+    const total = bill + tipAmount;
+    return {
+      ok: true,
+      values: { tipAmount, total, perPerson: total / people },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? demoRun,
+    resultHeading: 'Results',
+    resultIntro: 'Calculated instantly in your browser — nothing is sent anywhere.',
+  });
+</script>
