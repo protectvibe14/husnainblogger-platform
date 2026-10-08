@@ -1,0 +1,2655 @@
+[
+ {
+  "toolId": 1,
+  "name": "Long-Tail Keyword Expander",
+  "slug": "long-tail-keyword-expander",
+  "verifiedToolType": "generator",
+  "engine": "template-expander",
+  "inputs": [
+   {
+    "name": "seedKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "2-100 chars, trimmed, non-empty"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "expansions",
+    "type": "string[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "seedKeyword length 2-100",
+   "strip HTML/URLs from seed"
+  ],
+  "edgeCases": [
+   "unicode seed (e.g. 'café recipes')",
+   "seed with trailing spaces",
+   "single-word seed"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template combinations only — NOT real search volume/difficulty data. Must be labeled 'idea seeds' in UI.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 2,
+  "name": "Search Intent Classifier",
+  "slug": "search-intent-classifier",
+  "verifiedToolType": "analyzer",
+  "engine": "rule-classifier",
+  "inputs": [
+   {
+    "name": "keyword",
+    "type": "string",
+    "required": true,
+    "validation": "1-150 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "intent",
+    "type": "string"
+   },
+   {
+    "name": "confidence",
+    "type": "number"
+   },
+   {
+    "name": "matchedSignals",
+    "type": "string[]"
+   },
+   {
+    "name": "isHeuristic",
+    "type": "boolean"
+   }
+  ],
+  "validation": [
+   "keyword non-empty",
+   "lowercase-normalize before matching"
+  ],
+  "edgeCases": [
+   "multi-intent keyword ('best cheap laptop buy')",
+   "brand + login keyword",
+   "empty string"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Heuristic word-bank classifier, NOT AI and NOT based on live SERP data. UI must carry the heuristic disclaimer.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "analyzer"
+ },
+ {
+  "toolId": 3,
+  "name": "Keyword Clustering Tool",
+  "slug": "keyword-clustering-tool",
+  "verifiedToolType": "analyzer",
+  "engine": "similarity-grouper",
+  "inputs": [
+   {
+    "name": "keywords",
+    "type": "string[]",
+    "required": true,
+    "validation": "2-500 items, each 1-150 chars"
+   },
+   {
+    "name": "similarityThreshold",
+    "type": "number",
+    "required": false,
+    "validation": "0.1-0.9, default 0.35"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "clusters",
+    "type": "object[]"
+   },
+   {
+    "name": "unclustered",
+    "type": "string[]"
+   },
+   {
+    "name": "clusterCount",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "dedup input list",
+   "threshold within range"
+  ],
+  "edgeCases": [
+   "all identical keywords",
+   "single-word vs multi-word mix",
+   "unicode keywords"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Heuristic token-overlap grouping (stemmed token Jaccard). Draft-level clustering, not semantic embeddings.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": true,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 4,
+  "name": "Question Keyword Expander",
+  "slug": "question-keyword-expander",
+  "verifiedToolType": "generator",
+  "engine": "template-expander",
+  "inputs": [
+   {
+    "name": "seedKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "2-100 chars, trimmed, non-empty"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "expansions",
+    "type": "string[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "seedKeyword length 2-100"
+  ],
+  "edgeCases": [
+   "seed already a question",
+   "unicode seed"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Question-word bank expansion (who/what/when/where/why/how/which/can/should...). Idea seeds only, no volume data.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": "near-pair:1",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 5,
+  "name": "Alphabet Soup Keyword Expander",
+  "slug": "alphabet-soup-keyword-expander",
+  "verifiedToolType": "generator",
+  "engine": "template-expander",
+  "inputs": [
+   {
+    "name": "seedKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "2-100 chars, trimmed, non-empty"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "expansions",
+    "type": "string[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "seedKeyword length 2-100"
+  ],
+  "edgeCases": [
+   "non-latin seed (a-z bank still applies as suffix letters)",
+   "very long seed"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Seed + a-z suffix expansion. Idea seeds only.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": "near-pair:1",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 6,
+  "name": "Keyword Gap Worksheet",
+  "slug": "keyword-gap-worksheet",
+  "verifiedToolType": "planner",
+  "engine": "worksheet-planner",
+  "inputs": [
+   {
+    "name": "yourKeywords",
+    "type": "string[]",
+    "required": true,
+    "validation": "1-500 items"
+   },
+   {
+    "name": "competitorKeywords",
+    "type": "string[]",
+    "required": true,
+    "validation": "1-500 items"
+   },
+   {
+    "name": "competitorLabel",
+    "type": "string",
+    "required": false,
+    "validation": "max 60 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "gapTable",
+    "type": "object[]"
+   },
+   {
+    "name": "overlapCount",
+    "type": "number"
+   },
+   {
+    "name": "worksheetCsv",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "normalize case/whitespace before compare",
+   "both lists non-empty"
+  ],
+  "edgeCases": [
+   "identical lists (zero gap)",
+   "unicode keywords"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Manual worksheet — compares user-pasted lists; no live competitor data fetching.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": true,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 7,
+  "name": "Seasonal Keyword Planner",
+  "slug": "seasonal-keyword-planner",
+  "verifiedToolType": "planner",
+  "engine": "calendar-template-planner",
+  "inputs": [
+   {
+    "name": "seedKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "2-100 chars"
+   },
+   {
+    "name": "year",
+    "type": "number",
+    "required": false,
+    "validation": "current year +/-1"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "seasonalPlan",
+    "type": "object[]"
+   },
+   {
+    "name": "eventBankVersion",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "year within valid range"
+  ],
+  "edgeCases": [
+   "niche with no seasonal events in bank",
+   "southern-hemisphere seasonality mismatch"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Built-in seasonal event bank is an EDITORIAL list (estimates, effective-dated). Cannot show live trend data — user must verify in Google Trends.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "planner"
+ },
+ {
+  "toolId": 8,
+  "name": "Local Keyword Modifier Expander",
+  "slug": "local-keyword-modifier-expander",
+  "verifiedToolType": "generator",
+  "engine": "template-expander",
+  "inputs": [
+   {
+    "name": "seedKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "2-100 chars"
+   },
+   {
+    "name": "locations",
+    "type": "string[]",
+    "required": false,
+    "validation": "1-50 place names, default built-in city list"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "expansions",
+    "type": "string[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "each location 1-60 chars"
+  ],
+  "edgeCases": [
+   "user supplies custom location list",
+   "unicode place names"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Location-modifier combinations; idea seeds only, no local search volume data.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": "near-pair:1",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 9,
+  "name": "Keyword Prioritization Scorer",
+  "slug": "keyword-prioritization-scorer",
+  "verifiedToolType": "scorer",
+  "engine": "weighted-scorer",
+  "inputs": [
+   {
+    "name": "keywords",
+    "type": "object[]",
+    "required": true,
+    "validation": "each: term + ratings relevance/volume/difficulty/commercialIntent 0-10"
+   },
+   {
+    "name": "weights",
+    "type": "object",
+    "required": false,
+    "validation": "wRelevance,wVolume,wDifficulty,wCommercial, each 0-1, default 0.25"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "rankedKeywords",
+    "type": "object[]"
+   },
+   {
+    "name": "topPick",
+    "type": "object"
+   }
+  ],
+  "validation": [
+   "ratings 0-10 inclusive",
+   "weights sum > 0",
+   "terms non-empty"
+  ],
+  "edgeCases": [
+   "all keywords score identically",
+   "weights all zero (invalid)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Transparent heuristic rubric — volume/difficulty are USER-entered (no live keyword data). Weights editable.",
+  "formulaRef": "F-A-009",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "scorer"
+ },
+ {
+  "toolId": 10,
+  "name": "Content Angle Generator",
+  "slug": "content-angle-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "topic",
+    "type": "string",
+    "required": true,
+    "validation": "2-120 chars"
+   },
+   {
+    "name": "audience",
+    "type": "string",
+    "required": false,
+    "validation": "max 80 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "angles",
+    "type": "object[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "topic length 2-120"
+  ],
+  "edgeCases": [
+   "very broad topic",
+   "unicode topic"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Angle templates (listicle/how-to/comparison/case-study/opinion...). Editorial templates, not AI.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 11,
+  "name": "SERP Snippet Preview Tool",
+  "slug": "serp-snippet-preview-tool",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "url",
+    "type": "string",
+    "required": true,
+    "validation": "valid URL"
+   },
+   {
+    "name": "description",
+    "type": "string",
+    "required": false,
+    "validation": "max 500 chars"
+   },
+   {
+    "name": "date",
+    "type": "string",
+    "required": false,
+    "validation": "display date string"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "previewHtml",
+    "type": "string"
+   },
+   {
+    "name": "titleWidthPxEstimate",
+    "type": "number"
+   },
+   {
+    "name": "truncationWarning",
+    "type": "boolean"
+   }
+  ],
+  "validation": [
+   "URL parseable",
+   "title non-empty"
+  ],
+  "edgeCases": [
+   "emoji in title",
+   "very long URL",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "STATIC mockup preview only — not live SERP data. Pixel-width truncation is an estimate of Google rendering.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 12,
+  "name": "Content Scannability Checker",
+  "slug": "content-scannability-checker",
+  "verifiedToolType": "checker",
+  "engine": "rule-analyzer",
+  "inputs": [
+   {
+    "name": "content",
+    "type": "string",
+    "required": true,
+    "validation": "non-empty, max 200000 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "score",
+    "type": "number"
+   },
+   {
+    "name": "grade",
+    "type": "string"
+   },
+   {
+    "name": "checks",
+    "type": "object[]"
+   },
+   {
+    "name": "recommendations",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "content non-empty",
+   "max 200000 chars"
+  ],
+  "edgeCases": [
+   "single huge paragraph",
+   "content with no headings",
+   "markdown vs plain text input"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Deterministic readability/structure rubric (0-100). Our own defined heuristic, fully transparent.",
+  "formulaRef": "F-A-012",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "checker"
+ },
+ {
+  "toolId": 13,
+  "name": "Anchor Text Diversity Analyzer",
+  "slug": "anchor-text-diversity-analyzer",
+  "verifiedToolType": "analyzer",
+  "engine": "distribution-analyzer",
+  "inputs": [
+   {
+    "name": "anchors",
+    "type": "object[]",
+    "required": true,
+    "validation": "each: {text, url}, 1-2000 items"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "exactMatchRatio",
+    "type": "number"
+   },
+   {
+    "name": "entropy",
+    "type": "number"
+   },
+   {
+    "name": "distribution",
+    "type": "object[]"
+   },
+   {
+    "name": "riskFlags",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "anchor text non-empty",
+   "URL valid"
+  ],
+  "edgeCases": [
+   "all anchors identical",
+   "single anchor",
+   "unicode anchor text"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Ratios + Shannon entropy over normalized anchor groups. Thresholds are editorial heuristics, not Google-published.",
+  "formulaRef": "F-A-013",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "analyzer"
+ },
+ {
+  "toolId": 14,
+  "name": "Transition Words Checker",
+  "slug": "transition-words-checker",
+  "verifiedToolType": "checker",
+  "engine": "word-list-analyzer",
+  "inputs": [
+   {
+    "name": "content",
+    "type": "string",
+    "required": true,
+    "validation": "non-empty, max 200000 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "transitionCount",
+    "type": "number"
+   },
+   {
+    "name": "density",
+    "type": "number"
+   },
+   {
+    "name": "matchedWords",
+    "type": "object[]"
+   },
+   {
+    "name": "verdict",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "content non-empty"
+  ],
+  "edgeCases": [
+   "content in non-English language (bank is English)",
+   "very short content"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "English transition-word bank (~100 phrases). Density guidance is editorial.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "checker"
+ },
+ {
+  "toolId": 15,
+  "name": "Sentence Length Analyzer",
+  "slug": "sentence-length-analyzer",
+  "verifiedToolType": "analyzer",
+  "engine": "rule-analyzer",
+  "inputs": [
+   {
+    "name": "content",
+    "type": "string",
+    "required": true,
+    "validation": "non-empty, max 200000 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "avgSentenceLength",
+    "type": "number"
+   },
+   {
+    "name": "fleschReadingEase",
+    "type": "number"
+   },
+   {
+    "name": "fleschKincaidGrade",
+    "type": "number"
+   },
+   {
+    "name": "gunningFog",
+    "type": "number"
+   },
+   {
+    "name": "ari",
+    "type": "number"
+   },
+   {
+    "name": "longSentences",
+    "type": "object[]"
+   }
+  ],
+  "validation": [
+   "at least 1 sentence detected"
+  ],
+  "edgeCases": [
+   "single-sentence content",
+   "no terminal punctuation",
+   "heavy abbreviation text (e.g. 'e.g.')"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Standard published readability formulas — deterministic given text.",
+  "formulaRef": "F-A-015",
+  "platformRulesRef": [
+   "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "analyzer"
+ },
+ {
+  "toolId": 16,
+  "name": "Internal Link Opportunity Finder",
+  "slug": "internal-link-opportunity-finder",
+  "verifiedToolType": "generator",
+  "engine": "phrase-matcher",
+  "inputs": [
+   {
+    "name": "content",
+    "type": "string",
+    "required": true,
+    "validation": "article text, non-empty"
+   },
+   {
+    "name": "targetPages",
+    "type": "object[]",
+    "required": true,
+    "validation": "each: {url, keywords[]}, 1-200 items"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "opportunities",
+    "type": "object[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "target URLs valid",
+   "keywords non-empty"
+  ],
+  "edgeCases": [
+   "content already links the URL",
+   "keyword appears inside existing link text",
+   "unicode keywords"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Works on pasted content + user-supplied page list. Cannot crawl a live site.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 17,
+  "name": "Image SEO Filename Renamer",
+  "slug": "image-seo-filename-renamer",
+  "verifiedToolType": "generator",
+  "engine": "slug-normalizer",
+  "inputs": [
+   {
+    "name": "originalName",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "keywords",
+    "type": "string",
+    "required": false,
+    "validation": "descriptive keywords, max 120 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "suggestedFilename",
+    "type": "string"
+   },
+   {
+    "name": "downloadFilename",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "strip path components",
+   "lowercase, hyphens, alnum only"
+  ],
+  "edgeCases": [
+   "unicode filename (transliterate)",
+   "filename with no extension",
+   "multiple dots"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Suggests + offers renamed file for download (user supplies file). Pure string transform.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 18,
+  "name": "Slug Stop-Word Remover",
+  "slug": "slug-stop-word-remover",
+  "verifiedToolType": "generator",
+  "engine": "stopword-filter",
+  "inputs": [
+   {
+    "name": "titleOrSlug",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "keepWords",
+    "type": "string[]",
+    "required": false,
+    "validation": "protected words"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "cleanSlug",
+    "type": "string"
+   },
+   {
+    "name": "removedWords",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "input non-empty"
+  ],
+  "edgeCases": [
+   "title that is all stop-words",
+   "unicode input"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "English stop-word list (~150 words). Keeps protected words.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 19,
+  "name": "Content Similarity Checker",
+  "slug": "content-similarity-checker",
+  "verifiedToolType": "checker",
+  "engine": "similarity-scorer",
+  "inputs": [
+   {
+    "name": "textA",
+    "type": "string",
+    "required": true,
+    "validation": "non-empty, max 200000 chars"
+   },
+   {
+    "name": "textB",
+    "type": "string",
+    "required": true,
+    "validation": "non-empty, max 200000 chars"
+   },
+   {
+    "name": "shingleSize",
+    "type": "number",
+    "required": false,
+    "validation": "2-5, default 3"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jaccardSimilarity",
+    "type": "number"
+   },
+   {
+    "name": "similarityPercent",
+    "type": "number"
+   },
+   {
+    "name": "verdict",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "both texts non-empty",
+   "shingleSize 2-5"
+  ],
+  "edgeCases": [
+   "identical texts (100%)",
+   "one text empty (invalid)",
+   "texts sharing boilerplate only"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Jaccard over word shingles — deterministic. Not a plagiarism verdict (no web index).",
+  "formulaRef": "F-A-019",
+  "platformRulesRef": [
+   "https://en.wikipedia.org/wiki/Jaccard_index"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "checker"
+ },
+ {
+  "toolId": 20,
+  "name": "Heading Structure Analyzer",
+  "slug": "heading-structure-analyzer",
+  "verifiedToolType": "analyzer",
+  "engine": "rule-analyzer",
+  "inputs": [
+   {
+    "name": "html",
+    "type": "string",
+    "required": true,
+    "validation": "HTML containing headings"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "issues",
+    "type": "object[]"
+   },
+   {
+    "name": "outline",
+    "type": "object[]"
+   },
+   {
+    "name": "score",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "at least one heading tag present"
+  ],
+  "edgeCases": [
+   "multiple H1s",
+   "skipped levels (H1->H3)",
+   "no H1"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Rule checks: single H1, no skipped levels, keyword presence optional.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "analyzer"
+ },
+ {
+  "toolId": 21,
+  "name": "FAQ Schema Generator",
+  "slug": "faq-schema-generator",
+  "verifiedToolType": "generator",
+  "engine": "schema-builder",
+  "inputs": [
+   {
+    "name": "pairs",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-50 {question, answer} pairs"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jsonLd",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   },
+   {
+    "name": "pairCount",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "question 1-300 chars",
+   "answer 1-5000 chars",
+   "min 1 pair"
+  ],
+  "edgeCases": [
+   "duplicate questions",
+   "HTML in answers (kept as text)",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds valid schema.org FAQPage JSON-LD. Reference tool — logic.ts written by MA2.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://schema.org/FAQPage"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 22,
+  "name": "Article Schema Generator",
+  "slug": "article-schema-generator",
+  "verifiedToolType": "generator",
+  "engine": "schema-builder",
+  "inputs": [
+   {
+    "name": "headline",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "author",
+    "type": "string",
+    "required": true,
+    "validation": "1-100 chars"
+   },
+   {
+    "name": "datePublished",
+    "type": "string",
+    "required": true,
+    "validation": "YYYY-MM-DD"
+   },
+   {
+    "name": "image",
+    "type": "string",
+    "required": false,
+    "validation": "valid URL"
+   },
+   {
+    "name": "description",
+    "type": "string",
+    "required": false,
+    "validation": "max 500 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jsonLd",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "date valid YYYY-MM-DD",
+   "headline non-empty"
+  ],
+  "edgeCases": [
+   "future publish date (warning)",
+   "invalid image URL"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds schema.org Article/NewsArticle/BlogPosting JSON-LD.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://schema.org/Article"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 23,
+  "name": "How-To Schema Generator",
+  "slug": "how-to-schema-generator",
+  "verifiedToolType": "generator",
+  "engine": "schema-builder",
+  "inputs": [
+   {
+    "name": "name",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "steps",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-30 {name, text} steps"
+   },
+   {
+    "name": "totalTime",
+    "type": "string",
+    "required": false,
+    "validation": "ISO 8601 duration, e.g. PT30M"
+   },
+   {
+    "name": "estimatedCost",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jsonLd",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "min 1 step",
+   "step name non-empty",
+   "totalTime valid ISO 8601 if given"
+  ],
+  "edgeCases": [
+   "single-step how-to",
+   "unicode steps"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds schema.org HowTo JSON-LD with HowToStep list.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://schema.org/HowTo"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 24,
+  "name": "Breadcrumb Schema Generator",
+  "slug": "breadcrumb-schema-generator",
+  "verifiedToolType": "generator",
+  "engine": "schema-builder",
+  "inputs": [
+   {
+    "name": "crumbs",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-10 {name, url}"
+   },
+   {
+    "name": "baseUrl",
+    "type": "string",
+    "required": false,
+    "validation": "valid URL for relative resolution"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jsonLd",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "each crumb name non-empty",
+   "URLs valid/absolute"
+  ],
+  "edgeCases": [
+   "single crumb",
+   "relative URLs without baseUrl"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds schema.org BreadcrumbList JSON-LD with positions.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://schema.org/BreadcrumbList"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 25,
+  "name": "Review Schema Generator",
+  "slug": "review-schema-generator",
+  "verifiedToolType": "generator",
+  "engine": "schema-builder",
+  "inputs": [
+   {
+    "name": "itemName",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "author",
+    "type": "string",
+    "required": true,
+    "validation": "1-100 chars"
+   },
+   {
+    "name": "ratingValue",
+    "type": "number",
+    "required": true,
+    "validation": "0-5"
+   },
+   {
+    "name": "bestRating",
+    "type": "number",
+    "required": false,
+    "validation": "default 5"
+   },
+   {
+    "name": "reviewBody",
+    "type": "string",
+    "required": false,
+    "validation": "max 5000 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "jsonLd",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "ratingValue 0-bestRating",
+   "itemName + author required"
+  ],
+  "edgeCases": [
+   "rating 0 (allowed, must render)",
+   "missing review body (warning)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds schema.org Review JSON-LD. User attests the review is genuine — no fake-review facilitation.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://schema.org/Review"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 26,
+  "name": "Open Graph Tag Generator",
+  "slug": "open-graph-tag-generator",
+  "verifiedToolType": "generator",
+  "engine": "tag-builder",
+  "inputs": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "description",
+    "type": "string",
+    "required": true,
+    "validation": "1-300 chars"
+   },
+   {
+    "name": "url",
+    "type": "string",
+    "required": true,
+    "validation": "valid absolute URL"
+   },
+   {
+    "name": "image",
+    "type": "string",
+    "required": true,
+    "validation": "valid absolute URL"
+   },
+   {
+    "name": "type",
+    "type": "string",
+    "required": false,
+    "validation": "website|article, default website"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "tagsHtml",
+    "type": "string"
+   },
+   {
+    "name": "warnings",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "URLs absolute",
+   "title/description non-empty"
+  ],
+  "edgeCases": [
+   "image URL not an image extension (warning)",
+   "unicode in title"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Generates og:* meta tags per ogp.me spec.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://ogp.me"
+  ],
+  "possibleDuplicateOf": "near-pair:27",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 27,
+  "name": "Twitter Card Generator",
+  "slug": "twitter-card-generator",
+  "verifiedToolType": "generator",
+  "engine": "tag-builder",
+  "inputs": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true,
+    "validation": "1-200 chars"
+   },
+   {
+    "name": "description",
+    "type": "string",
+    "required": true,
+    "validation": "1-300 chars"
+   },
+   {
+    "name": "image",
+    "type": "string",
+    "required": true,
+    "validation": "valid absolute URL"
+   },
+   {
+    "name": "card",
+    "type": "string",
+    "required": false,
+    "validation": "summary|summary_large_image, default summary_large_image"
+   },
+   {
+    "name": "site",
+    "type": "string",
+    "required": false,
+    "validation": "@handle"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "tagsHtml",
+    "type": "string"
+   },
+   {
+    "name": "warnings",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "URLs absolute",
+   "site handle starts with @ if given"
+  ],
+  "edgeCases": [
+   "missing site handle (warning)",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Generates twitter:* meta tags. Distinct tag set from OG — keep separate.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards"
+  ],
+  "possibleDuplicateOf": "near-pair:26",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 28,
+  "name": "Robots.txt Generator",
+  "slug": "robots-txt-generator",
+  "verifiedToolType": "generator",
+  "engine": "config-template-generator",
+  "inputs": [
+   {
+    "name": "rules",
+    "type": "object[]",
+    "required": true,
+    "validation": "each: {userAgent, allow[], disallow[]}"
+   },
+   {
+    "name": "sitemapUrl",
+    "type": "string",
+    "required": false,
+    "validation": "valid absolute URL"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "robotsTxt",
+    "type": "string"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "at least one rule block",
+   "paths start with /"
+  ],
+  "edgeCases": [
+   "empty disallow (allow all)",
+   "unicode paths (encoded)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "RFC 9309-compliant robots.txt assembly.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://www.rfc-editor.org/rfc/rfc9309.html"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 29,
+  "name": "XML Sitemap Generator",
+  "slug": "xml-sitemap-generator",
+  "verifiedToolType": "generator",
+  "engine": "xml-builder",
+  "inputs": [
+   {
+    "name": "urls",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-50000 {loc, lastmod?, changefreq?, priority?}"
+   },
+   {
+    "name": "baseUrl",
+    "type": "string",
+    "required": false,
+    "validation": "valid absolute URL"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "sitemapXml",
+    "type": "string"
+   },
+   {
+    "name": "urlCount",
+    "type": "number"
+   },
+   {
+    "name": "errors",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "loc valid absolute URL",
+   "priority 0.0-1.0",
+   "lastmod YYYY-MM-DD"
+  ],
+  "edgeCases": [
+   "relative URLs without baseUrl",
+   "duplicate URLs (deduped)",
+   "50k URL limit"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Assembles sitemaps.org XML from a PASTED url list. Cannot crawl a live site client-side — honest subset only.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://www.sitemaps.org/protocol.html"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 30,
+  "name": "HTML Sitemap Generator",
+  "slug": "html-sitemap-generator",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "pages",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-2000 {title, url, section?}"
+   },
+   {
+    "name": "siteName",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "sitemapHtml",
+    "type": "string"
+   },
+   {
+    "name": "pageCount",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "URLs valid",
+   "titles non-empty"
+  ],
+  "edgeCases": [
+   "unicode titles",
+   "duplicate URLs"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Renders grouped HTML sitemap from pasted page list.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 31,
+  "name": "Content Brief Generator",
+  "slug": "content-brief-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "topic",
+    "type": "string",
+    "required": true,
+    "validation": "2-150 chars"
+   },
+   {
+    "name": "targetKeyword",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "wordCount",
+    "type": "number",
+    "required": false,
+    "validation": "300-10000, default 1500"
+   },
+   {
+    "name": "audience",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "briefMarkdown",
+    "type": "string"
+   },
+   {
+    "name": "sections",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "topic non-empty",
+   "wordCount in range"
+  ],
+  "edgeCases": [
+   "unicode topic"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Editorial brief template (goal, audience, outline shell, SEO fields). Not AI-written content.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 32,
+  "name": "Blog Outline Generator",
+  "slug": "blog-outline-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true,
+    "validation": "2-150 chars"
+   },
+   {
+    "name": "targetKeyword",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "depth",
+    "type": "string",
+    "required": false,
+    "validation": "basic|standard|deep, default standard"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "outlineMarkdown",
+    "type": "string"
+   },
+   {
+    "name": "headingCount",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "title non-empty"
+  ],
+  "edgeCases": [
+   "unicode title"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "INVENTORY SAID 'tracker' — verified as generator. Outline structure templates by depth.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": true,
+  "inventoryToolType": "tracker"
+ },
+ {
+  "toolId": 33,
+  "name": "Pillar-Cluster Content Planner",
+  "slug": "pillar-cluster-content-planner",
+  "verifiedToolType": "planner",
+  "engine": "topic-map-planner",
+  "inputs": [
+   {
+    "name": "pillarTopic",
+    "type": "string",
+    "required": true,
+    "validation": "2-120 chars"
+   },
+   {
+    "name": "clusterCount",
+    "type": "number",
+    "required": false,
+    "validation": "3-20, default 8"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "plan",
+    "type": "object"
+   },
+   {
+    "name": "clusterTopics",
+    "type": "string[]"
+   }
+  ],
+  "validation": [
+   "pillarTopic non-empty",
+   "clusterCount 3-20"
+  ],
+  "edgeCases": [
+   "very niche pillar (fewer sensible clusters)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Hub-and-spoke topic map from templates + keyword-pattern expansion. Planning aid, not data.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "planner"
+ },
+ {
+  "toolId": 34,
+  "name": "Editorial Calendar Generator",
+  "slug": "editorial-calendar-generator",
+  "verifiedToolType": "generator",
+  "engine": "calendar-planner",
+  "inputs": [
+   {
+    "name": "niche",
+    "type": "string",
+    "required": true,
+    "validation": "2-80 chars"
+   },
+   {
+    "name": "postsPerWeek",
+    "type": "number",
+    "required": true,
+    "validation": "1-7"
+   },
+   {
+    "name": "startDate",
+    "type": "string",
+    "required": true,
+    "validation": "YYYY-MM-DD"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "calendar",
+    "type": "object[]"
+   },
+   {
+    "name": "csv",
+    "type": "string"
+   },
+   {
+    "name": "totalPosts",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "postsPerWeek 1-7",
+   "startDate valid date"
+  ],
+  "edgeCases": [
+   "postsPerWeek 7 (daily)",
+   "invalid date string",
+   "unicode niche"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Pure date logic: 30-day calendar with rotating content types. Reference tool — logic.ts written by MA2.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": "near-pair:35",
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 35,
+  "name": "30-Day Blogging Challenge Generator",
+  "slug": "30-day-blogging-challenge-generator",
+  "verifiedToolType": "generator",
+  "engine": "calendar-planner",
+  "inputs": [
+   {
+    "name": "niche",
+    "type": "string",
+    "required": true,
+    "validation": "2-80 chars"
+   },
+   {
+    "name": "startDate",
+    "type": "string",
+    "required": false,
+    "validation": "YYYY-MM-DD, default today"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "challenge",
+    "type": "object[]"
+   },
+   {
+    "name": "checklistMarkdown",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "niche non-empty",
+   "startDate valid if given"
+  ],
+  "edgeCases": [
+   "unicode niche"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "INVENTORY SAID 'tracker' — verified as generator. Fixed 30-day daily-prompt challenge; near-duplicate of #34 with challenge framing.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": "near-pair:34",
+  "isInteractive": true,
+  "typeCorrected": true,
+  "inventoryToolType": "tracker"
+ },
+ {
+  "toolId": 36,
+  "name": "Blog Series Planner",
+  "slug": "blog-series-planner",
+  "verifiedToolType": "planner",
+  "engine": "topic-map-planner",
+  "inputs": [
+   {
+    "name": "seriesTopic",
+    "type": "string",
+    "required": true,
+    "validation": "2-120 chars"
+   },
+   {
+    "name": "partCount",
+    "type": "number",
+    "required": true,
+    "validation": "2-12"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "parts",
+    "type": "object[]"
+   },
+   {
+    "name": "seriesTitle",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "partCount 2-12"
+  ],
+  "edgeCases": [
+   "partCount 12 (long series)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Sequential multi-part series plan with per-part angle templates.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "planner"
+ },
+ {
+  "toolId": 37,
+  "name": "Content Audit Decision Tool",
+  "slug": "content-audit-decision-tool",
+  "verifiedToolType": "scorer",
+  "engine": "weighted-scorer",
+  "inputs": [
+   {
+    "name": "pages",
+    "type": "object[]",
+    "required": true,
+    "validation": "each: {url, trafficTrend 0-10, conversions 0-10, quality 0-10, cannibalizationRisk 0-10}"
+   },
+   {
+    "name": "weights",
+    "type": "object",
+    "required": false,
+    "validation": "defaults equal"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "decisions",
+    "type": "object[]"
+   },
+   {
+    "name": "summary",
+    "type": "object"
+   }
+  ],
+  "validation": [
+   "ratings 0-10",
+   "URL valid"
+  ],
+  "edgeCases": [
+   "all pages score in one band",
+   "unicode URLs"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Keep/Update/Delete rubric — transparent heuristic; traffic inputs are user-entered (no GA connection).",
+  "formulaRef": "F-A-037",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "scorer"
+ },
+ {
+  "toolId": 38,
+  "name": "E-E-A-T Checklist Generator",
+  "slug": "e-e-a-t-checklist-generator",
+  "verifiedToolType": "generator",
+  "engine": "checklist-generator",
+  "inputs": [
+   {
+    "name": "contentType",
+    "type": "string",
+    "required": false,
+    "validation": "article|review|guide|homepage, default article"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "checklist",
+    "type": "object[]"
+   },
+   {
+    "name": "checklistMarkdown",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "contentType in allowed set"
+  ],
+  "edgeCases": [
+   "unknown contentType (falls back to article)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static E-E-A-T checklist from Google's Quality Rater Guidelines concepts. Guidance, not a score.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 39,
+  "name": "Pre-Publish SEO Checklist",
+  "slug": "pre-publish-seo-checklist",
+  "verifiedToolType": "generator",
+  "engine": "checklist-generator",
+  "inputs": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": false,
+    "validation": "max 200 chars"
+   },
+   {
+    "name": "metaDescription",
+    "type": "string",
+    "required": false,
+    "validation": "max 500 chars"
+   },
+   {
+    "name": "targetKeyword",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "checklist",
+    "type": "object[]"
+   },
+   {
+    "name": "passCount",
+    "type": "number"
+   },
+   {
+    "name": "failCount",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "optional fields validated only if given"
+  ],
+  "edgeCases": [
+   "all fields empty (generic checklist)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Per-post publish gate checklist; auto-checks only the fields the user fills.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 40,
+  "name": "Idea Bank",
+  "slug": "idea-bank",
+  "verifiedToolType": "tracker",
+  "engine": "collection-manager",
+  "inputs": [
+   {
+    "name": "action",
+    "type": "string",
+    "required": true,
+    "validation": "add|list|update|delete|export"
+   },
+   {
+    "name": "idea",
+    "type": "object",
+    "required": false,
+    "validation": "{title, tags[], status, notes}"
+   },
+   {
+    "name": "filter",
+    "type": "object",
+    "required": false,
+    "validation": "{tag, status, query}"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "ideas",
+    "type": "object[]"
+   },
+   {
+    "name": "count",
+    "type": "number"
+   },
+   {
+    "name": "exportCsv",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "title 1-200 chars on add",
+   "status in idea|draft|published|archived"
+  ],
+  "edgeCases": [
+   "duplicate titles (allowed, flagged)",
+   "very long tag lists"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "INVENTORY SAID 'generator' — verified as tracker (idea collection manager, localStorage persistence).",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": true,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 41,
+  "name": "Freelance Writing Rate Calculator",
+  "slug": "freelance-writing-rate-calculator",
+  "verifiedToolType": "calculator",
+  "engine": "formula-calculator",
+  "inputs": [
+   {
+    "name": "hourlyRate",
+    "type": "number",
+    "required": true,
+    "validation": "> 0"
+   },
+   {
+    "name": "wordsPerHour",
+    "type": "number",
+    "required": true,
+    "validation": "> 0"
+   },
+   {
+    "name": "projectWords",
+    "type": "number",
+    "required": false,
+    "validation": "> 0"
+   },
+   {
+    "name": "currency",
+    "type": "string",
+    "required": false,
+    "validation": "3-letter code, default USD"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "perWordRate",
+    "type": "number"
+   },
+   {
+    "name": "perProjectQuote",
+    "type": "number"
+   },
+   {
+    "name": "per1000Words",
+    "type": "number"
+   },
+   {
+    "name": "breakdown",
+    "type": "object"
+   }
+  ],
+  "validation": [
+   "rates > 0",
+   "currency 3 letters"
+  ],
+  "edgeCases": [
+   "wordsPerHour unrealistically high (warning > 2000)",
+   "zero inputs (invalid)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Deterministic rate math. Currency is a label only — no FX conversion (no rates source).",
+  "formulaRef": "F-A-041",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "calculator"
+ },
+ {
+  "toolId": 42,
+  "name": "Comparison Table HTML Generator",
+  "slug": "comparison-table-html-generator",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "headers",
+    "type": "string[]",
+    "required": true,
+    "validation": "2-6 headers"
+   },
+   {
+    "name": "rows",
+    "type": "object[]",
+    "required": true,
+    "validation": "1-20 rows of cell values"
+   },
+   {
+    "name": "highlightColumn",
+    "type": "number",
+    "required": false,
+    "validation": "0-based index"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "tableHtml",
+    "type": "string"
+   },
+   {
+    "name": "tableCss",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "headers 2-6",
+   "rows non-empty",
+   "cell counts match headers"
+  ],
+  "edgeCases": [
+   "unicode cell content",
+   "HTML in cells (escaped)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Responsive comparison table HTML+CSS. Cell HTML is escaped to prevent injection.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 43,
+  "name": "Pros & Cons Box Generator",
+  "slug": "pros-cons-box-generator",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "pros",
+    "type": "string[]",
+    "required": true,
+    "validation": "1-10 items"
+   },
+   {
+    "name": "cons",
+    "type": "string[]",
+    "required": true,
+    "validation": "1-10 items"
+   },
+   {
+    "name": "title",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "boxHtml",
+    "type": "string"
+   },
+   {
+    "name": "boxCss",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "min 1 pro and 1 con",
+   "items max 200 chars each"
+  ],
+  "edgeCases": [
+   "HTML in items (escaped)",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Pros/cons box HTML+CSS.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 44,
+  "name": "Star Rating Box Generator",
+  "slug": "star-rating-box-generator",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "rating",
+    "type": "number",
+    "required": true,
+    "validation": "0-5"
+   },
+   {
+    "name": "title",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "reviewCount",
+    "type": "number",
+    "required": false,
+    "validation": ">= 0"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "boxHtml",
+    "type": "string"
+   },
+   {
+    "name": "boxCss",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "rating 0-5",
+   "reviewCount >= 0"
+  ],
+  "edgeCases": [
+   "fractional rating (renders half stars)",
+   "rating 0"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "CSS star-rating box. Visual only — pair with #25 Review Schema for structured data.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 45,
+  "name": "Click-to-Tweet Box Generator",
+  "slug": "click-to-tweet-box-generator",
+  "verifiedToolType": "generator",
+  "engine": "markup-renderer",
+  "inputs": [
+   {
+    "name": "tweetText",
+    "type": "string",
+    "required": true,
+    "validation": "1-280 chars"
+   },
+   {
+    "name": "via",
+    "type": "string",
+    "required": false,
+    "validation": "@handle"
+   },
+   {
+    "name": "url",
+    "type": "string",
+    "required": false,
+    "validation": "valid URL to share"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "boxHtml",
+    "type": "string"
+   },
+   {
+    "name": "intentUrl",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "tweetText 1-280 chars",
+   "via starts with @ if given",
+   "URL valid if given"
+  ],
+  "edgeCases": [
+   "tweetText over 280 (invalid)",
+   "unicode/emoji in text (encoded)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Builds twitter.com/intent/tweet URL + styled box. URL building only — no posting (no API).",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 46,
+  "name": "UTM Link Builder",
+  "slug": "utm-link-builder",
+  "verifiedToolType": "builder",
+  "engine": "url-builder",
+  "inputs": [
+   {
+    "name": "baseUrl",
+    "type": "string",
+    "required": true,
+    "validation": "valid absolute URL"
+   },
+   {
+    "name": "utmSource",
+    "type": "string",
+    "required": true,
+    "validation": "1-100 chars"
+   },
+   {
+    "name": "utmMedium",
+    "type": "string",
+    "required": true,
+    "validation": "1-100 chars"
+   },
+   {
+    "name": "utmCampaign",
+    "type": "string",
+    "required": false,
+    "validation": "1-100 chars, recommended"
+   },
+   {
+    "name": "utmTerm",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "utmContent",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "taggedUrl",
+    "type": "string"
+   },
+   {
+    "name": "warnings",
+    "type": "string[]"
+   },
+   {
+    "name": "parsedParams",
+    "type": "object"
+   }
+  ],
+  "validation": [
+   "baseUrl parseable absolute URL",
+   "source/medium non-empty",
+   "values RFC3986-encoded"
+  ],
+  "edgeCases": [
+   "base URL already has query params",
+   "base URL already has utm_* (warn, overwrite)",
+   "unicode values (encoded)",
+   "invalid URL (error)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Deterministic URL assembly per GA UTM spec. Reference tool — logic.ts written by MA2.",
+  "formulaRef": "F-A-046",
+  "platformRulesRef": [
+   "https://support.google.com/analytics/answer/1033867"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "builder"
+ },
+ {
+  "toolId": 47,
+  "name": "Affiliate Disclosure Generator",
+  "slug": "affiliate-disclosure-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "placement",
+    "type": "string",
+    "required": true,
+    "validation": "top|inline|bottom"
+   },
+   {
+    "name": "programNames",
+    "type": "string[]",
+    "required": false,
+    "validation": "1-10 names"
+   },
+   {
+    "name": "tone",
+    "type": "string",
+    "required": false,
+    "validation": "formal|casual, default formal"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "disclosureText",
+    "type": "string"
+   },
+   {
+    "name": "disclosureHtml",
+    "type": "string"
+   },
+   {
+    "name": "legalNotice",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "placement in allowed set"
+  ],
+  "edgeCases": [
+   "no program names (generic disclosure)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Disclosure TEXT TEMPLATES only — NOT legal advice. UI must show FTC notice: disclosure must be clear and conspicuous.",
+  "formulaRef": null,
+  "platformRulesRef": [
+   "https://www.ftc.gov/legal-library/browse/federal-trade-commission-ftc-endorsement-guides"
+  ],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 48,
+  "name": "Meta Description Generator",
+  "slug": "meta-description-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "topic",
+    "type": "string",
+    "required": true,
+    "validation": "2-200 chars"
+   },
+   {
+    "name": "targetKeyword",
+    "type": "string",
+    "required": false,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "draft",
+    "type": "string",
+    "required": false,
+    "validation": "user's draft to score, max 500 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "suggestions",
+    "type": "string[]"
+   },
+   {
+    "name": "lengthAnalysis",
+    "type": "object"
+   },
+   {
+    "name": "keywordPresent",
+    "type": "boolean"
+   }
+  ],
+  "validation": [
+   "draft max 500 chars"
+  ],
+  "edgeCases": [
+   "unicode draft",
+   "draft with keyword missing (flagged)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template suggestions + length/keyword checks. Cannot guarantee Google shows it (Google rewrites snippets).",
+  "formulaRef": "F-A-048",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 49,
+  "name": "SEO Title Tag Generator",
+  "slug": "seo-title-tag-generator",
+  "verifiedToolType": "generator",
+  "engine": "template-generator",
+  "inputs": [
+   {
+    "name": "topic",
+    "type": "string",
+    "required": true,
+    "validation": "2-200 chars"
+   },
+   {
+    "name": "targetKeyword",
+    "type": "string",
+    "required": true,
+    "validation": "max 100 chars"
+   },
+   {
+    "name": "brand",
+    "type": "string",
+    "required": false,
+    "validation": "max 40 chars"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "titles",
+    "type": "string[]"
+   },
+   {
+    "name": "lengthAnalysis",
+    "type": "object"
+   },
+   {
+    "name": "pixelWidthEstimate",
+    "type": "number"
+   }
+  ],
+  "validation": [
+   "targetKeyword non-empty"
+  ],
+  "edgeCases": [
+   "title exceeding 60 chars (flagged)",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Title templates + length/pixel checks. Pixel width is an estimate of Google rendering.",
+  "formulaRef": "F-A-049",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "generator"
+ },
+ {
+  "toolId": 50,
+  "name": "Topical Authority Map Builder",
+  "slug": "topical-authority-map-builder",
+  "verifiedToolType": "builder",
+  "engine": "topic-map-planner",
+  "inputs": [
+   {
+    "name": "coreTopic",
+    "type": "string",
+    "required": true,
+    "validation": "2-120 chars"
+   },
+   {
+    "name": "subtopics",
+    "type": "string[]",
+    "required": false,
+    "validation": "1-30 user subtopics"
+   },
+   {
+    "name": "depth",
+    "type": "number",
+    "required": false,
+    "validation": "1-3, default 2"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "map",
+    "type": "object"
+   },
+   {
+    "name": "coverageGaps",
+    "type": "string[]"
+   },
+   {
+    "name": "mapMarkdown",
+    "type": "string"
+   }
+  ],
+  "validation": [
+   "coreTopic non-empty",
+   "depth 1-3"
+  ],
+  "edgeCases": [
+   "no subtopics given (template-generated suggestions)",
+   "unicode"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Topic-coverage map from templates. Planning aid — coverage gaps are heuristic, not SERP-derived.",
+  "formulaRef": null,
+  "platformRulesRef": [],
+  "possibleDuplicateOf": null,
+  "isInteractive": true,
+  "typeCorrected": false,
+  "inventoryToolType": "builder"
+ }
+]
