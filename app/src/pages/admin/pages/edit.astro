@@ -1,0 +1,144 @@
+---
+/**
+ * pages/admin/pages/edit.astro — edit a content-managed static page (?page=slug).
+ * Owner: Admin.
+ */
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+
+const TITLES: Record<string, string> = {
+  "privacy-policy": "Privacy Policy",
+  "terms-and-conditions": "Terms and Conditions",
+  "disclaimer": "Disclaimer",
+  "cookies-policy": "Cookies Policy",
+};
+---
+
+<AdminLayout title="Edit Page" section="pages">
+  <p class="admin-loading" id="page-loading">Loading…</p>
+  <div id="page-wrap" hidden>
+    <h2 class="admin-page-title" id="page-title"></h2>
+    <form id="page-form" class="admin-form">
+      <label class="admin-field">
+        <span>Content (HTML)</span>
+        <textarea id="p-body" rows="24" required></textarea>
+      </label>
+      <div class="admin-form__actions">
+        <button type="submit" class="admin-btn-gold" id="page-save">Save page</button>
+        <a href="/admin/pages/" class="admin-btn-ghost">Cancel</a>
+        <span class="admin-form__status" id="page-status"></span>
+      </div>
+      <p class="admin-error" id="page-error" hidden></p>
+    </form>
+  </div>
+  <p class="admin-error" id="load-error" hidden></p>
+
+  <script>
+    import { readFile, writeFile } from "../../../lib/admin-github";
+
+    const TITLES: Record<string, string> = {
+      "privacy-policy": "Privacy Policy",
+      "terms-and-conditions": "Terms and Conditions",
+      "disclaimer": "Disclaimer",
+      "cookies-policy": "Cookies Policy",
+    };
+
+    const slug = new URLSearchParams(location.search).get("page");
+    const path = slug ? `data/pages/${slug}.html` : "";
+    let sha: string | null = null;
+
+    const loading = document.getElementById("page-loading")!;
+    const wrap = document.getElementById("page-wrap")!;
+    const loadErr = document.getElementById("load-error")!;
+    const body = document.getElementById("p-body") as HTMLTextAreaElement;
+
+    async function init() {
+      if (!slug || !TITLES[slug]) {
+        loadErr.textContent = "Unknown page.";
+        loadErr.hidden = false;
+        loading.hidden = true;
+        return;
+      }
+      (document.getElementById("page-title") as HTMLElement).textContent = TITLES[slug];
+      try {
+        const { content, sha: s } = await readFile(path);
+        sha = s;
+        body.value = content.trim();
+        loading.hidden = true;
+        wrap.hidden = false;
+      } catch (ex: any) {
+        loadErr.textContent = "Could not load page: " + (ex.message ?? ex);
+        loadErr.hidden = false;
+        loading.hidden = true;
+      }
+    }
+
+    document.getElementById("page-form")?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const err = document.getElementById("page-error") as HTMLElement;
+      const status = document.getElementById("page-status") as HTMLElement;
+      const btn = document.getElementById("page-save") as HTMLButtonElement;
+      err.hidden = true;
+      btn.disabled = true;
+      status.textContent = "Saving…";
+      try {
+        await writeFile(path, body.value.trim() + "\n", `Admin: edit page "${slug}"`, sha);
+        const { sha: s } = await readFile(path);
+        sha = s;
+        status.textContent = "Saved! Changes go live after the next deploy.";
+        btn.disabled = false;
+      } catch (ex: any) {
+        err.textContent = "Save failed: " + (ex.message ?? ex);
+        err.hidden = false;
+        btn.disabled = false;
+        status.textContent = "";
+      }
+    });
+
+    init();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-loading { color: var(--color-muted); }
+  .admin-page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    margin: 0 0 var(--space-5);
+  }
+  .admin-form { display: flex; flex-direction: column; gap: var(--space-5); }
+  .admin-field span { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); }
+  .admin-field textarea {
+    width: 100%; font: inherit;
+    font-family: var(--font-mono, monospace);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-raised);
+    color: var(--color-text);
+    box-sizing: border-box;
+    resize: vertical;
+    color-scheme: light;
+  }
+  .admin-field textarea:focus { outline: none; border-color: var(--color-accent); box-shadow: var(--focus-ring); }
+  .admin-form__actions { display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap; }
+  .admin-btn-gold {
+    font: inherit; font-weight: 700;
+    padding: var(--space-3) var(--space-6);
+    border: none; border-radius: var(--radius-lg);
+    background: var(--gradient-gold); color: #fff; cursor: pointer;
+  }
+  .admin-btn-gold:disabled { opacity: 0.6; cursor: wait; }
+  .admin-btn-ghost {
+    display: inline-block; padding: var(--space-3) var(--space-5);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    text-decoration: none; color: var(--color-text); font-weight: 600;
+  }
+  .admin-form__status { color: var(--color-muted); font-size: var(--text-sm); }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+  }
+</style>
