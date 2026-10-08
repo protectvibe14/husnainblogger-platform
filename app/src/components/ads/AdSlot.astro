@@ -1,0 +1,75 @@
+---
+/**
+ * components/ads/AdSlot.astro — renders one ad slot.
+ * Owner: Ads.
+ *
+ * Reads data/ads-config.json at build time. Renders nothing when the
+ * slot is disabled or has no code. Ad code is injected via set:html
+ * (admin-pasted AdSense/script tags).
+ *
+ * Props:
+ *   slot — key in ads-config.json (e.g. "tool-top")
+ */
+import adsConfig from "../../../../data/ads-config.json";
+
+interface Props {
+  slot: string;
+}
+
+const { slot } = Astro.props;
+const cfg = (adsConfig.slots as Record<string, any>)[slot];
+
+const show = cfg?.enabled && cfg?.code?.trim();
+---
+
+{show && (
+  <div class={`hb-ad-slot hb-ad-slot--${slot}`} data-ad-slot={slot} role="complementary" aria-label="Advertisement">
+    <span class="hb-ad-label">Advertisement</span>
+    <div class="hb-ad-body" set:html={cfg.code} />
+  </div>
+)}
+
+<style>
+  .hb-ad-slot {
+    margin: var(--space-6) auto;
+    max-width: 970px;
+    text-align: center;
+  }
+  .hb-ad-label {
+    display: block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-muted);
+    margin-bottom: var(--space-2);
+    font-family: var(--font-sans);
+  }
+  .hb-ad-body {
+    display: flex;
+    justify-content: center;
+  }
+  .hb-ad-body ins, .hb-ad-body iframe {
+    max-width: 100%;
+  }
+  /* Sidebar slots are narrower */
+  .hb-ad-slot--tool-sidebar-top,
+  .hb-ad-slot--tool-sidebar-bottom {
+    margin: 0;
+  }
+  /* Sticky mobile: fixed bottom, mobile only */
+  .hb-ad-slot--tool-sticky-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    margin: 0;
+    padding: var(--space-2);
+    background: color-mix(in srgb, var(--color-surface) 95%, transparent);
+    border-top: 1px solid var(--color-border);
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .hb-ad-slot--tool-sticky-mobile { display: block; }
+  }
+</style>
