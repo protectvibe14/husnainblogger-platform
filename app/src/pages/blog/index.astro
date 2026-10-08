@@ -1,0 +1,231 @@
+---
+/**
+ * pages/blog/index.astro — premium blog listing.
+ * Owner: Blog.
+ *
+ * Editorial magazine layout: featured latest article hero,
+ * category filter pills, premium card grid. Luxury design system.
+ * Uses layouts/BaseLayout.astro for head/header/footer.
+ */
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogCard from "../../components/blog/BlogCard.astro";
+import { postSlug, postUrl, readingTime, formatDate } from "../../lib/blog";
+
+const allPosts = (await getCollection("blog"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
+
+const categories = [...new Set(allPosts.map((p) => p.data.category).filter(Boolean))];
+const [featured, ...rest] = allPosts;
+
+const title = "Blog — Creator Guides & Tutorials | HusnainBlogger";
+const description = "In-depth guides for bloggers, YouTubers, and creators. SEO, content strategy, AI workflows, and monetization.";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="https://husnainblogger.com/blog/"
+  activeNav="blog"
+>
+  <main class="hb-directory">
+    <div class="blog-hero">
+      <span class="hb-tool-eyebrow">The Journal</span>
+      <h1 class="hb-tool-title">Guides for creators</h1>
+      <p class="hb-tool-value-prop">
+        In-depth tutorials on blogging, YouTube, TikTok, SEO, and AI —
+        written for creators who want results, not fluff.
+      </p>
+    </div>
+
+    {allPosts.length === 0 ? (
+      <p class="blog-empty">Articles are on the way. Check back soon.</p>
+    ) : (
+      <>
+        {featured && (
+          <a href={postUrl(featured)} class="blog-featured" aria-label={featured.data.title}>
+            {featured.data.image && (
+              <div class="blog-featured__media">
+                <img src={featured.data.image} alt={featured.data.title} loading="eager" />
+              </div>
+            )}
+            <div class="blog-featured__body">
+              <span class="blog-featured__label">Latest article</span>
+              {featured.data.category && <span class="blog-card__cat">{featured.data.category}</span>}
+              <h2 class="blog-featured__title">{featured.data.title}</h2>
+              <p class="blog-featured__desc">{featured.data.description}</p>
+              <div class="blog-featured__meta">
+                <time datetime={featured.data.date}>{formatDate(featured.data.date)}</time>
+                <span aria-hidden="true">·</span>
+                <span>{readingTime(featured.body)} min read</span>
+              </div>
+              <span class="blog-featured__cta">Read article →</span>
+            </div>
+          </a>
+        )}
+
+        {categories.length > 1 && (
+          <div class="blog-filters" role="group" aria-label="Filter by category">
+            <button class="blog-filter is-active" data-filter="all">All</button>
+            {categories.map((c) => (
+              <button class="blog-filter" data-filter={c}>{c}</button>
+            ))}
+          </div>
+        )}
+
+        <div class="blog-grid" id="blog-grid">
+          {rest.map((p) => (
+            <div class="blog-grid__item" data-category={p.data.category ?? ""}>
+              <BlogCard
+                title={p.data.title}
+                slug={postSlug(p)}
+                description={p.data.description}
+                date={p.data.date}
+                category={p.data.category}
+                image={p.data.image}
+                readingTime={readingTime(p.body)}
+              />
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.blog-filter');
+    const items = document.querySelectorAll('.blog-grid__item');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach((b) => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const f = btn.getAttribute('data-filter');
+        items.forEach((it) => {
+          (it as HTMLElement).style.display = (f === 'all' || it.getAttribute('data-category') === f) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .blog-hero {
+    text-align: center;
+    max-width: var(--content-narrow);
+    margin: 0 auto var(--space-12);
+  }
+  .blog-featured {
+    display: grid;
+    gap: 0;
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--color-text);
+    margin-bottom: var(--space-10);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .blog-featured:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+  }
+  .blog-featured__media {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+  .blog-featured__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .blog-featured:hover .blog-featured__media img { transform: scale(1.03); }
+  .blog-featured__body {
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .blog-featured__label {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-widest);
+    color: var(--color-accent-strong);
+  }
+  .blog-featured__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3.5vw, var(--text-3xl));
+    font-weight: 600;
+    letter-spacing: var(--letter-tight);
+    line-height: var(--leading-tight);
+    margin: 0;
+  }
+  .blog-featured__desc {
+    color: var(--color-muted);
+    font-size: var(--text-lg);
+    line-height: var(--leading-normal);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog-featured__cta {
+    margin-top: var(--space-2);
+    font-weight: 700;
+    color: var(--color-accent-strong);
+  }
+  .blog-featured__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+  }
+  .blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+  }
+  .blog-filter {
+    font: inherit;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-raised);
+    color: var(--color-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .blog-filter:hover { border-color: var(--color-accent); color: var(--color-text); }
+  .blog-filter.is-active {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+    color: var(--color-on-ink);
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: var(--space-6);
+  }
+  .blog-grid__item { display: flex; }
+  .blog-grid__item > * { flex: 1; }
+  .blog-empty {
+    text-align: center;
+    color: var(--color-muted);
+    font-size: var(--text-lg);
+    padding: var(--space-16) 0;
+  }
+  @media (min-width: 900px) {
+    .blog-featured { grid-template-columns: 1.1fr 1fr; }
+    .blog-featured__media { aspect-ratio: auto; min-height: 100%; }
+  }
+</style>
