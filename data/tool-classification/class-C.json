@@ -1,0 +1,1588 @@
+{
+ "category": "C",
+ "categoryName": "YouTube",
+ "classifiedBy": "MA2 / YouTube Tools subagent",
+ "classifiedDate": "2026-10-01",
+ "toolRange": "101-150",
+ "tools": [
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "all-caps acronyms (AI, DIY, USB) preserved",
+    "small words (and, the, of) lowercased mid-title except position 1",
+    "unicode graphemes counted correctly (emoji, CJK)",
+    "hyphenated compounds capitalized on both sides"
+   ],
+   "engine": "string-transform (title case with small-word exceptions; acronym preservation; unicode-safe)",
+   "feasibilityNote": "Pure string logic. Reference implementation shipped at app/tools/youtube/title-capitalization-formatter/logic.ts.",
+   "formulaRef": null,
+   "inputs": [
+    "title text (string)",
+    "style preset: Title Case | Sentence case | ALL CAPS | lowercase"
+   ],
+   "name": "Title Capitalization Formatter",
+   "outputs": [
+    "formatted title (string)",
+    "character count + truncation warning vs title.hardLimit / title.displayLimit"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit",
+    "youtube#title-displayLimit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "title-capitalization-formatter",
+   "toolId": "tool-101",
+   "validation": [
+    "input must be a non-empty string",
+    "grapheme count <= 100"
+   ],
+   "verifiedToolType": "formatter",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "formatter"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "emoji counts as one visible character (grapheme, not UTF-16 units)",
+    "exactly 100 = allowed, 101 = rejected",
+    "CJK titles"
+   ],
+   "engine": "char-counter vs platform limits (grapheme-aware)",
+   "feasibilityNote": "Must count graphemes, not String.length (emoji ZWJ sequences). YouTube counts UTF-16 units; tool should note the unit difference and be conservative.",
+   "formulaRef": null,
+   "inputs": [
+    "proposed title (string)"
+   ],
+   "name": "Title Length Checker",
+   "outputs": [
+    "character count (graphemes)",
+    "status: ok / truncated-in-search / over-hard-limit",
+    "front-load guidance if keyword position is late"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit",
+    "youtube#title-displayLimit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "title-length-checker",
+   "toolId": "tool-102",
+   "validation": [
+    "string input",
+    "empty input rejected with message"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "empty keyword -> prompt for topic",
+    "templates truncated against 100-char limit"
+   ],
+   "engine": "template-wordbank (fixed formula slots; no AI; clearly labeled template output)",
+   "feasibilityNote": "Transparent formula library, not AI. UI must say 'templates', never 'AI-generated'.",
+   "formulaRef": null,
+   "inputs": [
+    "topic / keyword",
+    "template category (curiosity, how-to, mistake, secret, number)"
+   ],
+   "name": "Curiosity-Gap Title Templates",
+   "outputs": [
+    "N title suggestions as template instantiations",
+    "each showing which template produced it"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit"
+   ],
+   "possibleDuplicateOf": "tool-124 (Shorts Hook Bank) — same template mechanics, different target (long-form titles vs Shorts hooks); keep separate but share template engine",
+   "slug": "curiosity-gap-title-templates",
+   "toolId": "tool-103",
+   "validation": [
+    "topic non-empty",
+    "limit N to sane range (e.g. 1-50)"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "empty vault -> onboarding hint",
+    "export format CSV/JSON",
+    "storage is localStorage only; no sync"
+   ],
+   "engine": "local list manager over entries array (add/tag/search/filter/export)",
+   "feasibilityNote": "Storage-agnostic pure functions for entry ops; persistence is the UI layer's job (localStorage). 'Vault' is a local collection, not a content generator.",
+   "formulaRef": null,
+   "inputs": [
+    "title text",
+    "source note",
+    "tags",
+    "status (used/unused)"
+   ],
+   "name": "Title Swipe File Vault",
+   "outputs": [
+    "saved title entries",
+    "filtered lists",
+    "copy-to-clipboard"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "title-swipe-file-vault",
+   "toolId": "tool-104",
+   "validation": [
+    "duplicate detection on identical text",
+    "title length warning on save"
+   ],
+   "verifiedToolType": "library",
+   "isInteractive": true,
+   "typeNote": "vault (inventory listed 'generator'; functionally a save/tag/search list manager)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "gradients -> warn approximation",
+    "outline/shadow not modeled -> disclaimer",
+    "very short text passes easily"
+   ],
+   "engine": "color-contrast calculator (WCAG contrast ratio) + word-count/character heuristics",
+   "feasibilityNote": "Cannot inspect an actual thumbnail image file's pixels client-side without upload+canvas work; color-input version is exact math. Image-analysis variant needs canvas pixel sampling — possible but out of scope for MVP.",
+   "formulaRef": "wcag-contrast-ratio",
+   "inputs": [
+    "thumbnail text",
+    "text color",
+    "background color",
+    "optional: text size class"
+   ],
+   "name": "Thumbnail Text Readability Checker",
+   "outputs": [
+    "WCAG contrast ratio + pass/fail vs 4.5:1 / 3:1 bands",
+    "word count + <=3-5 words recommendation",
+    "mobile-legibility verdict (heuristic)"
+   ],
+   "platformRulesRef": [
+    "youtube#thumbnail-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "thumbnail-text-readability-checker",
+   "toolId": "tool-105",
+   "validation": [
+    "valid hex colors required",
+    "text non-empty"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "YouTube's own 'Test & Compare' uploads three thumbnails — tool supports A/B/C; advise using native test for real data",
+    "low impressions -> 'inconclusive' not 'A wins'"
+   ],
+   "engine": "manual-log-stats (variants with impressions/clicks; CTR per variant; chi-square-free significance via rule of thumb)",
+   "feasibilityNote": "Manual log only. Cannot pull YouTube Analytics data client-side (no API keys / OAuth per locked rules). Must label results as manual-tracking.",
+   "formulaRef": "ctr",
+   "inputs": [
+    "video ref",
+    "variant A/B label",
+    "impressions",
+    "clicks",
+    "start/end dates"
+   ],
+   "name": "Thumbnail A/B Test Tracker",
+   "outputs": [
+    "CTR per variant",
+    "winner declaration",
+    "minimum-sample warning"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-114 (CTR & Impressions Log) — 114 is the general CTR log; 106 is the A/B-variant view of the same data model. Share entry schema.",
+   "slug": "thumbnail-a-b-test-tracker",
+   "toolId": "tool-106",
+   "validation": [
+    "impressions >= clicks",
+    "numbers non-negative",
+    "at least 2 variants"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "score is subjective-input dependent -> always show 'self-assessed' label",
+    "no claim of CTR prediction"
+   ],
+   "engine": "heuristic-rubric (documented checklist -> 0-100 score; labeled heuristic, not a CTR prediction)",
+   "feasibilityNote": "Scorecard only; must not claim to predict actual CTR. Rubric must be documented in JSDoc/page copy.",
+   "formulaRef": null,
+   "inputs": [
+    "self-assessed checklist answers (text present, contrast, face/emotion, curiosity gap, clutter, branding consistency)"
+   ],
+   "name": "Thumbnail Clickability Scorecard",
+   "outputs": [
+    "0-100 score",
+    "per-item pass/fail",
+    "improvement suggestions"
+   ],
+   "platformRulesRef": [
+    "youtube#thumbnail-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "thumbnail-clickability-scorecard",
+   "toolId": "tool-107",
+   "validation": [
+    "all items answered or defaulted neutral"
+   ],
+   "verifiedToolType": "scorer",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "affiliate links present -> mandatory FTC disclosure paragraph",
+    "chapters added only if timestamps valid (0:00 first, >=3, >=10s each)"
+   ],
+   "engine": "template fill (sections: hook+keywords line, chapters placeholder, links, CTA, hashtags, disclosure)",
+   "feasibilityNote": "Pure text assembly. Hashtag/fold/chapter rules come from platform-rules.",
+   "formulaRef": null,
+   "inputs": [
+    "video topic",
+    "keywords",
+    "links list",
+    "affiliate? (adds disclosure block)",
+    "chapter list optional"
+   ],
+   "name": "Description Template Builder",
+   "outputs": [
+    "assembled description text (<=5000 chars)",
+    "first-150-char 'above the fold' preview"
+   ],
+   "platformRulesRef": [
+    "youtube#description-hardLimit",
+    "youtube#description-aboveFold",
+    "youtube#hashtags-rules",
+    "youtube#chapters-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "description-template-builder",
+   "toolId": "tool-108",
+   "validation": [
+    "total length <= 5000 graphemes",
+    "hashtag count <= 15 with warning (all hashtags ignored above 15)"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template-wordbank (question prompts, timestamps, correction notes, CTA variants)",
+   "feasibilityNote": "Template library; cannot post comments to YouTube (no API/OAuth). Copy-paste only.",
+   "formulaRef": null,
+   "inputs": [
+    "video topic",
+    "goal (engagement / corrections / links)"
+   ],
+   "name": "Pinned Comment Idea Bank",
+   "outputs": [
+    "pinned comment suggestions with placeholders filled"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "pinned-comment-idea-bank",
+   "toolId": "tool-109",
+   "validation": [
+    "topic non-empty"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "invalid timestamp format -> error line number",
+    "no semantic rewrite claims — output must say 'rule-based polish', not 'SEO rewrite by AI'"
+   ],
+   "engine": "rule-based normalization: trim, keyword-front-load, casing rules, length cap ~70 chars",
+   "feasibilityNote": "No AI semantics available client-side; engine is transparent rules. Honest naming required in UI ('Chapter Title Polisher' recommended over 'SEO Rewriter').",
+   "formulaRef": null,
+   "inputs": [
+    "raw chapter titles or timestamped list"
+   ],
+   "name": "Chapter Title SEO Rewriter",
+   "outputs": [
+    "rewritten chapter titles",
+    "per-title length/seo checks"
+   ],
+   "platformRulesRef": [
+    "youtube#chapters-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "chapter-title-seo-rewriter",
+   "toolId": "tool-110",
+   "validation": [
+    "timestamps parse mm:ss or hh:mm:ss",
+    "first chapter 0:00",
+    ">=3 chapters, >=10s gaps"
+   ],
+   "verifiedToolType": "formatter",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as template-based formatter; NOT an AI rewriter",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "pauses/B-roll add unscripted time -> show disclaimer",
+    "Shorts target <=3:00 check"
+   ],
+   "engine": "arithmetic-formula (words <-> minutes at speaking rate)",
+   "feasibilityNote": "WPM=150 default is a narration convention (estimate), not a YouTube rule — must be user-adjustable.",
+   "formulaRef": "script-length-words-minutes",
+   "inputs": [
+    "target duration (minutes)",
+    "speaking rate wpm (default 150)",
+    "or: script word count -> duration"
+   ],
+   "name": "Script Length Planner",
+   "outputs": [
+    "required word count for target duration",
+    "duration estimate for given word count",
+    "scene/segment word budgets"
+   ],
+   "platformRulesRef": [
+    "youtube#shorts-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "script-length-planner",
+   "toolId": "tool-111",
+   "validation": [
+    "positive numbers",
+    "wpm within 100-200 sane range with warning outside"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "structure template (hook -> setup -> value beats -> payoff -> CTA) with beat word budgets from tool-111",
+   "feasibilityNote": "Template scaffold; beats are slots, not generated prose.",
+   "formulaRef": "script-length-words-minutes",
+   "inputs": [
+    "topic",
+    "target duration",
+    "format (tutorial/review/vlog/essay)"
+   ],
+   "name": "Script Outline Builder",
+   "outputs": [
+    "sectioned outline with estimated words per section"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "script-outline-builder",
+   "toolId": "tool-112",
+   "validation": [
+    "topic non-empty",
+    "duration positive"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template-wordbank (shot types x topic slots; labeled template)",
+   "feasibilityNote": "Combinatorial template output, not creative direction; label as starter list.",
+   "formulaRef": null,
+   "inputs": [
+    "topic",
+    "video format",
+    "location/access constraints"
+   ],
+   "name": "B-Roll Shot List Generator",
+   "outputs": [
+    "shot list with shot type + framing + purpose"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "b-roll-shot-list-generator",
+   "toolId": "tool-113",
+   "validation": [
+    "topic non-empty"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "status": "DEPRECATED",
+   "mergedInto": "tool-276",
+   "deprecatedDate": "2026-10-01",
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "empty log -> zero-state guidance",
+    "single entry -> trend 'insufficient data'",
+    "division by zero impressions guarded"
+   ],
+   "engine": "manual-log-stats (pure functions: CTR per entry, aggregation by period, best/worst, trend direction)",
+   "feasibilityNote": "Manual log only — cannot import YouTube Studio analytics without OAuth/API. Reference implementation shipped at app/tools/youtube/ctr-impressions-log/logic.ts (storage-agnostic).",
+   "formulaRef": "ctr",
+   "inputs": [
+    "entries: [{date, video, impressions, clicks, ...}]"
+   ],
+   "name": "CTR & Impressions Log",
+   "outputs": [
+    "per-entry CTR",
+    "period aggregates",
+    "best/worst entry",
+    "trend direction (up/flat/down with slope)",
+    "CSV import/export"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-106 shares the entry schema; 114 is the general log.",
+   "slug": "ctr-impressions-log",
+   "toolId": "tool-114",
+   "validation": [
+    "impressions >= clicks >= 0",
+    "valid ISO dates",
+    "duplicate entry guard"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "timezone-safe date-only comparison",
+    "cadence setting (weekly vs daily streak)"
+   ],
+   "engine": "date-math (current streak, longest streak, uploads-per-week rate from date list)",
+   "feasibilityNote": "Manual date entry; localStorage persistence in UI layer.",
+   "formulaRef": null,
+   "inputs": [
+    "upload dates list"
+   ],
+   "name": "Upload Streak Tracker",
+   "outputs": [
+    "current streak (days/weeks per cadence)",
+    "longest streak",
+    "weekly rate",
+    "missed-slot count"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "upload-streak-tracker",
+   "toolId": "tool-115",
+   "validation": [
+    "valid dates, no future dates",
+    "deduped"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "growth is not linear -> show 'projection, not promise' disclaimer",
+    "rate = 0 -> division guarded, message"
+   ],
+   "engine": "arithmetic-formula (linear projection from growth rate; optional conservative/optimistic bands)",
+   "feasibilityNote": "Manual inputs; cannot read live subscriber counts (no API). Linear model must be labeled an estimate.",
+   "formulaRef": "goal-date-projection",
+   "inputs": [
+    "current subs",
+    "target subs",
+    "avg subs gained per day/week"
+   ],
+   "name": "Subscriber Goal Countdown",
+   "outputs": [
+    "estimated days to target",
+    "target date",
+    "required daily rate to hit a chosen date"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "subscriber-goal-countdown",
+   "toolId": "tool-116",
+   "validation": [
+    "target > current",
+    "rate > 0",
+    "non-negative integers"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeNote": "planner (inventory listed 'generator'; functionally goal-math planner)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "Shorts watch hours do NOT count toward 4,000h — show this warning (verified rule)",
+    "12-month rolling window -> disclaimer that old hours expire"
+   ],
+   "engine": "arithmetic-formula over YPP thresholds (watch-hours path vs Shorts-views path; pace needed; gap to threshold)",
+   "feasibilityNote": "Thresholds verified via 2026 sources (see platform-rules). Manual input only; rolling-window math is simplified linear projection — label estimate.",
+   "formulaRef": "ypp-watch-time-pace",
+   "inputs": [
+    "path: long-form | shorts",
+    "current watch hours or Shorts views",
+    "avg views/day + avg view duration (long-form) or views/day (shorts)"
+   ],
+   "name": "Watch-Time Monetization Planner",
+   "outputs": [
+    "hours/views remaining to 4,000h or 10M views",
+    "estimated days at current pace",
+    "required daily pace to hit target date",
+    "fan-funding tier (500/3,000h or 3M views + 3 uploads) progress"
+   ],
+   "platformRulesRef": [
+    "youtube#ypp-fullTier",
+    "youtube#ypp-fanTier",
+    "youtube#ypp-countingRules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "watch-time-monetization-planner",
+   "toolId": "tool-117",
+   "validation": [
+    "non-negative numbers",
+    "path selects correct threshold set"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no real CPM data -> inputs are user estimates; output labeled 'opinionated heuristic, not market data'"
+   ],
+   "engine": "heuristic-rubric (CPM band self-estimate, competition self-rating, content cost, audience buying intent -> weighted score)",
+   "feasibilityNote": "Cannot fetch real CPM/competition data client-side. Score is only as good as user inputs; must be labeled heuristic.",
+   "formulaRef": null,
+   "inputs": [
+    "niche name",
+    "estimated CPM band (user-selected)",
+    "competition (1-5)",
+    "production cost (1-5)",
+    "audience buying intent (1-5)"
+   ],
+   "name": "Niche Profitability Scorer",
+   "outputs": [
+    "0-100 score",
+    "band: high/medium/low",
+    "notes explaining each input's effect"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-100 (Blog Niche Profitability Calculator, category B) — same mechanics, different medium; cross-category overlap noted, keep separate",
+   "slug": "niche-profitability-scorer",
+   "toolId": "tool-118",
+   "validation": [
+    "ratings within 1-5"
+   ],
+   "verifiedToolType": "scorer",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "clientSideFeasible": "partial",
+   "edgeCases": [],
+   "engine": "structured worksheet: user pastes competitor video topics -> coverage matrix -> uncovered-angle prompts",
+   "feasibilityNote": "NOT feasible as automated gap analysis: no YouTube Data API, no scraping (ToS). Feasible only as a manual worksheet. Must not claim competitor 'analysis'.",
+   "formulaRef": null,
+   "inputs": [
+    "competitor channel names (manual)",
+    "their recent video topics (manual list)",
+    "own covered topics"
+   ],
+   "name": "Competitor Gap Finder",
+   "outputs": [
+    "topic coverage matrix",
+    "uncovered topic prompts",
+    "angle suggestions from template bank"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "competitor-gap-finder",
+   "toolId": "tool-119",
+   "validation": [
+    "at least 1 competitor topic"
+   ],
+   "verifiedToolType": "worksheet",
+   "isInteractive": true,
+   "typeNote": "worksheet (inventory 'generator' overstated; no data source available)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "label output 'idea seeds', never researched opportunities"
+   ],
+   "engine": "template-wordbank (niche x format x angle combinatorics)",
+   "feasibilityNote": "Combinatorial templates; add YPP inauthentic-content policy note (mass-produced templated channels face monetization review since Jul 2025).",
+   "formulaRef": null,
+   "inputs": [
+    "niche keyword (optional)",
+    "format (listicle, compilation, narration, tutorial)"
+   ],
+   "name": "Faceless Channel Idea Mixer",
+   "outputs": [
+    "channel concept combos with name/title seed suggestions"
+   ],
+   "platformRulesRef": [
+    "youtube#ypp-contentPolicy"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "faceless-channel-idea-mixer",
+   "toolId": "tool-120",
+   "validation": [],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template scaffold (3-5 pillar slots; subtopic prompt cards per pillar)",
+   "feasibilityNote": "Scaffold builder; subtopic prompts are template patterns, not researched topics.",
+   "formulaRef": null,
+   "inputs": [
+    "channel niche",
+    "pillar names"
+   ],
+   "name": "Content Pillar Mapper",
+   "outputs": [
+    "pillar map: pillar -> subtopic prompts -> suggested formats"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-122 (Video Series Planner) — related planning surface; 121 is topic architecture, 122 is episodic schedule. Keep separate.",
+   "slug": "content-pillar-mapper",
+   "toolId": "tool-121",
+   "validation": [
+    "1-8 pillars"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as structured builder: pillars -> subtopics grid",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "schedule builder (episode slots, cadence, arc template: intro -> deep dives -> finale)",
+   "feasibilityNote": "Pure date/schedule math + templates.",
+   "formulaRef": null,
+   "inputs": [
+    "series title",
+    "episode count",
+    "cadence",
+    "start date"
+   ],
+   "name": "Video Series Planner",
+   "outputs": [
+    "episode calendar with dates + working titles slots"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "video-series-planner",
+   "toolId": "tool-122",
+   "validation": [
+    "episode count 2-52",
+    "valid start date"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "input already short -> return as-is with note",
+    "must show 'rule-based extraction' label; never claim semantic summarization"
+   ],
+   "engine": "rule-based: extract first-sentence hook candidate, keep sentences matching topic keywords, append CTA template, cut to word budget for target seconds",
+   "feasibilityNote": "Transparent sentence-scoring rules only. No NLP/AI.",
+   "formulaRef": "shorts-word-budget",
+   "inputs": [
+    "long-form script or outline text",
+    "target seconds (default 45)",
+    "wpm"
+   ],
+   "name": "Shorts Script Compressor",
+   "outputs": [
+    "compressed script within word budget",
+    "word count + estimated seconds",
+    "cut list (which sentences kept/dropped and why: keyword match)"
+   ],
+   "platformRulesRef": [
+    "youtube#shorts-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "shorts-script-compressor",
+   "toolId": "tool-123",
+   "validation": [
+    "input text non-empty",
+    "target seconds 5-180"
+   ],
+   "verifiedToolType": "formatter",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as rule-based condenser; NOT an AI summarizer",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template-wordbank (first-2-seconds hook formulas specific to vertical short-form)",
+   "feasibilityNote": "Template library, labeled as such.",
+   "formulaRef": null,
+   "inputs": [
+    "topic",
+    "hook style (question, bold claim, visual, loop)"
+   ],
+   "name": "Shorts Hook Bank",
+   "outputs": [
+    "hook lines with template attribution"
+   ],
+   "platformRulesRef": [
+    "youtube#shorts-specs"
+   ],
+   "possibleDuplicateOf": "tool-103 — same template mechanics for long-form titles; keep separate by target format",
+   "slug": "shorts-hook-bank",
+   "toolId": "tool-124",
+   "validation": [
+    "topic non-empty"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "insufficient data -> 'keep testing' verdict, never a false winner"
+   ],
+   "engine": "manual-log-stats (entries by time slot; aggregate views/avg view duration per slot; best slot with sample-size guard)",
+   "feasibilityNote": "Self-collected experiment data only. Cannot fetch posting-time analytics without API.",
+   "formulaRef": null,
+   "inputs": [
+    "entries: [{datetime posted, views @24h, avg view duration}]"
+   ],
+   "name": "Shorts Posting-Time Experiment Tracker",
+   "outputs": [
+    "per-slot aggregates",
+    "best slot recommendation (if n>=5 per slot)",
+    "experiment design tips (rotate slots, hold content type constant)"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "shorts-posting-time-experiment-tracker",
+   "toolId": "tool-125",
+   "validation": [
+    "valid datetimes",
+    "non-negative metrics"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template packs (pre/during/post title variants + description snippet for streams)",
+   "feasibilityNote": "Template library.",
+   "formulaRef": null,
+   "inputs": [
+    "stream topic",
+    "stream type (Q&A, gaming, talk, tutorial)"
+   ],
+   "name": "Livestream Title Pack Builder",
+   "outputs": [
+    "title variants for announcement / live / replay phases"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit"
+   ],
+   "possibleDuplicateOf": "tool-103 — title templates for streams; keep separate (stream-specific phase variants)",
+   "slug": "livestream-title-pack-builder",
+   "toolId": "tool-126",
+   "validation": [
+    "topic non-empty",
+    "titles <=100 chars each"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no live-chat integration — manual entry from stream chat"
+   ],
+   "engine": "local list manager (add/upvote/answer/archive questions; export)",
+   "feasibilityNote": "Cannot read YouTube live chat without API; manual entry only. Label clearly.",
+   "formulaRef": null,
+   "inputs": [
+    "question text",
+    "asker name (optional)"
+   ],
+   "name": "Live Q&A Collector",
+   "outputs": [
+    "ranked question queue",
+    "answered archive"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "live-q-a-collector",
+   "toolId": "tool-127",
+   "validation": [
+    "question non-empty"
+   ],
+   "verifiedToolType": "collector",
+   "isInteractive": true,
+   "typeNote": "collector (inventory 'generator'; functionally a question queue manager)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "community post character limit is an unverified estimate (sources vary 1000-1500) — tool shows soft guidance only"
+   ],
+   "engine": "template-wordbank (polls, behind-the-scenes, teasers, questions)",
+   "feasibilityNote": "Template library; cannot publish to Community tab (no API).",
+   "formulaRef": null,
+   "inputs": [
+    "niche",
+    "post type (poll/image/text/quiz)"
+   ],
+   "name": "Community Post Idea Bank",
+   "outputs": [
+    "post ideas with template attribution"
+   ],
+   "platformRulesRef": [
+    "youtube#communityPost-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "community-post-idea-bank",
+   "toolId": "tool-128",
+   "validation": [],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template-wordbank (thanks, question, criticism, spam-adjacent, collaboration inquiry)",
+   "feasibilityNote": "Copy-paste templates; no auto-reply to YouTube (ToS/API).",
+   "formulaRef": null,
+   "inputs": [
+    "comment type",
+    "tone (warm/professional/playful)"
+   ],
+   "name": "Comment Reply Templates",
+   "outputs": [
+    "reply templates with placeholders"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "comment-reply-templates",
+   "toolId": "tool-129",
+   "validation": [],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "client-side randomness is fine for casual giveaways; not for regulated lotteries — disclaimer",
+    "must show YouTube contest policy reminders: official rules required, creator is responsible, 'not sponsored by YouTube' disclaimer"
+   ],
+   "engine": "uniform random selection over entry array (crypto.getRandomValues); dedupe option; redraw support",
+   "feasibilityNote": "Cannot pull comments from YouTube (no API) — entries are pasted manually. Tool must embed contest-policy compliance checklist; it does not make a giveaway compliant by itself.",
+   "formulaRef": null,
+   "inputs": [
+    "pasted entry list (one per line)",
+    "winner count",
+    "dedupe toggle"
+   ],
+   "name": "Giveaway Winner Picker",
+   "outputs": [
+    "winner(s) with draw timestamp",
+    "audit list of all entries considered"
+   ],
+   "platformRulesRef": [
+    "youtube#contests-policy"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "giveaway-winner-picker",
+   "toolId": "tool-130",
+   "validation": [
+    "at least 2 entries",
+    "winner count <= entries"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as random-picker from pasted entry list",
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "70% creator share is platform policy — verified via secondary source; mark accordingly"
+   ],
+   "engine": "pricing worksheet (tier slots with name/price/perks; revenue math = members x price x YouTube 70% creator share)",
+   "feasibilityNote": "Revenue estimate only; member counts are user guesses.",
+   "formulaRef": "membership-revenue",
+   "inputs": [
+    "tier count (1-6 per YouTube limit)",
+    "price per tier",
+    "estimated members per tier"
+   ],
+   "name": "Membership Tier Planner",
+   "outputs": [
+    "per-tier and total monthly revenue estimate",
+    "perk checklist per tier"
+   ],
+   "platformRulesRef": [
+    "youtube#memberships-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "membership-tier-planner",
+   "toolId": "tool-131",
+   "validation": [
+    "YouTube allows up to 6 membership levels (verified)",
+    "prices positive"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "mapping is opinionated, not data-backed — label as brainstorm aid"
+   ],
+   "engine": "mapping-table: niche category -> product types (digital/physical/service) with fit notes; labeled heuristic",
+   "feasibilityNote": "Static mapping table; no market data.",
+   "formulaRef": null,
+   "inputs": [
+    "niche",
+    "audience size band",
+    "effort tolerance"
+   ],
+   "name": "Creator Product Idea Matcher",
+   "outputs": [
+    "ranked product ideas with 'why it fits' rationale"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "creator-product-idea-matcher",
+   "toolId": "tool-132",
+   "validation": [],
+   "verifiedToolType": "analyzer",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as heuristic matcher (mapping table)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "unicode case folding",
+    "multi-word phrase matching"
+   ],
+   "engine": "substring/keyword match (case-insensitive; optional word-boundary mode; reports position)",
+   "feasibilityNote": "Deterministic string check.",
+   "formulaRef": null,
+   "inputs": [
+    "target keyword/phrase",
+    "title"
+   ],
+   "name": "Keyword-in-Title Checker",
+   "outputs": [
+    "match yes/no",
+    "position (front/middle/end)",
+    "front-load recommendation"
+   ],
+   "platformRulesRef": [
+    "youtube#title-displayLimit"
+   ],
+   "possibleDuplicateOf": "tool-146 (YouTube SEO Score Checker) — 133 is a single-factor check that 146 includes; keep as standalone quick check",
+   "slug": "keyword-in-title-checker",
+   "toolId": "tool-133",
+   "validation": [
+    "both non-empty"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "duplicate tags flagged",
+    "tags identical to title words marked redundant but not penalized heavily",
+    "empty tags -> 0 with guidance"
+   ],
+   "engine": "heuristic-rubric (tag vs title-keyword overlap, specificity mix, length budget, misspellings/duplicates/stopwords) -> 0-100; labeled heuristic",
+   "feasibilityNote": "Heuristic only — YouTube does not publish tag-weighting; rubric documented in JSDoc. Reference implementation shipped at app/tools/youtube/tag-relevance-scorer/logic.ts.",
+   "formulaRef": null,
+   "inputs": [
+    "video title",
+    "tag list (comma or line separated)"
+   ],
+   "name": "Tag Relevance Scorer",
+   "outputs": [
+    "0-100 relevance score",
+    "per-tag verdicts (strong/weak/wasted)",
+    "budget usage vs 500-char limit"
+   ],
+   "platformRulesRef": [
+    "youtube#tags-totalLimit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "tag-relevance-scorer",
+   "toolId": "tool-134",
+   "validation": [
+    "title non-empty",
+    "at least 1 tag",
+    "total tag chars <= 500"
+   ],
+   "verifiedToolType": "scorer",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "checklist is advisory; no automation of posting"
+   ],
+   "engine": "checklist template with timed phases (T-48h .. T+48h); progress state",
+   "feasibilityNote": "Static checklist; localStorage progress.",
+   "formulaRef": null,
+   "inputs": [
+    "publish datetime"
+   ],
+   "name": "48-Hour Launch Checklist",
+   "outputs": [
+    "timed checklist with checkboxes + progress %"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-149 (Live Stream Pre-Flight Checklist) — different context (video launch vs live stream); keep separate",
+   "slug": "48-hour-launch-checklist",
+   "toolId": "tool-135",
+   "validation": [
+    "valid datetime"
+   ],
+   "verifiedToolType": "checklist",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as interactive checklist (template)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no product recommendations/prices — categories only, no fabricated prices"
+   ],
+   "engine": "percentage-allocator over categories (camera/audio/lighting/editing/accessories) with preset profiles (starter/growth/pro)",
+   "feasibilityNote": "Arithmetic only. Must not invent product prices.",
+   "formulaRef": "budget-split",
+   "inputs": [
+    "total budget",
+    "profile preset or custom %"
+   ],
+   "name": "Gear Budget Allocator",
+   "outputs": [
+    "per-category dollar amounts",
+    "priority-ranked shopping order"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "gear-budget-allocator",
+   "toolId": "tool-136",
+   "validation": [
+    "budget > 0",
+    "percentages sum to 100"
+   ],
+   "verifiedToolType": "calculator",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as budget-split calculator",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "does not provide actual music files — descriptors only; include copyright-safe sourcing reminder"
+   ],
+   "engine": "mapping-table: mood -> tempo/genre/instrumentation descriptors + royalty-free library search terms",
+   "feasibilityNote": "Static mapping; must remind users to use licensed/royalty-free music.",
+   "formulaRef": null,
+   "inputs": [
+    "mood (energetic/calm/dramatic/...)",
+    "video segment"
+   ],
+   "name": "Music Mood Matcher",
+   "outputs": [
+    "music brief (descriptors) + search terms for royalty-free libraries"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "music-mood-matcher",
+   "toolId": "tool-137",
+   "validation": [],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as mood->descriptor mapping (heuristic)",
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no actual image generation — text mock only; label clearly"
+   ],
+   "engine": "combo assembler: title template x thumbnail-text template -> paired packaging variants with mock preview layout (text only, no image gen)",
+   "feasibilityNote": "Combinatorial text assembly; image mock is layout boxes, not generated art.",
+   "formulaRef": null,
+   "inputs": [
+    "topic",
+    "title style",
+    "thumbnail text style"
+   ],
+   "name": "Packaging Combo Preview",
+   "outputs": [
+    "N title+thumbnail-text pairs",
+    "simple text mock preview"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit"
+   ],
+   "possibleDuplicateOf": "tool-103/tool-143 — combines title templates (103) with thumbnail text (143); keep as the 'packaging' view",
+   "slug": "packaging-combo-preview",
+   "toolId": "tool-138",
+   "validation": [
+    "title <=100 chars; thumbnail text <=5 words guidance"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "self-rated inputs -> output labeled 'structured gut-check, not validation'; must not claim to predict performance"
+   ],
+   "engine": "heuristic-rubric (search demand self-rating, competition self-rating, channel fit, packaging potential, effort) -> verdict bands",
+   "feasibilityNote": "No search-volume or trend data available client-side. Honest framing required.",
+   "formulaRef": null,
+   "inputs": [
+    "idea title",
+    "1-5 self-ratings per factor"
+   ],
+   "name": "Video Idea Validator",
+   "outputs": [
+    "0-100 score + verdict (greenlight / refine / park)",
+    "weakest-factor callout"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "video-idea-validator",
+   "toolId": "tool-139",
+   "validation": [
+    "ratings 1-5"
+   ],
+   "verifiedToolType": "scorer",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as heuristic scorecard",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template patterns for final 60-120s (loop-back, next-video bridge, open loop, end-screen runway)",
+   "feasibilityNote": "Template beats; retention claims must stay generic (no fabricated retention stats).",
+   "formulaRef": null,
+   "inputs": [
+    "video topic",
+    "next video topic (optional)"
+   ],
+   "name": "End-of-Video Retention Extender",
+   "outputs": [
+    "ending segment script beats",
+    "end-screen runway timing note (last 5-20s kept clear)"
+   ],
+   "platformRulesRef": [
+    "youtube#endscreen-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "end-of-video-retention-extender",
+   "toolId": "tool-140",
+   "validation": [
+    "topic non-empty"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no automated comment scraping (ToS) — paste-only",
+    "no sentiment 'AI analysis' claims"
+   ],
+   "engine": "rule-based: extract question sentences / 'can you make a video about X' patterns from pasted text -> idea cards",
+   "feasibilityNote": "Pattern extraction over user-pasted text only.",
+   "formulaRef": null,
+   "inputs": [
+    "pasted comments text"
+   ],
+   "name": "Comment-to-Video Idea Miner",
+   "outputs": [
+    "extracted question/idea cards with source snippet"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "comment-to-video-idea-miner",
+   "toolId": "tool-141",
+   "validation": [
+    "text non-empty"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as manual workflow: paste comments -> question extraction prompts",
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "cannot write to YouTube Studio settings without OAuth/API — copy-paste workflow only; label clearly"
+   ],
+   "engine": "template saver: named presets of title suffix, description footer, tags, visibility, playlist; copy-paste application guide",
+   "feasibilityNote": "localStorage presets + copy buttons; honest about no direct integration.",
+   "formulaRef": null,
+   "inputs": [
+    "preset fields (title suffix, description footer, default tags, etc.)"
+   ],
+   "name": "Upload Default Template Saver",
+   "outputs": [
+    "saved presets",
+    "one-click copy blocks",
+    "step guide to paste into YouTube Studio upload defaults"
+   ],
+   "platformRulesRef": [
+    "youtube#tags-totalLimit",
+    "youtube#description-hardLimit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "upload-default-template-saver",
+   "toolId": "tool-142",
+   "validation": [
+    "tags total <= 500 chars"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeNote": "builder (inventory 'generator'; functionally a settings snapshot/template saver)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "already short -> return as-is",
+    "label 'rule-based shortening', not AI copywriting"
+   ],
+   "engine": "rule-based: strip stopwords, keep nouns/numbers/emotion words, enforce <=5 words, casing options",
+   "feasibilityNote": "Deterministic word-filter rules.",
+   "formulaRef": null,
+   "inputs": [
+    "long thumbnail text or video title"
+   ],
+   "name": "Thumbnail Text Shortener",
+   "outputs": [
+    "shortened variants (<=5 words)",
+    "word count + mobile-size guidance"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "thumbnail-text-shortener",
+   "toolId": "tool-143",
+   "validation": [
+    "text non-empty"
+   ],
+   "verifiedToolType": "formatter",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as rule-based condenser",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no personalized recommendation possible without channel analytics — generic bands only"
+   ],
+   "engine": "heuristic bands: format x topic-depth -> suggested duration range with rationale; uses retention-benchmark estimates (labeled)",
+   "feasibilityNote": "Guidance bands are estimates compiled from third-party retention benchmarks (see formulas-C.json), not YouTube-published optima. Must be labeled as such.",
+   "formulaRef": "video-length-sweet-spot",
+   "inputs": [
+    "content type (tutorial/review/vlog/essay/shorts)",
+    "topic depth (quick answer / deep dive)"
+   ],
+   "name": "Video Length Sweet-Spot Finder",
+   "outputs": [
+    "suggested duration range (minutes)",
+    "rationale bullets",
+    "'benchmarks are third-party estimates' disclaimer"
+   ],
+   "platformRulesRef": [
+    "youtube#shorts-specs",
+    "youtube#endscreen-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "video-length-sweet-spot-finder",
+   "toolId": "tool-144",
+   "validation": [],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeNote": "planner (inventory 'generator'; functionally a heuristic guidance planner)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template structure (who / what / why subscribe / proof / CTA) with word budget for 30-60s",
+   "feasibilityNote": "Template scaffold.",
+   "formulaRef": "script-length-words-minutes",
+   "inputs": [
+    "channel niche",
+    "target viewer",
+    "upload schedule"
+   ],
+   "name": "Channel Trailer Script Builder",
+   "outputs": [
+    "trailer script with timed beats"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-112 — same builder mechanics, trailer-specific structure; keep separate",
+   "slug": "channel-trailer-script-builder",
+   "toolId": "tool-145",
+   "validation": [
+    "word budget maps to 30-60s at 150wpm"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "score measures metadata completeness, NOT ranking likelihood — must say so; YouTube publishes no ranking formula"
+   ],
+   "engine": "heuristic on-page checklist (title: keyword present+front-loaded+<=70 visible; description: length, keyword in first 150, chapters valid, links; tags: budget used, relevance; thumbnail text present?) -> 0-100",
+   "feasibilityNote": "Composite of 133/102/134/108/110 checks. Label 'metadata completeness score', never 'SEO score predicts ranking'.",
+   "formulaRef": null,
+   "inputs": [
+    "title",
+    "description",
+    "tags",
+    "chapter list (optional)"
+   ],
+   "name": "YouTube SEO Score Checker",
+   "outputs": [
+    "0-100 score",
+    "per-factor pass/fail",
+    "fix list"
+   ],
+   "platformRulesRef": [
+    "youtube#title-hardLimit",
+    "youtube#title-displayLimit",
+    "youtube#description-hardLimit",
+    "youtube#description-aboveFold",
+    "youtube#tags-totalLimit",
+    "youtube#chapters-rules"
+   ],
+   "possibleDuplicateOf": "tool-133 (subset), tool-102 (subset), tool-134 (subset) — 146 is the composite; keep all, share check functions",
+   "slug": "youtube-seo-score-checker",
+   "toolId": "tool-146",
+   "validation": [
+    "title required"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "template sections (who/what/schedule/CTA/contact) with keyword slots",
+   "feasibilityNote": "Template assembly. Channel description limit 1000 chars (secondary source) — marked verified-from-secondary.",
+   "formulaRef": null,
+   "inputs": [
+    "channel name",
+    "niche",
+    "upload schedule",
+    "contact email (optional)"
+   ],
+   "name": "Channel About Page Generator",
+   "outputs": [
+    "about page text (<=1000 chars, channel description limit)"
+   ],
+   "platformRulesRef": [
+    "youtube#channelDescription-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "channel-about-page-generator",
+   "toolId": "tool-147",
+   "validation": [
+    "output <= 1000 characters"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "made-for-kids content -> end screens unavailable warning"
+   ],
+   "engine": "rule-based planner: video duration -> end-screen runway plan (element slots: video/playlist/subscribe/link; timing within last 5-20s; >=25s video requirement check)",
+   "feasibilityNote": "Encodes verified end-screen rules; planner only, application happens in YouTube Studio.",
+   "formulaRef": null,
+   "inputs": [
+    "video duration (seconds)",
+    "goal (subs / watch time / external link)"
+   ],
+   "name": "End Screen Strategy Planner",
+   "outputs": [
+    "element layout recommendation (up to 4 elements, 16:9)",
+    "timing plan",
+    "eligibility checks (duration >= 25s; not made-for-kids warning)"
+   ],
+   "platformRulesRef": [
+    "youtube#endscreen-rules"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "end-screen-strategy-planner",
+   "toolId": "tool-148",
+   "validation": [
+    "duration >= 25 else 'end screens unavailable' message"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [],
+   "engine": "checklist template (tech, audio, lighting, stream settings, backup plan, post-stream tasks)",
+   "feasibilityNote": "Static checklist; localStorage progress.",
+   "formulaRef": null,
+   "inputs": [
+    "stream type"
+   ],
+   "name": "Live Stream Pre-Flight Checklist",
+   "outputs": [
+    "checklist with progress %"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-135 — different context (live vs video launch)",
+   "slug": "live-stream-pre-flight-checklist",
+   "toolId": "tool-149",
+   "validation": [],
+   "verifiedToolType": "checklist",
+   "isInteractive": true,
+   "typeNote": "generator (inventory) — verified as interactive checklist (template)",
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no emotion words -> 'neutral' verdict with suggestions, not a failure",
+    "lexicon is fixed English list — note language limitation"
+   ],
+   "engine": "lexicon-based detection: emotion word lists (curiosity/power/urgency/fear/joy/trust) -> per-emotion hit counts + dominant emotion; labeled heuristic",
+   "feasibilityNote": "Word-list matching, not sentiment AI. Must not claim emotional-impact prediction.",
+   "formulaRef": null,
+   "inputs": [
+    "video title"
+   ],
+   "name": "Video Title Emotion Analyzer",
+   "outputs": [
+    "emotion profile (hits per category)",
+    "dominant emotion",
+    "suggestions from word bank for weak profiles"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "video-title-emotion-analyzer",
+   "toolId": "tool-150",
+   "validation": [
+    "title non-empty"
+   ],
+   "verifiedToolType": "analyzer",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "analyzer"
+  }
+ ]
+}
