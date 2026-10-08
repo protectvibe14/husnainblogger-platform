@@ -1,0 +1,1682 @@
+{
+ "category": "B",
+ "categoryName": "Make-Money & Affiliate",
+ "classifiedBy": "MA2 Category-B subagent",
+ "date": "2026-10-01",
+ "count": 50,
+ "tools": [
+  {
+   "toolId": "tool-051",
+   "name": "Mediavine Earnings Calculator",
+   "slug": "mediavine-earnings-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "rpm-multiplication",
+   "inputs": [
+    "monthlySessions(number,>0)",
+    "sessionRpm(number,>0,default 25)"
+   ],
+   "outputs": [
+    "estimatedMonthlyEarnings(currency)",
+    "earningsRange(low,high)"
+   ],
+   "validation": [
+    "monthlySessions finite",
+    "sessionRpm within 1..200 sanity band"
+   ],
+   "edgeCases": [
+    "zero sessions -> $0",
+    "RPM extreme values flagged"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Session RPM is publisher-dependent — default must be labeled a benchmark estimate (Mediavine typical $15–$40), user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-051",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-052",
+   "name": "Raptive Revenue Estimator",
+   "slug": "raptive-revenue-estimator",
+   "verifiedToolType": "calculator",
+   "engine": "rpm-multiplication",
+   "inputs": [
+    "monthlyPageviews(number,>0)",
+    "pageRpm(number,>0,default 30)"
+   ],
+   "outputs": [
+    "estimatedMonthlyEarnings(currency)",
+    "earningsRange(low,high)"
+   ],
+   "validation": [
+    "pageviews finite",
+    "pageRpm within 1..200 sanity band"
+   ],
+   "edgeCases": [
+    "zero pageviews -> $0",
+    "below 100k pageviews -> show eligibility warning (Raptive requires ~100k)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Raptive RPM typical $20–$50 — default labeled estimate, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-052",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-053",
+   "name": "Ad Revenue Network Comparison Tool",
+   "slug": "ad-revenue-network-comparison-tool",
+   "verifiedToolType": "comparison",
+   "engine": "multi-network-rpm-table",
+   "inputs": [
+    "monthlySessions(number,>0)",
+    "trafficShareUS(percent,0-100)",
+    "niche(enum)"
+   ],
+   "outputs": [
+    "comparisonRows(network, estimatedRpm, estimatedEarnings, requirement)"
+   ],
+   "validation": [
+    "sessions finite",
+    "share 0-100"
+   ],
+   "edgeCases": [
+    "zero sessions -> all $0",
+    "non-US heavy traffic -> lower RPM note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side table math. Network RPMs are third-party estimates — no live data. Inventory toolType 'generator' corrected to 'comparison': it computes per-network earnings, not generated content.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-053",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-054",
+   "name": "Blog Traffic-to-Income Planner",
+   "slug": "blog-traffic-to-income-planner",
+   "verifiedToolType": "planner",
+   "engine": "funnel-table",
+   "inputs": [
+    "monthlySessions(number,>0)",
+    "rpm(number,>0)",
+    "affiliateRevenue(number,>=0)",
+    "productRevenue(number,>=0)",
+    "sponsoredRevenue(number,>=0)"
+   ],
+   "outputs": [
+    "totalMonthlyIncome(currency)",
+    "incomeMix(percent by stream)",
+    "annualProjection(currency)"
+   ],
+   "validation": [
+    "all inputs finite, >=0"
+   ],
+   "edgeCases": [
+    "all-zero income streams -> $0 with guidance message"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math planner. No external data needed.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-054",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-055",
+   "name": "Etsy Fee Calculator",
+   "slug": "etsy-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "itemPrice(number,>0)",
+    "quantity(int,>=1)",
+    "shippingCharged(number,>=0)",
+    "sellerCountry(enum US/UK/DE/FR/CA/AU)",
+    "offsiteAdsAttributed(bool)"
+   ],
+   "outputs": [
+    "listingFee(currency)",
+    "transactionFee(currency)",
+    "processingFee(currency)",
+    "offsiteAdsFee(currency,conditional)",
+    "totalFees(currency)",
+    "netPayout(currency)"
+   ],
+   "validation": [
+    "itemPrice>0 finite",
+    "quantity integer >=1",
+    "shippingCharged>=0"
+   ],
+   "edgeCases": [
+    "zero price -> error (invalid input)",
+    "huge values -> BigInt-safe formatting, cap sanity warning",
+    "decimals -> round each fee line to cent (half-up)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Fees per platform-rules/etsy.json. Country-specific processing rates.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-055",
+   "platformRulesRef": [
+    "etsy"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-056",
+   "name": "Etsy Profit Calculator",
+   "slug": "etsy-profit-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction-plus-costs",
+   "inputs": [
+    "salePrice(number,>0)",
+    "itemCost(number,>=0)",
+    "shippingCharged(number,>=0)",
+    "shippingLabelCost(number,>=0)",
+    "sellerCountry(enum)"
+   ],
+   "outputs": [
+    "totalFees(currency)",
+    "totalCosts(currency)",
+    "netProfit(currency)",
+    "profitMargin(percent)"
+   ],
+   "validation": [
+    "itemCost>=0 finite",
+    "salePrice>0"
+   ],
+   "edgeCases": [
+    "costs exceed price -> negative profit shown with warning",
+    "zero price -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Same Etsy fee engine as tool-055 plus COGS/shipping/packaging. Possible duplicate/overlap of tool-055 — see DUP-B.md.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-056",
+   "platformRulesRef": [
+    "etsy"
+   ],
+   "possibleDuplicateOf": "tool-055",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-057",
+   "name": "eBay Fee Calculator",
+   "slug": "ebay-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "tiered-fee-deduction",
+   "inputs": [
+    "salePrice(number,>0)",
+    "shippingCharged(number,>=0)",
+    "category(enum)",
+    "orderTotal(number)",
+    "internationalBuyer(bool)"
+   ],
+   "outputs": [
+    "finalValueFee(currency)",
+    "perOrderFee(currency)",
+    "insertionFee(currency,optional)",
+    "totalFees(currency)",
+    "netPayout(currency)"
+   ],
+   "validation": [
+    "salePrice>0 finite",
+    "category in known list"
+   ],
+   "edgeCases": [
+    "sale > $7,500 -> tiered 2.35% above threshold",
+    "order <= $10 -> $0.30 vs $0.40 per-order fee",
+    "most-categories rate discrepancy (13.6 vs 13.25) -> UI estimate label"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Tiered FVF + per-order fee. eBay 13.6% vs 13.25% source discrepancy — UI must say estimate.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-057",
+   "platformRulesRef": [
+    "ebay"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-058",
+   "name": "Poshmark Fee Calculator",
+   "slug": "poshmark-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "flat-or-percent-fee",
+   "inputs": [
+    "salePrice(number,>0)",
+    "shippingDiscount(number,>=0,default 0)"
+   ],
+   "outputs": [
+    "poshmarkFee(currency)",
+    "netPayout(currency)"
+   ],
+   "validation": [
+    "salePrice>0 finite"
+   ],
+   "edgeCases": [
+    "sale exactly $15 -> 20% tier (>= $15)",
+    "sale under $15 -> $2.95 flat (can exceed 20%)",
+    "shipping discount reduces payout"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Trivially client-side. Two-tier fee.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-058",
+   "platformRulesRef": [
+    "poshmark"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-059",
+   "name": "Amazon FBA Profit Calculator",
+   "slug": "amazon-fba-profit-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction-plus-costs",
+   "inputs": [
+    "salePrice(number,>0)",
+    "referralRate(percent,default 15)",
+    "fulfillmentFee(number,>=0)",
+    "productCost(number,>=0)",
+    "unitsPerMonth(int,>0)",
+    "storageCost(number,>=0)"
+   ],
+   "outputs": [
+    "referralFee(currency)",
+    "fuelSurcharge(currency)",
+    "totalAmazonFees(currency)",
+    "netProfitPerUnit(currency)",
+    "monthlyProfit(currency)",
+    "margin(percent)",
+    "roi(percent)"
+   ],
+   "validation": [
+    "salePrice>0 finite",
+    "fulfillmentFee>=0"
+   ],
+   "edgeCases": [
+    "fulfillment fee left as user input (size/weight tiers too granular for v1) — labeled assumption",
+    "zero units -> monthly profit $0"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. FBA fulfillment fee is user-entered (tiers depend on size/weight); referral 15% default. v1 must NOT hardcode the full rate card.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-059",
+   "platformRulesRef": [
+    "amazon"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-060",
+   "name": "Amazon KDP Royalty Calculator",
+   "slug": "amazon-kdp-royalty-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "royalty-schedule",
+   "inputs": [
+    "format(enum ebook/paperback)",
+    "listPrice(number,>0)",
+    "fileSizeMB(number,>=0)",
+    "pageCount(int,>0)",
+    "inkType(enum bw/standard/premium)",
+    "marketplace(enum)"
+   ],
+   "outputs": [
+    "royaltyPerSale(currency)",
+    "royaltyRateApplied(percent)",
+    "printingCost(currency,paperback)"
+   ],
+   "validation": [
+    "listPrice>0",
+    "ebook 70% only valid $2.99–$9.99 (else auto 35%)",
+    "pageCount>0"
+   ],
+   "edgeCases": [
+    "price outside 70% band -> auto-switch with notice",
+    "delivery fee exceeding royalty -> floor at $0",
+    "70% ceiling $9.99 vs claimed $12.99 -> unverified note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Paperback 60% band flagged where sources disagree under $9.98.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-060",
+   "platformRulesRef": [
+    "amazon"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-061",
+   "name": "Print-on-Demand Profit Calculator",
+   "slug": "print-on-demand-profit-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction-plus-costs",
+   "inputs": [
+    "salePrice(number,>0)",
+    "baseProductCost(number,>=0)",
+    "platformFeeRate(percent,>=0)",
+    "shippingCost(number,>=0)"
+   ],
+   "outputs": [
+    "platformFee(currency)",
+    "netProfit(currency)",
+    "margin(percent)"
+   ],
+   "validation": [
+    "salePrice>0 finite",
+    "baseProductCost>=0"
+   ],
+   "edgeCases": [
+    "provider costs vary (Printful/Printify) -> all provider numbers user-entered, no hardcoded provider prices"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. NO hardcoded POD provider prices — base cost is user input. Unverified provider pricing must never be embedded.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-061",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-062",
+   "name": "Shopify Fee Calculator",
+   "slug": "shopify-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "plan-based-fee-deduction",
+   "inputs": [
+    "orderValue(number,>0)",
+    "ordersPerMonth(int,>0)",
+    "plan(enum basic/grow/advanced/plus)",
+    "useShopifyPayments(bool)",
+    "gatewayRate(percent,user)"
+   ],
+   "outputs": [
+    "processingFees(currency)",
+    "gatewaySurcharge(currency)",
+    "monthlySubscription(currency)",
+    "totalMonthlyCost(currency)",
+    "effectiveRate(percent)"
+   ],
+   "validation": [
+    "orderValue>0 finite",
+    "plan in known list"
+   ],
+   "edgeCases": [
+    "third-party gateway -> Shopify surcharge + gateway's own fee stacked",
+    "zero orders -> subscription cost still shown"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Subscription + card rate + optional external-gateway surcharge.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-062",
+   "platformRulesRef": [
+    "shopify"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-063",
+   "name": "PayPal Fee Calculator",
+   "slug": "paypal-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "multi-schedule-fee",
+   "inputs": [
+    "amount(number,>0)",
+    "paymentRoute(enum direct_gs/checkout/card)",
+    "international(bool)",
+    "currencyConversion(bool)"
+   ],
+   "outputs": [
+    "fee(currency)",
+    "netReceived(currency)",
+    "effectiveRate(percent)",
+    "reverseAmountToNet(target)"
+   ],
+   "validation": [
+    "amount>0 finite",
+    "route required — no single blended rate"
+   ],
+   "edgeCases": [
+    "direct G&S has NO fixed fee (2.99%) vs Checkout 3.49% + $0.49 — route must be explicit",
+    "international -> +1.5%",
+    "FX -> 3-4% spread note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. PayPal has multiple schedules — calculator must ask the route; single-rate math is wrong.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-063",
+   "platformRulesRef": [
+    "paypal"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-064",
+   "name": "Stripe Fee Calculator",
+   "slug": "stripe-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "amount(number,>0)",
+    "paymentMethod(enum online/in_person/ach)",
+    "internationalCard(bool)",
+    "currencyConversion(bool)"
+   ],
+   "outputs": [
+    "fee(currency)",
+    "netReceived(currency)",
+    "effectiveRate(percent)",
+    "reverseAmountToNet(target)"
+   ],
+   "validation": [
+    "amount>0 finite"
+   ],
+   "edgeCases": [
+    "in-person 2.7% + $0.05 vs online 2.9% + $0.30",
+    "intl +1.5%, FX +1% stack",
+    "ACH 0.8% capped $5"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-064",
+   "platformRulesRef": [
+    "stripe"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-065",
+   "name": "Gumroad Fee Calculator",
+   "slug": "gumroad-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "salePrice(number,>0)",
+    "saleChannel(enum direct/discover)",
+    "quantity(int,>=1)"
+   ],
+   "outputs": [
+    "gumroadFee(currency)",
+    "processingFee(currency,direct only)",
+    "totalFees(currency)",
+    "netPayout(currency)"
+   ],
+   "validation": [
+    "salePrice>0 finite",
+    "channel required"
+   ],
+   "edgeCases": [
+    "Discover 30% flat includes processing — do NOT add 2.9% + $0.30 on Discover",
+    "direct adds processing on top"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Channel determines fee stack.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-065",
+   "platformRulesRef": [
+    "gumroad"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-066",
+   "name": "Upwork Fee Calculator",
+   "slug": "upwork-fee-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "contractAmount(number,>0)",
+    "serviceFeeRate(percent,0-15,default 10)"
+   ],
+   "outputs": [
+    "serviceFee(currency)",
+    "netPayout(currency)",
+    "connectsCost(currency,optional)"
+   ],
+   "validation": [
+    "amount>0 finite",
+    "rate within 0-15"
+   ],
+   "edgeCases": [
+    "fee is variable per contract — default 10% labeled estimate, user-adjustable",
+    "Connects cost is pre-sale; optional separate line"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Upwork fee varies 0–15% — rate must be user-editable, never hardcoded as fixed.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-066",
+   "platformRulesRef": [
+    "upwork"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-067",
+   "name": "Fiverr Profit Calculator",
+   "slug": "fiverr-profit-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction-plus-costs",
+   "inputs": [
+    "orderValue(number,>0)",
+    "deliveryCost(number,>=0)",
+    "revisionRounds(int,>=0)"
+   ],
+   "outputs": [
+    "fiverrFee(currency)",
+    "netEarnings(currency)",
+    "effectiveHourly(currency,optional)"
+   ],
+   "validation": [
+    "orderValue>0 finite"
+   ],
+   "edgeCases": [
+    "fee is flat 20% incl. tips — tips input separate",
+    "buyer service fee excluded (buyer-paid)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Flat 20%.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-067",
+   "platformRulesRef": [
+    "fiverr"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-068",
+   "name": "Freelance Hourly Rate Calculator",
+   "slug": "freelance-hourly-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "income-target-backwards",
+   "inputs": [
+    "annualIncomeTarget(number,>0)",
+    "billableHoursPerYear(number,>0)",
+    "businessExpenses(number,>=0)",
+    "taxRate(percent,0-100)"
+   ],
+   "outputs": [
+    "requiredHourlyRate(currency)",
+    "rateWithTaxBuffer(currency)"
+   ],
+   "validation": [
+    "target>0",
+    "billable hours >0 and <= 8760"
+   ],
+   "edgeCases": [
+    "zero billable hours -> error",
+    "100% tax rate -> infinite rate guard"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-068",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-069",
+   "name": "Project Quote Generator",
+   "slug": "project-quote-generator",
+   "verifiedToolType": "calculator",
+   "engine": "cost-plus-margin",
+   "inputs": [
+    "estimatedHours(number,>0)",
+    "hourlyRate(number,>0)",
+    "materialCosts(number,>=0)",
+    "marginPercent(percent,>=0)",
+    "rushMultiplier(number,>=1,default 1)"
+   ],
+   "outputs": [
+    "subtotal(currency)",
+    "quoteTotal(currency)",
+    "lineItems(list)"
+   ],
+   "validation": [
+    "hours>0",
+    "rate>0",
+    "rush >=1"
+   ],
+   "edgeCases": [
+    "zero hours -> error",
+    "very high rush multiplier -> sanity warning"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Core is pricing math; outputs a formatted quote document. Inventory 'generator' verified as calculator-first (document is a formatted view of computed numbers).",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-069",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-070",
+   "name": "Copywriter Rate Calculator",
+   "slug": "copywriter-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "experienceLevel(enum beginner/intermediate/expert/specialist)",
+    "deliverable(enum per_word/per_hour/blog_post/sales_page)",
+    "wordCount(number,>0)",
+    "nichePremium(percent,>=0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)",
+    "perWordRate(currency)"
+   ],
+   "validation": [
+    "level in list",
+    "wordCount>0 if per-word"
+   ],
+   "edgeCases": [
+    "per-word $0.10–$2.00+ by level",
+    "niche premium up to +150% finance"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-070",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-071",
+   "name": "Video Editor Rate Calculator",
+   "slug": "video-editor-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "experienceLevel(enum entry/mid/senior)",
+    "projectHours(number,>0)",
+    "videoMinutes(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)",
+    "projectEstimate(currency)"
+   ],
+   "validation": [
+    "level in list",
+    "hours>0"
+   ],
+   "edgeCases": [
+    "entry $15–40/hr, mid $50–100, senior $100–250",
+    "per-video estimate = rate × hours"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-071",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-072",
+   "name": "Graphic Designer Rate Calculator",
+   "slug": "graphic-designer-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "experienceLevel(enum)",
+    "deliverable(enum logo/brand/social/print)",
+    "projectHours(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "level in list"
+   ],
+   "edgeCases": [
+    "range $30–$150/hr by level"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-072",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-073",
+   "name": "Web Designer Project Pricing Calculator",
+   "slug": "web-designer-project-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "projectScope(enum landing/5_page/ecommerce/custom)",
+    "pageCount(int,>0)",
+    "experienceLevel(enum)"
+   ],
+   "outputs": [
+    "suggestedProjectRange(low,high,currency)"
+   ],
+   "validation": [
+    "scope in list",
+    "pageCount>0"
+   ],
+   "edgeCases": [
+    "5-page site benchmark $2,000–$7,500; custom/ecommerce wide ranges -> labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-073",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-074",
+   "name": "Social Media Manager Pricing Calculator",
+   "slug": "social-media-manager-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "accountsManaged(int,>0)",
+    "postsPerWeek(int,>0)",
+    "servicesIncluded(list)"
+   ],
+   "outputs": [
+    "suggestedMonthlyRetainerRange(low,high,currency)"
+   ],
+   "validation": [
+    "accounts>0"
+   ],
+   "edgeCases": [
+    "retainer benchmark $500–$4,000/mo — wide range, labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-074",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-075",
+   "name": "Voiceover Rate Calculator",
+   "slug": "voiceover-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "projectType(enum narration/elearning/commercial/audiobook/ivr)",
+    "finishedMinutes(number,>0)",
+    "wordCount(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "type in list",
+    "minutes>0"
+   ],
+   "edgeCases": [
+    "narration tiers by finished minutes ($350/2min → $1,250/40min); e-learning $300–$600/finished hr; PFH $200–$400"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables (GVAA-derived ranges). Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-075",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-076",
+   "name": "SEO Freelancer Pricing Calculator",
+   "slug": "seo-freelancer-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "serviceType(enum audit/monthly_retainer/link_building)",
+    "sitePages(int,>0)",
+    "hoursPerMonth(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "type in list"
+   ],
+   "edgeCases": [
+    "NO 2026 benchmark source verified this round — defaults must be clearly labeled unverified/user-set"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math, but benchmark defaults are UNVERIFIED — UI must not present invented ranges as researched.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-076",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-077",
+   "name": "Virtual Assistant Rate Calculator",
+   "slug": "virtual-assistant-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "experienceLevel(enum)",
+    "tasksComplexity(enum basic/specialized)",
+    "hoursPerWeek(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)",
+    "weeklyCost(currency)"
+   ],
+   "validation": [
+    "level in list",
+    "hours>0"
+   ],
+   "edgeCases": [
+    "range $15–$50/hr by level/region"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark tables. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-077",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-078",
+   "name": "Freelance Invoice Generator",
+   "slug": "freelance-invoice-generator",
+   "verifiedToolType": "generator",
+   "engine": "document-generation",
+   "inputs": [
+    "clientName(text)",
+    "lineItems(list of desc/qty/rate)",
+    "taxRate(percent,0-100)",
+    "invoiceNumber(text)",
+    "dueDate(date)"
+   ],
+   "outputs": [
+    "invoiceDocument(rendered)",
+    "subtotal(currency)",
+    "tax(currency)",
+    "total(currency)"
+   ],
+   "validation": [
+    "line items non-empty",
+    "rates>=0",
+    "due date >= issue date"
+   ],
+   "edgeCases": [
+    "empty line items -> error",
+    "100% tax -> warning"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Client-side document rendering (print/PDF via browser). No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-078",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-079",
+   "name": "Sponsored Post Rate Calculator",
+   "slug": "sponsored-post-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "platform(enum instagram/tiktok/youtube)",
+    "followerCount(number,>0)",
+    "engagementRate(percent,>0)",
+    "contentFormat(enum post/reel/video)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)",
+    "ratePerFollower(currency)"
+   ],
+   "validation": [
+    "followers>0",
+    "platform in list"
+   ],
+   "edgeCases": [
+    "IMH 2026 tier bands; reels/TikTok premium vs static; stories 40-60% cheaper — format multiplier labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over IMH 2026 benchmark bands. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-079",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-080",
+   "name": "TikTok Sponsorship Rate Calculator",
+   "slug": "tiktok-sponsorship-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "followerCount(number,>0)",
+    "avgViews(number,>0)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "followers>0"
+   ],
+   "edgeCases": [
+    "nano $5–$25/video ... mega $5k–$25k+ (2026 compiled bands)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark bands. Overlaps tool-079 platform dimension — see DUP-B.md.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-080",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-079",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-081",
+   "name": "YouTube Sponsorship Rate Calculator",
+   "slug": "youtube-sponsorship-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "subscriberCount(number,>0)",
+    "avgViews(number,>0)",
+    "integrationType(enum dedicated/integration)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "subs>0",
+    "views>0"
+   ],
+   "edgeCases": [
+    "nano $20–$200 ... mega $50k–$300k+; dedicated vs integration multiplier labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark bands. Overlaps tool-079 platform dimension — see DUP-B.md.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-081",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-079",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-082",
+   "name": "Podcast Sponsorship Rate Calculator",
+   "slug": "podcast-sponsorship-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "cpm-multiplication",
+   "inputs": [
+    "downloadsPerEpisode(number,>0)",
+    "adFormat(enum pre_roll_30/mid_roll_60/post_roll)",
+    "episodesPerMonth(int,>0)"
+   ],
+   "outputs": [
+    "ratePerEpisode(currency)",
+    "monthlyValue(currency)"
+   ],
+   "validation": [
+    "downloads>0"
+   ],
+   "edgeCases": [
+    "host-read 30s $18–$22 CPM, 60s $24–$26 CPM (2026); under 1k downloads -> flat-fee guidance $300–$500/ep"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. CPM benchmarks verified (millionpodcasts/Libsyn 2026).",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-082",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-083",
+   "name": "UGC Creator Pricing Calculator",
+   "slug": "ugc-creator-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "benchmark-lookup",
+   "inputs": [
+    "videoCount(int,>0)",
+    "usageRights(enum organic/paid_ads/whitelisting)",
+    "postingRequired(bool)"
+   ],
+   "outputs": [
+    "suggestedRateRange(low,high,currency)"
+   ],
+   "validation": [
+    "videoCount>0"
+   ],
+   "edgeCases": [
+    "UGC video without posting ~$500 (Cheerful Sep 2026); paid usage rights multiplier labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over benchmark data. Benchmark ranges are survey estimates — defaults labeled estimates, user-editable.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-083",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-084",
+   "name": "Newsletter Sponsorship Rate Calculator",
+   "slug": "newsletter-sponsorship-rate-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "cpm-multiplication",
+   "inputs": [
+    "subscriberCount(number,>0)",
+    "openRate(percent,0-100)",
+    "placement(enum primary/secondary)"
+   ],
+   "outputs": [
+    "ratePerIssue(currency)",
+    "effectiveCPM(currency)"
+   ],
+   "validation": [
+    "subs>0",
+    "openRate 0-100"
+   ],
+   "edgeCases": [
+    "primary placement ~$150 CPM, secondary ~$50 CPM (2026) — labeled estimate"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. CPM benchmarks from outrank.so 2026 — estimates.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-084",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-085",
+   "name": "Rate Card Generator",
+   "slug": "rate-card-generator",
+   "verifiedToolType": "generator",
+   "engine": "document-generation",
+   "inputs": [
+    "platforms(list)",
+    "followerCounts(map)",
+    "baseRates(map,optional)"
+   ],
+   "outputs": [
+    "rateCardDocument(rendered)",
+    "rateTable(rows)"
+   ],
+   "validation": [
+    "at least one platform"
+   ],
+   "edgeCases": [
+    "missing base rates -> falls back to benchmark bands with estimate labels"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Composites benchmark bands into a presentable card. Client-side render.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-085",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-086",
+   "name": "Patreon Earnings Estimator",
+   "slug": "patreon-earnings-estimator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "patrons(int,>0)",
+    "avgPledge(number,>0)",
+    "planType(enum standard_10/legacy_lite/legacy_pro/legacy_premium)"
+   ],
+   "outputs": [
+    "platformFee(currency)",
+    "processingFees(currency)",
+    "estimatedNetMonthly(currency)"
+   ],
+   "validation": [
+    "patrons>0",
+    "pledge>0"
+   ],
+   "edgeCases": [
+    "new pages = flat 10%; legacy tiers preserved",
+    "processing 2.9%+$0.30 over $3 / 5%+$0.10 under $3"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Plan determines platform fee.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-086",
+   "platformRulesRef": [
+    "patreon"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-087",
+   "name": "Substack Revenue Calculator",
+   "slug": "substack-revenue-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "fee-deduction",
+   "inputs": [
+    "paidSubscribers(int,>0)",
+    "monthlyPrice(number,>0)"
+   ],
+   "outputs": [
+    "grossRevenue(currency)",
+    "substackFee(currency)",
+    "stripeFees(currency)",
+    "netRevenue(currency)"
+   ],
+   "validation": [
+    "subs>0",
+    "price>0"
+   ],
+   "edgeCases": [
+    "10% platform + Stripe 2.9% + $0.30 per transaction"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-087",
+   "platformRulesRef": [
+    "substack"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-088",
+   "name": "Membership Site Revenue Projector",
+   "slug": "membership-site-revenue-projector",
+   "verifiedToolType": "calculator",
+   "engine": "funnel-table",
+   "inputs": [
+    "monthlyVisitors(number,>0)",
+    "conversionRate(percent,0-100)",
+    "monthlyPrice(number,>0)",
+    "churnRate(percent,0-100)",
+    "months(int,>0)"
+   ],
+   "outputs": [
+    "projectedMRR(currency)",
+    "projectedMembers(int)",
+    "annualProjection(currency)"
+   ],
+   "validation": [
+    "visitors>0",
+    "rates 0-100"
+   ],
+   "edgeCases": [
+    "churn compounds — projection must show decay, not flat line",
+    "100% churn -> $0"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math projection. Inventory 'generator' corrected to calculator: output is computed projections.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-088",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-089",
+   "name": "Twitch Subscriber Revenue Calculator",
+   "slug": "twitch-subscriber-revenue-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "tiered-split",
+   "inputs": [
+    "tier1Subs(int,>=0)",
+    "tier2Subs(int,>=0)",
+    "tier3Subs(int,>=0)",
+    "splitTier(enum base_50/plus_60/plus_70)",
+    "bitsCheered(int,>=0)"
+   ],
+   "outputs": [
+    "subRevenue(currency)",
+    "bitsRevenue(currency)",
+    "totalMonthly(currency)"
+   ],
+   "validation": [
+    "counts >=0 integers"
+   ],
+   "edgeCases": [
+    "regional pricing means ~$2.30 effective per T1 sub, not exactly $2.50 — labeled estimate",
+    "gift/prime subs same split"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Tier prices × split.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-089",
+   "platformRulesRef": [
+    "twitch"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-090",
+   "name": "Digital Product Pricing Calculator",
+   "slug": "digital-product-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "cost-plus-margin",
+   "inputs": [
+    "productionCost(number,>=0)",
+    "desiredMargin(percent,0-100)",
+    "platformFeeRate(percent,>=0)",
+    "unitsPerMonth(int,>0)"
+   ],
+   "outputs": [
+    "suggestedPrice(currency)",
+    "profitPerUnit(currency)",
+    "monthlyProfit(currency)"
+   ],
+   "validation": [
+    "margin 0-100"
+   ],
+   "edgeCases": [
+    "platform fee reduces effective margin — solve price = (cost + profit) / (1 - fee_rate)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. No external data; platform fee user-entered.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-090",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-091",
+   "name": "Online Course Pricing Calculator",
+   "slug": "online-course-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "value-based-matrix",
+   "inputs": [
+    "courseHours(number,>0)",
+    "nicheValue(enum low/medium/high)",
+    "studentOutcome(enum skill/career/business)",
+    "platformFeeRate(percent,>=0)"
+   ],
+   "outputs": [
+    "suggestedPriceRange(low,high,currency)"
+   ],
+   "validation": [
+    "hours>0"
+   ],
+   "edgeCases": [
+    "price bands are market estimates — wide ranges, labeled estimate, user judgment required"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over heuristic bands. Heavily estimate-based — UI must not present as researched pricing.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-091",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-092",
+   "name": "Course Launch Revenue Planner",
+   "slug": "course-launch-revenue-planner",
+   "verifiedToolType": "planner",
+   "engine": "funnel-table",
+   "inputs": [
+    "emailListSize(int,>0)",
+    "openRate(percent,0-100)",
+    "salesConversionRate(percent,0-100)",
+    "coursePrice(number,>0)",
+    "refundRate(percent,0-100)"
+   ],
+   "outputs": [
+    "projectedBuyers(int)",
+    "grossRevenue(currency)",
+    "netRevenue(currency,after refunds)"
+   ],
+   "validation": [
+    "list>0",
+    "rates 0-100"
+   ],
+   "edgeCases": [
+    "conversion benchmarks are user-entered — no invented 'typical' rates"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math funnel. No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-092",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-093",
+   "name": "eBook Pricing & Royalty Calculator",
+   "slug": "ebook-pricing-royalty-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "royalty-schedule",
+   "inputs": [
+    "format(enum kindle_ebook/paperback)",
+    "listPrice(number,>0)",
+    "fileSizeMB(number,>=0)",
+    "pageCount(int,>0)",
+    "inkType(enum)"
+   ],
+   "outputs": [
+    "royaltyPerSale(currency)",
+    "royaltyRate(percent)"
+   ],
+   "validation": [
+    "listPrice>0"
+   ],
+   "edgeCases": [
+    "same KDP schedule as tool-060 — shared engine, different framing (pricing-first vs royalty-first). See DUP-B.md."
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Reuses KDP rules.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-093",
+   "platformRulesRef": [
+    "amazon"
+   ],
+   "possibleDuplicateOf": "tool-060",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-094",
+   "name": "Coaching Package Pricing Calculator",
+   "slug": "coaching-package-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "cost-plus-margin",
+   "inputs": [
+    "sessionsPerPackage(int,>0)",
+    "sessionLengthMin(number,>0)",
+    "hourlyValue(number,>0)",
+    "programWeeks(int,>0)",
+    "supportHours(number,>=0)"
+   ],
+   "outputs": [
+    "packagePrice(currency)",
+    "pricePerSession(currency)",
+    "effectiveHourly(currency)"
+   ],
+   "validation": [
+    "sessions>0",
+    "hourly>0"
+   ],
+   "edgeCases": [
+    "package discount vs 1:1 rate labeled as user-set, not researched"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-094",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "differentiationLocked": "Keep-both vs tool-476 (Lead): 094 = coaching pricing MATH. 476 = package structure/tiering builder. Distinct.",
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-095",
+   "name": "Webinar Revenue Estimator",
+   "slug": "webinar-revenue-estimator",
+   "verifiedToolType": "calculator",
+   "engine": "funnel-table",
+   "inputs": [
+    "registrants(int,>0)",
+    "showUpRate(percent,0-100)",
+    "offerConversionRate(percent,0-100)",
+    "offerPrice(number,>0)"
+   ],
+   "outputs": [
+    "attendees(int)",
+    "buyers(int)",
+    "estimatedRevenue(currency)"
+   ],
+   "validation": [
+    "registrants>0",
+    "rates 0-100"
+   ],
+   "edgeCases": [
+    "show-up/conversion benchmarks NOT verified 2026 — user-entered or clearly labeled estimates"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math funnel. Benchmark defaults unverified — UI must say so.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-095",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-096",
+   "name": "Amazon Affiliate Commission Estimator",
+   "slug": "amazon-affiliate-commission-estimator",
+   "verifiedToolType": "calculator",
+   "engine": "rate-multiplication",
+   "inputs": [
+    "category(enum)",
+    "monthlySales(number,>0)",
+    "avgOrderValue(number,>0)"
+   ],
+   "outputs": [
+    "commissionRate(percent)",
+    "estimatedCommission(currency)"
+   ],
+   "validation": [
+    "category in list",
+    "sales>0"
+   ],
+   "edgeCases": [
+    "US rate card only — other marketplaces differ; category list user-verified"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math over Associates rate card.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-096",
+   "platformRulesRef": [
+    "amazon"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-097",
+   "name": "SaaS Affiliate Recurring Revenue Calculator",
+   "slug": "saas-affiliate-recurring-revenue-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "recurring-multiplication",
+   "inputs": [
+    "referralsPerMonth(int,>0)",
+    "avgPlanPrice(number,>0)",
+    "commissionRate(percent,0-100)",
+    "recurringMonths(int,>0)",
+    "churnRate(percent,0-100)"
+   ],
+   "outputs": [
+    "monthlyRecurringCommission(currency)",
+    "totalCommission(currency)",
+    "projectedAnnual(currency)"
+   ],
+   "validation": [
+    "referrals>0",
+    "rate 0-100"
+   ],
+   "edgeCases": [
+    "software affiliate rates 15–30% typical (2026) — labeled estimate, per-program rates vary widely"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. Rate default is an estimate.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-097",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-098",
+   "name": "Affiliate EPC Calculator",
+   "slug": "affiliate-epc-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "ratio",
+   "inputs": [
+    "totalClicks(int,>0)",
+    "totalConversions(int,>=0)",
+    "totalCommission(number,>=0)"
+   ],
+   "outputs": [
+    "epc(currency)",
+    "conversionRate(percent)",
+    "earningsPerConversion(currency)"
+   ],
+   "validation": [
+    "clicks>0"
+   ],
+   "edgeCases": [
+    "zero conversions -> EPC $0",
+    "EPC = commission/clicks × 100 convention"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-098",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-099",
+   "name": "Break-Even ROAS Calculator",
+   "slug": "break-even-roas-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "ratio",
+   "inputs": [
+    "grossMarginPercent(percent,0-100)",
+    "adSpend(number,>=0)",
+    "revenue(number,>0)"
+   ],
+   "outputs": [
+    "breakEvenROAS(ratio)",
+    "actualROAS(ratio)",
+    "profitable(bool)"
+   ],
+   "validation": [
+    "margin 0-100, >0"
+   ],
+   "edgeCases": [
+    "margin 0 -> undefined (division by zero) -> error message",
+    "ROAS = 1/margin"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math. No external data.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-099",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": "tool-100",
+   "name": "Blog Niche Profitability Calculator",
+   "slug": "blog-niche-profitability-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "composite-scoring",
+   "inputs": [
+    "niche(enum)",
+    "monthlySearchVolume(number,>0)",
+    "competitionLevel(enum low/medium/high)",
+    "monetizationMethods(list)",
+    "avgRpm(number,>0)"
+   ],
+   "outputs": [
+    "profitabilityScore(0-100)",
+    "estimatedMonthlyPotential(currency)",
+    "methodBreakdown(list)"
+   ],
+   "validation": [
+    "volume>0"
+   ],
+   "edgeCases": [
+    "score is heuristic, NOT a researched metric — labeled estimate; RPM user-editable"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure math + heuristic scoring. Score must be labeled a rough heuristic.",
+   "formulaRef": "data/formulas/formulas-B.json :: tool-100",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  }
+ ]
+}
