@@ -1,0 +1,179 @@
+---
+/**
+ * ConverterTemplate.astro — value + from-unit + to-unit → converted value.
+ *
+ * Serves toolType: converter (2 tools).
+ *
+ * Contract: amount input + two unit selects + a Swap button (swaps the
+ * selects without submitting, a11y 3.2.2). The TOOL LOGIC SLOT converts via
+ * base-unit factors and returns the converted value plus a human-readable
+ * formula line. Demo units are length units with exact definition factors.
+ *
+ * MA2: replace `demoRun` (and DEMO_UNITS) below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { ConverterTemplateProps, ConverterUnit } from './types.ts';
+
+interface Props extends ConverterTemplateProps {}
+const { tool, content, relatedTools = [], baseUnitLabel = 'meter', freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_UNITS: ConverterUnit[] = [
+  { id: 'm', label: 'Meters', toBase: 1 },
+  { id: 'km', label: 'Kilometers', toBase: 1000 },
+  { id: 'ft', label: 'Feet', toBase: 0.3048 },
+  { id: 'in', label: 'Inches', toBase: 0.0254 },
+  { id: 'mi', label: 'Miles', toBase: 1609.344 },
+];
+const DEMO_INPUTS: ToolInput[] = [
+  { id: 'amount', label: 'Amount', type: 'number', required: true, placeholder: 'e.g. 100' },
+  { id: 'from', label: 'From', type: 'select', required: true, options: DEMO_UNITS.map((u) => u.label) },
+  { id: 'to', label: 'To', type: 'select', required: true, options: DEMO_UNITS.map((u) => u.label) },
+];
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'converted', label: 'Converted value', type: 'number' },
+  { id: 'formula', label: 'Conversion', type: 'text' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+  units: DEMO_UNITS,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="converter">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      <div class="hb-field-grid">
+        {inputs.map((input) =>
+          input.id === 'amount' ? (
+            <Field
+              id={`field-${tool.toolId}-${input.id}`}
+              name={input.id}
+              label={input.label}
+              type="number"
+              required={input.required}
+              hint={input.placeholder}
+              min={input.validation?.min}
+              max={input.validation?.max}
+              step="any"
+              inputMode="decimal"
+            />
+          ) : (
+            <Field
+              id={`field-${tool.toolId}-${input.id}`}
+              name={input.id}
+              label={input.label}
+              type={CONTROL[input.type] ?? 'text'}
+              required={input.required}
+              hint={input.placeholder}
+              options={input.options}
+            />
+          ),
+        )}
+      </div>
+
+      <div class="hb-form-actions">
+        <Button type="button" variant="secondary" data-action="swap">Swap units</Button>
+        <Button type="submit" variant="primary">Convert</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Conversion result"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: length conversion via base-unit (meter) factors. Real tools
+   * provide their own unit table + convert(); the template only needs
+   * { converted: number, formula: string }.
+   * ======================================================================= */
+  interface DemoUnit { id: string; label: string; toBase: number }
+  function demoRun(values: ToolRunValues, units: DemoUnit[]): ToolRunResult {
+    const amount = Number(values.amount);
+    const from = units.find((u) => u.label === String(values.from));
+    const to = units.find((u) => u.label === String(values.to));
+    if (!Number.isFinite(amount)) return { ok: false, error: 'Enter a valid amount.' };
+    if (!from || !to) return { ok: false, error: 'Choose both units.' };
+    const base = amount * from.toBase;
+    const converted = Math.round((base / to.toBase) * 1000000) / 1000000;
+    return {
+      ok: true,
+      values: {
+        converted,
+        formula: `${amount} ${from.label.toLowerCase()} = ${converted} ${to.label.toLowerCase()}`,
+      },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+  const root = document.querySelector('[data-tool-root]');
+
+  // Swap button: exchanges the two unit selects, never submits (a11y 3.2.2).
+  root?.querySelector('[data-action="swap"]')?.addEventListener('click', () => {
+    const from = root.querySelector('[data-field-input="from"]') as HTMLSelectElement | null;
+    const to = root.querySelector('[data-field-input="to"]') as HTMLSelectElement | null;
+    if (from && to) {
+      const tmp = from.value;
+      from.value = to.value;
+      to.value = tmp;
+      from.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  });
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? ((values: ToolRunValues) => demoRun(values, config.units ?? [])),
+    resultHeading: 'Conversion result',
+  });
+</script>
