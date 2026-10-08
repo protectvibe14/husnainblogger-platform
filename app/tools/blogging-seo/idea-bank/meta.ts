@@ -1,0 +1,209 @@
+import type { ToolInput, ToolOutput } from '../../../src/lib/registry/types.ts';
+import type { ToolContent } from '../../../src/templates/types.ts';
+
+const TOOL_URL = 'https://husnainblogger.com/tools/blogging-seo/idea-bank/';
+
+export const inputs: ToolInput[] = [
+  {
+    id: 'action',
+    label: 'Action',
+    type: 'select',
+    required: true,
+    options: ['add', 'list', 'update', 'delete', 'export'],
+    placeholder: 'What do you want to do?',
+  },
+  {
+    id: 'existingIdeas',
+    label: 'Your saved ideas (JSON)',
+    type: 'textarea',
+    required: false,
+    placeholder: 'Paste your previously exported bank JSON here — leave empty to start fresh',
+  },
+  {
+    id: 'title',
+    label: 'Idea title',
+    type: 'text',
+    required: false,
+    placeholder: 'e.g. 10 email subject line formulas',
+    validation: { max: 200 },
+  },
+  {
+    id: 'tags',
+    label: 'Tags (comma-separated)',
+    type: 'text',
+    required: false,
+    placeholder: 'e.g. email, copywriting',
+  },
+  {
+    id: 'status',
+    label: 'Status',
+    type: 'select',
+    required: false,
+    options: ['idea', 'draft', 'published', 'archived'],
+    placeholder: 'Defaults to idea',
+  },
+  {
+    id: 'notes',
+    label: 'Notes',
+    type: 'textarea',
+    required: false,
+    placeholder: 'Anything to remember about this idea…',
+  },
+  {
+    id: 'index',
+    label: 'Idea # (for update/delete)',
+    type: 'number',
+    required: false,
+    placeholder: 'The row number from the ideas table',
+    validation: { min: 1 },
+  },
+  {
+    id: 'filterTag',
+    label: 'Filter: tag',
+    type: 'text',
+    required: false,
+    placeholder: 'Show only ideas with this tag',
+  },
+  {
+    id: 'filterStatus',
+    label: 'Filter: status',
+    type: 'select',
+    required: false,
+    options: ['idea', 'draft', 'published', 'archived'],
+  },
+  {
+    id: 'filterQuery',
+    label: 'Filter: search',
+    type: 'text',
+    required: false,
+    placeholder: 'Search titles and notes',
+  },
+];
+
+export const outputs: ToolOutput[] = [
+  {
+    id: 'ideas',
+    label: 'Ideas',
+    type: 'table',
+    description: 'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. Instant, private, and mobile-friendly. No signup - try it free!',
+  },
+  {
+    id: 'count',
+    label: 'Idea count',
+    type: 'number',
+    description: 'How many ideas are shown.',
+  },
+  {
+    id: 'exportCsv',
+    label: 'Export CSV',
+    type: 'download',
+    description: 'The full bank as a CSV file — download it to save your ideas between sessions.',
+  },
+];
+
+export const content: ToolContent = {
+  title: 'Blog Idea Bank 2026 – Free Idea Tool | HusnainBlogger',
+  description:
+    'Stop losing great post ideas: this free blog idea bank stores, tags, filters and exports your content ideas in one place. Organize your ideas now!',
+  howTo: [
+    'Choose an action: add a new idea, list and filter your bank, update or delete by row number, or export.',
+    'To keep ideas between sessions: download the CSV after adding, then paste your saved JSON into "Your saved ideas" next time.',
+    'Add ideas with a title, comma-separated tags, a status (idea/draft/published/archived) and notes.',
+    'Use the list action with tag, status or search filters to find ideas when you need one.',
+    'Duplicate titles are allowed but flagged so you can spot them.',
+  ],
+  methodology:
+    'The tool is deliberately stateless: it keeps no data between calls. Each run takes your bank as JSON (or starts empty), applies the chosen action with fixed rules — tags are trimmed, de-duplicated and capped at 20 per idea; duplicate titles are allowed and flagged; update/delete use the 1-based row number; export renders the full bank as CSV — and returns the resulting bank. It stores only the ideas you enter; it never suggests topics or invents content.',
+  examples: [
+    {
+      title: 'Add your first idea',
+      inputs: { action: 'add', title: '10 email subject line formulas', tags: 'email, copywriting', status: 'idea' },
+      note: 'Bank now holds 1 idea; the CSV export contains it for saving.',
+    },
+    {
+      title: 'Find draft ideas by tag',
+      inputs: {
+        action: 'list',
+        existingIdeas:
+          '[{"title":"SEO checklist","tags":["seo"],"status":"draft","notes":""}]',
+        filterTag: 'seo',
+      },
+      note: 'Shows the 1 matching idea; count = 1.',
+    },
+  ],
+  faqs: [
+    {
+      question: 'What is the best blog idea bank?',
+      answer:
+        'No independent test crowns one tool "the best" — what matters is that your ideas survive between sessions. This free bank is deliberately simple: it stores, tags, filters and exports the ideas you enter, with a downloadable CSV so nothing is lost when you leave the page.',
+    },
+    {
+      question: 'Is there a free blog idea bank?',
+      answer:
+        'Yes — this tool is completely free with no signup. Add ideas with tags and statuses, filter the bank when you need inspiration, and download the CSV to keep your ideas between visits.',
+    },
+    {
+      question: 'How to use a blog idea bank?',
+      answer:
+        'Capture every idea the moment it appears (title + a tag or two), mark its status as it moves from idea to draft to published, and filter by tag when you sit down to write. The CSV export is your backup — download it regularly.',
+    },
+    {
+      question: 'How does a blog idea bank work?',
+      answer:
+        'You add ideas with titles, tags, statuses and notes; the bank holds them in a table you can filter and update. This one is stateless — it does not remember anything between visits, so paste your saved JSON back in or download the CSV to carry your ideas forward.',
+    },
+    {
+      question: 'How does the blog idea bank work?',
+      answer:
+        'Enter your details using the inputs above and the blog idea bank calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+    },
+    {
+      question: 'Is the blog idea bank free to use?',
+      answer:
+        'Yes - this blog idea bank is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+    },
+    {
+      question: 'What is a blog idea bank?',
+      answer:
+        'A blog idea bank is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+    },
+  ],
+  assumptions: [
+    'Stateless by design: nothing is saved on any server — use the CSV export to keep ideas between sessions.',
+    'Stores only the ideas you enter; it never suggests topics or invents content.',
+    'Duplicate titles are allowed and flagged, not blocked.',
+    'Bank capped at 500 ideas per run; tags capped at 20 per idea.',
+  ],
+  jsonLd: [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'Blog Idea Bank 2026 – Free Idea Tool | HusnainBlogger',
+      url: TOOL_URL,
+      applicationCategory: 'Utilities',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      description: 'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. Instant, private, and mobile-friendly. No signup - try it free!',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Blogging & SEO Tools',
+          item: 'https://husnainblogger.com/tools/blogging-seo/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Idea Bank',
+          item: TOOL_URL,
+        },
+      ],
+    },
+  ],
+};
