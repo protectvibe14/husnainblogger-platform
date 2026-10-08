@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-10-07T19:44:08.228Z",
+  "scope": "all tools (fast sweep)",
+  "summary": {
+    "total": 576,
+    "deprecated": 7,
+    "pass": 569,
+    "fail": 0
+  },
+  "failures": []
+}
