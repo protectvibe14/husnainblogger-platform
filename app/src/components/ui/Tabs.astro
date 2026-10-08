@@ -1,0 +1,139 @@
+---
+/**
+ * Tabs.astro — tabbed interface.
+ * Owner: MA1-DesignSystem.
+ *
+ * Full tablist pattern (ACCESSIBILITY.md §3.6):
+ *  - role=tablist > role=tab[aria-selected, aria-controls] >
+ *    role=tabpanel[aria-labelledby]
+ *  - Keyboard: Left/Right/Home/End move between tabs; Tab moves into the
+ *    panel. AUTOMATIC activation: selection follows focus (documented here
+ *    and consistent everywhere).
+ *  - Panels stay in the DOM (hidden attr) — focus position is never lost.
+ *
+ * Do NOT use tabs for the primary tool workflow steps (keep generate flows
+ * linear — §3.6). Intended for secondary content (e.g. result views:
+ * "Preview / HTML / CSV").
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Tab {
+  id: string;
+  label: string;
+  panelHtml: string;
+}
+
+interface Props {
+  tabs: Tab[];
+  /** Accessible name for the tablist, e.g. "Result views". REQUIRED. */
+  label: string;
+  class?: string;
+}
+
+const { tabs, label, class: cls } = Astro.props;
+if (!label || !label.trim()) {
+  throw new Error("Tabs: `label` is required (names the tablist).");
+}
+if (!tabs.length) {
+  throw new Error("Tabs: at least one tab is required.");
+}
+const groupId = nextId("tabs");
+---
+<div class:list={["hb-tabs", cls]} data-tabs>
+  <div class="hb-tabs__list" role="tablist" aria-label={label}>
+    {tabs.map((tab, i) => (
+      <button
+        type="button"
+        role="tab"
+        id={`${groupId}-tab-${tab.id}`}
+        aria-controls={`${groupId}-panel-${tab.id}`}
+        aria-selected={i === 0 ? "true" : "false"}
+        tabindex={i === 0 ? "0" : "-1"}
+        class:list={["hb-tabs__tab", { "hb-tabs__tab--active": i === 0 }]}
+        data-tab
+      >{tab.label}</button>
+    ))}
+  </div>
+  {tabs.map((tab, i) => (
+    <div
+      role="tabpanel"
+      id={`${groupId}-panel-${tab.id}`}
+      aria-labelledby={`${groupId}-tab-${tab.id}`}
+      tabindex="0"
+      hidden={i === 0 ? undefined : true}
+      data-tabpanel
+      set:html={tab.panelHtml}
+    />
+  ))}
+</div>
+
+<script>
+  function wireGroup(group: HTMLElement): void {
+    if (group.dataset.hbWired) return;
+    group.dataset.hbWired = "1";
+    const tabs = Array.from(group.querySelectorAll<HTMLElement>("[data-tab]"));
+    const panels = Array.from(group.querySelectorAll<HTMLElement>("[data-tabpanel]"));
+
+    const select = (index: number, focus = true) => {
+      tabs.forEach((tab, i) => {
+        const active = i === index;
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+        tab.tabIndex = active ? 0 : -1;
+        tab.classList.toggle("hb-tabs__tab--active", active);
+        const panel = panels[i];
+        if (panel) {
+          if (active) panel.removeAttribute("hidden");
+          else panel.setAttribute("hidden", "");
+        }
+        if (active && focus) tab.focus();
+      });
+    };
+
+    tabs.forEach((tab, i) => {
+      // Automatic activation: selection follows focus.
+      tab.addEventListener("click", () => select(i, false));
+      tab.addEventListener("focus", () => select(i, false));
+      tab.addEventListener("keydown", (e) => {
+        let target: number | null = null;
+        if (e.key === "ArrowRight") target = (i + 1) % tabs.length;
+        else if (e.key === "ArrowLeft") target = (i - 1 + tabs.length) % tabs.length;
+        else if (e.key === "Home") target = 0;
+        else if (e.key === "End") target = tabs.length - 1;
+        if (target !== null) {
+          e.preventDefault();
+          select(target, true);
+        }
+      });
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-tabs]").forEach(wireGroup);
+</script>
+
+<style>
+  .hb-tabs__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    border-bottom: 2px solid var(--color-border);
+  }
+  .hb-tabs__tab {
+    min-height: var(--touch-target);
+    padding: var(--space-2) var(--space-4);
+    font: inherit;
+    font-weight: var(--weight-semibold);
+    color: var(--color-muted);
+    background: none;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+  }
+  .hb-tabs__tab:hover { color: var(--color-accent); }
+  .hb-tabs__tab--active {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+  }
+  .hb-tabs [role="tabpanel"] { padding-block: var(--space-4); }
+  .hb-tabs [role="tabpanel"]:focus-visible { outline-offset: -3px; }
+</style>
