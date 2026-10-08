@@ -1,0 +1,375 @@
+{
+ "platform": "amazon",
+ "rules": [
+  {
+   "ruleId": "amazon-fba-referral-fee",
+   "platform": "amazon",
+   "rule": "FBA referral fee",
+   "value": "Usually 15% of total sale price (min $0.30/item); range 5–45% by category; electronics/computers 8%",
+   "valueUnit": "text",
+   "source": "SpaceGoats FBA guide (rates checked 2026-10-01); wiseppc FAQ June 2026",
+   "sourceUrl": "https://spacegoats.io/space-wiki/what-is-fba/",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-fba-fulfillment-fee-standard",
+   "platform": "amazon",
+   "rule": "FBA fulfillment fee — standard size",
+   "value": "$3.06–$6+ per unit; small standard ~$3.22–$4.75",
+   "valueUnit": "text",
+   "source": "wiseppc Amazon FBA Fees 2026; sellersprite.ai beginner guide 2026",
+   "sourceUrl": "https://wiseppc.com/blog/amazon-fba-fees/",
+   "effectiveDate": "2026-01-15",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "Rose ~$0.08 avg effective 2026-01-15.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-fba-fuel-surcharge",
+   "platform": "amazon",
+   "rule": "FBA fuel & logistics surcharge",
+   "value": 3.5,
+   "valueUnit": "percent",
+   "source": "wiseppc Amazon FBA Fees 2026 FAQ",
+   "sourceUrl": "https://wiseppc.com/blog/amazon-fba-fees/",
+   "effectiveDate": "2026-04-17",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "Effective 2026-04-17; on every fulfilled unit.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-fba-storage-standard",
+   "platform": "amazon",
+   "rule": "FBA monthly storage — standard size",
+   "value": "$0.78/ft³ Jan–Sep; $2.40/ft³ Oct–Dec",
+   "valueUnit": "text",
+   "source": "SpaceGoats FBA guide (checked 2026-10-01)",
+   "sourceUrl": "https://spacegoats.io/space-wiki/what-is-fba/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-fba-inbound-placement",
+   "platform": "amazon",
+   "rule": "FBA inbound placement fee",
+   "value": "$0.21–$0.53/unit",
+   "valueUnit": "text",
+   "source": "sellersprite.ai beginner guide 2026",
+   "sourceUrl": "http://www.sellersprite.ai/en/blog/how-to-start-amazon-fba-2026",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "When Amazon redistributes shipments across fulfillment centers.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-fba-low-inventory-fee",
+   "platform": "amazon",
+   "rule": "FBA low-inventory-level fee",
+   "value": "$0.32–$1.11/unit",
+   "valueUnit": "text",
+   "source": "sellersprite.ai beginner guide 2026",
+   "sourceUrl": "http://www.sellersprite.ai/en/blog/how-to-start-amazon-fba-2026",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "When SKU days-of-supply falls below ~28 days.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-seller-plan",
+   "platform": "amazon",
+   "rule": "Amazon seller plan",
+   "value": "Professional $39.99/month; Individual $0.99 per item sold",
+   "valueUnit": "text",
+   "source": "SpaceGoats FBA guide (checked 2026-10-01)",
+   "sourceUrl": "https://spacegoats.io/space-wiki/what-is-fba/",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-059"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-ebook-35",
+   "platform": "amazon",
+   "rule": "KDP eBook royalty — 35% tier",
+   "value": "35% any price $0.99–$200; royalty = list_price × 0.35; no delivery fee",
+   "valueUnit": "text",
+   "source": "thesellingguys KDP Ultimate Guide 2026",
+   "sourceUrl": "https://www.thesellingguys.com/kindle-direct-publishing/",
+   "effectiveDate": "2026-03-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-ebook-70",
+   "platform": "amazon",
+   "rule": "KDP eBook royalty — 70% tier",
+   "value": "70% for books priced $2.99–$9.99; royalty = (list_price × 0.70) − $0.15/MB delivery fee",
+   "valueUnit": "text",
+   "source": "thesellingguys KDP Ultimate Guide 2026; hmdpublishing royalty calculator 2026",
+   "sourceUrl": "https://www.thesellingguys.com/kindle-direct-publishing/",
+   "effectiveDate": "2026-03-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-70pct-ceiling-claim",
+   "platform": "amazon",
+   "rule": "KDP 70% ceiling rise claim ($12.99)",
+   "value": "$12.99 claimed ceiling",
+   "valueUnit": "text",
+   "source": "flashlan vibe-kanban-alternative KDP chapter (secondary source, Aug 2026) — UNCONFIRMED",
+   "sourceUrl": "https://github.com/flashlan/vibe-kanban-alternative/blob/HEAD/docs/livro-en/09-publicacao-kdp.md",
+   "effectiveDate": "2026-08-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "Single secondary source claims the 70% ceiling rose to $12.99 in Jul 2026; majority of sources still show $9.99. NOT verified — do not ship as fact.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; UNVERIFIED claim — re-check against a primary source before use"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-paperback-royalty",
+   "platform": "amazon",
+   "rule": "KDP paperback royalty",
+   "value": "60% of list price − printing cost (US/UK/EU)",
+   "valueUnit": "text",
+   "source": "thesellingguys KDP Ultimate Guide 2026",
+   "sourceUrl": "https://www.thesellingguys.com/kindle-direct-publishing/",
+   "effectiveDate": "2026-03-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "Some sources report a 50% tier under $9.98 — unconfirmed; not shipped as fact.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-print-cost",
+   "platform": "amazon",
+   "rule": "KDP paperback printing cost",
+   "value": "B&W: $1.00 + $0.012 × pages; Standard color: $1.00 + $0.0255 × pages; Premium color: $1.00 + $0.065 × pages",
+   "valueUnit": "text",
+   "source": "thesellingguys KDP Ultimate Guide 2026",
+   "sourceUrl": "https://www.thesellingguys.com/kindle-direct-publishing/",
+   "effectiveDate": "2026-03-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-kdp-ku-page-rate",
+   "platform": "amazon",
+   "rule": "KDP Select (Kindle Unlimited) page rate",
+   "value": "~$0.00462/KENP page",
+   "valueUnit": "text",
+   "source": "bestwriting KDP Royalties Guide 2026",
+   "sourceUrl": "https://bestwriting.com/kdp-royalties",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-060",
+    "tool-093"
+   ],
+   "notes": "June 2026 KDP Select Global Fund $63.6M; range ~$0.0038–$0.0052 across 2025–2026.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "amazon-associates-rates-us",
+   "platform": "amazon",
+   "rule": "Amazon Associates commission rates — US",
+   "value": "Games 20%; Luxury Beauty 10%; Music/Handmade 5%; Books/Kitchen/Automotive 4.5%; Devices/Fashion 4%; Home 3%; PC components 2.5%; TVs/digital video games 2%; Grocery/HPC 1%; All Other Categories 4%",
+   "valueUnit": "text",
+   "source": "wpmanageninja (Sep 2026, from US Associates rate card); spartanshopper table confirmed 2026-08-08 from Amazon commission schedule",
+   "sourceUrl": "https://wpmanageninja.com/earn-with-amazon-affiliate-marketing/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-096"
+   ],
+   "notes": "US rate card only; other marketplaces differ.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
