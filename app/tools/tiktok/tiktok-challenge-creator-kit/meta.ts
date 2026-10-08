@@ -1,0 +1,145 @@
+import type { ToolInput, ToolOutput } from '../../../src/lib/registry/types.ts';
+import type { ToolContent } from '../../../src/templates/types.ts';
+
+export const inputs: ToolInput[] = [
+  {
+    id: 'challengeName',
+    label: 'Challenge name',
+    type: 'text',
+    required: true,
+    placeholder: 'e.g. Two-Minute Tidy, 30-Day Glow-Up, Pantry Reset',
+    validation: { max: 80 },
+  },
+  {
+    id: 'niche',
+    label: 'Your niche (optional)',
+    type: 'text',
+    required: false,
+    placeholder: 'e.g. home organization',
+    validation: { max: 60 },
+  },
+  {
+    id: 'challengeType',
+    label: 'Challenge type',
+    type: 'select',
+    required: true,
+    options: ['dance', 'how-to', 'before-after', 'duet-chain'],
+  },
+];
+
+export const outputs: ToolOutput[] = [
+  { id: 'challengeHashtag', label: 'Challenge hashtag', type: 'text' },
+  { id: 'rulesText', label: 'Challenge rules text', type: 'copy' },
+  { id: 'exampleScript', label: 'Example launch video script', type: 'copy' },
+  { id: 'judgingCriteria', label: 'Judging criteria', type: 'list' },
+  { id: 'launchCta', label: 'Launch call to action', type: 'text' },
+  { id: 'disclosureNote', label: 'Disclosure and honesty note', type: 'text' },
+];
+
+const DESCRIPTION =
+  'Free tiktok challenge ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+
+export const content: ToolContent = {
+  title: 'TikTok Challenge Creator Kit 2026 – Free | HusnainBlogger',
+  description: DESCRIPTION,
+  howTo: [
+    'Type your challenge name — for example "Two-Minute Tidy" — and optionally your niche.',
+    'Pick a challenge type: dance, how-to, before-after, or duet-chain.',
+    'Run the generator to get your full kit: hashtag, rules text, example launch-video script, judging criteria, and CTA.',
+    'Copy the rules text into your notes and film the launch video following the example script.',
+    'Post the launch video on TikTok with your challenge hashtag and pin the rules in a comment.',
+    'Read the disclosure note: if a brand sponsors the challenge, add #ad to your caption.',
+  ],
+  methodology:
+    'Each challenge type ships with one fixed rules template, one fixed example-script template, four fixed judging criteria, and one fixed launch CTA; your challenge name and hashtag are substituted into them deterministically. There is no AI and no TikTok access. This kit writes the words for your challenge — it cannot launch or track a hashtag challenge on TikTok.',
+  examples: [
+    {
+      title: 'How-to home challenge',
+      inputs: { challengeName: 'Two-Minute Tidy', challengeType: 'how-to', niche: 'home organization' },
+      note: 'Full kit with #twominutetidy, rules, a 30-second launch script, and 4 judging criteria.',
+    },
+    {
+      title: 'Duet-chain fitness challenge',
+      inputs: { challengeName: 'Plank Party', challengeType: 'duet-chain' },
+      note: 'Chain-style rules where each duet adds one move and passes the challenge on.',
+    },
+    {
+      title: 'Before-after skincare challenge',
+      inputs: { challengeName: '30-Day Glow-Up', challengeType: 'before-after' },
+      note: '21-day rules template with honesty-first judging criteria.',
+    },
+  ],
+  faqs: [
+    {
+      question: 'What is the best tiktok challenge ideas?',
+      answer:
+        'The best challenges are easy to join in under 60 seconds: a simple dance routine, a how-to attempt, a before/after transformation, or a duet chain where each person adds one move. This free kit builds the full launch package — rules, script, hashtag, and judging criteria — around your challenge name.',
+    },
+    {
+      question: 'Is there a free tiktok challenge ideas?',
+      answer:
+        'Yes — this challenge creator kit is completely free with no signup. It fills fixed templates in your browser, so there is no usage limit.',
+    },
+    {
+      question: 'How to use tiktok?',
+      answer:
+        'For challenges specifically: name your challenge, pick a format (dance, how-to, before-after, or duet-chain), film a launch video showing exactly what to do, and post it with your challenge hashtag. This kit writes your rules text, example script, judging criteria, and CTA so you can launch faster.',
+    },
+    {
+      question: 'How does the tiktok challenge ideas work?',
+      answer:
+        'Enter your details using the inputs above and the tiktok challenge ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+    },
+    {
+      question: 'Is the tiktok challenge ideas free to use?',
+      answer:
+        'Yes - this tiktok challenge ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+    },
+    {
+      question: 'What is a tiktok challenge ideas?',
+      answer:
+        'A tiktok challenge ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+    },
+    {
+      question: 'Do I need to create an account to use the tiktok challenge ideas?',
+      answer:
+        'No account needed. Open the tiktok challenge ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+    },
+  ],
+  assumptions: [
+    'This kit cannot launch, track, or promote a hashtag challenge on TikTok — it only writes the copy; you post and run the challenge yourself.',
+    'The hashtag is generated by stripping your challenge name to lowercase letters and numbers — it is not checked against existing TikTok hashtags.',
+    'If a brand sponsors your challenge, disclose it with #ad in the caption and do not use a trademarked hashtag without permission.',
+    'All templates are fixed — this is not AI copywriting, and nothing here guarantees your challenge will go viral.',
+  ],
+  jsonLd: [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'TikTok Challenge Creator Kit 2026 – Free | HusnainBlogger',
+      url: 'https://husnainblogger.com/tools/tiktok/tiktok-challenge-creator-kit/',
+      applicationCategory: 'Utilities',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      description: DESCRIPTION,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'TikTok Tools',
+          item: 'https://husnainblogger.com/tools/tiktok/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'TikTok Challenge Creator Kit',
+          item: 'https://husnainblogger.com/tools/tiktok/tiktok-challenge-creator-kit/',
+        },
+      ],
+    },
+  ],
+};
