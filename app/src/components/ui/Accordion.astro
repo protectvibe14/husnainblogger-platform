@@ -1,0 +1,142 @@
+---
+/**
+ * Accordion.astro — FAQ / disclosure list.
+ * Owner: MA1-DesignSystem.
+ *
+ * Contract (ACCESSIBILITY.md §3.7):
+ *  - Each header is a real <button aria-expanded aria-controls>; the panel
+ *    is a region labelled by the header. No role="button" on divs, ever.
+ *  - Enter/Space toggles; focus stays on the header button.
+ *  - Arrow Up/Down + Home/End move between headers (documented here, used
+ *    consistently everywhere — §3.7).
+ *  - Multiple panels may be open at once (FAQ behavior). Templates that need
+ *    single-open must say so in their QA notes.
+ *
+ * `items[].answerHtml` is HTML authored by MA3 content — templates pass it
+ * through; this component does not sanitize (content pipeline owns that).
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface AccordionItem {
+  question: string;
+  answerHtml: string;
+  /** Open on initial render. Default false (all closed). */
+  open?: boolean;
+}
+
+interface Props {
+  items: AccordionItem[];
+  /** Accessible name for the group, e.g. "Frequently asked questions". */
+  label?: string;
+  class?: string;
+}
+
+const { items, label, class: cls } = Astro.props;
+const groupId = nextId("accordion");
+---
+<div class:list={["hb-accordion", cls]} data-accordion role="group" aria-label={label}>
+  {items.map((item, i) => {
+    const btnId = `${groupId}-btn-${i}`;
+    const panelId = `${groupId}-panel-${i}`;
+    const open = !!item.open;
+    return (
+      <div class="hb-accordion__item">
+        <h3 class="hb-accordion__heading">
+          <button
+            type="button"
+            class="hb-accordion__trigger"
+            id={btnId}
+            aria-expanded={open ? "true" : "false"}
+            aria-controls={panelId}
+            data-accordion-trigger
+          >
+            <span>{item.question}</span>
+            <svg class="hb-accordion__chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </h3>
+        <div
+          class="hb-accordion__panel"
+          id={panelId}
+          role="region"
+          aria-labelledby={btnId}
+          data-accordion-panel
+          hidden={open ? undefined : true}
+        >
+          <div class="hb-accordion__panel-inner" set:html={item.answerHtml} />
+        </div>
+      </div>
+    );
+  })}
+</div>
+
+<script>
+  function wireGroup(group: HTMLElement): void {
+    if (group.dataset.hbWired) return;
+    group.dataset.hbWired = "1";
+    const triggers = Array.from(
+      group.querySelectorAll<HTMLButtonElement>("[data-accordion-trigger]"),
+    );
+
+    const setOpen = (btn: HTMLButtonElement, open: boolean) => {
+      const panel = document.getElementById(btn.getAttribute("aria-controls") ?? "");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (panel) {
+        if (open) panel.removeAttribute("hidden");
+        else panel.setAttribute("hidden", "");
+      }
+    };
+
+    triggers.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        setOpen(btn, btn.getAttribute("aria-expanded") !== "true");
+      });
+      btn.addEventListener("keydown", (e) => {
+        let target: number | null = null;
+        if (e.key === "ArrowDown") target = (i + 1) % triggers.length;
+        else if (e.key === "ArrowUp") target = (i - 1 + triggers.length) % triggers.length;
+        else if (e.key === "Home") target = 0;
+        else if (e.key === "End") target = triggers.length - 1;
+        if (target !== null) {
+          e.preventDefault();
+          triggers[target].focus();
+        }
+      });
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-accordion]").forEach(wireGroup);
+</script>
+
+<style>
+  .hb-accordion { border-top: 2px solid var(--color-border); }
+  .hb-accordion__item { border-bottom: 2px solid var(--color-border); }
+  .hb-accordion__heading { margin: 0; font-size: var(--text-base); }
+  .hb-accordion__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    width: 100%;
+    min-height: var(--touch-target);
+    padding: var(--space-3) var(--space-2);
+    font: inherit;
+    font-weight: var(--weight-semibold);
+    text-align: start;
+    color: var(--color-text);
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  .hb-accordion__trigger:hover { color: var(--color-accent); }
+  .hb-accordion__chevron {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.15s ease;
+  }
+  .hb-accordion__trigger[aria-expanded="true"] .hb-accordion__chevron { transform: rotate(180deg); }
+  .hb-accordion__panel-inner { padding: 0 var(--space-2) var(--space-4); color: var(--color-text); }
+  .hb-accordion__panel-inner > :first-child { margin-top: 0; }
+</style>
