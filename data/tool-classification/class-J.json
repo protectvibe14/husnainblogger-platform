@@ -1,0 +1,1812 @@
+{
+ "category": "J",
+ "categoryName": "Creator Business",
+ "toolCount": 50,
+ "generatedBy": "MA2 Creator Business subagent",
+ "generatedDate": "2026-10-01",
+ "tools": [
+  {
+   "toolId": "tool-451",
+   "name": "Video Editing Rate Calculator",
+   "slug": "video-editing-rate-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "projectType (select)",
+    "finishedVideoMinutes (number)",
+    "estimatedEditingHours (number)",
+    "hourlyRate (number, user)",
+    "revisionRoundsIncluded (number)",
+    "extraCosts (number, music/licenses)"
+   ],
+   "outputs": [
+    "recommendedProjectPrice",
+    "effectivePerMinuteRate",
+    "priceBreakdown (labor + extras)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "zero editing hours -> prompt for estimate, not $0 output",
+    "very long videos -> per-minute rate floors at user minimum"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure arithmetic on user inputs; no external data needed.",
+   "formulaRef": "J-PROJECT-PRICE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-071 (Video Editor Rate Calculator, Cat B) — STRONG duplicate candidate"
+   ],
+   "isInteractive": true,
+   "status": "DEPRECATED",
+   "mergedInto": "tool-071",
+   "deprecatedDate": "2026-10-01",
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-452",
+   "name": "Freelance Day Rate Calculator",
+   "slug": "freelance-day-rate-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "annualIncomeTarget (number)",
+    "annualBusinessExpenses (number)",
+    "workingDaysPerYear (number, default 260)",
+    "nonBillableDays (number, vacation/admin/marketing)"
+   ],
+   "outputs": [
+    "recommendedDayRate",
+    "billableDaysPerYear",
+    "hourlyEquivalent (dayRate/8, user-adjustable hours)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "billableDaysPerYear must be > 0"
+   ],
+   "edgeCases": [
+    "nonBillableDays >= workingDaysPerYear -> validation error",
+    "expenses = 0 -> note that rate covers income only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic formula; all inputs user-supplied.",
+   "formulaRef": "J-DAY-RATE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-068 (Freelance Hourly Rate Calculator, Cat B) — related, different granularity"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-453",
+   "name": "Late Payment Fee Calculator",
+   "slug": "late-payment-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "invoiceAmount (number)",
+    "feeMode (select: percent-per-day | flat-plus-daily)",
+    "lateFeeRatePct (number, USER assumption)",
+    "flatFee (number)",
+    "dailyFee (number)",
+    "daysLate (number)"
+   ],
+   "outputs": [
+    "lateFeeAmount",
+    "totalAmountDue",
+    "effectiveAnnualizedNote (informational)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "daysLate = 0 -> fee $0",
+    "fee exceeding principal -> warning flag, still computed"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only. The late-fee RATE is a user assumption; tool must not present any default rate as legally standard. Late-fee enforceability varies by jurisdiction — informational only.",
+   "formulaRef": "J-LATE-FEE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-454",
+   "name": "Rush Fee Calculator",
+   "slug": "rush-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "baseProjectPrice (number)",
+    "rushPct (number, USER assumption)",
+    "rushTier (optional select: user-defined)"
+   ],
+   "outputs": [
+    "rushFeeAmount",
+    "rushTotal",
+    "rushFeeAsPctOfBase"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "rushPct = 0 -> total equals base",
+    "rushPct > 200 -> confirm prompt (likely typo)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only. Rush percentages are user-defined pricing policy, not market facts.",
+   "formulaRef": "J-RUSH-FEE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-455",
+   "name": "Usage Rights Fee Estimator",
+   "slug": "usage-rights-fee-estimator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "baseCreativeFee (number)",
+    "durationMonths (number)",
+    "durationMultiplier (number, USER input)",
+    "territoryMultiplier (number, USER input)",
+    "mediaChannelMultiplier (number, USER input)",
+    "exclusivityAddOnPct (number, USER input)"
+   ],
+   "outputs": [
+    "estimatedUsageFee",
+    "totalWithBase",
+    "factorBreakdown"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "any multiplier = 0 -> fee $0 with warning (probably wrong input)",
+    "no industry-standard multipliers exist — all factors are user pricing assumptions"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "No factual licensing-rate tables; every multiplier is a user input. Tool computes base x product-of-factors only.",
+   "formulaRef": "J-USAGE-RIGHTS",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "Cat B sponsorship calculators (tool-079..084) — related domain, distinct function"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-456",
+   "name": "Brand Deal Contract Generator",
+   "slug": "brand-deal-contract-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "brandName",
+    "creatorName",
+    "deliverables (list)",
+    "feeAmount",
+    "paymentTerms",
+    "usageRightsSummary",
+    "exclusivityClause (optional)",
+    "timelineDates",
+    "revisionLimit",
+    "killFeePct (USER input)"
+   ],
+   "outputs": [
+    "contractDraftText (sectioned: parties, scope, compensation, usage, exclusivity, term/termination, payment, signatures)"
+   ],
+   "validation": [
+    "all party names non-empty",
+    "feeAmount numeric >= 0"
+   ],
+   "edgeCases": [
+    "jurisdiction not selected -> template marked 'jurisdiction-neutral draft'",
+    "user must review each clause before use"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Client-side template assembly with variable substitution. MUST render persistent disclaimer: informational template only, not legal advice; recommend attorney review. No jurisdiction-specific legal claims.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "disclaimerRequired": "informational only, not legal advice",
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-457",
+   "name": "Media Kit Builder",
+   "slug": "media-kit-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "creatorName",
+    "niche",
+    "followerCounts (per platform)",
+    "engagementRate (USER input)",
+    "audienceDemographics (USER input)",
+    "pastBrandDeals (list)",
+    "rateSummary (optional)",
+    "contactEmail"
+   ],
+   "outputs": [
+    "mediaKitDocument (printable/shareable page)",
+    "onePageSummary"
+   ],
+   "validation": [
+    "follower counts numeric >= 0",
+    "email format valid"
+   ],
+   "edgeCases": [
+    "engagement rate is self-reported — tool labels it 'as reported by creator'",
+    "zero followers -> still builds kit, flags growth stage"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Assembles user-provided stats into a formatted document; performs no verification of claimed metrics.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-085 (Rate Card Generator, Cat B) — related, distinct (kit vs rate card)"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-458",
+   "name": "Retainer vs Hourly Comparator",
+   "slug": "retainer-vs-hourly-comparator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": true,
+   "engine": "arithmetic",
+   "inputs": [
+    "hourlyRate (number)",
+    "estimatedHoursPerMonth (number)",
+    "retainerFee (number)",
+    "retainerIncludedHours (number)",
+    "overageHourlyRate (number)"
+   ],
+   "outputs": [
+    "hourlyModelMonthlyCost",
+    "retainerModelMonthlyCost",
+    "breakEvenHours",
+    "cheaperOption",
+    "savingsDifference"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "estimated hours below included hours -> retainer likely cheaper; show math",
+    "overage rate missing -> default to hourlyRate with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Compares two deterministic cost models; recommendation is arithmetic, not advice.",
+   "formulaRef": "J-RETAINER-COMPARE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "toolTypeNote": "Inventory says 'generator'; verified as 'calculator' — it computes and compares two numeric cost models, generating no text content.",
+   "isInteractive": true,
+   "typeCorrected": true
+  },
+  {
+   "toolId": "tool-459",
+   "name": "Milestone Payment Planner",
+   "slug": "milestone-payment-planner",
+   "verifiedToolType": "planner",
+   "inventoryToolType": "planner",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "contractValue (number)",
+    "milestones (list of {name, pctOfTotal (USER input), dueCondition})"
+   ],
+   "outputs": [
+    "milestoneSchedule (amount per milestone)",
+    "sumCheck (must equal 100%)",
+    "paymentTimeline"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "milestone percentages must sum to 100 (validation error otherwise)"
+   ],
+   "edgeCases": [
+    "single milestone at 100% -> warning about no upfront protection (informational)",
+    "rounding: distribute remainder cents to final milestone"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure percentage split math; percentages are user-defined.",
+   "formulaRef": "J-MILESTONE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-460",
+   "name": "Walk-Away Rate Calculator",
+   "slug": "walk-away-rate-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "monthlyBusinessCosts (number)",
+    "billableHoursPerMonth (number)",
+    "bufferPct (number, USER assumption)",
+    "currentRate (number, optional for comparison)"
+   ],
+   "outputs": [
+    "floorRate (cost-covering)",
+    "walkAwayRate (floor + buffer)",
+    "gapVsCurrentRate"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)",
+    "billableHoursPerMonth must be > 0"
+   ],
+   "edgeCases": [
+    "buffer = 0 -> walk-away equals floor (survival rate, flagged)",
+    "costs = 0 -> floor $0, flagged as incomplete input"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only; the buffer percentage is a user business assumption.",
+   "formulaRef": "J-WALK-AWAY",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-461",
+   "name": "Revision Pricing Calculator",
+   "slug": "revision-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "baseProjectFee (number)",
+    "includedRevisions (number)",
+    "requestedRevisions (number)",
+    "pricingMode (select: pct-of-fee | flat-per-revision)",
+    "revisionPct (USER input)",
+    "flatPerRevision (USER input)"
+   ],
+   "outputs": [
+    "extraRevisionCount",
+    "revisionFee",
+    "newProjectTotal"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "requested <= included -> fee $0",
+    "revisionPct = 0 in pct mode -> prompt"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only; rates are user pricing policy.",
+   "formulaRef": "J-REVISION",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-462",
+   "name": "Kill Fee Calculator",
+   "slug": "kill-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "contractValue (number)",
+    "projectStage (select: not-started | in-progress | near-complete)",
+    "killPctNotStarted (USER input)",
+    "killPctInProgress (USER input)",
+    "killPctNearComplete (USER input)"
+   ],
+   "outputs": [
+    "killFeeAmount",
+    "killFeePctApplied",
+    "clientRefund (contractValue - killFee, if prepaid)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "stage percentages are user/contract terms — tool never invents a 'standard' kill fee",
+    "killPct = 100 at near-complete is user choice"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only. Percentages come from the user's own contract terms; no default presented as standard.",
+   "formulaRef": "J-KILL-FEE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-463",
+   "name": "NDA Generator",
+   "slug": "nda-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "disclosingParty",
+    "receivingParty",
+    "effectiveDate",
+    "confidentialInfoDescription",
+    "termYears (USER input)",
+    "mutual (boolean)",
+    "governingLawJurisdiction (USER free text)"
+   ],
+   "outputs": [
+    "ndaDraftText (sectioned template)"
+   ],
+   "validation": [
+    "party names non-empty",
+    "effectiveDate valid date"
+   ],
+   "edgeCases": [
+    "jurisdiction free-text is echoed, not validated — flagged as user-provided",
+    "no electronic signature; draft only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly only. MUST render persistent disclaimer: informational template only, not legal advice; enforceability varies by jurisdiction.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "disclaimerRequired": "informational only, not legal advice",
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-464",
+   "name": "Scope of Work Generator",
+   "slug": "scope-of-work-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "projectTitle",
+    "clientName",
+    "deliverables (list)",
+    "timeline",
+    "revisionLimit",
+    "outOfScope (list)",
+    "paymentTerms",
+    "assumptions"
+   ],
+   "outputs": [
+    "scopeOfWorkDocument (sectioned)"
+   ],
+   "validation": [
+    "at least one deliverable required",
+    "non-empty title/client"
+   ],
+   "edgeCases": [
+    "empty out-of-scope -> warning suggesting explicit exclusions (informational)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic document assembly from user inputs.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-465",
+   "name": "Client Onboarding Questionnaire Generator",
+   "slug": "client-onboarding-questionnaire-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "serviceType (select)",
+    "includeSections (multi-select: goals, brand, audience, logistics, budget)"
+   ],
+   "outputs": [
+    "questionnaireDocument (grouped questions, copyable)"
+   ],
+   "validation": [
+    "at least one section selected"
+   ],
+   "edgeCases": [
+    "serviceType 'other' -> generic sections only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Curated question bank filtered by user selections; fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-466",
+   "name": "Rate Negotiation Email Generator",
+   "slug": "rate-negotiation-email-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "clientName",
+    "yourName",
+    "currentOffer (number)",
+    "counterOffer (number)",
+    "tone (select: firm | friendly | walk-away)",
+    "valuePoints (list)"
+   ],
+   "outputs": [
+    "negotiationEmailDraft (subject + body)"
+   ],
+   "validation": [
+    "counterOffer numeric",
+    "tone selected"
+   ],
+   "edgeCases": [
+    "counter below current offer -> flagged as concession, still generated"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template-based email draft; user edits before sending. No sending capability (out of scope).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-467",
+   "name": "Brand Pitch Email Generator",
+   "slug": "brand-pitch-email-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "brandName",
+    "creatorName",
+    "niche",
+    "followerCount",
+    "engagementRate (USER input)",
+    "pastResults (list)",
+    "pitchAngle (select)",
+    "callToAction"
+   ],
+   "outputs": [
+    "pitchEmailDraft (subject options + body)"
+   ],
+   "validation": [
+    "non-empty brand/creator names"
+   ],
+   "edgeCases": [
+    "metrics are user-provided and labeled as such in output"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly; metrics echoed as user-provided, never verified.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-468",
+   "name": "Overdue Invoice Reminder Generator",
+   "slug": "overdue-invoice-reminder-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "clientName",
+    "invoiceNumber",
+    "amountDue",
+    "daysOverdue",
+    "escalationLevel (select: polite | firm | final)"
+   ],
+   "outputs": [
+    "reminderEmailDraft (subject + body)"
+   ],
+   "validation": [
+    "amountDue numeric >= 0",
+    "daysOverdue integer >= 0"
+   ],
+   "edgeCases": [
+    "escalationLevel 'final' -> includes 'seek advice' note, not legal threats"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template-based; no automated sending. Related to tool-078/tool-479 invoice tools but distinct function (reminder vs invoice document).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-469",
+   "name": "Quarterly Tax Estimator for Freelancers",
+   "slug": "quarterly-tax-estimator-for-freelancers",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "quarterNetProfit (number, USER input)",
+    "annualNetProfitEstimate (number, USER input)",
+    "effectiveTaxRatePct (number, USER INPUT — never prefilled)",
+    "incomeTaxRatePct (optional USER input)",
+    "selfEmploymentTaxRatePct (optional USER input)"
+   ],
+   "outputs": [
+    "estimatedQuarterlyPayment",
+    "estimatedAnnualTax",
+    "rateBreakdown (if split rates given)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "tax rate inputs must be 0-100",
+    "rates must be explicitly entered by user (no defaults)"
+   ],
+   "edgeCases": [
+    "profit = 0 -> estimate $0",
+    "user enters 0% rate -> computed $0 with 'rate provided by you' label"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "CRITICAL: no hardcoded tax rates anywhere (no defaults, no placeholders that look like rates). Formula multiplies user profit by user rate. MUST render persistent disclaimer: informational estimate only, not tax advice; consult a tax professional.",
+   "formulaRef": "J-TAX-EST",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "disclaimerRequired": "informational only, not tax advice",
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-470",
+   "name": "Creator Deduction Finder",
+   "slug": "creator-deduction-finder",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "rule-based",
+   "inputs": [
+    "creatorType (select: video | photo | audio | writer | streamer)",
+    "expenseChecklist (multi-select from curated categories)",
+    "homeOffice (boolean)",
+    "vehicleUse (boolean)"
+   ],
+   "outputs": [
+    "matchedDeductionCategories (general information list)",
+    "recordKeepingTips",
+    "questionsForTaxPro"
+   ],
+   "validation": [
+    "at least one category or creatorType selected"
+   ],
+   "edgeCases": [
+    "output is categories of commonly-tracked expenses, NEVER a determination that an item is deductible for the user",
+    "country-specific rules not encoded — output labeled 'general information, rules vary by country'"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Rule-based category matcher over a curated general-information list. Must not present any item as deductible; every result carries the tax-advice disclaimer and 'confirm with a tax professional' note.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "disclaimerRequired": "informational only, not tax advice",
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-471",
+   "name": "Wedding Videographer Package Builder",
+   "slug": "wedding-videographer-package-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "hoursOfCoverage (number)",
+    "shooters (number)",
+    "deliverables (multi-select: highlight, full film, teaser, raw)",
+    "baseDayRate (USER input)",
+    "addOnPrices (USER inputs)"
+   ],
+   "outputs": [
+    "packageTiers (e.g., essential/premium/luxury with prices)",
+    "packageSummaryDocument"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "hours = 0 -> validation error",
+    "no deliverables -> prompt to select at least one"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Arithmetic tier builder on user pricing inputs.",
+   "formulaRef": "J-PACKAGE-TIER",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-472",
+   "name": "Wedding Photographer Pricing Calculator",
+   "slug": "wedding-photographer-pricing-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "hoursOfCoverage",
+    "secondShooter (boolean)",
+    "secondShooterRate (USER input)",
+    "baseRate (USER input)",
+    "editingHoursPerShootingHour (USER input)",
+    "printsAlbumsCost (USER input)"
+   ],
+   "outputs": [
+    "recommendedPackagePrice",
+    "costBreakdown"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "editing multiplier is user assumption, not a standard"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only on user inputs.",
+   "formulaRef": "J-PROJECT-PRICE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-473",
+   "name": "Logo Design Quote Builder",
+   "slug": "logo-design-quote-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "conceptsCount (number)",
+    "revisionRounds (number)",
+    "deliverableFormats (multi-select)",
+    "baseRate (USER input)",
+    "rushAddOn (boolean)",
+    "usageScope (select)"
+   ],
+   "outputs": [
+    "itemizedQuote",
+    "quoteDocument (client-ready)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "concepts = 0 -> validation error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Itemized arithmetic + document assembly.",
+   "formulaRef": "J-PROJECT-PRICE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-069 (Project Quote Generator, Cat B) — MEDIUM: generic vs logo-specific"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-474",
+   "name": "Thumbnail Designer Package Pricer",
+   "slug": "thumbnail-designer-package-pricer",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": true,
+   "engine": "arithmetic",
+   "inputs": [
+    "thumbnailsPerMonth (number)",
+    "pricePerThumbnail (USER input)",
+    "revisionsIncluded (number)",
+    "bundleDiscountPct (USER input)"
+   ],
+   "outputs": [
+    "monthlyPackagePrice",
+    "perThumbnailEffective",
+    "tierOptions (e.g., 10/20/30 pack prices)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "volume = 0 -> validation error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Tiered pricing math on user rates.",
+   "formulaRef": "J-PACKAGE-TIER",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "toolTypeNote": "Inventory says 'generator'; verified as 'calculator' — output is computed prices/tiers, not generated text content.",
+   "isInteractive": true,
+   "typeCorrected": true
+  },
+  {
+   "toolId": "tool-475",
+   "name": "Podcast Editing Rate Calculator",
+   "slug": "podcast-editing-rate-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "episodeMinutes (number)",
+    "editMultiplier (USER input, e.g., editing hours per finished hour)",
+    "hourlyRate (USER input)",
+    "addOns (multi-select with USER prices: show notes, audiogram, chapters)"
+   ],
+   "outputs": [
+    "perEpisodePrice",
+    "monthlyRetainerEstimate (episodesPerMonth x perEpisode)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty"
+   ],
+   "edgeCases": [
+    "editMultiplier is user assumption — labeled as such"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only. Distinct from tool-082 (Podcast Sponsorship Rate Calculator, Cat B) which prices ad slots, not editing labor.",
+   "formulaRef": "J-PROJECT-PRICE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-476",
+   "name": "Online Coach Package Builder",
+   "slug": "online-coach-package-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "sessionsPerPackage (number)",
+    "sessionLengthMin (number)",
+    "pricePerSession (USER input)",
+    "supportAddOns (multi-select with USER prices)",
+    "packageDiscountPct (USER input)"
+   ],
+   "outputs": [
+    "packagePrice",
+    "packageTiers",
+    "packageDescription (client-ready)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "sessions = 0 -> validation error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Arithmetic + document assembly.",
+   "formulaRef": "J-PACKAGE-TIER",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-094 (Coaching Package Pricing Calculator, Cat B) — STRONG duplicate candidate"
+   ],
+   "isInteractive": true,
+   "differentiationLocked": "Keep-both vs tool-094 (Lead): 476 = package structure/tiering builder. 094 = pricing math. Distinct.",
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-477",
+   "name": "eBook Royalty Estimator",
+   "slug": "ebook-royalty-estimator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "listPrice (number)",
+    "royaltyRatePct (number, USER INPUT — never prefilled)",
+    "expectedUnits (number)",
+    "platformFeePct (optional USER input)",
+    "fixedFees (optional USER input)"
+   ],
+   "outputs": [
+    "royaltyPerUnit",
+    "estimatedTotalRoyalties",
+    "netAfterFees"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)",
+    "royalty rate must be user-entered (no defaults)"
+   ],
+   "edgeCases": [
+    "royaltyRate = 0 -> $0 with 'rate provided by you' label",
+    "no retailer-specific rates hardcoded (e.g., no 35%/70% presets presented as facts)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "CRITICAL: royalty rates vary by retailer/territory and change; tool takes rate as user input only.",
+   "formulaRef": "J-ROYALTY",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-060 (Amazon KDP Royalty Calculator, Cat B)",
+    "tool-093 (eBook Pricing & Royalty Calculator, Cat B) — STRONG triple overlap"
+   ],
+   "isInteractive": true,
+   "status": "DEPRECATED",
+   "mergedInto": "tool-060",
+   "deprecatedDate": "2026-10-01",
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-478",
+   "name": "Platform Fee Comparer",
+   "slug": "platform-fee-comparer",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": true,
+   "engine": "arithmetic",
+   "inputs": [
+    "salePrice (number)",
+    "platforms (multi-select with USER-entered feePct and fixedFee per platform)"
+   ],
+   "outputs": [
+    "netPayoutPerPlatform (ranked table)",
+    "bestNetPayout",
+    "feeBreakdownPerPlatform"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "each platform needs user-entered feePct/fixedFee — no hardcoded platform fees"
+   ],
+   "edgeCases": [
+    "platform fees change over time — UI labels all fees 'as entered by you; verify against platform docs'",
+    "equal payouts -> tie note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Comparison math on user-entered fees only. Must not hardcode any platform's fee schedule.",
+   "formulaRef": "J-PLATFORM-FEE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "Cat B fee calculators (tool-055..067) — related single-platform tools, distinct (comparison)"
+   ],
+   "toolTypeNote": "Inventory says 'generator'; verified as 'calculator' — output is computed net-payout comparison table, not generated text.",
+   "isInteractive": true,
+   "typeCorrected": true
+  },
+  {
+   "toolId": "tool-479",
+   "name": "Billable Hours Invoice Builder",
+   "slug": "billable-hours-invoice-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "clientName",
+    "lineItems (list of {description, hours, rate})",
+    "taxRatePct (optional USER input)",
+    "invoiceNumber",
+    "dueDate",
+    "paymentDetails"
+   ],
+   "outputs": [
+    "invoiceDocument (itemized, printable)",
+    "subtotal",
+    "taxAmount",
+    "totalDue"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "tax rate user-entered only (no default)",
+    "at least one line item required"
+   ],
+   "edgeCases": [
+    "taxRate empty -> no tax line (not 0% assumption)",
+    "rounding to 2 decimals"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Arithmetic + document assembly. No hardcoded tax rates.",
+   "formulaRef": "J-BILLABLE-INVOICE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-078 (Freelance Invoice Generator, Cat B) — STRONG duplicate candidate"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-480",
+   "name": "Client Profitability Tracker",
+   "slug": "client-profitability-tracker",
+   "verifiedToolType": "tracker",
+   "inventoryToolType": "tracker",
+   "toolTypeCorrected": false,
+   "engine": "storage",
+   "inputs": [
+    "clients (list of {name, revenue, hoursWorked, hourlyCostRate, directExpenses})"
+   ],
+   "outputs": [
+    "profitPerClient",
+    "marginPctPerClient",
+    "clientRanking",
+    "exportableCSV (client-side)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "client name non-empty and unique"
+   ],
+   "edgeCases": [
+    "localStorage only — data lost if browser data cleared; export/import JSON recommended",
+    "negative margin flagged, not hidden"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "localStorage-backed; pure client-side math. No sync/backend.",
+   "formulaRef": "J-CLIENT-PROFIT",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-481",
+   "name": "Project Timeline Estimator",
+   "slug": "project-timeline-estimator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "tasks (list of {name, hoursEstimate})",
+    "workHoursPerDay (USER input)",
+    "startDate",
+    "bufferDays (USER input)"
+   ],
+   "outputs": [
+    "totalHours",
+    "estimatedWorkDays",
+    "estimatedEndDate",
+    "taskBreakdown"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "workHoursPerDay > 0",
+    "startDate valid date"
+   ],
+   "edgeCases": [
+    "estimates are user guesses — output labeled 'based on your estimates'",
+    "bufferDays = 0 -> note shown"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Date arithmetic on user estimates only.",
+   "formulaRef": "J-PROJECT-TIMELINE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-482",
+   "name": "Shoot Day-Rate Planner",
+   "slug": "shoot-day-rate-planner",
+   "verifiedToolType": "planner",
+   "inventoryToolType": "planner",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "annualIncomeTarget",
+    "annualExpenses",
+    "shootDaysPerYear (USER input)",
+    "assistantCostsPerShoot (USER input)",
+    "gearRentalPerShoot (USER input)"
+   ],
+   "outputs": [
+    "recommendedShootDayRate",
+    "perShootCostBreakdown",
+    "annualCapacityCheck"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "shootDaysPerYear > 0"
+   ],
+   "edgeCases": [
+    "per-shoot costs are user inputs, not market rates"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Day-rate formula variant with per-shoot cost inputs.",
+   "formulaRef": "J-DAY-RATE",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-483",
+   "name": "Exclusivity Fee Calculator",
+   "slug": "exclusivity-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "baseDealFee (number)",
+    "exclusivityPct (number, USER assumption)",
+    "exclusivityMonths (number)",
+    "flatFeeMode (optional: flat USER fee instead)"
+   ],
+   "outputs": [
+    "exclusivityFee",
+    "totalDealValue",
+    "monthlyEquivalent"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "exclusivityPct is user pricing policy, not a market standard — labeled as such"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only; percentage is user assumption.",
+   "formulaRef": "J-EXCLUSIVITY",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-484",
+   "name": "Whitelisting Fee Calculator",
+   "slug": "whitelisting-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "baseContentFee (number)",
+    "whitelistPctPerMonth (number, USER assumption)",
+    "whitelistMonths (number)",
+    "flatMonthlyMode (optional: flat USER monthly fee)"
+   ],
+   "outputs": [
+    "whitelistingFeeTotal",
+    "monthlyFee",
+    "totalDealValue"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "whitelist percentage is user pricing policy, not a platform fact"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only; rates are user assumptions.",
+   "formulaRef": "J-WHITELIST",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-485",
+   "name": "Scope Creep Fee Calculator",
+   "slug": "scope-creep-fee-calculator",
+   "verifiedToolType": "calculator",
+   "inventoryToolType": "calculator",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "originalFee (number)",
+    "additionalHours (number)",
+    "hourlyRate (USER input)",
+    "mode (select: hourly | pct-of-fee)",
+    "creepPct (USER input)"
+   ],
+   "outputs": [
+    "scopeCreepFee",
+    "revisedProjectTotal",
+    "creepAsPctOfOriginal"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "additionalHours = 0 -> fee $0"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only on user inputs.",
+   "formulaRef": "J-SCOPE-CREEP",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-486",
+   "name": "Client Red Flag Checklist",
+   "slug": "client-red-flag-checklist",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "rule-based",
+   "inputs": [
+    "observedSignals (multi-select from curated signal list)",
+    "notes (optional)"
+   ],
+   "outputs": [
+    "riskScore (count-based)",
+    "flaggedSignalsSummary",
+    "suggestedNextSteps (generic, informational)"
+   ],
+   "validation": [
+    "at least one signal selected"
+   ],
+   "edgeCases": [
+    "signals are subjective observations — output labeled 'your assessment aid, not a factual claim about the client'",
+    "no defamation-adjacent language in output templates"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Count-based scoring over user-selected signals; no external data.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-487",
+   "name": "Testimonial Showcase Page Builder",
+   "slug": "testimonial-showcase-page-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "testimonials (list of {quote, clientName, role, photoUrl optional})",
+    "pageTitle",
+    "brandColor (USER input)"
+   ],
+   "outputs": [
+    "showcasePageHTML (static, copyable)",
+    "embedSnippet"
+   ],
+   "validation": [
+    "at least one testimonial",
+    "quotes non-empty"
+   ],
+   "edgeCases": [
+    "testimonials are user-provided — tool adds no verification badge",
+    "output is static HTML for user to host"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Static HTML assembly from user content. Distinct from tool-231/319/424 (testimonial REQUEST generators).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-488",
+   "name": "Case Study Template Generator",
+   "slug": "case-study-template-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "clientName",
+    "industry",
+    "challenge",
+    "solution",
+    "results (USER-provided metrics)",
+    "quote (optional)"
+   ],
+   "outputs": [
+    "caseStudyDocument (sectioned: challenge/solution/results)"
+   ],
+   "validation": [
+    "non-empty client/challenge/solution"
+   ],
+   "edgeCases": [
+    "results echoed as user-provided, labeled as such"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-339 (Case Study Outline Generator, Cat G) — MEDIUM overlap"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-489",
+   "name": "Proposal Template Generator",
+   "slug": "proposal-template-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "clientName",
+    "projectTitle",
+    "approach",
+    "deliverables (list)",
+    "timeline",
+    "investment (number)",
+    "termsSummary"
+   ],
+   "outputs": [
+    "proposalDocument (sectioned, client-ready)"
+   ],
+   "validation": [
+    "investment numeric >= 0"
+   ],
+   "edgeCases": [
+    "distinct from tool-069 Project Quote Generator (quote = price doc; proposal = scope+pitch doc)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-490",
+   "name": "Discovery Call Question Generator",
+   "slug": "discovery-call-question-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "serviceType (select)",
+    "callGoal (select: qualify | scope | close)"
+   ],
+   "outputs": [
+    "questionList (grouped: rapport, needs, budget, timeline, decision)"
+   ],
+   "validation": [
+    "serviceType and callGoal selected"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Curated question bank filtered by selections; client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-491",
+   "name": "Referral Program Planner",
+   "slug": "referral-program-planner",
+   "verifiedToolType": "planner",
+   "inventoryToolType": "planner",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "avgClientValue (number)",
+    "commissionPct (USER input)",
+    "flatBounty (optional USER input)",
+    "expectedReferralsPerQuarter (USER input)"
+   ],
+   "outputs": [
+    "payoutPerReferral",
+    "quarterlyProgramCost",
+    "programROIEstimate (based on user inputs)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)"
+   ],
+   "edgeCases": [
+    "commission terms are user policy, not advice"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Math only.",
+   "formulaRef": "J-REFERRAL",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-492",
+   "name": "Freelancer Business Name Generator",
+   "slug": "freelancer-business-name-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "keywords (list)",
+    "style (select: professional | playful | minimal)",
+    "nameCount (number, max 50)"
+   ],
+   "outputs": [
+    "nameIdeas (combinatorial from curated word banks + user keywords)"
+   ],
+   "validation": [
+    "at least one keyword",
+    "nameCount 1-50"
+   ],
+   "edgeCases": [
+    "CANNOT check domain/trademark availability client-side — output carries 'verify availability and trademark yourself' note",
+    "word banks are curated static lists"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Combinatorial generation from static word banks; no availability checks possible offline.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-493",
+   "name": "Freelancer Tagline Generator",
+   "slug": "freelancer-tagline-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "serviceKeywords (list)",
+    "tone (select)",
+    "taglineCount (number, max 30)"
+   ],
+   "outputs": [
+    "taglineIdeas"
+   ],
+   "validation": [
+    "at least one keyword"
+   ],
+   "edgeCases": [
+    "template patterns only — no brand-conflict checking"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pattern-based assembly from static templates.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-494",
+   "name": "LinkedIn Headline Generator",
+   "slug": "linkedin-headline-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "role",
+    "specialties (list)",
+    "proofPoint (optional USER input)",
+    "style (select)"
+   ],
+   "outputs": [
+    "headlineOptions (character-counted, <=220 chars)"
+   ],
+   "validation": [
+    "role non-empty"
+   ],
+   "edgeCases": [
+    "proof points echoed as user-provided",
+    "character limit enforced (LinkedIn headline limit is platform UI knowledge, not fetched)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly with character counting.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-495",
+   "name": "Cold Outreach Tracker",
+   "slug": "cold-outreach-tracker",
+   "verifiedToolType": "tracker",
+   "inventoryToolType": "tracker",
+   "toolTypeCorrected": false,
+   "engine": "storage",
+   "inputs": [
+    "prospects (list of {name, company, contact, status, dateContacted, followUpDate, notes})"
+   ],
+   "outputs": [
+    "pipelineView (by status)",
+    "followUpDueList",
+    "conversionStats (counts by status)",
+    "exportableCSV"
+   ],
+   "validation": [
+    "prospect name non-empty",
+    "status from fixed set"
+   ],
+   "edgeCases": [
+    "localStorage only — export recommended",
+    "no automated emailing (out of scope)"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "localStorage-backed CRUD + counts; no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-496",
+   "name": "Income Goal Planner",
+   "slug": "income-goal-planner",
+   "verifiedToolType": "planner",
+   "inventoryToolType": "planner",
+   "toolTypeCorrected": false,
+   "engine": "arithmetic",
+   "inputs": [
+    "annualIncomeGoal (number)",
+    "annualExpenses (number)",
+    "avgClientValue (USER input)",
+    "workWeeksPerYear (USER input)"
+   ],
+   "outputs": [
+    "requiredMonthlyRevenue",
+    "clientsNeededPerMonth",
+    "weeklyTarget",
+    "gapVsCurrent (if current income given)"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "avgClientValue > 0"
+   ],
+   "edgeCases": [
+    "all targets are user aspirations — output labeled as plan math, not earnings promise"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Division/multiplication on user inputs.",
+   "formulaRef": "J-INCOME-GOAL",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-497",
+   "name": "Service Package Builder",
+   "slug": "service-package-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "composite",
+   "inputs": [
+    "services (list of {name, price})",
+    "packageName",
+    "bundleDiscountPct (USER input)",
+    "packageDescription"
+   ],
+   "outputs": [
+    "packagePrice",
+    "savingsVsALaCarte",
+    "packageSalesSheet"
+   ],
+   "validation": [
+    "must be a finite number",
+    "must be >= 0",
+    "reject NaN/Infinity/empty",
+    "percentage inputs must be numbers between 0 and 100 (bounds enforced in UI)",
+    "at least one service"
+   ],
+   "edgeCases": [
+    "generic builder — overlaps niche package builders (tool-471, tool-476) by design; differentiation is niche-specific presets"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Arithmetic + document assembly.",
+   "formulaRef": "J-PACKAGE-TIER",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-471 (Wedding Videographer Package Builder)",
+    "tool-476 (Online Coach Package Builder) — MEDIUM: generic vs niche"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-498",
+   "name": "Booking Page Copy Generator",
+   "slug": "booking-page-copy-generator",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "serviceName",
+    "targetClient",
+    "benefits (list)",
+    "processSteps (list)",
+    "priceAnchor (optional USER input)",
+    "tone (select)"
+   ],
+   "outputs": [
+    "bookingPageCopy (headline, subhead, benefits, process, FAQ stub, CTA)"
+   ],
+   "validation": [
+    "serviceName and targetClient non-empty"
+   ],
+   "edgeCases": [
+    "price anchor echoed as user-provided"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Sectioned copy assembly from user inputs.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-499",
+   "name": "Client Offboarding Checklist",
+   "slug": "client-offboarding-checklist",
+   "verifiedToolType": "generator",
+   "inventoryToolType": "generator",
+   "toolTypeCorrected": false,
+   "engine": "rule-based",
+   "inputs": [
+    "projectType (select)",
+    "deliverablesHandover (boolean)",
+    "finalInvoiceSent (boolean)"
+   ],
+   "outputs": [
+    "offboardingChecklist (final files, credentials, invoice, testimonial ask, referral ask, archive)"
+   ],
+   "validation": [],
+   "edgeCases": [
+    "checklist adapts to toggles; informational only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Conditional checklist assembly.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  },
+  {
+   "toolId": "tool-500",
+   "name": "Project Debrief Template Builder",
+   "slug": "project-debrief-template-builder",
+   "verifiedToolType": "builder",
+   "inventoryToolType": "builder",
+   "toolTypeCorrected": false,
+   "engine": "template",
+   "inputs": [
+    "projectName",
+    "sections (multi-select: wins, issues, metrics, lessons, followups)"
+   ],
+   "outputs": [
+    "debriefDocument (sectioned template with prompts)"
+   ],
+   "validation": [
+    "projectName non-empty",
+    "at least one section"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template assembly with reflective prompts.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false
+  }
+ ]
+}
