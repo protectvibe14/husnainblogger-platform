@@ -1,0 +1,97 @@
+---
+/**
+ * layouts/BaseLayout.astro — THE shared page shell for HusnainBlogger.
+ * Owner: Platform.
+ *
+ * Every public page MUST use this layout. Site-wide chrome lives ONLY here:
+ *   - <head> SEO meta (title, description, canonical, robots, Open Graph)
+ *   - site header (brand + main nav with active-state)
+ *   - site footer
+ *
+ * To change the header, nav, or footer site-wide: edit THIS file only.
+ * Page-specific <head> extras (e.g. article:published_time) go in the
+ * `head` slot. Page-specific styles stay in the page (scoped <style>).
+ *
+ * Props:
+ *   title        full <title> string
+ *   description  meta description
+ *   canonical    absolute canonical URL
+ *   robots       default "index, follow"
+ *   ogType       default "website"
+ *   ogImage      absolute og:image URL (optional)
+ *   activeNav    highlights one nav item: "tools" | "blog" | "video" | "ai" | null
+ */
+import "../styles/luxury.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  robots?: string;
+  ogType?: string;
+  ogImage?: string;
+  activeNav?: "tools" | "blog" | "video" | "ai" | null;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  robots = "index, follow",
+  ogType = "website",
+  ogImage,
+  activeNav = null,
+} = Astro.props;
+
+const nav = [
+  { href: "/tools/", label: "All Tools", key: "tools" },
+  { href: "/blog/", label: "Blog", key: "blog" },
+  { href: "/tools/video-editing/", label: "Video", key: "video" },
+  { href: "/tools/ai-tools/", label: "AI Tools", key: "ai" },
+] as const;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={robots} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <slot name="head" />
+  </head>
+  <body>
+    <header class="hb-site-header">
+      <div class="hb-site-header__inner">
+        <a href="/" class="hb-brand">
+          <span class="hb-brand__mark">H</span>
+          HusnainBlogger
+        </a>
+        <nav class="hb-nav" aria-label="Main">
+          {nav.map((item) => (
+            <a
+              href={item.href}
+              aria-current={activeNav === item.key ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="hb-site-footer">
+      <div class="hb-site-footer__inner">
+        <span>© 2026 HusnainBlogger. Free tools for creators.</span>
+        <span>Made with precision for the creator economy.</span>
+      </div>
+    </footer>
+  </body>
+</html>
