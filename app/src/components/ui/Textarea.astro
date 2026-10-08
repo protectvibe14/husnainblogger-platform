@@ -1,0 +1,74 @@
+---
+/**
+ * Textarea.astro — multi-line text input + label + hint + error.
+ * Owner: MA1-DesignSystem.
+ * Same wiring contract as Field.astro (label / hint / error ids,
+ * aria-invalid, required markers, auto-namespaced id).
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  name: string;
+  label: string;
+  id?: string;
+  value?: string;
+  hint?: string;
+  error?: string;
+  required?: boolean;
+  optionalMark?: boolean;
+  rows?: number;
+  minlength?: number;
+  maxlength?: number;
+  placeholder?: string;
+  describedBy?: string;
+  disabled?: boolean;
+  readonly?: boolean;
+  class?: string;
+}
+
+const {
+  name, label, id: idProp, value, hint, error,
+  required = false, optionalMark = true, rows = 4,
+  minlength, maxlength, placeholder, describedBy,
+  disabled = false, readonly = false, class: cls,
+} = Astro.props;
+
+const id = idProp ?? nextId("textarea");
+const hintId = hint ? `${id}-hint` : undefined;
+const errorId = error ? `${id}-error` : undefined;
+const describedby = [hintId, errorId, describedBy].filter(Boolean).join(" ") || undefined;
+---
+<div class:list={["hb-field", cls]}>
+  <label class="hb-field__label" for={id}>
+    <span>{label}</span>
+    {required
+      ? <span class="hb-field__marker hb-field__marker--required">required</span>
+      : (optionalMark ? <span class="hb-field__marker hb-field__marker--optional">optional</span> : null)}
+  </label>
+  {hint && <p class="hb-field__hint" id={hintId}>{hint}</p>}
+  <textarea
+    class:list={["hb-field__input", { "hb-field__input--invalid": !!error }]}
+    style="resize: vertical; min-height: calc(var(--touch-target) * 2);"    id={id}
+    name={name}
+    rows={rows}
+    placeholder={placeholder}
+    required={required || undefined}
+    aria-required={required ? "true" : undefined}
+    aria-invalid={error ? "true" : undefined}
+    aria-describedby={describedby}
+    minlength={minlength}
+    maxlength={maxlength}
+    disabled={disabled || undefined}
+    readonly={readonly || undefined}
+  >{value}</textarea>
+  {error && (
+    <p class="hb-field__error" id={errorId}>
+      <svg class="hb-field__error-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.75"/>
+        <path d="M8 4.5v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        <circle cx="8" cy="11.25" r="1" fill="currentColor"/>
+      </svg>
+      <span><strong>{label}:</strong> {error}</span>
+    </p>
+  )}
+</div>
