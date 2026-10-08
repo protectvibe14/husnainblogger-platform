@@ -1,0 +1,150 @@
+---
+/**
+ * ToolErrorBoundary.astro — island wrapper: a tool page NEVER renders blank.
+ * Owner: MA1-DesignSystem.
+ *
+ * Wrap every interactive island:
+ *   <ToolErrorBoundary island="hashtag-generator" reportUrl="https://github.com/…/issues/new?…">
+ *     <HashtagIsland client:visible />
+ *   </ToolErrorBoundary>
+ *
+ * Behavior (ARCHITECTURE.md §6, layer 2):
+ *  - On `hb:island-error` (or a window error whose target is inside), the
+ *    fallback panel appears (role="alert"): friendly message, "Try again",
+ *    and a pre-filled "Report this issue" link. The island's DOM STAYS —
+ *    user inputs are preserved.
+ *  - "Try again" runs handlers registered via onIslandRetry(island, fn)
+ *    (lib/ui/error-boundary.ts), hides the fallback on success, and
+ *    announces recovery politely. No handler = honest "retry unavailable"
+ *    state; the report link is always there.
+ *
+ * Island scripts: wrap boot in try/catch -> reportIslandError(boundary, …)
+ * and register onIslandRetry(name, bootFn). See docs/architecture/DESIGN_SYSTEM.md.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  /** Island name — used for retry-handler lookup and the report link. */
+  island: string;
+  /** Pre-filled issue URL (GitHub issue template). No backend needed. */
+  reportUrl?: string;
+  /** Friendly message override. Default covers the general case. */
+  message?: string;
+  class?: string;
+}
+
+const {
+  island, reportUrl,
+  message = "Something went wrong running this tool. Your inputs are safe — try again, or report the issue.",
+  class: cls,
+} = Astro.props;
+const id = nextId("errbound");
+const fallbackId = `${id}-fallback`;
+---
+<div
+  class:list={["hb-errbound", cls]}
+  data-error-boundary={island}
+  data-fallback-id={fallbackId}
+>
+  <div
+    class="hb-errbound__fallback"
+    id={fallbackId}
+    role="alert"
+    hidden
+    data-errbound-fallback
+  >
+    <h2 class="hb-errbound__title">Something went wrong</h2>
+    <p class="hb-errbound__message" data-errbound-message>{message}</p>
+    <div class="hb-errbound__actions">
+      <button type="button" class="hb-btn hb-btn--primary" data-errbound-retry>Try again</button>
+      {reportUrl && (
+        <a class="hb-btn hb-btn--secondary" href={reportUrl} target="_blank" rel="noopener">
+          Report this issue
+        </a>
+      )}
+    </div>
+  </div>
+  <div data-errbound-content>
+    <slot />
+  </div>
+</div>
+
+<script>
+  import {
+    ISLAND_ERROR_EVENT,
+    ISLAND_RETRY_EVENT,
+    getRetryHandlers,
+  } from "../../lib/ui/error-boundary";
+  import { announce } from "../../lib/a11y/announce";
+
+  function wire(boundary: HTMLElement): void {
+    if (boundary.dataset.hbWired) return;
+    boundary.dataset.hbWired = "1";
+    const island = boundary.dataset.errorBoundary ?? "tool";
+    const fallback = boundary.querySelector<HTMLElement>("[data-errbound-fallback]");
+    const messageEl = boundary.querySelector<HTMLElement>("[data-errbound-message]");
+    const retryBtn = boundary.querySelector<HTMLButtonElement>("[data-errbound-retry]");
+    if (!fallback || !retryBtn) return;
+
+    const showFallback = (message?: string) => {
+      if (message && messageEl) messageEl.textContent = message;
+      fallback.hidden = false;
+      // Move focus into the fallback so keyboard/SR users land on the error.
+      const title = fallback.querySelector<HTMLElement>(".hb-errbound__title");
+      title?.setAttribute("tabindex", "-1");
+      title?.focus();
+    };
+    const hideFallback = () => { fallback.hidden = true; };
+
+    boundary.addEventListener(ISLAND_ERROR_EVENT, (e) => {
+      const detail = (e as CustomEvent).detail as { message?: string } | undefined;
+      showFallback(detail?.message);
+    });
+
+    // Backstop: uncaught errors inside the boundary (capture phase, since
+    // resource errors don't bubble).
+    window.addEventListener("error", (e) => {
+      if (e.target instanceof Node && boundary.contains(e.target)) {
+        showFallback();
+      }
+    }, true);
+    window.addEventListener("unhandledrejection", () => showFallback(), true);
+
+    retryBtn.addEventListener("click", async () => {
+      const handlers = getRetryHandlers(island);
+      // Re-dispatch so islands that boot on the event also retry.
+      boundary.dispatchEvent(new CustomEvent(ISLAND_RETRY_EVENT, { bubbles: true }));
+      let ok = true;
+      for (const fn of handlers) {
+        try { await fn(); }
+        catch { ok = false; }
+      }
+      if (ok && handlers.length > 0) {
+        hideFallback();
+        announce.polite("Tool recovered. Try your action again.");
+      } else if (handlers.length === 0) {
+        announce.polite("Retry is not available for this tool — use the report link if the problem continues.");
+      } else {
+        announce.assertive("Retry failed. Use the report link if the problem continues.");
+      }
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-error-boundary]").forEach(wire);
+</script>
+
+<style>
+  .hb-errbound__fallback {
+    border: 2px solid var(--color-error);
+    border-radius: var(--radius-lg);
+    background: var(--color-error-bg);
+    color: var(--color-on-error-bg);
+    padding: var(--space-5);
+    margin-bottom: var(--space-4);
+  }
+  .hb-errbound__title { margin: 0 0 var(--space-2); font-size: var(--text-xl); }
+  .hb-errbound__title:focus { outline: none; }
+  .hb-errbound__title:focus-visible { box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+  .hb-errbound__message { margin: 0 0 var(--space-4); }
+  .hb-errbound__actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+</style>
