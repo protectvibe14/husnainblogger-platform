@@ -1,0 +1,90 @@
+---
+/**
+ * LandingFaq.astro — landing page FAQ (uses shared Accordion).
+ * Owner: Landing.
+ *
+ * Honest answers only. No fabricated stats, no fake testimonials.
+ */
+import Accordion from "../ui/Accordion.astro";
+
+const faqs = [
+  {
+    question: "Are the tools really free?",
+    answerHtml:
+      "<p>Yes — every tool is free with no signup, no trial, and no paywalled features. The site is static, so there is nothing to bill you for.</p>",
+  },
+  {
+    question: "Do I need to create an account?",
+    answerHtml:
+      "<p>No. There are no accounts on HusnainBlogger. Open a tool, use it, close the tab — nothing follows you.</p>",
+  },
+  {
+    question: "Is my data uploaded anywhere?",
+    answerHtml:
+      "<p>No. Tools run entirely in your browser. Your inputs are never sent to our servers — there are no servers. (AI tools optionally call the provider you choose with a key you paste; that traffic goes to the provider, never to us.)</p>",
+  },
+  {
+    question: "How accurate are the calculators and analyzers?",
+    answerHtml:
+      "<p>Every tool ships with unit tests (11,500+ across the platform). Formulas use published standards where they exist — e.g. Flesch Reading Ease — and heuristic scores are always labeled as estimates, never presented as guarantees.</p>",
+  },
+  {
+    question: "Which tools are most popular?",
+    answerHtml:
+      "<p>Creators reach most for the YouTube title tools, hashtag generators, the AdSense revenue calculator, and the AI writing helpers. Browse any category to find yours.</p>",
+  },
+  {
+    question: "Can I suggest a new tool?",
+    answerHtml:
+      "<p>New tools are added regularly based on creator demand. The 11 categories keep growing — check back often.</p>",
+  },
+];
+---
+
+<section class="landing-section landing-section--narrow" aria-labelledby="landing-faq-title">
+  <div class="landing-section__head">
+    <span class="hb-tool-eyebrow">FAQ</span>
+    <h2 id="landing-faq-title">Questions, answered</h2>
+  </div>
+  <Accordion items={faqs} label="Frequently asked questions" />
+  <div class="landing-cta">
+    <h2>Start creating smarter today</h2>
+    <p>Join thousands of creators who skip the busywork with free, instant tools.</p>
+    <a href="/tools/" class="hb-btn hb-btn--gold">Explore all {569} tools</a>
+  </div>
+</section>
+
+<style>
+  .landing-section--narrow {
+    max-width: var(--content-narrow);
+  }
+  .landing-cta {
+    text-align: center;
+    margin-top: var(--space-20);
+    padding: var(--space-16) var(--space-8);
+    background: var(--gradient-ink);
+    border-radius: var(--radius-xl);
+    color: var(--color-on-ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .landing-cta::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gradient-gold);
+  }
+  .landing-cta h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, var(--text-3xl));
+    font-weight: 600;
+    letter-spacing: var(--letter-tight);
+    margin: 0 0 var(--space-3);
+  }
+  .landing-cta p {
+    opacity: 0.75;
+    margin: 0 0 var(--space-8);
+    font-size: var(--text-lg);
+  }
+</style>
