@@ -1,0 +1,278 @@
+{
+ "platform": "tiktok",
+ "rules": [
+  {
+   "ruleId": "tiktok-tiktok-caption-character-limit-video-posts",
+   "platform": "tiktok",
+   "rule": "TikTok caption character limit (video posts)",
+   "value": 2200,
+   "valueUnit": "count",
+   "source": "TikTok Content Posting API docs (title field: 'maximum length is 2200 in UTF-16 runes'), quoted via publora/skills tiktok-post SKILL.md",
+   "sourceUrl": "https://github.com/publora/skills/blob/HEAD/skills/tiktok-post/SKILL.md",
+   "effectiveDate": "2024-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-151",
+    "tool-152",
+    "tool-160",
+    "tool-177",
+    "tool-198"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-maximum-video-length-in-app-recording-standard-upload",
+   "platform": "tiktok",
+   "rule": "TikTok maximum video length (in-app recording / standard upload)",
+   "value": {
+    "apiUploadMax": "10 minutes",
+    "inAppRecordMax": "10 minutes",
+    "sixtyMinuteUploads": "eligible accounts only — limited rollout; TikTok confirmed a 60-minute test for a small group in May 2024, NOT universal"
+   },
+   "valueUnit": "text",
+   "source": "socialrails.com 2026 TikTok duration audit; recurpost.com 2026 TikTok video specs guide",
+   "sourceUrl": "https://socialrails.com/blog/best-tiktok-video-length-maximum-engagement",
+   "effectiveDate": "2024-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-151",
+    "tool-155",
+    "tool-156",
+    "tool-157",
+    "tool-165",
+    "tool-166",
+    "tool-167",
+    "tool-168",
+    "tool-169",
+    "tool-170",
+    "tool-190"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-photo-mode-maximum-images-per-carousel",
+   "platform": "tiktok",
+   "rule": "TikTok Photo Mode maximum images per carousel",
+   "value": 35,
+   "valueUnit": "count",
+   "source": "postfa.st TikTok carousel size guide (citing TikTok Help Center, last verified 2026-09-25)",
+   "sourceUrl": "https://postfa.st/sizes/tiktok/carousel",
+   "effectiveDate": "2023-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-179",
+    "tool-180"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-live-broadcast-eligibility-followers-age",
+   "platform": "tiktok",
+   "rule": "TikTok LIVE broadcast eligibility (followers + age)",
+   "value": {
+    "broadcastAge": "18+ (TikTok LIVE age policy)",
+    "followerThreshold": 1000,
+    "giftsAge": "18+ (19 in South Korea)",
+    "regionNote": "TikTok states the follower threshold may vary across regions; TikTok's own help pages do not print a fixed number — 1,000 is the reported standard, show eligibility as a banner not a guarantee"
+   },
+   "valueUnit": "text",
+   "source": "socialpilot.co TikTok LIVE guide (quoting TikTok Help Center); howsociable.com follower-threshold audit (2026)",
+   "sourceUrl": "https://www.socialpilot.co/tiktok-marketing/how-to-go-live-on-tiktok",
+   "effectiveDate": "2023-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-158",
+    "tool-159",
+    "tool-186",
+    "tool-196",
+    "tool-200"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-shop-product-name-character-limit",
+   "platform": "tiktok",
+   "rule": "TikTok Shop product name character limit",
+   "value": {
+    "descriptionMaxChars": 10000,
+    "maxChars": 255,
+    "minChars": 1,
+    "nonEnglishChars": "guideline states product name cannot contain non-English characters"
+   },
+   "valueUnit": "count",
+   "source": "WooCommerce TikTok for WooCommerce docs — product listing guidelines table (reproducing TikTok Shop Seller Center guidelines)",
+   "sourceUrl": "https://woocommerce.com/document/tiktok-for-woocommerce/?referrer=wordpress.com/",
+   "effectiveDate": "2024-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-191",
+    "tool-192"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-comment-character-limit",
+   "platform": "tiktok",
+   "rule": "TikTok comment character limit",
+   "value": 150,
+   "valueUnit": "count",
+   "source": "NapoleonCat SM Dictionary — TikTok character count entry (single third-party source; unconfirmed in TikTok's own docs)",
+   "sourceUrl": "https://napoleoncat.com/dictionary/tiktok-character-count/",
+   "effectiveDate": "2023-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-153",
+    "tool-154",
+    "tool-173"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-profile-bio-character-limit",
+   "platform": "tiktok",
+   "rule": "TikTok profile bio character limit",
+   "value": 80,
+   "valueUnit": "count",
+   "source": "NapoleonCat SM Dictionary; typecount.com TikTok character limits guide 2026 (two third-party sources; not TikTok-owned)",
+   "sourceUrl": "https://typecount.com/blog/tiktok-caption-character-limit",
+   "effectiveDate": "2023-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-186"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-standard-vertical-video-spec-9-16",
+   "platform": "tiktok",
+   "rule": "TikTok standard vertical video spec (9:16)",
+   "value": {
+    "aspectRatio": "9:16",
+    "codec": "H.264 video, AAC audio",
+    "fileFormats": "MP4 (preferred), MOV, WebM",
+    "fps": "30 (60 supported)",
+    "note": "advisory for text-overlay/cover tools only; tools must not claim to render to these specs",
+    "resolution": "1080x1920"
+   },
+   "valueUnit": "text",
+   "source": "recurpost.com 2026 TikTok video sizes guide",
+   "sourceUrl": "https://recurpost.com/tiktok-scheduler/tiktok-video-sizes/",
+   "effectiveDate": "2024-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-04-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "tiktok-tiktok-caption-limit-4-000-claim-native-app-disputed-not-platform-confirmed",
+   "platform": "tiktok",
+   "rule": "TikTok caption limit 4,000 claim (native app — DISPUTED, not platform-confirmed)",
+   "value": "4000 (disputed — do NOT enforce; conservative 2,200 rule governs tool behavior)",
+   "valueUnit": "text",
+   "source": "typecount.com TikTok character limits guide 2026 — third-party claim; contested by skills-il 2026 social-caption-limits audit (figure appears on no TikTok-owned page)",
+   "sourceUrl": "https://typecount.com/blog/tiktok-caption-character-limit",
+   "effectiveDate": "2022-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
