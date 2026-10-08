@@ -1,0 +1,135 @@
+{
+ "platform": "poshmark",
+ "rules": [
+  {
+   "ruleId": "poshmark-commission-15-plus",
+   "platform": "poshmark",
+   "rule": "Commission — sales $15 and over",
+   "value": 20,
+   "valueUnit": "percent",
+   "source": "Nifty 2026 seller guide; merchtitans 2026 guide",
+   "sourceUrl": "https://nifty.ai/post/how-much-poshmark-take",
+   "effectiveDate": "2026-02-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-058"
+   ],
+   "notes": "Of the sale price on sales of $15 or more.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "poshmark-commission-under-15",
+   "platform": "poshmark",
+   "rule": "Commission — sales under $15",
+   "value": "$2.95 flat",
+   "valueUnit": "text",
+   "source": "Nifty 2026 seller guide",
+   "sourceUrl": "https://nifty.ai/post/how-much-poshmark-take",
+   "effectiveDate": "2026-02-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-058"
+   ],
+   "notes": "Flat fee; can exceed 20% effective rate on tiny sales.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "poshmark-listing-fee",
+   "platform": "poshmark",
+   "rule": "Listing fee",
+   "value": 0,
+   "valueUnit": "usd",
+   "source": "voolist marketplace fees comparison 2026",
+   "sourceUrl": "https://www.voolist.com/blog/marketplace-fees-comparison-2026",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-058"
+   ],
+   "notes": "No listing or insertion fees.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "poshmark-payment-processing",
+   "platform": "poshmark",
+   "rule": "Payment processing",
+   "value": "Included in the commission — no separate processing fee",
+   "valueUnit": "text",
+   "source": "voolist marketplace fees comparison 2026",
+   "sourceUrl": "https://www.voolist.com/blog/marketplace-fees-comparison-2026",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-058"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "poshmark-buyer-shipping-label",
+   "platform": "poshmark",
+   "rule": "Buyer-paid flat-rate shipping label",
+   "value": "~$7.97",
+   "valueUnit": "text",
+   "source": "merchtitans How to Sell on Poshmark 2026; nifty 2026 guide",
+   "sourceUrl": "https://merchtitans.com/blog/how-to-sell-on-poshmark-guide",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-058"
+   ],
+   "notes": "Priority Mail up to 5 lbs; nifty cites $8.27 variant; seller may discount it to close sales.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
