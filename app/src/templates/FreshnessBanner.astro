@@ -1,0 +1,93 @@
+---
+/**
+ * FreshnessBanner.astro — rule-freshness honesty banner for data-dependent tools.
+ *
+ * Owner: MA1-Templates. Contract: MA5 docs/analytics/FRESHNESS_REGISTRY.md §7.
+ * Content is fed by MA2/MA5 via `FreshnessBannerProps` (templates/types.ts);
+ * slot content is rendered VERBATIM — no hard-coded platforms, values, or dates.
+ * Rendered by ToolShell whenever `freshnessState !== 'fresh'`; it is never
+ * rendered for `fresh` (all rules verified), and hiding real uncertainty
+ * requires a code change + MA4 sign-off, not a flag.
+ *
+ * A11y: static server-rendered notice — `role="note"`, NOT `role="status"`/
+ * `role="alert"`. R5 forbids templates inventing live regions (ToolShell owns
+ * the page's single polite + single assertive regions); this banner is read
+ * in DOM order above the tool's results. Severity is text-first
+ * (`data-freshness-state` hook + state label), never color-only (1.4.1).
+ * All slot text is Astro-escaped (`{}`) — never `set:html`.
+ *
+ * Visuals: DS-owned classes (tokens only; MA1-DesignSystem). State modifiers
+ * use the verbatim `freshnessState` values so the contract needs no mapping.
+ */
+import type { FreshnessBannerProps, FreshnessState } from './types.ts';
+
+/** The banner only ever renders for non-fresh states (enforced by ToolShell). */
+interface Props extends Omit<FreshnessBannerProps, 'freshnessState'> {
+  freshnessState: Exclude<FreshnessState, 'fresh'>;
+}
+
+const {
+  assumptions,
+  lastVerified,
+  freshnessState,
+  needsReviewText,
+  staleText,
+  deprecatedText,
+  sourceLink,
+} = Astro.props;
+
+const STATE_COPY: Record<
+  Exclude<FreshnessState, 'fresh'>,
+  { label: string; text?: string }
+> = {
+  needs_review: {
+    label: 'Figures under review',
+    text: needsReviewText,
+  },
+  stale: {
+    label: 'Figures known to be outdated',
+    text: staleText,
+  },
+  deprecated: {
+    label: 'Calculation discontinued',
+    text: deprecatedText,
+  },
+};
+
+const state = STATE_COPY[freshnessState];
+---
+
+<div
+  class={`hb-freshness-banner hb-freshness-banner--${freshnessState}`}
+  data-freshness-state={freshnessState}
+  role="note"
+  aria-labelledby="hb-freshness-banner-title"
+>
+  <p id="hb-freshness-banner-title" class="hb-freshness-banner__title">
+    <strong>{state.label}</strong>
+  </p>
+
+  {state.text && (
+    <p class="hb-freshness-banner__message">{state.text}</p>
+  )}
+
+  {assumptions.length > 0 && (
+    <>
+      <p class="hb-freshness-banner__assumptions-label">Based on:</p>
+      <ul class="hb-freshness-banner__assumptions">
+        {assumptions.map((assumption) => (
+          <li>{assumption}</li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <p class="hb-freshness-banner__meta">
+    Figures last verified{' '}
+    <time datetime={lastVerified}>{lastVerified}</time>
+    {' · '}
+    <a class="hb-freshness-banner__source" href={sourceLink.url}>
+      {sourceLink.label}
+    </a>
+  </p>
+</div>
