@@ -1,0 +1,184 @@
+---
+/**
+ * pages/admin/blog/index.astro — blog post list.
+ * Owner: Admin.
+ *
+ * Lists all posts from the GitHub repo with edit/delete actions.
+ */
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+---
+
+<AdminLayout title="Blog Posts" section="blog">
+  <div class="admin-toolbar">
+    <p class="admin-count" id="post-count">Loading…</p>
+    <a href="/admin/blog/new/" class="admin-btn-gold">+ New post</a>
+  </div>
+
+  <div class="admin-table-wrap">
+    <table class="admin-table" id="posts-table" hidden>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th class="admin-table__actions">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="posts-body"></tbody>
+    </table>
+  </div>
+
+  <p class="admin-error" id="posts-error" hidden></p>
+
+  <script>
+    import { listDir, readFile, deleteFile } from "../../../lib/admin-github";
+    import { CONTENT_PATHS } from "../../../lib/admin-config";
+    import { splitPost } from "../../../lib/admin-frontmatter";
+
+    const body = document.getElementById("posts-body")!;
+    const table = document.getElementById("posts-table")!;
+    const count = document.getElementById("post-count")!;
+    const err = document.getElementById("posts-error")!;
+
+    async function load() {
+      try {
+        const files = (await listDir(CONTENT_PATHS.blogDir))
+          .filter((f) => f.name.endsWith(".md"))
+          .sort((a, b) => b.name.localeCompare(a.name));
+
+        // Fetch frontmatter for each (titles/dates)
+        const posts = [];
+        for (const f of files) {
+          try {
+            const { content } = await readFile(f.path);
+            const { frontmatter } = splitPost(content);
+            posts.push({ file: f, fm: frontmatter });
+          } catch {
+            posts.push({ file: f, fm: null });
+          }
+        }
+        // Sort by date desc
+        posts.sort((a, b) => (b.fm?.date ?? "").localeCompare(a.fm?.date ?? ""));
+
+        count.textContent = `${posts.length} post${posts.length === 1 ? "" : "s"}`;
+        body.innerHTML = "";
+        for (const p of posts) {
+          const tr = document.createElement("tr");
+          const draft = p.fm?.draft;
+          tr.innerHTML = `
+            <td class="admin-table__title">${escapeHtml(p.fm?.title || p.file.name)}</td>
+            <td>${escapeHtml(p.fm?.category || "—")}</td>
+            <td>${escapeHtml(p.fm?.date || "—")}</td>
+            <td>${draft ? '<span class="admin-badge admin-badge--draft">Draft</span>' : '<span class="admin-badge admin-badge--live">Live</span>'}</td>
+            <td class="admin-table__actions">
+              <a href="/admin/blog/edit/?file=${encodeURIComponent(p.file.name)}" class="admin-link">Edit</a>
+              <button class="admin-link admin-link--danger" data-del="${escapeHtml(p.file.name)}">Delete</button>
+            </td>`;
+          body.appendChild(tr);
+        }
+        table.hidden = false;
+
+        body.querySelectorAll("[data-del]").forEach((btn) => {
+          btn.addEventListener("click", async () => {
+            const name = (btn as HTMLElement).dataset.del!;
+            if (!confirm(`Delete "${name}"? This cannot be undone.`)) return;
+            try {
+              const { sha } = await readFile(`${CONTENT_PATHS.blogDir}/${name}`);
+              await deleteFile(`${CONTENT_PATHS.blogDir}/${name}`, sha, `Admin: delete post ${name}`);
+              alert("Deleted. The site will update after the next deploy.");
+              load();
+            } catch (ex: any) {
+              alert("Delete failed: " + (ex.message ?? ex));
+            }
+          });
+        });
+      } catch (ex: any) {
+        err.textContent = "Could not load posts: " + (ex.message ?? ex);
+        err.hidden = false;
+        count.textContent = "Failed to load";
+      }
+    }
+
+    function escapeHtml(s: string): string {
+      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    load();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-5);
+  }
+  .admin-count { color: var(--color-muted); margin: 0; }
+  .admin-btn-gold {
+    display: inline-block;
+    padding: var(--space-3) var(--space-5);
+    background: var(--gradient-gold);
+    color: #fff;
+    font-weight: 700;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+  }
+  .admin-table-wrap {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    overflow-x: auto;
+  }
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-base);
+  }
+  .admin-table th, .admin-table td {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .admin-table th {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-widest);
+    color: var(--color-muted);
+    background: var(--color-surface);
+  }
+  .admin-table__title { font-weight: 600; max-width: 28rem; }
+  .admin-table__actions { white-space: nowrap; text-align: right; }
+  .admin-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-widest);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+  }
+  .admin-badge--live { background: var(--color-success-bg); color: var(--color-on-success-bg); }
+  .admin-badge--draft { background: var(--color-warning-bg); color: var(--color-on-warning-bg); }
+  .admin-link {
+    color: var(--color-accent-strong);
+    font-weight: 600;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin-left: var(--space-3);
+  }
+  .admin-link:hover { text-decoration: underline; }
+  .admin-link--danger { color: var(--color-error); }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    margin-top: var(--space-6);
+  }
+</style>
