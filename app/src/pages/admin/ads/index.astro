@@ -1,0 +1,203 @@
+---
+/**
+ * pages/admin/ads/index.astro — ad slots manager.
+ * Owner: Admin.
+ *
+ * Every ad slot: ON/OFF toggle + ad code + device targeting.
+ * Sponsor card: title/text/CTA/URL. Saved to data/ads-config.json.
+ */
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+---
+
+<AdminLayout title="Ads" section="ads">
+  <p class="admin-note">
+    Har slot ka <b>ON/OFF</b>, <b>ad code</b> (AdSense/script) aur <b>device</b> yahan se control karo.
+    Save karne ke baad site rebuild par ads live honge.
+  </p>
+
+  <div id="ads-list" class="admin-ads-list">
+    <p class="admin-loading">Loading ad slots…</p>
+  </div>
+  <p class="admin-error" id="ads-error" hidden></p>
+
+  <script>
+    import { readFile, writeFile } from "../../../lib/admin-github";
+
+    const PATH = "data/ads-config.json";
+    let sha: string | null = null;
+    let config: any = null;
+
+    const list = document.getElementById("ads-list")!;
+    const err = document.getElementById("ads-error")!;
+    const esc = (s: any) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+    const SLOT_ORDER = [
+      "tool-top", "tool-incontent", "tool-mid", "tool-bottom",
+      "tool-sidebar-top", "tool-sidebar-bottom",
+      "tool-sponsor", "tool-sticky-mobile",
+      "blog-top", "blog-bottom",
+    ];
+
+    async function load() {
+      try {
+        const { content, sha: s } = await readFile(PATH);
+        sha = s;
+        config = JSON.parse(content);
+        render();
+      } catch (ex: any) {
+        err.textContent = "Could not load ads config: " + (ex.message ?? ex);
+        err.hidden = false;
+        list.innerHTML = "";
+      }
+    }
+
+    function render() {
+      list.innerHTML = "";
+      for (const key of SLOT_ORDER) {
+        const slot = config.slots[key];
+        if (!slot) continue;
+        const card = document.createElement("div");
+        card.className = "admin-ad-card";
+        const isSponsor = key === "tool-sponsor";
+
+        card.innerHTML = `
+          <div class="admin-ad-card__head">
+            <div>
+              <h3>${esc(slot.label || key)}</h3>
+              <p class="admin-muted">${esc(slot.description || "")}</p>
+            </div>
+            <button class="admin-toggle ${slot.enabled ? "admin-toggle--on" : ""}" data-key="${key}" aria-label="Toggle ${esc(slot.label || key)}">
+              <span class="admin-toggle__knob"></span>
+            </button>
+          </div>
+          <div class="admin-ad-card__body" ${slot.enabled ? "" : 'hidden'}>
+            ${isSponsor ? `
+              <label class="admin-field"><span>Sponsor title *</span><input type="text" data-f="sponsorTitle" value="${esc(slot.sponsorTitle)}" placeholder="e.g. Try Semrush Free" /></label>
+              <label class="admin-field"><span>Sponsor text</span><textarea data-f="sponsorText" rows="2" placeholder="Short pitch…">${esc(slot.sponsorText)}</textarea></label>
+              <div class="admin-form__grid2">
+                <label class="admin-field"><span>Button text</span><input type="text" data-f="sponsorCta" value="${esc(slot.sponsorCta)}" placeholder="Visit Sponsor" /></label>
+                <label class="admin-field"><span>Link URL *</span><input type="url" data-f="sponsorUrl" value="${esc(slot.sponsorUrl)}" placeholder="https://…" /></label>
+              </div>
+            ` : `
+              <label class="admin-field"><span>Ad code (HTML / AdSense script)</span><textarea data-f="code" rows="4" placeholder='<ins class="adsbygoogle" …></ins>'></textarea></label>
+              <label class="admin-field"><span>Show on</span>
+                <select data-f="devices" class="admin-select">
+                  <option value="both" ${slot.devices === "both" ? "selected" : ""}>Desktop + Mobile</option>
+                  <option value="desktop" ${slot.devices === "desktop" ? "selected" : ""}>Desktop only</option>
+                  <option value="mobile" ${slot.devices === "mobile" ? "selected" : ""}>Mobile only</option>
+                </select>
+              </label>
+            `}
+            <button class="admin-btn-gold admin-btn--sm" data-save="${key}">Save</button>
+            <span class="admin-form__status" data-status="${key}"></span>
+          </div>`;
+
+        // Populate code textarea (avoid esc issues with quotes)
+        if (!isSponsor) {
+          (card.querySelector('[data-f="code"]') as HTMLTextAreaElement).value = slot.code || "";
+        }
+
+        // Toggle
+        card.querySelector("[data-key]")?.addEventListener("click", async (e) => {
+          const btn = e.currentTarget as HTMLElement;
+          slot.enabled = !slot.enabled;
+          btn.classList.toggle("admin-toggle--on", slot.enabled);
+          (card.querySelector(".admin-ad-card__body") as HTMLElement).hidden = !slot.enabled;
+          await saveSlot(key, card, true);
+        });
+
+        // Save
+        card.querySelector("[data-save]")?.addEventListener("click", () => saveSlot(key, card, false));
+
+        list.appendChild(card);
+      }
+    }
+
+    async function saveSlot(key: string, card: HTMLElement, silent: boolean) {
+      const slot = config.slots[key];
+      const status = card.querySelector(`[data-status="${key}"]`) as HTMLElement;
+      card.querySelectorAll("[data-f]").forEach((el) => {
+        const f = (el as HTMLElement).dataset.f!;
+        slot[f] = (el as HTMLInputElement).value;
+      });
+      if (!silent) status.textContent = "Saving…";
+      try {
+        await writeFile(PATH, JSON.stringify(config, null, 2), `Admin: update ad slot ${key}`, sha);
+        const { sha: s } = await readFile(PATH);
+        sha = s;
+        if (!silent) {
+          status.textContent = "Saved!";
+          setTimeout(() => (status.textContent = ""), 1500);
+        }
+      } catch (ex: any) {
+        if (!silent) {
+          status.textContent = "";
+          alert("Save failed: " + (ex.message ?? ex));
+        }
+      }
+    }
+
+    load();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-note { color: var(--color-muted); margin: 0 0 var(--space-5); }
+  .admin-loading { color: var(--color-muted); }
+  .admin-ads-list { display: flex; flex-direction: column; gap: var(--space-4); }
+  .admin-ad-card {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-5);
+  }
+  .admin-ad-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+  .admin-ad-card__head h3 { margin: 0 0 var(--space-1); font-size: var(--text-lg); }
+  .admin-muted { color: var(--color-muted); font-size: var(--text-sm); margin: 0; }
+  .admin-ad-card__body { margin-top: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+  .admin-ad-card__body[hidden] { display: none; }
+  .admin-field span { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); }
+  .admin-field input, .admin-field textarea, .admin-field select {
+    width: 100%; font: inherit; font-family: var(--font-mono, monospace);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    background: var(--color-surface-raised); color: var(--color-text);
+    box-sizing: border-box; color-scheme: light;
+  }
+  .admin-field textarea { resize: vertical; }
+  .admin-form__grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .admin-select {
+    font: inherit; padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    background: var(--color-surface-raised); color: var(--color-text); color-scheme: light;
+  }
+  .admin-btn-gold {
+    font: inherit; font-weight: 700; padding: var(--space-2) var(--space-5);
+    border: none; border-radius: var(--radius-lg);
+    background: var(--gradient-gold); color: #fff; cursor: pointer;
+    align-self: flex-start;
+  }
+  .admin-btn--sm { font-size: var(--text-sm); }
+  .admin-form__status { color: var(--color-muted); font-size: var(--text-sm); }
+  .admin-toggle {
+    position: relative; width: 2.75rem; height: 1.5rem; border: none; flex-shrink: 0;
+    border-radius: var(--radius-pill); background: var(--color-border-strong);
+    cursor: pointer; transition: background 0.2s; padding: 0;
+  }
+  .admin-toggle--on { background: var(--color-success); }
+  .admin-toggle__knob {
+    position: absolute; top: 0.15rem; left: 0.15rem; width: 1.2rem; height: 1.2rem;
+    border-radius: 50%; background: #fff; transition: left 0.2s; box-shadow: var(--shadow-sm);
+  }
+  .admin-toggle--on .admin-toggle__knob { left: 1.4rem; }
+  .admin-error {
+    color: var(--color-error); background: var(--color-error-bg);
+    border-radius: var(--radius-lg); padding: var(--space-3) var(--space-4); margin-top: var(--space-4);
+  }
+  @media (max-width: 640px) { .admin-form__grid2 { grid-template-columns: 1fr; } }
+</style>
