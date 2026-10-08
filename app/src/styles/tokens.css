@@ -1,0 +1,207 @@
+/**
+ * tokens.css — LUXURY design tokens for HusnainBlogger.
+ *
+ * Premium, editorial aesthetic: deep ink surfaces, champagne-gold accents,
+ * generous whitespace, serif display typography. Inspired by top-tier
+ * creator platforms — refined, not flashy.
+ *
+ * THE ONLY SOURCE OF VISUAL TRUTH. Components MUST reference these custom
+ * properties; hard-coded colors / spacing / font sizes in components are a
+ * lint error.
+ *
+ * Theming: all tokens on `:root` (light = default). Dark theme overrides
+ * under `:root[data-theme="dark"]`. Theme set by `app/src/lib/ui/theme.ts`.
+ */
+
+:root {
+  /* ------------------------------------------------------------------ */
+  /* Color — surfaces & text (light, warm paper)                         */
+  /* ------------------------------------------------------------------ */
+  --color-bg: #faf9f7;               /* warm paper white */
+  --color-surface: #f3f1ec;          /* subtle warm surface */
+  --color-surface-raised: #ffffff;   /* cards, panels */
+  --color-text: #1a1815;             /* rich ink — 4.5:1 on bg */
+  --color-muted: #6b6459;            /* warm gray — 4.5:1 on bg */
+  --color-border: #e2ddd3;           /* hairline warm border */
+  --color-border-strong: #c9c2b4;    /* structural dividers */
+
+  /* ------------------------------------------------------------------ */
+  /* Color — accent: champagne gold + deep ink                            */
+  /* ------------------------------------------------------------------ */
+  --color-accent: #8a6d2f;           /* antique gold — 4.5:1 on bg */
+  --color-accent-strong: #6e5623;    /* deep bronze hover */
+  --color-accent-subtle: #f5efe0;    /* champagne tint */
+  --color-on-accent: #ffffff;
+
+  --color-ink: #1a1815;              /* primary ink for dark buttons */
+  --color-on-ink: #faf9f7;
+
+  /* Gradient accents (decorative only, never sole carrier of meaning) */
+  --gradient-gold: linear-gradient(135deg, #b8934a 0%, #8a6d2f 50%, #6e5623 100%);
+  --gradient-ink: linear-gradient(135deg, #2a2620 0%, #1a1815 100%);
+  --gradient-hero: linear-gradient(180deg, #faf9f7 0%, #f3f1ec 100%);
+
+  /* ------------------------------------------------------------------ */
+  /* Color — semantic                                                      */
+  /* ------------------------------------------------------------------ */
+  --color-success: #2d6a4f;
+  --color-success-bg: #e8f3ec;
+  --color-on-success-bg: #1b4332;
+
+  --color-warning: #8a5a0e;
+  --color-warning-bg: #fdf3e2;
+  --color-on-warning-bg: #713f0c;
+
+  --color-error: #b42318;
+  --color-error-bg: #fdecea;
+  --color-on-error-bg: #7a271a;
+  --color-on-error: #ffffff;
+
+  --color-info: #8a6d2f;
+  --color-info-bg: #f5efe0;
+  --color-on-info-bg: #6e5623;
+
+  /* ------------------------------------------------------------------ */
+  /* Focus ring                                                            */
+  /* ------------------------------------------------------------------ */
+  --color-focus: #8a6d2f;
+  --focus-ring: 0 0 0 2px var(--color-bg), 0 0 0 5px var(--color-focus);
+  --focus-ring-offset: 2px;
+
+  /* ------------------------------------------------------------------ */
+  /* Spacing — 4px base, generous luxury rhythm                            */
+  /* ------------------------------------------------------------------ */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ------------------------------------------------------------------ */
+  /* Typography — Fraunces (display serif) + Inter (body sans)            */
+  /* ------------------------------------------------------------------ */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  --text-5xl: 3.75rem;
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-loose: 1.8;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --letter-tight: -0.02em;
+  --letter-normal: 0;
+  --letter-wide: 0.08em;
+  --letter-widest: 0.14em;
+
+  /* ------------------------------------------------------------------ */
+  /* Radius — softer, more premium                                         */
+  /* ------------------------------------------------------------------ */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+
+  /* ------------------------------------------------------------------ */
+  /* Shadows — soft, layered, premium                                      */
+  /* ------------------------------------------------------------------ */
+  --shadow-xs: 0 1px 2px rgb(26 24 21 / 0.05);
+  --shadow-sm: 0 2px 8px rgb(26 24 21 / 0.06), 0 1px 2px rgb(26 24 21 / 0.04);
+  --shadow-md: 0 8px 24px rgb(26 24 21 / 0.08), 0 2px 6px rgb(26 24 21 / 0.05);
+  --shadow-lg: 0 24px 64px rgb(26 24 21 / 0.12), 0 4px 12px rgb(26 24 21 / 0.06);
+  --shadow-gold: 0 8px 32px rgb(138 109 47 / 0.22);
+
+  /* ------------------------------------------------------------------ */
+  /* Touch targets                                                         */
+  /* ------------------------------------------------------------------ */
+  --touch-target: 44px;
+  --target-gap: 8px;
+
+  /* ------------------------------------------------------------------ */
+  /* Layout                                                                */
+  /* ------------------------------------------------------------------ */
+  --content-max-width: 76rem;
+  --content-narrow: 46rem;
+  --content-wide: 88rem;
+
+  color-scheme: light;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Dark theme — rich charcoal + champagne gold                              */
+/* ---------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  --color-bg: #141210;
+  --color-surface: #1d1a16;
+  --color-surface-raised: #242019;
+  --color-text: #f0ebe2;
+  --color-muted: #a89e8d;
+  --color-border: #35302a;
+  --color-border-strong: #4a443a;
+
+  --color-accent: #d4a95c;
+  --color-accent-strong: #e8c37e;
+  --color-accent-subtle: #2a2419;
+  --color-on-accent: #141210;
+
+  --color-ink: #f0ebe2;
+  --color-on-ink: #141210;
+
+  --gradient-gold: linear-gradient(135deg, #e8c37e 0%, #d4a95c 50%, #b8934a 100%);
+  --gradient-ink: linear-gradient(135deg, #2a2620 0%, #1a1815 100%);
+  --gradient-hero: linear-gradient(180deg, #141210 0%, #1d1a16 100%);
+
+  --color-success: #7ddba0;
+  --color-success-bg: #123324;
+  --color-on-success-bg: #a9e8c3;
+
+  --color-warning: #f5c06a;
+  --color-warning-bg: #3a2a12;
+  --color-on-warning-bg: #f2cd8d;
+
+  --color-error: #ff9d8f;
+  --color-error-bg: #3d1d18;
+  --color-on-error-bg: #ffb4a8;
+  --color-on-error: #1a0d0b;
+
+  --color-info: #d4a95c;
+  --color-info-bg: #2a2419;
+  --color-on-info-bg: #e8c37e;
+
+  --color-focus: #d4a95c;
+
+  --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.35);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 24px 64px rgb(0 0 0 / 0.5);
+  --shadow-gold: 0 8px 32px rgb(212 169 92 / 0.18);
+
+  color-scheme: dark;
+}
