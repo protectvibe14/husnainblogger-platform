@@ -1,0 +1,69 @@
+---
+/**
+ * ErrorSummary.astro — validation error summary panel.
+ * Owner: MA1-DesignSystem.
+ *
+ * Used when ≥2 fields are invalid (D4). Single-field errors use inline
+ * errors + focus-to-field only — no summary.
+ *
+ * Two usage modes:
+ *  1. Static: pass `errors` — the panel renders visible immediately.
+ *  2. Dynamic (normal): render with no errors (hidden), then island code
+ *     calls showErrorSummary(container, errors) from lib/ui/error-summary.ts,
+ *     which populates it, reveals it, and moves focus to the heading.
+ *
+ * role="alert" announces the panel assertively on reveal — do NOT ALSO call
+ * announce.assertive() for it (that would double-announce).
+ */
+import { nextId } from "../../lib/a11y/ids";
+import type { FieldError } from "../../lib/ui/error-summary";
+
+interface Props {
+  errors?: FieldError[];
+  id?: string;
+  class?: string;
+}
+
+const { errors = [], id: idProp, class: cls } = Astro.props;
+const id = idProp ?? nextId("errorsummary");
+const headingId = `${id}-heading`;
+const n = errors.length;
+---
+<div
+  class:list={["hb-error-summary", cls]}
+  id={id}
+  data-error-summary
+  role="alert"
+  hidden={n === 0 ? true : undefined}
+>
+  <h2 class="hb-error-summary__heading" id={headingId} tabindex="-1" data-error-summary-heading>
+    {n === 0 ? "There are problems" : n === 1 ? "There is 1 problem" : `There are ${n} problems`}
+  </h2>
+  <ul class="hb-error-summary__list" data-error-summary-list>
+    {errors.map((err) => (
+      <li><a href={`#${err.fieldId}`}>{err.label}: {err.message}</a></li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  .hb-error-summary {
+    border: 2px solid var(--color-error);
+    border-left-width: var(--space-2);
+    border-radius: var(--radius-md);
+    background: var(--color-error-bg);
+    color: var(--color-on-error-bg);
+    padding: var(--space-4) var(--space-5);
+    margin-block: var(--space-4);
+  }
+  .hb-error-summary__heading {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xl);
+    color: var(--color-on-error-bg);
+  }
+  .hb-error-summary__heading:focus { outline: none; }
+  .hb-error-summary__heading:focus-visible { box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+  .hb-error-summary__list { margin: 0; padding-inline-start: var(--space-5); }
+  .hb-error-summary__list a { color: var(--color-on-error-bg); font-weight: var(--weight-semibold); }
+  .hb-error-summary__list li + li { margin-top: var(--space-1); }
+</style>
