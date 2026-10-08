@@ -1,0 +1,141 @@
+---
+/**
+ * [category]/[tool].astro — the 500 tool pages.
+ * Served at /tools/<category>/<slug>/ (namespace comes from the deploy base;
+ * physical routes omit it — see config/site.config.ts URL SCHEME).
+ *
+ * getStaticPaths() enumerates every non-DEPRECATED tool in the generated
+ * registry — no per-tool files, ever (ARCHITECTURE.md §3 "Adding tool #501"
+ * test). Template dispatch is data-driven via TEMPLATE_MAP (toolType →
+ * component); this page never hardcodes a template.
+ *
+ * Batch-1 pilot (2026-10-01): per-tool content/logic wiring.
+ * - `app/tools/<category>/<slug>/meta.ts` (when present) supplies
+ *   { inputs, outputs, itemFields?, trackerMode?, trackerItems?, content }.
+ *   Loaded via import.meta.glob (eager, build-time). No meta → DEMO fallback
+ *   + generic SEO (the Phase-0 status quo for the 475 tools still pending).
+ * - Related tools resolve from data/link-map.json (8 per tool, real URLs).
+ * - Head meta comes from content.title / content.description (MA3 formulas);
+ *   canonical is the absolute https://husnainblogger.com/tools/<cat>/<slug>/.
+ * - JSON-LD: ToolShell renders FAQPage from content.faqs + verbatim
+ *   content.jsonLd (builders include SoftwareApplication/WebPage there).
+ *
+ * Page shell (head, header, footer) comes from layouts/BaseLayout.astro.
+ */
+import { tools } from "../../data/registry.generated";
+import linkMapData from "../../data/link-map.json";
+import seoContentData from "../../data/seo-content.json";
+import { TEMPLATE_MAP } from "../../lib/registry/template-map";
+import type { ToolType } from "../../lib/registry/types";
+import type { ToolContent } from "../../templates/types.ts";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  toolHref,
+  hubHref,
+  toolsIndexHref,
+} from "../../../../config/site.config";
+
+export function getStaticPaths() {
+  // NOTE (Astro prerender quirk): EVERYTHING this function touches must be
+  // declared inside it — the prerender chunk bundler drops module-scope
+  // bindings referenced only from here.
+  const linkMap = (linkMapData as any).links as Record<
+    string,
+    { related?: string[] }
+  >;
+  const byId = new Map(tools.map((t) => [t.toolId, t]));
+  // SEO content (Phase 4): research-based per-tool content from data/seo-content.json
+  const seoContent = seoContentData as Record<string, any>;
+  const fallbackContent = (tool: any): ToolContent => {
+    const seo = seoContent[tool.toolId];
+    if (seo) {
+      return {
+        title: `${tool.name} — Free ${tool.primaryKeyword ? tool.primaryKeyword.split(' ').slice(0,3).join(' ') : 'Online Tool'}`.slice(0, 60),
+        description: seo.seoIntro.slice(0, 155),
+        howTo: seo.howToSteps,
+        methodology: seo.methodology,
+        faqs: seo.faqs.map((f: any) => ({ question: f.q, answer: f.a })),
+      };
+    }
+    return {
+      title: `${tool.name} — Free Online Tool`.slice(0, 60),
+      description:
+        `${tool.name}: a free ${tool.toolType} tool for creators and bloggers. ` +
+        `Fast, private, no signup needed.`,
+      howTo: [
+        "Enter your inputs in the form above.",
+        "Run the tool to see your results.",
+        "Copy or download the results to use them.",
+      ],
+      faqs: [],
+    };
+  };
+  const metaModules = import.meta.glob("../../../tools/*/*/meta.ts", {
+    eager: true,
+  }) as Record<string, any>;
+  const lookupMeta = (categorySlug: string, slug: string): any | undefined =>
+    metaModules[`../../../tools/${categorySlug}/${slug}/meta.ts`];
+  return tools
+    .filter((tool) => tool.status !== "DEPRECATED" && tool.enabled !== false)
+    .map((tool) => {
+      const meta = lookupMeta(tool.categorySlug, tool.slug);
+      const relatedIds = (linkMap[tool.toolId]?.related ?? []).slice(0, 8);
+      const relatedTools = relatedIds
+        .map((id) => byId.get(id))
+        .filter((t) => t && t.status !== "DEPRECATED" && t.enabled !== false);
+      const toolWithIO = {
+        ...tool,
+        inputs: meta?.inputs ?? [],
+        outputs: meta?.outputs ?? [],
+      };
+      return {
+        params: { category: tool.categorySlug, tool: tool.slug },
+        props: {
+          tool: toolWithIO,
+          content: meta?.content ?? fallbackContent(tool),
+          relatedTools,
+          itemFields: meta?.itemFields,
+          trackerMode: meta?.trackerMode,
+          trackerItems: meta?.trackerItems,
+          aiConfig: meta?.aiConfig,
+        },
+      };
+    });
+}
+
+const { tool, content, relatedTools, itemFields, trackerMode, trackerItems, aiConfig } =
+  Astro.props;
+// TEMPLATE_MAP values are `unknown` until MA1-Templates tightens the type.
+const Template = TEMPLATE_MAP[tool.toolType as ToolType] as any;
+
+// Admin SEO overrides (from tools inventory) take precedence over generated content.
+const title = tool.seoTitle?.trim() || content.title;
+const description = tool.seoDescription?.trim() || content.description;
+const canonical = `https://husnainblogger.com/tools/${tool.categorySlug}/${tool.slug}/`;
+const robots = tool.noindex ? "noindex, follow" : undefined;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  robots={robots}
+>
+  <meta property="og:url" content={canonical} slot="head" />
+  <meta name="twitter:card" content="summary" slot="head" />
+  <meta name="twitter:title" content={title} slot="head" />
+  <meta name="twitter:description" content={description} slot="head" />
+
+  <main>
+    {/* Exactly one template per toolType — dispatched, never hardcoded. */}
+    <Template
+      tool={tool}
+      content={content}
+      relatedTools={relatedTools}
+      itemFields={itemFields}
+      trackerMode={trackerMode}
+      trackerItems={trackerItems}
+      aiConfig={aiConfig}
+    />
+  </main>
+</BaseLayout>
