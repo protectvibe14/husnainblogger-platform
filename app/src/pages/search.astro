@@ -1,0 +1,95 @@
+---
+/**
+ * search.astro — static site search (zero-backend requirement).
+ *
+ * There is NO server endpoint: this page reads `?q=` client-side and searches
+ * the generated registry (tool names, keywords, descriptions) in the browser.
+ * Per MA3 URL_TAXONOMY.md §8: noindex, follow; excluded from the sitemap;
+ * does not swallow category hubs.
+ *
+ * SKELETON: minimal working search. MA1-DesignSystem replaces the markup with
+ * the SearchBox primitive when it lands; the `?q=` contract does not change.
+ */
+import { tools } from "../data/registry.generated";
+import { toolsIndexHref } from "../../../config/site.config";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Serialize a search index at build time: no fetch, no endpoint, no cost.
+const searchIndex = tools.map((t) => ({
+  name: t.name,
+  slug: t.slug,
+  categorySlug: t.categorySlug,
+  category: t.category,
+  description: t.description ?? "",
+  keywords: [t.primaryKeyword, ...(t.secondaryKeywords ?? [])].filter(Boolean),
+  url: `/tools/${t.categorySlug}/${t.slug}/`,
+}));
+---
+
+<BaseLayout
+  title="Search tools"
+  description="Search all 500 free creator tools."
+  canonical="https://husnainblogger.com/search/"
+  robots="noindex, follow"
+  activeNav={null}
+>
+  <main class="hb-directory">
+    <nav aria-label="Breadcrumb" class="hb-breadcrumbs">
+      <ol>
+        <li><a href={toolsIndexHref()}>Tools</a></li>
+        <li aria-current="page">Search</li>
+      </ol>
+    </nav>
+    <section>
+      <h1>Search tools</h1>
+      <form id="search-form" role="search" action="/search/">
+        <label for="q">Search 500 free tools</label>
+        <input id="q" name="q" type="search" autocomplete="off" />
+        <button type="submit">Search</button>
+      </form>
+      <p id="search-status" role="status"></p>
+      <ul id="search-results"></ul>
+    </section>
+    <script define:vars={{ searchIndex }}>
+      // Runs entirely in the browser: filters the build-time index by ?q=.
+      const params = new URLSearchParams(location.search);
+      const q = (params.get("q") || "").trim().toLowerCase();
+      const input = document.getElementById("q");
+      const status = document.getElementById("search-status");
+      const list = document.getElementById("search-results");
+      if (input) input.value = params.get("q") || "";
+      if (q) {
+        const hits = searchIndex
+          .filter((t) =>
+            [t.name, t.description, t.category, ...t.keywords]
+              .join(" ")
+              .toLowerCase()
+              .includes(q),
+          )
+          .slice(0, 50);
+        status.textContent = hits.length
+          ? `${hits.length} result${hits.length === 1 ? "" : "s"} for "${params.get("q")}"`
+          : `No tools found for "${params.get("q")}".`;
+        for (const t of hits) {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = t.url;
+          a.textContent = t.name;
+          li.appendChild(a);
+          const small = document.createElement("small");
+          small.textContent = ` — ${t.category}`;
+          li.appendChild(small);
+          list.appendChild(li);
+        }
+      } else {
+        status.textContent = "Type a keyword above to search all 500 tools.";
+      }
+      document.getElementById("search-form")?.addEventListener("submit", (e) => {
+        // Keep ?q= in the URL so results are shareable/bookmarkable.
+        e.preventDefault();
+        const next = new URLSearchParams({ q: input.value.trim() });
+        location.search = next.toString();
+      });
+    </script>
+  </main>
+</BaseLayout>
