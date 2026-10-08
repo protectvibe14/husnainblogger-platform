@@ -1,0 +1,798 @@
+{
+  "generatedAt": "2026-10-07T19:42:28.455Z",
+  "scope": "29 sweet-spot tools",
+  "summary": {
+    "total": 29,
+    "pass": 29,
+    "needsReview": 0,
+    "fail": 0
+  },
+  "readyForRelease": [
+    "etsy-fee-calculator",
+    "long-tail-keyword-expander",
+    "stripe-fee-calculator",
+    "faceless-channel-idea-mixer",
+    "amazon-kdp-royalty-calculator",
+    "keyword-clustering-tool",
+    "etsy-profit-calculator",
+    "faq-schema-generator",
+    "content-audit-decision-tool",
+    "break-even-roas-calculator",
+    "topical-authority-map-builder",
+    "pre-publish-seo-checklist",
+    "content-brief-generator",
+    "poshmark-fee-calculator",
+    "description-template-builder",
+    "twitch-subscriber-revenue-calculator",
+    "e-e-a-t-checklist-generator",
+    "shopify-fee-calculator",
+    "freelance-hourly-rate-calculator",
+    "social-media-manager-pricing-calculator",
+    "review-schema-generator",
+    "online-course-pricing-calculator",
+    "anchor-text-diversity-analyzer",
+    "web-designer-project-pricing-calculator",
+    "title-length-checker",
+    "amazon-affiliate-commission-estimator",
+    "blog-outline-generator",
+    "seo-title-tag-generator",
+    "seo-freelancer-pricing-calculator"
+  ],
+  "needsFixing": [],
+  "results": [
+    {
+      "keyword": "etsy fee calculator",
+      "slug": "etsy-fee-calculator",
+      "toolDir": "make-money/etsy-fee-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 28,
+      "volume": 2400,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 55,
+        "descLen": 155,
+        "faqCount": 7,
+        "inputCount": 6,
+        "outputCount": 7
+      },
+      "tests": {
+        "pass": 40,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 35,
+        "htmlTitle": "Etsy Fee Calculator 2026 – Seller Fees | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "long tail keyword generator",
+      "slug": "long-tail-keyword-expander",
+      "toolDir": "blogging-seo/long-tail-keyword-expander",
+      "category": "Blogging SEO & Content",
+      "kd": 25,
+      "volume": 1600,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 56,
+        "descLen": 153,
+        "faqCount": 7,
+        "inputCount": 1,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 19,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 29,
+        "htmlTitle": "Long Tail Keyword Generator – Free 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "stripe fee calculator",
+      "slug": "stripe-fee-calculator",
+      "toolDir": "make-money/stripe-fee-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 11,
+      "volume": 1300,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 56,
+        "descLen": 157,
+        "faqCount": 10,
+        "inputCount": 4,
+        "outputCount": 4
+      },
+      "tests": {
+        "pass": 22,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 36,
+        "htmlTitle": "Stripe Fee Calculator 2026 – Fees Guide | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "faceless youtube channel ideas",
+      "slug": "faceless-channel-idea-mixer",
+      "toolDir": "youtube/faceless-channel-idea-mixer",
+      "category": "YouTube",
+      "kd": 27,
+      "volume": 1000,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 158,
+        "faqCount": 7,
+        "inputCount": 3,
+        "outputCount": 5
+      },
+      "tests": {
+        "pass": 20,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "Faceless YouTube Channel Ideas – 2026 Guide | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "kdp royalty calculator",
+      "slug": "amazon-kdp-royalty-calculator",
+      "toolDir": "make-money/amazon-kdp-royalty-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 25,
+      "volume": 880,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 171,
+        "faqCount": 7,
+        "inputCount": 13,
+        "outputCount": 4
+      },
+      "tests": {
+        "pass": 32,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 45,
+        "htmlTitle": "KDP Royalty Calculator 2026 – Book Earnings | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "keyword clustering tool",
+      "slug": "keyword-clustering-tool",
+      "toolDir": "blogging-seo/keyword-clustering-tool",
+      "category": "Blogging SEO & Content",
+      "kd": 30,
+      "volume": 880,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 56,
+        "descLen": 156,
+        "faqCount": 7,
+        "inputCount": 2,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 23,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 30,
+        "htmlTitle": "Keyword Clustering Tool – Free SEO 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "etsy profit calculator",
+      "slug": "etsy-profit-calculator",
+      "toolDir": "make-money/etsy-profit-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 25,
+      "volume": 720,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 58,
+        "descLen": 158,
+        "faqCount": 7,
+        "inputCount": 11,
+        "outputCount": 5
+      },
+      "tests": {
+        "pass": 24,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 43,
+        "htmlTitle": "Etsy Profit Calculator 2026 – Net Margins | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "faq schema generator",
+      "slug": "faq-schema-generator",
+      "toolDir": "blogging-seo/faq-schema-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 27,
+      "volume": 480,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 172,
+        "faqCount": 8,
+        "inputCount": 1,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 22,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "FAQ Schema Generator – Free JSON-LD 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "content audit tool",
+      "slug": "content-audit-decision-tool",
+      "toolDir": "blogging-seo/content-audit-decision-tool",
+      "category": "Blogging SEO & Content",
+      "kd": 30,
+      "volume": 390,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 157,
+        "faqCount": 7,
+        "inputCount": 2,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 27,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "Content Audit Tool 2026 – Free SEO Audit | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "breakeven roas calculator",
+      "slug": "break-even-roas-calculator",
+      "toolDir": "make-money/break-even-roas-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 9,
+      "volume": 320,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 59,
+        "descLen": 156,
+        "faqCount": 9,
+        "inputCount": 3,
+        "outputCount": 4
+      },
+      "tests": {
+        "pass": 21,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 33,
+        "htmlTitle": "Breakeven ROAS Calculator 2026 – Ad Profit | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "topical authority map",
+      "slug": "topical-authority-map-builder",
+      "toolDir": "blogging-seo/topical-authority-map-builder",
+      "category": "Blogging SEO & Content",
+      "kd": 14,
+      "volume": 320,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 58,
+        "descLen": 172,
+        "faqCount": 7,
+        "inputCount": 0,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 24,
+        "fail": 0
+      },
+      "examplesRun": 0,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "Topical Authority Map 2026 – SEO Clusters | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "blog post seo checklist",
+      "slug": "pre-publish-seo-checklist",
+      "toolDir": "blogging-seo/pre-publish-seo-checklist",
+      "category": "Blogging SEO & Content",
+      "kd": 29,
+      "volume": 320,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 58,
+        "descLen": 171,
+        "faqCount": 8,
+        "inputCount": 3,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 19,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 33,
+        "htmlTitle": "Blog Post SEO Checklist 2026 – Free Guide | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "content brief generator",
+      "slug": "content-brief-generator",
+      "toolDir": "blogging-seo/content-brief-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 23,
+      "volume": 260,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 149,
+        "faqCount": 7,
+        "inputCount": 4,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 29,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 33,
+        "htmlTitle": "Content Brief Generator 2026 – Free Tool | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "poshmark fee calculator",
+      "slug": "poshmark-fee-calculator",
+      "toolDir": "make-money/poshmark-fee-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 3,
+      "volume": 210,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 59,
+        "descLen": 156,
+        "faqCount": 11,
+        "inputCount": 4,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 24,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 37,
+        "htmlTitle": "Poshmark Fee Calculator 2026 – Seller Fees | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "youtube description template",
+      "slug": "description-template-builder",
+      "toolDir": "youtube/description-template-builder",
+      "category": "YouTube",
+      "kd": 16,
+      "volume": 170,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 157,
+        "faqCount": 8,
+        "inputCount": 0,
+        "outputCount": 5
+      },
+      "tests": {
+        "pass": 27,
+        "fail": 0
+      },
+      "examplesRun": 0,
+      "page": {
+        "sizeKb": 35,
+        "htmlTitle": "YouTube Description Template 2026 – Free | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "twitch subscriber calculator",
+      "slug": "twitch-subscriber-revenue-calculator",
+      "toolDir": "make-money/twitch-subscriber-revenue-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 20,
+      "volume": 140,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 159,
+        "faqCount": 7,
+        "inputCount": 5,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 21,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 34,
+        "htmlTitle": "Twitch Subscriber Calculator 2026 – Revenue | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "eeat checklist",
+      "slug": "e-e-a-t-checklist-generator",
+      "toolDir": "blogging-seo/e-e-a-t-checklist-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 28,
+      "volume": 140,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 59,
+        "descLen": 156,
+        "faqCount": 7,
+        "inputCount": 1,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 18,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 29,
+        "htmlTitle": "EEAT Checklist 2026 – Free SEO Audit Guide | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "shopify fee calculator",
+      "slug": "shopify-fee-calculator",
+      "toolDir": "make-money/shopify-fee-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 9,
+      "volume": 110,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 59,
+        "descLen": 157,
+        "faqCount": 7,
+        "inputCount": 5,
+        "outputCount": 5
+      },
+      "tests": {
+        "pass": 22,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 34,
+        "htmlTitle": "Shopify Fee Calculator 2026 – Plans &amp; Fees | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "freelance hourly rate calculator",
+      "slug": "freelance-hourly-rate-calculator",
+      "toolDir": "make-money/freelance-hourly-rate-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 23,
+      "volume": 110,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 54,
+        "descLen": 157,
+        "faqCount": 7,
+        "inputCount": 4,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 20,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 33,
+        "htmlTitle": "Freelance Hourly Rate Calculator 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "social media manager pricing",
+      "slug": "social-media-manager-pricing-calculator",
+      "toolDir": "make-money/social-media-manager-pricing-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 30,
+      "volume": 110,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 56,
+        "descLen": 155,
+        "faqCount": 7,
+        "inputCount": 6,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 18,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 35,
+        "htmlTitle": "Social Media Manager Pricing 2026 Guide | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "review schema generator",
+      "slug": "review-schema-generator",
+      "toolDir": "blogging-seo/review-schema-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 8,
+      "volume": 90,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 150,
+        "faqCount": 7,
+        "inputCount": 5,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 21,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 33,
+        "htmlTitle": "Review Schema Generator – Free JSON-LD 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "online course pricing calculator",
+      "slug": "online-course-pricing-calculator",
+      "toolDir": "make-money/online-course-pricing-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 11,
+      "volume": 90,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 54,
+        "descLen": 150,
+        "faqCount": 8,
+        "inputCount": 4,
+        "outputCount": 4
+      },
+      "tests": {
+        "pass": 23,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 34,
+        "htmlTitle": "Online Course Pricing Calculator 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "anchor text checker",
+      "slug": "anchor-text-diversity-analyzer",
+      "toolDir": "blogging-seo/anchor-text-diversity-analyzer",
+      "category": "Blogging SEO & Content",
+      "kd": 14,
+      "volume": 70,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 154,
+        "faqCount": 7,
+        "inputCount": 1,
+        "outputCount": 4
+      },
+      "tests": {
+        "pass": 26,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 30,
+        "htmlTitle": "Anchor Text Checker 2026 – Free SEO Tool | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "web design pricing calculator",
+      "slug": "web-designer-project-pricing-calculator",
+      "toolDir": "make-money/web-designer-project-pricing-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 26,
+      "volume": 70,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 51,
+        "descLen": 154,
+        "faqCount": 7,
+        "inputCount": 3,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 19,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "Web Design Pricing Calculator 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "youtube title length checker",
+      "slug": "title-length-checker",
+      "toolDir": "youtube/title-length-checker",
+      "category": "YouTube",
+      "kd": 13,
+      "volume": 50,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 153,
+        "faqCount": 9,
+        "inputCount": 1,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 28,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 32,
+        "htmlTitle": "YouTube Title Length Checker 2026 – Free | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "amazon affiliate commission calculator",
+      "slug": "amazon-affiliate-commission-estimator",
+      "toolDir": "make-money/amazon-affiliate-commission-estimator",
+      "category": "Make-Money & Affiliate",
+      "kd": 15,
+      "volume": 50,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 159,
+        "faqCount": 8,
+        "inputCount": 3,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 21,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 34,
+        "htmlTitle": "Amazon Affiliate Commission Calculator 2026 | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "blog outline generator",
+      "slug": "blog-outline-generator",
+      "toolDir": "blogging-seo/blog-outline-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 24,
+      "volume": 50,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 60,
+        "descLen": 158,
+        "faqCount": 7,
+        "inputCount": 3,
+        "outputCount": 2
+      },
+      "tests": {
+        "pass": 24,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "Blog Outline Generator 2026 – Free SEO Tool | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "seo title tag generator",
+      "slug": "seo-title-tag-generator",
+      "toolDir": "blogging-seo/seo-title-tag-generator",
+      "category": "Blogging SEO & Content",
+      "kd": 27,
+      "volume": 50,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 57,
+        "descLen": 155,
+        "faqCount": 7,
+        "inputCount": 3,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 17,
+        "fail": 0
+      },
+      "examplesRun": 2,
+      "page": {
+        "sizeKb": 31,
+        "htmlTitle": "SEO Title Tag Generator 2026 – Free Tool | HusnainBlogger"
+      }
+    },
+    {
+      "keyword": "seo freelancer rates",
+      "slug": "seo-freelancer-pricing-calculator",
+      "toolDir": "make-money/seo-freelancer-pricing-calculator",
+      "category": "Make-Money & Affiliate",
+      "kd": 27,
+      "volume": 50,
+      "status": "PASS",
+      "issues": [],
+      "meta": {
+        "titleLen": 53,
+        "descLen": 151,
+        "faqCount": 7,
+        "inputCount": 5,
+        "outputCount": 3
+      },
+      "tests": {
+        "pass": 19,
+        "fail": 0
+      },
+      "examplesRun": 3,
+      "page": {
+        "sizeKb": 34,
+        "htmlTitle": "SEO Freelancer Rates Calculator 2026 | HusnainBlogger"
+      }
+    }
+  ]
+}
