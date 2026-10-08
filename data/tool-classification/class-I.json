@@ -1,0 +1,1920 @@
+{
+ "category": "I",
+ "categoryName": "Email & Blog Marketing",
+ "toolCount": 50,
+ "schemaVersion": "1.0",
+ "generatedBy": "MASTER AGENT 2 / EMAIL-MARKETING-TOOLS subagent",
+ "generatedDate": "2026-10-01",
+ "toolTypeCorrections": [
+  {
+   "toolId": 434,
+   "was": "tracker",
+   "now": "generator",
+   "reason": "Blog Giveaway Idea Generator produces ideas; no tracking behavior."
+  },
+  {
+   "toolId": 444,
+   "was": "tracker",
+   "now": "generator",
+   "reason": "Blog Comment Reply Generator drafts replies; no tracking behavior."
+  },
+  {
+   "toolId": 446,
+   "was": "tracker",
+   "now": "generator",
+   "reason": "Press Release Template Generator produces a document; no tracking behavior."
+  },
+  {
+   "toolId": 449,
+   "was": "tracker",
+   "now": "generator",
+   "reason": "Blog Comment Policy Generator produces policy text; no tracking behavior."
+  }
+ ],
+ "tools": [
+  {
+   "toolId": 401,
+   "name": "Email Subject Line Tester",
+   "slug": "email-subject-line-tester",
+   "verifiedToolType": "analyzer",
+   "engine": "rule-scorer",
+   "inputs": [
+    "subjectLine (text, required)",
+    "audienceHint (text, optional)"
+   ],
+   "outputs": [
+    "score (0-100)",
+    "checkResults[] {check, pass, detail}",
+    "truncationPreview[] {client, visibleChars}",
+    "warnings[]",
+    "suggestions[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Heuristic rule-scorer. Weights are documented estimates, NOT data-derived open-rate predictors. Must be labeled as guidance. No open-rate prediction claims.",
+   "formulaRef": "FORMULA-I-401",
+   "platformRulesRef": [
+    "email-subject-line-display-truncation-commonly-cited-not-provider-guaranteed-gmail-desktop-60-70-chars-gmail-app-iphone-35-40-chars-android-33-43-chars-apple-mail-30-50-chars-outlook-25-30-chars-mobile-generally-30-45-chars",
+    "email-subject-line-best-practice-target-30-50-characters-6-10-words-front-load-the-key-message",
+    "email-apple-mail-privacy-protection-ios-15-sep-2021-inflates-open-rate-metrics-clicks-are-the-more-reliable-signal-ios-18-2-replaces-preheader-text-in-apple-mail-with-ai-generated-summaries"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "analyzer"
+  },
+  {
+   "toolId": 402,
+   "name": "Email Subject Line Generator",
+   "slug": "email-subject-line-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "emailPurpose (enum: newsletter|promo|welcome|reengagement|transactional)",
+    "topic (text)",
+    "audience (text)",
+    "tone (enum)",
+    "count (1-20, default 10)"
+   ],
+   "outputs": [
+    "subjectLines[] {text, charCount, fitsMobile}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "email-subject-line-display-truncation-commonly-cited-not-provider-guaranteed-gmail-desktop-60-70-chars-gmail-app-iphone-35-40-chars-android-33-43-chars-apple-mail-30-50-chars-outlook-25-30-chars-mobile-generally-30-45-chars",
+    "email-subject-line-best-practice-target-30-50-characters-6-10-words-front-load-the-key-message"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 403,
+   "name": "Spam Word Checker",
+   "slug": "spam-word-checker",
+   "verifiedToolType": "checker",
+   "engine": "rule-scorer",
+   "inputs": [
+    "text (subject or body, required)"
+   ],
+   "outputs": [
+    "matches[] {term, category, severity}",
+    "riskLevel (low|medium|high)",
+    "rewriteSuggestions[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Matches pasted text against a BUNDLED, curated trigger-word/phrase list. This is a pattern linter, NOT a live spam-filter test — real filters are behavioral and ML-based. Must be labeled honestly in UI.",
+   "formulaRef": "FORMULA-I-403",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "toolId": 404,
+   "name": "Preheader Text Generator",
+   "slug": "preheader-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "subjectLine (text)",
+    "emailSummary (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "preheaderOptions[] {text, charCount}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Generates 40-100 char preheader variants; never repeats the subject. Notes Apple Mail iOS 18.2+ may show AI summaries instead of preheader.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "email-preheader-safe-range-40-75-chars-complements-the-subject-never-repeats-it",
+    "email-apple-mail-privacy-protection-ios-15-sep-2021-inflates-open-rate-metrics-clicks-are-the-more-reliable-signal-ios-18-2-replaces-preheader-text-in-apple-mail-with-ai-generated-summaries"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 405,
+   "name": "Email CTA Button Text Generator",
+   "slug": "email-cta-button-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "action (text)",
+    "audience (text)",
+    "tone (enum)",
+    "maxWords (default 4)"
+   ],
+   "outputs": [
+    "ctaTexts[] {text, wordCount}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Button microcopy: verb-first, ≤4 words default; includes mobile-tap-width warning for long labels.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 406,
+   "name": "Subject Line Character Checker",
+   "slug": "subject-line-character-checker",
+   "verifiedToolType": "checker",
+   "engine": "rule-scorer",
+   "inputs": [
+    "subjectLine (text, required)"
+   ],
+   "outputs": [
+    "charCount (code points)",
+    "wordCount",
+    "perClient[] {client, visibleChars, truncated}",
+    "fitsAllMobile (bool)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure counting + truncation simulation against documented display thresholds. Thresholds are commonly-cited guidance, not client guarantees.",
+   "formulaRef": "FORMULA-I-406",
+   "platformRulesRef": [
+    "email-subject-line-display-truncation-commonly-cited-not-provider-guaranteed-gmail-desktop-60-70-chars-gmail-app-iphone-35-40-chars-android-33-43-chars-apple-mail-30-50-chars-outlook-25-30-chars-mobile-generally-30-45-chars"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "toolId": 407,
+   "name": "P.S. Line Generator",
+   "slug": "p-s-line-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "emailGoal (text)",
+    "offer (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "psLines[] {text}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 408,
+   "name": "Email A/B Test Idea Generator",
+   "slug": "email-a-b-test-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "emailType (enum)",
+    "testFocus (enum: subject|preheader|cta|sendTime|content|layout)",
+    "listSize (number, optional)"
+   ],
+   "outputs": [
+    "testIdeas[] {name, variable, variantA, variantB, hypothesis}",
+    "sampleSizeNote (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Generates test IDEAS only. Minimum-sample guidance is simplified rules-of-thumb, not a power calculation; must be labeled as such. No live testing.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 409,
+   "name": "Cold Email Opener Generator",
+   "slug": "cold-email-opener-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "prospectContext (text)",
+    "industry (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "openers[] {text, personalizationSlot}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Openers only (not full sequences). Ships with CAN-SPAM/GDPR caution note: tool cannot verify consent; user responsible for compliance.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "email-can-spam-us-commercial-email-accurate-from-to-routing-non-deceptive-subject-ad-disclosure-valid-physical-postal-address-clear-opt-out-working-30-days-after-send-opt-outs-honored-within-10-business-days-vendor-oversight-stays-with-sender"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 410,
+   "name": "Follow-up Email Generator",
+   "slug": "follow-up-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "sequenceStep (1-5)",
+    "originalSubject (text)",
+    "goal (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 411,
+   "name": "Welcome Email Sequence Generator",
+   "slug": "welcome-email-sequence-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "brand (text)",
+    "leadMagnet (text)",
+    "emailCount (3-7, default 5)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "sequence[] {dayOffset, subject, bodyDraft, goal}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 412,
+   "name": "Email Sequence Planner",
+   "slug": "email-sequence-planner-2",
+   "verifiedToolType": "planner",
+   "engine": "planner",
+   "inputs": [
+    "goal (enum: nurture|launch|onboarding|sales)",
+    "emailCount (number)",
+    "spanDays (number)",
+    "startDate (date)"
+   ],
+   "outputs": [
+    "schedule[] {date, emailPurpose, notes}",
+    "cadenceSummary (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Date arithmetic + cadence rules; pure client-side calendar math.",
+   "formulaRef": "FORMULA-I-412",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "status": "DEPRECATED",
+   "mergedInto": "tool-317",
+   "deprecatedDate": "2026-10-01",
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": 413,
+   "name": "Launch Email Sequence Generator",
+   "slug": "launch-email-sequence-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "product (text)",
+    "launchDate (date)",
+    "audience (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "sequence[] {phase, dayOffset, subject, bodyDraft}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 414,
+   "name": "Re-engagement Email Generator",
+   "slug": "re-engagement-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "segmentName (text)",
+    "inactiveDays (number)",
+    "incentive (text, optional)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)",
+    "winbackOfferBlock (text, optional)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 415,
+   "name": "Abandoned Cart Email Template Generator",
+   "slug": "abandoned-cart-email-template-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "storeName (text)",
+    "productName (text)",
+    "discountOffer (text, optional)",
+    "emailNumber (1-3)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyTemplate (text with {{placeholders}})",
+    "placeholderList[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 416,
+   "name": "Newsletter Idea Generator",
+   "slug": "newsletter-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (text)",
+    "audience (text)",
+    "frequency (enum)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "ideas[] {title, angle, whyItWorks}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 417,
+   "name": "Newsletter Name Generator",
+   "slug": "newsletter-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (text)",
+    "keywords (text, optional)",
+    "tone (enum)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "names[] {name, taglineSuggestion}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "No live domain/social-handle availability check — client-side tool cannot verify registrations; UI must say availability must be checked manually.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 418,
+   "name": "Newsletter Outline Generator",
+   "slug": "newsletter-outline-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (text)",
+    "sections (text, optional)",
+    "targetWords (number)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "outline[] {section, purpose, wordBudget}",
+    "totalWords (number)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 419,
+   "name": "Newsletter Sponsorship Pitch Generator",
+   "slug": "newsletter-sponsorship-pitch-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "newsletterName (text)",
+    "subscribers (number)",
+    "openRate (%, optional)",
+    "audience (text)",
+    "adFormats (multi-enum)"
+   ],
+   "outputs": [
+    "pitchEmail (text)",
+    "rateCardSnippet (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pitches YOUR newsletter's ad slots TO sponsors. Distinct from 436 (general sponsorship ask).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    436
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 420,
+   "name": "Newsletter CPM Calculator",
+   "slug": "newsletter-cpm-calculator",
+   "verifiedToolType": "calculator",
+   "engine": "math",
+   "inputs": [
+    "subscribers (number)",
+    "openRatePct (0-100)",
+    "cpm (currency)",
+    "issuesPerMonth (number, default 4)"
+   ],
+   "outputs": [
+    "impressionsPerIssue",
+    "revenuePerIssue",
+    "revenuePerMonth",
+    "revenuePerSubscriberPerMonth"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure arithmetic on USER-SUPPLIED assumptions. CPM/open-rate defaults, if any, must be labeled as example values, never as market facts.",
+   "formulaRef": "FORMULA-I-420",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "toolId": 421,
+   "name": "Blog-to-Newsletter Converter",
+   "slug": "blog-to-newsletter-converter",
+   "verifiedToolType": "converter",
+   "engine": "template-library",
+   "inputs": [
+    "blogContent (pasted text, required)",
+    "excerptWords (default 150)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "introParagraph",
+    "sections[] {heading, excerpt}",
+    "ctaBlock"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "PASTED-TEXT ONLY. Client-side fetch of arbitrary blog URLs is blocked by CORS — no URL import without a backend. Must not promise URL fetching.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "converter"
+  },
+  {
+   "toolId": 422,
+   "name": "Webinar Invitation Email Generator",
+   "slug": "webinar-invitation-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "webinarTitle (text)",
+    "dateTime (text)",
+    "speaker (text)",
+    "benefits (text)",
+    "cta (text)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 423,
+   "name": "Sale/Promo Email Generator",
+   "slug": "sale-promo-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "offer (text)",
+    "discount (text)",
+    "deadline (text)",
+    "audience (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)",
+    "urgencyBlock (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Includes honesty guardrail: generated urgency copy must not invent false scarcity; deadline comes from user input.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 424,
+   "name": "Testimonial Request Email Generator",
+   "slug": "testimonial-request-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "clientName (text)",
+    "product (text)",
+    "specificAsk (text)",
+    "incentive (text, optional)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "differentiationLocked": "Keep-both vs tool-319 (Lead): 424 = email-copy-specific testimonial request generator. 319 = channel-agnostic builder. Distinct clusters + UI required.",
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 425,
+   "name": "Lead Magnet Idea Generator",
+   "slug": "lead-magnet-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (text)",
+    "audience (text)",
+    "format (enum: any|ebook|checklist|template|video|email-course, optional)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "ideas[] {title, format, whyItConverts}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "General lead-magnet ideation. Sibling tools 426/427/428 cover titles, content-upgrades, and quizzes — adjacent, not duplicates.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    427,
+    428
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 426,
+   "name": "Lead Magnet Title Generator",
+   "slug": "lead-magnet-title-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "magnetType (text)",
+    "topic (text)",
+    "outcome (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "titles[] {title, charCount}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 427,
+   "name": "Content Upgrade Idea Generator",
+   "slug": "content-upgrade-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "blogTopic (text)",
+    "audience (text)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "ideas[] {upgrade, format, placement}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Content upgrades are post-specific bonuses (subset of lead magnets); distinct intent from 425's standalone magnets.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    425
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 428,
+   "name": "Quiz Lead Magnet Idea Generator",
+   "slug": "quiz-lead-magnet-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (text)",
+    "audience (text)",
+    "quizGoal (enum: segment|entertain|qualify)"
+   ],
+   "outputs": [
+    "quizIdeas[] {title, sampleQuestions[], resultTypes[]}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Quiz-format only; distinct from 425's general ideation.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    425
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 429,
+   "name": "Lead Magnet Checklist Builder",
+   "slug": "lead-magnet-checklist-builder",
+   "verifiedToolType": "builder",
+   "engine": "checklist",
+   "inputs": [
+    "magnetTopic (text)",
+    "steps (text list, optional — auto-suggested if blank)"
+   ],
+   "outputs": [
+    "checklistItems[] {step, detail, done}",
+    "printableText"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Interactive checklist builder with localStorage persistence; no AI — steps come from curated frameworks or user input.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": 430,
+   "name": "Email Signup Copy Generator",
+   "slug": "email-signup-copy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "incentive (text)",
+    "placement (enum: popup|inline|landing|sidebar)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "headlineOptions[]",
+    "subtextOptions[]",
+    "buttonTexts[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 431,
+   "name": "Thank You Page Copy Generator",
+   "slug": "thank-you-page-copy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "completedAction (text)",
+    "nextStep (text)",
+    "brand (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "headlineOptions[]",
+    "bodyDraft (text)",
+    "nextStepCta (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 432,
+   "name": "Unsubscribe Page Copy Generator",
+   "slug": "unsubscribe-page-copy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "brand (text)",
+    "alternatives (text, optional)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "headlineOptions[]",
+    "bodyDraft (text)",
+    "preferenceOptions[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Copy must not guilt-trip; ships with CAN-SPAM reminder (opt-outs honored within 10 business days). Not legal advice.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "email-can-spam-us-commercial-email-accurate-from-to-routing-non-deceptive-subject-ad-disclosure-valid-physical-postal-address-clear-opt-out-working-30-days-after-send-opt-outs-honored-within-10-business-days-vendor-oversight-stays-with-sender"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 433,
+   "name": "Referral Email Generator",
+   "slug": "referral-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "programName (text)",
+    "reward (text)",
+    "audience (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)",
+    "shareBlock (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Referral EMAIL copy; distinct from 491 (J) Referral Program Planner which plans program mechanics.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    491
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 434,
+   "name": "Blog Giveaway Idea Generator",
+   "slug": "blog-giveaway-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "blogNiche (text)",
+    "audience (text)",
+    "prizeBudget (text, optional)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "ideas[] {title, prize, entryMechanic, duration}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "TOOLTYPE CORRECTED: inventory said 'tracker' — this is a generator. Blog-channel giveaway ideation; distinct from 397 (H) Facebook-channel.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    397
+   ],
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": 435,
+   "name": "Email Funnel Mapper",
+   "slug": "email-funnel-mapper",
+   "verifiedToolType": "generator",
+   "engine": "planner",
+   "inputs": [
+    "funnelGoal (enum: welcome|nurture|sales|winback)",
+    "stageCount (3-7)",
+    "emailsPerStage (number)"
+   ],
+   "outputs": [
+    "funnelMap[] {stage, trigger, emails[] {purpose, dayOffset}, goal}",
+    "summaryText"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Generates funnel data model; visual rendering is MA1 component concern. Classification defines data contract only.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 436,
+   "name": "Sponsorship Pitch Email Generator",
+   "slug": "sponsorship-pitch-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "yourAsset (text: blog|podcast|event|newsletter)",
+    "sponsorType (text)",
+    "ask (text)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "pitchEmail (text)",
+    "followUpNudge (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "General sponsorship ASK (you seek a sponsor). Closest intra-category neighbor is 419 (you SELL newsletter ad slots) — opposite direction of the transaction. Also adjacent to 467 (J) brand pitch. Flagged, not duplicates.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    419,
+    467
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 437,
+   "name": "Case Study Request Email Generator",
+   "slug": "case-study-request-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "clientName (text)",
+    "resultMetric (text)",
+    "format (enum: written|video|quote)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "bodyDraft (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 438,
+   "name": "Email Signature Generator",
+   "slug": "email-signature-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "name (text)",
+    "title (text)",
+    "company (text)",
+    "phone (text, optional)",
+    "website (url, optional)",
+    "socialLinks (text, optional)"
+   ],
+   "outputs": [
+    "signatureHTML (inline-styled, table-based)",
+    "signatureText (plain)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Builds email-client-safe HTML (tables + inline styles, no external CSS) as pure string templating. Copy-paste output; no live email-client preview.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 439,
+   "name": "Plain-Text Email Formatter",
+   "slug": "plain-text-email-formatter",
+   "verifiedToolType": "formatter",
+   "engine": "formatter",
+   "inputs": [
+    "richText (pasted, required)",
+    "lineWidth (default 72)",
+    "linkStyle (enum: inline|footnote)"
+   ],
+   "outputs": [
+    "plainText (text)",
+    "stats {lines, chars}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic text transformation: HTML->text linearization, link footnoting, image alt fallback. No network.",
+   "formulaRef": "FORMULA-I-439",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "formatter"
+  },
+  {
+   "toolId": 440,
+   "name": "Email Send-Time Planner",
+   "slug": "email-send-time-planner",
+   "verifiedToolType": "planner",
+   "engine": "planner",
+   "inputs": [
+    "audienceTimezone (IANA)",
+    "senderTimezone (IANA)",
+    "cadence (enum: weekly|biweekly|monthly)"
+   ],
+   "outputs": [
+    "sendSlots[] {senderLocal, audienceLocal, band}",
+    "bestBandNote (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "'Best time' bands are commonly-cited guidance (labeled with source), NOT verified open-rate facts. Timezone conversion itself is pure math.",
+   "formulaRef": "FORMULA-I-440",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": 441,
+   "name": "90-Day Email Marketing Planner",
+   "slug": "90-day-email-marketing-planner",
+   "verifiedToolType": "planner",
+   "engine": "planner",
+   "inputs": [
+    "startDate (date)",
+    "emailsPerWeek (1-7)",
+    "goalMix (nurture%|promo%|content%)",
+    "blackoutDates (dates, optional)"
+   ],
+   "outputs": [
+    "calendar[] {date, slotType, contentPillar}",
+    "milestones[]",
+    "totals {emails, byPillar}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Client-side date arithmetic only. Goal-mix is user input, not a recommendation.",
+   "formulaRef": "FORMULA-I-441",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": 442,
+   "name": "About Page Copy Generator",
+   "slug": "about-page-copy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "name (text)",
+    "role (text)",
+    "credentials (text)",
+    "tone (enum)",
+    "length (enum: short|medium|long)"
+   ],
+   "outputs": [
+    "aboutCopy (text)",
+    "headlineOptions[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 443,
+   "name": "Author Bio Generator",
+   "slug": "author-bio-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "name (text)",
+    "expertise (text)",
+    "publications (text, optional)",
+    "length (enum: 50|100|200 words)",
+    "pov (enum: first|third)"
+   ],
+   "outputs": [
+    "bio (text)",
+    "wordCount (number)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 444,
+   "name": "Blog Comment Reply Generator",
+   "slug": "blog-comment-reply-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "commentText (text, required)",
+    "replyTone (enum: friendly|professional|witty)",
+    "authorName (text)"
+   ],
+   "outputs": [
+    "replyDrafts[] {text}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "TOOLTYPE CORRECTED: inventory said 'tracker' — this is a generator. Blog-comment replies; distinct from social-comment tools 129 (C), 153 (D), 213 (E).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    129,
+    153,
+    213
+   ],
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": 445,
+   "name": "Email Deliverability Checklist",
+   "slug": "email-deliverability-checklist",
+   "verifiedToolType": "generator",
+   "engine": "checklist",
+   "inputs": [
+    "sendingVolume (enum: <500|500-5k|>5k per day)",
+    "sendsFrom (enum: gmail|workspace|outlook|custom-domain|esp)"
+   ],
+   "outputs": [
+    "checklistItems[] {item, why, ruleRef, done}",
+    "priorityOrder[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "GUIDANCE CHECKLIST ONLY — it cannot test deliverability. No DNS lookups, no inbox-placement test, no live verification. Items cite real platform rules; each item labeled guidance. Must never claim to 'test' deliverability.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "email-gmail-free-sending-limit-500-emails-day-rolling-24-hour-window",
+    "email-google-workspace-sending-limits-2-000-day-paid-accounts-500-day-trial-1-500-day-mail-merge",
+    "email-gmail-per-message-recipient-caps-500-via-web-api-100-via-smtp",
+    "email-microsoft-365-exchange-online-10-000-recipients-per-day-rolling-24h-1-000-recipients-per-message-exchange-online-plans-30-messages-minute",
+    "email-exchange-online-external-recipient-rate-bulk-external-limit-2-000-external-recipients-day-phased-rollout-from-jan-2025-exceeding-throttles-blocks",
+    "email-gmail-yahoo-bulk-sender-requirements-5-000-msgs-day-to-gmail-spf-and-dkim-pass-dmarc-published-p-none-minimum-from-domain-alignment-rfc-8058-one-click-unsubscribe-on-marketing-mail-spam-complaint-rate-0-3-aim-0-1",
+    "email-yahoo-sender-requirements-spf-or-dkim-dmarc-valid-forward-reverse-dns-spam-rate-0-3-easy-unsubscribe-honored-within-2-days-bulk-senders-authenticated-aligned-mail",
+    "email-microsoft-consumer-mail-outlook-com-hotmail-live-msn-high-volume-senders-5-000-day-same-from-domain-must-pass-spf-dkim-dmarc-failures-rejected-with-550-5-7-515",
+    "email-can-spam-us-commercial-email-accurate-from-to-routing-non-deceptive-subject-ad-disclosure-valid-physical-postal-address-clear-opt-out-working-30-days-after-send-opt-outs-honored-within-10-business-days-vendor-oversight-stays-with-sender"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 446,
+   "name": "Blogger Press Release Template Generator",
+   "slug": "blogger-press-release-template-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "announcement (text)",
+    "brand (text)",
+    "quotes (text, optional)",
+    "contactInfo (text)"
+   ],
+   "outputs": [
+    "pressRelease (text: headline, dateline, body, boilerplate, contact)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "TOOLTYPE CORRECTED: inventory said 'tracker' — this is a generator.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": 447,
+   "name": "Podcast Pitch Email Generator",
+   "slug": "podcast-pitch-email-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "podcastName (text)",
+    "episodeTopic (text)",
+    "hostName (text, optional)",
+    "yourCredentials (text)"
+   ],
+   "outputs": [
+    "subjectOptions[]",
+    "pitchEmail (text)"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure client-side deterministic text generation from bundled pattern/template library. No network, no backend.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 448,
+   "name": "Email List Growth Idea Generator",
+   "slug": "email-list-growth-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "currentListSize (number, optional)",
+    "niche (text)",
+    "budget (enum: free|paid|both)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "ideas[] {tactic, effort, cost}"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea list only; includes consent reminder (no purchased lists). Not legal advice.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": 449,
+   "name": "Blog Comment Policy Generator",
+   "slug": "blog-comment-policy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "blogName (text)",
+    "moderationStance (enum: open|moderated|strict)",
+    "tone (enum)"
+   ],
+   "outputs": [
+    "policyText (text: sections[])"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "TOOLTYPE CORRECTED: inventory said 'tracker' — this is a generator. Template policy text; not legal advice.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": 450,
+   "name": "Newsletter Ad Slot Planner",
+   "slug": "newsletter-ad-slot-planner",
+   "verifiedToolType": "planner",
+   "engine": "math",
+   "inputs": [
+    "issuesPerMonth (number)",
+    "slots[] {name, pricePerIssue, expectedFillRatePct}"
+   ],
+   "outputs": [
+    "grossMonthlyRevenue",
+    "netRevenueAtFill",
+    "utilizationPct",
+    "slotTable[]"
+   ],
+   "validation": [
+    "All required text inputs non-empty after trim; reject whitespace-only input",
+    "Numeric inputs finite and within documented ranges; reject NaN/Infinity",
+    "Count/size selectors clamped to documented min-max",
+    "Output sanitized: no unescaped HTML where plain text expected; placeholder tokens (e.g. {{firstName}}) never rendered empty without fallback"
+   ],
+   "edgeCases": [
+    "Non-Latin scripts (RTL, CJK) — length measured in Unicode code points, not UTF-16 units",
+    "Emoji render as 2 code units in JS strings — must use [...s].length",
+    "Overlong input truncated with visible notice, never silently dropped",
+    "Duplicate-word / repeated-phrase patterns flagged in generated copy"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure arithmetic on USER-SUPPLIED slot prices. Tool must not present market rate benchmarks as facts.",
+   "formulaRef": "FORMULA-I-450",
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  }
+ ]
+}
