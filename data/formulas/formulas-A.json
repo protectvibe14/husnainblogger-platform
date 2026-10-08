@@ -1,0 +1,377 @@
+[
+  {
+    "toolId": 9,
+    "name": "Keyword Prioritization Scorer",
+    "formula": "score = 100 * (wR*R + wV*V + wD*(10-D) + wC*C) / (10 * (wR + wV + wD + wC))",
+    "variables": [
+      {
+        "symbol": "R",
+        "meaning": "relevance to business/offer (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "V",
+        "meaning": "search volume tier (user rating, normalized)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "D",
+        "meaning": "ranking difficulty (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "C",
+        "meaning": "commercial/buyer intent (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "wR,wV,wD,wC",
+        "meaning": "weights, default 0.25 each, user-adjustable",
+        "unit": "0-1"
+      }
+    ],
+    "units": "score 0-100",
+    "rounding": "1 decimal",
+    "assumptions": [
+      "All ratings are user-entered judgments on a 0-10 scale — tool has no live keyword data.",
+      "Difficulty is inverted: lower difficulty scores higher.",
+      "Weights are editorial defaults; user can adjust."
+    ],
+    "source": "MA2-defined transparent heuristic rubric (deterministic given inputs; not a measurement of real competition)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 12,
+    "name": "Content Scannability Checker",
+    "formula": "score = 100 - (P_heading + P_paragraph + P_sentence + P_media + P_lists), clamped to [0,100]; P_heading = 20 if zero H2/H3 else 0; P_paragraph = 15 if avgWordsPerParagraph > 80 else 7.5 if > 50 else 0; P_sentence = 15 if avgWordsPerSentence > 25 else 7.5 if > 20 else 0; P_media = 10 if imagesPer1000Words < 1 and words > 500 else 0; P_lists = 10 if no list items and words > 800 else 0; grade: A>=85, B>=70, C>=55, D>=40, F<40",
+    "variables": [
+      {
+        "symbol": "avgWordsPerParagraph",
+        "meaning": "mean words per paragraph block",
+        "unit": "words"
+      },
+      {
+        "symbol": "avgWordsPerSentence",
+        "meaning": "mean words per sentence",
+        "unit": "words"
+      },
+      {
+        "symbol": "imagesPer1000Words",
+        "meaning": "image/figure count per 1000 words",
+        "unit": "count"
+      },
+      {
+        "symbol": "words",
+        "meaning": "total word count",
+        "unit": "words"
+      }
+    ],
+    "units": "score 0-100, grade A-F",
+    "rounding": "score to integer",
+    "assumptions": [
+      "Thresholds are editorial readability conventions (short paragraphs/sentences aid scanning); not a published Google metric.",
+      "Markdown headings (#, ##) and HTML headings both recognized.",
+      "Image count is user-declared or counted from <img>/markdown images in pasted content."
+    ],
+    "source": "MA2-defined heuristic rubric (deterministic given text)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 13,
+    "name": "Anchor Text Diversity Analyzer",
+    "formula": "exactMatchRatio = exactMatchCount / totalAnchors; H = -SUM over anchor-text groups of (p_i * log2(p_i)), where p_i = groupCount_i / totalAnchors (groups = lowercased, trimmed, punctuation-stripped anchor text); flags: exactMatchRatio > 0.30 -> 'over-optimized' warning; H < 1.0 with totalAnchors >= 10 -> 'low diversity' warning",
+    "variables": [
+      {
+        "symbol": "exactMatchCount",
+        "meaning": "anchors exactly matching target keyword",
+        "unit": "count"
+      },
+      {
+        "symbol": "totalAnchors",
+        "meaning": "total anchor texts analyzed",
+        "unit": "count"
+      },
+      {
+        "symbol": "H",
+        "meaning": "Shannon entropy of anchor-text distribution",
+        "unit": "bits"
+      }
+    ],
+    "units": "ratio 0-1, entropy bits",
+    "rounding": "ratio 3 decimals, entropy 2 decimals",
+    "assumptions": [
+      "Grouping normalizes case/whitespace/punctuation only — no stemming, no semantic grouping.",
+      "The 0.30 exact-match flag and 1.0 entropy flag are editorial heuristics, not Google-published thresholds."
+    ],
+    "source": "Standard information-theory entropy; thresholds are MA2-defined editorial heuristics",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 15,
+    "name": "Sentence Length Analyzer",
+    "formula": "Flesch Reading Ease = 206.835 - 1.015*(words/sentences) - 84.6*(syllables/words); Flesch-Kincaid Grade = 0.39*(words/sentences) + 11.8*(syllables/words) - 15.59; Gunning Fog = 0.4*((words/sentences) + 100*(complexWords/words)); ARI = 4.71*(characters/words) + 0.5*(words/sentences) - 21.43",
+    "variables": [
+      {
+        "symbol": "words",
+        "meaning": "word count",
+        "unit": "count"
+      },
+      {
+        "symbol": "sentences",
+        "meaning": "sentence count",
+        "unit": "count"
+      },
+      {
+        "symbol": "syllables",
+        "meaning": "syllable count (dictionary+vowel-group heuristic)",
+        "unit": "count"
+      },
+      {
+        "symbol": "complexWords",
+        "meaning": "words with >= 3 syllables, excluding proper nouns/common suffixes",
+        "unit": "count"
+      },
+      {
+        "symbol": "characters",
+        "meaning": "alphanumeric character count",
+        "unit": "count"
+      }
+    ],
+    "units": "FRE 0-100 (higher=easier); grade levels in US school grades",
+    "rounding": "1 decimal",
+    "assumptions": [
+      "Syllable counting is heuristic (vowel-group algorithm + exception list); scores approximate for non-English text.",
+      "Formulas validated for English prose; short fragments skew results."
+    ],
+    "source": "R. Flesch (1948); J.P. Kincaid et al. (1975); R. Gunning (1952); E.A. Smith & R.J. Senter (1967) — canonical published formulas",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 19,
+    "name": "Content Similarity Checker",
+    "formula": "shingles(X) = set of contiguous n-word sequences (n = shingleSize, default 3, lowercased, punctuation stripped); Jaccard(A,B) = |shingles(A) ∩ shingles(B)| / |shingles(A) ∪ shingles(B)|; similarityPercent = Jaccard * 100; verdict: >=80 'very high overlap', >=50 'high', >=25 'moderate', >=10 'low', else 'minimal'",
+    "variables": [
+      {
+        "symbol": "shingleSize",
+        "meaning": "n for n-word shingles",
+        "unit": "2-5"
+      },
+      {
+        "symbol": "Jaccard",
+        "meaning": "intersection over union of shingle sets",
+        "unit": "0-1"
+      }
+    ],
+    "units": "percent 0-100",
+    "rounding": "1 decimal",
+    "assumptions": [
+      "Word-level shingles; case/punctuation normalized. Paraphrase without shared 3-word runs scores low.",
+      "Verdict bands are editorial. This is NOT a plagiarism verdict — no web index is consulted."
+    ],
+    "source": "Jaccard index (standard set-similarity measure); bands are MA2-defined",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jaccard_index",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 37,
+    "name": "Content Audit Decision Tool",
+    "formula": "score = 100 * (wT*T + wC*C + wQ*Q + wR*(10-R)) / (10 * (wT + wC + wQ + wR)); decision: score >= 70 -> KEEP; 40 <= score < 70 -> UPDATE; score < 40 -> DELETE/MERGE (manual review required)",
+    "variables": [
+      {
+        "symbol": "T",
+        "meaning": "traffic trend (user rating: 10 = growing strongly)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "C",
+        "meaning": "conversion/business value (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "content quality/freshness (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "R",
+        "meaning": "cannibalization risk vs other pages (user rating)",
+        "unit": "0-10"
+      },
+      {
+        "symbol": "wT,wC,wQ,wR",
+        "meaning": "weights, default 0.25 each",
+        "unit": "0-1"
+      }
+    ],
+    "units": "score 0-100, decision label",
+    "rounding": "score to integer",
+    "assumptions": [
+      "All inputs are user judgments — no analytics integration (100% client-side rule).",
+      "DELETE/MERGE is a recommendation flag only; tool never deletes anything. Thresholds are editorial."
+    ],
+    "source": "MA2-defined transparent heuristic rubric",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 41,
+    "name": "Freelance Writing Rate Calculator",
+    "formula": "perWordRate = hourlyRate / wordsPerHour; per1000Words = perWordRate * 1000; projectQuote = perWordRate * projectWords + researchHours * hourlyRate (researchHours optional, default 0); dayRate = hourlyRate * billableHoursPerDay (default 6)",
+    "variables": [
+      {
+        "symbol": "hourlyRate",
+        "meaning": "target effective hourly rate",
+        "unit": "currency/hour"
+      },
+      {
+        "symbol": "wordsPerHour",
+        "meaning": "sustainable writing speed incl. editing",
+        "unit": "words/hour"
+      },
+      {
+        "symbol": "projectWords",
+        "meaning": "article word count",
+        "unit": "words"
+      },
+      {
+        "symbol": "researchHours",
+        "meaning": "research/outlining hours for project",
+        "unit": "hours"
+      }
+    ],
+    "units": "currency amounts",
+    "rounding": "2 decimals",
+    "assumptions": [
+      "Currency code is a display label only — no FX conversion (no rates source, 100% client-side rule).",
+      "wordsPerHour should include editing/revision time; warn if > 2000.",
+      "Quotes exclude platform fees/taxes unless user adds them."
+    ],
+    "source": "Standard freelance rate math (deterministic given inputs)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 46,
+    "name": "UTM Link Builder",
+    "formula": "taggedUrl = baseUrl + separator + 'utm_source=' + enc(source) + '&utm_medium=' + enc(medium) [+ '&utm_campaign=' + enc(campaign)] [+ '&utm_term=' + enc(term)] [+ '&utm_content=' + enc(content)]; separator = '&' if baseUrl already has '?' else '?'; enc = RFC 3986 percent-encoding (encodeURIComponent semantics)",
+    "variables": [
+      {
+        "symbol": "baseUrl",
+        "meaning": "destination page URL (absolute)",
+        "unit": "URL"
+      },
+      {
+        "symbol": "utm_source",
+        "meaning": "traffic source identifier, required",
+        "unit": "string"
+      },
+      {
+        "symbol": "utm_medium",
+        "meaning": "marketing medium, required",
+        "unit": "string"
+      },
+      {
+        "symbol": "utm_campaign",
+        "meaning": "campaign name, recommended",
+        "unit": "string"
+      },
+      {
+        "symbol": "utm_term",
+        "meaning": "paid keyword, optional",
+        "unit": "string"
+      },
+      {
+        "symbol": "utm_content",
+        "meaning": "ad/content variant, optional",
+        "unit": "string"
+      }
+    ],
+    "units": "URL string",
+    "rounding": "n/a (string assembly)",
+    "assumptions": [
+      "baseUrl must be absolute and parseable; existing utm_* params trigger an overwrite warning.",
+      "Values are percent-encoded; '+' in input is encoded as %2B (not treated as space).",
+      "Deterministic per Google Analytics campaign-URL parameter spec."
+    ],
+    "source": "Google Analytics UTM parameter specification",
+    "sourceUrl": "https://support.google.com/analytics/answer/1033867",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": 48,
+    "name": "Meta Description Generator",
+    "formula": "lengthGuideline: 140-155 characters target; pixelGuideline: ~920px max display width; keywordPresent = normalizedDraft includes normalizedTargetKeyword; score = 100 - penalties(length outside 140-155: -25; keyword absent: -25; no CTA verb: -10; >160 chars: additional -15), clamped [0,100]",
+    "variables": [
+      {
+        "symbol": "characters",
+        "meaning": "draft length in Unicode code points",
+        "unit": "chars"
+      },
+      {
+        "symbol": "pixelWidthEstimate",
+        "meaning": "estimated rendered width at ~13px/system font",
+        "unit": "px"
+      }
+    ],
+    "units": "chars / px (estimates)",
+    "rounding": "integer",
+    "assumptions": [
+      "Google does NOT publish a character limit and frequently rewrites meta descriptions — 140-155 is an OBSERVED rendering range, not a rule.",
+      "Pixel width is estimated, not measured (font-dependent). Marked as ESTIMATE with effective date 2026-10-01.",
+      "A perfect score does not guarantee Google will display the description."
+    ],
+    "source": "Observed SERP rendering range (industry convention, e.g. Moz/Google documentation note that length varies); not a Google-published rule",
+    "sourceUrl": "https://developers.google.com/search/docs/appearance/snippet",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": 49,
+    "name": "SEO Title Tag Generator",
+    "formula": "lengthGuideline: <= 60 characters target; pixelGuideline: ~600px max display width before truncation; checks: keywordNearFront = keyword appears within first 40 chars (+15); brandPresent (+5); length<=60 (+40); 61-70 chars: warning; >70 chars: fail flag (will truncate)",
+    "variables": [
+      {
+        "symbol": "characters",
+        "meaning": "title length in Unicode code points",
+        "unit": "chars"
+      },
+      {
+        "symbol": "pixelWidthEstimate",
+        "meaning": "estimated rendered width",
+        "unit": "px"
+      }
+    ],
+    "units": "chars / px (estimates)",
+    "rounding": "integer",
+    "assumptions": [
+      "Google does NOT publish a title character limit; ~600px/~60 chars is an OBSERVED truncation range, not a rule.",
+      "Pixel width estimated. Marked as ESTIMATE with effective date 2026-10-01."
+    ],
+    "source": "Observed SERP rendering range (industry convention); not a Google-published rule",
+    "sourceUrl": "https://developers.google.com/search/docs/appearance/title-link",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  }
+]
