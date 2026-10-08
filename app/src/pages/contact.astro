@@ -1,0 +1,45 @@
+---
+/**
+ * pages/contact.astro — Contact (migrated from WordPress, 2026-10-06).
+ * Owner: Blog.
+ *
+ * NOTE: Contact email confirmed by the site owner (2026-10-07):
+ * husnainblogger.com@gmail.com
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import settings from "../../../data/site-settings.json";
+
+const title = "Contact | HusnainBlogger";
+const email = settings.contactEmail;
+---
+
+<BaseLayout
+  title={title}
+  description="Get in touch with HusnainBlogger."
+  canonical="https://husnainblogger.com/contact/"
+>
+    <main class="hb-directory">
+      <div class="hb-tool-hero">
+        <h1 class="hb-tool-title">Contact Us</h1>
+        <p class="hb-tool-value-prop">We would love to hear from you. Questions, suggestions, or tool requests — every message is read.</p>
+      </div>
+      <section class="hb-section contact-grid">
+        <div>
+          <h2>Get In Touch</h2>
+          <p>Have a question about a tool, a blog topic request, or a partnership idea? Send a message and we'll get back to you as soon as possible.</p>
+          <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <p>Subscribe to receive the latest tools and blogging updates in your inbox.</p>
+        </div>
+      </section>
+    </main>
+</BaseLayout>
+
+<style>
+  .contact-grid { display: grid; gap: var(--space-10); max-width: var(--content-narrow); margin: 0 auto; }
+  .contact-grid h2 { font-family: var(--font-display); font-size: var(--text-2xl); margin-bottom: var(--space-4); }
+  .contact-note { color: var(--color-muted); font-size: var(--text-sm); }
+  @media (min-width: 720px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+</style>
