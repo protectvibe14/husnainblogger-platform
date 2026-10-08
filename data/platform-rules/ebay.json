@@ -1,0 +1,161 @@
+{
+ "platform": "ebay",
+ "rules": [
+  {
+   "ruleId": "ebay-fvf-most-categories",
+   "platform": "ebay",
+   "rule": "Final value fee — most categories",
+   "value": "13.6% on total sale amount; 2.35% on portion above $7,500 per item",
+   "valueUnit": "text",
+   "source": "Taxomate eBay Seller Fees 2026 (last updated ~2026-09-28); sellerfeecalc.com reviewed July 2026 from official eBay fee pages",
+   "sourceUrl": "https://taxomate.com/blog/ebay-seller-fees",
+   "effectiveDate": "2025-02-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "Sources cite an early-2025 increase to 13.6%; exact platform date not confirmed. Total = item price + buyer-paid shipping + handling; sales tax inside base.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "ebay-fvf-rate-discrepancy",
+   "platform": "ebay",
+   "rule": "Most-categories rate discrepancy (13.6% vs 13.25%)",
+   "value": "Majority of Jul 2026+ sources: 13.6%; some (tallycrunch Jul 2026, frooition) still show 13.25%",
+   "valueUnit": "text",
+   "source": "Taxomate eBay Seller Fees 2026 vs tallycrunch marketplace fee statistics",
+   "sourceUrl": "https://taxomate.com/blog/ebay-seller-fees",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "The DISCREPANCY is verified; the 13.6% value is the majority-reported current rate. Tool UI must label the eBay calculator output an estimate.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "ebay-per-order-fee",
+   "platform": "ebay",
+   "rule": "Per-order fee",
+   "value": "$0.40 on orders over $10.00; $0.30 on orders of $10.00 or less",
+   "valueUnit": "text",
+   "source": "marketplacefeecalc eBay Fee Calculator (rates from eBay's own selling fees page, checked 2026-09-19)",
+   "sourceUrl": "https://marketplacefeecalc.com/ebay-fee-calculator/",
+   "effectiveDate": "2026-09-19",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "ebay-insertion-fee",
+   "platform": "ebay",
+   "rule": "Insertion fee",
+   "value": "First 250 listings/month free; $0.35 per additional listing",
+   "valueUnit": "text",
+   "source": "Taxomate eBay Seller Fees 2026",
+   "sourceUrl": "https://taxomate.com/blog/ebay-seller-fees",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "ebay-category-rates",
+   "platform": "ebay",
+   "rule": "Category-specific final value fee rates",
+   "value": "Books/DVDs/Music 15.3%; Coins/trading cards 13.25%; Jewelry & Watches 15% up to $5,000 then 9%; Women's handbags 15% up to $2,000 then 9%; Guitars & basses 6.7%; Athletic shoes >=$150 8% (no per-order fee); NFTs 5%; Heavy equipment 3% up to $15,000 then 0.5%",
+   "valueUnit": "text",
+   "source": "Taxomate eBay Seller Fees 2026",
+   "sourceUrl": "https://taxomate.com/blog/ebay-seller-fees",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "ebay-international-fee",
+   "platform": "ebay",
+   "rule": "International final value fee surcharge",
+   "value": "+1.65%",
+   "valueUnit": "text",
+   "source": "resellmargin eBay Profit Calculator USA (Sep 2026)",
+   "sourceUrl": "https://resellmargin.com/ebay-calculator/usa",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-057"
+   ],
+   "notes": "On top of final value fee for buyers outside seller country (US sellers).",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
