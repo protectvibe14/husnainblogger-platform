@@ -1,0 +1,387 @@
+{
+ "platform": "instagram",
+ "rules": [
+  {
+   "ruleId": "instagram-post-reel-caption-hard-limit",
+   "platform": "instagram",
+   "rule": "Post/Reel caption hard limit",
+   "value": "2200 characters per post/Reel caption. Hashtags, emojis, and full URLs count toward the 2200. Only ~first 125 characters visible in feed before '...more' (Reels captions truncate sooner on mobile, ~55-60).",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide; GrowthScribe 2026 caption guide (updated ~Jul 2026); Meta Instagram Platform reference Aug 2026 (cited via Inro caption generator)",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-204",
+    "tool-212",
+    "tool-219"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-comment-hard-limit",
+   "platform": "instagram",
+   "rule": "Comment hard limit",
+   "value": "2200 characters per comment. Hashtags work in comments.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-213",
+    "tool-238"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-bio-hard-limit",
+   "platform": "instagram",
+   "rule": "Bio hard limit",
+   "value": "150 characters (includes spaces, emojis, punctuation). One clickable link allowed.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide; Outfy 2026 character limit guide",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-232",
+    "tool-233"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-username-hard-limit",
+   "platform": "instagram",
+   "rule": "Username hard limit",
+   "value": "30 characters; letters, numbers, periods, underscores only.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide; Meta Instagram Platform reference Aug 2026 (cited via Inro)",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-233",
+    "tool-250"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-display-name-field-limit",
+   "platform": "instagram",
+   "rule": "Display name field limit",
+   "value": "30 characters; searchable, can include keywords, need not match username.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide; LetterCounter 2026 guide",
+   "sourceUrl": "https://lettercounter.org/blog/instagram-character-limit-guide/",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-dm-hard-limit",
+   "platform": "instagram",
+   "rule": "DM hard limit",
+   "value": "1000 characters per direct message.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-214",
+    "tool-230",
+    "tool-236"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-notes-limit",
+   "platform": "instagram",
+   "rule": "Notes limit",
+   "value": "60 characters; visible in DMs for 24 hours.",
+   "valueUnit": "count",
+   "source": "Replug 2026 character limits guide",
+   "sourceUrl": "https://replug.io/blog/instagram-character-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-hashtags-per-post-reel-current-cap",
+   "platform": "instagram",
+   "rule": "Hashtags per post/Reel — current cap",
+   "value": "5 hashtags maximum per post or Reel (down from 30). Instagram announced Dec 2025 it would gradually reduce caption hashtags to 5; rollout is staged so accounts may not all see it at once, and Meta Business Suite scheduler backend may still accept up to 30. Exceeding 5 in-app can strip extra tags and suppress Explore/hashtag/Reels distribution. Instagram recommends 3-5 targeted tags. Historical cap was 30 (pre-2025).",
+   "valueUnit": "text",
+   "source": "HashtagTools.io 2026 optimal-count guide; SocialRails 'Best Instagram Hashtags 2026' (updated 2026-07-21); DigitalApplied; TheDigitalPerch; SocialMediaMagazine (2026-09)",
+   "sourceUrl": "https://hashtagtools.io/blog/how-many-hashtags-per-platform-optimal-count-2026",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-201",
+    "tool-202",
+    "tool-203",
+    "tool-216",
+    "tool-243"
+   ],
+   "notes": "Original effectiveDate '2025-12 (staged rollout)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-banned-restricted-hashtags",
+   "platform": "instagram",
+   "rule": "Banned/restricted hashtags",
+   "value": "Instagram maintains a rotating, UNPUBLISHED list of restricted/banned hashtags that changes constantly. Examples confirmed restricted at various times in 2026 by public guides: #alone, #brain, #pushups, #followforfollow, #adulting, #beautyblogger, #dm, #desk, #kissing, #tag4like. There is no official public list. Only reliable check: search the tag inside the Instagram app — a 'recent posts hidden' warning means restricted. Tools must use curated samples + disclaimer, never claim live verification.",
+   "valueUnit": "text",
+   "source": "ContentStudio 2026 shadowban guide; SocialRails 2026 shadowban guide; Andrew Lee Ventures banned-hashtag list (updated 2026-02-25); Famety 2026 banned-hashtag guide",
+   "sourceUrl": "https://contentstudio.io/blog/instagram-shadowban",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-201"
+   ],
+   "notes": "Original effectiveDate '2026 (rolling)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-reels-maximum-length",
+   "platform": "instagram",
+   "rule": "Reels maximum length",
+   "value": "Up to 3 minutes when recorded in-app; uploaded Reels up to 15-20 minutes on eligible accounts (extended Dec 2025). Recommendation ceiling: Reels over 3 minutes are largely not recommended to non-followers. Boosting (paid promotion) only supported for videos 90 seconds or shorter.",
+   "valueUnit": "text",
+   "source": "SocialPilot Reels algorithm updates (2026-09); AffRoom Reels length guide; Simplified Reels sizes guide",
+   "sourceUrl": "https://www.socialpilot.co/blog/instagram-reels-algorithm",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-226",
+    "tool-240",
+    "tool-246"
+   ],
+   "notes": "Original effectiveDate '2025-12 (20-min extension; 3-min stable since 2025-01)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-reels-video-specs",
+   "platform": "instagram",
+   "rule": "Reels video specs",
+   "value": "1080x1920 px, 9:16, MP4 or MOV (H.264), AAC audio, 30fps (60fps OK), max file 4GB. Cover 1080x1920 (shown 1:1 in grid). Safe zones approx: top 250px, bottom 350px.",
+   "valueUnit": "text",
+   "source": "Screensnap.pro Reels size guide 2026; Simplified Reels sizes guide; Headliner video limits 2026",
+   "sourceUrl": "https://www.screensnap.pro/blog/instagram-reels-size-guide",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-209",
+    "tool-247"
+   ],
+   "notes": "Original effectiveDate '2026' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-carousel-max-slides",
+   "platform": "instagram",
+   "rule": "Carousel max slides",
+   "value": "Up to 20 images/videos per carousel post.",
+   "valueUnit": "text",
+   "source": "copyskills platform-specs.md (GitHub, updated ~2026-09)",
+   "sourceUrl": "https://github.com/srstomp/copyskills/blob/HEAD/skills/social-copy/references/platform-specs.md",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-210",
+    "tool-211",
+    "tool-226"
+   ],
+   "notes": "Original effectiveDate '2026' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-story-specs",
+   "platform": "instagram",
+   "rule": "Story specs",
+   "value": "1080x1920 px, 9:16. Video clips up to 60 seconds each (split into 15s segments on view). Up to 10 hashtags technically (1-3 targeted typical).",
+   "valueUnit": "text",
+   "source": "copyskills platform-specs.md (GitHub, updated ~2026-09); Headliner video limits 2026",
+   "sourceUrl": "https://github.com/srstomp/copyskills/blob/HEAD/skills/social-copy/references/platform-specs.md",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-205",
+    "tool-221",
+    "tool-222",
+    "tool-223",
+    "tool-224",
+    "tool-225",
+    "tool-237"
+   ],
+   "notes": "Original effectiveDate 'longstanding' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "instagram-alt-text-guidance",
+   "platform": "instagram",
+   "rule": "Alt text guidance",
+   "value": "~100-125 characters recommended; technical max reported up to 1000 (secondary sources conflict on the technical max — build guidance caps at 125 chars).",
+   "valueUnit": "count",
+   "source": "GrowthScribe 2026 caption guide; LetterCounter 2026 guide (notes alt-text hard cap removed)",
+   "sourceUrl": "https://growthscribe.com/instagram-caption-character-limit/",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-217"
+   ],
+   "notes": "Original effectiveDate '2026' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
