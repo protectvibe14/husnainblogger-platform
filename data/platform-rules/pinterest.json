@@ -1,0 +1,370 @@
+{
+ "platform": "pinterest",
+ "rules": [
+  {
+   "ruleId": "pinterest-standard-pin-image-size",
+   "platform": "pinterest",
+   "rule": "Standard pin image size",
+   "value": "1000x1500 pixels (2:3 aspect ratio)",
+   "valueUnit": "text",
+   "source": "RecurPost Pinterest Pin Dimensions guide (2026); Pingrab Pinterest Image Sizes Guide (updated ~Apr 2026); PicSizer Pinterest guide (updated 2026-04-01)",
+   "sourceUrl": "https://recurpost.com/best-pinterest-scheduler/pinterest-pin-dimensions/",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-355",
+    "tool-361",
+    "tool-362",
+    "tool-367"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-maximum-pin-height-shown-uncropped-in-feed",
+   "platform": "pinterest",
+   "rule": "Maximum pin height shown uncropped in feed",
+   "value": "1:2.1 ratio (~1000x2100 px); taller pins get bottom-cropped in feed",
+   "valueUnit": "text",
+   "source": "RecurPost Pinterest Pin Dimensions guide (2026); Pingrab Pinterest Image Sizes Guide (2026)",
+   "sourceUrl": "https://www.pingrab.app/guides/pinterest-image-sizes-guide",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-361"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-pin-image-file-spec",
+   "platform": "pinterest",
+   "rule": "Pin image file spec",
+   "value": "JPEG or PNG, max 20 MB",
+   "valueUnit": "text",
+   "source": "Pingrab Pinterest Image Sizes Guide (2026)",
+   "sourceUrl": "https://www.pingrab.app/guides/pinterest-image-sizes-guide",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-pin-title-character-limit",
+   "platform": "pinterest",
+   "rule": "Pin title character limit",
+   "value": "100 characters (first ~40 visible in feed)",
+   "valueUnit": "count",
+   "source": "Lilach Bullock Pinterest tags guide (Sep 2026); admirate-skills pinterest-ads-pin-creator SKILL.md",
+   "sourceUrl": "https://www.lilachbullock.com/how-many-pinterest-tags-per-pin/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-358",
+    "tool-366"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-pin-description-character-limit",
+   "platform": "pinterest",
+   "rule": "Pin description character limit",
+   "value": "500 characters (front-load keywords in first 50-60)",
+   "valueUnit": "count",
+   "source": "Lilach Bullock (Sep 2026); flywifi pin-write SKILL.md; Search Engine Journal",
+   "sourceUrl": "https://www.lilachbullock.com/how-many-pinterest-tags-per-pin/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-pin-alt-text-character-limit",
+   "platform": "pinterest",
+   "rule": "Pin alt-text character limit",
+   "value": "500 characters",
+   "valueUnit": "count",
+   "source": "Lilach Bullock (Sep 2026); flywifi pin-write SKILL.md",
+   "sourceUrl": "https://www.lilachbullock.com/how-many-pinterest-tags-per-pin/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-360"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-board-name-character-limit",
+   "platform": "pinterest",
+   "rule": "Board name character limit",
+   "value": "100 characters",
+   "valueUnit": "count",
+   "source": "Search Engine Journal: Pinterest limits guide",
+   "sourceUrl": "https://www.searchenginejournal.com/pinterest-limits-secrets/248447/",
+   "effectiveDate": "2018-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-351"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-board-description-character-limit",
+   "platform": "pinterest",
+   "rule": "Board description character limit",
+   "value": "500 characters",
+   "valueUnit": "count",
+   "source": "Search Engine Journal; PinningPro board-description guide",
+   "sourceUrl": "https://www.pinningpro.com/pinterest-board-descriptions/",
+   "effectiveDate": "2018-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-352"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-profile-username-rules",
+   "platform": "pinterest",
+   "rule": "Profile username rules",
+   "value": "3-30 characters; letters/numbers only, no spaces, symbols, or punctuation",
+   "valueUnit": "count",
+   "source": "Search Engine Journal; Pinstagram username guides",
+   "sourceUrl": "https://www.searchenginejournal.com/pinterest-limits-secrets/248447/",
+   "effectiveDate": "2018-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-354"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-profile-about-you-character-limit",
+   "platform": "pinterest",
+   "rule": "Profile 'About you' character limit",
+   "value": "160 characters",
+   "valueUnit": "count",
+   "source": "Search Engine Journal; Pinstagram bio guide",
+   "sourceUrl": "https://www.pinstagram.co/pinterest-doesnt-have-a-character-limit-for-comments",
+   "effectiveDate": "2018-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-353"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-profile-display-name-character-limit",
+   "platform": "pinterest",
+   "rule": "Profile display-name character limit",
+   "value": "65 characters",
+   "valueUnit": "count",
+   "source": "Pinstagram: longer business name guide (single secondary source)",
+   "sourceUrl": "https://www.pinstagram.co/how-to-get-a-longer-business-name-on-your-pinterest-profile",
+   "effectiveDate": "2022-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-354"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-idea-pin-canvas-size",
+   "platform": "pinterest",
+   "rule": "Idea Pin canvas size",
+   "value": "1080x1920 pixels (9:16)",
+   "valueUnit": "text",
+   "source": "cdistor social-campaigns platform-specs.md; consulting-plugin dimensions reference (2026)",
+   "sourceUrl": "https://github.com/cdistor/social-campaigns/blob/HEAD/references/platform-specs.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-355",
+    "tool-356"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-idea-pin-maximum-pages",
+   "platform": "pinterest",
+   "rule": "Idea Pin maximum pages",
+   "value": "20 pages; no outbound link",
+   "valueUnit": "text",
+   "source": "Squarespace Pinterest setup checklist PDF (2022)",
+   "sourceUrl": "https://static1.squarespace.com/static/5f0775d48f8dbc4995084607/t/62ab83f7e3a4642b49f370ed/1655407611816/Pinterest%20Set%20Up%20Checklist.pdf",
+   "effectiveDate": "2022-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-356"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "pinterest-hashtag-usage-guidance",
+   "platform": "pinterest",
+   "rule": "Hashtag usage guidance",
+   "value": "2-5 specific hashtags recommended; platform allows up to 20",
+   "valueUnit": "text",
+   "source": "Lilach Bullock (Sep 2026): 2-5; Search Engine Journal: max 20",
+   "sourceUrl": "https://www.lilachbullock.com/how-many-pinterest-tags-per-pin/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-359"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
