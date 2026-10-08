@@ -1,0 +1,453 @@
+{
+ "platform": "x",
+ "rules": [
+  {
+   "ruleId": "x-post-character-limit-free-accounts",
+   "platform": "x",
+   "rule": "Post character limit (free accounts)",
+   "value": "280 characters",
+   "valueUnit": "count",
+   "source": "X developer docs (counting-characters) via Circleboom (Sep 2026); Postiz; typecount (Sep 2026)",
+   "sourceUrl": "https://circleboom.com/blog/280-characters-per-post-the-twitter-character-limit-and-what-counts-double",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-370",
+    "tool-371",
+    "tool-372",
+    "tool-373",
+    "tool-374",
+    "tool-376",
+    "tool-379",
+    "tool-380",
+    "tool-383"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-post-character-limit-x-premium",
+   "platform": "x",
+   "rule": "Post character limit (X Premium)",
+   "value": "25,000 characters",
+   "valueUnit": "count",
+   "source": "Circleboom (Sep 2026); RecurPost (2026); alemtuzlak x-skills - one secondary source (postiz.com) claims 4,000; 25,000 corroborated by 3+ sources",
+   "sourceUrl": "https://circleboom.com/blog/280-characters-per-post-the-twitter-character-limit-and-what-counts-double",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-character-counting-rules",
+   "platform": "x",
+   "rule": "Character counting rules",
+   "value": "URL = 23 chars any length; emoji/CJK = 2 chars; attached media = 0 chars",
+   "valueUnit": "count",
+   "source": "X developer docs via Circleboom (Sep 2026); sergebulaev x-skills",
+   "sourceUrl": "https://circleboom.com/blog/280-characters-per-post-the-twitter-character-limit-and-what-counts-double",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-370",
+    "tool-371",
+    "tool-372",
+    "tool-373",
+    "tool-374",
+    "tool-379",
+    "tool-380",
+    "tool-383"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-profile-bio-character-limit",
+   "platform": "x",
+   "rule": "Profile bio character limit",
+   "value": "160 characters",
+   "valueUnit": "count",
+   "source": "Postiz X character counter (2026)",
+   "sourceUrl": "https://postiz.com/tools/x-character-counter",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-368",
+    "tool-384"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-display-name-character-limit",
+   "platform": "x",
+   "rule": "Display name character limit",
+   "value": "50 characters",
+   "valueUnit": "count",
+   "source": "Postiz X character counter (2026)",
+   "sourceUrl": "https://postiz.com/tools/x-character-counter",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-handle-username-rules",
+   "platform": "x",
+   "rule": "Handle (@username) rules",
+   "value": "15 characters max; letters, numbers, underscores only",
+   "valueUnit": "count",
+   "source": "Postiz X character counter (2026)",
+   "sourceUrl": "https://postiz.com/tools/x-character-counter",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-369"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-images-per-post",
+   "platform": "x",
+   "rule": "Images per post",
+   "value": "4 images max (or 1 GIF; cannot mix GIF with photos)",
+   "valueUnit": "text",
+   "source": "sergebulaev x-skills algorithm-heuristics.md (2026); RecurPost (2026)",
+   "sourceUrl": "https://github.com/sergebulaev/x-skills/blob/HEAD/references/algorithm-heuristics.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-poll-option-count",
+   "platform": "x",
+   "rule": "Poll option count",
+   "value": "2-4 options",
+   "valueUnit": "text",
+   "source": "RecurPost (2026); Wikipedia List of features on X; agricidaniel claude-repurpose SKILL.md",
+   "sourceUrl": "https://recurpost.com/blog/how-to-post-on-twitter/",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-377"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-poll-option-character-limit",
+   "platform": "x",
+   "rule": "Poll option character limit",
+   "value": "25 characters per option",
+   "valueUnit": "count",
+   "source": "RecurPost (2026); Wikipedia; veuno X ad specs",
+   "sourceUrl": "https://recurpost.com/blog/how-to-post-on-twitter/",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-377"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-poll-duration-range",
+   "platform": "x",
+   "rule": "Poll duration range",
+   "value": "5 minutes to 7 days (default 1 day)",
+   "valueUnit": "text",
+   "source": "RecurPost (2026); Pallyy social-media-terms",
+   "sourceUrl": "https://recurpost.com/blog/how-to-post-on-twitter/",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-377"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-profile-header-banner-size",
+   "platform": "x",
+   "rule": "Profile header/banner size",
+   "value": "1500x500 pixels (3:1); keep bottom-left clear of avatar overlap",
+   "valueUnit": "text",
+   "source": "thox-kickstarter PLATFORMS.md; monsoftsolutions X marketing guide (2026)",
+   "sourceUrl": "https://github.com/ttracx/thox-kickstarter/blob/HEAD/social/PLATFORMS.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-382"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-profile-photo-size",
+   "platform": "x",
+   "rule": "Profile photo size",
+   "value": "400x400 pixels (displays as circle)",
+   "valueUnit": "text",
+   "source": "pikfinder social-media-image-sizes-guide-2026.md; probir-sarkar browserstay guide (2026)",
+   "sourceUrl": "https://github.com/mrsunnysingh/pikfinder/blob/HEAD/src/content/blog/social-media-image-sizes-guide-2026.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-in-stream-image-landscape",
+   "platform": "x",
+   "rule": "In-stream image (landscape)",
+   "value": "1600x900 pixels (16:9)",
+   "valueUnit": "text",
+   "source": "thox-kickstarter PLATFORMS.md; agricidaniel claude-repurpose SKILL.md",
+   "sourceUrl": "https://github.com/ttracx/thox-kickstarter/blob/HEAD/social/PLATFORMS.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-385"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-in-stream-image-square",
+   "platform": "x",
+   "rule": "In-stream image (square)",
+   "value": "1080x1080 pixels (1:1)",
+   "valueUnit": "text",
+   "source": "thox-kickstarter PLATFORMS.md",
+   "sourceUrl": "https://github.com/ttracx/thox-kickstarter/blob/HEAD/social/PLATFORMS.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-385"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-video-length-free-accounts",
+   "platform": "x",
+   "rule": "Video length (free accounts)",
+   "value": "140 seconds (2:20); Premium tiers allow longer",
+   "valueUnit": "text",
+   "source": "sergebulaev x-skills; postqueen-docs x-twitter.mdx",
+   "sourceUrl": "https://github.com/sergebulaev/x-skills/blob/HEAD/references/algorithm-heuristics.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-hashtag-best-practice",
+   "platform": "x",
+   "rule": "Hashtag best practice",
+   "value": "0-2 hashtags per post recommended (more reads as spam)",
+   "valueUnit": "text",
+   "source": "sergebulaev x-skills algorithm-heuristics.md (2026); agricidaniel claude-repurpose SKILL.md",
+   "sourceUrl": "https://github.com/sergebulaev/x-skills/blob/HEAD/references/algorithm-heuristics.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-375"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "x-thread-practical-length",
+   "platform": "x",
+   "rule": "Thread practical length",
+   "value": "~25 tweets per thread (single secondary source; practical guidance, not a hard cap)",
+   "valueUnit": "text",
+   "source": "typecount.com Twitter character limit guide (Sep 2026)",
+   "sourceUrl": "https://typecount.com/blog/twitter-character-limit",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-371"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
