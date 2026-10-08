@@ -1,0 +1,80 @@
+---
+/**
+ * HowItWorks.astro — 3-step "how it works" strip.
+ * Owner: Landing.
+ */
+const steps = [
+  { title: "Pick a tool", text: "Browse 11 categories or search 569 tools by keyword." },
+  { title: "Use it instantly", text: "No signup. Fill the form, get results right in your browser." },
+  { title: "Copy and create", text: "Copy results, download files, and get back to creating." },
+];
+---
+
+<section class="landing-section" aria-labelledby="landing-how-title">
+  <div class="landing-section__head">
+    <span class="hb-tool-eyebrow">How it works</span>
+    <h2 id="landing-how-title">Three steps. Zero friction.</h2>
+  </div>
+  <ol class="landing-steps">
+    {steps.map((s, i) => (
+      <li>
+        <span class="landing-steps__num" aria-hidden="true">{i + 1}</span>
+        <h3>{s.title}</h3>
+        <p>{s.text}</p>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .landing-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-6);
+    counter-reset: landing-steps;
+  }
+  .landing-steps li {
+    text-align: center;
+    padding: var(--space-8) var(--space-6);
+    position: relative;
+  }
+  .landing-steps li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: calc(-1 * var(--space-3));
+    top: var(--space-10);
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: var(--text-xl);
+  }
+  .landing-steps__num {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-accent-subtle);
+    border: 1.5px solid var(--color-accent);
+    color: var(--color-accent-strong);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xl);
+    display: inline-grid;
+    place-items: center;
+    margin-bottom: var(--space-4);
+  }
+  .landing-steps h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin: 0 0 var(--space-2);
+  }
+  .landing-steps p {
+    color: var(--color-muted);
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .landing-steps li:not(:last-child)::after { display: none; }
+  }
+</style>
