@@ -1,0 +1,161 @@
+{
+ "platform": "paypal",
+ "rules": [
+  {
+   "ruleId": "paypal-us-direct-gs",
+   "platform": "paypal",
+   "rule": "PayPal US — direct Send/Receive Money for Goods & Services",
+   "value": "2.99% with no fixed fee",
+   "valueUnit": "text",
+   "source": "payfeecalc 2026 guide (verified 2026-08-29 against PayPal's published US and UK fee pages)",
+   "sourceUrl": "https://payfeecalc.com/everything-you-need-to-know-about-paypal-goods-and-services-fees/",
+   "effectiveDate": "2026-08-29",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "paypal-us-checkout",
+   "platform": "paypal",
+   "rule": "PayPal US — Checkout / invoicing",
+   "value": "3.49% + $0.49",
+   "valueUnit": "text",
+   "source": "payfeecalc 2026 guide (verified 2026-08-29 against PayPal's published US and UK fee pages)",
+   "sourceUrl": "https://payfeecalc.com/everything-you-need-to-know-about-paypal-goods-and-services-fees/",
+   "effectiveDate": "2026-08-29",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "PayPal Checkout / PayPal-Venmo invoicing.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "paypal-us-standard-card",
+   "platform": "paypal",
+   "rule": "PayPal US — standard card payment",
+   "value": "2.99% + $0.49",
+   "valueUnit": "text",
+   "source": "payfeecalc 2026 guide (verified 2026-08-29 against PayPal's published US and UK fee pages)",
+   "sourceUrl": "https://payfeecalc.com/everything-you-need-to-know-about-paypal-goods-and-services-fees/",
+   "effectiveDate": "2026-08-29",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "paypal-international-surcharge",
+   "platform": "paypal",
+   "rule": "PayPal cross-border surcharge",
+   "value": "+1.5% on commercial transactions (4.49% + $0.49 intl G&S)",
+   "valueUnit": "text",
+   "source": "payfeecalc 2026 guide (verified 2026-08-29 against PayPal's published US and UK fee pages); kodivio 2026 fee table",
+   "sourceUrl": "https://payfeecalc.com/everything-you-need-to-know-about-paypal-goods-and-services-fees/",
+   "effectiveDate": "2026-08-29",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "paypal-currency-conversion",
+   "platform": "paypal",
+   "rule": "PayPal currency conversion spread",
+   "value": "3–4% above mid-market rate",
+   "valueUnit": "text",
+   "source": "transferfees.io PayPal calculator 2026",
+   "sourceUrl": "https://transferfees.io/paypal-fee-calculator/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "Source dated 2026 (year only).",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "paypal-multiple-schedules",
+   "platform": "paypal",
+   "rule": "PayPal multiple fee schedules note",
+   "value": "PayPal publishes multiple fee schedules (direct G&S vs Checkout vs card). A calculator must ask WHICH route or present all three — a single blended number is wrong.",
+   "valueUnit": "text",
+   "source": "payfeecalc 2026 guide (verified 2026-08-29 against PayPal's published US and UK fee pages)",
+   "sourceUrl": "https://payfeecalc.com/everything-you-need-to-know-about-paypal-goods-and-services-fees/",
+   "effectiveDate": "2026-08-29",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-063"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
