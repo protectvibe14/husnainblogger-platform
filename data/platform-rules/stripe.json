@@ -1,0 +1,135 @@
+{
+ "platform": "stripe",
+ "rules": [
+  {
+   "ruleId": "stripe-us-online",
+   "platform": "stripe",
+   "rule": "Stripe US — online domestic cards",
+   "value": "2.9% + $0.30 per successful card transaction",
+   "valueUnit": "text",
+   "source": "dodopayments Stripe fees 2026; pabau 2026 rates; NerdWallet 2026",
+   "sourceUrl": "https://dodopayments.com/blogs/stripe-fees-calculator",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-064"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "stripe-us-in-person",
+   "platform": "stripe",
+   "rule": "Stripe US — in-person (Terminal)",
+   "value": "2.7% + $0.05",
+   "valueUnit": "text",
+   "source": "dodopayments Stripe fees 2026; jovvie 2026 (cites Stripe pricing page)",
+   "sourceUrl": "https://jovvie.com/blog/stripe-terminal-pricing-woocommerce/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-064"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "stripe-international-card",
+   "platform": "stripe",
+   "rule": "Stripe international card surcharge",
+   "value": "+1.5%",
+   "valueUnit": "text",
+   "source": "dodopayments Stripe fees 2026",
+   "sourceUrl": "https://dodopayments.com/blogs/stripe-fees-calculator",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-064"
+   ],
+   "notes": "For cards issued outside home market.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "stripe-currency-conversion",
+   "platform": "stripe",
+   "rule": "Stripe currency conversion fee",
+   "value": "+1%",
+   "valueUnit": "text",
+   "source": "dodopayments Stripe fees 2026",
+   "sourceUrl": "https://dodopayments.com/blogs/stripe-fees-calculator",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-064"
+   ],
+   "notes": "For non-home-currency settlement/conversion.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "stripe-ach",
+   "platform": "stripe",
+   "rule": "Stripe ACH Direct Debit",
+   "value": "0.8%, capped at $5.00",
+   "valueUnit": "text",
+   "source": "dodopayments Stripe fees 2026",
+   "sourceUrl": "https://dodopayments.com/blogs/stripe-fees-calculator",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-064"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
