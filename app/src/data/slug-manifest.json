@@ -1,0 +1,3510 @@
+{
+  "generatedAt": "2026-10-07T10:02:33.324Z",
+  "inventoryHash": "11fc4c90b45fcbf3f29fbdf7601101fd3e375fc60ce4490b3564e57abdeefa09",
+  "base": "/tools/",
+  "trailingSlash": "always",
+  "urls": [
+    {
+      "toolId": "tool-001",
+      "categorySlug": "blogging-seo",
+      "slug": "long-tail-keyword-expander",
+      "url": "/tools/blogging-seo/long-tail-keyword-expander/"
+    },
+    {
+      "toolId": "tool-002",
+      "categorySlug": "blogging-seo",
+      "slug": "search-intent-classifier",
+      "url": "/tools/blogging-seo/search-intent-classifier/"
+    },
+    {
+      "toolId": "tool-003",
+      "categorySlug": "blogging-seo",
+      "slug": "keyword-clustering-tool",
+      "url": "/tools/blogging-seo/keyword-clustering-tool/"
+    },
+    {
+      "toolId": "tool-004",
+      "categorySlug": "blogging-seo",
+      "slug": "question-keyword-expander",
+      "url": "/tools/blogging-seo/question-keyword-expander/"
+    },
+    {
+      "toolId": "tool-005",
+      "categorySlug": "blogging-seo",
+      "slug": "alphabet-soup-keyword-expander",
+      "url": "/tools/blogging-seo/alphabet-soup-keyword-expander/"
+    },
+    {
+      "toolId": "tool-006",
+      "categorySlug": "blogging-seo",
+      "slug": "keyword-gap-worksheet",
+      "url": "/tools/blogging-seo/keyword-gap-worksheet/"
+    },
+    {
+      "toolId": "tool-007",
+      "categorySlug": "blogging-seo",
+      "slug": "seasonal-keyword-planner",
+      "url": "/tools/blogging-seo/seasonal-keyword-planner/"
+    },
+    {
+      "toolId": "tool-008",
+      "categorySlug": "blogging-seo",
+      "slug": "local-keyword-modifier-expander",
+      "url": "/tools/blogging-seo/local-keyword-modifier-expander/"
+    },
+    {
+      "toolId": "tool-009",
+      "categorySlug": "blogging-seo",
+      "slug": "keyword-prioritization-scorer",
+      "url": "/tools/blogging-seo/keyword-prioritization-scorer/"
+    },
+    {
+      "toolId": "tool-010",
+      "categorySlug": "blogging-seo",
+      "slug": "content-angle-generator",
+      "url": "/tools/blogging-seo/content-angle-generator/"
+    },
+    {
+      "toolId": "tool-011",
+      "categorySlug": "blogging-seo",
+      "slug": "serp-snippet-preview-tool",
+      "url": "/tools/blogging-seo/serp-snippet-preview-tool/"
+    },
+    {
+      "toolId": "tool-012",
+      "categorySlug": "blogging-seo",
+      "slug": "content-scannability-checker",
+      "url": "/tools/blogging-seo/content-scannability-checker/"
+    },
+    {
+      "toolId": "tool-013",
+      "categorySlug": "blogging-seo",
+      "slug": "anchor-text-diversity-analyzer",
+      "url": "/tools/blogging-seo/anchor-text-diversity-analyzer/"
+    },
+    {
+      "toolId": "tool-014",
+      "categorySlug": "blogging-seo",
+      "slug": "transition-words-checker",
+      "url": "/tools/blogging-seo/transition-words-checker/"
+    },
+    {
+      "toolId": "tool-015",
+      "categorySlug": "blogging-seo",
+      "slug": "sentence-length-analyzer",
+      "url": "/tools/blogging-seo/sentence-length-analyzer/"
+    },
+    {
+      "toolId": "tool-016",
+      "categorySlug": "blogging-seo",
+      "slug": "internal-link-opportunity-finder",
+      "url": "/tools/blogging-seo/internal-link-opportunity-finder/"
+    },
+    {
+      "toolId": "tool-017",
+      "categorySlug": "blogging-seo",
+      "slug": "image-seo-filename-renamer",
+      "url": "/tools/blogging-seo/image-seo-filename-renamer/"
+    },
+    {
+      "toolId": "tool-018",
+      "categorySlug": "blogging-seo",
+      "slug": "slug-stop-word-remover",
+      "url": "/tools/blogging-seo/slug-stop-word-remover/"
+    },
+    {
+      "toolId": "tool-019",
+      "categorySlug": "blogging-seo",
+      "slug": "content-similarity-checker",
+      "url": "/tools/blogging-seo/content-similarity-checker/"
+    },
+    {
+      "toolId": "tool-020",
+      "categorySlug": "blogging-seo",
+      "slug": "heading-structure-analyzer",
+      "url": "/tools/blogging-seo/heading-structure-analyzer/"
+    },
+    {
+      "toolId": "tool-021",
+      "categorySlug": "blogging-seo",
+      "slug": "faq-schema-generator",
+      "url": "/tools/blogging-seo/faq-schema-generator/"
+    },
+    {
+      "toolId": "tool-022",
+      "categorySlug": "blogging-seo",
+      "slug": "article-schema-generator",
+      "url": "/tools/blogging-seo/article-schema-generator/"
+    },
+    {
+      "toolId": "tool-023",
+      "categorySlug": "blogging-seo",
+      "slug": "how-to-schema-generator",
+      "url": "/tools/blogging-seo/how-to-schema-generator/"
+    },
+    {
+      "toolId": "tool-024",
+      "categorySlug": "blogging-seo",
+      "slug": "breadcrumb-schema-generator",
+      "url": "/tools/blogging-seo/breadcrumb-schema-generator/"
+    },
+    {
+      "toolId": "tool-025",
+      "categorySlug": "blogging-seo",
+      "slug": "review-schema-generator",
+      "url": "/tools/blogging-seo/review-schema-generator/"
+    },
+    {
+      "toolId": "tool-026",
+      "categorySlug": "blogging-seo",
+      "slug": "open-graph-tag-generator",
+      "url": "/tools/blogging-seo/open-graph-tag-generator/"
+    },
+    {
+      "toolId": "tool-027",
+      "categorySlug": "blogging-seo",
+      "slug": "twitter-card-generator",
+      "url": "/tools/blogging-seo/twitter-card-generator/"
+    },
+    {
+      "toolId": "tool-028",
+      "categorySlug": "blogging-seo",
+      "slug": "robots-txt-generator",
+      "url": "/tools/blogging-seo/robots-txt-generator/"
+    },
+    {
+      "toolId": "tool-029",
+      "categorySlug": "blogging-seo",
+      "slug": "xml-sitemap-generator",
+      "url": "/tools/blogging-seo/xml-sitemap-generator/"
+    },
+    {
+      "toolId": "tool-030",
+      "categorySlug": "blogging-seo",
+      "slug": "html-sitemap-generator",
+      "url": "/tools/blogging-seo/html-sitemap-generator/"
+    },
+    {
+      "toolId": "tool-031",
+      "categorySlug": "blogging-seo",
+      "slug": "content-brief-generator",
+      "url": "/tools/blogging-seo/content-brief-generator/"
+    },
+    {
+      "toolId": "tool-032",
+      "categorySlug": "blogging-seo",
+      "slug": "blog-outline-generator",
+      "url": "/tools/blogging-seo/blog-outline-generator/"
+    },
+    {
+      "toolId": "tool-033",
+      "categorySlug": "blogging-seo",
+      "slug": "pillar-cluster-content-planner",
+      "url": "/tools/blogging-seo/pillar-cluster-content-planner/"
+    },
+    {
+      "toolId": "tool-034",
+      "categorySlug": "blogging-seo",
+      "slug": "editorial-calendar-generator",
+      "url": "/tools/blogging-seo/editorial-calendar-generator/"
+    },
+    {
+      "toolId": "tool-035",
+      "categorySlug": "blogging-seo",
+      "slug": "30-day-blogging-challenge-generator",
+      "url": "/tools/blogging-seo/30-day-blogging-challenge-generator/"
+    },
+    {
+      "toolId": "tool-036",
+      "categorySlug": "blogging-seo",
+      "slug": "blog-series-planner",
+      "url": "/tools/blogging-seo/blog-series-planner/"
+    },
+    {
+      "toolId": "tool-037",
+      "categorySlug": "blogging-seo",
+      "slug": "content-audit-decision-tool",
+      "url": "/tools/blogging-seo/content-audit-decision-tool/"
+    },
+    {
+      "toolId": "tool-038",
+      "categorySlug": "blogging-seo",
+      "slug": "e-e-a-t-checklist-generator",
+      "url": "/tools/blogging-seo/e-e-a-t-checklist-generator/"
+    },
+    {
+      "toolId": "tool-039",
+      "categorySlug": "blogging-seo",
+      "slug": "pre-publish-seo-checklist",
+      "url": "/tools/blogging-seo/pre-publish-seo-checklist/"
+    },
+    {
+      "toolId": "tool-040",
+      "categorySlug": "blogging-seo",
+      "slug": "idea-bank",
+      "url": "/tools/blogging-seo/idea-bank/"
+    },
+    {
+      "toolId": "tool-041",
+      "categorySlug": "blogging-seo",
+      "slug": "freelance-writing-rate-calculator",
+      "url": "/tools/blogging-seo/freelance-writing-rate-calculator/"
+    },
+    {
+      "toolId": "tool-042",
+      "categorySlug": "blogging-seo",
+      "slug": "comparison-table-html-generator",
+      "url": "/tools/blogging-seo/comparison-table-html-generator/"
+    },
+    {
+      "toolId": "tool-043",
+      "categorySlug": "blogging-seo",
+      "slug": "pros-cons-box-generator",
+      "url": "/tools/blogging-seo/pros-cons-box-generator/"
+    },
+    {
+      "toolId": "tool-044",
+      "categorySlug": "blogging-seo",
+      "slug": "star-rating-box-generator",
+      "url": "/tools/blogging-seo/star-rating-box-generator/"
+    },
+    {
+      "toolId": "tool-045",
+      "categorySlug": "blogging-seo",
+      "slug": "click-to-tweet-box-generator",
+      "url": "/tools/blogging-seo/click-to-tweet-box-generator/"
+    },
+    {
+      "toolId": "tool-046",
+      "categorySlug": "blogging-seo",
+      "slug": "utm-link-builder",
+      "url": "/tools/blogging-seo/utm-link-builder/"
+    },
+    {
+      "toolId": "tool-047",
+      "categorySlug": "blogging-seo",
+      "slug": "affiliate-disclosure-generator",
+      "url": "/tools/blogging-seo/affiliate-disclosure-generator/"
+    },
+    {
+      "toolId": "tool-048",
+      "categorySlug": "blogging-seo",
+      "slug": "meta-description-generator",
+      "url": "/tools/blogging-seo/meta-description-generator/"
+    },
+    {
+      "toolId": "tool-049",
+      "categorySlug": "blogging-seo",
+      "slug": "seo-title-tag-generator",
+      "url": "/tools/blogging-seo/seo-title-tag-generator/"
+    },
+    {
+      "toolId": "tool-050",
+      "categorySlug": "blogging-seo",
+      "slug": "topical-authority-map-builder",
+      "url": "/tools/blogging-seo/topical-authority-map-builder/"
+    },
+    {
+      "toolId": "tool-051",
+      "categorySlug": "make-money",
+      "slug": "mediavine-earnings-calculator",
+      "url": "/tools/make-money/mediavine-earnings-calculator/"
+    },
+    {
+      "toolId": "tool-052",
+      "categorySlug": "make-money",
+      "slug": "raptive-revenue-estimator",
+      "url": "/tools/make-money/raptive-revenue-estimator/"
+    },
+    {
+      "toolId": "tool-053",
+      "categorySlug": "make-money",
+      "slug": "ad-revenue-network-comparison-tool",
+      "url": "/tools/make-money/ad-revenue-network-comparison-tool/"
+    },
+    {
+      "toolId": "tool-054",
+      "categorySlug": "make-money",
+      "slug": "blog-traffic-to-income-planner",
+      "url": "/tools/make-money/blog-traffic-to-income-planner/"
+    },
+    {
+      "toolId": "tool-055",
+      "categorySlug": "make-money",
+      "slug": "etsy-fee-calculator",
+      "url": "/tools/make-money/etsy-fee-calculator/"
+    },
+    {
+      "toolId": "tool-056",
+      "categorySlug": "make-money",
+      "slug": "etsy-profit-calculator",
+      "url": "/tools/make-money/etsy-profit-calculator/"
+    },
+    {
+      "toolId": "tool-057",
+      "categorySlug": "make-money",
+      "slug": "ebay-fee-calculator",
+      "url": "/tools/make-money/ebay-fee-calculator/"
+    },
+    {
+      "toolId": "tool-058",
+      "categorySlug": "make-money",
+      "slug": "poshmark-fee-calculator",
+      "url": "/tools/make-money/poshmark-fee-calculator/"
+    },
+    {
+      "toolId": "tool-059",
+      "categorySlug": "make-money",
+      "slug": "amazon-fba-profit-calculator",
+      "url": "/tools/make-money/amazon-fba-profit-calculator/"
+    },
+    {
+      "toolId": "tool-060",
+      "categorySlug": "make-money",
+      "slug": "amazon-kdp-royalty-calculator",
+      "url": "/tools/make-money/amazon-kdp-royalty-calculator/"
+    },
+    {
+      "toolId": "tool-061",
+      "categorySlug": "make-money",
+      "slug": "print-on-demand-profit-calculator",
+      "url": "/tools/make-money/print-on-demand-profit-calculator/"
+    },
+    {
+      "toolId": "tool-062",
+      "categorySlug": "make-money",
+      "slug": "shopify-fee-calculator",
+      "url": "/tools/make-money/shopify-fee-calculator/"
+    },
+    {
+      "toolId": "tool-063",
+      "categorySlug": "make-money",
+      "slug": "paypal-fee-calculator",
+      "url": "/tools/make-money/paypal-fee-calculator/"
+    },
+    {
+      "toolId": "tool-064",
+      "categorySlug": "make-money",
+      "slug": "stripe-fee-calculator",
+      "url": "/tools/make-money/stripe-fee-calculator/"
+    },
+    {
+      "toolId": "tool-065",
+      "categorySlug": "make-money",
+      "slug": "gumroad-fee-calculator",
+      "url": "/tools/make-money/gumroad-fee-calculator/"
+    },
+    {
+      "toolId": "tool-066",
+      "categorySlug": "make-money",
+      "slug": "upwork-fee-calculator",
+      "url": "/tools/make-money/upwork-fee-calculator/"
+    },
+    {
+      "toolId": "tool-067",
+      "categorySlug": "make-money",
+      "slug": "fiverr-profit-calculator",
+      "url": "/tools/make-money/fiverr-profit-calculator/"
+    },
+    {
+      "toolId": "tool-068",
+      "categorySlug": "make-money",
+      "slug": "freelance-hourly-rate-calculator",
+      "url": "/tools/make-money/freelance-hourly-rate-calculator/"
+    },
+    {
+      "toolId": "tool-069",
+      "categorySlug": "make-money",
+      "slug": "project-quote-generator",
+      "url": "/tools/make-money/project-quote-generator/"
+    },
+    {
+      "toolId": "tool-070",
+      "categorySlug": "make-money",
+      "slug": "copywriter-rate-calculator",
+      "url": "/tools/make-money/copywriter-rate-calculator/"
+    },
+    {
+      "toolId": "tool-071",
+      "categorySlug": "make-money",
+      "slug": "video-editor-rate-calculator",
+      "url": "/tools/make-money/video-editor-rate-calculator/"
+    },
+    {
+      "toolId": "tool-072",
+      "categorySlug": "make-money",
+      "slug": "graphic-designer-rate-calculator",
+      "url": "/tools/make-money/graphic-designer-rate-calculator/"
+    },
+    {
+      "toolId": "tool-073",
+      "categorySlug": "make-money",
+      "slug": "web-designer-project-pricing-calculator",
+      "url": "/tools/make-money/web-designer-project-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-074",
+      "categorySlug": "make-money",
+      "slug": "social-media-manager-pricing-calculator",
+      "url": "/tools/make-money/social-media-manager-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-075",
+      "categorySlug": "make-money",
+      "slug": "voiceover-rate-calculator",
+      "url": "/tools/make-money/voiceover-rate-calculator/"
+    },
+    {
+      "toolId": "tool-076",
+      "categorySlug": "make-money",
+      "slug": "seo-freelancer-pricing-calculator",
+      "url": "/tools/make-money/seo-freelancer-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-077",
+      "categorySlug": "make-money",
+      "slug": "virtual-assistant-rate-calculator",
+      "url": "/tools/make-money/virtual-assistant-rate-calculator/"
+    },
+    {
+      "toolId": "tool-078",
+      "categorySlug": "make-money",
+      "slug": "freelance-invoice-generator",
+      "url": "/tools/make-money/freelance-invoice-generator/"
+    },
+    {
+      "toolId": "tool-079",
+      "categorySlug": "make-money",
+      "slug": "sponsored-post-rate-calculator",
+      "url": "/tools/make-money/sponsored-post-rate-calculator/"
+    },
+    {
+      "toolId": "tool-080",
+      "categorySlug": "make-money",
+      "slug": "tiktok-sponsorship-rate-calculator",
+      "url": "/tools/make-money/tiktok-sponsorship-rate-calculator/"
+    },
+    {
+      "toolId": "tool-081",
+      "categorySlug": "make-money",
+      "slug": "youtube-sponsorship-rate-calculator",
+      "url": "/tools/make-money/youtube-sponsorship-rate-calculator/"
+    },
+    {
+      "toolId": "tool-082",
+      "categorySlug": "make-money",
+      "slug": "podcast-sponsorship-rate-calculator",
+      "url": "/tools/make-money/podcast-sponsorship-rate-calculator/"
+    },
+    {
+      "toolId": "tool-083",
+      "categorySlug": "make-money",
+      "slug": "ugc-creator-pricing-calculator",
+      "url": "/tools/make-money/ugc-creator-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-084",
+      "categorySlug": "make-money",
+      "slug": "newsletter-sponsorship-rate-calculator",
+      "url": "/tools/make-money/newsletter-sponsorship-rate-calculator/"
+    },
+    {
+      "toolId": "tool-085",
+      "categorySlug": "make-money",
+      "slug": "rate-card-generator",
+      "url": "/tools/make-money/rate-card-generator/"
+    },
+    {
+      "toolId": "tool-086",
+      "categorySlug": "make-money",
+      "slug": "patreon-earnings-estimator",
+      "url": "/tools/make-money/patreon-earnings-estimator/"
+    },
+    {
+      "toolId": "tool-087",
+      "categorySlug": "make-money",
+      "slug": "substack-revenue-calculator",
+      "url": "/tools/make-money/substack-revenue-calculator/"
+    },
+    {
+      "toolId": "tool-088",
+      "categorySlug": "make-money",
+      "slug": "membership-site-revenue-projector",
+      "url": "/tools/make-money/membership-site-revenue-projector/"
+    },
+    {
+      "toolId": "tool-089",
+      "categorySlug": "make-money",
+      "slug": "twitch-subscriber-revenue-calculator",
+      "url": "/tools/make-money/twitch-subscriber-revenue-calculator/"
+    },
+    {
+      "toolId": "tool-090",
+      "categorySlug": "make-money",
+      "slug": "digital-product-pricing-calculator",
+      "url": "/tools/make-money/digital-product-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-091",
+      "categorySlug": "make-money",
+      "slug": "online-course-pricing-calculator",
+      "url": "/tools/make-money/online-course-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-092",
+      "categorySlug": "make-money",
+      "slug": "course-launch-revenue-planner",
+      "url": "/tools/make-money/course-launch-revenue-planner/"
+    },
+    {
+      "toolId": "tool-093",
+      "categorySlug": "make-money",
+      "slug": "ebook-pricing-royalty-calculator",
+      "url": "/tools/make-money/ebook-pricing-royalty-calculator/"
+    },
+    {
+      "toolId": "tool-094",
+      "categorySlug": "make-money",
+      "slug": "coaching-package-pricing-calculator",
+      "url": "/tools/make-money/coaching-package-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-095",
+      "categorySlug": "make-money",
+      "slug": "webinar-revenue-estimator",
+      "url": "/tools/make-money/webinar-revenue-estimator/"
+    },
+    {
+      "toolId": "tool-096",
+      "categorySlug": "make-money",
+      "slug": "amazon-affiliate-commission-estimator",
+      "url": "/tools/make-money/amazon-affiliate-commission-estimator/"
+    },
+    {
+      "toolId": "tool-097",
+      "categorySlug": "make-money",
+      "slug": "saas-affiliate-recurring-revenue-calculator",
+      "url": "/tools/make-money/saas-affiliate-recurring-revenue-calculator/"
+    },
+    {
+      "toolId": "tool-098",
+      "categorySlug": "make-money",
+      "slug": "affiliate-epc-calculator",
+      "url": "/tools/make-money/affiliate-epc-calculator/"
+    },
+    {
+      "toolId": "tool-099",
+      "categorySlug": "make-money",
+      "slug": "break-even-roas-calculator",
+      "url": "/tools/make-money/break-even-roas-calculator/"
+    },
+    {
+      "toolId": "tool-100",
+      "categorySlug": "make-money",
+      "slug": "blog-niche-profitability-calculator",
+      "url": "/tools/make-money/blog-niche-profitability-calculator/"
+    },
+    {
+      "toolId": "tool-101",
+      "categorySlug": "youtube",
+      "slug": "title-capitalization-formatter",
+      "url": "/tools/youtube/title-capitalization-formatter/"
+    },
+    {
+      "toolId": "tool-102",
+      "categorySlug": "youtube",
+      "slug": "title-length-checker",
+      "url": "/tools/youtube/title-length-checker/"
+    },
+    {
+      "toolId": "tool-103",
+      "categorySlug": "youtube",
+      "slug": "curiosity-gap-title-templates",
+      "url": "/tools/youtube/curiosity-gap-title-templates/"
+    },
+    {
+      "toolId": "tool-104",
+      "categorySlug": "youtube",
+      "slug": "title-swipe-file-vault",
+      "url": "/tools/youtube/title-swipe-file-vault/"
+    },
+    {
+      "toolId": "tool-105",
+      "categorySlug": "youtube",
+      "slug": "thumbnail-text-readability-checker",
+      "url": "/tools/youtube/thumbnail-text-readability-checker/"
+    },
+    {
+      "toolId": "tool-106",
+      "categorySlug": "youtube",
+      "slug": "thumbnail-a-b-test-tracker",
+      "url": "/tools/youtube/thumbnail-a-b-test-tracker/"
+    },
+    {
+      "toolId": "tool-107",
+      "categorySlug": "youtube",
+      "slug": "thumbnail-clickability-scorecard",
+      "url": "/tools/youtube/thumbnail-clickability-scorecard/"
+    },
+    {
+      "toolId": "tool-108",
+      "categorySlug": "youtube",
+      "slug": "description-template-builder",
+      "url": "/tools/youtube/description-template-builder/"
+    },
+    {
+      "toolId": "tool-109",
+      "categorySlug": "youtube",
+      "slug": "pinned-comment-idea-bank",
+      "url": "/tools/youtube/pinned-comment-idea-bank/"
+    },
+    {
+      "toolId": "tool-110",
+      "categorySlug": "youtube",
+      "slug": "chapter-title-seo-rewriter",
+      "url": "/tools/youtube/chapter-title-seo-rewriter/"
+    },
+    {
+      "toolId": "tool-111",
+      "categorySlug": "youtube",
+      "slug": "script-length-planner",
+      "url": "/tools/youtube/script-length-planner/"
+    },
+    {
+      "toolId": "tool-112",
+      "categorySlug": "youtube",
+      "slug": "script-outline-builder",
+      "url": "/tools/youtube/script-outline-builder/"
+    },
+    {
+      "toolId": "tool-113",
+      "categorySlug": "youtube",
+      "slug": "b-roll-shot-list-generator-retired",
+      "url": "/tools/youtube/b-roll-shot-list-generator-retired/"
+    },
+    {
+      "toolId": "tool-114",
+      "categorySlug": "youtube",
+      "slug": "ctr-impressions-log",
+      "url": "/tools/youtube/ctr-impressions-log/"
+    },
+    {
+      "toolId": "tool-115",
+      "categorySlug": "youtube",
+      "slug": "upload-streak-tracker",
+      "url": "/tools/youtube/upload-streak-tracker/"
+    },
+    {
+      "toolId": "tool-116",
+      "categorySlug": "youtube",
+      "slug": "subscriber-goal-countdown",
+      "url": "/tools/youtube/subscriber-goal-countdown/"
+    },
+    {
+      "toolId": "tool-117",
+      "categorySlug": "youtube",
+      "slug": "watch-time-monetization-planner",
+      "url": "/tools/youtube/watch-time-monetization-planner/"
+    },
+    {
+      "toolId": "tool-118",
+      "categorySlug": "youtube",
+      "slug": "niche-profitability-scorer",
+      "url": "/tools/youtube/niche-profitability-scorer/"
+    },
+    {
+      "toolId": "tool-119",
+      "categorySlug": "youtube",
+      "slug": "competitor-gap-finder",
+      "url": "/tools/youtube/competitor-gap-finder/"
+    },
+    {
+      "toolId": "tool-120",
+      "categorySlug": "youtube",
+      "slug": "faceless-channel-idea-mixer",
+      "url": "/tools/youtube/faceless-channel-idea-mixer/"
+    },
+    {
+      "toolId": "tool-121",
+      "categorySlug": "youtube",
+      "slug": "content-pillar-mapper",
+      "url": "/tools/youtube/content-pillar-mapper/"
+    },
+    {
+      "toolId": "tool-122",
+      "categorySlug": "youtube",
+      "slug": "video-series-planner",
+      "url": "/tools/youtube/video-series-planner/"
+    },
+    {
+      "toolId": "tool-123",
+      "categorySlug": "youtube",
+      "slug": "shorts-script-compressor",
+      "url": "/tools/youtube/shorts-script-compressor/"
+    },
+    {
+      "toolId": "tool-124",
+      "categorySlug": "youtube",
+      "slug": "shorts-hook-bank",
+      "url": "/tools/youtube/shorts-hook-bank/"
+    },
+    {
+      "toolId": "tool-125",
+      "categorySlug": "youtube",
+      "slug": "shorts-posting-time-experiment-tracker",
+      "url": "/tools/youtube/shorts-posting-time-experiment-tracker/"
+    },
+    {
+      "toolId": "tool-126",
+      "categorySlug": "youtube",
+      "slug": "livestream-title-pack-builder",
+      "url": "/tools/youtube/livestream-title-pack-builder/"
+    },
+    {
+      "toolId": "tool-127",
+      "categorySlug": "youtube",
+      "slug": "live-q-a-collector",
+      "url": "/tools/youtube/live-q-a-collector/"
+    },
+    {
+      "toolId": "tool-128",
+      "categorySlug": "youtube",
+      "slug": "community-post-idea-bank",
+      "url": "/tools/youtube/community-post-idea-bank/"
+    },
+    {
+      "toolId": "tool-129",
+      "categorySlug": "youtube",
+      "slug": "comment-reply-templates",
+      "url": "/tools/youtube/comment-reply-templates/"
+    },
+    {
+      "toolId": "tool-130",
+      "categorySlug": "youtube",
+      "slug": "giveaway-winner-picker",
+      "url": "/tools/youtube/giveaway-winner-picker/"
+    },
+    {
+      "toolId": "tool-131",
+      "categorySlug": "youtube",
+      "slug": "membership-tier-planner",
+      "url": "/tools/youtube/membership-tier-planner/"
+    },
+    {
+      "toolId": "tool-132",
+      "categorySlug": "youtube",
+      "slug": "creator-product-idea-matcher",
+      "url": "/tools/youtube/creator-product-idea-matcher/"
+    },
+    {
+      "toolId": "tool-133",
+      "categorySlug": "youtube",
+      "slug": "keyword-in-title-checker",
+      "url": "/tools/youtube/keyword-in-title-checker/"
+    },
+    {
+      "toolId": "tool-134",
+      "categorySlug": "youtube",
+      "slug": "tag-relevance-scorer",
+      "url": "/tools/youtube/tag-relevance-scorer/"
+    },
+    {
+      "toolId": "tool-135",
+      "categorySlug": "youtube",
+      "slug": "48-hour-launch-checklist",
+      "url": "/tools/youtube/48-hour-launch-checklist/"
+    },
+    {
+      "toolId": "tool-136",
+      "categorySlug": "youtube",
+      "slug": "gear-budget-allocator",
+      "url": "/tools/youtube/gear-budget-allocator/"
+    },
+    {
+      "toolId": "tool-137",
+      "categorySlug": "youtube",
+      "slug": "music-mood-matcher",
+      "url": "/tools/youtube/music-mood-matcher/"
+    },
+    {
+      "toolId": "tool-138",
+      "categorySlug": "youtube",
+      "slug": "packaging-combo-preview",
+      "url": "/tools/youtube/packaging-combo-preview/"
+    },
+    {
+      "toolId": "tool-139",
+      "categorySlug": "youtube",
+      "slug": "video-idea-validator",
+      "url": "/tools/youtube/video-idea-validator/"
+    },
+    {
+      "toolId": "tool-140",
+      "categorySlug": "youtube",
+      "slug": "end-of-video-retention-extender",
+      "url": "/tools/youtube/end-of-video-retention-extender/"
+    },
+    {
+      "toolId": "tool-141",
+      "categorySlug": "youtube",
+      "slug": "comment-to-video-idea-miner",
+      "url": "/tools/youtube/comment-to-video-idea-miner/"
+    },
+    {
+      "toolId": "tool-142",
+      "categorySlug": "youtube",
+      "slug": "upload-default-template-saver",
+      "url": "/tools/youtube/upload-default-template-saver/"
+    },
+    {
+      "toolId": "tool-143",
+      "categorySlug": "youtube",
+      "slug": "thumbnail-text-shortener",
+      "url": "/tools/youtube/thumbnail-text-shortener/"
+    },
+    {
+      "toolId": "tool-144",
+      "categorySlug": "youtube",
+      "slug": "video-length-sweet-spot-finder",
+      "url": "/tools/youtube/video-length-sweet-spot-finder/"
+    },
+    {
+      "toolId": "tool-145",
+      "categorySlug": "youtube",
+      "slug": "channel-trailer-script-builder",
+      "url": "/tools/youtube/channel-trailer-script-builder/"
+    },
+    {
+      "toolId": "tool-146",
+      "categorySlug": "youtube",
+      "slug": "youtube-seo-score-checker",
+      "url": "/tools/youtube/youtube-seo-score-checker/"
+    },
+    {
+      "toolId": "tool-147",
+      "categorySlug": "youtube",
+      "slug": "channel-about-page-generator",
+      "url": "/tools/youtube/channel-about-page-generator/"
+    },
+    {
+      "toolId": "tool-148",
+      "categorySlug": "youtube",
+      "slug": "end-screen-strategy-planner",
+      "url": "/tools/youtube/end-screen-strategy-planner/"
+    },
+    {
+      "toolId": "tool-149",
+      "categorySlug": "youtube",
+      "slug": "live-stream-pre-flight-checklist",
+      "url": "/tools/youtube/live-stream-pre-flight-checklist/"
+    },
+    {
+      "toolId": "tool-150",
+      "categorySlug": "youtube",
+      "slug": "video-title-emotion-analyzer",
+      "url": "/tools/youtube/video-title-emotion-analyzer/"
+    },
+    {
+      "toolId": "tool-151",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-script-structurer",
+      "url": "/tools/tiktok/tiktok-script-structurer/"
+    },
+    {
+      "toolId": "tool-152",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-pov-caption-bank-builder",
+      "url": "/tools/tiktok/tiktok-pov-caption-bank-builder/"
+    },
+    {
+      "toolId": "tool-153",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-comment-reply-idea-generator",
+      "url": "/tools/tiktok/tiktok-comment-reply-idea-generator/"
+    },
+    {
+      "toolId": "tool-154",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-comment-keyword-miner",
+      "url": "/tools/tiktok/tiktok-comment-keyword-miner/"
+    },
+    {
+      "toolId": "tool-155",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-series-episode-planner",
+      "url": "/tools/tiktok/tiktok-series-episode-planner/"
+    },
+    {
+      "toolId": "tool-156",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-duet-idea-generator",
+      "url": "/tools/tiktok/tiktok-duet-idea-generator/"
+    },
+    {
+      "toolId": "tool-157",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-stitch-prompt-generator",
+      "url": "/tools/tiktok/tiktok-stitch-prompt-generator/"
+    },
+    {
+      "toolId": "tool-158",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-live-title-generator",
+      "url": "/tools/tiktok/tiktok-live-title-generator/"
+    },
+    {
+      "toolId": "tool-159",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-live-session-planner",
+      "url": "/tools/tiktok/tiktok-live-session-planner/"
+    },
+    {
+      "toolId": "tool-160",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-challenge-creator-kit",
+      "url": "/tools/tiktok/tiktok-challenge-creator-kit/"
+    },
+    {
+      "toolId": "tool-161",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-trend-adapter",
+      "url": "/tools/tiktok/tiktok-trend-adapter/"
+    },
+    {
+      "toolId": "tool-162",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-content-pillar-planner",
+      "url": "/tools/tiktok/tiktok-content-pillar-planner/"
+    },
+    {
+      "toolId": "tool-163",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-seo-keyword-finder",
+      "url": "/tools/tiktok/tiktok-seo-keyword-finder/"
+    },
+    {
+      "toolId": "tool-164",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-search-intent-mapper",
+      "url": "/tools/tiktok/tiktok-search-intent-mapper/"
+    },
+    {
+      "toolId": "tool-165",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-storytime-script-builder",
+      "url": "/tools/tiktok/tiktok-storytime-script-builder/"
+    },
+    {
+      "toolId": "tool-166",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-grwm-script-planner",
+      "url": "/tools/tiktok/tiktok-grwm-script-planner/"
+    },
+    {
+      "toolId": "tool-167",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-tutorial-step-structurer",
+      "url": "/tools/tiktok/tiktok-tutorial-step-structurer/"
+    },
+    {
+      "toolId": "tool-168",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-product-demo-script-builder",
+      "url": "/tools/tiktok/tiktok-product-demo-script-builder/"
+    },
+    {
+      "toolId": "tool-169",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-unboxing-flow-planner",
+      "url": "/tools/tiktok/tiktok-unboxing-flow-planner/"
+    },
+    {
+      "toolId": "tool-170",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-day-in-my-life-shot-list",
+      "url": "/tools/tiktok/tiktok-day-in-my-life-shot-list/"
+    },
+    {
+      "toolId": "tool-171",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-transition-idea-bank",
+      "url": "/tools/tiktok/tiktok-transition-idea-bank/"
+    },
+    {
+      "toolId": "tool-172",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-text-overlay-prompt-writer",
+      "url": "/tools/tiktok/tiktok-text-overlay-prompt-writer/"
+    },
+    {
+      "toolId": "tool-173",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-pinned-comment-idea-generator",
+      "url": "/tools/tiktok/tiktok-pinned-comment-idea-generator/"
+    },
+    {
+      "toolId": "tool-174",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-cover-text-idea-generator",
+      "url": "/tools/tiktok/tiktok-cover-text-idea-generator/"
+    },
+    {
+      "toolId": "tool-175",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-voiceover-script-formatter",
+      "url": "/tools/tiktok/tiktok-voiceover-script-formatter/"
+    },
+    {
+      "toolId": "tool-176",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-tts-script-optimizer",
+      "url": "/tools/tiktok/tiktok-tts-script-optimizer/"
+    },
+    {
+      "toolId": "tool-177",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-caption-readability-checker",
+      "url": "/tools/tiktok/tiktok-caption-readability-checker/"
+    },
+    {
+      "toolId": "tool-178",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-green-screen-idea-generator",
+      "url": "/tools/tiktok/tiktok-green-screen-idea-generator/"
+    },
+    {
+      "toolId": "tool-179",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-photo-carousel-planner",
+      "url": "/tools/tiktok/tiktok-photo-carousel-planner/"
+    },
+    {
+      "toolId": "tool-180",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-carousel-text-writer",
+      "url": "/tools/tiktok/tiktok-carousel-text-writer/"
+    },
+    {
+      "toolId": "tool-181",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-myth-vs-fact-builder",
+      "url": "/tools/tiktok/tiktok-myth-vs-fact-builder/"
+    },
+    {
+      "toolId": "tool-182",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-before-after-planner",
+      "url": "/tools/tiktok/tiktok-before-after-planner/"
+    },
+    {
+      "toolId": "tool-183",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-faq-series-builder",
+      "url": "/tools/tiktok/tiktok-faq-series-builder/"
+    },
+    {
+      "toolId": "tool-184",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-30-day-posting-challenge",
+      "url": "/tools/tiktok/tiktok-30-day-posting-challenge/"
+    },
+    {
+      "toolId": "tool-185",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-account-audit-checklist",
+      "url": "/tools/tiktok/tiktok-account-audit-checklist/"
+    },
+    {
+      "toolId": "tool-186",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-profile-optimizer",
+      "url": "/tools/tiktok/tiktok-profile-optimizer/"
+    },
+    {
+      "toolId": "tool-187",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-posting-time-scheduler",
+      "url": "/tools/tiktok/tiktok-posting-time-scheduler/"
+    },
+    {
+      "toolId": "tool-188",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-competitor-angle-analyzer",
+      "url": "/tools/tiktok/tiktok-competitor-angle-analyzer/"
+    },
+    {
+      "toolId": "tool-189",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-viral-format-library",
+      "url": "/tools/tiktok/tiktok-viral-format-library/"
+    },
+    {
+      "toolId": "tool-190",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-ugc-script-builder",
+      "url": "/tools/tiktok/tiktok-ugc-script-builder/"
+    },
+    {
+      "toolId": "tool-191",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-shop-title-optimizer",
+      "url": "/tools/tiktok/tiktok-shop-title-optimizer/"
+    },
+    {
+      "toolId": "tool-192",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-shop-description-writer",
+      "url": "/tools/tiktok/tiktok-shop-description-writer/"
+    },
+    {
+      "toolId": "tool-193",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-affiliate-review-script",
+      "url": "/tools/tiktok/tiktok-affiliate-review-script/"
+    },
+    {
+      "toolId": "tool-194",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-ad-hook-writer",
+      "url": "/tools/tiktok/tiktok-ad-hook-writer/"
+    },
+    {
+      "toolId": "tool-195",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-giveaway-planner",
+      "url": "/tools/tiktok/tiktok-giveaway-planner/"
+    },
+    {
+      "toolId": "tool-196",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-q-a-session-kit",
+      "url": "/tools/tiktok/tiktok-q-a-session-kit/"
+    },
+    {
+      "toolId": "tool-197",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-behind-the-scenes-planner",
+      "url": "/tools/tiktok/tiktok-behind-the-scenes-planner/"
+    },
+    {
+      "toolId": "tool-198",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-caption-hashtag-mixer",
+      "url": "/tools/tiktok/tiktok-caption-hashtag-mixer/"
+    },
+    {
+      "toolId": "tool-199",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-series-trailer-script-builder",
+      "url": "/tools/tiktok/tiktok-series-trailer-script-builder/"
+    },
+    {
+      "toolId": "tool-200",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-live-shopping-script-planner",
+      "url": "/tools/tiktok/tiktok-live-shopping-script-planner/"
+    },
+    {
+      "toolId": "tool-201",
+      "categorySlug": "instagram",
+      "slug": "banned-hashtag-checker",
+      "url": "/tools/instagram/banned-hashtag-checker/"
+    },
+    {
+      "toolId": "tool-202",
+      "categorySlug": "instagram",
+      "slug": "hashtag-mix-builder",
+      "url": "/tools/instagram/hashtag-mix-builder/"
+    },
+    {
+      "toolId": "tool-203",
+      "categorySlug": "instagram",
+      "slug": "shadowban-diagnostic-checklist",
+      "url": "/tools/instagram/shadowban-diagnostic-checklist/"
+    },
+    {
+      "toolId": "tool-204",
+      "categorySlug": "instagram",
+      "slug": "stylish-fonts-generator",
+      "url": "/tools/instagram/stylish-fonts-generator/"
+    },
+    {
+      "toolId": "tool-205",
+      "categorySlug": "instagram",
+      "slug": "highlight-cover-maker",
+      "url": "/tools/instagram/highlight-cover-maker/"
+    },
+    {
+      "toolId": "tool-206",
+      "categorySlug": "instagram",
+      "slug": "profile-grid-planner",
+      "url": "/tools/instagram/profile-grid-planner/"
+    },
+    {
+      "toolId": "tool-207",
+      "categorySlug": "instagram",
+      "slug": "aesthetic-feed-theme-planner",
+      "url": "/tools/instagram/aesthetic-feed-theme-planner/"
+    },
+    {
+      "toolId": "tool-208",
+      "categorySlug": "instagram",
+      "slug": "story-highlight-name-generator",
+      "url": "/tools/instagram/story-highlight-name-generator/"
+    },
+    {
+      "toolId": "tool-209",
+      "categorySlug": "instagram",
+      "slug": "reels-cover-title-generator",
+      "url": "/tools/instagram/reels-cover-title-generator/"
+    },
+    {
+      "toolId": "tool-210",
+      "categorySlug": "instagram",
+      "slug": "carousel-slide-outline-generator",
+      "url": "/tools/instagram/carousel-slide-outline-generator/"
+    },
+    {
+      "toolId": "tool-211",
+      "categorySlug": "instagram",
+      "slug": "carousel-hook-slide-generator",
+      "url": "/tools/instagram/carousel-hook-slide-generator/"
+    },
+    {
+      "toolId": "tool-212",
+      "categorySlug": "instagram",
+      "slug": "cta-text-generator",
+      "url": "/tools/instagram/cta-text-generator/"
+    },
+    {
+      "toolId": "tool-213",
+      "categorySlug": "instagram",
+      "slug": "comment-reply-template-generator",
+      "url": "/tools/instagram/comment-reply-template-generator/"
+    },
+    {
+      "toolId": "tool-214",
+      "categorySlug": "instagram",
+      "slug": "dm-collab-pitch-generator",
+      "url": "/tools/instagram/dm-collab-pitch-generator/"
+    },
+    {
+      "toolId": "tool-215",
+      "categorySlug": "instagram",
+      "slug": "follower-milestone-tracker",
+      "url": "/tools/instagram/follower-milestone-tracker/"
+    },
+    {
+      "toolId": "tool-216",
+      "categorySlug": "instagram",
+      "slug": "hashtag-performance-log",
+      "url": "/tools/instagram/hashtag-performance-log/"
+    },
+    {
+      "toolId": "tool-217",
+      "categorySlug": "instagram",
+      "slug": "alt-text-writer",
+      "url": "/tools/instagram/alt-text-writer/"
+    },
+    {
+      "toolId": "tool-218",
+      "categorySlug": "instagram",
+      "slug": "location-tag-idea-generator",
+      "url": "/tools/instagram/location-tag-idea-generator/"
+    },
+    {
+      "toolId": "tool-219",
+      "categorySlug": "instagram",
+      "slug": "collab-post-caption-generator",
+      "url": "/tools/instagram/collab-post-caption-generator/"
+    },
+    {
+      "toolId": "tool-220",
+      "categorySlug": "instagram",
+      "slug": "giveaway-rules-generator",
+      "url": "/tools/instagram/giveaway-rules-generator/"
+    },
+    {
+      "toolId": "tool-221",
+      "categorySlug": "instagram",
+      "slug": "story-poll-idea-generator",
+      "url": "/tools/instagram/story-poll-idea-generator/"
+    },
+    {
+      "toolId": "tool-222",
+      "categorySlug": "instagram",
+      "slug": "story-quiz-generator",
+      "url": "/tools/instagram/story-quiz-generator/"
+    },
+    {
+      "toolId": "tool-223",
+      "categorySlug": "instagram",
+      "slug": "q-a-sticker-prompt-generator",
+      "url": "/tools/instagram/q-a-sticker-prompt-generator/"
+    },
+    {
+      "toolId": "tool-224",
+      "categorySlug": "instagram",
+      "slug": "countdown-sticker-text-generator",
+      "url": "/tools/instagram/countdown-sticker-text-generator/"
+    },
+    {
+      "toolId": "tool-225",
+      "categorySlug": "instagram",
+      "slug": "story-sequence-planner",
+      "url": "/tools/instagram/story-sequence-planner/"
+    },
+    {
+      "toolId": "tool-226",
+      "categorySlug": "instagram",
+      "slug": "reels-vs-carousel-quiz",
+      "url": "/tools/instagram/reels-vs-carousel-quiz/"
+    },
+    {
+      "toolId": "tool-227",
+      "categorySlug": "instagram",
+      "slug": "posting-frequency-planner",
+      "url": "/tools/instagram/posting-frequency-planner/"
+    },
+    {
+      "toolId": "tool-228",
+      "categorySlug": "instagram",
+      "slug": "niche-clarity-quiz",
+      "url": "/tools/instagram/niche-clarity-quiz/"
+    },
+    {
+      "toolId": "tool-229",
+      "categorySlug": "instagram",
+      "slug": "brand-voice-generator",
+      "url": "/tools/instagram/brand-voice-generator/"
+    },
+    {
+      "toolId": "tool-230",
+      "categorySlug": "instagram",
+      "slug": "ugc-pitch-template-generator",
+      "url": "/tools/instagram/ugc-pitch-template-generator/"
+    },
+    {
+      "toolId": "tool-231",
+      "categorySlug": "instagram",
+      "slug": "testimonial-request-generator",
+      "url": "/tools/instagram/testimonial-request-generator/"
+    },
+    {
+      "toolId": "tool-232",
+      "categorySlug": "instagram",
+      "slug": "link-in-bio-page-builder",
+      "url": "/tools/instagram/link-in-bio-page-builder/"
+    },
+    {
+      "toolId": "tool-233",
+      "categorySlug": "instagram",
+      "slug": "profile-audit-scorecard",
+      "url": "/tools/instagram/profile-audit-scorecard/"
+    },
+    {
+      "toolId": "tool-234",
+      "categorySlug": "instagram",
+      "slug": "pinned-post-strategy-planner",
+      "url": "/tools/instagram/pinned-post-strategy-planner/"
+    },
+    {
+      "toolId": "tool-235",
+      "categorySlug": "instagram",
+      "slug": "highlights-audit-checklist",
+      "url": "/tools/instagram/highlights-audit-checklist/"
+    },
+    {
+      "toolId": "tool-236",
+      "categorySlug": "instagram",
+      "slug": "welcome-dm-template-generator",
+      "url": "/tools/instagram/welcome-dm-template-generator/"
+    },
+    {
+      "toolId": "tool-237",
+      "categorySlug": "instagram",
+      "slug": "story-selling-script-generator",
+      "url": "/tools/instagram/story-selling-script-generator/"
+    },
+    {
+      "toolId": "tool-238",
+      "categorySlug": "instagram",
+      "slug": "comment-to-dm-funnel-script-generator",
+      "url": "/tools/instagram/comment-to-dm-funnel-script-generator/"
+    },
+    {
+      "toolId": "tool-239",
+      "categorySlug": "instagram",
+      "slug": "launch-content-planner",
+      "url": "/tools/instagram/launch-content-planner/"
+    },
+    {
+      "toolId": "tool-240",
+      "categorySlug": "instagram",
+      "slug": "30-day-reels-challenge-generator",
+      "url": "/tools/instagram/30-day-reels-challenge-generator/"
+    },
+    {
+      "toolId": "tool-241",
+      "categorySlug": "instagram",
+      "slug": "content-pillars-planner",
+      "url": "/tools/instagram/content-pillars-planner/"
+    },
+    {
+      "toolId": "tool-242",
+      "categorySlug": "instagram",
+      "slug": "emoji-combo-generator",
+      "url": "/tools/instagram/emoji-combo-generator/"
+    },
+    {
+      "toolId": "tool-243",
+      "categorySlug": "instagram",
+      "slug": "hashtag-block-builder",
+      "url": "/tools/instagram/hashtag-block-builder/"
+    },
+    {
+      "toolId": "tool-244",
+      "categorySlug": "instagram",
+      "slug": "best-time-to-post-planner",
+      "url": "/tools/instagram/best-time-to-post-planner/"
+    },
+    {
+      "toolId": "tool-245",
+      "categorySlug": "instagram",
+      "slug": "digital-product-idea-generator",
+      "url": "/tools/instagram/digital-product-idea-generator/"
+    },
+    {
+      "toolId": "tool-246",
+      "categorySlug": "instagram",
+      "slug": "reels-series-planner",
+      "url": "/tools/instagram/reels-series-planner/"
+    },
+    {
+      "toolId": "tool-247",
+      "categorySlug": "instagram",
+      "slug": "reels-cover-maker",
+      "url": "/tools/instagram/reels-cover-maker/"
+    },
+    {
+      "toolId": "tool-248",
+      "categorySlug": "instagram",
+      "slug": "reels-audio-search-term-finder",
+      "url": "/tools/instagram/reels-audio-search-term-finder/"
+    },
+    {
+      "toolId": "tool-249",
+      "categorySlug": "instagram",
+      "slug": "broadcast-channel-idea-generator",
+      "url": "/tools/instagram/broadcast-channel-idea-generator/"
+    },
+    {
+      "toolId": "tool-250",
+      "categorySlug": "instagram",
+      "slug": "profile-name-seo-optimizer",
+      "url": "/tools/instagram/profile-name-seo-optimizer/"
+    },
+    {
+      "toolId": "tool-251",
+      "categorySlug": "video-editing",
+      "slug": "capcut-export-settings-finder",
+      "url": "/tools/video-editing/capcut-export-settings-finder/"
+    },
+    {
+      "toolId": "tool-252",
+      "categorySlug": "video-editing",
+      "slug": "teleprompter",
+      "url": "/tools/video-editing/teleprompter/"
+    },
+    {
+      "toolId": "tool-253",
+      "categorySlug": "video-editing",
+      "slug": "tts-pronunciation-fixer",
+      "url": "/tools/video-editing/tts-pronunciation-fixer/"
+    },
+    {
+      "toolId": "tool-254",
+      "categorySlug": "video-editing",
+      "slug": "auto-caption-cleanup-tool",
+      "url": "/tools/video-editing/auto-caption-cleanup-tool/"
+    },
+    {
+      "toolId": "tool-255",
+      "categorySlug": "video-editing",
+      "slug": "subtitle-line-breaker",
+      "url": "/tools/video-editing/subtitle-line-breaker/"
+    },
+    {
+      "toolId": "tool-256",
+      "categorySlug": "video-editing",
+      "slug": "srt-to-vtt-converter",
+      "url": "/tools/video-editing/srt-to-vtt-converter/"
+    },
+    {
+      "toolId": "tool-257",
+      "categorySlug": "video-editing",
+      "slug": "caption-timing-validator",
+      "url": "/tools/video-editing/caption-timing-validator/"
+    },
+    {
+      "toolId": "tool-258",
+      "categorySlug": "video-editing",
+      "slug": "caption-readability-cps-checker",
+      "url": "/tools/video-editing/caption-readability-cps-checker/"
+    },
+    {
+      "toolId": "tool-259",
+      "categorySlug": "video-editing",
+      "slug": "karaoke-timing-grid-planner",
+      "url": "/tools/video-editing/karaoke-timing-grid-planner/"
+    },
+    {
+      "toolId": "tool-260",
+      "categorySlug": "video-editing",
+      "slug": "lower-third-generator",
+      "url": "/tools/video-editing/lower-third-generator/"
+    },
+    {
+      "toolId": "tool-261",
+      "categorySlug": "video-editing",
+      "slug": "text-animation-preset-generator",
+      "url": "/tools/video-editing/text-animation-preset-generator/"
+    },
+    {
+      "toolId": "tool-262",
+      "categorySlug": "video-editing",
+      "slug": "caption-style-preset-library",
+      "url": "/tools/video-editing/caption-style-preset-library/"
+    },
+    {
+      "toolId": "tool-263",
+      "categorySlug": "video-editing",
+      "slug": "keyframe-easing-visualizer",
+      "url": "/tools/video-editing/keyframe-easing-visualizer/"
+    },
+    {
+      "toolId": "tool-264",
+      "categorySlug": "video-editing",
+      "slug": "ken-burns-path-planner",
+      "url": "/tools/video-editing/ken-burns-path-planner/"
+    },
+    {
+      "toolId": "tool-265",
+      "categorySlug": "video-editing",
+      "slug": "slideshow-timing-planner",
+      "url": "/tools/video-editing/slideshow-timing-planner/"
+    },
+    {
+      "toolId": "tool-266",
+      "categorySlug": "video-editing",
+      "slug": "green-screen-color-picker",
+      "url": "/tools/video-editing/green-screen-color-picker/"
+    },
+    {
+      "toolId": "tool-267",
+      "categorySlug": "video-editing",
+      "slug": "slow-mo-frame-rate-planner",
+      "url": "/tools/video-editing/slow-mo-frame-rate-planner/"
+    },
+    {
+      "toolId": "tool-268",
+      "categorySlug": "video-editing",
+      "slug": "bpm-beat-match-planner",
+      "url": "/tools/video-editing/bpm-beat-match-planner/"
+    },
+    {
+      "toolId": "tool-269",
+      "categorySlug": "video-editing",
+      "slug": "audio-waveform-beat-marker",
+      "url": "/tools/video-editing/audio-waveform-beat-marker/"
+    },
+    {
+      "toolId": "tool-270",
+      "categorySlug": "video-editing",
+      "slug": "silence-gap-finder",
+      "url": "/tools/video-editing/silence-gap-finder/"
+    },
+    {
+      "toolId": "tool-271",
+      "categorySlug": "video-editing",
+      "slug": "voiceover-level-meter",
+      "url": "/tools/video-editing/voiceover-level-meter/"
+    },
+    {
+      "toolId": "tool-272",
+      "categorySlug": "video-editing",
+      "slug": "video-frame-grabber",
+      "url": "/tools/video-editing/video-frame-grabber/"
+    },
+    {
+      "toolId": "tool-273",
+      "categorySlug": "video-editing",
+      "slug": "aspect-ratio-crop-visualizer",
+      "url": "/tools/video-editing/aspect-ratio-crop-visualizer/"
+    },
+    {
+      "toolId": "tool-274",
+      "categorySlug": "video-editing",
+      "slug": "platform-spec-lookup",
+      "url": "/tools/video-editing/platform-spec-lookup/"
+    },
+    {
+      "toolId": "tool-275",
+      "categorySlug": "video-editing",
+      "slug": "talking-head-length-estimator",
+      "url": "/tools/video-editing/talking-head-length-estimator/"
+    },
+    {
+      "toolId": "tool-276",
+      "categorySlug": "video-editing",
+      "slug": "b-roll-shot-list-generator",
+      "url": "/tools/video-editing/b-roll-shot-list-generator/"
+    },
+    {
+      "toolId": "tool-277",
+      "categorySlug": "video-editing",
+      "slug": "storyboard-planner",
+      "url": "/tools/video-editing/storyboard-planner/"
+    },
+    {
+      "toolId": "tool-278",
+      "categorySlug": "video-editing",
+      "slug": "shot-list-generator",
+      "url": "/tools/video-editing/shot-list-generator/"
+    },
+    {
+      "toolId": "tool-279",
+      "categorySlug": "video-editing",
+      "slug": "retention-pacing-planner",
+      "url": "/tools/video-editing/retention-pacing-planner/"
+    },
+    {
+      "toolId": "tool-280",
+      "categorySlug": "video-editing",
+      "slug": "hook-score-checker",
+      "url": "/tools/video-editing/hook-score-checker/"
+    },
+    {
+      "toolId": "tool-281",
+      "categorySlug": "video-editing",
+      "slug": "transition-idea-generator",
+      "url": "/tools/video-editing/transition-idea-generator/"
+    },
+    {
+      "toolId": "tool-282",
+      "categorySlug": "video-editing",
+      "slug": "effect-stack-planner",
+      "url": "/tools/video-editing/effect-stack-planner/"
+    },
+    {
+      "toolId": "tool-283",
+      "categorySlug": "video-editing",
+      "slug": "sfx-cue-sheet-generator",
+      "url": "/tools/video-editing/sfx-cue-sheet-generator/"
+    },
+    {
+      "toolId": "tool-284",
+      "categorySlug": "video-editing",
+      "slug": "jump-cut-planner",
+      "url": "/tools/video-editing/jump-cut-planner/"
+    },
+    {
+      "toolId": "tool-285",
+      "categorySlug": "video-editing",
+      "slug": "clip-segment-planner",
+      "url": "/tools/video-editing/clip-segment-planner/"
+    },
+    {
+      "toolId": "tool-286",
+      "categorySlug": "video-editing",
+      "slug": "highlight-moment-logger",
+      "url": "/tools/video-editing/highlight-moment-logger/"
+    },
+    {
+      "toolId": "tool-287",
+      "categorySlug": "video-editing",
+      "slug": "export-qa-checklist",
+      "url": "/tools/video-editing/export-qa-checklist/"
+    },
+    {
+      "toolId": "tool-288",
+      "categorySlug": "video-editing",
+      "slug": "multi-platform-upload-planner",
+      "url": "/tools/video-editing/multi-platform-upload-planner/"
+    },
+    {
+      "toolId": "tool-289",
+      "categorySlug": "video-editing",
+      "slug": "render-time-estimator",
+      "url": "/tools/video-editing/render-time-estimator/"
+    },
+    {
+      "toolId": "tool-290",
+      "categorySlug": "video-editing",
+      "slug": "project-storage-planner",
+      "url": "/tools/video-editing/project-storage-planner/"
+    },
+    {
+      "toolId": "tool-291",
+      "categorySlug": "video-editing",
+      "slug": "editor-pomodoro-timer",
+      "url": "/tools/video-editing/editor-pomodoro-timer/"
+    },
+    {
+      "toolId": "tool-292",
+      "categorySlug": "video-editing",
+      "slug": "client-revision-tracker",
+      "url": "/tools/video-editing/client-revision-tracker/"
+    },
+    {
+      "toolId": "tool-293",
+      "categorySlug": "video-editing",
+      "slug": "file-naming-generator",
+      "url": "/tools/video-editing/file-naming-generator/"
+    },
+    {
+      "toolId": "tool-294",
+      "categorySlug": "video-editing",
+      "slug": "meme-caption-maker",
+      "url": "/tools/video-editing/meme-caption-maker/"
+    },
+    {
+      "toolId": "tool-295",
+      "categorySlug": "video-editing",
+      "slug": "split-screen-layout-generator",
+      "url": "/tools/video-editing/split-screen-layout-generator/"
+    },
+    {
+      "toolId": "tool-296",
+      "categorySlug": "video-editing",
+      "slug": "before-after-slider-generator",
+      "url": "/tools/video-editing/before-after-slider-generator/"
+    },
+    {
+      "toolId": "tool-297",
+      "categorySlug": "video-editing",
+      "slug": "reaction-layout-planner",
+      "url": "/tools/video-editing/reaction-layout-planner/"
+    },
+    {
+      "toolId": "tool-298",
+      "categorySlug": "video-editing",
+      "slug": "font-pairing-generator",
+      "url": "/tools/video-editing/font-pairing-generator/"
+    },
+    {
+      "toolId": "tool-299",
+      "categorySlug": "video-editing",
+      "slug": "caption-contrast-checker",
+      "url": "/tools/video-editing/caption-contrast-checker/"
+    },
+    {
+      "toolId": "tool-300",
+      "categorySlug": "video-editing",
+      "slug": "emoji-title-suggester",
+      "url": "/tools/video-editing/emoji-title-suggester/"
+    },
+    {
+      "toolId": "tool-301",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-prompt-library-for-bloggers",
+      "url": "/tools/ai-workflows/ai-prompt-library-for-bloggers/"
+    },
+    {
+      "toolId": "tool-302",
+      "categorySlug": "ai-workflows",
+      "slug": "blog-post-prompt-builder",
+      "url": "/tools/ai-workflows/blog-post-prompt-builder/"
+    },
+    {
+      "toolId": "tool-303",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-image-prompt-builder",
+      "url": "/tools/ai-workflows/ai-image-prompt-builder/"
+    },
+    {
+      "toolId": "tool-304",
+      "categorySlug": "ai-workflows",
+      "slug": "youtube-script-prompt-pack",
+      "url": "/tools/ai-workflows/youtube-script-prompt-pack/"
+    },
+    {
+      "toolId": "tool-305",
+      "categorySlug": "ai-workflows",
+      "slug": "30-day-content-plan-generator",
+      "url": "/tools/ai-workflows/30-day-content-plan-generator/"
+    },
+    {
+      "toolId": "tool-306",
+      "categorySlug": "ai-workflows",
+      "slug": "ebook-chapter-outline-generator",
+      "url": "/tools/ai-workflows/ebook-chapter-outline-generator/"
+    },
+    {
+      "toolId": "tool-307",
+      "categorySlug": "ai-workflows",
+      "slug": "online-course-module-planner",
+      "url": "/tools/ai-workflows/online-course-module-planner/"
+    },
+    {
+      "toolId": "tool-308",
+      "categorySlug": "ai-workflows",
+      "slug": "webinar-topic-generator",
+      "url": "/tools/ai-workflows/webinar-topic-generator/"
+    },
+    {
+      "toolId": "tool-309",
+      "categorySlug": "ai-workflows",
+      "slug": "newsletter-issue-planner",
+      "url": "/tools/ai-workflows/newsletter-issue-planner/"
+    },
+    {
+      "toolId": "tool-310",
+      "categorySlug": "ai-workflows",
+      "slug": "podcast-episode-idea-generator",
+      "url": "/tools/ai-workflows/podcast-episode-idea-generator/"
+    },
+    {
+      "toolId": "tool-311",
+      "categorySlug": "ai-workflows",
+      "slug": "podcast-show-notes-builder",
+      "url": "/tools/ai-workflows/podcast-show-notes-builder/"
+    },
+    {
+      "toolId": "tool-312",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-workflow-checklist-builder",
+      "url": "/tools/ai-workflows/ai-workflow-checklist-builder/"
+    },
+    {
+      "toolId": "tool-313",
+      "categorySlug": "ai-workflows",
+      "slug": "blog-publishing-checklist",
+      "url": "/tools/ai-workflows/blog-publishing-checklist/"
+    },
+    {
+      "toolId": "tool-314",
+      "categorySlug": "ai-workflows",
+      "slug": "content-refresh-checklist",
+      "url": "/tools/ai-workflows/content-refresh-checklist/"
+    },
+    {
+      "toolId": "tool-315",
+      "categorySlug": "ai-workflows",
+      "slug": "faq-content-builder",
+      "url": "/tools/ai-workflows/faq-content-builder/"
+    },
+    {
+      "toolId": "tool-316",
+      "categorySlug": "ai-workflows",
+      "slug": "cta-prompt-library",
+      "url": "/tools/ai-workflows/cta-prompt-library/"
+    },
+    {
+      "toolId": "tool-317",
+      "categorySlug": "ai-workflows",
+      "slug": "email-sequence-planner",
+      "url": "/tools/ai-workflows/email-sequence-planner/"
+    },
+    {
+      "toolId": "tool-318",
+      "categorySlug": "ai-workflows",
+      "slug": "sales-page-outline-generator",
+      "url": "/tools/ai-workflows/sales-page-outline-generator/"
+    },
+    {
+      "toolId": "tool-319",
+      "categorySlug": "ai-workflows",
+      "slug": "testimonial-request-builder",
+      "url": "/tools/ai-workflows/testimonial-request-builder/"
+    },
+    {
+      "toolId": "tool-320",
+      "categorySlug": "ai-workflows",
+      "slug": "brand-voice-prompt-builder",
+      "url": "/tools/ai-workflows/brand-voice-prompt-builder/"
+    },
+    {
+      "toolId": "tool-321",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-content-pillars-planner",
+      "url": "/tools/ai-workflows/ai-content-pillars-planner/"
+    },
+    {
+      "toolId": "tool-322",
+      "categorySlug": "ai-workflows",
+      "slug": "content-ideas-matrix-generator",
+      "url": "/tools/ai-workflows/content-ideas-matrix-generator/"
+    },
+    {
+      "toolId": "tool-323",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-art-style-reference-library",
+      "url": "/tools/ai-workflows/ai-art-style-reference-library/"
+    },
+    {
+      "toolId": "tool-324",
+      "categorySlug": "ai-workflows",
+      "slug": "negative-prompt-builder",
+      "url": "/tools/ai-workflows/negative-prompt-builder/"
+    },
+    {
+      "toolId": "tool-325",
+      "categorySlug": "ai-workflows",
+      "slug": "prompt-quality-analyzer",
+      "url": "/tools/ai-workflows/prompt-quality-analyzer/"
+    },
+    {
+      "toolId": "tool-326",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-disclosure-statement-generator",
+      "url": "/tools/ai-workflows/ai-disclosure-statement-generator/"
+    },
+    {
+      "toolId": "tool-327",
+      "categorySlug": "ai-workflows",
+      "slug": "content-repurposing-workflow-planner",
+      "url": "/tools/ai-workflows/content-repurposing-workflow-planner/"
+    },
+    {
+      "toolId": "tool-328",
+      "categorySlug": "ai-workflows",
+      "slug": "guest-post-pitch-builder",
+      "url": "/tools/ai-workflows/guest-post-pitch-builder/"
+    },
+    {
+      "toolId": "tool-329",
+      "categorySlug": "ai-workflows",
+      "slug": "expert-roundup-planner",
+      "url": "/tools/ai-workflows/expert-roundup-planner/"
+    },
+    {
+      "toolId": "tool-330",
+      "categorySlug": "ai-workflows",
+      "slug": "blogging-sop-template-builder",
+      "url": "/tools/ai-workflows/blogging-sop-template-builder/"
+    },
+    {
+      "toolId": "tool-331",
+      "categorySlug": "ai-workflows",
+      "slug": "editorial-style-guide-builder",
+      "url": "/tools/ai-workflows/editorial-style-guide-builder/"
+    },
+    {
+      "toolId": "tool-332",
+      "categorySlug": "ai-workflows",
+      "slug": "prompt-chain-workflow-builder",
+      "url": "/tools/ai-workflows/prompt-chain-workflow-builder/"
+    },
+    {
+      "toolId": "tool-333",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-research-brief-builder",
+      "url": "/tools/ai-workflows/ai-research-brief-builder/"
+    },
+    {
+      "toolId": "tool-334",
+      "categorySlug": "ai-workflows",
+      "slug": "comparison-table-builder",
+      "url": "/tools/ai-workflows/comparison-table-builder/"
+    },
+    {
+      "toolId": "tool-335",
+      "categorySlug": "ai-workflows",
+      "slug": "pros-and-cons-list-generator",
+      "url": "/tools/ai-workflows/pros-and-cons-list-generator/"
+    },
+    {
+      "toolId": "tool-336",
+      "categorySlug": "ai-workflows",
+      "slug": "product-review-outline-generator",
+      "url": "/tools/ai-workflows/product-review-outline-generator/"
+    },
+    {
+      "toolId": "tool-337",
+      "categorySlug": "ai-workflows",
+      "slug": "buying-guide-outline-generator",
+      "url": "/tools/ai-workflows/buying-guide-outline-generator/"
+    },
+    {
+      "toolId": "tool-338",
+      "categorySlug": "ai-workflows",
+      "slug": "email-subject-line-prompt-pack",
+      "url": "/tools/ai-workflows/email-subject-line-prompt-pack/"
+    },
+    {
+      "toolId": "tool-339",
+      "categorySlug": "ai-workflows",
+      "slug": "case-study-outline-generator",
+      "url": "/tools/ai-workflows/case-study-outline-generator/"
+    },
+    {
+      "toolId": "tool-340",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-content-editing-checklist",
+      "url": "/tools/ai-workflows/ai-content-editing-checklist/"
+    },
+    {
+      "toolId": "tool-341",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-fact-check-checklist",
+      "url": "/tools/ai-workflows/ai-fact-check-checklist/"
+    },
+    {
+      "toolId": "tool-342",
+      "categorySlug": "ai-workflows",
+      "slug": "viral-format-swipe-file",
+      "url": "/tools/ai-workflows/viral-format-swipe-file/"
+    },
+    {
+      "toolId": "tool-343",
+      "categorySlug": "ai-workflows",
+      "slug": "content-batching-planner",
+      "url": "/tools/ai-workflows/content-batching-planner/"
+    },
+    {
+      "toolId": "tool-344",
+      "categorySlug": "ai-workflows",
+      "slug": "90-day-blog-launch-planner",
+      "url": "/tools/ai-workflows/90-day-blog-launch-planner/"
+    },
+    {
+      "toolId": "tool-345",
+      "categorySlug": "ai-workflows",
+      "slug": "blog-monetization-planner",
+      "url": "/tools/ai-workflows/blog-monetization-planner/"
+    },
+    {
+      "toolId": "tool-346",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-tool-stack-planner",
+      "url": "/tools/ai-workflows/ai-tool-stack-planner/"
+    },
+    {
+      "toolId": "tool-347",
+      "categorySlug": "ai-workflows",
+      "slug": "prompt-variable-template-builder",
+      "url": "/tools/ai-workflows/prompt-variable-template-builder/"
+    },
+    {
+      "toolId": "tool-348",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-image-aspect-ratio-planner",
+      "url": "/tools/ai-workflows/ai-image-aspect-ratio-planner/"
+    },
+    {
+      "toolId": "tool-349",
+      "categorySlug": "ai-workflows",
+      "slug": "faceless-video-prompt-pack",
+      "url": "/tools/ai-workflows/faceless-video-prompt-pack/"
+    },
+    {
+      "toolId": "tool-350",
+      "categorySlug": "ai-workflows",
+      "slug": "ai-voiceover-script-prompt-pack",
+      "url": "/tools/ai-workflows/ai-voiceover-script-prompt-pack/"
+    },
+    {
+      "toolId": "tool-351",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-board-name-generator",
+      "url": "/tools/pinterest-social/pinterest-board-name-generator/"
+    },
+    {
+      "toolId": "tool-352",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-board-description-generator",
+      "url": "/tools/pinterest-social/pinterest-board-description-generator/"
+    },
+    {
+      "toolId": "tool-353",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-bio-generator",
+      "url": "/tools/pinterest-social/pinterest-bio-generator/"
+    },
+    {
+      "toolId": "tool-354",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-profile-name-generator",
+      "url": "/tools/pinterest-social/pinterest-profile-name-generator/"
+    },
+    {
+      "toolId": "tool-355",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-pin-image-idea-generator",
+      "url": "/tools/pinterest-social/pinterest-pin-image-idea-generator/"
+    },
+    {
+      "toolId": "tool-356",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-idea-pin-script-generator",
+      "url": "/tools/pinterest-social/pinterest-idea-pin-script-generator/"
+    },
+    {
+      "toolId": "tool-357",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-keyword-combiner",
+      "url": "/tools/pinterest-social/pinterest-keyword-combiner/"
+    },
+    {
+      "toolId": "tool-358",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-seo-title-rewriter",
+      "url": "/tools/pinterest-social/pinterest-seo-title-rewriter/"
+    },
+    {
+      "toolId": "tool-359",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-hashtag-generator",
+      "url": "/tools/pinterest-social/pinterest-hashtag-generator/"
+    },
+    {
+      "toolId": "tool-360",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-alt-text-generator",
+      "url": "/tools/pinterest-social/pinterest-alt-text-generator/"
+    },
+    {
+      "toolId": "tool-361",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-pin-ratio-checker",
+      "url": "/tools/pinterest-social/pinterest-pin-ratio-checker/"
+    },
+    {
+      "toolId": "tool-362",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-fresh-pin-checklist",
+      "url": "/tools/pinterest-social/pinterest-fresh-pin-checklist/"
+    },
+    {
+      "toolId": "tool-363",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-seasonal-content-planner",
+      "url": "/tools/pinterest-social/pinterest-seasonal-content-planner/"
+    },
+    {
+      "toolId": "tool-364",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-niche-idea-generator",
+      "url": "/tools/pinterest-social/pinterest-niche-idea-generator/"
+    },
+    {
+      "toolId": "tool-365",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-content-calendar-generator",
+      "url": "/tools/pinterest-social/pinterest-content-calendar-generator/"
+    },
+    {
+      "toolId": "tool-366",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-pin-title-a-b-scorer",
+      "url": "/tools/pinterest-social/pinterest-pin-title-a-b-scorer/"
+    },
+    {
+      "toolId": "tool-367",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-link-in-bio-page-builder",
+      "url": "/tools/pinterest-social/pinterest-link-in-bio-page-builder/"
+    },
+    {
+      "toolId": "tool-368",
+      "categorySlug": "pinterest-social",
+      "slug": "x-bio-generator",
+      "url": "/tools/pinterest-social/x-bio-generator/"
+    },
+    {
+      "toolId": "tool-369",
+      "categorySlug": "pinterest-social",
+      "slug": "x-username-generator",
+      "url": "/tools/pinterest-social/x-username-generator/"
+    },
+    {
+      "toolId": "tool-370",
+      "categorySlug": "pinterest-social",
+      "slug": "x-tweet-idea-generator",
+      "url": "/tools/pinterest-social/x-tweet-idea-generator/"
+    },
+    {
+      "toolId": "tool-371",
+      "categorySlug": "pinterest-social",
+      "slug": "x-thread-idea-generator",
+      "url": "/tools/pinterest-social/x-thread-idea-generator/"
+    },
+    {
+      "toolId": "tool-372",
+      "categorySlug": "pinterest-social",
+      "slug": "x-thread-splitter",
+      "url": "/tools/pinterest-social/x-thread-splitter/"
+    },
+    {
+      "toolId": "tool-373",
+      "categorySlug": "pinterest-social",
+      "slug": "x-post-formatter",
+      "url": "/tools/pinterest-social/x-post-formatter/"
+    },
+    {
+      "toolId": "tool-374",
+      "categorySlug": "pinterest-social",
+      "slug": "x-thread-numbering-formatter",
+      "url": "/tools/pinterest-social/x-thread-numbering-formatter/"
+    },
+    {
+      "toolId": "tool-375",
+      "categorySlug": "pinterest-social",
+      "slug": "x-hashtag-generator",
+      "url": "/tools/pinterest-social/x-hashtag-generator/"
+    },
+    {
+      "toolId": "tool-376",
+      "categorySlug": "pinterest-social",
+      "slug": "x-hook-analyzer",
+      "url": "/tools/pinterest-social/x-hook-analyzer/"
+    },
+    {
+      "toolId": "tool-377",
+      "categorySlug": "pinterest-social",
+      "slug": "x-poll-idea-generator",
+      "url": "/tools/pinterest-social/x-poll-idea-generator/"
+    },
+    {
+      "toolId": "tool-378",
+      "categorySlug": "pinterest-social",
+      "slug": "x-spaces-title-generator",
+      "url": "/tools/pinterest-social/x-spaces-title-generator/"
+    },
+    {
+      "toolId": "tool-379",
+      "categorySlug": "pinterest-social",
+      "slug": "x-pinned-tweet-idea-generator",
+      "url": "/tools/pinterest-social/x-pinned-tweet-idea-generator/"
+    },
+    {
+      "toolId": "tool-380",
+      "categorySlug": "pinterest-social",
+      "slug": "x-quote-tweet-idea-generator",
+      "url": "/tools/pinterest-social/x-quote-tweet-idea-generator/"
+    },
+    {
+      "toolId": "tool-381",
+      "categorySlug": "pinterest-social",
+      "slug": "x-content-pillars-planner",
+      "url": "/tools/pinterest-social/x-content-pillars-planner/"
+    },
+    {
+      "toolId": "tool-382",
+      "categorySlug": "pinterest-social",
+      "slug": "x-banner-text-generator",
+      "url": "/tools/pinterest-social/x-banner-text-generator/"
+    },
+    {
+      "toolId": "tool-383",
+      "categorySlug": "pinterest-social",
+      "slug": "x-viral-template-rewriter",
+      "url": "/tools/pinterest-social/x-viral-template-rewriter/"
+    },
+    {
+      "toolId": "tool-384",
+      "categorySlug": "pinterest-social",
+      "slug": "x-niche-positioning-generator",
+      "url": "/tools/pinterest-social/x-niche-positioning-generator/"
+    },
+    {
+      "toolId": "tool-385",
+      "categorySlug": "pinterest-social",
+      "slug": "tweet-quote-card-maker",
+      "url": "/tools/pinterest-social/tweet-quote-card-maker/"
+    },
+    {
+      "toolId": "tool-386",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-bio-generator",
+      "url": "/tools/pinterest-social/facebook-bio-generator/"
+    },
+    {
+      "toolId": "tool-387",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-page-name-generator",
+      "url": "/tools/pinterest-social/facebook-page-name-generator/"
+    },
+    {
+      "toolId": "tool-388",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-group-name-generator",
+      "url": "/tools/pinterest-social/facebook-group-name-generator/"
+    },
+    {
+      "toolId": "tool-389",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-group-rules-generator",
+      "url": "/tools/pinterest-social/facebook-group-rules-generator/"
+    },
+    {
+      "toolId": "tool-390",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-post-idea-generator",
+      "url": "/tools/pinterest-social/facebook-post-idea-generator/"
+    },
+    {
+      "toolId": "tool-391",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-reel-hook-generator",
+      "url": "/tools/pinterest-social/facebook-reel-hook-generator/"
+    },
+    {
+      "toolId": "tool-392",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-story-idea-generator",
+      "url": "/tools/pinterest-social/facebook-story-idea-generator/"
+    },
+    {
+      "toolId": "tool-393",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-event-idea-generator",
+      "url": "/tools/pinterest-social/facebook-event-idea-generator/"
+    },
+    {
+      "toolId": "tool-394",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-ad-headline-generator",
+      "url": "/tools/pinterest-social/facebook-ad-headline-generator/"
+    },
+    {
+      "toolId": "tool-395",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-ad-copy-generator",
+      "url": "/tools/pinterest-social/facebook-ad-copy-generator/"
+    },
+    {
+      "toolId": "tool-396",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-hashtag-generator",
+      "url": "/tools/pinterest-social/facebook-hashtag-generator/"
+    },
+    {
+      "toolId": "tool-397",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-giveaway-idea-generator",
+      "url": "/tools/pinterest-social/facebook-giveaway-idea-generator/"
+    },
+    {
+      "toolId": "tool-398",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-cta-text-generator",
+      "url": "/tools/pinterest-social/facebook-cta-text-generator/"
+    },
+    {
+      "toolId": "tool-399",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-cover-text-generator",
+      "url": "/tools/pinterest-social/facebook-cover-text-generator/"
+    },
+    {
+      "toolId": "tool-400",
+      "categorySlug": "pinterest-social",
+      "slug": "facebook-group-engagement-post-generator",
+      "url": "/tools/pinterest-social/facebook-group-engagement-post-generator/"
+    },
+    {
+      "toolId": "tool-401",
+      "categorySlug": "email-marketing",
+      "slug": "email-subject-line-tester",
+      "url": "/tools/email-marketing/email-subject-line-tester/"
+    },
+    {
+      "toolId": "tool-402",
+      "categorySlug": "email-marketing",
+      "slug": "email-subject-line-generator",
+      "url": "/tools/email-marketing/email-subject-line-generator/"
+    },
+    {
+      "toolId": "tool-403",
+      "categorySlug": "email-marketing",
+      "slug": "spam-word-checker",
+      "url": "/tools/email-marketing/spam-word-checker/"
+    },
+    {
+      "toolId": "tool-404",
+      "categorySlug": "email-marketing",
+      "slug": "preheader-text-generator",
+      "url": "/tools/email-marketing/preheader-text-generator/"
+    },
+    {
+      "toolId": "tool-405",
+      "categorySlug": "email-marketing",
+      "slug": "email-cta-button-text-generator",
+      "url": "/tools/email-marketing/email-cta-button-text-generator/"
+    },
+    {
+      "toolId": "tool-406",
+      "categorySlug": "email-marketing",
+      "slug": "subject-line-character-checker",
+      "url": "/tools/email-marketing/subject-line-character-checker/"
+    },
+    {
+      "toolId": "tool-407",
+      "categorySlug": "email-marketing",
+      "slug": "p-s-line-generator",
+      "url": "/tools/email-marketing/p-s-line-generator/"
+    },
+    {
+      "toolId": "tool-408",
+      "categorySlug": "email-marketing",
+      "slug": "email-a-b-test-idea-generator",
+      "url": "/tools/email-marketing/email-a-b-test-idea-generator/"
+    },
+    {
+      "toolId": "tool-409",
+      "categorySlug": "email-marketing",
+      "slug": "cold-email-opener-generator",
+      "url": "/tools/email-marketing/cold-email-opener-generator/"
+    },
+    {
+      "toolId": "tool-410",
+      "categorySlug": "email-marketing",
+      "slug": "follow-up-email-generator",
+      "url": "/tools/email-marketing/follow-up-email-generator/"
+    },
+    {
+      "toolId": "tool-411",
+      "categorySlug": "email-marketing",
+      "slug": "welcome-email-sequence-generator",
+      "url": "/tools/email-marketing/welcome-email-sequence-generator/"
+    },
+    {
+      "toolId": "tool-412",
+      "categorySlug": "email-marketing",
+      "slug": "email-sequence-planner-2",
+      "url": "/tools/email-marketing/email-sequence-planner-2/"
+    },
+    {
+      "toolId": "tool-413",
+      "categorySlug": "email-marketing",
+      "slug": "launch-email-sequence-generator",
+      "url": "/tools/email-marketing/launch-email-sequence-generator/"
+    },
+    {
+      "toolId": "tool-414",
+      "categorySlug": "email-marketing",
+      "slug": "re-engagement-email-generator",
+      "url": "/tools/email-marketing/re-engagement-email-generator/"
+    },
+    {
+      "toolId": "tool-415",
+      "categorySlug": "email-marketing",
+      "slug": "abandoned-cart-email-template-generator",
+      "url": "/tools/email-marketing/abandoned-cart-email-template-generator/"
+    },
+    {
+      "toolId": "tool-416",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-idea-generator",
+      "url": "/tools/email-marketing/newsletter-idea-generator/"
+    },
+    {
+      "toolId": "tool-417",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-name-generator",
+      "url": "/tools/email-marketing/newsletter-name-generator/"
+    },
+    {
+      "toolId": "tool-418",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-outline-generator",
+      "url": "/tools/email-marketing/newsletter-outline-generator/"
+    },
+    {
+      "toolId": "tool-419",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-sponsorship-pitch-generator",
+      "url": "/tools/email-marketing/newsletter-sponsorship-pitch-generator/"
+    },
+    {
+      "toolId": "tool-420",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-cpm-calculator",
+      "url": "/tools/email-marketing/newsletter-cpm-calculator/"
+    },
+    {
+      "toolId": "tool-421",
+      "categorySlug": "email-marketing",
+      "slug": "blog-to-newsletter-converter",
+      "url": "/tools/email-marketing/blog-to-newsletter-converter/"
+    },
+    {
+      "toolId": "tool-422",
+      "categorySlug": "email-marketing",
+      "slug": "webinar-invitation-email-generator",
+      "url": "/tools/email-marketing/webinar-invitation-email-generator/"
+    },
+    {
+      "toolId": "tool-423",
+      "categorySlug": "email-marketing",
+      "slug": "sale-promo-email-generator",
+      "url": "/tools/email-marketing/sale-promo-email-generator/"
+    },
+    {
+      "toolId": "tool-424",
+      "categorySlug": "email-marketing",
+      "slug": "testimonial-request-email-generator",
+      "url": "/tools/email-marketing/testimonial-request-email-generator/"
+    },
+    {
+      "toolId": "tool-425",
+      "categorySlug": "email-marketing",
+      "slug": "lead-magnet-idea-generator",
+      "url": "/tools/email-marketing/lead-magnet-idea-generator/"
+    },
+    {
+      "toolId": "tool-426",
+      "categorySlug": "email-marketing",
+      "slug": "lead-magnet-title-generator",
+      "url": "/tools/email-marketing/lead-magnet-title-generator/"
+    },
+    {
+      "toolId": "tool-427",
+      "categorySlug": "email-marketing",
+      "slug": "content-upgrade-idea-generator",
+      "url": "/tools/email-marketing/content-upgrade-idea-generator/"
+    },
+    {
+      "toolId": "tool-428",
+      "categorySlug": "email-marketing",
+      "slug": "quiz-lead-magnet-idea-generator",
+      "url": "/tools/email-marketing/quiz-lead-magnet-idea-generator/"
+    },
+    {
+      "toolId": "tool-429",
+      "categorySlug": "email-marketing",
+      "slug": "lead-magnet-checklist-builder",
+      "url": "/tools/email-marketing/lead-magnet-checklist-builder/"
+    },
+    {
+      "toolId": "tool-430",
+      "categorySlug": "email-marketing",
+      "slug": "email-signup-copy-generator",
+      "url": "/tools/email-marketing/email-signup-copy-generator/"
+    },
+    {
+      "toolId": "tool-431",
+      "categorySlug": "email-marketing",
+      "slug": "thank-you-page-copy-generator",
+      "url": "/tools/email-marketing/thank-you-page-copy-generator/"
+    },
+    {
+      "toolId": "tool-432",
+      "categorySlug": "email-marketing",
+      "slug": "unsubscribe-page-copy-generator",
+      "url": "/tools/email-marketing/unsubscribe-page-copy-generator/"
+    },
+    {
+      "toolId": "tool-433",
+      "categorySlug": "email-marketing",
+      "slug": "referral-email-generator",
+      "url": "/tools/email-marketing/referral-email-generator/"
+    },
+    {
+      "toolId": "tool-434",
+      "categorySlug": "email-marketing",
+      "slug": "blog-giveaway-idea-generator",
+      "url": "/tools/email-marketing/blog-giveaway-idea-generator/"
+    },
+    {
+      "toolId": "tool-435",
+      "categorySlug": "email-marketing",
+      "slug": "email-funnel-mapper",
+      "url": "/tools/email-marketing/email-funnel-mapper/"
+    },
+    {
+      "toolId": "tool-436",
+      "categorySlug": "email-marketing",
+      "slug": "sponsorship-pitch-email-generator",
+      "url": "/tools/email-marketing/sponsorship-pitch-email-generator/"
+    },
+    {
+      "toolId": "tool-437",
+      "categorySlug": "email-marketing",
+      "slug": "case-study-request-email-generator",
+      "url": "/tools/email-marketing/case-study-request-email-generator/"
+    },
+    {
+      "toolId": "tool-438",
+      "categorySlug": "email-marketing",
+      "slug": "email-signature-generator",
+      "url": "/tools/email-marketing/email-signature-generator/"
+    },
+    {
+      "toolId": "tool-439",
+      "categorySlug": "email-marketing",
+      "slug": "plain-text-email-formatter",
+      "url": "/tools/email-marketing/plain-text-email-formatter/"
+    },
+    {
+      "toolId": "tool-440",
+      "categorySlug": "email-marketing",
+      "slug": "email-send-time-planner",
+      "url": "/tools/email-marketing/email-send-time-planner/"
+    },
+    {
+      "toolId": "tool-441",
+      "categorySlug": "email-marketing",
+      "slug": "90-day-email-marketing-planner",
+      "url": "/tools/email-marketing/90-day-email-marketing-planner/"
+    },
+    {
+      "toolId": "tool-442",
+      "categorySlug": "email-marketing",
+      "slug": "about-page-copy-generator",
+      "url": "/tools/email-marketing/about-page-copy-generator/"
+    },
+    {
+      "toolId": "tool-443",
+      "categorySlug": "email-marketing",
+      "slug": "author-bio-generator",
+      "url": "/tools/email-marketing/author-bio-generator/"
+    },
+    {
+      "toolId": "tool-444",
+      "categorySlug": "email-marketing",
+      "slug": "blog-comment-reply-generator",
+      "url": "/tools/email-marketing/blog-comment-reply-generator/"
+    },
+    {
+      "toolId": "tool-445",
+      "categorySlug": "email-marketing",
+      "slug": "email-deliverability-checklist",
+      "url": "/tools/email-marketing/email-deliverability-checklist/"
+    },
+    {
+      "toolId": "tool-446",
+      "categorySlug": "email-marketing",
+      "slug": "blogger-press-release-template-generator",
+      "url": "/tools/email-marketing/blogger-press-release-template-generator/"
+    },
+    {
+      "toolId": "tool-447",
+      "categorySlug": "email-marketing",
+      "slug": "podcast-pitch-email-generator",
+      "url": "/tools/email-marketing/podcast-pitch-email-generator/"
+    },
+    {
+      "toolId": "tool-448",
+      "categorySlug": "email-marketing",
+      "slug": "email-list-growth-idea-generator",
+      "url": "/tools/email-marketing/email-list-growth-idea-generator/"
+    },
+    {
+      "toolId": "tool-449",
+      "categorySlug": "email-marketing",
+      "slug": "blog-comment-policy-generator",
+      "url": "/tools/email-marketing/blog-comment-policy-generator/"
+    },
+    {
+      "toolId": "tool-450",
+      "categorySlug": "email-marketing",
+      "slug": "newsletter-ad-slot-planner",
+      "url": "/tools/email-marketing/newsletter-ad-slot-planner/"
+    },
+    {
+      "toolId": "tool-451",
+      "categorySlug": "creator-business",
+      "slug": "video-editing-rate-calculator",
+      "url": "/tools/creator-business/video-editing-rate-calculator/"
+    },
+    {
+      "toolId": "tool-452",
+      "categorySlug": "creator-business",
+      "slug": "freelance-day-rate-calculator",
+      "url": "/tools/creator-business/freelance-day-rate-calculator/"
+    },
+    {
+      "toolId": "tool-453",
+      "categorySlug": "creator-business",
+      "slug": "late-payment-fee-calculator",
+      "url": "/tools/creator-business/late-payment-fee-calculator/"
+    },
+    {
+      "toolId": "tool-454",
+      "categorySlug": "creator-business",
+      "slug": "rush-fee-calculator",
+      "url": "/tools/creator-business/rush-fee-calculator/"
+    },
+    {
+      "toolId": "tool-455",
+      "categorySlug": "creator-business",
+      "slug": "usage-rights-fee-estimator",
+      "url": "/tools/creator-business/usage-rights-fee-estimator/"
+    },
+    {
+      "toolId": "tool-456",
+      "categorySlug": "creator-business",
+      "slug": "brand-deal-contract-generator",
+      "url": "/tools/creator-business/brand-deal-contract-generator/"
+    },
+    {
+      "toolId": "tool-457",
+      "categorySlug": "creator-business",
+      "slug": "media-kit-builder",
+      "url": "/tools/creator-business/media-kit-builder/"
+    },
+    {
+      "toolId": "tool-458",
+      "categorySlug": "creator-business",
+      "slug": "retainer-vs-hourly-comparator",
+      "url": "/tools/creator-business/retainer-vs-hourly-comparator/"
+    },
+    {
+      "toolId": "tool-459",
+      "categorySlug": "creator-business",
+      "slug": "milestone-payment-planner",
+      "url": "/tools/creator-business/milestone-payment-planner/"
+    },
+    {
+      "toolId": "tool-460",
+      "categorySlug": "creator-business",
+      "slug": "walk-away-rate-calculator",
+      "url": "/tools/creator-business/walk-away-rate-calculator/"
+    },
+    {
+      "toolId": "tool-461",
+      "categorySlug": "creator-business",
+      "slug": "revision-pricing-calculator",
+      "url": "/tools/creator-business/revision-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-462",
+      "categorySlug": "creator-business",
+      "slug": "kill-fee-calculator",
+      "url": "/tools/creator-business/kill-fee-calculator/"
+    },
+    {
+      "toolId": "tool-463",
+      "categorySlug": "creator-business",
+      "slug": "nda-generator",
+      "url": "/tools/creator-business/nda-generator/"
+    },
+    {
+      "toolId": "tool-464",
+      "categorySlug": "creator-business",
+      "slug": "scope-of-work-generator",
+      "url": "/tools/creator-business/scope-of-work-generator/"
+    },
+    {
+      "toolId": "tool-465",
+      "categorySlug": "creator-business",
+      "slug": "client-onboarding-questionnaire-generator",
+      "url": "/tools/creator-business/client-onboarding-questionnaire-generator/"
+    },
+    {
+      "toolId": "tool-466",
+      "categorySlug": "creator-business",
+      "slug": "rate-negotiation-email-generator",
+      "url": "/tools/creator-business/rate-negotiation-email-generator/"
+    },
+    {
+      "toolId": "tool-467",
+      "categorySlug": "creator-business",
+      "slug": "brand-pitch-email-generator",
+      "url": "/tools/creator-business/brand-pitch-email-generator/"
+    },
+    {
+      "toolId": "tool-468",
+      "categorySlug": "creator-business",
+      "slug": "overdue-invoice-reminder-generator",
+      "url": "/tools/creator-business/overdue-invoice-reminder-generator/"
+    },
+    {
+      "toolId": "tool-469",
+      "categorySlug": "creator-business",
+      "slug": "quarterly-tax-estimator-for-freelancers",
+      "url": "/tools/creator-business/quarterly-tax-estimator-for-freelancers/"
+    },
+    {
+      "toolId": "tool-470",
+      "categorySlug": "creator-business",
+      "slug": "creator-deduction-finder",
+      "url": "/tools/creator-business/creator-deduction-finder/"
+    },
+    {
+      "toolId": "tool-471",
+      "categorySlug": "creator-business",
+      "slug": "wedding-videographer-package-builder",
+      "url": "/tools/creator-business/wedding-videographer-package-builder/"
+    },
+    {
+      "toolId": "tool-472",
+      "categorySlug": "creator-business",
+      "slug": "wedding-photographer-pricing-calculator",
+      "url": "/tools/creator-business/wedding-photographer-pricing-calculator/"
+    },
+    {
+      "toolId": "tool-473",
+      "categorySlug": "creator-business",
+      "slug": "logo-design-quote-builder",
+      "url": "/tools/creator-business/logo-design-quote-builder/"
+    },
+    {
+      "toolId": "tool-474",
+      "categorySlug": "creator-business",
+      "slug": "thumbnail-designer-package-pricer",
+      "url": "/tools/creator-business/thumbnail-designer-package-pricer/"
+    },
+    {
+      "toolId": "tool-475",
+      "categorySlug": "creator-business",
+      "slug": "podcast-editing-rate-calculator",
+      "url": "/tools/creator-business/podcast-editing-rate-calculator/"
+    },
+    {
+      "toolId": "tool-476",
+      "categorySlug": "creator-business",
+      "slug": "online-coach-package-builder",
+      "url": "/tools/creator-business/online-coach-package-builder/"
+    },
+    {
+      "toolId": "tool-477",
+      "categorySlug": "creator-business",
+      "slug": "ebook-royalty-estimator",
+      "url": "/tools/creator-business/ebook-royalty-estimator/"
+    },
+    {
+      "toolId": "tool-478",
+      "categorySlug": "creator-business",
+      "slug": "platform-fee-comparer",
+      "url": "/tools/creator-business/platform-fee-comparer/"
+    },
+    {
+      "toolId": "tool-479",
+      "categorySlug": "creator-business",
+      "slug": "billable-hours-invoice-builder",
+      "url": "/tools/creator-business/billable-hours-invoice-builder/"
+    },
+    {
+      "toolId": "tool-480",
+      "categorySlug": "creator-business",
+      "slug": "client-profitability-tracker",
+      "url": "/tools/creator-business/client-profitability-tracker/"
+    },
+    {
+      "toolId": "tool-481",
+      "categorySlug": "creator-business",
+      "slug": "project-timeline-estimator",
+      "url": "/tools/creator-business/project-timeline-estimator/"
+    },
+    {
+      "toolId": "tool-482",
+      "categorySlug": "creator-business",
+      "slug": "shoot-day-rate-planner",
+      "url": "/tools/creator-business/shoot-day-rate-planner/"
+    },
+    {
+      "toolId": "tool-483",
+      "categorySlug": "creator-business",
+      "slug": "exclusivity-fee-calculator",
+      "url": "/tools/creator-business/exclusivity-fee-calculator/"
+    },
+    {
+      "toolId": "tool-484",
+      "categorySlug": "creator-business",
+      "slug": "whitelisting-fee-calculator",
+      "url": "/tools/creator-business/whitelisting-fee-calculator/"
+    },
+    {
+      "toolId": "tool-485",
+      "categorySlug": "creator-business",
+      "slug": "scope-creep-fee-calculator",
+      "url": "/tools/creator-business/scope-creep-fee-calculator/"
+    },
+    {
+      "toolId": "tool-486",
+      "categorySlug": "creator-business",
+      "slug": "client-red-flag-checklist",
+      "url": "/tools/creator-business/client-red-flag-checklist/"
+    },
+    {
+      "toolId": "tool-487",
+      "categorySlug": "creator-business",
+      "slug": "testimonial-showcase-page-builder",
+      "url": "/tools/creator-business/testimonial-showcase-page-builder/"
+    },
+    {
+      "toolId": "tool-488",
+      "categorySlug": "creator-business",
+      "slug": "case-study-template-generator",
+      "url": "/tools/creator-business/case-study-template-generator/"
+    },
+    {
+      "toolId": "tool-489",
+      "categorySlug": "creator-business",
+      "slug": "proposal-template-generator",
+      "url": "/tools/creator-business/proposal-template-generator/"
+    },
+    {
+      "toolId": "tool-490",
+      "categorySlug": "creator-business",
+      "slug": "discovery-call-question-generator",
+      "url": "/tools/creator-business/discovery-call-question-generator/"
+    },
+    {
+      "toolId": "tool-491",
+      "categorySlug": "creator-business",
+      "slug": "referral-program-planner",
+      "url": "/tools/creator-business/referral-program-planner/"
+    },
+    {
+      "toolId": "tool-492",
+      "categorySlug": "creator-business",
+      "slug": "freelancer-business-name-generator",
+      "url": "/tools/creator-business/freelancer-business-name-generator/"
+    },
+    {
+      "toolId": "tool-493",
+      "categorySlug": "creator-business",
+      "slug": "freelancer-tagline-generator",
+      "url": "/tools/creator-business/freelancer-tagline-generator/"
+    },
+    {
+      "toolId": "tool-494",
+      "categorySlug": "creator-business",
+      "slug": "linkedin-headline-generator",
+      "url": "/tools/creator-business/linkedin-headline-generator/"
+    },
+    {
+      "toolId": "tool-495",
+      "categorySlug": "creator-business",
+      "slug": "cold-outreach-tracker",
+      "url": "/tools/creator-business/cold-outreach-tracker/"
+    },
+    {
+      "toolId": "tool-496",
+      "categorySlug": "creator-business",
+      "slug": "income-goal-planner",
+      "url": "/tools/creator-business/income-goal-planner/"
+    },
+    {
+      "toolId": "tool-497",
+      "categorySlug": "creator-business",
+      "slug": "service-package-builder",
+      "url": "/tools/creator-business/service-package-builder/"
+    },
+    {
+      "toolId": "tool-498",
+      "categorySlug": "creator-business",
+      "slug": "booking-page-copy-generator",
+      "url": "/tools/creator-business/booking-page-copy-generator/"
+    },
+    {
+      "toolId": "tool-499",
+      "categorySlug": "creator-business",
+      "slug": "client-offboarding-checklist",
+      "url": "/tools/creator-business/client-offboarding-checklist/"
+    },
+    {
+      "toolId": "tool-500",
+      "categorySlug": "creator-business",
+      "slug": "project-debrief-template-builder",
+      "url": "/tools/creator-business/project-debrief-template-builder/"
+    },
+    {
+      "toolId": "tool-501",
+      "categorySlug": "pinterest-social",
+      "slug": "pinterest-board-cover-maker",
+      "url": "/tools/pinterest-social/pinterest-board-cover-maker/"
+    },
+    {
+      "toolId": "tool-502",
+      "categorySlug": "creator-business",
+      "slug": "ugc-portfolio-page-builder",
+      "url": "/tools/creator-business/ugc-portfolio-page-builder/"
+    },
+    {
+      "toolId": "tool-503",
+      "categorySlug": "creator-business",
+      "slug": "creator-pitch-deck-outline-generator",
+      "url": "/tools/creator-business/creator-pitch-deck-outline-generator/"
+    },
+    {
+      "toolId": "tool-504",
+      "categorySlug": "creator-business",
+      "slug": "sponsorship-negotiation-script-generator",
+      "url": "/tools/creator-business/sponsorship-negotiation-script-generator/"
+    },
+    {
+      "toolId": "tool-505",
+      "categorySlug": "make-money",
+      "slug": "blog-income-stream-diversification-planner",
+      "url": "/tools/make-money/blog-income-stream-diversification-planner/"
+    },
+    {
+      "toolId": "tool-506",
+      "categorySlug": "make-money",
+      "slug": "affiliate-link-name-generator",
+      "url": "/tools/make-money/affiliate-link-name-generator/"
+    },
+    {
+      "toolId": "tool-507",
+      "categorySlug": "ai-tools",
+      "slug": "neural-tts-studio",
+      "url": "/tools/ai-tools/neural-tts-studio/"
+    },
+    {
+      "toolId": "tool-508",
+      "categorySlug": "ai-tools",
+      "slug": "ai-background-remover",
+      "url": "/tools/ai-tools/ai-background-remover/"
+    },
+    {
+      "toolId": "tool-509",
+      "categorySlug": "ai-tools",
+      "slug": "ai-image-upscaler",
+      "url": "/tools/ai-tools/ai-image-upscaler/"
+    },
+    {
+      "toolId": "tool-510",
+      "categorySlug": "ai-tools",
+      "slug": "ai-audio-transcriber",
+      "url": "/tools/ai-tools/ai-audio-transcriber/"
+    },
+    {
+      "toolId": "tool-511",
+      "categorySlug": "ai-tools",
+      "slug": "ai-translator-offline",
+      "url": "/tools/ai-tools/ai-translator-offline/"
+    },
+    {
+      "toolId": "tool-512",
+      "categorySlug": "ai-tools",
+      "slug": "read-aloud-tts-voice-browser",
+      "url": "/tools/ai-tools/read-aloud-tts-voice-browser/"
+    },
+    {
+      "toolId": "tool-513",
+      "categorySlug": "ai-tools",
+      "slug": "product-photo-white-background-maker",
+      "url": "/tools/ai-tools/product-photo-white-background-maker/"
+    },
+    {
+      "toolId": "tool-514",
+      "categorySlug": "ai-tools",
+      "slug": "passport-id-photo-maker",
+      "url": "/tools/ai-tools/passport-id-photo-maker/"
+    },
+    {
+      "toolId": "tool-515",
+      "categorySlug": "ai-tools",
+      "slug": "free-ai-chatbot-byok",
+      "url": "/tools/ai-tools/free-ai-chatbot-byok/"
+    },
+    {
+      "toolId": "tool-516",
+      "categorySlug": "ai-tools",
+      "slug": "resume-bullet-enhancer",
+      "url": "/tools/ai-tools/resume-bullet-enhancer/"
+    },
+    {
+      "toolId": "tool-517",
+      "categorySlug": "ai-tools",
+      "slug": "cover-letter-generator",
+      "url": "/tools/ai-tools/cover-letter-generator/"
+    },
+    {
+      "toolId": "tool-518",
+      "categorySlug": "ai-tools",
+      "slug": "ai-email-blog-writer",
+      "url": "/tools/ai-tools/ai-email-blog-writer/"
+    },
+    {
+      "toolId": "tool-519",
+      "categorySlug": "ai-tools",
+      "slug": "linkedin-headline-about-writer",
+      "url": "/tools/ai-tools/linkedin-headline-about-writer/"
+    },
+    {
+      "toolId": "tool-520",
+      "categorySlug": "ai-tools",
+      "slug": "ai-text-summarizer",
+      "url": "/tools/ai-tools/ai-text-summarizer/"
+    },
+    {
+      "toolId": "tool-521",
+      "categorySlug": "ai-tools",
+      "slug": "ai-paraphraser-rewriter",
+      "url": "/tools/ai-tools/ai-paraphraser-rewriter/"
+    },
+    {
+      "toolId": "tool-522",
+      "categorySlug": "ai-tools",
+      "slug": "midjourney-flux-prompt-builder",
+      "url": "/tools/ai-tools/midjourney-flux-prompt-builder/"
+    },
+    {
+      "toolId": "tool-523",
+      "categorySlug": "ai-tools",
+      "slug": "ai-video-scene-planner",
+      "url": "/tools/ai-tools/ai-video-scene-planner/"
+    },
+    {
+      "toolId": "tool-524",
+      "categorySlug": "ai-tools",
+      "slug": "ai-image-aspect-ratio-planner-retired",
+      "url": "/tools/ai-tools/ai-image-aspect-ratio-planner-retired/"
+    },
+    {
+      "toolId": "tool-525",
+      "categorySlug": "ai-tools",
+      "slug": "suno-music-prompt-builder",
+      "url": "/tools/ai-tools/suno-music-prompt-builder/"
+    },
+    {
+      "toolId": "tool-526",
+      "categorySlug": "ai-tools",
+      "slug": "ats-resume-checker",
+      "url": "/tools/ai-tools/ats-resume-checker/"
+    },
+    {
+      "toolId": "tool-527",
+      "categorySlug": "ai-tools",
+      "slug": "elevenlabs-voiceover-script-formatter",
+      "url": "/tools/ai-tools/elevenlabs-voiceover-script-formatter/"
+    },
+    {
+      "toolId": "tool-528",
+      "categorySlug": "ai-tools",
+      "slug": "system-prompt-builder",
+      "url": "/tools/ai-tools/system-prompt-builder/"
+    },
+    {
+      "toolId": "tool-529",
+      "categorySlug": "ai-tools",
+      "slug": "ai-headshot-prompt-pack-builder",
+      "url": "/tools/ai-tools/ai-headshot-prompt-pack-builder/"
+    },
+    {
+      "toolId": "tool-530",
+      "categorySlug": "ai-tools",
+      "slug": "ideogram-logo-prompt-builder",
+      "url": "/tools/ai-tools/ideogram-logo-prompt-builder/"
+    },
+    {
+      "toolId": "tool-531",
+      "categorySlug": "ai-tools",
+      "slug": "voiceover-timing-cost-calculator",
+      "url": "/tools/ai-tools/voiceover-timing-cost-calculator/"
+    },
+    {
+      "toolId": "tool-532",
+      "categorySlug": "ai-tools",
+      "slug": "prompt-token-cost-estimator",
+      "url": "/tools/ai-tools/prompt-token-cost-estimator/"
+    },
+    {
+      "toolId": "tool-533",
+      "categorySlug": "ai-tools",
+      "slug": "negative-prompt-library",
+      "url": "/tools/ai-tools/negative-prompt-library/"
+    },
+    {
+      "toolId": "tool-534",
+      "categorySlug": "ai-tools",
+      "slug": "cross-model-prompt-converter",
+      "url": "/tools/ai-tools/cross-model-prompt-converter/"
+    },
+    {
+      "toolId": "tool-535",
+      "categorySlug": "ai-tools",
+      "slug": "prompt-health-debugger",
+      "url": "/tools/ai-tools/prompt-health-debugger/"
+    },
+    {
+      "toolId": "tool-536",
+      "categorySlug": "ai-tools",
+      "slug": "lyrics-rhyme-syllable-checker",
+      "url": "/tools/ai-tools/lyrics-rhyme-syllable-checker/"
+    },
+    {
+      "toolId": "tool-537",
+      "categorySlug": "ai-tools",
+      "slug": "interview-question-generator",
+      "url": "/tools/ai-tools/interview-question-generator/"
+    },
+    {
+      "toolId": "tool-538",
+      "categorySlug": "ai-tools",
+      "slug": "ocr-text-extractor",
+      "url": "/tools/ai-tools/ocr-text-extractor/"
+    },
+    {
+      "toolId": "tool-539",
+      "categorySlug": "ai-tools",
+      "slug": "old-photo-restorer",
+      "url": "/tools/ai-tools/old-photo-restorer/"
+    },
+    {
+      "toolId": "tool-540",
+      "categorySlug": "ai-tools",
+      "slug": "ai-image-captioner-alt-text",
+      "url": "/tools/ai-tools/ai-image-captioner-alt-text/"
+    },
+    {
+      "toolId": "tool-541",
+      "categorySlug": "ai-tools",
+      "slug": "image-object-tagger",
+      "url": "/tools/ai-tools/image-object-tagger/"
+    },
+    {
+      "toolId": "tool-542",
+      "categorySlug": "ai-tools",
+      "slug": "sentiment-analyzer",
+      "url": "/tools/ai-tools/sentiment-analyzer/"
+    },
+    {
+      "toolId": "tool-543",
+      "categorySlug": "ai-tools",
+      "slug": "semantic-note-search",
+      "url": "/tools/ai-tools/semantic-note-search/"
+    },
+    {
+      "toolId": "tool-544",
+      "categorySlug": "ai-tools",
+      "slug": "keyword-tag-extractor",
+      "url": "/tools/ai-tools/keyword-tag-extractor/"
+    },
+    {
+      "toolId": "tool-545",
+      "categorySlug": "ai-tools",
+      "slug": "bpm-key-detector",
+      "url": "/tools/ai-tools/bpm-key-detector/"
+    },
+    {
+      "toolId": "tool-546",
+      "categorySlug": "ai-tools",
+      "slug": "svg-logo-composer",
+      "url": "/tools/ai-tools/svg-logo-composer/"
+    },
+    {
+      "toolId": "tool-547",
+      "categorySlug": "ai-tools",
+      "slug": "ai-voice-cloning-studio",
+      "url": "/tools/ai-tools/ai-voice-cloning-studio/"
+    },
+    {
+      "toolId": "tool-548",
+      "categorySlug": "ai-tools",
+      "slug": "text-to-video-generator",
+      "url": "/tools/ai-tools/text-to-video-generator/"
+    },
+    {
+      "toolId": "tool-549",
+      "categorySlug": "ai-tools",
+      "slug": "ai-headshot-generator",
+      "url": "/tools/ai-tools/ai-headshot-generator/"
+    },
+    {
+      "toolId": "tool-550",
+      "categorySlug": "ai-tools",
+      "slug": "ai-music-generator",
+      "url": "/tools/ai-tools/ai-music-generator/"
+    },
+    {
+      "toolId": "tool-551",
+      "categorySlug": "ai-tools",
+      "slug": "photo-cartoonizer",
+      "url": "/tools/ai-tools/photo-cartoonizer/"
+    },
+    {
+      "toolId": "tool-552",
+      "categorySlug": "ai-tools",
+      "slug": "talk-to-pdf-chatbot",
+      "url": "/tools/ai-tools/talk-to-pdf-chatbot/"
+    },
+    {
+      "toolId": "tool-553",
+      "categorySlug": "ai-tools",
+      "slug": "ai-image-detector",
+      "url": "/tools/ai-tools/ai-image-detector/"
+    },
+    {
+      "toolId": "tool-554",
+      "categorySlug": "ai-tools",
+      "slug": "ai-image-generator",
+      "url": "/tools/ai-tools/ai-image-generator/"
+    },
+    {
+      "toolId": "tool-555",
+      "categorySlug": "ai-tools",
+      "slug": "ai-video-script-generator",
+      "url": "/tools/ai-tools/ai-video-script-generator/"
+    },
+    {
+      "toolId": "tool-556",
+      "categorySlug": "ai-tools",
+      "slug": "ai-content-repurposer",
+      "url": "/tools/ai-tools/ai-content-repurposer/"
+    },
+    {
+      "toolId": "tool-557",
+      "categorySlug": "ai-tools",
+      "slug": "ai-hook-generator",
+      "url": "/tools/ai-tools/ai-hook-generator/"
+    },
+    {
+      "toolId": "tool-558",
+      "categorySlug": "ai-tools",
+      "slug": "ai-thumbnail-title-generator",
+      "url": "/tools/ai-tools/ai-thumbnail-title-generator/"
+    },
+    {
+      "toolId": "tool-559",
+      "categorySlug": "ai-tools",
+      "slug": "ai-social-caption-generator",
+      "url": "/tools/ai-tools/ai-social-caption-generator/"
+    },
+    {
+      "toolId": "tool-560",
+      "categorySlug": "ai-tools",
+      "slug": "ai-blog-outline-generator",
+      "url": "/tools/ai-tools/ai-blog-outline-generator/"
+    },
+    {
+      "toolId": "tool-561",
+      "categorySlug": "ai-tools",
+      "slug": "ai-product-description-generator",
+      "url": "/tools/ai-tools/ai-product-description-generator/"
+    },
+    {
+      "toolId": "tool-562",
+      "categorySlug": "ai-tools",
+      "slug": "ai-newsletter-writer",
+      "url": "/tools/ai-tools/ai-newsletter-writer/"
+    },
+    {
+      "toolId": "tool-563",
+      "categorySlug": "instagram",
+      "slug": "hashtag-strength-checker",
+      "url": "/tools/instagram/hashtag-strength-checker/"
+    },
+    {
+      "toolId": "tool-564",
+      "categorySlug": "blogging-seo",
+      "slug": "seo-meta-tag-analyzer",
+      "url": "/tools/blogging-seo/seo-meta-tag-analyzer/"
+    },
+    {
+      "toolId": "tool-565",
+      "categorySlug": "creator-business",
+      "slug": "social-profile-checker",
+      "url": "/tools/creator-business/social-profile-checker/"
+    },
+    {
+      "toolId": "tool-566",
+      "categorySlug": "email-marketing",
+      "slug": "email-subject-analyzer",
+      "url": "/tools/email-marketing/email-subject-analyzer/"
+    },
+    {
+      "toolId": "tool-567",
+      "categorySlug": "blogging-seo",
+      "slug": "content-freshness-checker",
+      "url": "/tools/blogging-seo/content-freshness-checker/"
+    },
+    {
+      "toolId": "tool-568",
+      "categorySlug": "creator-business",
+      "slug": "cta-strength-analyzer",
+      "url": "/tools/creator-business/cta-strength-analyzer/"
+    },
+    {
+      "toolId": "tool-571",
+      "categorySlug": "ai-tools",
+      "slug": "ai-prompt-optimizer",
+      "url": "/tools/ai-tools/ai-prompt-optimizer/"
+    },
+    {
+      "toolId": "tool-572",
+      "categorySlug": "ai-tools",
+      "slug": "ai-meeting-summarizer",
+      "url": "/tools/ai-tools/ai-meeting-summarizer/"
+    },
+    {
+      "toolId": "tool-573",
+      "categorySlug": "ai-tools",
+      "slug": "ai-code-explainer",
+      "url": "/tools/ai-tools/ai-code-explainer/"
+    },
+    {
+      "toolId": "tool-574",
+      "categorySlug": "ai-tools",
+      "slug": "ai-text-simplifier",
+      "url": "/tools/ai-tools/ai-text-simplifier/"
+    },
+    {
+      "toolId": "tool-575",
+      "categorySlug": "youtube",
+      "slug": "youtube-title-analyzer",
+      "url": "/tools/youtube/youtube-title-analyzer/"
+    },
+    {
+      "toolId": "tool-576",
+      "categorySlug": "instagram",
+      "slug": "instagram-bio-analyzer",
+      "url": "/tools/instagram/instagram-bio-analyzer/"
+    },
+    {
+      "toolId": "tool-569",
+      "categorySlug": "tiktok",
+      "slug": "tiktok-hook-analyzer",
+      "url": "/tools/tiktok/tiktok-hook-analyzer/"
+    },
+    {
+      "toolId": "tool-570",
+      "categorySlug": "blogging-seo",
+      "slug": "blog-readability-scorer",
+      "url": "/tools/blogging-seo/blog-readability-scorer/"
+    }
+  ],
+  "hubs": [
+    {
+      "categorySlug": "blogging-seo",
+      "url": "/tools/blogging-seo-tools/"
+    },
+    {
+      "categorySlug": "make-money",
+      "url": "/tools/make-money-tools/"
+    },
+    {
+      "categorySlug": "youtube",
+      "url": "/tools/youtube-tools/"
+    },
+    {
+      "categorySlug": "tiktok",
+      "url": "/tools/tiktok-tools/"
+    },
+    {
+      "categorySlug": "instagram",
+      "url": "/tools/instagram-tools/"
+    },
+    {
+      "categorySlug": "video-editing",
+      "url": "/tools/video-editing-tools/"
+    },
+    {
+      "categorySlug": "ai-workflows",
+      "url": "/tools/ai-workflows-tools/"
+    },
+    {
+      "categorySlug": "pinterest-social",
+      "url": "/tools/pinterest-social-tools/"
+    },
+    {
+      "categorySlug": "email-marketing",
+      "url": "/tools/email-marketing-tools/"
+    },
+    {
+      "categorySlug": "creator-business",
+      "url": "/tools/creator-business-tools/"
+    },
+    {
+      "categorySlug": "ai-tools",
+      "url": "/tools/ai-tools-tools/"
+    }
+  ]
+}
