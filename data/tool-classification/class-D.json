@@ -1,0 +1,1520 @@
+[
+ {
+  "toolId": "tool-151",
+  "name": "TikTok Script Structurer",
+  "slug": "tiktok-script-structurer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "topic",
+   "niche",
+   "targetDurationSec"
+  ],
+  "outputs": [
+   "beat-sheet script (hook, beats, CTA) fitted to targetDurationSec"
+  ],
+  "validation": [
+   "targetDurationSec between 3 and 600 (standard TikTok upload ceiling)",
+   "topic non-empty, max 200 chars"
+  ],
+  "edgeCases": [
+   "user picks 60-minute-eligible long-form: tool caps plan at 600s and warns about account eligibility",
+   "empty niche: falls back to generic hook templates"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Pure template/beat-sheet engine; no platform data needed.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)",
+   "TikTok caption character limit (video posts)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-152",
+  "name": "TikTok POV Caption Bank Builder",
+  "slug": "tiktok-pov-caption-bank-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "tone",
+   "bankSize"
+  ],
+  "outputs": [
+   "array of POV caption templates with placeholder slots"
+  ],
+  "validation": [
+   "bankSize 5-50",
+   "each caption <= 2200 chars incl. hashtags"
+  ],
+  "edgeCases": [
+   "user niche unknown: offers generic POV banks (relatable/funny/motivational)",
+   "caption exceeds limit when hashtags appended: tool trims hashtags first"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Word-bank assembly; saved to localStorage by the client.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok caption character limit (video posts)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-153",
+  "name": "TikTok Comment Reply Idea Generator",
+  "slug": "tiktok-comment-reply-idea-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "pastedComment",
+   "tone"
+  ],
+  "outputs": [
+   "array of reply ideas (funny, warm, witty, redirect-to-video)"
+  ],
+  "validation": [
+   "pastedComment non-empty, <= 150 chars (TikTok comment limit)",
+   "reply output <= 150 chars"
+  ],
+  "edgeCases": [
+   "empty comment: prompts user to paste one instead of inventing a comment",
+   "abusive comment: no 'roast back' suggestions; neutral boundary templates"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template reply ideas only; does not post replies or access accounts.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok comment character limit"
+  ],
+  "possibleDuplicateOf": [
+   "tool-129",
+   "tool-213"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-154",
+  "name": "TikTok Comment Keyword Miner",
+  "slug": "tiktok-comment-keyword-miner",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "analyzer",
+  "engine": "text-analysis",
+  "inputs": [
+   "pastedComments (one per line)"
+  ],
+  "outputs": [
+   "word-frequency table, top phrases, content-idea seeds derived from frequent terms"
+  ],
+  "validation": [
+   "at least 1 pasted comment",
+   "comments stripped of URLs and @handles",
+   "tokens min length 3; emojis preserved as sentiment tokens"
+  ],
+  "edgeCases": [
+   "<5 comments: warns low-confidence sample",
+   "non-English comments: frequency still works; idea seeds default to English"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "CORRECTION from inventory 'generator': primary mechanism is keyword-frequency analysis of user-pasted comments, not generation. CANNOT scrape TikTok comments (no API, no account access); honest subset = manual paste only.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok comment character limit"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": true
+ },
+ {
+  "toolId": "tool-155",
+  "name": "TikTok Series Episode Planner",
+  "slug": "tiktok-series-episode-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "seriesTitle",
+   "niche",
+   "episodeCount"
+  ],
+  "outputs": [
+   "episode plan: per-episode hook, beats, CTA, posting order"
+  ],
+  "validation": [
+   "episodeCount 1-50",
+   "seriesTitle non-empty"
+  ],
+  "edgeCases": [
+   "long-form series (60-min eligible accounts): episodes planned in <=600s chunks with note",
+   "recap episodes: template inserts 'previously on' recap beat"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static episode-arc templates; no live data.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [
+   "tool-122",
+   "tool-246",
+   "tool-36"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-156",
+  "name": "TikTok Duet Idea Generator",
+  "slug": "tiktok-duet-idea-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "duetType (react|reply|collab|challenge)"
+  ],
+  "outputs": [
+   "duet video concept ideas with setup instructions"
+  ],
+  "validation": [
+   "niche non-empty",
+   "duetType one of the 4 options"
+  ],
+  "edgeCases": [
+   "user has no duet partner: offers 'duet with popular creator' framing guidance without naming real creators"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Idea templates; no TikTok data access.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-157",
+  "name": "TikTok Stitch Prompt Generator",
+  "slug": "tiktok-stitch-prompt-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "stance (agree|debunk|add-context|funny)"
+  ],
+  "outputs": [
+   "stitch prompt ideas: opening line + response angle"
+  ],
+  "validation": [
+   "stance one of 4 options"
+  ],
+  "edgeCases": [
+   "user pastes a specific video to stitch: prompt adapts to pasted description (never fetched from TikTok)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template prompts; cannot fetch videos to stitch.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-158",
+  "name": "TikTok Live Title Generator",
+  "slug": "tiktok-live-title-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "liveTopic",
+   "niche"
+  ],
+  "outputs": [
+   "array of LIVE title options"
+  ],
+  "validation": [
+   "title <= 60 chars (conservative cap; TikTok's official LIVE title limit is NOT published - marked in notes)"
+  ],
+  "edgeCases": [
+   "LIVE title limit unverified: tool shows honesty label 'TikTok does not publish this limit; titles kept short as best practice'"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Word-bank title assembly; feasibility fine, limit value conservative and labeled.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok LIVE broadcast eligibility (followers + age)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-159",
+  "name": "TikTok Live Session Planner",
+  "slug": "tiktok-live-session-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "liveTopic",
+   "niche",
+   "durationMin"
+  ],
+  "outputs": [
+   "timed run-of-show: segments, engagement prompts, gift-goal moments, CTA"
+  ],
+  "validation": [
+   "durationMin 5-240 (LIVE supports multi-hour broadcasts)"
+  ],
+  "edgeCases": [
+   "account below 1,000 followers: planner shows eligibility banner referencing tiktok-live-eligibility rule",
+   "solo vs guest/co-host mode: template branch"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static run-of-show templates; includes eligibility honesty banner.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok LIVE broadcast eligibility (followers + age)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-160",
+  "name": "TikTok Challenge Creator Kit",
+  "slug": "tiktok-challenge-creator-kit",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "challengeName",
+   "niche",
+   "challengeType (dance|how-to|before-after|duet-chain)"
+  ],
+  "outputs": [
+   "challenge kit: rules text, example video script, hashtag, CTA, judging criteria"
+  ],
+  "validation": [
+   "challengeName non-empty"
+  ],
+  "edgeCases": [
+   "branded hashtag challenges: adds disclosure reminder (#ad) and trademark-avoidance note"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template kit; cannot launch real hashtag challenges.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok caption character limit (video posts)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-161",
+  "name": "TikTok Trend Adapter",
+  "slug": "tiktok-trend-adapter",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "trendName (user-pasted)",
+   "niche",
+   "trendType (sound|dance|meme|format)"
+  ],
+  "outputs": [
+   "niche-adapted video concepts mapped from the pasted trend"
+  ],
+  "validation": [
+   "trendName non-empty - tool NEVER invents a current trend name",
+   "niche non-empty"
+  ],
+  "edgeCases": [
+   "user asks 'what's trending now': tool must refuse and link to TikTok Discover/Creative Center instead of fabricating"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: cannot read live TikTok trend data. Honest subset = user pastes the trend name/sound; tool maps it to the niche via word banks. No fabricated 'trending now' lists.",
+  "formulaRef": "[tool-161 feeds nothing live]",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-162",
+  "name": "TikTok Content Pillar Planner",
+  "slug": "tiktok-content-pillar-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "niche",
+   "businessGoal"
+  ],
+  "outputs": [
+   "content pillars with formats, frequency, example topics per pillar"
+  ],
+  "validation": [
+   "niche non-empty",
+   "3-5 pillars output"
+  ],
+  "edgeCases": [
+   "no business goal: defaults to grow-audience pillars"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static strategy templates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [
+   "tool-121",
+   "tool-241"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-163",
+  "name": "TikTok SEO Keyword Finder",
+  "slug": "tiktok-seo-keyword-finder",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "seedTopic"
+  ],
+  "outputs": [
+   "keyword-style phrases (long-tail variants, question forms, how-to forms) for captions/on-screen text"
+  ],
+  "validation": [
+   "seedTopic non-empty"
+  ],
+  "edgeCases": [
+   "user asks for search volume/competition: tool must NOT show volume numbers; labels output 'suggestion bank, not search-volume data'"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: cannot access TikTok search volume or real query data. Honest subset = keyword-styled suggestion bank from word banks + modifier templates. No volume, difficulty, or CPC numbers.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-164",
+  "name": "TikTok Search Intent Mapper",
+  "slug": "tiktok-search-intent-mapper",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "analyzer",
+  "engine": "text-analysis",
+  "inputs": [
+   "searchPhrase (user-typed, e.g. 'best budget mic')"
+  ],
+  "outputs": [
+   "intent category (how-to | review | entertainment | local | buy) + content angles per intent + caption keyword placement"
+  ],
+  "validation": [
+   "searchPhrase non-empty"
+  ],
+  "edgeCases": [
+   "ambiguous phrase: shows top-2 intents with confidence note, not a single invented classification"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "CORRECTION from inventory 'generator': core mechanism is keyword-to-intent classification (word-bank matching) plus generated angles. No TikTok search-insights data used; honest subset only.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": true
+ },
+ {
+  "toolId": "tool-165",
+  "name": "TikTok Storytime Script Builder",
+  "slug": "tiktok-storytime-script-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "template",
+  "inputs": [
+   "storyTitle",
+   "niche",
+   "storyBeats (setup|conflict|twist|resolution)"
+  ],
+  "outputs": [
+   "full storytime script with on-screen-text cues and pacing beats"
+  ],
+  "validation": [
+   "at least setup + conflict beats provided",
+   "script fitted to <=180s narration estimate"
+  ],
+  "edgeCases": [
+   "very long story: suggests multi-part series and links to tool-155 pattern"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Script templates; narration-time estimate labeled as estimate.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-166",
+  "name": "TikTok GRWM Script Planner",
+  "slug": "tiktok-grwm-script-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "grwmTopic",
+   "niche",
+   "stepCount"
+  ],
+  "outputs": [
+   "step-by-step GRWM plan: talking points per step, product mention slots, hook, CTA"
+  ],
+  "validation": [
+   "stepCount 3-10"
+  ],
+  "edgeCases": [
+   "skincare vs fashion GRWM: template branch by niche keyword"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static GRWM plan templates.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-167",
+  "name": "TikTok Tutorial Step Structurer",
+  "slug": "tiktok-tutorial-step-structurer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "tutorialTopic",
+   "stepCount"
+  ],
+  "outputs": [
+   "structured tutorial: hook, numbered steps with on-screen-text lines, recap CTA"
+  ],
+  "validation": [
+   "stepCount 2-12",
+   "each step <= 140 chars for on-screen readability"
+  ],
+  "edgeCases": [
+   "advanced topic: adds 'prerequisite' beat"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template structuring.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-168",
+  "name": "TikTok Product Demo Script Builder",
+  "slug": "tiktok-product-demo-script-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "keyFeatures (list)"
+  ],
+  "outputs": [
+   "demo script: hook, feature demos, proof moment, CTA; optional Shop CTA line"
+  ],
+  "validation": [
+   "productName non-empty",
+   "max 5 features (one demo beat each)"
+  ],
+  "edgeCases": [
+   "affiliate/sponsored demo: inserts #ad disclosure line"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Script templates; includes FTC disclosure line for paid demos.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [
+   "tiktok-shop-product-name-limit"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-169",
+  "name": "TikTok Unboxing Flow Planner",
+  "slug": "tiktok-unboxing-flow-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "niche"
+  ],
+  "outputs": [
+   "shot-by-shot unboxing plan: teaser, open beats, reaction lines, reveal CTA"
+  ],
+  "validation": [
+   "productName non-empty"
+  ],
+  "edgeCases": [
+   "ASMR-style unboxing: adds sound-cue beats"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static shot-list templates.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-170",
+  "name": "TikTok Day-in-My-Life Shot List",
+  "slug": "tiktok-day-in-my-life-shot-list",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "profession",
+   "niche"
+  ],
+  "outputs": [
+   "shot list with timestamps, captions lines, and transition suggestions"
+  ],
+  "validation": [
+   "profession non-empty"
+  ],
+  "edgeCases": [
+   "unusual profession: generic beats with 'swap in your real tasks' slots"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Shot-list templates.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-171",
+  "name": "TikTok Transition Idea Bank",
+  "slug": "tiktok-transition-idea-bank",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "transitionCount"
+  ],
+  "outputs": [
+   "array of transition ideas (snap, whip-pan, outfit-change, object-pass, jump-cut) with how-to"
+  ],
+  "validation": [
+   "transitionCount 1-20"
+  ],
+  "edgeCases": [
+   "advanced transitions: labeled 'needs CapCut/manual editing', never claims in-app automation"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static idea bank; does not edit video.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-172",
+  "name": "TikTok Text Overlay Prompt Writer",
+  "slug": "tiktok-text-overlay-prompt-writer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "sceneDescription",
+   "videoTopic"
+  ],
+  "outputs": [
+   "short on-screen text lines (hook line + beat lines) optimized for readability"
+  ],
+  "validation": [
+   "sceneDescription non-empty",
+   "each line <= 42 chars (mobile readability rule of thumb, labeled as guidance)"
+  ],
+  "edgeCases": [
+   "long sentences: splits into two lines with pause beat"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Text templates; safe-zone guidance is advisory, not a render.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-173",
+  "name": "TikTok Pinned Comment Idea Generator",
+  "slug": "tiktok-pinned-comment-idea-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "videoTopic"
+  ],
+  "outputs": [
+   "pinned-comment ideas (question, CTA, link-in-bio pointer, follow-up)"
+  ],
+  "validation": [
+   "videoTopic non-empty",
+   "output <= 150 chars (TikTok comment limit)"
+  ],
+  "edgeCases": [
+   "spam-looking CTA: template prefers value-first wording"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template ideas; does not pin comments.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok comment character limit"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-174",
+  "name": "TikTok Cover Text Idea Generator",
+  "slug": "tiktok-cover-text-idea-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "videoTopic"
+  ],
+  "outputs": [
+   "cover/thumbnail text lines (big bold hook phrases)"
+  ],
+  "validation": [
+   "videoTopic non-empty",
+   "each line <= 25 chars (cover readability guidance)"
+  ],
+  "edgeCases": [
+   "clickbait check: flags misleading lines and suggests honest variants"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Text templates; does not render covers.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-175",
+  "name": "TikTok Voiceover Script Formatter",
+  "slug": "tiktok-voiceover-script-formatter",
+  "inventoryToolType": "formatter",
+  "verifiedToolType": "formatter",
+  "engine": "formatter",
+  "inputs": [
+   "rawScript"
+  ],
+  "outputs": [
+   "formatted voiceover script: scene-numbered lines, pause markers, caption-ready lines"
+  ],
+  "validation": [
+   "rawScript non-empty"
+  ],
+  "edgeCases": [
+   "mixed languages: keeps lines as-is, no translation claims"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Pure text formatting; fully feasible.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-176",
+  "name": "TikTok TTS Script Optimizer",
+  "slug": "tiktok-tts-script-optimizer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "text-analysis",
+  "inputs": [
+   "scriptText"
+  ],
+  "outputs": [
+   "TTS-optimized script: numbers spelled out, abbreviations expanded, sentences split for natural pauses"
+  ],
+  "validation": [
+   "scriptText non-empty"
+  ],
+  "edgeCases": [
+   "brand names: user confirms pronunciation; tool does not invent phonetic claims beyond standard expansions"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Text-rewrite rules; feasible.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-177",
+  "name": "TikTok Caption Readability Checker",
+  "slug": "tiktok-caption-readability-checker",
+  "inventoryToolType": "checker",
+  "verifiedToolType": "checker",
+  "engine": "scoring",
+  "inputs": [
+   "captionText"
+  ],
+  "outputs": [
+   "Flesch Reading Ease score, grade level, flagged long sentences, rewrite suggestions"
+  ],
+  "validation": [
+   "captionText non-empty",
+   "caption <= 2200 chars (warns if over)"
+  ],
+  "edgeCases": [
+   "non-English caption: score labeled 'English-model only', not shown as fact"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Flesch Reading Ease is a public standard formula; computed fully client-side.",
+  "formulaRef": "formulas-D.json#flesch-reading-ease",
+  "platformRulesRef": [
+   "TikTok caption character limit (video posts)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-178",
+  "name": "TikTok Green Screen Idea Generator",
+  "slug": "tiktok-green-screen-idea-generator",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "backgroundType (article|screenshot|map|chart)"
+  ],
+  "outputs": [
+   "green-screen video concepts with background asset description + script beats"
+  ],
+  "validation": [
+   "backgroundType one of 4 options"
+  ],
+  "edgeCases": [
+   "copyrighted background material: adds 'use your own screenshots or licensed images' note"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Idea templates; does not edit video.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-179",
+  "name": "TikTok Photo Carousel Planner",
+  "slug": "tiktok-photo-carousel-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "carouselTopic",
+   "slideCount"
+  ],
+  "outputs": [
+   "slide-by-slide plan: cover, value slides, CTA slide with text-per-slide guidance"
+  ],
+  "validation": [
+   "slideCount 2-35 (TikTok Photo Mode max per platform rule)",
+   "each slide text <= 50 words (readability guidance)"
+  ],
+  "edgeCases": [
+   "slideCount > 35 requested: clamps to 35 with honesty note"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static carousel plan; slide cap enforced from platform rule.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok Photo Mode maximum images per carousel"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-180",
+  "name": "TikTok Carousel Text Writer",
+  "slug": "tiktok-carousel-text-writer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "carouselTopic",
+   "slideCount"
+  ],
+  "outputs": [
+   "per-slide text (hook cover line, value lines, CTA line)"
+  ],
+  "validation": [
+   "slideCount 2-35",
+   "per-slide <= 50 words"
+  ],
+  "edgeCases": [
+   "user wants >35 slides: same clamp behavior as tool-179"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Text templates.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok Photo Mode maximum images per carousel"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-181",
+  "name": "TikTok Myth vs Fact Builder",
+  "slug": "tiktok-myth-vs-fact-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "template",
+  "inputs": [
+   "topic",
+   "mythCount"
+  ],
+  "outputs": [
+   "myth-vs-fact pairs with reveal structure and script beats"
+  ],
+  "validation": [
+   "mythCount 1-5",
+   "topic non-empty"
+  ],
+  "edgeCases": [
+   "sensitive claims (health/finance): adds 'verify with authoritative sources' honesty banner; tool never invents facts"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template builder; factual claims come from user, never invented.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-182",
+  "name": "TikTok Before/After Planner",
+  "slug": "tiktok-before-after-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "transformationTopic"
+  ],
+  "outputs": [
+   "before/after plan: shot list, transition point, caption, CTA"
+  ],
+  "validation": [
+   "transformationTopic non-empty"
+  ],
+  "edgeCases": [
+   "results claims: adds honesty note against fake before/afters"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Plan templates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-183",
+  "name": "TikTok FAQ Series Builder",
+  "slug": "tiktok-faq-series-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "faqCount"
+  ],
+  "outputs": [
+   "FAQ episode list: question + answer-beat outline per episode"
+  ],
+  "validation": [
+   "faqCount 1-20",
+   "niche non-empty"
+  ],
+  "edgeCases": [
+   "answers: outlines only; user fills facts - tool never invents answers"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Structure builder; answers are user-provided.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [
+   "tool-155"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-184",
+  "name": "TikTok 30-Day Posting Challenge",
+  "slug": "tiktok-30-day-posting-challenge",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "niche",
+   "startDate"
+  ],
+  "outputs": [
+   "30-day calendar: daily video idea, format, CTA; rest days marked"
+  ],
+  "validation": [
+   "startDate valid date",
+   "niche non-empty"
+  ],
+  "edgeCases": [
+   "user skips days: calendar supports check-off state in localStorage"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Static calendar generation.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [
+   "tool-240"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-185",
+  "name": "TikTok Account Audit Checklist",
+  "slug": "tiktok-account-audit-checklist",
+  "inventoryToolType": "scorer",
+  "verifiedToolType": "scorer",
+  "engine": "scoring",
+  "inputs": [
+   "checklistAnswers (bio, content, consistency, engagement - self-scored)"
+  ],
+  "outputs": [
+   "category scores 0-100, gap list, prioritized fix list"
+  ],
+  "validation": [
+   "each answer 0-5 scale",
+   "all sections answered"
+  ],
+  "edgeCases": [
+   "score is self-assessment: labeled 'self-audit estimate, not TikTok analytics'"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: cannot pull real account data (no API). Honest subset = self-scored checklist producing an estimate. Never presents as real analytics.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [
+   "tiktok-bio-character-limit"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-186",
+  "name": "TikTok Profile Optimizer",
+  "slug": "tiktok-profile-optimizer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "checklist",
+  "inputs": [
+   "niche",
+   "currentBio",
+   "handle"
+  ],
+  "outputs": [
+   "bio options (<=80 chars), name-field keyword suggestions, link/pin suggestions"
+  ],
+  "validation": [
+   "bio options each <= 80 chars (platform rule)",
+   "handle <= 24 chars guidance (single third-party source; labeled)"
+  ],
+  "edgeCases": [
+   "user has <1,000 followers: notes LIVE/link limitations per rules"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: checklist-based suggestions only; cannot verify what actually improves the profile without account analytics. Bio 80-char cap enforced from platform rule.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok profile bio character limit",
+   "TikTok LIVE broadcast eligibility (followers + age)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-187",
+  "name": "TikTok Posting Time Scheduler",
+  "slug": "tiktok-posting-time-scheduler",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "timezone",
+   "niche",
+   "postsPerWeek"
+  ],
+  "outputs": [
+   "weekly posting schedule: days + time windows per slot"
+  ],
+  "validation": [
+   "postsPerWeek 1-21",
+   "timezone valid IANA name"
+  ],
+  "edgeCases": [
+   "time windows are general-research estimates (labeled), never 'your audience is online' claims without analytics"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "VERIFIED as generator (not a true scheduler - no automation/posting; it generates a schedule plan). FEASIBILITY FLAG: cannot read account analytics for personalized best times; outputs research-based windows labeled as estimates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-188",
+  "name": "TikTok Competitor Angle Analyzer",
+  "slug": "tiktok-competitor-angle-analyzer",
+  "inventoryToolType": "analyzer",
+  "verifiedToolType": "analyzer",
+  "engine": "text-analysis",
+  "inputs": [
+   "pastedCompetitorPost (caption/transcript text)",
+   "niche"
+  ],
+  "outputs": [
+   "angle breakdown: hook type, content angle, CTA, gaps/opportunities"
+  ],
+  "validation": [
+   "pastedCompetitorPost non-empty"
+  ],
+  "edgeCases": [
+   "user asks to 'analyze @handle': tool refuses to fetch accounts; requires pasted text"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: manual-paste only; cannot look up TikTok accounts or scrape posts. Honest subset only.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-189",
+  "name": "TikTok Viral Format Library",
+  "slug": "tiktok-viral-format-library",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "formatCategory (challenge|story|tutorial|trend-jack|series)"
+  ],
+  "outputs": [
+   "curated format entries: setup, beats, examples structure, when-to-use"
+  ],
+  "validation": [
+   "formatCategory one of 5 options"
+  ],
+  "edgeCases": [
+   "user asks 'what is viral right now': tool refuses; library is evergreen formats, not live virality data"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "FEASIBILITY FLAG: static evergreen format library. Must never claim live 'currently viral' formats without data source.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-190",
+  "name": "TikTok UGC Script Builder",
+  "slug": "tiktok-ugc-script-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "brandVoice",
+   "videoLength (15|30|60)"
+  ],
+  "outputs": [
+   "UGC-style script: hook, demo beats, testimonial lines, CTA"
+  ],
+  "validation": [
+   "productName non-empty",
+   "videoLength one of 15/30/60"
+  ],
+  "edgeCases": [
+   "sponsored UGC: inserts #ad disclosure"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Script templates.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok maximum video length (in-app recording / standard upload)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-191",
+  "name": "TikTok Shop Title Optimizer",
+  "slug": "tiktok-shop-title-optimizer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "keywords (list)"
+  ],
+  "outputs": [
+   "optimized titles: keyword-first variants, all <= 255 chars"
+  ],
+  "validation": [
+   "output titles each <= 255 chars (Shop product-name limit)",
+   "no keyword stuffing: max 3 repetitions check"
+  ],
+  "edgeCases": [
+   "non-English characters: warns per WooCommerce-documented Shop guideline"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Rule-based title assembly; 255-char cap enforced from platform rule.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok Shop product name character limit"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-192",
+  "name": "TikTok Shop Description Writer",
+  "slug": "tiktok-shop-description-writer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "features (list)"
+  ],
+  "outputs": [
+   "structured description: hook, benefits, specs, what's-included, keywords"
+  ],
+  "validation": [
+   "description <= 10000 chars (Shop description guideline)",
+   "features non-empty"
+  ],
+  "edgeCases": [
+   "IP-sensitive terms (dupe/brand names): flags with policy reminder"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template descriptions; policy reminders from published guidelines.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok Shop product name character limit"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-193",
+  "name": "TikTok Affiliate Review Script",
+  "slug": "tiktok-affiliate-review-script",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "productName",
+   "experienceNotes"
+  ],
+  "outputs": [
+   "honest review script: hook, pros/cons, demo, affiliate CTA"
+  ],
+  "validation": [
+   "productName non-empty"
+  ],
+  "edgeCases": [
+   "user has not tried product: forces 'first-impressions/unboxing' framing, never invents experience claims; #ad disclosure inserted"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Script templates; honesty constraints built in.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-194",
+  "name": "TikTok Ad Hook Writer",
+  "slug": "tiktok-ad-hook-writer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "productName",
+   "angle (problem|result|curiosity|offer)"
+  ],
+  "outputs": [
+   "array of ad hook lines with opening-3-seconds framing"
+  ],
+  "validation": [
+   "angle one of 4 options"
+  ],
+  "edgeCases": [
+   "claims in hooks: flags unverifiable superlatives ('best', '#1') for user review"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Hook templates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-195",
+  "name": "TikTok Giveaway Planner",
+  "slug": "tiktok-giveaway-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "prize",
+   "durationDays",
+   "entryMethod"
+  ],
+  "outputs": [
+   "giveaway plan: rules text, entry mechanics, announcement + winner scripts, timeline"
+  ],
+  "validation": [
+   "durationDays 1-30"
+  ],
+  "edgeCases": [
+   "legal: adds 'check local giveaway laws; no purchase necessary' reminder; tool is not legal advice"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Plan templates with legal reminder.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-196",
+  "name": "TikTok Q&A Session Kit",
+  "slug": "tiktok-q-a-session-kit",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "template",
+  "inputs": [
+   "niche",
+   "sessionType (live|video-comments)"
+  ],
+  "outputs": [
+   "question bank + run-of-show: warm-up, rapid-fire, deep-dive, CTA"
+  ],
+  "validation": [
+   "sessionType one of 2 options"
+  ],
+  "edgeCases": [
+   "<1,000 followers + live chosen: eligibility banner (tool-159 pattern)"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Template kit.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok LIVE broadcast eligibility (followers + age)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-197",
+  "name": "TikTok Behind-the-Scenes Planner",
+  "slug": "tiktok-behind-the-scenes-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "businessType",
+   "niche"
+  ],
+  "outputs": [
+   "BTS content plan: moments to film, captions, posting cadence"
+  ],
+  "validation": [
+   "businessType non-empty"
+  ],
+  "edgeCases": [
+   "no business: switches to creator-personal BTS track"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Plan templates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-198",
+  "name": "TikTok Caption Hashtag Mixer",
+  "slug": "tiktok-caption-hashtag-mixer",
+  "inventoryToolType": "generator",
+  "verifiedToolType": "generator",
+  "engine": "wordbank",
+  "inputs": [
+   "niche",
+   "captionTopic"
+  ],
+  "outputs": [
+   "hashtag sets: niche + broad + community mixes, sized to fit with caption"
+  ],
+  "validation": [
+   "niche non-empty",
+   "total caption+hashtags <= 2200 chars"
+  ],
+  "edgeCases": [
+   "trending hashtags: only from user-pasted list; never invents '#trending' tags"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Word-bank mixing; enforces 2200-char envelope including hashtags.",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok caption character limit (video posts)"
+  ],
+  "possibleDuplicateOf": [
+   "tool-202",
+   "tool-243"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-199",
+  "name": "TikTok Series Trailer Script Builder",
+  "slug": "tiktok-series-trailer-script-builder",
+  "inventoryToolType": "builder",
+  "verifiedToolType": "builder",
+  "engine": "template",
+  "inputs": [
+   "seriesTitle",
+   "episodeTopics (list)"
+  ],
+  "outputs": [
+   "trailer script: tease beats per episode, montage cues, subscribe CTA"
+  ],
+  "validation": [
+   "seriesTitle non-empty",
+   "episodeTopics 2-20"
+  ],
+  "edgeCases": [
+   "spoiler control: tease beats avoid revealing outcomes unless user opts in"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Script templates.",
+  "formulaRef": "",
+  "platformRulesRef": [],
+  "possibleDuplicateOf": [
+   "tool-155"
+  ],
+  "isInteractive": true,
+  "typeCorrected": false
+ },
+ {
+  "toolId": "tool-200",
+  "name": "TikTok Live Shopping Script Planner",
+  "slug": "tiktok-live-shopping-script-planner",
+  "inventoryToolType": "planner",
+  "verifiedToolType": "planner",
+  "engine": "template",
+  "inputs": [
+   "products (list)",
+   "liveDurationMin"
+  ],
+  "outputs": [
+   "live-shopping run-of-show: product segments, price-drop moments, pin-product cues, urgency CTAs"
+  ],
+  "validation": [
+   "products non-empty",
+   "liveDurationMin 10-240"
+  ],
+  "edgeCases": [
+   "Shop availability: notes tool does not connect to TikTok Shop; user confirms product links manually"
+  ],
+  "clientSideFeasible": true,
+  "feasibilityNote": "Plan templates; no Shop integration (honest gap).",
+  "formulaRef": "",
+  "platformRulesRef": [
+   "TikTok LIVE broadcast eligibility (followers + age)"
+  ],
+  "possibleDuplicateOf": [],
+  "isInteractive": true,
+  "typeCorrected": false
+ }
+]
