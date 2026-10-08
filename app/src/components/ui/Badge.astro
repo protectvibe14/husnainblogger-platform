@@ -1,0 +1,54 @@
+---
+/**
+ * Badge.astro — status badge (scorer/analyzer results: Good / Fair / Poor).
+ * Owner: MA1-DesignSystem.
+ *
+ * ACCESSIBILITY.md R9: color is NEVER the carrier — `label` (visible text)
+ * is required and an icon is always rendered with it (1.4.1). There is no
+ * icon-less, text-less, or color-only badge mode.
+ */
+interface Props {
+  /** Visible text, e.g. "Good", "Needs work". REQUIRED. */
+  label: string;
+  tone: "success" | "warning" | "error" | "info" | "neutral";
+  class?: string;
+}
+
+const { label, tone, class: cls } = Astro.props;
+if (!label || !label.trim()) {
+  throw new Error("Badge: `label` is required — badges must have visible text (R9).");
+}
+
+const ICONS: Record<Props["tone"], string> = {
+  success: '<path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+  warning: '<path d="M8 2.5 14.5 13.5h-13L8 2.5Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M8 6.5v3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="8" cy="11.5" r="1" fill="currentColor"/>',
+  error: '<circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M5.75 5.75l4.5 4.5M10.25 5.75l-4.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>',
+  info: '<circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M8 7.25v3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/>',
+  neutral: '<circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.75"/>',
+};
+---
+<span class:list={["hb-badge", `hb-badge--${tone}`, cls]}>
+  <svg class="hb-badge__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" set:html={ICONS[tone]} />
+  <span>{label}</span>
+</span>
+
+<style>
+  .hb-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: var(--touch-target);
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    border-radius: var(--radius-pill);
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .hb-badge__icon { flex: none; width: 1rem; height: 1rem; }
+  .hb-badge--success { background: var(--color-success-bg); color: var(--color-on-success-bg); border-color: var(--color-success); }
+  .hb-badge--warning { background: var(--color-warning-bg); color: var(--color-on-warning-bg); border-color: var(--color-warning); }
+  .hb-badge--error   { background: var(--color-error-bg);   color: var(--color-on-error-bg);   border-color: var(--color-error); }
+  .hb-badge--info    { background: var(--color-info-bg);    color: var(--color-on-info-bg);    border-color: var(--color-info); }
+  .hb-badge--neutral { background: var(--color-surface);    color: var(--color-text);          border-color: var(--color-border-strong); }
+</style>
