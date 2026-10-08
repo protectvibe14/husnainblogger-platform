@@ -1,0 +1,298 @@
+{
+ "category": "Replacements",
+ "categoryName": "Lead-approved replacements (ids 501+)",
+ "toolCount": 6,
+ "tools": [
+  {
+   "toolId": "tool-501",
+   "name": "Pinterest Board Cover Maker",
+   "slug": "pinterest-board-cover-maker",
+   "categoryCode": "H",
+   "inventoryToolType": "builder",
+   "verifiedToolType": "builder",
+   "typeCorrected": false,
+   "engine": "canvas-template-builder",
+   "inputs": [
+    {
+     "name": "boardName",
+     "type": "string",
+     "required": true,
+     "validation": "1-65 chars"
+    },
+    {
+     "name": "palette",
+     "type": "choice",
+     "required": false,
+     "validation": "preset palettes"
+    },
+    {
+     "name": "style",
+     "type": "choice",
+     "required": false,
+     "validation": "preset styles"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "coverPng",
+     "type": "download"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "Empty board name rejected",
+    "Export 1000x1500 PNG"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  },
+  {
+   "toolId": "tool-502",
+   "name": "UGC Portfolio Page Builder",
+   "slug": "ugc-portfolio-page-builder",
+   "categoryCode": "J",
+   "inventoryToolType": "builder",
+   "verifiedToolType": "builder",
+   "typeCorrected": false,
+   "engine": "page-builder",
+   "inputs": [
+    {
+     "name": "creatorName",
+     "type": "string",
+     "required": true,
+     "validation": "non-empty, max 80"
+    },
+    {
+     "name": "niches",
+     "type": "string[]",
+     "required": true,
+     "validation": "1-10 items"
+    },
+    {
+     "name": "samples",
+     "type": "object[]",
+     "required": false,
+     "validation": "links + captions"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "portfolioHtml",
+     "type": "download"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "No samples still renders valid page",
+    "XSS: all user text escaped"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  },
+  {
+   "toolId": "tool-503",
+   "name": "Creator Pitch Deck Outline Generator",
+   "slug": "creator-pitch-deck-outline-generator",
+   "categoryCode": "J",
+   "inventoryToolType": "generator",
+   "verifiedToolType": "generator",
+   "typeCorrected": false,
+   "engine": "template-generator",
+   "inputs": [
+    {
+     "name": "niche",
+     "type": "string",
+     "required": true,
+     "validation": "non-empty"
+    },
+    {
+     "name": "audienceSize",
+     "type": "string",
+     "required": false,
+     "validation": "free text"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "deckOutline",
+     "type": "markdown"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "Template-based, not AI-generated — honesty note required"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  },
+  {
+   "toolId": "tool-504",
+   "name": "Sponsorship Negotiation Script Generator",
+   "slug": "sponsorship-negotiation-script-generator",
+   "categoryCode": "J",
+   "inventoryToolType": "generator",
+   "verifiedToolType": "generator",
+   "typeCorrected": false,
+   "engine": "template-generator",
+   "inputs": [
+    {
+     "name": "brandName",
+     "type": "string",
+     "required": true,
+     "validation": "non-empty"
+    },
+    {
+     "name": "askAmount",
+     "type": "number",
+     "required": false,
+     "validation": "positive"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "negotiationScript",
+     "type": "text"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "Template-based; not legal advice"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  },
+  {
+   "toolId": "tool-505",
+   "name": "Blog Income Stream Diversification Planner",
+   "slug": "blog-income-stream-diversification-planner",
+   "categoryCode": "B",
+   "inventoryToolType": "planner",
+   "verifiedToolType": "planner",
+   "typeCorrected": false,
+   "engine": "planner",
+   "inputs": [
+    {
+     "name": "currentStreams",
+     "type": "string[]",
+     "required": true,
+     "validation": "1+ selected"
+    },
+    {
+     "name": "monthlyRevenue",
+     "type": "number",
+     "required": false,
+     "validation": "non-negative"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "diversificationPlan",
+     "type": "structured"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "Revenue figures are user assumptions; outputs labeled estimates"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  },
+  {
+   "toolId": "tool-506",
+   "name": "Affiliate Link Name Generator",
+   "slug": "affiliate-link-name-generator",
+   "categoryCode": "B",
+   "inventoryToolType": "generator",
+   "verifiedToolType": "generator",
+   "typeCorrected": false,
+   "engine": "slug-generator",
+   "inputs": [
+    {
+     "name": "productName",
+     "type": "string",
+     "required": true,
+     "validation": "non-empty, max 100"
+    },
+    {
+     "name": "count",
+     "type": "number",
+     "required": false,
+     "validation": "1-50"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "slugs",
+     "type": "string[]"
+    }
+   ],
+   "validation": [
+    "invalid input rejected with message"
+   ],
+   "edgeCases": [
+    "Slug-safe charset only; dedupe within batch"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "",
+   "isInteractive": true,
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "status": "BACKLOG",
+   "version": "0.1.0",
+   "addedDate": "2026-10-01",
+   "addedReason": "Lead-approved replacement per LEAD_DECISIONS.md"
+  }
+ ],
+ "addedDate": "2026-10-01"
+}
