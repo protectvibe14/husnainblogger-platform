@@ -1,0 +1,155 @@
+---
+/**
+ * ScorerTemplate.astro — checklist inputs → 0–100 score + band + tips.
+ *
+ * Serves toolType: scorer (9 tools).
+ *
+ * Contract: question inputs (selects or numbers) via DS Field components;
+ * the TOOL LOGIC SLOT returns { score: 0-100, band: label, tips: string[] }.
+ * The band renders as TEXT with an icon (never color-only, a11y 1.4.1/R9);
+ * the score is real text, not a canvas-only gauge. Demo honesty rule: the
+ * demo is a checklist-based estimate and says so — real tools must label
+ * what their score actually measures and never imply certification.
+ *
+ * MA2: replace `demoRun` (and DEMO_BANDS) below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { ScorerTemplateProps, ScorerBand } from './types.ts';
+
+interface Props extends ScorerTemplateProps {}
+const { tool, content, relatedTools = [], bands, freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_QUESTIONS = [
+  'Has a clear target keyword in the title',
+  'Answers the search intent in the first 100 words',
+  'Uses descriptive subheadings (H2/H3)',
+  'Includes at least one original example or screenshot',
+  'Ends with a clear next step for the reader',
+];
+const DEMO_INPUTS: ToolInput[] = DEMO_QUESTIONS.map((q, i) => ({
+  id: `q${i + 1}`,
+  label: q,
+  type: 'select',
+  required: true,
+  options: ['Yes', 'Partially', 'No'],
+}));
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'score', label: 'Readiness score', type: 'number', description: 'Checklist-based estimate, 0–100.' },
+  { id: 'band', label: 'Rating', type: 'text' },
+  { id: 'tips', label: 'How to improve', type: 'list' },
+];
+const DEMO_BANDS: ScorerBand[] = [
+  { min: 80, max: 100, label: 'Strong', tone: 'good', tip: 'Publish it — then track how it performs and iterate.' },
+  { min: 50, max: 79, label: 'Getting there', tone: 'ok', tip: 'Fix the "No" answers above before publishing.' },
+  { min: 0, max: 49, label: 'Needs work', tone: 'poor', tip: 'Rework the draft against each checklist item.' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+const activeBands = bands ?? DEMO_BANDS;
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+  bands: activeBands,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="scorer">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      {inputs.map((input) => (
+        <Field
+          id={`field-${tool.toolId}-${input.id}`}
+          name={input.id}
+          label={input.label}
+          type={input.type === 'select' ? 'select' : input.type === 'textarea' ? 'textarea' : input.type === 'number' ? 'number' : input.type === 'boolean' ? 'checkbox' : input.type === 'date' ? 'date' : input.type === 'url' ? 'url' : 'text'}
+          required={input.required}
+          hint={input.placeholder}
+          options={input.options}
+        />
+      ))}
+
+      <div class="hb-form-actions">
+        <Button type="submit" variant="primary">Score it</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Score results"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: checklist estimate (Yes=2, Partially=1, No=0 → 0–100). Real tools
+   * return { score: 0–100, band: string, tips: string[] } from their own
+   * rubric. Never imply certification or guarantee.
+   * ======================================================================= */
+  interface DemoBand { min: number; max: number; label: string; tip: string }
+  function demoRun(values: ToolRunValues, bands: DemoBand[], questionIds: string[]): ToolRunResult {
+    const points: Record<string, number> = { Yes: 2, Partially: 1, No: 0 };
+    let earned = 0;
+    const tips: string[] = [];
+    for (const id of questionIds) {
+      const answer = String(values[id] ?? '');
+      earned += points[answer] ?? 0;
+      if ((points[answer] ?? 0) < 2) tips.push(`Improve: ${id} — answered "${answer || '—'}".`);
+    }
+    const max = questionIds.length * 2;
+    const score = max === 0 ? 0 : Math.round((earned / max) * 100);
+    const band = bands.find((b) => score >= b.min && score <= b.max) ?? bands[bands.length - 1];
+    if (band) tips.push(band.tip);
+    return {
+      ok: true,
+      values: {
+        score,
+        band: `${band?.label ?? '—'} (${score}/100) — checklist estimate, not a guarantee.`,
+        tips,
+      },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+  const questionIds = (config.inputs as Array<{ id: string }>).map((i) => i.id);
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? ((values: ToolRunValues) => demoRun(values, config.bands ?? [], questionIds)),
+    resultHeading: 'Your score',
+  });
+</script>
