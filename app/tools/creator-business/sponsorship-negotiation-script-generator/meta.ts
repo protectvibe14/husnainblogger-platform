@@ -1,0 +1,124 @@
+import type { ToolInput, ToolOutput } from '../../../src/lib/registry/types.ts';
+import type { ToolContent } from '../../../src/templates/types.ts';
+
+const SLUG = 'sponsorship-negotiation-script-generator';
+const CANONICAL = `https://husnainblogger.com/tools/creator-business/${SLUG}/`;
+const NAME = 'Sponsorship Negotiation Script Generator';
+const DESCRIPTION =
+  'Generate free sponsorship negotiation scripts — counter-offer, value-justification, and terms templates personalized with your brand and rate. Get yours now.';
+
+export const inputs: ToolInput[] = [
+  {
+    id: 'brandName',
+    label: 'Brand name',
+    type: 'text',
+    required: true,
+    placeholder: 'e.g. GlowCo',
+    validation: { max: 80 },
+  },
+  {
+    id: 'askAmount',
+    label: 'Your ask amount in USD (optional)',
+    type: 'number',
+    required: false,
+    placeholder: 'e.g. 1500',
+    validation: { min: 0.01 },
+  },
+];
+
+export const outputs: ToolOutput[] = [
+  { id: 'negotiationScript', label: 'Negotiation scripts', type: 'copy' },
+];
+
+export const content: ToolContent = {
+  title: 'Sponsorship Negotiation Script 2026 – Free | HusnainBlogger',
+  description: DESCRIPTION,
+  howTo: [
+    "Enter the brand name you're negotiating with.",
+    'Optionally enter your ask amount in USD.',
+    'Click generate to get 3 script templates.',
+    'Pick the script matching your situation: counter-offer, value justification, or terms.',
+    'Personalize the bracketed parts with your real deliverables and numbers, then send.',
+  ],
+  methodology:
+    'Three fixed script templates (counter-offer email, value-justification reply, usage-rights and payment-terms follow-up) are personalized with your brand name and ask amount. Amounts are formatted deterministically in USD; with no amount given, an honest [your rate] placeholder is kept instead of inventing one. These are template scripts for guidance only — not legal or financial advice.',
+  examples: [
+    {
+      title: 'Counter-offer at $1,500',
+      inputs: { brandName: 'GlowCo', askAmount: 1500 },
+      note: 'All three scripts personalized with the brand and your rate.',
+    },
+    {
+      title: 'No rate decided yet',
+      inputs: { brandName: 'GlowCo' },
+      note: 'Scripts keep an honest [your rate] placeholder — nothing is invented.',
+    },
+  ],
+  faqs: [
+    {
+      question: 'What is the best sponsorship negotiation script?',
+      answer:
+        'The best script is short, specific, and anchored to deliverables — not just a number. This free tool gives you three: a counter-offer email, a value-justification reply, and a usage-rights and payment-terms follow-up.',
+    },
+    {
+      question: 'Is there a free sponsorship negotiation script?',
+      answer:
+        'Yes — this script generator is free. Enter the brand name and your ask amount and get all three template scripts instantly, no sign-up required.',
+    },
+    {
+      question: 'How to use sponsorship negotiation?',
+      answer:
+        'Pick the script matching your situation, personalize the bracketed parts with your real deliverables and numbers, and send it. Start from your ask, justify with value, and lock terms in writing.',
+    },
+    {
+      question: 'How does the sponsorship negotiation script work?',
+      answer:
+        'Enter your details using the inputs above and the sponsorship negotiation script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+    },
+    {
+      question: 'Is the sponsorship negotiation script free to use?',
+      answer:
+        'Yes - this sponsorship negotiation script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+    },
+    {
+      question: 'What is a sponsorship negotiation script?',
+      answer:
+        'A sponsorship negotiation script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+    },
+    {
+      question: 'Do I need to create an account to use the sponsorship negotiation script?',
+      answer:
+        'No account needed. Open the sponsorship negotiation script, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+    },
+  ],
+  assumptions: [
+    'These are template scripts for guidance only — not legal or financial advice.',
+    'No rates are suggested or estimated; every amount comes from your own input.',
+    'Negotiation outcomes depend on the brand, your audience, and the deal — no results are guaranteed.',
+  ],
+  jsonLd: [
+    {
+      '@type': 'SoftwareApplication',
+      name: NAME,
+      url: CANONICAL,
+      applicationCategory: 'Utilities',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      description: DESCRIPTION,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Sponsorship Negotiation Script 2026 – Free | HusnainBlogger', item: 'https://husnainblogger.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'Creator Business Tools',
+          item: 'https://husnainblogger.com/tools/creator-business/',
+        },
+        { '@type': 'ListItem', position: 4, name: NAME, item: CANONICAL },
+      ],
+    },
+  ],
+};
