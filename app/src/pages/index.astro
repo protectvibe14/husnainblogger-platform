@@ -1,0 +1,68 @@
+---
+/**
+ * index.astro — THE LANDING PAGE (served at /tools/, the site home).
+ * Owner: Landing.
+ *
+ * Composition only: this file owns NO styling and NO copy beyond
+ * assembly. Sections live in src/components/landing/:
+ *   LandingHero      → hero + stats
+ *   CategoryShowcase → 11 category cards
+ *   ValueProps       → why-us differentiators
+ *   HowItWorks       → 3-step strip
+ *   LandingFaq       → FAQ + final CTA
+ * Page shell (head, header, footer) comes from layouts/BaseLayout.astro.
+ */
+import { CATEGORIES } from "../lib/registry/types";
+import { byCategory } from "../data/registry.generated";
+import { toolsIndexHref } from "../../../config/site.config";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LandingHero from "../components/landing/LandingHero.astro";
+import CategoryShowcase from "../components/landing/CategoryShowcase.astro";
+import ValueProps from "../components/landing/ValueProps.astro";
+import HowItWorks from "../components/landing/HowItWorks.astro";
+import LandingFaq from "../components/landing/LandingFaq.astro";
+
+const taglines: Record<string, string> = {
+  "ai-tools": "AI generators, writers & helpers",
+  "ai-workflows": "Automate with n8n, Make & Zapier",
+  "blogging-seo": "Rank higher, write better",
+  "creator-business": "Contracts, pricing & invoices",
+  "email-marketing": "Subjects, newsletters & copy",
+  "instagram": "Bios, hashtags & captions",
+  "make-money": "Revenue, affiliates & sponsors",
+  "pinterest-social": "Pins, posts & social copy",
+  "tiktok": "Hooks, captions & growth",
+  "video-editing": "Subtitles, scripts & editing",
+  "youtube": "Titles, tags & channel growth",
+};
+
+const categories = CATEGORIES.map((c) => ({
+  name: c.name,
+  slug: c.slug,
+  count: (byCategory[c.slug] ?? []).length,
+  tagline: taglines[c.slug] ?? "Free creator tools",
+}));
+
+const toolCount = categories.reduce((n, c) => n + c.count, 0);
+const title = `Free Online Tools for Creators — ${toolCount} Tools | HusnainBlogger`;
+const description = `${toolCount} free online tools for YouTubers, TikTokers, bloggers, and freelancers across ${categories.length} categories. No signup, runs in your browser.`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={toolsIndexHref()}
+>
+  <meta property="og:url" content={toolsIndexHref()} slot="head" />
+  <meta name="twitter:card" content="summary_large_image" slot="head" />
+  <meta name="twitter:title" content={title} slot="head" />
+  <meta name="twitter:description" content={description} slot="head" />
+
+  <main>
+    <LandingHero toolCount={toolCount} categoryCount={categories.length} />
+    <CategoryShowcase categories={categories} />
+    <ValueProps />
+    <HowItWorks />
+    <LandingFaq />
+  </main>
+</BaseLayout>
