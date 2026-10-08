@@ -1,0 +1,57 @@
+{
+ "platform": "fiverr",
+ "rules": [
+  {
+   "ruleId": "fiverr-seller-commission",
+   "platform": "fiverr",
+   "rule": "Fiverr seller commission",
+   "value": "20% flat on all freelancer earnings, including tips",
+   "valueUnit": "text",
+   "source": "jobbers.io 2026 comparison (cites Fiverr Help Center); smartremotegigs 2026",
+   "sourceUrl": "https://www.jobbers.io/upwork-vs-fiverr-vs-freelancer-com-vs-zero-commission-platforms-complete-2025-comparison/",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-067"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "fiverr-buyer-service-fee",
+   "platform": "fiverr",
+   "rule": "Fiverr buyer service fee",
+   "value": "~5.5% (+ small-order fee), buyer-paid",
+   "valueUnit": "text",
+   "source": "jobbers.io 2026 comparison",
+   "sourceUrl": "https://www.jobbers.io/upwork-vs-fiverr-vs-freelancer-com-vs-zero-commission-platforms-complete-2025-comparison/",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-067"
+   ],
+   "notes": "Does not reduce seller payout.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
