@@ -1,0 +1,135 @@
+{
+ "platform": "gumroad",
+ "rules": [
+  {
+   "ruleId": "gumroad-direct-sale",
+   "platform": "gumroad",
+   "rule": "Gumroad direct sale fee",
+   "value": "10% + $0.50 per transaction; card processing (2.9% + $0.30) charged ON TOP",
+   "valueUnit": "text",
+   "source": "checkoutpage Gumroad fees 2026; honorbox (checked 2026-07-19/20 vs Gumroad pricing page)",
+   "sourceUrl": "https://checkoutpage.com/blog/gumroad-fees",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-065"
+   ],
+   "notes": "Direct sale via own link/storefront.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "gumroad-discover-sale",
+   "platform": "gumroad",
+   "rule": "Gumroad Discover marketplace fee",
+   "value": "30% flat, payment processing included",
+   "valueUnit": "text",
+   "source": "checkoutpage Gumroad fees 2026",
+   "sourceUrl": "https://checkoutpage.com/blog/gumroad-fees",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-065"
+   ],
+   "notes": "No opt-out once product is publicly listed.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "gumroad-monthly-fee",
+   "platform": "gumroad",
+   "rule": "Gumroad monthly fee",
+   "value": 0,
+   "valueUnit": "usd",
+   "source": "checkoutpage Gumroad fees 2026",
+   "sourceUrl": "https://checkoutpage.com/blog/gumroad-fees",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-065"
+   ],
+   "notes": "Single plan for everyone.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "gumroad-merchant-of-record",
+   "platform": "gumroad",
+   "rule": "Gumroad merchant-of-record status",
+   "value": "Merchant of Record since Jan 2025 — calculates/remits sales tax, VAT, GST worldwide",
+   "valueUnit": "text",
+   "source": "medium.com Gumroad vs Etsy 2026",
+   "sourceUrl": "https://medium.com/financial-strategy/gumroad-vs-etsy-which-is-better-for-beginners-in-2026-cba8e01eb712",
+   "effectiveDate": "2025-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-065"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "gumroad-refunds",
+   "platform": "gumroad",
+   "rule": "Gumroad fee on refunds",
+   "value": "Gumroad keeps its platform fee even on full refunds",
+   "valueUnit": "text",
+   "source": "medium.com Gumroad vs Etsy 2026",
+   "sourceUrl": "https://medium.com/financial-strategy/gumroad-vs-etsy-which-is-better-for-beginners-in-2026-cba8e01eb712",
+   "effectiveDate": "2026-07-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-065"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
