@@ -1,0 +1,168 @@
+---
+/**
+ * PlannerTemplate.astro — goal inputs → a dated step-by-step plan table.
+ *
+ * Serves toolType: planner (63 tools).
+ *
+ * Contract: inputs via DS Field components; the TOOL LOGIC SLOT returns a
+ * plan table ({ columns, rows }) plus optional scalar summaries
+ * (e.g. total tasks). The table renders in a scrollable region with
+ * caption + headers (a11y 1.4.10). Dates the demo generates are computed
+ * from the current date and labeled as a suggested schedule — real tools
+ * must do the same, never present guesses as commitments.
+ *
+ * MA2: replace `demoRun` below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { ToolTemplatePropsV1 } from './types.ts';
+
+interface Props extends ToolTemplatePropsV1 {}
+const { tool, content, relatedTools = [], freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_INPUTS: ToolInput[] = [
+  { id: 'topic', label: 'What are you planning?', type: 'text', required: true, placeholder: 'e.g. launch a newsletter' },
+  { id: 'weeks', label: 'Number of weeks', type: 'number', required: true, placeholder: 'e.g. 4', validation: { min: 1, max: 12 } },
+  { id: 'sessionsPerWeek', label: 'Sessions per week', type: 'number', required: true, placeholder: 'e.g. 3', validation: { min: 1, max: 7 } },
+];
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'totalSessions', label: 'Total sessions', type: 'number' },
+  { id: 'plan', label: 'Your plan', type: 'table', description: 'Suggested schedule starting next Monday.' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="planner">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      <div class="hb-field-grid">
+        {inputs.map((input) => (
+          <Field
+            id={`field-${tool.toolId}-${input.id}`}
+            name={input.id}
+            label={input.label}
+            type={CONTROL[input.type] ?? 'text'}
+            required={input.required}
+            hint={input.placeholder}
+            options={input.options}
+            min={input.validation?.min}
+            max={input.validation?.max}
+            rows={input.type === 'textarea' ? 4 : undefined}
+            step={input.type === 'number' ? '1' : undefined}
+            inputMode={input.type === 'number' ? 'numeric' : undefined}
+          />
+        ))}
+      </div>
+
+      <div class="hb-form-actions">
+        <Button type="submit" variant="primary">Build my plan</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Plan results"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: evenly spreads sessions across weeks starting next Monday.
+   * Dates are a SUGGESTED schedule, labeled as such. Real tools return
+   * { <scalars>, plan: { columns, rows } }.
+   * ======================================================================= */
+  function demoRun(values: ToolRunValues): ToolRunResult {
+    const topic = String(values.topic ?? '').trim();
+    const weeks = Math.min(12, Math.max(1, Math.round(Number(values.weeks) || 4)));
+    const perWeek = Math.min(7, Math.max(1, Math.round(Number(values.sessionsPerWeek) || 3)));
+    if (!topic) return { ok: false, error: 'Describe what you are planning.' };
+    const tasks = [
+      'Research and outline',
+      'Create the core draft',
+      'Review and improve',
+      'Publish and share',
+      'Measure and iterate',
+    ];
+    const start = new Date();
+    start.setDate(start.getDate() + ((8 - start.getDay()) % 7 || 7)); // next Monday
+    const rows: string[][] = [];
+    let n = 0;
+    for (let w = 1; w <= weeks; w++) {
+      for (let s = 0; s < perWeek; s++) {
+        const d = new Date(start);
+        d.setDate(d.getDate() + (w - 1) * 7 + Math.round((s * 7) / perWeek));
+        n++;
+        rows.push([
+          `Week ${w}`,
+          d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+          `${tasks[(n - 1) % tasks.length]} — ${topic}`,
+        ]);
+      }
+    }
+    return {
+      ok: true,
+      values: {
+        totalSessions: n,
+        plan: { columns: ['Week', 'Date', 'Session'], rows },
+      },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? demoRun,
+    resultHeading: 'Your plan',
+  });
+</script>
