@@ -1,0 +1,128 @@
+---
+/**
+ * CopyButton.astro — copy-to-clipboard button with a11y contract built in.
+ * Owner: MA1-DesignSystem.
+ *
+ * REQUIRED prop: `what` — names WHAT is being copied, e.g.
+ * what="keyword list". The accessible name becomes "Copy keyword list to
+ * clipboard" (unique per button — ACCESSIBILITY.md R2; the review gate
+ * rejects a page where two copy buttons share a name).
+ *
+ * Visible text is "Copy" (swaps to "Copied" for 3s on success); the
+ * aria-label starts with "Copy" so 2.5.3 Label-in-Name holds.
+ *
+ * Source text: pass `value` (string) OR `targetId` (id of the element whose
+ * textContent is copied). `value` wins when both are given.
+ *
+ * Feedback (ACCESSIBILITY.md §4.4):
+ *  - success: visible "Copied ✓" + announce.polite("<What> copied to clipboard.")
+ *  - failure (clipboard API denied): announce.assertive(
+ *      "Copy failed — select the text and press Ctrl+C") + auto-selects the
+ *    target text when targetId is given.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  /** REQUIRED: what is copied, e.g. "keyword list", "result". */
+  what: string;
+  value?: string;
+  targetId?: string;
+  variant?: "primary" | "secondary" | "tertiary";
+  id?: string;
+  class?: string;
+}
+
+const { what, value, targetId, variant = "secondary", id: idProp, class: cls } = Astro.props;
+if (!what || !what.trim()) {
+  throw new Error("CopyButton: the `what` prop is required (names what is copied).");
+}
+const id = idProp ?? nextId("copybtn");
+const label = `Copy ${what} to clipboard`;
+---
+<button
+  type="button"
+  id={id}
+  class:list={["hb-btn", `hb-btn--${variant}`, "hb-copybtn", cls]}
+  data-copy-value={value}
+  data-copy-target={targetId}
+  data-copy-what={what}
+  aria-label={label}
+>
+  <svg class="hb-btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+    <rect x="5.5" y="5.5" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M10.5 5.5v-2a1.5 1.5 0 0 0-1.5-1.5H4.5A1.5 1.5 0 0 0 3 3.5v4.5A1.5 1.5 0 0 0 4.5 9.5h1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+  <span class="hb-copybtn__text">Copy</span>
+</button>
+
+<script>
+  import { announce } from "../../lib/a11y/announce";
+
+  function selectText(el: HTMLElement): void {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const sel = window.getSelection();
+    sel?.removeAllRanges();
+    sel?.addRange(range);
+  }
+
+  async function copyText(text: string): Promise<boolean> {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch {
+      // Fallback for insecure contexts / denied permissions.
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand("copy");
+        ta.remove();
+        return ok;
+      } catch {
+        return false;
+      }
+    }
+  }
+
+  function wire(btn: HTMLButtonElement): void {
+    if (btn.dataset.hbWired) return;
+    btn.dataset.hbWired = "1";
+    const textEl = btn.querySelector(".hb-copybtn__text") as HTMLElement | null;
+    const original = textEl?.textContent ?? "Copy";
+    let timer: number | undefined;
+
+    btn.addEventListener("click", async () => {
+      const what = btn.dataset.copyWhat ?? "text";
+      const value = btn.dataset.copyValue;
+      const targetId = btn.dataset.copyTarget;
+      const target = targetId ? document.getElementById(targetId) : null;
+      const text = value ?? target?.textContent ?? "";
+      if (!text.trim()) {
+        announce.assertive("Nothing to copy yet.");
+        return;
+      }
+      const ok = await copyText(text);
+      if (ok) {
+        announce.polite(`${what} copied to clipboard.`);
+        if (textEl) {
+          textEl.textContent = "Copied ✓";
+          window.clearTimeout(timer);
+          timer = window.setTimeout(() => { textEl.textContent = original; }, 3000);
+        }
+      } else {
+        // Failure path (§4.4): assertive instructions + auto-select.
+        if (target) selectText(target);
+        announce.assertive("Copy failed — select the text and press Ctrl+C.");
+      }
+    });
+  }
+
+  // Wire every CopyButton on the page (idempotent; survives multiple
+  // component instances and Astro's script dedup).
+  document.querySelectorAll<HTMLButtonElement>(".hb-copybtn").forEach(wire);
+</script>
