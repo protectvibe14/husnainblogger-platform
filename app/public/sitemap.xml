@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://husnainblogger.com/sitemaps/static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://husnainblogger.com/sitemaps/blog.xml</loc>
+    <lastmod>2024-12-04</lastmod>
+  </sitemap>
+</sitemapindex>
