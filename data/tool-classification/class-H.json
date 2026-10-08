@@ -1,0 +1,1641 @@
+{
+ "categoryCode": "H",
+ "category": "Pinterest, X & Facebook",
+ "generatedBy": "MA2 Pinterest/X/Facebook subagent",
+ "generatedDate": "2026-10-01",
+ "toolTypeLegend": {
+  "generator": "creates new text/ideas from templates",
+  "splitter": "splits/transforms user-supplied text (no generation)",
+  "checker": "validates input against rules",
+  "scorer": "heuristic score against a documented rubric",
+  "analyzer": "heuristic analysis against a documented rubric",
+  "formatter": "restructures user-supplied text",
+  "planner": "produces plans/calendars from templates + datasets",
+  "builder": "produces a downloadable artifact (HTML/PNG)"
+ },
+ "toolTypeCorrections": [
+  {
+   "toolId": "tool-372",
+   "inventoryToolType": "generator",
+   "verifiedToolType": "splitter",
+   "reason": "Splits user-supplied long text into budget-valid tweets; performs no generation."
+  }
+ ],
+ "tools": [
+  {
+   "toolId": "tool-351",
+   "name": "Pinterest Board Name Generator",
+   "slug": "pinterest-board-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "nicheKeyword (string, required)",
+    "tone (enum: seo/playful/brand, optional)",
+    "count (int 1-10, default 5)"
+   ],
+   "outputs": [
+    "boardNameCandidates: string[] (each <=100 chars, keyword-led)"
+   ],
+   "validation": [
+    "each name <=100 chars",
+    "trim leading/trailing whitespace",
+    "no duplicate names in one batch"
+   ],
+   "edgeCases": [
+    "empty keyword -> error with guidance",
+    "non-Latin keyword -> pass through unchanged",
+    "keyword already >100 chars -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Pure text generation from curated name-pattern bank; hard 100-char cap enforced client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#board-name-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-352",
+   "name": "Pinterest Board Description Generator",
+   "slug": "pinterest-board-description-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "boardName (string, required)",
+    "keywords (string[], optional)",
+    "tone (enum, optional)"
+   ],
+   "outputs": [
+    "boardDescription: string (<=500 chars, keyword-rich, natural sentences)"
+   ],
+   "validation": [
+    "description <=500 chars",
+    "keyword appears in first sentence",
+    "no keyword-stuffing pattern (comma/pipe lists rejected)"
+   ],
+   "edgeCases": [
+    "empty boardName -> error",
+    "keywords longer than budget -> trim, warn"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template + keyword-weaving; 500-char cap enforced client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#board-description-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-353",
+   "name": "Pinterest Bio Generator",
+   "slug": "pinterest-bio-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "profileFocus (string, required)",
+    "keywords (string[], optional)",
+    "cta (string, optional)"
+   ],
+   "outputs": [
+    "bioVariants: string[] (each <=160 chars)"
+   ],
+   "validation": [
+    "each variant <=160 chars",
+    "keyword included when supplied",
+    "CTA kept short enough to fit budget"
+   ],
+   "edgeCases": [
+    "focus text >160 chars -> compress or error",
+    "no keywords -> plain bio, no filler hashtags"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text-only generation; 160-char About-You cap enforced.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#profile-about-you-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-354",
+   "name": "Pinterest Profile Name Generator",
+   "slug": "pinterest-profile-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "brandOrName (string, required)",
+    "keywords (string[], optional)"
+   ],
+   "outputs": [
+    "displayNameCandidates: string[] (each <=65 chars)",
+    "usernameSuggestions: string[] (3-30 chars, [a-z0-9_], no spaces)"
+   ],
+   "validation": [
+    "display name <=65 chars",
+    "username 3-30 chars, lowercase alnum/underscore only, no spaces/symbols"
+   ],
+   "edgeCases": [
+    "brand >65 chars -> keyword-first truncation with warning",
+    "taken-username check impossible client-side -> label 'availability must be checked on Pinterest'"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation + format rules; availability checking explicitly out of scope.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#profile-display-name-character-limit",
+    "pinterest#profile-username-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-355",
+   "name": "Pinterest Pin Image Idea Generator",
+   "slug": "pinterest-pin-image-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "pinTopic (string, required)",
+    "pinFormat (enum: standard/idea/video, default standard)",
+    "count (int 1-10)"
+   ],
+   "outputs": [
+    "imageBriefs: {title, composition, textOverlaySuggestion, colorDirection, formatRatio}[]"
+   ],
+   "validation": [
+    "each brief tied to a supported ratio (2:3, 1:1, 9:16)",
+    "text overlay suggestion kept short (<=8 words guidance)"
+   ],
+   "edgeCases": [
+    "abstract topic with no visual anchor -> ask for sub-topic",
+    "video format -> brief includes first-frame guidance"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Outputs TEXT briefs only (concept direction), never rendered images; no image-generation claim.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#standard-pin-image-size",
+    "pinterest#idea-pin-canvas-size"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-356",
+   "name": "Pinterest Idea Pin Script Generator",
+   "slug": "pinterest-idea-pin-script-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "pageCount (int 1-20, default 5)"
+   ],
+   "outputs": [
+    "scriptPages: {pageNumber, visualDirection, onScreenText, captionLine}[]"
+   ],
+   "validation": [
+    "pageCount within 1-20",
+    "each onScreenText short enough for 9:16 readability"
+   ],
+   "edgeCases": [
+    "pageCount >20 -> clamp with warning",
+    "topic needing outbound link -> warn: idea pins carry no outbound link"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Structured script text; page cap and no-outbound-link rule are static platform facts.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#idea-pin-canvas-size",
+    "pinterest#idea-pin-maximum-pages"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-357",
+   "name": "Pinterest Keyword Combiner",
+   "slug": "pinterest-keyword-combiner",
+   "verifiedToolType": "generator",
+   "engine": "rule-based",
+   "inputs": [
+    "seedKeywords (string[], required, 1-10)",
+    "modifiers (string[] optional; defaults: how-to/best/ideas/easy/quick)",
+    "maxCombos (int, default 50)"
+   ],
+   "outputs": [
+    "keywordCombos: string[] (deduplicated, case-normalized)"
+   ],
+   "validation": [
+    "seeds non-empty",
+    "output capped at maxCombos",
+    "duplicates removed after normalization"
+   ],
+   "edgeCases": [
+    "single seed -> combos from modifiers only",
+    "modifier overlapping seed -> dedupe"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic cartesian product + dedupe; zero external data needed.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-358",
+   "name": "Pinterest SEO Title Rewriter",
+   "slug": "pinterest-seo-title-rewriter",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "draftTitle (string, required)",
+    "primaryKeyword (string, required)"
+   ],
+   "outputs": [
+    "rewrites: string[] (each <=100 chars, keyword in first 3-5 words)"
+   ],
+   "validation": [
+    "each rewrite <=100 chars",
+    "primary keyword present near front",
+    "no clickbait-only rewrites without keyword"
+   ],
+   "edgeCases": [
+    "draft already optimal -> return with 'already optimized' note",
+    "keyword >100 chars -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Rewrite variants from title-pattern bank; 'rewriter' style but inventory type 'generator' is accurate.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#pin-title-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-359",
+   "name": "Pinterest Hashtag Generator",
+   "slug": "pinterest-hashtag-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "count (int 1-20, default 10)"
+   ],
+   "outputs": [
+    "hashtags: string[] (specific > generic, 2-5 recommended for use)"
+   ],
+   "validation": [
+    "count within 1-20",
+    "tags normalized to #camelOrLower, no spaces"
+   ],
+   "edgeCases": [
+    "overly generic topic -> steer to specific tags with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Tags drawn from in-repo curated dataset; LIVE popularity/volume cannot be checked client-side -> UI must label 'curated suggestions, not live trend data'.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#hashtag-usage-guidance"
+   ],
+   "possibleDuplicateOf": [
+    "tool-198",
+    "tool-201",
+    "tool-202",
+    "tool-243",
+    "tool-375",
+    "tool-396"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-360",
+   "name": "Pinterest Alt Text Generator",
+   "slug": "pinterest-alt-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "imageDescription (string, required: what the user sees in the image)",
+    "keyword (string, optional)"
+   ],
+   "outputs": [
+    "altText: string (<=500 chars, descriptive, 1-2 keywords woven naturally)"
+   ],
+   "validation": [
+    "alt text <=500 chars",
+    "describes image content, not keyword-stuffed",
+    "no 'image of' filler prefix"
+   ],
+   "edgeCases": [
+    "user provides only a keyword, no description -> prompt for description",
+    "description >500 chars -> compress"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Accessibility-framed text generation; 500-char cap enforced.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#pin-alt-text-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-361",
+   "name": "Pinterest Pin Ratio Checker",
+   "slug": "pinterest-pin-ratio-checker",
+   "verifiedToolType": "checker",
+   "engine": "rule-based",
+   "inputs": [
+    "widthPx (number, required, >0)",
+    "heightPx (number, required, >0)"
+   ],
+   "outputs": [
+    "ratio: 'W:H' (reduced via GCD)",
+    "closestFormat: enum(standard-2:3, square-1:1, idea-9:16, long-1:2.1, off-spec)",
+    "verdict: feed-safe | cropped-in-feed | low-visibility"
+   ],
+   "validation": [
+    "inputs positive numbers",
+    "non-integer dims accepted, ratio computed on rounded values"
+   ],
+   "edgeCases": [
+    "extreme ratios (e.g. 1:10) -> 'off-spec, will crop heavily'",
+    "square input -> 'valid but low feed visibility' note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Trivial deterministic math (GCD reduction + threshold table); fully client-side.",
+   "formulaRef": "ratio-math (documented in FEAS-H.md)",
+   "platformRulesRef": [
+    "pinterest#standard-pin-image-size",
+    "pinterest#maximum-pin-height-shown-uncropped-in-feed"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "toolId": "tool-362",
+   "name": "Pinterest Fresh Pin Checklist",
+   "slug": "pinterest-fresh-pin-checklist",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "pinType (enum: standard/idea/video, default standard)"
+   ],
+   "outputs": [
+    "checklistItems: {item, why}[] (new image per URL, unique title/description, correct 2:3 ratio, keyword coverage, no reused creative)"
+   ],
+   "validation": [
+    "items specific to selected pinType"
+   ],
+   "edgeCases": [
+    "user expects guaranteed distribution boost -> disclaimer: checklist reflects creator best practice, not Pinterest's internal freshness signals"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Static checklist from curated best-practice bank; 'freshness' framed honestly (no claim to know Pinterest's internal detection).",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#standard-pin-image-size"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-363",
+   "name": "Pinterest Seasonal Content Planner",
+   "slug": "pinterest-seasonal-content-planner",
+   "verifiedToolType": "planner",
+   "engine": "template-library",
+   "inputs": [
+    "niche (string, required)",
+    "month (1-12) or quarter (Q1-Q4, required)"
+   ],
+   "outputs": [
+    "seasonalAngles: {event, leadTimeWeeks, contentAngle, keywordSeed}[]"
+   ],
+   "validation": [
+    "events drawn from in-repo seasonal-events dataset",
+    "lead time >=4 weeks flagged (Pinterest planning behavior)"
+   ],
+   "edgeCases": [
+    "niche with no seasonal hooks (e.g. evergreen B2B) -> return evergreen angles with note",
+    "dataset stale -> quarterly dataset refresh scheduled"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Static dataset + niche-angle templates; dataset ships in-repo, review quarterly.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-364",
+   "name": "Pinterest Niche Idea Generator",
+   "slug": "pinterest-niche-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "interests (string, required)",
+    "audience (string, optional: US/UK/CA/AU default per user rule)"
+   ],
+   "outputs": [
+    "nicheIdeas: {niche, angle, whyItFits}[]"
+   ],
+   "validation": [
+    "ideas Pinterest-native (visual/searchable categories preferred)"
+   ],
+   "edgeCases": [
+    "vague interests -> ask 1 clarifying pick from list",
+    "non-visual niche -> note the handicap honestly"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea generation from niche-pattern bank; no market data claimed.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-365",
+   "name": "Pinterest Content Calendar Generator",
+   "slug": "pinterest-content-calendar-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (string, required)",
+    "yearMonth (YYYY-MM, required)",
+    "pinsPerWeek (int 1-21, default 5)"
+   ],
+   "outputs": [
+    "calendar: {date, theme, pinType, keywordSeed}[]"
+   ],
+   "validation": [
+    "dates valid for the month",
+    "pin count matches pinsPerWeek x weeks",
+    "seasonal events merged from dataset"
+   ],
+   "edgeCases": [
+    "pinsPerWeek >21 -> cap with note",
+    "past month selected -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic calendar assembly from theme rotation + seasonal dataset.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-366",
+   "name": "Pinterest Pin Title A/B Scorer",
+   "slug": "pinterest-pin-title-a-b-scorer",
+   "verifiedToolType": "scorer",
+   "engine": "rule-based",
+   "inputs": [
+    "titleA (string, required)",
+    "titleB (string, required)",
+    "primaryKeyword (string, optional)"
+   ],
+   "outputs": [
+    "scores: {title, totalScore (0-100), criteria: {keywordPosition, specificity, length, actionLanguage, curiosityGap}}",
+    "winner: A|B|tie"
+   ],
+   "validation": [
+    "both titles <=100 chars (else scored with over-limit penalty + warning)",
+    "criteria weights documented and fixed"
+   ],
+   "edgeCases": [
+    "identical titles -> tie with note",
+    "titles in non-Latin script -> score with 'limited heuristic coverage' note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Heuristic rubric only; output MUST be labeled 'heuristic estimate, not a prediction of Pinterest ranking'. No fake ML/AI claim.",
+   "formulaRef": "ab-score-rubric (documented in FEAS-H.md)",
+   "platformRulesRef": [
+    "pinterest#pin-title-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "toolId": "tool-367",
+   "name": "Pinterest Link-in-Bio Page Builder",
+   "slug": "pinterest-link-in-bio-page-builder",
+   "verifiedToolType": "builder",
+   "engine": "static-export",
+   "inputs": [
+    "brandName (string, required)",
+    "links: {label, url}[] (1-20, required)",
+    "theme (enum: light/dark/brand, default light)"
+   ],
+   "outputs": [
+    "htmlFile: single-file HTML (inline CSS, no external deps) for download",
+    "previewUrl: blob preview in-browser"
+   ],
+   "validation": [
+    "all URLs valid http(s)",
+    "labels <=60 chars",
+    "file works with zero network (offline-safe)"
+   ],
+   "edgeCases": [
+    "URL without scheme -> auto-prefix https:// with note",
+    "20+ links -> cap with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Generates a downloadable static HTML page client-side (Blob download); no hosting provided. Pinterest framing = pin-CTA copy + 2:3-friendly hero guidance.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "pinterest#standard-pin-image-size"
+   ],
+   "possibleDuplicateOf": [
+    "tool-232"
+   ],
+   "isInteractive": true,
+   "differentiationLocked": "Keep-both vs tool-232 (Lead): 367 = Pinterest-specific link-in-bio builder. 232 = general. Distinct.",
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-368",
+   "name": "X Bio Generator",
+   "slug": "x-bio-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "whoYouAre (string, required)",
+    "whatYouDo (string, required)",
+    "cta (string, optional)"
+   ],
+   "outputs": [
+    "bioVariants: string[] (each <=160 chars)"
+   ],
+   "validation": [
+    "each variant <=160 chars",
+    "CTA + link-field reminder (URL goes in website field, not bio)"
+   ],
+   "edgeCases": [
+    "inputs already >160 chars -> compress with warning"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation with 160-char cap enforced.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#profile-bio-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-369",
+   "name": "X Username Generator",
+   "slug": "x-username-generator",
+   "verifiedToolType": "generator",
+   "engine": "rule-based",
+   "inputs": [
+    "baseName (string, required)",
+    "style (enum: short/professional/keyword, optional)"
+   ],
+   "outputs": [
+    "handles: string[] (each <=15 chars, [A-Za-z0-9_], no leading digit issues)"
+   ],
+   "validation": [
+    "each handle <=15 chars",
+    "charset restricted to letters/numbers/underscore",
+    "no spaces"
+   ],
+   "edgeCases": [
+    "all candidates likely taken -> note: availability must be checked on X",
+    "baseName with spaces/symbols -> sanitized variants"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Combinatorial handle generation; availability check explicitly out of scope.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#handle-username-rules"
+   ],
+   "possibleDuplicateOf": [
+    "tool-443"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-370",
+   "name": "X Tweet Idea Generator",
+   "slug": "x-tweet-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "goal (enum: engagement/traffic/followers, optional)"
+   ],
+   "outputs": [
+    "tweets: string[] (each within 280 weighted chars)"
+   ],
+   "validation": [
+    "weighted char count applied (URL=23, emoji=2)",
+    "link-in-reply best-practice note attached"
+   ],
+   "edgeCases": [
+    "topic needing >280 chars -> suggest thread tool (371) instead"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Tweet drafts validated against X weighted counting rules client-side.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-371",
+   "name": "X Thread Idea Generator",
+   "slug": "x-thread-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "tweetCount (int 2-25, default 7)"
+   ],
+   "outputs": [
+    "thread: {position, text (<=280 weighted chars), role: hook|point|cta}[]"
+   ],
+   "validation": [
+    "each tweet within 280 weighted chars",
+    "tweet 1 is a standalone hook",
+    "final tweet carries CTA"
+   ],
+   "edgeCases": [
+    "tweetCount >25 -> clamp with note (thread practicality)",
+    "topic too thin for N tweets -> reduce count with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Outline generation; numbering/budget enforced client-side.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules",
+    "x#thread-practical-length"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-372",
+   "name": "X Thread Splitter",
+   "slug": "x-thread-splitter",
+   "verifiedToolType": "splitter",
+   "engine": "rule-based",
+   "inputs": [
+    "longText (string, required)",
+    "numberingStyle (enum: 1/N | (1/N) | none, default 1/N)",
+    "reserveChars (int, default 8, for numbering marker)"
+   ],
+   "outputs": [
+    "tweets: string[] (each within 280 weighted chars incl. numbering)"
+   ],
+   "validation": [
+    "split on sentence/word boundaries, never mid-word",
+    "numbering marker budget reserved before splitting",
+    "each chunk passes weighted count"
+   ],
+   "edgeCases": [
+    "text with very long unbreakable tokens (URLs) -> URL counted as 23, kept whole",
+    "CJK text -> each char counts 2, noted"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic text-splitting with X weighted counting; no generation involved. TOOLTYPE CORRECTION: inventory 'generator' -> 'splitter'.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-373",
+   "name": "X Post Formatter",
+   "slug": "x-post-formatter",
+   "verifiedToolType": "formatter",
+   "engine": "rule-based",
+   "inputs": [
+    "text (string, required)"
+   ],
+   "outputs": [
+    "formattedText: string (spacing/line-break cleanup)",
+    "charBudget: {weighted, remaining, overBy}"
+   ],
+   "validation": [
+    "weighted count computed per X rules",
+    "over-budget text flagged, not silently cut"
+   ],
+   "edgeCases": [
+    "already clean text -> return unchanged with 'no changes needed'"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Formatting + budget meter; fully deterministic.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "formatter"
+  },
+  {
+   "toolId": "tool-374",
+   "name": "X Thread Numbering Formatter",
+   "slug": "x-thread-numbering-formatter",
+   "verifiedToolType": "formatter",
+   "engine": "rule-based",
+   "inputs": [
+    "tweets (string[], required, 1-25)"
+   ],
+   "outputs": [
+    "numberedTweets: string[] (1/N markers applied, each within 280 weighted chars)"
+   ],
+   "validation": [
+    "renumbering after marker insertion re-validated against budget",
+    "existing numbering stripped first to avoid double markers"
+   ],
+   "edgeCases": [
+    "a tweet overflowing after numbering -> flagged for manual trim, not auto-cut"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Deterministic numbering + re-validation.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "formatter"
+  },
+  {
+   "toolId": "tool-375",
+   "name": "X Hashtag Generator",
+   "slug": "x-hashtag-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "count (int 1-5, default 3)"
+   ],
+   "outputs": [
+    "hashtags: string[]",
+    "usageNote: '0-2 per post recommended; more reads as spam'"
+   ],
+   "validation": [
+    "count within 1-5",
+    "tags normalized, no spaces"
+   ],
+   "edgeCases": [
+    "topic with no hashtag culture -> note that hashtags add little on X"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Curated dataset; live trend data unavailable client-side -> labeled accordingly. Best-practice cap surfaced in UI.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#hashtag-best-practice"
+   ],
+   "possibleDuplicateOf": [
+    "tool-198",
+    "tool-201",
+    "tool-202",
+    "tool-243",
+    "tool-359",
+    "tool-396"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-376",
+   "name": "X Hook Analyzer",
+   "slug": "x-hook-analyzer",
+   "verifiedToolType": "analyzer",
+   "engine": "rule-based",
+   "inputs": [
+    "hookText (string, required, <=280 chars)"
+   ],
+   "outputs": [
+    "scores: {specificity, curiosityGap, clarity, contrarianEdge} (0-10 each)",
+    "verdict: strong|okay|weak",
+    "suggestions: string[]"
+   ],
+   "validation": [
+    "rubric weights fixed and documented",
+    "input over 280 chars -> analyzed with over-limit warning"
+   ],
+   "edgeCases": [
+    "non-English hook -> analyze with 'limited heuristic coverage' note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Heuristic rubric; labeled 'heuristic estimate, not a virality prediction'. No fake AI.",
+   "formulaRef": "hook-score-rubric (documented in FEAS-H.md)",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "analyzer"
+  },
+  {
+   "toolId": "tool-377",
+   "name": "X Poll Idea Generator",
+   "slug": "x-poll-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "duration (enum: 5min/1h/24h/7d, default 24h)"
+   ],
+   "outputs": [
+    "pollQuestion: string (<=280)",
+    "options: string[2-4] (each <=25 chars)",
+    "suggestedDuration"
+   ],
+   "validation": [
+    "2-4 options",
+    "each option <=25 chars",
+    "duration within 5min-7days"
+   ],
+   "edgeCases": [
+    "topic with >4 natural options -> pick 4, list dropped ones as note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea generation bounded by poll spec caps.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#poll-option-count",
+    "x#poll-option-character-limit",
+    "x#poll-duration-range"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-378",
+   "name": "X Spaces Title Generator",
+   "slug": "x-spaces-title-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "guests (string, optional)"
+   ],
+   "outputs": [
+    "spaceTitles: string[] (concise, curiosity-led)"
+   ],
+   "validation": [
+    "titles kept short (<=70 chars guidance, no verified platform cap)"
+   ],
+   "edgeCases": [
+    "no verified Spaces title limit found -> no hard cap enforced; noted as UNVERIFIED"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation; no platform limit to enforce (flagged unverified).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-379",
+   "name": "X Pinned Tweet Idea Generator",
+   "slug": "x-pinned-tweet-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "brandGoal (string, required: offer/proof/announcement)"
+   ],
+   "outputs": [
+    "pinnedTweets: string[] (each within 280 weighted chars, CTA-led)"
+   ],
+   "validation": [
+    "weighted budget enforced",
+    "each draft self-contained (pinned = first impression)"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Draft generation with budget enforcement.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-380",
+   "name": "X Quote Tweet Idea Generator",
+   "slug": "x-quote-tweet-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "context (string, required: what you're quoting)",
+    "stance (enum: agree/add-nuance/disagree, optional)"
+   ],
+   "outputs": [
+    "quoteComments: string[] (each within 280 weighted chars)"
+   ],
+   "validation": [
+    "comment budget enforced (quoted post itself costs 0)",
+    "tone matched to stance"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Comment-draft generation; quoted content costs 0 chars (static fact).",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-381",
+   "name": "X Content Pillars Planner",
+   "slug": "x-content-pillars-planner",
+   "verifiedToolType": "planner",
+   "engine": "template-library",
+   "inputs": [
+    "niche (string, required)",
+    "pillarCount (int 3-5, default 4)"
+   ],
+   "outputs": [
+    "pillars: {name, description, exampleTopics[3]}[]"
+   ],
+   "validation": [
+    "3-5 pillars",
+    "each pillar distinct (no topic overlap)"
+   ],
+   "edgeCases": [
+    "niche too narrow for 4 pillars -> reduce with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Planning templates; no external data.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-382",
+   "name": "X Banner Text Generator",
+   "slug": "x-banner-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "tagline (string, required)",
+    "offer (string, optional)"
+   ],
+   "outputs": [
+    "bannerCopy: string[] (short, high-contrast wording)",
+    "safeZoneNote: keep text center-right; bottom-left overlapped by avatar on desktop"
+   ],
+   "validation": [
+    "copy kept short (<=60 chars guidance for legibility at 1500x500)"
+   ],
+   "edgeCases": [
+    "user expects image generation -> clarify: text copy only, pair with designer/canvas tool"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text copy + static safe-zone guidance; no image rendering.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#profile-header-banner-size"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-383",
+   "name": "X Viral Template Rewriter",
+   "slug": "x-viral-template-rewriter",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "draft (string, required)",
+    "template (enum of curated viral patterns: stat-hook/question-hook/hot-take/build-in-public, required)"
+   ],
+   "outputs": [
+    "rewrites: string[] (each within 280 weighted chars, in chosen template shape)"
+   ],
+   "validation": [
+    "budget enforced after rewrite",
+    "template structure preserved"
+   ],
+   "edgeCases": [
+    "draft already matches template -> note + light polish only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Static curated template patterns; UI must NOT claim live viral-data backing. Honest label: 'pattern library, not live trend data'.",
+   "formulaRef": "x-weighted-char-count",
+   "platformRulesRef": [
+    "x#post-character-limit-free-accounts",
+    "x#character-counting-rules"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-384",
+   "name": "X Niche Positioning Generator",
+   "slug": "x-niche-positioning-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "niche (string, required)",
+    "audience (string, required)"
+   ],
+   "outputs": [
+    "positioningStatements: string[] (<=160 chars each, bio-ready)"
+   ],
+   "validation": [
+    "each statement <=160 chars (fits X bio)",
+    "one clear promise per statement"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Statement generation; 160-char bio-fit enforced.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#profile-bio-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-385",
+   "name": "Tweet Quote Card Maker",
+   "slug": "tweet-quote-card-maker",
+   "verifiedToolType": "builder",
+   "engine": "canvas-render",
+   "inputs": [
+    "quoteText (string, required, <=280 chars)",
+    "author (string, optional)",
+    "theme (enum: light/dark/brand, default dark)"
+   ],
+   "outputs": [
+    "pngFile: downloadable PNG (1200x675 16:9 or 1080x1080 1:1)",
+    "preview: in-browser canvas preview"
+   ],
+   "validation": [
+    "text auto-fits (font scales, min-size floor then 'text too long' error)",
+    "render at 2x for sharpness"
+   ],
+   "edgeCases": [
+    "very long quote -> suggest shortening, never render illegible text",
+    "emoji in quote -> rendered via system font, noted"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Client-side <canvas> render + PNG download; no server, no image API.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "x#in-stream-image-landscape",
+    "x#in-stream-image-square"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-386",
+   "name": "Facebook Bio Generator",
+   "slug": "facebook-bio-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "whoYouAre (string, required)",
+    "whatYouDo (string, required)",
+    "mode (enum: personal/page, default personal)"
+   ],
+   "outputs": [
+    "bio: string (personal: <=101 chars; page: <=255 chars short description)"
+   ],
+   "validation": [
+    "cap enforced per mode",
+    "mode clearly labeled in output"
+   ],
+   "edgeCases": [
+    "user unsure of mode -> default personal + show page variant as bonus"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation with dual caps; mode disambiguation is the key edge case.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#personal-profile-bio-character-limit",
+    "facebook#page-short-description-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-387",
+   "name": "Facebook Page Name Generator",
+   "slug": "facebook-page-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "businessType (string, required)",
+    "keywords (string[], optional)"
+   ],
+   "outputs": [
+    "pageNames: string[] (each <=75 chars, searchable phrasing)"
+   ],
+   "validation": [
+    "each name <=75 chars",
+    "no misleading suffixes (official/page-verified style claims rejected)"
+   ],
+   "edgeCases": [
+    "name availability check impossible client-side -> labeled accordingly"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Name generation with 75-char cap.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#page-name-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-388",
+   "name": "Facebook Group Name Generator",
+   "slug": "facebook-group-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "communityTopic (string, required)",
+    "tone (enum: professional/casual, optional)"
+   ],
+   "outputs": [
+    "groupNames: string[] (each <=75 chars)"
+   ],
+   "validation": [
+    "each name <=75 chars (secondary source; flagged)"
+   ],
+   "edgeCases": [
+    "group name limit is secondary-sourced -> UI shows limit as guidance, not guarantee"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation; 75-char cap applied with honesty note.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#group-name-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-389",
+   "name": "Facebook Group Rules Generator",
+   "slug": "facebook-group-rules-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "groupPurpose (string, required)",
+    "strictness (enum: relaxed/moderate/strict, default moderate)"
+   ],
+   "outputs": [
+    "rules: {rule, why}[] (spam, self-promo, respect, off-topic, moderation)"
+   ],
+   "validation": [
+    "rules plain-language, enforceable",
+    "no illegal-content facilitation"
+   ],
+   "edgeCases": [
+    "no verified platform cap on rules text -> no hard cap; noted"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Text generation; compliance with FB policies is the admin's job -> disclaimer included.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-390",
+   "name": "Facebook Post Idea Generator",
+   "slug": "facebook-post-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "pageType (string, required)",
+    "goal (enum: engagement/traffic/community, optional)"
+   ],
+   "outputs": [
+    "postDrafts: {hook, body, cta}[] (hook front-loaded for feed truncation)"
+   ],
+   "validation": [
+    "key message within first ~125-150 chars (mobile truncation guidance)",
+    "technical max 63,206 noted but not targeted"
+   ],
+   "edgeCases": [
+    "user pastes 5000-char draft -> kept, with 'consider trimming' note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Draft generation; truncation guidance is best-practice, not a hard cap.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#post-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-391",
+   "name": "Facebook Reel Hook Generator",
+   "slug": "facebook-reel-hook-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "count (int 1-10, default 5)"
+   ],
+   "outputs": [
+    "hooks: string[] (<=15 words each, first-2-seconds spoken/visual)"
+   ],
+   "validation": [
+    "hooks short and spoken-language",
+    "vertical 9:16 framing note attached"
+   ],
+   "edgeCases": [
+    "reel duration/audio specs not verified -> not claimed"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Hook-line generation; no unverified spec claims.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#reel-canvas"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-392",
+   "name": "Facebook Story Idea Generator",
+   "slug": "facebook-story-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "goal (string, required: poll/Q&A/behind-scenes/promo)"
+   ],
+   "outputs": [
+    "storyIdeas: {concept, frames[3-5], stickerSuggestion}[]"
+   ],
+   "validation": [
+    "ideas fit 1080x1920 vertical canvas",
+    "interactive stickers suggested (poll, question, link)"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea generation + static canvas guidance.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#story-canvas-size"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-393",
+   "name": "Facebook Event Idea Generator",
+   "slug": "facebook-event-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "businessType (string, required)"
+   ],
+   "outputs": [
+    "eventIdeas: {title, format (online/in-person), descriptionSeed, coverNote}[]"
+   ],
+   "validation": [
+    "description seed concise (event description guidance ~2000 chars, secondary)",
+    "cover 1920x1005 guidance attached"
+   ],
+   "edgeCases": [
+    "event cover size has conflicting sources -> note the conflict in UI"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea generation; conflicting cover-size sources flagged honestly.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#event-cover-photo-size",
+    "facebook#event-description-guidance"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-394",
+   "name": "Facebook Ad Headline Generator",
+   "slug": "facebook-ad-headline-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "product (string, required)",
+    "benefit (string, required)"
+   ],
+   "outputs": [
+    "headlines: string[] (each <=40 chars STRICT, benefit-led, number-when-possible)"
+   ],
+   "validation": [
+    "HARD cap 40 chars enforced (ad delivery truncates beyond)",
+    "no filler openers ('Introducing...')"
+   ],
+   "edgeCases": [
+    "input forces >40 chars -> compress, never emit over-cap"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Copy generation with strict 40-char cap; delivery/performance not claimed.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#ad-headline-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-395",
+   "name": "Facebook Ad Copy Generator",
+   "slug": "facebook-ad-copy-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "offer (string, required)",
+    "cta (string, optional)"
+   ],
+   "outputs": [
+    "primaryText: string (CTA within first 125 chars)",
+    "description: string (<=30 chars)"
+   ],
+   "validation": [
+    "primary text CTA in first 125 (visible) chars",
+    "description <=30 chars",
+    "headline cross-ref to tool 394"
+   ],
+   "edgeCases": [
+    "user wants full ad setup -> clarify: copy only, no Ads Manager integration"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Copy generation with visibility-window rules; no ad-buy functionality.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#ad-primary-text-visible-window",
+    "facebook#ad-description-character-limit"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-396",
+   "name": "Facebook Hashtag Generator",
+   "slug": "facebook-hashtag-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "topic (string, required)",
+    "count (int 1-5, default 3)"
+   ],
+   "outputs": [
+    "hashtags: string[]",
+    "usageNote: hashtags carry low weight on Facebook; 1-3 max, never the strategy"
+   ],
+   "validation": [
+    "count within 1-5",
+    "tags normalized"
+   ],
+   "edgeCases": [
+    "user expects hashtag strategy -> honest note that keywords/audience matter more on FB"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Curated dataset; low efficacy disclosed honestly (no fake reach claims).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [
+    "tool-198",
+    "tool-201",
+    "tool-202",
+    "tool-243",
+    "tool-359",
+    "tool-375"
+   ],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-397",
+   "name": "Facebook Giveaway Idea Generator",
+   "slug": "facebook-giveaway-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "business (string, required)",
+    "prize (string, optional)"
+   ],
+   "outputs": [
+    "giveawayConcepts: {concept, entryMechanic, prizeSuggestion, complianceChecklist}[]"
+   ],
+   "validation": [
+    "compliance checklist included (no purchase necessary, rules posted, FB promotion-policy link note)",
+    "no 'tag 50 friends' style spam mechanics suggested"
+   ],
+   "edgeCases": [
+    "user asks for guaranteed-viral mechanic -> decline to promise, offer best-practice instead"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Idea generation + compliance checklist; cannot verify policy compliance -> explicit disclaimer.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-398",
+   "name": "Facebook CTA Text Generator",
+   "slug": "facebook-cta-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "goal (string, required: shop now/book/learn more/etc.)"
+   ],
+   "outputs": [
+    "ctaPhrases: string[] (short, verb-led)",
+    "platformNote: Page CTA BUTTONS are a fixed Facebook list (Call Now, Shop Now...) - this tool writes in-post CTA text, not the button"
+   ],
+   "validation": [
+    "phrases <=60 chars",
+    "action verb first"
+   ],
+   "edgeCases": [
+    "user confuses with Page CTA button -> platformNote shown prominently"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "In-post CTA copy; fixed button list disclosed to prevent confusion.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-399",
+   "name": "Facebook Cover Text Generator",
+   "slug": "facebook-cover-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "offer (string, required)",
+    "coverType (enum: page/group, default page)"
+   ],
+   "outputs": [
+    "coverCopy: string[] (<=12 words)",
+    "safeZoneNote per coverType (page 851x315: keep text centered, clear of edges; group 1640x856)"
+   ],
+   "validation": [
+    "copy short enough to read at cover scale",
+    "safe-zone guidance attached per type"
+   ],
+   "edgeCases": [
+    "user expects image design -> clarify: text copy + layout guidance only"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Copy + static safe-zone guidance; no image rendering.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "facebook#page-profile-cover-photo-size",
+    "facebook#group-cover-photo-size"
+   ],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-400",
+   "name": "Facebook Group Engagement Post Generator",
+   "slug": "facebook-group-engagement-post-generator",
+   "verifiedToolType": "generator",
+   "engine": "template-library",
+   "inputs": [
+    "groupType (string, required)",
+    "postType (enum: welcome/question/poll/discussion, optional)"
+   ],
+   "outputs": [
+    "postTemplates: {type, draft, followUpTip}[]"
+   ],
+   "validation": [
+    "drafts conversation-led, not spammy",
+    "no engagement-bait wording ('comment YES')"
+   ],
+   "edgeCases": [
+    "groupType vague -> offer 4 archetype variants"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Template generation; posting itself is manual (no automation).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": [],
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  }
+ ]
+}
