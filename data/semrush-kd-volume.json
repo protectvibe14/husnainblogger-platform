@@ -1,0 +1,782 @@
+{
+  "long tail keyword generator": {
+    "kd": 25,
+    "volume": 1600,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "search intent checker": {
+    "kd": null,
+    "volume": 10,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "keyword clustering tool": {
+    "kd": 30,
+    "volume": 880,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "question keyword generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "alphabet soup keyword method": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "keyword gap analysis template": {
+    "kd": 27,
+    "volume": 40,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "seasonal keyword planner": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "local keyword generator": {
+    "kd": 53,
+    "volume": 320,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "keyword prioritization matrix": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "content angle generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "google snippet preview tool": {
+    "kd": null,
+    "volume": 30,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog scannability checker": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "anchor text checker": {
+    "kd": 14,
+    "volume": 70,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "transition words checker": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "average sentence length checker": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "internal link finder": {
+    "kd": null,
+    "volume": 80,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "seo image filename generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "url slug optimizer": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "duplicate content checker": {
+    "kd": 79,
+    "volume": 720,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "heading hierarchy checker": {
+    "kd": null,
+    "volume": 10,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "faq schema generator": {
+    "kd": 27,
+    "volume": 480,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "article schema generator": {
+    "kd": 41,
+    "volume": 140,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "howto schema generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "breadcrumb schema generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "review schema generator": {
+    "kd": 8,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "open graph generator": {
+    "kd": 42,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "twitter card generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "robots.txt generator": {
+    "kd": 44,
+    "volume": 2900,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "xml sitemap generator": {
+    "kd": 43,
+    "volume": 1300,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "html sitemap generator": {
+    "kd": 46,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "content brief generator": {
+    "kd": 23,
+    "volume": 260,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog outline generator": {
+    "kd": 24,
+    "volume": 50,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "topic cluster planner": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "editorial calendar generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "30 day blog challenge": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog series planner": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "content audit tool": {
+    "kd": 30,
+    "volume": 390,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "eeat checklist": {
+    "kd": 28,
+    "volume": 140,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog post seo checklist": {
+    "kd": 29,
+    "volume": 320,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog idea bank": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "freelance writing rates": {
+    "kd": 31,
+    "volume": 170,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "comparison table generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "pros and cons box generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "star rating generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "click to tweet generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "utm link builder": {
+    "kd": 64,
+    "volume": 720,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "affiliate disclosure generator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "meta description generator": {
+    "kd": 39,
+    "volume": 1300,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "seo title tag generator": {
+    "kd": 27,
+    "volume": 50,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "topical authority map": {
+    "kd": 14,
+    "volume": 320,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "mediavine earnings calculator": {
+    "kd": null,
+    "volume": 10,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "raptive earnings calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "adsense vs mediavine vs raptive calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog income calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "etsy fee calculator": {
+    "kd": 28,
+    "volume": 2400,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "etsy profit calculator": {
+    "kd": 25,
+    "volume": 720,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "ebay fee calculator": {
+    "kd": 45,
+    "volume": 22200,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "poshmark fee calculator": {
+    "kd": 3,
+    "volume": 210,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "amazon fba profit calculator": {
+    "kd": 49,
+    "volume": 390,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "kdp royalty calculator": {
+    "kd": 25,
+    "volume": 880,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "print on demand profit calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "shopify fee calculator": {
+    "kd": 9,
+    "volume": 110,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "paypal fee calculator": {
+    "kd": 46,
+    "volume": 12100,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "stripe fee calculator": {
+    "kd": 11,
+    "volume": 1300,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "gumroad fee calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "upwork fee calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "fiverr profit calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "freelance hourly rate calculator": {
+    "kd": 23,
+    "volume": 110,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "freelance project quote calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "copywriter rates calculator": {
+    "kd": 48,
+    "volume": 5300,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "video editor rates calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "graphic designer rates calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "web design pricing calculator": {
+    "kd": 26,
+    "volume": 70,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "social media manager pricing": {
+    "kd": 30,
+    "volume": 110,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "voiceover rates calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "seo freelancer rates": {
+    "kd": 27,
+    "volume": 50,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "virtual assistant rates calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "freelance invoice generator": {
+    "kd": 34,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "sponsored post rate calculator": {
+    "kd": null,
+    "volume": 0,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "tiktok sponsorship rates": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube sponsorship rates": {
+    "kd": null,
+    "volume": 30,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "podcast sponsorship rates": {
+    "kd": 31,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "ugc pricing calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "newsletter sponsorship rates": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "creator rate card generator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "patreon earnings calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "substack revenue calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "membership site revenue calculator": {
+    "kd": null,
+    "volume": 0,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "twitch subscriber calculator": {
+    "kd": 20,
+    "volume": 140,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "digital product pricing calculator": {
+    "kd": null,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "online course pricing calculator": {
+    "kd": 11,
+    "volume": 90,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "course launch calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "ebook pricing calculator": {
+    "kd": null,
+    "volume": 0,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "coaching package pricing": {
+    "kd": null,
+    "volume": 10,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "webinar revenue calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "amazon affiliate commission calculator": {
+    "kd": 15,
+    "volume": 50,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "saas affiliate calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "epc calculator affiliate": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "breakeven roas calculator": {
+    "kd": 9,
+    "volume": 320,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "blog niche profitability calculator": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube title length checker": {
+    "kd": 13,
+    "volume": 50,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube description template": {
+    "kd": 16,
+    "volume": 170,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "faceless youtube channel ideas": {
+    "kd": 27,
+    "volume": 1000,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube title capitalization tool": {
+    "kd": 23,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube title templates": {
+    "kd": 26,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube title swipe file": {
+    "kd": 18,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "thumbnail text readability checker": {
+    "kd": 10,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube thumbnail ab test tracker": {
+    "kd": 42,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube thumbnail checklist": {
+    "kd": 16,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube pinned comment ideas": {
+    "kd": 34,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube chapter title ideas": {
+    "kd": 36,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube script length calculator": {
+    "kd": 24,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube script outline template": {
+    "kd": 25,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "b-roll shot list generator": {
+    "kd": 17,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube ctr tracker": {
+    "kd": 4,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube upload streak tracker": {
+    "kd": 38,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube subscriber goal tracker": {
+    "kd": 12,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "4000 watch hours calculator": {
+    "kd": 10,
+    "volume": 0,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube niche scorer": {
+    "kd": 14,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube competitor analysis template": {
+    "kd": 29,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube content pillars template": {
+    "kd": 18,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube series planner": {
+    "kd": 30,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube shorts script template": {
+    "kd": 7,
+    "volume": 0,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube shorts hook ideas": {
+    "kd": 4,
+    "volume": 10,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "best time to post shorts tracker": {
+    "kd": 45,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube live stream title ideas": {
+    "kd": 41,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "live stream q&a collector": {
+    "kd": 35,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube community post ideas": {
+    "kd": 10,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube comment reply templates": {
+    "kd": null,
+    "volume": null,
+    "source": "semrush",
+    "date": "2026-10-07"
+  },
+  "youtube giveaway winner picker": {
+    "kd": 28,
+    "volume": 20,
+    "source": "semrush",
+    "date": "2026-10-07"
+  }
+}
