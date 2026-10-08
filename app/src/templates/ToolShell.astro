@@ -1,30 +1,18 @@
 ---
 /**
- * ToolShell.astro — shared page shell for all tool templates (REDESIGNED 2026-10-07).
+ * ToolShell.astro — PREMIUM REDESIGNED 2026-10-08 (v3).
  *
- * Owner: MA1-Templates.
- * Renders the premium page skeleton:
- *   breadcrumbs → hero (trust badges) → top ad → layout(main + sidebar) →
- *   tool UI → in-content ad → how-to → why-use → mid ad → methodology →
- *   examples → FAQ → sponsor card → bottom ad → related tools.
+ * Premium single-tool page with rich SEO content targeting multiple keywords.
+ *   breadcrumbs → hero (gradient, keyword-rich) → top ad →
+ *   layout(main + sidebar) → tool UI → in-content ad →
+ *   about section (primary + secondary keywords) →
+ *   key features → how-to → use cases (keyword-targeted) →
+ *   mid ad → how it works → examples →
+ *   related searches (keyword cluster) → FAQ →
+ *   sponsor card → bottom ad → related tools.
  *
- * Sidebar (desktop): table of contents + sidebar ad slots (sticky).
- * All ad slots render via components/ads/AdSlot.astro (admin-controlled).
- *
- * Section order (SEO contract): breadcrumbs → h1 → value prop → tool UI →
- * how-to → methodology → examples → FAQ → related tools.
- *
- * Slots:
- *  - "tool-ui" (required): the template's interactive island
- *    (<div data-tool-root>…form + results…</div>).
- *
- * What the shell does NOT do (page-level responsibilities, owned by
- * src/pages/[category]/[tool].astro + BaseLayout):
- *  - <head> meta (<title>, meta description, canonical, OG) — the page
- *    reads them from tool.seo; the shell only emits JSON-LD in <body>,
- *    which is valid HTML.
- *  - <html lang="en"> and the <main id="main-content"> landmark — the
- *    layout owns them; the shell's skip links target those ids.
+ * Design: modern premium — gradient hero, glass cards, smooth shadows,
+ * generous whitespace, clear visual hierarchy.
  */
 import type { ToolDefinition } from '../lib/registry/types.ts';
 import type { ToolContent, FreshnessBannerProps } from './types.ts';
@@ -48,8 +36,13 @@ const h1 = content.title ? content.title.split(" | ")[0].trim() : tool.name;
 const categorySlug = tool.categorySlug;
 const toolPath = `/tools/${categorySlug}/${tool.slug}/`;
 
-// Secondary keywords as pills (multi-keyword SEO signal)
-const kwPills = (tool.secondaryKeywords ?? []).slice(0, 12);
+// Multi-keyword SEO: primary + secondary keywords
+const primaryKw = tool.primaryKeyword || tool.name;
+const secondaryKws: string[] = (tool.secondaryKeywords ?? []).slice(0, 6);
+const allKeywords = [primaryKw, ...secondaryKws];
+
+// Capitalize helper for headings
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
@@ -60,6 +53,17 @@ const faqJsonLd = {
     acceptedAnswer: { '@type': 'Answer', text: f.answer },
   })),
 };
+
+// SoftwareApplication JSON-LD for rich results
+const appJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: tool.name,
+  applicationCategory: 'WebApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description: content.description,
+};
 ---
 
 <div class="hb-tool-shell" data-tool-page data-tool-id={tool.toolId}>
@@ -69,120 +73,190 @@ const faqJsonLd = {
   <div id="hb-live-polite" class="hb-visually-hidden" role="status" aria-live="polite"></div>
   <div id="hb-live-assertive" class="hb-visually-hidden" role="alert" aria-live="assertive"></div>
 
-  <nav class="hb-breadcrumbs" aria-label="Breadcrumb">
+  <!-- Breadcrumbs -->
+  <nav class="hb-crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="/">Home</a></li>
       <li><a href="/tools/">Tools</a></li>
-      <li><a href={`/tools/${categorySlug}/`}>{tool.category}</a></li>
+      <li><a href={`/tools/${categorySlug}-tools/`}>{tool.category}</a></li>
       <li aria-current="page">{tool.name}</li>
     </ol>
   </nav>
 
-  <div class="hb-tool-hero hb-tool-hero--v2">
-    <span class="hb-tool-eyebrow">{tool.category} · Free Tool</span>
-    <h1 class="hb-tool-title">{h1}</h1>
-    <p class="hb-tool-value-prop">{content.description}</p>
-    <div class="hb-trust-badges" aria-label="Tool guarantees">
-      <span>⚡ <strong>Instant</strong> results</span>
-      <span>🔒 <strong>100%</strong> private</span>
-      <span>♾️ <strong>Unlimited</strong> use</span>
-      <span>💳 <strong>No</strong> signup</span>
+  <!-- ===== HERO (gradient, keyword-rich) ===== -->
+  <header class="hb-hero">
+    <div class="hb-hero__inner">
+      <span class="hb-hero__eyebrow">{tool.category} · Free Online Tool</span>
+      <h1 class="hb-hero__title">{h1}</h1>
+      <p class="hb-hero__desc">{content.description}</p>
+      <div class="hb-hero__badges" aria-label="Tool guarantees">
+        <span class="hb-badge">⚡ Instant results</span>
+        <span class="hb-badge">🔒 100% private</span>
+        <span class="hb-badge">♾️ Unlimited use</span>
+        <span class="hb-badge">💳 No signup</span>
+      </div>
+      {allKeywords.length > 0 && (
+        <div class="hb-hero__keywords" aria-label="This tool helps with">
+          <span class="hb-hero__kw-label">Popular searches:</span>
+          {allKeywords.slice(0, 4).map((kw) => (
+            <span class="hb-kw-pill">{kw}</span>
+          ))}
+        </div>
+      )}
     </div>
-  </div>
+  </header>
 
   <AdSlot slot="tool-top" />
 
-  <div class="hb-tool-layout">
-    <main class="hb-tool-main">
+  <div class="hb-layout">
+    <main class="hb-main">
       {freshness && freshness.freshnessState !== 'fresh' && (
         <FreshnessBanner {...freshness} />
       )}
 
-      <!-- ================= TOOL UI SLOT ================= -->
-      <section id="tool-ui" class="hb-tool-ui hb-tool-ui--v2" aria-label={`${tool.name} tool`}>
+      <!-- ===== TOOL UI ===== -->
+      <section id="tool-ui" class="hb-toolcard" aria-label={`${tool.name} tool`}>
         <slot name="tool-ui" />
       </section>
 
       <AdSlot slot="tool-incontent" />
 
-      <section class="hb-section" aria-labelledby="hb-howto">
-        <h2 id="hb-howto"><span class="hb-sec-num">01</span>How to use {tool.name}</h2>
-        <ol class="hb-steps">
-          {content.howTo.map((step) => <li>{step}</li>)}
-        </ol>
-        {kwPills.length > 0 && (
-          <div class="hb-kw-pills" aria-label="Related keywords">
-            {kwPills.map((kw) => <span>{kw}</span>)}
-          </div>
-        )}
+      <!-- ===== ABOUT (primary + secondary keyword content) ===== -->
+      <section class="hb-section" aria-labelledby="hb-about">
+        <h2 id="hb-about">What is {cap(primaryKw)}?</h2>
+        <div class="hb-prose">
+          <p>
+            <strong>{tool.name}</strong> is a free online {primaryKw} that helps you get
+            accurate results in seconds. Whether you're searching for
+            {secondaryKws.length > 0 ? ` ${secondaryKws.slice(0, 2).join(' or ')}` : ' related solutions'},
+            this tool is built to handle it — no signup, no downloads, no watermarks.
+          </p>
+          <p>
+            Everything runs directly in your browser, so your data stays private.
+            It's designed for creators, freelancers, marketers, and anyone who needs
+            a fast, reliable {primaryKw} without the hassle.
+          </p>
+        </div>
       </section>
 
-      <section class="hb-section" aria-labelledby="hb-why">
-        <h2 id="hb-why"><span class="hb-sec-num">02</span>Why use this {tool.toolType} tool?</h2>
-        <div class="hb-feat-grid">
-          <div class="hb-feat">
-            <div class="hb-feat__icon">🎯</div>
-            <h3>Built for {tool.primaryKeyword}</h3>
-            <p>Designed around the exact workflow behind "{tool.primaryKeyword}" — no clutter, just results.</p>
+      <!-- ===== KEY FEATURES ===== -->
+      <section class="hb-section" aria-labelledby="hb-features">
+        <h2 id="hb-features">Key features</h2>
+        <div class="hb-cards3">
+          <div class="hb-card">
+            <div class="hb-card__icon">🎯</div>
+            <h3>Built for {primaryKw}</h3>
+            <p>Designed around the exact workflow behind "{primaryKw}" — no clutter, just accurate results fast.</p>
           </div>
-          <div class="hb-feat">
-            <div class="hb-feat__icon">⚡</div>
+          <div class="hb-card">
+            <div class="hb-card__icon">⚡</div>
             <h3>Instant &amp; free forever</h3>
-            <p>No accounts, no limits, no watermarks. Use it as many times as you need.</p>
+            <p>No accounts, no limits, no watermarks. Use it as many times as you need, whenever you need it.</p>
           </div>
-          <div class="hb-feat">
-            <div class="hb-feat__icon">🔒</div>
+          <div class="hb-card">
+            <div class="hb-card__icon">🔒</div>
             <h3>Private by design</h3>
-            <p>Everything runs in your browser. Your data never leaves your device.</p>
+            <p>Everything runs in your browser. Your inputs never leave your device — complete privacy guaranteed.</p>
+          </div>
+          <div class="hb-card">
+            <div class="hb-card__icon">📱</div>
+            <h3>Works everywhere</h3>
+            <p>Fully responsive design works perfectly on desktop, tablet, and mobile. No app install required.</p>
+          </div>
+          <div class="hb-card">
+            <div class="hb-card__icon">🔄</div>
+            <h3>Always up to date</h3>
+            <p>Regularly maintained and improved. This page was last reviewed to ensure accuracy for 2026.</p>
+          </div>
+          <div class="hb-card">
+            <div class="hb-card__icon">💡</div>
+            <h3>Easy to use</h3>
+            <p>Clean, intuitive interface. Enter your inputs, get results — it's that simple. No learning curve.</p>
           </div>
         </div>
       </section>
 
+      <!-- ===== HOW TO USE ===== -->
+      <section class="hb-section" aria-labelledby="hb-howto">
+        <h2 id="hb-howto">How to use {tool.name}</h2>
+        <ol class="hb-steps">
+          {content.howTo.map((step, i) => (
+            <li>
+              <span class="hb-step-num">{i + 1}</span>
+              <span>{step}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       <AdSlot slot="tool-mid" />
 
-      {content.methodology && (
-        <section class="hb-section" aria-labelledby="hb-method">
-          <h2 id="hb-method"><span class="hb-sec-num">03</span>How it works</h2>
-          <p>{content.methodology}</p>
-        </section>
-      )}
-
-      {content.examples && content.examples.length > 0 && (
-        <section class="hb-section" aria-labelledby="hb-examples">
-          <h2 id="hb-examples"><span class="hb-sec-num">04</span>Examples</h2>
-          <ul class="hb-examples">
-            {content.examples.map((ex, i) => (
-              <li class="hb-example" data-example>
-                <div class="hb-example__head">
-                  <strong>{ex.title}</strong>
-                  <Button
-                    variant="secondary"
-                    type="button"
-                    data-example-index={String(i)}
-                  >
-                    Try this example
-                  </Button>
-                </div>
-                {ex.note && <p class="hb-example__note">{ex.note}</p>}
-                <script type="application/json" data-example-payload set:html={JSON.stringify(ex.inputs)} />
+      <!-- ===== USE CASES (secondary keyword targeting) ===== -->
+      {secondaryKws.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-usecases">
+          <h2 id="hb-usecases">Who uses this tool?</h2>
+          <div class="hb-prose">
+            <p>This versatile tool serves multiple needs:</p>
+          </div>
+          <ul class="hb-usecases">
+            {secondaryKws.map((kw) => (
+              <li>
+                <strong>{cap(kw)}</strong>
+                <span> — Get professional results for {kw} in one click.</span>
               </li>
             ))}
           </ul>
         </section>
       )}
 
-      {content.assumptions && content.assumptions.length > 0 && (
-        <section class="hb-section" aria-labelledby="hb-notes">
-          <h2 id="hb-notes"><span class="hb-sec-num">05</span>Good to know</h2>
-          <ul class="hb-notes">
-            {content.assumptions.map((a) => <li>{a}</li>)}
-          </ul>
+      <!-- ===== HOW IT WORKS ===== -->
+      {content.methodology && (
+        <section class="hb-section" aria-labelledby="hb-method">
+          <h2 id="hb-method">How it works</h2>
+          <div class="hb-prose">
+            <p>{content.methodology}</p>
+          </div>
         </section>
       )}
 
+      <!-- ===== EXAMPLES ===== -->
+      {content.examples && content.examples.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-examples">
+          <h2 id="hb-examples">Examples</h2>
+          <div class="hb-examples">
+            {content.examples.map((ex, i) => (
+              <div class="hb-example" data-example>
+                <div class="hb-example__head">
+                  <strong>{ex.title}</strong>
+                  <Button variant="secondary" type="button" data-example-index={String(i)}>
+                    Try this example
+                  </Button>
+                </div>
+                {ex.note && <p class="hb-example__note">{ex.note}</p>}
+                <script type="application/json" data-example-payload set:html={JSON.stringify(ex.inputs)} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- ===== RELATED SEARCHES (keyword cluster for SEO) ===== -->
+      {allKeywords.length > 1 && (
+        <section class="hb-section" aria-labelledby="hb-related-searches">
+          <h2 id="hb-related-searches">Related searches</h2>
+          <p class="hb-section-sub">People also search for these — this tool handles them all:</p>
+          <div class="hb-kw-cloud" aria-label="Related keyword searches">
+            {allKeywords.map((kw) => (
+              <span class="hb-kw-cloud__item">{kw}</span>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- ===== FAQ ===== -->
       {content.faqs.length > 0 && (
         <section class="hb-section" aria-labelledby="hb-faq">
-          <h2 id="hb-faq"><span class="hb-sec-num">06</span>Frequently asked questions</h2>
+          <h2 id="hb-faq">Frequently asked questions</h2>
           <Accordion
             items={content.faqs.map((f) => ({ question: f.question, answerHtml: f.answer }))}
           />
@@ -193,44 +267,53 @@ const faqJsonLd = {
 
       <AdSlot slot="tool-bottom" />
 
+      <!-- ===== RELATED TOOLS ===== -->
       {relatedTools.length > 0 && (
         <section class="hb-section" aria-labelledby="hb-related">
-          <h2 id="hb-related"><span class="hb-sec-num">07</span>Related tools</h2>
-          <ul class="hb-related hb-related--v2">
+          <h2 id="hb-related">Related tools</h2>
+          <p class="hb-section-sub">Explore more free tools in {tool.category}:</p>
+          <div class="hb-related-grid">
             {relatedTools.map((rel) => (
-              <li>
-                <a href={`/tools/${rel.categorySlug}/${rel.slug}/`}>
-                  <strong>{rel.name}</strong>
-                  <small>{rel.category}</small>
-                </a>
-              </li>
+              <a href={`/tools/${rel.categorySlug}/${rel.slug}/`} class="hb-related-card">
+                <strong>{rel.name}</strong>
+                <small>{rel.category}</small>
+                <span class="hb-related-card__arrow" aria-hidden="true">→</span>
+              </a>
             ))}
-          </ul>
+          </div>
         </section>
       )}
     </main>
 
-    <aside class="hb-tool-sidebar" aria-label="Page sidebar">
-      <div class="hb-toc-card">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="hb-sidebar" aria-label="Page sidebar">
+      <div class="hb-toc">
         <h3>On this page</h3>
-        <ul class="hb-toc">
+        <ul>
           <li><a href="#tool-ui">Use the tool</a></li>
+          <li><a href="#hb-about">What is it?</a></li>
+          <li><a href="#hb-features">Key features</a></li>
           <li><a href="#hb-howto">How to use</a></li>
-          <li><a href="#hb-why">Why use it</a></li>
           {content.methodology && <li><a href="#hb-method">How it works</a></li>}
           {content.faqs.length > 0 && <li><a href="#hb-faq">FAQs</a></li>}
           {relatedTools.length > 0 && <li><a href="#hb-related">Related tools</a></li>}
         </ul>
       </div>
       <AdSlot slot="tool-sidebar-top" />
+      <div class="hb-sidebar-cta">
+        <h3>More free tools</h3>
+        <p>Explore 570+ free online tools for creators.</p>
+        <a href="/tools/" class="hb-btn-outline">Browse all tools</a>
+      </div>
       <AdSlot slot="tool-sidebar-bottom" />
     </aside>
   </div>
 
   <AdSlot slot="tool-sticky-mobile" />
 
-  <!-- JSON-LD passthrough: FAQPage auto-generated from faqs + MA3 extras. -->
+  <!-- JSON-LD -->
   <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(appJsonLd)} />
   {(content.jsonLd ?? []).map((node) => (
     <script type="application/ld+json" set:html={JSON.stringify(node)} />
   ))}
@@ -242,64 +325,263 @@ const faqJsonLd = {
 </script>
 
 <style>
-  /* v2 premium additions — extends luxury.css */
-  .hb-tool-hero--v2 { text-align: center; padding: var(--space-8) 0 var(--space-2); }
-  .hb-tool-hero--v2 .hb-tool-title { font-size: clamp(2rem, 5vw, 3rem); }
-  .hb-trust-badges {
-    display: flex; gap: var(--space-5); justify-content: center; flex-wrap: wrap;
-    margin-top: var(--space-4); font-family: var(--font-sans);
-    font-size: var(--text-sm); color: var(--color-muted);
-  }
-  .hb-trust-badges strong { color: var(--color-text); }
+  /* ===== v4 ULTRA-PREMIUM Design — refined spacing, typography, elegance ===== */
+  .hb-tool-shell { max-width: 1320px; margin: 0 auto; padding: 0 2rem; }
 
-  .hb-tool-layout {
-    display: grid; grid-template-columns: minmax(0, 1fr) 300px;
-    gap: var(--space-8); align-items: start; margin-top: var(--space-6);
+  /* Breadcrumbs — subtle, refined */
+  .hb-crumbs ol {
+    display: flex; gap: 0.6rem; list-style: none;
+    padding: 1.5rem 0 0.5rem; margin: 0;
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.01em;
   }
-  .hb-tool-main { min-width: 0; }
-  .hb-tool-sidebar {
-    display: flex; flex-direction: column; gap: var(--space-5);
-    position: sticky; top: calc(var(--space-6) + 60px);
-  }
-  .hb-toc-card {
-    background: var(--color-surface-raised); border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl); padding: var(--space-5);
-  }
-  .hb-toc-card h3 { font-family: var(--font-sans); font-size: var(--text-base); margin: 0 0 var(--space-3); }
-  .hb-toc { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
-  .hb-toc a { color: var(--color-muted); text-decoration: none; font-size: var(--text-sm); font-family: var(--font-sans); }
-  .hb-toc a:hover { color: var(--color-accent-strong); }
+  .hb-crumbs li + li::before { content: "›"; margin-right: 0.6rem; color: #cbd5e1; font-size: 1rem; }
+  .hb-crumbs a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+  .hb-crumbs a:hover { color: #4f46e5; }
+  .hb-crumbs [aria-current] { color: #334155; }
 
-  .hb-tool-ui--v2 {
-    background: var(--color-surface-raised); border: 1px solid var(--color-border);
-    border-radius: var(--radius-2xl); box-shadow: var(--shadow-lg);
-    padding: var(--space-8);
+  /* Hero — deep, rich, elegant */
+  .hb-hero {
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(129,140,248,0.35) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 50% at 85% 90%, rgba(217,70,239,0.25) 0%, transparent 55%),
+      linear-gradient(150deg, #1e1b4b 0%, #312e81 35%, #6d28d9 70%, #a21caf 100%);
+    border-radius: 2rem; padding: 4.5rem 3rem; margin: 1.5rem 0 3rem;
+    color: white; text-align: center; position: relative; overflow: hidden;
+    box-shadow: 0 25px 60px -15px rgba(109,40,217,0.4);
+  }
+  .hb-hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none; opacity: 0.6;
+  }
+  .hb-hero__inner { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
+  .hb-hero__eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.75rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.18em;
+    background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.55rem 1.3rem; border-radius: 3rem; margin-bottom: 1.5rem;
+  }
+  .hb-hero__title {
+    font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800;
+    margin: 0 0 1.25rem; line-height: 1.15; letter-spacing: -0.02em;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  }
+  .hb-hero__desc {
+    font-size: 1.15rem; opacity: 0.92; max-width: 680px;
+    margin: 0 auto 2rem; line-height: 1.7; font-weight: 400;
+  }
+  .hb-hero__badges { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem; }
+  .hb-badge {
+    background: rgba(255,255,255,0.10); backdrop-filter: blur(12px);
+    padding: 0.6rem 1.2rem; border-radius: 3rem;
+    font-size: 0.87rem; font-weight: 500; letter-spacing: 0.01em;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .hb-hero__keywords {
+    display: flex; gap: 0.6rem; justify-content: center;
+    flex-wrap: wrap; align-items: center; margin-top: 0.75rem;
+  }
+  .hb-hero__kw-label { font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+  .hb-kw-pill {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22);
+    padding: 0.4rem 1rem; border-radius: 3rem; font-size: 0.82rem; font-weight: 500;
+    transition: background 0.2s;
+  }
+  .hb-kw-pill:hover { background: rgba(255,255,255,0.18); }
+
+  /* Layout — generous spacing */
+  .hb-layout {
+    display: grid; grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 3.5rem; align-items: start;
+  }
+  .hb-main { min-width: 0; }
+  .hb-sidebar {
+    display: flex; flex-direction: column; gap: 1.75rem;
+    position: sticky; top: 90px;
   }
 
-  .hb-sec-num { color: var(--color-accent); margin-right: var(--space-2); font-size: 0.85em; }
-  .hb-kw-pills { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
-  .hb-kw-pills span {
-    font-family: var(--font-sans); font-size: var(--text-xs);
-    background: var(--color-surface); border: 1px solid var(--color-border);
-    padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill);
-    color: var(--color-muted);
+  /* Tool card — floating, soft */
+  .hb-toolcard {
+    background: #ffffff;
+    border: 1px solid rgba(226,232,240,0.8);
+    border-radius: 1.75rem;
+    box-shadow:
+      0 1px 3px rgba(0,0,0,0.04),
+      0 12px 40px -8px rgba(0,0,0,0.08);
+    padding: 2.75rem; margin-bottom: 0;
   }
-  .hb-feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-4); }
-  .hb-feat {
-    background: var(--color-surface-raised); border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl); padding: var(--space-5);
-  }
-  .hb-feat__icon { font-size: var(--text-2xl); }
-  .hb-feat h3 { font-family: var(--font-sans); font-size: var(--text-base); margin: var(--space-2) 0; }
-  .hb-feat p { font-size: var(--text-sm); color: var(--color-muted); margin: 0; }
-  .hb-related--v2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); }
-  .hb-related--v2 a { display: block; text-decoration: none; }
-  .hb-related--v2 strong { display: block; font-family: var(--font-sans); font-size: var(--text-sm); color: var(--color-text); }
-  .hb-related--v2 small { color: var(--color-muted); font-size: var(--text-xs); }
 
+  /* Sections — airy, clear hierarchy */
+  .hb-section { margin: 3.5rem 0; }
+  .hb-section:first-of-type { margin-top: 3rem; }
+  .hb-section h2 {
+    font-size: 1.75rem; font-weight: 750; margin: 0 0 1.5rem;
+    color: #0f172a; letter-spacing: -0.015em; line-height: 1.3;
+  }
+  .hb-section-sub {
+    color: #64748b; margin: -1rem 0 1.75rem;
+    font-size: 1.02rem; line-height: 1.6;
+  }
+  .hb-prose { color: #475569; line-height: 1.85; font-size: 1.05rem; }
+  .hb-prose p { margin: 0 0 1.25rem; }
+  .hb-prose p:last-child { margin-bottom: 0; }
+  .hb-prose strong { color: #0f172a; font-weight: 650; }
+
+  /* Feature cards — refined grid */
+  .hb-cards3 {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+  .hb-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0; border-radius: 1.25rem;
+    padding: 1.9rem 1.6rem;
+    transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
+  }
+  .hb-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -8px rgba(79,70,229,0.14);
+    border-color: #c7d2fe;
+  }
+  .hb-card__icon {
+    font-size: 2rem; margin-bottom: 0.9rem;
+    width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+    border-radius: 0.9rem;
+  }
+  .hb-card h3 { font-size: 1.02rem; font-weight: 650; margin: 0 0 0.6rem; color: #0f172a; letter-spacing: -0.01em; }
+  .hb-card p { font-size: 0.92rem; color: #64748b; margin: 0; line-height: 1.65; }
+
+  /* Steps — elegant numbered */
+  .hb-steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.1rem; counter-reset: steps; }
+  .hb-steps li {
+    display: flex; gap: 1.4rem; align-items: flex-start;
+    background: #ffffff; border: 1px solid #e2e8f0;
+    border-radius: 1.15rem; padding: 1.6rem 1.75rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .hb-steps li:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); border-color: #c7d2fe; }
+  .hb-step-num {
+    flex-shrink: 0; width: 2.6rem; height: 2.6rem; border-radius: 0.9rem;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 750; font-size: 1.05rem;
+    box-shadow: 0 6px 16px -4px rgba(79,70,229,0.45);
+  }
+  .hb-steps li > span:last-child { color: #475569; line-height: 1.7; font-size: 1rem; padding-top: 0.35rem; }
+
+  /* Use cases — sleek */
+  .hb-usecases { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 0.9rem; }
+  .hb-usecases li {
+    background: #ffffff; border: 1px solid #e2e8f0;
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(180deg, #4f46e5, #a21caf) 1;
+    border-radius: 0 1rem 1rem 0; padding: 1.2rem 1.5rem;
+    color: #475569; line-height: 1.65;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+  .hb-usecases strong { color: #0f172a; font-weight: 650; }
+
+  /* Examples */
+  .hb-examples { display: grid; gap: 1.1rem; }
+  .hb-example {
+    background: linear-gradient(180deg, #f8fafc, #f1f5f9);
+    border: 1px solid #e2e8f0; border-radius: 1.15rem; padding: 1.6rem;
+  }
+  .hb-example__head {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 1rem; flex-wrap: wrap;
+  }
+  .hb-example__head strong { color: #0f172a; font-size: 1rem; }
+  .hb-example__note { color: #64748b; font-size: 0.92rem; margin: 0.9rem 0 0; line-height: 1.6; }
+
+  /* Keyword cloud — refined */
+  .hb-kw-cloud { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .hb-kw-cloud__item {
+    background: #ffffff; border: 1.5px solid #e2e8f0;
+    padding: 0.65rem 1.25rem; border-radius: 3rem;
+    font-size: 0.9rem; color: #475569; font-weight: 550;
+    transition: all 0.2s;
+  }
+  .hb-kw-cloud__item:hover { border-color: #4f46e5; color: #4f46e5; transform: translateY(-1px); }
+
+  /* Related tools — premium cards */
+  .hb-related-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.1rem;
+  }
+  .hb-related-card {
+    display: block; background: #ffffff; border: 1px solid #e2e8f0;
+    border-radius: 1.15rem; padding: 1.5rem 1.4rem; text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4,0,0.2,1); position: relative;
+  }
+  .hb-related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -8px rgba(79,70,229,0.16);
+    border-color: #a5b4fc;
+  }
+  .hb-related-card strong {
+    display: block; color: #0f172a; font-size: 0.98rem;
+    font-weight: 650; margin-bottom: 0.35rem; letter-spacing: -0.01em;
+    padding-right: 1.5rem;
+  }
+  .hb-related-card small { color: #94a3b8; font-size: 0.8rem; font-weight: 500; }
+  .hb-related-card__arrow {
+    position: absolute; right: 1.2rem; top: 1.35rem;
+    color: #4f46e5; font-weight: 700; transition: transform 0.2s;
+  }
+  .hb-related-card:hover .hb-related-card__arrow { transform: translateX(5px); }
+
+  /* Sidebar — refined */
+  .hb-toc {
+    background: #ffffff; border: 1px solid #e2e8f0;
+    border-radius: 1.25rem; padding: 1.75rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  }
+  .hb-toc h3 {
+    font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; color: #94a3b8; margin: 0 0 1.1rem;
+  }
+  .hb-toc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; }
+  .hb-toc li a {
+    display: block; color: #64748b; text-decoration: none;
+    font-size: 0.92rem; font-weight: 500; padding: 0.5rem 0.75rem;
+    border-radius: 0.6rem; transition: all 0.15s;
+  }
+  .hb-toc li a:hover { color: #4f46e5; background: #eef2ff; }
+  .hb-sidebar-cta {
+    background:
+      radial-gradient(ellipse 100% 80% at 50% 0%, rgba(255,255,255,0.15) 0%, transparent 60%),
+      linear-gradient(150deg, #312e81, #6d28d9 60%, #a21caf);
+    border-radius: 1.25rem; padding: 2rem 1.6rem; color: white; text-align: center;
+    box-shadow: 0 12px 32px -8px rgba(109,40,217,0.4);
+  }
+  .hb-sidebar-cta h3 { margin: 0 0 0.6rem; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; }
+  .hb-sidebar-cta p { font-size: 0.9rem; opacity: 0.88; margin: 0 0 1.25rem; line-height: 1.6; }
+  .hb-btn-outline {
+    display: inline-block; border: 2px solid rgba(255,255,255,0.85); color: white;
+    padding: 0.7rem 1.7rem; border-radius: 3rem; text-decoration: none;
+    font-weight: 650; font-size: 0.9rem; transition: all 0.2s;
+  }
+  .hb-btn-outline:hover { background: white; color: #6d28d9; border-color: white; transform: translateY(-1px); }
+
+  /* Ad slots — breathing room */
+  .hb-ad-slot { margin: 3rem auto !important; }
+
+  /* Responsive — generous mobile spacing */
   @media (max-width: 960px) {
-    .hb-tool-layout { grid-template-columns: 1fr; }
-    .hb-tool-sidebar { position: static; }
-    .hb-tool-ui--v2 { padding: var(--space-5); }
+    .hb-tool-shell { padding: 0 1.25rem; }
+    .hb-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hb-sidebar { position: static; }
+    .hb-hero { padding: 3rem 1.5rem; border-radius: 1.5rem; margin: 1rem 0 2rem; }
+    .hb-toolcard { padding: 1.75rem 1.4rem; border-radius: 1.4rem; }
+    .hb-section { margin: 2.75rem 0; }
+    .hb-section h2 { font-size: 1.5rem; }
+    .hb-cards3 { grid-template-columns: 1fr; }
+    .hb-hero__title { font-size: 2rem; }
   }
 </style>
