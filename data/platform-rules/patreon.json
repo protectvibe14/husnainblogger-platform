@@ -1,0 +1,135 @@
+{
+ "platform": "patreon",
+ "rules": [
+  {
+   "ruleId": "patreon-platform-fee-standard",
+   "platform": "patreon",
+   "rule": "Patreon platform fee — standard",
+   "value": "Flat 10% for creators who published their page after August 4, 2025",
+   "valueUnit": "text",
+   "source": "chartlex 2026 (Sep); miraflow.ai 2026",
+   "sourceUrl": "https://www.chartlex.com/blog/money/patreon-vs-kofi-musicians-2025",
+   "effectiveDate": "2025-08-04",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-086"
+   ],
+   "notes": "Legacy plans consolidated on this date.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "patreon-platform-fee-legacy",
+   "platform": "patreon",
+   "rule": "Patreon platform fee — legacy tiers",
+   "value": "Lite 5% / Pro 8% / Premium 12% (pages published on/before 2025-08-04)",
+   "valueUnit": "text",
+   "source": "chartlex 2026; paprika.bot 2026 fee breakdown",
+   "sourceUrl": "https://www.chartlex.com/blog/money/patreon-vs-kofi-musicians-2025",
+   "effectiveDate": "2025-08-04",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-086"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "patreon-payment-processing",
+   "platform": "patreon",
+   "rule": "Patreon payment processing",
+   "value": "2.9% + $0.30 per transaction over $3; 5% + $0.10 under $3",
+   "valueUnit": "text",
+   "source": "paprika.bot How Much Does Patreon Take 2026",
+   "sourceUrl": "https://paprika.bot/blog/how-much-does-patreon-take/",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-086"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "patreon-currency-conversion",
+   "platform": "patreon",
+   "rule": "Patreon currency conversion fee",
+   "value": 2.5,
+   "valueUnit": "percent",
+   "source": "paprika.bot 2026",
+   "sourceUrl": "https://paprika.bot/blog/how-much-does-patreon-take/",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-086"
+   ],
+   "notes": "When fan currency differs from payout currency.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "patreon-payout-fee",
+   "platform": "patreon",
+   "rule": "Patreon payout fee",
+   "value": "$0.25 per bank payout; 2–5% via PayPal/Payoneer",
+   "valueUnit": "text",
+   "source": "paprika.bot 2026",
+   "sourceUrl": "https://paprika.bot/blog/how-much-does-patreon-take/",
+   "effectiveDate": "2026-04-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-086"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
