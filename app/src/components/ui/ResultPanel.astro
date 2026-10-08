@@ -1,0 +1,107 @@
+---
+/**
+ * ResultPanel.astro — the results region shell for tool templates.
+ * Owner: MA1-DesignSystem.
+ *
+ * Renders <section aria-labelledby> + an h2 results heading (tabindex="-1"
+ * focus target). States are driven by the `data-state` attribute, toggled by
+ * island code via lib/ui/result-panel.ts:
+ *   empty   -> shows `emptyText` (never a silent empty region — §3.9)
+ *   loading -> visible spinner + polite "Generating…" via shared announcer
+ *   ready   -> slot content (the actual results)
+ *   error   -> `errorText` fallback; assertive announcement is the island's job
+ *
+ * Templates MUST call resultsReady(panel) after rendering results (§3.9).
+ * Results MUST be real text/HTML — never canvas-only or image-only (§3.9).
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  /** Results heading text, e.g. "Generated hashtags". */
+  title: string;
+  /** Shown before the first run. */
+  emptyText: string;
+  /** Shown while generating. */
+  loadingText?: string;
+  /** Shown when generation fails (island sets data-state="error"). */
+  errorText?: string;
+  id?: string;
+  class?: string;
+}
+
+const {
+  title, emptyText, loadingText = "Generating…", errorText = "Something went wrong generating the results. Try again.",
+  id: idProp, class: cls,
+} = Astro.props;
+const id = idProp ?? nextId("results");
+const headingId = `${id}-heading`;
+---
+<section
+  class:list={["hb-result", cls]}
+  id={id}
+  data-result-panel
+  data-state="empty"
+  aria-labelledby={headingId}
+>
+  <h2 class="hb-result__heading" id={headingId} tabindex="-1" data-result-heading>{title}</h2>
+
+  <div class="hb-result__state hb-result__state--empty" data-result-state="empty">
+    <p>{emptyText}</p>
+  </div>
+
+  <div class="hb-result__state hb-result__state--loading" data-result-state="loading" hidden>
+    <p class="hb-result__loading">
+      <span class="hb-spinner" aria-hidden="true"></span>
+      <span data-result-loading-text>{loadingText}</span>
+    </p>
+  </div>
+
+  <div class="hb-result__state hb-result__state--ready" data-result-state="ready" hidden>
+    <slot />
+  </div>
+
+  <div class="hb-result__state hb-result__state--error" data-result-state="error" hidden>
+    <p>{errorText}</p>
+  </div>
+</section>
+
+<script>
+  // Declarative state switching: island code sets data-state on the section;
+  // this keeps the shown/hidden bookkeeping in ONE place.
+  function sync(panel: HTMLElement): void {
+    const state = panel.dataset.state ?? "empty";
+    panel.querySelectorAll<HTMLElement>("[data-result-state]").forEach((el) => {
+      const active = el.dataset.resultState === state;
+      if (active) el.removeAttribute("hidden");
+      else el.setAttribute("hidden", "");
+    });
+  }
+
+  function wire(panel: HTMLElement): void {
+    if (panel.dataset.hbWired) return;
+    panel.dataset.hbWired = "1";
+    new MutationObserver(() => sync(panel)).observe(panel, {
+      attributes: true,
+      attributeFilter: ["data-state"],
+    });
+    sync(panel);
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-result-panel]").forEach(wire);
+</script>
+
+<style>
+  .hb-result { margin-block: var(--space-8); }
+  .hb-result__heading {
+    margin: 0 0 var(--space-4);
+    font-size: var(--text-3xl);
+    line-height: var(--leading-tight);
+  }
+  .hb-result__heading:focus { outline: none; }
+  .hb-result__heading:focus-visible {
+    box-shadow: var(--focus-ring);
+    border-radius: var(--radius-sm);
+  }
+  .hb-result__state--empty p { color: var(--color-muted); }
+  .hb-result__loading { display: flex; align-items: center; gap: var(--space-3); }
+</style>
