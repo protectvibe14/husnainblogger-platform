@@ -1,0 +1,341 @@
+---
+/**
+ * AiToolTemplate.astro — template for toolType "ai" (the ai-tools category).
+ *
+ * Four lanes, one shell:
+ *  Lane A — real AI, 100% client-side (Transformers.js / Kokoro). No key.
+ *  Lane B — BYOK chat-style tools (user pastes a free Gemini/Groq/OpenRouter key).
+ *  Lane C — honest rule-based helpers. Rendered as pure tools (no client.ts);
+ *           this template is used with toolType "ai" only when a client module
+ *           exists; pure Lane C tools should use the normal 10 templates.
+ *  Lane D — cloud APIs. Key-vault UI + provider picker + no-key demo state.
+ *
+ * The interactive region is a mount point: an island script lazy-loads
+ * ../../tools/<category>/<slug>/client.ts via _ai-runtime.ts. SSR output
+ * carries the headline, model cards, and disclosures for SEO and honesty.
+ */
+import ToolShell from "./ToolShell.astro";
+import type { AiToolConfig } from "../lib/ai/types.ts";
+
+interface Props {
+  tool: any;
+  content: any;
+  relatedTools?: any[];
+  freshness?: any;
+  aiConfig?: AiToolConfig;
+}
+
+const { tool, content, relatedTools = [], freshness, aiConfig } = Astro.props;
+
+const cfg: AiToolConfig = aiConfig ?? {
+  lane: "D",
+  headline: "Bring your own API key — this tool runs entirely in your browser.",
+  disclosures: ["Requires a free API key from the provider you choose."],
+};
+
+const aiConfigJson = JSON.stringify(cfg);
+const laneLabel: Record<string, string> = {
+  A: "Runs 100% in your browser",
+  B: "Bring your own free API key",
+  C: "Rule-based helper",
+  D: "Cloud AI — bring your own API key",
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="ai" data-ai-lane={cfg.lane}>
+    <p class="hb-ai-headline">
+      <strong>{laneLabel[cfg.lane] ?? "AI tool"}</strong> — {cfg.headline}
+    </p>
+
+    {
+      cfg.lane === "A" && cfg.models && (
+        <div class="hb-ai-models" aria-label="AI models used by this tool">
+          {cfg.models.map((m) => (
+            <div class="hb-ai-model">
+              <strong class="hb-ai-model__id">{m.id}</strong>
+              <span class="hb-ai-model__meta">
+                {m.task} · ~{m.sizeMb} MB download · {m.license}
+                {m.notes ? ` · ${m.notes}` : ""}
+              </span>
+              <span class="hb-ai-model__cache">Downloads once, then works offline.</span>
+            </div>
+          ))}
+        </div>
+      )
+    }
+
+    {
+      (cfg.lane === "B" || cfg.lane === "D") && (
+        <p class="hb-ai-nokey">
+          {cfg.lane === "D"
+            ? (cfg.noKeyBody ??
+              "Paste a key below to unlock live generation. Without a key you can still read the guides and FAQs.")
+            : "Paste a free API key below — generation starts immediately, with zero code changes."}
+        </p>
+      )
+    }
+
+    {/* Client-owned mount point. The island script loads the tool's client.ts. */}
+    <div
+      class="hb-ai-mount"
+      data-ai-mount
+      data-category={tool.categorySlug}
+      data-slug={tool.slug}
+      data-ai-config={aiConfigJson}
+      aria-live="polite"
+    >
+      <p class="hb-ai-loading">Loading the interactive tool…</p>
+    </div>
+
+    {
+      cfg.disclosures.length > 0 && (
+        <aside class="hb-ai-disclosures" aria-label="Costs, limits and honesty notes">
+          <h3 class="hb-ai-disclosures__title">Good to know</h3>
+          <ul>
+            {cfg.disclosures.map((d) => (
+              <li>{d}</li>
+            ))}
+          </ul>
+        </aside>
+      )
+    }
+  </div>
+</ToolShell>
+
+<script>
+  import { initAiTools } from "./_ai-runtime.ts";
+  initAiTools();
+</script>
+
+<style>
+  .hb-ai-headline {
+    font-size: 1.05rem;
+    margin: 0 0 1rem;
+  }
+  .hb-ai-models {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0 0 1rem;
+  }
+  .hb-ai-model {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    display: grid;
+    gap: 0.25rem;
+  }
+  .hb-ai-model__id {
+    font-family: ui-monospace, monospace;
+    font-size: 0.9rem;
+  }
+  .hb-ai-model__meta {
+    font-size: 0.85rem;
+    color: #475569;
+  }
+  .hb-ai-model__cache {
+    font-size: 0.8rem;
+    color: #16a34a;
+  }
+  .hb-ai-nokey {
+    background: #f8fafc;
+    border: 1px dashed #94a3b8;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+  }
+  .hb-ai-mount {
+    min-height: 120px;
+    margin: 0 0 1.5rem;
+  }
+  .hb-ai-loading,
+  .hb-ai-fallback {
+    color: #64748b;
+    font-style: italic;
+  }
+  .hb-ai-disclosures {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
+  .hb-ai-disclosures__title {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+  .hb-ai-disclosures ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    color: #475569;
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  /* Key-vault card (rendered by lib/ai/key-vault.ts) */
+  .hb-keyvault {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin: 0 0 1.25rem;
+    background: #fff;
+  }
+  .hb-keyvault__title {
+    margin: 0 0 0.25rem;
+    font-size: 1.05rem;
+  }
+  .hb-keyvault__privacy,
+  .hb-keyvault__intro {
+    font-size: 0.85rem;
+    color: #475569;
+    margin: 0 0 0.75rem;
+  }
+  .hb-keyvault__row {
+    border-top: 1px solid #f1f5f9;
+    padding: 0.75rem 0;
+  }
+  .hb-keyvault__row-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .hb-keyvault__name-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .hb-keyvault__status {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+  }
+  .hb-keyvault__status.is-saved {
+    color: #16a34a;
+    border-color: #86efac;
+  }
+  .hb-keyvault__getkey,
+  .hb-keyvault__docs {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .hb-keyvault__form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .hb-keyvault__input {
+    flex: 1 1 220px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    font-family: ui-monospace, monospace;
+    font-size: 0.85rem;
+  }
+  .hb-keyvault__notes {
+    margin-top: 0.5rem;
+    display: grid;
+    gap: 0.25rem;
+  }
+  .hb-keyvault__note {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin: 0;
+  }
+  .hb-keyvault__note--warn {
+    color: #b45309;
+  }
+
+  /* Generic AI-client primitives */
+  .hb-ai-field {
+    display: grid;
+    gap: 0.35rem;
+    margin-bottom: 0.9rem;
+  }
+  .hb-ai-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .hb-ai-textarea,
+  .hb-ai-input,
+  .hb-ai-select {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    font-size: 0.95rem;
+  }
+  .hb-ai-textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+  .hb-ai-progress {
+    height: 0.6rem;
+    background: #f1f5f9;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+  }
+  .hb-ai-progress > div {
+    height: 100%;
+    background: #2563eb;
+    width: 0%;
+    transition: width 0.2s ease;
+  }
+  .hb-ai-status {
+    font-size: 0.85rem;
+    color: #475569;
+    margin: 0.25rem 0 0.75rem;
+  }
+  .hb-ai-error {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+  .hb-ai-result {
+    margin: 1rem 0;
+  }
+  .hb-ai-result img,
+  .hb-ai-result video,
+  .hb-ai-result audio {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+  }
+  .hb-ai-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+  }
+  .hb-btn {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  .hb-btn--primary {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+  }
+  .hb-btn--ghost {
+    background: transparent;
+  }
+  .hb-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+</style>
