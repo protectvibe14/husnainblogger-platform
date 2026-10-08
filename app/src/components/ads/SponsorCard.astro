@@ -1,0 +1,68 @@
+---
+/**
+ * components/ads/SponsorCard.astro — premium sponsor placement.
+ * Owner: Ads.
+ *
+ * Renders the sponsor card when enabled in ads-config.json.
+ * All fields (title, text, CTA, URL) are admin-editable.
+ */
+import adsConfig from "../../../../data/ads-config.json";
+
+const sponsor = (adsConfig.slots as Record<string, any>)["tool-sponsor"];
+const show = sponsor?.enabled && sponsor?.sponsorTitle?.trim() && sponsor?.sponsorUrl?.trim();
+---
+
+{show && (
+  <aside class="hb-sponsor" aria-label="Sponsored">
+    <span class="hb-sponsor__badge">Sponsored</span>
+    <h3 class="hb-sponsor__title">{sponsor.sponsorTitle}</h3>
+    {sponsor.sponsorText?.trim() && <p class="hb-sponsor__text">{sponsor.sponsorText}</p>}
+    <a class="hb-sponsor__cta" href={sponsor.sponsorUrl} target="_blank" rel="sponsored noopener">
+      {sponsor.sponsorCta?.trim() || "Learn more"} →
+    </a>
+  </aside>
+)}
+
+<style>
+  .hb-sponsor {
+    position: relative;
+    background: linear-gradient(135deg, var(--color-surface-raised), color-mix(in srgb, var(--color-accent) 8%, var(--color-surface-raised)));
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    margin: var(--space-8) 0;
+  }
+  .hb-sponsor__badge {
+    position: absolute;
+    top: -0.8rem;
+    left: var(--space-5);
+    background: var(--gradient-gold);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+  }
+  .hb-sponsor__title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    margin: var(--space-2) 0;
+  }
+  .hb-sponsor__text {
+    color: var(--color-muted);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-4);
+  }
+  .hb-sponsor__cta {
+    display: inline-block;
+    background: var(--color-ink);
+    color: var(--color-on-ink);
+    font-weight: 700;
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+  }
+</style>
