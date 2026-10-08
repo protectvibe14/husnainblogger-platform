@@ -1,0 +1,465 @@
+{
+ "platform": "facebook",
+ "rules": [
+  {
+   "ruleId": "facebook-post-character-limit",
+   "platform": "facebook",
+   "rule": "Post character limit",
+   "value": "63,206 characters (feed truncates ~150-200 chars on mobile)",
+   "valueUnit": "count",
+   "source": "howmanywords.app Facebook limits (2026); lettercounter.org; dev.to character-limits survey (Sep 2026)",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-390"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-personal-profile-bio-character-limit",
+   "platform": "facebook",
+   "rule": "Personal profile bio character limit",
+   "value": "101 characters",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026); lettercounter.org",
+   "sourceUrl": "https://lettercounter.org/blog/facebook-character-limit-guide/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-386"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-page-name-character-limit",
+   "platform": "facebook",
+   "rule": "Page name character limit",
+   "value": "75 characters",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026); lettercounter.org",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-387"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-page-short-description-character-limit",
+   "platform": "facebook",
+   "rule": "Page short description character limit",
+   "value": "255 characters (appears in search results)",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026)",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-386"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-page-about-field-limit-graph-api",
+   "platform": "facebook",
+   "rule": "Page 'about' field limit (Graph API)",
+   "value": "100 characters (maps to Description setting in Edit Page Info)",
+   "valueUnit": "count",
+   "source": "Meta for Developers: Page Graph API reference (platform's own docs)",
+   "sourceUrl": "https://developers.facebook.com/docs/graph-api/reference/page/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-username-rules",
+   "platform": "facebook",
+   "rule": "Username rules",
+   "value": "5-50 characters; alphanumeric + periods only; no generic terms or domain extensions",
+   "valueUnit": "count",
+   "source": "Facebook Help Center: custom username guidelines (platform's own docs)",
+   "sourceUrl": "https://www.facebook.com/help/105399436216001?locale=en_US",
+   "effectiveDate": "2025-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-group-name-character-limit",
+   "platform": "facebook",
+   "rule": "Group name character limit",
+   "value": "75 characters",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026, single secondary source)",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-388"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-event-description-guidance",
+   "platform": "facebook",
+   "rule": "Event description guidance",
+   "value": "2,000 characters; key details in first 100",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026, single secondary source)",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-393"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-page-profile-cover-photo-size",
+   "platform": "facebook",
+   "rule": "Page/Profile cover photo size",
+   "value": "851x315 pixels (keep key text centered)",
+   "valueUnit": "text",
+   "source": "Gatorworks Facebook image sizes (Sep 2026); PetaPixel 2026 guide; framekit social-media-sizes.md",
+   "sourceUrl": "https://gatorworks.net/facebook-image-sizes/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-399"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-group-cover-photo-size",
+   "platform": "facebook",
+   "rule": "Group cover photo size",
+   "value": "1640x856 pixels upload (desktop visible crop smaller; conflicting source cites 820x462)",
+   "valueUnit": "text",
+   "source": "Gatorworks (Sep 2026); framekit social-media-sizes.md",
+   "sourceUrl": "https://gatorworks.net/facebook-image-sizes/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-399"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-event-cover-photo-size",
+   "platform": "facebook",
+   "rule": "Event cover photo size",
+   "value": "1920x1005 pixels (conflicting source cites 1920x1080)",
+   "valueUnit": "text",
+   "source": "Gatorworks (Sep 2026)",
+   "sourceUrl": "https://gatorworks.net/facebook-image-sizes/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-393"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-feed-post-image-portrait",
+   "platform": "facebook",
+   "rule": "Feed post image (portrait)",
+   "value": "1080x1350 pixels (4:5)",
+   "valueUnit": "text",
+   "source": "PetaPixel 2026 guide; framekit; Adobe 2026 sizes roundup",
+   "sourceUrl": "http://petapixel.com/social-media-image-sizes/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-story-canvas-size",
+   "platform": "facebook",
+   "rule": "Story canvas size",
+   "value": "1080x1920 pixels (9:16)",
+   "valueUnit": "text",
+   "source": "PetaPixel 2026; framekit; probir-sarkar browserstay (2026)",
+   "sourceUrl": "http://petapixel.com/social-media-image-sizes/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-392"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-reel-canvas",
+   "platform": "facebook",
+   "rule": "Reel canvas",
+   "value": "1080x1920 pixels (9:16 vertical); reel duration/audio specs not verified",
+   "valueUnit": "text",
+   "source": "Same canvas as Stories (PetaPixel 2026; framekit)",
+   "sourceUrl": "http://petapixel.com/social-media-image-sizes/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-391"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-link-share-image-size",
+   "platform": "facebook",
+   "rule": "Link share image size",
+   "value": "1200x630 pixels (1.91:1 Open Graph)",
+   "valueUnit": "text",
+   "source": "framekit; probir-sarkar browserstay (2026)",
+   "sourceUrl": "https://github.com/mauriciodmo/framekit/blob/HEAD/Docs/skills/public/fk-templates/references/social-media-sizes.md",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-ad-headline-character-limit",
+   "platform": "facebook",
+   "rule": "Ad headline character limit",
+   "value": "40 characters (strict)",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026); lettercounter.org",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-394"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-ad-primary-text-visible-window",
+   "platform": "facebook",
+   "rule": "Ad primary text visible window",
+   "value": "125 characters visible before truncation (CTA must sit within)",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026); lettercounter.org",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-395"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "facebook-ad-description-character-limit",
+   "platform": "facebook",
+   "rule": "Ad description character limit",
+   "value": "30 characters (appears below headline)",
+   "valueUnit": "count",
+   "source": "howmanywords.app (2026)",
+   "sourceUrl": "https://howmanywords.app/blog/facebook-character-limits",
+   "effectiveDate": "2026-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-395"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
