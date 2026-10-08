@@ -1,0 +1,146 @@
+---
+/**
+ * AnalyzerTemplate.astro — paste content → findings (metrics + table).
+ *
+ * Serves toolType: analyzer (9 tools).
+ *
+ * Contract: one or more textarea/text inputs; the TOOL LOGIC SLOT returns
+ * scalar metrics (number/text) plus an optional findings table
+ * ({ columns, rows }). Metrics render as definition cards; the table
+ * renders in a scrollable region with caption + headers (a11y 1.4.10).
+ * Demo honesty rule: the demo computes only direct counts — no invented
+ * scores. Real tools must label estimates as estimates.
+ *
+ * MA2: replace `demoRun` below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { ToolTemplatePropsV1 } from './types.ts';
+
+interface Props extends ToolTemplatePropsV1 {}
+const { tool, content, relatedTools = [], freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_INPUTS: ToolInput[] = [
+  { id: 'text', label: 'Text to analyze', type: 'textarea', required: true, placeholder: 'Paste your text here…' },
+];
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'wordCount', label: 'Words', type: 'number' },
+  { id: 'sentenceCount', label: 'Sentences', type: 'number' },
+  { id: 'avgWords', label: 'Avg. words per sentence', type: 'number' },
+  { id: 'readingTime', label: 'Est. reading time (minutes)', type: 'number', description: 'Estimate at 200 words per minute.' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="analyzer">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      {inputs.map((input) => (
+        <Field
+          id={`field-${tool.toolId}-${input.id}`}
+          name={input.id}
+          label={input.label}
+          type={CONTROL[input.type] ?? 'text'}
+          required={input.required}
+          hint={input.placeholder}
+          options={input.options}
+          min={input.validation?.min}
+          max={input.validation?.max}
+          rows={input.type === 'textarea' ? 8 : undefined}
+          step={input.type === 'number' ? 'any' : undefined}
+          inputMode={input.type === 'number' ? 'decimal' : undefined}
+        />
+      ))}
+
+      <div class="hb-form-actions">
+        <Button type="submit" variant="primary">Analyze</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Analysis results"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: honest text counts only (no invented scores). Real tools return
+   * scalar metrics + optionally { columns, rows } for the findings table.
+   * ======================================================================= */
+  function demoRun(values: ToolRunValues): ToolRunResult {
+    const text = String(values.text ?? '');
+    if (!text.trim()) return { ok: false, error: 'Paste some text to analyze.' };
+    const words = text.trim().split(/\s+/).filter(Boolean);
+    const sentences = text.split(/[.!?…]+/).map((s) => s.trim()).filter(Boolean);
+    const wordCount = words.length;
+    const sentenceCount = sentences.length || 1;
+    return {
+      ok: true,
+      values: {
+        wordCount,
+        sentenceCount,
+        avgWords: Math.round((wordCount / sentenceCount) * 10) / 10,
+        readingTime: Math.max(1, Math.round(wordCount / 200)),
+      },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? demoRun,
+    resultHeading: 'Analysis results',
+  });
+</script>
