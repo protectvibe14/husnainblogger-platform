@@ -1,0 +1,302 @@
+{
+ "platform": "etsy",
+ "rules": [
+  {
+   "ruleId": "etsy-listing-fee",
+   "platform": "etsy",
+   "rule": "Listing fee (USD)",
+   "value": 0.2,
+   "valueUnit": "usd",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2026-02-13",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Per listing; longstanding Etsy fee.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-transaction-fee",
+   "platform": "etsy",
+   "rule": "Transaction fee",
+   "value": 6.5,
+   "valueUnit": "percent",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2026-02-13",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Of (item price + shipping charged + gift wrap).",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-processing-fee-us",
+   "platform": "etsy",
+   "rule": "Payment processing fee — US",
+   "value": "3% + $0.25",
+   "valueUnit": "text",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2026-02-12",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Per order, on total sale amount incl. shipping and tax where applicable.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-processing-fee-uk",
+   "platform": "etsy",
+   "rule": "Payment processing fee — UK",
+   "value": "4% + £0.20",
+   "valueUnit": "text",
+   "source": "ecomcalctools Etsy Fee Calculator 2026 fee structure",
+   "sourceUrl": "https://ecomcalctools.com/etsy/etsy-fee-calculator/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Source dated 2026 (year only); exact publication date not stated.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-processing-fee-de-fr",
+   "platform": "etsy",
+   "rule": "Payment processing fee — DE/FR",
+   "value": "4% + €0.30",
+   "valueUnit": "text",
+   "source": "ecomcalctools Etsy Fee Calculator 2026 fee structure",
+   "sourceUrl": "https://ecomcalctools.com/etsy/etsy-fee-calculator/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Source dated 2026 (year only); exact publication date not stated.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-processing-fee-ca-au",
+   "platform": "etsy",
+   "rule": "Payment processing fee — CA/AU",
+   "value": "3% + CA$0.25 / A$0.25",
+   "valueUnit": "text",
+   "source": "ShopShield Etsy Fees & Payments Update 2026",
+   "sourceUrl": "https://shop-shield.com/blog/etsy-fees-payments-update-2026",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Source dated 2026 (year only).",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-offsite-ads-fee",
+   "platform": "etsy",
+   "rule": "Offsite Ads fee",
+   "value": "15% (<$10k/yr, opt-out) or 12% (>=$10k/yr, mandatory); capped at $100 per attributed order",
+   "valueUnit": "text",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2020-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "In place since Offsite Ads launched 2020; exact change date not confirmed by source.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-currency-conversion-fee",
+   "platform": "etsy",
+   "rule": "Currency conversion fee",
+   "value": 2.5,
+   "valueUnit": "percent",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2026-07-03",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "When listing currency differs from payout currency.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-regulatory-operating-fee",
+   "platform": "etsy",
+   "rule": "Regulatory operating fee",
+   "value": "0.05%–1.97%",
+   "valueUnit": "text",
+   "source": "FeeProofed Etsy Seller Fees 2026 guide (published 2026-07-03; cross-checked against Etsy's Fees & Payments Policy last updated 2026-02-13 and Payments Policy last updated 2026-02-12)",
+   "sourceUrl": "https://www.feeproofed.com/guides/etsy-seller-fees-2026/",
+   "effectiveDate": "2026-07-03",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Of (item price + shipping + gift wrap); certain seller countries only.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-regulated-category-fee",
+   "platform": "etsy",
+   "rule": "Regulated category surcharge",
+   "value": "+2.5%",
+   "valueUnit": "text",
+   "source": "ecomcalctools Etsy Fee Calculator 2026 fee structure",
+   "sourceUrl": "https://ecomcalctools.com/etsy/etsy-fee-calculator/",
+   "effectiveDate": "2026-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "On top of transaction fee; health & beauty, cosmetics, face coverings, sexual wellness.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "etsy-shop-setup-fee",
+   "platform": "etsy",
+   "rule": "Shop setup fee",
+   "value": "$15–$29 one-time for new shops",
+   "valueUnit": "text",
+   "source": "Sellbery Etsy Seller Fees 2026 guide",
+   "sourceUrl": "https://sellbery.com/blog/a-beginners-guide-to-etsy-seller-fees/",
+   "effectiveDate": "2024-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-055",
+    "tool-056"
+   ],
+   "notes": "Introduced Sep 2024 per source.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
