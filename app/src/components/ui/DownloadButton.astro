@@ -1,0 +1,81 @@
+---
+/**
+ * DownloadButton.astro — client-side file download button.
+ * Owner: MA1-DesignSystem.
+ *
+ * For generator/formatter tools ("Download CSV", "Download TXT"). The file
+ * is generated in the browser (zero-backend rule) from `value` or the
+ * textContent of `targetId`.
+ *
+ * Accessible name = the visible `label` (e.g. "Download CSV"), which names
+ * the file/format (§3.8). After activation: announce.polite("Download
+ * started") via the shared live region — never an inline aria-live.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  /** Visible label — MUST name the format, e.g. "Download CSV". */
+  label: string;
+  /** Download filename, e.g. "keywords.csv". */
+  filename: string;
+  value?: string;
+  targetId?: string;
+  mime?: string;
+  variant?: "primary" | "secondary" | "tertiary";
+  id?: string;
+  class?: string;
+}
+
+const {
+  label, filename, value, targetId, mime = "text/plain;charset=utf-8",
+  variant = "secondary", id: idProp, class: cls,
+} = Astro.props;
+const id = idProp ?? nextId("dlbtn");
+---
+<button
+  type="button"
+  id={id}
+  class:list={["hb-btn", `hb-btn--${variant}`, "hb-dlbtn", cls]}
+  data-dl-value={value}
+  data-dl-target={targetId}
+  data-dl-filename={filename}
+  data-dl-mime={mime}
+>
+  <svg class="hb-btn__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+    <path d="M8 2v8m0 0 3-3M8 10 5 7" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2.5 12.5h11" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+  </svg>
+  <span>{label}</span>
+</button>
+
+<script>
+  import { announce } from "../../lib/a11y/announce";
+
+  function wire(btn: HTMLButtonElement): void {
+    if (btn.dataset.hbWired) return;
+    btn.dataset.hbWired = "1";
+    btn.addEventListener("click", () => {
+      const value = btn.dataset.dlValue;
+      const targetId = btn.dataset.dlTarget;
+      const target = targetId ? document.getElementById(targetId) : null;
+      const text = value ?? target?.textContent ?? "";
+      if (!text.trim()) {
+        announce.assertive("Nothing to download yet.");
+        return;
+      }
+      const blob = new Blob([text], { type: btn.dataset.dlMime ?? "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = btn.dataset.dlFilename ?? "download.txt";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      // Revoke after the click has been dispatched.
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      announce.polite("Download started.");
+    });
+  }
+
+  document.querySelectorAll<HTMLButtonElement>(".hb-dlbtn").forEach(wire);
+</script>
