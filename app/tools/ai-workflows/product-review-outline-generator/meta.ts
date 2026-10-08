@@ -1,0 +1,146 @@
+import type { ToolInput, ToolOutput } from "../../../src/lib/registry/types.ts";
+import type { ToolContent } from "../../../src/templates/types.ts";
+
+const TOOL_URL = "https://husnainblogger.com/tools/ai-workflows/product-review-outline-generator/";
+
+export const inputs: ToolInput[] = [
+  {
+    id: "productName",
+    label: "Product name",
+    type: "text",
+    required: true,
+    placeholder: "e.g. Sonos Era 100",
+  },
+  {
+    id: "reviewType",
+    label: "Review type",
+    type: "select",
+    required: true,
+    options: ["hands-on", "comparison", "roundup"],
+  },
+];
+
+export const outputs: ToolOutput[] = [
+  {
+    id: "outline",
+    label: "Review outline (copy)",
+    type: "copy",
+    description: "The full 10-section outline with your product filled in — copy it whole.",
+  },
+  {
+    id: "sections",
+    label: "Section headings",
+    type: "list",
+    description: "Numbered list of the 10 section headings for quick reference.",
+  },
+];
+
+const DESCRIPTION =
+  "Generate a complete product review template outline with testing-note slots for hands-on, comparison, or roundup reviews. Free forever, no signup required.";
+
+export const content: ToolContent = {
+  title: "Product Review Template 2026 – Free Tool | HusnainBlogger",
+  description: DESCRIPTION,
+  howTo: [
+    "Enter your product name (required).",
+    "Choose the review type: hands-on, comparison, or roundup.",
+    "Run the tool to get a fixed 10-section review structure with your product filled in.",
+    "Follow each section's write prompt to draft your own review — the tool writes no opinions.",
+    "Fill every testing-note slot with what you actually tested before publishing.",
+    "Copy the full outline and work through it top to bottom.",
+  ],
+  methodology:
+    "The tool fills a fixed 10-section structure (3 types x 10 section templates = 30 fixed templates) with your " +
+    "product name. Each section carries a fixed write prompt and a testing-note slot where you record what you " +
+    "actually tested. No review opinions, scores, or verdicts are written or invented — the outline is a structure, " +
+    "not a finished review.",
+  examples: [
+    {
+      title: "Speaker review",
+      inputs: { productName: "Sonos Era 100", reviewType: "hands-on" },
+      note: "Single-product hands-on structure with testing notes.",
+    },
+    {
+      title: "Head-to-head",
+      inputs: { productName: "Kindle Paperwhite", reviewType: "comparison" },
+      note: "Comparison structure — name the rival in the [COMPETITOR] slots.",
+    },
+    {
+      title: "Category roundup",
+      inputs: { productName: "Dyson V15", reviewType: "roundup" },
+      note: "Roundup structure with your product as the anchor pick.",
+    },
+  ],
+  faqs: [
+    {
+      question: "What is the best product review template?",
+      answer:
+        "The best product review template pairs a clear structure — verdict, what you tested, strengths, drawbacks, value — with slots for real testing notes. This free tool generates that 10-section structure for hands-on, comparison, and roundup reviews.",
+    },
+    {
+      question: "Is there a free product review template?",
+      answer:
+        "Yes — this product review outline generator is completely free with no signup. Enter your product name, pick a review type, and get the full 10-section outline with testing-note slots instantly.",
+    },
+    {
+      question: "How to use product review?",
+      answer:
+        "Pick your review type, then write one section at a time following each section's write prompt. Fill every testing-note slot with what you actually tested — readers trust specifics over adjectives, and invented results will cost you that trust.",
+    },
+    {
+      question: "How does a product review template work?",
+      answer:
+        "You enter your product name and review type; the tool assembles a fixed 10-section outline with write prompts and testing-note slots. It writes no opinions for you — the review's credibility comes from your real testing.",
+    },
+    {
+      question: 'How does the product review template work?',
+      answer:
+        'Enter your details using the inputs above and the product review template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+    },
+    {
+      question: 'Is the product review template free to use?',
+      answer:
+        'Yes - this product review template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+    },
+    {
+      question: 'What is a product review template?',
+      answer:
+        'A product review template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+    },
+  ],
+  assumptions: [
+    "The tool provides structure only — no review opinions, scores, or verdicts are written or invented.",
+    "Comparison reviews use a [COMPETITOR] placeholder you fill in yourself; roundups anchor on your product.",
+    "Every outline ships with testing-note slots; publish only after real testing or hands-on research.",
+  ],
+  jsonLd: [
+    {
+      "@type": "SoftwareApplication",
+      name: "Product Review Template 2026 – Free Tool | HusnainBlogger",
+      url: TOOL_URL,
+      applicationCategory: "Utilities",
+      operatingSystem: "Web",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      description: DESCRIPTION,
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
+        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "AI Workflow Tools",
+          item: "https://husnainblogger.com/tools/ai-workflows/",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Product Review Outline Generator",
+          item: TOOL_URL,
+        },
+      ],
+    },
+  ],
+};
