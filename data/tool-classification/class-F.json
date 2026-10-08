@@ -1,0 +1,1736 @@
+{
+ "category": "F",
+ "categoryName": "CapCut & Video Editing",
+ "categorySlug": "video-editing",
+ "toolRange": "251-300",
+ "toolTypeCorrections": [
+  {
+   "from": "generator",
+   "reason": "It validates caption timing against rules; validation is the core function, not generation.",
+   "to": "checker",
+   "toolId": "tool-257"
+  },
+  {
+   "from": "generator",
+   "reason": "Core function is audio signal analysis (beat detection), not content generation.",
+   "to": "analyzer",
+   "toolId": "tool-269"
+  },
+  {
+   "from": "generator",
+   "reason": "Core function is analyzing an audio file to find silence regions.",
+   "to": "analyzer",
+   "toolId": "tool-270"
+  },
+  {
+   "from": "generator",
+   "reason": "Core function is measuring audio levels (dBFS), i.e. signal measurement.",
+   "to": "analyzer",
+   "toolId": "tool-271"
+  }
+ ],
+ "tools": [
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "source footage lower res than recommended export -> warn against upscaling; frame rate mismatch -> advise matching source or integer multiple; unknown platform -> fall back to safe H.264/1080p/30 defaults with warning"
+   ],
+   "engine": "rule-lookup",
+   "feasibilityNote": "Pure rule table lookup over data/platform-rules/capcut.json. Zero compute risk.",
+   "formulaRef": [
+    "F-STORAGE-01"
+   ],
+   "inputs": [
+    "targetPlatform (enum: TikTok|YouTube|Shorts|Instagram Reels|Facebook|desktop)",
+    "sourceResolution",
+    "sourceFps",
+    "priority (quality|fileSize|uploadSpeed)"
+   ],
+   "name": "CapCut Export Settings Finder",
+   "outputs": [
+    "resolution",
+    "frameRate",
+    "codec",
+    "format",
+    "bitrateTier",
+    "aspectRatio",
+    "rationale[]"
+   ],
+   "platformRulesRef": [
+    "capcut-export-resolution-options",
+    "capcut-export-frame-rates",
+    "capcut-export-codecs",
+    "capcut-export-formats"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "capcut-export-settings-finder",
+   "toolId": "tool-251",
+   "validation": [
+    "platform must be a known enum value",
+    "sourceFps within 1-240",
+    "priority must be one of the three allowed"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "empty script -> error; extremely long script -> cap scroll plan and warn; wpm outside range -> clamp with warning; CJK text (chars != words) -> use chars-per-minute mode with note"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Logic layer is pure timing math (F-WPM-01). The scrolling viewport itself is UI (MA1 scaffold); logic only supplies durations and px/sec rates.",
+   "formulaRef": [
+    "F-WPM-01"
+   ],
+   "inputs": [
+    "scriptText",
+    "wordsPerMinute (default 140)",
+    "fontSize",
+    "mirrorMode (bool)"
+   ],
+   "name": "Teleprompter",
+   "outputs": [
+    "scrollDurationSec",
+    "estimatedReadTimeSec",
+    "wordCount",
+    "scrollPlan (px/sec)"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "teleprompter",
+   "toolId": "tool-252",
+   "validation": [
+    "scriptText non-empty, max 20000 chars",
+    "wpm within 40-300",
+    "fontSize within sane px range"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "word already phonetic -> return unchanged with note; proper nouns -> suggest syllable-split spelling; non-Latin script -> mark unsupported with explanation"
+   ],
+   "engine": "text-transform",
+   "feasibilityNote": "Pure string heuristics (syllable splitting, common misread patterns). Cannot verify actual TTS output client-side without an API — outputs are suggestions to test, UI must label them as such.",
+   "formulaRef": [],
+   "inputs": [
+    "problemWord",
+    "targetTtsEngine (enum: elevenlabs|capcut|tiktok|generic)",
+    "contextSentence"
+   ],
+   "name": "TTS Pronunciation Fixer",
+   "outputs": [
+    "phoneticSpellings[]",
+    "ipaHint",
+    "testSentence",
+    "engineNotes"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "tts-pronunciation-fixer",
+   "toolId": "tool-253",
+   "validation": [
+    "problemWord non-empty, single token or short phrase",
+    "engine enum known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "already-clean text -> return unchanged, zero changes; ALL-CAPS shouting preserved intentionally -> option to keep; mixed languages -> only apply rules to Latin-script segments, leave others untouched"
+   ],
+   "engine": "text-transform",
+   "feasibilityNote": "Pure regex/string rules. No model needed; must never claim AI understanding.",
+   "formulaRef": [],
+   "inputs": [
+    "rawCaptionText (or SRT/VTT pasted text)",
+    "options: {fixCaps, fixPunct, removeFillers, maxCharsPerLine}"
+   ],
+   "name": "Auto-Caption Cleanup Tool",
+   "outputs": [
+    "cleanedText",
+    "changes[] {type, before, after}",
+    "fillerCountRemoved"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "auto-caption-cleanup-tool",
+   "toolId": "tool-254",
+   "validation": [
+    "input non-empty",
+    "maxCharsPerLine 10-80"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "single word longer than maxChars -> hard break with warning; CJK text -> use 16 chars/line default per Netflix CJK guidance; text already within limits -> return as-is"
+   ],
+   "engine": "text-transform",
+   "feasibilityNote": "Pure greedy/DP line-breaking with linguistic break preferences (break after punctuation, before conjunctions/prepositions per Netflix style guidance).",
+   "formulaRef": [],
+   "inputs": [
+    "subtitleText",
+    "maxCharsPerLine (default 42)",
+    "maxLines (default 2)",
+    "breakPreference (punctuation|balanced)"
+   ],
+   "name": "Subtitle Line Breaker",
+   "outputs": [
+    "brokenLines[]",
+    "charsPerLine[]",
+    "warnings[]"
+   ],
+   "platformRulesRef": [
+    "netflix.subtitle.maxCharsPerLine"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "subtitle-line-breaker",
+   "toolId": "tool-255",
+   "validation": [
+    "input non-empty",
+    "maxCharsPerLine 10-60",
+    "maxLines 1-3"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "empty input -> error, no output; CRLF line endings -> normalized; dot decimals accepted with warning; missing sequence numbers -> renumber with warning; end<=start -> error on that cue; overlapping cues -> warning; non-sequential numbering -> warning; unicode preserved byte-identical"
+   ],
+   "engine": "format-parser",
+   "feasibilityNote": "Fully pure. Reference implementation shipped at app/tools/video-editing/srt-to-vtt-converter/logic.ts with node:test suite.",
+   "formulaRef": [
+    "F-SRT-01"
+   ],
+   "inputs": [
+    "srtText"
+   ],
+   "name": "SRT to VTT Converter",
+   "outputs": [
+    "vtt",
+    "cueCount",
+    "errors[]",
+    "warnings[]"
+   ],
+   "platformRulesRef": [
+    "webvtt.header",
+    "webvtt.timestampFormat"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "srt-to-vtt-converter",
+   "toolId": "tool-256",
+   "validation": [
+    "input is a string; blocks split on blank lines; each block has sequence number, HH:MM:SS,mmm --> HH:MM:SS,mmm timing line, and >=1 text line"
+   ],
+   "verifiedToolType": "converter",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "converter"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "zero-duration cue -> error; gap < 83ms between cues -> warning (Netflix 2-frame rule); duration > 7000ms -> warning; duration < 833ms -> warning (flash risk); single cue file -> skip gap checks"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure rule engine over cue list. Thresholds from Netflix Timed Text Style Guide (verified 2026-10-01).",
+   "formulaRef": [
+    "F-CPS-01"
+   ],
+   "inputs": [
+    "cues[] {startMs, endMs, text} or pasted SRT/VTT"
+   ],
+   "name": "Caption Timing Validator",
+   "outputs": [
+    "issues[] {cueIndex, rule, severity, message}",
+    "summary {errors, warnings}",
+    "passFail"
+   ],
+   "platformRulesRef": [
+    "netflix.subtitle.minDurationMs",
+    "netflix.subtitle.maxDurationMs",
+    "netflix.subtitle.minGapMs"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "caption-timing-validator",
+   "toolId": "tool-257",
+   "validation": [
+    "at least 1 cue",
+    "timestamps numeric and finite",
+    "text non-empty per cue"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "CJK text -> apply 9 CPS (Simplified Chinese) threshold, never Latin 20; children -> 17 CPS cap; exactly at threshold -> pass with note; empty text cue -> error"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "CPS = chars / seconds is pure math; thresholds are verified published standards (Netflix 20 adult / 17 children; BBC 160-180 wpm ≈ 14-16 CPS). Social short-form has no official CPS standard — any short-form preset must be labeled guidance, not standard.",
+   "formulaRef": [
+    "F-CPS-01"
+   ],
+   "inputs": [
+    "cues[] {startMs, endMs, text}",
+    "audience (adult|children)",
+    "script (latin|cjk)"
+   ],
+   "name": "Caption Readability (CPS) Checker",
+   "outputs": [
+    "perCue {cps, verdict}",
+    "overallVerdict",
+    "worstCues[]"
+   ],
+   "platformRulesRef": [
+    "netflix.subtitle.maxCpsAdult",
+    "netflix.subtitle.maxCpsChildren",
+    "bbc.subtitle.wpmRange"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "caption-readability-cps-checker",
+   "toolId": "tool-258",
+   "validation": [
+    "durations > 0",
+    "text counted with spaces+punctuation per Netflix counting rule"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "more lines than fit at min 833ms each -> error suggesting fewer lines; uneven line lengths -> distribute by character weight, not equal split; bpm given -> snap boundaries to beats"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure proportional allocation math. Word-level timings are estimates — UI must label them as starting points for manual sync, not measured timings.",
+   "formulaRef": [
+    "F-BPM-01",
+    "F-CPS-01"
+   ],
+   "inputs": [
+    "lyricLines[]",
+    "totalDurationSec",
+    "beatsPerMinute (optional)"
+   ],
+   "name": "Karaoke Timing Grid Planner",
+   "outputs": [
+    "grid[] {lineIndex, startMs, endMs, wordsPerSec}",
+    "suggestedWordTimings[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "karaoke-timing-grid-planner",
+   "toolId": "tool-259",
+   "validation": [
+    "at least 1 line",
+    "duration > 0",
+    "bpm 30-240 if given"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "very long names -> auto-shrink font with note; duration < min read time for text length -> warn (uses CPS check); empty title allowed (name-only style)"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Pure template string generation + CSS. No rendering needed client-side beyond preview (MA1 UI).",
+   "formulaRef": [
+    "F-CPS-01"
+   ],
+   "inputs": [
+    "name",
+    "title",
+    "style (enum of preset styles)",
+    "brandColor",
+    "durationSec"
+   ],
+   "name": "Lower Third Generator",
+   "outputs": [
+    "cssSnippet",
+    "htmlSnippet",
+    "timing {inMs, holdMs, outMs}",
+    "safeAreaCheck"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "lower-third-generator",
+   "toolId": "tool-260",
+   "validation": [
+    "name/title non-empty, <=60 chars",
+    "brandColor valid hex",
+    "duration 2-10s"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "duration too short for effect readability -> warn; karaoke-highlight needs per-word timing -> falls back to even split with warning"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Generates CSS keyframes + step-by-step CapCut instructions. CapCut has no keyframe-CSS import, so the CapCut path is human instructions, not a file — UI must be honest about that.",
+   "formulaRef": [
+    "F-EASING-01"
+   ],
+   "inputs": [
+    "effect (typewriter|pop-in|slide-up|karaoke-highlight|glitch)",
+    "durationMs",
+    "easing (enum)",
+    "colorScheme"
+   ],
+   "name": "Text Animation Preset Generator",
+   "outputs": [
+    "cssKeyframes",
+    "capcutSteps[]",
+    "previewParams"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "text-animation-preset-generator",
+   "toolId": "tool-261",
+   "validation": [
+    "effect enum known",
+    "duration 100-5000ms",
+    "easing enum known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "unknown vibe -> default to bold with note; preset uses font not on user device -> list fallback fonts"
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Static curated content bank, not computation. Value is curation; verify no trademarked font names are misrepresented. 'Generator' kept as closest valid type (produces a preset config).",
+   "formulaRef": [
+    "F-CONTRAST-01"
+   ],
+   "inputs": [
+    "vibe (bold|minimal|hormozi|karaoke|neon)",
+    "platform (tiktok|reels|shorts)"
+   ],
+   "name": "Caption Style Preset Library",
+   "outputs": [
+    "preset {font, size, stroke, shadow, bg, animation, colors}",
+    "capcutSteps[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "caption-style-preset-library",
+   "toolId": "tool-262",
+   "validation": [
+    "vibe and platform enums known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "bezier x outside 0-1 -> error (invalid CSS); overshoot y -> warn (anticipation effect); CapCut has limited easing options -> map to nearest available with note"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Cubic-bezier evaluation is pure math (F-EASING-01). Canvas/SVG rendering of the curve is MA1 UI; logic supplies sampled points.",
+   "formulaRef": [
+    "F-EASING-01"
+   ],
+   "inputs": [
+    "easing (linear|ease|ease-in|ease-out|ease-in-out|custom cubic-bezier)",
+    "durationMs",
+    "samples (default 60)"
+   ],
+   "name": "Keyframe Easing Visualizer",
+   "outputs": [
+    "curvePoints[] {t, value}",
+    "cssEasingString",
+    "capcutApproximation"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "keyframe-easing-visualizer",
+   "toolId": "tool-263",
+   "validation": [
+    "custom bezier control points within 0-1 for x (y may overshoot)",
+    "duration > 0",
+    "samples 10-240"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "image smaller than output frame at max zoom -> error (would upscale); zoomStrength 1.0 -> degenerate to static, warn; extreme pan on narrow image -> clamp and warn"
+   ],
+   "engine": "geometry-math",
+   "feasibilityNote": "Pure linear interpolation of rect/scale over time. No image processing needed.",
+   "formulaRef": [
+    "F-KENBURNS-01",
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "imageW",
+    "imageH",
+    "videoAspect (16:9|9:16|1:1)",
+    "moveType (zoom-in|zoom-out|pan-left|pan-right|pan-up|pan-down)",
+    "durationSec",
+    "zoomStrength (1.0-1.5)"
+   ],
+   "name": "Ken Burns Path Planner",
+   "outputs": [
+    "keyframes[] {t, x, y, scale}",
+    "cropWindows[]",
+    "safeCheck"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "ken-burns-path-planner",
+   "toolId": "tool-264",
+   "validation": [
+    "positive dimensions",
+    "zoomStrength 1.0-2.0",
+    "duration > 0"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "transitions eat whole duration -> error; single slide -> transition skipped with note; weightedByText needs per-slide text lengths"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure arithmetic timeline allocation.",
+   "formulaRef": [
+    "F-CPS-01"
+   ],
+   "inputs": [
+    "slideCount",
+    "totalDurationSec",
+    "transitionMs (default 500)",
+    "holdStyle (equal|weightedByText)"
+   ],
+   "name": "Slideshow Timing Planner",
+   "outputs": [
+    "timeline[] {slide, startMs, endMs, transitionMs}",
+    "totalCheck"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "slideshow-timing-planner",
+   "toolId": "tool-265",
+   "validation": [
+    "slideCount >= 1",
+    "totalDuration > 0",
+    "transitionMs < per-slide hold"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "subject contains green (plants, uniforms) -> recommend blue screen with explanation; sampleHex near gray -> warn keying will be hard"
+   ],
+   "engine": "color-math",
+   "feasibilityNote": "Pure color math (RGB->HSV, hue distance). Does NOT do actual chroma keying — that needs pixel access; tool only recommends the key color and tolerance range. UI must say so.",
+   "formulaRef": [
+    "F-GREENSCREEN-01"
+   ],
+   "inputs": [
+    "mode (suggest|analyze)",
+    "subjectColors[] (hex) for suggest mode",
+    "sampleHex for analyze mode"
+   ],
+   "name": "Green Screen Color Picker",
+   "outputs": [
+    "recommendedKeyColor",
+    "hsvRange {hMin,hMax,sMin,vMin}",
+    "spillRiskNotes"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "green-screen-color-picker",
+   "toolId": "tool-266",
+   "validation": [
+    "hex colors valid",
+    "at least 1 subject color in suggest mode"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "sourceFps not a multiple of timelineFps -> judder warning; desired slow factor needs higher fps than source -> recommend reshoot fps; 240fps+ sources -> note light flicker risk"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure frame-rate arithmetic (F-SLOWMO-01/02). No video processing.",
+   "formulaRef": [
+    "F-SLOWMO-01",
+    "F-SLOWMO-02"
+   ],
+   "inputs": [
+    "sourceFps",
+    "timelineFps (24|25|30|60)",
+    "desiredSlowFactor (e.g. 0.5 = half speed)"
+   ],
+   "name": "Slow-Mo Frame Rate Planner",
+   "outputs": [
+    "achievable (bool)",
+    "playbackSpeedPct",
+    "effectiveFps",
+    "qualityVerdict",
+    "shootRecommendation"
+   ],
+   "platformRulesRef": [
+    "capcut-export-frame-rates"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "slow-mo-frame-rate-planner",
+   "toolId": "tool-267",
+   "validation": [
+    "sourceFps in 24-960",
+    "timelineFps in known set",
+    "slowFactor 0.05-1.0"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "bpm 0/negative -> error; very high bpm (>200) -> warn cuts may feel frantic; intro offset beyond duration -> error"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure math: beat interval = 60000/BPM. Cut points are arithmetic markers, not detected beats.",
+   "formulaRef": [
+    "F-BPM-01",
+    "F-BPM-02"
+   ],
+   "inputs": [
+    "bpm",
+    "trackDurationSec",
+    "introOffsetSec (default 0)",
+    "cutEveryNBeats (default 4)"
+   ],
+   "name": "BPM Beat-Match Planner",
+   "outputs": [
+    "beatIntervalMs",
+    "cutPointsMs[]",
+    "totalBeats",
+    "timelineMarkers[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "bpm-beat-match-planner",
+   "toolId": "tool-268",
+   "validation": [
+    "bpm 30-300",
+    "duration > 0",
+    "cutEveryNBeats >= 1"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": "partial",
+   "edgeCases": [
+    "silent file -> zero peaks, explicit message; variable-tempo music -> warn markers are onset-based, not true beats; decode failure -> error naming the likely cause"
+   ],
+   "engine": "audio-analysis",
+   "feasibilityNote": "FEASIBILITY FLAG: real onset detection needs the Web Audio API to decode the user's uploaded file and an energy-flux algorithm — doable fully client-side, but the pure-logic layer can only implement the peak-picking math on a provided amplitude array. Logic stays pure (operates on Float32Array peaks); file decode + rendering is the app shell's job (MA1). No server, no API.",
+   "formulaRef": [],
+   "inputs": [
+    "audioFile (user upload, decoded in browser)",
+    "sensitivity (low|med|high)"
+   ],
+   "name": "Audio Waveform Beat Marker",
+   "outputs": [
+    "peaks[] {timeMs, strength}",
+    "suggestedCutPointsMs[]",
+    "waveformSummary"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "audio-waveform-beat-marker",
+   "toolId": "tool-269",
+   "validation": [
+    "file is decodable audio (mp3/wav/m4a/ogg)",
+    "size cap e.g. 100MB with error beyond"
+   ],
+   "verifiedToolType": "analyzer",
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": "partial",
+   "edgeCases": [
+    "no gaps found -> explicit 'none found, try lower threshold'; whole file silent -> single gap with warning; noisy room tone -> warn threshold may need raising"
+   ],
+   "engine": "audio-analysis",
+   "feasibilityNote": "FEASIBILITY FLAG: same as 269 — needs user-uploaded audio decoded via Web Audio API in-browser. Pure logic operates on RMS/dB arrays only. Fully client-side, zero API, but not pure-logic-alone.",
+   "formulaRef": [
+    "F-DB-01"
+   ],
+   "inputs": [
+    "audioFile (user upload)",
+    "thresholdDb (default -40)",
+    "minGapMs (default 400)"
+   ],
+   "name": "Silence Gap Finder",
+   "outputs": [
+    "gaps[] {startMs, endMs, durationMs}",
+    "suggestedCutPointsMs[]",
+    "totalSilenceSec"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "silence-gap-finder",
+   "toolId": "tool-270",
+   "validation": [
+    "thresholdDb -80 to -10",
+    "minGapMs 100-5000"
+   ],
+   "verifiedToolType": "analyzer",
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": "partial",
+   "edgeCases": [
+    "clipping (samples at 0dBFS) -> error-level warning; all silence -> explicit message; mic permission denied -> UI-level error, logic untouched"
+   ],
+   "engine": "audio-analysis",
+   "feasibilityNote": "FEASIBILITY FLAG: dB math (F-DB-01) is pure; getting samples needs Web Audio API (file decode or getUserMedia). Logic layer takes a Float32Array and returns measurements. Real-time metering loop is app-shell/UI work.",
+   "formulaRef": [
+    "F-DB-01"
+   ],
+   "inputs": [
+    "audioFile or micStream (user-provided)",
+    "targetDb (default -12)"
+   ],
+   "name": "Voiceover Level Meter",
+   "outputs": [
+    "peakDb",
+    "rmsDb",
+    "loudnessVerdict",
+    "gainAdjustmentDb",
+    "clippingDetected (bool)"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "voiceover-level-meter",
+   "toolId": "tool-271",
+   "validation": [
+    "targetDb -30 to -3"
+   ],
+   "verifiedToolType": "analyzer",
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": "partial",
+   "edgeCases": [
+    "timestamp beyond duration -> clamp to last frame with warning; DRM/protected stream -> cannot process, error; very large video -> warn about memory"
+   ],
+   "engine": "video-decode",
+   "feasibilityNote": "FEASIBILITY FLAG: needs browser <video> + canvas to seek and draw the frame — fully client-side, but impossible in pure logic. Logic layer's job: timestamp clamping/validation math and dimension scaling math only. No upload to any server.",
+   "formulaRef": [
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "videoFile (user upload)",
+    "timestampSec",
+    "outputSize (original|1080p|720p)"
+   ],
+   "name": "Video Frame Grabber",
+   "outputs": [
+    "frameImage (dataURL/blob)",
+    "actualTimestampSec",
+    "dimensions"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "video-frame-grabber",
+   "toolId": "tool-272",
+   "validation": [
+    "file is a playable video mime",
+    "timestamp within duration"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "target wider than source -> letterbox instead of crop, explain; 9:16 from 16:9 loses ~44% width -> warn; custom anchor outside bounds -> clamp with warning"
+   ],
+   "engine": "geometry-math",
+   "feasibilityNote": "Pure rectangle math (F-ASPECT-01). SVG/canvas overlay preview is MA1 UI from the returned params.",
+   "formulaRef": [
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "sourceW",
+    "sourceH",
+    "targetAspect (16:9|9:16|1:1|4:5)",
+    "cropAnchor (center|top|custom xy)"
+   ],
+   "name": "Aspect Ratio Crop Visualizer",
+   "outputs": [
+    "cropRect {x,y,w,h}",
+    "pixelsLostPct",
+    "safeZones",
+    "svgPreviewParams"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "aspect-ratio-crop-visualizer",
+   "toolId": "tool-273",
+   "validation": [
+    "positive dimensions",
+    "targetAspect from known set or W:H numbers"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "platform changes specs often -> every value carries lastVerified + nextReview; unknown platform -> error, not a guess"
+   ],
+   "engine": "rule-lookup",
+   "feasibilityNote": "Static data lookup over data/platform-rules/*.json. 'generator' kept (no lookup type in taxonomy); it generates a spec sheet. Values must be individually verified — never invent specs.",
+   "formulaRef": [],
+   "inputs": [
+    "platform (tiktok|youtube|shorts|reels|facebook|x|pinterest)",
+    "specType (video|image|all)"
+   ],
+   "name": "Platform Spec Lookup",
+   "outputs": [
+    "specs {aspectRatios, resolutions, maxDuration, maxFileSize, codecs, notes}",
+    "lastVerifiedDate"
+   ],
+   "platformRulesRef": [
+    "capcut-export-resolution-options"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "platform-spec-lookup",
+   "toolId": "tool-274",
+   "validation": [
+    "platform enum known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "CJK script -> char-based estimate with note; very short script -> round up to whole seconds; wpm is a personal variable -> output a range, never a single exact number"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Estimate by construction — wpm varies per speaker. UI must present a range and label it an estimate (F-WPM-01).",
+   "formulaRef": [
+    "F-WPM-01"
+   ],
+   "inputs": [
+    "scriptText",
+    "wpm (default 140, range 100-180)",
+    "pauseAllowancePct (default 10)"
+   ],
+   "name": "Talking-Head Length Estimator",
+   "outputs": [
+    "estimatedSec",
+    "wordCount",
+    "rangeLowSec",
+    "rangeHighSec"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "talking-head-length-estimator",
+   "toolId": "tool-275",
+   "validation": [
+    "script non-empty",
+    "wpm 60-250"
+   ],
+   "verifiedToolType": "calculator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "vague topic -> ask clarifying, still produce generic list with warning; shotCount high -> warn about shoot time"
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Template + content-bank generation. No AI model; quality comes from curated shot banks per videoType.",
+   "formulaRef": [],
+   "inputs": [
+    "topic",
+    "videoType (tutorial|vlog|ad|documentary)",
+    "shotCount (default 8)"
+   ],
+   "name": "B-Roll Shot List Generator",
+   "outputs": [
+    "shots[] {description, angle, movement, duration}",
+    "coverageChecklist"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": "tool-113",
+   "slug": "b-roll-shot-list-generator-2",
+   "toolId": "tool-276",
+   "validation": [
+    "topic non-empty",
+    "shotCount 3-30"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "beats exceed duration at min frame time -> error suggesting merge; empty visualDescription allowed -> marked TBD"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Pure planning/allocation logic. Distinct from tool-278 (storyboard = visual frames per beat; shot list = camera shot enumeration).",
+   "formulaRef": [],
+   "inputs": [
+    "scriptBeats[]",
+    "totalDurationSec",
+    "framesPerBeat (default 1)"
+   ],
+   "name": "Storyboard Planner",
+   "outputs": [
+    "frames[] {beat, visualDescription, camera, durationMs, caption}",
+    "totalCheck"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "storyboard-planner",
+   "toolId": "tool-277",
+   "validation": [
+    "at least 1 beat",
+    "duration > 0"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "single camera -> warn about reset time between setups; 'full' coverage on tiny scene -> cap with note"
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Template-driven. Related to tool-276 but distinct scope (general shot coverage vs B-roll-specific). See DUP-F.md.",
+   "formulaRef": [],
+   "inputs": [
+    "sceneDescription",
+    "coverage (basic|full)",
+    "cameraCount (1-3)"
+   ],
+   "name": "Shot List Generator",
+   "outputs": [
+    "shots[] {shotSize, angle, movement, lens, purpose}",
+    "shootOrder"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "shot-list-generator",
+   "toolId": "tool-278",
+   "validation": [
+    "sceneDescription non-empty",
+    "cameraCount 1-3"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "duration < 15s -> micro-pattern with note; pattern score is heuristic -> label as guidance, not prediction"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Heuristic planning based on published retention research patterns. pacingScore is a heuristic — UI must never present it as a predicted retention %.",
+   "formulaRef": [],
+   "inputs": [
+    "totalDurationSec",
+    "niche",
+    "pattern (hook-loop|story-arc|listicle)"
+   ],
+   "name": "Retention Pacing Planner",
+   "outputs": [
+    "segments[] {startMs, endMs, purpose, beatType}",
+    "patternChangeCount",
+    "pacingScore"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "retention-pacing-planner",
+   "toolId": "tool-279",
+   "validation": [
+    "duration 5-3600s",
+    "pattern enum known"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "score is heuristic -> label clearly; non-English hook -> run length/clarity checks only, skip pattern banks with note"
+   ],
+   "engine": "text-transform",
+   "feasibilityNote": "Rule-based rubric (specificity, curiosity gap, payoff promise, length). Heuristic score — must be labeled as a checklist score, never a virality prediction.",
+   "formulaRef": [],
+   "inputs": [
+    "hookText",
+    "niche (optional)"
+   ],
+   "name": "Hook Score Checker",
+   "outputs": [
+    "score (0-100)",
+    "breakdown[] {criterion, points, note}",
+    "improvements[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "hook-score-checker",
+   "toolId": "tool-280",
+   "validation": [
+    "hookText 3-280 chars"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "scenes identical -> suggest match-cut family; calm energy -> exclude whip-pan etc."
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Curated content bank with matching rules. CapCut how-to steps are human instructions.",
+   "formulaRef": [],
+   "inputs": [
+    "fromScene",
+    "toScene",
+    "energy (calm|punchy)",
+    "count (default 5)"
+   ],
+   "name": "Transition Idea Generator",
+   "outputs": [
+    "ideas[] {name, capcutHowTo, difficulty}",
+    "matchReason"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "transition-idea-generator",
+   "toolId": "tool-281",
+   "validation": [
+    "scenes non-empty",
+    "count 1-10"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "low tier + heavy stack -> strong warning with lighter alternative; conflicting effects (two blurs) -> flag redundancy"
+   ],
+   "engine": "rule-lookup",
+   "feasibilityNote": "Rule-based ordering (correction before stylization, etc.). renderImpact is qualitative guidance.",
+   "formulaRef": [],
+   "inputs": [
+    "desiredLook",
+    "deviceTier (low|mid|high)",
+    "clipCount"
+   ],
+   "name": "Effect Stack Planner",
+   "outputs": [
+    "stack[] {effect, order, intensity}",
+    "perfWarnings[]",
+    "renderImpact (low|med|high)"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "effect-stack-planner",
+   "toolId": "tool-282",
+   "validation": [
+    "desiredLook non-empty",
+    "deviceTier enum"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "beats too dense (<300ms apart) -> warn about mud; no SFX files provided by tool — searchTerms point user to libraries, UI must say so"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Generates a plan + search terms, not audio files. Zero audio synthesis involved.",
+   "formulaRef": [],
+   "inputs": [
+    "timelineBeats[] {timeMs, action}",
+    "mood"
+   ],
+   "name": "SFX Cue Sheet Generator",
+   "outputs": [
+    "cues[] {timeMs, sfxType, searchTerms, volumeDb}",
+    "cueSheetText"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "sfx-cue-sheet-generator",
+   "toolId": "tool-283",
+   "validation": [
+    "at least 1 beat",
+    "timestamps ascending"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "filler detection is text-pattern based (um/uh/repeats) — label as heuristic; cutting would remove >60% -> warn"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure timestamp arithmetic over transcript segments. Filler-word detection is pattern matching, not speech analysis — label honestly.",
+   "formulaRef": [],
+   "inputs": [
+    "transcriptWithTimestamps[] {text, startMs, endMs}",
+    "aggressiveness (light|medium|tight)"
+   ],
+   "name": "Jump Cut Planner",
+   "outputs": [
+    "keepSegments[] {startMs, endMs}",
+    "cutSegments[] {startMs, endMs, reason}",
+    "newDurationSec",
+    "cutCount"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "jump-cut-planner",
+   "toolId": "tool-284",
+   "validation": [
+    "segments non-empty, ascending"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "target longer than source -> error; custom ranges overlapping -> merge with warning"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure interval arithmetic.",
+   "formulaRef": [],
+   "inputs": [
+    "sourceDurationSec",
+    "targetClipSec",
+    "strategy (highlights|even|custom ranges)"
+   ],
+   "name": "Clip Segment Planner",
+   "outputs": [
+    "segments[] {startMs, endMs, label}",
+    "coveragePct"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "clip-segment-planner",
+   "toolId": "tool-285",
+   "validation": [
+    "source > target > 0"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "duplicate timestamps -> keep both, flag; export with zero moments -> empty CSV with header + note"
+   ],
+   "engine": "state-machine",
+   "feasibilityNote": "State tracking only; timestamps are user-logged, not detected. Persistence is app-shell (localStorage).",
+   "formulaRef": [],
+   "inputs": [
+    "moments[] {timestampMs, label, rating}",
+    "sessionName"
+   ],
+   "name": "Highlight Moment Logger",
+   "outputs": [
+    "log[]",
+    "exportCsv",
+    "topMoments[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "highlight-moment-logger",
+   "toolId": "tool-286",
+   "validation": [
+    "timestamps >= 0",
+    "rating 1-5"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "no captions -> include caption check as critical; music present -> include loudness/rights checks"
+   ],
+   "engine": "rule-lookup",
+   "feasibilityNote": "Static rule bank filtered by inputs. Checklist, not automation.",
+   "formulaRef": [],
+   "inputs": [
+    "platform",
+    "hasCaptions (bool)",
+    "hasMusic (bool)",
+    "durationSec"
+   ],
+   "name": "Export QA Checklist",
+   "outputs": [
+    "checklist[] {item, category, critical}",
+    "criticalCount"
+   ],
+   "platformRulesRef": [
+    "capcut-export-codecs",
+    "capcut-export-formats"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "export-qa-checklist",
+   "toolId": "tool-287",
+   "validation": [
+    "platform enum known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "master 16:9 to 9:16 platforms -> reformat required, link to tool-273 math; platform spec unknown/stale -> mark unverified, never guess"
+   ],
+   "engine": "rule-lookup",
+   "feasibilityNote": "Joins platform-rules data with crop math. Spec freshness is the risk — every spec carries lastVerified.",
+   "formulaRef": [
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "platforms[]",
+    "masterFile {w,h,fps,durationSec}",
+    "scheduleDate"
+   ],
+   "name": "Multi-Platform Upload Planner",
+   "outputs": [
+    "perPlatform {cropNeeded, specs, uploadOrder, bestTimeNote}",
+    "reformatList[]"
+   ],
+   "platformRulesRef": [
+    "capcut-export-resolution-options"
+   ],
+   "possibleDuplicateOf": null,
+   "slug": "multi-platform-upload-planner",
+   "toolId": "tool-288",
+   "validation": [
+    "at least 1 platform",
+    "master dimensions positive"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "4k + heavy + low tier -> very wide range with strong caveat; output is a range, never a point estimate"
+   ],
+   "engine": "statistical-estimate",
+   "feasibilityNote": "ROUGH ESTIMATE by design (F-RENDER-01, isEstimate=true). Baseline encode rates are device- and encoder-dependent; UI must show assumptions and a range.",
+   "formulaRef": [
+    "F-RENDER-01"
+   ],
+   "inputs": [
+    "durationSec",
+    "fps",
+    "resolution (720p|1080p|4k)",
+    "effectLoad (light|medium|heavy)",
+    "deviceTier (low|mid|high)"
+   ],
+   "name": "Render Time Estimator",
+   "outputs": [
+    "estimatedMinSec",
+    "estimatedMaxSec",
+    "assumptions[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "render-time-estimator",
+   "toolId": "tool-289",
+   "validation": [
+    "positive duration/fps",
+    "enums known"
+   ],
+   "verifiedToolType": "calculator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "calculator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "unknown bitrate -> use conservative preset with label; proxy workflow -> show proxy vs original side by side"
+   ],
+   "engine": "timing-math",
+   "feasibilityNote": "Pure arithmetic (F-STORAGE-01). Bitrate presets must be labeled estimates.",
+   "formulaRef": [
+    "F-STORAGE-01"
+   ],
+   "inputs": [
+    "clips[] {durationSec, bitrateMbps} or preset quality",
+    "projectCount",
+    "backupCopies (default 2)"
+   ],
+   "name": "Project Storage Planner",
+   "outputs": [
+    "perClipMb[]",
+    "totalMb",
+    "withBackupsMb",
+    "tierRecommendation"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "project-storage-planner",
+   "toolId": "tool-290",
+   "validation": [
+    "bitrates > 0",
+    "counts >= 1"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "round values produce >8h -> warn; timer ticking itself is UI (setInterval), logic only builds the plan"
+   ],
+   "engine": "state-machine",
+   "feasibilityNote": "'Generator' kept as closest valid type; it generates a session plan. The live countdown is app-shell/UI. Pure plan math here.",
+   "formulaRef": [],
+   "inputs": [
+    "focusMin (default 25)",
+    "breakMin (default 5)",
+    "rounds (default 4)",
+    "taskLabel"
+   ],
+   "name": "Editor Pomodoro Timer",
+   "outputs": [
+    "sessionPlan[] {phase, minutes, order}",
+    "totalMin",
+    "endTime"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "editor-pomodoro-timer",
+   "toolId": "tool-291",
+   "validation": [
+    "focusMin 5-120",
+    "breakMin 1-30",
+    "rounds 1-12"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "exceeds revisionLimit -> flag over-limit; out-of-order rounds -> sort with note"
+   ],
+   "engine": "state-machine",
+   "feasibilityNote": "Pure state tracking; persistence via app shell (localStorage).",
+   "formulaRef": [],
+   "inputs": [
+    "revisions[] {round, note, status, timestampMs}",
+    "revisionLimit (optional)"
+   ],
+   "name": "Client Revision Tracker",
+   "outputs": [
+    "statusSummary",
+    "overLimit (bool)",
+    "exportCsv",
+    "roundHistory[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "client-revision-tracker",
+   "toolId": "tool-292",
+   "validation": [
+    "round numbers positive ints",
+    "status enum known"
+   ],
+   "verifiedToolType": "tracker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "illegal chars (/:*?\"<>|) -> sanitize with warning; empty parts -> skip silently; very long names -> warn >200 chars"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Pure string templating with sanitization.",
+   "formulaRef": [],
+   "inputs": [
+    "project",
+    "date",
+    "version",
+    "parts[] (scene|take|platform)",
+    "separator (enum)"
+   ],
+   "name": "File Naming Generator",
+   "outputs": [
+    "fileName",
+    "patternPreview",
+    "batchNames[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "file-naming-generator",
+   "toolId": "tool-293",
+   "validation": [
+    "project non-empty",
+    "no filesystem-illegal chars in parts (strip with warning)"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "text too long for template -> auto-shrink with note; rendering the image is canvas/SVG in UI from memeSpec"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Logic produces a meme spec; actual rasterization is UI (canvas). 'Builder' verified — assembles a composite artifact spec.",
+   "formulaRef": [],
+   "inputs": [
+    "template (enum)",
+    "topText",
+    "bottomText",
+    "style (classic|modern)"
+   ],
+   "name": "Meme Caption Maker",
+   "outputs": [
+    "memeSpec {template, texts, font, layout}",
+    "svgPreviewParams"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "meme-caption-maker",
+   "toolId": "tool-294",
+   "validation": [
+    "texts <= 120 chars each"
+   ],
+   "verifiedToolType": "builder",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "3 panes side-by-side on 9:16 -> warn panes get tiny; PiP overlaps main -> note z-order"
+   ],
+   "engine": "geometry-math",
+   "feasibilityNote": "Pure rectangle subdivision math.",
+   "formulaRef": [
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "panes (2-4)",
+    "arrangement (side-by-side|stacked|grid|pip)",
+    "canvasAspect",
+    "gapPx"
+   ],
+   "name": "Split-Screen Layout Generator",
+   "outputs": [
+    "panes[] {x,y,w,h}",
+    "cssGridSnippet",
+    "svgPreviewParams"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "split-screen-layout-generator",
+   "toolId": "tool-295",
+   "validation": [
+    "panes 2-4",
+    "gapPx >= 0"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "images not provided by tool — snippet references user-supplied URLs with placeholder; no image hosting involved"
+   ],
+   "engine": "template-engine",
+   "feasibilityNote": "Generates embed code only. No image processing or hosting.",
+   "formulaRef": [],
+   "inputs": [
+    "labelBefore",
+    "labelAfter",
+    "orientation (horizontal|vertical)",
+    "startPct (default 50)"
+   ],
+   "name": "Before/After Slider Generator",
+   "outputs": [
+    "htmlSnippet",
+    "cssSnippet",
+    "jsSnippet",
+    "embedParams"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "before-after-slider-generator",
+   "toolId": "tool-296",
+   "validation": [
+    "labels non-empty <= 40 chars",
+    "startPct 5-95"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "large facecam on 9:16 -> warn it covers content; corner overlapping platform UI (e.g. TikTok right rail) -> note safe-area shift"
+   ],
+   "engine": "geometry-math",
+   "feasibilityNote": "Pure layout rectangles + safe-area rules.",
+   "formulaRef": [
+    "F-ASPECT-01"
+   ],
+   "inputs": [
+    "canvasAspect (16:9|9:16)",
+    "facecamSize (small|medium|large)",
+    "facecamCorner"
+   ],
+   "name": "Reaction Layout Planner",
+   "outputs": [
+    "facecamRect {x,y,w,h}",
+    "contentRect {x,y,w,h}",
+    "safeAreaNotes"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "reaction-layout-planner",
+   "toolId": "tool-297",
+   "validation": [
+    "enums known"
+   ],
+   "verifiedToolType": "planner",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "font availability varies by device -> always list system fallback stack; avoid pairing two display fonts -> rule enforced"
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Curated pairing bank + contrast guidance. Links to Google Fonts are informational.",
+   "formulaRef": [
+    "F-CONTRAST-01"
+   ],
+   "inputs": [
+    "mood (bold|elegant|playful|techy)",
+    "useCase (captions|titles|lower-thirds)"
+   ],
+   "name": "Font Pairing Generator",
+   "outputs": [
+    "pairings[] {headingFont, bodyFont, why, googleFontsLink}",
+    "contrastNote"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "font-pairing-generator",
+   "toolId": "tool-298",
+   "validation": [
+    "enums known"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "bg 'none' (transparent over video) -> cannot guarantee ratio; compute worst-case guidance and warn; stroke present -> compute text-vs-stroke and stroke-vs-bg separately"
+   ],
+   "engine": "color-math",
+   "feasibilityNote": "WCAG relative-luminance math is pure and verified (F-CONTRAST-01). Transparent-bg case is inherently uncertain — UI must say the ratio is advisory.",
+   "formulaRef": [
+    "F-CONTRAST-01"
+   ],
+   "inputs": [
+    "textColor (hex)",
+    "bgColor (hex, or 'none')",
+    "strokeColor (hex, optional)",
+    "fontSizePx",
+    "bold (bool)"
+   ],
+   "name": "Caption Contrast Checker",
+   "outputs": [
+    "contrastRatio",
+    "wcagVerdict (fail|AA|AAA)",
+    "suggestions[]"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "caption-contrast-checker",
+   "toolId": "tool-299",
+   "validation": [
+    "hex colors valid",
+    "fontSizePx > 0"
+   ],
+   "verifiedToolType": "checker",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "clientSideFeasible": true,
+   "edgeCases": [
+    "emoji rendering varies by OS -> note; avoid emoji-only titles -> rule enforced; ZWJ sequences counted as one emoji"
+   ],
+   "engine": "content-bank",
+   "feasibilityNote": "Keyword->emoji mapping bank + placement rules. Unicode-aware counting in pure logic.",
+   "formulaRef": [],
+   "inputs": [
+    "titleText",
+    "tone (hype|calm|funny)",
+    "maxEmojis (default 3)"
+   ],
+   "name": "Emoji Title Suggester",
+   "outputs": [
+    "suggestions[] {title, emojis[], placement}",
+    "renderingNote"
+   ],
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "slug": "emoji-title-suggester",
+   "toolId": "tool-300",
+   "validation": [
+    "titleText non-empty <= 120 chars",
+    "maxEmojis 1-5"
+   ],
+   "verifiedToolType": "generator",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  }
+ ],
+ "verifiedBy": "MA2 Video/CapCut Tools subagent",
+ "verifiedDate": "2026-10-01"
+}
