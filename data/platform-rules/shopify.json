@@ -1,0 +1,135 @@
+{
+ "platform": "shopify",
+ "rules": [
+  {
+   "ruleId": "shopify-plan-basic",
+   "platform": "shopify",
+   "rule": "Shopify plan — Basic",
+   "value": "Basic: $39/mo; online 2.9% + $0.30; in-person 2.6% + $0.10; third-party gateway +2.0%",
+   "valueUnit": "text",
+   "source": "Craftshift Shopify transaction fees 2026; avada.io pricing 2026",
+   "sourceUrl": "https://craftshift.com/shopify-transaction-fees-explained/",
+   "effectiveDate": "2026-08-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-062"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "shopify-plan-grow",
+   "platform": "shopify",
+   "rule": "Shopify plan — Grow",
+   "value": "Grow (formerly Shopify): $105/mo; online 2.7% + $0.30; in-person 2.5% + $0.10; third-party gateway +1.0%",
+   "valueUnit": "text",
+   "source": "Craftshift Shopify transaction fees 2026",
+   "sourceUrl": "https://craftshift.com/shopify-transaction-fees-explained/",
+   "effectiveDate": "2026-08-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-062"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "shopify-plan-advanced",
+   "platform": "shopify",
+   "rule": "Shopify plan — Advanced",
+   "value": "Advanced: $399/mo; online 2.5% + $0.30; in-person 2.4% + $0.10; third-party gateway +0.6%",
+   "valueUnit": "text",
+   "source": "Craftshift Shopify transaction fees 2026",
+   "sourceUrl": "https://craftshift.com/shopify-transaction-fees-explained/",
+   "effectiveDate": "2026-08-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-062"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "shopify-plan-plus",
+   "platform": "shopify",
+   "rule": "Shopify plan — Plus",
+   "value": "Plus: from $2,300/mo; online ~2.15–2.25% + $0.30; third-party gateway 0.15–0.2%",
+   "valueUnit": "text",
+   "source": "Craftshift Shopify transaction fees 2026",
+   "sourceUrl": "https://craftshift.com/shopify-transaction-fees-explained/",
+   "effectiveDate": "2026-08-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-062"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "shopify-paypal-wallet",
+   "platform": "shopify",
+   "rule": "PayPal Wallet via Shopify",
+   "value": "From 3.49% + $0.49 (all plans)",
+   "valueUnit": "text",
+   "source": "shopify.ecom-store.pro pricing explainer Sep 2026 (cites Shopify pricing page)",
+   "sourceUrl": "https://shopify.ecom-store.pro/blog/shopify-pricing-explained/",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-062"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
