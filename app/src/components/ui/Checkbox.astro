@@ -1,0 +1,70 @@
+---
+/**
+ * Checkbox.astro — single native checkbox + label + hint + error.
+ * Owner: MA1-DesignSystem.
+ *
+ * Native input styled with accent-color (no custom div-switches). Groups of
+ * related checkboxes: wrap multiple <Checkbox> in a native
+ * <fieldset><legend>…</legend></fieldset> in the template — do NOT build a
+ * CheckboxGroup component (kept minimal per the component brief).
+ *
+ * "Switch" styling is NOT offered: a switch MUST still be a checkbox
+ * semantically with visible ON/OFF text (ACCESSIBILITY.md §3.3) — no tool
+ * template has justified one, so the primitive stays a checkbox.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  name: string;
+  label: string;
+  id?: string;
+  checked?: boolean;
+  value?: string;
+  hint?: string;
+  error?: string;
+  required?: boolean;
+  describedBy?: string;
+  disabled?: boolean;
+  class?: string;
+}
+
+const {
+  name, label, id: idProp, checked = false, value = "on",
+  hint, error, required = false, describedBy, disabled = false, class: cls,
+} = Astro.props;
+
+const id = idProp ?? nextId("checkbox");
+const hintId = hint ? `${id}-hint` : undefined;
+const errorId = error ? `${id}-error` : undefined;
+const describedby = [hintId, errorId, describedBy].filter(Boolean).join(" ") || undefined;
+---
+<div class:list={["hb-field", cls]}>
+  <div class="hb-choice">
+    <input
+      class="hb-choice__input"
+      type="checkbox"
+      id={id}
+      name={name}
+      value={value}
+      checked={checked || undefined}
+      required={required || undefined}
+      aria-invalid={error ? "true" : undefined}
+      aria-describedby={describedby}
+      disabled={disabled || undefined}
+    />
+    <label class="hb-choice__label" for={id}>
+      {label}{required ? <span class="hb-field__marker hb-field__marker--required">required</span> : null}
+    </label>
+    {hint && <p class="hb-choice__hint" id={hintId}>{hint}</p>}
+    {error && (
+      <p class:list={["hb-field__error", "hb-choice__error"]} id={errorId}>
+        <svg class="hb-field__error-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M8 4.5v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <circle cx="8" cy="11.25" r="1" fill="currentColor"/>
+        </svg>
+        <span><strong>{label}:</strong> {error}</span>
+      </p>
+    )}
+  </div>
+</div>
