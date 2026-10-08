@@ -1,0 +1,20 @@
+---
+/**
+ * SkipLink.astro — skip navigation links (2.4.1 Bypass Blocks).
+ * Owner: MA1-DesignSystem.
+ *
+ * Render FIRST in <body> (before the header). Every tool page gets
+ * "Skip to main content"; tool pages ALSO get "Skip to tool" pointing at
+ * the tool's form/interactive region id.
+ */
+interface Props {
+  mainId?: string;
+  /** Omit on non-tool pages. */
+  toolId?: string;
+  toolLabel?: string;
+}
+
+const { mainId = "main-content", toolId, toolLabel = "Skip to tool" } = Astro.props;
+---
+<a class="hb-skip-link" href={`#${mainId}`}>Skip to main content</a>
+{toolId && <a class="hb-skip-link" href={`#${toolId}`}>{toolLabel}</a>}
