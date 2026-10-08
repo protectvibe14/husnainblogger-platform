@@ -1,0 +1,173 @@
+---
+/**
+ * Field.astro — the input primitive: text/number/email/url/tel/search/password/date
+ * input + label + hint + error, PLUS select and textarea rendering.
+ * Owner: MA1-DesignSystem.
+ *
+ * ACCESSIBILITY.md R3: raw <input>/<select>/<textarea> in tool templates
+ * is a build-time lint error — all inputs MUST come through this component
+ * (or Textarea / Select / Checkbox / RadioGroup directly).
+ *
+ * Dispatch:
+ *  - type="select"   → <select> with options (options: string[] → value/label pairs)
+ *  - type="textarea" → <textarea>
+ *  - type="file"     → <input type="file" accept> (media lane: the runtime
+ *                      decodes the file client-side and runTool receives a
+ *                      plain descriptor object, never the File)
+ *  - otherwise       → <input type={type}>
+ *
+ * Wiring (automatic, all four controls):
+ *  - <label for=id> (visible; never placeholder-as-label)
+ *  - hint  -> <p id={id}-hint>,  referenced in aria-describedby
+ *  - error -> <p id={id}-error>,  referenced in aria-describedby + icon + text
+ *           (1.4.1: never color-only), aria-invalid="true"
+ *  - required -> native `required` + visible "required"; non-required
+ *    fields show "optional" unless optionalMark={false}
+ *  - id auto-namespaced per instance (R4) via lib/a11y/ids
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  name: string;
+  /** Visible label text — required. */
+  label: string;
+  type?: "text" | "number" | "email" | "url" | "tel" | "search" | "password" | "date" | "select" | "textarea" | "file";
+  /** Select options (string[] → { value, label } pairs). Only used when type="select". */
+  options?: string[];
+  /** File-input accept filter, e.g. "audio/*". Only used when type="file". */
+  accept?: string;
+  id?: string;
+  value?: string | number;
+  hint?: string;
+  /** When set, renders the error state. Clear it to return to valid. */
+  error?: string;
+  required?: boolean;
+  /** Show "optional" on non-required fields. Default true. */
+  optionalMark?: boolean;
+  /** 1.3.5 — required for personal-data fields (email, name, tel, …). */
+  autocomplete?: string;
+  inputmode?: "text" | "decimal" | "numeric" | "tel" | "search" | "email" | "url";
+  min?: string | number;
+  max?: string | number;
+  step?: string | number;
+  pattern?: string;
+  minlength?: number;
+  maxlength?: number;
+  rows?: number;
+  /** Hint-only. NEVER a label substitute (placeholder fails 1.4.3). */
+  placeholder?: string;
+  /** Extra ids to append to aria-describedby. */
+  describedBy?: string;
+  disabled?: boolean;
+  readonly?: boolean;
+  class?: string;
+}
+
+const {
+  name, label, type = "text", options = [], accept, id: idProp, value, hint, error,
+  required = false, optionalMark = true, autocomplete, inputmode,
+  min, max, step, pattern, minlength, maxlength, rows,
+  placeholder, describedBy, disabled = false, readonly = false, class: cls,
+} = Astro.props;
+
+const id = idProp ?? nextId("field");
+const hintId = hint ? `${id}-hint` : undefined;
+const errorId = error ? `${id}-error` : undefined;
+const describedby = [hintId, errorId, describedBy].filter(Boolean).join(" ") || undefined;
+const isSelect = type === "select";
+const isTextarea = type === "textarea";
+const isFile = type === "file";
+const invalid = !!error;
+---
+<div class:list={["hb-field", cls]}>
+  <label class="hb-field__label" for={id}>
+    <span>{label}</span>
+    {required
+      ? <span class="hb-field__marker hb-field__marker--required">required</span>
+      : (optionalMark ? <span class="hb-field__marker hb-field__marker--optional">optional</span> : null)}
+  </label>
+  {hint && <p class="hb-field__hint" id={hintId}>{hint}</p>}
+  {isSelect ? (
+    <select
+      class:list={["hb-field__input", "hb-field__select", { "hb-field__input--invalid": invalid }]}
+      id={id}
+      name={name}
+      data-field-input={name}
+      required={required || undefined}
+      aria-required={required ? "true" : undefined}
+      aria-invalid={error ? "true" : undefined}
+      aria-describedby={describedby}
+      autocomplete={autocomplete}
+      disabled={disabled || undefined}
+    >
+      {placeholder && <option value="" disabled selected={value == null || value === ""}>{placeholder}</option>}
+      {options.map((opt) => (
+        <option value={opt} selected={value != null && String(value) === opt}>{opt}</option>
+      ))}
+    </select>
+  ) : isTextarea ? (
+    <textarea
+      class:list={["hb-field__input", "hb-field__textarea", { "hb-field__input--invalid": invalid }]}
+      id={id}
+      name={name}
+      data-field-input={name}
+      rows={rows ?? 4}
+      placeholder={placeholder}
+      required={required || undefined}
+      aria-required={required ? "true" : undefined}
+      aria-invalid={error ? "true" : undefined}
+      aria-describedby={describedby}
+      autocomplete={autocomplete}
+      minlength={minlength}
+      maxlength={maxlength}
+      disabled={disabled || undefined}
+      readonly={readonly || undefined}
+    >{value ?? ""}</textarea>
+  ) : isFile ? (
+  <input
+    class:list={["hb-field__input", "hb-field__file", { "hb-field__input--invalid": invalid }]}
+    id={id}
+    name={name}
+    data-field-input={name}
+    type="file"
+    accept={accept}
+    required={required || undefined}
+    aria-required={required ? "true" : undefined}
+    aria-invalid={error ? "true" : undefined}
+    aria-describedby={describedby}
+    disabled={disabled || undefined}
+  />
+  ) : (
+  <input
+    class:list={["hb-field__input", { "hb-field__input--invalid": invalid }]}
+    id={id}
+    name={name}
+    data-field-input={name}
+    type={type}
+    value={value}
+    placeholder={placeholder}
+    required={required || undefined}
+    aria-required={required ? "true" : undefined}
+    aria-invalid={error ? "true" : undefined}
+    aria-describedby={describedby}
+    autocomplete={autocomplete}
+    inputmode={inputmode}
+    min={min}
+    max={max}
+    step={step}
+    pattern={pattern}
+    minlength={minlength}
+    maxlength={maxlength}
+    disabled={disabled || undefined}
+    readonly={readonly || undefined}
+  />
+  )}
+  <p class="hb-field__error" id={errorId} data-field-error={name} hidden={!error}>
+    <svg class="hb-field__error-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <path d="M8 4.5v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+      <circle cx="8" cy="11.25" r="1" fill="currentColor"/>
+    </svg>
+    <span><strong>{label}:</strong> <span data-field-error-text>{error}</span></span>
+  </p>
+</div>
