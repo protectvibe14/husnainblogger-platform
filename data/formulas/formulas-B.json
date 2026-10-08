@@ -1,0 +1,1102 @@
+[
+  {
+    "toolId": "tool-051",
+    "name": "Mediavine Earnings Calculator",
+    "formula": "estimated_monthly_earnings = monthly_sessions * session_rpm / 1000; earnings_range = [estimated_monthly_earnings * 0.6, estimated_monthly_earnings * 1.6]",
+    "variables": [
+      {"symbol": "monthly_sessions", "meaning": "monetizable monthly sessions", "unit": "count"},
+      {"symbol": "session_rpm", "meaning": "session RPM, default 25", "unit": "USD per 1000 sessions"}
+    ],
+    "units": "USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Session RPM is publisher- and niche-dependent; default 25 is a benchmark estimate (Mediavine typical $15-40), user-editable.",
+      "Assumes all sessions serve ads; invalid traffic, ad blockers, and seasonality ignored."
+    ],
+    "source": "Mediavine typical session RPM $15-40 (classification-level benchmark; NOT in platform-rules -- never presented as verified market data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-052",
+    "name": "Raptive Revenue Estimator",
+    "formula": "estimated_monthly_earnings = monthly_pageviews * page_rpm / 1000; earnings_range = [estimated_monthly_earnings * 0.6, estimated_monthly_earnings * 1.6]",
+    "variables": [
+      {"symbol": "monthly_pageviews", "meaning": "monthly pageviews", "unit": "count"},
+      {"symbol": "page_rpm", "meaning": "page RPM, default 30", "unit": "USD per 1000 pageviews"}
+    ],
+    "units": "USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Page RPM is niche- and geography-dependent; default 30 is a benchmark estimate (Raptive typical $20-50), user-editable.",
+      "Raptive requires ~100k monthly pageviews for eligibility -- show warning below that threshold."
+    ],
+    "source": "Raptive typical page RPM $20-50 (classification-level benchmark; NOT in platform-rules -- never presented as verified market data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-053",
+    "name": "Ad Revenue Network Comparison Tool",
+    "formula": "per_network_earnings = monthly_sessions * network_rpm(network, traffic_share_US, niche) / 1000; rows sorted by per_network_earnings desc",
+    "variables": [
+      {"symbol": "monthly_sessions", "meaning": "monthly sessions", "unit": "count"},
+      {"symbol": "traffic_share_US", "meaning": "share of traffic from the US", "unit": "percent 0-100"},
+      {"symbol": "network_rpm", "meaning": "published benchmark RPM per network", "unit": "USD per 1000 sessions"}
+    ],
+    "units": "USD/month per network row",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Network RPMs are third-party estimates in a static table -- NO live data; UI must say so.",
+      "Non-US-heavy traffic must carry a lower-RPM note.",
+      "Network minimum-traffic requirements are shown from a static table, not fetched live."
+    ],
+    "source": "MA2-defined static benchmark table (network RPMs NOT in platform-rules; needs_review before any 'verified data' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-054",
+    "name": "Blog Traffic-to-Income Planner",
+    "formula": "ad_income = monthly_sessions * rpm / 1000; total_monthly_income = ad_income + affiliate_revenue + product_revenue + sponsored_revenue; annual_projection = total_monthly_income * 12; income_mix_stream = stream / total_monthly_income * 100",
+    "variables": [
+      {"symbol": "monthly_sessions", "meaning": "monthly sessions", "unit": "count"},
+      {"symbol": "rpm", "meaning": "ad RPM", "unit": "USD per 1000 sessions"},
+      {"symbol": "affiliate_revenue", "meaning": "user-entered monthly affiliate revenue", "unit": "USD"},
+      {"symbol": "product_revenue", "meaning": "user-entered monthly product revenue", "unit": "USD"},
+      {"symbol": "sponsored_revenue", "meaning": "user-entered monthly sponsored revenue", "unit": "USD"}
+    ],
+    "units": "USD/month, USD/year, percent",
+    "rounding": "round half-up to 2 decimals (USD); 1 decimal for percent",
+    "assumptions": [
+      "All revenue inputs except ad income are user-entered; the tool performs arithmetic, not forecasting.",
+      "Annual projection is a straight x12 of the monthly total (no growth/decay modeling)."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-055",
+    "name": "Etsy Fee Calculator",
+    "formula": "gross = item_price * quantity + shipping_charged; listing_fee = 0.20 * quantity; transaction_fee = 0.065 * gross; payment_processing_fee = gross * processing_rate(country) + processing_fixed(country); offsite_ads_fee = attributed ? min(gross * offsite_ads_rate, 100) : 0; total_fees = listing_fee + transaction_fee + payment_processing_fee + offsite_ads_fee (each fee line rounded to cent, half-up, before summing); net_payout = gross - total_fees",
+    "variables": [
+      {"symbol": "item_price", "meaning": "item sale price", "unit": "currency"},
+      {"symbol": "quantity", "meaning": "number of units", "unit": "count, integer >= 1"},
+      {"symbol": "shipping_charged", "meaning": "shipping amount charged to buyer", "unit": "currency"},
+      {"symbol": "processing_rate(country)", "meaning": "US 3%, UK 4%, DE/FR 4%, CA/AU 3%", "unit": "percent"},
+      {"symbol": "processing_fixed(country)", "meaning": "US $0.25, UK £0.20, DE/FR €0.30, CA/AU CA$0.25/A$0.25", "unit": "currency"},
+      {"symbol": "offsite_ads_rate", "meaning": "15% (<$10k annual sales) or 12% (>=$10k), user-selected", "unit": "percent"}
+    ],
+    "units": "seller-country currency (no FX conversion performed)",
+    "rounding": "each fee line rounded to the nearest cent (half-up), then summed",
+    "assumptions": [
+      "Seller is on the standard Etsy fee schedule (no negotiated rates).",
+      "Fixed processing fee is charged in the seller-country currency; the calculator performs no FX conversion.",
+      "Transaction fee base is item price + shipping charged (gift wrap not modeled).",
+      "Offsite Ads rate is user-selected (15% under $10k annual sales / 12% at or above), capped at $100 per attributed order.",
+      "Regulatory operating fee (0.05%-1.97%, region-specific) and regulated-category surcharge (+2.5%) are NOT included -- UI must state exclusions."
+    ],
+    "source": "etsy-listing-fee, etsy-transaction-fee, etsy-processing-fee-us, etsy-processing-fee-uk, etsy-processing-fee-de-fr, etsy-processing-fee-ca-au, etsy-offsite-ads-fee",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-056",
+    "name": "Etsy Profit Calculator",
+    "formula": "gross = sale_price + shipping_charged; total_fees = (same Etsy fee engine as tool-055: listing + transaction + processing [+ offsite ads]); total_costs = item_cost + shipping_label_cost + total_fees; net_profit = gross - total_costs; profit_margin = net_profit / gross * 100",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "item sale price", "unit": "currency"},
+      {"symbol": "item_cost", "meaning": "cost of goods (COGS)", "unit": "currency"},
+      {"symbol": "shipping_charged", "meaning": "shipping charged to buyer", "unit": "currency"},
+      {"symbol": "shipping_label_cost", "meaning": "actual shipping label cost", "unit": "currency"}
+    ],
+    "units": "seller-country currency (no FX conversion performed)",
+    "rounding": "each fee line rounded to the nearest cent (half-up); net profit and margin rounded half-up (2 decimals / 1 decimal)",
+    "assumptions": [
+      "Same fee engine, values, rounding, and exclusions as tool-055 (shares the Etsy rule set).",
+      "COGS, packaging, and other overheads beyond shipping label are user-entered; negative profit is shown with a warning."
+    ],
+    "source": "etsy-listing-fee, etsy-transaction-fee, etsy-processing-fee-us, etsy-processing-fee-uk, etsy-processing-fee-de-fr, etsy-processing-fee-ca-au, etsy-offsite-ads-fee (same rule set as tool-055)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-057",
+    "name": "eBay Fee Calculator",
+    "formula": "total_sale = sale_price + shipping_charged; final_value_fee = 0.136 * min(total_sale, 7500) + 0.0235 * max(total_sale - 7500, 0) [+ 0.0165 * total_sale if international_buyer]; per_order_fee = total_sale > 10 ? 0.40 : 0.30; insertion_fee = max(listings_beyond_250, 0) * 0.35 (optional input); total_fees = final_value_fee + per_order_fee + insertion_fee; net_payout = total_sale - total_fees",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "item sale price", "unit": "USD"},
+      {"symbol": "shipping_charged", "meaning": "shipping charged to buyer", "unit": "USD"},
+      {"symbol": "category", "meaning": "eBay category (rate overrides default)", "unit": "enum"},
+      {"symbol": "international_buyer", "meaning": "international transaction surcharge flag", "unit": "boolean"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Default most-categories FVF 13.6%; sources disagree (13.6% vs 13.25% seen Jul 2026+) -- UI MUST carry an 'estimate, rates under review' label (needs_review).",
+      "Category overrides (e.g. 15.3% Books/DVDs/Music, 6.7% guitars) applied when the user selects a category.",
+      "$7,500 tier applies per item; FVF is on total sale amount (price + shipping + tax where applicable)."
+    ],
+    "source": "ebay-fvf-most-categories, ebay-fvf-rate-discrepancy, ebay-per-order-fee, ebay-insertion-fee, ebay-category-rates, ebay-international-fee",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-058",
+    "name": "Poshmark Fee Calculator",
+    "formula": "poshmark_fee = sale_price >= 15 ? 0.20 * sale_price : 2.95; net_payout = sale_price - poshmark_fee - shipping_discount",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "item sale price", "unit": "USD"},
+      {"symbol": "shipping_discount", "meaning": "seller-funded shipping discount", "unit": "USD"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "20% applies at exactly $15 and above; the $2.95 flat fee under $15 can exceed 20%.",
+      "Payment processing is included in the commission -- no separate processing fee is added."
+    ],
+    "source": "poshmark-commission-15-plus, poshmark-commission-under-15, poshmark-listing-fee, poshmark-payment-processing",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-059",
+    "name": "Amazon FBA Profit Calculator",
+    "formula": "referral_fee = sale_price * referral_rate (default 0.15); fuel_surcharge = fulfillment_fee * 0.035; total_amazon_fees = referral_fee + fulfillment_fee + fuel_surcharge + storage_cost (+ optional: inbound_placement, low_inventory); net_profit_per_unit = sale_price - total_amazon_fees - product_cost; monthly_profit = net_profit_per_unit * units_per_month; margin = net_profit_per_unit / sale_price * 100; roi = net_profit_per_unit / product_cost * 100",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "item sale price", "unit": "USD"},
+      {"symbol": "referral_rate", "meaning": "category referral rate, default 15%", "unit": "percent (5-45% by category)"},
+      {"symbol": "fulfillment_fee", "meaning": "FBA pick-pack-ship fee, USER-ENTERED (size/weight tiers too granular for v1)", "unit": "USD"},
+      {"symbol": "product_cost", "meaning": "landed product cost per unit", "unit": "USD"},
+      {"symbol": "units_per_month", "meaning": "expected monthly units", "unit": "count"},
+      {"symbol": "storage_cost", "meaning": "user-entered monthly storage cost", "unit": "USD"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD); 1 decimal for percent",
+    "assumptions": [
+      "Fulfillment fee is user-entered -- v1 does NOT hardcode the full size/weight rate card (standard small ~$3.22-$4.75 per rules).",
+      "Referral default 15% (electronics/computers 8%); user adjusts by category.",
+      "Seller plan fee (Professional $39.99/mo vs Individual $0.99/item) is an optional separate line."
+    ],
+    "source": "amazon-fba-referral-fee, amazon-fba-fulfillment-fee-standard, amazon-fba-fuel-surcharge, amazon-fba-storage-standard, amazon-fba-inbound-placement, amazon-fba-low-inventory-fee, amazon-seller-plan",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-060",
+    "name": "Amazon KDP Royalty Calculator",
+    "formula": "ebook: if 2.99 <= list_price <= 9.99 then royalty = list_price * 0.70 - file_size_mb * 0.15 else royalty = max(list_price * 0.35, 0); paperback: royalty = list_price * 0.60 - printing_cost; printing_cost = 1.00 + pages * rate_by_ink (B&W 0.012, standard color 0.0255, premium color 0.065)",
+    "variables": [
+      {"symbol": "list_price", "meaning": "list price", "unit": "USD"},
+      {"symbol": "file_size_mb", "meaning": "ebook file size", "unit": "MB"},
+      {"symbol": "page_count", "meaning": "paperback page count", "unit": "count"},
+      {"symbol": "ink_type", "meaning": "bw / standard / premium", "unit": "enum"},
+      {"symbol": "marketplace", "meaning": "royalty territory", "unit": "enum"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "ebook 70% auto-switches to 35% outside $2.99-$9.99 with a UI notice.",
+      "70% ceiling: a $12.99 ceiling was claimed by one source but is UNVERIFIED -- needs_review, do not present as fact.",
+      "Paperback 60% band boundary under $9.98 is disputed across sources -- needs_review label required.",
+      "KU page-read revenue ($0.00462/KENP page) is a separate optional line."
+    ],
+    "source": "amazon-kdp-ebook-35, amazon-kdp-ebook-70, amazon-kdp-70pct-ceiling-claim (needs_review), amazon-kdp-paperback-royalty, amazon-kdp-print-cost, amazon-kdp-ku-page-rate",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-061",
+    "name": "Print-on-Demand Profit Calculator",
+    "formula": "platform_fee = sale_price * platform_fee_rate; net_profit = sale_price - platform_fee - base_product_cost - shipping_cost; margin = net_profit / sale_price * 100",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "retail price", "unit": "USD"},
+      {"symbol": "base_product_cost", "meaning": "provider base + print cost, USER-ENTERED", "unit": "USD"},
+      {"symbol": "platform_fee_rate", "meaning": "marketplace/provider platform fee rate", "unit": "percent"},
+      {"symbol": "shipping_cost", "meaning": "shipping cost borne by seller", "unit": "USD"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD); 1 decimal for percent",
+    "assumptions": [
+      "NO hardcoded POD provider prices (Printful/Printify etc.) -- base product cost is always user-entered.",
+      "Platform fee rate is user-entered (varies by marketplace and plan)."
+    ],
+    "source": "Pure user-input arithmetic (no external data; provider prices deliberately not embedded)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-062",
+    "name": "Shopify Fee Calculator",
+    "formula": "monthly_subscription = plan_table(plan); processing_fees = orders_per_month * (order_value * card_rate(plan) + 0.30); gateway_surcharge = use_shopify_payments ? 0 : orders_per_month * order_value * third_party_surcharge(plan); total_monthly_cost = monthly_subscription + processing_fees + gateway_surcharge; effective_rate = total_monthly_cost / (orders_per_month * order_value) * 100",
+    "variables": [
+      {"symbol": "order_value", "meaning": "average order value", "unit": "USD"},
+      {"symbol": "orders_per_month", "meaning": "monthly order count", "unit": "count"},
+      {"symbol": "plan", "meaning": "basic/grow/advanced/plus", "unit": "enum"}
+    ],
+    "units": "USD/month, percent",
+    "rounding": "round half-up to 2 decimals (USD); 2 decimals for percent",
+    "assumptions": [
+      "Plan schedule: Basic $39/mo (online 2.9%+$0.30, 3rd-party gateway +2.0%), Grow $105/mo (2.7%+$0.30, +1.0%), Advanced $399/mo (2.5%+$0.30, +0.6%), Plus from $2,300/mo (~2.15-2.25%+$0.30).",
+      "Third-party gateway stacks Shopify surcharge on top of the gateway's own fee (user-entered).",
+      "PayPal/wallet transactions ~3.49%+$0.49 across plans (separate optional line)."
+    ],
+    "source": "shopify-plan-basic, shopify-plan-grow, shopify-plan-advanced, shopify-plan-plus, shopify-paypal-wallet",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  }
+  ,
+  {
+    "toolId": "tool-063",
+    "name": "PayPal Fee Calculator",
+    "formula": "fee = amount * rate(route) + fixed(route); rate/fixed by route: direct_gs 2.99%+0, checkout 3.49%+0.49, card 2.99%+0.49; international adds +1.5% to rate; net_received = amount - fee; effective_rate = fee / amount * 100; reverse_amount(target) = (target + fixed) / (1 - rate)",
+    "variables": [
+      {"symbol": "amount", "meaning": "transaction amount", "unit": "USD"},
+      {"symbol": "payment_route", "meaning": "direct_gs / checkout / card (REQUIRED -- no single blended rate)", "unit": "enum"},
+      {"symbol": "international", "meaning": "cross-border flag, adds +1.5%", "unit": "boolean"},
+      {"symbol": "currency_conversion", "meaning": "FX spread note 3-4% above mid-market", "unit": "boolean"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Direct G&S has NO fixed fee (2.99%) while Checkout adds $0.49 -- the route must be explicit; a single blended PayPal rate is wrong.",
+      "US domestic schedule; international +1.5% (4.49%+$0.49 intl G&S per rules).",
+      "Currency conversion is a 3-4% spread above mid-market, shown as a note, not folded into the fee."
+    ],
+    "source": "paypal-us-direct-gs, paypal-us-checkout, paypal-us-standard-card, paypal-international-surcharge, paypal-currency-conversion, paypal-multiple-schedules",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-064",
+    "name": "Stripe Fee Calculator",
+    "formula": "fee = amount * rate(method) + fixed(method); online 2.9%+0.30, in_person 2.7%+0.05, ach 0.8% capped at $5 (fee = min(amount*0.008, 5)); international_card adds +1.5%, currency_conversion adds +1% (stacked); net_received = amount - fee; effective_rate = fee / amount * 100; reverse_amount(target) = (target + fixed) / (1 - rate)",
+    "variables": [
+      {"symbol": "amount", "meaning": "transaction amount", "unit": "USD"},
+      {"symbol": "payment_method", "meaning": "online / in_person / ach", "unit": "enum"},
+      {"symbol": "international_card", "meaning": "non-US card flag, +1.5%", "unit": "boolean"},
+      {"symbol": "currency_conversion", "meaning": "FX conversion flag, +1%", "unit": "boolean"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "US domestic schedule; method must be explicit (in-person 2.7%+$0.05 differs from online).",
+      "ACH 0.8% is capped at $5 per charge.",
+      "Volume/negotiated rates are out of scope -- standard rates only."
+    ],
+    "source": "stripe-us-online, stripe-us-in-person, stripe-international-card, stripe-currency-conversion, stripe-ach",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-065",
+    "name": "Gumroad Fee Calculator",
+    "formula": "direct: per_unit_fee = sale_price * 0.10 + 0.50 + (sale_price * 0.029 + 0.30); discover: per_unit_fee = sale_price * 0.30 (processing included -- do NOT add card processing); total_fees = per_unit_fee * quantity; net_payout = sale_price * quantity - total_fees",
+    "variables": [
+      {"symbol": "sale_price", "meaning": "unit sale price", "unit": "USD"},
+      {"symbol": "sale_channel", "meaning": "direct / discover (REQUIRED)", "unit": "enum"},
+      {"symbol": "quantity", "meaning": "units sold", "unit": "count, integer >= 1"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Direct sale: 10% + $0.50 with card processing (2.9% + $0.30) charged ON TOP.",
+      "Discover sale: 30% flat includes processing -- never add 2.9%+$0.30 on Discover.",
+      "No monthly fee; Gumroad is merchant of record (tax handled by Gumroad); platform fee is kept even on refunds."
+    ],
+    "source": "gumroad-direct-sale, gumroad-discover-sale, gumroad-monthly-fee, gumroad-merchant-of-record, gumroad-refunds",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-066",
+    "name": "Upwork Fee Calculator",
+    "formula": "service_fee = contract_amount * service_fee_rate (user-entered 0-15%, default 10%); net_payout = contract_amount - service_fee; connects_cost = connects_used * 0.15 (optional, pre-sale line)",
+    "variables": [
+      {"symbol": "contract_amount", "meaning": "contract/earnings amount", "unit": "USD"},
+      {"symbol": "service_fee_rate", "meaning": "freelancer service fee, 0-15%, default 10%", "unit": "percent"},
+      {"symbol": "connects_used", "meaning": "Connects spent to win the work", "unit": "count"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Upwork freelancer fee is VARIABLE per contract (0-15%) -- rate is user-editable, never hardcoded as fixed.",
+      "Connects cost is pre-sale bidding cost ($0.15/Connect, typical 6-16 per proposal), shown as an optional separate line."
+    ],
+    "source": "upwork-freelancer-service-fee, upwork-connects, upwork-withdrawal",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-067",
+    "name": "Fiverr Profit Calculator",
+    "formula": "fiverr_fee = 0.20 * (order_value + tips); net_earnings = order_value + tips - fiverr_fee - delivery_cost; effective_hourly = net_earnings / hours_worked (optional input)",
+    "variables": [
+      {"symbol": "order_value", "meaning": "order value (excl. buyer service fee)", "unit": "USD"},
+      {"symbol": "tips", "meaning": "tips received (20% fee applies to tips too)", "unit": "USD"},
+      {"symbol": "delivery_cost", "meaning": "outsourcing/tools cost for the order", "unit": "USD"},
+      {"symbol": "hours_worked", "meaning": "hours spent (for optional hourly)", "unit": "hours"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Seller commission is flat 20% on all freelancer earnings including tips.",
+      "Buyer service fee (~5.5%) is buyer-paid and excluded from seller math."
+    ],
+    "source": "fiverr-seller-commission, fiverr-buyer-service-fee",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-068",
+    "name": "Freelance Hourly Rate Calculator",
+    "formula": "required_hourly_rate = (annual_income_target + business_expenses) / billable_hours_per_year; rate_with_tax_buffer = required_hourly_rate / (1 - tax_rate)",
+    "variables": [
+      {"symbol": "annual_income_target", "meaning": "desired annual take-home", "unit": "USD"},
+      {"symbol": "billable_hours_per_year", "meaning": "realistic billable hours", "unit": "hours, > 0 and <= 8760"},
+      {"symbol": "business_expenses", "meaning": "annual business expenses", "unit": "USD"},
+      {"symbol": "tax_rate", "meaning": "effective tax rate", "unit": "percent 0-100"}
+    ],
+    "units": "USD/hour",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Pure backwards-math: the rate needed to hit the income target given billable hours.",
+      "Zero billable hours is rejected (division by zero); 100% tax rate is guarded."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-069",
+    "name": "Project Quote Generator",
+    "formula": "subtotal = estimated_hours * hourly_rate + material_costs; quote_total = subtotal * (1 + margin_percent/100) * rush_multiplier; line_items = [hours x rate, materials, margin, rush] rendered as the quote document",
+    "variables": [
+      {"symbol": "estimated_hours", "meaning": "estimated hours", "unit": "hours, > 0"},
+      {"symbol": "hourly_rate", "meaning": "hourly rate", "unit": "USD"},
+      {"symbol": "material_costs", "meaning": "pass-through costs", "unit": "USD"},
+      {"symbol": "margin_percent", "meaning": "profit margin", "unit": "percent >= 0"},
+      {"symbol": "rush_multiplier", "meaning": "rush fee multiplier, default 1", "unit": "number >= 1"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Core is pricing math; the quote document is a formatted view of computed numbers (generator verified as calculator-first).",
+      "Very high rush multipliers trigger a sanity warning."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-070",
+    "name": "Copywriter Rate Calculator",
+    "formula": "rate_range = benchmark_table(experience_level, deliverable); per_word_rate = project_price / word_count; suggested = rate_range * (1 + niche_premium/100)",
+    "variables": [
+      {"symbol": "experience_level", "meaning": "beginner/intermediate/expert/specialist", "unit": "enum"},
+      {"symbol": "deliverable", "meaning": "per_word/per_hour/blog_post/sales_page", "unit": "enum"},
+      {"symbol": "word_count", "meaning": "word count (per-word jobs)", "unit": "words"},
+      {"symbol": "niche_premium", "meaning": "niche premium, e.g. finance +150%", "unit": "percent >= 0"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Benchmark bands are survey estimates (per-word $0.10-$2.00+ by level) -- defaults labeled estimates, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules -- UI must not present as verified market data."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-071",
+    "name": "Video Editor Rate Calculator",
+    "formula": "rate_range = benchmark_table(experience_level): entry $15-40/hr, mid $50-100/hr, senior $100-250/hr; project_estimate = rate * project_hours",
+    "variables": [
+      {"symbol": "experience_level", "meaning": "entry/mid/senior", "unit": "enum"},
+      {"symbol": "project_hours", "meaning": "estimated project hours", "unit": "hours"},
+      {"symbol": "video_minutes", "meaning": "finished video length (context)", "unit": "minutes"}
+    ],
+    "units": "USD/hour, USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Hourly bands are survey estimates -- labeled estimates, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-072",
+    "name": "Graphic Designer Rate Calculator",
+    "formula": "rate_range = benchmark_table(experience_level, deliverable): ~$30-150/hr by level; project_estimate = rate * project_hours",
+    "variables": [
+      {"symbol": "experience_level", "meaning": "experience level", "unit": "enum"},
+      {"symbol": "deliverable", "meaning": "logo/brand/social/print", "unit": "enum"},
+      {"symbol": "project_hours", "meaning": "estimated project hours", "unit": "hours"}
+    ],
+    "units": "USD/hour",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Hourly bands are survey estimates -- labeled estimates, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-073",
+    "name": "Web Designer Project Pricing Calculator",
+    "formula": "project_range = benchmark_table(project_scope, experience_level): e.g. 5-page site $2,000-$7,500; adjusted by page_count scaling factor (user-visible); suggested_range = [low * factor, high * factor]",
+    "variables": [
+      {"symbol": "project_scope", "meaning": "landing/5_page/ecommerce/custom", "unit": "enum"},
+      {"symbol": "page_count", "meaning": "number of pages", "unit": "count, > 0"},
+      {"symbol": "experience_level", "meaning": "experience level", "unit": "enum"}
+    ],
+    "units": "USD/project",
+    "rounding": "rounded to nearest $50 (wide bands)",
+    "assumptions": [
+      "Custom/ecommerce bands are very wide -- labeled estimates; user judgment required.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-074",
+    "name": "Social Media Manager Pricing Calculator",
+    "formula": "monthly_retainer_range = benchmark_band(accounts_managed, posts_per_week, services_included): $500-$4,000/mo benchmark; suggested = interpolate(band, workload) with service add-ons (community management, ads, reporting) as labeled add-on factors",
+    "variables": [
+      {"symbol": "accounts_managed", "meaning": "accounts managed", "unit": "count, > 0"},
+      {"symbol": "posts_per_week", "meaning": "posts per week across accounts", "unit": "count, > 0"},
+      {"symbol": "services_included", "meaning": "service mix", "unit": "list"}
+    ],
+    "units": "USD/month",
+    "rounding": "rounded to nearest $50 (wide band)",
+    "assumptions": [
+      "Retainer benchmark $500-$4,000/mo is a wide survey band -- labeled estimate, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  }
+  ,
+  {
+    "toolId": "tool-075",
+    "name": "Voiceover Rate Calculator",
+    "formula": "rate_range = benchmark_table(project_type, finished_minutes): narration tiers ~$350/2min scaling to ~$1,250/40min; e-learning $300-$600/finished hr; audiobook PFH $200-$400; rate = interpolate(table, finished_minutes or word_count/150)",
+    "variables": [
+      {"symbol": "project_type", "meaning": "narration/elearning/commercial/audiobook/ivr", "unit": "enum"},
+      {"symbol": "finished_minutes", "meaning": "finished audio minutes", "unit": "minutes, > 0"},
+      {"symbol": "word_count", "meaning": "script words (~150 wpm conversion)", "unit": "words"}
+    ],
+    "units": "USD/project",
+    "rounding": "rounded to nearest $25",
+    "assumptions": [
+      "Bands are GVAA-derived survey estimates -- labeled estimates, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (GVAA-derived; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-076",
+    "name": "SEO Freelancer Pricing Calculator",
+    "formula": "rate_range = UNVERIFIED benchmark_table(service_type, site_pages, hours_per_month); suggested = table lookup -- all defaults are user-settable and must be labeled UNVERIFIED",
+    "variables": [
+      {"symbol": "service_type", "meaning": "audit/monthly_retainer/link_building", "unit": "enum"},
+      {"symbol": "site_pages", "meaning": "pages in scope", "unit": "count, > 0"},
+      {"symbol": "hours_per_month", "meaning": "monthly hours", "unit": "hours, > 0"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "NO 2026 benchmark source was verified for this tool -- defaults MUST be clearly labeled unverified/user-set; the UI must never present invented ranges as researched. needs_review.",
+      "The formula shape (service x scope x hours) is valid pure math; only the rate constants are unverified."
+    ],
+    "source": "UNVERIFIED -- no 2026 benchmark source confirmed (needs_review); defaults must be user-set",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-077",
+    "name": "Virtual Assistant Rate Calculator",
+    "formula": "rate_range = benchmark_table(experience_level, tasks_complexity): $15-$50/hr by level/region; weekly_cost = rate * hours_per_week",
+    "variables": [
+      {"symbol": "experience_level", "meaning": "experience level", "unit": "enum"},
+      {"symbol": "tasks_complexity", "meaning": "basic/specialized", "unit": "enum"},
+      {"symbol": "hours_per_week", "meaning": "hours per week", "unit": "hours, > 0"}
+    ],
+    "units": "USD/hour, USD/week",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Bands are survey estimates by level/region -- labeled estimates, user-editable.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "Classification-level benchmark research (NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-078",
+    "name": "Freelance Invoice Generator",
+    "formula": "subtotal = sum(qty_i * rate_i); tax = subtotal * tax_rate/100; total = subtotal + tax; document = rendered invoice with line items, invoice number, due date",
+    "variables": [
+      {"symbol": "qty_i", "meaning": "quantity of line item i", "unit": "count >= 0"},
+      {"symbol": "rate_i", "meaning": "rate of line item i", "unit": "currency >= 0"},
+      {"symbol": "tax_rate", "meaning": "tax rate", "unit": "percent 0-100"},
+      {"symbol": "due_date", "meaning": "payment due date (>= issue date)", "unit": "date"}
+    ],
+    "units": "currency",
+    "rounding": "round half-up to 2 decimals (currency)",
+    "assumptions": [
+      "Line items must be non-empty; 100% tax triggers a warning.",
+      "Document rendered client-side (print/PDF via browser); no external data."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-079",
+    "name": "Sponsored Post Rate Calculator",
+    "formula": "base_range = IMH_2026_tier_band(platform, follower_count); format_multiplier = post 1.0 / reel_video 1.3-1.6 / story 0.4-0.6 (labeled estimates); engagement_adjustment = 1 + (engagement_rate - benchmark) * factor; suggested_range = base_range * format_multiplier * engagement_adjustment; rate_per_follower = suggested / follower_count",
+    "variables": [
+      {"symbol": "platform", "meaning": "instagram/tiktok/youtube", "unit": "enum"},
+      {"symbol": "follower_count", "meaning": "follower/subscriber count", "unit": "count, > 0"},
+      {"symbol": "engagement_rate", "meaning": "engagement rate", "unit": "percent, > 0"},
+      {"symbol": "content_format", "meaning": "post/reel/video", "unit": "enum"}
+    ],
+    "units": "USD/post",
+    "rounding": "rounded to nearest $5 (low tiers) / $50 (high tiers)",
+    "assumptions": [
+      "IMH 2026 tier bands are survey benchmarks -- defaults labeled estimates, user-editable.",
+      "Format multipliers are labeled estimates; reels/TikTok carry a premium over static, stories 40-60% cheaper.",
+      "Benchmark values come from classification-level research; NOT in platform-rules."
+    ],
+    "source": "IMH 2026 tier bands (classification-level benchmark; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-080",
+    "name": "TikTok Sponsorship Rate Calculator",
+    "formula": "suggested_range = compiled_2026_band(follower_count, avg_views): nano $5-$25/video scaling to mega $5k-$25k+; view_based = avg_views/1000 * CPM_band (labeled estimate); suggested = max(band_lookup, view_based_floor)",
+    "variables": [
+      {"symbol": "follower_count", "meaning": "follower count", "unit": "count, > 0"},
+      {"symbol": "avg_views", "meaning": "average views per video", "unit": "count, > 0"}
+    ],
+    "units": "USD/video",
+    "rounding": "rounded to nearest $5 (low tiers) / $100 (high tiers)",
+    "assumptions": [
+      "Bands are 2026 compiled survey estimates -- labeled estimates, user-editable.",
+      "Overlaps tool-079 (platform=tiktok) -- see DUP-B.md; benchmark values NOT in platform-rules."
+    ],
+    "source": "2026 compiled benchmark bands (classification-level; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-081",
+    "name": "YouTube Sponsorship Rate Calculator",
+    "formula": "suggested_range = compiled_2026_band(subscriber_count, avg_views): nano $20-$200 scaling to mega $50k-$300k+; integration_multiplier = dedicated 1.0 / integration 0.3-0.5 (labeled estimate); suggested = band_lookup * integration_multiplier",
+    "variables": [
+      {"symbol": "subscriber_count", "meaning": "subscriber count", "unit": "count, > 0"},
+      {"symbol": "avg_views", "meaning": "average views per video", "unit": "count, > 0"},
+      {"symbol": "integration_type", "meaning": "dedicated/integration", "unit": "enum"}
+    ],
+    "units": "USD/video",
+    "rounding": "rounded to nearest $10 (low tiers) / $500 (high tiers)",
+    "assumptions": [
+      "Bands are 2026 compiled survey estimates -- labeled estimates, user-editable.",
+      "Overlaps tool-079 (platform=youtube) -- see DUP-B.md; benchmark values NOT in platform-rules."
+    ],
+    "source": "2026 compiled benchmark bands (classification-level; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-082",
+    "name": "Podcast Sponsorship Rate Calculator",
+    "formula": "cpm = ad_format == 'mid_roll_60' ? 24-26 : 18-22 (host-read); rate_per_episode = downloads_per_episode / 1000 * cpm; monthly_value = rate_per_episode * episodes_per_month; if downloads_per_episode < 1000: flat-fee guidance $300-$500/episode instead of CPM",
+    "variables": [
+      {"symbol": "downloads_per_episode", "meaning": "downloads per episode", "unit": "count, > 0"},
+      {"symbol": "ad_format", "meaning": "pre_roll_30/mid_roll_60/post_roll", "unit": "enum"},
+      {"symbol": "episodes_per_month", "meaning": "episodes per month", "unit": "count, > 0"}
+    ],
+    "units": "USD/episode, USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "CPM benchmarks verified 2026 (millionpodcasts/Libsyn): host-read 30s $18-22 CPM, 60s $24-26 CPM -- shown as a range with sources.",
+      "Under 1k downloads CPM math breaks down; flat-fee guidance ($300-$500/ep) is an estimate."
+    ],
+    "source": "2026 CPM benchmarks per millionpodcasts/Libsyn (classification-verified; NOT in platform-rules -- cited in UI, not presented as platform-published)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-083",
+    "name": "UGC Creator Pricing Calculator",
+    "formula": "base_per_video = ~$500 (no-posting UGC, labeled estimate); usage_multiplier = organic 1.0 / paid_ads 1.5-2.5 / whitelisting 2.0-3.0 (labeled estimates); posting_addon = posting_required ? +25-50% : 0; suggested_range = video_count * base_per_video * usage_multiplier * (1 + posting_addon)",
+    "variables": [
+      {"symbol": "video_count", "meaning": "number of UGC videos", "unit": "count, > 0"},
+      {"symbol": "usage_rights", "meaning": "organic/paid_ads/whitelisting", "unit": "enum"},
+      {"symbol": "posting_required", "meaning": "creator posts to own channels", "unit": "boolean"}
+    ],
+    "units": "USD",
+    "rounding": "rounded to nearest $25",
+    "assumptions": [
+      "Base ~$500/video (no posting) from Cheerful Sep 2026 -- labeled estimate, user-editable.",
+      "Usage-rights multipliers are labeled estimates; benchmark values NOT in platform-rules."
+    ],
+    "source": "Cheerful Sep 2026 base rate + labeled usage multipliers (classification-level; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-084",
+    "name": "Newsletter Sponsorship Rate Calculator",
+    "formula": "cpm = placement == 'primary' ? 150 : 50 (2026, labeled estimate); rate_per_issue = subscriber_count / 1000 * cpm; effective_cpm = rate_per_issue / (subscriber_count * open_rate/100) * 1000",
+    "variables": [
+      {"symbol": "subscriber_count", "meaning": "subscriber count", "unit": "count, > 0"},
+      {"symbol": "open_rate", "meaning": "open rate", "unit": "percent 0-100"},
+      {"symbol": "placement", "meaning": "primary/secondary", "unit": "enum"}
+    ],
+    "units": "USD/issue",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "CPM benchmarks from outrank.so 2026 (primary ~$150, secondary ~$50) -- labeled estimates, user-editable.",
+      "Benchmark values NOT in platform-rules."
+    ],
+    "source": "outrank.so 2026 CPM benchmarks (classification-level; NOT in platform-rules; needs_review before any 'verified' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-085",
+    "name": "Rate Card Generator",
+    "formula": "rate_table_rows = for each platform: base_rates.get(platform) OR benchmark_band(platform, follower_count) [fallback labeled estimate]; document = rendered rate card with rows {platform, format, rate_low, rate_high, notes}",
+    "variables": [
+      {"symbol": "platforms", "meaning": "platform list", "unit": "list, >= 1"},
+      {"symbol": "follower_counts", "meaning": "followers per platform", "unit": "map"},
+      {"symbol": "base_rates", "meaning": "user-set rates (optional override)", "unit": "map"}
+    ],
+    "units": "USD per rate row",
+    "rounding": "per source band rounding",
+    "assumptions": [
+      "Missing user rates fall back to benchmark bands with estimate labels -- never silently presented as the creator's researched rates.",
+      "Document rendered client-side; rate math is the same engine family as tools 079-084."
+    ],
+    "source": "Composite of user-entered rates and tool-079..084 benchmark bands (benchmarks NOT in platform-rules)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-086",
+    "name": "Patreon Earnings Estimator",
+    "formula": "gross = patrons * avg_pledge; platform_fee = gross * plan_rate (standard_10: 0.10; legacy_lite 0.05 / legacy_pro 0.08 / legacy_premium 0.12); processing_fees = sum over patrons: pledge > 3 ? pledge*0.029+0.30 : pledge*0.05+0.10; estimated_net_monthly = gross - platform_fee - processing_fees",
+    "variables": [
+      {"symbol": "patrons", "meaning": "paying patrons", "unit": "count, > 0"},
+      {"symbol": "avg_pledge", "meaning": "average pledge", "unit": "USD, > 0"},
+      {"symbol": "plan_type", "meaning": "standard_10/legacy_lite/legacy_pro/legacy_premium", "unit": "enum"}
+    ],
+    "units": "USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "New pages = flat 10% (published after 2025-08-04); legacy tiers preserved only for older pages (user-selected).",
+      "Processing is per-pledge: 2.9%+$0.30 over $3, 5%+$0.10 under $3 -- computed on avg_pledge x patrons (approximation if pledges vary)."
+    ],
+    "source": "patreon-platform-fee-standard, patreon-platform-fee-legacy, patreon-payment-processing",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  }
+  ,
+  {
+    "toolId": "tool-087",
+    "name": "Substack Revenue Calculator",
+    "formula": "gross_revenue = paid_subscribers * monthly_price; substack_fee = gross_revenue * 0.10; stripe_fees = paid_subscribers * (monthly_price * 0.029 + 0.30); net_revenue = gross_revenue - substack_fee - stripe_fees",
+    "variables": [
+      {"symbol": "paid_subscribers", "meaning": "paid subscriber count", "unit": "count, > 0"},
+      {"symbol": "monthly_price", "meaning": "subscription price per month", "unit": "USD, > 0"}
+    ],
+    "units": "USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "10% Substack platform fee plus Stripe ~2.9%+$0.30 per transaction, stacked (not compounded).",
+      "Annual-billing discounts and taxes are out of scope."
+    ],
+    "source": "substack-platform-fee, substack-payment-processing",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-088",
+    "name": "Membership Site Revenue Projector",
+    "formula": "new_t = monthly_visitors * conversion_rate; members_t = members_{t-1} * (1 - churn_rate) + new_t; mrr_t = members_t * monthly_price; projected_members = members_months; annual_projection = sum(mrr_1..mrr_months) (churn COMPOUNDS -- projection shows decay, not a flat line)",
+    "variables": [
+      {"symbol": "monthly_visitors", "meaning": "monthly visitors", "unit": "count, > 0"},
+      {"symbol": "conversion_rate", "meaning": "visitor-to-member conversion", "unit": "percent 0-100"},
+      {"symbol": "monthly_price", "meaning": "membership price", "unit": "USD, > 0"},
+      {"symbol": "churn_rate", "meaning": "monthly churn", "unit": "percent 0-100"},
+      {"symbol": "months", "meaning": "projection horizon", "unit": "count, > 0"}
+    ],
+    "units": "USD/month, count",
+    "rounding": "round half-up to 2 decimals (USD); members rounded to integer",
+    "assumptions": [
+      "Churn compounds monthly -- the projection must show cohort decay, not a flat MRR line.",
+      "100% churn collapses to $0; conversion/churn are user-entered assumptions, not forecasts."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-089",
+    "name": "Twitch Subscriber Revenue Calculator",
+    "formula": "sub_revenue = (tier1_subs * 4.99 + tier2_subs * 9.99 + tier3_subs * 24.99) * split(split_tier); split = base_50: 0.50, plus_60: 0.60, plus_70: 0.70; bits_revenue = bits_cheered * 0.01; total_monthly = sub_revenue + bits_revenue",
+    "variables": [
+      {"symbol": "tier1_subs", "meaning": "tier-1 subscribers", "unit": "count >= 0"},
+      {"symbol": "tier2_subs", "meaning": "tier-2 subscribers", "unit": "count >= 0"},
+      {"symbol": "tier3_subs", "meaning": "tier-3 subscribers", "unit": "count >= 0"},
+      {"symbol": "split_tier", "meaning": "base_50/plus_60/plus_70", "unit": "enum"},
+      {"symbol": "bits_cheered", "meaning": "bits cheered", "unit": "count >= 0"}
+    ],
+    "units": "USD/month",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Regional pricing means effective revenue per T1 sub is ~$2.30, not exactly $2.50 -- labeled estimate.",
+      "Gift/Prime subs use the same split; Plus Program thresholds (100/300 Plus Points over 3 months) are user-confirmed."
+    ],
+    "source": "twitch-sub-tiers, twitch-base-split, twitch-plus-program, twitch-bits",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-090",
+    "name": "Digital Product Pricing Calculator",
+    "formula": "suggested_price = production_cost / ((1 - platform_fee_rate) * (1 - desired_margin/100)); profit_per_unit = suggested_price * (1 - platform_fee_rate) - production_cost; monthly_profit = profit_per_unit * units_per_month",
+    "variables": [
+      {"symbol": "production_cost", "meaning": "cost per unit", "unit": "USD >= 0"},
+      {"symbol": "desired_margin", "meaning": "desired profit margin", "unit": "percent 0-100"},
+      {"symbol": "platform_fee_rate", "meaning": "platform fee rate, user-entered", "unit": "percent >= 0"},
+      {"symbol": "units_per_month", "meaning": "expected monthly units", "unit": "count, > 0"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Platform fee reduces effective margin -- the formula solves price = (cost + profit) / (1 - fee_rate), not price = cost + margin.",
+      "Platform fee rate is user-entered; no external data."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-091",
+    "name": "Online Course Pricing Calculator",
+    "formula": "suggested_price_range = heuristic_band(niche_value, student_outcome) * hours_factor(course_hours) * (1 / (1 - platform_fee_rate)); band is a WIDE range -- UI presents low/high with 'market heuristic' label",
+    "variables": [
+      {"symbol": "course_hours", "meaning": "course content hours", "unit": "hours, > 0"},
+      {"symbol": "niche_value", "meaning": "low/medium/high value niche", "unit": "enum"},
+      {"symbol": "student_outcome", "meaning": "skill/career/business outcome", "unit": "enum"},
+      {"symbol": "platform_fee_rate", "meaning": "platform fee rate", "unit": "percent >= 0"}
+    ],
+    "units": "USD",
+    "rounding": "rounded to nearest $10 (wide bands)",
+    "assumptions": [
+      "Price bands are market HEURISTICS with wide ranges -- the UI must not present them as researched pricing. needs_review before any 'data-backed' claim.",
+      "Band constants are classification-level heuristics; NOT in platform-rules."
+    ],
+    "source": "Classification-level heuristic bands (NOT in platform-rules; needs_review -- estimate only)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-092",
+    "name": "Course Launch Revenue Planner",
+    "formula": "projected_buyers = email_list_size * open_rate/100 * sales_conversion_rate/100; gross_revenue = projected_buyers * course_price; net_revenue = gross_revenue * (1 - refund_rate/100)",
+    "variables": [
+      {"symbol": "email_list_size", "meaning": "email list size", "unit": "count, > 0"},
+      {"symbol": "open_rate", "meaning": "email open rate", "unit": "percent 0-100"},
+      {"symbol": "sales_conversion_rate", "meaning": "open-to-sale conversion, USER-ENTERED (no invented 'typical' rates)", "unit": "percent 0-100"},
+      {"symbol": "course_price", "meaning": "course price", "unit": "USD, > 0"},
+      {"symbol": "refund_rate", "meaning": "refund rate", "unit": "percent 0-100"}
+    ],
+    "units": "USD, count",
+    "rounding": "round half-up to 2 decimals (USD); buyers rounded to integer",
+    "assumptions": [
+      "Conversion benchmarks are user-entered -- the tool must not invent 'typical' launch conversion rates.",
+      "Open rate applies before conversion (funnel: list -> opened -> bought)."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-093",
+    "name": "eBook Pricing & Royalty Calculator",
+    "formula": "SAME KDP schedule as tool-060 (shared engine, pricing-first framing): ebook royalty = (2.99 <= list_price <= 9.99) ? list_price * 0.70 - file_size_mb * 0.15 : max(list_price * 0.35, 0); paperback royalty = list_price * 0.60 - printing_cost; printing_cost = 1.00 + pages * rate_by_ink (B&W 0.012, standard 0.0255, premium 0.065)",
+    "variables": [
+      {"symbol": "list_price", "meaning": "list price", "unit": "USD, > 0"},
+      {"symbol": "file_size_mb", "meaning": "ebook file size", "unit": "MB"},
+      {"symbol": "page_count", "meaning": "paperback page count", "unit": "count, > 0"},
+      {"symbol": "ink_type", "meaning": "ink type", "unit": "enum"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Same KDP rules, rounding, and caveats as tool-060 -- shared engine; different framing (pricing-first vs royalty-first). See DUP-B.md.",
+      "70% ceiling $12.99 claim UNVERIFIED; paperback band under $9.98 disputed -- needs_review labels."
+    ],
+    "source": "amazon-kdp-ebook-35, amazon-kdp-ebook-70, amazon-kdp-70pct-ceiling-claim (needs_review), amazon-kdp-paperback-royalty, amazon-kdp-print-cost (same rule set as tool-060)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-094",
+    "name": "Coaching Package Pricing Calculator",
+    "formula": "coaching_hours = sessions_per_package * session_length_min / 60; total_hours = coaching_hours + support_hours; package_price = (coaching_hours * hourly_value + support_hours * hourly_value * support_rate) * (1 - package_discount/100); price_per_session = package_price / sessions_per_package; effective_hourly = package_price / total_hours",
+    "variables": [
+      {"symbol": "sessions_per_package", "meaning": "sessions per package", "unit": "count, > 0"},
+      {"symbol": "session_length_min", "meaning": "session length", "unit": "minutes, > 0"},
+      {"symbol": "hourly_value", "meaning": "hourly value of coaching", "unit": "USD, > 0"},
+      {"symbol": "program_weeks", "meaning": "program duration", "unit": "weeks, > 0"},
+      {"symbol": "support_hours", "meaning": "between-session support hours", "unit": "hours >= 0"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Package discount vs 1:1 rate is user-set, not researched.",
+      "Support is valued at a user-set fraction of the coaching hourly value."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-095",
+    "name": "Webinar Revenue Estimator",
+    "formula": "attendees = registrants * show_up_rate/100; buyers = attendees * offer_conversion_rate/100; estimated_revenue = buyers * offer_price",
+    "variables": [
+      {"symbol": "registrants", "meaning": "registrants", "unit": "count, > 0"},
+      {"symbol": "show_up_rate", "meaning": "show-up rate, USER-ENTERED", "unit": "percent 0-100"},
+      {"symbol": "offer_conversion_rate", "meaning": "attendee-to-buyer conversion, USER-ENTERED", "unit": "percent 0-100"},
+      {"symbol": "offer_price", "meaning": "offer price", "unit": "USD, > 0"}
+    ],
+    "units": "USD, count",
+    "rounding": "round half-up to 2 decimals (USD); attendees/buyers rounded to integer",
+    "assumptions": [
+      "Show-up/conversion benchmarks were NOT verified 2026 -- user-entered or clearly labeled estimates; the UI must say so. needs_review before any default benchmark is presented.",
+      "Revenue is a funnel estimate, not a forecast."
+    ],
+    "source": "Pure user-input arithmetic (no external data; benchmark defaults unverified -- needs_review)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-096",
+    "name": "Amazon Affiliate Commission Estimator",
+    "formula": "commission_rate = US_rate_card(category): Games 20%, Luxury Beauty 10%, Music/Handmade 5%, Books/Kitchen/Automotive 4.5%, Devices/Fashion 4%, Home 3%, PC components 2.5%, TVs/digital video games 2%, Grocery/HPC 1%, All Other 4%; estimated_commission = monthly_sales * avg_order_value * commission_rate",
+    "variables": [
+      {"symbol": "category", "meaning": "product category (rate card)", "unit": "enum"},
+      {"symbol": "monthly_sales", "meaning": "referred monthly sales", "unit": "count, > 0"},
+      {"symbol": "avg_order_value", "meaning": "average order value", "unit": "USD, > 0"}
+    ],
+    "units": "USD/month, percent",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "US Associates rate card only -- other marketplaces differ.",
+      "Category list is user-verified at use time; Amazon changes rates periodically."
+    ],
+    "source": "amazon-associates-rates-us",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-097",
+    "name": "SaaS Affiliate Recurring Revenue Calculator",
+    "formula": "cohort_commission_t = referrals_per_month * avg_plan_price * commission_rate * (1 - churn_rate)^t; monthly_recurring_commission = sum of active cohorts; total_commission = sum over recurring_months; projected_annual = sum over 12 months",
+    "variables": [
+      {"symbol": "referrals_per_month", "meaning": "new referrals per month", "unit": "count, > 0"},
+      {"symbol": "avg_plan_price", "meaning": "average plan price", "unit": "USD, > 0"},
+      {"symbol": "commission_rate", "meaning": "affiliate commission rate", "unit": "percent 0-100"},
+      {"symbol": "recurring_months", "meaning": "recurring commission duration", "unit": "count, > 0"},
+      {"symbol": "churn_rate", "meaning": "monthly churn of referred customers", "unit": "percent 0-100"}
+    ],
+    "units": "USD",
+    "rounding": "round half-up to 2 decimals (USD)",
+    "assumptions": [
+      "Software affiliate rates 15-30% typical (2026) -- labeled estimate; per-program rates vary widely and the default is user-editable.",
+      "Churn decays each cohort monthly; lifetime caps (some programs cap recurring months) are user-entered.",
+      "Rate defaults are classification-level estimates; NOT in platform-rules."
+    ],
+    "source": "Classification-level estimate 15-30% (NOT in platform-rules; needs_review before any 'typical' claim)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  },
+  {
+    "toolId": "tool-098",
+    "name": "Affiliate EPC Calculator",
+    "formula": "epc = total_commission / total_clicks * 100; conversion_rate = total_conversions / total_clicks * 100; earnings_per_conversion = total_conversions > 0 ? total_commission / total_conversions : 0",
+    "variables": [
+      {"symbol": "total_clicks", "meaning": "total clicks", "unit": "count, > 0"},
+      {"symbol": "total_conversions", "meaning": "total conversions", "unit": "count >= 0"},
+      {"symbol": "total_commission", "meaning": "total commission earned", "unit": "USD >= 0"}
+    ],
+    "units": "USD per 100 clicks, percent",
+    "rounding": "round half-up to 2 decimals (USD); 2 decimals for percent",
+    "assumptions": [
+      "EPC follows the commission/clicks x 100 convention.",
+      "Zero conversions yields EPC $0 and skips earnings-per-conversion (division guard)."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-099",
+    "name": "Break-Even ROAS Calculator",
+    "formula": "break_even_roas = 1 / (gross_margin_percent / 100); actual_roas = revenue / ad_spend; profitable = actual_roas >= break_even_roas",
+    "variables": [
+      {"symbol": "gross_margin_percent", "meaning": "gross margin", "unit": "percent 0-100, > 0"},
+      {"symbol": "ad_spend", "meaning": "ad spend", "unit": "USD >= 0"},
+      {"symbol": "revenue", "meaning": "attributed revenue", "unit": "USD, > 0"}
+    ],
+    "units": "ratio (x)",
+    "rounding": "2 decimals",
+    "assumptions": [
+      "Break-even ROAS = 1/margin -- pure ratio math.",
+      "Margin 0 is rejected (division by zero) with an error message."
+    ],
+    "source": "Pure user-input arithmetic (no external data)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": false
+  },
+  {
+    "toolId": "tool-100",
+    "name": "Blog Niche Profitability Calculator",
+    "formula": "score = 100 * (wT*T + wC*(1-C) + wM*M + wR*R) / (wT+wC+wM+wR), clamped 0-100; T = search-volume tier (user input normalized 0-1), C = competition level (low 0/medium 0.5/high 1), M = monetization methods count normalized, R = avg_rpm normalized; estimated_monthly_potential = monthly_search_volume * capture_rate * avg_rpm / 1000 (capture_rate default 0.05, labeled heuristic)",
+    "variables": [
+      {"symbol": "monthly_search_volume", "meaning": "niche monthly search volume", "unit": "count, > 0"},
+      {"symbol": "competition_level", "meaning": "low/medium/high", "unit": "enum"},
+      {"symbol": "monetization_methods", "meaning": "methods list (ads/affiliate/products/sponsored)", "unit": "list"},
+      {"symbol": "avg_rpm", "meaning": "average RPM, user-editable", "unit": "USD"},
+      {"symbol": "wT,wC,wM,wR", "meaning": "weights, default 0.25 each", "unit": "0-1"}
+    ],
+    "units": "score 0-100, USD/month",
+    "rounding": "score to integer; currency round half-up to 2 decimals",
+    "assumptions": [
+      "The score is a HEURISTIC, not a researched metric -- UI must label it a rough guide (needs_review before any 'profitability data' phrasing).",
+      "RPM is user-editable; search volume and competition are user judgments."
+    ],
+    "source": "MA2-defined transparent heuristic (deterministic given inputs; not a measurement of real profitability -- needs_review before 'data' claims)",
+    "sourceUrl": "",
+    "sourceDate": "2026-10-01",
+    "version": "1.0.0",
+    "isEstimate": true
+  }
+]
