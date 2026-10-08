@@ -1,0 +1,126 @@
+---
+/**
+ * pages/admin/settings/index.astro — site settings manager.
+ * Owner: Admin.
+ *
+ * Edits data/site-settings.json (contact email, site name, tagline).
+ */
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+---
+
+<AdminLayout title="Settings" section="settings">
+  <div class="admin-panel">
+    <form id="settings-form" class="admin-form">
+      <label class="admin-field">
+        <span>Contact email *</span>
+        <input type="email" id="s-email" required placeholder="you@example.com" />
+      </label>
+      <label class="admin-field">
+        <span>Site name</span>
+        <input type="text" id="s-name" placeholder="HusnainBlogger" />
+      </label>
+      <label class="admin-field">
+        <span>Site tagline</span>
+        <input type="text" id="s-tagline" placeholder="Free tools for creators." />
+      </label>
+      <div class="admin-form__actions">
+        <button type="submit" class="admin-btn-gold" id="settings-save">Save settings</button>
+        <span class="admin-form__status" id="settings-status"></span>
+      </div>
+      <p class="admin-error" id="settings-error" hidden></p>
+    </form>
+  </div>
+
+  <script>
+    import { readFile, writeFile } from "../../../lib/admin-github";
+
+    const PATH = "data/site-settings.json";
+    let sha: string | null = null;
+
+    const email = document.getElementById("s-email") as HTMLInputElement;
+    const name = document.getElementById("s-name") as HTMLInputElement;
+    const tagline = document.getElementById("s-tagline") as HTMLInputElement;
+    const err = document.getElementById("settings-error") as HTMLElement;
+    const status = document.getElementById("settings-status") as HTMLElement;
+    const btn = document.getElementById("settings-save") as HTMLButtonElement;
+
+    async function load() {
+      try {
+        const { content, sha: s } = await readFile(PATH);
+        sha = s;
+        const data = JSON.parse(content);
+        email.value = data.contactEmail ?? "";
+        name.value = data.siteName ?? "";
+        tagline.value = data.siteTagline ?? "";
+      } catch (ex: any) {
+        err.textContent = "Could not load settings: " + (ex.message ?? ex);
+        err.hidden = false;
+      }
+    }
+
+    document.getElementById("settings-form")?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.hidden = true;
+      btn.disabled = true;
+      status.textContent = "Saving…";
+      try {
+        const data = {
+          contactEmail: email.value.trim(),
+          siteName: name.value.trim(),
+          siteTagline: tagline.value.trim(),
+        };
+        if (!data.contactEmail) throw new Error("Contact email is required.");
+        await writeFile(PATH, JSON.stringify(data, null, 2) + "\n", "Admin: update site settings", sha);
+        const { sha: s } = await readFile(PATH);
+        sha = s;
+        status.textContent = "Saved! Changes go live after the next deploy.";
+        btn.disabled = false;
+      } catch (ex: any) {
+        err.textContent = "Save failed: " + (ex.message ?? ex);
+        err.hidden = false;
+        btn.disabled = false;
+        status.textContent = "";
+      }
+    });
+
+    load();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-panel {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    max-width: 36rem;
+  }
+  .admin-form { display: flex; flex-direction: column; gap: var(--space-4); }
+  .admin-field span { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); }
+  .admin-field input {
+    width: 100%; font: inherit;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-raised);
+    color: var(--color-text);
+    box-sizing: border-box;
+    color-scheme: light;
+  }
+  .admin-field input:focus { outline: none; border-color: var(--color-accent); box-shadow: var(--focus-ring); }
+  .admin-form__actions { display: flex; gap: var(--space-3); align-items: center; }
+  .admin-btn-gold {
+    font: inherit; font-weight: 700;
+    padding: var(--space-3) var(--space-6);
+    border: none; border-radius: var(--radius-lg);
+    background: var(--gradient-gold); color: #fff; cursor: pointer;
+  }
+  .admin-btn-gold:disabled { opacity: 0.6; cursor: wait; }
+  .admin-form__status { color: var(--color-muted); font-size: var(--text-sm); }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+  }
+</style>
