@@ -1,0 +1,137 @@
+---
+/**
+ * pages/admin/index.astro — admin dashboard.
+ * Owner: Admin.
+ *
+ * Live stats pulled from the GitHub repo (blog post count, etc.)
+ * plus quick links into each manager. First admin feature: shell + dashboard.
+ */
+import AdminLayout from "../../layouts/AdminLayout.astro";
+---
+
+<AdminLayout title="Dashboard" section="dashboard">
+  <div class="admin-cards" id="stats-cards">
+    <div class="admin-card">
+      <span class="admin-card__label">Blog posts</span>
+      <strong class="admin-card__value" id="stat-posts">…</strong>
+      <a href="/admin/blog/" class="admin-card__link">Manage →</a>
+    </div>
+    <div class="admin-card">
+      <span class="admin-card__label">Tools</span>
+      <strong class="admin-card__value" id="stat-tools">…</strong>
+      <a href="/admin/tools/" class="admin-card__link">Manage →</a>
+    </div>
+    <div class="admin-card">
+      <span class="admin-card__label">Site status</span>
+      <strong class="admin-card__value admin-card__value--ok" id="stat-repo">…</strong>
+      <a href="/" target="_blank" rel="noopener" class="admin-card__link">View site ↗</a>
+    </div>
+  </div>
+
+  <section class="admin-panel">
+    <h2>Quick actions</h2>
+    <div class="admin-actions">
+      <a href="/admin/blog/" class="admin-btn-ghost">✎ New blog post</a>
+      <a href="/admin/tools/" class="admin-btn-ghost">⚙ Manage tools</a>
+      <a href="/admin/settings/" class="admin-btn-ghost">☰ Site settings</a>
+    </div>
+  </section>
+
+  <p class="admin-error" id="dash-error" hidden></p>
+
+  <script>
+    import { listDir, readFile } from "../../lib/admin-github";
+    import { CONTENT_PATHS } from "../../lib/admin-config";
+
+    async function load() {
+      const err = document.getElementById("dash-error")!;
+      try {
+        const files = await listDir(CONTENT_PATHS.blogDir);
+        const posts = files.filter((f) => f.name.endsWith(".md"));
+        document.getElementById("stat-posts")!.textContent = String(posts.length);
+
+        const inv = await readFile(CONTENT_PATHS.toolsInventory);
+        const data = JSON.parse(inv.content);
+        const tools = Array.isArray(data.tools) ? data.tools.length : 0;
+        document.getElementById("stat-tools")!.textContent = String(tools);
+
+        document.getElementById("stat-repo")!.textContent = "Connected";
+      } catch (ex: any) {
+        err.textContent = "Could not load stats: " + (ex.message ?? ex);
+        err.hidden = false;
+      }
+    }
+    load();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-5);
+    margin-bottom: var(--space-8);
+  }
+  .admin-card {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .admin-card__label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-widest);
+    color: var(--color-muted);
+  }
+  .admin-card__value {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 600;
+  }
+  .admin-card__value--ok { color: var(--color-success); font-size: var(--text-2xl); }
+  .admin-card__link {
+    color: var(--color-accent-strong);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: var(--text-sm);
+  }
+  .admin-card__link:hover { text-decoration: underline; }
+  .admin-panel {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+  }
+  .admin-panel h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    margin: 0 0 var(--space-4);
+  }
+  .admin-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .admin-btn-ghost {
+    display: inline-block;
+    padding: var(--space-3) var(--space-5);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+    transition: all 0.18s ease;
+  }
+  .admin-btn-ghost:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-strong);
+  }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    margin-top: var(--space-6);
+  }
+</style>
