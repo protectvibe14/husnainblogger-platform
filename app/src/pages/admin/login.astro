@@ -1,0 +1,173 @@
+---
+/**
+ * pages/admin/login.astro — admin sign-in.
+ * Owner: Admin.
+ *
+ * Paste a GitHub fine-grained PAT (repo-scoped to the site repo).
+ * Validated against the GitHub API, then stored in localStorage.
+ * No server, no cookies — the token never leaves the browser.
+ */
+import "../../styles/luxury.css";
+import { REPO_OWNER, REPO_NAME } from "../../lib/admin-config";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Admin Login — HusnainBlogger</title>
+  </head>
+  <body class="admin-login">
+    <div class="admin-login__card">
+      <div class="admin-login__brand">
+        <span class="hb-brand__mark admin-login__mark">H</span>
+        <div>
+          <strong>HusnainBlogger</strong>
+          <span>Admin Panel</span>
+        </div>
+      </div>
+      <h1>Sign in</h1>
+      <p class="admin-login__hint">
+        Paste your GitHub access token (repo access: <code>{REPO_OWNER}/{REPO_NAME}</code>).
+        It stays in this browser only.
+      </p>
+      <form id="login-form">
+        <label class="admin-field">
+          <span>GitHub token</span>
+          <input type="text" id="token" placeholder="github_pat_…" autocomplete="off" required spellcheck="false" style="background-color:#ffffff !important;color:#1a1815 !important;color-scheme:light !important;-webkit-text-security:disc !important;" />
+        </label>
+        <p class="admin-error" id="login-error" hidden></p>
+        <button type="submit" class="admin-btn" id="login-btn">Sign in →</button>
+      </form>
+      <a href="/" class="admin-login__back">← Back to site</a>
+    </div>
+
+    <script>
+      import { validateToken } from "../../lib/admin-github";
+      const form = document.getElementById("login-form");
+      const input = document.getElementById("token") as HTMLInputElement;
+      const err = document.getElementById("login-error");
+      const btn = document.getElementById("login-btn") as HTMLButtonElement;
+      if (localStorage.getItem("hb_admin_session")) {
+        window.location.href = "/admin/";
+      }
+      form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        err!.hidden = true;
+        btn.disabled = true;
+        btn.textContent = "Checking…";
+        try {
+          const repo = await validateToken(input.value.trim());
+          localStorage.setItem("hb_admin_token", input.value.trim());
+          localStorage.setItem("hb_admin_session", JSON.stringify({ repo, at: Date.now() }));
+          window.location.href = "/admin/";
+        } catch (ex: any) {
+          err!.textContent = ex.message ?? "Login failed.";
+          err!.hidden = false;
+          btn.disabled = false;
+          btn.textContent = "Sign in →";
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .admin-login {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-ink);
+    padding: var(--space-4);
+  }
+  .admin-login__card {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-10);
+    width: 100%;
+    max-width: 26rem;
+    box-shadow: var(--shadow-lg);
+  }
+  .admin-login__brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+  .admin-login__brand div { display: flex; flex-direction: column; }
+  .admin-login__brand strong {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+  }
+  .admin-login__brand span { font-size: var(--text-sm); color: var(--color-muted); }
+  .admin-login__mark { width: 2.75rem; height: 2.75rem; font-size: var(--text-xl); }
+  .admin-login h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    margin: 0 0 var(--space-2);
+  }
+  .admin-login__hint {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    margin: 0 0 var(--space-6);
+  }
+  .admin-login__hint code {
+    background: var(--color-surface);
+    padding: 0 var(--space-1);
+    border-radius: var(--radius-sm);
+  }
+  .admin-field { display: block; margin-bottom: var(--space-4); }
+  .admin-field span {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+  .admin-field input {
+    width: 100%;
+    font: inherit;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: #ffffff;
+    color: #1a1815;
+    box-sizing: border-box;
+    color-scheme: light;
+  }
+  .admin-field input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--focus-ring);
+  }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+  }
+  .admin-btn {
+    width: 100%;
+    font: inherit;
+    font-weight: 700;
+    padding: var(--space-3) var(--space-4);
+    border: none;
+    border-radius: var(--radius-lg);
+    background: var(--gradient-gold);
+    color: #fff;
+    cursor: pointer;
+  }
+  .admin-btn:disabled { opacity: 0.6; cursor: wait; }
+  .admin-login__back {
+    display: inline-block;
+    margin-top: var(--space-6);
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    text-decoration: none;
+  }
+  .admin-login__back:hover { color: var(--color-accent-strong); }
+</style>
