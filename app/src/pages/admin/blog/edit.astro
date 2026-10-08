@@ -1,0 +1,107 @@
+---
+/**
+ * pages/admin/blog/edit.astro — edit an existing blog post (?file=name.md).
+ * Owner: Admin.
+ */
+import AdminLayout from "../../../layouts/AdminLayout.astro";
+import PostForm from "../../../components/admin/PostForm.astro";
+---
+
+<AdminLayout title="Edit Post" section="blog">
+  <p class="admin-loading" id="edit-loading">Loading post…</p>
+  <div id="edit-wrap" hidden>
+    <PostForm />
+  </div>
+  <p class="admin-error" id="edit-error" hidden></p>
+
+  <script>
+    import { readFile, writeFile } from "../../../lib/admin-github";
+    import { CONTENT_PATHS } from "../../../lib/admin-config";
+    import { splitPost, buildPost, type BlogFrontmatter } from "../../../lib/admin-frontmatter";
+
+    const params = new URLSearchParams(location.search);
+    const fileName = params.get("file");
+    const loading = document.getElementById("edit-loading")!;
+    const wrap = document.getElementById("edit-wrap")!;
+    const err = document.getElementById("edit-error")!;
+    let sha: string | null = null;
+    let path = "";
+
+    const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+    const ta = (id: string) => document.getElementById(id) as HTMLTextAreaElement;
+
+    async function init() {
+      if (!fileName) {
+        err.textContent = "No file specified.";
+        err.hidden = false;
+        loading.hidden = true;
+        return;
+      }
+      path = `${CONTENT_PATHS.blogDir}/${fileName}`;
+      try {
+        const { content, sha: s } = await readFile(path);
+        sha = s;
+        const { frontmatter: fm, body } = splitPost(content);
+        $("f-title").value = fm.title;
+        ta("f-description").value = fm.description;
+        $("f-date").value = fm.date;
+        $("f-category").value = fm.category;
+        $("f-image").value = fm.image;
+        ($("f-draft") as HTMLInputElement).checked = fm.draft;
+        ($("f-noindex") as HTMLInputElement).checked = fm.noindex;
+        $("f-tags").value = fm.tags.join(", ");
+        ta("f-body").value = body.trim();
+        loading.hidden = true;
+        wrap.hidden = false;
+      } catch (ex: any) {
+        err.textContent = "Could not load post: " + (ex.message ?? ex);
+        err.hidden = false;
+        loading.hidden = true;
+      }
+    }
+
+    document.getElementById("post-form")?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formErr = document.getElementById("form-error")!;
+      const status = document.getElementById("save-status")!;
+      const btn = document.getElementById("save-btn") as HTMLButtonElement;
+      formErr.hidden = true;
+      btn.disabled = true;
+      status.textContent = "Saving…";
+      try {
+        const fm: BlogFrontmatter = {
+          title: $("f-title").value.trim(),
+          description: ta("f-description").value.trim(),
+          date: $("f-date").value,
+          category: $("f-category").value.trim(),
+          image: $("f-image").value.trim(),
+          draft: ($("f-draft") as HTMLInputElement).checked,
+          noindex: ($("f-noindex") as HTMLInputElement).checked,
+          tags: $("f-tags").value.split(",").map((t) => t.trim()).filter(Boolean),
+        };
+        const body = ta("f-body").value;
+        if (!fm.title || !fm.description || !body.trim()) throw new Error("Title, description and content are required.");
+        await writeFile(path, buildPost(fm, body), `Admin: edit post "${fm.title}"`, sha);
+        status.textContent = "Saved! Redirecting…";
+        setTimeout(() => (window.location.href = "/admin/blog/"), 800);
+      } catch (ex: any) {
+        formErr.textContent = "Save failed: " + (ex.message ?? ex);
+        formErr.hidden = false;
+        btn.disabled = false;
+        status.textContent = "";
+      }
+    });
+
+    init();
+  </script>
+</AdminLayout>
+
+<style>
+  .admin-loading { color: var(--color-muted); }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+  }
+</style>
