@@ -1,0 +1,143 @@
+---
+/**
+ * components/admin/PostForm.astro — blog post editor form (shared).
+ * Owner: Admin.
+ *
+ * Pure markup; the hosting page (new.astro / edit.astro) wires up
+ * load + save in its own <script>. Field ids are the contract:
+ *   f-title, f-description, f-date, f-category, f-image, f-draft, f-tags, f-body
+ */
+---
+
+<form id="post-form" class="admin-form">
+  <div class="admin-form__grid">
+    <label class="admin-field admin-form__full">
+      <span>Title *</span>
+      <input type="text" id="f-title" required maxlength="120" placeholder="Post title" />
+    </label>
+    <label class="admin-field admin-form__full">
+      <span>Description *</span>
+      <textarea id="f-description" rows="2" required maxlength="200" placeholder="One-line summary (shows under the title)"></textarea>
+    </label>
+    <label class="admin-field">
+      <span>Date *</span>
+      <input type="date" id="f-date" required />
+    </label>
+    <label class="admin-field">
+      <span>Category</span>
+      <input type="text" id="f-category" list="category-list" placeholder="e.g. Blogging" />
+      <datalist id="category-list">
+        <option value="Blogging"></option>
+        <option value="Earning Website"></option>
+      </datalist>
+    </label>
+    <label class="admin-field admin-form__full">
+      <span>Featured image URL</span>
+      <input type="text" id="f-image" placeholder="/images/wp/…" />
+    </label>
+    <label class="admin-field">
+      <span>Tags (comma separated)</span>
+      <input type="text" id="f-tags" placeholder="seo, blogging" />
+    </label>
+    <label class="admin-field admin-field--check">
+      <input type="checkbox" id="f-draft" />
+      <span>Draft (hidden from site until unchecked)</span>
+    </label>
+    <label class="admin-field admin-field--check">
+      <input type="checkbox" id="f-noindex" />
+      <span>Noindex (hide from Google)</span>
+    </label>
+  </div>
+
+  <label class="admin-field admin-form__full">
+    <span>Content (Markdown) *</span>
+    <textarea id="f-body" rows="22" required placeholder="Write the article in Markdown…"></textarea>
+  </label>
+
+  <div class="admin-form__actions">
+    <button type="submit" class="admin-btn-gold" id="save-btn">Save post</button>
+    <a href="/admin/blog/" class="admin-btn-ghost">Cancel</a>
+    <span class="admin-form__status" id="save-status" aria-live="polite"></span>
+  </div>
+  <p class="admin-error" id="form-error" hidden></p>
+</form>
+
+<style>
+  .admin-form { display: flex; flex-direction: column; gap: var(--space-5); }
+  .admin-form__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+  .admin-form__full { grid-column: 1 / -1; }
+  .admin-field { display: block; }
+  .admin-field span {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+  .admin-field input[type="text"],
+  .admin-field input[type="date"],
+  .admin-field textarea {
+    width: 100%;
+    font: inherit;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: #fff;
+    background-color: var(--color-surface-raised);
+    color: var(--color-text);
+    box-sizing: border-box;
+    color-scheme: light;
+  }
+  .admin-field textarea { resize: vertical; font-family: var(--font-mono, monospace); }
+  .admin-field input:focus, .admin-field textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: var(--focus-ring);
+  }
+  .admin-field--check {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .admin-field--check span { margin: 0; font-weight: 500; }
+  .admin-field--check input { width: 1.2rem; height: 1.2rem; accent-color: var(--color-accent); }
+  .admin-form__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+  .admin-btn-gold {
+    font: inherit;
+    font-weight: 700;
+    padding: var(--space-3) var(--space-6);
+    border: none;
+    border-radius: var(--radius-lg);
+    background: var(--gradient-gold);
+    color: #fff;
+    cursor: pointer;
+  }
+  .admin-btn-gold:disabled { opacity: 0.6; cursor: wait; }
+  .admin-btn-ghost {
+    display: inline-block;
+    padding: var(--space-3) var(--space-5);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+  .admin-form__status { color: var(--color-muted); font-size: var(--text-sm); }
+  .admin-error {
+    color: var(--color-error);
+    background: var(--color-error-bg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+  }
+  @media (max-width: 640px) {
+    .admin-form__grid { grid-template-columns: 1fr; }
+  }
+</style>
