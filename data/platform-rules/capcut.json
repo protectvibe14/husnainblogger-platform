@@ -1,0 +1,217 @@
+{
+ "platform": "capcut",
+ "rules": [
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-274",
+    "tool-287",
+    "tool-288"
+   ],
+   "effectiveDate": "2026-09-29",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Seeded from capcut.com official resource page; value confirmed on lastVerified date."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "Desktop export offers up to 8K per this page. An older capcut.com guide (tiktok-video-size) stated 'resolution up to 4K' — superseded by the newer page. Mobile app limits not covered here; see capcut-mobile-export-max.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut desktop export resolution options",
+   "ruleId": "capcut-export-resolution-options",
+   "source": "CapCut official resource — Instagram video resolutions guide (export section)",
+   "sourceUrl": "https://www.capcut.com/resource/best-instagram-video-resolutions",
+   "status": "verified",
+   "value": [
+    "480P",
+    "720P",
+    "1080P",
+    "2K",
+    "4K",
+    "8K"
+   ],
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-267",
+    "tool-274",
+    "tool-287"
+   ],
+   "effectiveDate": "2026-09-29",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Seeded from capcut.com official resource page; value confirmed on lastVerified date."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "24 fps to 120 fps selectable. Older capcut.com guide stated 24-60 fps; newer page confirms up to 120 fps. Tools must not claim rates outside this range.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut desktop export frame rate range",
+   "ruleId": "capcut-export-frame-rates",
+   "source": "CapCut official resource — Instagram video resolutions guide (export section)",
+   "sourceUrl": "https://www.capcut.com/resource/best-instagram-video-resolutions",
+   "status": "verified",
+   "value": {
+    "maxFps": 120,
+    "minFps": 24
+   },
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-274",
+    "tool-287"
+   ],
+   "effectiveDate": "2026-09-29",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Seeded from capcut.com official resource page; value confirmed on lastVerified date."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "Codec list as published; availability may vary by resolution/format combo in-app.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut desktop export codec options",
+   "ruleId": "capcut-export-codecs",
+   "source": "CapCut official resource — Instagram video resolutions guide (export section)",
+   "sourceUrl": "https://www.capcut.com/resource/best-instagram-video-resolutions",
+   "status": "verified",
+   "value": [
+    "H.264",
+    "HEVC",
+    "AV1",
+    "RLE"
+   ],
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-274",
+    "tool-287"
+   ],
+   "effectiveDate": "2026-09-29",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Seeded from capcut.com official resource page; value confirmed on lastVerified date."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "MP4 is the compatibility default; tool recommendations must default to MP4 unless user asks otherwise.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut desktop export container formats",
+   "ruleId": "capcut-export-formats",
+   "source": "CapCut official resource — TikTok video size guide (export section)",
+   "sourceUrl": "https://www.capcut.com/resource/tiktok-video-size",
+   "status": "verified",
+   "value": [
+    "MP4",
+    "MOV"
+   ],
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251"
+   ],
+   "effectiveDate": "2026-09-29",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Seeded; deliberately does NOT carry numeric tiers because CapCut publishes none."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "Verified fact is that bitrate is adjustable. Numeric bitrate values (e.g. '8-12 Mbps') seen on third-party/AI-generated pages are NOT published by CapCut — tools must never present specific Mbps tiers as CapCut facts.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut desktop export exposes bitrate as a customizable setting",
+   "ruleId": "capcut-export-bitrate-control",
+   "source": "CapCut official resource — TikTok video size guide (export section: 'bit rate and codec')",
+   "sourceUrl": "https://www.capcut.com/resource/tiktok-video-size",
+   "status": "verified",
+   "value": "bit rate is a user-customizable export setting (no public numeric tier schedule published by CapCut)",
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-290"
+   ],
+   "effectiveDate": "2026-10-01",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "Placeholder held open; no official source found 2026-10-01."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "Held as needs_review (not stale): there is no contradicting evidence, only an absence of official numbers. Do not ship numeric tiers to tools until CapCut publishes them.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut export numeric bitrate values per quality tier",
+   "ruleId": "capcut-export-bitrate-tiers",
+   "source": "UNVERIFIED — expected: CapCut official export documentation",
+   "sourceUrl": "",
+   "status": "needs_review",
+   "value": "UNVERIFIED — CapCut publishes no numeric bitrate tier schedule; third-party figures (e.g. 8-12 Mbps for 1080p) are not official",
+   "valueUnit": "text"
+  },
+  {
+   "affectsTools": [
+    "tool-251",
+    "tool-274"
+   ],
+   "effectiveDate": "2026-10-01",
+   "history": [
+    {
+     "action": "created",
+     "by": "MA2",
+     "date": "2026-10-01",
+     "note": "No official mobile export spec page found; held open."
+    }
+   ],
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "notes": "Third-party tutorials claim 4K/60fps on mobile; device-dependent and unconfirmed. Tools must not state mobile 4K export as a fact.",
+   "platform": "capcut",
+   "reviewCadence": "quarterly",
+   "rule": "CapCut mobile app maximum export resolution and frame rate",
+   "ruleId": "capcut-mobile-export-max",
+   "source": "UNVERIFIED — expected: CapCut official mobile app export documentation",
+   "sourceUrl": "",
+   "status": "needs_review",
+   "value": "UNVERIFIED — mobile app caps not confirmed from CapCut official documentation as of 2026-10-01",
+   "valueUnit": "text"
+  }
+ ]
+}
