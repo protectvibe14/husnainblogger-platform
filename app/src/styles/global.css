@@ -1,0 +1,245 @@
+/**
+ * global.css — base styles for the HusnainBlogger 500 Mini Tools platform.
+ * Owner: MA1-DesignSystem.
+ *
+ * Loaded once per page (BaseLayout). Component-specific styles live in the
+ * component files; this file holds only true globals: reset, focus ring,
+ * visually-hidden utility, skip-link styling, reduced-motion, link defaults.
+ * All values come from tokens.css — no hard-coded colors/spacing here.
+ */
+
+@import "./tokens.css";
+
+/* --- Minimal reset ------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Smooth scrolling is gated behind reduced-motion (D9) — see below. */
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* Focus targets that receive programmatic focus (results headings, error
+ * summaries) must not be hidden under a sticky header (2.4.11). Templates
+ * set --sticky-header-height when they use a sticky header. */
+[id] { scroll-margin-top: calc(var(--sticky-header-height, 0px) + var(--space-4)); }
+
+/* --- Focus ring (D8): 3px solid, ≥3:1 vs bg, 2px offset ------------------ */
+:focus { outline: none; } /* replaced, never removed */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--radius-sm);
+}
+/* On filled buttons the outline alone can wash out; the double ring from
+ * --focus-ring keeps it visible on any background. */
+.hb-btn:focus-visible,
+button:focus-visible {
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+/* --- Visually-hidden utility (screen-reader-only text) ------------------- */
+.hb-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* --- Skip links (2.4.1): first in DOM, visible on focus ----------------- */
+.hb-skip-link {
+  position: absolute;
+  top: calc(-1 * var(--touch-target));
+  left: var(--space-4);
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  padding: 0 var(--space-4);
+  background: var(--color-bg);
+  color: var(--color-accent);
+  font-weight: var(--weight-semibold);
+  text-decoration: underline;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  transition: top 0.15s ease;
+}
+.hb-skip-link:focus-visible {
+  top: var(--space-2);
+  box-shadow: none; /* the border + outline is the indicator here */
+}
+
+/* --- Link defaults: never color-alone (1.4.1) ---------------------------- */
+a { color: var(--color-accent); }
+a:hover { color: var(--color-accent-strong); }
+
+/* --- Shared form-field styles (Field / Textarea / Select / Checkbox / RadioGroup)
+ * These classes are global ON PURPOSE: the five field components share one
+ * visual language, and the no-duplicate rule forbids five copies. --------- */
+.hb-field { display: grid; gap: var(--space-2); margin-block: var(--space-3); }
+.hb-field__label {
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+.hb-field__marker {
+  font-weight: var(--weight-normal);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-inline-start: var(--space-2);
+}
+.hb-field__hint {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted); /* 4.5:1 token — placeholder/hint contrast safe */
+}
+.hb-field__input,
+.hb-field__select {
+  min-height: var(--touch-target);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 2px solid var(--color-border); /* 3:1 token (1.4.11) */
+  border-radius: var(--radius-md);
+}
+.hb-field__input--invalid,
+.hb-field__select--invalid { border-color: var(--color-error); }
+.hb-field__error {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-error); /* 4.5:1+ token, always paired with icon + field name */
+}
+.hb-field__error-icon { flex: none; width: 1.125rem; height: 1.125rem; margin-top: 0.125rem; }
+
+/* --- Shared check/radio row styles --------------------------------------- */
+.hb-choice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-3);
+  align-items: start;
+  min-height: var(--touch-target);
+  padding-block: var(--space-2);
+}
+.hb-choice__input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.2rem;
+  accent-color: var(--color-accent);
+  flex: none;
+}
+.hb-choice__label { font-weight: var(--weight-normal); color: var(--color-text); }
+.hb-choice__hint { grid-column: 2; margin: 0; font-size: var(--text-sm); color: var(--color-muted); }
+.hb-choice__error { grid-column: 2; }
+.hb-fieldset { border: 0; margin: 0 0 var(--space-3); padding: 0; }
+.hb-fieldset__legend { font-weight: var(--weight-semibold); padding: 0; margin-bottom: var(--space-1); }
+
+/* --- Shared button styles (Button / CopyButton / DownloadButton) -------------
+ * One visual language for every button on the platform (no-duplicate rule).
+ * All variants: min 44px hit area (D7), 8px+ separation from siblings is the
+ * template's job (use --target-gap). --------------------------------------- */
+.hb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--touch-target);
+  min-width: var(--touch-target);
+  padding: var(--space-2) var(--space-5);
+  font: inherit;
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  line-height: var(--leading-tight);
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+.hb-btn--primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent); /* 6.70:1 light / 9.11:1 dark */
+}
+.hb-btn--primary:hover { background: var(--color-accent-strong); color: var(--color-on-accent); }
+.hb-btn--secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-border-strong);
+}
+.hb-btn--secondary:hover { background: var(--color-accent-subtle); }
+.hb-btn--tertiary {
+  background: transparent;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding-inline: var(--space-2);
+}
+.hb-btn--danger {
+  background: var(--color-error);
+  color: var(--color-on-error); /* 6.57:1 light / 9.47:1 dark */
+}
+.hb-btn--danger:hover { filter: brightness(0.92); }
+.hb-btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+.hb-btn[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; }
+.hb-btn__icon { flex: none; width: 1.125rem; height: 1.125rem; }
+
+/* --- Shared spinner (loading states) ----------------------------------------- */
+.hb-spinner {
+  width: 1.5rem; height: 1.5rem; flex: none;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: hb-spin 0.9s linear infinite;
+}
+@keyframes hb-spin { to { transform: rotate(360deg); } }
+/* Reduced motion: static ring (D9) — surrounding TEXT carries the state. */
+@media (prefers-reduced-motion: reduce) {
+  .hb-spinner { animation: none; border-top-color: var(--color-border); }
+}
+
+/* --- Live regions: visually present containers, no layout shift ---------- */
+.hb-live-region { display: block; }
+
+/* --- Reduced motion (D9 / voluntary AAA 2.3.3) --------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto; }
+}
+/* Smooth scrolling is opt-in for motion-OK users only. */
+@media (prefers-reduced-motion: no-preference) {
+  html.hb-smooth-scroll { scroll-behavior: smooth; }
+}
+
+/* --- Text-spacing resilience (1.4.12): no fixed heights on text ---------- */
+/* (Enforced by convention + MA4 checklist; this file sets no fixed heights.) */
+
+/* --- Multi-line tool outputs: preserve newlines (VTT, code, lists) ----- */
+.hb-result-row__value,
+.hb-result-list,
+.hb-copy-target {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
