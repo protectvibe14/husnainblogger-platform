@@ -1,0 +1,81 @@
+---
+/**
+ * Select.astro — native <select> + label + hint + error.
+ * Owner: MA1-DesignSystem.
+ *
+ * Design decision (ACCESSIBILITY.md §3.2): native <select> everywhere, styled
+ * to match Field. No custom listbox anywhere on the platform — one pattern,
+ * zero divergent keyboard behavior (3.2.4). Changing the selection MUST NOT
+ * auto-generate results or navigate (3.2.2) — templates own that behavior.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Option {
+  value: string;
+  label: string;
+  disabled?: boolean;
+}
+
+interface Props {
+  name: string;
+  label: string;
+  options: Option[];
+  id?: string;
+  value?: string;
+  hint?: string;
+  error?: string;
+  required?: boolean;
+  optionalMark?: boolean;
+  placeholderOption?: string; // e.g. "Choose a platform…" (value="")
+  describedBy?: string;
+  disabled?: boolean;
+  class?: string;
+}
+
+const {
+  name, label, options, id: idProp, value, hint, error,
+  required = false, optionalMark = true, placeholderOption,
+  describedBy, disabled = false, class: cls,
+} = Astro.props;
+
+const id = idProp ?? nextId("select");
+const hintId = hint ? `${id}-hint` : undefined;
+const errorId = error ? `${id}-error` : undefined;
+const describedby = [hintId, errorId, describedBy].filter(Boolean).join(" ") || undefined;
+---
+<div class:list={["hb-field", cls]}>
+  <label class="hb-field__label" for={id}>
+    <span>{label}</span>
+    {required
+      ? <span class="hb-field__marker hb-field__marker--required">required</span>
+      : (optionalMark ? <span class="hb-field__marker hb-field__marker--optional">optional</span> : null)}
+  </label>
+  {hint && <p class="hb-field__hint" id={hintId}>{hint}</p>}
+  <select
+    class:list={["hb-field__select", { "hb-field__select--invalid": !!error }]}
+    id={id}
+    name={name}
+    required={required || undefined}
+    aria-required={required ? "true" : undefined}
+    aria-invalid={error ? "true" : undefined}
+    aria-describedby={describedby}
+    disabled={disabled || undefined}
+  >
+    {placeholderOption && <option value="">{placeholderOption}</option>}
+    {options.map((opt) => (
+      <option value={opt.value} selected={value === opt.value || undefined} disabled={opt.disabled || undefined}>
+        {opt.label}
+      </option>
+    ))}
+  </select>
+  {error && (
+    <p class="hb-field__error" id={errorId}>
+      <svg class="hb-field__error-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.75"/>
+        <path d="M8 4.5v4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        <circle cx="8" cy="11.25" r="1" fill="currentColor"/>
+      </svg>
+      <span><strong>{label}:</strong> {error}</span>
+    </p>
+  )}
+</div>
