@@ -1,0 +1,63 @@
+---
+/**
+ * Card.astro — content card (result cards, related-tool cards, feature cards).
+ * Owner: MA1-DesignSystem.
+ *
+ * Cards are NOT interactive by default (ACCESSIBILITY.md §3.5). For a
+ * clickable card, pass `href`: the heading becomes the single real link,
+ * stretched over the card via CSS. The accessible name comes from the
+ * heading text. No onclick-on-div, ever.
+ *
+ * `level` participates in the page heading hierarchy — the template chooses
+ * it so no levels are skipped (R1).
+ */
+interface Props {
+  heading: string;
+  level?: 2 | 3 | 4;
+  /** Makes the whole card one link. Omit for a static card. */
+  href?: string;
+  /** Extra context for the link name; defaults to the heading. */
+  linkLabel?: string;
+  class?: string;
+}
+
+const { heading, level = 3, href, linkLabel, class: cls } = Astro.props;
+const Tag = `h${level}` as "h2" | "h3" | "h4";
+---
+<article class:list={["hb-card", { "hb-card--linked": !!href }, cls]}>
+  <Tag class="hb-card__heading">
+    {href
+      ? <a class="hb-card__link" href={href} aria-label={linkLabel}>{heading}</a>
+      : heading}
+  </Tag>
+  <div class="hb-card__body"><slot /></div>
+</article>
+
+<style>
+  .hb-card {
+    position: relative;
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-sm);
+  }
+  .hb-card__heading {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xl);
+    line-height: var(--leading-tight);
+    color: var(--color-text);
+  }
+  .hb-card__body { color: var(--color-text); }
+  .hb-card__body > :first-child { margin-top: 0; }
+  .hb-card__body > :last-child { margin-bottom: 0; }
+  /* Stretched link: exactly one interactive element per card (§3.5). */
+  .hb-card--linked .hb-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+  }
+  .hb-card--linked .hb-card__link { color: var(--color-text); text-decoration: none; }
+  .hb-card--linked .hb-card__link:hover { color: var(--color-accent); text-decoration: underline; }
+</style>
