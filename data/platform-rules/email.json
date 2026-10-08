@@ -1,0 +1,349 @@
+{
+ "platform": "email",
+ "rules": [
+  {
+   "ruleId": "email-gmail-free-sending-limit-500-emails-day-rolling-24-hour-window",
+   "platform": "email",
+   "rule": "Gmail (free) sending limit: 500 emails/day, rolling 24-hour window",
+   "value": "500/day",
+   "valueUnit": "text",
+   "source": "Google Support — Limits for sending & getting mail",
+   "sourceUrl": "https://support.google.com/mail/answer/22839?hl=en",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'. Original effectiveDate 'long-standing' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-google-workspace-sending-limits-2-000-day-paid-accounts-500-day-trial-1-500-day-mail-merge",
+   "platform": "email",
+   "rule": "Google Workspace sending limits: 2,000/day paid accounts; 500/day trial; 1,500/day mail merge",
+   "value": "2000/day (paid)",
+   "valueUnit": "text",
+   "source": "Google Workspace Admin Help — Gmail sending limits",
+   "sourceUrl": "https://support.google.com/a/answer/166852?hl=en",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'. Original effectiveDate 'long-standing' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-gmail-per-message-recipient-caps-500-via-web-api-100-via-smtp",
+   "platform": "email",
+   "rule": "Gmail per-message recipient caps: 500 via web/API; 100 via SMTP",
+   "value": "500 web / 100 SMTP",
+   "valueUnit": "text",
+   "source": "Google Support — Limits for sending & getting mail",
+   "sourceUrl": "https://support.google.com/mail/answer/22839?hl=en",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'. Original effectiveDate 'long-standing' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-microsoft-365-exchange-online-10-000-recipients-per-day-rolling-24h-1-000-recipients-per-message-exchange-online-plans-30-messages-minute",
+   "platform": "email",
+   "rule": "Microsoft 365 / Exchange Online: 10,000 recipients per day (rolling 24h); 1,000 recipients per message (Exchange Online plans); 30 messages/minute",
+   "value": "10000/day",
+   "valueUnit": "text",
+   "source": "Microsoft Learn — Exchange Online limits",
+   "sourceUrl": "https://learn.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'. Original effectiveDate 'long-standing' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-exchange-online-external-recipient-rate-bulk-external-limit-2-000-external-recipients-day-phased-rollout-from-jan-2025-exceeding-throttles-blocks",
+   "platform": "email",
+   "rule": "Exchange Online External Recipient Rate (bulk external) limit: 2,000 external recipients/day (phased rollout from Jan 2025; exceeding throttles/blocks)",
+   "value": "2000 external/day",
+   "valueUnit": "text",
+   "source": "Microsoft 365 Message Center / TechRadar (Microsoft announcement)",
+   "sourceUrl": "https://www.techradar.com/pro/microsoft-exchange-is-cracking-down-on-spam-with-new-bulk-sending-limits",
+   "effectiveDate": "2025-01-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-gmail-yahoo-bulk-sender-requirements-5-000-msgs-day-to-gmail-spf-and-dkim-pass-dmarc-published-p-none-minimum-from-domain-alignment-rfc-8058-one-click-unsubscribe-on-marketing-mail-spam-complaint-rate-0-3-aim-0-1",
+   "platform": "email",
+   "rule": "Gmail/Yahoo bulk sender requirements (≥5,000 msgs/day to Gmail): SPF AND DKIM pass, DMARC published (p=none minimum), From-domain alignment, RFC 8058 one-click unsubscribe on marketing mail, spam complaint rate < 0.3% (aim < 0.1%)",
+   "value": "auth+unsub+0.3% complaint ceiling",
+   "valueUnit": "percent",
+   "source": "Google Email sender guidelines + Sender FAQ",
+   "sourceUrl": "https://support.google.com/mail/answer/81126?hl=en",
+   "effectiveDate": "2024-02-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-yahoo-sender-requirements-spf-or-dkim-dmarc-valid-forward-reverse-dns-spam-rate-0-3-easy-unsubscribe-honored-within-2-days-bulk-senders-authenticated-aligned-mail",
+   "platform": "email",
+   "rule": "Yahoo sender requirements: SPF or DKIM, DMARC, valid forward/reverse DNS, spam rate < 0.3%, easy unsubscribe honored within 2 days (bulk senders: authenticated + aligned mail)",
+   "value": "auth+0.3% complaint ceiling",
+   "valueUnit": "percent",
+   "source": "Yahoo Sender Best Practices",
+   "sourceUrl": "https://senders.yahooinc.com/best-practices/",
+   "effectiveDate": "2024-02-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-microsoft-consumer-mail-outlook-com-hotmail-live-msn-high-volume-senders-5-000-day-same-from-domain-must-pass-spf-dkim-dmarc-failures-rejected-with-550-5-7-515",
+   "platform": "email",
+   "rule": "Microsoft consumer mail (Outlook.com/Hotmail/Live/MSN): high-volume senders (5,000+/day same From domain) must pass SPF+DKIM+DMARC; failures rejected with 550 5.7.515",
+   "value": "auth required at 5k+/day",
+   "valueUnit": "text",
+   "source": "Microsoft Support — NDR 550 5.7.515 (via deliverability guide citing Microsoft)",
+   "sourceUrl": "https://github.com/anandchowdhary/deliverabilityguide.com/blob/HEAD/README.md",
+   "effectiveDate": "2025-05-05",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-subject-line-display-truncation-commonly-cited-not-provider-guaranteed-gmail-desktop-60-70-chars-gmail-app-iphone-35-40-chars-android-33-43-chars-apple-mail-30-50-chars-outlook-25-30-chars-mobile-generally-30-45-chars",
+   "platform": "email",
+   "rule": "Subject-line display truncation (commonly cited, NOT provider-guaranteed): Gmail desktop ~60–70 chars; Gmail app / iPhone ~35–40 chars; Android ~33–43 chars; Apple Mail ~30–50 chars; Outlook ~25–30 chars; mobile generally 30–45 chars",
+   "value": "varies by client/viewport",
+   "valueUnit": "text",
+   "source": "affpilot email subject-line best practices; pcstacks Gmail-vs-Outlook subject guide; fastercapital subject-line character count guide",
+   "sourceUrl": "http://affpilot.com/email-subject-line-best-practices/",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-401",
+    "tool-402",
+    "tool-406"
+   ],
+   "notes": "Original status 'commonly-cited-guidance' mapped to canonical 'needs_review'. Original effectiveDate 'n/a (guidance)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-subject-line-best-practice-target-30-50-characters-6-10-words-front-load-the-key-message",
+   "platform": "email",
+   "rule": "Subject-line best-practice target: 30–50 characters (6–10 words); front-load the key message",
+   "value": "30-50 chars",
+   "valueUnit": "count",
+   "source": "Multiple email-marketing references (affpilot; mailerlite email-marketing skill: subject under ~60 chars; robpalmer subject-line guide)",
+   "sourceUrl": "https://github.com/mailerlite/mailerlite-skills/blob/HEAD/skills/email-marketing/SKILL.md",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-401",
+    "tool-402"
+   ],
+   "notes": "Original status 'commonly-cited-guidance' mapped to canonical 'needs_review'. Original effectiveDate 'n/a (guidance)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-preheader-safe-range-40-75-chars-complements-the-subject-never-repeats-it",
+   "platform": "email",
+   "rule": "Preheader safe range 40–75 chars; complements the subject, never repeats it",
+   "value": "40-75 chars",
+   "valueUnit": "text",
+   "source": "ommakes righter email reference (preheader section)",
+   "sourceUrl": "https://github.com/ommakes/skills/blob/HEAD/righter/references/email.md",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "needs_review",
+   "affectsTools": [
+    "tool-404"
+   ],
+   "notes": "Original status 'commonly-cited-guidance' mapped to canonical 'needs_review'. Original effectiveDate 'n/a (guidance)' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-apple-mail-privacy-protection-ios-15-sep-2021-inflates-open-rate-metrics-clicks-are-the-more-reliable-signal-ios-18-2-replaces-preheader-text-in-apple-mail-with-ai-generated-summaries",
+   "platform": "email",
+   "rule": "Apple Mail Privacy Protection (iOS 15+, Sep 2021) inflates open-rate metrics — clicks are the more reliable signal; iOS 18.2+ replaces preheader text in Apple Mail with AI-generated summaries",
+   "value": "MPP since 2021-09; AI summaries since iOS 18.2",
+   "valueUnit": "text",
+   "source": "Litmus email client market share; Litmus AI-generated email summaries; mailerlite email-marketing skill",
+   "sourceUrl": "https://www.litmus.com/blog/ai-generated-summaries",
+   "effectiveDate": "2021-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-401",
+    "tool-404"
+   ],
+   "notes": "Original status 'verified-industry' mapped to canonical 'verified'.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  },
+  {
+   "ruleId": "email-can-spam-us-commercial-email-accurate-from-to-routing-non-deceptive-subject-ad-disclosure-valid-physical-postal-address-clear-opt-out-working-30-days-after-send-opt-outs-honored-within-10-business-days-vendor-oversight-stays-with-sender",
+   "platform": "email",
+   "rule": "CAN-SPAM (US commercial email): accurate From/To/routing; non-deceptive subject; ad disclosure; valid physical postal address; clear opt-out working ≥30 days after send; opt-outs honored within 10 business days; vendor oversight stays with sender",
+   "value": "7 requirements; $53,088 max civil penalty per violating email (FTC 2026 figure)",
+   "valueUnit": "usd",
+   "source": "FTC CAN-SPAM compliance guide (via Loops glossary + lettr-web glossary)",
+   "sourceUrl": "http://loops.so/glossary/can-spam",
+   "effectiveDate": "2026-10-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-409",
+    "tool-432",
+    "tool-445"
+   ],
+   "notes": "Original status 'official' mapped to canonical 'verified'. Original effectiveDate '2003 (act); penalties inflation-adjusted' not ISO/unknown; lastVerified used as proxy.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Normalized to canonical FRESHNESS_REGISTRY schema; values carried over unchanged"
+    }
+   ]
+  }
+ ]
+}
