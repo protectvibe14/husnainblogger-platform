@@ -1,0 +1,109 @@
+{
+ "platform": "upwork",
+ "rules": [
+  {
+   "ruleId": "upwork-freelancer-service-fee",
+   "platform": "upwork",
+   "rule": "Upwork freelancer service fee",
+   "value": "Variable 0–15% per contract",
+   "valueUnit": "text",
+   "source": "upalerts Upwork Variable Service Fee 2026; jobbers.io 2026 comparison (cites Upwork Help Center)",
+   "sourceUrl": "https://upalerts.app/blog/upwork-service-fee",
+   "effectiveDate": "2025-05-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-066"
+   ],
+   "notes": "Effective May 1, 2025; exact rate shown before proposal and locked for contract life; most freelancers report ~10%.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "upwork-connects",
+   "platform": "upwork",
+   "rule": "Upwork Connects",
+   "value": "$0.15 per Connect; typical proposals cost 6–16 Connects",
+   "valueUnit": "text",
+   "source": "upalerts 2026",
+   "sourceUrl": "https://upalerts.app/blog/upwork-service-fee",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-066"
+   ],
+   "notes": "Connects base price published; 6–16 range is freelancer-reported.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "upwork-withdrawal",
+   "platform": "upwork",
+   "rule": "Upwork withdrawal fees",
+   "value": "Free: ACH, PayPal, Payoneer; $50 wire; $2 Instant Pay (US)",
+   "valueUnit": "text",
+   "source": "upalerts 2026",
+   "sourceUrl": "https://upalerts.app/blog/upwork-service-fee",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-066"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "upwork-client-side",
+   "platform": "upwork",
+   "rule": "Upwork client marketplace fee",
+   "value": "3–10% by plan",
+   "valueUnit": "text",
+   "source": "upalerts 2026",
+   "sourceUrl": "https://upalerts.app/blog/upwork-service-fee",
+   "effectiveDate": "2026-06-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-066"
+   ],
+   "notes": "Does not reduce freelancer contract amount.",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
