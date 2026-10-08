@@ -1,0 +1,445 @@
+---
+/**
+ * TrackerTemplate — goals, checklists, libraries and manual logs.
+ *
+ * Four modes (from meta.ts `trackerMode` + `itemFields`/`trackerItems`):
+ * - "goal":       numeric goal with live progress bar (tool-specific labels).
+ * - "checklist":  fixed tickable items with progress + localStorage persistence.
+ * - "library":    fixed items rendered as browsable cards (progress optional).
+ * - "log":        user logs entries via `itemFields`; entries persist and the
+ *                 tool's real `runTool({ items })` analysis renders below.
+ *
+ * Log mode calls the tool's own logic module — never a shared demo fallback.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import type { ToolContent, ToolInput, ToolOutput, BuilderField } from './types.ts';
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+export interface TrackerTemplateProps {
+  tool: {
+    toolId: string;
+    toolName: string;
+    name: string;
+    categorySlug: string;
+    slug: string;
+    category: string;
+    inputs?: ToolInput[];
+    outputs?: ToolOutput[];
+    toolType?: string;
+  };
+  content: ToolContent;
+  relatedTools?: Array<{ toolId: string; name: string; categorySlug: string; slug: string }>;
+  itemFields?: BuilderField[];
+  trackerMode?: 'goal' | 'checklist' | 'log' | 'library';
+  trackerItems?: Array<string | { id?: string; label: string; detail?: string }>;
+}
+
+const {
+  tool, content, relatedTools,
+  itemFields = [], trackerMode = 'goal', trackerItems = [],
+} = Astro.props as TrackerTemplateProps;
+
+// The page passes a single `tool` object (toolId etc. live on it).
+const toolId: string = tool.toolId;
+const toolName: string = tool.name;
+const categorySlug: string = tool.categorySlug;
+const slug: string = tool.slug;
+const inputs: ToolInput[] = tool.inputs ?? [];
+const outputs: ToolOutput[] = tool.outputs ?? [];
+
+const configError: string | null =
+  trackerMode === 'log' && itemFields.length === 0
+    ? `Configuration error: "${toolId}" is a log tracker but defines no itemFields.`
+    : trackerMode === 'checklist' && trackerItems.length === 0
+      ? `Configuration error: "${toolId}" is a checklist tracker but defines no trackerItems.`
+      : null;
+
+const entryInputs: ToolInput[] = itemFields.map((f) => ({
+  id: f.id,
+  label: f.label,
+  type: f.type,
+  required: f.required,
+  placeholder: f.placeholder,
+}));
+
+const storageKey = `hb-tracker-${toolId}`;
+const mountId = `tracker-${toolId}`;
+
+const trackerLabels: string[] = trackerItems.map((t) =>
+  typeof t === 'string' ? t : t.label,
+);
+
+const config = {
+  toolId, toolName, toolType: 'tracker', categorySlug, slug,
+  inputs: trackerMode === 'log' ? entryInputs : inputs,
+  outputs, itemFields, trackerMode, trackerItems: trackerLabels, storageKey,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools}>
+  <div slot="tool-ui" id={mountId} data-tracker-root data-tracker-mode={trackerMode}>
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+    {configError ? (
+      <div class="hb-alert hb-alert--error" role="alert">
+        <strong>Tool unavailable.</strong> {configError}
+      </div>
+    ) : trackerMode === 'checklist' ? (
+      <>
+        <p class="hb-tracker-progress-label">
+          <span data-tracker-count>0</span> of {trackerLabels.length} complete
+        </p>
+        <div class="hb-progress" role="progressbar" aria-valuemin={0} aria-valuemax={trackerLabels.length} aria-valuenow={0} data-tracker-bar>
+          <div class="hb-progress__fill" data-tracker-fill style="width:0%"></div>
+        </div>
+        <ul class="hb-checklist" data-tracker-list>
+          {trackerLabels.map((item, i) => (
+            <li class="hb-checklist__item">
+              <label>
+                <input type="checkbox" data-tracker-check={String(i)} />
+                <span>{item}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+        <div class="hb-button-row">
+          <button type="button" class="hb-btn hb-btn--ghost" data-tracker-reset>Reset checklist</button>
+        </div>
+      </>
+    ) : trackerMode === 'library' ? (
+      <>
+        <ul class="hb-library" data-tracker-list>
+          {trackerLabels.map((item, i) => (
+            <li class="hb-library__item">
+              <label>
+                <input type="checkbox" data-tracker-check={String(i)} />
+                <span class="hb-library__text">{item}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+        <p class="hb-tracker-progress-label">
+          Saved <span data-tracker-count>0</span> of {trackerLabels.length}
+        </p>
+        <div class="hb-button-row">
+          <button type="button" class="hb-btn hb-btn--primary" data-tracker-copy-saved>Copy saved items</button>
+          <button type="button" class="hb-btn hb-btn--ghost" data-tracker-reset>Reset</button>
+        </div>
+      </>
+    ) : trackerMode === 'log' ? (
+      <>
+        <form data-tracker-form novalidate>
+          <fieldset class="hb-fieldset">
+            <legend>{content.toolActionLabel ?? 'Log an entry'}</legend>
+            {entryInputs.map((input) => (
+              <Field
+                name={input.id}
+                label={input.label}
+                type={CONTROL[input.type] ?? 'text'}
+                required={input.required}
+                hint={input.placeholder}
+                step={input.type === 'number' ? 'any' : undefined}
+                inputmode={input.type === 'number' ? 'decimal' : undefined}
+              />
+            ))}
+          </fieldset>
+          <div class="hb-button-row">
+            <button type="submit" class="hb-btn hb-btn--primary" data-tracker-add>Add entry</button>
+          </div>
+          <p class="hb-form-error" data-tracker-form-error hidden></p>
+        </form>
+
+        <section class="hb-tracker-entries" aria-label="Logged entries">
+          <h2>Your entries (<span data-tracker-count>0</span>)</h2>
+          <div class="hb-table-wrap">
+            <table class="hb-table" data-tracker-table>
+              <thead>
+                <tr>
+                  {entryInputs.map((f) => <th scope="col">{f.label}</th>)}
+                  <th scope="col"><span class="hb-visually-hidden">Delete</span></th>
+                </tr>
+              </thead>
+              <tbody data-tracker-tbody>
+                <tr data-tracker-empty-row>
+                  <td colspan={entryInputs.length + 1}>No entries yet — log your first one above.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="hb-button-row">
+            <button type="button" class="hb-btn hb-btn--ghost" data-tracker-reset>Clear all entries</button>
+          </div>
+        </section>
+
+        <section data-tracker-dashboard hidden aria-label="Analysis">
+          <h2>Analysis</h2>
+          <div data-tool-results></div>
+        </section>
+      </>
+    ) : (
+      <div class="hb-alert hb-alert--error" role="alert">
+        <strong>Tool unavailable.</strong> Unknown tracker mode "{trackerMode}".
+      </div>
+    )}
+  </div>
+</ToolShell>
+
+<script>
+  import {
+    loadToolRun, buildSchema, renderResults, wireResultActions,
+    announcePolite, announceAssertive, escapeHtml,
+  } from './_tool-runtime.ts';
+  import { validateObject } from '../lib/validation/index.ts';
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const cfg = JSON.parse(configEl?.textContent ?? '{}');
+  const mountId = `tracker-${cfg.toolId}`;
+  const storageKey = cfg.storageKey ?? `hb-tracker-${cfg.toolId}`;
+  const root = document.getElementById(mountId);
+  if (!root || !cfg.toolId) throw new Error(`[tracker] missing mount/config for ${mountId}`);
+  const mode = cfg.trackerMode ?? root.dataset.trackerMode;
+
+  const items = cfg.trackerItems ?? [];
+  const entryInputs = cfg.inputs ?? [];
+
+  /** localStorage helpers — namespaced per tool. */
+  function readState() {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      return raw ? JSON.parse(raw) : null;
+    } catch { return null; }
+  }
+  function writeState(state) {
+    try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* private mode */ }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* checklist + library: tick state with progress                       */
+  /* ------------------------------------------------------------------ */
+  if (mode === 'checklist' || mode === 'library') {
+    const boxes = [...root.querySelectorAll('[data-tracker-check]')];
+    const countEl = root.querySelector('[data-tracker-count]');
+    const fill = root.querySelector('[data-tracker-fill]');
+    const bar = root.querySelector('[data-tracker-bar]');
+    const saved = readState();
+    const checked = new Set(Array.isArray(saved) ? saved : []);
+
+    const paint = () => {
+      boxes.forEach((b) => { b.checked = checked.has(b.dataset.trackerCheck); });
+      if (countEl) countEl.textContent = String(checked.size);
+      if (fill) fill.style.width = items.length ? `${(checked.size / items.length) * 100}%` : '0%';
+      if (bar) bar.setAttribute('aria-valuenow', String(checked.size));
+    };
+    boxes.forEach((b) => b.addEventListener('change', () => {
+      if (b.checked) checked.add(b.dataset.trackerCheck);
+      else checked.delete(b.dataset.trackerCheck);
+      writeState([...checked]);
+      paint();
+    }));
+    root.querySelector('[data-tracker-reset]')?.addEventListener('click', () => {
+      checked.clear();
+      writeState([]);
+      paint();
+      announcePolite('Checklist reset.');
+    });
+    root.querySelector('[data-tracker-copy-saved]')?.addEventListener('click', async () => {
+      const text = [...checked]
+        .map((i) => items[Number(i)])
+        .filter(Boolean)
+        .join('\n');
+      if (!text) { announcePolite('Nothing saved yet.'); return; }
+      try {
+        await navigator.clipboard.writeText(text);
+        announcePolite('Saved items copied to clipboard.');
+      } catch { announceAssertive('Copy failed — select the text manually.'); }
+    });
+    paint();
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* log: entry form → persisted entries → real runTool analysis         */
+  /* ------------------------------------------------------------------ */
+  if (mode === 'log') {
+    const schema = buildSchema(entryInputs);
+    const form = root.querySelector('[data-tracker-form]');
+    const formError = root.querySelector('[data-tracker-form-error]');
+    const tbody = root.querySelector('[data-tracker-tbody]');
+    const countEl = root.querySelector('[data-tracker-count]');
+    const dashboard = root.querySelector('[data-tracker-dashboard]');
+    const resultsHost = dashboard?.querySelector('[data-tool-results]');
+
+    let entries = readState();
+    if (!Array.isArray(entries)) entries = [];
+
+    let realRun = null;
+    loadToolRun(cfg.categorySlug, cfg.slug).then((fn) => { realRun = fn; });
+
+    /** Read raw string values from the entry form. */
+    function readFormValues() {
+      const data = new FormData(form);
+      const out = {};
+      for (const f of entryInputs) {
+        const raw = data.get(f.id);
+        out[f.id] = typeof raw === 'string' ? raw : '';
+      }
+      return out;
+    }
+
+    /** Inline field errors via the Field component's error slots. */
+    function paintFieldErrors(errors) {
+      for (const f of entryInputs) {
+        const wrap = form.querySelector(`[data-field="${CSS.escape(f.id)}"]`);
+        const errEl = form.querySelector(`[data-field-error="${CSS.escape(f.id)}"]`);
+        const inputEl = form.querySelector(`[data-field-input="${CSS.escape(f.id)}"]`);
+        const msgs = errors[f.id];
+        if (errEl) {
+          const textEl = errEl.querySelector('[data-field-error-text]');
+          const text = msgs ? msgs.join(' ') : '';
+          if (textEl) textEl.textContent = text;
+          else errEl.textContent = text;
+          if (msgs) errEl.removeAttribute('hidden');
+          else errEl.setAttribute('hidden', '');
+        }
+        if (wrap) wrap.classList.toggle('hb-field--invalid', Boolean(msgs));
+        if (inputEl) {
+          if (msgs) {
+            inputEl.setAttribute('aria-invalid', 'true');
+            inputEl.setAttribute('aria-describedby', `${inputEl.id}-error`);
+          } else {
+            inputEl.removeAttribute('aria-invalid');
+          }
+        }
+      }
+    }
+
+    function renderEntries() {
+      if (!tbody) return;
+      tbody.innerHTML = '';
+      if (entries.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td colspan="${entryInputs.length + 1}">No entries yet — log your first one above.</td>`;
+        tbody.appendChild(tr);
+      } else {
+        entries.forEach((entry) => {
+          const tr = document.createElement('tr');
+          tr.innerHTML =
+            entryInputs.map((f) => `<td>${escapeHtml(String(entry[f.id] ?? ''))}</td>`).join('') +
+            `<td><button type="button" class="hb-btn hb-btn--ghost hb-btn--sm" data-entry-del="${escapeHtml(entry.id)}">Delete</button></td>`;
+          tbody.appendChild(tr);
+        });
+      }
+      if (countEl) countEl.textContent = String(entries.length);
+      tbody.querySelectorAll('[data-entry-del]').forEach((btn) =>
+        btn.addEventListener('click', () => {
+          entries = entries.filter((e) => e.id !== btn.dataset.entryDel);
+          writeState(entries);
+          renderEntries();
+          void analyze();
+        }),
+      );
+    }
+
+    let lastSnapshot = null;
+
+    async function analyze() {
+      if (!dashboard || !resultsHost) return;
+      if (entries.length === 0) {
+        dashboard.hidden = true;
+        resultsHost.innerHTML = '';
+        lastSnapshot = null;
+        return;
+      }
+      if (!realRun) {
+        dashboard.hidden = false;
+        resultsHost.innerHTML = '<p class="hb-alert">Analysis is still loading — try again in a moment.</p>';
+        return;
+      }
+      const payload = { items: entries.map((e) => ({ ...e })) };
+      let result;
+      try {
+        result = await realRun(payload);
+      } catch {
+        dashboard.hidden = false;
+        resultsHost.innerHTML = '<p class="hb-alert hb-alert--error">Analysis failed unexpectedly.</p>';
+        return;
+      }
+      dashboard.hidden = false;
+      if (!result.ok) {
+        resultsHost.innerHTML = `<p class="hb-alert hb-alert--error">${escapeHtml(result.error || 'Analysis failed.')}</p>`;
+        lastSnapshot = null;
+        return;
+      }
+      const values = result.values ?? {};
+      const fakeTool = {
+        root: dashboard,
+        form,
+        results: resultsHost,
+        resultsHeading: resultsHost.querySelector('[data-results-heading]'),
+        summary: document.createElement('div'),
+        options: {
+          toolId: cfg.toolId,
+          toolName: cfg.toolName,
+          toolType: 'tracker',
+          inputs: entryInputs,
+          outputs: cfg.outputs,
+          run: realRun,
+          resultHeading: 'Analysis',
+        },
+        schema,
+        lastResult: result,
+        lastValues: payload,
+      };
+      renderResults(fakeTool, result);
+      lastSnapshot = {
+        toolId: cfg.toolId,
+        toolName: cfg.toolName,
+        outputs: cfg.outputs,
+        values,
+      };
+    }
+
+    if (resultsHost) wireResultActions(resultsHost, () => lastSnapshot);
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const checked = validateObject(readFormValues(), schema);
+      paintFieldErrors(checked.ok ? {} : checked.errors);
+      if (!checked.ok) {
+        if (formError) {
+          formError.textContent = 'Please fix the highlighted fields.';
+          formError.hidden = false;
+        }
+        announceAssertive('Please fix the highlighted fields.');
+        return;
+      }
+      if (formError) formError.hidden = true;
+      entries.push({ id: `e${Date.now().toString(36)}${Math.floor(Math.random() * 1e6)}`, ...checked.values });
+      writeState(entries);
+      form.reset();
+      renderEntries();
+      announcePolite('Entry added.');
+      await analyze();
+    });
+
+    root.querySelector('[data-tracker-reset]')?.addEventListener('click', () => {
+      entries = [];
+      writeState(entries);
+      renderEntries();
+      void analyze();
+      announcePolite('All entries cleared.');
+    });
+
+    renderEntries();
+    void analyze();
+  }
+</script>
