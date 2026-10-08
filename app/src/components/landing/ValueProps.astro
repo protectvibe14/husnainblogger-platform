@@ -1,0 +1,90 @@
+---
+/**
+ * ValueProps.astro — "why HusnainBlogger" section.
+ * Owner: Landing.
+ *
+ * Four honest differentiators. No fabricated claims: every prop is
+ * verifiable from the platform's architecture (static, client-side,
+ * tested, no backend).
+ */
+const props = [
+  {
+    title: "100% free, no signup",
+    text: "Every tool is free with no account, no email wall, no trial timer. Open and use.",
+  },
+  {
+    title: "Runs in your browser",
+    text: "Your data never leaves your device. No uploads, no servers, no tracking of your inputs.",
+  },
+  {
+    title: "Verified, not guessed",
+    text: "11,500+ unit tests back every calculator and analyzer. Formulas are real and labeled.",
+  },
+  {
+    title: "Built for creators",
+    text: "Not generic calculators — tools for YouTube, TikTok, Instagram, blogging, and AI workflows.",
+  },
+];
+---
+
+<section class="landing-section landing-section--tint" aria-labelledby="landing-why-title">
+  <div class="landing-section__head">
+    <span class="hb-tool-eyebrow">Why HusnainBlogger</span>
+    <h2 id="landing-why-title">Tools you can trust</h2>
+    <p>No gimmicks. Just fast, honest tools that respect your time and your data.</p>
+  </div>
+  <div class="landing-props">
+    {props.map((p, i) => (
+      <div class="landing-prop">
+        <span class="landing-prop__num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+        <h3>{p.title}</h3>
+        <p>{p.text}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .landing-section--tint {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    max-width: none;
+  }
+  .landing-section--tint .landing-section__head,
+  .landing-section--tint .landing-props {
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-section--tint .landing-section__head { padding: 0 var(--space-6); }
+  .landing-section--tint .landing-props { padding: 0 var(--space-6); }
+  .landing-props {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--space-6);
+  }
+  .landing-prop {
+    padding: var(--space-6);
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+  .landing-prop__num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-2xl);
+    color: var(--color-accent);
+  }
+  .landing-prop h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    margin: var(--space-3) 0 var(--space-2);
+  }
+  .landing-prop p {
+    color: var(--color-muted);
+    margin: 0;
+    line-height: var(--leading-normal);
+  }
+</style>
