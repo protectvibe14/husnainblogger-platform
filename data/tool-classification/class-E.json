@@ -1,0 +1,1493 @@
+{
+ "category": "E",
+ "categoryName": "Instagram",
+ "toolRange": "201-250",
+ "generated": "2026-10-01",
+ "count": 50,
+ "tools": [
+  {
+   "toolId": "tool-201",
+   "name": "Banned Hashtag Checker",
+   "slug": "banned-hashtag-checker",
+   "verifiedToolType": "checker",
+   "engine": "regex-extractor + curated-list lookup (rule engine)",
+   "inputs": [
+    "captionText (string, raw pasted caption/comment)",
+    "bannedList (bundled JSON: banned-list.json)"
+   ],
+   "outputs": [
+    "perTagResults: [{tag, normalizedTag, status: 'flagged'|'clear', matchedEntry}], summary {total, flagged, clear, flaggedTags[]}, disclaimer string"
+   ],
+   "validation": [
+    "captionText required non-empty string; max 20000 chars",
+    "hashtag extraction unicode-aware (letters/numbers/underscore, incl. non-Latin scripts)",
+    "case-insensitive match against normalized list"
+   ],
+   "edgeCases": [
+    "empty input -> error state, no results",
+    "duplicate tags in text -> reported once with count",
+    "no hashtags found -> clear summary with guidance",
+    "tag in list is curated, not live IG data -> always show disclaimer"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Feasible 100% client-side: regex extraction + bundled JSON lookup. CANNOT query Instagram live; must use curated bundled list with prominent disclaimer that it is a sample and users should verify by searching the tag inside Instagram.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#banned-hashtags",
+    "instagram#hashtags-per-post-reel-current-cap"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "checker"
+  },
+  {
+   "toolId": "tool-202",
+   "name": "Hashtag Mix Builder",
+   "slug": "hashtag-mix-builder",
+   "verifiedToolType": "builder",
+   "engine": "template engine + curated niche tag pools (bundled JSON)",
+   "inputs": [
+    "niche (select from bundled pool categories)",
+    "postType (feed|reel|carousel|story)",
+    "goal (reach|community|branded)"
+   ],
+   "outputs": [
+    "mix: [{slot, tag, tier}], readyToCopy block string, copyNote"
+   ],
+   "validation": [
+    "postType required",
+    "niche must exist in bundled pools",
+    "output capped at platform hashtag limit (5 current)"
+   ],
+   "edgeCases": [
+    "niche not in pools -> generic guidance + suggestion list",
+    "output must never exceed current limit"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Feasible with bundled curated tag pools per niche. Cannot pull live hashtag volume/reach data (no API) — pools are curated starter mixes with disclaimer, NOT live popularity rankings.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#hashtags-per-post-reel-current-cap"
+   ],
+   "possibleDuplicateOf": "tool-243",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-203",
+   "name": "Shadowban Diagnostic Checklist",
+   "slug": "shadowban-diagnostic-checklist",
+   "verifiedToolType": "checker",
+   "engine": "self-assessment checklist engine (weighted symptom scoring)",
+   "inputs": [
+    "answers: [{questionId, answer: yes|no|unsure}] across symptom categories"
+   ],
+   "outputs": [
+    "score 0-100, riskBand (low|moderate|high), flaggedSymptoms[], nextSteps[], disclaimer"
+   ],
+   "validation": [
+    "all questions answered (or explicit skip)",
+    "answers limited to allowed enum values"
+   ],
+   "edgeCases": [
+    "all 'no' -> low band with education note",
+    "skipped questions excluded from scoring, noted"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Feasible as a SELF-ASSESSMENT checklist only. It CANNOT detect an actual shadowban (no API access to Instagram reach data). Must be labeled honestly: 'risk checklist, not a detector'. Tool-type corrected from generator -> checker.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#hashtags-per-post-reel-current-cap"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": true,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-204",
+   "name": "Stylish Fonts Generator",
+   "slug": "stylish-fonts-generator",
+   "verifiedToolType": "generator",
+   "engine": "unicode font mapper (styled character substitution maps, bundled JSON)",
+   "inputs": [
+    "text (string, max 500 chars)",
+    "styleId (select from bundled style maps)"
+   ],
+   "outputs": [
+    "styledText (unicode string), copyText, charCount, platformSafeNote"
+   ],
+   "validation": [
+    "text required non-empty",
+    "styleId must exist in bundled maps",
+    "output char count vs caption limit warning"
+   ],
+   "edgeCases": [
+    "empty -> error",
+    "characters with no styled equivalent -> passed through unchanged, noted",
+    "some styled unicode renders inconsistently on devices -> show device-compat note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side: static substitution maps. No API. Safe.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#caption-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-205",
+   "name": "Highlight Cover Maker",
+   "slug": "highlight-cover-maker",
+   "verifiedToolType": "builder",
+   "engine": "canvas renderer (2D canvas draw -> PNG export via toDataURL)",
+   "inputs": [
+    "background (color|gradient|image upload)",
+    "icon/emoji overlay",
+    "text label (max 60 chars)",
+    "size preset 1080x1920"
+   ],
+   "outputs": [
+    "coverPreview (canvas), downloadable PNG (client-side export)"
+   ],
+   "validation": [
+    "text <= 60 chars",
+    "uploaded image <= 10MB, image types only"
+   ],
+   "edgeCases": [
+    "no text -> icon-only cover allowed",
+    "large uploads rejected with message"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side canvas rendering + download. No server.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-206",
+   "name": "Profile Grid Planner",
+   "slug": "profile-grid-planner",
+   "verifiedToolType": "planner",
+   "engine": "drag-drop grid planner (9-cell layout state, localStorage persistence)",
+   "inputs": [
+    "plannedPosts: [{slot, imageRef(dataURL|placeholder), captionDraft}]"
+   ],
+   "outputs": [
+    "gridPreview (3x3), reorderState, savedPlan (localStorage), exportSummary"
+   ],
+   "validation": [
+    "slot 0-8",
+    "imageRef valid dataURL or empty"
+   ],
+   "edgeCases": [
+    "empty slots render as placeholders",
+    "localStorage full -> warn, keep in-memory"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side visual planner. Images stored as dataURLs in localStorage (quota limits apply, warn user).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-207",
+   "name": "Aesthetic Feed Theme Planner",
+   "slug": "aesthetic-feed-theme-planner",
+   "verifiedToolType": "planner",
+   "engine": "theme planner (curated palette/mood JSON + layout rules)",
+   "inputs": [
+    "theme (select: minimal|bold|pastel|moody|editorial)",
+    "niche (optional)"
+   ],
+   "outputs": [
+    "palette {hex[]}, doList[], dontList[], postingRhythmSuggestion, sampleGrid"
+   ],
+   "validation": [
+    "theme required from curated list"
+   ],
+   "edgeCases": [
+    "unknown theme -> default + note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side curated guidance. No API.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-208",
+   "name": "Story Highlight Name Generator",
+   "slug": "story-highlight-name-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (name-formula slots, bundled JSON)",
+   "inputs": [
+    "niche (text)",
+    "tone (select)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "names[] (strings), copyAll"
+   ],
+   "validation": [
+    "niche required non-empty",
+    "count 1-20"
+   ],
+   "edgeCases": [
+    "empty niche -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side template generation.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-209",
+   "name": "Reels Cover Title Generator",
+   "slug": "reels-cover-title-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (title formulas + length rules)",
+   "inputs": [
+    "topic (text)",
+    "tone (select)",
+    "count (1-20)"
+   ],
+   "outputs": [
+    "titles[] with char counts, safeZoneNote (1080x1920 cover safe zones)"
+   ],
+   "validation": [
+    "topic required",
+    "each title <= 60 chars recommended for cover readability"
+   ],
+   "edgeCases": [
+    "long titles -> auto-truncate option with warning"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#reels-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-210",
+   "name": "Carousel Slide Outline Generator",
+   "slug": "carousel-slide-outline-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (slide-by-slide outline formulas, bundled JSON)",
+   "inputs": [
+    "topic (text)",
+    "slideCount (3-10)",
+    "goal (select)"
+   ],
+   "outputs": [
+    "outline: [{slide, role, text, visualNote}], copyAll"
+   ],
+   "validation": [
+    "topic required",
+    "slideCount 3-10",
+    "total within carousel limit (<=20 slides)"
+   ],
+   "edgeCases": [
+    "slideCount > 20 requested -> clamp with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#carousel-max-slides"
+   ],
+   "possibleDuplicateOf": "tool-211",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-211",
+   "name": "Carousel Hook Slide Generator",
+   "slug": "carousel-hook-slide-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (hook-slide formulas, bundled JSON)",
+   "inputs": [
+    "topic (text)",
+    "angle (select)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "hooks[] (first-slide text options with visual notes)"
+   ],
+   "validation": [
+    "topic required",
+    "count 1-10"
+   ],
+   "edgeCases": [
+    "empty topic -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Near-duplicate candidate of tool-210 (hook slide is slide 1 of an outline); kept distinct as focused hook generator — see DUP-E.md.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#carousel-max-slides"
+   ],
+   "possibleDuplicateOf": "tool-210",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-212",
+   "name": "CTA Text Generator",
+   "slug": "cta-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (CTA formula library, bundled JSON)",
+   "inputs": [
+    "goal (select: comment|save|share|dm|link|follow)",
+    "topic (optional text)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "ctas[] (strings), copyAll"
+   ],
+   "validation": [
+    "goal required from list"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#caption-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-213",
+   "name": "Comment Reply Template Generator",
+   "slug": "comment-reply-template-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (reply templates with placeholder slots)",
+   "inputs": [
+    "commentType (select: praise|question|criticism|spam)",
+    "tone (select)",
+    "brandName (optional)"
+   ],
+   "outputs": [
+    "replies[] with {slot} placeholders, copyAll"
+   ],
+   "validation": [
+    "commentType required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#comment-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-214",
+   "name": "DM Collab Pitch Generator",
+   "slug": "dm-collab-pitch-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (pitch structure slots, bundled JSON)",
+   "inputs": [
+    "brand (text)",
+    "niche (text)",
+    "followerCount (number, user-provided)",
+    "deliverable (select)"
+   ],
+   "outputs": [
+    "pitch (multi-paragraph text), subjectLines[], copyAll"
+   ],
+   "validation": [
+    "brand, niche required",
+    "followerCount >= 0 number"
+   ],
+   "edgeCases": [
+    "followerCount 0 -> 'growing account' phrasing variant"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Follower count is user-provided, never verified.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#dm-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-215",
+   "name": "Follower Milestone Tracker",
+   "slug": "follower-milestone-tracker",
+   "verifiedToolType": "tracker",
+   "engine": "localStorage milestone tracker (goal + manual progress entries)",
+   "inputs": [
+    "goalFollowers (number)",
+    "currentFollowers (number, manual)",
+    "milestones[] auto-suggested"
+   ],
+   "outputs": [
+    "progressPct, nextMilestone, entries log[], celebrationState"
+   ],
+   "validation": [
+    "goal > current, both >= 0 numbers"
+   ],
+   "edgeCases": [
+    "goal <= current -> 'achieved' state",
+    "no entries yet -> onboarding prompt"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. CANNOT read live follower counts (no API) — user enters numbers manually. Must say so in UI.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": "tool-216",
+   "name": "Hashtag Performance Log",
+   "slug": "hashtag-performance-log",
+   "verifiedToolType": "tracker",
+   "engine": "localStorage performance log (manual entry per hashtag set)",
+   "inputs": [
+    "entries: [{date, hashtagsUsed[], reach (user-entered), saves, notes}]"
+   ],
+   "outputs": [
+    "log table, per-tag aggregate stats (user-entered data only), bestSet suggestion"
+   ],
+   "validation": [
+    "date valid",
+    "hashtagsUsed 1-5 recommended",
+    "numbers >= 0"
+   ],
+   "edgeCases": [
+    "empty log -> onboarding prompt"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. CANNOT pull real hashtag reach from Instagram — all metrics are manually entered by the user. Labeled honestly as a manual log.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#hashtags-per-post-reel-current-cap"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "tracker"
+  },
+  {
+   "toolId": "tool-217",
+   "name": "Alt Text Writer",
+   "slug": "alt-text-writer",
+   "verifiedToolType": "generator",
+   "engine": "template engine (alt-text writing formulas + accessibility rules)",
+   "inputs": [
+    "imageDescription (text)",
+    "subject (optional)",
+    "count (1-5)"
+   ],
+   "outputs": [
+    "altTexts[] (<= 125 chars recommended), accessibilityTips"
+   ],
+   "validation": [
+    "imageDescription required"
+   ],
+   "edgeCases": [
+    "output truncated to recommended length with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side text generation from user description. Cannot see the image.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#alt-text-guidance"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-218",
+   "name": "Location Tag Idea Generator",
+   "slug": "location-tag-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine + curated location-idea pools (bundled JSON)",
+   "inputs": [
+    "niche (text)",
+    "city (optional text)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "locationIdeas[] (venue-type + tag strategy), copyAll"
+   ],
+   "validation": [
+    "niche required"
+   ],
+   "edgeCases": [
+    "city empty -> generic venue-type ideas"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side curated ideas. Not live venue/tag search.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-219",
+   "name": "Collab Post Caption Generator",
+   "slug": "collab-post-caption-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (collab caption formulas, bundled JSON)",
+   "inputs": [
+    "partnerHandle (text)",
+    "campaign (text)",
+    "tone (select)"
+   ],
+   "outputs": [
+    "captions[] with @partnerHandle slotted, disclosureReminder (ad/partner label note)"
+   ],
+   "validation": [
+    "partnerHandle, campaign required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Includes honest disclosure reminder.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#caption-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-220",
+   "name": "Giveaway Rules Generator",
+   "slug": "giveaway-rules-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (giveaway rules templates + compliance notes)",
+   "inputs": [
+    "prize (text)",
+    "entryMethod (select)",
+    "endDate (date)",
+    "region (optional)"
+   ],
+   "outputs": [
+    "rulesText, entrySteps[], complianceChecklist (no purchase necessary note, IG promotion guidelines reference)"
+   ],
+   "validation": [
+    "prize, entryMethod, endDate required",
+    "endDate in future"
+   ],
+   "edgeCases": [
+    "endDate past -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side template. Compliance notes are general guidance, not legal advice — disclaimer required.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-221",
+   "name": "Story Poll Idea Generator",
+   "slug": "story-poll-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (poll question formulas, bundled JSON)",
+   "inputs": [
+    "topic (text)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "polls[] {question, optionA, optionB}"
+   ],
+   "validation": [
+    "topic required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-222",
+   "name": "Story Quiz Generator",
+   "slug": "story-quiz-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (quiz question formulas)",
+   "inputs": [
+    "topic (text)",
+    "count (1-5)"
+   ],
+   "outputs": [
+    "quizzes[] {question, options[3-4], correctIndex, explanation}"
+   ],
+   "validation": [
+    "topic required",
+    "count 1-5"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-223",
+   "name": "Q&A Sticker Prompt Generator",
+   "slug": "q-a-sticker-prompt-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (Q&A prompt formulas)",
+   "inputs": [
+    "niche (text)",
+    "tone (select)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "prompts[]"
+   ],
+   "validation": [
+    "niche required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-224",
+   "name": "Countdown Sticker Text Generator",
+   "slug": "countdown-sticker-text-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (countdown text formulas)",
+   "inputs": [
+    "event (text)",
+    "date (date)"
+   ],
+   "outputs": [
+    "countdownTexts[] (pre/during/post variants)"
+   ],
+   "validation": [
+    "event required",
+    "date valid"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-225",
+   "name": "Story Sequence Planner",
+   "slug": "story-sequence-planner",
+   "verifiedToolType": "planner",
+   "engine": "sequence planner (ordered story slots with timing suggestions)",
+   "inputs": [
+    "goal (select)",
+    "slots: [{position, contentType, textDraft}]"
+   ],
+   "outputs": [
+    "sequence plan, timingSuggestion, copyAll"
+   ],
+   "validation": [
+    "goal required"
+   ],
+   "edgeCases": [
+    "empty slots allowed as placeholders"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side planner. Does not publish to Instagram.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-226",
+   "name": "Reels vs Carousel Quiz",
+   "slug": "reels-vs-carousel-quiz",
+   "verifiedToolType": "generator",
+   "engine": "decision quiz engine (weighted answers -> format recommendation)",
+   "inputs": [
+    "answers: [{q, choice}] (format preference, resources, goal)"
+   ],
+   "outputs": [
+    "recommendation (reels|carousel|both), reasoning[], nextSteps[]"
+   ],
+   "validation": [
+    "all questions answered"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side weighted scoring. Recommendation is heuristic guidance, not a performance guarantee.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#reels-max-length",
+    "instagram#carousel-max-slides"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-227",
+   "name": "Posting Frequency Planner",
+   "slug": "posting-frequency-planner",
+   "verifiedToolType": "planner",
+   "engine": "rule engine (cadence rules + user inputs -> weekly plan)",
+   "inputs": [
+    "postsPerWeek (1-14)",
+    "formats (multi-select)",
+    "availableHours (number)"
+   ],
+   "outputs": [
+    "weeklyPlan [{day, format, task}], workloadWarning, consistencyTips"
+   ],
+   "validation": [
+    "postsPerWeek 1-14",
+    "availableHours > 0"
+   ],
+   "edgeCases": [
+    "postsPerWeek * effort > availableHours -> workload warning"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Generic cadence logic; cannot optimize to user's real analytics without API.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-228",
+   "name": "Niche Clarity Quiz",
+   "slug": "niche-clarity-quiz",
+   "verifiedToolType": "generator",
+   "engine": "decision quiz engine (weighted answers -> niche clarity report)",
+   "inputs": [
+    "answers: [{q, choice}] (interests, skills, audience)"
+   ],
+   "outputs": [
+    "topNiches[] ranked, clarityScore, validationSteps[]"
+   ],
+   "validation": [
+    "all questions answered"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side heuristic. Guidance only.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-229",
+   "name": "Brand Voice Generator",
+   "slug": "brand-voice-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (brand voice profile builder)",
+   "inputs": [
+    "adjectives (multi-select 3-5)",
+    "niche (text)",
+    "exampleLine (optional)"
+   ],
+   "outputs": [
+    "voiceProfile {doPhrases[], dontPhrases[], sampleLines[]}, copyAll"
+   ],
+   "validation": [
+    "adjectives 3-5",
+    "niche required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-230",
+   "name": "UGC Pitch Template Generator",
+   "slug": "ugc-pitch-template-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (UGC pitch slots)",
+   "inputs": [
+    "brand (text)",
+    "niche (text)",
+    "contentType (select)",
+    "rate (optional text)"
+   ],
+   "outputs": [
+    "pitch, deliverablesList[], followUpTemplate"
+   ],
+   "validation": [
+    "brand, niche, contentType required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#dm-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-231",
+   "name": "Testimonial Request Generator",
+   "slug": "testimonial-request-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (testimonial request scripts)",
+   "inputs": [
+    "clientName (text)",
+    "project (text)",
+    "channel (select: dm|email|in-person)"
+   ],
+   "outputs": [
+    "requestScript, questionPrompts[], thankYouNote"
+   ],
+   "validation": [
+    "clientName, project required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-232",
+   "name": "Link in Bio Page Builder",
+   "slug": "link-in-bio-page-builder",
+   "verifiedToolType": "builder",
+   "engine": "static page builder (link list -> preview + exportable HTML)",
+   "inputs": [
+    "links: [{label, url}], title (text), theme (select)"
+   ],
+   "outputs": [
+    "livePreview, exportable single-file HTML (download), copyEmbed"
+   ],
+   "validation": [
+    "each url valid http(s)",
+    "label non-empty"
+   ],
+   "edgeCases": [
+    "invalid url -> inline error, excluded from export"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side: builds and downloads a single self-contained HTML file. No hosting provided.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#bio-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "differentiationLocked": "Keep-both vs tool-367 (Lead): 232 = general link-in-bio builder. 367 = Pinterest-specific (pin-friendly layout, board links). Distinct.",
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-233",
+   "name": "Profile Audit Scorecard",
+   "slug": "profile-audit-scorecard",
+   "verifiedToolType": "scorer",
+   "engine": "weighted checklist scorer (profile audit rubric, bundled JSON)",
+   "inputs": [
+    "answers: [{criterionId, score 0-2|n/a}] across bio/name/grid/highlights/CTA"
+   ],
+   "outputs": [
+    "totalScore /100, grade, perSectionBreakdown[], prioritizedFixes[]"
+   ],
+   "validation": [
+    "answers within allowed values"
+   ],
+   "edgeCases": [
+    "n/a items excluded, denominator adjusted, noted"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side rubric scoring. Manual self-audit; cannot fetch real profile data.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#bio-limit",
+    "instagram#username-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "toolId": "tool-234",
+   "name": "Pinned Post Strategy Planner",
+   "slug": "pinned-post-strategy-planner",
+   "verifiedToolType": "planner",
+   "engine": "pinned-post strategy planner (3 pinned slots planner)",
+   "inputs": [
+    "goal (select)",
+    "offers (text list)"
+   ],
+   "outputs": [
+    "pinnedPlan [{slot1, slot2, slot3, rationale}], copyAll"
+   ],
+   "validation": [
+    "goal required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Does not pin posts (no API).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-235",
+   "name": "Highlights Audit Checklist",
+   "slug": "highlights-audit-checklist",
+   "verifiedToolType": "scorer",
+   "engine": "checklist scorer (highlight audit rubric)",
+   "inputs": [
+    "answers: [{criterionId, yes|no|n/a}]"
+   ],
+   "outputs": [
+    "score /100, missingElements[], fixList[]"
+   ],
+   "validation": [
+    "answers within allowed values"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side manual audit.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "scorer"
+  },
+  {
+   "toolId": "tool-236",
+   "name": "Welcome DM Template Generator",
+   "slug": "welcome-dm-template-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (welcome DM templates)",
+   "inputs": [
+    "brandName (text)",
+    "offer (text)",
+    "tone (select)",
+    "count (1-5)"
+   ],
+   "outputs": [
+    "dms[] (<= DM char guidance), personalizationSlots"
+   ],
+   "validation": [
+    "brandName, offer required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Templates only; no auto-send (automation not allowed).",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#dm-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-237",
+   "name": "Story Selling Script Generator",
+   "slug": "story-selling-script-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (story selling script formulas)",
+   "inputs": [
+    "product (text)",
+    "price (optional text)",
+    "objection (select)"
+   ],
+   "outputs": [
+    "script {hook, story, offer, cta}, slideBreakdown[]"
+   ],
+   "validation": [
+    "product required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#story-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-238",
+   "name": "Comment-to-DM Funnel Script Generator",
+   "slug": "comment-to-dm-funnel-script-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (comment-to-DM funnel scripts)",
+   "inputs": [
+    "leadMagnet (text)",
+    "keyword (text, trigger word)",
+    "tone (select)"
+   ],
+   "outputs": [
+    "funnel {commentReply, dmScript[], followUp[]}, setupChecklist"
+   ],
+   "validation": [
+    "leadMagnet, keyword required",
+    "keyword single word recommended"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side scripts. No automation; manual execution by user.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#comment-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-239",
+   "name": "Launch Content Planner",
+   "slug": "launch-content-planner",
+   "verifiedToolType": "planner",
+   "engine": "launch planner (timeline slots from T-minus input)",
+   "inputs": [
+    "launchDate (date)",
+    "offer (text)",
+    "teaseDays (number, default 7)"
+   ],
+   "outputs": [
+    "timeline [{date, phase, task}], checklistExport"
+   ],
+   "validation": [
+    "launchDate in future",
+    "teaseDays 0-30"
+   ],
+   "edgeCases": [
+    "launchDate past -> error"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side date math.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-240",
+   "name": "30-Day Reels Challenge Generator",
+   "slug": "30-day-reels-challenge-generator",
+   "verifiedToolType": "generator",
+   "engine": "challenge generator (30-day calendar from content pillars)",
+   "inputs": [
+    "pillars (text, 3-5)",
+    "niche (text)"
+   ],
+   "outputs": [
+    "calendar [{day, pillar, prompt, format}], exportCSV"
+   ],
+   "validation": [
+    "pillars 3-5 required",
+    "niche required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#reels-max-length"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-241",
+   "name": "Content Pillars Planner",
+   "slug": "content-pillars-planner",
+   "verifiedToolType": "planner",
+   "engine": "content pillars planner (weighted pillar allocation)",
+   "inputs": [
+    "pillars (text, 3-5)",
+    "weeklySlots (number)"
+   ],
+   "outputs": [
+    "allocation [{pillar, pct, slotsPerWeek}], balanceWarning"
+   ],
+   "validation": [
+    "pillars 3-5",
+    "weeklySlots 1-21"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-242",
+   "name": "Emoji Combo Generator",
+   "slug": "emoji-combo-generator",
+   "verifiedToolType": "generator",
+   "engine": "curated emoji-combo library (bundled JSON sets)",
+   "inputs": [
+    "vibe (select)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "combos[] (emoji strings), copyAll"
+   ],
+   "validation": [
+    "vibe required from list"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side curated sets.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-243",
+   "name": "Hashtag Block Builder",
+   "slug": "hashtag-block-builder",
+   "verifiedToolType": "builder",
+   "engine": "template engine (ready-to-paste hashtag blocks, bundled JSON)",
+   "inputs": [
+    "niche (select)",
+    "postType (select)",
+    "blockSize (1-5)"
+   ],
+   "outputs": [
+    "block string (<=5 tags), altBlocks[], copyButton"
+   ],
+   "validation": [
+    "niche in bundled pools",
+    "blockSize 1-5, hard cap at current platform limit"
+   ],
+   "edgeCases": [
+    "request > limit -> clamp with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Feasible with bundled curated pools + disclaimer (no live volume data). Near-duplicate candidate of tool-202 — see DUP-E.md.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#hashtags-per-post-reel-current-cap"
+   ],
+   "possibleDuplicateOf": "tool-202",
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-244",
+   "name": "Best Time to Post Planner",
+   "slug": "best-time-to-post-planner",
+   "verifiedToolType": "planner",
+   "engine": "rule engine (generic best-time slots by audience region + user schedule)",
+   "inputs": [
+    "audienceRegion (select)",
+    "userTimezone (select)",
+    "daysAvailable (multi)"
+   ],
+   "outputs": [
+    "suggestedSlots [{day, timeWindow, rationale}], disclaimerNoLiveData"
+   ],
+   "validation": [
+    "audienceRegion, userTimezone required"
+   ],
+   "edgeCases": [
+    "region not covered -> global fallback slots + note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Feasible ONLY as generic-slot planner. CANNOT know user's real best time (no Insights API access) — must carry 'generic guidance, check your own Insights' disclaimer. Partially feasible / honest-limited.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-245",
+   "name": "Digital Product Idea Generator",
+   "slug": "digital-product-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (digital product idea formulas)",
+   "inputs": [
+    "niche (text)",
+    "skills (text)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "ideas[] {title, format, priceHint(user-set), validationStep}"
+   ],
+   "validation": [
+    "niche, skills required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side. Price hints are user-set placeholders, never presented as market data.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-246",
+   "name": "Reels Series Planner",
+   "slug": "reels-series-planner",
+   "verifiedToolType": "planner",
+   "engine": "series planner (episode slots + arc structure)",
+   "inputs": [
+    "seriesTitle (text)",
+    "episodes (4-12)",
+    "goal (select)"
+   ],
+   "outputs": [
+    "episodePlan [{n, hook, beat}], arcSummary, copyAll"
+   ],
+   "validation": [
+    "seriesTitle required",
+    "episodes 4-12"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#reels-max-length"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "planner"
+  },
+  {
+   "toolId": "tool-247",
+   "name": "Reels Cover Maker",
+   "slug": "reels-cover-maker",
+   "verifiedToolType": "builder",
+   "engine": "canvas renderer (reels cover composer -> PNG export)",
+   "inputs": [
+    "title (text, <= 60 chars)",
+    "background (color|gradient|upload)",
+    "safeZoneOverlay toggle"
+   ],
+   "outputs": [
+    "coverPreview 1080x1920, downloadable PNG, safeZoneGuide"
+   ],
+   "validation": [
+    "title <= 60 chars recommended",
+    "upload <= 10MB image"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side canvas + download.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#reels-specs"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "builder"
+  },
+  {
+   "toolId": "tool-248",
+   "name": "Reels Audio Search Term Finder",
+   "slug": "reels-audio-search-term-finder",
+   "verifiedToolType": "generator",
+   "engine": "template engine (audio search-term formulas, bundled JSON)",
+   "inputs": [
+    "niche (text)",
+    "mood (select)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "searchTerms[] (phrases to type into Reels audio search), tipNote"
+   ],
+   "validation": [
+    "niche required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side curated terms. Cannot query trending audio (no API).",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-249",
+   "name": "Broadcast Channel Idea Generator",
+   "slug": "broadcast-channel-idea-generator",
+   "verifiedToolType": "generator",
+   "engine": "template engine (broadcast channel idea formulas)",
+   "inputs": [
+    "niche (text)",
+    "goal (select)",
+    "count (1-10)"
+   ],
+   "outputs": [
+    "ideas[] {name, description, firstPosts[] }"
+   ],
+   "validation": [
+    "niche required"
+   ],
+   "edgeCases": [],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side.",
+   "formulaRef": null,
+   "platformRulesRef": [],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  },
+  {
+   "toolId": "tool-250",
+   "name": "Profile Name SEO Optimizer",
+   "slug": "profile-name-seo-optimizer",
+   "verifiedToolType": "generator",
+   "engine": "rule engine (name-field SEO rules: keyword placement, 30-char budget)",
+   "inputs": [
+    "keywords (text list)",
+    "name (current, optional)"
+   ],
+   "outputs": [
+    "optimizedNames[] (<=30 chars), keywordCoverage, charBudgetBar"
+   ],
+   "validation": [
+    "keywords required non-empty",
+    "outputs hard-capped at 30 chars"
+   ],
+   "edgeCases": [
+    "keywords exceed budget -> priority-ranked truncation with note"
+   ],
+   "clientSideFeasible": true,
+   "feasibilityNote": "Fully client-side string rules.",
+   "formulaRef": null,
+   "platformRulesRef": [
+    "instagram#username-limit"
+   ],
+   "possibleDuplicateOf": null,
+   "isInteractive": true,
+   "typeCorrected": false,
+   "inventoryToolType": "generator"
+  }
+ ]
+}
