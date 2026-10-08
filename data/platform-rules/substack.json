@@ -1,0 +1,57 @@
+{
+ "platform": "substack",
+ "rules": [
+  {
+   "ruleId": "substack-platform-fee",
+   "platform": "substack",
+   "rule": "Substack platform fee",
+   "value": "10% of paid subscription revenue",
+   "valueUnit": "text",
+   "source": "everything-pr Revenue Splits 2026 (Sep); kompozy.io 2026 comparison",
+   "sourceUrl": "https://everything-pr.com/how-creators-get-paid-revenue-splits-youtube-tiktok-spotify-twitch-substack-patreon",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-087"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  },
+  {
+   "ruleId": "substack-payment-processing",
+   "platform": "substack",
+   "rule": "Substack payment processing",
+   "value": "Stripe ~2.9% + $0.30 per transaction on top of the 10%",
+   "valueUnit": "text",
+   "source": "everything-pr Revenue Splits 2026",
+   "sourceUrl": "https://everything-pr.com/how-creators-get-paid-revenue-splits-youtube-tiktok-spotify-twitch-substack-patreon",
+   "effectiveDate": "2026-09-01",
+   "lastVerified": "2026-10-01",
+   "nextReview": "2027-01-01",
+   "reviewCadence": "quarterly",
+   "status": "verified",
+   "affectsTools": [
+    "tool-087"
+   ],
+   "notes": "",
+   "history": [
+    {
+     "date": "2026-10-01",
+     "action": "created",
+     "by": "MA2",
+     "note": "Phase-0 seed; value checked against cited source 2026-10-01"
+    }
+   ]
+  }
+ ]
+}
