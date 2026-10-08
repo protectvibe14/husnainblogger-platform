@@ -1,0 +1,72 @@
+---
+/**
+ * ConfirmDialog.astro — the single confirm-dialog primitive (R12).
+ * Owner: MA1-DesignSystem.
+ *
+ * Native <dialog>. Open it ONLY via openConfirmDialog(id) from
+ * lib/ui/confirm-dialog.ts (returns Promise<boolean>, restores focus).
+ * Tool templates MUST NOT build their own dialogs.
+ */
+import { nextId } from "../../lib/a11y/ids";
+
+interface Props {
+  /** Required: the id passed to openConfirmDialog(). Auto-namespaced if omitted. */
+  id?: string;
+  title: string;
+  message: string;
+  confirmLabel?: string;
+  cancelLabel?: string;
+  tone?: "default" | "danger";
+}
+
+const {
+  id: idProp, title, message,
+  confirmLabel = "Confirm", cancelLabel = "Cancel", tone = "default",
+} = Astro.props;
+const id = idProp ?? nextId("confirm");
+const titleId = `${id}-title`;
+const descId = `${id}-desc`;
+---
+<dialog
+  class:list={["hb-dialog", `hb-dialog--${tone}`]}
+  id={id}
+  aria-labelledby={titleId}
+  aria-describedby={descId}
+  data-confirm-dialog
+>
+  <h2 class="hb-dialog__title" id={titleId}>{title}</h2>
+  <p class="hb-dialog__message" id={descId}>{message}</p>
+  <div class="hb-dialog__actions">
+    <button type="button" class="hb-btn hb-btn--secondary" data-confirm-value="cancel" autofocus>
+      {cancelLabel}
+    </button>
+    <button
+      type="button"
+      class:list={["hb-btn", tone === "danger" ? "hb-btn--danger" : "hb-btn--primary"]}
+      data-confirm-value="confirm"
+    >
+      {confirmLabel}
+    </button>
+  </div>
+</dialog>
+
+<style>
+  .hb-dialog {
+    border: 2px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    max-width: min(28rem, calc(100vw - var(--space-8)));
+    background: var(--color-surface-raised);
+    color: var(--color-text);
+    box-shadow: var(--shadow-lg);
+  }
+  .hb-dialog::backdrop { background: rgb(0 0 0 / 0.5); }
+  .hb-dialog__title { margin: 0 0 var(--space-2); font-size: var(--text-2xl); }
+  .hb-dialog__message { margin: 0 0 var(--space-5); }
+  .hb-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+</style>
