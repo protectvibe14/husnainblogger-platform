@@ -1,0 +1,33 @@
+{
+  // Batch-1 pilot (2026-10-01): type-checks the pilot tool modules
+  // (app/tools/ai-workflows/*/*.ts) plus the shared wiring they depend on.
+  // .astro files are intentionally excluded — tsc cannot parse them;
+  // Astro template wiring is verified by `astro build` / MA4 QA.
+  // 2026-10-01 (batch-6): expanded to all of tools/** so every batch is
+  // type-checked. Pre-existing Phase-0 type debt in older categories must be
+  // fixed, not excluded — see verification below.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "types": ["node"],
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "tools/**/*.ts",
+    "src/glob.d.ts",
+    "src/lib/registry/types.ts",
+    "src/templates/types.ts",
+    "src/templates/_tool-runtime.ts",
+    "src/lib/validation/**/*.ts",
+    "src/templates/_analytics.ts",
+    "src/templates/_ai-runtime.ts",
+    "src/lib/ai/**/*.ts"
+  ]
+}
