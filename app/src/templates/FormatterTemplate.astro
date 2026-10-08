@@ -1,0 +1,149 @@
+---
+/**
+ * FormatterTemplate.astro — text in → transformed text out.
+ *
+ * Serves toolType: formatter (5 tools).
+ *
+ * Contract: textarea input(s) + option selects; the TOOL LOGIC SLOT returns
+ * transformed text plus optional counts. The main text output renders as a
+ * copyable result block with before/after character counts, plus download
+ * (txt) and share-link actions. No invented transformations — the demo does
+ * case conversion and honest counts only.
+ *
+ * MA2: replace `demoRun` below with an adapter over
+ * app/tools/<category>/<slug>/logic.ts.
+ */
+import ToolShell from './ToolShell.astro';
+import Field from '../components/ui/Field.astro';
+import Button from '../components/ui/Button.astro';
+import type { ToolInput, ToolOutput } from '../lib/registry/types.ts';
+import type { ToolTemplatePropsV1 } from './types.ts';
+
+interface Props extends ToolTemplatePropsV1 {}
+const { tool, content, relatedTools = [], freshness } = Astro.props;
+
+/* ---------------- DEMO fallback (MA2: delete when real inputs land) ---------------- */
+const DEMO_INPUTS: ToolInput[] = [
+  { id: 'text', label: 'Text to format', type: 'textarea', required: true, placeholder: 'Type or paste your text…' },
+  { id: 'style', label: 'Case style', type: 'select', required: true, options: ['UPPERCASE', 'lowercase', 'Title Case', 'Sentence case'] },
+];
+const DEMO_OUTPUTS: ToolOutput[] = [
+  { id: 'wordCount', label: 'Words', type: 'number' },
+  { id: 'charCount', label: 'Characters', type: 'number' },
+  { id: 'result', label: 'Formatted text', type: 'text' },
+];
+/* ------------------------------------------------------------------------------------ */
+
+const inputs = tool.inputs?.length ? tool.inputs : DEMO_INPUTS;
+const outputs = tool.outputs?.length ? tool.outputs : DEMO_OUTPUTS;
+
+const CONTROL: Record<ToolInput['type'], string> = {
+  text: 'text',
+  number: 'number',
+  select: 'select',
+  textarea: 'textarea',
+  boolean: 'checkbox',
+  date: 'date',
+  url: 'url',
+  file: 'file',
+};
+
+const config = {
+  toolId: tool.toolId,
+  toolName: tool.name,
+  toolType: tool.toolType,
+  categorySlug: tool.categorySlug,
+  slug: tool.slug,
+  inputs,
+  outputs,
+};
+---
+
+<ToolShell tool={tool} content={content} relatedTools={relatedTools} freshness={freshness}>
+  <div slot="tool-ui" data-tool-root data-tool-type="formatter">
+    <!-- DEMO: inputs/outputs below are placeholders. MA2 replaces demoRun in the <script>. -->
+    <form data-tool-form novalidate aria-label={`${tool.name} inputs`}>
+      <div data-error-summary hidden class="hb-error-summary"></div>
+
+      {inputs.map((input) => (
+        <Field
+          id={`field-${tool.toolId}-${input.id}`}
+          name={input.id}
+          label={input.label}
+          type={CONTROL[input.type] ?? 'text'}
+          required={input.required}
+          hint={input.placeholder}
+          options={input.options}
+          min={input.validation?.min}
+          max={input.validation?.max}
+          rows={input.type === 'textarea' ? 8 : undefined}
+        />
+      ))}
+
+      <div class="hb-form-actions">
+        <Button type="submit" variant="primary">Format</Button>
+        <Button type="button" variant="secondary" data-action="reset">Reset</Button>
+      </div>
+    </form>
+
+    <section data-tool-results hidden class="hb-results" aria-label="Formatted result"></section>
+
+    <div data-tool-fallback hidden class="hb-fallback" role="alert">
+      <p><strong>Something went wrong running this tool.</strong> Your inputs were kept.</p>
+      <Button type="button" variant="secondary" data-fallback-retry>Try again</Button>
+    </div>
+
+    <script type="application/json" data-tool-config set:html={JSON.stringify(config)} />
+  </div>
+</ToolShell>
+
+<script>
+  import { mountToolUI, loadToolRun } from './_tool-runtime.ts';
+  import type { ToolRunValues, ToolRunResult } from './types.ts';
+
+  /* ================= TOOL LOGIC SLOT (DEMO — MA2: replace) =================
+   * Demo: case conversion + word/character counts. This proves the
+   * text-output contract (copyable result block). Real tools return
+   * { result: string, ...counts } for their own transformations.
+   * ======================================================================= */
+  function toTitleCase(s: string): string {
+    return s.toLowerCase().replace(/(^|\s|[("'])(\p{L})/gu, (_m, pre, ch) => pre + ch.toUpperCase());
+  }
+  function toSentenceCase(s: string): string {
+    return s.toLowerCase().replace(/(^\s*\p{L}|[.!?…]\s*\p{L})/gu, (m) => m.toUpperCase());
+  }
+  function demoRun(values: ToolRunValues): ToolRunResult {
+    const text = String(values.text ?? '');
+    if (!text.trim()) return { ok: false, error: 'Enter some text to format.' };
+    const style = String(values.style ?? 'UPPERCASE');
+    let result = text;
+    if (style === 'UPPERCASE') result = text.toUpperCase();
+    else if (style === 'lowercase') result = text.toLowerCase();
+    else if (style === 'Title Case') result = toTitleCase(text);
+    else if (style === 'Sentence case') result = toSentenceCase(text);
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+    return {
+      ok: true,
+      values: { wordCount: words, charCount: [...text].length, result },
+    };
+  }
+
+  const configEl = document.querySelector('[data-tool-config]');
+  const config = JSON.parse(configEl?.textContent ?? '{}');
+
+  // Batch-1 pilot: use the tool's real logic module when it exists;
+  // DEMO runner remains the fallback for tools still pending.
+  const realRun = await loadToolRun(config.categorySlug, config.slug);
+
+  mountToolUI({
+    root: '[data-tool-root]',
+    toolId: config.toolId,
+    toolName: config.toolName,
+    toolType: config.toolType,
+    inputs: config.inputs,
+    outputs: config.outputs,
+    run: realRun ?? demoRun,
+    resultHeading: 'Formatted result',
+    downloadFormats: ['txt', 'json'],
+  });
+</script>
