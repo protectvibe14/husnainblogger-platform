@@ -1,0 +1,57 @@
+---
+/**
+ * Button.astro — the button primitive.
+ * Owner: MA1-DesignSystem.
+ *
+ * Real <button> (or <a> when href is given). Every button MUST have a unique,
+ * specific accessible name on pages with repeated actions — prefer visible
+ * text; use ariaLabel only when the visible text alone is ambiguous, and
+ * keep the visible text at the START of the name (2.5.3 Label in Name).
+ *
+ * Disabled guidance (ACCESSIBILITY.md §3.4): prefer ariaDisabled + a visible
+ * reason over `disabled` (disabled buttons are unfocusable and silent).
+ */
+interface Props {
+  variant?: "primary" | "secondary" | "tertiary" | "danger";
+  type?: "button" | "submit" | "reset";
+  /** Renders an <a> styled as a button (navigational actions only). */
+  href?: string;
+  disabled?: boolean;
+  /** Prefer this over `disabled` when the reason needs explaining. */
+  ariaDisabled?: boolean;
+  /** Override the accessible name. Must start with the visible text (2.5.3). */
+  ariaLabel?: string;
+  id?: string;
+  class?: string;
+  [key: string]: unknown;
+}
+
+const {
+  variant = "primary", type = "button", href,
+  disabled = false, ariaDisabled = false, ariaLabel, id, class: cls,
+  ...rest
+} = Astro.props;
+
+const classes = ["hb-btn", `hb-btn--${variant}`, cls].filter(Boolean).join(" ");
+const isDisabled = disabled || ariaDisabled;
+---
+{href ? (
+  <a
+    href={isDisabled ? undefined : href}
+    id={id}
+    class={classes}
+    aria-label={ariaLabel}
+    aria-disabled={isDisabled ? "true" : undefined}
+    {...rest}
+  ><slot /></a>
+) : (
+  <button
+    type={type}
+    id={id}
+    class={classes}
+    aria-label={ariaLabel}
+    disabled={disabled || undefined}
+    aria-disabled={!disabled && ariaDisabled ? "true" : undefined}
+    {...rest}
+  ><slot /></button>
+)}
