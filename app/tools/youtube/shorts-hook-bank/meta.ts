@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Shorts Hook Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Youtube Shorts Hook Ideas | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your Short\u2019s topic (e.g. "sourdough starter").',
