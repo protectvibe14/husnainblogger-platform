@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelancer Tax Deductions List 2026 – Free | HusnainBlogger',
+  title: 'Freelancer Tax Deductions List',
   description:
     'Browse this freelancer tax deductions list for creators free. Enter your creator type and expenses for a general checklist and record-keeping tips. Try it now!',
   howTo: [
