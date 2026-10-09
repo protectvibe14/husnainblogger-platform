@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook CTA Examples 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook CTA Examples',
   description:
     'See the best facebook cta examples for your posts with this free generator: enter your goal to get 6 short verb-led CTA phrases for captions. Try it now!',
   howTo: [
