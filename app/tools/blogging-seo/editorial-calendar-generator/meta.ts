@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Editorial Calendar Generator 2026 – Free | HusnainBlogger',
+  title: 'Editorial Calendar Generator',
   description:
     'Build a 4-week editorial calendar in seconds: dated post ideas, content types and a spreadsheet-ready CSV spread across your week. Free — start planning now!',
   howTo: [
