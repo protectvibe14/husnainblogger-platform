@@ -74,7 +74,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Thumbnail Checklist 2026 – Free | HusnainBlogger',
+  title: 'Youtube Thumbnail Checklist | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Open your thumbnail design and answer each of the 8 checklist items honestly: "yes", "partially", or "no".',
