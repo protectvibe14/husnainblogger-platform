@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Art Styles List 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Art Styles List',
   description:
     'Pick a style from this curated AI art styles list to see its look, copy an example prompt snippet, and get tags plus keywords. Free, no signup - explore now!',
   howTo: [
