@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Image Upscaler (2x/4x, Free) 2026 – Free | HusnainBlogger',
+  title: 'AI Image Upscaler (2x/4x, Free)',
   description:
     'Upscale images free with AI in your browser — 2x or 4x super-resolution, PNG download, no signup, no uploads. Runs 100% on your device, offline after load.',
   howTo: [
