@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'What to Pin on Instagram 2026 – Free Tool | HusnainBlogger',
+  title: 'What to Pin on Instagram',
   description:
     "Plan what to pin on instagram: pick your goal and get a 3-slot pin strategy — each pin's job, post ideas, and the reasoning. Free, no signup — try it now!",
   howTo: [
