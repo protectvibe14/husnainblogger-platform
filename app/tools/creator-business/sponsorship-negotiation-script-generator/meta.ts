@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Sponsorship Negotiation Script 2026 – Free | HusnainBlogger',
+  title: 'Sponsorship Negotiation Script',
   description: DESCRIPTION,
   howTo: [
     "Enter the brand name you're negotiating with.",
