@@ -120,11 +120,9 @@ const robots = tool.noindex ? "noindex, follow" : undefined;
   description={description}
   canonical={canonical}
   robots={robots}
+  ogImage="https://husnainblogger.com/tools/images/og-default.png"
 >
   <meta property="og:url" content={canonical} slot="head" />
-  <meta name="twitter:card" content="summary" slot="head" />
-  <meta name="twitter:title" content={title} slot="head" />
-  <meta name="twitter:description" content={description} slot="head" />
 
   <main>
     {/* Exactly one template per toolType — dispatched, never hardcoded. */}
