@@ -1,0 +1,166 @@
+---
+/**
+ * LandingSidebar.astro — SST-style right sidebar.
+ * Owner: Landing.
+ *
+ * Search box + Popular Tools + ad slots.
+ * Ads are admin-controlled via ads-config.json.
+ */
+import AdSlot from "../ads/AdSlot.astro";
+import { toolHref } from "../../../../config/site.config";
+
+interface Tool {
+  name: string;
+  slug: string;
+  categorySlug: string;
+}
+
+interface Props {
+  popularTools: Tool[];
+}
+
+const { popularTools } = Astro.props;
+---
+
+<aside class="landing-sidebar" aria-label="Sidebar">
+  {/* Search */}
+  <div class="sidebar-box">
+    <form class="sidebar-search" action="/search/" method="get" role="search" aria-label="Search tools">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search tools…"
+        aria-label="Search tools"
+        autocomplete="off"
+      />
+      <button type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  {/* Ad: sidebar top */}
+  <AdSlot slot="tool-sidebar-top" />
+
+  {/* Popular Tools */}
+  <div class="sidebar-box">
+    <h3 class="sidebar-box__title">Popular Tools</h3>
+    <ul class="sidebar-tools">
+      {popularTools.slice(0, 12).map((t) => (
+        <li>
+          <a href={toolHref({ categorySlug: t.categorySlug, slug: t.slug })}>
+            {t.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Ad: sidebar middle */}
+  <AdSlot slot="hub-top" />
+
+  {/* Categories quick links */}
+  <div class="sidebar-box">
+    <h3 class="sidebar-box__title">Categories</h3>
+    <ul class="sidebar-tools">
+      <li><a href="/tools/blogging-seo-content/">Blogging SEO & Content</a></li>
+      <li><a href="/tools/make-money-affiliate/">Make-Money & Affiliate</a></li>
+      <li><a href="/tools/youtube/">YouTube</a></li>
+      <li><a href="/tools/tiktok/">TikTok</a></li>
+      <li><a href="/tools/instagram/">Instagram</a></li>
+      <li><a href="/tools/capcut-video-editing/">CapCut & Video Editing</a></li>
+      <li><a href="/tools/ai-workflow/">AI Workflow</a></li>
+      <li><a href="/tools/email-blog-marketing/">Email & Blog Marketing</a></li>
+      <li><a href="/tools/creator-business/">Creator Business</a></li>
+      <li><a href="/tools/ai-tools/">AI Tools</a></li>
+      <li><a href="/tools/pinterest/">Pinterest</a></li>
+    </ul>
+  </div>
+
+  {/* Ad: sidebar bottom */}
+  <AdSlot slot="tool-sidebar-bottom" />
+</aside>
+
+<style>
+  .landing-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .sidebar-box {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: rgb(238, 241, 245) 0px 0px 5px 5px;
+  }
+  .sidebar-box__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .sidebar-search {
+    display: flex;
+    gap: 8px;
+  }
+  .sidebar-search input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+    color: var(--color-text);
+  }
+  .sidebar-search input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+  .sidebar-search button {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-accent);
+    color: #fff;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+  .sidebar-search button svg {
+    width: 18px;
+    height: 18px;
+  }
+  .sidebar-tools {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .sidebar-tools a {
+    display: block;
+    padding: 6px 8px;
+    font-size: 13px;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .sidebar-tools a:hover {
+    background: var(--color-surface);
+    color: var(--color-accent);
+  }
+  .sidebar-tools a::before {
+    content: "•";
+    color: var(--color-accent);
+    margin-right: 8px;
+  }
+</style>

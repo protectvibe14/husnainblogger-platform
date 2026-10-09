@@ -11,6 +11,7 @@
  */
 import { hubHref, toolHref } from "../../../../config/site.config";
 import AdSlot from "../ads/AdSlot.astro";
+import CategoryIcon from "./CategoryIcon.astro";
 
 interface Tool {
   name: string;
@@ -48,13 +49,14 @@ const { categories } = Astro.props;
               class="sst-tile"
               title={t.name}
             >
-              <span class="sst-tile__icon" aria-hidden="true">{t.name.charAt(0)}</span>
+              <span class="sst-tile__icon" aria-hidden="true"><CategoryIcon slug={t.categorySlug} /></span>
               <span class="sst-tile__name">{t.name}</span>
             </a>
           ))}
         </div>
       </section>
-      {(ci + 1) % 3 === 0 && ci < categories.length - 1 && (
+      {/* Ad banner after every category */}
+      {ci < categories.length - 1 && (
         <div class="sst-ad-between">
           <AdSlot slot={ci % 2 === 0 ? "hub-top" : "hub-bottom"} />
         </div>
