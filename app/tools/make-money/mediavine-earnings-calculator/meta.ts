@@ -30,7 +30,7 @@ const DESCRIPTION =
   'Free mediavine earnings calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Mediavine Earnings Calculator 2026 – Free | HusnainBlogger',
+  title: 'Mediavine Earnings Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your Monthly sessions — the monetizable sessions your site gets per month.',
