@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Brand Voice Prompt 2026 – Free Tool | HusnainBlogger',
+  title: 'Brand Voice Prompt',
   description:
     'Assemble a custom brand voice prompt from your own words. Add adjectives, do\'s and don\'ts, and an optional sample for a reusable system prompt. Build yours now!',
   howTo: [
