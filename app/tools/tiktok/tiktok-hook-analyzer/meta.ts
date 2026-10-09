@@ -25,7 +25,7 @@ const DESCRIPTION =
   'Grade your opening hook with this free TikTok hook analyzer — a transparent 0–100 rubric scores brevity, hook patterns, and opener strength. No signup, try it now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Hook Analyzer 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Hook Analyzer',
   description: DESCRIPTION,
   howTo: [
     'Paste the exact first line viewers hear in your video.',
