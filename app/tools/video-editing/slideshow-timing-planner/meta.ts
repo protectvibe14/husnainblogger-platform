@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Slideshow Timing Calculator 2026 – Free | HusnainBlogger',
+  title: 'Slideshow Timing Calculator',
   description:
     'Split video time across slides free: this slideshow timing calculator builds a start/end timeline with transitions and equal or text-weighted holds. Try it now.',
   howTo: [
