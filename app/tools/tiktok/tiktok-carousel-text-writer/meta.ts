@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Carousel Text 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Carousel Text',
   description:
     'Write tiktok carousel text in seconds: hook cover line, value lines, and CTA per slide, all under 50 words. Enter your topic — try it free now!',
   howTo: [
