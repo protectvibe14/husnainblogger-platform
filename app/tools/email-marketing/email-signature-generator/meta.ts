@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Signature Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Signature Generator',
   description:
     'Create a professional email signature with client-safe HTML. Enter your name, title, and links to get a copy-paste signature plus plain text. Free!',
   howTo: [
