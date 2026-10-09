@@ -55,7 +55,7 @@ const DESCRIPTION =
   'Price projects with confidence using this free freelance project quote calculator — enter hours, rate, costs, and margin for an itemized quote. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Freelance Project Quote Calculator 2026 | HusnainBlogger',
+  title: 'Freelance Project Quote Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Enter your estimated hours for the project and your hourly rate in USD.',
