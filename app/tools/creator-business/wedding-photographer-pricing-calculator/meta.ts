@@ -71,7 +71,7 @@ const DESCRIPTION =
   'Free wedding photography pricing calculator 2026: Total package price from your own rates and hours. Get instant results. No signup - try it free now!';
 
 export const content: ToolContent = {
-  title: 'Wedding Photography Pricing Calculator 2026 | HusnainBlogger',
+  title: 'Wedding Photography Pricing Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Enter your hours of coverage and your own hourly rate in USD.',
