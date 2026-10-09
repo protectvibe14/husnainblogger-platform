@@ -51,7 +51,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Transition Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Transition Ideas',
   description:
     'Find video transition ideas matched to your two scenes and energy — smooth, punchy, and match-cut picks with step-by-step CapCut how-tos. Plan your edit now!',
   howTo: [
