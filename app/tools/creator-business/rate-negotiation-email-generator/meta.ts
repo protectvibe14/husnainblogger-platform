@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Rate Negotiation Email Template 2026 – Free | HusnainBlogger',
+  title: 'Rate Negotiation Email Template',
   description:
     'Draft a rate negotiation email that wins better pay: enter the offer, your counter, and your value points, then pick a tone. Copy, edit, and send. Try it free!',
   howTo: [
