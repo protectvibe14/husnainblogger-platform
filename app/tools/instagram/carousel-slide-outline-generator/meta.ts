@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Carousel Ideas Generator 2026 | HusnainBlogger',
+  title: 'Instagram Carousel Ideas Generator 2027',
   description:
     'Generate Instagram carousel post ideas free. Enter a topic, pick a goal and slide count, and get a slide-by-slide outline with visual notes. Build it now!',
   howTo: [
