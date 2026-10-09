@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Idea Pin Ideas 2026 – 100+ Ideas | HusnainBlogger',
+  title: 'Pinterest Idea Pin Ideas',
   description:
     'Generate pinterest idea pin ideas with this free script tool. Enter your topic and page count to get a page-by-page visual, text, and caption plan. Try it now!',
   howTo: [
