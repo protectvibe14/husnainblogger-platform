@@ -28,7 +28,7 @@ const DESCRIPTION =
   'Write scroll-stopping TikTok ad hooks for your product — pick problem, result, curiosity or offer angle. Free template-based hook writer. Try it now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Ad Hooks 2026 – Free Hook Tool | HusnainBlogger',
+  title: 'TikTok Ad Hooks',
   description: DESCRIPTION,
   howTo: [
     'Type your product name into the "Product name" box — for example "LED sunset lamp".',
