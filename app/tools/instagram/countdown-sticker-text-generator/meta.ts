@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Countdown Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Instagram Countdown Ideas',
   description:
     'Get instagram countdown ideas for your launch or event: before, during, and after text variants. Enter your event and date, copy the texts — free. Try it now!',
   howTo: [
