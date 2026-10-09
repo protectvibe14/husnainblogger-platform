@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Keyword Prioritization Matrix 2026 – Free | HusnainBlogger',
+  title: 'Keyword Prioritization Matrix',
   description:
     'Rank keywords by real trade-offs with this free keyword prioritization matrix. Score relevance, volume, difficulty and intent transparently. Score yours now!',
   howTo: [
