@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Browse 48 free email subject line prompts — copy-paste AI prompt templates for newsletters, promos, welcome series, and abandoned carts. Try the pack now.';
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Prompts 2026 – Free | HusnainBlogger',
+  title: 'Email Subject Line Prompts',
   description: DESCRIPTION,
   howTo: [
     'Pick the email type you are writing: newsletter, promo, welcome, or abandoned cart.',
