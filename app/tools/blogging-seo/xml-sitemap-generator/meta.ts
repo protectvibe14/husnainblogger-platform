@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'XML Sitemap Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'XML Sitemap Generator',
   description:
     'Turn your URL list into a valid XML sitemap that search engines can read. Paste up to 50,000 URLs with dates and priorities. Free, no signup!',
   howTo: [
