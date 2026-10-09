@@ -29,7 +29,7 @@ const DESCRIPTION =
   'Build with this free creator rate card generator — assemble your platform rates into a copy-ready card with honest estimate labels. Start your rate card.';
 
 export const content: ToolContent = {
-  title: 'Creator Rate Card Generator 2026 – Free | HusnainBlogger',
+  title: 'Creator Rate Card Generator',
   description: DESCRIPTION,
   howTo: [
     'Optionally enter your creator or brand name in the creatorName field for the document header.',
