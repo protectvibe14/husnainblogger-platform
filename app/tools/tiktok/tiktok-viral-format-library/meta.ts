@@ -24,7 +24,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Viral TikTok Formats 2026 – Free Tool | HusnainBlogger',
+  title: 'Viral TikTok Formats',
   description:
     'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore now.',
   howTo: [
