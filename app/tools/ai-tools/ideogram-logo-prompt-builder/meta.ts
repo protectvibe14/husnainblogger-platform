@@ -67,7 +67,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ideogram Logo Prompt Builder 2026 – Free | HusnainBlogger',
+  title: 'Ideogram Logo Prompt Builder',
   description:
     'Build an Ideogram-ready logo prompt from fixed templates: 5 styles, brand colors, optional tagline, plus 3 style variations and a negative prompt. Free builder.',
   howTo: [
