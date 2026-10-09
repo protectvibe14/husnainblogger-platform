@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Username Ideas 2026 – 100+ Ideas | HusnainBlogger',
+  title: 'Twitter Username Ideas',
   description:
     'Get Twitter username ideas instantly: enter a base name and get 10 X handle ideas in short, professional, or keyword styles. Free — find yours now!',
   howTo: [
