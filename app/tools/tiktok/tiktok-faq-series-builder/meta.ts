@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok FAQ Series 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok FAQ Series',
   description:
     'Build a tiktok faq series from your questions: episode hooks, answer-beat outlines, and CTAs. Answers are yours — the tool never invents them. Try it free!',
   howTo: [
