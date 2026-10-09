@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Image Caption Generator 2026 – Free | HusnainBlogger',
+  title: 'AI Image Caption Generator',
   description:
     'Generate image captions and SEO-friendly alt text with a free on-device model. No uploads, no API key — your images never leave your browser, ever.',
   howTo: [
