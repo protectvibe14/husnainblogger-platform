@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Marketing Plan Template 2026 – Free | HusnainBlogger',
+  title: 'Email Marketing Plan Template',
   description:
     'Build a 90-day email marketing plan template in seconds. Pick a start date, weekly frequency, and goal mix to get a full calendar plus milestones. Free!',
   howTo: [
