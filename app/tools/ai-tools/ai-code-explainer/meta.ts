@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Code Explainer 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Code Explainer',
   description: 'Paste any code snippet and get a plain-language explanation with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
     'Pick the snippet’s language (or Other).',
