@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Sell on Instagram Stories 2027 | HusnainBlogger',
+  title: 'How to Sell on Instagram Stories 2027',
   description:
     'Sell on stories with this free how to sell on instagram stories tool. Enter your product, pick an objection, and get a 6-slide selling script. Try it now!',
   howTo: [
