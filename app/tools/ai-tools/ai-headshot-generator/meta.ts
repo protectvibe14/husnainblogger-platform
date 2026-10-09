@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Headshot Generator 2026 – Free Generator | HusnainBlogger',
+  title: 'Ai Headshot Generator',
   description:
     'Turn a selfie into a professional AI headshot with your own API key. OpenRouter edits your photo; Hugging Face and fal.ai generate from text. No signup.',
   howTo: [
