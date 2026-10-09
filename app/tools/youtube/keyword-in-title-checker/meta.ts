@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Check keyword placement with this free YouTube keyword in title checker — match verdict, position, and front-loading tips. No signup, try it now.';
 
 export const content: ToolContent = {
-  title: 'YouTube Keyword in Title Checker 2026 | HusnainBlogger',
+  title: 'YouTube Keyword in Title Checker 2027 | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Type your target keyword or phrase into the keyword field.',
