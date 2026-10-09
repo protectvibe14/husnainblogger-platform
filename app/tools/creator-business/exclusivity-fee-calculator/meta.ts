@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Influencer Exclusivity Fee 2026 – Free | HusnainBlogger',
+  title: 'Influencer Exclusivity Fee',
   description:
     'Calculate an influencer exclusivity fee from your base deal fee and your own percentage or flat fee. Get the deal total and monthly equivalent free. Try it now!',
   howTo: [
