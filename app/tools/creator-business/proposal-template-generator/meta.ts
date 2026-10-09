@@ -65,7 +65,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Proposal Template 2026 – Free | HusnainBlogger',
+  title: 'Freelance Proposal Template',
   description:
     'Write a freelance proposal template in minutes: enter the client, project, deliverables, and investment to get a sectioned, client-ready proposal. Free.',
   howTo: [
