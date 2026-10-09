@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Hashtags 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Hashtags',
   description:
     'Get the best facebook hashtags for your post with this free generator: enter your topic to get 1-5 curated tags plus an honest usage note. Try it now!',
   howTo: [
