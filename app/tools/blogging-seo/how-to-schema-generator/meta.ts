@@ -51,7 +51,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How-To Schema Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'How-To Schema Generator',
   description:
     'Generate valid howto schema JSON-LD for your tutorials in seconds. List steps, time, and cost, then copy the ready-to-paste markup. Try it free now!',
   howTo: [
