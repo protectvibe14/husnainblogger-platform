@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Internal Link Finder 2026 – Free Tool | HusnainBlogger',
+  title: 'Internal Link Finder',
   description:
     'Find internal linking opportunities fast. Paste your article plus target pages and this free internal link finder matches keywords to context. Try it now!',
   howTo: [
