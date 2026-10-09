@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Open Graph Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Open Graph Generator',
   description:
     'Create perfect Open Graph meta tags for any page in seconds. Enter title, description, URL, and image, then copy the ready-to-paste tags. Try it free!',
   howTo: [
