@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Keyword Clustering Tool – Free SEO 2026 | HusnainBlogger',
+  title: 'Keyword Clustering Tool – Free SEO 2027',
   description:
     'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now. No signup.',
   howTo: [
