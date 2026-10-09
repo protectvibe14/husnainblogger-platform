@@ -44,7 +44,7 @@ const DESCRIPTION =
   'Run a flawless upload with this free video export checklist: pick your platform and project details to get a tailored pre-render checklist. Start now.';
 
 export const content: ToolContent = {
-  title: 'Video Export Checklist 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Export Checklist',
   description: DESCRIPTION,
   howTo: [
     'Select your upload platform: YouTube, TikTok, Instagram Reels, or Facebook.',
