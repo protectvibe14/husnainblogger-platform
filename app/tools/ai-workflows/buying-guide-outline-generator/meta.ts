@@ -45,7 +45,7 @@ const DESCRIPTION =
   "Build a buying guide template with budget tiers, key criteria, and pick slots for any product category. Free outline generator, no signup needed.";
 
 export const content: ToolContent = {
-  title: "Buying Guide Template',
+  title: "Buying Guide Template",
   description: DESCRIPTION,
   howTo: [
     "Enter your product category (required).",
