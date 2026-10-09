@@ -130,52 +130,62 @@ const appJsonLd = {
         <h2 id="hb-about">What is {cap(primaryKw)}? <span class="hb-year">2027 Guide</span></h2>
         <div class="hb-prose">
           <p>
-            <strong>{tool.name}</strong> is a free online {primaryKw} that helps you get
-            accurate results in seconds. Whether you're searching for
-            {secondaryKws.length > 0 ? ` ${secondaryKws.slice(0, 2).join(' or ')}` : ' related solutions'},
-            this tool is built to handle it — no signup, no downloads, no watermarks.
+            <strong>{tool.name}</strong> — {content.description}
           </p>
-          <p>
-            Everything runs directly in your browser, so your data stays private.
-            It's designed for creators, freelancers, marketers, and anyone who needs
-            a fast, reliable {primaryKw} without the hassle.
-          </p>
+          {content.methodology ? (
+            <p>{content.methodology}</p>
+          ) : (
+            <p>
+              {secondaryKws.length > 0
+                ? `Looking for ${secondaryKws.slice(0, 2).join(' or ')}? You're in the right place. `
+                : ''}
+              Enter your details above and get instant, accurate results — free, private, and with no signup required.
+            </p>
+          )}
         </div>
       </section>
 
-      <!-- ===== KEY FEATURES ===== -->
+      <!-- ===== KEY FEATURES (tool-specific, from content) ===== -->
       <section class="hb-section" aria-labelledby="hb-features">
-        <h2 id="hb-features">Key features</h2>
+        <h2 id="hb-features">Why use this {primaryKw}?</h2>
         <div class="hb-cards3">
           <div class="hb-card">
             <div class="hb-card__icon">🎯</div>
             <h3>Built for {primaryKw}</h3>
-            <p>Designed around the exact workflow behind "{primaryKw}" — no clutter, just accurate results fast.</p>
+            <p>{content.description}</p>
           </div>
-          <div class="hb-card">
-            <div class="hb-card__icon">⚡</div>
-            <h3>Instant &amp; free forever</h3>
-            <p>No accounts, no limits, no watermarks. Use it as many times as you need, whenever you need it.</p>
-          </div>
+          {content.assumptions && content.assumptions.length > 0 ? (
+            <div class="hb-card">
+              <div class="hb-card__icon">📋</div>
+              <h3>Transparent &amp; honest</h3>
+              <p>{content.assumptions[0]}</p>
+            </div>
+          ) : (
+            <div class="hb-card">
+              <div class="hb-card__icon">⚡</div>
+              <h3>Instant results</h3>
+              <p>Get your {primaryKw} results in seconds — no waiting, no processing delays.</p>
+            </div>
+          )}
           <div class="hb-card">
             <div class="hb-card__icon">🔒</div>
             <h3>Private by design</h3>
-            <p>Everything runs in your browser. Your inputs never leave your device — complete privacy guaranteed.</p>
+            <p>Everything runs in your browser. Your inputs never leave your device.</p>
           </div>
           <div class="hb-card">
             <div class="hb-card__icon">📱</div>
             <h3>Works everywhere</h3>
-            <p>Fully responsive design works perfectly on desktop, tablet, and mobile. No app install required.</p>
+            <p>Fully responsive — perfect on desktop, tablet, and mobile. No app needed.</p>
           </div>
           <div class="hb-card">
             <div class="hb-card__icon">🔄</div>
-            <h3>Always up to date</h3>
-            <p>Regularly maintained and improved. This page was last reviewed to ensure accuracy for 2026.</p>
+            <h3>Updated for 2027</h3>
+            <p>Regularly maintained and reviewed to ensure accuracy for 2027.</p>
           </div>
           <div class="hb-card">
             <div class="hb-card__icon">💡</div>
-            <h3>Easy to use</h3>
-            <p>Clean, intuitive interface. Enter your inputs, get results — it's that simple. No learning curve.</p>
+            <h3>Free forever</h3>
+            <p>No accounts, no limits, no watermarks. Use {tool.name} as much as you need.</p>
           </div>
         </div>
       </section>
@@ -198,16 +208,25 @@ const appJsonLd = {
       <!-- ===== USE CASES (secondary keyword targeting) ===== -->
       {secondaryKws.length > 0 && (
         <section class="hb-section" aria-labelledby="hb-usecases">
-          <h2 id="hb-usecases">Who uses this tool?</h2>
-          <div class="hb-prose">
-            <p>This versatile tool serves multiple needs:</p>
-          </div>
+          <h2 id="hb-usecases">What can you do with {tool.name}?</h2>
           <ul class="hb-usecases">
             {secondaryKws.map((kw) => (
               <li>
                 <strong>{cap(kw)}</strong>
-                <span> — Get professional results for {kw} in one click.</span>
+                <span> — {content.description.split('.')[0]}.</span>
               </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <!-- ===== GOOD TO KNOW (assumptions = unique trust content) ===== -->
+      {content.assumptions && content.assumptions.length > 0 && (
+        <section class="hb-section" aria-labelledby="hb-assumptions">
+          <h2 id="hb-assumptions">Good to know</h2>
+          <ul class="hb-assumptions">
+            {content.assumptions.map((a) => (
+              <li>{a}</li>
             ))}
           </ul>
         </section>
