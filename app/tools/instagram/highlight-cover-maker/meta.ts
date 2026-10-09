@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Design matching covers with this free instagram highlight cover maker — pick a color or gradient, add an icon and label, download the SVG. Free, no signup.';
 
 export const content: ToolContent = {
-  title: 'Instagram Highlight Cover Maker 2026 – Free | HusnainBlogger',
+  title: 'Instagram Highlight Cover Maker',
   description: DESCRIPTION,
   howTo: [
     'Add a row for each highlight cover you want to make.',
