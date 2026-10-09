@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Testimonial Request Email Template 2026 | HusnainBlogger',
+  title: 'Testimonial Request Email Template 2027',
   description:
     'Write a testimonial request email template that gets replies. Add your client, product, and ask to get 5 subject lines plus a ready draft. Try it free!',
   howTo: [
