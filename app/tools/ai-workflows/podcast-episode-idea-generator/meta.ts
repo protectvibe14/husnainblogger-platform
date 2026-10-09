@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Podcast Episode Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Podcast Episode Ideas',
   description:
     'Spark your next episodes — combine your show theme with 6 fixed title formulas and segment breakdowns. Free podcast episode ideas generator. Start planning now!',
   howTo: [
