@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Follower Goal Tracker 2026 – Free | HusnainBlogger',
+  title: 'Instagram Follower Goal Tracker',
   description:
     'Track your Instagram follower goals with this free manual milestone tracker. Add targets, log your counts by hand, and see progress instantly. Try it now!',
   howTo: [
