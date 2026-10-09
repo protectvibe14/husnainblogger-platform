@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Reels Cover Text Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Reels Cover Text Ideas',
   description:
     'Generate reels cover text ideas free. Enter your topic, pick a tone, and get short readable cover titles with safe-zone guidance. Create titles now!',
   howTo: [
