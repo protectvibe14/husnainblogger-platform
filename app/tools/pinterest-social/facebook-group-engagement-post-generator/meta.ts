@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Group Engagement Posts 2026 – Free | HusnainBlogger',
+  title: 'Facebook Group Engagement Posts',
   description:
     'Get the best facebook group engagement posts for your community with this free generator: enter your group type to get conversation-led drafts. Try it now!',
   howTo: [
