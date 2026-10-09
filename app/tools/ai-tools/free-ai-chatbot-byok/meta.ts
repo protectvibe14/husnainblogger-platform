@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'Free AI Chatbot (BYOK) 2026 – Free Tool | HusnainBlogger',
+  title: 'Free AI Chatbot (BYOK)',
   description:
     'Chat with AI using your own free Gemini, Groq, or OpenRouter key — or try the keyless demo lane. Your key stays in your browser. No signup, no cost to us.',
   howTo: [
