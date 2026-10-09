@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinned Tweet Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Pinned Tweet Ideas',
   description:
     'Get pinned tweet ideas that convert: pick offer, proof, or announcement and receive 5 CTA-led drafts within X\'s 280-char limit. Free — try it now!',
   howTo: [
