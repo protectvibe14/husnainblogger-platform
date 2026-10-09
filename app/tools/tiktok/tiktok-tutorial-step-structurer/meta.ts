@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Structure a Tiktok Tutorial 2026 | HusnainBlogger',
+  title: 'How to Structure a Tiktok Tutorial 2027',
   description:
     'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private, no signup - try!',
   howTo: [
