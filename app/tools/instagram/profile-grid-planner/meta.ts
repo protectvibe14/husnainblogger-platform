@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Grid Planner | HusnainBlogger',
+  title: 'Instagram Grid Planner',
   description:
     'Plan your Instagram grid layout free with a 3x3 visual planner. Map nine posts, preview rows and gaps, and export a storage-safe plan. Start planning now!',
   howTo: [
