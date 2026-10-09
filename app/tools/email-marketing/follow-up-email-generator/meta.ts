@@ -42,7 +42,7 @@ const DESCRIPTION =
   'Free follow up email generator: pick sequence step 1–5, enter your original subject and goal, and get 4 subject options plus a full body draft. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Follow Up Email Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Follow Up Email Generator',
   description: DESCRIPTION,
   howTo: [
     'Choose your sequence step (1 = first bump, 5 = final break-up nudge).',
