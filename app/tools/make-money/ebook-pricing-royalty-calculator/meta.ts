@@ -53,7 +53,7 @@ const DESCRIPTION =
   'See the per-sale royalty for your Kindle eBook or paperback under the KDP schedule with this free ebook pricing calculator. Verify rates first.';
 
 export const content: ToolContent = {
-  title: 'eBook Pricing Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'eBook Pricing Calculator',
   description: DESCRIPTION,
   howTo: [
     'Choose your format: Kindle eBook or paperback.',
