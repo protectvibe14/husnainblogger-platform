@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Audio Transcriber 2026 – Free Tool | HusnainBlogger',
+  title: 'Ai Audio Transcriber',
   description:
     'Transcribe audio free with AI in your browser — MP3, WAV, M4A to text, .txt download, no signup. Speech recognition runs 100% on your device.',
   howTo: [
