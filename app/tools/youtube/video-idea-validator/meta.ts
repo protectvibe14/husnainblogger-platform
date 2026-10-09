@@ -61,7 +61,7 @@ const DESCRIPTION =
   'Use this free YouTube video idea validator to score any idea on five transparent factors and get a greenlight, refine, or park verdict. Score it now!';
 
 export const content: ToolContent = {
-  title: 'YouTube Video Idea Validator | HusnainBlogger',
+  title: 'YouTube Video Idea Validator',
   description: DESCRIPTION,
   howTo: [
     'Type your video idea title into the first field.',
