@@ -82,7 +82,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Storytime Script TikTok 2026 – Free Tool | HusnainBlogger',
+  title: 'Storytime Script TikTok',
   description: DESCRIPTION,
   howTo: [
     'Add one item per story and type the "Story title" plus your niche.',
