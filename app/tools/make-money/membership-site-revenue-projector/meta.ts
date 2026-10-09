@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Membership Site Revenue Calculator 2026 | HusnainBlogger',
+  title: 'Membership Site Revenue Calculator 2027',
   description:
     'Project your community income with this free membership site revenue calculator — model signups, churn, and MRR month by month. Start projecting now.',
   howTo: [
