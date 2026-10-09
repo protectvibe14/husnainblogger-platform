@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Write a TikTok series trailer script from your episode list — tease beats per episode, montage cues, and a subscribe CTA. Free. Build your trailer now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Series Trailer Script 2026 – Free | HusnainBlogger',
+  title: 'TikTok Series Trailer Script',
   description: DESCRIPTION,
   howTo: [
     'Add one item per episode (2 to 20) — each with your series title and that episode\'s topic.',
