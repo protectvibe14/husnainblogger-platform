@@ -65,7 +65,7 @@ const DESCRIPTION =
   'Plan your footage storage with this free video project storage planner: enter clips, bitrates and backup copies to size your drive needs. Calculate now.';
 
 export const content: ToolContent = {
-  title: 'Video Project Storage Planner 2026 – Free | HusnainBlogger',
+  title: 'Video Project Storage Planner',
   description: DESCRIPTION,
   howTo: [
     'Add one item per clip: give it a label and enter its duration in seconds.',
