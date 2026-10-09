@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Description Template 2026 – Free | HusnainBlogger',
+  title: 'YouTube Description Template | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Add one item per video and enter the video topic (required) plus your keywords, comma-separated.',
