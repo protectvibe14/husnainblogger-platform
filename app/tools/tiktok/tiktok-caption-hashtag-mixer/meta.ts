@@ -49,7 +49,7 @@ const DESCRIPTION =
   'Build a TikTok caption hashtag mixer for any niche — niche, broad, and community mixes sized to fit the 2,200-character limit. Free. Mix your caption now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Caption Hashtag Mixer 2026 – Free | HusnainBlogger',
+  title: 'TikTok Caption Hashtag Mixer',
   description: DESCRIPTION,
   howTo: [
     'Type your niche — for example "vegan baking" — and the tool picks a matching hashtag bank (12 categories, plus a generic fallback).',
