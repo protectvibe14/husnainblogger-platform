@@ -23,7 +23,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Negative Prompt Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Negative Prompt Generator',
   description:
     'Use this free negative prompt generator: list what your image generator should avoid and get one clean comma-joined prompt string. No signup - build yours now!',
   howTo: [
