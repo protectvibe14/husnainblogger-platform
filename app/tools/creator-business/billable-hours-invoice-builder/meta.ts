@@ -93,7 +93,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Billable Hours Tracker for Freelancers 2026 | HusnainBlogger',
+  title: 'Billable Hours Tracker for Freelancers 2027',
   description:
     'Turn tracked hours into invoices with this billable hours tracker for freelancers: add line items, your tax rate, and copy the itemized result. Free \u2014 try it!',
   howTo: [
