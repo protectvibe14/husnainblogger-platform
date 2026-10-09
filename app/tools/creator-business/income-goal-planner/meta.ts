@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Income Goal Planner 2026 – Free | HusnainBlogger',
+  title: 'Freelance Income Goal Planner',
   description: DESCRIPTION,
   howTo: [
     'Enter your annual income goal and your average client value per month (both required).',
