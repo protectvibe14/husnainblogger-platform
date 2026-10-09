@@ -56,7 +56,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Affiliate Disclosure Generator 2026 – Free | HusnainBlogger',
+  title: 'Affiliate Disclosure Generator',
   description:
     'Create a compliant-ready affiliate disclosure with this free affiliate disclosure generator. Pick a placement, add programs, and copy text or HTML now!',
   howTo: [
