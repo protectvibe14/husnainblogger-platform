@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Image Aspect Ratio Guide 2026 – Free | HusnainBlogger',
+  title: 'AI Image Aspect Ratio Guide',
   description:
     'Use this AI image aspect ratio guide: enter width and height or pick a preset, get the simplified ratio, nearest presets, and crop guidance. Free.',
   howTo: [
