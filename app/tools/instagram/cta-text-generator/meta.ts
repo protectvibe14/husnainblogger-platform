@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Call To Action Instagram Post 2026 – Free | HusnainBlogger',
+  title: 'Call To Action Instagram Post',
   description:
     'Write a call to action Instagram post that gets comments, saves, and shares. Pick your goal, get proven CTA lines free — no signup needed. Try it now!',
   howTo: [
