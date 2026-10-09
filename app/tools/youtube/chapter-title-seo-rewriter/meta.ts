@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Chapter Title Ideas 2026 – Free | HusnainBlogger',
+  title: 'Youtube Chapter Title Ideas | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your timestamped chapter list into "Chapter list" — one chapter per line, like "0:00 Intro".',
