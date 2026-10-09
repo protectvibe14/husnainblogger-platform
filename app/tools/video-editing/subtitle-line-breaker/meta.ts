@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Subtitle Line Breaker 2026 – Free Tool | HusnainBlogger',
+  title: 'Subtitle Line Breaker',
   description:
     'Free subtitle line breaker 2026: Break subtitle lines automatically: paste a subtitle cue, set max chars per line, get. Fast, private, no signup - try it now!',
   howTo: [
