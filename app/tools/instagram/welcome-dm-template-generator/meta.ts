@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Welcome Dm New Followers Instagram 2026 | HusnainBlogger',
+  title: 'Welcome Dm New Followers Instagram 2027 | HusnainBlogger',
   description:
     'Write welcome DMs for new followers with this free welcome dm new followers instagram tool. Add your brand, offer, tone for copy-ready templates. Try it now!',
   howTo: [
