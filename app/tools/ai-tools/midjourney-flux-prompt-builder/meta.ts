@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Midjourney & Flux Prompt Builder 2026 | HusnainBlogger',
+  title: 'Midjourney & Flux Prompt Builder 2027',
   description:
     'Build copy-ready Midjourney and Flux image prompts from fixed style templates: 8 styles, 3 detail levels, 5 aspect ratios. Free prompt builder — paste and run.',
   howTo: [
