@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Product Launch Email Sequence 2026 – Free | HusnainBlogger',
+  title: 'Product Launch Email Sequence',
   description:
     'Plan a product launch email sequence fast: enter your product, launch date, and audience for 7 emails with phases, send dates, and drafts. Free, no signup.',
   howTo: [
