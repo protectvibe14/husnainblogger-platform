@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Get YouTube end screen ideas with this free tool — build a 60–120 second ending with timed script beats and a clear end-screen runway. Plan your ending now!';
 
 export const content: ToolContent = {
-  title: 'YouTube End Screen Ideas | HusnainBlogger',
+  title: 'YouTube End Screen Ideas',
   description: DESCRIPTION,
   howTo: [
     'Enter your video topic in the Video topic field.',
