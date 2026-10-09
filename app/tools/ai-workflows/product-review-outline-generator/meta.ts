@@ -39,7 +39,7 @@ const DESCRIPTION =
   "Generate a complete product review template outline with testing-note slots for hands-on, comparison, or roundup reviews. Free forever, no signup required.";
 
 export const content: ToolContent = {
-  title: "Product Review Template',
+  title: "Product Review Template",
   description: DESCRIPTION,
   howTo: [
     "Enter your product name (required).",
