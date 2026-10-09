@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Generator 2026 – Free | HusnainBlogger',
+  title: 'Email Subject Line Generator',
   description:
     'Free email subject line generator 2026: generate catchy email subject lines free: pick a purpose, topic, audience, and tone — get. Fast, private, no signup -!',
   howTo: [
