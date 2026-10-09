@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Comment Reply Ideas 2026 – Free | HusnainBlogger',
+  title: 'TikTok Comment Reply Ideas',
   description:
     'Get free tiktok comment reply ideas: paste any comment and get funny, warm, witty, and reply-with-video templates to choose from. Generate replies now!',
   howTo: [
