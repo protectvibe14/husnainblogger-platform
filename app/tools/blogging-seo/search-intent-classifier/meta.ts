@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Search Intent Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Search Intent Checker',
   description:
     'Check search intent in seconds: informational, commercial, transactional or navigational. Free search intent checker — classify your keyword now!',
   howTo: [
