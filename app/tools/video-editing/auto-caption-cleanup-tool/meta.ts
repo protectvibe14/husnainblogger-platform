@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Clean Up Auto Captions 2026 – Free Tool | HusnainBlogger',
+  title: 'Clean Up Auto Captions',
   description:
     'Clean up auto captions fast: strip filler words, fix caps and punctuation, re-wrap lines from text, SRT, or VTT with a change log. Try it free.',
   howTo: [
