@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Board Cover Maker 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Board Cover Maker',
   description: DESCRIPTION,
   howTo: [
     'Add one item per board and type the "Board name" (2-60 characters — anything outside that range is rejected).',
