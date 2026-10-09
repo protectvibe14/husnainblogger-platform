@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Discovery Call Questions 2026 – Free Tool | HusnainBlogger',
+  title: 'Discovery Call Questions',
   description:
     'Get discovery call questions that fit your goal: pick your service and choose qualify, scope, or close to receive a grouped list of proven questions. Free.',
   howTo: [
