@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Quiz Lead Magnet Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Quiz Lead Magnet Ideas',
   description:
     'Plan quizzes with this free quiz lead magnet ideas generator: get titles, sample questions, and result types for segment, entertain, or qualify. Start now!',
   howTo: [
