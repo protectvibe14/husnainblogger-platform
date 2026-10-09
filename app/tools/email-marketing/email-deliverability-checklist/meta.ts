@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Free email deliverability checklist 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Email Deliverability Checklist 2026 – Free | HusnainBlogger',
+  title: 'Email Deliverability Checklist',
   description: DESCRIPTION,
   howTo: [
     'Open the checklist before your next email send.',
