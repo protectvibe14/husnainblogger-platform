@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Comment Analysis 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Comment Analysis',
   description:
     'Run free tiktok comment analysis: paste your comments and get word-frequency tables, top phrases, and content-idea seeds from real terms. Analyze now!',
   howTo: [
