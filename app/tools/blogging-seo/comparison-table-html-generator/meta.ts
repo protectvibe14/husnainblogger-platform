@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Comparison Table Generator 2026 – Free | HusnainBlogger',
+  title: 'Comparison Table Generator',
   description:
     'Build a clean comparison table for your blog in seconds. Enter headers and rows, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
   howTo: [
