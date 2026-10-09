@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Duplicate Content Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Duplicate Content Checker',
   description:
     'Compare two texts for duplicated passages. This free duplicate content checker scores word-sequence overlap with the Jaccard index — no signup. Compare now!',
   howTo: [
