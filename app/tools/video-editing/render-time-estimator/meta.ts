@@ -55,7 +55,7 @@ const DESCRIPTION =
   'Estimate your export time with this free video render time estimator: enter duration, resolution, effects and device tier for a rough range. Try it free.';
 
 export const content: ToolContent = {
-  title: 'Video Render Time Estimator 2026 – Free | HusnainBlogger',
+  title: 'Video Render Time Estimator',
   description: DESCRIPTION,
   howTo: [
     'Enter your video duration in seconds and its frame rate (e.g. 30).',
