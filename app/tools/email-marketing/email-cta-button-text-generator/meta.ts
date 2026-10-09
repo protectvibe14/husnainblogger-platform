@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email CTA Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Email CTA Generator',
   description:
     'Free email cta generator 2026: Write better email CTA buttons free: describe the action, pick a tone, and get verb-first. Fast, private, no signup - try it now!',
   howTo: [
