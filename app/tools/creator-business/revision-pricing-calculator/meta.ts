@@ -81,7 +81,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Charge for Extra Revisions 2026 | HusnainBlogger',
+  title: 'How to Charge for Extra Revisions 2027',
   description:
     'Price extra revisions fairly in seconds. Enter your fee, included rounds, and pricing mode to get the revision fee and new total. Free - try it now!',
   howTo: [
