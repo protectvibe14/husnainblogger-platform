@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok SEO Keywords 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok SEO Keywords',
   description: DESCRIPTION,
   howTo: [
     'Type your seed topic — the core subject you want to rank for (e.g. meal prep).',
