@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time to Post on Tiktok Planner 2026 | HusnainBlogger',
+  title: 'Best Time to Post on Tiktok Planner 2027',
   description:
     'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no!',
   howTo: [
