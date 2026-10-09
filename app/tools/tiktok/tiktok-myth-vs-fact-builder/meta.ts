@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Myth vs Fact TikTok 2026 – Free Tool | HusnainBlogger',
+  title: 'Myth vs Fact TikTok',
   description:
     'Build a myth vs fact tiktok video from your claims: hook, myth setup, reveal, fact beat, and CTA. Never invents facts — free template builder. Try it now!',
   howTo: [
