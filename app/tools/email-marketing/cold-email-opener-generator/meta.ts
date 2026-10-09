@@ -33,7 +33,7 @@ const DESCRIPTION =
   'Free cold email opener generator: enter prospect context, industry, and tone to get 6 openers in friendly, professional, playful, or direct styles. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Cold Email Opener Generator 2026 – Free | HusnainBlogger',
+  title: 'Cold Email Opener Generator',
   description: DESCRIPTION,
   howTo: [
     'Describe the prospect’s context — a real, verifiable fact like a new office or recent post.',
