@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Chroma Key Color Picker 2026 – Free Tool | HusnainBlogger',
+  title: 'Chroma Key Color Picker',
   description:
     "Free chroma key color picker 2026: Pick the right chroma key color for your shoot: enter subject colors to get a recommended. Fast, private, no signup - try it!",
   howTo: [
