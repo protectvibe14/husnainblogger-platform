@@ -71,7 +71,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'System Prompt Builder 2026 – Free Tool | HusnainBlogger',
+  title: 'System Prompt Builder',
   description:
     'Assemble a clean system prompt from a fixed template: role, audience, tone, do/don\u2019t lists and constraints. Free builder — copy and paste into any AI tool.',
   howTo: [
