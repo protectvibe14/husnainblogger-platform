@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Substack Revenue Calculator 2026 – Free | HusnainBlogger',
+  title: 'Substack Revenue Calculator',
   description:
     'Calculate your newsletter earnings with this free substack revenue calculator — see gross revenue, the 10% platform fee, and Stripe fees. Try it free.',
   howTo: [
