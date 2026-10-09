@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'UGC Portfolio Builder 2026 – Free Tool | HusnainBlogger',
+  title: 'UGC Portfolio Builder',
   description: DESCRIPTION,
   howTo: [
     'Add one entry per portfolio piece, using the same creator name on every entry.',
