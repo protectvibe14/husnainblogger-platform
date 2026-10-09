@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Banner Text Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Banner Text Ideas',
   description:
     'Get twitter banner text ideas fast: turn your tagline and offer into short, high-contrast banner lines under 60 characters. Create yours free now!',
   howTo: [
