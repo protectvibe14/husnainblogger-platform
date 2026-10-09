@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Post SEO Checklist 2026 – Free Guide | HusnainBlogger',
+  title: 'Blog Post SEO Checklist',
   description:
     'Free blog post SEO checklist 2026: auto-check your title, meta description and keyword plus 8 manual on-page items before you publish. No signup. Free to use. Free to use.',
   howTo: [
