@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Content Pillars 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Content Pillars',
   description: DESCRIPTION,
   howTo: [
     'Type your niche — every pillar, topic, and schedule line is written around it.',
