@@ -55,7 +55,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Milestone Payment Schedule 2026 | HusnainBlogger',
+  title: 'Freelance Milestone Payment Schedule 2027',
   description:
     'Plan a freelance milestone payment schedule in seconds. Split any contract into milestones, verify the 100% total, get a timeline. Free - try it now!',
   howTo: [
