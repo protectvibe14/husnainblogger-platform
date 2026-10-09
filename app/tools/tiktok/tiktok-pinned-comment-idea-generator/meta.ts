@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Pinned Comment Ideas 2026 – Free | HusnainBlogger',
+  title: 'TikTok Pinned Comment Ideas',
   description:
     'Get free tiktok pinned comment ideas: 8 comment templates (questions, CTAs, link-in-bio, follow-ups), all within TikTok\'s 150-char limit. Try it now!',
   howTo: [
