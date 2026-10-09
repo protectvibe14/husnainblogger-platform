@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Image Detector 2026 – Free Tool | HusnainBlogger',
+  title: 'Ai Image Detector',
   description:
     'Free local metadata forensics on any image — EXIF, XMP, C2PA, no-metadata signals — plus an optional Hive cloud check with your key. No signup.',
   howTo: [
