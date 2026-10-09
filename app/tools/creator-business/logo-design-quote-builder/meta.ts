@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Free logo design quote template 2026: Design fee plus every line item, ending with the quote total. Get instant results. No signup - try it free now!';
 
 export const content: ToolContent = {
-  title: 'Logo Design Quote Template 2026 – Free | HusnainBlogger',
+  title: 'Logo Design Quote Template',
   description: DESCRIPTION,
   howTo: [
     'On the first row, enter your quote settings: number of concepts, revision rounds, deliverable formats, your per-concept base rate, rush (yes/no), and usage scope.',
