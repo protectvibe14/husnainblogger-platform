@@ -1,0 +1,170 @@
+---
+/**
+ * pages/about.astro — About HusnainBlogger.
+ * Owner: Site.
+ *
+ * Human, honest about page for trust (AdSense E-E-A-T) and visitors.
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About Us | HusnainBlogger";
+const description =
+  "HusnainBlogger offers 569+ free online tools for creators, bloggers, YouTubers, and freelancers. No signup, private by design, free forever.";
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="https://husnainblogger.com/about/"
+>
+  <main class="hb-about">
+    <div class="hb-about__hero">
+      <span class="hb-tool-eyebrow">About us</span>
+      <h1>Free tools, built for creators.</h1>
+      <p class="hb-about__lede">
+        HusnainBlogger is a collection of 569+ free online tools for bloggers,
+        YouTubers, TikTokers, freelancers, and small business owners.
+        Every tool runs entirely in your browser — no signup, no paywalls,
+        no uploads. Your data never leaves your device.
+      </p>
+    </div>
+
+    <section class="hb-about__section">
+      <h2>Why we built this</h2>
+      <p>
+        Most "free" tools online come with a catch: forced signups, watermarks,
+        daily limits, or your files uploaded to someone else's server. We got
+        tired of that. So we built the toolkit we always wanted — fast,
+        private, and genuinely free.
+      </p>
+      <p>
+        Whether you're calculating Stripe fees before a client invoice,
+        generating YouTube titles at midnight, or checking your blog's
+        readability score — there's a tool here for that, and it just works.
+      </p>
+    </section>
+
+    <section class="hb-about__section">
+      <h2>What makes us different</h2>
+      <ul class="hb-about__list">
+        <li>
+          <strong>🔒 Private by design.</strong> Everything runs client-side in
+          your browser. We don't see, store, or sell your inputs — because
+          they never reach our servers.
+        </li>
+        <li>
+          <strong>♾️ Free forever.</strong> No accounts, no trial periods, no
+          "premium" upsells blocking the features you need.
+        </li>
+        <li>
+          <strong>⚡ No bloat.</strong> Each tool does one thing well. No
+          50-megabyte page loads, no popups fighting for your attention.
+        </li>
+        <li>
+          <strong>📱 Works everywhere.</strong> Desktop, tablet, phone — every
+          tool is fully responsive with no app install required.
+        </li>
+      </ul>
+    </section>
+
+    <section class="hb-about__section">
+      <h2>Our tool categories</h2>
+      <p>
+        From AI helpers to fee calculators, SEO tools to social media
+        generators — our 11 categories cover the everyday needs of modern
+        creators:
+      </p>
+      <div class="hb-about__cats">
+        <a href="/tools/ai-tools-tools/">AI Tools</a>
+        <a href="/tools/blogging-seo-tools/">Blogging &amp; SEO</a>
+        <a href="/tools/youtube-tools/">YouTube</a>
+        <a href="/tools/tiktok-tools/">TikTok</a>
+        <a href="/tools/instagram-tools/">Instagram</a>
+        <a href="/tools/make-money-tools/">Make Money</a>
+        <a href="/tools/email-marketing-tools/">Email Marketing</a>
+        <a href="/tools/creator-business-tools/">Creator Business</a>
+        <a href="/tools/video-editing-tools/">Video Editing</a>
+        <a href="/tools/pinterest-social-tools/">Pinterest &amp; Social</a>
+        <a href="/tools/ai-workflows-tools/">AI Workflows</a>
+      </div>
+    </section>
+
+    <section class="hb-about__section">
+      <h2>Get in touch</h2>
+      <p>
+        Found a bug? Have a tool suggestion? Just want to say hi? We read
+        every message.
+      </p>
+      <a href="/contact/" class="hb-btn hb-btn--gold">Contact us</a>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hb-about {
+    max-width: var(--content-narrow);
+    margin: 0 auto;
+    padding: var(--space-16) var(--space-6) var(--space-20);
+  }
+  .hb-about__hero { text-align: center; margin-bottom: var(--space-12); }
+  .hb-about__hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    letter-spacing: var(--letter-tight);
+    margin: var(--space-4) 0 var(--space-4);
+  }
+  .hb-about__lede {
+    font-size: var(--text-lg);
+    color: var(--color-muted);
+    line-height: var(--leading-normal);
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+  .hb-about__section { margin-bottom: var(--space-10); }
+  .hb-about__section h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+  .hb-about__section p {
+    color: var(--color-text);
+    line-height: var(--leading-normal);
+    margin-bottom: var(--space-4);
+  }
+  .hb-about__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .hb-about__list li {
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    line-height: var(--leading-normal);
+  }
+  .hb-about__cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .hb-about__cats a {
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .hb-about__cats a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+</style>
