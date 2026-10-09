@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Bold Text Generator 2026 – Free | HusnainBlogger',
+  title: 'Twitter Bold Text Generator',
   description:
     'Free twitter bold text generator and post formatter. Clean up spacing and line breaks, check your 280-character budget, and get a bold version. Try it!',
   howTo: [
