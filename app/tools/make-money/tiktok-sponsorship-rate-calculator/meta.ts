@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: "Tiktok Sponsorship Rates',
+  title: "Tiktok Sponsorship Rates",
   description:
     "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range — try it now.",
   howTo: [
