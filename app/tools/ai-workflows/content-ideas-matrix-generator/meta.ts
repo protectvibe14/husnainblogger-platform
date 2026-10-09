@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Ideas Matrix Generator 2026 – Free | HusnainBlogger',
+  title: 'Content Ideas Matrix Generator',
   description:
     'Cross your topics with your formats into a content ideas matrix: every cell gets a working-title template. Free, template-based, no signup - start now!',
   howTo: [
