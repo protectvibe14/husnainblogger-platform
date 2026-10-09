@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Lead Magnet Title Generator 2026 – Free | HusnainBlogger',
+  title: 'Lead Magnet Title Generator',
   description:
     'Name your freebie with a lead magnet title generator. Enter your magnet type, topic, and outcome to get 10 catchy, character-counted titles. Try it free!',
   howTo: [
