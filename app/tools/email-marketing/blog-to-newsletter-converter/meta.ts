@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Repurpose Blog Post Into Newsletter 2026 | HusnainBlogger',
+  title: 'Repurpose Blog Post Into Newsletter 2027',
   description:
     'Turn a blog post into a newsletter — paste your text to get subject lines, an intro, excerpts, and a CTA block. Pasted text only, no signup. Convert now!',
   howTo: [
