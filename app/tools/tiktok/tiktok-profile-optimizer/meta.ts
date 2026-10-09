@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Optimize TikTok Profile 2026 – Free Tool | HusnainBlogger',
+  title: 'Optimize TikTok Profile',
   description:
     'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private, no signup - try it!',
   howTo: [
