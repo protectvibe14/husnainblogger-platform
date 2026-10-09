@@ -24,7 +24,7 @@ const DESCRIPTION =
   'Free email subject line analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Analyzer 2026 – Free | HusnainBlogger',
+  title: 'Email Subject Line Analyzer',
   description: DESCRIPTION,
   howTo: [
     'Paste your email subject line into the field above.',
