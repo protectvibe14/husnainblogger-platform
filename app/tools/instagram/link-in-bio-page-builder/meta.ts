@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Link in Bio Page Generator Free 2026 – Free | HusnainBlogger',
+  title: 'Link in Bio Page Generator Free',
   description:
     'Build a free link in bio page in seconds: add your links, preview a clean mobile-ready page, and download it as one HTML file. No signup — create yours now!',
   howTo: [
