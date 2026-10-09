@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Text Simplifier 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Text Simplifier',
   description: 'Rewrite complex text in plain, easy, or kid-friendly language with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
     'Pick a reading level: plain language, easy read, or kid-friendly.',
