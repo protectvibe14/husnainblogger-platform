@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Keyword Research Tool 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Keyword Research Tool',
   description:
     'Start pinterest keyword research with this free combiner. Enter seed keywords, add modifiers, and get deduplicated long-tail idea seeds in seconds. Try it now!',
   howTo: [
