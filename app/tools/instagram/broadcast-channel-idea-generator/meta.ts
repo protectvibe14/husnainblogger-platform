@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Broadcast Channel Ideas – 100+ Id 2027 | HusnainBlogger',
+  title: 'Instagram Broadcast Channel Ideas – 100+ Id 2027',
   description:
     'Launch your channel with free instagram broadcast channel ideas: channel names, descriptions, and first posts matched to your goal. Generate ideas now!',
   howTo: [
