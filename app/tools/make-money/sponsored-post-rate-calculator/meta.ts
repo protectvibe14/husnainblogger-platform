@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: "Sponsored Post Rate Calculator 2026 – Free | HusnainBlogger",
+  title: "Sponsored Post Rate Calculator',
   description:
     "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range — try it now.",
   howTo: [
