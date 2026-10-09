@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Comment Reply Templates | HusnainBlogger',
+  title: 'YouTube Comment Reply Templates',
   description:
     'Reply to YouTube comments faster with free copy-paste templates: pick a comment type and tone to get ready drafts with placeholders. Grab yours now!',
   howTo: [
