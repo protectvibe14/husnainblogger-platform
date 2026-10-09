@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Keyword Gap Analysis Template 2026 – Free | HusnainBlogger',
+  title: 'Keyword Gap Analysis Template',
   description:
     'Paste two keyword lists into this free keyword gap analysis template. Find competitor gaps and overlaps, then download the worksheet as a CSV file. Try it now!',
   howTo: [
