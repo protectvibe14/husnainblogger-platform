@@ -11,7 +11,7 @@ export const trackerMode: 'checklist' | 'library' = 'library';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'AI Prompts for Blogging 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Prompts for Blogging',
   description:
     'Browse a free library of AI prompts for blogging: 48 human-written templates for ideas, outlines, drafts, and SEO. Copy any prompt and start writing today.',
   howTo: [
