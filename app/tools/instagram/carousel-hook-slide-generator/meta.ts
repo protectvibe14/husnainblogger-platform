@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Carousel Hook Ideas | HusnainBlogger',
+  title: 'Carousel Hook Ideas',
   description:
     'Get free carousel hook ideas for your Instagram cover slide. Pick a topic and angle to get scroll-stopping hook options with visual notes. Try it now!',
   howTo: [
