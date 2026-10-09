@@ -82,7 +82,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Usage Rights Calculator Photography 2026 | HusnainBlogger',
+  title: 'Usage Rights Calculator Photography 2027',
   description:
     'Estimate photo usage-rights fees from your base fee and your own duration, territory, and channel multipliers. No rate tables — free forever. Try it now!',
   howTo: [
