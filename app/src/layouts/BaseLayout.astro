@@ -22,6 +22,7 @@
  *   activeNav    highlights one nav item: "tools" | "blog" | "video" | "ai" | null
  */
 import "../styles/luxury.css";
+import CookieConsent from "../components/CookieConsent.astro";
 
 interface Props {
   title: string;
@@ -55,8 +56,7 @@ const nav = [
 // 2) PUBLIC_GA4_MEASUREMENT_ID env var (Vercel dashboard).
 // Format: G-XXXXXXXXXX. The script renders ONLY when an ID is set.
 // The Measurement ID is public by design (visible in page source).
-import siteSettings from "../../../data/site-settings.json";
-const ga4MeasurementId = (
+import siteSettings from "../../../data/site-settings.json";const ga4MeasurementId = (
   (siteSettings as any).ga4MeasurementId?.trim() ||
   (import.meta.env.PUBLIC_GA4_MEASUREMENT_ID ?? "").trim()
 );
@@ -108,9 +108,19 @@ const ga4MeasurementId = (
 
     <footer class="hb-site-footer">
       <div class="hb-site-footer__inner">
+        <nav class="hb-site-footer__links" aria-label="Footer">
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-and-conditions/">Terms</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/cookies-policy/">Cookies</a>
+        </nav>
         <span>© 2027 HusnainBlogger. Free tools for creators.</span>
         <span>Made with precision for the creator economy.</span>
       </div>
     </footer>
+
+    <CookieConsent />
   </body>
 </html>
