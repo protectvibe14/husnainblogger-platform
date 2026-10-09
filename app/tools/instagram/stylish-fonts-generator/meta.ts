@@ -42,7 +42,7 @@ const DESCRIPTION =
   'Style your bio with this free instagram fonts generator — 12 unicode styles, copy-paste ready. Preview on your phone; styled text varies by device. Try it.';
 
 export const content: ToolContent = {
-  title: 'Instagram Fonts Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Instagram Fonts Generator',
   description: DESCRIPTION,
   howTo: [
     'Type the text you want to style (up to 500 characters) — your bio line, name, or caption.',
