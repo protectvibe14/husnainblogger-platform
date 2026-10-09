@@ -69,7 +69,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Kill Fee Calculator Freelance 2026 – Free | HusnainBlogger',
+  title: 'Kill Fee Calculator Freelance',
   description:
     'Calculate your freelance kill fee from your own contract terms. Enter the project value and stage, apply your percentage, and see the fee plus refund. Free!',
   howTo: [
