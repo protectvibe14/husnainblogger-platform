@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'OCR Text Extractor: Free Online 2026 – Free | HusnainBlogger',
+  title: 'OCR Text Extractor: Free Online',
   description:
     'Extract printed text from any image with a free on-device OCR model. No uploads and no API key — your image never leaves your browser, ever.',
   howTo: [
