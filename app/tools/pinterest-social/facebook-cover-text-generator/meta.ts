@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Cover Photo Text 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Cover Photo Text',
   description:
     'Find the best facebook cover photo text ideas with this free generator: enter your offer to get 5 short cover lines plus safe-zone guidance. Try it now!',
   howTo: [
