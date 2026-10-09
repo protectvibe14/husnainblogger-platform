@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Voice Cloning 2026 – Free Tool | HusnainBlogger',
+  title: 'Ai Voice Cloning',
   description:
     'Clone your voice with your own ElevenLabs key — upload a minute of speech, create the voice, then type any text and download the audio. No signup.',
   howTo: [
