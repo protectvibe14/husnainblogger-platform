@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Pillars Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Content Pillars Template',
   description:
     'Turn your niche into a fill-in content pillars template: pick 3-7 pillars, get numbered subtopic slots and format ideas. Free, no signup - plan today!',
   howTo: [
