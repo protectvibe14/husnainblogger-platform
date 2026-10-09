@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Question Keyword Generator 2026 – Free | HusnainBlogger',
+  title: 'Question Keyword Generator',
   description:
     'Generate question keyword ideas (who, what, how, why) from any seed keyword instantly. Free question keyword generator — expand your seed now!',
   howTo: [
