@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Bio Generator 2026 – Free Generator | HusnainBlogger',
+  title: 'Twitter Bio Generator',
   description:
     'Generate Twitter bio ideas fast: enter who you are and what you do to get 160-character X bio variants with a CTA. Free, instant — write yours now!',
   howTo: [
