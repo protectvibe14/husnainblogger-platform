@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Anchor Text Checker 2026 – Free SEO Tool | HusnainBlogger',
+  title: 'Anchor Text Checker',
   description:
     'Free anchor text checker 2026: measure exact-match ratio, Shannon entropy and anchor-type mix with risk flags. No signup — paste anchors, get your report.',
   howTo: [
