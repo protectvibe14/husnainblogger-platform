@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Abandoned Cart Email Template 2026 – Free | HusnainBlogger',
+  title: 'Abandoned Cart Email Template',
   description:
     'Free abandoned cart email template generator: pick email 1, 2, or 3, add your store and product, and get subject options plus a placeholder body. No signup.',
   howTo: [
