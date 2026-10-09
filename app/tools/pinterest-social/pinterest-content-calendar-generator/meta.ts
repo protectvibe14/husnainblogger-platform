@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Content Calendar Free 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Content Calendar Free',
   description:
     'Generate a free pinterest content calendar for any month: enter your niche, the month, and pins per week for a full dated pin schedule. Try it now!',
   howTo: [
