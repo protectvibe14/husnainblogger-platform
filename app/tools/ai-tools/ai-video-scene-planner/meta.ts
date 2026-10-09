@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Scene Planner for AI Video 2026 | HusnainBlogger',
+  title: 'Video Scene Planner for AI Video 2027',
   description:
     'Plan AI video scenes step-by-step: enter your idea, target length and scene count for visual prompts, narration lines and exact durations. Free planner.',
   howTo: [
