@@ -25,7 +25,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Hashtag Tracker | HusnainBlogger',
+  title: 'Instagram Hashtag Tracker',
   description:
     'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare. Try it now.',
   howTo: [
