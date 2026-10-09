@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Content Planner 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Content Planner',
   description:
     'Plan each newsletter issue — arrange your sections into a fixed issue template with word-count targets. Free newsletter content planner. Plan your next issue!',
   howTo: [
