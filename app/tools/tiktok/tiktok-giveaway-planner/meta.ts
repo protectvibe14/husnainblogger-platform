@@ -43,7 +43,7 @@ const DESCRIPTION =
   'Free tiktok giveaway ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'TikTok Giveaway Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Giveaway Ideas',
   description: DESCRIPTION,
   howTo: [
     'Type your prize into the "Prize" box — for example "a $50 skincare bundle".',
