@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Script to Video Length 2026 – Free Tool | HusnainBlogger',
+  title: 'Script to Video Length',
   description:
     'Convert script to video length: paste your talking-head script, set your speaking rate, and get an estimated duration range with pause allowance. Free.',
   howTo: [
