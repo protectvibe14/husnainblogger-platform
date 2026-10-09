@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Voiceover Script 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Voiceover Script',
   description:
     'Format a free tiktok voiceover script: scene-numbered lines, pause markers, and caption-ready lines wrapped at 42 chars. Paste your raw script — try it now!',
   howTo: [
