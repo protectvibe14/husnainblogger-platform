@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Rush Fee Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Rush Fee Calculator',
   description:
     'Price rush work with confidence — enter your base price and rush percentage to get the surcharge and new total instantly. Free, no signup. Try it now!',
   howTo: [
