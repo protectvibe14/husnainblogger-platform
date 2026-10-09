@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Find Silence in Audio 2026 – Free Tool | HusnainBlogger',
+  title: 'Find Silence in Audio',
   description:
     'Free find silence in audio 2026: find dead air in voiceovers fast: paste dB level values to get every silence gap with. Fast, private, no signup - try it now!',
   howTo: [
