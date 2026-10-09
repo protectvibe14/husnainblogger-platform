@@ -48,7 +48,7 @@ const DESCRIPTION =
   'Free author bio generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Author Bio Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Author Bio Generator',
   description: DESCRIPTION,
   howTo: [
     'Enter the author’s name exactly as it should appear.',
