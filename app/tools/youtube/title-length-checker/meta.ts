@@ -23,7 +23,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Title Length Checker | HusnainBlogger',
+  title: 'YouTube Title Length Checker',
   description: DESCRIPTION,
   howTo: [
     'Paste your proposed video title into the "Proposed title" box.',
