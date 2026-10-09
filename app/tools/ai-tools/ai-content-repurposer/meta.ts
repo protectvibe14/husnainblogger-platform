@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Content Repurposer 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Content Repurposer',
   description:
     'Turn one piece of content into many: repurpose a blog post, script, or transcript into threads, LinkedIn posts, carousels, or newsletters with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
