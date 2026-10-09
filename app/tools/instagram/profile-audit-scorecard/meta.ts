@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Profile Audit 2026 – Free Tool | HusnainBlogger',
+  title: 'Instagram Profile Audit',
   description:
     'Run a free instagram profile audit: score your bio, name, grid, highlights, and CTA on a published rubric, get a 0–100 score and prioritized fixes. Try it now!',
   howTo: [
