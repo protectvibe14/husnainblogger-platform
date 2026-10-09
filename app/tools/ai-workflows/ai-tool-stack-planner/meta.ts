@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Tools Stack for Creators 2026 – Free | HusnainBlogger',
+  title: 'AI Tools Stack for Creators',
   description:
     'Build your AI stack: enter your monthly budget and use cases, then get one recommended tool per category with default pricing. Free - plan your stack now!',
   howTo: [
