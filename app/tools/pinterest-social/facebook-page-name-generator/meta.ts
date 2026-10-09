@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Page Name Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Page Name Ideas',
   description:
     'Get free facebook page name ideas for your business. Enter your business type and keywords to get 8 searchable name options. Check availability on Facebook!',
   howTo: [
