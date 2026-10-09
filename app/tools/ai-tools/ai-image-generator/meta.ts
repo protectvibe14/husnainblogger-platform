@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Image Generator 2026 – Free Generator | HusnainBlogger',
+  title: 'Ai Image Generator',
   description:
     'Turn text into AI images with your own API key — OpenRouter, Hugging Face or fal.ai. Describe the image, pick a ratio, and download the result. No signup.',
   howTo: [
