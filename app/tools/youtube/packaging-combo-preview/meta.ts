@@ -44,7 +44,7 @@ const DESCRIPTION =
   'Use this free YouTube packaging tester to combine title and thumbnail-text styles into clickable combos with text-only previews. Build combos now!';
 
 export const content: ToolContent = {
-  title: 'YouTube Packaging Tester | HusnainBlogger',
+  title: 'YouTube Packaging Tester',
   description: DESCRIPTION,
   howTo: [
     'Enter your video topic in the Topic field (keep it under 200 characters).',
