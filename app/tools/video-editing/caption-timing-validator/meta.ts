@@ -18,7 +18,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Subtitle Timing Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Subtitle Timing Checker',
   description:
     'Free subtitle timing checker 2026: check subtitle timing errors free: paste SRT or VTT to detect overlaps, zero-duration. Fast, private, no signup - try it now!',
   howTo: [
