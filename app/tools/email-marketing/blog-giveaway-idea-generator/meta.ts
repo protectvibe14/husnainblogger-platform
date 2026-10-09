@@ -41,7 +41,7 @@ const DESCRIPTION =
   'Free blog giveaway ideas generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Blog Giveaway Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'Blog Giveaway Ideas Generator',
   description: DESCRIPTION,
   howTo: [
     'Enter your blog niche (e.g. “home baking”).',
