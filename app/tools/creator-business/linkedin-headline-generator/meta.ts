@@ -53,7 +53,7 @@ const DESCRIPTION =
   "Create a stronger LinkedIn headline for freelancers. Enter role and specialties, pick a style, and get options counted under 220 characters. Free — try it now.";
 
 export const content: ToolContent = {
-  title: "Linkedin Headline for Freelancers 2026 | HusnainBlogger",
+  title: "Linkedin Headline for Freelancers 2027",
   description: DESCRIPTION,
   howTo: [
     "Enter your role — the job title clients search for (e.g. Web Designer).",
