@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Offline Ai Translator 2026 – Free Tool | HusnainBlogger',
+  title: 'Offline Ai Translator',
   description:
     'Translate text free with AI in your browser — 18 language pairs, no signup, no uploads. Neural translation runs 100% on your device, offline after load.',
   howTo: [
