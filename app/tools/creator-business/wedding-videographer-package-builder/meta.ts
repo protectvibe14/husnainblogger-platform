@@ -74,7 +74,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Wedding Videography Pricing Packages 2026 | HusnainBlogger',
+  title: 'Wedding Videography Pricing Packages 2027',
   description:
     'Build wedding videography pricing packages in minutes. Enter your per-tier prices, hours, shooters, and deliverables for a comparison table. Try it free now!',
   howTo: [
