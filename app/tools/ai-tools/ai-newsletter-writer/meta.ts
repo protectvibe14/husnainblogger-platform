@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Newsletter Writer 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Newsletter Writer',
   description:
     'Draft a complete newsletter — subject line, sections, and sign-off — in your tone with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
