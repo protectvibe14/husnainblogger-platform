@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Fresh Pins Checklist 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Fresh Pins Checklist',
   description:
     'Build a free pinterest fresh pins checklist for standard, idea, or video pins. Get best-practice checks for new images, titles, and keywords. Try it now!',
   howTo: [
