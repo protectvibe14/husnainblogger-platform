@@ -45,7 +45,7 @@ const DESCRIPTION =
   'Generate a channel bio with this free youtube about page generator — niche, schedule, and contact in a copy-ready description under 1000 characters. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Youtube About Page Generator 2026 – Free | HusnainBlogger',
+  title: 'Youtube About Page Generator | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your channel name, your niche or topic, and your upload schedule.',
