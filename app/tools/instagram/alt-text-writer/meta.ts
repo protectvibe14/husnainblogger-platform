@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Alt Text Generator | HusnainBlogger',
+  title: 'Instagram Alt Text Generator',
   description:
     'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters. Try it now.',
   howTo: [
