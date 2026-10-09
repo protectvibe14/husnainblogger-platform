@@ -28,7 +28,7 @@ const DESCRIPTION =
   'Use this affiliate link name generator free — turn any product name into up to 50 slug-safe, copy-ready link names for cloaking tools. Try it now!';
 
 export const content: ToolContent = {
-  title: 'Affiliate Link Name Generator 2026 – Free | HusnainBlogger',
+  title: 'Affiliate Link Name Generator',
   description: DESCRIPTION,
   howTo: [
     'Type the “Product name” exactly as the offer is known (e.g. Bluehost WordPress Hosting) — it becomes the base of every link name.',
