@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Pacing Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Pacing Planner',
   description:
     'Use this video pacing planner to hold attention: enter duration, niche, and pattern for timed segments, pattern-change count, heuristic score. Free to use.',
   howTo: [
