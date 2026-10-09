@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Story Quiz Ideas 2026 – Free | HusnainBlogger',
+  title: 'Instagram Story Quiz Ideas | HusnainBlogger',
   description:
     'Get instagram story quiz ideas with 4 options, the correct answer, and an explanation. Enter a topic, copy ready-to-post quizzes — free, no signup. Try it now!',
   howTo: [
