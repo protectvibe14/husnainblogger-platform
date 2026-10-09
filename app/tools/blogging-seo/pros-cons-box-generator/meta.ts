@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pros and Cons Box Generator 2026 – Free | HusnainBlogger',
+  title: 'Pros and Cons Box Generator',
   description:
     'Create a clean pros and cons box for your reviews in seconds. Type your pros and cons, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
   howTo: [
