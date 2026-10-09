@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Shorts Script Template 2026 – Free | HusnainBlogger',
+  title: 'Youtube Shorts Script Template | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your long-form script or outline into the script box.',
