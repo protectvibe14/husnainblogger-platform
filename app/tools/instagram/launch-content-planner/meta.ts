@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Product Launch Plan 2026 – Free | HusnainBlogger',
+  title: 'Instagram Product Launch Plan | HusnainBlogger',
   description:
     'Plan your launch with this free instagram product launch plan tool. Enter your launch date and offer for a day-by-day launch timeline. Start now!',
   howTo: [
