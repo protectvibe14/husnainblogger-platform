@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Sentiment Analyzer: Free Online 2026 – Free | HusnainBlogger',
+  title: 'Sentiment Analyzer: Free Online',
   description:
     'Analyze text sentiment free with an on-device classifier: positive or negative verdicts with confidence bars. No uploads and no API key required.',
   howTo: [
