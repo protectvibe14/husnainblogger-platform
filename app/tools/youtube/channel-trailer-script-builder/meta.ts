@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Channel Trailer Script 2026 – Free | HusnainBlogger',
+  title: 'Youtube Channel Trailer Script | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Add one item per trailer version you want and enter your channel niche (e.g. budget travel).',
