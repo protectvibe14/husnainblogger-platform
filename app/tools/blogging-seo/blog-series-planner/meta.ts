@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Series Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Series Planner',
   description:
     'Map out a multi-part blog series in minutes — this free blog series planner structures 2–12 parts with titles, slugs and linking notes. Plan your series now!',
   howTo: [
