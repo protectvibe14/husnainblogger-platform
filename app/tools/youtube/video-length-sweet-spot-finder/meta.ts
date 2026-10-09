@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Youtube Video Length 2026 – Free Tool | HusnainBlogger',
+  title: 'Best Youtube Video Length | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Pick your content type: tutorial, review, vlog, video essay, or Shorts.',
