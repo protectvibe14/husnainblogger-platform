@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Tester 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Subject Line Tester',
   description:
     'Free email subject line tester 2026: Test any email subject line free: get a 0-100 rule-based score, spam-trigger flags,. Fast, private, no signup - try it now!',
   howTo: [
