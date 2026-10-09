@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Competitor Analysis 2026 – Free | HusnainBlogger',
+  title: 'TikTok Competitor Analysis',
   description:
     'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only — try it now.',
   howTo: [
