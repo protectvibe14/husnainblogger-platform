@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Overdue Invoice Reminder Email 2026 – Free | HusnainBlogger',
+  title: 'Overdue Invoice Reminder Email',
   description:
     'Write an overdue invoice reminder email in seconds. Pick polite, firm, or final tone, enter the invoice details, and copy your draft. Try it free now!',
   howTo: [
