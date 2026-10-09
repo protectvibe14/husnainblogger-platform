@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Headshot Prompt Pack Builder 2026 – Free | HusnainBlogger',
+  title: 'AI Headshot Prompt Pack Builder',
   description:
     'Build a pack of 5 copy-ready headshot prompts from fixed templates: 4 styles, 5 poses, plus a negative-prompt line. Free text to paste into any image tool.',
   howTo: [
