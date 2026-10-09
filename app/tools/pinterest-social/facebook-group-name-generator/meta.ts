@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Group Name Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Group Name Ideas',
   description:
     'Get free facebook group name ideas in professional or casual tone. Enter your community topic to get 8 catchy name options for your group. Try it now!',
   howTo: [
