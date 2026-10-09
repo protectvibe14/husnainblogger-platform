@@ -62,7 +62,7 @@ const DESCRIPTION =
   'Free Etsy fee calculator 2026: calculate Etsy selling fees, transaction fees & payment processing by country. See your exact profit & net payout instantly.';
 
 export const content: ToolContent = {
-  title: 'Etsy Fee Calculator 2026 – Seller Fees | HusnainBlogger',
+  title: 'Etsy Fee Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your Item price per unit and Quantity — the calculator multiplies them for the sale subtotal.',
