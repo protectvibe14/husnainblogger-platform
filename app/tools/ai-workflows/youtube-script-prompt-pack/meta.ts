@@ -16,7 +16,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Prompts for YouTube Scripts 2026 – Free | HusnainBlogger',
+  title: 'AI Prompts for YouTube Scripts',
   description:
     'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free, no signup.',
   howTo: [
