@@ -53,7 +53,7 @@ const DESCRIPTION =
   "Plan focused editing blocks with this free video editing pomodoro timer: set focus and break lengths, rounds, and a start time for a timed plan. Try it now.";
 
 export const content: ToolContent = {
-  title: "Video Editing Pomodoro Timer',
+  title: "Video Editing Pomodoro Timer",
   description: DESCRIPTION,
   howTo: [
     "Enter your session start time as HH:MM in 24-hour format (e.g. 09:00).",
