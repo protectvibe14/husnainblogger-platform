@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Free content freshness checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Content Freshness Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Content Freshness Checker',
   description: DESCRIPTION,
   howTo: [
     'Enter the date the post was first published (YYYY-MM-DD).',
