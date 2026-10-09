@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Outline Generator 2026 – Free SEO Tool | HusnainBlogger',
+  title: 'Blog Outline Generator',
   description:
     'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. No signup — start outlining now.',
   howTo: [
