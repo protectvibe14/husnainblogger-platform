@@ -1,0 +1,13 @@
+# ads.txt — HusnainBlogger.com
+# Authorized Digital Sellers declaration (IAB Tech Lab).
+#
+# INSTRUCTIONS: After Google AdSense approves your site, replace
+# PUB-ID below with your real AdSense Publisher ID (ca-pub-XXXXXXXXXXXXXXXX).
+# Find it at: AdSense dashboard → Account → Account information.
+# Then redeploy the site so this file goes live at husnainblogger.com/ads.txt
+# Google verifies this file during and after approval.
+#
+# Until you have a real Publisher ID, keep the placeholder line commented out
+# so crawlers don't see an invalid declaration.
+
+# google.com, ca-pub-PUB-ID, DIRECT, f08c47fec0942fa0
