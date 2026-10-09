@@ -113,7 +113,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Brand Deal Contract Template 2026 – Free | HusnainBlogger',
+  title: 'Brand Deal Contract Template',
   description:
     'Generate a brand deal contract draft from your deal terms — parties, deliverables, compensation, usage rights, and more. Template only, not legal advice. Free!',
   howTo: [
