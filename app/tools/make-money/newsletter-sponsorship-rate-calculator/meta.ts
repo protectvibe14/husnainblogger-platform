@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Estimate newsletter sponsorship rates free — price each issue from subscribers, open rate, and placement using labeled 2026 CPM estimates. Start pricing now.';
 
 export const content: ToolContent = {
-  title: 'Newsletter Sponsorship Rates 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Sponsorship Rates',
   description: DESCRIPTION,
   howTo: [
     'Enter your newsletter subscriber count in the subscriberCount field.',
