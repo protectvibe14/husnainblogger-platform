@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Pinned Comment Ideas 2026 – Free | HusnainBlogger',
+  title: 'Youtube Pinned Comment Ideas | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Type your video topic into the "Video topic" field (e.g. sourdough baking).',
