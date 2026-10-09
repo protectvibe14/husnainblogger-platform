@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Robots.txt Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Robots.txt Generator',
   description:
     'Write a valid robots.txt file in minutes, not hours. Add your crawl rules and sitemap URL, then copy the ready-to-upload file. Free, no signup!',
   howTo: [
