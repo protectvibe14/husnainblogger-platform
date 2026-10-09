@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Generate free TikTok stitch ideas in your stance — agree, debunk, add context, or funny — with opening lines and response angles. No login needed. Try it now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Stitch Prompt Generator 2026 – Free | HusnainBlogger',
+  title: 'TikTok Stitch Prompt Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your niche into the "Your niche" box — for example "personal finance".',
