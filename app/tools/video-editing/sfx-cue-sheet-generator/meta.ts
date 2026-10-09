@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Sound Effect Cue Sheet 2026 – Free Tool | HusnainBlogger',
+  title: 'Sound Effect Cue Sheet',
   description:
     'Build a sound effect cue sheet for your video: enter timeline beats to get matched SFX, search terms, volumes, and timing warnings. Plan your mix now!',
   howTo: [
