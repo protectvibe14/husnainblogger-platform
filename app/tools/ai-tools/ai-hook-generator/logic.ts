@@ -259,7 +259,7 @@ export function validateInputs(inputs: Record<string, string>): ValidationResult
   if (!(PLATFORMS as readonly string[]).includes((inputs.platform ?? '').trim())) {
     errors.push('Pick a platform.');
   }
-  if (!(COUNTS as readonly string[]).includes((inputs.count ?? '').trim())) {
+  if (!(COUNTS as readonly string[]).includes(String(inputs.count ?? '').trim())) {
     errors.push('Pick how many hooks to generate (5, 10, or 15).');
   }
 
@@ -269,9 +269,9 @@ export function validateInputs(inputs: Record<string, string>): ValidationResult
 /** Build the system/user prompts from validated inputs. */
 export function buildPrompts(inputs: Record<string, string>): PromptParts {
 
-  const topic = (inputs.topic ?? '').trim();
-  const platform = (inputs.platform ?? '').trim().replace(/-/g, ' ');
-  const count = (inputs.count ?? '').trim();
+  const topic = String(inputs.topic ?? '').trim();
+  const platform = String(inputs.platform ?? '').trim().replace(/-/g, ' ');
+  const count = String(inputs.count ?? '').trim();
 
   const system =
     'Write exactly ' + count + ' opening hooks for ' + platform + ' about the user\'s topic. ' +
