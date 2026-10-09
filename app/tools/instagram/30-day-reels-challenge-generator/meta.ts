@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '30 Day Reels Challenge | HusnainBlogger',
+  title: '30 Day Reels Challenge',
   description:
     'Take the 30 day reels challenge with this free tool. Enter your niche and 3–5 content pillars for a full 30-day reels calendar with unique prompts. Start now!',
   howTo: [
