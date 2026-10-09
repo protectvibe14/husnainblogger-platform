@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Event Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Event Ideas',
   description:
     'Get Facebook event ideas for your business type. Browse online and in-person event titles with description seeds and honest cover-size guidance. Start free!',
   howTo: [
