@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Comment Reply Templates 2026 | HusnainBlogger',
+  title: 'Instagram Comment Reply Templates 2027',
   description:
     'Reply to every Instagram comment with confidence. Pick the comment type and tone, get ready-to-use reply templates free — no signup. Try it now!',
   howTo: [
