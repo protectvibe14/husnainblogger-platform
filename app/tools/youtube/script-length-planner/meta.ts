@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Script Length Calculator 2026 | HusnainBlogger',
+  title: 'YouTube Script Length Calculator 2027 | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Pick the conversion direction: minutes → words (planning a new script) or words → minutes (timing a draft).',
