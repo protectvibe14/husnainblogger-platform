@@ -54,7 +54,7 @@ const DESCRIPTION =
   "Free editorial style guide template 2026: The compiled style-guide document in Markdown — copy it into your docs. Fast, private, no signup - try it now!";
 
 export const content: ToolContent = {
-  title: "Editorial Style Guide Template 2026 – Free | HusnainBlogger",
+  title: "Editorial Style Guide Template',
   description: DESCRIPTION,
   howTo: [
     "Add one row per style rule you want to set.",
