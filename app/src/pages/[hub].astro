@@ -30,7 +30,8 @@ for (const t of categoryTools) {
   byType.set(t.toolType, bucket);
 }
 
-const title = `${category.name} Tools (2026) — ${categoryTools.length} Free Online Tools | HusnainBlogger`;
+const hubName = category.name.endsWith('Tools') ? category.name : `${category.name} Tools`;
+const title = `${hubName} — ${categoryTools.length} Free Online Tools`;
 const description = `Free ${category.name.toLowerCase()} tools — ${categoryTools.length} online tools for ${category.name.toLowerCase()}. No signup, instant results, 100% private.`;
 ---
 
@@ -52,7 +53,7 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
   <header class="hb-hub-hero">
     <div class="hb-hub-hero__inner">
       <span class="hb-hub-hero__eyebrow">{categoryTools.length} Free Tools</span>
-      <h1 class="hb-hub-hero__title">{category.name} Tools</h1>
+      <h1 class="hb-hub-hero__title">{hubName}</h1>
       <p class="hb-hub-hero__desc">
         Professional-grade {category.name.toLowerCase()} tools that run entirely in your browser.
         No signup, no downloads — just instant results.
@@ -72,10 +73,17 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
 
   <!-- Tool groups -->
   <div id="hub-tools">
-    {[...byType.entries()].map(([toolType, list]) => (
+    {[...byType.entries()].map(([toolType, list]) => {
+      const typeLabels: Record<string, string> = {
+        ai: 'AI Tools', calculator: 'Calculators', generator: 'Generators',
+        checker: 'Checkers', converter: 'Converters', analyzer: 'Analyzers',
+        planner: 'Planners', tracker: 'Trackers', finder: 'Finders',
+      };
+      const typeLabel = typeLabels[toolType] ?? (toolType.charAt(0).toUpperCase() + toolType.slice(1) + 's');
+      return (
       <section class="hb-hub-section" data-tooltype={toolType}>
         <div class="hb-hub-section__head">
-          <h2>{toolType.charAt(0).toUpperCase() + toolType.slice(1)}s</h2>
+          <h2>{typeLabel}</h2>
           <span class="hb-hub-section__count">{list.length} tools</span>
         </div>
         <div class="hb-hub-grid">
@@ -93,14 +101,15 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
           ))}
         </div>
       </section>
-    ))}
+      );
+    })}
   </div>
 
   <AdSlot slot="hub-bottom" />
 
   <!-- SEO content -->
   <section class="hb-hub-seo">
-    <h2>About {category.name} Tools</h2>
+    <h2>About {hubName}</h2>
     <p>
       Our collection of <strong>{categoryTools.length} free {category.name.toLowerCase()} tools</strong> covers
       everything from {[...byType.keys()].slice(0, 3).join(', ')} and more.
