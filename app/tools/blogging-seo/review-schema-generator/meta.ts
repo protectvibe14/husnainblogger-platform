@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Review Schema Generator – Free JSON-LD 2026 | HusnainBlogger',
+  title: 'Review Schema Generator – Free JSON-LD 2027',
   description:
     'Free review schema generator 2026: build valid JSON-LD review markup with item, author and rating for rich snippets. No signup — copy your code today!',
   howTo: [
