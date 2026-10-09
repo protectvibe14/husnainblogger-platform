@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Meeting Notes Summarizer 2026 – Free | HusnainBlogger',
+  title: 'AI Meeting Notes Summarizer',
   description: 'Turn messy meeting notes into action items, key bullets, or minutes with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
     'Pick an output format: action items, key bullets, or meeting minutes.',
