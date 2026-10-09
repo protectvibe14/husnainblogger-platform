@@ -17,6 +17,7 @@ import { byCategory } from "../data/registry.generated";
 import { toolsIndexHref } from "../../../config/site.config";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LandingHero from "../components/landing/LandingHero.astro";
+import PopularTools from "../components/landing/PopularTools.astro";
 import CategoryShowcase from "../components/landing/CategoryShowcase.astro";
 import ValueProps from "../components/landing/ValueProps.astro";
 import HowItWorks from "../components/landing/HowItWorks.astro";
@@ -46,6 +47,19 @@ const categories = CATEGORIES.map((c) => ({
 const toolCount = categories.reduce((n, c) => n + c.count, 0);
 const title = `Free Online Tools for Creators — ${toolCount} Tools | HusnainBlogger`;
 const description = `${toolCount} free online tools for YouTubers, TikTokers, bloggers, and freelancers across ${categories.length} categories. No signup, runs in your browser.`;
+
+// Hand-picked popular tools (high-demand keywords with Semrush data)
+const popularTools = [
+  { name: "Stripe Fee Calculator", slug: "stripe-fee-calculator", categorySlug: "make-money", category: "Make Money", blurb: "Calculate Stripe fees instantly — know exactly what you'll receive." },
+  { name: "PayPal Fee Calculator", slug: "paypal-fee-calculator", categorySlug: "make-money", category: "Make Money", blurb: "See PayPal fees before you send or receive money." },
+  { name: "Etsy Fee Calculator", slug: "etsy-fee-calculator", categorySlug: "make-money", category: "Make Money", blurb: "Price your Etsy listings for real profit." },
+  { name: "eBay Fee Calculator", slug: "ebay-fee-calculator", categorySlug: "make-money", category: "Make Money", blurb: "Know your eBay selling fees upfront." },
+  { name: "YouTube Title Generator", slug: "youtube-title-generator", categorySlug: "youtube", category: "YouTube", blurb: "Click-worthy titles that boost your CTR." },
+  { name: "Hashtag Generator", slug: "instagram-hashtag-generator", categorySlug: "instagram", category: "Instagram", blurb: "Reach more people with smart hashtags." },
+  { name: "AI Hook Generator", slug: "ai-hook-generator", categorySlug: "ai-tools", category: "AI Tools", blurb: "Viral hooks for your videos in seconds." },
+  { name: "Blog Readability Scorer", slug: "blog-readability-scorer", categorySlug: "blogging-seo", category: "Blogging & SEO", blurb: "Check if your content is easy to read." },
+  { name: "Article Schema Generator", slug: "article-schema-generator", categorySlug: "blogging-seo", category: "Blogging & SEO", blurb: "SEO schema markup in one click." },
+];
 ---
 
 <BaseLayout
@@ -60,6 +74,7 @@ const description = `${toolCount} free online tools for YouTubers, TikTokers, bl
 
   <main>
     <LandingHero toolCount={toolCount} categoryCount={categories.length} />
+    <PopularTools tools={popularTools} />
     <CategoryShowcase categories={categories} />
     <ValueProps />
     <HowItWorks />
