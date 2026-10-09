@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Chat With Pdf Ai 2026 – Free Tool | HusnainBlogger',
+  title: 'Chat With Pdf Ai',
   description:
     'Chat with any PDF using your free Gemini key — upload a document (max 15 MB), ask questions, and get answers grounded in its pages. No signup needed.',
   howTo: [
