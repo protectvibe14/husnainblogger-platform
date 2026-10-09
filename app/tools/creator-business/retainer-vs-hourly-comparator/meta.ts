@@ -86,7 +86,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Retainer vs Hourly Calculator 2026 – Free | HusnainBlogger',
+  title: 'Retainer vs Hourly Calculator',
   description:
     'Compare retainer vs hourly pricing in seconds. Enter rates and hours to see which model costs less, the break-even point, and savings. Free - try it now!',
   howTo: [
