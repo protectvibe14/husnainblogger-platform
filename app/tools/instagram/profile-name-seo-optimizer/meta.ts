@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Name SEO Optimizer 2026 – Free | HusnainBlogger',
+  title: 'Instagram Name SEO Optimizer | HusnainBlogger',
   description:
     'Fit more keywords into your profile with this free instagram name seo optimizer: 30-character names, keyword coverage, and a budget bar. Optimize your name now!',
   howTo: [
