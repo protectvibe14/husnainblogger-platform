@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Run this free instagram shadowban test — a 14-point checklist for reach drops and hashtag visibility. It cannot detect a real shadowban; start the checklist.';
 
 export const content: ToolContent = {
-  title: 'Instagram Shadowban Test 2026 – Free Tool | HusnainBlogger',
+  title: 'Instagram Shadowban Test',
   description: DESCRIPTION,
   howTo: [
     'Work through the 14 warning-sign items: reach drops, hashtag visibility, engagement, and account flags.',
