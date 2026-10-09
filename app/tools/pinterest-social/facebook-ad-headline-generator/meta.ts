@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Ad Headline Ideas 2026 – Free | HusnainBlogger',
+  title: 'Facebook Ad Headline Ideas',
   description:
     'Create Facebook ad headline ideas under 40 characters. Enter your product and benefit for benefit-led headlines built on proven copy frameworks. Try it free!',
   howTo: [
