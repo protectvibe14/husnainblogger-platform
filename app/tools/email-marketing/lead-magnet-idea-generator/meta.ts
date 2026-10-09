@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Lead Magnet Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'Lead Magnet Ideas Generator',
   description:
     'Brainstorm lead magnet ideas with this free lead magnet ideas generator. Pick your niche, audience and format for up to 20 titled ideas with reasons. Start now!',
   howTo: [
