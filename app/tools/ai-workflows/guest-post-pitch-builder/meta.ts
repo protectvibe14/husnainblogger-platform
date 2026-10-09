@@ -29,7 +29,7 @@ const DESCRIPTION =
   "Build a guest post pitch template filled with your details. Add the blog name and topic idea to get a pitch email plus subject lines. Try it free.";
 
 export const content: ToolContent = {
-  title: "Guest Post Pitch Template',
+  title: "Guest Post Pitch Template",
   description: DESCRIPTION,
   howTo: [
     "Add one row per pitch (up to 10) with the blog name and your topic idea.",
