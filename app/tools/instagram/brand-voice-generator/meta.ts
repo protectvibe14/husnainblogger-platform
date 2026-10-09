@@ -55,7 +55,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Brand Voice Examples 2026 – Free | HusnainBlogger',
+  title: 'Instagram Brand Voice Examples | HusnainBlogger',
   description:
     'Get instagram brand voice examples for your niche: pick 3-5 adjectives and get do’s, don’ts, and sample captions in your voice. Free, instant — try it now!',
   howTo: [
