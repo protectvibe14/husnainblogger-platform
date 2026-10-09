@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Link in Bio Page 2026 – Free Tool | HusnainBlogger',
+  title: 'Pinterest Link in Bio Page',
   description:
     'Build a free Pinterest link in bio page: add your links, pick a theme, and download one mobile-ready HTML file. No signup — create your page now!',
   howTo: [
