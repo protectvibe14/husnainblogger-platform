@@ -68,7 +68,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Quarterly Estimated Tax Calculator Freelanc 2026 | HusnainBlogger',
+  title: 'Quarterly Estimated Tax Calculator Freelanc 2027',
   description:
     'Use this quarterly estimated tax calculator for freelancers to estimate payments. Enter your profit and your own tax rate — never prefilled. Try it free now!',
   howTo: [
