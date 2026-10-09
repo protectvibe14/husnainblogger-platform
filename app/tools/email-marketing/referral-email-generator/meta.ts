@@ -42,7 +42,7 @@ const DESCRIPTION =
   'Free referral email template generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Referral Email Template Generator 2026 | HusnainBlogger',
+  title: 'Referral Email Template Generator 2027',
   description: DESCRIPTION,
   howTo: [
     'Enter your referral program name (e.g. “BookClub Plus”).',
