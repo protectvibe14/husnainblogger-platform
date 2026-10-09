@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Karaoke Caption Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Karaoke Caption Planner',
   description:
     'Free karaoke caption planner 2026: Plan karaoke-style word-by-word captions: paste your lyric lines, set the duration and. Fast, private, no signup - try it!',
   howTo: [
