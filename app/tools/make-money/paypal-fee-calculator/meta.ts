@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'PayPal Fee Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'PayPal Fee Calculator',
   description:
     'Free paypal fee calculator 2026: calculate PayPal fees before you send or receive money: enter the amount and payment. Fast, private, no signup - try it now!',
   howTo: [
