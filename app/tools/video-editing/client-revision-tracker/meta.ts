@@ -41,7 +41,7 @@ const DESCRIPTION =
   "Log client revision rounds with this free video revision tracker — track requests and statuses in one session-based list, then export the CSV. Try it free.";
 
 export const content: ToolContent = {
-  title: "Video Revision Tracker',
+  title: "Video Revision Tracker",
   description: DESCRIPTION,
   howTo: [
     "Add one item per revision round: enter the Round number (1, 2, 3…).",
