@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'HTML Sitemap Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'HTML Sitemap Generator',
   description:
     'Create a clean, human-readable HTML sitemap for your visitors. Paste your pages, group them into sections, and copy the HTML. Free, no signup!',
   howTo: [
