@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Online Teleprompter 2026 – Free Tool | HusnainBlogger',
+  title: 'Online Teleprompter',
   description:
     'Use this free online teleprompter to time your script: set words-per-minute and font size, get read time plus a px/sec scroll plan. Start free.',
   howTo: [
