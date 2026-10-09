@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Voiceover Cost Calculator 2026 – Free | HusnainBlogger',
+  title: 'Voiceover Cost Calculator',
   description:
     'Estimate voiceover timing and cost: paste a script, set WPM and your own per-1k-character rate. Duration, character count and cost — all estimates. Free.',
   howTo: [
