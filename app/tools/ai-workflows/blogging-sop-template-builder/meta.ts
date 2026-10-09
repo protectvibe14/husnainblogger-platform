@@ -31,7 +31,7 @@ const DESCRIPTION =
   "Free blogging sop template 2026: The full standard operating procedure in Markdown, ready to copy. Get instant results. No signup - try it free now!";
 
 export const content: ToolContent = {
-  title: "Blogging SOP Template',
+  title: "Blogging SOP Template",
   description: DESCRIPTION,
   howTo: [
     "Enter the process name — use the same name on every step row.",
