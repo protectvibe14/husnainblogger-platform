@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Highlight Names Ideas 2026 – Free | HusnainBlogger',
+  title: 'Instagram Highlight Names Ideas',
   description:
     'Generate Instagram story highlight name ideas free. Enter your niche, pick a tone, and get short on-brand highlight titles with length warnings. Get ideas now!',
   howTo: [
