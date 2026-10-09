@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Launch Checklist 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Launch Checklist',
   description:
     'Launch your blog with confidence: enter your launch date and niche, then get a 90-day milestone grid for pre-launch, launch, and post-launch. Plan free now!',
   howTo: [
