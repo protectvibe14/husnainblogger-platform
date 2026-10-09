@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Monetization Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Monetization Planner',
   description:
     'Plan your blog income mix: pick your traffic level and compare illustrative monthly ranges for ads, affiliates, products, and more. Free - start planning today!',
   howTo: [
