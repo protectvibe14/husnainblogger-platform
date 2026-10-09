@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'What People Search on TikTok 2026 – Free | HusnainBlogger',
+  title: 'What People Search on TikTok',
   description: DESCRIPTION,
   howTo: [
     'Type the exact phrase a viewer might search — e.g. "best budget mic" or "ramen near me".',
