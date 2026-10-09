@@ -70,7 +70,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Membership Tiers Ideas | HusnainBlogger',
+  title: 'YouTube Membership Tiers Ideas',
   description:
     'Plan YouTube membership tiers free: set up to 6 levels with prices and member guesses to estimate monthly payouts at the 70% share. Plan tiers now!',
   howTo: [
