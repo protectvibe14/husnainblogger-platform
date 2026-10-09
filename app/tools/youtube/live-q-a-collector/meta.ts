@@ -65,7 +65,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Live Stream Q&A Collector 2026 – Free Tool | HusnainBlogger',
+  title: 'Live Stream Q&A Collector | HusnainBlogger',
   description:
     'Collect and rank live stream questions manually: paste questions from your stream chat, upvote the popular ones, and export a ranked Q&A queue. Start free now!',
   howTo: [
