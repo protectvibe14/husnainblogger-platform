@@ -66,7 +66,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Writing Rates 2026 – Free Tool | HusnainBlogger',
+  title: 'Freelance Writing Rates',
   description:
     'Calculate your freelance writing rates from your own hourly rate and writing speed. Get per-word, per-1,000-word, and project quotes — no signup. Try it now!',
   howTo: [
