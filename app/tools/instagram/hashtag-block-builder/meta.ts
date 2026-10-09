@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Hashtag Sets Copy Paste 2027 | HusnainBlogger',
+  title: 'Instagram Hashtag Sets Copy Paste 2027',
   description:
     'Build copy-paste Instagram hashtag sets for free: add your niche, post type and block size to get a main block plus 2 alternates. Build yours now!',
   howTo: [
