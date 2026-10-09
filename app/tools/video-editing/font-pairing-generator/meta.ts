@@ -27,7 +27,7 @@ const DESCRIPTION =
   'Use this free font pairing generator — pick a mood and use case for curated heading/body font combos with Google Fonts links. Try it now, no signup.';
 
 export const content: ToolContent = {
-  title: 'Font Pairing Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Font Pairing Generator',
   description: DESCRIPTION,
   howTo: [
     'Choose a mood that fits your video: bold, elegant, playful, or techy.',
