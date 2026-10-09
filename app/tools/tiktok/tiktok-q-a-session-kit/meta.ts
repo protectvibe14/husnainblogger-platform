@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Get TikTok Q&A ideas for live or video comments — warm-up, rapid-fire, and deep-dive questions plus a timed run-of-show. Free. Build your kit now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Q&A Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Q&A Ideas',
   description: DESCRIPTION,
   howTo: [
     'Type your niche — for example "vegan baking" — so every question is tailored to your audience.',
