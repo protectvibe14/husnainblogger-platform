@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Comment Policy Template 2026 – Free | HusnainBlogger',
+  title: 'Blog Comment Policy Template',
   description:
     'Create a blog comment policy template free: pick open, moderated, or strict moderation and your tone — get a full policy with rules and notes. Build it now.',
   howTo: [
