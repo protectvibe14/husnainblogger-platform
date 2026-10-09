@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Story Poll Questions 2026 – Free | HusnainBlogger',
+  title: 'Instagram Story Poll Questions | HusnainBlogger',
   description:
     'Generate instagram story poll questions with ready-made answer options. Pick a topic, copy your polls, and boost story replies — free, no signup. Try it now!',
   howTo: [
