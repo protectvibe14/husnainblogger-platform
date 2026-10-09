@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Case Study Template 2026 – Free | HusnainBlogger',
+  title: 'Freelance Case Study Template',
   description:
     'Build a freelance case study template from your project details: enter the challenge, solution, and real results to get a sectioned document for clients. Free.',
   howTo: [
