@@ -62,7 +62,7 @@ const DESCRIPTION =
   "Plan a freelance referral program in seconds. Enter client value, commission rate, and expected referrals to estimate payouts and cost. Free — try it now.";
 
 export const content: ToolContent = {
-  title: "Freelance Referral Program',
+  title: "Freelance Referral Program",
   description: DESCRIPTION,
   howTo: [
     "Enter your average client value — what one referred client is typically worth to you.",
