@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Prompt Quality Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Prompt Quality Checker',
   description:
     'Score your AI prompt against a published 5-criterion rubric: 0-100 score, per-criterion breakdown, rule-based tips. Free, no signup - check yours now!',
   howTo: [
