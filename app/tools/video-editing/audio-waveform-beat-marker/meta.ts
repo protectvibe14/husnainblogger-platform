@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Audio Waveform Visualizer 2026 – Free Tool | HusnainBlogger',
+  title: 'Audio Waveform Visualizer',
   description:
     'Free audio waveform visualizer 2026: find beat candidates in audio clips: paste amplitude values to get peak markers,. Fast, private, no signup - try it now!',
   howTo: [
