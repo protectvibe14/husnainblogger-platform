@@ -24,7 +24,7 @@ const DESCRIPTION =
   'Free cta strength analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'CTA Strength Analyzer 2026 – Free Tool | HusnainBlogger',
+  title: 'CTA Strength Analyzer',
   description: DESCRIPTION,
   howTo: [
     'Paste your CTA text — usually the exact button or link label.',
