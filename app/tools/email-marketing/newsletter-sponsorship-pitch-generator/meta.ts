@@ -65,7 +65,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Sponsorship Pitch 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Sponsorship Pitch',
   description:
     'Write a newsletter sponsorship pitch fast — turn your stats and ad formats into an outreach email and a rate card. Free, no signup. Create your pitch now!',
   howTo: [
