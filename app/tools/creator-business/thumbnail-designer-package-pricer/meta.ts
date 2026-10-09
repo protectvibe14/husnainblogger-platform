@@ -69,7 +69,7 @@ const DESCRIPTION =
   'Free thumbnail designer pricing 2026: Your monthly package price after the bundle discount. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Thumbnail Designer Pricing 2026 – Free Tool | HusnainBlogger',
+  title: 'Thumbnail Designer Pricing',
   description: DESCRIPTION,
   howTo: [
     'Enter how many thumbnails you deliver per month and your own per-thumbnail price in USD.',
