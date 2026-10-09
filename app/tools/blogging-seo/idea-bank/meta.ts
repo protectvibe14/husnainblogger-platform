@@ -102,7 +102,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Idea Bank 2026 – Free Idea Tool | HusnainBlogger',
+  title: 'Blog Idea Bank',
   description:
     'Stop losing great post ideas: this free blog idea bank stores, tags, filters and exports your content ideas in one place. Organize your ideas now!',
   howTo: [
