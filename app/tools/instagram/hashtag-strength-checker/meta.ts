@@ -24,7 +24,7 @@ const DESCRIPTION =
   'Free hashtag strength checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Hashtag Strength Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Hashtag Strength Checker',
   description: DESCRIPTION,
   howTo: [
     'Paste your hashtag set into the box — separate tags with spaces, commas, or line breaks.',
