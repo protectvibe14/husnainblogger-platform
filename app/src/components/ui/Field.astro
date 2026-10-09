@@ -101,9 +101,13 @@ const invalid = !!error;
       disabled={disabled || undefined}
     >
       {placeholder && <option value="" disabled selected={value == null || value === ""}>{placeholder}</option>}
-      {options.map((opt) => (
-        <option value={opt} selected={value != null && String(value) === opt}>{opt}</option>
-      ))}
+      {options.map((opt) => {
+        // Format raw values like "direct_gs" → "Direct Gs", "in_person" → "In Person"
+        const label = typeof opt === 'string'
+          ? opt.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+          : String(opt);
+        return <option value={opt} selected={value != null && String(value) === opt}>{label}</option>;
+      })}
     </select>
   ) : isTextarea ? (
     <textarea
