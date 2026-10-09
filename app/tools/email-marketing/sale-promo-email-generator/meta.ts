@@ -64,7 +64,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Sale Email Template Generator 2026 – Free | HusnainBlogger',
+  title: 'Sale Email Template Generator',
   description:
     'Build a high-converting sale email with this free sale email template generator. Add your offer, discount, and real deadline for honest urgency copy. Start now!',
   howTo: [
