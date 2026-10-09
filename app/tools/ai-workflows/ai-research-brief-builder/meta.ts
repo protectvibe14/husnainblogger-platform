@@ -53,7 +53,7 @@ const DESCRIPTION =
   "Turn any question into a structured AI research prompt brief with sub-questions, a source checklist, and verification steps. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "AI Research Prompt 2026 – Free Tool | HusnainBlogger",
+  title: "AI Research Prompt',
   description: DESCRIPTION,
   howTo: [
     "Enter your research question once on the first row — it is required.",
