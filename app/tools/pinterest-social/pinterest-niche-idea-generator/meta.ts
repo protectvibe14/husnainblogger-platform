@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Niche Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Niche Ideas Generator',
   description:
     'Discover free pinterest niche ideas matched to your interests from 24 visual niches. Get angles, fit reasons, and honest guidance. Try it now!',
   howTo: [
