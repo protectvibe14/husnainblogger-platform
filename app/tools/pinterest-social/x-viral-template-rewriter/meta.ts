@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Viral Tweet Templates 2026 – Free Tool | HusnainBlogger',
+  title: 'Viral Tweet Templates',
   description:
     'Rewrite with viral tweet templates free: pick a proven pattern and get 3 reshaped drafts that fit X’s 280-character limit. Reshape your tweet now!',
   howTo: [
