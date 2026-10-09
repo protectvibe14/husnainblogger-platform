@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Niche Statement 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Niche Statement',
   description:
     'Write a twitter niche statement fast: enter your niche and audience to get 5 bio-ready positioning lines under 160 characters. Position yourself now!',
   howTo: [
