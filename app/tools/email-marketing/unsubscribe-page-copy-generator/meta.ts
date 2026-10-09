@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Free unsubscribe page copy generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Unsubscribe Page Copy Generator 2026 – Free | HusnainBlogger',
+  title: 'Unsubscribe Page Copy Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your brand name in the brand field.',
