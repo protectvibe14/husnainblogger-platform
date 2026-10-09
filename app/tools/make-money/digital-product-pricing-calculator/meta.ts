@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Digital Product Pricing Calculator 2026 | HusnainBlogger',
+  title: 'Digital Product Pricing Calculator 2027',
   description:
     'Price your products for profit with this free digital product pricing calculator — factor in costs, margins, and platform fees. Try it free today.',
   howTo: [
