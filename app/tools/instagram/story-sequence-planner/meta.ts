@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Plan Instagram Stories 2026 – Free | HusnainBlogger',
+  title: 'How to Plan Instagram Stories',
   description:
     'Learn how to plan instagram stories: pick a goal, get an ordered story sequence with formats, drafts, and timing. Free planner, no signup. Try it now!',
   howTo: [
