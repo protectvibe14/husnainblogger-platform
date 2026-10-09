@@ -25,7 +25,7 @@ const DESCRIPTION =
   'Free blog readability scorer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Blog Readability Scorer 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Readability Scorer',
   description: DESCRIPTION,
   howTo: [
     'Paste your blog post or draft (at least 30 words).',
