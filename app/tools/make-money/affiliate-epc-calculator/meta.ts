@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Run the free EPC calculator affiliate marketers use — enter clicks, conversions, and commission to get earnings per 100 clicks, then sanity-check your inputs.';
 
 export const content: ToolContent = {
-  title: 'EPC Calculator Affiliate 2026 – Free Tool | HusnainBlogger',
+  title: 'EPC Calculator Affiliate',
   description: DESCRIPTION,
   howTo: [
     'Enter your total clicks from your affiliate dashboard or tracking link.',
