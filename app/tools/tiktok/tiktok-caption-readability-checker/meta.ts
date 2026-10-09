@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Tiktok Captions Too Fast 2026 – Free Tool | HusnainBlogger',
+  title: 'Tiktok Captions Too Fast',
   description:
     'Fix tiktok captions too fast with free Flesch scoring: Reading Ease score, grade level, flagged long sentences, rewrite tips. Paste a caption — try it now!',
   howTo: [
