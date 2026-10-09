@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'UGC Whitelisting Rates 2026 – Free Tool | HusnainBlogger',
+  title: 'UGC Whitelisting Rates',
   description:
     'Calculate UGC whitelisting rates from your content fee and your own monthly rate or flat fee. Get the whitelisting total and deal value free. Try it now!',
   howTo: [
