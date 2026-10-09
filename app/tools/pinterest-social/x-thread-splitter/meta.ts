@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Split Text Into Tweets 2026 – Free Tool | HusnainBlogger',
+  title: 'Split Text Into Tweets',
   description:
     'Split text into tweets free. Paste long text and get numbered posts within the 280-character budget, split on sentence and word boundaries. Try it now!',
   howTo: [
