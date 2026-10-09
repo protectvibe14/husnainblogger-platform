@@ -51,7 +51,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Lower Third Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Lower Third Generator',
   description:
     'Free lower third generator 2026: generate a broadcast-style lower third free: enter a name and title, pick a style and. Fast, private, no signup - try it now!',
   howTo: [
