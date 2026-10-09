@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Pin Design Ideas 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Pin Design Ideas',
   description:
     'Get Pinterest pin design ideas as text briefs — titles, composition, text overlay, and color direction for standard, idea, or video pins. Try it free now!',
   howTo: [
