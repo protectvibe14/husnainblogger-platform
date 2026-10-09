@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Extract Frame From Video 2026 – Free Tool | HusnainBlogger',
+  title: 'Extract Frame From Video',
   description:
     'Free extract frame from video 2026: Plan a frame grab from any video: validate the timestamp against the duration, clamp. Fast, private, no signup - try it now!',
   howTo: [
