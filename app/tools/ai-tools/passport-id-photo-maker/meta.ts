@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Passport Photo Maker 2026 – Free Online | HusnainBlogger',
+  title: 'Passport Photo Maker',
   description:
     'Make passport photos free in your browser — AI cutout on pure white at US, UK/Schengen or India sizes. No signup, no uploads; runs 100% on your device.',
   howTo: [
