@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Audit Tool 2026 – Free SEO Audit | HusnainBlogger',
+  title: 'Content Audit Tool',
   description:
     'Free content audit tool 2026: turn your own page ratings into keep, update, merge or delete decisions with a transparent decision tree. No signup. Start now.',
   howTo: [
