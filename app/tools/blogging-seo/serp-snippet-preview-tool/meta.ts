@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Google Snippet Preview Tool 2026 – Free | HusnainBlogger',
+  title: 'Google Snippet Preview Tool',
   description:
     'Preview your Google search result with this free google snippet preview tool. Check title width, spot truncation, and see a realistic mockup. Try it free now!',
   howTo: [
@@ -73,7 +73,7 @@ export const content: ToolContent = {
     {
       title: 'Blog post snippet check',
       inputs: {
-        title: 'How to Start a Blog in 2026: 12 Proven Steps',
+        title: 'How to Start a Blog in 2027: 12 Proven Steps',
         url: 'https://example.com/how-to-start-a-blog/',
         description: 'Learn how to start a blog step by step, from setup to your first 1,000 readers.',
         date: '2026-01-05',
