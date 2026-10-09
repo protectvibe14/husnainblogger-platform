@@ -61,7 +61,7 @@ const DESCRIPTION =
   'See what to charge with this free copywriter rates calculator — pick your level and deliverable for survey-estimate ranges and a per-word rate. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Copywriter Rates Calculator 2026 – Free | HusnainBlogger',
+  title: 'Copywriter Rates Calculator',
   description: DESCRIPTION,
   howTo: [
     'Select your experience level — beginner, intermediate, expert, or specialist.',
