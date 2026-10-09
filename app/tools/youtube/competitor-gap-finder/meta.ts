@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Competitor Analysis Template 2027 | HusnainBlogger',
+  title: 'Youtube Competitor Analysis Template 2027',
   description: DESCRIPTION,
   howTo: [
     'Open a competitor channel and copy the titles of their recent videos (one per line).',
