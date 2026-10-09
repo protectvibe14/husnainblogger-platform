@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Create freelancer tagline ideas that fit your services. Enter what you do, pick a tone, and get up to 30 template-based taglines. Free, no signup — try it now.";
+  'Sum up your value with these freelancer tagline ideas — sharp one-liners that tell clients exactly what you do best. Nail your homepage headline.';
 
 export const content: ToolContent = {
   title: "Freelancer Tagline Ideas",

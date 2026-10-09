@@ -70,7 +70,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free wedding photography pricing calculator 2026: Total package price from your own rates and hours. Get instant results. No signup - try it free now!';
+  'Price weddings fairly with this wedding photography pricing calculator — hours, edits, and travel baked into clear USD packages. Customize for each couple.';
 
 export const content: ToolContent = {
   title: 'Wedding Photography Pricing Calculator',

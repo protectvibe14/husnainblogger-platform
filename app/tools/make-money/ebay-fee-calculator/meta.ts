@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free ebay fee calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Price listings smartly with this eBay fee calculator — final value fees and shipping weighed so your profit in USD stays crystal clear. List knowing.';
 
 export const content: ToolContent = {
   title: 'eBay Fee Calculator',

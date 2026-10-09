@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free amazon affiliate commission calculator 2026: estimate monthly earnings from referred sales, average order value and category rate. No signup — try it now.';
+  'Forecast affiliate income with this Amazon affiliate commission calculator — category rates applied to expected sales, with clear USD estimates.';
 
 export const content: ToolContent = {
   title: 'Amazon Affiliate Commission Calculator',

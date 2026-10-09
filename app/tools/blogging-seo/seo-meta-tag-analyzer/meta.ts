@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free seo meta tag analyzer 2026: Learn how to bake the best sourdough bread recipe for beginners with this step-by-step. Fast, private, no signup - try it now!';
+  'Audit your pages with this SEO meta tag analyzer — title, description, and Open Graph tags checked against current best practices. Fix issues hurting.';
 
 export const content: ToolContent = {
   title: 'SEO Meta Tag Analyzer',

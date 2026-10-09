@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Generate free TikTok stitch ideas in your stance — agree, debunk, add context, or funny — with opening lines and response angles. No login needed. Try it now.';
+  'Start conversations with this TikTok stitch prompt generator — openers designed to earn stitches from creators in your space. Invite creative responses.';
 
 export const content: ToolContent = {
   title: 'TikTok Stitch Prompt Generator',

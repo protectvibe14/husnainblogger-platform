@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free youtube title analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Score every title before publishing with this YouTube title analyzer — length, keyword use, emotion, and CTR factors in one report. Fix weak spots.';
 
 export const content: ToolContent = {
   title: 'YouTube Title Analyzer',

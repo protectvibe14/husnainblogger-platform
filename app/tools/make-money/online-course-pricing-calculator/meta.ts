@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free online course pricing calculator 2026: bracket the right price for your course from hours, niche value and platform fees. No signup — try it now.';
+  'Price your course right with this online course pricing calculator — value, market rates, and profit goals balanced into USD pricing. Test prices.';
 
 export const content: ToolContent = {
   title: 'Online Course Pricing Calculator',

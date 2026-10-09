@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/thumbnail-text-readability-checker/';
 
 const DESCRIPTION =
-  'Test text with this free thumbnail text readability checker — WCAG contrast ratio, word-count guidance and a mobile legibility check. Try it now.';
+  'Make text pop at any size with this thumbnail text readability checker — contrast, font size, and word-count checks tuned for small screens.';
 
 export const inputs: ToolInput[] = [
   {

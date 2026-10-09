@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/watch-time-monetization-planner/';
 
 const DESCRIPTION =
-  'Free 4000 watch hours calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Plan your path to monetization with this 4000 watch hours calculator — see exactly how many views you need at your average watch time. Set a timeline.';
 
 export const inputs: ToolInput[] = [
   {

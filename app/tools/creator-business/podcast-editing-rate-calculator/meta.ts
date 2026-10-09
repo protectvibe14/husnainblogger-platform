@@ -87,7 +87,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free podcast editing rates per hour 2026: Editing labor plus your add-on prices for one episode. Get instant results. No signup - try it free now!';
+  'Charge fairly with this podcast editing rates per hour calculator — episode length and complexity priced into USD rates. Quote per episode confidently.';
 
 export const content: ToolContent = {
   title: 'Podcast Editing Rates Per Hour',

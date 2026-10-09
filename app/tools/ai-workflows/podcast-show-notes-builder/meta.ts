@@ -32,7 +32,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Build a clean podcast show notes template from your episode details — title, guest, chapters, and links formatted in Markdown and HTML. Free, no signup.";
+  'Publish faster with this podcast show notes template — timestamps, links, and takeaways structured for listeners and SEO. Export notes ready to paste.';
 
 export const content: ToolContent = {
   title: "Podcast Show Notes Template",

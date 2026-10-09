@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Pinned Comment Ideas',
   description:
-    "Get free tiktok pinned comment ideas: 8 comment templates (questions, CTAs, link-in-bio, follow-ups), all within TikTok's 150-char limit. Try it now!",
+    'Drive replies with these TikTok pinned comment ideas — questions and prompts that keep your comment section buzzing daily. Spark long reply threads.',
   howTo: [
     'Enter your "Video topic" (up to 60 characters).',
     'Run the tool to get 8 pinned comment ideas: 2 questions, 2 calls to action, 2 link-in-bio pointers, and 2 follow-ups.',

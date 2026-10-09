@@ -1,0 +1,164 @@
+---
+/**
+ * BrowseAllTools.astro — full tool directory for the landing page.
+ * Owner: Landing.
+ *
+ * Top-sites format (SmallSEOTools/Calculator.net style): each category
+ * gets a heading + tagline + grid of actual tool links. Better for SEO
+ * (keyword-rich internal links) and UX (find tools without extra clicks).
+ * Shows top 12 tools per category with "view all" link to the hub page.
+ */
+import { hubHref, toolHref } from "../../../../config/site.config";
+
+interface Tool {
+  name: string;
+  slug: string;
+  categorySlug: string;
+}
+
+interface Category {
+  name: string;
+  slug: string;
+  count: number;
+  tagline: string;
+  tools: Tool[];
+}
+
+interface Props {
+  categories: Category[];
+}
+
+const { categories } = Astro.props;
+const SHOW_PER_CAT = 12;
+---
+
+<section class="landing-section" aria-labelledby="landing-alltools-title">
+  <div class="landing-section__head">
+    <span class="hb-tool-eyebrow">Full directory</span>
+    <h2 id="landing-alltools-title">Browse every tool</h2>
+    <p>All {categories.reduce((n, c) => n + c.count, 0)} tools, organized by category. Click any tool to use it instantly.</p>
+  </div>
+
+  <div class="landing-directory">
+    {categories.map((c) => (
+      <div class="landing-dir-cat">
+        <div class="landing-dir-cat__head">
+          <div>
+            <h3>
+              <a href={hubHref(c.slug)}>{c.name}</a>
+            </h3>
+            <p>{c.tagline}</p>
+          </div>
+          <a href={hubHref(c.slug)} class="landing-dir-cat__all">
+            All {c.count} tools <span aria-hidden="true">→</span>
+          </a>
+        </div>
+        <ul class="landing-dir-tools">
+          {c.tools.slice(0, SHOW_PER_CAT).map((t) => (
+            <li>
+              <a href={toolHref({ categorySlug: t.categorySlug, slug: t.slug })}>
+                {t.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .landing-directory {
+    display: grid;
+    gap: var(--space-10);
+  }
+  .landing-dir-cat {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
+    box-shadow: var(--shadow-sm);
+  }
+  .landing-dir-cat__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .landing-dir-cat__head h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    margin: 0 0 var(--space-1);
+    letter-spacing: var(--letter-tight);
+  }
+  .landing-dir-cat__head h3 a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .landing-dir-cat__head h3 a:hover {
+    color: var(--color-accent);
+  }
+  .landing-dir-cat__head p {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+  .landing-dir-cat__all {
+    flex-shrink: 0;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .landing-dir-cat__all:hover {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+  }
+  .landing-dir-tools {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: var(--space-2) var(--space-6);
+  }
+  .landing-dir-tools a {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    padding: var(--space-2) 0;
+    border-bottom: 1px dotted transparent;
+    transition: color 0.15s ease, padding-left 0.15s ease;
+  }
+  .landing-dir-tools a:hover {
+    color: var(--color-accent);
+    padding-left: var(--space-2);
+  }
+  .landing-dir-tools a::before {
+    content: "→";
+    color: var(--color-accent);
+    margin-right: var(--space-2);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+  .landing-dir-tools a:hover::before {
+    opacity: 1;
+  }
+  @media (max-width: 640px) {
+    .landing-dir-cat { padding: var(--space-5); }
+    .landing-dir-cat__head { flex-direction: column; }
+    .landing-dir-tools { grid-template-columns: 1fr 1fr; }
+  }
+</style>

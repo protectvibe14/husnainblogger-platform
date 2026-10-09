@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free raptive earnings calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Project your earnings with this Raptive earnings calculator — sessions, RPM, and seasonality modeled for realistic USD estimates. See what premium.';
 
 export const content: ToolContent = {
   title: 'Raptive Earnings Calculator',

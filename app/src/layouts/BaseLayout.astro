@@ -4,7 +4,7 @@
  * Owner: Platform.
  *
  * Every public page MUST use this layout. Site-wide chrome lives ONLY here:
- *   - <head> SEO meta (title, description, canonical, robots, Open Graph)
+ *   - <head> SEO meta (title, description, canonical, robots, Open Graph, Twitter Card)
  *   - site header (brand + main nav with active-state)
  *   - site footer
  *
@@ -74,6 +74,10 @@ import siteSettings from "../../../data/site-settings.json";const ga4Measurement
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
     <slot name="head" />
     {/* Google Analytics 4 — renders only when PUBLIC_GA4_MEASUREMENT_ID is set.
         async = non-render-blocking. Standard GA4 gtag.js snippet. */}

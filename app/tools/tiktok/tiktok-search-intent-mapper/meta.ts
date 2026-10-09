@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/tiktok/tiktok-search-intent-mapper/';
 
 const DESCRIPTION =
-  'Decode search intent with this free what people search on tiktok tool. Type any phrase to get its intent, content angles, and keyword tips. Try it now!';
+  'Know what viewers want with this look at what people search on TikTok — intent mapped so your videos answer real queries. Answer what viewers ask.';
 
 export const inputs: ToolInput[] = [
   {

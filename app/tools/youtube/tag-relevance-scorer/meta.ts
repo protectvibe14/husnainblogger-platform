@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Grade your tags with this free YouTube tag checker — a transparent 0–100 rubric scores keyword coverage, specificity, and budget. No signup, try it now.';
+  'Grade your video tags with this YouTube tag checker — a transparent 0-100 rubric scores keyword coverage, relevance, and overall tag quality.';
 
 export const content: ToolContent = {
   title: 'YouTube Tag Checker',

@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free social media manager pricing calculator 2026: estimate your monthly retainer from package tier, accounts and posting workload. No signup — try it now.';
+  'Set your packages with this social media manager pricing guide — platforms, posts, and hours priced for sustainable monthly retainers. Build packages.';
 
 export const content: ToolContent = {
   title: 'Social Media Manager Pricing Guide',

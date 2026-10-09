@@ -125,7 +125,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Estimate your Amazon KDP royalties per ebook or paperback sale. Enter your list price, format, and file or page details to see 70%/35% royalties. Try it free. Try it free.';
+  'Estimate book royalties with this KDP royalty calculator — list price, royalty rate, and delivery costs modeled for USD earnings. Compare royalty.';
 
 export const content: ToolContent = {
   title: 'KDP Royalty Calculator',

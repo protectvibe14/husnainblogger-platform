@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free cta strength analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Write CTAs that convert with this CTA strength analyzer — clarity, urgency, and friction scored for every call to action. Test your strongest variations.';
 
 export const content: ToolContent = {
   title: 'CTA Strength Analyzer',

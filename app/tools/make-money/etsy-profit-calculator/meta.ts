@@ -105,7 +105,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free etsy profit calculator 2026: see exactly what Etsy takes and your net profit per sale. Enter your sale price and costs for the full breakdown. No signup.';
+  'Know your real margin with this Etsy profit calculator — fees, shipping, and materials subtracted for your true profit in USD. Price for profit, not.';
 
 export const content: ToolContent = {
   title: 'Etsy Profit Calculator',

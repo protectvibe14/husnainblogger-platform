@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Use this affiliate link name generator free — turn any product name into up to 50 slug-safe, copy-ready link names for cloaking tools. Try it now!';
+  'Name links people trust with this affiliate link name generator — clean, memorable slugs that lift click-through rates on every channel you use.';
 
 export const content: ToolContent = {
   title: 'Affiliate Link Name Generator',

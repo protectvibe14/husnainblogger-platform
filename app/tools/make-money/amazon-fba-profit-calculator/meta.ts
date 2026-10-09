@@ -85,7 +85,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Free Amazon FBA profit calculator: find out what an item actually earns per unit. Enter your sale price, landed product cost, and the fulfillment fee from Amazon's fee table — the calculator subtracts the referral fee, fulfillment fee, and fuel surcharge, then shows margin, monthly profit, and ROI (ROI appears once you add a product cost). Nothing is hardcoded; every fee is an editable estimate. No signup.";
+  'Check FBA margins with this Amazon FBA profit calculator — referral, fulfillment, and storage fees weighed against your price. All figures in USD.';
 
 export const content: ToolContent = {
   title: 'Amazon FBA Profit Calculator',

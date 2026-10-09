@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Blog Series Planner',
   description:
-    'Map out a multi-part blog series in minutes — this free blog series planner structures 2–12 parts with titles, slugs and linking notes. Plan your.',
+    'Map out a multi-part blog series in minutes with this blog series planner — 2-12 parts structured with titles, slugs, and smart linking notes.',
   howTo: [
     'Type your series topic into the Series topic field (2–120 characters).',
     'Enter how many installments you want (a whole number from 2 to 12).',

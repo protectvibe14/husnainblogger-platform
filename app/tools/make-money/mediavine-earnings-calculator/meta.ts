@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free mediavine earnings calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Estimate ad income with this Mediavine earnings calculator — enter sessions and RPM to project your monthly revenue in USD. See best and worst case income.';
 
 export const content: ToolContent = {
   title: 'Mediavine Earnings Calculator',

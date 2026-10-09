@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free tiktok giveaway ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Grow fast with these TikTok giveaway ideas — prizes, entry rules, and promotion plans that turn viewers into followers. Build goodwill with winners.';
 
 export const content: ToolContent = {
   title: 'TikTok Giveaway Ideas',

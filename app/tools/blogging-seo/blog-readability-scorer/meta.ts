@@ -22,7 +22,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Paste your draft and get a genuine Flesch Reading Ease score plus grade level in seconds — the same formulas editors have used since the 1940s, computed entirely in your browser. You'll also get a plain-English verdict, text stats, and practical tips on where your sentences are getting too heavy. Free, no signup.";
+  'Write for real readers with this blog readability scorer — grade level, sentence length, and clarity checks that keep readers engaged longer.';
 
 export const content: ToolContent = {
   title: 'Blog Readability Scorer',

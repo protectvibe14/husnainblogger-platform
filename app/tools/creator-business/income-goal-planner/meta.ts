@@ -3,7 +3,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 
 const TOOL_URL = 'https://husnainblogger.com/tools/creator-business/income-goal-planner/';
 const DESCRIPTION =
-  'Freelance income goal planner: enter your income target, expenses, and average client value to get monthly and weekly targets. Free — try it now!';
+  'Hit your number with this freelance income goal planner — work backwards from your USD target to rates and client count. Break goals into monthly steps.';
 
 export const inputs: ToolInput[] = [
   {

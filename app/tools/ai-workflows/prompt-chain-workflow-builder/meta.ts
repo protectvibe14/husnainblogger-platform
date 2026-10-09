@@ -46,7 +46,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Free ai prompt chain builder 2026: The ordered chain with variable handoffs and prompt templates — copy it whole. Fast, private, no signup - try it now!";
+  'Chain prompts like a pro with this AI prompt chain builder — link steps into workflows that produce consistent, quality results. Reuse chains every.';
 
 export const content: ToolContent = {
   title: "AI Prompt Chain Builder",

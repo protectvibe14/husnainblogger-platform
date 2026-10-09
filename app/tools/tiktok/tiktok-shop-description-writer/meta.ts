@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free tiktok shop description 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Write listings that convert with this TikTok shop description writer — features, benefits, and urgency in a scannable format. Highlight what makes you.';
 
 export const content: ToolContent = {
   title: 'TikTok Shop Description Writer',

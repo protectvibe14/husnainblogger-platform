@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/script-length-planner/';
 
 const DESCRIPTION =
-  'Wondering how many words to write for your next video — or how long a finished draft will run? This free calculator works both directions. Type in your target length and your speaking pace to get a word count, or enter your draft\'s word count to get the spoken duration. It also splits the total into hook, setup, value, payoff, and CTA word budgets so you can pace the video before you record. Free, no signup.';
+  'Match script to runtime with this YouTube script length calculator — enter your target minutes and get the word count your video actually needs.';
 
 export const inputs: ToolInput[] = [
   {

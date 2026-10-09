@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free background music for youtube videos finder 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Find the right soundtrack with this background music for YouTube videos finder — match mood, tempo, and energy to your video\'s tone and pacing.';
 
 export const content: ToolContent = {
   title: 'Background Music for Youtube Videos Finder',

@@ -5,7 +5,7 @@ const SLUG = 'project-debrief-template-builder';
 const CANONICAL = `https://husnainblogger.com/tools/creator-business/${SLUG}/`;
 const NAME = 'Project Debrief Template Builder';
 const DESCRIPTION =
-  'Build a free project debrief template from your wins, issues, metrics, lessons, and follow-ups — guided prompts turn finished work into insight. Try it now.';
+  'Learn from every project with this project debrief template — wins, lessons, and follow-ups captured while they\'re still fresh. Capture learnings while.';
 
 export const inputs: ToolInput[] = [];
 

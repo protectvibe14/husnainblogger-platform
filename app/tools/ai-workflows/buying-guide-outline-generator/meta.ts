@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Build a buying guide template with budget tiers, key criteria, and pick slots for any product category. Free outline generator, no signup needed.";
+  'Guide buyers well with this buying guide template — comparisons, budgets, and top picks organized for confident decisions. Help readers decide confidently.';
 
 export const content: ToolContent = {
   title: "Buying Guide Template",

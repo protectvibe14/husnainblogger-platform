@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free blog income calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Turn traffic into revenue with this blog income calculator — model RPM, affiliates, and digital products against your monthly sessions. Tie traffic.';
 
 export const content: ToolContent = {
   title: 'Blog Income Calculator',

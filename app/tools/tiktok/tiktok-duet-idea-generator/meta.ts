@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Generate free TikTok duet ideas for your niche — react, reply, collab, or challenge concepts with setup steps. No TikTok login needed. Try it now.';
+  'Find your next collab with these TikTok duet ideas — creative formats matched to your niche that spark replies and shared audiences. Film your side today.';
 
 export const content: ToolContent = {
   title: 'TikTok Duet Ideas Generator',

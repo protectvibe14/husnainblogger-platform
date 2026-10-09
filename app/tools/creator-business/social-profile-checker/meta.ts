@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free social profile completeness checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Audit your presence with this social profile completeness checker — bio, links, and visuals scored across every platform. Fix gaps costing followers.';
 
 export const content: ToolContent = {
   title: 'Social Profile Completeness Checker',

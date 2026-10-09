@@ -88,7 +88,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Compare AdSense, Ezoic, Mediavine Journey, Mediavine, and Raptive side by side with your own traffic numbers. Enter your monthly sessions, say how much of your traffic comes from the US, and pick your blog niche — the tool then shows estimated monthly earnings per network, ranked best to worst, with each network\'s traffic requirement. All RPMs start as editable benchmarks, so adjust them to match your own data. Free, no signup.';
+  'Compare ad networks with this AdSense vs Mediavine vs Raptive calculator — see which network pays more at your traffic level in USD. Switch only when.';
 
 export const content: ToolContent = {
   title: 'Adsense vs Mediavine vs Raptive Calculator',

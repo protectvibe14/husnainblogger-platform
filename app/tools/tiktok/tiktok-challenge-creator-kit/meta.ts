@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free tiktok challenge ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Launch your own wave with these TikTok challenge ideas — rules, hashtags, and prize angles that get people participating. Launch with a catchy hashtag.';
 
 export const content: ToolContent = {
   title: 'TikTok Challenge Creator Kit',

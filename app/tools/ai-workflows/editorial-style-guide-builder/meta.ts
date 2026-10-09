@@ -53,7 +53,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Free editorial style guide template 2026: The compiled style-guide document in Markdown — copy it into your docs. Fast, private, no signup - try it now!";
+  'Keep every writer aligned with this editorial style guide template — voice, formatting, and rules in one shareable document. Onboard writers faster.';
 
 export const content: ToolContent = {
   title: "Editorial Style Guide Template",

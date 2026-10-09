@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/curiosity-gap-title-templates/';
 
 const DESCRIPTION =
-  'Get ideas from 60 free youtube title templates — curiosity, how-to, mistake, secret and number formulas you fill with your topic. Try it now.';
+  'Write click-worthy titles with these YouTube title templates — curiosity-gap formulas proven to lift CTR without resorting to clickbait. Customize.';
 
 export const inputs: ToolInput[] = [
   {

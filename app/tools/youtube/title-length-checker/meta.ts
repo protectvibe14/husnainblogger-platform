@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/title-length-checker/';
 
 const DESCRIPTION =
-  'Free youtube title length checker 2026: get a grapheme-accurate character count, truncation flags and front-load guidance. No signup — try it free today.';
+  'Stay inside YouTube\'s limits with this YouTube title length checker — grapheme-accurate character counts plus truncation warnings before you publish.';
 
 export const inputs: ToolInput[] = [
   {

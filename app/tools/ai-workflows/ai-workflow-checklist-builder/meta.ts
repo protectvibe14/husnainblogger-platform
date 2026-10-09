@@ -28,7 +28,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Turn your stage list into a reusable ai content workflow checklist with owners and progress tracking — structure your pipeline step by step. Free, no signup.";
+  'Systemize all your AI content with this AI content workflow checklist — every step from brief to publish is covered so nothing falls through.';
 
 export const content: ToolContent = {
   title: "AI Content Workflow Checklist",

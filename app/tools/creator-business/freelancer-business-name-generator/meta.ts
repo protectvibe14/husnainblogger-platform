@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Brainstorm freelance business name ideas fast. Enter keywords, pick a style, and get up to 50 template-based name ideas. Free, no signup — start now.";
+  'Name your freelance business with these freelance business name ideas — memorable, brandable names that fit your services. Find a name that fits you.';
 
 export const content: ToolContent = {
   title: "Freelance Business Name Ideas",

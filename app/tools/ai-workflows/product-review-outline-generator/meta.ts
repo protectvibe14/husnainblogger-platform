@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Generate a complete product review template outline with testing-note slots for hands-on, comparison, or roundup reviews. Free forever, no signup required.";
+  'Review products readers trust with this product review template — criteria, pros, cons, and verdict in a proven structure. Write reviews that rank.';
 
 export const content: ToolContent = {
   title: "Product Review Template",

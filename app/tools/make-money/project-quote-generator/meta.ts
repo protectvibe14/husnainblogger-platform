@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Price projects with confidence using this free freelance project quote calculator — enter hours, rate, costs, and margin for an itemized quote. Try it now.';
+  'Quote with confidence using this freelance project quote calculator — scope, hours, and rate combine into a professional estimate. Win work without.';
 
 export const content: ToolContent = {
   title: 'Freelance Project Quote Calculator',

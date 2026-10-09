@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Name SEO Optimizer',
   description:
-    'Fit more keywords into your profile with this free instagram name seo optimizer: 30-character names, keyword coverage, and a budget bar. Optimize your.',
+    'Fit more keywords into your profile with this Instagram name SEO optimizer — 30-character names with keyword coverage scored for better discovery.',
   howTo: [
     'Paste your "Keywords" — one per line or comma-separated, most important first.',
     'Optionally add your "Current name" to get name-plus-keyword combinations.',

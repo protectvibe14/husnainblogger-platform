@@ -34,7 +34,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Format your own questions into a ready-to-paste faq generator for blog output — FAQ HTML, Markdown, and FAQPage JSON-LD schema markup. Free, no signup.";
+  'Answer real questions with this FAQ generator for blogs — turn search queries into helpful Q&A sections readers actually love. Add Q&A readers love.';
 
 export const content: ToolContent = {
   title: "FAQ Generator for Blog",

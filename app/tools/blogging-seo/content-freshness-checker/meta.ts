@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free content freshness checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Spot stale pages fast with this content freshness checker — find outdated stats, broken references, and refresh opportunities in minutes. Prioritize.';
 
 export const content: ToolContent = {
   title: 'Content Freshness Checker',

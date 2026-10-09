@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Free ai disclosure generator 2026: Four fixed disclosure variants (short, standard, detailed, friendly) for your content type. Fast, private, no signup - try!";
+  'Stay transparent with this AI disclosure generator — clear statements that meet platform rules and reader expectations alike. Paste into footers or bios.';
 
 export const content: ToolContent = {
   title: "AI Disclosure Generator",

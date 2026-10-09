@@ -11,7 +11,7 @@ export const trackerMode: "checklist" = "checklist";
 export const trackerItems = TRACKER_ITEMS;
 
 const DESCRIPTION =
-  "Run this proven blog post publishing checklist before you hit publish — SEO, formatting, links, and QA checks with progress tracking. Free, no signup.";
+  'Ship flawless posts with this blog post publishing checklist — SEO, images, links, and formatting checked before you hit publish. Never miss a meta tag.';
 
 export const content: ToolContent = {
   title: "Blog Post Publishing Checklist",

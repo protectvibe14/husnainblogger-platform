@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Generate a channel bio with this free youtube about page generator — niche, schedule, and contact in a copy-ready description under 1000 characters. Try it now.';
+  'Write a channel bio that converts with this YouTube about page generator — niche, upload schedule, and contact details combined in one clean draft.';
 
 export const content: ToolContent = {
   title: 'Youtube About Page Generator',

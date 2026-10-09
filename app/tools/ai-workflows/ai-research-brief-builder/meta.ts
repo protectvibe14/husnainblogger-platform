@@ -53,7 +53,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Turn any question into a structured AI research prompt brief with sub-questions, a source checklist, and verification steps. Free, no signup.";
+  'Research faster with this AI research prompt builder — structured briefs that pull sharper, more useful answers from any model. Get structured answers.';
 
 export const content: ToolContent = {
   title: "AI Research Prompt",

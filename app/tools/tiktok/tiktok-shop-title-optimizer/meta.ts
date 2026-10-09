@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free tiktok shop title 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Sell more with this TikTok shop title optimizer — keywords and benefit words arranged for search visibility and impulse clicks. Find your best converters.';
 
 export const content: ToolContent = {
   title: 'TikTok Shop Title Optimizer',

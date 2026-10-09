@@ -22,7 +22,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Pick a content type and get a fixed content refresh checklist with keep, update, merge, or delete guidance for old posts, videos, and pages. Free, no signup.";
+  'Update old posts with this content refresh checklist — stats, links, images, and keywords reviewed for a complete refresh. Watch rankings climb.';
 
 export const content: ToolContent = {
   title: "Content Refresh Checklist",

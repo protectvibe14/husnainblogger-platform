@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free web design pricing calculator 2026: price your project by scope, page count and experience level, rounded to the nearest $50. No signup — try it now.';
+  'Quote web projects fairly with this web design pricing calculator — pages, features, and revisions priced into one clear USD total. Present quotes.';
 
 export const content: ToolContent = {
   title: 'Web Design Pricing Calculator',

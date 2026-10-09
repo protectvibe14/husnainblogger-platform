@@ -32,7 +32,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  'Design matching covers with this free instagram highlight cover maker — pick a color or gradient, add an icon and label, download the SVG. Free, no signup.';
+  'Design a polished profile with this Instagram highlight cover maker — matching covers that make your story highlights look professional. Download.';
 
 export const content: ToolContent = {
   title: 'Instagram Highlight Cover Maker',

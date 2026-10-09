@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free tiktok affiliate marketing video 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Review products that sell with this TikTok affiliate marketing video script — honest angles structured to drive real commissions. Earn viewer trust.';
 
 export const content: ToolContent = {
   title: 'TikTok Affiliate Marketing Video',

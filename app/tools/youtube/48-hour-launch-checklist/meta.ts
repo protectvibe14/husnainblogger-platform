@@ -11,7 +11,7 @@ export const trackerMode: 'checklist' = 'checklist';
 export const trackerItems = TRACKER_ITEMS;
 
 const DESCRIPTION =
-  'Launch every video right with this free YouTube video launch checklist — 18 timed steps from T-48h prep to T+48h review. No signup, start now.';
+  'Launch every video right with this YouTube video launch checklist — 48 hours of promotion tasks, from premiere setup to community posts and shorts.';
 
 export const content: ToolContent = {
   title: 'YouTube Video Launch Checklist',

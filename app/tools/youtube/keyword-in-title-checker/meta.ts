@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Check keyword placement with this free YouTube keyword in title checker — match verdict, position, and front-loading tips. No signup, try it now.';
+  'Check keyword placement with this YouTube keyword in title checker — get a match verdict, position analysis, and front-loading tips that help ranking.';
 
 export const content: ToolContent = {
   title: 'YouTube Keyword in Title Checker',

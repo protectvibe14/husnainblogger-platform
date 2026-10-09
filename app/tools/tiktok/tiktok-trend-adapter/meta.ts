@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/tiktok/tiktok-trend-adapter/';
 
 const DESCRIPTION =
-  'Adapt any trend to your niche with this free viral tiktok trends for my niche tool. Paste a trend name and type for niche-mapped video ideas. Try it now!';
+  'Ride trends your way with these viral TikTok trends for my niche — adapt what\'s hot to your audience without ever feeling forced or fake at all.';
 
 export const inputs: ToolInput[] = [
   {

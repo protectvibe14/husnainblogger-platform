@@ -5,7 +5,7 @@ import type { BuilderField } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/script-outline-builder/';
 
 const DESCRIPTION =
-  'Build a youtube script outline template: hook-to-CTA sections with word budgets for tutorials, reviews, vlogs and essays. Free, no signup — start now!';
+  'Structure videos that retain with this YouTube script outline template — hook, setup, payoff, and CTA laid out scene by scene for you. Fill sections.';
 
 export const inputs: ToolInput[] = [];
 

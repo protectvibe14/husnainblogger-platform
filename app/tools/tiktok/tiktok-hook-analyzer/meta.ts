@@ -22,7 +22,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Grade your opening hook with this free TikTok hook analyzer — a transparent 0–100 rubric scores brevity, hook patterns, and opener strength. No signup, try it now.';
+  'Fix weak openings with this TikTok hook analyzer — scores your first line on curiosity, clarity, and scroll-stopping power. Rewrite hooks until they.';
 
 export const content: ToolContent = {
   title: 'TikTok Hook Analyzer',

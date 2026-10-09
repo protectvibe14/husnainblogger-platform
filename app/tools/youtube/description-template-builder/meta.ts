@@ -5,7 +5,7 @@ import type { BuilderField } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/description-template-builder/';
 
 const DESCRIPTION =
-  'Free YouTube description template builder 2026: hook line, chapters, links, CTA, hashtags and FTC disclosure — all under 5000 characters. No signup! Try now!';
+  'Build better video descriptions with this YouTube description template — hook line, chapters, links, CTA, hashtags, and FTC disclosure included.';
 
 export const inputs: ToolInput[] = [];
 

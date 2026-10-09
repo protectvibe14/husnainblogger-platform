@@ -43,7 +43,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  'Free coaching package pricing 2026: Final package price with your discount applied. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Build premium coaching offers with this coaching package pricing builder — sessions, support, and outcomes are all priced into clear USD tiers.';
 
 export const content: ToolContent = {
   title: 'Coaching Package Pricing Builder',

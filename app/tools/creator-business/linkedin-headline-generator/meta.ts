@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Create a stronger LinkedIn headline for freelancers. Enter role and specialties, pick a style, and get options counted under 220 characters. Free — try it now.";
+  'Get found by clients with this LinkedIn headline generator for freelancers — keywords and positioning packed into 220 characters. Stand out in your niche.';
 
 export const content: ToolContent = {
   title: "Linkedin Headline for Freelancers",

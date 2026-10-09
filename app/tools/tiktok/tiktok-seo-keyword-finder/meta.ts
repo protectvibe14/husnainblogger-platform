@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/tiktok/tiktok-seo-keyword-finder/';
 
 const DESCRIPTION =
-  'Find searchable phrases with this free tiktok seo keywords tool. Enter a seed topic for long-tail, question, and how-to keyword suggestions. Try it now!';
+  'Get discovered in TikTok search with these TikTok SEO keywords — real search terms your audience types daily, matched to all your video topics.';
 
 export const inputs: ToolInput[] = [
   {

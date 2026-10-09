@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/title-capitalization-formatter/';
 
 const DESCRIPTION =
-  'Format titles with this free youtube title capitalization tool — Title Case, Sentence case, ALL CAPS or lowercase, plus a live character check. Try it now.';
+  'Format any video title with this YouTube title capitalization tool — Title Case, Sentence case, ALL CAPS, or lowercase, keeping acronyms intact.';
 
 export const inputs: ToolInput[] = [
   {

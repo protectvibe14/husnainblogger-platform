@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free freelance hourly rate calculator 2026: work backwards from your income target, expenses, and billable hours to find the rate you must charge. No signup.';
+  'Price your time right with this freelance hourly rate calculator — expenses, taxes, and profit margin baked into one fair rate. Never undercharge again.';
 
 export const content: ToolContent = {
   title: 'Freelance Hourly Rate Calculator',

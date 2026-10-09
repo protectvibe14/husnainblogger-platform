@@ -30,7 +30,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  "Free blogging sop template 2026: The full standard operating procedure in Markdown, ready to copy. Get instant results. No signup - try it free now!";
+  'Document your process with this blogging SOP template — repeatable steps your team can follow for every single post. Hand off without losing quality.';
 
 export const content: ToolContent = {
   title: "Blogging SOP Template",

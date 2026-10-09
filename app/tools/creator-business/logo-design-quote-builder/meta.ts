@@ -38,7 +38,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  'Free logo design quote template 2026: Design fee plus every line item, ending with the quote total. Get instant results. No signup - try it free now!';
+  'Quote logos professionally with this logo design quote template — concepts, revisions, and usage rights itemized clearly in USD. Match scope to line items.';
 
 export const content: ToolContent = {
   title: 'Logo Design Quote Template',

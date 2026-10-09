@@ -4,7 +4,7 @@ import type { ToolContent, BuilderField } from '../../../src/templates/types.ts'
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/upload-streak-tracker/';
 
 const DESCRIPTION =
-  'Free youtube upload streak tracker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Stay consistent with this YouTube upload streak tracker — log every upload, watch your streak grow, and never break the chain again. Build the habit.';
 
 export const inputs: ToolInput[] = [];
 

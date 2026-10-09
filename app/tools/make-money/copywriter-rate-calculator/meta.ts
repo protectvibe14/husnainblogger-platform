@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'See what to charge with this free copywriter rates calculator — pick your level and deliverable for survey-estimate ranges and a per-word rate. Try it now.';
+  'Charge what you\'re worth with this copywriter rates calculator — per-word, per-hour, and per-project pricing compared side by side. Benchmark against.';
 
 export const content: ToolContent = {
   title: 'Copywriter Rates Calculator',

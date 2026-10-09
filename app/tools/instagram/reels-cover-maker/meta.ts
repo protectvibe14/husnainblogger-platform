@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Reels Cover Maker',
   description:
-    'Design scroll-stopping covers with this free instagram reels cover maker: 1080x1920 specs, safe-zone guides, and validated cover plans. Build your.',
+    'Design scroll-stopping covers with this Instagram reels cover maker — 1080x1920 specs, safe-zone guides, and validated cover plans included.',
   howTo: [
     'Add one item per cover and type the "Cover title" (60 characters max — longer titles are rejected).',
     'Set the "Background" as a hex color like #0A0A0A, a named gradient (sunset, ocean, neon, mono, pastel), or an https:// image URL.',

@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Plan a freelance referral program in seconds. Enter client value, commission rate, and expected referrals to estimate payouts and cost. Free — try it now.";
+  'Turn clients into promoters with this freelance referral program planner — rewards and rules that keep referrals flowing in. Reward clients who refer.';
 
 export const content: ToolContent = {
   title: "Freelance Referral Program",

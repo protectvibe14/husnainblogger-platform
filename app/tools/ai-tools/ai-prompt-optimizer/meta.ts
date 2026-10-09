@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Prompt Optimizer',
   description:
-    'Turn a rough prompt into a clear, effective one with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Get better AI output with this AI prompt optimizer — rewrites vague prompts into clear, specific instructions that models follow well. Get better.',
   howTo: [
     'Pick an optimization goal: clearer, more detailed, or shorter.',
     'Paste the prompt (at least 20 characters, up to 8,000).',

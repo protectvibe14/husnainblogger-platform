@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/niche-profitability-scorer/';
 
 const DESCRIPTION =
-  'Free youtube niche scorer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Pick a profitable niche with this YouTube niche scorer — competition, CPM potential, and audience demand weighed into one clear score. Compare niches.';
 
 export const inputs: ToolInput[] = [
   {

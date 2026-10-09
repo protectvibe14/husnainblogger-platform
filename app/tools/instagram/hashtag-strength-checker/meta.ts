@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free hashtag strength checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Pick hashtags that work with this hashtag strength checker — relevance, competition, and reach potential scored for every single tag. Avoid banned or.';
 
 export const content: ToolContent = {
   title: 'Hashtag Strength Checker',

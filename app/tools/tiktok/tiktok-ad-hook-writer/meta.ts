@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Write scroll-stopping TikTok ad hooks for your product — pick problem, result, curiosity or offer angle. Free template-based hook writer. Try it now.';
+  'Stop the scroll with these TikTok ad hooks — first-three-second openers written to hold attention and lift your conversions. Lower your cost per result.';
 
 export const content: ToolContent = {
   title: 'TikTok Ad Hooks',

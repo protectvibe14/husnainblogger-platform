@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Split any gear budget with this free YouTube starter kit planner — camera, audio, lighting, editing, and accessories in priority order. Try it now.';
+  'Plan your setup smart with this YouTube starter kit planner — allocate your budget across camera, audio, lighting, and editing tools wisely.';
 
 export const content: ToolContent = {
   title: 'YouTube Starter Kit Planner',

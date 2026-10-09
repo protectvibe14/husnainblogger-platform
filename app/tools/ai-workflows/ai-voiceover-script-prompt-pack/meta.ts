@@ -13,7 +13,7 @@ export const trackerItems = TRACKER_ITEMS;
 export const content: ToolContent = {
   title: 'AI Voiceover Prompts',
   description:
-    'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and.',
+    'Browse 48 AI voiceover prompts — human-written templates for ads, narration, and explainers with detailed voice direction notes built right in.',
   howTo: [
     'Browse the 3 categories: ad voiceover, narration, and explainer voiceover — 16 prompts each.',
     'Click any prompt to see its full text with placeholders like [PRODUCT] highlighted.',

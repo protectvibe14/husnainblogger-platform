@@ -5,7 +5,7 @@ import { TRACKER_ITEMS } from './logic.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/thumbnail-a-b-test-tracker/';
 
 const DESCRIPTION =
-  'Free youtube thumbnail ab test tracker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Run fair thumbnail tests with this YouTube thumbnail A/B test tracker — log variants side by side, track CTR, and pick winners with real data.';
 
 export const inputs: ToolInput[] = [];
 

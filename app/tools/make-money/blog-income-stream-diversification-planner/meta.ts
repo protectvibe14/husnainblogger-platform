@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Plan your blog income diversification free — enter your current streams and revenue to get a timed plan of new income streams, ranked by fit. Try it now!';
+  'Build resilient revenue with this blog income diversification guide — spread earnings across ads, affiliates, and digital products. Build multiple.';
 
 export const content: ToolContent = {
   title: 'Blog Income Diversification Guide',

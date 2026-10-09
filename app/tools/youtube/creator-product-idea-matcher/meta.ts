@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Find profitable digital products for YouTubers matched to your niche, audience size, and effort — ranked ideas with fit notes. Free, try it now.';
+  'Discover profitable digital products for YouTubers matched to your niche, audience size, and effort level — every idea ranked by real fit. Answer.';
 
 export const content: ToolContent = {
   title: 'Digital Products for YouTubers',

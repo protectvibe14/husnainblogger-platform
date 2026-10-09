@@ -4,7 +4,7 @@ import type { ToolContent } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/subscriber-goal-countdown/';
 
 const DESCRIPTION =
-  'Free youtube subscriber goal tracker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Watch your channel grow with this YouTube subscriber goal tracker — set a target milestone and count down every new subscriber. Celebrate milestones as.';
 
 export const inputs: ToolInput[] = [
   {

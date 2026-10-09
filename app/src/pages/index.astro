@@ -18,7 +18,7 @@ import { toolsIndexHref } from "../../../config/site.config";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LandingHero from "../components/landing/LandingHero.astro";
 import PopularTools from "../components/landing/PopularTools.astro";
-import CategoryShowcase from "../components/landing/CategoryShowcase.astro";
+import BrowseAllTools from "../components/landing/BrowseAllTools.astro";
 import ValueProps from "../components/landing/ValueProps.astro";
 import HowItWorks from "../components/landing/HowItWorks.astro";
 import LandingFaq from "../components/landing/LandingFaq.astro";
@@ -42,6 +42,11 @@ const categories = CATEGORIES.map((c) => ({
   slug: c.slug,
   count: (byCategory[c.slug] ?? []).length,
   tagline: taglines[c.slug] ?? "Free creator tools",
+  tools: (byCategory[c.slug] ?? []).map((t) => ({
+    name: t.name,
+    slug: t.slug,
+    categorySlug: c.slug,
+  })),
 }));
 
 const toolCount = categories.reduce((n, c) => n + c.count, 0);
@@ -75,7 +80,7 @@ const popularTools = [
   <main>
     <LandingHero toolCount={toolCount} categoryCount={categories.length} />
     <PopularTools tools={popularTools} />
-    <CategoryShowcase categories={categories} />
+    <BrowseAllTools categories={categories} />
     <ValueProps />
     <HowItWorks />
     <LandingFaq />

@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Freelance Case Study Template',
   description:
-    'Build a freelance case study template from your project details: enter the challenge, solution, and real results to get a sectioned document for.',
+    'Build a freelance case study template from your project details — challenge, solution, and real results organized into a polished final document.',
   howTo: [
     'Enter the client name, plus their industry if you want it in the title.',
     'Describe the challenge the client had when they came to you.',

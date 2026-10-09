@@ -4,7 +4,7 @@ import type { ToolContent, BuilderField } from '../../../src/templates/types.ts'
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/ctr-impressions-log/';
 
 const DESCRIPTION =
-  "A free YouTube CTR tracker for creators who test thumbnails and titles by hand. Log each video or variant with its impressions and clicks, and the tracker computes per-entry CTR, aggregates by day, week, or month, ranks your best and worst entries, and shows trend direction over time. Entries live in your browser, nothing touches YouTube's API, and you can export the whole log to CSV. No signup.";
+  'Track click-through rates manually with this YouTube CTR tracker. Log impressions and clicks per video to learn which titles earn the click.';
 
 export const inputs: ToolInput[] = [];
 

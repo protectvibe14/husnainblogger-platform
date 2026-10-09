@@ -70,7 +70,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free thumbnail designer pricing 2026: Your monthly package price after the bundle discount. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Package your services with this thumbnail designer pricing guide — per-thumbnail and monthly rates benchmarked in USD. Offer basic to premium tiers.';
 
 export const content: ToolContent = {
   title: 'Thumbnail Designer Pricing',
