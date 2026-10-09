@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Upload Streak Tracker 2026 – Free | HusnainBlogger',
+  title: 'Youtube Upload Streak Tracker | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Log each upload date manually (YYYY-MM-DD) — one entry per upload; same-day uploads are merged automatically.',
