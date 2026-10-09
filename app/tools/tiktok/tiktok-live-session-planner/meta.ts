@@ -53,7 +53,7 @@ const DESCRIPTION =
   'Free tiktok live ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'TikTok Live Session Planner 2026 – Free | HusnainBlogger',
+  title: 'TikTok Live Session Planner',
   description: DESCRIPTION,
   howTo: [
     'Type your LIVE topic — for example "beginner budgeting" — and optionally your niche.',
