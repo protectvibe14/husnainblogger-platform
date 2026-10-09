@@ -67,7 +67,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Negative Prompt List 2026 – Free Tool | HusnainBlogger',
+  title: 'Negative Prompt List',
   description:
     'Browse 60 curated negative prompts across 6 categories — anatomy, artifacts, text, lighting and more. Filter, combine and copy a ready-to-paste negative prompt.',
   howTo: [
