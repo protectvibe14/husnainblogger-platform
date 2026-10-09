@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Plan with this free reaction video layout planner — pick canvas, facecam size, and corner to get exact PIP rectangles plus safe-area notes. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Reaction Video Layout Planner 2026 – Free | HusnainBlogger',
+  title: 'Reaction Video Layout Planner',
   description: DESCRIPTION,
   howTo: [
     'Choose your canvas aspect ratio: 16:9 for YouTube or 9:16 for TikTok, Reels, and Shorts.',
