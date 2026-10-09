@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Estimate your freelance video editing price with this free video editor rates calculator. Pick a level, enter hours, and get a rate range and total.';
 
 export const content: ToolContent = {
-  title: 'Video Editor Rates Calculator 2026 – Free | HusnainBlogger',
+  title: 'Video Editor Rates Calculator',
   description: DESCRIPTION,
   howTo: [
     'Choose your experience level: Entry (under ~2 years), Mid (2–5 years), or Senior (5+ years / specialized).',
