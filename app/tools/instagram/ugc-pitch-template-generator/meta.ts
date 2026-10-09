@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'UGC Pitch Template | HusnainBlogger',
+  title: 'UGC Pitch Template',
   description:
     'Use a proven ugc pitch template to message brands: enter the brand, your niche, and content type, get a copyable pitch plus follow-up. Free — try it now!',
   howTo: [
