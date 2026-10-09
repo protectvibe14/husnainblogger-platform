@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Feed Theme Planner 2026 – Free | HusnainBlogger',
+  title: 'Instagram Feed Theme Planner | HusnainBlogger',
   description:
     'Plan a consistent Instagram feed theme free with a curated planner. Pick minimal, bold, pastel, moody or editorial and get palettes, dos and donts. Try it now!',
   howTo: [
