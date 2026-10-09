@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Get email a/b test ideas: pick your email type and test focus for 3 ready-to-run experiments with variants, hypotheses, and sample-size guidance. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Email A/B Test Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Email A/B Test Ideas',
   description: DESCRIPTION,
   howTo: [
     'Choose your email type: welcome, newsletter, promotional, abandoned-cart, or re-engagement.',
