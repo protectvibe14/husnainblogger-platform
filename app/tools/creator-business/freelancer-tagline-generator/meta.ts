@@ -40,7 +40,7 @@ const DESCRIPTION =
   "Create freelancer tagline ideas that fit your services. Enter what you do, pick a tone, and get up to 30 template-based taglines. Free, no signup — try it now.";
 
 export const content: ToolContent = {
-  title: "Freelancer Tagline Ideas',
+  title: "Freelancer Tagline Ideas",
   description: DESCRIPTION,
   howTo: [
     "Enter your service keywords — one per line or comma-separated (e.g. logo design, copywriting).",
