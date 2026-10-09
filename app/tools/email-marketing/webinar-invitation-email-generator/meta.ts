@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Webinar Invitation Email Template 2026 | HusnainBlogger',
+  title: 'Webinar Invitation Email Template 2027',
   description:
     'Create a webinar invitation email template in seconds. Enter your title, date, speaker, and benefits to get 5 subject lines plus a full draft. Try it free!',
   howTo: [
