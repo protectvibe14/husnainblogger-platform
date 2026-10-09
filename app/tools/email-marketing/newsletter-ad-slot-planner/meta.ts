@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Ad Slot Planner 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Ad Slot Planner',
   description:
     'Free newsletter ad slot planner 2026: Plan newsletter ad slots free: enter issues per month, slot prices, and fill rates — get. Fast, private, no signup - try!',
   howTo: [
