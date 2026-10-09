@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'EEAT Checklist 2026 – Free SEO Audit Guide | HusnainBlogger',
+  title: 'EEAT Checklist',
   description:
     'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. No signup — try it now.',
   howTo: [
