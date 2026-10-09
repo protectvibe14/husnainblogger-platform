@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Photo Carousel Ideas 2026 – Free | HusnainBlogger',
+  title: 'TikTok Photo Carousel Ideas',
   description:
     'Plan tiktok photo carousel ideas slide by slide: cover hook, value slides with text guidance, and a CTA slide. Enter your topic — try it free now!',
   howTo: [
