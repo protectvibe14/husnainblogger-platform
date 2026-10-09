@@ -44,7 +44,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Cold Outreach Tracker 2026 – Free Tool | HusnainBlogger',
+  title: 'Cold Outreach Tracker',
   description: DESCRIPTION,
   howTo: [
     'Add one row per prospect: name (required) and pipeline status (required: new, contacted, replied, meeting, won, or lost).',
