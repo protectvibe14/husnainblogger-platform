@@ -74,7 +74,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Client Profitability Tracker 2026 | HusnainBlogger',
+  title: 'Freelance Client Profitability Tracker 2027',
   description:
     'Rank clients by true profit with this freelance client profitability tracker: enter revenue, hours, cost rate and expenses for profit and margins. Free \u2014 try it',
   howTo: [
