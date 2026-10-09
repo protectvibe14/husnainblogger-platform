@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Html to Plain Text Email Converter 2026 | HusnainBlogger',
+  title: 'Html to Plain Text Email Converter 2027',
   description:
     'Convert an HTML email to a clean plain-text version. Paste your HTML, pick inline or footnote links, and copy the wrapped result with line stats. Free!',
   howTo: [
