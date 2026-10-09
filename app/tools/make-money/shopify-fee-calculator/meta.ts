@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Shopify Fee Calculator 2026 – Plans & Fees | HusnainBlogger',
+  title: 'Shopify Fee Calculator',
   description:
     'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate. No signup.',
   keywords: ['shopify fee calculator uk', 'shopify fee calculator us', 'shopify payment fee calculator', 'shopify price calculator app', 'shopify pricing calculator'],
