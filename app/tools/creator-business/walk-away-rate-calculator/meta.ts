@@ -66,7 +66,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Minimum Project Fee Calculator 2026 – Free | HusnainBlogger',
+  title: 'Minimum Project Fee Calculator',
   description:
     'Find your minimum project fee in seconds. Enter monthly costs and billable hours to get your cost floor and walk-away rate with buffer. Free - try it now!',
   howTo: [
