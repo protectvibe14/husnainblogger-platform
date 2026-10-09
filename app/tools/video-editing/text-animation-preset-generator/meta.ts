@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Text Animation Generator CSS 2026 – Free | HusnainBlogger',
+  title: 'Text Animation Generator CSS',
   description:
     'Generate copy-paste CSS text animations plus CapCut rebuild steps with this free text animation generator CSS tool — 5 effects, easing, and colors. Try it now.',
   howTo: [
