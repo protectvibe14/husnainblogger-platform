@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Interview Question Generator 2026 – Free | HusnainBlogger',
+  title: 'Interview Question Generator',
   description:
     'Generate interview questions for any role: behavioral, technical or culture-fit banks with seniority-specific add-ons. Free prep list, no signup needed.',
   howTo: [
