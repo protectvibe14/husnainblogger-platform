@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Comment DM Automation Script 2026 – Free | HusnainBlogger',
+  title: 'Comment DM Automation Script | HusnainBlogger',
   description:
     'Build a DM funnel with this free comment dm automation script tool. Enter your lead magnet and keyword for reply, DM and follow-up scripts. Try it now!',
   howTo: [
