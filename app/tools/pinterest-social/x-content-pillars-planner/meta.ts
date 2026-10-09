@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Content Pillars Planner 2026 – Free | HusnainBlogger',
+  title: 'Twitter Content Pillars Planner',
   description:
     'Plan twitter content pillars for free: enter your niche to get 4 distinct pillars with descriptions and 3 topic ideas each. Build your X strategy now!',
   howTo: [
