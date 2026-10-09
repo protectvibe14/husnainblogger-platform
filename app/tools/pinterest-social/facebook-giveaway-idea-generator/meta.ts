@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Giveaway Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Giveaway Ideas',
   description:
     'Find the best facebook giveaway ideas with this free generator: enter your business for 4 concept frameworks plus a compliance checklist. Try it now!',
   howTo: [
