@@ -34,7 +34,7 @@ const DESCRIPTION =
   "Format your own questions into a ready-to-paste faq generator for blog output — FAQ HTML, Markdown, and FAQPage JSON-LD schema markup. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "FAQ Generator for Blog',
+  title: "FAQ Generator for Blog",
   description: DESCRIPTION,
   howTo: [
     "Add one row per question (at least 2, at most 20).",
