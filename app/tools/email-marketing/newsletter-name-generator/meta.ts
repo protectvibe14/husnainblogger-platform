@@ -51,7 +51,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Name Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Newsletter Name Generator',
   description:
     'Generate catchy newsletter name ideas from your niche and tone, plus tagline ideas. Free tool, no signup — check availability manually. Try it now!',
   howTo: [
