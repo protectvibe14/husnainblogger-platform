@@ -69,7 +69,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Account Audit 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Account Audit',
   description:
     'Run a tiktok account audit with a free self-scored checklist: 4 categories, 0–100 scores, gap list, and prioritized fixes on a published rubric. Try it now!',
   howTo: [
