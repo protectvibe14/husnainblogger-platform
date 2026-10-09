@@ -23,6 +23,11 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
         <span>Site tagline</span>
         <input type="text" id="s-tagline" placeholder="Free tools for creators." />
       </label>
+      <label class="admin-field">
+        <span>Google Analytics 4 Measurement ID</span>
+        <input type="text" id="s-ga4" placeholder="G-XXXXXXXXXX" pattern="G-[A-Z0-9]+" title="Format: G-XXXXXXXXXX" />
+        <small class="admin-hint">Analytics → Admin → Data Streams → Measurement ID. Empty = no tracking.</small>
+      </label>
       <div class="admin-form__actions">
         <button type="submit" class="admin-btn-gold" id="settings-save">Save settings</button>
         <span class="admin-form__status" id="settings-status"></span>
@@ -40,6 +45,7 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
     const email = document.getElementById("s-email") as HTMLInputElement;
     const name = document.getElementById("s-name") as HTMLInputElement;
     const tagline = document.getElementById("s-tagline") as HTMLInputElement;
+    const ga4 = document.getElementById("s-ga4") as HTMLInputElement;
     const err = document.getElementById("settings-error") as HTMLElement;
     const status = document.getElementById("settings-status") as HTMLElement;
     const btn = document.getElementById("settings-save") as HTMLButtonElement;
@@ -52,6 +58,7 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
         email.value = data.contactEmail ?? "";
         name.value = data.siteName ?? "";
         tagline.value = data.siteTagline ?? "";
+        ga4.value = data.ga4MeasurementId ?? "";
       } catch (ex: any) {
         err.textContent = "Could not load settings: " + (ex.message ?? ex);
         err.hidden = false;
@@ -68,6 +75,7 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
           contactEmail: email.value.trim(),
           siteName: name.value.trim(),
           siteTagline: tagline.value.trim(),
+          ga4MeasurementId: ga4.value.trim(),
         };
         if (!data.contactEmail) throw new Error("Contact email is required.");
         await writeFile(PATH, JSON.stringify(data, null, 2) + "\n", "Admin: update site settings", sha);
@@ -108,6 +116,7 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
     color-scheme: light;
   }
   .admin-field input:focus { outline: none; border-color: var(--color-accent); box-shadow: var(--focus-ring); }
+  .admin-hint { display: block; font-size: var(--text-xs); color: var(--color-muted); margin-top: var(--space-1); }
   .admin-form__actions { display: flex; gap: var(--space-3); align-items: center; }
   .admin-btn-gold {
     font: inherit; font-weight: 700;
