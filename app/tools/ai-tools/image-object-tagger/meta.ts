@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Image Object Tagger: Free Online 2026 | HusnainBlogger',
+  title: 'Image Object Tagger: Free Online 2027',
   description:
     'Tag objects in any photo with a free on-device image classifier. Top-8 labels with confidence bars — no uploads and no API key needed, ever.',
   howTo: [
