@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube SEO Score Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Youtube SEO Score Checker | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your video title (required) and your target keyword if you have one.',
