@@ -84,7 +84,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '4000 Watch Hours Calculator 2026 – Free | HusnainBlogger',
+  title: '4000 Watch Hours Calculator | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Pick your monetization path: long-form (4,000 watch hours) or Shorts (10M views).',
