@@ -87,7 +87,7 @@ const DESCRIPTION =
   'Free amazon fba profit calculator 2026: Not shown when product cost is $0. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Amazon FBA Profit Calculator 2026 – Free | HusnainBlogger',
+  title: 'Amazon FBA Profit Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your item sale price and your landed product cost per unit.',
