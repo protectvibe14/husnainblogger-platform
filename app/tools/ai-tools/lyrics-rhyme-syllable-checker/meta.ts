@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Lyrics Rhyme & Syllable Checker 2026 – Free | HusnainBlogger',
+  title: 'Lyrics Rhyme & Syllable Checker',
   description:
     'Check your lyrics’ flow: per-line syllable estimates, rhyme detection and an AABB-style rhyme scheme. Honest heuristics, explained — free, no signup.',
   howTo: [
