@@ -51,7 +51,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: "Virtual Assistant Rates Calculator 2026 | HusnainBlogger",
+  title: "Virtual Assistant Rates Calculator 2027",
   description:
     "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range — try it now.",
   howTo: [
