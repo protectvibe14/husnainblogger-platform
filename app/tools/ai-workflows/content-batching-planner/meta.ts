@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Batching Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Content Batching Template',
   description:
     'Plan a content batch day in minutes: choose 1-50 pieces, your batch day, and platforms, then get a task-by-task calendar grid. Free, no signup - try it now!',
   howTo: [
