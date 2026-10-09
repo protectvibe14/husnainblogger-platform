@@ -61,7 +61,7 @@ const DESCRIPTION =
   'Free ebay fee calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'eBay Fee Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'eBay Fee Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your item sale price and the shipping amount you charged the buyer.',
