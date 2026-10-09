@@ -83,7 +83,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Reels vs Carousel Which Is Better 2027 | HusnainBlogger',
+  title: 'Reels vs Carousel Which Is Better 2027',
   description:
     'Answer 5 quick questions to settle reels vs carousel which is better for your goals and style. Free quiz — get your format verdict and next steps now!',
   howTo: [
