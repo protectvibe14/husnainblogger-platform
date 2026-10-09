@@ -48,7 +48,7 @@ const DESCRIPTION =
   'Free about page copy generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'About Page Copy Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'About Page Copy Generator',
   description: DESCRIPTION,
   howTo: [
     'Enter your name exactly as you want it shown on the about page.',
