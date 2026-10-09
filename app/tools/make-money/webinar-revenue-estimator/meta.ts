@@ -48,7 +48,7 @@ const DESCRIPTION =
   'Estimate webinar revenue from registrants, show-up rate, and conversion with this free webinar revenue calculator. Projection only — run your scenario now.';
 
 export const content: ToolContent = {
-  title: 'Webinar Revenue Calculator 2026 – Free | HusnainBlogger',
+  title: 'Webinar Revenue Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter how many people registered for your webinar (whole number).',
