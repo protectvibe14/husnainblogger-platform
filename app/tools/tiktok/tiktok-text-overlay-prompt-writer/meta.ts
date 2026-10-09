@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Text Overlay Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Text Overlay Ideas',
   description:
     'Create free tiktok text overlay ideas from your scene: hook line plus beat lines, every line capped at 42 chars for mobile readability. Try it now!',
   howTo: [
