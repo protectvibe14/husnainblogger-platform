@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Product Photo White Background 2026 | HusnainBlogger',
+  title: 'Product Photo White Background 2027',
   description:
     'Make marketplace-ready product photos free — AI removes the background and places your product on pure white 2000×2000. Runs in your browser, no signup.',
   howTo: [
