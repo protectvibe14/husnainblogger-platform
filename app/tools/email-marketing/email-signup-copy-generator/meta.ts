@@ -55,7 +55,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Signup Copy Generator 2026 – Free | HusnainBlogger',
+  title: 'Email Signup Copy Generator',
   description:
     'Write opt-in forms with this free email signup copy generator: get headline, subtext, and button options for your incentive, placement, and tone. Try it now!',
   howTo: [
