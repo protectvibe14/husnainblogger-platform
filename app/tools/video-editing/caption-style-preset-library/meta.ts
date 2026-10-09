@@ -24,7 +24,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'CapCut Caption Style Presets 2026 – Free | HusnainBlogger',
+  title: 'CapCut Caption Style Presets',
   description:
     'Copy caption styles free: pick a vibe and platform to get a full CapCut caption style presets config — font, colors, stroke, animation, steps. Try it now.',
   howTo: [
