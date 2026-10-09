@@ -33,7 +33,7 @@ const DESCRIPTION =
   'Free email ps generator: enter your goal, offer, and tone to get 6 ready-to-paste P.S. lines in friendly, professional, playful, or urgent styles. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Email Ps Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Ps Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your email goal (e.g. “book a demo call”) in the goal field.',
