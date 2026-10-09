@@ -11,7 +11,7 @@ export const trackerMode: 'checklist' | 'library' = 'library';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'Faceless Video AI Prompts 2026 – Free Tool | HusnainBlogger',
+  title: 'Faceless Video AI Prompts',
   description:
     'Browse 48 free faceless video AI prompts: human-written templates for documentaries, explainers, listicles, and stories. Copy a prompt and create today.',
   howTo: [
