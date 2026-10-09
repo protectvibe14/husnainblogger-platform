@@ -66,7 +66,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter CPM Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Newsletter CPM Calculator',
   description:
     'Estimate newsletter ad revenue — enter subscribers, open rate, and CPM to see per-issue and monthly revenue. Pure math on your numbers. Calculate now!',
   howTo: [
