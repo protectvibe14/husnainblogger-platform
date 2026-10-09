@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Title Templates | HusnainBlogger',
+  title: 'Youtube Title Templates',
   description: DESCRIPTION,
   howTo: [
     'Type your video topic or keyword into the "Topic / keyword" box.',
