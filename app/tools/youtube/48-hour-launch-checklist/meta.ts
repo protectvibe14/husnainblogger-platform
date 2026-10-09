@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Launch every video right with this free YouTube video launch checklist — 18 timed steps from T-48h prep to T+48h review. No signup, start now.';
 
 export const content: ToolContent = {
-  title: 'YouTube Video Launch Checklist | HusnainBlogger',
+  title: 'YouTube Video Launch Checklist',
   description: DESCRIPTION,
   howTo: [
     'Set your publish datetime in YouTube Studio first — every T-48h … T+48h step anchors to it.',
