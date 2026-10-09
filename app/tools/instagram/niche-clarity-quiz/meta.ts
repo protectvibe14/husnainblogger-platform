@@ -89,7 +89,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How To Find My Niche Instagram | HusnainBlogger',
+  title: 'How To Find My Niche Instagram',
   description:
     'Take a free quiz to learn how to find my niche instagram creators actually use: answer 5 questions, get 3 ranked niche matches plus a clarity score. Start now!',
   howTo: [
