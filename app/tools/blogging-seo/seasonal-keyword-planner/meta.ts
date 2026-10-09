@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Seasonal Keyword Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Seasonal Keyword Planner',
   description:
     'Map a year of content ideas with this free seasonal keyword planner. Turn one seed keyword into month-by-month angles with publish-by dates. Plan now!',
   howTo: [
