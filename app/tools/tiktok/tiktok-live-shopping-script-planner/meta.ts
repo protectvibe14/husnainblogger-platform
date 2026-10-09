@@ -32,7 +32,7 @@ const DESCRIPTION =
   'Plan a TikTok live shopping script — product segments, sample price-drop lines, pin-product cues, and urgency CTAs. Free. Plan your live sale now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Live Shopping Script 2026 – Free | HusnainBlogger',
+  title: 'TikTok Live Shopping Script',
   description: DESCRIPTION,
   howTo: [
     'List your products one per line — add " | price" after a product, e.g. "Silk pillowcase | $24.99", or leave the price off.',
