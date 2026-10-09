@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Digital Products to Sell As Influencer 2026 | HusnainBlogger',
+  title: 'Digital Products to Sell As Influencer 2027',
   description:
     'Generate digital product ideas for free: enter your niche and skills to get curated, ready-to-validate ideas with your own price hints. Start now!',
   howTo: [
