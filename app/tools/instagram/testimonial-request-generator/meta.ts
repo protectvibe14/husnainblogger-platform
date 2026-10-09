@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Ask for Testimonial 2026 – Free | HusnainBlogger',
+  title: 'How to Ask for Testimonial | HusnainBlogger',
   description:
     'Get how to ask for testimonial scripts that work: ready-to-send DM, email, or in-person requests plus six smart prompts. Free, no signup — build yours now!',
   howTo: [
