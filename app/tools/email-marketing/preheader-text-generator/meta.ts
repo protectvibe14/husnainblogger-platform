@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Preheader Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Preheader Generator',
   description:
     'Free email preheader generator 2026: generate email preheader text free: turn your email summary into 6 preview-text options,. Fast, private, no signup - try!',
   howTo: [
