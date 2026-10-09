@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Upgrade Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'Content Upgrade Ideas Generator',
   description:
     'Turn readers into subscribers with this free content upgrade ideas generator: get up to 10 bonus ideas with formats and placements for your topic. Try it now!',
   howTo: [
