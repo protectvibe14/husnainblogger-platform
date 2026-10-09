@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Generate free TikTok duet ideas for your niche — react, reply, collab, or challenge concepts with setup steps. No TikTok login needed. Try it now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Duet Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'TikTok Duet Ideas Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your niche into the "Your niche" box — for example "sourdough baking".',
