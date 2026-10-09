@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Hashtag Generator 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Hashtag Generator',
   description:
     'Find pinterest hashtags with this free generator. Enter your pin topic to get specific topic tags plus curated suggestions, ranked and ready. Try it now!',
   howTo: [
