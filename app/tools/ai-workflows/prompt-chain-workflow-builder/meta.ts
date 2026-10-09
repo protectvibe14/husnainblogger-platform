@@ -47,7 +47,7 @@ const DESCRIPTION =
   "Free ai prompt chain builder 2026: The ordered chain with variable handoffs and prompt templates — copy it whole. Fast, private, no signup - try it now!";
 
 export const content: ToolContent = {
-  title: "AI Prompt Chain Builder 2026 – Free Tool | HusnainBlogger",
+  title: "AI Prompt Chain Builder',
   description: DESCRIPTION,
   howTo: [
     "Add one row per step, in the order the steps run.",
