@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'AI Cover Letter Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Cover Letter Generator',
   description:
     'Generate a tailored 3-paragraph cover letter with your own free Gemini, Groq, or OpenRouter key. No invented facts — review before sending. No signup.',
   howTo: [
