@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Long Tail Keyword Generator – Free 2026 | HusnainBlogger',
+  title: 'Long Tail Keyword Generator – Free 2027',
   description:
     'Generate long tail keyword ideas from any seed keyword with fixed modifier templates. Free long tail keyword generator, no signup — expand your seed now!',
   howTo: [
