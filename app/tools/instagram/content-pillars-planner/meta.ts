@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Content Pillars Examples 2026 | HusnainBlogger',
+  title: 'Instagram Content Pillars Examples 2027 | HusnainBlogger',
   description:
     'Plan balanced Instagram content pillars for free: enter 3–5 pillars and your weekly post count to get exact percentages and slots per pillar. Start now!',
   howTo: [
