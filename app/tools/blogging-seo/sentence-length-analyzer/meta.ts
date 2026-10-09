@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Average Sentence Length Checker 2026 – Free | HusnainBlogger',
+  title: 'Average Sentence Length Checker',
   description:
     'Measure sentence length with this free average sentence length checker. Get Flesch, Flesch-Kincaid, Gunning Fog, and ARI scores plus long sentences. Try it now!',
   howTo: [
