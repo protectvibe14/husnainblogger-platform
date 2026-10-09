@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Brand Pitch DM Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Brand Pitch DM Template',
   description:
     'Pitch brands with a proven brand pitch DM template. Enter the brand, your niche, and deliverable — get a ready-to-send pitch free. Try it now!',
   howTo: [
