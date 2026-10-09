@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Keyword & Tag Extractor 2026 – Free Tool | HusnainBlogger',
+  title: 'Keyword & Tag Extractor',
   description:
     'Extract keywords and hashtags from any text: frequency-based ranking with stopword removal and key-phrase detection. Free, runs in your browser.',
   howTo: [
