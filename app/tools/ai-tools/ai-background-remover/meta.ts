@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Background Remover 2026 – Free Tool | HusnainBlogger',
+  title: 'Ai Background Remover',
   description:
     'Remove image backgrounds free with AI in your browser — transparent PNG download, no signup, no uploads. The model runs 100% on your device.',
   howTo: [
