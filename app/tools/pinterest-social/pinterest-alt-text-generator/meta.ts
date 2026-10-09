@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Image Alt Text 2026 – Free Tool | HusnainBlogger',
+  title: 'Pinterest Image Alt Text',
   description:
     'Write pinterest image alt text with this free generator. Describe your image, add a keyword, and get accessible, SEO-friendly alt text instantly. Try it now!',
   howTo: [
