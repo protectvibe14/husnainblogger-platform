@@ -92,7 +92,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time To Post On Instagram 2026 – Free | HusnainBlogger',
+  title: 'Best Time To Post On Instagram',
   description:
     'Plan the best time to post on Instagram for free: pick your audience region and timezone for generic slot suggestions. Get your schedule now!',
   howTo: [
