@@ -31,7 +31,7 @@ const DESCRIPTION =
   'Free youtube title analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'YouTube Title Analyzer 2026 – Free Tool | HusnainBlogger',
+  title: 'YouTube Title Analyzer | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your exact video title into the title field.',
