@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ai Music Generator 2026 – Free Generator | HusnainBlogger',
+  title: 'Ai Music Generator',
   description:
     'Make AI songs with your own Suno-compatible API key — describe the track, generate two variations, then play and download the MP3s. No signup needed.',
   howTo: [
