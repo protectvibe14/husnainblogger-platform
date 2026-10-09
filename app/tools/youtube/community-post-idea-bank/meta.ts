@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Community Post Ideas 2026 – Free | HusnainBlogger',
+  title: 'YouTube Community Post Ideas | HusnainBlogger',
   description:
     'Get free YouTube community post ideas for polls, images, text and quizzes: enter your niche and post type to get copy-ready drafts with templates. Try it now!',
   howTo: [
