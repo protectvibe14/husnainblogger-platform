@@ -32,7 +32,7 @@ const DESCRIPTION =
   'Grade your tags with this free YouTube tag checker — a transparent 0–100 rubric scores keyword coverage, specificity, and budget. No signup, try it now.';
 
 export const content: ToolContent = {
-  title: 'YouTube Tag Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'YouTube Tag Checker | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your exact video title into the title field.',
