@@ -42,7 +42,7 @@ const DESCRIPTION =
   'Free sponsorship email pitch generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Sponsorship Email Pitch Generator 2026 | HusnainBlogger',
+  title: 'Sponsorship Email Pitch Generator 2027',
   description: DESCRIPTION,
   howTo: [
     'Choose your asset: blog, podcast, event, or newsletter.',
