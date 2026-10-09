@@ -19,7 +19,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'SRT to VTT Converter 2026 – Free Tool | HusnainBlogger',
+  title: 'SRT to VTT Converter',
   description:
     'Free srt to vtt converter 2026: Convert SRT subtitles to WebVTT in your browser: paste SRT text, get clean VTT with. Fast, private, no signup - try it now!',
   howTo: [
