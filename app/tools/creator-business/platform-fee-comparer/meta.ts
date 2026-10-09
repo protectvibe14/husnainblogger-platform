@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Gumroad Vs Etsy Fees Calculator 2026 – Free | HusnainBlogger',
+  title: 'Gumroad Vs Etsy Fees Calculator',
   description:
     'Compare gumroad vs etsy fees on any sale price: enter each platform\u2019s fee % and fixed fee to see ranked net payouts. No fee data stored \u2014 try it free now!',
   howTo: [
