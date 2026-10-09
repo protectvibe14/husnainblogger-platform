@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Photo to Cartoon 2026 – Free Tool | HusnainBlogger',
+  title: 'Photo to Cartoon',
   description:
     'Turn a photo into a cartoon with your own API key — 3d animated, anime or comic-book styles. OpenRouter cartoonizes your photo; HF/fal.ai illustrate. No signup.',
   howTo: [
