@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Editing Timeline Estimator 2026 | HusnainBlogger',
+  title: 'Video Editing Timeline Estimator 2027',
   description:
     'Get a project end date with this video editing timeline estimator: enter tasks with hours, daily hours, and buffer days to get total hours and work days. Free!',
   howTo: [
