@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'FAQ Schema Generator – Free JSON-LD 2026 | HusnainBlogger',
+  title: 'FAQ Schema Generator – Free JSON-LD 2027',
   description:
     'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results. No signup. Fast & free Fast & free',
   howTo: [
