@@ -36,7 +36,7 @@ const DESCRIPTION =
   'Find the best emoji for youtube titles — type your title, pick a tone, and get front, end, and split emoji placements. Free, no signup. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Emoji for YouTube Titles 2026 – Free Tool | HusnainBlogger',
+  title: 'Emoji for YouTube Titles',
   description: DESCRIPTION,
   howTo: [
     'Type your video title text (120 characters max) into the title field.',
