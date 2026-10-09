@@ -29,7 +29,7 @@ const DESCRIPTION =
   "Turn your stage list into a reusable ai content workflow checklist with owners and progress tracking — structure your pipeline step by step. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "AI Content Workflow Checklist',
+  title: "AI Content Workflow Checklist",
   description: DESCRIPTION,
   howTo: [
     "Add one row per workflow stage.",
