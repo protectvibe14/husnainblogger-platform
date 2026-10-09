@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Heading Hierarchy Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Heading Hierarchy Checker',
   description:
     'Check your H1–H6 structure in seconds. Paste HTML into this free heading hierarchy checker to flag skipped levels, missing H1s, and empty headings. Analyze now!',
   howTo: [
