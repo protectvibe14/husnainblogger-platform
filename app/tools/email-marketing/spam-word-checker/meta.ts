@@ -19,7 +19,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Spam Word Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Spam Word Checker',
   description:
     'Free email spam word checker 2026: check your email for spam trigger words free: paste any subject or body text, see flagged. Fast, private, no signup - try it!',
   howTo: [
