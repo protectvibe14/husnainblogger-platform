@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time to Send Email 2026 – Free Tool | HusnainBlogger',
+  title: 'Best Time to Send Email',
   description:
     'Plan the best time to send email with timezone conversion. Enter sender and audience zones to get converted slots from common guidance. Free!',
   howTo: [
