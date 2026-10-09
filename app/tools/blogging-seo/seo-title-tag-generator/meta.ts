@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'SEO Title Tag Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'SEO Title Tag Generator',
   description:
     'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates. No signup! Try it now!',
   howTo: [
