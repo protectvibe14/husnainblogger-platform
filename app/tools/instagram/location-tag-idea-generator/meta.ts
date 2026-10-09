@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Location Tag Ideas 2026 – Free | HusnainBlogger',
+  title: 'Instagram Location Tag Ideas | HusnainBlogger',
   description:
     'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips. Try it now.',
   howTo: [
