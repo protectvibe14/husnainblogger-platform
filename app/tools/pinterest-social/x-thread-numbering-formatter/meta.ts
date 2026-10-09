@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Thread Numbering 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Thread Numbering',
   description:
     'Format twitter thread numbering free. Paste tweets and get clean 1/8-style markers at the start or end, re-checked against the 280-character budget. Try it!',
   howTo: [
