@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Quote Tweet Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Quote Tweet Ideas',
   description:
     'Get quote tweet ideas with the right tone: describe the post, pick agree, nuance, or disagree, and receive 5 drafts within X\'s limits. Free — try it now!',
   howTo: [
