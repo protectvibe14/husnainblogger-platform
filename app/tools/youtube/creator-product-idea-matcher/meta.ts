@@ -48,7 +48,7 @@ const DESCRIPTION =
   'Find profitable digital products for YouTubers matched to your niche, audience size, and effort — ranked ideas with fit notes. Free, try it now.';
 
 export const content: ToolContent = {
-  title: 'Digital Products for YouTubers | HusnainBlogger',
+  title: 'Digital Products for YouTubers',
   description: DESCRIPTION,
   howTo: [
     'Pick your channel niche from the dropdown (gaming, finance, cooking, fitness, and 8 more).',
