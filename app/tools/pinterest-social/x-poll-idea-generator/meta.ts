@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Poll Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Poll Ideas',
   description:
     'Get fresh Twitter poll ideas in seconds: enter any topic, pick a duration, and receive a question plus 4 options within X\'s limits. Free tool — try it now!',
   howTo: [
