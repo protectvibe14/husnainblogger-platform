@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'ATS Resume Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'ATS Resume Checker',
   description:
     'Check your resume against a transparent 100-point rubric: contact info, length, action verbs, numbers, headers, JD keyword overlap. Free heuristic resume check.',
   howTo: [
