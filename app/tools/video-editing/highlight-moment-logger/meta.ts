@@ -44,7 +44,7 @@ const DESCRIPTION =
   'Log every highlight with this free video timestamp logger: note the timestamp, label and rating for each moment, get a top-moments summary and CSV. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Video Timestamp Logger 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Timestamp Logger',
   description: DESCRIPTION,
   howTo: [
     'Add one item per highlight moment you want to log.',
