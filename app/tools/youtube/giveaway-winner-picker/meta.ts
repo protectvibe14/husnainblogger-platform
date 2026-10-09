@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Giveaway Winner Picker 2026 – Free | HusnainBlogger',
+  title: 'YouTube Giveaway Winner Picker | HusnainBlogger',
   description:
     'Pick YouTube giveaway winners free: paste your entries, set the winner count, and draw fair seeded random winners with an audit list. Run a draw now!',
   howTo: [
