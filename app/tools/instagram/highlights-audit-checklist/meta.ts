@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Highlights Strategy 2026 – Free | HusnainBlogger',
+  title: 'Instagram Highlights Strategy',
   description:
     'Audit your instagram highlights strategy free: answer 10 yes/no questions for a 0–100 score, your missing elements, and a fix list. No signup — check yours now!',
   howTo: [
