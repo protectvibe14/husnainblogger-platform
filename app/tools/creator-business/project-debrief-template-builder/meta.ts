@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Project Debrief Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Project Debrief Template',
   description: DESCRIPTION,
   howTo: [
     'Add one item per debrief section you want: wins, issues, metrics, lessons, or followups.',
