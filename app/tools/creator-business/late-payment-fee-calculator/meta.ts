@@ -81,7 +81,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Late Payment Fee Calculator 2026 | HusnainBlogger',
+  title: 'Freelance Late Payment Fee Calculator 2027',
   description:
     'Calculate late fees on overdue invoices — percent-per-day or flat-plus-daily, your rate, your terms. Free, no signup. Run the numbers and get paid fairly today!',
   howTo: [
