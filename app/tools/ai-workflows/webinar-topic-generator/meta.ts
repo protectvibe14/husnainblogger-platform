@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Webinar Topic Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Webinar Topic Ideas',
   description:
     'Get fresh webinar title ideas — combine your niche and pain point through 8 fixed title formulas with angle variants. Free webinar topic ideas tool. Try it now!',
   howTo: [
