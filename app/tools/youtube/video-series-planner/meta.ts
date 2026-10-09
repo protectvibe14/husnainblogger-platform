@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Series Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Youtube Series Planner | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your series title (e.g. "30-day drawing challenge").',
