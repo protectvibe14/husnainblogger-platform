@@ -22,7 +22,7 @@ const DESCRIPTION =
   'Screen captions with this free instagram banned hashtags checker — a curated sample flags risky tags fast. Verify flagged tags inside Instagram before posting.';
 
 export const content: ToolContent = {
-  title: 'Instagram Banned Hashtags Checker 2026 | HusnainBlogger',
+  title: 'Instagram Banned Hashtags Checker 2027 | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your full caption or comment into the text box above.',
