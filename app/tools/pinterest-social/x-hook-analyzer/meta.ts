@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Hook Analyzer 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Hook Analyzer',
   description:
     'Analyze any Twitter hook with a free heuristic rubric scoring specificity, curiosity gap, clarity, and contrarian edge. Get a verdict plus fixes — try it now!',
   howTo: [
