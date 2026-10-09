@@ -85,7 +85,7 @@ const DESCRIPTION =
   "Build consistent, searchable filenames with this free video file naming convention tool — pick a pattern, add your details, and copy a clean name. Try it now.";
 
 export const content: ToolContent = {
-  title: "Video File Naming Convention 2026 – Free | HusnainBlogger",
+  title: "Video File Naming Convention',
   description: DESCRIPTION,
   howTo: [
     "Enter your Project name — it anchors every filename.",
