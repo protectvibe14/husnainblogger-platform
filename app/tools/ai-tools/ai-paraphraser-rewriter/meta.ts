@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'AI Paraphraser & Rewriter 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Paraphraser & Rewriter',
   description:
     'Rewrite any text in a professional, casual, or academic tone with your own free Gemini, Groq, or OpenRouter key. Meaning preserved, no signup needed.',
   howTo: [
