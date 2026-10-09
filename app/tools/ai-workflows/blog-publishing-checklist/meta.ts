@@ -14,7 +14,7 @@ const DESCRIPTION =
   "Run this proven blog post publishing checklist before you hit publish — SEO, formatting, links, and QA checks with progress tracking. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "Blog Post Publishing Checklist',
+  title: "Blog Post Publishing Checklist",
   description: DESCRIPTION,
   howTo: [
     "Open the checklist before you publish any post.",
