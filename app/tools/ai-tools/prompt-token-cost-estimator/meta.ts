@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Prompt Token Cost Estimator 2026 – Free | HusnainBlogger',
+  title: 'Prompt Token Cost Estimator',
   description:
     'Estimate what an AI prompt will cost before you run it. Paste your prompt, enter your provider’s per-token prices, and get a transparent cost breakdown.',
   howTo: [
