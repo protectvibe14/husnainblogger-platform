@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Call To Action Prompts 2026 – Free Tool | HusnainBlogger',
+  title: 'Call To Action Prompts',
   description:
     'Browse a free library of human-written call to action prompts. Filter 60 lines by goal and tone, then copy them into your pages and emails. Start copying now!',
   howTo: [
