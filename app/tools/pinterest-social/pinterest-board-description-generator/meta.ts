@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Board Description 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Board Description',
   description:
     'Write a keyword-rich Pinterest board description in seconds — enter your board name and keywords for a natural, under-500-character result. Try it free now!',
   howTo: [
