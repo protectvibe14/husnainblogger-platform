@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Storyboard Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Storyboard Planner',
   description:
     'Use this video storyboard planner to turn script beats into frames: paste beats, set duration and frames per beat, get camera setups and captions. Start now.',
   howTo: [
