@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Prompt Health Debugger & Scorer 2026 – Free | HusnainBlogger',
+  title: 'Prompt Health Debugger & Scorer',
   description:
     'Debug your AI image prompt: get a 0–100 health score, find vague words, conflicts, typos and missing style or lighting — with a fix for every issue.',
   howTo: [
