@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'ElevenLabs Script Formatter 2026 – Free | HusnainBlogger',
+  title: 'ElevenLabs Script Formatter',
   description:
     'Format scripts for ElevenLabs TTS: suggested break tags, ALL-CAPS and abbreviation flags, pronunciation hints, plus an estimated duration. Free formatter.',
   howTo: [
