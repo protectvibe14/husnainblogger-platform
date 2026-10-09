@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Free breakeven roas calculator 2026: enter your gross margin, ad spend, and revenue to find minimum profitable ROAS and compare your actual ROAS. No signup.';
 
 export const content: ToolContent = {
-  title: 'Breakeven ROAS Calculator 2026 – Ad Profit | HusnainBlogger',
+  title: 'Breakeven ROAS Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your gross margin as a percent — revenue after cost of goods sold (include fees and shipping for an honest number).',
