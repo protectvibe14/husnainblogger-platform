@@ -91,7 +91,7 @@ const DESCRIPTION =
   'Free adsense vs mediavine vs raptive calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Adsense vs Mediavine vs Raptive Calculator 2026 | HusnainBlogger',
+  title: 'Adsense vs Mediavine vs Raptive Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Enter your Monthly sessions — the same traffic number is applied to all five networks.',
