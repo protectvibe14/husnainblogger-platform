@@ -29,7 +29,7 @@ const DESCRIPTION =
   'Generate catchy TikTok LIVE title ideas for your stream topic — short, clickable titles from proven patterns. No login needed. Try it free now.';
 
 export const content: ToolContent = {
-  title: 'TikTok Live Title Generator 2026 – Free | HusnainBlogger',
+  title: 'TikTok Live Title Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your LIVE topic into the "LIVE topic" box — for example "weeknight meal prep".',
