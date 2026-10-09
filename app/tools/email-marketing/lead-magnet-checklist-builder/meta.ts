@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Lead Magnet Checklist Template 2026 – Free | HusnainBlogger',
+  title: 'Lead Magnet Checklist Template',
   description:
     'Plan your freebie with this free lead magnet checklist template: add rows for steps, or auto-fill blank steps from a fixed framework. Start building!',
   howTo: [
