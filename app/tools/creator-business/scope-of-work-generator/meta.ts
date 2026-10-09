@@ -75,7 +75,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Scope of Work Template 2026 | HusnainBlogger',
+  title: 'Freelance Scope of Work Template 2027',
   description:
     'Write a freelance scope of work template that prevents scope creep: list deliverables, revisions, exclusions, and payment terms. Free, no signup!',
   howTo: [
