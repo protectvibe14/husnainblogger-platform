@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Breadcrumb Schema Generator 2026 – Free | HusnainBlogger',
+  title: 'Breadcrumb Schema Generator',
   description:
     'Generate valid breadcrumb schema JSON-LD for your pages in seconds. Enter names and URLs, then copy the markup with correct positions. Try it free now!',
   howTo: [
