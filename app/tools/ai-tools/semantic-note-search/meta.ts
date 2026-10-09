@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Semantic Note Search: Free 2026 – Free | HusnainBlogger',
+  title: 'Semantic Note Search: Free',
   description:
     'Search your saved notes by meaning with free on-device embeddings. Notes stay in your browser — find ideas fast — absolutely nothing is uploaded.',
   howTo: [
