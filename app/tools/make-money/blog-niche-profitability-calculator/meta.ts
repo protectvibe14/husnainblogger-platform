@@ -85,7 +85,7 @@ const DESCRIPTION =
   'Use this free blog niche profitability calculator — enter search volume, competition, monetization methods, and RPM for a 0–100 heuristic score.';
 
 export const content: ToolContent = {
-  title: 'Blog Niche Profitability Calculator 2026 | HusnainBlogger',
+  title: 'Blog Niche Profitability Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Pick your blog niche from the list.',
