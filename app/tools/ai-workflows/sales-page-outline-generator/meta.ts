@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Sales Page Outline 2026 – Free Tool | HusnainBlogger',
+  title: 'Sales Page Outline',
   description:
     'Build a proven sales page outline for your offer in seconds. Enter your offer details and get a 10-section structure with write prompts. Start building now!',
   howTo: [
