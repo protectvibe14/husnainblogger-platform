@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Day in My Life Shot List 2026 – Free Tool | HusnainBlogger',
+  title: 'Day in My Life Shot List',
   description:
     'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession,. Fast, private, no signup - try it now!',
   howTo: [
