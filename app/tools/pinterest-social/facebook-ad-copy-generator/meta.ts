@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Ad Copy Generator 2026 – Free | HusnainBlogger',
+  title: 'Facebook Ad Copy Generator',
   description:
     'Write Facebook ad copy with this free generator. Get primary text with the CTA in the visible first 125 characters plus a short description. Start now!',
   howTo: [
