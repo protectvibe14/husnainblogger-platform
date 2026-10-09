@@ -16,7 +16,7 @@ export const trackerMode: 'checklist' | 'library' = 'checklist';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'Youtube Thumbnail Ab Test Tracker 2027 | HusnainBlogger',
+  title: 'Youtube Thumbnail Ab Test Tracker 2027',
   description: DESCRIPTION,
   howTo: [
     'Name the video under test at the top of your log so every variant row refers to the same video.',
