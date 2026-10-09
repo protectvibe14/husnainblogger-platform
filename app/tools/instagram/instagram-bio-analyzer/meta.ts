@@ -32,7 +32,7 @@ const DESCRIPTION =
   'Free instagram bio analyzer 2026: A fixed, published rubric scores observable best practices out of 100: length discipline — within Instagram\\. Fast, private,!';
 
 export const content: ToolContent = {
-  title: 'Instagram Bio Analyzer 2026 – Free Tool | HusnainBlogger',
+  title: 'Instagram Bio Analyzer',
   description: DESCRIPTION,
   howTo: [
     'Paste your Instagram bio exactly as it appears — keep the line breaks.',
