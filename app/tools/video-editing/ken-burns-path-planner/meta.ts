@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ken Burns Effect Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Ken Burns Effect Planner',
   description:
     'Plan pan-and-zoom motion free: this ken burns effect planner computes keyframes, crop windows, and upscale safety checks from your image and move. Try it now.',
   howTo: [
