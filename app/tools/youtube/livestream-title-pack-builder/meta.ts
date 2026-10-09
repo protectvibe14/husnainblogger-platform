@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Live Stream Title Ideas 2026 – Free | HusnainBlogger',
+  title: 'Youtube Live Stream Title Ideas | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Add one item per stream you are planning.',
