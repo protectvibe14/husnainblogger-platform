@@ -66,7 +66,7 @@ const appJsonLd = {
 };
 ---
 
-<div class="hb-tool-shell" data-tool-page data-tool-id={tool.toolId}>
+<div class="hb-tool-shell" data-tool-page data-tool-id={tool.toolId} id="main-content">
   <a class="hb-skip-link" href="#main-content">Skip to main content</a>
   <a class="hb-skip-link" href="#tool-ui">Skip to tool</a>
 
@@ -83,29 +83,33 @@ const appJsonLd = {
     </ol>
   </nav>
 
-  <!-- ===== HERO (gradient, keyword-rich) ===== -->
-  <header class="hb-hero">
-    <div class="hb-hero__inner">
-      <span class="hb-hero__eyebrow">{tool.category} · Free Online Tool</span>
-      <h1 class="hb-hero__title">{h1}</h1>
-      <p class="hb-hero__desc">{content.description}</p>
-      <div class="hb-hero__badges" aria-label="Tool guarantees">
-        <span class="hb-badge">⚡ Instant results</span>
-        <span class="hb-badge">🔒 100% private</span>
-        <span class="hb-badge">♾️ Unlimited use</span>
-        <span class="hb-badge">💳 No signup</span>
+  <!-- ===== COMPACT TOOL HEADER (no big banner) ===== -->
+  <header class="hb-toolhead">
+    <div class="hb-toolhead__icon" aria-hidden="true">{h1.charAt(0)}</div>
+    <div class="hb-toolhead__body">
+      <h1 class="hb-toolhead__title">{h1}</h1>
+      <p class="hb-toolhead__desc">{content.description}</p>
+      <div class="hb-toolhead__meta">
+        <span class="hb-toolhead__trust">⚡ Instant</span>
+        <span class="hb-toolhead__dot">·</span>
+        <span class="hb-toolhead__trust">🔒 Private</span>
+        <span class="hb-toolhead__dot">·</span>
+        <span class="hb-toolhead__trust">♾️ Unlimited</span>
+        <span class="hb-toolhead__dot">·</span>
+        <span class="hb-toolhead__trust">No signup</span>
       </div>
-      {allKeywords.length > 0 && (
-        <div class="hb-hero__keywords" aria-label="This tool helps with">
-          <span class="hb-hero__kw-label">Popular searches:</span>
-          {allKeywords.slice(0, 4).map((kw) => (
-            <span class="hb-kw-pill">{kw}</span>
-          ))}
-        </div>
-      )}
     </div>
   </header>
 
+  {allKeywords.length > 1 && (
+    <div class="hb-toolhead__keywords" aria-label="Related searches">
+      {allKeywords.slice(1, 5).map((kw) => (
+        <span class="hb-kw-pill">{kw}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- PRIME AD: tool-top (970x250 desktop / 320x100 mobile) -->
   <AdSlot slot="tool-top" />
 
   <div class="hb-layout">
@@ -339,58 +343,42 @@ const appJsonLd = {
   .hb-crumbs a:hover { color: #4f46e5; }
   .hb-crumbs [aria-current] { color: #334155; }
 
-  /* Hero — deep, rich, elegant */
-  .hb-hero {
-    background:
-      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(129,140,248,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 70% 50% at 85% 90%, rgba(217,70,239,0.25) 0%, transparent 55%),
-      linear-gradient(150deg, #1e1b4b 0%, #312e81 35%, #6d28d9 70%, #a21caf 100%);
-    border-radius: 2rem; padding: 4.5rem 3rem; margin: 1.5rem 0 3rem;
-    color: white; text-align: center; position: relative; overflow: hidden;
-    box-shadow: 0 25px 60px -15px rgba(109,40,217,0.4);
+  /* Compact tool header — clean, unique, no big banner */
+  .hb-toolhead {
+    display: flex; gap: 1.25rem; align-items: flex-start;
+    background: #fff; border: 1px solid #e8edf5; border-radius: 1.25rem;
+    padding: 1.75rem 2rem; margin: 1.25rem 0 1rem;
+    box-shadow: 0 4px 24px -8px rgba(15,23,42,0.08);
   }
-  .hb-hero::after {
-    content: ""; position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none; opacity: 0.6;
+  .hb-toolhead__icon {
+    flex: 0 0 auto; width: 3.5rem; height: 3.5rem; border-radius: 1rem;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff; font-size: 1.6rem; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 20px -6px rgba(99,102,241,0.5);
   }
-  .hb-hero__inner { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
-  .hb-hero__eyebrow {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    font-size: 0.75rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.18em;
-    background: rgba(255,255,255,0.12); backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 0.55rem 1.3rem; border-radius: 3rem; margin-bottom: 1.5rem;
+  .hb-toolhead__body { flex: 1; min-width: 0; }
+  .hb-toolhead__title {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800;
+    margin: 0 0 0.5rem; line-height: 1.2; letter-spacing: -0.02em; color: #0f172a;
   }
-  .hb-hero__title {
-    font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 800;
-    margin: 0 0 1.25rem; line-height: 1.15; letter-spacing: -0.02em;
-    text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  .hb-toolhead__desc {
+    font-size: 1rem; color: #64748b; margin: 0 0 0.75rem; line-height: 1.6;
   }
-  .hb-hero__desc {
-    font-size: 1.15rem; opacity: 0.92; max-width: 680px;
-    margin: 0 auto 2rem; line-height: 1.7; font-weight: 400;
+  .hb-toolhead__meta {
+    display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+    font-size: 0.85rem; color: #94a3b8; font-weight: 500;
   }
-  .hb-hero__badges { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.75rem; }
-  .hb-badge {
-    background: rgba(255,255,255,0.10); backdrop-filter: blur(12px);
-    padding: 0.6rem 1.2rem; border-radius: 3rem;
-    font-size: 0.87rem; font-weight: 500; letter-spacing: 0.01em;
-    border: 1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  .hb-toolhead__dot { opacity: 0.5; }
+  .hb-toolhead__keywords {
+    display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0 0 1.5rem;
   }
-  .hb-hero__keywords {
-    display: flex; gap: 0.6rem; justify-content: center;
-    flex-wrap: wrap; align-items: center; margin-top: 0.75rem;
-  }
-  .hb-hero__kw-label { font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
   .hb-kw-pill {
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22);
-    padding: 0.4rem 1rem; border-radius: 3rem; font-size: 0.82rem; font-weight: 500;
-    transition: background 0.2s;
+    background: #f1f5f9; border: 1px solid #e2e8f0; color: #475569;
+    padding: 0.35rem 0.9rem; border-radius: 3rem; font-size: 0.82rem; font-weight: 500;
+    transition: background 0.2s, border-color 0.2s;
   }
-  .hb-kw-pill:hover { background: rgba(255,255,255,0.18); }
+  .hb-kw-pill:hover { background: #e0e7ff; border-color: #c7d2fe; color: #4338ca; }
 
   /* Layout — generous spacing */
   .hb-layout {
@@ -583,11 +571,12 @@ const appJsonLd = {
     .hb-tool-shell { padding: 0 1.25rem; }
     .hb-layout { grid-template-columns: 1fr; gap: 2.5rem; }
     .hb-sidebar { position: static; }
-    .hb-hero { padding: 3rem 1.5rem; border-radius: 1.5rem; margin: 1rem 0 2rem; }
+    .hb-toolhead { padding: 1.25rem 1.4rem; border-radius: 1rem; gap: 1rem; }
+    .hb-toolhead__icon { width: 2.75rem; height: 2.75rem; font-size: 1.3rem; }
     .hb-toolcard { padding: 1.75rem 1.4rem; border-radius: 1.4rem; }
     .hb-section { margin: 2.75rem 0; }
     .hb-section h2 { font-size: 1.5rem; }
     .hb-cards3 { grid-template-columns: 1fr; }
-    .hb-hero__title { font-size: 2rem; }
+    .hb-toolhead__title { font-size: 1.5rem; }
   }
 </style>
