@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Jump Cut Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Jump Cut Planner',
   description:
     'Plan jump cuts from a timestamped transcript: pick aggressiveness to get keep/cut ranges, a new duration estimate, and safety warnings. Start planning now!',
   howTo: [
