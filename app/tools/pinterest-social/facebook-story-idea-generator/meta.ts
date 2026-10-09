@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Story Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Story Ideas',
   description:
     'Find fresh Facebook story ideas for your goal. Pick poll, Q&A, behind the scenes, or promo for ready-to-film concepts with frames and stickers. Try it free!',
   howTo: [
