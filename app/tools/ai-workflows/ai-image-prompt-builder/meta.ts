@@ -42,7 +42,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Image Prompt Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Image Prompt Generator',
   description:
     'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private, no signup - try it!',
   howTo: [
