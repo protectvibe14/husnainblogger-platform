@@ -45,7 +45,7 @@ const DESCRIPTION =
   "Design meme captions with this free meme text generator — pick from 6 classic templates, add top and bottom text, and get a ready-to-render spec. Build now.";
 
 export const content: ToolContent = {
-  title: "Meme Text Generator 2026 – Free Tool | HusnainBlogger",
+  title: "Meme Text Generator',
   description: DESCRIPTION,
   howTo: [
     "Add one item per meme you want to build.",
