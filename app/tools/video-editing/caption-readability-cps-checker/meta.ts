@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Characters Per Second Checker 2026 – Free | HusnainBlogger',
+  title: 'Characters Per Second Checker',
   description:
     'Free characters per second checker 2026: Measure caption reading speed in characters per second: paste subtitles to check every. Fast, private, no signup - try!',
   howTo: [
