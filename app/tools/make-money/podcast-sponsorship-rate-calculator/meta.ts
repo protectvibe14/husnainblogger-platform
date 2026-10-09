@@ -41,7 +41,7 @@ const DESCRIPTION =
   'Calculate podcast sponsorship rates free — estimate per-episode and monthly ad revenue from downloads, ad format, and episode count. Start pricing your show.';
 
 export const content: ToolContent = {
-  title: 'Podcast Sponsorship Rates 2026 – Free Tool | HusnainBlogger',
+  title: 'Podcast Sponsorship Rates',
   description: DESCRIPTION,
   howTo: [
     'Enter your average downloads per episode in the downloadsPerEpisode field.',
