@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Thank You Page Copy Generator 2026 – Free | HusnainBlogger',
+  title: 'Thank You Page Copy Generator',
   description:
     'Draft post-signup pages with this free thank you page copy generator: get headlines, body copy, and a CTA for your action, brand, and tone. Try it now!',
   howTo: [
