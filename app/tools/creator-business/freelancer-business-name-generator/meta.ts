@@ -47,7 +47,7 @@ const DESCRIPTION =
   "Brainstorm freelance business name ideas fast. Enter keywords, pick a style, and get up to 50 template-based name ideas. Free, no signup — start now.";
 
 export const content: ToolContent = {
-  title: "Freelance Business Name Ideas',
+  title: "Freelance Business Name Ideas",
   description: DESCRIPTION,
   howTo: [
     "Enter keywords that describe your work — one per line or comma-separated (e.g. pixel, design, bright).",
