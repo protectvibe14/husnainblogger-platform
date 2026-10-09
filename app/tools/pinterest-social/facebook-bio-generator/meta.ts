@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Bio Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Bio Generator',
   description:
     'Generate a free facebook bio for your personal profile or Page. Enter who you are and what you do to get bios within Facebook\u2019s character limits. Try it now!',
   howTo: [
