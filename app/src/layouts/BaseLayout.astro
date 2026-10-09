@@ -51,13 +51,15 @@ const nav = [
 ] as const;
 
 // Analytics: Google Analytics 4 (GA4).
-// The site owner pastes their Measurement ID as the PUBLIC_GA4_MEASUREMENT_ID
-// env var (Vercel dashboard → Settings → Environment Variables, or a local
-// .env file). Format: G-XXXXXXXXXX. The script renders ONLY when an ID is
-// set, so local builds and previews without an ID stay clean.
-// The Measurement ID is public by design (visible in page source) — it is
-// not a secret.
-const ga4MeasurementId = (import.meta.env.PUBLIC_GA4_MEASUREMENT_ID ?? "").trim();
+// Priority: 1) data/site-settings.json → ga4MeasurementId (admin panel),
+// 2) PUBLIC_GA4_MEASUREMENT_ID env var (Vercel dashboard).
+// Format: G-XXXXXXXXXX. The script renders ONLY when an ID is set.
+// The Measurement ID is public by design (visible in page source).
+import siteSettings from "../../../data/site-settings.json";
+const ga4MeasurementId = (
+  (siteSettings as any).ga4MeasurementId?.trim() ||
+  (import.meta.env.PUBLIC_GA4_MEASUREMENT_ID ?? "").trim()
+);
 ---
 
 <html lang="en">
