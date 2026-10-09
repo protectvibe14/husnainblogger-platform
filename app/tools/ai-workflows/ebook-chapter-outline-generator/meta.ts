@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ebook Outline Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Ebook Outline Generator',
   description:
     'Generate a complete ebook chapter outline — numbered chapters with working titles and beat slots. Free ebook outline generator, no sign-up. Start planning now!',
   howTo: [
