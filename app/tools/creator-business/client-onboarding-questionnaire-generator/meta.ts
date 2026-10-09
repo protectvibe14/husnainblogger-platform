@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Client Onboarding Questionnaire Template 2026 | HusnainBlogger',
+  title: 'Client Onboarding Questionnaire Template 2027',
   description:
     'Build a client onboarding questionnaire in seconds: pick your service type and sections for grouped intake questions. Copy, send, start right. Try it free!',
   howTo: [
