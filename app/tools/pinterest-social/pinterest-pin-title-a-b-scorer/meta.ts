@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Pin Title Tester 2026 – Free Tool | HusnainBlogger',
+  title: 'Pinterest Pin Title Tester',
   description:
     'Compare two Pinterest pin titles with a transparent 5-factor heuristic rubric and see which follows pin best practices better. Free, instant — test yours now!',
   howTo: [
