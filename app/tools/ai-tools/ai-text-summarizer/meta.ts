@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'AI Text Summarizer 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Text Summarizer',
   description:
     'Summarize long articles into one line, 3 bullets, or a short paragraph with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
