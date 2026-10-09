@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Meta Description Generator 2026 – Free | HusnainBlogger',
+  title: 'Meta Description Generator',
   description:
     'Write better snippets with this free meta description generator: get template-based suggestions, check length, and confirm keyword use. Start now!',
   howTo: [
