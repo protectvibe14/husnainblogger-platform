@@ -45,7 +45,7 @@ const DESCRIPTION =
   'Free online course pricing calculator 2026: bracket the right price for your course from hours, niche value and platform fees. No signup — try it now.';
 
 export const content: ToolContent = {
-  title: 'Online Course Pricing Calculator 2026 | HusnainBlogger',
+  title: 'Online Course Pricing Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Enter your total course content hours (finished video/audio content, not production time).',
