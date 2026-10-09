@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Reels Hooks 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Reels Hooks',
   description:
     'Generate Facebook Reels hooks that stop the scroll. Enter your topic and get punchy spoken hook lines plus 9:16 framing tips — free, no signup. Try it now!',
   howTo: [
