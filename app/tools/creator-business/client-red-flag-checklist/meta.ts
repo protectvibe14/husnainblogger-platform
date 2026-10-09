@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Client Red Flags 2026 – Free | HusnainBlogger',
+  title: 'Freelance Client Red Flags',
   description:
     'Spot freelance client red flags before you commit: select the warning signs you\'ve seen to get a count-based risk score, a plain summary, and next steps. Free.',
   howTo: [
