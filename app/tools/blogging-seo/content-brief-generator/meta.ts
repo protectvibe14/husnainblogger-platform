@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Brief Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Content Brief Generator',
   description:
     'Free content brief generator 2026: build a complete SEO brief — keyword, audience, intent guess and outline with per-section word targets. No signup.',
   howTo: [
