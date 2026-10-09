@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Script Outline Template | HusnainBlogger',
+  title: 'Youtube Script Outline Template',
   description: DESCRIPTION,
   howTo: [
     'Fill in item 1 as your video setup: the topic (required), target duration in minutes, and format (tutorial, review, vlog, or essay).',
