@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'BPM & Key Detector: Free Online 2026 – Free | HusnainBlogger',
+  title: 'BPM & Key Detector: Free Online',
   description:
     'Detect any track’s tempo (BPM) and musical key free, right in your browser. On-device audio analysis — no uploads, and no AI claims are made.',
   howTo: [
