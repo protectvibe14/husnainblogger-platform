@@ -23,7 +23,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Before and After TikTok Ideas 2026 – Free | HusnainBlogger',
+  title: 'Before and After TikTok Ideas',
   description:
     'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try it free!',
   howTo: [
