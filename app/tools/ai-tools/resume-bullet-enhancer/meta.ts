@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'Resume Bullet Enhancer 2026 – Free Tool | HusnainBlogger',
+  title: 'Resume Bullet Enhancer',
   description:
     'Turn weak resume bullets into sharp, action-led lines with your own free Gemini, Groq, or OpenRouter key. Never invents numbers — no signup, no cost to us.',
   howTo: [
