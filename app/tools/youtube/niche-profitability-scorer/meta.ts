@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Niche Scorer | HusnainBlogger',
+  title: 'YouTube Niche Scorer',
   description: DESCRIPTION,
   howTo: [
     'Enter the niche you are considering, e.g. "Home coffee brewing".',
