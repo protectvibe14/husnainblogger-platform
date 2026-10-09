@@ -31,7 +31,7 @@ const DESCRIPTION =
   'Plan behind the scenes TikTok ideas for any business — film-ready moments, caption templates, and a weekly posting cadence. Free. Plan your BTS now.';
 
 export const content: ToolContent = {
-  title: 'Behind the Scenes TikTok Ideas 2026 – Free | HusnainBlogger',
+  title: 'Behind the Scenes TikTok Ideas',
   description: DESCRIPTION,
   howTo: [
     'Type your business type — for example "coffee shop" — or type "no business" to switch to a creator-personal BTS plan.',
