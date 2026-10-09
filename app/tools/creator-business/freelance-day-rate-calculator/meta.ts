@@ -80,7 +80,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Day Rate Calculator 2026 – Free | HusnainBlogger',
+  title: 'Freelance Day Rate Calculator',
   description:
     'Calculate your freelance day rate from your income target, expenses, and billable days — free, no signup. Get your recommended rate and hourly equivalent now!',
   howTo: [
