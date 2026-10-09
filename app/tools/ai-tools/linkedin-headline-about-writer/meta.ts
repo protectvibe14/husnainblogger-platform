@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'LinkedIn Headline Writer 2026 – Free Tool | HusnainBlogger',
+  title: 'LinkedIn Headline Writer',
   description:
     'Get 3 recruiter-ready headline options plus an About draft with your own free Gemini, Groq, or OpenRouter key. Stays within LinkedIn limits. No signup.',
   howTo: [
