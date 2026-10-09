@@ -36,7 +36,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Prompt Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Prompt Generator',
   description:
     'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free, no signup.',
   howTo: [
