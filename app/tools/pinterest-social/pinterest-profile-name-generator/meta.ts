@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Business Name Ideas 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Business Name Ideas',
   description:
     'Brainstorm Pinterest business name ideas — display names and username ideas from your brand plus keywords. Check availability on Pinterest. Try it free now!',
   howTo: [
