@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Reels Series Ideas 2026 – Free | HusnainBlogger',
+  title: 'Instagram Reels Series Ideas | HusnainBlogger',
   description:
     'Plan an episodic Reels run with free instagram reels series ideas: per-episode hooks, an escalating story arc, and a one-click copy plan. Start planning now!',
   howTo: [
