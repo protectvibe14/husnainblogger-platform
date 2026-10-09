@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Title Swipe File 2026 – Free Tool | HusnainBlogger',
+  title: 'Youtube Title Swipe File | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Choose the "add" action and type a title you want to save for later.',
