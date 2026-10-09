@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Blog Scannability Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Scannability Checker',
   description:
     'Check how scannable your post is with this free blog scannability checker. Get a 0-100 score, pass/fail checks, and fixes for headings and lists. Test it now!',
   howTo: [
