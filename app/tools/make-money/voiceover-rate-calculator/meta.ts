@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Quote voiceover work confidently with this free voiceover rates calculator. Select the project type and audio length for an estimated fee range.';
 
 export const content: ToolContent = {
-  title: 'Voiceover Rates Calculator 2026 – Free | HusnainBlogger',
+  title: 'Voiceover Rates Calculator',
   description: DESCRIPTION,
   howTo: [
     'Pick the project type: narration, e-learning, commercial spot, audiobook, or IVR/phone system.',
