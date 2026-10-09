@@ -68,7 +68,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Photography Day Rate Calculator 2026 – Free | HusnainBlogger',
+  title: 'Photography Day Rate Calculator',
   description:
     'Photography day rate calculator: enter your income target, expenses, and per-shoot costs for a free instant estimate. No signup — try it now!',
   howTo: [
