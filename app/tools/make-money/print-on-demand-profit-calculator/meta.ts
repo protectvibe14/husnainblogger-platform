@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Print on Demand Profit Calculator 2026 | HusnainBlogger',
+  title: 'Print on Demand Profit Calculator 2027',
   description:
     'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost,. Fast, private, no signup -!',
   howTo: [
