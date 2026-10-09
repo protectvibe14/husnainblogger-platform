@@ -48,7 +48,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Service Packages 2026 – Free | HusnainBlogger',
+  title: 'Freelance Service Packages',
   description: DESCRIPTION,
   howTo: [
     'Add one row per service with its name and a-la-carte price in USD.',
