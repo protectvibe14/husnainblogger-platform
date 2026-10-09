@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Cross-Model Prompt Converter 2026 – Free | HusnainBlogger',
+  title: 'Cross-Model Prompt Converter',
   description:
     'Convert image prompts between Midjourney, Flux, SDXL, DALL-E 3 and Ideogram. Best-effort syntax mapping shows what carried over — and what didn’t.',
   howTo: [
