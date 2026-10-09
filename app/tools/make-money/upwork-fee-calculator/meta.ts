@@ -39,7 +39,7 @@ const DESCRIPTION =
   'Calculate your Upwork take-home pay with this free upwork fee calculator — set the contract amount and fee rate to see your net payout instantly. Try it free.';
 
 export const content: ToolContent = {
-  title: 'Upwork Fee Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Upwork Fee Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your contract amount in USD — the full earnings figure before fees.',
