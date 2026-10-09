@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'SEO Image Filename Generator 2026 – Free | HusnainBlogger',
+  title: 'SEO Image Filename Generator',
   description:
     'Rename images for SEO in seconds. Turn messy camera filenames into clean, keyword-rich names with this free seo image filename generator. Start renaming now!',
   howTo: [
