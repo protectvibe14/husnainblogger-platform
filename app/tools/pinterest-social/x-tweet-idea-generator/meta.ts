@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Tweet Ideas Generator 2026 – 100+ Ideas | HusnainBlogger',
+  title: 'Tweet Ideas Generator',
   description:
     'Generate tweet ideas for any topic: pick a goal and get 8 ready-to-post X drafts, each checked against weighted character rules. Free — get ideas now!',
   howTo: [
