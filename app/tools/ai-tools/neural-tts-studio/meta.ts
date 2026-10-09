@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Free Text to Speech AI Voice 2026 – Free | HusnainBlogger',
+  title: 'Free Text to Speech AI Voice',
   description:
     'Turn text into natural AI speech in your browser — free text-to-speech with 10 voices, speed control and WAV download. No signup; works offline after load.',
   howTo: [
