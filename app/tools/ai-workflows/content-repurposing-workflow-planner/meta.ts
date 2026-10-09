@@ -46,7 +46,7 @@ const DESCRIPTION =
   "Plan your content repurposing workflow in minutes. Choose a source and target formats to get an ordered task pipeline with dependencies. Start free.";
 
 export const content: ToolContent = {
-  title: "Content Repurposing Workflow',
+  title: "Content Repurposing Workflow",
   description: DESCRIPTION,
   howTo: [
     "Choose the format you already have (source format).",
