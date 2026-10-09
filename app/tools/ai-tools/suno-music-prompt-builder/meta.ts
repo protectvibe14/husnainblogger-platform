@@ -83,7 +83,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Suno Music Prompt Builder 2026 – Free Tool | HusnainBlogger',
+  title: 'Suno Music Prompt Builder',
   description:
     'Build a Suno-ready style field plus a verse/chorus lyric skeleton from fixed templates: 12 genres, 8 moods, 3 tempos. Free prompt text to paste into Suno.',
   howTo: [
