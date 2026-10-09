@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitch Subscriber Calculator 2026 – Revenue | HusnainBlogger',
+  title: 'Twitch Subscriber Calculator',
   description:
     'Free twitch subscriber calculator 2026: enter subs by tier and your revenue split to estimate your monthly Twitch earnings. Adds bits at $0.01 each. No signup.',
   keywords: ['twitch sub calculator', 'twitch sub calculator partner', 'twitch sub count calculator', 'twitch sub earnings calculator', 'twitch subscriber income calculator'],
