@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Mic Level Tester 2026 – Free Tool | HusnainBlogger',
+  title: 'Mic Level Tester',
   description:
     'Free mic level tester 2026: Test mic levels online: paste audio samples to get peak/RMS loudness in dBFS, clipping. Fast, private, no signup - try it now!',
   howTo: [
