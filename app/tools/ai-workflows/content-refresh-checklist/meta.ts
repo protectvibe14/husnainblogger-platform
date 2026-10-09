@@ -24,7 +24,7 @@ const DESCRIPTION =
   "Pick a content type and get a fixed content refresh checklist with keep, update, merge, or delete guidance for old posts, videos, and pages. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "Content Refresh Checklist 2026 – Free Tool | HusnainBlogger",
+  title: "Content Refresh Checklist',
   description: DESCRIPTION,
   howTo: [
     "Choose the type of content you are refreshing: post, video, or page.",
