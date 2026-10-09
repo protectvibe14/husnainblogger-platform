@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'B-Roll Shot List Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'B-Roll Shot List Ideas',
   description:
     'Generate b-roll shot list ideas from curated banks: enter your topic, pick a video type, and get shots with angles, movement, and timing. Try it free.',
   howTo: [
