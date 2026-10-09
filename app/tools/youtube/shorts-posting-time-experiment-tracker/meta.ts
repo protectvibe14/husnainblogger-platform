@@ -15,7 +15,7 @@ export const trackerMode: 'checklist' = 'checklist';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'Best Time To Post Shorts Tracker 2026 | HusnainBlogger',
+  title: 'Best Time To Post Shorts Tracker 2027 | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Work through the 12-step experiment checklist: set a 2–3 week test window and pick 3–4 posting slots.',
