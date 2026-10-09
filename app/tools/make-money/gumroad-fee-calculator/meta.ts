@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Gumroad Fee Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Gumroad Fee Calculator',
   description:
     'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private, no signup - try it!',
   howTo: [
