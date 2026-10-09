@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Green Screen Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Green Screen Ideas',
   description:
     'Generate tiktok green screen ideas: 5 commentary concepts with hooks, background descriptions, and script beats for your niche. Pick a background — try it free!',
   howTo: [
