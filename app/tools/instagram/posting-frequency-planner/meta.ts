@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How Often To Post On Instagram | HusnainBlogger',
+  title: 'How Often To Post On Instagram',
   description:
     'Plan how often to post on instagram around your schedule: set posts per week and hours available, get an even weekly plan with workload check. Free — start now!',
   howTo: [
