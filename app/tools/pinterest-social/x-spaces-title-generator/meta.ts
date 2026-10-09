@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Spaces Title Ideas 2026 – Free | HusnainBlogger',
+  title: 'Twitter Spaces Title Ideas',
   description:
     'Generate Twitter Spaces title ideas fast: enter your topic, add guests, and get 8 curiosity-led titles that fill seats. Free, no signup — try it now!',
   howTo: [
