@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Brand Pitch Email Template 2026 – Free | HusnainBlogger',
+  title: 'Brand Pitch Email Template',
   description:
     'Generate a brand pitch email in seconds. Enter your niche, metrics, and pitch angle to get 3 subject lines plus a ready-to-send draft. Try it free now!',
   howTo: [
