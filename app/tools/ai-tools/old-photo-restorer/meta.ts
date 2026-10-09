@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Old Photo Restorer: Free Online 2026 – Free | HusnainBlogger',
+  title: 'Old Photo Restorer: Free Online',
   description:
     'Clean up old scanned photos free: auto-contrast, fade correction and dust reduction with classic filters. No AI claims — runs in your browser.',
   howTo: [
