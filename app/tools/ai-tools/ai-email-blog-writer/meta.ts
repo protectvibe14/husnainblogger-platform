@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'AI Email & Blog Writer 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Email & Blog Writer',
   description:
     'Draft cold emails, follow-ups, blog intros, and outlines with your own free Gemini, Groq, or OpenRouter key. Drafts only — edit before sending. No signup.',
   howTo: [
