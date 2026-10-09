@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'UGC Script Example TikTok 2026 – Free Tool | HusnainBlogger',
+  title: 'UGC Script Example TikTok',
   description:
     'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private, no signup - try it now!',
   howTo: [
