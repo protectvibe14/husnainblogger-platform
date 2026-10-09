@@ -73,7 +73,7 @@ const DESCRIPTION =
   'Price your coaching package from your hourly rate, sessions, support hours, and discount with this free coaching package pricing tool. Get your numbers now.';
 
 export const content: ToolContent = {
-  title: 'Coaching Package Pricing 2026 – Free Tool | HusnainBlogger',
+  title: 'Coaching Package Pricing',
   description: DESCRIPTION,
   howTo: [
     'Enter how many 1:1 sessions the package includes and how long each session runs in minutes.',
