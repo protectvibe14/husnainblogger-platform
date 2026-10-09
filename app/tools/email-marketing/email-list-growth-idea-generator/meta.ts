@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email List Growth Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Email List Growth Ideas',
   description:
     'Get email list growth ideas free: enter your niche and budget — get up to 20 tactics with effort and cost levels, plus a consent reminder. Start now.',
   howTo: [
