@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Alphabet Soup Keyword Method 2026 – Free | HusnainBlogger',
+  title: 'Alphabet Soup Keyword Method',
   description:
     'Run the alphabet soup keyword method: expand any seed with a–z suffixes for brainstorming. Free alphabet soup keyword method — try your seed now!',
   howTo: [
