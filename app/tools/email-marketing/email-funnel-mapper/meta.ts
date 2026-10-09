@@ -34,7 +34,7 @@ const DESCRIPTION =
   'Free email funnel planner 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Email Funnel Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Funnel Planner',
   description: DESCRIPTION,
   howTo: [
     'Choose a funnel goal: welcome, nurture, sales, or winback.',
