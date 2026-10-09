@@ -55,7 +55,7 @@ const DESCRIPTION =
   'Project earnings with this free SaaS affiliate calculator — model referrals, plan price, commission rate, and churn into monthly recurring revenue estimates.';
 
 export const content: ToolContent = {
-  title: 'SaaS Affiliate Calculator 2026 – Free | HusnainBlogger',
+  title: 'SaaS Affiliate Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your new referrals per month — a whole number greater than 0.',
