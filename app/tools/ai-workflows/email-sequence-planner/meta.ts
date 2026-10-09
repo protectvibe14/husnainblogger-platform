@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Email Sequence Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Email Sequence Planner',
   description:
     'Plan your email sequence with a free email sequence planner. Pick a goal, set email count and spacing, and get a day-by-day send calendar. Plan yours now!',
   howTo: [
