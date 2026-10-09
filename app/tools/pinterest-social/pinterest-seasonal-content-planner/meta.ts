@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Seasonal Content Ideas 2026 | HusnainBlogger',
+  title: 'Pinterest Seasonal Content Ideas 2027',
   description:
     'Plan your pinterest seasonal content with lead times and keyword seeds for every event. Enter your niche and month or quarter. Free, try it now!',
   howTo: [
