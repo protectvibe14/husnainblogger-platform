@@ -43,7 +43,7 @@ const DESCRIPTION =
   "Free ai disclosure generator 2026: Four fixed disclosure variants (short, standard, detailed, friendly) for your content type. Fast, private, no signup - try!";
 
 export const content: ToolContent = {
-  title: "AI Disclosure Generator 2026 – Free Tool | HusnainBlogger",
+  title: "AI Disclosure Generator',
   description: DESCRIPTION,
   howTo: [
     "Choose what type of content uses AI: text, image, video, or voice.",
