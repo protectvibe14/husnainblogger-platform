@@ -40,7 +40,7 @@ const DESCRIPTION =
   'Calculate youtube sponsorship rates free — get an honest estimated rate range from your subscribers, views, and deal type. Start pricing your brand deals.';
 
 export const content: ToolContent = {
-  title: 'YouTube Sponsorship Rates 2026 – Free Tool | HusnainBlogger',
+  title: 'YouTube Sponsorship Rates',
   description: DESCRIPTION,
   howTo: [
     'Enter your channel subscriber count in the subscriberCount field.',
