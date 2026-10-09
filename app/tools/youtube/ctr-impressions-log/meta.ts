@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube CTR Tracker | HusnainBlogger',
+  title: 'Youtube CTR Tracker',
   description: DESCRIPTION,
   howTo: [
     'Log each data point manually: the date, the video or thumbnail label, impressions, and clicks.',
