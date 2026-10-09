@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'BPM to Beat Interval 2026 – Free Tool | HusnainBlogger',
+  title: 'BPM to Beat Interval',
   description:
     'Free bpm to beat interval 2026: Turn any track’s BPM into exact beat markers: get the beat interval in ms, total beats,. Fast, private, no signup - try it now!',
   howTo: [
