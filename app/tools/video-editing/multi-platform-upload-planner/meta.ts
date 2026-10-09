@@ -62,7 +62,7 @@ const DESCRIPTION =
   'Repurpose one video for every platform with this free multi platform video planner: enter your master file and platforms to get specs and crop plans. Plan now.';
 
 export const content: ToolContent = {
-  title: 'Multi Platform Video Planner 2026 – Free | HusnainBlogger',
+  title: 'Multi Platform Video Planner',
   description: DESCRIPTION,
   howTo: [
     'Enter your target platforms as a comma-separated list: youtube, tiktok, instagram-reels, facebook, x.',
