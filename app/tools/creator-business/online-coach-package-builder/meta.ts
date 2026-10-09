@@ -43,7 +43,7 @@ const DESCRIPTION =
   'Free coaching package pricing 2026: Final package price with your discount applied. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Coaching Package Pricing Builder 2026 | HusnainBlogger',
+  title: 'Coaching Package Pricing Builder 2027',
   description: DESCRIPTION,
   howTo: [
     'On the first row, enter your package settings: name, sessions per package, session length in minutes, your price per session, and your package discount percent.',
