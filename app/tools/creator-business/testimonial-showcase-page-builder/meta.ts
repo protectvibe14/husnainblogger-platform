@@ -63,7 +63,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Testimonial Showcase Page 2026 – Free Tool | HusnainBlogger',
+  title: 'Testimonial Showcase Page',
   description:
     'Turn client quotes into a testimonial showcase page: add testimonials, pick a brand color, and copy a ready-to-host HTML page plus an embed snippet. Free.',
   howTo: [
