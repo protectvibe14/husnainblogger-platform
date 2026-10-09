@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Script Template 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Script Template',
   description:
     'Create a free tiktok script template: enter your topic, pick a duration, and get a timed hook-beats-CTA beat sheet fitted to your video. Start scripting now!',
   howTo: [
