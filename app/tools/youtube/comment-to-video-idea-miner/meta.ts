@@ -22,7 +22,7 @@ const DESCRIPTION =
   'Turn comments into video ideas with this free tool — paste audience comments to mine questions and requests into sourced idea cards. Mine your comments now!';
 
 export const content: ToolContent = {
-  title: 'Turn Comments Into Video Ideas | HusnainBlogger',
+  title: 'Turn Comments Into Video Ideas',
   description: DESCRIPTION,
   howTo: [
     'Copy comments from your videos (questions, requests, and suggestions) and paste them into the text box — one comment per line works best.',
