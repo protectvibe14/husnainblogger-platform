@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Specs by Platform 2026 2026 – Free | HusnainBlogger',
+  title: 'Video Specs by Platform 2027',
   description:
     'Free video specs by platform 2026 2026: Look up video specs by platform for 2026: aspect ratios, resolutions, max duration, file. Fast, private, no signup -!',
   howTo: [
