@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Long Video To Shorts Planner 2026 – Free | HusnainBlogger',
+  title: 'Long Video To Shorts Planner',
   description:
     'Turn a long video into shorts: enter the source and target clip lengths, pick highlights, even, or custom ranges, and get exact timecodes. Start planning now!',
   howTo: [
