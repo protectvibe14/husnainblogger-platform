@@ -13,7 +13,7 @@ const DESCRIPTION =
   'Tick through 18 pre-stream checks with this free youtube live stream checklist — tech, audio, settings, and backup steps with saved progress. Open it now.';
 
 export const content: ToolContent = {
-  title: 'Youtube Live Stream Checklist | HusnainBlogger',
+  title: 'Youtube Live Stream Checklist',
   description: DESCRIPTION,
   howTo: [
     'Open the checklist before you schedule your stream.',
