@@ -56,7 +56,7 @@ const DESCRIPTION =
   'Estimate your course launch revenue from list size, open rate, and conversion with this free course launch calculator. Scenario math — plan your launch now.';
 
 export const content: ToolContent = {
-  title: 'Course Launch Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Course Launch Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your email list size (whole number of subscribers you will email).',
