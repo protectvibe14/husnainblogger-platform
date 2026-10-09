@@ -123,7 +123,7 @@ const appJsonLd = {
 
       <!-- ===== ABOUT (primary + secondary keyword content) ===== -->
       <section class="hb-section" aria-labelledby="hb-about">
-        <h2 id="hb-about">What is {cap(primaryKw)}?</h2>
+        <h2 id="hb-about">What is {cap(primaryKw)}? <span class="hb-year">2027 Guide</span></h2>
         <div class="hb-prose">
           <p>
             <strong>{tool.name}</strong> is a free online {primaryKw} that helps you get
@@ -178,7 +178,7 @@ const appJsonLd = {
 
       <!-- ===== HOW TO USE ===== -->
       <section class="hb-section" aria-labelledby="hb-howto">
-        <h2 id="hb-howto">How to use {tool.name}</h2>
+        <h2 id="hb-howto">How to use {tool.name} in 2027</h2>
         <ol class="hb-steps">
           {content.howTo.map((step, i) => (
             <li>
@@ -256,7 +256,7 @@ const appJsonLd = {
       <!-- ===== FAQ ===== -->
       {content.faqs.length > 0 && (
         <section class="hb-section" aria-labelledby="hb-faq">
-          <h2 id="hb-faq">Frequently asked questions</h2>
+          <h2 id="hb-faq">Frequently asked questions <span class="hb-year">2027</span></h2>
           <Accordion
             items={content.faqs.map((f) => ({ question: f.question, answerHtml: f.answer }))}
           />
@@ -420,6 +420,12 @@ const appJsonLd = {
   .hb-section h2 {
     font-size: 1.75rem; font-weight: 750; margin: 0 0 1.5rem;
     color: #0f172a; letter-spacing: -0.015em; line-height: 1.3;
+  }
+  .hb-year {
+    display: inline-block; font-size: 0.85rem; font-weight: 700;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff; padding: 0.2rem 0.6rem; border-radius: 999px;
+    vertical-align: middle; margin-left: 0.5rem; letter-spacing: 0;
   }
   .hb-section-sub {
     color: #64748b; margin: -1rem 0 1.75rem;
