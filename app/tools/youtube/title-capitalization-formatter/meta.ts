@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Title Capitalization Tool 2027 | HusnainBlogger',
+  title: 'Youtube Title Capitalization Tool 2027',
   description: DESCRIPTION,
   howTo: [
     'Paste your draft video title into the "Video title" box.',
