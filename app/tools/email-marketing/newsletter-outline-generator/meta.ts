@@ -57,7 +57,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Outline Generator 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Outline Generator',
   description:
     'Build a newsletter outline fast — enter your topic and word count to get sections with word budgets. Free tool, no signup needed. Start planning now!',
   howTo: [
