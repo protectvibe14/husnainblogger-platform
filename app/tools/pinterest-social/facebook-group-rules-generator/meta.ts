@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Group Rules Template 2026 – Free | HusnainBlogger',
+  title: 'Facebook Group Rules Template',
   description:
     'Get a free facebook group rules template for your community. Pick your strictness level to get 5 enforceable rules with explanations. Try it now!',
   howTo: [
