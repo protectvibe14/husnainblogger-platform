@@ -33,7 +33,7 @@ const DESCRIPTION =
   'Free blog comment reply generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Blog Comment Reply Generator 2026 – Free | HusnainBlogger',
+  title: 'Blog Comment Reply Generator',
   description: DESCRIPTION,
   howTo: [
     'Paste the reader’s blog comment into the comment field.',
