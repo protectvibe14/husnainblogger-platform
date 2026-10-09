@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Board Name Ideas 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Board Name Ideas',
   description:
     'Generate Pinterest board name ideas for any niche — pick SEO, playful, or brand tone and get keyword-led names capped at 100 characters. Try it free now!',
   howTo: [
