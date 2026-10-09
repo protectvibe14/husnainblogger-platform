@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Hashtag Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Hashtag Generator',
   description:
     'Generate free twitter hashtag ideas from any topic. Get clean, topic-based hashtags plus honest usage guidance — a curated bank, never fake trends. Try it!',
   howTo: [
