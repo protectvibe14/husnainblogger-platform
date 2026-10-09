@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Shorten Text for Thumbnails | HusnainBlogger',
+  title: 'Shorten Text for Thumbnails',
   description: DESCRIPTION,
   howTo: [
     'Paste your long video title or thumbnail text into the text box (up to 5,000 characters).',
