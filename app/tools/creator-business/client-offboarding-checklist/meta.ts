@@ -47,7 +47,7 @@ export const content: ToolContent = {
     'This tool is a rule-based checklist assembler, not AI. It combines 14 fixed base items across 5 sections (final files, credentials, invoice, testimonials, archive) with 3 extras per project type and 2 toggle-driven items, so the same inputs always produce the same checklist.',
   examples: [
     {
-      title: 'Client Offboarding Checklist 2026 | HusnainBlogger',
+      title: 'Client Offboarding Checklist 2027',
       inputs: { projectType: 'design', deliverablesHandover: false, finalInvoiceSent: false },
       note: 'Full 19-item checklist including handover and invoice reminders.',
     },
