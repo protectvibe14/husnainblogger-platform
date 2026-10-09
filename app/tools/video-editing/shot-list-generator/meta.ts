@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Shot List Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Shot List Generator',
   description:
     'Use this video shot list generator for any scene: pick basic or full coverage, set camera count, and get sizes, angles, lens ideas in shoot order. Try free now.',
   howTo: [
