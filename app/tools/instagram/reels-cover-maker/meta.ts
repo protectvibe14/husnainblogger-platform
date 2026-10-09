@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Reels Cover Maker 2026 – Free | HusnainBlogger',
+  title: 'Instagram Reels Cover Maker | HusnainBlogger',
   description:
     'Design scroll-stopping covers with this free instagram reels cover maker: 1080x1920 specs, safe-zone guides, and validated cover plans. Build your covers now!',
   howTo: [
