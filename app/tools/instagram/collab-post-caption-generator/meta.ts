@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Collab Post Caption | HusnainBlogger',
+  title: 'Instagram Collab Post Caption',
   description:
     'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options. Try it now.',
   howTo: [
