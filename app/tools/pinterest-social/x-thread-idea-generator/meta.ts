@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Thread Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Thread Ideas',
   description:
     'Generate free twitter thread ideas from any topic. Get a hook, supporting points, and a CTA in a structured outline within the 280-character budget. Try it!',
   howTo: [
