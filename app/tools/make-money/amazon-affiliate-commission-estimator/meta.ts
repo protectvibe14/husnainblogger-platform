@@ -48,7 +48,7 @@ const DESCRIPTION =
   'Free amazon affiliate commission calculator 2026: estimate monthly earnings from referred sales, average order value and category rate. No signup — try it now.';
 
 export const content: ToolContent = {
-  title: 'Amazon Affiliate Commission Calculator 2026 | HusnainBlogger',
+  title: 'Amazon Affiliate Commission Calculator 2027',
   description: DESCRIPTION,
   howTo: [
     'Pick the product category from the list — each one carries its US Associates rate (Games 20%, Grocery 1%, and so on).',
