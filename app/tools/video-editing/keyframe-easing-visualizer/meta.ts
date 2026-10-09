@@ -64,7 +64,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Easing Curve Visualizer 2026 – Free Tool | HusnainBlogger',
+  title: 'Easing Curve Visualizer',
   description:
     'Use this free easing curve visualizer: sample curves with exact control points, copy the CSS string, and get honest CapCut guidance. Try it now.',
   howTo: [
