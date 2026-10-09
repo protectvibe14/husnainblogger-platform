@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Case Study Request Email 2026 – Free Tool | HusnainBlogger',
+  title: 'Case Study Request Email',
   description:
     'Write a case study request email that gets a yes. Add your client, result metric, format, and tone to get 5 subject lines plus a ready draft. Free!',
   howTo: [
