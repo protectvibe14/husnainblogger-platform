@@ -39,9 +39,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Stripe Fee Calculator 2026 – Fees Guide | HusnainBlogger',
+  title: 'Stripe Fee Calculator',
   description:
-    'Free Stripe fee calculator for 2026: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
+    'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
   keywords: ['free stripe fee calculator', 'stripe fee calculator 2025', 'stripe fee calculator 2026', 'stripe fee calculator australia', 'stripe fee calculator canada'],
   howTo: [
     'Enter the charge amount in USD.',
@@ -98,7 +98,7 @@ export const content: ToolContent = {
         'Multiply the amount by your method\u2019s rate and add its fixed fee: online is 2.9% + $0.30, in-person is 2.7% + $0.05, and ACH is 0.8% capped at $5. Add 1.5% for international cards and 1% for currency conversion, both stacked on the rate.',
     },
     {
-      question: 'What is the Stripe fee for international payments in 2026?',
+      question: 'What is the Stripe fee for international payments in 2027?',
       answer:
         'For international (non-US) cards, Stripe adds approximately 1.5% on top of the standard rate. So an online payment becomes 4.4% + $0.30. If currency conversion is also involved, add another 1%. Use the "International card" and "Currency conversion" toggles above for the exact calculation.',
     },
@@ -133,7 +133,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free Stripe fee calculator for 2026: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
+        'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
     },
     {
       '@type': 'BreadcrumbList',
