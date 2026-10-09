@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Faceless YouTube Channel Ideas – 2027 Guide | HusnainBlogger',
+  title: 'Faceless YouTube Channel Ideas – 2027 Guide',
   description: DESCRIPTION,
   howTo: [
     'Enter a niche keyword (optional) — leave it blank to mix across 16 faceless-friendly niches.',
