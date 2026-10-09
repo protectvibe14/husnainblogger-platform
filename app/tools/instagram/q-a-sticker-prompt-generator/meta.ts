@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Ask Me a Question Sticker Ideas 2026 – Free | HusnainBlogger',
+  title: 'Ask Me a Question Sticker Ideas',
   description:
     'Get ask me a question sticker ideas in friendly, funny, professional, or bold tone. Enter your niche, copy ready-to-post prompts — free, no signup. Try it now!',
   howTo: [
