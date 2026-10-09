@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best CapCut Export Settings 2026 – Free | HusnainBlogger',
+  title: 'Best CapCut Export Settings',
   description:
     'Find the best CapCut export settings for TikTok, YouTube, Reels, or desktop — resolution, frame rate, and codec picks from fixed rules. Try it free.',
   howTo: [
