@@ -36,7 +36,7 @@ const DESCRIPTION =
   'Plan your final 20 seconds with this free youtube end screen planner — goal-based layouts, timestamps, and eligibility checks for 25s+ videos. Start now.';
 
 export const content: ToolContent = {
-  title: 'Youtube End Screen Planner 2026 – Free | HusnainBlogger',
+  title: 'Youtube End Screen Planner | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your video duration in seconds (must be at least 25).',
