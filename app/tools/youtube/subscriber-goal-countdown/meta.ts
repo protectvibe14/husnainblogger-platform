@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Youtube Subscriber Goal Tracker 2026 – Free | HusnainBlogger',
+  title: 'Youtube Subscriber Goal Tracker | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Enter your current subscriber count and your target (the target must be higher).',
