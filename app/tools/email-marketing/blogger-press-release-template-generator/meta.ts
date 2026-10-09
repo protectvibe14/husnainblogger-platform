@@ -40,7 +40,7 @@ const DESCRIPTION =
   'Free blogger press release template 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Blogger Press Release Template 2026 | HusnainBlogger',
+  title: 'Blogger Press Release Template 2027',
   description: DESCRIPTION,
   howTo: [
     'Describe your announcement in plain language.',
