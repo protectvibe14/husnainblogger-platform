@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Transition Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Transition Ideas',
   description:
     'Generate free tiktok transition ideas from a static bank of 24 hand-written transitions, each with a filming how-to. Pick your niche and count — try it now!',
   howTo: [
