@@ -23,7 +23,7 @@ const DESCRIPTION =
   'Score your title\'s emotional pull with this free youtube title emotion analyzer — a fixed 103-word lexicon rates curiosity, urgency, and more. Analyze now.';
 
 export const content: ToolContent = {
-  title: 'Youtube Title Emotion Analyzer 2026 – Free | HusnainBlogger',
+  title: 'Youtube Title Emotion Analyzer | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your video title into the text box above.',
