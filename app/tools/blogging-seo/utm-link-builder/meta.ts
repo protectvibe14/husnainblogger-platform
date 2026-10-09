@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'UTM Link Builder 2026 – Free Tool | HusnainBlogger',
+  title: 'UTM Link Builder',
   description:
     'Build tracked campaign URLs with this free utm link builder: add UTM parameters, keep existing links intact, and catch overwrites instantly. Try it now!',
   howTo: [
