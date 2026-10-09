@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '30 Day Blog Challenge 2026 – Free Tool | HusnainBlogger',
+  title: '30 Day Blog Challenge',
   description:
     'Take the 30 day blog challenge: one daily blogging task for 30 days, dated from your start date, with a tick-off checklist. Free — start your challenge today!',
   howTo: [
