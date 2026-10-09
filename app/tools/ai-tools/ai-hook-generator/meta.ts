@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Hook Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Hook Generator',
   description:
     'Generate scroll-stopping opening hooks for YouTube, TikTok, Instagram, X, or LinkedIn with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
