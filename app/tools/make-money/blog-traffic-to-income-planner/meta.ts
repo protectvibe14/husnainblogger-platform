@@ -55,7 +55,7 @@ const DESCRIPTION =
   'Free blog income calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Blog Income Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Blog Income Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your Monthly sessions and Ad RPM — the tool computes display-ad income as sessions × RPM ÷ 1000.',
