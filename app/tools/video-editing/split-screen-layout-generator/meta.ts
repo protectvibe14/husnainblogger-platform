@@ -45,7 +45,7 @@ const DESCRIPTION =
   "Plan duets and comparison videos with this free split screen video layout tool — set panes, arrangement, and aspect ratio for coordinates and CSS. Try it now.";
 
 export const content: ToolContent = {
-  title: "Split Screen Video Layout 2026 – Free Tool | HusnainBlogger",
+  title: "Split Screen Video Layout',
   description: DESCRIPTION,
   howTo: [
     "Choose the Number of panes (2–4) for your split screen.",
