@@ -50,7 +50,7 @@ const DESCRIPTION =
   "Plan your expert roundup template with ease. Enter a topic and expert count to get questions, an outreach tracker, and a timeline. Free to use.";
 
 export const content: ToolContent = {
-  title: "Expert Roundup Template 2026 – Free Tool | HusnainBlogger",
+  title: "Expert Roundup Template',
   description: DESCRIPTION,
   howTo: [
     "Enter the topic of your roundup post.",
