@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Social Caption Generator 2026 – Free | HusnainBlogger',
+  title: 'AI Social Caption Generator',
   description:
     'Write engaging captions for Instagram, TikTok, X, LinkedIn, or Facebook in any tone with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
