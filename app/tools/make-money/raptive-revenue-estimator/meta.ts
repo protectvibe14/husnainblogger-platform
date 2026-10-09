@@ -31,7 +31,7 @@ const DESCRIPTION =
   'Free raptive earnings calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Raptive Earnings Calculator 2026 – Free | HusnainBlogger',
+  title: 'Raptive Earnings Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your Monthly pageviews — the total pageviews your site gets per month.',
