@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Click to Tweet Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Click to Tweet Generator',
   description:
     'Turn any quote into a click to tweet box in seconds. Enter your text, copy the ready-to-share HTML, and get more shares from your readers. Try it free!',
   howTo: [
