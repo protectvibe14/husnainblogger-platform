@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Tweet Quote Image Generator 2026 – Free | HusnainBlogger',
+  title: 'Tweet Quote Image Generator',
   description:
     'Turn any quote into a sharp, shareable card with our tweet quote image generator: validate text, pick a theme, download the PNG. Make yours free!',
   howTo: [
