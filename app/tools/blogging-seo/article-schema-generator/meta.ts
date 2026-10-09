@@ -56,7 +56,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Article Schema Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Article Schema Generator',
   description:
     'Generate clean article schema JSON-LD for blog posts in seconds. Enter headline, author, date, and image, then copy the valid markup. Try it free now!',
   howTo: [
