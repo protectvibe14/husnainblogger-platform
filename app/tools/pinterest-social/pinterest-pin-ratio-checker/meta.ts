@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Pin Size Checker 2026 – Free | HusnainBlogger',
+  title: 'Pinterest Pin Size Checker',
   description:
     'Check your pinterest pin size checker result instantly — enter width and height to verify the 2:3 best-practice ratio and feed safety. Free, try it now!',
   howTo: [
