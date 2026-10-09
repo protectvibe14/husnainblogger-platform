@@ -72,7 +72,8 @@ export const content: ToolContent = {
       title: 'Well-optimized meta tags',
       inputs: {
         title: 'Best Sourdough Bread Recipe for Beginners at Home Today',
-        description: 'Learn how to bake the best sourdough bread recipe for beginners with this step-by-step home guide, tips, and timing for perfect loaves.',
+        description:
+    'Learn how to bake the best sourdough bread recipe for beginners with this step-by-step home guide, tips, and timing for perfect loaves.',
         keyword: 'sourdough bread recipe',
         ogTitle: true,
         ogDescription: true,
@@ -84,7 +85,8 @@ export const content: ToolContent = {
       title: 'Missing description, no OG tags',
       inputs: {
         title: 'My Awesome Blog Post About Stuff',
-        description: '',
+        description:
+    '',
         keyword: 'blogging tips',
         ogTitle: false,
         ogDescription: false,

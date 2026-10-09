@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Design meme captions with this free meme text generator — pick from 6 classic templates, add top and bottom text, and get a ready-to-render spec. Build now.";
+  "Make highly shareable memes in seconds: pick from 6 classic meme templates, add your top and bottom text, and get a ready-to-render caption spec.";
 
 export const content: ToolContent = {
   title: "Meme Text Generator",

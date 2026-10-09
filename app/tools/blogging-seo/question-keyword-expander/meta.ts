@@ -16,20 +16,22 @@ export const outputs: ToolOutput[] = [
     id: 'expansions',
     label: 'Question idea seeds',
     type: 'list',
-    description: 'Free question keyword generator 2026: Question-form variations built from fixed question templates. Get instant results. No signup - try it free now!',
+    description:
+    'Free question keyword generator 2026: Question-form variations built from fixed question templates. Get instant results. free now.',
   },
   {
     id: 'count',
     label: 'Questions generated',
     type: 'number',
-    description: 'How many question ideas were produced.',
+    description:
+    'How many question ideas were produced.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Question Keyword Generator',
   description:
-    'Generate question keyword ideas (who, what, how, why) from any seed keyword instantly. Free question keyword generator — expand your seed now!',
+    'Generate question keyword ideas (who, what, how, why) from any seed keyword instantly. Free question keyword generator — expand your seed now.',
   howTo: [
     'Type your seed keyword (2-100 characters) into the Seed keyword field.',
     'Click Generate to build question variations from the fixed template bank.',
@@ -101,7 +103,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free question keyword generator 2026: Question-form variations built from fixed question templates. Get instant results. No signup - try it free now!',
+      description:
+    'Free question keyword generator 2026: Question-form variations built from fixed question templates. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

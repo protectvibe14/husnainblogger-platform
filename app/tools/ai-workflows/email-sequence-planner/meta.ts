@@ -34,20 +34,22 @@ export const outputs: ToolOutput[] = [
     id: 'schedule',
     label: 'Send calendar',
     type: 'table',
-    description: 'Free email sequence planner 2026: Day-by-day grid: email number, send day, subject slot, and purpose per email. Fast, private, no signup - try it now!',
+    description:
+    'Free email sequence planner 2026: Day-by-day grid: email number, send day, subject slot, and purpose per email. Fast, private now.',
   },
   {
     id: 'summary',
     label: 'Sequence summary',
     type: 'text',
-    description: 'One-line summary of email count, spacing, and finish day.',
+    description:
+    'One-line summary of email count, spacing, and finish day.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Email Sequence Planner',
   description:
-    'Plan your email sequence with a free email sequence planner. Pick a goal, set email count and spacing, and get a day-by-day send calendar. Plan yours now!',
+    'Plan your email sequence with a free email sequence planner. Pick a goal, set email count and spacing, and get a day-by-day send calendar. Plan yours now.',
   howTo: [
     'Choose your sequence goal: welcome, nurture, sales, or re-engagement.',
     'Enter the number of emails (2–12).',
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email sequence planner 2026: Day-by-day grid: email number, send day, subject slot, and purpose per email. Fast, private, no signup - try it now!',
+      description:
+    'Free email sequence planner 2026: Day-by-day grid: email number, send day, subject slot, and purpose per email. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

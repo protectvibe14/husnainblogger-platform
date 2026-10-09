@@ -19,32 +19,36 @@ export const outputs: ToolOutput[] = [
     id: 'transitionCount',
     label: 'Transition words found',
     type: 'number',
-    description: 'Free transition words checker 2026: Total occurrences of transition words/phrases from the fixed 111-phrase English bank. Fast, private, no signup - try it now!',
+    description:
+    'Free transition words checker 2026: Total occurrences of transition words/phrases from the fixed 111-phrase English bank. Fast, private now.',
   },
   {
     id: 'density',
     label: 'Density (per 100 words)',
     type: 'number',
-    description: 'Transition words per 100 words of content, rounded to 2 decimals.',
+    description:
+    'Transition words per 100 words of content, rounded to 2 decimals.',
   },
   {
     id: 'matchedWords',
     label: 'Matched words',
     type: 'table',
-    description: 'Each matched transition phrase with its occurrence count (top 50).',
+    description:
+    'Each matched transition phrase with its occurrence count (top 50).',
   },
   {
     id: 'verdict',
     label: 'Verdict',
     type: 'text',
-    description: 'Editorial verdict: Low (<1), Moderate (1–3), or Good (>3) transition density.',
+    description:
+    'Editorial verdict: Low (<1), Moderate (1–3), or Good (>3) transition density.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Transition Words Checker',
   description:
-    'Check transition word usage with this free transition words checker. Count 111 English phrases, see density per 100 words, and get a verdict. Try it now!',
+    'Check transition word usage with this free transition words checker. Count 111 English phrases, see density per 100 words, and get a verdict.',
   howTo: [
     'Paste your article or blog post into the content box (English text works best).',
     'Run the tool to count transition words against the fixed 111-phrase bank.',
@@ -122,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free transition words checker 2026: Total occurrences of transition words/phrases from the fixed 111-phrase English bank. Fast, private, no signup - try it now!',
+      description:
+    'Free transition words checker 2026: Total occurrences of transition words/phrases from the fixed 111-phrase English bank. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

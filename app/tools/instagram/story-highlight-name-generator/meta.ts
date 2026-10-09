@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'names',
     label: 'Highlight names',
     type: 'list',
-    description: 'Free instagram highlight names ideas 2026: Short highlight titles built from fixed name patterns — no AI involved. Fast, private, no signup - try it now!',
+    description:
+    'Free instagram highlight names ideas 2026: Short highlight titles built from fixed name patterns — no AI involved. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Usage note',
     type: 'text',
-    description: 'Tone confirmation, truncation guidance, and flags for names over 15 characters.',
+    description:
+    'Tone confirmation, truncation guidance, and flags for names over 15 characters.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Highlight Names Ideas',
   description:
-    'Generate Instagram story highlight name ideas free. Enter your niche, pick a tone, and get short on-brand highlight titles with length warnings. Get ideas now!',
+    'Generate Instagram story highlight name ideas free. Enter your niche, pick a tone, and get short on-brand highlight titles with length warnings. Get.',
   howTo: [
     'Type your niche in the "Your niche" box (e.g. "fitness", "bakeries").',
     'Pick a tone: playful, professional, minimal, or bold.',
@@ -122,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram highlight names ideas 2026: Short highlight titles built from fixed name patterns — no AI involved. Fast, private, no signup - try it now!',
+      description:
+    'Free instagram highlight names ideas 2026: Short highlight titles built from fixed name patterns — no AI involved. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

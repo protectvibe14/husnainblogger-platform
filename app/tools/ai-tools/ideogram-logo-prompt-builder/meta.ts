@@ -44,32 +44,36 @@ export const outputs: ToolOutput[] = [
     id: 'logoPrompt',
     label: 'Logo prompt',
     type: 'copy',
-    description: 'Free ideogram logo prompt 2026: Copy-ready Ideogram prompt for the main logo. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ideogram logo prompt 2026: Copy-ready Ideogram prompt for the main logo. free.',
   },
   {
     id: 'negativePrompt',
     label: 'Negative prompt',
     type: 'copy',
-    description: 'Fixed negative-prompt line to steer away from photo-style artifacts.',
+    description:
+    'Fixed negative-prompt line to steer away from photo-style artifacts.',
   },
   {
     id: 'variations',
     label: 'Style variations',
     type: 'list',
-    description: '3 variation prompts: icon-only, monochrome, horizontal lockup.',
+    description:
+    '3 variation prompts: icon-only, monochrome, horizontal lockup.',
   },
   {
     id: 'note',
     label: 'Usage note',
     type: 'text',
-    description: 'Where to paste the prompts and what to expect from text rendering.',
+    description:
+    'Where to paste the prompts and what to expect from text rendering.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ideogram Logo Prompt Builder',
   description:
-    'Build an Ideogram-ready logo prompt from fixed templates: 5 styles, brand colors, optional tagline, plus 3 style variations and a negative prompt. Free builder.',
+    'Build an Ideogram-ready logo prompt from fixed templates: 5 styles, brand colors, optional tagline, plus 3 style variations and a negative prompt. Free.',
   howTo: [
     'Type your brand name, industry and colors (2-100 characters each).',
     'Pick a style: minimalist, mascot, vintage, geometric or wordmark.',
@@ -141,7 +145,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ideogram logo prompt 2026: Copy-ready Ideogram prompt for the main logo. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ideogram logo prompt 2026: Copy-ready Ideogram prompt for the main logo. free.',
     },
     {
       '@context': 'https://schema.org',

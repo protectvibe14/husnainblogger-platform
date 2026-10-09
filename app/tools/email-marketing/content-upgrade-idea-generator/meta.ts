@@ -34,14 +34,14 @@ export const outputs: ToolOutput[] = [
     label: 'Content upgrade ideas',
     type: 'table',
     description:
-      'Free content upgrade ideas generator 2026: Table of content upgrade ideas: number, the upgrade idea title, its format, and a. Fast, private, no signup - try it!',
+    'Free content upgrade ideas generator 2026: Table of content upgrade ideas: number, the upgrade idea title, its format, and a. Fast, private.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Upgrade Ideas Generator',
   description:
-    'Turn readers into subscribers with this free content upgrade ideas generator: get up to 10 bonus ideas with formats and placements for your topic. Try it now!',
+    'Turn readers into subscribers: enter your post topic and audience to get up to 10 bonus content ideas with formats and placement tips that fit your post.',
   howTo: [
     'Enter your blog post topic (e.g. email marketing) and the audience the post serves (e.g. beginner bloggers).',
     'Choose how many ideas you want (1–10).',
@@ -113,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free content upgrade ideas generator 2026: Table of content upgrade ideas: number, the upgrade idea title, its format, and a. Fast, private, no signup - try it!',
+      description:
+    'Free content upgrade ideas generator 2026: Table of content upgrade ideas: number, the upgrade idea title, its format, and a. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

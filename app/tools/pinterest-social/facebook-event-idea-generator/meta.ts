@@ -19,20 +19,22 @@ export const outputs: ToolOutput[] = [
     id: 'eventIdeas',
     label: 'Event ideas',
     type: 'table',
-    description: 'Free facebook event ideas 2026: 8 event ideas — title, online/in-person format, description seed, and cover note each. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook event ideas 2026: 8 event ideas — title, online/in-person format, description seed, and cover note each. Fast, private now.',
   },
   {
     id: 'coverGuidance',
     label: 'Cover-size guidance',
     type: 'text',
-    description: 'Honest note on conflicting event cover-size sources.',
+    description:
+    'Honest note on conflicting event cover-size sources.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Event Ideas',
   description:
-    'Get Facebook event ideas for your business type. Browse online and in-person event titles with description seeds and honest cover-size guidance. Start free!',
+    'Fill your events calendar with ideas that draw crowds: enter your business type for 8 online and in-person events with titles and description seeds.',
   howTo: [
     'Type your business type (up to 60 characters), e.g. "coffee shop".',
     'Run the tool to get 8 event ideas — titles, formats, and description seeds.',
@@ -102,7 +104,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook event ideas 2026: 8 event ideas — title, online/in-person format, description seed, and cover note each. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook event ideas 2026: 8 event ideas — title, online/in-person format, description seed, and cover note each. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

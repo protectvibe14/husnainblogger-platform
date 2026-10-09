@@ -63,20 +63,22 @@ export const outputs: ToolOutput[] = [
     id: 'packageTiers',
     label: 'Package tiers (table)',
     type: 'table',
-    description: 'Free wedding videography pricing packages 2026: Side-by-side tier comparison: hours, shooters, deliverables, full price, package price,. Fast, private, no!',
+    description:
+    'Free wedding videography pricing packages 2026: Side-by-side tier comparison: hours, shooters, deliverables, full price, package price. Fast, private, no.',
   },
   {
     id: 'packageSummary',
     label: 'Package summary document (copy)',
     type: 'copy',
-    description: 'Formatted text summary of every tier, ready to copy into a proposal or price sheet.',
+    description:
+    'Formatted text summary of every tier, ready to copy into a proposal or price sheet.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Wedding Videography Pricing Packages 2027',
+  title: 'Wedding Videography Pricing Packages',
   description:
-    'Build wedding videography pricing packages in minutes. Enter your per-tier prices, hours, shooters, and deliverables for a comparison table. Try it free now!',
+    'Build wedding videography pricing packages in minutes. Enter your per-tier prices, hours, shooters, and deliverables for a comparison table. Try it.',
   howTo: [
     'Add one row per package tier (e.g. Essential, Premium, Luxury).',
     'For each tier, enter the tier name, hours of coverage, number of shooters, and deliverables (comma-separated).',
@@ -136,7 +138,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free wedding videography pricing packages 2026: Side-by-side tier comparison: hours, shooters, deliverables, full price, package price,. Fast, private, no!',
+      description:
+    'Free wedding videography pricing packages 2026: Side-by-side tier comparison: hours, shooters, deliverables, full price, package price. Fast, private, no.',
     },
     {
       '@type': 'BreadcrumbList',

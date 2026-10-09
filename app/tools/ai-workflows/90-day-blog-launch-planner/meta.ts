@@ -24,20 +24,22 @@ export const outputs: ToolOutput[] = [
     id: 'milestoneGrid',
     label: 'Your 90-day milestone grid',
     type: 'table',
-    description: 'Free blog launch checklist 2026: 12 fixed launch milestones mapped onto your dates: 6 pre-launch, launch day, and 5. Fast, private, no signup - try it now!',
+    description:
+    'Free blog launch checklist 2026: 12 fixed launch milestones mapped onto your dates: 6 pre-launch, launch day, and 5. Fast, private now.',
   },
   {
     id: 'planSummary',
     label: 'Plan summary',
     type: 'text',
-    description: 'Your niche, launch date, and plan span - with a notice if the date is in the past.',
+    description:
+    'Your niche, launch date, and plan span - with a notice if the date is in the past.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Launch Checklist',
   description:
-    'Launch your blog with confidence: enter your launch date and niche, then get a 90-day milestone grid for pre-launch, launch, and post-launch. Plan free now!',
+    'Launch your blog with confidence: enter your launch date and niche, then get a 90-day milestone grid for pre-launch, launch, and post-launch. Plan free.',
   howTo: [
     'Enter your launch date in the Launch date field (YYYY-MM-DD).',
     'Type your niche in the Your niche field (for example, "sourdough baking").',
@@ -109,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free blog launch checklist 2026: 12 fixed launch milestones mapped onto your dates: 6 pre-launch, launch day, and 5. Fast, private, no signup - try it now!',
+      description:
+    'Free blog launch checklist 2026: 12 fixed launch milestones mapped onto your dates: 6 pre-launch, launch day, and 5. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

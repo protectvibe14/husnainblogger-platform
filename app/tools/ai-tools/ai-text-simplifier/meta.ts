@@ -26,13 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'simplified',
     label: 'Simplified text',
     type: 'text',
-    description: 'Free ai text simplifier 2026: The same content rewritten at the reading level you picked. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai text simplifier 2026: The same content rewritten at the reading level you picked. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Text Simplifier',
-  description: 'Rewrite complex text in plain, easy, or kid-friendly language with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+  description:
+    'Rewrite complex text in plain, easy, or kid-friendly language with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Pick a reading level: plain language, easy read, or kid-friendly.',
     'Paste the text (at least 50 characters, up to 8,000).',
@@ -98,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai text simplifier 2026: The same content rewritten at the reading level you picked. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai text simplifier 2026: The same content rewritten at the reading level you picked. free.',
     },
     {
       '@type': 'BreadcrumbList',

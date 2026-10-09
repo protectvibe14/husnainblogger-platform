@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Log client revision rounds with this free video revision tracker — track requests and statuses in one session-based list, then export the CSV. Try it free.";
+  "Track client revision rounds without the chaos: log every request and status in one clean session list, then export the CSV for your records.";
 
 export const content: ToolContent = {
   title: "Video Revision Tracker",

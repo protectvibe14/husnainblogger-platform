@@ -11,19 +11,22 @@ export const outputs: ToolOutput[] = [
     id: "brief",
     label: "Research brief (copy)",
     type: "copy",
-    description: "The full brief — sub-questions, source checklist, verification steps — in Markdown.",
+    description:
+    "The full brief — sub-questions, source checklist, verification steps — in Markdown.",
   },
   {
     id: "subQuestions",
     label: "Sub-questions",
     type: "list",
-    description: "The sub-questions to answer for your research question.",
+    description:
+    "The sub-questions to answer for your research question.",
   },
   {
     id: "verification",
     label: "Verification steps",
     type: "list",
-    description: "The verification checklist matched to your chosen depth.",
+    description:
+    "The verification checklist matched to your chosen depth.",
   },
 ];
 

@@ -40,32 +40,36 @@ export const outputs: ToolOutput[] = [
     id: 'totalHours',
     label: 'Total hours',
     type: 'number',
-    description: 'Free video editing timeline estimator 2026: Sum of all task hour estimates, based on your estimates. Get instant results. No signup - try it free now!',
+    description:
+    'Free video editing timeline estimator 2026: Sum of all task hour estimates, based on your estimates. Get instant results. free now.',
   },
   {
     id: 'estimatedWorkDays',
     label: 'Estimated work days',
     type: 'number',
-    description: 'Work days needed (rounded up) plus your buffer days.',
+    description:
+    'Work days needed (rounded up) plus your buffer days.',
   },
   {
     id: 'estimatedEndDate',
     label: 'Estimated end date',
     type: 'text',
-    description: 'Calendar end date = start date + estimated work days. Based on your estimates.',
+    description:
+    'Calendar end date = start date + estimated work days. Based on your estimates.',
   },
   {
     id: 'taskBreakdown',
     label: 'Task breakdown',
     type: 'table',
-    description: 'Each task with its hours and share of the total.',
+    description:
+    'Each task with its hours and share of the total.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Video Editing Timeline Estimator 2027',
+  title: 'Video Editing Timeline Estimator',
   description:
-    'Get a project end date with this video editing timeline estimator: enter tasks with hours, daily hours, and buffer days to get total hours and work days. Free!',
+    'Get a project end date with this video editing timeline estimator: enter tasks with hours, daily hours, and buffer days to get total hours and work.',
   howTo: [
     'List your tasks one per line as "task name, hours" — e.g. "Rough cut edit, 8". These are your own estimates.',
     'Enter how many focused work hours you do per day (e.g. 6).',
@@ -143,7 +147,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free video editing timeline estimator 2026: Sum of all task hour estimates, based on your estimates. Get instant results. No signup - try it free now!',
+      description:
+    'Free video editing timeline estimator 2026: Sum of all task hour estimates, based on your estimates. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

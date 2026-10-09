@@ -51,26 +51,29 @@ export const outputs: ToolOutput[] = [
     id: 'recommendedShootDayRate',
     label: 'Recommended shoot day rate',
     type: 'currency',
-    description: 'Free photography day rate calculator 2026: Your target day rate, from your own numbers (estimate, not market data). Fast, private, no signup - try it now!',
+    description:
+    'Free photography day rate calculator 2026: Your target day rate, from your own numbers (estimate, not market data). Fast, private now.',
   },
   {
     id: 'perShootCostBreakdown',
     label: 'Per-shoot cost breakdown',
     type: 'table',
-    description: 'How the day rate is built from the day-rate share plus per-shoot costs.',
+    description:
+    'How the day rate is built from the day-rate share plus per-shoot costs.',
   },
   {
     id: 'annualCapacityCheck',
     label: 'Annual capacity check',
     type: 'text',
-    description: 'Whether your planned shoot days cover income target, expenses, and shoot costs.',
+    description:
+    'Whether your planned shoot days cover income target, expenses, and shoot costs.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Photography Day Rate Calculator',
   description:
-    'Photography day rate calculator: enter your income target, expenses, and per-shoot costs for a free instant estimate. No signup — try it now!',
+    'Photography day rate calculator: enter your income target, expenses, and per-shoot costs for a free instant estimate. —.',
   howTo: [
     'Enter your "Annual income target" — the take-home pay you want from photography this year.',
     'Enter your "Shoot days per year" — only the days you can actually book and bill.',
@@ -159,7 +162,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free photography day rate calculator 2026: Your target day rate, from your own numbers (estimate, not market data). Fast, private, no signup - try it now!',
+      description:
+    'Free photography day rate calculator 2026: Your target day rate, from your own numbers (estimate, not market data). Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

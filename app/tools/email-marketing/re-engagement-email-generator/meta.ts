@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Re-Engagement Email Generator',
   description:
-    'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block. No signup.',
+    'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block.',
   howTo: [
     'Name the inactive segment (e.g. lapsed buyers).',
     'Enter how many days the segment has been inactive (30–730).',
@@ -128,7 +128,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block. No signup.',
+      description:
+    'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block.',
     },
     {
       '@type': 'BreadcrumbList',

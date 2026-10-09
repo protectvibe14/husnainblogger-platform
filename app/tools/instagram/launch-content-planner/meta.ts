@@ -34,20 +34,22 @@ export const outputs: ToolOutput[] = [
     id: 'timeline',
     label: 'Launch timeline',
     type: 'table',
-    description: 'Free instagram product launch plan 2026: Day-by-day grid: date, day label (T-7 … Launch day … T+3), phase, and the task for that. Fast, private, no signup -!',
+    description:
+    'Free instagram product launch plan 2026: Day-by-day grid: date, day label (T-7 … Launch day … T+3), phase, and the task for that. Fast, private -.',
   },
   {
     id: 'checklistExport',
     label: 'Checklist export',
     type: 'copy',
-    description: 'Plain-text checklist of every task, grouped by phase — copy it into your notes app.',
+    description:
+    'Plain-text checklist of every task, grouped by phase — copy it into your notes app.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Product Launch Plan',
   description:
-    'Plan your launch with this free instagram product launch plan tool. Enter your launch date and offer for a day-by-day launch timeline. Start now!',
+    'Plan your launch with this free instagram product launch plan tool. Enter your launch date and offer for a day-by-day launch timeline. Start now.',
   howTo: [
     'Enter your launch date — it must be in the future.',
     'Describe the offer you are launching (up to 100 characters).',
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram product launch plan 2026: Day-by-day grid: date, day label (T-7 … Launch day … T+3), phase, and the task for that. Fast, private, no signup -!',
+      description:
+    'Free instagram product launch plan 2026: Day-by-day grid: date, day label (T-7 … Launch day … T+3), phase, and the task for that. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

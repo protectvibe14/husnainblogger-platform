@@ -18,32 +18,36 @@ export const outputs: ToolOutput[] = [
     id: 'optimizedScript',
     label: 'TTS-optimized script',
     type: 'copy',
-    description: 'Free tiktok text to speech tips 2026: Your script with abbreviations expanded, numbers spelled out, and long sentences split. Fast, private, no signup - try it!',
+    description:
+    'Free tiktok text to speech tips 2026: Your script with abbreviations expanded, numbers spelled out, and long sentences split. Fast, private.',
   },
   {
     id: 'readabilityScore',
     label: 'TTS readability score',
     type: 'number',
-    description: '0–100 estimated score of how smoothly a text-to-speech voice can read the script (heuristic guidance, not a measurement).',
+    description:
+    '0–100 estimated score of how smoothly a text-to-speech voice can read the script (heuristic guidance, not a measurement).',
   },
   {
     id: 'changes',
     label: 'What changed',
     type: 'list',
-    description: 'Every rewrite the optimizer applied, with the original and replacement shown.',
+    description:
+    'Every rewrite the optimizer applied, with the original and replacement shown.',
   },
   {
     id: 'warnings',
     label: 'Things to check',
     type: 'list',
-    description: 'Punctuation or acronym issues to review in TikTok\'s voice preview — brand names are flagged, never auto-pronounced.',
+    description:
+    'Punctuation or acronym issues to review in TikTok\.'s voice preview — brand names are flagged, never auto-pronounced.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok TTS Script Optimizer',
   description:
-    'Optimize a tiktok tts script optimizer draft for natural voiceover: abbreviations expanded, numbers spelled, sentences split. Paste it free — try it now!',
+    'Optimize a tiktok tts script optimizer draft for natural voiceover: abbreviations expanded, numbers spelled, sentences split. Paste it free —.',
   howTo: [
     'Paste your raw script into the "Your script text" box — any length, any topic.',
     'Run the tool: abbreviations (DIY, ASAP, etc.) expand to full words and numbers like $50 or 25% are spelled out.',
@@ -119,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok text to speech tips 2026: Your script with abbreviations expanded, numbers spelled out, and long sentences split. Fast, private, no signup - try it!',
+      description:
+    'Free tiktok text to speech tips 2026: Your script with abbreviations expanded, numbers spelled out, and long sentences split. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

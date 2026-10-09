@@ -41,7 +41,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 const DESCRIPTION =
-  'Log every highlight with this free video timestamp logger: note the timestamp, label and rating for each moment, get a top-moments summary and CSV. Try it now.';
+  'Log video highlights as you watch the footage: note timestamps, labels, and ratings for each moment, then get a top-moments summary plus CSV export.';
 
 export const content: ToolContent = {
   title: 'Video Timestamp Logger',

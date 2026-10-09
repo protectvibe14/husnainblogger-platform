@@ -25,26 +25,29 @@ export const outputs: ToolOutput[] = [
     id: 'coverCopy',
     label: 'Cover copy options',
     type: 'list',
-    description: 'Free facebook cover photo text 2026: 5 short cover text lines (12 words or fewer each) with your offer inserted. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook cover photo text 2026: 5 short cover text lines (12 words or fewer each) with your offer inserted. Fast, private now.',
   },
   {
     id: 'safeZoneNote',
     label: 'Safe-zone guidance',
     type: 'text',
-    description: 'Text placement guidance for the chosen cover size (page 851x315 or group 1640x856).',
+    description:
+    'Text placement guidance for the chosen cover size (page 851x315 or group 1640x856).',
   },
   {
     id: 'count',
     label: 'Copy options generated',
     type: 'number',
-    description: 'How many cover copy options were generated.',
+    description:
+    'How many cover copy options were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Cover Photo Text',
   description:
-    'Find the best facebook cover photo text ideas with this free generator: enter your offer to get 5 short cover lines plus safe-zone guidance. Try it now!',
+    'Make your cover photo do the selling: enter your offer or headline to get 5 free short cover lines plus safe-zone guidance for pages and groups.',
   howTo: [
     'Type Your offer or headline into the field (keep it under 9 words).',
     'Choose the Cover type: page (851 x 315) or group (1640 x 856).',
@@ -121,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook cover photo text 2026: 5 short cover text lines (12 words or fewer each) with your offer inserted. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook cover photo text 2026: 5 short cover text lines (12 words or fewer each) with your offer inserted. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

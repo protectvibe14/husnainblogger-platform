@@ -28,21 +28,21 @@ export const outputs: ToolOutput[] = [
     label: 'Hashtag suggestions',
     type: 'list',
     description:
-      'Free pinterest hashtags 2026: Specific topic-derived tags first, then curated generic tags. Curated suggestions only —. Fast, private, no signup - try it now!',
+    'Free pinterest hashtags 2026: Specific topic-derived tags first, then curated generic tags. Curated suggestions only —. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Usage notes',
     type: 'text',
     description:
-      'Always labels the tags as curated suggestions (not live trend data), recommends 2–5 specific tags per pin, and steers overly broad topics toward a narrower angle.',
+    'Always labels the tags as curated suggestions (not live trend data), recommends 2–5 specific tags per pin, and steers overly broad topics toward a.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Hashtag Generator',
   description:
-    'Find pinterest hashtags with this free generator. Enter your pin topic to get specific topic tags plus curated suggestions, ranked and ready. Try it now!',
+    'Find the hashtags that fit your pin best: enter your pin topic for up to 20 ranked, topic-specific tags with honest, practical usage guidance included.',
   howTo: [
     'Enter your pin topic (up to 80 characters).',
     'Choose how many hashtags you want, from 1 to 20 (defaults to 10).',
@@ -118,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest hashtags 2026: Specific topic-derived tags first, then curated generic tags. Curated suggestions only —. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest hashtags 2026: Specific topic-derived tags first, then curated generic tags. Curated suggestions only —. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

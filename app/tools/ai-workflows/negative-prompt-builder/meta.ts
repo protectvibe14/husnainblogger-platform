@@ -18,14 +18,15 @@ export const outputs: ToolOutput[] = [
     id: 'negativePrompt',
     label: 'Your negative prompt',
     type: 'copy',
-    description: 'Free negative prompt generator 2026: Paste this into the negative prompt field of your image generator. Get instant results. No signup - try it free now!',
+    description:
+    'Free negative prompt generator 2026: Paste this into the negative prompt field of your image generator. Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Negative Prompt Generator',
   description:
-    'Use this free negative prompt generator: list what your image generator should avoid and get one clean comma-joined prompt string. No signup - build yours now!',
+    'Use this free negative prompt generator: list what your image generator should avoid and get one clean comma-joined prompt string. - build yours now.',
   howTo: [
     'Click "Add row" for each thing you want your image generator to avoid.',
     'Type a term in each row — for example "blurry", "watermark", or "extra fingers".',
@@ -85,7 +86,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free negative prompt generator 2026: Paste this into the negative prompt field of your image generator. Get instant results. No signup - try it free now!',
+      description:
+    'Free negative prompt generator 2026: Paste this into the negative prompt field of your image generator. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -11,13 +11,15 @@ export const outputs: ToolOutput[] = [
     id: "chain",
     label: "Prompt chain (copy)",
     type: "copy",
-    description: "The ordered chain with variable handoffs and prompt templates — copy it whole.",
+    description:
+    "The ordered chain with variable handoffs and prompt templates — copy it whole.",
   },
   {
     id: "warnings",
     label: "Variable warnings",
     type: "list",
-    description: "Undefined or malformed {variables} found in your step prompts.",
+    description:
+    "Undefined or malformed {variables} found in your step prompts.",
   },
 ];
 

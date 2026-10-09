@@ -58,7 +58,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Upload Defaults Template 2027',
+  title: 'YouTube Upload Defaults Template',
   description: DESCRIPTION,
   howTo: [
     'Add one item per upload style you use (e.g. weekly tutorials, Shorts, vlogs) and give each preset a name.',

@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'prompts',
     label: 'Q&A sticker prompts',
     type: 'list',
-    description: 'Free ask me a question sticker ideas 2026: Question-sticker prompts in your chosen tone, each ready to paste. Fast, private, no signup - try it now!',
+    description:
+    'Free ask me a question sticker ideas 2026: Question-sticker prompts in your chosen tone, each ready to paste. Fast, private now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all prompts',
     type: 'copy',
-    description: 'All prompts as plain text, ready to paste.',
+    description:
+    'All prompts as plain text, ready to paste.',
   },
   {
     id: 'promptCount',
     label: 'Prompts generated',
     type: 'number',
-    description: 'How many prompts were generated.',
+    description:
+    'How many prompts were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ask Me a Question Sticker Ideas',
   description:
-    'Get ask me a question sticker ideas in friendly, funny, professional, or bold tone. Enter your niche, copy ready-to-post prompts — free, no signup. Try it now!',
+    'Get ask me a question sticker ideas in friendly, funny, professional, or bold tone. Enter your niche, copy ready-to-post prompts — free.',
   howTo: [
     'Type your niche into the "Niche" box — e.g. "skincare" or "freelance writing".',
     'Pick a "Tone" for the prompts: Friendly, Funny, Professional, or Bold.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ask me a question sticker ideas 2026: Question-sticker prompts in your chosen tone, each ready to paste. Fast, private, no signup - try it now!',
+      description:
+    'Free ask me a question sticker ideas 2026: Question-sticker prompts in your chosen tone, each ready to paste. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

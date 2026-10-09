@@ -39,20 +39,22 @@ export const outputs: ToolOutput[] = [
     id: 'subjectOptions',
     label: 'Subject line options',
     type: 'list',
-    description: 'Free testimonial request email template 2026: 5 subject-line options assembled from fixed templates with the client name and product. Fast, private, no signup!',
+    description:
+    'Free testimonial request email template 2026: 5 subject-line options assembled from fixed templates with the client name and product. Fast, private.',
   },
   {
     id: 'bodyDraft',
     label: 'Request email draft',
     type: 'copy',
-    description: 'Full request draft: greeting, the ask, an easy-reply prompt, optional incentive, and closer.',
+    description:
+    'Full request draft: greeting, the ask, an easy-reply prompt, optional incentive, and closer.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Testimonial Request Email Template 2027',
+  title: 'Testimonial Request Email Template',
   description:
-    'Write a testimonial request email template that gets replies. Add your client, product, and ask to get 5 subject lines plus a ready draft. Try it free!',
+    'Ask for testimonials people actually write: add your client, the product they used, and your specific ask for 5 subject lines plus a ready draft.',
   howTo: [
     'Enter the client name and the product or service they used.',
     'Describe exactly what you want them to mention (the "specific ask").',
@@ -134,7 +136,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free testimonial request email template 2026: 5 subject-line options assembled from fixed templates with the client name and product. Fast, private, no signup!',
+      description:
+    'Free testimonial request email template 2026: 5 subject-line options assembled from fixed templates with the client name and product. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

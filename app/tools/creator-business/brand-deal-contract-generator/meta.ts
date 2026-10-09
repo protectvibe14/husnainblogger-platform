@@ -96,26 +96,29 @@ export const outputs: ToolOutput[] = [
     id: 'contractText',
     label: 'Contract draft (copy)',
     type: 'copy',
-    description: 'Free brand deal contract template 2026: Sectioned contract draft with your terms filled in — includes the not-legal-advice. Fast, private, no signup - try it!',
+    description:
+    'Free brand deal contract template 2026: Sectioned contract draft with your terms filled in — includes the not-legal-advice. Fast, private.',
   },
   {
     id: 'contractSummary',
     label: 'Deal summary',
     type: 'text',
-    description: 'One-line plain-English summary of the deal.',
+    description:
+    'One-line plain-English summary of the deal.',
   },
   {
     id: 'warnings',
     label: 'Review flags',
     type: 'list',
-    description: 'Items to double-check, e.g. gifted collaborations or long exclusivity.',
+    description:
+    'Items to double-check, e.g. gifted collaborations or long exclusivity.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Brand Deal Contract Template',
   description:
-    'Generate a brand deal contract draft from your deal terms — parties, deliverables, compensation, usage rights, and more. Template only, not legal advice. Free!',
+    'Generate a brand deal contract draft from your deal terms — parties, deliverables, compensation, usage rights, and more. Template only, not legal.',
   howTo: [
     'Enter the brand name and your creator name or channel name.',
     'List the deliverables one per line, e.g. "2 x Instagram Reel | launch teaser" (quantity and notes are optional).',
@@ -221,7 +224,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free brand deal contract template 2026: Sectioned contract draft with your terms filled in — includes the not-legal-advice. Fast, private, no signup - try it!',
+      description:
+    'Free brand deal contract template 2026: Sectioned contract draft with your terms filled in — includes the not-legal-advice. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

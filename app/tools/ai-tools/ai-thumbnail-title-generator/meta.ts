@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'titles',
     label: 'Titles',
     type: 'text',
-    description: 'Free ai thumbnail title generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai thumbnail title generator 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Thumbnail Title Generator',
   description:
-    'Generate clickable YouTube titles in 5 proven styles — curiosity gap, how-to, listicle, bold claim, or question — with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Generate clickable YouTube titles in 5 proven styles — curiosity gap, how-to, listicle, bold claim, or question — with your own free Gemini, Groq, or.',
   howTo: [
     'Describe your video topic.',
     'Pick a title style and how many titles you want (5 or 10).',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai thumbnail title generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai thumbnail title generator 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

@@ -43,32 +43,36 @@ export const outputs: ToolOutput[] = [
     id: 'impressionsPerIssue',
     label: 'Impressions per issue',
     type: 'number',
-    description: 'Free newsletter cpm calculator 2026: Subscribers × open rate, rounded to a whole number. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free newsletter cpm calculator 2026: Subscribers × open rate, rounded to a whole number. free.',
   },
   {
     id: 'revenuePerIssue',
     label: 'Revenue per issue',
     type: 'currency',
-    description: 'Impressions ÷ 1000 × CPM.',
+    description:
+    'Impressions ÷ 1000 × CPM.',
   },
   {
     id: 'revenuePerMonth',
     label: 'Revenue per month',
     type: 'currency',
-    description: 'Revenue per issue × issues per month.',
+    description:
+    'Revenue per issue × issues per month.',
   },
   {
     id: 'revenuePerSubscriberPerMonth',
     label: 'Revenue per subscriber / month',
     type: 'currency',
-    description: 'Monthly revenue ÷ subscribers (0 when subscribers is 0).',
+    description:
+    'Monthly revenue ÷ subscribers (0 when subscribers is 0).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Newsletter CPM Calculator',
   description:
-    'Estimate newsletter ad revenue — enter subscribers, open rate, and CPM to see per-issue and monthly revenue. Pure math on your numbers. Calculate now!',
+    'Estimate newsletter ad revenue — enter subscribers, open rate, and CPM to see per-issue and monthly revenue. Pure math on your numbers. Calculate now.',
   howTo: [
     'Enter your subscriber count.',
     'Enter your average open rate as a percentage (0–100).',
@@ -140,7 +144,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter cpm calculator 2026: Subscribers × open rate, rounded to a whole number. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free newsletter cpm calculator 2026: Subscribers × open rate, rounded to a whole number. free.',
     },
     {
       '@type': 'BreadcrumbList',

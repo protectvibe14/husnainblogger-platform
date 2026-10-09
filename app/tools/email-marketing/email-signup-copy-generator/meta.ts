@@ -32,32 +32,36 @@ export const outputs: ToolOutput[] = [
     id: 'headlines',
     label: 'Headline options',
     type: 'list',
-    description: 'Free email signup copy generator 2026: 4 signup-form headline options assembled from fixed templates. Get instant results. No signup - try it free now!',
+    description:
+    'Free email signup copy generator 2026: 4 signup-form headline options assembled from fixed templates. Get instant results. free now.',
   },
   {
     id: 'subtexts',
     label: 'Subtext options',
     type: 'list',
-    description: '3 supporting subtext options assembled from fixed templates.',
+    description:
+    '3 supporting subtext options assembled from fixed templates.',
   },
   {
     id: 'buttons',
     label: 'Button text options',
     type: 'list',
-    description: '5 call-to-action button text options assembled from fixed templates.',
+    description:
+    '5 call-to-action button text options assembled from fixed templates.',
   },
   {
     id: 'notices',
     label: 'Notices',
     type: 'list',
-    description: 'Notices about input adjustments such as truncation.',
+    description:
+    'Notices about input adjustments such as truncation.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Email Signup Copy Generator',
   description:
-    'Write opt-in forms with this free email signup copy generator: get headline, subtext, and button options for your incentive, placement, and tone. Try it now!',
+    'Grow your list faster with better opt-in copy: enter your freebie, placement, and tone for headlines, subtext, and button text that converts.',
   howTo: [
     'Enter your incentive — the freebie people get for signing up (e.g. free SEO checklist).',
     'Pick the placement: popup, inline form, landing page, or sidebar.',
@@ -129,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email signup copy generator 2026: 4 signup-form headline options assembled from fixed templates. Get instant results. No signup - try it free now!',
+      description:
+    'Free email signup copy generator 2026: 4 signup-form headline options assembled from fixed templates. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

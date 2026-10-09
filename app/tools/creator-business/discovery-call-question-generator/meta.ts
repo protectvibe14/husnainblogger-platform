@@ -36,19 +36,22 @@ export const outputs: ToolOutput[] = [
     id: 'questions',
     label: 'Discovery call questions',
     type: 'list',
-    description: 'Free discovery call questions 2026: The curated questions for your goal, grouped: rapport, needs, budget, timeline, decision. Fast, private, no signup - try it!',
+    description:
+    'Free discovery call questions 2026: The curated questions for your goal, grouped: rapport, needs, budget, timeline, decision. Fast, private.',
   },
   {
     id: 'questionCount',
     label: 'Number of questions',
     type: 'number',
-    description: 'How many questions the selected goal returns.',
+    description:
+    'How many questions the selected goal returns.',
   },
   {
     id: 'goalLabel',
     label: 'Goal in plain words',
     type: 'text',
-    description: 'What the selected call goal means, in one line.',
+    description:
+    'What the selected call goal means, in one line.',
   },
 ];
 
@@ -131,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free discovery call questions 2026: The curated questions for your goal, grouped: rapport, needs, budget, timeline, decision. Fast, private, no signup - try it!',
+      description:
+    'Free discovery call questions 2026: The curated questions for your goal, grouped: rapport, needs, budget, timeline, decision. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

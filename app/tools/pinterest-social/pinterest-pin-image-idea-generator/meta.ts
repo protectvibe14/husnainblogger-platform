@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'imageBriefs',
     label: 'Pin image briefs',
     type: 'list',
-    description: 'Free pinterest pin design ideas 2026: Written creative briefs: title, composition, text overlay, color direction, and format. Fast, private, no signup - try it!',
+    description:
+    'Free pinterest pin design ideas 2026: Written creative briefs: title, composition, text overlay, color direction, and format. Fast, private.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Pin Design Ideas',
   description:
-    'Get Pinterest pin design ideas as text briefs — titles, composition, text overlay, and color direction for standard, idea, or video pins. Try it free now!',
+    'Design pins before you even open Canva: get detailed text briefs with titles, composition, overlay text, and color direction for any pin format.',
   howTo: [
     'Type a concrete pin topic into the "Pin topic" field (e.g. small balcony garden — not just "gardening").',
     'Choose the "Pin format": standard, idea, or video (video briefs add first-frame guidance).',
@@ -118,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest pin design ideas 2026: Written creative briefs: title, composition, text overlay, color direction, and format. Fast, private, no signup - try it!',
+      description:
+    'Free pinterest pin design ideas 2026: Written creative briefs: title, composition, text overlay, color direction, and format. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

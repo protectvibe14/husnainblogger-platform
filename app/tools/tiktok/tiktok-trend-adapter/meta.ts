@@ -37,30 +37,34 @@ export const outputs: ToolOutput[] = [
     id: 'concepts',
     label: 'Niche-adapted video concepts',
     type: 'list',
-    description: '4 video concepts that map your pasted trend onto your niche.',
+    description:
+    '4 video concepts that map your pasted trend onto your niche.',
   },
   {
     id: 'hooks',
     label: 'Opening hooks',
     type: 'list',
-    description: '3 first-3-second hooks for the adapted videos.',
+    description:
+    '3 first-3-second hooks for the adapted videos.',
   },
   {
     id: 'shootingTips',
     label: 'Shooting tips',
     type: 'list',
-    description: '3 practical filming tips for this trend type.',
+    description:
+    '3 practical filming tips for this trend type.',
   },
   {
     id: 'disclaimer',
     label: 'Honesty note',
     type: 'text',
-    description: 'Reminder that the trend was pasted by you, not detected live.',
+    description:
+    'Reminder that the trend was pasted by you, not detected live.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Viral TikTok Trends for My Niche 2027',
+  title: 'Viral TikTok Trends for My Niche',
   description: DESCRIPTION,
   howTo: [
     'Find a real trend yourself: open TikTok Discover or the TikTok Creative Center and copy a trend name or sound.',

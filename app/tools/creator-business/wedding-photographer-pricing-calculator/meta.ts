@@ -57,13 +57,15 @@ export const outputs: ToolOutput[] = [
     id: 'recommendedPackagePrice',
     label: 'Recommended package price (estimate)',
     type: 'currency',
-    description: 'Total package price from your own rates and hours.',
+    description:
+    'Total package price from your own rates and hours.',
   },
   {
     id: 'costBreakdown',
     label: 'Cost breakdown',
     type: 'table',
-    description: 'Itemized labor and extras rows that sum to the total.',
+    description:
+    'Itemized labor and extras rows that sum to the total.',
   },
 ];
 
@@ -71,7 +73,7 @@ const DESCRIPTION =
   'Free wedding photography pricing calculator 2026: Total package price from your own rates and hours. Get instant results. No signup - try it free now!';
 
 export const content: ToolContent = {
-  title: 'Wedding Photography Pricing Calculator 2027',
+  title: 'Wedding Photography Pricing Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your hours of coverage and your own hourly rate in USD.',

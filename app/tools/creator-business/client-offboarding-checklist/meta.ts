@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: `${NAME} 2026 | HusnainBlogger`,
+  title: 'Client Offboarding Checklist',
   description: DESCRIPTION,
   howTo: [
     'Select your project type: design, writing, video, development, or coaching.',
@@ -47,7 +47,7 @@ export const content: ToolContent = {
     'This tool is a rule-based checklist assembler, not AI. It combines 14 fixed base items across 5 sections (final files, credentials, invoice, testimonials, archive) with 3 extras per project type and 2 toggle-driven items, so the same inputs always produce the same checklist.',
   examples: [
     {
-      title: 'Client Offboarding Checklist 2027',
+      title: 'Client Offboarding Checklist',
       inputs: { projectType: 'design', deliverablesHandover: false, finalInvoiceSent: false },
       note: 'Full 19-item checklist including handover and invoice reminders.',
     },
@@ -112,7 +112,7 @@ export const content: ToolContent = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Client Offboarding Checklist 2026 | HusnainBlogger', item: 'https://husnainblogger.com/' },
+        { '@type': 'ListItem', position: 1, name: 'Client Offboarding Checklist', item: 'https://husnainblogger.com/' },
         { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
         {
           '@type': 'ListItem',

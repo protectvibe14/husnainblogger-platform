@@ -11,13 +11,15 @@ export const outputs: ToolOutput[] = [
     id: "guide",
     label: "Style guide (copy)",
     type: "copy",
-    description: "The compiled style-guide document in Markdown — copy it into your docs.",
+    description:
+    "The compiled style-guide document in Markdown — copy it into your docs.",
   },
   {
     id: "sections",
     label: "Section headings",
     type: "list",
-    description: "The guide's section headings in document order.",
+    description:
+    "The guide's section headings in document order.",
   },
 ];
 

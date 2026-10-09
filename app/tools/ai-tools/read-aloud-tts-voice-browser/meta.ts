@@ -45,14 +45,15 @@ export const outputs: ToolOutput[] = [
     id: 'speech',
     label: 'Spoken audio',
     type: 'text',
-    description: 'Free read aloud text to speech 2026: Your text read aloud through your device\\u2019s speakers (playback only — no file export). Fast, private, no signup - try!',
+    description:
+    'Free read aloud text to speech 2026: Your text read aloud through your device\\u2019s speakers (playback only — no file export). Fast, private - try.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Free Text-to-Speech Reader',
   description:
-    'Read text aloud free in your browser — pick a device voice, adjust rate and pitch, no signup. Uses your browser\u2019s built-in speech engine, nothing to download.',
+    'Read text aloud free in your browser — pick a device voice, adjust rate and pitch Uses your browser\u2019s built-in speech engine, nothing to download.',
   howTo: [
     'Paste up to 5,000 characters of text into the box.',
     'Pick a voice from the list (loaded from your device), or leave the default.',
@@ -125,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free read aloud text to speech 2026: Your text read aloud through your device\\\\u2019s speakers (playback only — no file export). Fast, private, no signup - try!',
+      description:
+    'Free read aloud text to speech 2026: Your text read aloud through your device\\\\u2019s speakers (playback only — no file export). Fast, private - try.',
     },
     {
       '@context': 'https://schema.org',

@@ -7,12 +7,15 @@
  * Per MA3 URL_TAXONOMY.md §8: noindex, follow; excluded from the sitemap;
  * does not swallow category hubs.
  *
- * SKELETON: minimal working search. MA1-DesignSystem replaces the markup with
- * the SearchBox primitive when it lands; the `?q=` contract does not change.
+ * Matching is token-based AND: every word in the query must appear somewhere
+ * in the tool's name, category, or keywords — so "keyword generator" finds
+ * tools whose name and keywords together contain both words.
  */
 import { tools } from "../data/registry.generated";
 import { toolsIndexHref } from "../../../config/site.config";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const toolCount = tools.length;
 
 // Serialize a search index at build time: no fetch, no endpoint, no cost.
 const searchIndex = tools.map((t) => ({
@@ -22,13 +25,14 @@ const searchIndex = tools.map((t) => ({
   category: t.category,
   description: t.description ?? "",
   keywords: [t.primaryKeyword, ...(t.secondaryKeywords ?? [])].filter(Boolean),
+  primaryKeyword: t.primaryKeyword ?? "",
   url: `/tools/${t.categorySlug}/${t.slug}/`,
 }));
 ---
 
 <BaseLayout
   title="Search tools"
-  description="Search all 500 free creator tools."
+  description={`Search all ${toolCount} free creator tools.`}
   canonical="https://husnainblogger.com/search/"
   robots="noindex, follow"
   activeNav={null}
@@ -43,46 +47,66 @@ const searchIndex = tools.map((t) => ({
     <section>
       <h1>Search tools</h1>
       <form id="search-form" role="search" action="/search/">
-        <label for="q">Search 500 free tools</label>
+        <label for="q">Search {toolCount} free tools</label>
         <input id="q" name="q" type="search" autocomplete="off" />
         <button type="submit">Search</button>
       </form>
       <p id="search-status" role="status"></p>
+      <div id="search-suggestions" hidden>
+        <p>Try one of these popular searches:</p>
+        <ul>
+          <li><a href="/search/?q=keyword%20generator">keyword generator</a></li>
+          <li><a href="/search/?q=youtube">youtube</a></li>
+          <li><a href="/search/?q=hashtag">hashtag</a></li>
+          <li><a href="/search/?q=instagram">instagram</a></li>
+        </ul>
+        <p>Or <a href={toolsIndexHref()}>browse all tool categories</a>.</p>
+      </div>
       <ul id="search-results"></ul>
     </section>
-    <script define:vars={{ searchIndex }}>
+    <script define:vars={{ searchIndex, toolCount }}>
       // Runs entirely in the browser: filters the build-time index by ?q=.
       const params = new URLSearchParams(location.search);
-      const q = (params.get("q") || "").trim().toLowerCase();
+      const rawQ = params.get("q") || "";
+      const q = rawQ.trim().toLowerCase();
       const input = document.getElementById("q");
       const status = document.getElementById("search-status");
       const list = document.getElementById("search-results");
-      if (input) input.value = params.get("q") || "";
+      const suggestions = document.getElementById("search-suggestions");
+      if (input) input.value = rawQ;
+
+      /** Token-AND match: every query word must appear in the haystack. */
+      function matches(t, terms) {
+        const hay = [t.name, t.description, t.category, ...t.keywords]
+          .join(" ")
+          .toLowerCase();
+        return terms.every((term) => hay.includes(term));
+      }
+
       if (q) {
-        const hits = searchIndex
-          .filter((t) =>
-            [t.name, t.description, t.category, ...t.keywords]
-              .join(" ")
-              .toLowerCase()
-              .includes(q),
-          )
-          .slice(0, 50);
-        status.textContent = hits.length
-          ? `${hits.length} result${hits.length === 1 ? "" : "s"} for "${params.get("q")}"`
-          : `No tools found for "${params.get("q")}".`;
-        for (const t of hits) {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.href = t.url;
-          a.textContent = t.name;
-          li.appendChild(a);
-          const small = document.createElement("small");
-          small.textContent = ` — ${t.category}`;
-          li.appendChild(small);
-          list.appendChild(li);
+        const terms = q.split(/\s+/).filter(Boolean);
+        const hits = searchIndex.filter((t) => matches(t, terms)).slice(0, 50);
+        if (hits.length) {
+          status.textContent = `${hits.length} result${hits.length === 1 ? "" : "s"} for "${rawQ.trim()}"`;
+          for (const t of hits) {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = t.url;
+            a.textContent = t.name;
+            li.appendChild(a);
+            const small = document.createElement("small");
+            const detail = t.primaryKeyword ? ` — ${t.category} · ${t.primaryKeyword}` : ` — ${t.category}`;
+            small.textContent = detail;
+            li.appendChild(small);
+            list.appendChild(li);
+          }
+        } else {
+          status.textContent = `No tools found for "${rawQ.trim()}".`;
+          if (suggestions) suggestions.hidden = false;
         }
       } else {
-        status.textContent = "Type a keyword above to search all 500 tools.";
+        status.textContent = `Type a keyword above to search all ${toolCount} tools.`;
+        if (suggestions) suggestions.hidden = false;
       }
       document.getElementById("search-form")?.addEventListener("submit", (e) => {
         // Keep ?q= in the URL so results are shareable/bookmarkable.

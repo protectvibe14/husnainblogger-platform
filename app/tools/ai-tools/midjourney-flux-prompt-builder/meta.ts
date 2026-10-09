@@ -46,26 +46,29 @@ export const outputs: ToolOutput[] = [
     id: 'midjourneyPrompt',
     label: 'Midjourney prompt',
     type: 'copy',
-    description: 'Free midjourney prompt builder 2026: Assembled Midjourney prompt with --ar and --v flags, ready to paste. Get instant results. No signup - try it free now!',
+    description:
+    'Free midjourney prompt builder 2026: Assembled Midjourney prompt with --ar and --v flags, ready to paste. Get instant results. free now.',
   },
   {
     id: 'fluxPrompt',
     label: 'Flux prompt',
     type: 'copy',
-    description: 'Plain-language Flux variant without parameter flags, ready to paste.',
+    description:
+    'Plain-language Flux variant without parameter flags, ready to paste.',
   },
   {
     id: 'midjourneyParams',
     label: 'Midjourney parameters',
     type: 'text',
-    description: 'The parameter flags used in the Midjourney prompt.',
+    description:
+    'The parameter flags used in the Midjourney prompt.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Midjourney & Flux Prompt Builder 2027',
+  title: 'Midjourney & Flux Prompt Builder',
   description:
-    'Build copy-ready Midjourney and Flux image prompts from fixed style templates: 8 styles, 3 detail levels, 5 aspect ratios. Free prompt builder — paste and run.',
+    'Build copy-ready Midjourney and Flux image prompts from fixed style templates: 8 styles, 3 detail levels, 5 aspect ratios. Free prompt builder — paste.',
   howTo: [
     'Type your image subject (2-200 characters) into the Subject field.',
     'Pick a style from photorealistic, cinematic, anime, 3D render, oil painting, watercolor, cyberpunk or vintage photo.',
@@ -137,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free midjourney prompt builder 2026: Assembled Midjourney prompt with --ar and --v flags, ready to paste. Get instant results. No signup - try it free now!',
+      description:
+    'Free midjourney prompt builder 2026: Assembled Midjourney prompt with --ar and --v flags, ready to paste. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

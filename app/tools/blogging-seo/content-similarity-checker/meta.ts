@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'jaccardSimilarity',
     label: 'Jaccard similarity (0–1)',
     type: 'number',
-    description: 'Free duplicate content checker 2026: Shared word sequences divided by all unique word sequences. Get instant results. No signup - try it free now!',
+    description:
+    'Free duplicate content checker 2026: Shared word sequences divided by all unique word sequences. Get instant results. free now.',
   },
   {
     id: 'similarityPercent',
     label: 'Similarity',
     type: 'percent',
-    description: 'The Jaccard score as a percentage.',
+    description:
+    'The Jaccard score as a percentage.',
   },
   {
     id: 'verdict',
     label: 'Verdict',
     type: 'text',
-    description: 'Plain-English verdict from the published similarity bands.',
+    description:
+    'Plain-English verdict from the published similarity bands.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Duplicate Content Checker',
   description:
-    'Compare two texts for duplicated passages. This free duplicate content checker scores word-sequence overlap with the Jaccard index — no signup. Compare now!',
+    'Compare two texts for duplicated passages. This free duplicate content checker scores word-sequence overlap with the Jaccard index — Compare now.',
   howTo: [
     'Paste the first text into "Text A" and the second into "Text B".',
     'Optionally set "Shingle size" (2–5, default 3) — smaller sizes catch shorter shared phrases.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free duplicate content checker 2026: Shared word sequences divided by all unique word sequences. Get instant results. No signup - try it free now!',
+      description:
+    'Free duplicate content checker 2026: Shared word sequences divided by all unique word sequences. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

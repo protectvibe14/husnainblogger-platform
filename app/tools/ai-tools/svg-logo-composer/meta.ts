@@ -37,20 +37,22 @@ export const outputs: ToolOutput[] = [
     id: 'svg',
     label: 'Logo SVG',
     type: 'copy',
-    description: 'Free svg logo maker 2026: Standalone SVG markup — paste into any HTML file or save as .svg. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free svg logo maker 2026: Standalone SVG markup — paste into any HTML file or save as.svg. free.',
   },
   {
     id: 'downloadName',
     label: 'Download filename',
     type: 'text',
-    description: 'Suggested filename when you save the SVG.',
+    description:
+    'Suggested filename when you save the SVG.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'SVG Logo Composer: Free Maker',
   description:
-    'Build a real vector logo free: pick a shape, palette and text style, then copy or download the SVG markup. No signup — runs fully in your browser.',
+    'Build a real vector logo free: pick a shape, palette and text style, then copy or download the SVG markup. — runs fully in your browser.',
   howTo: [
     'Enter your brand name (up to 20 characters).',
     'Choose a shape: circle, shield, hexagon or badge.',
@@ -133,7 +135,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free svg logo maker 2026: Standalone SVG markup — paste into any HTML file or save as .svg. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free svg logo maker 2026: Standalone SVG markup — paste into any HTML file or save as.svg. free.',
     },
     {
       '@context': 'https://schema.org',

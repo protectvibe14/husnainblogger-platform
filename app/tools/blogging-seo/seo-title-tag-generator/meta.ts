@@ -35,26 +35,29 @@ export const outputs: ToolOutput[] = [
     id: 'titles',
     label: 'Title suggestions',
     type: 'list',
-    description: 'Six title-tag suggestions built from fixed templates with your keyword front-loaded.',
+    description:
+    'Six title-tag suggestions built from fixed templates with your keyword front-loaded.',
   },
   {
     id: 'lengthAnalysis',
     label: 'Length analysis',
     type: 'text',
-    description: 'Per-title character counts and pixel-width estimates against the 60-char / 600 px conventions.',
+    description:
+    'Per-title character counts and pixel-width estimates against the 60-char / 600 px conventions.',
   },
   {
     id: 'pixelWidthEstimate',
     label: 'Pixel width estimate (first title)',
     type: 'number',
-    description: 'Estimated rendered pixel width of the primary title using a fixed character-width table.',
+    description:
+    'Estimated rendered pixel width of the primary title using a fixed character-width table.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'SEO Title Tag Generator',
   description:
-    'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates. No signup! Try it now!',
+    'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates.',
   howTo: [
     'Enter your page topic (2–200 characters) and the target keyword (required).',
     'Optionally add your brand name — it appears in the last template.',
@@ -134,7 +137,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates. No signup! Try it now!',
+    'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates.',
     },
     {
       '@type': 'BreadcrumbList',

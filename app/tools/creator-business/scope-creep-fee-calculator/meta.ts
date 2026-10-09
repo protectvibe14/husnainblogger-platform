@@ -50,26 +50,29 @@ export const outputs: ToolOutput[] = [
     id: 'scopeCreepFee',
     label: 'Scope creep fee',
     type: 'currency',
-    description: 'Free scope creep fee calculator 2026: The extra fee for out-of-scope work, from your own rate or percentage (estimate). Fast, private, no signup - try it now!',
+    description:
+    'Free scope creep fee calculator 2026: The extra fee for out-of-scope work, from your own rate or percentage (estimate). Fast, private now.',
   },
   {
     id: 'revisedProjectTotal',
     label: 'Revised project total',
     type: 'currency',
-    description: 'Original fee plus the scope creep fee.',
+    description:
+    'Original fee plus the scope creep fee.',
   },
   {
     id: 'creepAsPctOfOriginal',
     label: 'Creep as % of original fee',
     type: 'percent',
-    description: 'How big the scope creep is relative to the original project fee.',
+    description:
+    'How big the scope creep is relative to the original project fee.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Scope Creep Fee Calculator',
   description:
-    'Scope creep fee calculator: price extra hours at your hourly rate or a percentage of the original fee, and see the revised project total free. Try it now!',
+    'Scope creep fee calculator: price extra hours at your hourly rate or a percentage of the original fee, and see the revised project total free.',
   howTo: [
     'Enter the "Original project fee" you agreed with the client.',
     'Pick a "Pricing mode": hourly (extra hours × your hourly rate) or percentage (% of the original fee).',
@@ -146,7 +149,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free scope creep fee calculator 2026: The extra fee for out-of-scope work, from your own rate or percentage (estimate). Fast, private, no signup - try it now!',
+      description:
+    'Free scope creep fee calculator 2026: The extra fee for out-of-scope work, from your own rate or percentage (estimate). Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Blog outline',
     type: 'text',
-    description: 'Free ai blog outline generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai blog outline generator 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Blog Outline Generator',
   description:
-    'Create a structured blog outline — H2 sections, sub-points, and FAQs — at any depth with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Create a structured blog outline — H2 sections, sub-points, and FAQs — at any depth with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Describe your blog topic.',
     'Pick the outline depth and optionally your target audience.',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai blog outline generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai blog outline generator 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

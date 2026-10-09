@@ -32,26 +32,29 @@ export const outputs: ToolOutput[] = [
     id: 'gapTable',
     label: 'Keyword gap worksheet',
     type: 'table',
-    description: 'Free keyword gap analysis template 2026: Every keyword classified as a Gap, an Overlap, or only in your list. Fast, private, no signup - try it now!',
+    description:
+    'Free keyword gap analysis template 2026: Every keyword classified as a Gap, an Overlap, or only in your list. Fast, private now.',
   },
   {
     id: 'overlapCount',
     label: 'Overlap count',
     type: 'number',
-    description: 'How many keywords appear in both lists.',
+    description:
+    'How many keywords appear in both lists.',
   },
   {
     id: 'worksheetCsv',
     label: 'Download worksheet (CSV)',
     type: 'download',
-    description: 'The full worksheet as a CSV file you can open in Excel or Google Sheets.',
+    description:
+    'The full worksheet as a CSV file you can open in Excel or Google Sheets.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Keyword Gap Analysis Template',
   description:
-    'Paste two keyword lists into this free keyword gap analysis template. Find competitor gaps and overlaps, then download the worksheet as a CSV file. Try it now!',
+    'Paste two keyword lists into this free keyword gap analysis template. Find competitor gaps and overlaps, then download the worksheet as a CSV file.',
   howTo: [
     'Paste your own keywords into the "Your keywords" box, one keyword per line.',
     'Paste the competitor keyword list into the "Competitor keywords" box.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free keyword gap analysis template 2026: Every keyword classified as a Gap, an Overlap, or only in your list. Fast, private, no signup - try it now!',
+      description:
+    'Free keyword gap analysis template 2026: Every keyword classified as a Gap, an Overlap, or only in your list. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

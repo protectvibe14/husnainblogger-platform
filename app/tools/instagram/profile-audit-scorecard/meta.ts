@@ -36,32 +36,36 @@ export const outputs: ToolOutput[] = [
     id: 'totalScore',
     label: 'Profile score',
     type: 'number',
-    description: 'Free instagram profile audit 2026: Your audit score, 0–100. A manual self-audit estimate. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram profile audit 2026: Your audit score, 0–100. A manual self-audit estimate. free.',
   },
   {
     id: 'grade',
     label: 'Grade',
     type: 'text',
-    description: 'Profile-Ready (85+), Solid (70–84), Needs work (50–69), or Rebuild (below 50).',
+    description:
+    'Profile-Ready (85+), Solid (70–84), Needs work (50–69), or Rebuild (below 50).',
   },
   {
     id: 'perSectionBreakdown',
     label: 'Section breakdown',
     type: 'table',
-    description: 'Points earned per section: Name & identity, Bio, Grid, Highlights, CTA.',
+    description:
+    'Points earned per section: Name & identity, Bio, Grid, Highlights, CTA.',
   },
   {
     id: 'prioritizedFixes',
     label: 'Prioritized fixes',
     type: 'list',
-    description: 'What to fix first, ordered by impact — with concrete tips.',
+    description:
+    'What to fix first, ordered by impact — with concrete tips.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Profile Audit',
   description:
-    'Run a free instagram profile audit: score your bio, name, grid, highlights, and CTA on a published rubric, get a 0–100 score and prioritized fixes. Try it now!',
+    'Run a free instagram profile audit: score your bio, name, grid, highlights, and CTA on a published rubric, get a 0–100 score and prioritized fixes.',
   howTo: [
     'Open your Instagram profile in another tab so you can answer honestly.',
     'Work through the 15 checklist questions — pick "Yes", "Partially", "No", or "N/A" for anything that does not apply to you.',
@@ -167,7 +171,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram profile audit 2026: Your audit score, 0–100. A manual self-audit estimate. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram profile audit 2026: Your audit score, 0–100. A manual self-audit estimate. free.',
     },
     {
       '@context': 'https://schema.org',

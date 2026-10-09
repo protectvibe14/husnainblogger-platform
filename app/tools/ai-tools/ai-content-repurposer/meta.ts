@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'repurposed',
     label: 'Repurposed content',
     type: 'text',
-    description: 'Free ai content repurposer 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai content repurposer 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Content Repurposer',
   description:
-    'Turn one piece of content into many: repurpose a blog post, script, or transcript into threads, LinkedIn posts, carousels, or newsletters with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Turn one piece of content into many: repurpose a blog post, script, or transcript into threads, LinkedIn posts, carousels, or newsletters with your own.',
   howTo: [
     'Paste your original content (100–8,000 characters).',
     'Pick its source format and the format to repurpose into.',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai content repurposer 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai content repurposer 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

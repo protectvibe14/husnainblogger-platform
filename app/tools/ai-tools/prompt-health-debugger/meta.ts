@@ -16,19 +16,22 @@ export const outputs: ToolOutput[] = [
     id: 'score',
     label: 'Health score',
     type: 'number',
-    description: 'Free ai prompt debugger 2026: 0–100 score from the public rubric: 100 minus documented deductions. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai prompt debugger 2026: 0–100 score from the public rubric: 100 minus documented deductions. Get instant results. free now.',
   },
   {
     id: 'grade',
     label: 'Grade',
     type: 'text',
-    description: 'A–F grade band for the score.',
+    description:
+    'A–F grade band for the score.',
   },
   {
     id: 'issues',
     label: 'Issues found',
     type: 'list',
-    description: 'Each issue with severity, explanation and a concrete fix.',
+    description:
+    'Each issue with severity, explanation and a concrete fix.',
   },
 ];
 
@@ -108,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai prompt debugger 2026: 0–100 score from the public rubric: 100 minus documented deductions. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai prompt debugger 2026: 0–100 score from the public rubric: 100 minus documented deductions. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

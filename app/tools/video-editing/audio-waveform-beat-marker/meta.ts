@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Audio Waveform Visualizer',
   description:
-    'Free audio waveform visualizer 2026: find beat candidates in audio clips: paste amplitude values to get peak markers,. Fast, private, no signup - try it now!',
+    'Find beat candidates in any audio clip: paste your amplitude values, set low, medium, or high sensitivity, and get precise peak markers to cut on.',
   howTo: [
     'Paste your amplitude values as comma-separated numbers — one value per analysis window (10 ms each by default), at least 32 values.',
     'Pick a sensitivity: low finds only the biggest hits, med is balanced, high catches subtler peaks.',
@@ -119,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free audio waveform visualizer 2026: find beat candidates in audio clips: paste amplitude values to get peak markers,. Fast, private, no signup - try it now!',
+      description:
+    'Find beat candidates in any audio clip: paste your amplitude values, set low, medium, or high sensitivity, and get precise peak markers to cut on.',
     },
     {
       '@type': 'BreadcrumbList',

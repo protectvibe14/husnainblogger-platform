@@ -4,7 +4,7 @@ import type { ToolContent, BuilderField } from '../../../src/templates/types.ts'
 const TOOL_URL = 'https://husnainblogger.com/tools/youtube/ctr-impressions-log/';
 
 const DESCRIPTION =
-  'Free youtube ctr tracker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  "A free YouTube CTR tracker for creators who test thumbnails and titles by hand. Log each video or variant with its impressions and clicks, and the tracker computes per-entry CTR, aggregates by day, week, or month, ranks your best and worst entries, and shows trend direction over time. Entries live in your browser, nothing touches YouTube's API, and you can export the whole log to CSV. No signup.";
 
 export const inputs: ToolInput[] = [];
 
@@ -37,11 +37,11 @@ export const content: ToolContent = {
   title: 'Youtube CTR Tracker',
   description: DESCRIPTION,
   howTo: [
-    'Log each data point manually: the date, the video or thumbnail label, impressions, and clicks.',
-    'Keep logging daily or weekly — entries are saved in your browser, and duplicate ids are rejected.',
-    'Run the log to get a per-entry CTR table, period aggregates (day, week, or month), and your best and worst entries.',
-    'Read the trend direction: it needs entries across at least 3 different days before it reports up, flat, or down.',
-    'Export the CSV any time to keep your own backup of the log.',
+    'Every time you check YouTube Studio, jot down one entry: the date, the video or thumbnail label, its impressions, and its clicks.',
+    "Keep adding entries — daily or weekly. They stay saved in your browser, and the log rejects duplicates so you can't accidentally double-count a video.",
+    'Hit run and scan the table: CTR per entry, aggregates by day, week, or month, and your best and worst performers at a glance.',
+    "Give it entries across at least 3 different days before trusting the trend line — it needs that much data to call it up, flat, or down.",
+    'Export the CSV whenever you like. It is your backup: clearing site data wipes the in-browser log.',
   ],
   methodology:
     'Pure client-side stats on entries you log yourself: CTR = clicks ÷ impressions × 100 per entry (entries with 0 impressions are guarded at 0%), impression-weighted overall CTR, best/worst ranked by per-entry CTR, and trend direction from an ordinary-least-squares slope on the daily CTR series (|slope| < 0.05 points/day = flat). The tool cannot import YouTube Studio analytics — that requires OAuth/API access — so every figure describes only your logged sample.',

@@ -63,14 +63,14 @@ export const outputs: ToolOutput[] = [
     label: 'NDA draft (copy)',
     type: 'copy',
     description:
-      'Free freelance nda template 2026: Sectioned template draft with the mandatory disclaimer — copy it, then have a lawyer. Fast, private, no signup - try it now!',
+    'Free freelance nda template 2026: Sectioned template draft with the mandatory disclaimer — copy it, then have a lawyer. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Freelance NDA Template',
   description:
-    'Draft a freelance NDA template fast: enter both parties, the term, and your info description for a sectioned draft. Not legal advice. Try it free!',
+    'Draft a freelance NDA template fast: enter both parties, the term, and your info description for a sectioned draft. Not legal advice. Try it free.',
   howTo: [
     'Enter the "Disclosing party name" and "Receiving party name" exactly as they should appear.',
     'Set the "Effective date" and describe the confidential information the NDA covers.',
@@ -158,7 +158,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance nda template 2026: Sectioned template draft with the mandatory disclaimer — copy it, then have a lawyer. Fast, private, no signup - try it now!',
+      description:
+    'Free freelance nda template 2026: Sectioned template draft with the mandatory disclaimer — copy it, then have a lawyer. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

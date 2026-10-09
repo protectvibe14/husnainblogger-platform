@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'plainText',
     label: 'Plain-text version',
     type: 'copy',
-    description: 'Free html to plain text email converter 2026: Linearized plain-text version of the pasted HTML, wrapped to the chosen line width. Fast, private, no signup -!',
+    description:
+    'Free html to plain text email converter 2026: Linearized plain-text version of the pasted HTML, wrapped to the chosen line width. Fast, private -.',
   },
   {
     id: 'stats',
     label: 'Output stats',
     type: 'text',
-    description: 'Line and character counts of the generated plain-text version.',
+    description:
+    'Line and character counts of the generated plain-text version.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Html to Plain Text Email Converter 2027',
+  title: 'Html to Plain Text Email Converter',
   description:
-    'Convert an HTML email to a clean plain-text version. Paste your HTML, pick inline or footnote links, and copy the wrapped result with line stats. Free!',
+    'Convert an HTML email to a clean plain-text version. Paste your HTML, pick inline or footnote links, and copy the wrapped result with line stats. Free.',
   howTo: [
     'Paste your HTML email content into the text box.',
     'Set the line width (default 72 characters, allowed 40–120).',
@@ -126,7 +128,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free html to plain text email converter 2026: Linearized plain-text version of the pasted HTML, wrapped to the chosen line width. Fast, private, no signup -!',
+      description:
+    'Free html to plain text email converter 2026: Linearized plain-text version of the pasted HTML, wrapped to the chosen line width. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

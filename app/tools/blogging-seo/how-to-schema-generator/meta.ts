@@ -40,20 +40,22 @@ export const outputs: ToolOutput[] = [
     id: 'jsonLd',
     label: 'JSON-LD markup (copy)',
     type: 'copy',
-    description: 'Free howto schema generator 2026: Valid schema.org HowTo JSON-LD with your step list. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free howto schema generator 2026: Valid schema.org HowTo JSON-LD with your step list. free.',
   },
   {
     id: 'errors',
     label: 'Validation notes',
     type: 'list',
-    description: 'Warnings about the steps (e.g. a step with no text).',
+    description:
+    'Warnings about the steps (e.g. a step with no text).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'How-To Schema Generator',
   description:
-    'Generate valid howto schema JSON-LD for your tutorials in seconds. List steps, time, and cost, then copy the ready-to-paste markup. Try it free now!',
+    'Generate valid howto schema JSON-LD for your tutorials in seconds. List steps, time, and cost, then copy the ready-to-paste markup. Try it free now.',
   howTo: [
     'Enter the "How-to title" — the name of your tutorial or guide.',
     'Add your "Steps" — one block per step: the step name on the first line, the step text on the following lines, with a blank line between steps.',
@@ -141,7 +143,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free howto schema generator 2026: Valid schema.org HowTo JSON-LD with your step list. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free howto schema generator 2026: Valid schema.org HowTo JSON-LD with your step list. free.',
     },
     {
       '@type': 'BreadcrumbList',

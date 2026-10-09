@@ -81,20 +81,22 @@ export const outputs: ToolOutput[] = [
     id: 'suggestedSlots',
     label: 'Suggested posting slots',
     type: 'list',
-    description: 'Free best time to post on instagram 2026: One slot per selected day: audience-local window, your-timezone conversion, and rationale. Fast, private, no signup -!',
+    description:
+    'Free best time to post on instagram 2026: One slot per selected day: audience-local window, your-timezone conversion, and rationale. Fast, private -.',
   },
   {
     id: 'disclaimerNoLiveData',
     label: 'Live-data disclaimer',
     type: 'text',
-    description: 'Explains that slots are generic guidance — the tool cannot see your Insights.',
+    description:
+    'Explains that slots are generic guidance — the tool cannot see your Insights.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Best Time To Post On Instagram',
   description:
-    'Plan the best time to post on Instagram for free: pick your audience region and timezone for generic slot suggestions. Get your schedule now!',
+    'Plan the best time to post on Instagram for free: pick your audience region and timezone for generic slot suggestions. Get your schedule now.',
   howTo: [
     'Choose your Audience Region from the dropdown (or Global / not sure).',
     'Choose Your Timezone so slots convert from audience-local time to your clock.',
@@ -133,24 +135,24 @@ export const content: ToolContent = {
         'Select your audience region and your timezone, leave on the days you can post, and click Generate. Each slot shows the window in your audience’s local time and converted to your time. Test these slots for a few weeks, then compare against your Insights and keep what actually works.',
     },
     {
-      question: 'How does the best time to post on instagram work?',
+      question: 'My audience is spread across regions — which do I pick?',
       answer:
-        'Enter your details using the inputs above and the best time to post on instagram calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Pick the region where most of your followers live — the planner converts that region\'s generic peak windows into your own timezone. If your audience is truly split (say, US and India), generate once for each region and look for overlapping windows. Then test for a few weeks and let your own Instagram Insights settle the debate.',
     },
     {
-      question: 'Is the best time to post on instagram free to use?',
+      question: 'How is this different from Googling \'best time to post on Instagram\'?',
       answer:
-        'Yes - this best time to post on instagram is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Static lists give one-size-fits-all clock times with no timezone context. This planner takes your audience region and your timezone, converts the region\'s routine-based windows (lunch-break scroll, morning routine, evening unwind) into your local time, and spreads them across the days you actually post — with a rationale per slot and an honest disclaimer that these are starting points, not your account\'s live data.',
     },
     {
-      question: 'What is a best time to post on instagram?',
+      question: 'Does daylight saving time affect the slots?',
       answer:
-        'A best time to post on instagram is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'The tool converts region windows to your timezone using fixed standard UTC offsets, so it does not adjust for daylight saving. If your region observes DST, the converted slots may sit about an hour off during the summer months — treat them as approximate windows and confirm the winners in your Insights.',
     },
     {
-      question: 'Do I need to create an account to use the best time to post on instagram?',
+      question: 'Will the planner use my actual follower activity?',
       answer:
-        'No account needed. Open the best time to post on instagram, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+        'No — it cannot see your account, so it works from generic region tables instead of your real data. That is exactly why every result carries a disclaimer. For your true peak hours, open Instagram Insights (Professional dashboard, then Audience, then most active times) and compare those hours against the starting slots from the planner.',
     },
   ],
   assumptions: [
@@ -168,7 +170,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free best time to post on instagram 2026: One slot per selected day: audience-local window, your-timezone conversion, and rationale. Fast, private, no signup -!',
+      description:
+    'Free best time to post on instagram 2026: One slot per selected day: audience-local window, your-timezone conversion, and rationale. Fast, private -.',
     },
     {
       '@context': 'https://schema.org',

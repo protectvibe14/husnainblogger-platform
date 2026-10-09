@@ -26,13 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'optimized',
     label: 'Optimized prompt',
     type: 'text',
-    description: 'Free ai prompt optimizer 2026: The rewritten prompt, ready to paste into your AI tool. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai prompt optimizer 2026: The rewritten prompt, ready to paste into your AI tool. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Prompt Optimizer',
-  description: 'Turn a rough prompt into a clear, effective one with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+  description:
+    'Turn a rough prompt into a clear, effective one with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Pick an optimization goal: clearer, more detailed, or shorter.',
     'Paste the prompt (at least 20 characters, up to 8,000).',
@@ -98,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai prompt optimizer 2026: The rewritten prompt, ready to paste into your AI tool. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai prompt optimizer 2026: The rewritten prompt, ready to paste into your AI tool. free.',
     },
     {
       '@type': 'BreadcrumbList',

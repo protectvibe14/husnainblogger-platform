@@ -33,14 +33,14 @@ export const outputs: ToolOutput[] = [
     label: 'Quiz lead magnet ideas',
     type: 'table',
     description:
-      'Free quiz lead magnet ideas 2026: Table of 4 quiz concepts: number, quiz title, sample questions, result types, and the. Fast, private, no signup - try it now!',
+    'Free quiz lead magnet ideas 2026: Table of 4 quiz concepts: number, quiz title, sample questions, result types, and the. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Quiz Lead Magnet Ideas',
   description:
-    'Plan quizzes with this free quiz lead magnet ideas generator: get titles, sample questions, and result types for segment, entertain, or qualify. Start now!',
+    'Plan quizzes with this free quiz lead magnet ideas generator: get titles, sample questions, and result types for segment, entertain, or qualify. Start now.',
   howTo: [
     'Enter your niche (e.g. email marketing) and your target audience (e.g. freelancers).',
     'Pick a quiz goal: segment (bucket takers into types), entertain (personality-style quizzes), or qualify (pre-screen leads).',
@@ -112,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free quiz lead magnet ideas 2026: Table of 4 quiz concepts: number, quiz title, sample questions, result types, and the. Fast, private, no signup - try it now!',
+      description:
+    'Free quiz lead magnet ideas 2026: Table of 4 quiz concepts: number, quiz title, sample questions, result types, and the. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

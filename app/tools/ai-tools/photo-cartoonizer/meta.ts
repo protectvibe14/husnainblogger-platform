@@ -26,14 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'cartoon',
     label: 'Cartoonized image',
     type: 'download',
-    description: 'Free photo to cartoon 2026: Cartoon-style version of your photo (OpenRouter) or a cartoon illustration (HF/fal.ai),. Fast, private, no signup - try it now!',
+    description:
+    'Free photo to cartoon 2026: Cartoon-style version of your photo (OpenRouter) or a cartoon illustration (HF/fal.ai). Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Photo to Cartoon',
   description:
-    'Turn a photo into a cartoon with your own API key — 3d animated, anime or comic-book styles. OpenRouter cartoonizes your photo; HF/fal.ai illustrate. No signup.',
+    'Turn a photo into a cartoon with your own API key — 3d animated, anime or comic-book styles. OpenRouter cartoonizes your photo; HF/fal.ai illustrate.',
   howTo: [
     'Save your API key in the key vault above — OpenRouter, Hugging Face Inference, or fal.ai.',
     'Upload the photo you want cartoonized. Bright, clear photos with a visible subject work best.',
@@ -105,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Photo to Cartoon 2026 – Free Tool - no signup required.',
+      description:
+    'Free Photo to Cartoon 2026 – Free Tool - required.',
     },
     {
       '@context': 'https://schema.org',

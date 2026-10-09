@@ -38,7 +38,7 @@ export const itemFields: BuilderField[] = [
 export const content: ToolContent = {
   title: 'Blog Prompt Generator',
   description:
-    'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free, no signup.',
+    'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free.',
   howTo: [
     'Enter your blog post topic (required) — the more specific, the better.',
     'Type a post type: how-to, listicle, review, opinion, or tutorial (defaults to how-to).',
@@ -99,7 +99,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free, no signup.',
+      description:
+    'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free.',
     },
     {
       '@type': 'BreadcrumbList',

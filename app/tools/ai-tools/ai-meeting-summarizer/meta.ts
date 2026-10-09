@@ -26,13 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'summary',
     label: 'Meeting summary',
     type: 'text',
-    description: 'Free ai meeting notes summarizer 2026: The summary in the format you picked: action items, key bullets, or minutes. Fast, private, no signup - try it now!',
+    description:
+    'Free ai meeting notes summarizer 2026: The summary in the format you picked: action items, key bullets, or minutes. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Meeting Notes Summarizer',
-  description: 'Turn messy meeting notes into action items, key bullets, or minutes with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+  description:
+    'Turn messy meeting notes into action items, key bullets, or minutes with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Pick an output format: action items, key bullets, or meeting minutes.',
     'Paste your raw meeting notes (at least 50 characters, up to 8,000).',
@@ -98,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai meeting notes summarizer 2026: The summary in the format you picked: action items, key bullets, or minutes. Fast, private, no signup - try it now!',
+      description:
+    'Free ai meeting notes summarizer 2026: The summary in the format you picked: action items, key bullets, or minutes. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

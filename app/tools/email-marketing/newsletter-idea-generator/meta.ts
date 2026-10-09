@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Newsletter Ideas Generator',
   description:
-    'Free newsletter ideas generator 2026: Never run out of newsletter topics: enter your niche and audience to get up to 20. Fast, private, no signup - try it now!',
+    'Never run out of newsletter topics again: enter your niche, audience, and send frequency for up to 20 fresh issue ideas tailored to your readers.',
   howTo: [
     'Enter your newsletter niche in a few words.',
     'Describe your target audience.',
@@ -126,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter ideas generator 2026: Never run out of newsletter topics: enter your niche and audience to get up to 20. Fast, private, no signup - try it now!',
+      description:
+    'Never run out of newsletter topics again: enter your niche, audience, and send frequency for up to 20 fresh issue ideas tailored to your readers.',
     },
     {
       '@type': 'BreadcrumbList',

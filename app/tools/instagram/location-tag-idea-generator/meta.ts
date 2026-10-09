@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Location Tag Ideas',
   description:
-    'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips. Try it now.',
+    'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips.',
   howTo: [
     'Enter your niche (fitness, food, travel, fashion, or anything else).',
     'Optionally add your city — leave it blank for generic ideas that work anywhere.',
@@ -108,7 +108,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips. Try it now.',
+      description:
+    'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips.',
     },
     {
       '@type': 'BreadcrumbList',

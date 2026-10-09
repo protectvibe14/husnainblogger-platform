@@ -41,14 +41,14 @@ export const outputs: ToolOutput[] = [
     label: 'Lead magnet ideas',
     type: 'table',
     description:
-      'Free lead magnet ideas generator 2026: Table of titled lead-magnet ideas: number, idea title, format, and a short . Fast, private, no signup - try it now!',
+    'Free lead magnet ideas generator 2026: Table of titled lead-magnet ideas: number, idea title, format, and a short. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Lead Magnet Ideas Generator',
   description:
-    'Brainstorm lead magnet ideas with this free lead magnet ideas generator. Pick your niche, audience and format for up to 20 titled ideas with reasons. Start now!',
+    'Brainstorm lead magnets worth downloading: enter your niche and audience for up to 20 titled ideas across 5 formats, each with the reason it converts.',
   howTo: [
     'Enter your niche (e.g. email marketing) and your target audience (e.g. bloggers).',
     'Optionally lock a format — ebook, checklist, template, video, or email course — or leave "any" to mix them.',
@@ -120,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free lead magnet ideas generator 2026: Table of titled lead-magnet ideas: number, idea title, format, and a short . Fast, private, no signup - try it now!',
+      description:
+    'Free lead magnet ideas generator 2026: Table of titled lead-magnet ideas: number, idea title, format, and a short. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

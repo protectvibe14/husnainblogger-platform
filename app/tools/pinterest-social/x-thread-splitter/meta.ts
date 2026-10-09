@@ -42,20 +42,22 @@ export const outputs: ToolOutput[] = [
     id: 'tweets',
     label: 'Split posts',
     type: 'list',
-    description: 'Free split text into tweets 2026: Your text split into posts on sentence/word boundaries — never mid-word. Each post fits. Fast, private, no signup - try it!',
+    description:
+    'Free split text into tweets 2026: Your text split into posts on sentence/word boundaries — never mid-word. Each post fits. Fast, private.',
   },
   {
     id: 'summary',
     label: 'Summary',
     type: 'text',
-    description: 'How many posts were produced and which counting rules were applied.',
+    description:
+    'How many posts were produced and which counting rules were applied.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Split Text Into Tweets',
   description:
-    'Split text into tweets free. Paste long text and get numbered posts within the 280-character budget, split on sentence and word boundaries. Try it now!',
+    'Split long text into tweet-ready posts: paste up to 20,000 characters and get numbered posts with markers, broken cleanly on sentence and word boundaries.',
   howTo: [
     'Paste your long text into the "Text to split" field (up to 20,000 characters).',
     'Pick a "Numbering style": 1/N (e.g. 1/3), (1/N), or none — the marker\u2019s characters are reserved before splitting.',
@@ -127,7 +129,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free split text into tweets 2026: Your text split into posts on sentence/word boundaries — never mid-word. Each post fits. Fast, private, no signup - try it!',
+      description:
+    'Free split text into tweets 2026: Your text split into posts on sentence/word boundaries — never mid-word. Each post fits. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

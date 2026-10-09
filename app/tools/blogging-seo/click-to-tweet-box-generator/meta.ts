@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'boxHtml',
     label: 'Box HTML (copy)',
     type: 'copy',
-    description: 'Free click to tweet generator 2026: Ready-to-paste click-to-tweet box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it!',
+    description:
+    'Free click to tweet generator 2026: Ready-to-paste click-to-tweet box with minimal inline styles — works in any blog theme. Fast, private.',
   },
   {
     id: 'intentUrl',
     label: 'Share URL (copy)',
     type: 'copy',
-    description: 'The X (Twitter) intent URL behind the button — use it on its own if you prefer.',
+    description:
+    'The X (Twitter) intent URL behind the button — use it on its own if you prefer.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Click to Tweet Generator',
   description:
-    'Turn any quote into a click to tweet box in seconds. Enter your text, copy the ready-to-share HTML, and get more shares from your readers. Try it free!',
+    'Turn any quote into a click to tweet box in seconds. Enter your text, copy the ready-to-share HTML, and get more shares from your readers. Try it free.',
   howTo: [
     'Type the quote or stat you want readers to share in "Text to tweet" (up to 280 characters).',
     'Optionally add your "Via handle" (starting with @) so shares credit you.',
@@ -124,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free click to tweet generator 2026: Ready-to-paste click-to-tweet box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it!',
+      description:
+    'Free click to tweet generator 2026: Ready-to-paste click-to-tweet box with minimal inline styles — works in any blog theme. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

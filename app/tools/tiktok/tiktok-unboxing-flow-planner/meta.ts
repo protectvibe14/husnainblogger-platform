@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Unboxing Video Script',
   description:
-    'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private, no signup - try!',
+    'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private - try.',
   howTo: [
     'Enter the productName you are unboxing (e.g. "Aurora Vitamin C Serum").',
     'Pick the niche that fits the product — or "ASMR / Sensory" for a sound-focused unboxing.',
@@ -110,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private, no signup - try!',
+      description:
+    'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -37,29 +37,29 @@ export const content: ToolContent = {
         'Yes — this 14-point checklist is free with no signup, and your progress is saved in your browser. It is a self-assessment aid only, not a detector; always confirm suspicions inside the Instagram app itself.',
     },
     {
-      question: 'How does the instagram shadowban test work?',
+      question: 'What does the 14-point checklist actually check?',
       answer:
-        'Enter your details using the inputs above and the instagram shadowban test calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Four symptom groups: sudden or sustained reach drops (including non-follower reach collapsing), posts missing from hashtag search, engagement anomalies, and account-level signals such as restrictions shown in Account Status. You tick the symptoms you observe and get an honest count-based risk band — low, moderate, or high — as a self-assessment aid, never a diagnosis.',
     },
     {
-      question: 'Is the instagram shadowban test free to use?',
+      question: 'Is a shadowban permanent?',
       answer:
-        'Yes - this instagram shadowban test is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        '\'Shadowban\' is not an official Instagram status — most reach drops are temporary and come from policy violations, spammy behavior (aggressive follow/unfollow, automation), or algorithm shifts. Check Account Status in the app for any formal restrictions, fix what it flags, stop anything bot-like, and reach usually recovers over days to weeks. This checklist helps you narrow down the likely cause.',
     },
     {
-      question: 'What is an instagram shadowban test?',
+      question: 'What should I check first if reach suddenly drops?',
       answer:
-        'An instagram shadowban test is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Work the checklist in order: confirm the drop is real and sustained (not one flop), check whether non-follower reach collapsed in Insights, test whether your posts appear on a small hashtag page from a non-follower account, and open Account Status for restrictions. That sequence rules out the common causes — content flop, hashtag issue, or account restriction — before you change your strategy.',
     },
     {
-      question: 'Do I need to create an account to use the instagram shadowban test?',
+      question: 'Does the checklist read my Instagram account?',
       answer:
-        'No account needed. Open the instagram shadowban test, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+        'No — it cannot. There is no Instagram connection, no login, and no data sent anywhere; it is a manual self-assessment you fill in yourself, with your progress saved only in your browser. For anything the checklist cannot see (Account Status, Insights reach data), it tells you exactly where to look in the app.',
     },
     {
-      question: 'How accurate is the instagram shadowban test?',
+      question: 'My risk band is high — what now?',
       answer:
-        'The instagram shadowban test uses transparent arithmetic on the values you enter - what you see is exactly what the math produces. Always double-check critical numbers against official sources, as rates and rules can change.',
+        'A high band means many warning signs are checked, not a confirmed restriction. Next steps: open Account Status and appeal or fix anything flagged, remove recently violating content, avoid automation and mass actions, and post normally for one to two weeks while watching Insights. If nothing is flagged in Account Status, the cause is more likely a content or algorithm shift than a restriction — focus on hooks and retention, not on the band.',
     },
   ],
   assumptions: [

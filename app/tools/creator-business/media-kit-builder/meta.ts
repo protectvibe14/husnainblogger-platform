@@ -91,38 +91,43 @@ export const outputs: ToolOutput[] = [
     id: 'mediaKit',
     label: 'Media kit document (copy)',
     type: 'copy',
-    description: 'Free influencer media kit builder 2026: Structured media kit: profile, audience, services, and contact. Get instant results. No signup - try it free now!',
+    description:
+    'Free influencer media kit builder 2026: Structured media kit: profile, audience, services, and contact. Get instant results. free now.',
   },
   {
     id: 'totalFollowers',
     label: 'Total followers',
     type: 'number',
-    description: 'Sum of followers across all platform rows.',
+    description:
+    'Sum of followers across all platform rows.',
   },
   {
     id: 'primaryPlatform',
     label: 'Primary platform',
     type: 'text',
-    description: 'The platform with the most followers.',
+    description:
+    'The platform with the most followers.',
   },
   {
     id: 'platformCount',
     label: 'Platforms listed',
     type: 'number',
-    description: 'Number of platform rows in the kit.',
+    description:
+    'Number of platform rows in the kit.',
   },
   {
     id: 'engagementBand',
     label: 'Engagement band',
     type: 'text',
-    description: 'Rough heuristic band for the rate you reported (low/average/strong/exceptional).',
+    description:
+    'Rough heuristic band for the rate you reported (low/average/strong/exceptional).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Influencer Media Kit Builder',
   description:
-    'Build a pro influencer media kit in minutes. Add platforms, stats, services, and rates for a polished, shareable media kit. Free, no signup - try it now!',
+    'Build a pro influencer media kit in minutes. Add platforms, stats, services, and rates for a polished, shareable media kit. Free now.',
   howTo: [
     'Fill the first row with your profile fields: profile name, niche, bio, email or website, services (comma-separated), and rate range.',
     'Add one row per platform with the platform name, follower count, engagement rate, and profile URL.',
@@ -220,7 +225,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free influencer media kit builder 2026: Structured media kit: profile, audience, services, and contact. Get instant results. No signup - try it free now!',
+      description:
+    'Free influencer media kit builder 2026: Structured media kit: profile, audience, services, and contact. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

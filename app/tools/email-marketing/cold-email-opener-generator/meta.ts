@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free cold email opener generator: enter prospect context, industry, and tone to get 6 openers in friendly, professional, playful, or direct styles. Try it now.';
+  'Open cold emails with lines that earn replies: add real prospect context and your industry, then pick from 6 openers in 4 tones - friendly to direct.';
 
 export const content: ToolContent = {
   title: 'Cold Email Opener Generator',

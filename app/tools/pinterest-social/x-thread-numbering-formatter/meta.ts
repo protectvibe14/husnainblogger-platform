@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'numberedTweets',
     label: 'Numbered tweets',
     type: 'list',
-    description: 'Free twitter thread numbering 2026: Your tweets with fresh 1/N markers applied at the start or end. Old markers are stripped. Fast, private, no signup - try it!',
+    description:
+    'Free twitter thread numbering 2026: Your tweets with fresh 1/N markers applied at the start or end. Old markers are stripped. Fast, private.',
   },
   {
     id: 'flagged',
     label: 'Needs trimming',
     type: 'list',
-    description: 'Tweets that overflow the 280 weighted-character budget after numbering — flagged for manual trimming, never auto-cut.',
+    description:
+    'Tweets that overflow the 280 weighted-character budget after numbering — flagged for manual trimming, never auto-cut.',
   },
   {
     id: 'note',
     label: 'Notes',
     type: 'text',
-    description: 'Which marker range was applied and whether old numbering or blank lines were removed.',
+    description:
+    'Which marker range was applied and whether old numbering or blank lines were removed.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Thread Numbering',
   description:
-    'Format twitter thread numbering free. Paste tweets and get clean 1/8-style markers at the start or end, re-checked against the 280-character budget. Try it!',
+    'Number your X thread cleanly in seconds: paste up to 25 tweets for 1/8-style markers at the start or end, re-checked against the 280-character budget.',
   howTo: [
     'Paste your tweets into the "Your tweets (one per line)" field — one tweet per line, up to 25.',
     'Choose a "Numbering style" (1/8 or (1/8)) and a "Marker placement" (end or start).',
@@ -124,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter thread numbering 2026: Your tweets with fresh 1/N markers applied at the start or end. Old markers are stripped. Fast, private, no signup - try it!',
+      description:
+    'Free twitter thread numbering 2026: Your tweets with fresh 1/N markers applied at the start or end. Old markers are stripped. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

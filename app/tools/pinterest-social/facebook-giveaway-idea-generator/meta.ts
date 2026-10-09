@@ -25,26 +25,29 @@ export const outputs: ToolOutput[] = [
     id: 'concepts',
     label: 'Giveaway concepts',
     type: 'list',
-    description: 'Free facebook giveaway ideas 2026: 4 giveaway idea frameworks, each with concept, entry mechanic and prize suggestion. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook giveaway ideas 2026: 4 giveaway idea frameworks, each with concept, entry mechanic and prize suggestion. Fast, private now.',
   },
   {
     id: 'checklist',
     label: 'Compliance checklist',
     type: 'list',
-    description: '5 honest compliance reminders — no-purchase-necessary, posted rules, Facebook disclaimer.',
+    description:
+    '5 honest compliance reminders — no-purchase-necessary, posted rules, Facebook disclaimer.',
   },
   {
     id: 'count',
     label: 'Concepts generated',
     type: 'number',
-    description: 'How many giveaway concepts were generated.',
+    description:
+    'How many giveaway concepts were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Giveaway Ideas',
   description:
-    'Find the best facebook giveaway ideas with this free generator: enter your business for 4 concept frameworks plus a compliance checklist. Try it now!',
+    'Run a giveaway that grows your page safely: enter your business for 4 concept frameworks plus a compliance checklist to stay out of trouble.',
   howTo: [
     'Type Your business name into the field (e.g. Sunny Side Bakery).',
     'Optionally type the Prize you want to offer — or leave it blank for a prize suggestion.',
@@ -116,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook giveaway ideas 2026: 4 giveaway idea frameworks, each with concept, entry mechanic and prize suggestion. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook giveaway ideas 2026: 4 giveaway idea frameworks, each with concept, entry mechanic and prize suggestion. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

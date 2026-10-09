@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free email subject line analyzer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'See your subject line like a spam filter does: paste it in for a 0-100 score, an Excellent-to-Poor grade, and per-factor fixes you can apply instantly.';
 
 export const content: ToolContent = {
   title: 'Email Subject Line Analyzer',

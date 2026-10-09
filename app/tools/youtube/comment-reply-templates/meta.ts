@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'replies',
     label: 'Reply templates',
     type: 'list',
-    description: 'Free youtube comment reply templates 2026: Two copy-paste reply drafts for the chosen comment type and tone. Fast, private, no signup - try it now!',
+    description:
+    'Free youtube comment reply templates 2026: Two copy-paste reply drafts for the chosen comment type and tone. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Usage note',
     type: 'text',
-    description: 'Template-bank size, placeholder legend and no-auto-reply disclaimer.',
+    description:
+    'Template-bank size, placeholder legend and no-auto-reply disclaimer.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'YouTube Comment Reply Templates',
   description:
-    'Reply to YouTube comments faster with free copy-paste templates: pick a comment type and tone to get ready drafts with placeholders. Grab yours now!',
+    'Reply to YouTube comments faster with free copy-paste templates: pick a comment type and tone to get ready drafts with placeholders. Grab yours now.',
   howTo: [
     'Choose the Comment Type: thank-you, question, criticism, collaboration or spam-adjacent.',
     'Pick a Tone: warm, professional or playful.',
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free youtube comment reply templates 2026: Two copy-paste reply drafts for the chosen comment type and tone. Fast, private, no signup - try it now!',
+      description:
+    'Free youtube comment reply templates 2026: Two copy-paste reply drafts for the chosen comment type and tone. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

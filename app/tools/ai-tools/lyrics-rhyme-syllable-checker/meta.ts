@@ -16,20 +16,22 @@ export const outputs: ToolOutput[] = [
     id: 'lines',
     label: 'Per-line analysis',
     type: 'list',
-    description: 'Free lyrics rhyme checker 2026: Each line with its syllable estimate, rhyme key and scheme letter. Get instant results. No signup - try it free now!',
+    description:
+    'Free lyrics rhyme checker 2026: Each line with its syllable estimate, rhyme key and scheme letter. Get instant results. free now.',
   },
   {
     id: 'scheme',
     label: 'Rhyme scheme',
     type: 'text',
-    description: 'Scheme labels like A A B B, assigned in order of first appearance.',
+    description:
+    'Scheme labels like A A B B, assigned in order of first appearance.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Lyrics Rhyme & Syllable Checker',
   description:
-    'Check your lyrics’ flow: per-line syllable estimates, rhyme detection and an AABB-style rhyme scheme. Honest heuristics, explained — free, no signup.',
+    'Check your lyrics’ flow: per-line syllable estimates, rhyme detection and an AABB-style rhyme scheme. Honest heuristics, explained — free.',
   howTo: [
     'Paste your lyrics with one line per lyric line.',
     'Click Analyze to get syllable estimates and rhyme labels for every line.',
@@ -104,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free lyrics rhyme checker 2026: Each line with its syllable estimate, rhyme key and scheme letter. Get instant results. No signup - try it free now!',
+      description:
+    'Free lyrics rhyme checker 2026: Each line with its syllable estimate, rhyme key and scheme letter. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

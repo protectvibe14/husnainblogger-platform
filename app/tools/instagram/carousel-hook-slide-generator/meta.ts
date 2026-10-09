@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'hooks',
     label: 'Hook options',
     type: 'list',
-    description: 'Free carousel hook ideas 2026: First-slide hook texts for your chosen angle, each with a visual note. Get instant results. No signup - try it free now!',
+    description:
+    'Free carousel hook ideas 2026: First-slide hook texts for your chosen angle, each with a visual note. Get instant results. free now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all hooks',
     type: 'copy',
-    description: 'All hook options as plain text, ready to paste into your design tool.',
+    description:
+    'All hook options as plain text, ready to paste into your design tool.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Carousel Hook Ideas',
   description:
-    'Get free carousel hook ideas for your Instagram cover slide. Pick a topic and angle to get scroll-stopping hook options with visual notes. Try it now!',
+    'Get free carousel hook ideas for your Instagram cover slide. Pick a topic and angle to get scroll-stopping hook options with visual notes.',
   howTo: [
     'Type your carousel topic into the "Carousel topic" field (e.g. budget travel).',
     'Choose a hook angle: mistake, myth, steps, list, or story.',
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free carousel hook ideas 2026: First-slide hook texts for your chosen angle, each with a visual note. Get instant results. No signup - try it free now!',
+      description:
+    'Free carousel hook ideas 2026: First-slide hook texts for your chosen angle, each with a visual note. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: '30 Day Content Plan Generator',
   description:
-    'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private, no signup -!',
+    'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private -.',
   howTo: [
     'Enter your niche (fitness, food, travel, finance, beauty, parenting, tech, or business).',
     'List your platforms, comma-separated — e.g. blog, instagram, tiktok.',
@@ -106,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private, no signup -!',
+      description:
+    'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

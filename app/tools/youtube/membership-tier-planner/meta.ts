@@ -53,26 +53,29 @@ export const outputs: ToolOutput[] = [
     id: 'tiers',
     label: 'Tier revenue breakdown',
     type: 'table',
-    description: 'Free youtube membership tiers ideas 2026: Per tier: name, price, estimated members and estimated creator payout per month. Fast, private, no signup - try it!',
+    description:
+    'Free youtube membership tiers ideas 2026: Per tier: name, price, estimated members and estimated creator payout per month. Fast, private.',
   },
   {
     id: 'perkChecklist',
     label: 'Perk checklist per tier',
     type: 'list',
-    description: 'Suggested perks for each tier from a fixed 12-perk bank, by price.',
+    description:
+    'Suggested perks for each tier from a fixed 12-perk bank, by price.',
   },
   {
     id: 'totalRevenue',
     label: 'Total estimated monthly payout',
     type: 'currency',
-    description: 'Sum of per-tier estimates at the 70% creator share.',
+    description:
+    'Sum of per-tier estimates at the 70% creator share.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'YouTube Membership Tiers Ideas',
   description:
-    'Plan YouTube membership tiers free: set up to 6 levels with prices and member guesses to estimate monthly payouts at the 70% share. Plan tiers now!',
+    'Plan YouTube membership tiers free: set up to 6 levels with prices and member guesses to estimate monthly payouts at the 70% share. Plan tiers now.',
   howTo: [
     'Enter the Number of Tiers from 1 to 6 (the YouTube membership limit).',
     'For each tier, type a Tier Name, a Price in USD per month, and your Estimated Members.',
@@ -154,7 +157,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free youtube membership tiers ideas 2026: Per tier: name, price, estimated members and estimated creator payout per month. Fast, private, no signup - try it!',
+      description:
+    'Free youtube membership tiers ideas 2026: Per tier: name, price, estimated members and estimated creator payout per month. Fast, private.',
     },
     {
       '@context': 'https://schema.org',

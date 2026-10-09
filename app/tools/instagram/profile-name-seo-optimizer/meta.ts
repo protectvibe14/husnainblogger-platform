@@ -25,32 +25,36 @@ export const outputs: ToolOutput[] = [
     id: 'optimizedNames',
     label: 'Optimized names',
     type: 'list',
-    description: 'Free instagram name seo optimizer 2026: Name suggestions, every one capped at 30 characters. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram name seo optimizer 2026: Name suggestions, every one capped at 30 characters. free.',
   },
   {
     id: 'keywordCoverage',
     label: 'Keyword coverage',
     type: 'percent',
-    description: 'Share of your keywords present in the recommended name.',
+    description:
+    'Share of your keywords present in the recommended name.',
   },
   {
     id: 'charBudgetBar',
     label: 'Character budget',
     type: 'text',
-    description: 'Visual 30-character budget bar for the recommended name.',
+    description:
+    'Visual 30-character budget bar for the recommended name.',
   },
   {
     id: 'note',
     label: 'Budget note',
     type: 'text',
-    description: 'Which keywords were dropped to fit the budget, if any.',
+    description:
+    'Which keywords were dropped to fit the budget, if any.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Name SEO Optimizer',
   description:
-    'Fit more keywords into your profile with this free instagram name seo optimizer: 30-character names, keyword coverage, and a budget bar. Optimize your name now!',
+    'Fit more keywords into your profile with this free instagram name seo optimizer: 30-character names, keyword coverage, and a budget bar. Optimize your.',
   howTo: [
     'Paste your "Keywords" — one per line or comma-separated, most important first.',
     'Optionally add your "Current name" to get name-plus-keyword combinations.',
@@ -127,7 +131,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram name seo optimizer 2026: Name suggestions, every one capped at 30 characters. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram name seo optimizer 2026: Name suggestions, every one capped at 30 characters. free.',
     },
     {
       '@type': 'BreadcrumbList',

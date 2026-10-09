@@ -42,32 +42,36 @@ export const outputs: ToolOutput[] = [
     id: 'queue',
     label: 'Ranked question queue',
     type: 'list',
-    description: 'Free live stream q&a collector 2026: Open questions ranked by upvotes, highest first. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free live stream q&a collector 2026: Open questions ranked by upvotes, highest first. free.',
   },
   {
     id: 'answered',
     label: 'Answered archive',
     type: 'list',
-    description: 'Questions marked as answered during the stream.',
+    description:
+    'Questions marked as answered during the stream.',
   },
   {
     id: 'exportText',
     label: 'Queue export',
     type: 'copy',
-    description: 'Plain-text export of the ranked queue and answered list.',
+    description:
+    'Plain-text export of the ranked queue and answered list.',
   },
   {
     id: 'summary',
     label: 'Queue summary',
     type: 'text',
-    description: 'Counts of open, answered and archived questions.',
+    description:
+    'Counts of open, answered and archived questions.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Live Stream Q&A Collector',
   description:
-    'Collect and rank live stream questions manually: paste questions from your stream chat, upvote the popular ones, and export a ranked Q&A queue. Start free now!',
+    'Collect and rank live stream questions manually: paste questions from your stream chat, upvote the popular ones, and export a ranked Q&A queue. Start.',
   howTo: [
     'Add one item per question and paste the Question text from your live chat.',
     'Type the Asker Name (optional) so you can credit the viewer on stream.',
@@ -129,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free live stream q&a collector 2026: Open questions ranked by upvotes, highest first. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free live stream q&a collector 2026: Open questions ranked by upvotes, highest first. free.',
     },
     {
       '@context': 'https://schema.org',

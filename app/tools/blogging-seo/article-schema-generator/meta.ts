@@ -45,20 +45,22 @@ export const outputs: ToolOutput[] = [
     id: 'jsonLd',
     label: 'JSON-LD markup (copy)',
     type: 'copy',
-    description: 'Free article schema generator 2026: Valid schema.org Article JSON-LD — paste it into your article page. Get instant results. No signup - try it free now!',
+    description:
+    'Free article schema generator 2026: Valid schema.org Article JSON-LD — paste it into your article page. Get instant results. free now.',
   },
   {
     id: 'errors',
     label: 'Validation notes',
     type: 'list',
-    description: 'Warnings about the input (e.g. a future publish date).',
+    description:
+    'Warnings about the input (e.g. a future publish date).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Article Schema Generator',
   description:
-    'Generate clean article schema JSON-LD for blog posts in seconds. Enter headline, author, date, and image, then copy the valid markup. Try it free now!',
+    'Generate clean article schema JSON-LD for blog posts in seconds. Enter headline, author, date, and image, then copy the valid markup. Try it free now.',
   howTo: [
     'Enter the article "Headline" and "Author name" (both required).',
     'Pick the "Publish date" — use the date the article actually went live.',
@@ -76,7 +78,8 @@ export const content: ToolContent = {
         author: 'Jane Doe',
         datePublished: '2026-09-15',
         image: 'https://example.com/images/pour-over.jpg',
-        description: 'A step-by-step guide to brewing pour-over coffee at home.',
+        description:
+    'A step-by-step guide to brewing pour-over coffee at home.',
       },
       note: 'Full metadata producing a complete Article block with image and description.',
     },
@@ -149,7 +152,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free article schema generator 2026: Valid schema.org Article JSON-LD — paste it into your article page. Get instant results. No signup - try it free now!',
+      description:
+    'Free article schema generator 2026: Valid schema.org Article JSON-LD — paste it into your article page. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

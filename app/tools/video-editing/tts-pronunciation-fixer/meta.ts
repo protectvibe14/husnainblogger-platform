@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Voice Pronunciation Fixer',
   description:
-    'Free ai voice pronunciation fixer 2026: Fix AI voice pronunciation fast: enter the misread word, pick your TTS engine, get. Fast, private, no signup - try it!',
+    'Fix words your AI voice keeps misreading: enter the word, pick your TTS engine - ElevenLabs, CapCut, TikTok - and get a respelling that sticks.',
   howTo: [
     'Enter the single word (or short phrase, up to 4 words) your AI voice mispronounces.',
     'Pick your TTS engine: elevenlabs, capcut, tiktok, or generic.',
@@ -109,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai voice pronunciation fixer 2026: Fix AI voice pronunciation fast: enter the misread word, pick your TTS engine, get. Fast, private, no signup - try it!',
+      description:
+    'Fix words your AI voice keeps misreading: enter the word, pick your TTS engine - ElevenLabs, CapCut, TikTok - and get a respelling that sticks.',
     },
     {
       '@type': 'BreadcrumbList',

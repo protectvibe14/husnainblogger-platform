@@ -37,10 +37,10 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free blogger press release template 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Announce your news like a publisher: describe the announcement, add your brand and a quote, and get a clean press release template ready to send.';
 
 export const content: ToolContent = {
-  title: 'Blogger Press Release Template 2027',
+  title: 'Blogger Press Release Template',
   description: DESCRIPTION,
   howTo: [
     'Describe your announcement in plain language.',

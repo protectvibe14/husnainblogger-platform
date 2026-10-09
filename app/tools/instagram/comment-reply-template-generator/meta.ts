@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'replies',
     label: 'Reply templates',
     type: 'list',
-    description: 'Free instagram comment reply templates 2026: Three reply templates with {name} slots for the commenter. Get instant results. No signup - try it free now!',
+    description:
+    'Free instagram comment reply templates 2026: Three reply templates with {name} slots for the commenter. Get instant results. free now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all replies',
     type: 'copy',
-    description: 'All three reply templates as plain text.',
+    description:
+    'All three reply templates as plain text.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Comment Reply Templates 2027',
+  title: 'Instagram Comment Reply Templates',
   description:
-    'Reply to every Instagram comment with confidence. Pick the comment type and tone, get ready-to-use reply templates free — no signup. Try it now!',
+    'Reply to every Instagram comment with confidence. Pick the comment type and tone, get ready-to-use reply templates free —.',
   howTo: [
     'Choose the "Comment type": praise, question, criticism, or spam.',
     'Pick a "Reply tone" — friendly, professional, playful, or formal (defaults to friendly).',
@@ -122,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram comment reply templates 2026: Three reply templates with {name} slots for the commenter. Get instant results. No signup - try it free now!',
+      description:
+    'Free instagram comment reply templates 2026: Three reply templates with {name} slots for the commenter. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

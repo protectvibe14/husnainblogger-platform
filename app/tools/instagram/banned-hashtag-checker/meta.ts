@@ -22,7 +22,7 @@ const DESCRIPTION =
   'Screen captions with this free instagram banned hashtags checker — a curated sample flags risky tags fast. Verify flagged tags inside Instagram before posting.';
 
 export const content: ToolContent = {
-  title: 'Instagram Banned Hashtags Checker 2027',
+  title: 'Instagram Banned Hashtags Checker',
   description: DESCRIPTION,
   howTo: [
     'Paste your full caption or comment into the text box above.',
@@ -67,19 +67,19 @@ export const content: ToolContent = {
         'This one extracts hashtags from your text with a unicode-aware pattern, normalizes each tag to lowercase, and looks it up in a fixed curated list of 99 sample tags. Matches are flagged; everything else is reported clear. It is a pre-screen, not an official Instagram result.',
     },
     {
-      question: 'How does the instagram banned hashtags checker work?',
+      question: 'What happens if I post with a banned hashtag?',
       answer:
-        'Enter your details using the inputs above and the instagram banned hashtags checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Your post gets excluded from that hashtag search page, so nobody browsing the tag will find you — and stacking several restricted tags can throttle the whole post\'s reach. If you suspect a tag hurt a post, search the tag inside the Instagram app: hidden recent posts mean the tag is restricted. Only live data inside the Instagram app can confirm whether a tag is currently restricted.',
     },
     {
-      question: 'Is the instagram banned hashtags checker free to use?',
+      question: 'Why does the list only have 99 tags?',
       answer:
-        'Yes - this instagram banned hashtags checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Because Instagram restricts far more tags than any static list can hold, and the list changes constantly. The bundled 99 are a curated sample of commonly-restricted tags for a quick pre-post screen — it will not catch every risky tag. Treat a clean result as \'no obvious problems found\', and verify any tag you depend on by searching it in the app.',
     },
     {
-      question: 'What is an instagram banned hashtags checker?',
+      question: 'Can this check tags in other languages or with emoji?',
       answer:
-        'An instagram banned hashtags checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'The tool extracts hashtags with a unicode-aware pattern and normalizes each tag to lowercase before looking it up, so non-English tags and emoji-containing tags are handled the same way as English ones. What it cannot do is query live Instagram data — it only screens against the bundled sample list.',
     },
   ],
   assumptions: [

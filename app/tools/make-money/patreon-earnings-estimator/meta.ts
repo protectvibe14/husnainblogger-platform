@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Patreon Earnings Calculator',
   description:
-    'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout. Try it now.',
+    'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout.',
   howTo: [
     'Enter your number of paying patrons — the patrons actually charged this month, not followers.',
     'Enter your average pledge per patron in USD.',
@@ -115,7 +115,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout. Try it now.',
+      description:
+    'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout.',
     },
     {
       '@type': 'BreadcrumbList',

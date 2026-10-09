@@ -53,14 +53,15 @@ export const outputs: ToolOutput[] = [
     id: 'caseStudy',
     label: 'Case study document (copy)',
     type: 'copy',
-    description: 'Free freelance case study template 2026: The full sectioned case study: overview, challenge, solution, results, quote. Fast, private, no signup - try it now!',
+    description:
+    'Free freelance case study template 2026: The full sectioned case study: overview, challenge, solution, results, quote. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Freelance Case Study Template',
   description:
-    'Build a freelance case study template from your project details: enter the challenge, solution, and real results to get a sectioned document for clients. Free.',
+    'Build a freelance case study template from your project details: enter the challenge, solution, and real results to get a sectioned document for.',
   howTo: [
     'Enter the client name, plus their industry if you want it in the title.',
     'Describe the challenge the client had when they came to you.',
@@ -145,7 +146,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance case study template 2026: The full sectioned case study: overview, challenge, solution, results, quote. Fast, private, no signup - try it now!',
+      description:
+    'Free freelance case study template 2026: The full sectioned case study: overview, challenge, solution, results, quote. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

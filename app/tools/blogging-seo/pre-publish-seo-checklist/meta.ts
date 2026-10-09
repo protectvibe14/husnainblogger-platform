@@ -35,26 +35,29 @@ export const outputs: ToolOutput[] = [
     id: 'checklist',
     label: 'Pre-publish checklist',
     type: 'table',
-    description: '12 checks: status (pass/fail/manual), how-to, and the finding for evaluated checks.',
+    description:
+    '12 checks: status (pass/fail/manual), how-to, and the finding for evaluated checks.',
   },
   {
     id: 'passCount',
     label: 'Checks passed',
     type: 'number',
-    description: 'How many automatic checks passed.',
+    description:
+    'How many automatic checks passed.',
   },
   {
     id: 'failCount',
     label: 'Checks failed',
     type: 'number',
-    description: 'How many automatic checks failed.',
+    description:
+    'How many automatic checks failed.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Post SEO Checklist',
   description:
-    'Free blog post SEO checklist 2026: auto-check your title, meta description and keyword plus 8 manual on-page items before you publish. No signup. Free to use. Free to use.',
+    'Free blog post SEO checklist 2026: auto-check your title, meta description and keyword plus 8 manual on-page items before you publish. Free to use..',
   howTo: [
     'Paste your draft title, meta description and target keyword (all optional).',
     'Run the tool to evaluate what it can check automatically: title and meta length, keyword presence.',
@@ -136,7 +139,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free blog post SEO checklist 2026: auto-check your title, meta description and keyword plus 8 manual on-page items before you publish. No signup.',
+    'Free blog post SEO checklist 2026: auto-check your title, meta description and keyword plus 8 manual on-page items before you publish.',
     },
     {
       '@context': 'https://schema.org',

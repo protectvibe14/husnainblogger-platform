@@ -11,19 +11,22 @@ export const outputs: ToolOutput[] = [
     id: 'packagePrice',
     label: 'Package price (estimate)',
     type: 'currency',
-    description: 'Final package price with your discount applied.',
+    description:
+    'Final package price with your discount applied.',
   },
   {
     id: 'packageTiers',
     label: 'Package tiers',
     type: 'table',
-    description: 'Starter / Standard / Premium tiers derived from your numbers.',
+    description:
+    'Starter / Standard / Premium tiers derived from your numbers.',
   },
   {
     id: 'packageDescription',
     label: 'Package description (client-ready)',
     type: 'copy',
-    description: 'Plain-text offer you can paste into a sales page or DM.',
+    description:
+    'Plain-text offer you can paste into a sales page or DM.',
   },
 ];
 
@@ -43,7 +46,7 @@ const DESCRIPTION =
   'Free coaching package pricing 2026: Final package price with your discount applied. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Coaching Package Pricing Builder 2027',
+  title: 'Coaching Package Pricing Builder',
   description: DESCRIPTION,
   howTo: [
     'On the first row, enter your package settings: name, sessions per package, session length in minutes, your price per session, and your package discount percent.',

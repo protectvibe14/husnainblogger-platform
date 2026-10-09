@@ -24,7 +24,7 @@ const DESCRIPTION =
   'Free social profile completeness checker 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Social Profile Completeness Checker 2027',
+  title: 'Social Profile Completeness Checker',
   description: DESCRIPTION,
   howTo: [
     'Pick the social profile you want to audit (Instagram, TikTok, YouTube, X — the checklist works for all).',

@@ -79,13 +79,13 @@ const items = [
     </div>
 
     <script>
-      // Auth guard: redirect to login if no session.
-      if (!localStorage.getItem("hb_admin_session")) {
+      import { isLoggedIn, logout } from "../lib/admin-auth";
+      // Auth guard: redirect to login if no valid session (expiry clears it).
+      if (!isLoggedIn()) {
         window.location.href = "/admin/login/";
       }
       document.getElementById("admin-logout")?.addEventListener("click", () => {
-        localStorage.removeItem("hb_admin_session");
-        localStorage.removeItem("hb_admin_token");
+        logout();
         window.location.href = "/admin/login/";
       });
     </script>

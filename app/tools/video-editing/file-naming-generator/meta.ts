@@ -82,7 +82,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Build consistent, searchable filenames with this free video file naming convention tool — pick a pattern, add your details, and copy a clean name. Try it now.";
+  "Name video files you will actually find later: pick a naming pattern, add your shoot details, and copy a clean, searchable filename instantly.";
 
 export const content: ToolContent = {
   title: "Video File Naming Convention",

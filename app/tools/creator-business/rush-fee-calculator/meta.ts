@@ -27,32 +27,36 @@ export const outputs: ToolOutput[] = [
     id: 'rushFeeAmount',
     label: 'Rush surcharge',
     type: 'currency',
-    description: 'Free rush fee calculator 2026: Base price × your rush percentage. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free rush fee calculator 2026: Base price × your rush percentage. free.',
   },
   {
     id: 'rushTotal',
     label: 'Rush total',
     type: 'currency',
-    description: 'Base price plus the rush surcharge.',
+    description:
+    'Base price plus the rush surcharge.',
   },
   {
     id: 'rushFeeAsPctOfBase',
     label: 'Rush fee as % of base',
     type: 'percent',
-    description: 'The rush percentage you entered, echoed back.',
+    description:
+    'The rush percentage you entered, echoed back.',
   },
   {
     id: 'note',
     label: 'Note',
     type: 'text',
-    description: 'Caution when the rush percent exceeds 100% of the base.',
+    description:
+    'Caution when the rush percent exceeds 100% of the base.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Rush Fee Calculator',
   description:
-    'Price rush work with confidence — enter your base price and rush percentage to get the surcharge and new total instantly. Free, no signup. Try it now!',
+    'Price rush work with confidence — enter your base price and rush percentage to get the surcharge and new total instantly. Free.',
   howTo: [
     'Enter your base project price — what the work costs on a normal timeline.',
     'Enter your rush surcharge as a percent of the base (your own pricing policy, e.g. 25 for a 25% rush fee).',
@@ -128,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free rush fee calculator 2026: Base price × your rush percentage. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free rush fee calculator 2026: Base price × your rush percentage. free.',
     },
     {
       '@type': 'BreadcrumbList',

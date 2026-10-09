@@ -29,26 +29,29 @@ export const outputs: ToolOutput[] = [
     id: 'score',
     label: 'Highlights score',
     type: 'number',
-    description: 'Free instagram highlights strategy 2026: Your audit score, 0–100. A manual self-audit estimate. Get instant results. No signup - try it free now!',
+    description:
+    'Free instagram highlights strategy 2026: Your audit score, 0–100. A manual self-audit estimate. Get instant results. free now.',
   },
   {
     id: 'missingElements',
     label: 'Missing elements',
     type: 'list',
-    description: 'The highlight elements your profile is missing.',
+    description:
+    'The highlight elements your profile is missing.',
   },
   {
     id: 'fixList',
     label: 'Fix list',
     type: 'list',
-    description: 'Concrete fixes, ordered by impact — highest-weight items first.',
+    description:
+    'Concrete fixes, ordered by impact — highest-weight items first.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Highlights Strategy',
   description:
-    'Audit your instagram highlights strategy free: answer 10 yes/no questions for a 0–100 score, your missing elements, and a fix list. No signup — check yours now!',
+    'Audit your instagram highlights strategy free: answer 10 yes/no questions for a 0–100 score, your missing elements, and a fix list. — check yours now.',
   howTo: [
     'Open your Instagram profile and look at your highlights row.',
     'Answer the 10 yes/no questions honestly — choose "N/A" only for items that truly do not apply to your account type.',
@@ -144,7 +147,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram highlights strategy 2026: Your audit score, 0–100. A manual self-audit estimate. Get instant results. No signup - try it free now!',
+      description:
+    'Free instagram highlights strategy 2026: Your audit score, 0–100. A manual self-audit estimate. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Competitor Analysis',
   description:
-    'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only — try it now.',
+    'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only —.',
   howTo: [
     'Copy a competitor’s TikTok caption or transcript and paste it into pastedCompetitorPost (minimum 30 characters).',
     'Do not paste @handles or video links — this tool cannot look up TikTok accounts or fetch posts.',
@@ -109,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only — try it now.',
+      description:
+    'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only —.',
     },
     {
       '@type': 'BreadcrumbList',

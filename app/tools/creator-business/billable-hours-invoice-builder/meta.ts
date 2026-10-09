@@ -70,32 +70,36 @@ export const outputs: ToolOutput[] = [
     id: 'invoiceDocument',
     label: 'Invoice document',
     type: 'copy',
-    description: 'Free billable hours tracker for freelancers 2026: Itemized, printable invoice text ready to copy. Get instant results. No signup - try it free now!',
+    description:
+    'Free billable hours tracker for freelancers 2026: Itemized, printable invoice text ready to copy. Get instant results. free now.',
   },
   {
     id: 'subtotal',
     label: 'Subtotal',
     type: 'currency',
-    description: 'Sum of all line totals before tax.',
+    description:
+    'Sum of all line totals before tax.',
   },
   {
     id: 'taxAmount',
     label: 'Tax amount',
     type: 'currency',
-    description: 'Tax on the subtotal, only when you entered a tax rate.',
+    description:
+    'Tax on the subtotal, only when you entered a tax rate.',
   },
   {
     id: 'totalDue',
     label: 'Total due',
     type: 'currency',
-    description: 'Subtotal plus tax.',
+    description:
+    'Subtotal plus tax.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Billable Hours Tracker for Freelancers 2027',
+  title: 'Billable Hours Tracker for Freelancers',
   description:
-    'Turn tracked hours into invoices with this billable hours tracker for freelancers: add line items, your tax rate, and copy the itemized result. Free \u2014 try it!',
+    'Turn tracked hours into invoices with this billable hours tracker for freelancers: add line items, your tax rate, and copy the itemized result. Free.',
   howTo: [
     'Add one line per piece of work: a description, the hours spent, and your hourly rate in USD.',
     'On the FIRST line only, fill in the client name, invoice number, due date, payment details, and (optionally) your tax rate % — these apply to the whole invoice.',
@@ -155,7 +159,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free billable hours tracker for freelancers 2026: Itemized, printable invoice text ready to copy. Get instant results. No signup - try it free now!',
+      description:
+    'Free billable hours tracker for freelancers 2026: Itemized, printable invoice text ready to copy. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Before and After TikTok Ideas',
   description:
-    'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try it free!',
+    'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try.',
   howTo: [
     'Enter your transformationTopic — one clear transformation, e.g. "my messy desk setup".',
     'Run the tool to get a fixed 7-shot plan: before, process shots, halfway tease, transition, reveal, close-up, and CTA frame.',
@@ -99,7 +99,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try it free!',
+      description:
+    'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try.',
     },
     {
       '@context': 'https://schema.org',

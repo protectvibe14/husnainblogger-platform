@@ -11,13 +11,15 @@ export const outputs: ToolOutput[] = [
     id: 'showcasePageHTML',
     label: 'Showcase page HTML (copy)',
     type: 'copy',
-    description: 'Free testimonial showcase page 2026: A complete, styled HTML page with your testimonials — host it yourself. Fast, private, no signup - try it now!',
+    description:
+    'Free testimonial showcase page 2026: A complete, styled HTML page with your testimonials — host it yourself. Fast, private now.',
   },
   {
     id: 'embedSnippet',
     label: 'Embed snippet (copy)',
     type: 'copy',
-    description: 'A smaller section block to paste into an existing page.',
+    description:
+    'A smaller section block to paste into an existing page.',
   },
 ];
 
@@ -126,7 +128,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free testimonial showcase page 2026: A complete, styled HTML page with your testimonials — host it yourself. Fast, private, no signup - try it now!',
+      description:
+    'Free testimonial showcase page 2026: A complete, styled HTML page with your testimonials — host it yourself. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

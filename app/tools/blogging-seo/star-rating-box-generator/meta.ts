@@ -34,20 +34,22 @@ export const outputs: ToolOutput[] = [
     id: 'boxHtml',
     label: 'Box HTML (copy)',
     type: 'copy',
-    description: 'Free star rating generator 2026: Ready-to-paste star rating box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it now!',
+    description:
+    'Free star rating generator 2026: Ready-to-paste star rating box with minimal inline styles — works in any blog theme. Fast, private now.',
   },
   {
     id: 'boxCss',
     label: 'Box CSS (copy)',
     type: 'copy',
-    description: 'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
+    description:
+    'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Star Rating Generator',
   description:
-    'Generate a clean star rating box for your reviews in seconds. Set your 0–5 rating, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
+    'Generate a clean star rating box for your reviews in seconds. Set your 0–5 rating, copy the ready-to-paste HTML, and drop it into any post. Try it free.',
   howTo: [
     'Enter your "Rating" — any number from 0 to 5, including fractions like 4.5.',
     'Optionally add a "Box title" and a "Review count" to show next to the stars.',
@@ -124,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free star rating generator 2026: Ready-to-paste star rating box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it now!',
+      description:
+    'Free star rating generator 2026: Ready-to-paste star rating box with minimal inline styles — works in any blog theme. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

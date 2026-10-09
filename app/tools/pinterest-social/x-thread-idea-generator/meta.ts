@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'thread',
     label: 'Thread outline',
     type: 'list',
-    description: 'Free twitter thread ideas 2026: Your thread: tweet 1 is a standalone hook, the middle tweets are points, the last tweet. Fast, private, no signup - try it now!',
+    description:
+    'Free twitter thread ideas 2026: Your thread: tweet 1 is a standalone hook, the middle tweets are points, the last tweet. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Notes',
     type: 'text',
-    description: 'How the outline was built and any adjustments (e.g. count capped or reduced).',
+    description:
+    'How the outline was built and any adjustments (e.g. count capped or reduced).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Thread Ideas',
   description:
-    'Generate free twitter thread ideas from any topic. Get a hook, supporting points, and a CTA in a structured outline within the 280-character budget. Try it!',
+    'Outline threads worth reading to the end: enter any topic for a strong hook, supporting points, and CTA structured within the character budget.',
   howTo: [
     'Type your thread topic into the "Thread topic" field (keep it under 140 characters).',
     'Set "Number of tweets" between 2 and 25 (leave it blank for the default of 7).',
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter thread ideas 2026: Your thread: tweet 1 is a standalone hook, the middle tweets are points, the last tweet. Fast, private, no signup - try it now!',
+      description:
+    'Free twitter thread ideas 2026: Your thread: tweet 1 is a standalone hook, the middle tweets are points, the last tweet. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

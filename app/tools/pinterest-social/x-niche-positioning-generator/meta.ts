@@ -27,14 +27,15 @@ export const outputs: ToolOutput[] = [
     id: 'positioningStatements',
     label: 'Positioning statements',
     type: 'list',
-    description: 'Free twitter niche statement 2026: 5 bio-ready positioning lines, each 160 characters or fewer. Get instant results. No signup - try it free now!',
+    description:
+    'Free twitter niche statement 2026: 5 bio-ready positioning lines, each 160 characters or fewer. Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Niche Statement',
   description:
-    'Write a twitter niche statement fast: enter your niche and audience to get 5 bio-ready positioning lines under 160 characters. Position yourself now!',
+    'Write a twitter niche statement fast: enter your niche and audience to get 5 bio-ready positioning lines under 160 characters. Position yourself now.',
   howTo: [
     'Type your niche in the "Your niche" field (e.g. "email marketing").',
     'Describe your audience in the "Your audience" field (e.g. "busy founders").',
@@ -108,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter niche statement 2026: 5 bio-ready positioning lines, each 160 characters or fewer. Get instant results. No signup - try it free now!',
+      description:
+    'Free twitter niche statement 2026: 5 bio-ready positioning lines, each 160 characters or fewer. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

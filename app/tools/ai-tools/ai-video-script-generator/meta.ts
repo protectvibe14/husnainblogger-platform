@@ -40,14 +40,15 @@ export const outputs: ToolOutput[] = [
     id: 'script',
     label: 'Video script',
     type: 'text',
-    description: 'Free ai video script generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai video script generator 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Video Script Generator',
   description:
-    'Generate a complete video script — hook, beats, and call to action — for YouTube, TikTok, or Reels with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Generate a complete video script — hook, beats, and call to action — for YouTube, TikTok, or Reels with your own free Gemini, Groq, or OpenRouter key.,.',
   howTo: [
     'Describe your video topic in a few words.',
     'Pick the platform, video length, and tone.',
@@ -119,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai video script generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai video script generator 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

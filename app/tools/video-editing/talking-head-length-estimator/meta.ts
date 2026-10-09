@@ -113,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Convert script to video length: paste your talking-head script, set your speaking rate, and get an estimated duration range with pause allowance. Free.',
+      description:
+    'Convert script to video length: paste your talking-head script, set your speaking rate, and get an estimated duration range with pause allowance. Free.',
     },
     {
       '@type': 'BreadcrumbList',

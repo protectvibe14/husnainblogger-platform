@@ -34,38 +34,43 @@ export const outputs: ToolOutput[] = [
     id: 'scriptHook',
     label: 'Hook (slide 1)',
     type: 'text',
-    description: 'Free how to sell on instagram stories 2026: Opening line that stops the scroll, matched to the chosen objection. Fast, private, no signup - try it now!',
+    description:
+    'Free how to sell on instagram stories 2026: Opening line that stops the scroll, matched to the chosen objection. Fast, private now.',
   },
   {
     id: 'scriptStory',
     label: 'Story (slides 2–3)',
     type: 'text',
-    description: 'Relatable story beat that builds connection around your product.',
+    description:
+    'Relatable story beat that builds connection around your product.',
   },
   {
     id: 'scriptOffer',
     label: 'Offer (slide 4)',
     type: 'text',
-    description: 'Your product offer line, with price woven in if you entered one.',
+    description:
+    'Your product offer line, with price woven in if you entered one.',
   },
   {
     id: 'scriptCta',
     label: 'Call to action (slide 6)',
     type: 'text',
-    description: 'Closing CTA that tells viewers exactly what to do next.',
+    description:
+    'Closing CTA that tells viewers exactly what to do next.',
   },
   {
     id: 'slideBreakdown',
     label: '6-slide breakdown',
     type: 'list',
-    description: 'Full slide-by-slide plan: text for each of 6 story slides plus a sticker suggestion per slide.',
+    description:
+    'Full slide-by-slide plan: text for each of 6 story slides plus a sticker suggestion per slide.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'How to Sell on Instagram Stories 2027',
+  title: 'How to Sell on Instagram Stories',
   description:
-    'Sell on stories with this free how to sell on instagram stories tool. Enter your product, pick an objection, and get a 6-slide selling script. Try it now!',
+    'Sell on stories with this free how to sell on instagram stories tool. Enter your product, pick an objection, and get a 6-slide selling script.',
   howTo: [
     'Enter your product name (up to 60 characters).',
     'Add the price if you want it woven into the offer line (optional).',
@@ -141,7 +146,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to sell on instagram stories 2026: Opening line that stops the scroll, matched to the chosen objection. Fast, private, no signup - try it now!',
+      description:
+    'Free how to sell on instagram stories 2026: Opening line that stops the scroll, matched to the chosen objection. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

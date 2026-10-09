@@ -72,26 +72,29 @@ export const outputs: ToolOutput[] = [
     id: 'topNiches',
     label: 'Your top 3 niche matches',
     type: 'list',
-    description: 'Free how to find my niche instagram 2026: Ranked niche profiles with positioning angle and match score. Get instant results. No signup - try it free now!',
+    description:
+    'Free how to find my niche instagram 2026: Ranked niche profiles with positioning angle and match score. Get instant results. free now.',
   },
   {
     id: 'clarityScore',
     label: 'Niche clarity score',
     type: 'percent',
-    description: 'How strongly your answers point at one niche (0-100).',
+    description:
+    'How strongly your answers point at one niche (0-100).',
   },
   {
     id: 'validationSteps',
     label: 'How to validate your niche',
     type: 'list',
-    description: 'Five practical steps to test the niche before committing.',
+    description:
+    'Five practical steps to test the niche before committing.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'How To Find My Niche Instagram',
   description:
-    'Take a free quiz to learn how to find my niche instagram creators actually use: answer 5 questions, get 3 ranked niche matches plus a clarity score. Start now!',
+    'Take a free quiz to learn how to find my niche instagram creators actually use: answer 5 questions, get 3 ranked niche matches plus a clarity score..',
   howTo: [
     'Pick the topic you could talk about for an hour without notes.',
     'Choose your experience level in that topic and who you want to help.',
@@ -176,7 +179,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to find my niche instagram 2026: Ranked niche profiles with positioning angle and match score. Get instant results. No signup - try it free now!',
+      description:
+    'Free how to find my niche instagram 2026: Ranked niche profiles with positioning angle and match score. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'B-Roll Shot List Ideas',
   description:
-    'Generate b-roll shot list ideas from curated banks: enter your topic, pick a video type, and get shots with angles, movement, and timing. Try it free.',
+    'Never run out of b-roll again: enter your topic and video type for shot ideas with camera angles, movement, and timing from curated shot banks.',
   howTo: [
     'Type your video topic — e.g. "making sourdough bread".',
     'Choose the video type: tutorial, vlog, ad, or documentary.',
@@ -108,7 +108,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Generate b-roll shot list ideas from curated banks: enter your topic, pick a video type, and get shots with angles, movement, and timing. Try it free.',
+      description:
+    'Never run out of b-roll again: enter your topic and video type for shot ideas with camera angles, movement, and timing from curated shot banks.',
     },
     {
       '@type': 'BreadcrumbList',

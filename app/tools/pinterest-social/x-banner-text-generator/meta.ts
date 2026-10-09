@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'bannerCopy',
     label: 'Banner copy options',
     type: 'list',
-    description: 'Free twitter banner text ideas 2026: Short banner text options, each kept to 60 characters or fewer. Get instant results. No signup - try it free now!',
+    description:
+    'Free twitter banner text ideas 2026: Short banner text options, each kept to 60 characters or fewer. Get instant results. free now.',
   },
   {
     id: 'safeZoneNote',
     label: 'Safe-zone guidance',
     type: 'text',
-    description: 'Where to place text on the 1500×500 banner so the avatar never covers it.',
+    description:
+    'Where to place text on the 1500×500 banner so the avatar never covers it.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Banner Text Ideas',
   description:
-    'Get twitter banner text ideas fast: turn your tagline and offer into short, high-contrast banner lines under 60 characters. Create yours free now!',
+    'Get twitter banner text ideas fast: turn your tagline and offer into short, high-contrast banner lines under 60 characters. Create yours free now.',
   howTo: [
     'Type your main line in the "Your tagline" field (e.g. "I help founders get customers").',
     'Optionally add your "Your offer" (e.g. "Free growth audit") for offer-based layouts.',
@@ -114,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter banner text ideas 2026: Short banner text options, each kept to 60 characters or fewer. Get instant results. No signup - try it free now!',
+      description:
+    'Free twitter banner text ideas 2026: Short banner text options, each kept to 60 characters or fewer. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

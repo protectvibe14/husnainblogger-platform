@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'pillars',
     label: 'Your content pillars',
     type: 'list',
-    description: 'Free twitter content pillars 2026: Each pillar with its name, description, and 3 example topic ideas. Get instant results. No signup - try it free now!',
+    description:
+    'Free twitter content pillars 2026: Each pillar with its name, description, and 3 example topic ideas. Get instant results. free now.',
   },
   {
     id: 'planNote',
     label: 'Plan note',
     type: 'text',
-    description: 'How to use the pillars, or why the count was reduced for a narrow niche.',
+    description:
+    'How to use the pillars, or why the count was reduced for a narrow niche.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Content Pillars Planner',
   description:
-    'Plan twitter content pillars for free: enter your niche to get 4 distinct pillars with descriptions and 3 topic ideas each. Build your X strategy now!',
+    'Plan twitter content pillars for free: enter your niche to get 4 distinct pillars with descriptions and 3 topic ideas each. Build your X strategy now.',
   howTo: [
     'Type your niche in the "Your niche" field (e.g. "freelance copywriting").',
     'Optionally set "Number of pillars" to 3, 4, or 5 — leave it blank for the default 4.',
@@ -119,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter content pillars 2026: Each pillar with its name, description, and 3 example topic ideas. Get instant results. No signup - try it free now!',
+      description:
+    'Free twitter content pillars 2026: Each pillar with its name, description, and 3 example topic ideas. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -59,25 +59,29 @@ export const outputs: ToolOutput[] = [
     id: 'scripts',
     label: 'Storytime scripts',
     type: 'list',
-    description: 'One full script per story: hook, beats with on-screen-text cues, pacing notes, CTA.',
+    description:
+    'One full script per story: hook, beats with on-screen-text cues, pacing notes, CTA.',
   },
   {
     id: 'narrationEstimates',
     label: 'Narration time estimates',
     type: 'list',
-    description: 'Per-story narration estimate in seconds — an estimate, not a measurement.',
+    description:
+    'Per-story narration estimate in seconds — an estimate, not a measurement.',
   },
   {
     id: 'pacingSummaries',
     label: 'Pacing timelines',
     type: 'list',
-    description: 'Per-story timestamp chain (hook → beats → CTA) for filming.',
+    description:
+    'Per-story timestamp chain (hook → beats → CTA) for filming.',
   },
   {
     id: 'seriesNote',
     label: 'Series suggestion',
     type: 'text',
-    description: 'Flags stories over the ~180s target and suggests a multi-part series.',
+    description:
+    'Flags stories over the ~180s target and suggests a multi-part series.',
   },
 ];
 

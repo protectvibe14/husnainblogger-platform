@@ -24,20 +24,22 @@ export const outputs: ToolOutput[] = [
     id: 'image',
     label: 'Generated image',
     type: 'download',
-    description: 'Free ai image generator 2026: AI-generated image from your prompt, shown on the page with a download button. Fast, private, no signup - try it now!',
+    description:
+    'Free ai image generator 2026: AI-generated image from your prompt, shown on the page with a download button. Fast, private now.',
   },
   {
     id: 'provider',
     label: 'Provider used',
     type: 'text',
-    description: 'Which of your connected providers generated the image (OpenRouter, Hugging Face or fal.ai).',
+    description:
+    'Which of your connected providers generated the image (OpenRouter, Hugging Face or fal.ai).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Image Generator',
   description:
-    'Turn text into AI images with your own API key — OpenRouter, Hugging Face or fal.ai. Describe the image, pick a ratio, and download the result. No signup.',
+    'Turn text into AI images with your own API key — OpenRouter, Hugging Face or fal.ai. Describe the image, pick a ratio, and download the result.',
   howTo: [
     'Save your API key in the key vault above — OpenRouter, Hugging Face Inference, or fal.ai (your key stays in this browser only).',
     'Describe the image you want in the prompt box. Concrete details (subject, lighting, style) give better results.',
@@ -110,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Ai Image Generator 2026 – Free Generator - no signup required.',
+      description:
+    'Free Ai Image Generator 2026 – Free Generator - required.',
     },
     {
       '@context': 'https://schema.org',

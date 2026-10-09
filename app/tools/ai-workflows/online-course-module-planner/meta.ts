@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'moduleGrid',
     label: 'Module grid',
     type: 'table',
-    description: 'Free course outline generator 2026: Module slots with lesson-name templates and per-module duration estimates. Fast, private, no signup - try it now!',
+    description:
+    'Free course outline generator 2026: Module slots with lesson-name templates and per-module duration estimates. Fast, private now.',
   },
   {
     id: 'summary',
     label: 'Plan summary',
     type: 'text',
-    description: 'Total modules, lessons, and estimated course duration.',
+    description:
+    'Total modules, lessons, and estimated course duration.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Course Outline Generator',
   description:
-    'Plan your online course fast — a module grid with lesson-name templates and duration estimates per module. Free course outline generator. Start building today!',
+    'Plan your online course fast — a module grid with lesson-name templates and duration estimates per module. Free course outline generator. Start.',
   howTo: [
     'Enter your course topic, exactly as students will see it.',
     'Choose how many modules the course has, from 2 to 20.',
@@ -125,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free course outline generator 2026: Module slots with lesson-name templates and per-module duration estimates. Fast, private, no signup - try it now!',
+      description:
+    'Free course outline generator 2026: Module slots with lesson-name templates and per-module duration estimates. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

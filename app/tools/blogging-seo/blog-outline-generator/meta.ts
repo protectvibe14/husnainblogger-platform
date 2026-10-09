@@ -36,20 +36,22 @@ export const outputs: ToolOutput[] = [
     id: 'outlineMarkdown',
     label: 'Blog outline',
     type: 'copy',
-    description: 'Full H1/H2/H3 outline in Markdown, with a target-keyword line when provided.',
+    description:
+    'Full H1/H2/H3 outline in Markdown, with a target-keyword line when provided.',
   },
   {
     id: 'headingCount',
     label: 'Heading count',
     type: 'number',
-    description: 'Total number of H2 + H3 headings in the outline.',
+    description:
+    'Total number of H2 + H3 headings in the outline.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Outline Generator',
   description:
-    'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. No signup — start outlining now.',
+    'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. — start outlining now.',
   howTo: [
     'Type your blog post title into the Title field (2-150 characters).',
     'Optionally add a target keyword and pick a depth: Basic (10 headings), Standard (20) or Deep (42).',
@@ -128,7 +130,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. No signup — start outlining now.',
+    'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. — start outlining now.',
     },
     {
       '@context': 'https://schema.org',

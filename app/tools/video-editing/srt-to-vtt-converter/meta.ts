@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'SRT to VTT Converter',
   description:
-    'Free srt to vtt converter 2026: Convert SRT subtitles to WebVTT in your browser: paste SRT text, get clean VTT with. Fast, private, no signup - try it now!',
+    'Convert SRT subtitles to WebVTT right in your browser: paste your SRT text and get clean, validated VTT output instantly - no uploads, no waiting.',
   howTo: [
     'Paste your .srt subtitle text into the input box (or drag in the file contents).',
     'Run the converter — blank-line separated blocks are parsed and validated.',
@@ -94,7 +94,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free srt to vtt converter 2026: Convert SRT subtitles to WebVTT in your browser: paste SRT text, get clean VTT with. Fast, private, no signup - try it now!',
+      description:
+    'Convert SRT subtitles to WebVTT right in your browser: paste your SRT text and get clean, validated VTT output instantly - no uploads, no waiting.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -41,21 +41,23 @@ export const outputs: ToolOutput[] = [
     id: 'briefMarkdown',
     label: 'Content brief',
     type: 'copy',
-    description: 'Full brief in Markdown: keyword, audience, intent guess, outline with word targets, SEO notes and CTAs.',
+    description:
+    'Full brief in Markdown: keyword, audience, intent guess, outline with word targets, SEO notes and CTAs.',
   keywords: ['ai content brief generator', 'content brief template', 'content brief template google docs', 'content brief template word', 'content creator brief'],
   },
   {
     id: 'sections',
     label: 'Sections',
     type: 'list',
-    description: 'Outline sections with per-section word targets.',
+    description:
+    'Outline sections with per-section word targets.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Brief Generator',
   description:
-    'Free content brief generator 2026: build a complete SEO brief — keyword, audience, intent guess and outline with per-section word targets. No signup.',
+    'Free content brief generator 2026: build a complete SEO brief — keyword, audience, intent guess and outline with per-section word targets.',
   howTo: [
     'Type your article topic into the Topic field (2-150 characters).',
     'Optionally add a target keyword, target word count (300-10,000) and audience.',
@@ -135,7 +137,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free content brief generator 2026: build a complete SEO brief — keyword, audience, intent guess and outline with per-section word targets. No signup.',
+    'Free content brief generator 2026: build a complete SEO brief — keyword, audience, intent guess and outline with per-section word targets.',
     },
     {
       '@context': 'https://schema.org',

@@ -20,7 +20,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Subtitle Timing Checker',
   description:
-    'Free subtitle timing checker 2026: check subtitle timing errors free: paste SRT or VTT to detect overlaps, zero-duration. Fast, private, no signup - try it now!',
+    'Catch subtitle timing errors before you publish: paste SRT or VTT to detect overlaps, zero-duration cues, and awkward gaps - all in one check.',
   howTo: [
     'Paste your subtitle text (SRT or WebVTT) into the input box.',
     'Run the check — every cue is validated against the timing rule set.',
@@ -93,7 +93,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free subtitle timing checker 2026: check subtitle timing errors free: paste SRT or VTT to detect overlaps, zero-duration. Fast, private, no signup - try it now!',
+      description:
+    'Catch subtitle timing errors before you publish: paste SRT or VTT to detect overlaps, zero-duration cues, and awkward gaps - all in one check.',
     },
     {
       '@type': 'BreadcrumbList',

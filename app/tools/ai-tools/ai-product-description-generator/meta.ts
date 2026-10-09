@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'description',
     label: 'Product description',
     type: 'text',
-    description: 'Free ai product description generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai product description generator 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'AI Product Description Generator 2027',
+  title: 'AI Product Description Generator',
   description:
-    'Write compelling ecommerce product descriptions in any tone — under 150 words, benefit-led — with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Write compelling ecommerce product descriptions in any tone — under 150 words, benefit-led — with your own free Gemini, Groq, or OpenRouter key.,.',
   howTo: [
     'Enter your product name and key features.',
     'Pick a tone (persuasive, professional, playful, or luxury).',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai product description generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai product description generator 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

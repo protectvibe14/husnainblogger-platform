@@ -35,26 +35,29 @@ export const outputs: ToolOutput[] = [
     id: 'fullScript',
     label: 'Full beat sheet',
     type: 'copy',
-    description: 'Free tiktok script template 2026: Numbered, copy-ready script structure: hook, beats, and CTA with timings. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok script template 2026: Numbered, copy-ready script structure: hook, beats, and CTA with timings. Fast, private now.',
   },
   {
     id: 'beats',
     label: 'Timed beats',
     type: 'list',
-    description: 'Each beat with its time range and approximate word count.',
+    description:
+    'Each beat with its time range and approximate word count.',
   },
   {
     id: 'timingNote',
     label: 'Timing summary',
     type: 'text',
-    description: 'Planned duration, beat count, and estimated spoken words.',
+    description:
+    'Planned duration, beat count, and estimated spoken words.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Script Template',
   description:
-    'Create a free tiktok script template: enter your topic, pick a duration, and get a timed hook-beats-CTA beat sheet fitted to your video. Start scripting now!',
+    'Create a free tiktok script template: enter your topic, pick a duration, and get a timed hook-beats-CTA beat sheet fitted to your video. Start.',
   howTo: [
     'Enter your "Video topic" in a few words (up to 200 characters).',
     'Add your "Niche" (optional) to pull hooks from a niche-matched bank — leave it blank for generic hooks.',
@@ -132,7 +135,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok script template 2026: Numbered, copy-ready script structure: hook, beats, and CTA with timings. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok script template 2026: Numbered, copy-ready script structure: hook, beats, and CTA with timings. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

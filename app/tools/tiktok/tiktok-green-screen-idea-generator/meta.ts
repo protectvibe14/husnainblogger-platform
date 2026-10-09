@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'concepts',
     label: 'Green screen video concepts',
     type: 'list',
-    description: 'Free tiktok green screen ideas 2026: 5 commentary video concepts, each with a hook, a background asset description, and 4. Fast, private, no signup - try it!',
+    description:
+    'Free tiktok green screen ideas 2026: 5 commentary video concepts, each with a hook, a background asset description, and 4. Fast, private.',
   },
   {
     id: 'copyrightNote',
     label: 'Copyright reminder',
     type: 'text',
-    description: 'Reminder to use your own screenshots or licensed images as green-screen backgrounds.',
+    description:
+    'Reminder to use your own screenshots or licensed images as green-screen backgrounds.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Green Screen Ideas',
   description:
-    'Generate tiktok green screen ideas: 5 commentary concepts with hooks, background descriptions, and script beats for your niche. Pick a background — try it free!',
+    'Generate tiktok green screen ideas: 5 commentary concepts with hooks, background descriptions, and script beats for your niche. Pick a background — try.',
   howTo: [
     'Type your niche into the "Your niche" box (e.g. budget travel, skincare).',
     'Pick a "Background type": article, screenshot, map, or chart — this shapes the background asset in each idea.',
@@ -110,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok green screen ideas 2026: 5 commentary video concepts, each with a hook, a background asset description, and 4. Fast, private, no signup - try it!',
+      description:
+    'Free tiktok green screen ideas 2026: 5 commentary video concepts, each with a hook, a background asset description, and 4. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

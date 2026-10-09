@@ -18,38 +18,43 @@ export const outputs: ToolOutput[] = [
     id: 'fleschScore',
     label: 'Flesch Reading Ease score',
     type: 'number',
-    description: 'Free tiktok captions too fast 2026: 0–100 readability score from the public Flesch Reading Ease formula (higher = easier to. Fast, private, no signup - try it!',
+    description:
+    'Free tiktok captions too fast 2026: 0–100 readability score from the public Flesch Reading Ease formula (higher = easier to. Fast, private.',
   },
   {
     id: 'gradeLevel',
     label: 'Grade level',
     type: 'text',
-    description: 'Flesch–Kincaid US school grade level for the caption, estimated from the same public formula.',
+    description:
+    'Flesch–Kincaid US school grade level for the caption, estimated from the same public formula.',
   },
   {
     id: 'longSentences',
     label: 'Flagged long sentences',
     type: 'list',
-    description: 'Sentences over 20 words that are hard to read on a small screen.',
+    description:
+    'Sentences over 20 words that are hard to read on a small screen.',
   },
   {
     id: 'suggestions',
     label: 'Rewrite suggestions',
     type: 'list',
-    description: 'Concrete, rule-based fixes: split long sentences, simplify complex words, trim hashtags and all-caps.',
+    description:
+    'Concrete, rule-based fixes: split long sentences, simplify complex words, trim hashtags and all-caps.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Honesty labels: English-model-only notice for non-English captions, and a warning if the caption exceeds TikTok\'s 2,200-character limit.',
+    description:
+    'Honesty labels: English-model-only notice for non-English captions, and a warning if the caption exceeds TikTok\.'s 2,200-character limit.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Tiktok Captions Too Fast',
   description:
-    'Fix tiktok captions too fast with free Flesch scoring: Reading Ease score, grade level, flagged long sentences, rewrite tips. Paste a caption — try it now!',
+    'Fix tiktok captions too fast with free Flesch scoring: Reading Ease score, grade level, flagged long sentences, rewrite tips. Paste a caption —.',
   howTo: [
     'Paste your full TikTok caption into the "Your TikTok caption" box, hashtags included.',
     'Run the tool to get your Flesch Reading Ease score (0–100) and estimated US grade level.',
@@ -125,7 +130,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok captions too fast 2026: 0–100 readability score from the public Flesch Reading Ease formula (higher = easier to. Fast, private, no signup - try it!',
+      description:
+    'Free tiktok captions too fast 2026: 0–100 readability score from the public Flesch Reading Ease formula (higher = easier to. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

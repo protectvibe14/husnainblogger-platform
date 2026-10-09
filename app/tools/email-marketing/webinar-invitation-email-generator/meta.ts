@@ -46,20 +46,22 @@ export const outputs: ToolOutput[] = [
     id: 'subjectOptions',
     label: 'Subject line options',
     type: 'list',
-    description: 'Free webinar invitation email template 2026: 5 subject-line options assembled from fixed templates with your title, speaker, and date. Fast, private, no signup!',
+    description:
+    'Free webinar invitation email template 2026: 5 subject-line options assembled from fixed templates with your title, speaker, and date. Fast, private.',
   },
   {
     id: 'bodyDraft',
     label: 'Invitation email draft',
     type: 'copy',
-    description: 'Full invitation draft: greeting, title, speaker, date, benefit bullets, CTA, and PS.',
+    description:
+    'Full invitation draft: greeting, title, speaker, date, benefit bullets, CTA, and PS.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Webinar Invitation Email Template 2027',
+  title: 'Webinar Invitation Email Template',
   description:
-    'Create a webinar invitation email template in seconds. Enter your title, date, speaker, and benefits to get 5 subject lines plus a full draft. Try it free!',
+    'Fill your webinar seats with a better invite: enter the title, date, time, speaker, and attendee benefits for 5 subject lines plus a complete draft.',
   howTo: [
     'Enter your webinar title exactly as you want it to appear.',
     'Enter the date and time, including the timezone (e.g. Oct 15, 2026 at 2:00 PM EST).',
@@ -143,7 +145,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free webinar invitation email template 2026: 5 subject-line options assembled from fixed templates with your title, speaker, and date. Fast, private, no signup!',
+      description:
+    'Free webinar invitation email template 2026: 5 subject-line options assembled from fixed templates with your title, speaker, and date. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

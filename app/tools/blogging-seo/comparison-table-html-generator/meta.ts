@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'tableHtml',
     label: 'Table HTML (copy)',
     type: 'copy',
-    description: 'Free comparison table generator 2026: Ready-to-paste HTML table with minimal inline styles — works in any blog theme. Fast, private, no signup - try it now!',
+    description:
+    'Free comparison table generator 2026: Ready-to-paste HTML table with minimal inline styles — works in any blog theme. Fast, private now.',
   },
   {
     id: 'tableCss',
     label: 'Table CSS (copy)',
     type: 'copy',
-    description: 'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
+    description:
+    'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Comparison Table Generator',
   description:
-    'Build a clean comparison table for your blog in seconds. Enter headers and rows, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
+    'Build a clean comparison table for your blog in seconds. Enter headers and rows, copy the ready-to-paste HTML, and drop it into any post. Try it free.',
   howTo: [
     'Type your column headers in "Table headers" — one per line, between 2 and 6.',
     'Type each row in "Table rows" — one row per line, with cells separated by the | character.',
@@ -124,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free comparison table generator 2026: Ready-to-paste HTML table with minimal inline styles — works in any blog theme. Fast, private, no signup - try it now!',
+      description:
+    'Free comparison table generator 2026: Ready-to-paste HTML table with minimal inline styles — works in any blog theme. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

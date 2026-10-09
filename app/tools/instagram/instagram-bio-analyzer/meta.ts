@@ -80,19 +80,19 @@ export const content: ToolContent = {
         'No. The score measures observable best practices, not follower growth — Instagram publishes no bio weighting. Use it to remove obvious weaknesses, then test with real profile visits.',
     },
     {
-      question: 'How does the instagram bio analyzer work?',
+      question: 'Should I paste my bio exactly as it appears, emojis and all?',
       answer:
-        'Enter your details using the inputs above and the instagram bio analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Yes — paste it exactly, line breaks and emojis included. The analyzer reads structure the way a visitor sees it: it checks your 150-character length, looks for your niche keyword, proof, and a call to action, and scores the multi-line layout with emojis as visual structure. Analyzing a cleaned-up version would score a bio your visitors never see.',
     },
     {
-      question: 'Is the instagram bio analyzer free to use?',
+      question: 'Does it check my profile photo or link in bio?',
       answer:
-        'Yes - this instagram bio analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'No — it scores your bio text only. A photo, link, highlights, and pinned posts all matter for conversions, but Instagram publishes no weighting for any of them, so the analyzer sticks to what it can measure honestly: keyword, proof, call to action, length, and structure. Use the score to remove obvious text weaknesses, then test with real profile visits.',
     },
     {
-      question: 'What is an instagram bio analyzer?',
+      question: 'How often should I re-analyze my bio?',
       answer:
-        'An instagram bio analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Whenever you change your niche, offer, or call to action — and after any big profile refresh. Small wording tweaks rarely move the needle; the score is most useful when rewriting from scratch and checking the essentials (niche keyword, proof, CTA, under 150 characters) before you publish.',
     },
   ],
   assumptions: [

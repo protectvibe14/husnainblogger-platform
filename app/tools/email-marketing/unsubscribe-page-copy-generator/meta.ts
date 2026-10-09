@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free unsubscribe page copy generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Lose fewer subscribers at the exit door: build a graceful unsubscribe page with smart alternatives like a weekly digest, in a tone that fits your brand.';
 
 export const content: ToolContent = {
   title: 'Unsubscribe Page Copy Generator',

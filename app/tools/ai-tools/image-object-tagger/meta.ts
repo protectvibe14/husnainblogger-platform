@@ -28,18 +28,20 @@ export const outputs: ToolOutput[] = [
     id: 'tags',
     label: 'Object tags',
     type: 'list',
-    description: 'Free image object tagger 2026: Top 8 predicted object labels with confidence scores. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free image object tagger 2026: Top 8 predicted object labels with confidence scores. free.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What this classifier can and cannot do.',
+    description:
+    'What this classifier can and cannot do.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Image Object Tagger: Free Online 2027',
+  title: 'Image Object Tagger: Free Online',
   description:
     'Tag objects in any photo with a free on-device image classifier. Top-8 labels with confidence bars — no uploads and no API key needed, ever.',
   howTo: [
@@ -114,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free image object tagger 2026: Top 8 predicted object labels with confidence scores. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free image object tagger 2026: Top 8 predicted object labels with confidence scores. free.',
     },
     {
       '@context': 'https://schema.org',

@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Best CapCut Export Settings',
   description:
-    'Find the best CapCut export settings for TikTok, YouTube, Reels, or desktop — resolution, frame rate, and codec picks from fixed rules. Try it free.',
+    'Export right the first time, every time: pick TikTok, YouTube, Reels, or desktop for resolution, frame rate, and codec picks from fixed rules.',
   howTo: [
     'Pick your target platform: TikTok, YouTube, Shorts, Instagram Reels, Facebook, or desktop.',
     'Select your source footage resolution (480p up to 4320p / 8K).',
@@ -124,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Find the best CapCut export settings for TikTok, YouTube, Reels, or desktop — resolution, frame rate, and codec picks from fixed rules. Try it free.',
+      description:
+    'Export right the first time, every time: pick TikTok, YouTube, Reels, or desktop for resolution, frame rate, and codec picks from fixed rules.',
     },
     {
       '@type': 'BreadcrumbList',

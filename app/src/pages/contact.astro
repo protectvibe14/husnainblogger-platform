@@ -5,6 +5,10 @@
  *
  * NOTE: Contact email confirmed by the site owner (2026-10-07):
  * husnainblogger.com@gmail.com
+ *
+ * There is no backend inbox on this static site, so the form below is honest:
+ * it opens the visitor's own email app with a pre-filled message addressed
+ * to the contact email. Nothing is sent until they press send themselves.
  */
 import BaseLayout from "../layouts/BaseLayout.astro";
 import settings from "../../../data/site-settings.json";
@@ -15,7 +19,7 @@ const email = settings.contactEmail;
 
 <BaseLayout
   title={title}
-  description="Get in touch with HusnainBlogger."
+  description="Get in touch with HusnainBlogger — questions, tool suggestions, or bug reports."
   canonical="https://husnainblogger.com/contact/"
 >
     <main class="hb-directory">
@@ -24,22 +28,88 @@ const email = settings.contactEmail;
         <p class="hb-tool-value-prop">We would love to hear from you. Questions, suggestions, or tool requests — every message is read.</p>
       </div>
       <section class="hb-section contact-grid">
-        <div>
-          <h2>Get In Touch</h2>
-          <p>Have a question about a tool, a blog topic request, or a partnership idea? Send a message and we'll get back to you as soon as possible.</p>
-          <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
+        <div class="contact-card">
+          <h2>Send a Message</h2>
+          <p class="contact-note">
+            This site has no accounts or message inbox, so the form opens your
+            own email app with your message pre-filled and addressed to us.
+            Nothing is sent until you press send yourself.
+          </p>
+          <form id="contact-form" class="contact-form">
+            <div class="hb-field">
+              <label class="hb-field__label" for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder="Jane Doe" />
+            </div>
+            <div class="hb-field">
+              <label class="hb-field__label" for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+              <p class="hb-field__hint">So we can reply to you.</p>
+            </div>
+            <div class="hb-field">
+              <label class="hb-field__label" for="cf-topic">Topic</label>
+              <select id="cf-topic" name="topic">
+                <option value="General question">General question</option>
+                <option value="Tool suggestion">Tool suggestion</option>
+                <option value="Report a problem">Report a problem</option>
+                <option value="Partnership">Partnership</option>
+              </select>
+            </div>
+            <div class="hb-field">
+              <label class="hb-field__label" for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+            </div>
+            <button class="hb-btn hb-btn--primary" type="submit">Open Email to Send</button>
+          </form>
+          <p class="contact-note">
+            Prefer your own email app? Write to us directly at
+            <a href={`mailto:${email}`}>{email}</a>.
+          </p>
         </div>
-        <div>
-          <h2>Newsletter</h2>
-          <p>Subscribe to receive the latest tools and blogging updates in your inbox.</p>
+        <div class="contact-card">
+          <h2>What to Include</h2>
+          <ul class="contact-tips">
+            <li>Which tool you're asking about — paste the page URL if you can.</li>
+            <li>What you were trying to do, and what happened instead.</li>
+            <li>Your device and browser, if something looks broken.</li>
+            <li>For tool requests: who it is for and what it should calculate or generate.</li>
+          </ul>
+          <p class="contact-note">
+            We read every message and reply as soon as we can. Tool suggestions
+            from readers are how many of our tools got built.
+          </p>
         </div>
       </section>
     </main>
+
+    <script define:vars={{ email }}>
+      // No backend: compose a mailto: with the visitor's message pre-filled.
+      document.getElementById("contact-form")?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const form = /** @type {HTMLFormElement} */ (e.target);
+        const val = (n) => /** @type {HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement | null} */ (form.elements.namedItem(n))?.value.trim() || "";
+        const name = val("name");
+        const from = val("email");
+        const topic = val("topic") || "General question";
+        const message = val("message");
+        if (!name || !from || !message) {
+          // Let the browser's native validation highlight the missing field.
+          form.reportValidity();
+          return;
+        }
+        const subject = `[HusnainBlogger] ${topic} — ${name}`;
+        const body = `Name: ${name}\nReply to: ${from}\n\n${message}`;
+        location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    </script>
 </BaseLayout>
 
 <style>
   .contact-grid { display: grid; gap: var(--space-10); max-width: var(--content-narrow); margin: 0 auto; }
-  .contact-grid h2 { font-family: var(--font-display); font-size: var(--text-2xl); margin-bottom: var(--space-4); }
-  .contact-note { color: var(--color-muted); font-size: var(--text-sm); }
-  @media (min-width: 720px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+  .contact-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8); }
+  .contact-card h2 { font-family: var(--font-display); font-size: var(--text-2xl); margin: 0 0 var(--space-4); }
+  .contact-note { color: var(--color-muted); font-size: var(--text-sm); line-height: var(--leading-normal); }
+  .contact-form { margin: var(--space-6) 0; }
+  .contact-tips { margin: 0 0 var(--space-6); padding-left: var(--space-5); color: var(--color-text); line-height: var(--leading-relaxed); display: grid; gap: var(--space-2); }
+  .contact-card a { color: var(--color-accent); }
+  @media (min-width: 720px) { .contact-grid { grid-template-columns: 1.2fr 1fr; align-items: start; } }
 </style>

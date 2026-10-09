@@ -43,32 +43,36 @@ export const outputs: ToolOutput[] = [
     id: 'perWordRate',
     label: 'Your per-word rate',
     type: 'number',
-    description: 'Free freelance writing rates 2026: Your hourly rate ÷ your words per hour, in your currency. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free freelance writing rates 2026: Your hourly rate ÷ your words per hour, in your currency. free.',
   },
   {
     id: 'per1000Words',
     label: 'Your per-1,000-word rate',
     type: 'number',
-    description: 'Per-word rate × 1,000, in your currency.',
+    description:
+    'Per-word rate × 1,000, in your currency.',
   },
   {
     id: 'perProjectQuote',
     label: 'Your project quote',
     type: 'number',
-    description: 'Per-word rate × your project word count. 0 when no word count is entered.',
+    description:
+    'Per-word rate × your project word count. 0 when no word count is entered.',
   },
   {
     id: 'breakdown',
     label: 'Rate breakdown',
     type: 'list',
-    description: 'Step-by-step breakdown of the calculation and any warnings.',
+    description:
+    'Step-by-step breakdown of the calculation and any warnings.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Freelance Writing Rates',
   description:
-    'Calculate your freelance writing rates from your own hourly rate and writing speed. Get per-word, per-1,000-word, and project quotes — no signup. Try it now!',
+    'Calculate your freelance writing rates from your own hourly rate and writing speed. Get per-word, per-1,000-word, and project quotes —.',
   howTo: [
     'Enter your target hourly rate in "Your hourly rate".',
     'Enter how many finished words you typically write per hour in "Words you write per hour".',
@@ -146,7 +150,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance writing rates 2026: Your hourly rate ÷ your words per hour, in your currency. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free freelance writing rates 2026: Your hourly rate ÷ your words per hour, in your currency. free.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'handles',
     label: 'Username ideas',
     type: 'list',
-    description: 'Free twitter username ideas 2026: 10 handle ideas, each within the 15-character limit. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free twitter username ideas 2026: 10 handle ideas, each within the 15-character limit. free.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Truncation notes and the availability reminder.',
+    description:
+    'Truncation notes and the availability reminder.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Username Ideas',
   description:
-    'Get Twitter username ideas instantly: enter a base name and get 10 X handle ideas in short, professional, or keyword styles. Free — find yours now!',
+    'Get Twitter username ideas instantly: enter a base name and get 10 X handle ideas in short, professional, or keyword styles. Free — find yours now.',
   howTo: [
     'Type a base name — your name, brand, or niche (for example, "cozy kitchen").',
     'Pick a style: short (punchy, 8 characters or fewer), professional (clean suffixes like _hq), or keyword (niche words like tips or daily).',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter username ideas 2026: 10 handle ideas, each within the 15-character limit. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free twitter username ideas 2026: 10 handle ideas, each within the 15-character limit. free.',
     },
     {
       '@context': 'https://schema.org',

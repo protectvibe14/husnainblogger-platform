@@ -40,38 +40,43 @@ export const outputs: ToolOutput[] = [
     id: 'totalScore',
     label: 'Audit score',
     type: 'number',
-    description: 'Free tiktok account audit 2026: Overall score 0–100. A manual self-audit estimate, not TikTok analytics. Get instant results. No signup - try it free now!',
+    description:
+    'Free tiktok account audit 2026: Overall score 0–100. A manual self-audit estimate, not TikTok analytics. Get instant results. free now.',
   },
   {
     id: 'grade',
     label: 'Grade',
     type: 'text',
-    description: 'Audit-Ready (85+), Solid (70–84), Needs work (50–69), or Rebuild (below 50).',
+    description:
+    'Audit-Ready (85+), Solid (70–84), Needs work (50–69), or Rebuild (below 50).',
   },
   {
     id: 'sectionScores',
     label: 'Section scores',
     type: 'table',
-    description: '0–100 per section: Bio & profile, Content quality, Consistency, Engagement.',
+    description:
+    '0–100 per section: Bio & profile, Content quality, Consistency, Engagement.',
   },
   {
     id: 'gapList',
     label: 'Gap list',
     type: 'list',
-    description: 'Criteria you scored 0–2 on — your biggest gaps.',
+    description:
+    'Criteria you scored 0–2 on — your biggest gaps.',
   },
   {
     id: 'prioritizedFixes',
     label: 'Prioritized fixes',
     type: 'list',
-    description: 'What to fix first, ordered by lowest score then highest weight.',
+    description:
+    'What to fix first, ordered by lowest score then highest weight.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Account Audit',
   description:
-    'Run a tiktok account audit with a free self-scored checklist: 4 categories, 0–100 scores, gap list, and prioritized fixes on a published rubric. Try it now!',
+    'Run a tiktok account audit with a free self-scored checklist: 4 categories, 0–100 scores, gap list, and prioritized fixes on a published rubric.',
   howTo: [
     'Open your TikTok profile and analytics in another tab so you answer honestly.',
     'Rate each of the 16 checklist questions 0–5 (0 = not true, 5 = fully true) across Bio & profile, Content quality, Consistency, and Engagement.',
@@ -145,7 +150,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok account audit 2026: Overall score 0–100. A manual self-audit estimate, not TikTok analytics. Get instant results. No signup - try it free now!',
+      description:
+    'Free tiktok account audit 2026: Overall score 0–100. A manual self-audit estimate, not TikTok analytics. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

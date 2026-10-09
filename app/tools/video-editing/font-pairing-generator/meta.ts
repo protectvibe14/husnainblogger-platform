@@ -24,7 +24,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Use this free font pairing generator — pick a mood and use case for curated heading/body font combos with Google Fonts links. Try it now, no signup.';
+  'Pair fonts that look professionally designed: pick a mood and use case for heading and body font combos with direct Google Fonts links included.';
 
 export const content: ToolContent = {
   title: 'Font Pairing Generator',

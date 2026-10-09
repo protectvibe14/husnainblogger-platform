@@ -28,19 +28,22 @@ export const outputs: ToolOutput[] = [
     id: 'caption',
     label: 'Caption',
     type: 'copy',
-    description: 'Free ai image caption generator 2026: The full caption generated for your image. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai image caption generator 2026: The full caption generated for your image. free.',
   },
   {
     id: 'altText',
     label: 'Alt text (≤125 chars)',
     type: 'copy',
-    description: 'SEO-friendly alt text trimmed to 125 characters.',
+    description:
+    'SEO-friendly alt text trimmed to 125 characters.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What this captioning model can and cannot do.',
+    description:
+    'What this captioning model can and cannot do.',
   },
 ];
 
@@ -120,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai image caption generator 2026: The full caption generated for your image. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai image caption generator 2026: The full caption generated for your image. free.',
     },
     {
       '@context': 'https://schema.org',

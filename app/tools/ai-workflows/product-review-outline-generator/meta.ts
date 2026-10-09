@@ -25,13 +25,15 @@ export const outputs: ToolOutput[] = [
     id: "outline",
     label: "Review outline (copy)",
     type: "copy",
-    description: "The full 10-section outline with your product filled in — copy it whole.",
+    description:
+    "The full 10-section outline with your product filled in — copy it whole.",
   },
   {
     id: "sections",
     label: "Section headings",
     type: "list",
-    description: "Numbered list of the 10 section headings for quick reference.",
+    description:
+    "Numbered list of the 10 section headings for quick reference.",
   },
 ];
 

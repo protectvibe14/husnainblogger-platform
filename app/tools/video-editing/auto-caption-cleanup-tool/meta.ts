@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Clean Up Auto Captions',
   description:
-    'Clean up auto captions fast: strip filler words, fix caps and punctuation, re-wrap lines from text, SRT, or VTT with a change log. Try it free.',
+    'Fix messy auto captions fast: strip filler words, fix caps and punctuation, and re-wrap lines from text, SRT, or VTT - with a full change log.',
   howTo: [
     'Paste your raw caption text — plain text, SRT, or VTT all work (timestamps and cue tags are stripped automatically).',
     'Toggle the fixes you want: fix capitalization, fix punctuation, and remove filler words like um and uh.',
@@ -119,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Clean up auto captions fast: strip filler words, fix caps and punctuation, re-wrap lines from text, SRT, or VTT with a change log. Try it free.',
+      description:
+    'Fix messy auto captions fast: strip filler words, fix caps and punctuation, and re-wrap lines from text, SRT, or VTT - with a full change log.',
     },
     {
       '@type': 'BreadcrumbList',

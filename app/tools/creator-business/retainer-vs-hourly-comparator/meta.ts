@@ -51,44 +51,50 @@ export const outputs: ToolOutput[] = [
     id: 'hourlyModelMonthlyCost',
     label: 'Hourly model monthly cost',
     type: 'currency',
-    description: 'Free retainer vs hourly calculator 2026: What the month costs billed hourly: hourlyRate x estimatedHoursPerMonth. Fast, private, no signup - try it now!',
+    description:
+    'Free retainer vs hourly calculator 2026: What the month costs billed hourly: hourlyRate x estimatedHoursPerMonth. Fast, private now.',
   },
   {
     id: 'retainerModelMonthlyCost',
     label: 'Retainer model monthly cost',
     type: 'currency',
-    description: 'Retainer fee plus overage for hours beyond the included hours.',
+    description:
+    'Retainer fee plus overage for hours beyond the included hours.',
   },
   {
     id: 'breakEvenHours',
     label: 'Break-even hours',
     type: 'number',
-    description: 'Monthly hours at which both models cost the same (null when they never cross).',
+    description:
+    'Monthly hours at which both models cost the same (null when they never cross).',
   },
   {
     id: 'cheaperOption',
     label: 'Cheaper option',
     type: 'text',
-    description: 'hourly, retainer, or tie at your estimated hours.',
+    description:
+    'hourly, retainer, or tie at your estimated hours.',
   },
   {
     id: 'savingsDifference',
     label: 'Monthly savings difference',
     type: 'currency',
-    description: 'Absolute dollar difference between the two models.',
+    description:
+    'Absolute dollar difference between the two models.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Defaults used and what the comparison does not cover.',
+    description:
+    'Defaults used and what the comparison does not cover.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Retainer vs Hourly Calculator',
   description:
-    'Compare retainer vs hourly pricing in seconds. Enter rates and hours to see which model costs less, the break-even point, and savings. Free - try it now!',
+    'Compare retainer vs hourly pricing in seconds. Enter rates and hours to see which model costs less, the break-even point, and savings. Free now.',
   howTo: [
     'Enter your hourly rate and the estimated hours per month for the engagement.',
     'Enter the retainer fee and how many hours it includes.',
@@ -182,7 +188,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free retainer vs hourly calculator 2026: What the month costs billed hourly: hourlyRate x estimatedHoursPerMonth. Fast, private, no signup - try it now!',
+      description:
+    'Free retainer vs hourly calculator 2026: What the month costs billed hourly: hourlyRate x estimatedHoursPerMonth. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

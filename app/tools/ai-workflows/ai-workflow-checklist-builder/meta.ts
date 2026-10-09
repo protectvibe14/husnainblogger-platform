@@ -9,13 +9,15 @@ export const outputs: ToolOutput[] = [
     id: "lines",
     label: "Checklist lines",
     type: "list",
-    description: "The assembled checklist: title plus one checkbox line per stage.",
+    description:
+    "The assembled checklist: title plus one checkbox line per stage.",
   },
   {
     id: "markdown",
     label: "Checklist (Markdown)",
     type: "copy",
-    description: "The same checklist as Markdown for reuse in your docs or project tool.",
+    description:
+    "The same checklist as Markdown for reuse in your docs or project tool.",
   },
 ];
 

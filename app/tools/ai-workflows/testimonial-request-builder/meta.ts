@@ -35,20 +35,22 @@ export const outputs: ToolOutput[] = [
     id: 'requestMessages',
     label: 'Request messages',
     type: 'list',
-    description: 'Free testimonial request template 2026: Ready-to-send testimonial request message for each client. Get instant results. No signup - try it free now!',
+    description:
+    'Free testimonial request template 2026: Ready-to-send testimonial request message for each client. Get instant results. free now.',
   },
   {
     id: 'followUpMessages',
     label: 'Follow-up messages',
     type: 'list',
-    description: 'Polite follow-up message for each client, sent a few days later.',
+    description:
+    'Polite follow-up message for each client, sent a few days later.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Testimonial Request Template',
   description:
-    'Ask for testimonials the right way with a free testimonial request template. Add client details, pick email/DM/form, and get ready-to-send messages. Try it now!',
+    'Ask for testimonials the right way with a free testimonial request template. Add client details, pick email/DM/form, and get ready-to-send messages.',
   howTo: [
     'Add one entry per client with their name and your product or service name.',
     'Set the channel for each entry: email, DM, or form (defaults to email).',
@@ -107,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free testimonial request template 2026: Ready-to-send testimonial request message for each client. Get instant results. No signup - try it free now!',
+      description:
+    'Free testimonial request template 2026: Ready-to-send testimonial request message for each client. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

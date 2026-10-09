@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Subtitle Line Breaker',
   description:
-    'Free subtitle line breaker 2026: Break subtitle lines automatically: paste a subtitle cue, set max chars per line, get. Fast, private, no signup - try it now!',
+    'Break subtitle lines the right way: paste a subtitle cue, set max characters per line and max lines, and get clean, readable breaks instantly.',
   howTo: [
     'Paste one subtitle cue into the subtitle text box.',
     'Set max characters per line (10-60, default 42) and max lines (1-3, default 2).',
@@ -115,7 +115,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free subtitle line breaker 2026: Break subtitle lines automatically: paste a subtitle cue, set max chars per line, get. Fast, private, no signup - try it now!',
+      description:
+    'Break subtitle lines the right way: paste a subtitle cue, set max characters per line and max lines, and get clean, readable breaks instantly.',
     },
     {
       '@type': 'BreadcrumbList',

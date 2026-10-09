@@ -35,7 +35,7 @@ const DESCRIPTION =
   'Free tiktok affiliate marketing video 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'TikTok Affiliate Marketing Video 2027',
+  title: 'TikTok Affiliate Marketing Video',
   description: DESCRIPTION,
   howTo: [
     'Type the product name into the "Product name" box — for example "mini portable blender".',

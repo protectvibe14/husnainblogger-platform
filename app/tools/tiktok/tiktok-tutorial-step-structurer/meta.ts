@@ -27,9 +27,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Structure a Tiktok Tutorial 2027',
+  title: 'How to Structure a Tiktok Tutorial',
   description:
-    'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private, no signup - try!',
+    'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private - try.',
   howTo: [
     'Type your tutorialTopic — what you are teaching (e.g. "tie a tie").',
     'Set stepCount between 2 and 12 for how many teaching steps the video needs.',
@@ -102,7 +102,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private, no signup - try!',
+      description:
+    'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

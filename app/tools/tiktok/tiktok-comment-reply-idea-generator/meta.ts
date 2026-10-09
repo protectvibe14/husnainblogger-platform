@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'replies',
     label: 'Reply ideas',
     type: 'list',
-    description: 'Free tiktok comment reply ideas 2026: Eight reply ideas: two each in funny, warm, witty, and redirect-to-video flavors. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok comment reply ideas 2026: Eight reply ideas: two each in funny, warm, witty, and redirect-to-video flavors. Fast, private now.',
   },
   {
     id: 'toneFocus',
     label: 'Tone focus',
     type: 'text',
-    description: 'Which tone leads the list, or "neutral boundary" for hostile comments.',
+    description:
+    'Which tone leads the list, or "neutral boundary" for hostile comments.',
   },
   {
     id: 'guidance',
     label: 'How to use the replies',
     type: 'text',
-    description: 'Honest usage note: templates only, never auto-posted.',
+    description:
+    'Honest usage note: templates only, never auto-posted.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Comment Reply Ideas',
   description:
-    'Get free tiktok comment reply ideas: paste any comment and get funny, warm, witty, and reply-with-video templates to choose from. Generate replies now!',
+    'Get free tiktok comment reply ideas: paste any comment and get funny, warm, witty, and reply-with-video templates to choose from. Generate replies now.',
   howTo: [
     'Paste the TikTok "Comment to reply to" (up to 150 characters — the TikTok comment limit).',
     'Pick a "Tone" to lead with (optional): funny, warm, witty, or redirect-to-video.',
@@ -123,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok comment reply ideas 2026: Eight reply ideas: two each in funny, warm, witty, and redirect-to-video flavors. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok comment reply ideas 2026: Eight reply ideas: two each in funny, warm, witty, and redirect-to-video flavors. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

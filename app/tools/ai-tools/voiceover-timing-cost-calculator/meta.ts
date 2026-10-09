@@ -44,31 +44,36 @@ export const outputs: ToolOutput[] = [
     id: 'wordCount',
     label: 'Word count',
     type: 'number',
-    description: 'Free voiceover cost calculator 2026: Counted from script text, or your override. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free voiceover cost calculator 2026: Counted from script text, or your override. free.',
   },
   {
     id: 'charCount',
     label: 'Character count',
     type: 'number',
-    description: 'Counted from script text; estimated at 5/word if only a word count is given.',
+    description:
+    'Counted from script text; estimated at 5/word if only a word count is given.',
   },
   {
     id: 'duration',
     label: 'Estimated duration',
     type: 'text',
-    description: 'mm:ss estimate at your chosen words-per-minute rate.',
+    description:
+    'mm:ss estimate at your chosen words-per-minute rate.',
   },
   {
     id: 'estimatedCostUSD',
     label: 'Estimated cost (USD)',
     type: 'currency',
-    description: 'Characters/1000 x your per-1k rate. Your rate is never invented by this tool.',
+    description:
+    'Characters/1000 x your per-1k rate. Your rate is never invented by this tool.',
   },
   {
     id: 'finishedMinuteCostUSD',
     label: 'Finished-minute cost (USD)',
     type: 'currency',
-    description: 'Duration in minutes x your optional per-finished-minute rate.',
+    description:
+    'Duration in minutes x your optional per-finished-minute rate.',
   },
 ];
 
@@ -148,7 +153,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free voiceover cost calculator 2026: Counted from script text, or your override. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free voiceover cost calculator 2026: Counted from script text, or your override. free.',
     },
     {
       '@context': 'https://schema.org',

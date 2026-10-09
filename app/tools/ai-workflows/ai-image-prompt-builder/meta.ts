@@ -44,7 +44,7 @@ export const itemFields: BuilderField[] = [
 export const content: ToolContent = {
   title: 'AI Image Prompt Generator',
   description:
-    'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private, no signup - try it!',
+    'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private.',
   howTo: [
     'Describe your image subject in the required subject field.',
     'Type an art style (photorealistic, anime, cinematic, …) — unknown styles fall back to photorealistic.',
@@ -105,7 +105,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private, no signup - try it!',
+      description:
+    'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

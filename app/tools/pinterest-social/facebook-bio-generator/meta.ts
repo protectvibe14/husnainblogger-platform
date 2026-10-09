@@ -34,38 +34,43 @@ export const outputs: ToolOutput[] = [
     id: 'bio',
     label: 'Your bio',
     type: 'copy',
-    description: 'Free facebook bio 2026: Your bio, trimmed to fit the selected mode\\. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free facebook bio 2026: Your bio, trimmed to fit the selected mode\\. free.',
   },
   {
     id: 'variants',
     label: 'More variants',
     type: 'list',
-    description: 'Three extra bios from the template bank, all within the limit.',
+    description:
+    'Three extra bios from the template bank, all within the limit.',
   },
   {
     id: 'pageBio',
     label: 'Bonus: Page version',
     type: 'copy',
-    description: 'The Facebook Page short-description variant (255 chars max).',
+    description:
+    'The Facebook Page short-description variant (255 chars max).',
   },
   {
     id: 'modeUsed',
     label: 'Mode used',
     type: 'text',
-    description: 'Which bio type and character limit the bio was built for.',
+    description:
+    'Which bio type and character limit the bio was built for.',
   },
   {
     id: 'capNote',
     label: 'Character check',
     type: 'text',
-    description: 'Bio length and whether it was trimmed to fit the limit.',
+    description:
+    'Bio length and whether it was trimmed to fit the limit.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Bio Generator',
   description:
-    'Generate a free facebook bio for your personal profile or Page. Enter who you are and what you do to get bios within Facebook\u2019s character limits. Try it now!',
+    'Fix your Facebook bio in just minutes: describe who you are and what you do to get polished profile and Page bios that fit the character limits.',
   howTo: [
     'Type who you are into the "Who you are" field (your name or Page name).',
     'Describe what you do in the "What you do" field, e.g. "baking custom cakes in Chicago".',
@@ -137,7 +142,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook bio 2026: Your bio, trimmed to fit the selected mode\\\\. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free facebook bio 2026: Your bio, trimmed to fit the selected mode\\\\. free.',
     },
     {
       '@type': 'BreadcrumbList',

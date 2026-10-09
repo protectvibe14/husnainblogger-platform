@@ -36,21 +36,21 @@ export const outputs: ToolOutput[] = [
     label: 'Lead magnet checklist',
     type: 'table',
     description:
-      'Free lead magnet checklist template 2026: Table of checklist steps: number, step, and detail. Rows with blank steps are auto-filled. Fast, private, no signup -!',
+    'Free lead magnet checklist template 2026: Table of checklist steps: number, step, and detail. Rows with blank steps are auto-filled. Fast, private -.',
   },
   {
     id: 'printable',
     label: 'Printable checklist',
     type: 'copy',
     description:
-      'Plain-text checklist with the magnet title, numbered steps, and details — ready to copy into a document or designer brief.',
+    'Plain-text checklist with the magnet title, numbered steps, and details — ready to copy into a document or designer brief.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Lead Magnet Checklist Template',
   description:
-    'Plan your freebie with this free lead magnet checklist template: add rows for steps, or auto-fill blank steps from a fixed framework. Start building!',
+    'Plan your freebie with this free lead magnet checklist template: add rows for steps, or auto-fill blank steps from a fixed framework. Start building.',
   howTo: [
     'Add one row per checklist step. On the first row, enter your lead magnet topic (required).',
     'Enter each step and an optional one-line detail, or leave a step blank to auto-fill it from a fixed 12-step framework.',
@@ -110,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free lead magnet checklist template 2026: Table of checklist steps: number, step, and detail. Rows with blank steps are auto-filled. Fast, private, no signup -!',
+      description:
+    'Free lead magnet checklist template 2026: Table of checklist steps: number, step, and detail. Rows with blank steps are auto-filled. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

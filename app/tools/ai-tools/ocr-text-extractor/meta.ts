@@ -28,13 +28,15 @@ export const outputs: ToolOutput[] = [
     id: 'extractedText',
     label: 'Extracted text',
     type: 'copy',
-    description: 'Free online ocr text extractor 2026: The printed text recognized from your image, ready to copy. Get instant results. No signup - try it free now!',
+    description:
+    'Free online ocr text extractor 2026: The printed text recognized from your image, ready to copy. Get instant results. free now.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What this OCR model can and cannot do.',
+    description:
+    'What this OCR model can and cannot do.',
   },
 ];
 
@@ -85,19 +87,19 @@ export const content: ToolContent = {
         'Good on clean, well-lit printed lines. Small, blurry, skewed or stylized text degrades results — always proofread the output before using it.',
     },
     {
-      question: 'How does the online ocr text extractor work?',
+      question: 'How do I get the best results from a scan?',
       answer:
-        'Enter your details using the inputs above and the online ocr text extractor calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Upload a sharp, straight, well-lit image of printed text — screenshots of documents and book pages work best. The tool runs the trocr-small-printed model on your device and returns editable text you can copy. Small, blurry, skewed, or stylized text degrades accuracy, so always proofread before you use the output.',
     },
     {
-      question: 'Is the online ocr text extractor free to use?',
+      question: 'Does the OCR work offline?',
       answer:
-        'Yes - this online ocr text extractor is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'After the first run, yes. The browser downloads about 120 MB of model weights once and caches them, so later extractions run entirely on your device with no internet needed. Your images never leave your computer or phone.',
     },
     {
-      question: 'What is an online ocr text extractor?',
+      question: 'Can it extract text from a multi-page PDF?',
       answer:
-        'An online ocr text extractor is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Not directly — it processes one image at a time. For a multi-page PDF, convert each page to an image (JPG or PNG) and run the pages through one by one. It reads printed text only; handwriting returns garbled or empty results.',
     },
   ],
   assumptions: [
@@ -114,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free online ocr text extractor 2026: The printed text recognized from your image, ready to copy. Get instant results. No signup - try it free now!',
+      description:
+    'Free online ocr text extractor 2026: The printed text recognized from your image, ready to copy. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

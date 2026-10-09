@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Mic Level Tester',
   description:
-    'Free mic level tester 2026: Test mic levels online: paste audio samples to get peak/RMS loudness in dBFS, clipping. Fast, private, no signup - try it now!',
+    'Test your mic levels before you hit record: paste audio samples for peak and RMS loudness in dBFS, plus clipping warnings and level targets.',
   howTo: [
     'Paste audio sample values (normalized -1 to 1, comma-separated, at least 8) into the samples box.',
     'Set your target level in dBFS — -12 is the default for voiceover work.',
@@ -104,7 +104,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free mic level tester 2026: Test mic levels online: paste audio samples to get peak/RMS loudness in dBFS, clipping. Fast, private, no signup - try it now!',
+      description:
+    'Test your mic levels before you hit record: paste audio samples for peak and RMS loudness in dBFS, plus clipping warnings and level targets.',
     },
     {
       '@type': 'BreadcrumbList',

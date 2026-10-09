@@ -70,14 +70,14 @@ export const outputs: ToolOutput[] = [
     label: 'Scope of work document (copy)',
     type: 'copy',
     description:
-      'Free freelance scope of work template 2026: Sectioned scope-of-work draft: deliverables, timeline, revisions, exclusions, payment,. Fast, private, no signup -!',
+    'Free freelance scope of work template 2026: Sectioned scope-of-work draft: deliverables, timeline, revisions, exclusions, payment. Fast, private -.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Scope of Work Template 2027',
+  title: 'Freelance Scope of Work Template',
   description:
-    'Write a freelance scope of work template that prevents scope creep: list deliverables, revisions, exclusions, and payment terms. Free, no signup!',
+    'Write a freelance scope of work template that prevents scope creep: list deliverables, revisions, exclusions, and payment terms. Free.',
   howTo: [
     'Enter the "Project title" and "Client name" exactly as they should appear.',
     'List each "Deliverable" on its own line — be specific about quantities and formats.',
@@ -167,7 +167,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance scope of work template 2026: Sectioned scope-of-work draft: deliverables, timeline, revisions, exclusions, payment,. Fast, private, no signup -!',
+      description:
+    'Free freelance scope of work template 2026: Sectioned scope-of-work draft: deliverables, timeline, revisions, exclusions, payment. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

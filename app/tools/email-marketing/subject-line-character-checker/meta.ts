@@ -19,10 +19,10 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Check email subject line character counter length: exact counts, per-client truncation previews for Gmail, iPhone Mail, and Outlook. Try it free now.';
+  'Keep subject lines uncut on every device: get exact character counts with per-client truncation previews for Gmail, iPhone Mail, Outlook, and more.';
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Character Counter 2027',
+  title: 'Email Subject Line Character Counter',
   description: DESCRIPTION,
   howTo: [
     'Paste or type your subject line into the subject-line field.',

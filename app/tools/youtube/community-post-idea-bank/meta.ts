@@ -34,21 +34,23 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Post ideas',
     type: 'list',
-    description: 'Free youtube community post ideas 2026: Ready-to-adapt post ideas with type, template number and character count. Fast, private, no signup - try it now!',
+    description:
+    'Free youtube community post ideas 2026: Ready-to-adapt post ideas with type, template number and character count. Fast, private now.',
   keywords: ['youtube community post ideas funny', 'youtube community post poll ideas', 'youtube quiz community post ideas'],
   },
   {
     id: 'note',
     label: 'Template note',
     type: 'text',
-    description: 'Bank size, no-publish disclaimer and character-limit guidance.',
+    description:
+    'Bank size, no-publish disclaimer and character-limit guidance.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'YouTube Community Post Ideas',
   description:
-    'Get free YouTube community post ideas for polls, images, text and quizzes: enter your niche and post type to get copy-ready drafts with templates. Try it now!',
+    'Get free YouTube community post ideas for polls, images, text and quizzes: enter your niche and post type to get copy-ready drafts with templates.',
   howTo: [
     'Type your Niche (e.g. sourdough baking) — it is inserted into every idea.',
     'Choose the Post Type: poll, image, text or quiz.',
@@ -130,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free youtube community post ideas 2026: Ready-to-adapt post ideas with type, template number and character count. Fast, private, no signup - try it now!',
+      description:
+    'Free youtube community post ideas 2026: Ready-to-adapt post ideas with type, template number and character count. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

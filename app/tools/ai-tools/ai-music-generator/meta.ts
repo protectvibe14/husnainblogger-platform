@@ -30,14 +30,15 @@ export const outputs: ToolOutput[] = [
     id: 'tracks',
     label: 'Generated songs',
     type: 'download',
-    description: 'Free ai music generator 2026: Two song variations per generation, playable on the page with a download button each. Fast, private, no signup - try it now!',
+    description:
+    'Free ai music generator 2026: Two song variations per generation, playable on the page with a download button each. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Music Generator',
   description:
-    'Make AI songs with your own Suno-compatible API key — describe the track, generate two variations, then play and download the MP3s. No signup needed.',
+    'Make AI songs with your own Suno-compatible API key — describe the track, generate two variations, then play and download the MP3s. needed.',
   howTo: [
     'Get a key from a Suno-compatible API provider and paste its base URL + key into the key vault above.',
     'Describe the music you want (up to 500 characters) and tick instrumental if you want no vocals.',
@@ -109,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Ai Music Generator 2026 – Free Generator - no signup required.',
+      description:
+    'Free Ai Music Generator 2026 – Free Generator - required.',
     },
     {
       '@context': 'https://schema.org',

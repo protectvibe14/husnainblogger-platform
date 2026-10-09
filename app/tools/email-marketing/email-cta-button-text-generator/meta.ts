@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email CTA Generator',
   description:
-    'Free email cta generator 2026: Write better email CTA buttons free: describe the action, pick a tone, and get verb-first. Fast, private, no signup - try it now!',
+    'Write CTA buttons people actually click: describe the action, pick from 4 tones, and get verb-first button copy capped at your chosen word count.',
   howTo: [
     'Describe the action your button triggers (e.g. "free guide").',
     'Optionally add your audience and pick a tone: direct, friendly, urgent, or playful.',
@@ -121,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email cta generator 2026: Write better email CTA buttons free: describe the action, pick a tone, and get verb-first. Fast, private, no signup - try it now!',
+      description:
+    'Write CTA buttons people actually click: describe the action, pick from 4 tones, and get verb-first button copy capped at your chosen word count.',
     },
     {
       '@type': 'BreadcrumbList',

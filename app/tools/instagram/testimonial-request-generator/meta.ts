@@ -32,26 +32,29 @@ export const outputs: ToolOutput[] = [
     id: 'requestScript',
     label: 'Testimonial request script (copy)',
     type: 'copy',
-    description: 'Free how to ask for testimonial 2026: A ready-to-send request tailored to your channel. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free how to ask for testimonial 2026: A ready-to-send request tailored to your channel. free.',
   },
   {
     id: 'questionPrompts',
     label: 'Prompt questions',
     type: 'list',
-    description: 'Six guided questions that make testimonials easy to write.',
+    description:
+    'Six guided questions that make testimonials easy to write.',
   },
   {
     id: 'thankYouNote',
     label: 'Thank-you note (copy)',
     type: 'copy',
-    description: 'A warm follow-up to send after the testimonial arrives.',
+    description:
+    'A warm follow-up to send after the testimonial arrives.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'How to Ask for Testimonial',
   description:
-    'Get how to ask for testimonial scripts that work: ready-to-send DM, email, or in-person requests plus six smart prompts. Free, no signup — build yours now!',
+    'Get how to ask for testimonial scripts that work: ready-to-send DM, email, or in-person requests plus six smart prompts. Free — build yours now.',
   howTo: [
     'Type the client\u2019s name in the "Client name" box.',
     'Describe the work in the "Project or service" box so the script feels personal.',
@@ -142,7 +145,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to ask for testimonial 2026: A ready-to-send request tailored to your channel. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free how to ask for testimonial 2026: A ready-to-send request tailored to your channel. free.',
     },
     {
       '@context': 'https://schema.org',

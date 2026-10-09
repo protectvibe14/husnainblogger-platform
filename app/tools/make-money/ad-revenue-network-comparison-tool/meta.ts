@@ -88,10 +88,10 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free adsense vs mediavine vs raptive calculator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Compare AdSense, Ezoic, Mediavine Journey, Mediavine, and Raptive side by side with your own traffic numbers. Enter your monthly sessions, say how much of your traffic comes from the US, and pick your blog niche — the tool then shows estimated monthly earnings per network, ranked best to worst, with each network\'s traffic requirement. All RPMs start as editable benchmarks, so adjust them to match your own data. Free, no signup.';
 
 export const content: ToolContent = {
-  title: 'Adsense vs Mediavine vs Raptive Calculator 2027',
+  title: 'Adsense vs Mediavine vs Raptive Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your Monthly sessions — the same traffic number is applied to all five networks.',

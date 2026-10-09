@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Generate a before after slider generator embed — add your image URLs and labels, then paste the code into any page. Free, no signup. Try it now.';
+  'Add a before/after slider to any web page: enter your image URLs and custom labels, choose a horizontal or vertical layout, then paste the embed code.';
 
 export const content: ToolContent = {
   title: 'Before After Slider Generator',

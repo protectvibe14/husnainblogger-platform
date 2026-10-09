@@ -28,26 +28,29 @@ export const outputs: ToolOutput[] = [
     id: 'covers',
     label: 'Cover specs',
     type: 'list',
-    description: 'Free instagram reels cover maker 2026: One validated cover spec per item: title, resolved background, and 1080x1920 canvas. Fast, private, no signup - try it!',
+    description:
+    'Free instagram reels cover maker 2026: One validated cover spec per item: title, resolved background, and 1080x1920 canvas. Fast, private.',
   },
   {
     id: 'safeZoneGuide',
     label: 'Safe-zone guide',
     type: 'list',
-    description: 'The 1080x1920 safe-zone facts the preview uses — keep titles inside the central band.',
+    description:
+    'The 1080x1920 safe-zone facts the preview uses — keep titles inside the central band.',
   },
   {
     id: 'count',
     label: 'Covers built',
     type: 'number',
-    description: 'How many cover specs were built.',
+    description:
+    'How many cover specs were built.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Reels Cover Maker',
   description:
-    'Design scroll-stopping covers with this free instagram reels cover maker: 1080x1920 specs, safe-zone guides, and validated cover plans. Build your covers now!',
+    'Design scroll-stopping covers with this free instagram reels cover maker: 1080x1920 specs, safe-zone guides, and validated cover plans. Build your.',
   howTo: [
     'Add one item per cover and type the "Cover title" (60 characters max — longer titles are rejected).',
     'Set the "Background" as a hex color like #0A0A0A, a named gradient (sunset, ocean, neon, mono, pastel), or an https:// image URL.',
@@ -107,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram reels cover maker 2026: One validated cover spec per item: title, resolved background, and 1080x1920 canvas. Fast, private, no signup - try it!',
+      description:
+    'Free instagram reels cover maker 2026: One validated cover spec per item: title, resolved background, and 1080x1920 canvas. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

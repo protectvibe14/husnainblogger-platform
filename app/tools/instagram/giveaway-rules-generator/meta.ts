@@ -40,9 +40,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Giveaway Rules Template 2027',
+  title: 'Instagram Giveaway Rules Template',
   description:
-    'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist. Try it now.',
+    'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist.',
   howTo: [
     'Describe the prize — e.g. "a $100 gift card".',
     'Pick an entry method: Like + comment, Follow both accounts, Tag a friend, or Share to your story.',
@@ -114,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist. Try it now.',
+      description:
+    'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist.',
     },
     {
       '@type': 'BreadcrumbList',

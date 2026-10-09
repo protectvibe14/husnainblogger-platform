@@ -41,20 +41,22 @@ export const outputs: ToolOutput[] = [
     id: "payoutPerReferral",
     label: "Payout per referral",
     type: "currency",
-    description: "Commission amount plus any flat bounty, for one referral.",
+    description:
+    "Commission amount plus any flat bounty, for one referral.",
   },
   {
     id: "quarterlyProgramCost",
     label: "Estimated quarterly program cost",
     type: "currency",
-    description: "Payout per referral multiplied by expected referrals per quarter.",
+    description:
+    "Payout per referral multiplied by expected referrals per quarter.",
   },
   {
     id: "programROIEstimate",
     label: "Program ROI estimate",
     type: "text",
     description:
-      "A labeled estimate of quarterly revenue vs. cost from your own inputs.",
+    "A labeled estimate of quarterly revenue vs. cost from your own inputs.",
   },
 ];
 

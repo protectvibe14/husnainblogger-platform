@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'netPayoutPerPlatform',
     label: 'Net payout per platform',
     type: 'table',
-    description: 'Free gumroad vs etsy fees 2026: Platforms ranked by net payout, highest first. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free gumroad vs etsy fees 2026: Platforms ranked by net payout, highest first. free.',
   },
   {
     id: 'bestNetPayout',
     label: 'Best net payout',
     type: 'text',
-    description: 'The platform with the highest net payout, or a tie note.',
+    description:
+    'The platform with the highest net payout, or a tie note.',
   },
   {
     id: 'feeBreakdownPerPlatform',
     label: 'Fee breakdown per platform',
     type: 'list',
-    description: 'How each platform’s fees were computed from your entered fees.',
+    description:
+    'How each platform’s fees were computed from your entered fees.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Gumroad Vs Etsy Fees Calculator',
   description:
-    'Compare gumroad vs etsy fees on any sale price: enter each platform\u2019s fee % and fixed fee to see ranked net payouts. No fee data stored \u2014 try it free now!',
+    'Compare gumroad vs etsy fees on any sale price: enter each platform\u2019s fee % and fixed fee to see ranked net payouts. No fee data stored \u2014 try.',
   howTo: [
     'Enter your sale price in USD (e.g. 29.99).',
     'Add one platform per line in the platforms box: name, fee %, fixed fee — e.g. "Gumroad, 10, 0.30".',
@@ -118,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free gumroad vs etsy fees 2026: Platforms ranked by net payout, highest first. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free gumroad vs etsy fees 2026: Platforms ranked by net payout, highest first. free.',
     },
     {
       '@type': 'BreadcrumbList',

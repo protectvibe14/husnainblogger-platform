@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'plan',
     label: 'Sequence plan',
     type: 'table',
-    description: 'Free how to plan instagram stories 2026: Ordered slots with format, draft text, and posting timing. Get instant results. No signup - try it free now!',
+    description:
+    'Free how to plan instagram stories 2026: Ordered slots with format, draft text, and posting timing. Get instant results. free now.',
   },
   {
     id: 'timingSuggestion',
     label: 'Timing suggestion',
     type: 'text',
-    description: 'Overall posting rhythm for the sequence.',
+    description:
+    'Overall posting rhythm for the sequence.',
   },
   {
     id: 'copyAll',
     label: 'Copy full plan',
     type: 'copy',
-    description: 'The whole sequence plan as plain text.',
+    description:
+    'The whole sequence plan as plain text.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'How to Plan Instagram Stories',
   description:
-    'Learn how to plan instagram stories: pick a goal, get an ordered story sequence with formats, drafts, and timing. Free planner, no signup. Try it now!',
+    'Learn how to plan instagram stories: pick a goal, get an ordered story sequence with formats, drafts, and timing. Free planner.',
   howTo: [
     'Pick your "Goal": Sell, Launch, Engage, Educate, or Announce.',
     'Choose "Number of stories" for the sequence (3–10, defaults to 5).',
@@ -123,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to plan instagram stories 2026: Ordered slots with format, draft text, and posting timing. Get instant results. No signup - try it free now!',
+      description:
+    'Free how to plan instagram stories 2026: Ordered slots with format, draft text, and posting timing. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -3,18 +3,20 @@
  * Owner: Admin.
  *
  * Runs 100% in the browser. The token is the admin's own fine-grained
- * PAT (repo-scoped), pasted at login and kept in localStorage — it never
- * touches our servers. All writes commit directly to the repo; Vercel
- * auto-deploys from git, so the site updates within a minute or two.
+ * PAT (repo-scoped), pasted at login and kept in sessionStorage via
+ * lib/admin-auth (dies with the tab; 8h absolute + 30min idle expiry) —
+ * it never touches our servers. All writes commit directly to the repo;
+ * Vercel auto-deploys from git, so the site updates within a minute or two.
  */
 import { REPO_OWNER, REPO_NAME, REPO_BRANCH } from "./admin-config";
+import { getToken } from "./admin-auth";
 
 const API = "https://api.github.com";
 
 function token(): string {
-  const t = localStorage.getItem("hb_admin_token");
-  if (!t) throw new Error("Not logged in.");
-  return t;
+  // Session-scoped PAT from admin-auth (sessionStorage, expiring).
+  // Throws "Not logged in..." when the session is dead — fail-closed.
+  return getToken();
 }
 
 async function gh(path: string, init?: RequestInit) {

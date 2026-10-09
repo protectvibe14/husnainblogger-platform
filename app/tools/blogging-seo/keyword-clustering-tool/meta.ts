@@ -23,26 +23,29 @@ export const outputs: ToolOutput[] = [
     id: 'clusters',
     label: 'Keyword clusters',
     type: 'table',
-    description: 'Groups of 2+ related keywords with a representative label.',
+    description:
+    'Groups of 2+ related keywords with a representative label.',
   },
   {
     id: 'unclustered',
     label: 'Unclustered keywords',
     type: 'list',
-    description: 'Keywords that did not group with any other keyword.',
+    description:
+    'Keywords that did not group with any other keyword.',
   },
   {
     id: 'clusterCount',
     label: 'Number of clusters',
     type: 'number',
-    description: 'How many clusters (groups of 2+) were found.',
+    description:
+    'How many clusters (groups of 2+) were found.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Keyword Clustering Tool – Free SEO 2027',
+  title: 'Keyword Clustering Tool – Free SEO',
   description:
-    'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now. No signup.',
+    'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now.',
   howTo: [
     'Paste your keyword list into the Keywords box, one keyword per line (2-500 unique keywords).',
     'Optionally set a Similarity threshold between 0.1 and 0.9 (default 0.35; lower groups more loosely, higher splits more strictly).',
@@ -120,7 +123,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now. No signup.',
+    'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now.',
     },
     {
       '@context': 'https://schema.org',

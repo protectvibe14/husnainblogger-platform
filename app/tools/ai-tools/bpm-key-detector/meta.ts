@@ -26,19 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'bpm',
     label: 'Tempo (BPM)',
     type: 'text',
-    description: 'Free bpm detector online 2026: Estimated tempo in beats per minute (±3%). Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free bpm detector online 2026: Estimated tempo in beats per minute (±3%). free.',
   },
   {
     id: 'key',
     label: 'Musical key',
     type: 'text',
-    description: 'Best-guess key from chroma analysis (e.g. C major).',
+    description:
+    'Best-guess key from chroma analysis (e.g. C major).',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What this DSP analysis can and cannot do.',
+    description:
+    'What this DSP analysis can and cannot do.',
   },
 ];
 
@@ -117,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free bpm detector online 2026: Estimated tempo in beats per minute (±3%). Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free bpm detector online 2026: Estimated tempo in beats per minute (±3%). free.',
     },
     {
       '@context': 'https://schema.org',

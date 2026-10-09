@@ -23,20 +23,22 @@ export const outputs: ToolOutput[] = [
     id: 'topics',
     label: 'Webinar topic titles',
     type: 'list',
-    description: 'Free webinar topic ideas 2026: Topic titles with one angle variant each, from fixed title formulas. Get instant results. No signup - try it free now!',
+    description:
+    'Free webinar topic ideas 2026: Topic titles with one angle variant each, from fixed title formulas. Get instant results. free now.',
   },
   {
     id: 'note',
     label: 'Word-bank note',
     type: 'text',
-    description: 'Which word bank was used (niche-specific or generic).',
+    description:
+    'Which word bank was used (niche-specific or generic).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Webinar Topic Ideas',
   description:
-    'Get fresh webinar title ideas — combine your niche and pain point through 8 fixed title formulas with angle variants. Free webinar topic ideas tool. Try it now!',
+    'Get fresh webinar title ideas — combine your niche and pain point through 8 fixed title formulas with angle variants. Free webinar topic ideas tool.',
   howTo: [
     'Optionally enter your niche — without it, a generic bank is used and labeled as generic.',
     'Describe your audience\'s pain point in a few words.',
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free webinar topic ideas 2026: Topic titles with one angle variant each, from fixed title formulas. Get instant results. No signup - try it free now!',
+      description:
+    'Free webinar topic ideas 2026: Topic titles with one angle variant each, from fixed title formulas. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

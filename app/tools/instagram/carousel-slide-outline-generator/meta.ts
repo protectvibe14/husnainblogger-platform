@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Slide outline',
     type: 'table',
-    description: 'Free instagram carousel ideas generator 2026: Slide-by-slide outline: number, role (hook/value/proof/CTA), text, and visual note. Fast, private, no signup -!',
+    description:
+    'Free instagram carousel ideas generator 2026: Slide-by-slide outline: number, role (hook/value/proof/CTA), text, and visual note. Fast, private -.',
   },
   {
     id: 'copyAll',
     label: 'Copy full outline',
     type: 'copy',
-    description: 'The complete outline as plain text, ready to paste into your design tool or notes.',
+    description:
+    'The complete outline as plain text, ready to paste into your design tool or notes.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Carousel Ideas Generator 2027',
+  title: 'Instagram Carousel Ideas Generator',
   description:
-    'Generate Instagram carousel post ideas free. Enter a topic, pick a goal and slide count, and get a slide-by-slide outline with visual notes. Build it now!',
+    'Generate Instagram carousel post ideas free. Enter a topic, pick a goal and slide count, and get a slide-by-slide outline with visual notes. Build it now.',
   howTo: [
     'Type your carousel topic in the "Carousel topic" box (e.g. "email marketing").',
     'Pick a post goal: educate, sell, grow, or engage — each goal uses its own slide formulas.',
@@ -122,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram carousel ideas generator 2026: Slide-by-slide outline: number, role (hook/value/proof/CTA), text, and visual note. Fast, private, no signup -!',
+      description:
+    'Free instagram carousel ideas generator 2026: Slide-by-slide outline: number, role (hook/value/proof/CTA), text, and visual note. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

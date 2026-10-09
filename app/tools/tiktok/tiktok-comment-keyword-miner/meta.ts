@@ -18,32 +18,36 @@ export const outputs: ToolOutput[] = [
     id: 'topWords',
     label: 'Word-frequency table',
     type: 'table',
-    description: 'Free tiktok comment analysis 2026: Top 15 words with counts and share of all meaningful words. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free tiktok comment analysis 2026: Top 15 words with counts and share of all meaningful words. free.',
   },
   {
     id: 'topPhrases',
     label: 'Top phrases',
     type: 'list',
-    description: 'Repeated two- and three-word phrases (minimum 2 occurrences).',
+    description:
+    'Repeated two- and three-word phrases (minimum 2 occurrences).',
   },
   {
     id: 'ideaSeeds',
     label: 'Content-idea seeds',
     type: 'list',
-    description: 'Video ideas built from your most frequent terms.',
+    description:
+    'Video ideas built from your most frequent terms.',
   },
   {
     id: 'summary',
     label: 'Analysis summary',
     type: 'text',
-    description: 'Comment count, top term, top emojis, and confidence notes.',
+    description:
+    'Comment count, top term, top emojis, and confidence notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Comment Analysis',
   description:
-    'Run free tiktok comment analysis: paste your comments and get word-frequency tables, top phrases, and content-idea seeds from real terms. Analyze now!',
+    'Run free tiktok comment analysis: paste your comments and get word-frequency tables, top phrases, and content-idea seeds from real terms. Analyze now.',
   howTo: [
     'Copy comments from the TikTok app and paste them into "Comments (one per line)" — one comment per line.',
     'Run the tool to get the word-frequency table, top phrases, and content-idea seeds.',
@@ -118,7 +122,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok comment analysis 2026: Top 15 words with counts and share of all meaningful words. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free tiktok comment analysis 2026: Top 15 words with counts and share of all meaningful words. free.',
     },
     {
       '@type': 'BreadcrumbList',

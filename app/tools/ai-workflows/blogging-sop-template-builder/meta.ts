@@ -9,13 +9,15 @@ export const outputs: ToolOutput[] = [
     id: "sopDocument",
     label: "SOP document",
     type: "copy",
-    description: "The full standard operating procedure in Markdown, ready to copy.",
+    description:
+    "The full standard operating procedure in Markdown, ready to copy.",
   },
   {
     id: "stepChecklist",
     label: "Step checklist",
     type: "list",
-    description: "One summary line per step with its owner and frequency.",
+    description:
+    "One summary line per step with its owner and frequency.",
   },
 ];
 

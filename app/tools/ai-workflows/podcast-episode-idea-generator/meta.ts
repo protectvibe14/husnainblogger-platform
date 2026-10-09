@@ -24,20 +24,22 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Episode ideas',
     type: 'list',
-    description: 'Free podcast episode ideas 2026: Episode title ideas, each with a segment breakdown from a fixed segment bank. Fast, private, no signup - try it now!',
+    description:
+    'Free podcast episode ideas 2026: Episode title ideas, each with a segment breakdown from a fixed segment bank. Fast, private now.',
   },
   {
     id: 'planNote',
     label: 'Plan note',
     type: 'text',
-    description: 'How segments were assigned for the episode length.',
+    description:
+    'How segments were assigned for the episode length.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Podcast Episode Ideas',
   description:
-    'Spark your next episodes — combine your show theme with 6 fixed title formulas and segment breakdowns. Free podcast episode ideas generator. Start planning now!',
+    'Spark your next episodes — combine your show theme with 6 fixed title formulas and segment breakdowns. Free podcast episode ideas generator. Start.',
   howTo: [
     'Enter your show\'s theme in a few words.',
     'Optionally set the episode length in minutes (defaults to 30).',
@@ -114,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free podcast episode ideas 2026: Episode title ideas, each with a segment breakdown from a fixed segment bank. Fast, private, no signup - try it now!',
+      description:
+    'Free podcast episode ideas 2026: Episode title ideas, each with a segment breakdown from a fixed segment bank. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

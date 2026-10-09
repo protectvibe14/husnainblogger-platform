@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Plan focused editing blocks with this free video editing pomodoro timer: set focus and break lengths, rounds, and a start time for a timed plan. Try it now.";
+  "Edit in focused sprints instead of marathons: set your focus and break lengths, round count, and start time for a pomodoro plan built for editors.";
 
 export const content: ToolContent = {
   title: "Video Editing Pomodoro Timer",

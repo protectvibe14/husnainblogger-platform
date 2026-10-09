@@ -18,20 +18,22 @@ export const outputs: ToolOutput[] = [
     id: 'ctaPhrases',
     label: 'CTA phrases',
     type: 'list',
-    description: 'Free facebook cta examples 2026: 6 short, verb-led in-post call-to-action phrases for your goal. Get instant results. No signup - try it free now!',
+    description:
+    'Free facebook cta examples 2026: 6 short, verb-led in-post call-to-action phrases for your goal. Get instant results. free now.',
   },
   {
     id: 'platformNote',
     label: 'Page button note',
     type: 'text',
-    description: 'Why this writes in-post CTA text, not your Page CTA button.',
+    description:
+    'Why this writes in-post CTA text, not your Page CTA button.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook CTA Examples',
   description:
-    'See the best facebook cta examples for your posts with this free generator: enter your goal to get 6 short verb-led CTA phrases for captions. Try it now!',
+    'End your posts with CTAs that actually get clicks: enter your goal to get 6 short, verb-led call-to-action phrases matched to your captions.',
   howTo: [
     'Type Your goal into the field (e.g. shop now, book a call, learn more).',
     'Click run to get 6 short, verb-led CTA phrases matched to your goal.',
@@ -108,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook cta examples 2026: 6 short, verb-led in-post call-to-action phrases for your goal. Get instant results. No signup - try it free now!',
+      description:
+    'Free facebook cta examples 2026: 6 short, verb-led in-post call-to-action phrases for your goal. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

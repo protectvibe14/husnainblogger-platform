@@ -19,20 +19,22 @@ export const outputs: ToolOutput[] = [
     id: 'covers',
     label: 'Cover text lines',
     type: 'list',
-    description: 'Free tiktok cover text ideas 2026: 8 big-bold cover lines, each capped at 25 characters for cover readability. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok cover text ideas 2026: 8 big-bold cover lines, each capped at 25 characters for cover readability. Fast, private now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all lines',
     type: 'copy',
-    description: 'All 8 cover lines as plain text, with honest variants suggested for any clickbait-flagged lines.',
+    description:
+    'All 8 cover lines as plain text, with honest variants suggested for any clickbait-flagged lines.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Cover Text Ideas',
   description:
-    'Get free tiktok cover text ideas: 8 big-bold cover lines capped at 25 chars for readability, with honest variants suggested for clickbait lines. Try it now!',
+    'Get free tiktok cover text ideas: 8 big-bold cover lines capped at 25 chars for readability, with honest variants suggested for clickbait lines.',
   howTo: [
     'Enter your "Video topic" (up to 60 characters).',
     'Run the tool to get 8 cover text lines in big-bold style, each 25 characters or fewer.',
@@ -109,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok cover text ideas 2026: 8 big-bold cover lines, each capped at 25 characters for cover readability. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok cover text ideas 2026: 8 big-bold cover lines, each capped at 25 characters for cover readability. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Content Pillars Template 2027',
+  title: 'YouTube Content Pillars Template',
   description: DESCRIPTION,
   howTo: [
     'Enter your channel niche, e.g. "home coffee".',

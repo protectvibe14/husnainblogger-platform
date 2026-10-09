@@ -42,26 +42,29 @@ export const outputs: ToolOutput[] = [
     id: 'preview',
     label: 'Page preview',
     type: 'list',
-    description: 'Free pinterest link in bio page 2026: The links on your page, in order. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free pinterest link in bio page 2026: The links on your page, in order. free.',
   },
   {
     id: 'htmlFile',
     label: 'HTML file (download)',
     type: 'download',
-    description: 'Single self-contained HTML file — save it with an .html extension.',
+    description:
+    'Single self-contained HTML file — save it with an.html extension.',
   },
   {
     id: 'notes',
     label: 'Build notes',
     type: 'list',
-    description: 'Auto-fixes applied (like added https://) and reminders.',
+    description:
+    'Auto-fixes applied (like added https://) and reminders.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Link in Bio Page',
   description:
-    'Build a free Pinterest link in bio page: add your links, pick a theme, and download one mobile-ready HTML file. No signup — create your page now!',
+    'Build a free Pinterest link in bio page: add your links, pick a theme, and download one mobile-ready HTML file. — create your page now.',
   howTo: [
     'Click "Add item" for every link you want — type the "Link label" and paste the URL (a missing https:// is added automatically).',
     'Fill the "Brand name" field once in any row — it becomes the page title.',
@@ -123,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest link in bio page 2026: The links on your page, in order. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free pinterest link in bio page 2026: The links on your page, in order. free.',
     },
     {
       '@context': 'https://schema.org',

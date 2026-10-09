@@ -26,20 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'headshot',
     label: 'Generated headshot',
     type: 'download',
-    description: 'Free ai headshot generator 2026: AI-polished professional headshot with a download button. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai headshot generator 2026: AI-polished professional headshot with a download button. free.',
   },
   {
     id: 'provider',
     label: 'Provider used',
     type: 'text',
-    description: 'Which of your connected providers generated the headshot.',
+    description:
+    'Which of your connected providers generated the headshot.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Headshot Generator',
   description:
-    'Turn a selfie into a professional AI headshot with your own API key. OpenRouter edits your photo; Hugging Face and fal.ai generate from text. No signup.',
+    'Turn a selfie into a professional AI headshot with your own API key. OpenRouter edits your photo; Hugging Face and fal.ai generate from text.',
   howTo: [
     'Save your API key in the key vault above — OpenRouter, Hugging Face Inference, or fal.ai.',
     'Upload a clear, front-facing selfie. Good lighting and a plain background give the best edits.',
@@ -111,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Ai Headshot Generator 2026 – Free Generator - no signup required.',
+      description:
+    'Free Ai Headshot Generator 2026 – Free Generator - required.',
     },
     {
       '@context': 'https://schema.org',

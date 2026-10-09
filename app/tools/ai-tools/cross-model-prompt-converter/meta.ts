@@ -32,19 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'convertedPrompt',
     label: 'Converted prompt',
     type: 'copy',
-    description: 'Free midjourney to flux prompt converter 2026: Your prompt rewritten in the target model’s syntax. Get instant results. No signup - try it free now!',
+    description:
+    'Free midjourney to flux prompt converter 2026: Your prompt rewritten in the target model’s syntax. Get instant results. free now.',
   },
   {
     id: 'droppedParams',
     label: 'Parameters that didn’t carry over',
     type: 'list',
-    description: 'Each dropped parameter with a plain-language reason.',
+    description:
+    'Each dropped parameter with a plain-language reason.',
   },
   {
     id: 'suggestions',
     label: 'Target-model suggestions',
     type: 'list',
-    description: 'Extra tweaks to get the most out of the target model.',
+    description:
+    'Extra tweaks to get the most out of the target model.',
   },
 ];
 
@@ -132,7 +135,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free midjourney to flux prompt converter 2026: Your prompt rewritten in the target model’s syntax. Get instant results. No signup - try it free now!',
+      description:
+    'Free midjourney to flux prompt converter 2026: Your prompt rewritten in the target model’s syntax. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

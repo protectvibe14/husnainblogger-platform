@@ -42,7 +42,7 @@ export const content: ToolContent = {
     },
     {
       title: 'Long title that truncates in search',
-      inputs: { title: 'I tested every AI video editing tool on the market in 2027 so you can skip the bad ones' },
+      inputs: { title: 'I tested every AI video editing tool on the market in so you can skip the bad ones' },
       note: 'Status: truncated-in-search — the tail past ~70 characters is cut off in search results.',
     },
     {

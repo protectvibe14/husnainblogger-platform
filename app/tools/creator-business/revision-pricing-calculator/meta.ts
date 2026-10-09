@@ -58,32 +58,36 @@ export const outputs: ToolOutput[] = [
     id: 'extraRevisionCount',
     label: 'Extra revisions',
     type: 'number',
-    description: 'Free how to charge for extra revisions 2026: max(0, requestedRevisions - includedRevisions). Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free how to charge for extra revisions 2026: max(0, requestedRevisions - includedRevisions). free.',
   },
   {
     id: 'revisionFee',
     label: 'Extra revision fee',
     type: 'currency',
-    description: 'Total fee for the extra revisions under your pricing mode.',
+    description:
+    'Total fee for the extra revisions under your pricing mode.',
   },
   {
     id: 'newProjectTotal',
     label: 'New project total',
     type: 'currency',
-    description: 'Base project fee plus the extra revision fee.',
+    description:
+    'Base project fee plus the extra revision fee.',
   },
   {
     id: 'note',
     label: 'Pricing note',
     type: 'text',
-    description: 'Plain-English summary of the charge, including prompts for edge cases.',
+    description:
+    'Plain-English summary of the charge, including prompts for edge cases.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'How to Charge for Extra Revisions 2027',
+  title: 'How to Charge for Extra Revisions',
   description:
-    'Price extra revisions fairly in seconds. Enter your fee, included rounds, and pricing mode to get the revision fee and new total. Free - try it now!',
+    'Price extra revisions fairly in seconds. Enter your fee, included rounds, and pricing mode to get the revision fee and new total. Free now.',
   howTo: [
     'Enter your base project fee and how many revision rounds it includes.',
     'Enter how many revision rounds the client actually requested.',
@@ -178,7 +182,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how to charge for extra revisions 2026: max(0, requestedRevisions - includedRevisions). Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free how to charge for extra revisions 2026: max(0, requestedRevisions - includedRevisions). free.',
     },
     {
       '@type': 'BreadcrumbList',

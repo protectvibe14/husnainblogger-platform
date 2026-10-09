@@ -40,26 +40,29 @@ export const outputs: ToolOutput[] = [
     id: 'pitch',
     label: 'Pitch message',
     type: 'text',
-    description: 'Free brand pitch dm template 2026: Multi-paragraph DM pitch assembled from the pitch template. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free brand pitch dm template 2026: Multi-paragraph DM pitch assembled from the pitch template. free.',
   },
   {
     id: 'subjectLines',
     label: 'Subject line options',
     type: 'list',
-    description: 'Six subject-line options for your pitch.',
+    description:
+    'Six subject-line options for your pitch.',
   },
   {
     id: 'copyAll',
     label: 'Copy pitch + subject lines',
     type: 'copy',
-    description: 'The full pitch plus subject lines as plain text.',
+    description:
+    'The full pitch plus subject lines as plain text.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Brand Pitch DM Template',
   description:
-    'Pitch brands with a proven brand pitch DM template. Enter the brand, your niche, and deliverable — get a ready-to-send pitch free. Try it now!',
+    'Pitch brands with a proven brand pitch DM template. Enter the brand, your niche, and deliverable — get a ready-to-send pitch free.',
   howTo: [
     'Enter the "Brand name" you want to pitch and "Your niche".',
     'Add "Your follower count" — your own number, used for phrasing only and never verified.',
@@ -136,7 +139,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free brand pitch dm template 2026: Multi-paragraph DM pitch assembled from the pitch template. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free brand pitch dm template 2026: Multi-paragraph DM pitch assembled from the pitch template. free.',
     },
     {
       '@type': 'BreadcrumbList',

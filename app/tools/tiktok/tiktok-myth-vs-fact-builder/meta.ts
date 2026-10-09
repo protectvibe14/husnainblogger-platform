@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Myth vs Fact TikTok',
   description:
-    'Build a myth vs fact tiktok video from your claims: hook, myth setup, reveal, fact beat, and CTA. Never invents facts — free template builder. Try it now!',
+    'Build a myth vs fact tiktok video from your claims: hook, myth setup, reveal, fact beat, and CTA. Never invents facts — free template builder.',
   howTo: [
     'Add one item per myth you want to bust (1–5 per run).',
     'Write the myth exactly as viewers say it — one line, max 200 characters.',
@@ -98,7 +98,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Build a myth vs fact tiktok video from your claims: hook, myth setup, reveal, fact beat, and CTA. Never invents facts — free template builder. Try it now!',
+      description:
+    'Build a myth vs fact tiktok video from your claims: hook, myth setup, reveal, fact beat, and CTA. Never invents facts — free template builder.',
     },
     {
       '@context': 'https://schema.org',

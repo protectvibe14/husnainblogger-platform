@@ -23,19 +23,22 @@ export const outputs: ToolOutput[] = [
     id: "variants",
     label: "Disclosure statement variants",
     type: "list",
-    description: "Four fixed disclosure variants (short, standard, detailed, friendly) for your content type.",
+    description:
+    "Four fixed disclosure variants (short, standard, detailed, friendly) for your content type.",
   },
   {
     id: "recommended",
     label: "Recommended statement",
     type: "copy",
-    description: "The best-matching variant for your chosen placement, ready to copy.",
+    description:
+    "The best-matching variant for your chosen placement, ready to copy.",
   },
   {
     id: "placementTip",
     label: "Placement tip",
     type: "text",
-    description: "Where to put the disclosure so readers actually see it.",
+    description:
+    "Where to put the disclosure so readers actually see it.",
   },
 ];
 
@@ -95,19 +98,19 @@ export const content: ToolContent = {
         "It fills fixed disclosure templates — no AI writing involved. A bank of 16 statements covers 4 content types in 4 tones, and the tool recommends the tone that fits your placement. These are templates, not legal advice, so have a human review them.",
     },
     {
-      question: 'How does the ai disclosure generator work?',
+      question: 'Do these templates count as legal compliance?',
       answer:
-        'Enter your details using the inputs above and the ai disclosure generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'No — they are transparency best-practice starters, not legal advice. Rules differ by platform and country: Meta and TikTok require labels on realistic AI-generated content, and regulators like the FTC expect clear disclosures in ads and endorsements. Use the templates to cover the basics, then check the policy of each platform you post on and the rules in your country — and have a human review anything high-stakes.',
     },
     {
-      question: 'Is the ai disclosure generator free to use?',
+      question: 'Do I have to disclose AI use at all?',
       answer:
-        'Yes - this ai disclosure generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'It depends on what you make and where you post. Realistic AI images, videos, and voices generally need a label on Meta, TikTok, and YouTube, and paid or sponsored content has stricter rules. When in doubt, disclosing is the safer move — the tool gives you short, standard, detailed, and friendly variants so you can pick the tone that fits your placement.',
     },
     {
-      question: 'What is an ai disclosure generator?',
+      question: 'Which tone should I choose for my disclosure?',
       answer:
-        'An ai disclosure generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Match the tone to the placement. A footer or video description can carry the detailed variant; a caption or story usually needs the short or friendly one. The tool recommends a tone for your chosen placement, and every statement is a fixed template you can paste as-is or tweak in your own voice.',
     },
   ],
   assumptions: [

@@ -24,14 +24,15 @@ export const outputs: ToolOutput[] = [
     id: 'quoteComments',
     label: 'Quote comment drafts',
     type: 'list',
-    description: 'Free quote tweet ideas 2026: 5 comment drafts in your chosen tone — each within 280 weighted chars (the quoted post. Fast, private, no signup - try it now!',
+    description:
+    'Free quote tweet ideas 2026: 5 comment drafts in your chosen tone — each within 280 weighted chars (the quoted post. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Quote Tweet Ideas',
   description:
-    'Get quote tweet ideas with the right tone: describe the post, pick agree, nuance, or disagree, and receive 5 drafts within X\'s limits. Free — try it now!',
+    'Quote tweet with the right take: describe the post you are quoting, pick agree, nuance, or disagree, and get 5 ready drafts within the 280-character limit.',
   howTo: [
     'Describe what you\'re quoting in the What you\'re quoting field (the post\'s main point).',
     'Pick your stance: Agree, Add nuance, or Disagree — nuance is the default.',
@@ -110,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free quote tweet ideas 2026: 5 comment drafts in your chosen tone — each within 280 weighted chars (the quoted post. Fast, private, no signup - try it now!',
+      description:
+    'Free quote tweet ideas 2026: 5 comment drafts in your chosen tone — each within 280 weighted chars (the quoted post. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

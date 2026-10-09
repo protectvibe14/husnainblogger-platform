@@ -25,9 +25,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Specs by Platform 2027',
+  title: 'Video Specs by Platform',
   description:
-    'Free video specs by platform 2026 2026: Look up video specs by platform for 2026: aspect ratios, resolutions, max duration, file. Fast, private, no signup -!',
+    'Look up video specs by platform in seconds: aspect ratios, resolutions, max durations, and file limits for TikTok, YouTube, Reels, and more.',
   howTo: [
     'Pick the platform: TikTok, YouTube, YouTube Shorts, Instagram Reels, Facebook, X, or Pinterest.',
     'Pick the spec type: video, image, or all.',
@@ -100,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free video specs by platform 2026 2026: Look up video specs by platform for 2026: aspect ratios, resolutions, max duration, file. Fast, private, no signup -!',
+      description:
+    'Look up video specs by platform in seconds: aspect ratios, resolutions, max durations, and file limits for TikTok, YouTube, Reels, and more.',
     },
     {
       '@type': 'BreadcrumbList',

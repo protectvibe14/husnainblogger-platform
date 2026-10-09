@@ -26,32 +26,36 @@ export const outputs: ToolOutput[] = [
     id: 'intro',
     label: 'Rules header',
     type: 'text',
-    description: 'Free facebook group rules template 2026: One-line header describing the rule set. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free facebook group rules template 2026: One-line header describing the rule set. free.',
   },
   {
     id: 'rules',
     label: 'Group rules',
     type: 'list',
-    description: '5 rules (spam, self-promo, respect, off-topic, moderation), each with a "why" line.',
+    description:
+    '5 rules (spam, self-promo, respect, off-topic, moderation), each with a "why" line.',
   },
   {
     id: 'copyAll',
     label: 'Copy all rules',
     type: 'copy',
-    description: 'Numbered rule set as plain text, ready to paste into your group description.',
+    description:
+    'Numbered rule set as plain text, ready to paste into your group description.',
   },
   {
     id: 'disclaimer',
     label: 'Disclaimer',
     type: 'text',
-    description: 'Why compliance with Facebook\u2019s rules stays the admin\u2019s job.',
+    description:
+    'Why compliance with Facebook\u2019s rules stays the admin\u2019s job.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Group Rules Template',
   description:
-    'Get a free facebook group rules template for your community. Pick your strictness level to get 5 enforceable rules with explanations. Try it now!',
+    'Set group rules once and enforce them easily: pick a relaxed, moderate, or strict stance to get 5 clear rules with plain-English explanations.',
   howTo: [
     'Describe your group\u2019s purpose in the "Group purpose" field (e.g. a support community for new parents).',
     'Pick "Strictness": relaxed, moderate (default), or strict.',
@@ -123,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook group rules template 2026: One-line header describing the rule set. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free facebook group rules template 2026: One-line header describing the rule set. free.',
     },
     {
       '@type': 'BreadcrumbList',

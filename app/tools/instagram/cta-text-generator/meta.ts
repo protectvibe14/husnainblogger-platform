@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'ctas',
     label: 'CTA lines',
     type: 'list',
-    description: 'Free call to action instagram post 2026: Call-to-action lines matched to your engagement goal. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free call to action instagram post 2026: Call-to-action lines matched to your engagement goal. free.',
   },
   {
     id: 'copyAll',
     label: 'Copy all CTAs',
     type: 'copy',
-    description: 'All CTA lines as plain text, ready to paste into your caption.',
+    description:
+    'All CTA lines as plain text, ready to paste into your caption.',
   },
   {
     id: 'bankSizes',
     label: 'Template bank info',
     type: 'text',
-    description: 'Documents the fixed template bank sizes behind the results.',
+    description:
+    'Documents the fixed template bank sizes behind the results.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Call To Action Instagram Post',
   description:
-    'Write a call to action Instagram post that gets comments, saves, and shares. Pick your goal, get proven CTA lines free — no signup needed. Try it now!',
+    'Write a call to action Instagram post that gets comments, saves, and shares. Pick your goal, get proven CTA lines free — needed.',
   howTo: [
     'Choose your "Engagement goal": comments, saves, shares, DMs, link clicks, or follows.',
     'Optionally add your post topic so each CTA mentions it naturally.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free call to action instagram post 2026: Call-to-action lines matched to your engagement goal. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free call to action instagram post 2026: Call-to-action lines matched to your engagement goal. free.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -19,20 +19,22 @@ export const outputs: ToolOutput[] = [
     id: 'comments',
     label: 'Pinned comment ideas',
     type: 'list',
-    description: 'Free tiktok pinned comment ideas 2026: 8 comment ideas (2 each: question, call to action, link in bio, follow-up), every one. Fast, private, no signup - try it!',
+    description:
+    'Free tiktok pinned comment ideas 2026: 8 comment ideas (2 each: question, call to action, link in bio, follow-up), every one. Fast, private.',
   },
   {
     id: 'copyAll',
     label: 'Copy all comments',
     type: 'copy',
-    description: 'All 8 comments as plain text — paste the one you like, then pin it in the TikTok app.',
+    description:
+    'All 8 comments as plain text — paste the one you like, then pin it in the TikTok app.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Pinned Comment Ideas',
   description:
-    'Get free tiktok pinned comment ideas: 8 comment templates (questions, CTAs, link-in-bio, follow-ups), all within TikTok\'s 150-char limit. Try it now!',
+    'Get free tiktok pinned comment ideas: 8 comment templates (questions, CTAs, link-in-bio, follow-ups), all within TikTok\.'s 150-char limit. Try it now!',
   howTo: [
     'Enter your "Video topic" (up to 60 characters).',
     'Run the tool to get 8 pinned comment ideas: 2 questions, 2 calls to action, 2 link-in-bio pointers, and 2 follow-ups.',
@@ -103,7 +105,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok pinned comment ideas 2026: 8 comment ideas (2 each: question, call to action, link in bio, follow-up), every one. Fast, private, no signup - try it!',
+      description:
+    'Free tiktok pinned comment ideas 2026: 8 comment ideas (2 each: question, call to action, link in bio, follow-up), every one. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

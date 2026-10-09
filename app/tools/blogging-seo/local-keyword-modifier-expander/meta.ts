@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'expansions',
     label: 'Local keyword ideas',
     type: 'list',
-    description: 'Free local keyword generator 2026: Geo-targeted keyword ideas combining your seed with location modifiers. Fast, private, no signup - try it now!',
+    description:
+    'Free local keyword generator 2026: Geo-targeted keyword ideas combining your seed with location modifiers. Fast, private now.',
   },
   {
     id: 'count',
     label: 'Idea count',
     type: 'number',
-    description: 'How many keyword ideas were generated.',
+    description:
+    'How many keyword ideas were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Local Keyword Generator',
   description:
-    'Turn one seed into geo-targeted ideas with this free local keyword generator. Combine proven modifiers with US, UK, CA and AU cities. Start now!',
+    'Turn one seed into geo-targeted ideas with this free local keyword generator. Combine proven modifiers with US, UK, CA and AU cities. Start now.',
   howTo: [
     'Type your service or product keyword into the "Seed keyword" box, e.g. plumber.',
     'Optionally paste your own locations (one per line) — or leave it empty to use the built-in 24-city US/UK/CA/AU list.',
@@ -109,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free local keyword generator 2026: Geo-targeted keyword ideas combining your seed with location modifiers. Fast, private, no signup - try it now!',
+      description:
+    'Free local keyword generator 2026: Geo-targeted keyword ideas combining your seed with location modifiers. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

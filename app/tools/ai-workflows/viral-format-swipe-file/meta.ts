@@ -74,7 +74,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Viral Content Formats 2026 – Free Tool - no signup required.',
+      description:
+    'Free Viral Content Formats 2026 – Free Tool - required.',
     },
     {
       '@type': 'WebPage',

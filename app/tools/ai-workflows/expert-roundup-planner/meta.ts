@@ -30,19 +30,22 @@ export const outputs: ToolOutput[] = [
     id: "questions",
     label: "Question list",
     type: "list",
-    description: "Your custom questions first, then 6 generic question templates labeled for personalization.",
+    description:
+    "Your custom questions first, then 6 generic question templates labeled for personalization.",
   },
   {
     id: "outreachTracker",
     label: "Outreach tracker",
     type: "table",
-    description: "One empty numbered row per expert slot — names and contacts are yours to fill in.",
+    description:
+    "One empty numbered row per expert slot — names and contacts are yours to fill in.",
   },
   {
     id: "timeline",
     label: "Follow-up timeline",
     type: "list",
-    description: "Fixed milestones from invite day to publish day, with follow-up reminders.",
+    description:
+    "Fixed milestones from invite day to publish day, with follow-up reminders.",
   },
 ];
 

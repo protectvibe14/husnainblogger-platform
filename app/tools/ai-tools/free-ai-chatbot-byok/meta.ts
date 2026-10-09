@@ -26,7 +26,8 @@ export const outputs: ToolOutput[] = [
     id: 'reply',
     label: 'AI reply',
     type: 'text',
-    description: 'Free free ai chatbot with api key 2026: The assistant answer returned by the provider you chose. Get instant results. No signup - try it free now!',
+    description:
+    'Free free ai chatbot with api key 2026: The assistant answer returned by the provider you chose. Get instant results. free now.',
   },
 ];
 
@@ -34,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Free AI Chatbot (BYOK)',
   description:
-    'Chat with AI using your own free Gemini, Groq, or OpenRouter key — or try the keyless demo lane. Your key stays in your browser. No signup, no cost to us.',
+    'Chat with AI using your own free Gemini, Groq, or OpenRouter key — or try the keyless demo lane. Your key stays in your browser., no cost to us.',
   howTo: [
     'Pick a provider below (Gemini, Groq, OpenRouter) and paste your free API key — or choose the keyless llm7.io demo lane.',
     'Type your message in the box and click Generate.',
@@ -106,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free free ai chatbot with api key 2026: The assistant answer returned by the provider you chose. Get instant results. No signup - try it free now!',
+      description:
+    'Free free ai chatbot with api key 2026: The assistant answer returned by the provider you chose. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

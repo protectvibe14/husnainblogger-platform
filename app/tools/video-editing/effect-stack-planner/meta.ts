@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'stack',
     label: 'Effect stack (in order)',
     type: 'list',
-    description: 'Free capcut effects order planner 2026: The effects to apply, in order: correction first, then grade, then stylization, then. Fast, private, no signup - try it!',
+    description:
+    'Free capcut effects order planner 2026: The effects to apply, in order: correction first, then grade, then stylization, then. Fast, private.',
   },
   {
     id: 'perfWarnings',
     label: 'Performance warnings',
     type: 'list',
-    description: 'Warnings about heavy effects on weak devices, redundant effects, and long render queues.',
+    description:
+    'Warnings about heavy effects on weak devices, redundant effects, and long render queues.',
   },
   {
     id: 'renderImpact',
     label: 'Render impact',
     type: 'text',
-    description: 'Qualitative render-impact estimate: low, med, or high.',
+    description:
+    'Qualitative render-impact estimate: low, med, or high.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Capcut Effects Order Planner',
   description:
-    'Plan your CapCut effects order in seconds: pick a look and device tier for a correctly ordered stack with intensity and render-impact guidance. Start now!',
+    'Plan your CapCut effects order in seconds: pick a look and device tier for a correctly ordered stack with intensity and render-impact guidance. Start now.',
   howTo: [
     'Describe the look you want, e.g. cinematic, vintage, neon glow, or glitchy.',
     'Select your device tier (low, mid, or high) so the plan accounts for performance.',
@@ -124,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free capcut effects order planner 2026: The effects to apply, in order: correction first, then grade, then stylization, then. Fast, private, no signup - try it!',
+      description:
+    'Free capcut effects order planner 2026: The effects to apply, in order: correction first, then grade, then stylization, then. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

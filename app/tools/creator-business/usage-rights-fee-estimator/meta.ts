@@ -59,32 +59,36 @@ export const outputs: ToolOutput[] = [
     id: 'estimatedUsageFee',
     label: 'Estimated usage fee',
     type: 'currency',
-    description: 'Free usage rights calculator photography 2026: Base fee × your duration, territory, and channel multipliers. Fast, private, no signup - try it now!',
+    description:
+    'Free usage rights calculator photography 2026: Base fee × your duration, territory, and channel multipliers. Fast, private now.',
   },
   {
     id: 'totalWithBase',
     label: 'Total with base + exclusivity',
     type: 'currency',
-    description: 'Base fee + usage fee + exclusivity add-on.',
+    description:
+    'Base fee + usage fee + exclusivity add-on.',
   },
   {
     id: 'factorBreakdown',
     label: 'Factor breakdown',
     type: 'list',
-    description: 'Line-by-line explanation of the factors applied.',
+    description:
+    'Line-by-line explanation of the factors applied.',
   },
   {
     id: 'note',
     label: 'Note',
     type: 'text',
-    description: 'Warns when a multiplier is 0 (usually a data-entry mistake).',
+    description:
+    'Warns when a multiplier is 0 (usually a data-entry mistake).',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Usage Rights Calculator Photography 2027',
+  title: 'Usage Rights Calculator Photography',
   description:
-    'Estimate photo usage-rights fees from your base fee and your own duration, territory, and channel multipliers. No rate tables — free forever. Try it now!',
+    'Estimate photo usage-rights fees from your base fee and your own duration, territory, and channel multipliers. No rate tables — free forever.',
   howTo: [
     'Enter your base creative fee — what you charge to produce the work.',
     'Enter the usage duration in months for context in the breakdown.',
@@ -183,7 +187,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free usage rights calculator photography 2026: Base fee × your duration, territory, and channel multipliers. Fast, private, no signup - try it now!',
+      description:
+    'Free usage rights calculator photography 2026: Base fee × your duration, territory, and channel multipliers. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

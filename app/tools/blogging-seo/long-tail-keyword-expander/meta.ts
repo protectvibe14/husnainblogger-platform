@@ -16,20 +16,22 @@ export const outputs: ToolOutput[] = [
     id: 'expansions',
     label: 'Long-tail idea seeds',
     type: 'list',
-    description: 'Keyword variations built from fixed modifier templates.',
+    description:
+    'Keyword variations built from fixed modifier templates.',
   },
   {
     id: 'count',
     label: 'Ideas generated',
     type: 'number',
-    description: 'How many idea seeds were produced.',
+    description:
+    'How many idea seeds were produced.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Long Tail Keyword Generator – Free 2027',
+  title: 'Long Tail Keyword Generator – Free',
   description:
-    'Generate long tail keyword ideas from any seed keyword with fixed modifier templates. Free long tail keyword generator, no signup — expand your seed now!',
+    'Generate long tail keyword ideas from any seed keyword with fixed modifier templates. Free long tail keyword generator — expand your seed now.',
   howTo: [
     'Type your seed keyword (2-100 characters) into the Seed keyword field.',
     'Click Generate to build variations from the fixed template banks.',
@@ -108,7 +110,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free long tail keyword generator: expand any seed keyword into idea seeds using fixed modifier templates. No signup.',
+    'Free long tail keyword generator: expand any seed keyword into idea seeds using fixed modifier templates.',
     },
     {
       '@context': 'https://schema.org',

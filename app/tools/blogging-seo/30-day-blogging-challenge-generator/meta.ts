@@ -24,20 +24,22 @@ export const outputs: ToolOutput[] = [
     id: 'challenge',
     label: '30-day challenge',
     type: 'table',
-    description: 'Free 30 day blog challenge 2026: Day-by-day plan: date, task and focus label for all 30 days. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free 30 day blog challenge 2026: Day-by-day plan: date, task and focus label for all 30 days. free.',
   },
   {
     id: 'checklistMarkdown',
     label: 'Checklist',
     type: 'copy',
-    description: 'The 30-day challenge as a Markdown checklist with tick boxes.',
+    description:
+    'The 30-day challenge as a Markdown checklist with tick boxes.',
   },
 ];
 
 export const content: ToolContent = {
   title: '30 Day Blog Challenge',
   description:
-    'Take the 30 day blog challenge: one daily blogging task for 30 days, dated from your start date, with a tick-off checklist. Free — start your challenge today!',
+    'Take the 30 day blog challenge: one daily blogging task for 30 days, dated from your start date, with a tick-off checklist. Free — start your challenge.',
   howTo: [
     'Type your niche into the Niche field (2-80 characters).',
     'Optionally pick a start date — it defaults to today.',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free 30 day blog challenge 2026: Day-by-day plan: date, task and focus label for all 30 days. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free 30 day blog challenge 2026: Day-by-day plan: date, task and focus label for all 30 days. free.',
     },
     {
       '@context': 'https://schema.org',

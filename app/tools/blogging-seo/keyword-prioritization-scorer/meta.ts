@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'rankedKeywords',
     label: 'Ranked keywords',
     type: 'table',
-    description: 'Free keyword prioritization matrix 2026: Your keywords ranked by composite score, with priority bands. Get instant results. No signup - try it free now!',
+    description:
+    'Free keyword prioritization matrix 2026: Your keywords ranked by composite score, with priority bands. Get instant results. free now.',
   },
   {
     id: 'topPick',
     label: 'Top pick',
     type: 'text',
-    description: 'The highest-scoring keyword and what it scores best on.',
+    description:
+    'The highest-scoring keyword and what it scores best on.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Keyword Prioritization Matrix',
   description:
-    'Rank keywords by real trade-offs with this free keyword prioritization matrix. Score relevance, volume, difficulty and intent transparently. Score yours now!',
+    'Rank keywords by real trade-offs with this free keyword prioritization matrix. Score relevance, volume, difficulty and intent transparently. Score.',
   howTo: [
     'List your keywords in the box, one per line, as: term | relevance | volume | difficulty | commercial intent.',
     'Rate each factor 0-10 from your own research (difficulty: 10 = hardest to rank).',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free keyword prioritization matrix 2026: Your keywords ranked by composite score, with priority bands. Get instant results. No signup - try it free now!',
+      description:
+    'Free keyword prioritization matrix 2026: Your keywords ranked by composite score, with priority bands. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

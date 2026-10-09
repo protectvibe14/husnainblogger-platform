@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Video Hook Checker',
   description:
-    'Use this video hook checker on your opening line: get a 0-100 checklist score, a criterion breakdown, and fix suggestions from a clear rubric. Score yours free.',
+    'Score your video hook before you film it: paste your opening line for a 0-100 checklist score, a full criterion breakdown, and practical fix suggestions.',
   howTo: [
     'Paste your hook — the first line viewers hear (3-280 characters).',
     'Optionally add your niche so suggestions read in your context.',
@@ -102,7 +102,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this video hook checker on your opening line: get a 0-100 checklist score, a criterion breakdown, and fix suggestions from a clear rubric. Score yours free.',
+      description:
+    'Score your video hook before you film it: paste your opening line for a 0-100 checklist score, a full criterion breakdown, and practical fix suggestions.',
     },
     {
       '@type': 'BreadcrumbList',

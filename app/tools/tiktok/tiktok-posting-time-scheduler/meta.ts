@@ -35,9 +35,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time to Post on Tiktok Planner 2027',
+  title: 'Best Time to Post on Tiktok Planner',
   description:
-    'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no!',
+    'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no.',
   howTo: [
     'Enter your timezone as an IANA name (e.g. America/New_York) so windows show in your local time.',
     'Enter your niche and how many posts per week you can realistically publish (1–21).',
@@ -76,24 +76,24 @@ export const content: ToolContent = {
         'Use the schedule as a starting point, post at those windows for 2–4 weeks, then replace the estimates with your real data from TikTok Analytics (Followers → follower activity). This tool never claims to know your audience — it cannot read your account.',
     },
     {
-      question: 'How does the best time to post on tiktok planner work?',
+      question: 'What are the 5 posting windows based on?',
       answer:
-        'Enter your details using the inputs above and the best time to post on tiktok planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'They are fixed general-guidance slots — morning, late morning, lunch, evening, and evening peak — spread across the week in your IANA timezone for 1 to 21 posts per week. They are not measured from your account and not personalized to your niche; think of them as sensible starting windows to test, then replace with your real data from TikTok Analytics (Followers, then follower activity) after 2–4 weeks.',
     },
     {
-      question: 'Is the best time to post on tiktok planner free to use?',
+      question: 'Is posting more often always better?',
       answer:
-        'Yes - this best time to post on tiktok planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'No — consistency beats volume. The tool accepts 1 to 21 posts per week and spreads them sensibly, but three strong posts a week on a steady rhythm will outperform seven rushed ones. Pick a number you can sustain, post at the scheduled windows for a few weeks, then adjust based on your Analytics, not on the schedule.',
     },
     {
-      question: 'What is a best time to post on tiktok planner?',
+      question: 'Why does it ask for my IANA timezone?',
       answer:
-        'A best time to post on tiktok planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'So every window shows in your local clock time. TikTok audiences scroll on their own routines, and generic advice like \'post at 7pm\' is meaningless without knowing whose 7pm. Enter your timezone once (for example America/Chicago) and the whole week table is built around it.',
     },
     {
-      question: 'Do I need to create an account to use the best time to post on tiktok planner?',
+      question: 'Does the scheduler post to TikTok for me?',
       answer:
-        'No account needed. Open the best time to post on tiktok planner, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+        'No — it builds a day-by-day posting schedule table, and you do the actual posting in TikTok (or your scheduler of choice). It never asks for a TikTok login, connects to nothing, and sends no data anywhere; everything runs in your browser.',
     },
   ],
   assumptions: [
@@ -109,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no!',
+      description:
+    'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no.',
     },
     {
       '@type': 'BreadcrumbList',

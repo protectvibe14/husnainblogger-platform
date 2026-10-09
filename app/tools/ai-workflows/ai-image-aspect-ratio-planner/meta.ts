@@ -129,7 +129,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this AI image aspect ratio guide: enter width and height or pick a preset, get the simplified ratio, nearest presets, and crop guidance. Free.',
+      description:
+    'Use this AI image aspect ratio guide: enter width and height or pick a preset, get the simplified ratio, nearest presets, and crop guidance. Free.',
     },
     {
       '@type': 'BreadcrumbList',

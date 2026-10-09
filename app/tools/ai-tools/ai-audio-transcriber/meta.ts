@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'transcript',
     label: 'Transcript text',
     type: 'text',
-    description: 'Free ai audio transcriber 2026: The transcribed speech, shown on screen for reading and copying. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai audio transcriber 2026: The transcribed speech, shown on screen for reading and copying. Get instant results. free now.',
   },
   {
     id: 'transcriptFile',
     label: 'Transcript file',
     type: 'download',
-    description: 'The transcript as a .txt file download.',
+    description:
+    'The transcript as a.txt file download.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Audio Transcriber',
   description:
-    'Transcribe audio free with AI in your browser — MP3, WAV, M4A to text, .txt download, no signup. Speech recognition runs 100% on your device.',
+    'Transcribe audio free with AI in your browser — MP3, WAV, M4A to text.txt download Speech recognition runs 100% on your device.',
   howTo: [
     'Drop an audio file (MP3, WAV, M4A, OGG, WEBM or FLAC up to 25 MB) onto the upload area, or click to browse.',
     'Pick Tiny for a fast ~39 MB model, or Base (~74 MB) for more accurate transcription.',
@@ -119,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai audio transcriber 2026: The transcribed speech, shown on screen for reading and copying. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai audio transcriber 2026: The transcribed speech, shown on screen for reading and copying. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

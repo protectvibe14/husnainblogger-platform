@@ -1,7 +1,7 @@
 // GENERATED — DO NOT EDIT.
 // Built by scripts/build-registry.mjs from data/tools-inventory.json
-// source sha256: 11fc4c90b45fcbf3f29fbdf7601101fd3e375fc60ce4490b3564e57abdeefa09
-// generated (UTC): 2026-10-07T10:02:33.324Z
+// source sha256: 8548413dcbd45802a04a5d36d468fdf8a3eea27d412e7ab928ad64b704b8bae9
+// generated (UTC): 2026-10-09T09:38:24.923Z
 // Regenerate: npm run codegen   (from app/)
 //
 import type { CategorySlug, ToolDefinition } from "../lib/registry/types.ts";
@@ -10,8 +10,8 @@ import type { CategorySlug, ToolDefinition } from "../lib/registry/types.ts";
 export type ToolRecord = ToolDefinition;
 
 /** sha256 of the inventory this file was generated from. */
-export const REGISTRY_HASH = "11fc4c90b45fcbf3f29fbdf7601101fd3e375fc60ce4490b3564e57abdeefa09";
-export const GENERATED_AT = "2026-10-07T10:02:33.324Z";
+export const REGISTRY_HASH = "8548413dcbd45802a04a5d36d468fdf8a3eea27d412e7ab928ad64b704b8bae9";
+export const GENERATED_AT = "2026-10-09T09:38:24.923Z";
 export const TOOL_COUNT = 576;
 
 /** All tools in inventory order. */
@@ -50,7 +50,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "search intent checker",
     "secondaryKeywords": [
       "keyword intent analyzer",
-      "search intent classifier",
+      "search query intent analysis tool",
       "informational vs transactional keywords"
     ],
     "status": "BUILT",
@@ -71,7 +71,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "keyword clustering tool",
     "secondaryKeywords": [
-      "group keywords free",
+      "group keywords online free",
       "keyword grouping tool",
       "cluster keywords by topic"
     ],
@@ -94,7 +94,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "question keyword generator",
     "secondaryKeywords": [
       "questions people ask generator",
-      "interrogative keywords tool",
+      "question keywords tool",
       "question-based keyword ideas"
     ],
     "status": "BUILT",
@@ -306,7 +306,7 @@ export const tools: ToolRecord[] = [
     "toolType": "checker",
     "primaryKeyword": "transition words checker",
     "secondaryKeywords": [
-      "transition words list checker",
+      "linking words checker",
       "yoast transition words alternative"
     ],
     "status": "BUILT",
@@ -1171,7 +1171,7 @@ export const tools: ToolRecord[] = [
     "toolType": "calculator",
     "primaryKeyword": "etsy fee calculator",
     "secondaryKeywords": [
-      "etsy fees calculator 2026",
+      "etsy fees calculator 2027",
       "how much does etsy take per sale",
       "etsy seller fee breakdown"
     ],
@@ -1613,7 +1613,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "how much do voice actors charge",
       "voiceover pricing guide",
-      "voice over rate calculator"
+      "voiceover pricing per word"
     ],
     "status": "BUILT",
     "version": "0.1.0",
@@ -1788,7 +1788,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "ugc pricing calculator",
     "secondaryKeywords": [
       "how much do ugc creators charge",
-      "ugc rates 2026",
+      "ugc rates 2027",
       "ugc creator pricing guide"
     ],
     "status": "BUILT",
@@ -2118,7 +2118,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "epc calculator affiliate",
     "secondaryKeywords": [
       "what is epc in affiliate marketing",
-      "affiliate epc calculator",
+      "how to calculate epc affiliate marketing",
       "earnings per click calculator"
     ],
     "status": "BUILT",
@@ -2447,7 +2447,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "b-roll shot list generator",
     "secondaryKeywords": [
-      "b roll ideas for youtube",
+      "b-roll ideas for youtube",
       "b-roll shot list template",
       "video b-roll planner"
     ],
@@ -2978,7 +2978,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "background music for youtube videos finder",
     "secondaryKeywords": [
-      "royalty free music search terms",
+      "royalty free background music for videos",
       "youtube background music ideas",
       "find music for videos"
     ],
@@ -3876,7 +3876,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "tiktok green screen ideas",
     "secondaryKeywords": [
-      "green screen tiktok ideas",
+      "tiktok green screen ideas for beginners",
       "tiktok green screen effect ideas",
       "commentary tiktok ideas"
     ],
@@ -4184,7 +4184,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "tiktok shop description",
     "secondaryKeywords": [
-      "tiktok shop product description",
+      "tiktok shop listing copy ideas",
       "how to write tiktok shop listing",
       "tiktok shop description example"
     ],
@@ -4379,7 +4379,7 @@ export const tools: ToolRecord[] = [
     "toolType": "checker",
     "primaryKeyword": "instagram banned hashtags checker",
     "secondaryKeywords": [
-      "banned hashtags instagram 2026",
+      "banned hashtags instagram 2027",
       "check if hashtag is banned instagram",
       "instagram hashtag ban list"
     ],
@@ -4402,7 +4402,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "instagram hashtag strategy builder",
     "secondaryKeywords": [
       "instagram hashtag mix strategy",
-      "how many hashtags per post 2026",
+      "how many hashtags per post 2027",
       "hashtag tiers instagram"
     ],
     "status": "BUILT",
@@ -4424,7 +4424,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "instagram shadowban test",
     "secondaryKeywords": [
       "how to check shadowban instagram",
-      "instagram shadowban test 2026",
+      "instagram shadowban test 2027",
       "why did my instagram reach drop"
     ],
     "status": "BUILT",
@@ -4533,7 +4533,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "instagram highlight names ideas",
     "secondaryKeywords": [
-      "instagram highlight name ideas",
+      "creative story highlight names",
       "story highlight titles",
       "highlight names for business"
     ],
@@ -4952,7 +4952,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "how many times post instagram per week",
       "instagram posting schedule",
-      "posting frequency 2026"
+      "posting frequency 2027"
     ],
     "status": "BUILT",
     "version": "0.1.0",
@@ -5304,7 +5304,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "hashtag block instagram",
       "copy paste hashtag sets",
-      "best hashtag sets 2026"
+      "best hashtag sets 2027"
     ],
     "status": "BUILT",
     "version": "0.1.0",
@@ -5324,7 +5324,7 @@ export const tools: ToolRecord[] = [
     "toolType": "planner",
     "primaryKeyword": "best time to post on instagram",
     "secondaryKeywords": [
-      "when to post reels 2026",
+      "when to post reels 2027",
       "instagram posting time planner",
       "best time to post planner"
     ],
@@ -5893,7 +5893,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "find silence in audio",
     "secondaryKeywords": [
       "detect pauses in recording",
-      "silence remover planner",
+      "audio silence remover online",
       "find gaps in voiceover"
     ],
     "status": "BUILT",
@@ -5978,9 +5978,9 @@ export const tools: ToolRecord[] = [
     "categorySlug": "video-editing",
     "slug": "platform-spec-lookup",
     "toolType": "generator",
-    "primaryKeyword": "video specs by platform 2026",
+    "primaryKeyword": "video specs by platform 2027",
     "secondaryKeywords": [
-      "tiktok video specs 2026",
+      "tiktok video specs 2027",
       "youtube shorts dimensions",
       "instagram reels size requirements"
     ],
@@ -7788,7 +7788,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "idea pin script template",
       "pinterest story pin ideas",
-      "idea pin content ideas"
+      "what to post on idea pins"
     ],
     "status": "BUILT",
     "version": "0.1.0",
@@ -8116,7 +8116,7 @@ export const tools: ToolRecord[] = [
     "toolType": "generator",
     "primaryKeyword": "twitter thread ideas",
     "secondaryKeywords": [
-      "thread ideas twitter",
+      "viral thread ideas twitter",
       "twitter thread topics",
       "how to write twitter threads"
     ],
@@ -9309,7 +9309,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "lead magnet ideas for bloggers",
       "freebie ideas for email list",
-      "best lead magnets 2026"
+      "best lead magnets 2027"
     ],
     "status": "BUILT",
     "version": "0.1.0",
@@ -10276,7 +10276,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "quarterly estimated tax calculator freelancer",
     "secondaryKeywords": [
       "freelancer tax estimator",
-      "self employment tax calculator 2026",
+      "self employment tax calculator 2027",
       "1099 tax calculator"
     ],
     "status": "BUILT",
@@ -10342,7 +10342,7 @@ export const tools: ToolRecord[] = [
     "primaryKeyword": "wedding photography pricing calculator",
     "secondaryKeywords": [
       "how much to charge for wedding photography",
-      "wedding photographer rates 2026",
+      "wedding photographer rates 2027",
       "wedding photography packages"
     ],
     "status": "BUILT",
@@ -12484,7 +12484,7 @@ export const tools: ToolRecord[] = [
     "secondaryKeywords": [
       "check blog post freshness",
       "content update priority checker",
-      "is my content outdated checker"
+      "check if my content is outdated"
     ],
     "status": "BUILT",
     "version": "0.1.0",

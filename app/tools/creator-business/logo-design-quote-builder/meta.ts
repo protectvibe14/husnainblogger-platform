@@ -11,13 +11,15 @@ export const outputs: ToolOutput[] = [
     id: 'itemizedQuote',
     label: 'Itemized quote',
     type: 'table',
-    description: 'Design fee plus every line item, ending with the quote total.',
+    description:
+    'Design fee plus every line item, ending with the quote total.',
   },
   {
     id: 'quoteDocument',
     label: 'Quote document (client-ready)',
     type: 'copy',
-    description: 'Plain-text quote you can paste into an email or invoice.',
+    description:
+    'Plain-text quote you can paste into an email or invoice.',
   },
 ];
 

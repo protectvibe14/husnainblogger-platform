@@ -18,26 +18,29 @@ export const outputs: ToolOutput[] = [
     id: 'formattedScript',
     label: 'Formatted script',
     type: 'copy',
-    description: 'Free tiktok voiceover script 2026: Scene-numbered lines with [pause] markers between scenes — ready to read aloud or paste. Fast, private, no signup - try it!',
+    description:
+    'Free tiktok voiceover script 2026: Scene-numbered lines with [pause] markers between scenes — ready to read aloud or paste. Fast, private.',
   },
   {
     id: 'captionLines',
     label: 'Caption-ready lines',
     type: 'list',
-    description: 'Each scene word-wrapped to 42 characters per line for mobile caption readability.',
+    description:
+    'Each scene word-wrapped to 42 characters per line for mobile caption readability.',
   },
   {
     id: 'stats',
     label: 'Script stats',
     type: 'text',
-    description: 'Scene count, caption-line count, and word count for your script.',
+    description:
+    'Scene count, caption-line count, and word count for your script.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Voiceover Script',
   description:
-    'Format a free tiktok voiceover script: scene-numbered lines, pause markers, and caption-ready lines wrapped at 42 chars. Paste your raw script — try it now!',
+    'Format a free tiktok voiceover script: scene-numbered lines, pause markers, and caption-ready lines wrapped at 42 chars. Paste your raw script —.',
   howTo: [
     'Paste your raw voiceover script into the "Raw voiceover script" box (one line per beat works best).',
     'Run the tool: every non-empty line becomes a numbered scene with a [pause] marker between scenes.',
@@ -111,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok voiceover script 2026: Scene-numbered lines with [pause] markers between scenes — ready to read aloud or paste. Fast, private, no signup - try it!',
+      description:
+    'Free tiktok voiceover script 2026: Scene-numbered lines with [pause] markers between scenes — ready to read aloud or paste. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

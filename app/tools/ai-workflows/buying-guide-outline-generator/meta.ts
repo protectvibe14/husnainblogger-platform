@@ -25,19 +25,22 @@ export const outputs: ToolOutput[] = [
     id: "outline",
     label: "Buying guide outline (copy)",
     type: "copy",
-    description: "The full outline with your category and tier slots — copy it whole.",
+    description:
+    "The full outline with your category and tier slots — copy it whole.",
   },
   {
     id: "sections",
     label: "Section headings",
     type: "list",
-    description: "Numbered list of the section headings for quick reference.",
+    description:
+    "Numbered list of the section headings for quick reference.",
   },
   {
     id: "criteria",
     label: "Criteria checklist",
     type: "list",
-    description: "The 6 fixed buying criteria with your category filled in.",
+    description:
+    "The 6 fixed buying criteria with your category filled in.",
   },
 ];
 

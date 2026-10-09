@@ -9,13 +9,15 @@ export const outputs: ToolOutput[] = [
     id: "pitchEmail",
     label: "Pitch email",
     type: "copy",
-    description: "The full pitch email body with your details filled in, ready to copy and personalize.",
+    description:
+    "The full pitch email body with your details filled in, ready to copy and personalize.",
   },
   {
     id: "subjectLines",
     label: "Subject line variants",
     type: "list",
-    description: "Five subject-line variants per pitch to test different openers.",
+    description:
+    "Five subject-line variants per pitch to test different openers.",
   },
 ];
 

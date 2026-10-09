@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free email ps generator: enter your goal, offer, and tone to get 6 ready-to-paste P.S. lines in friendly, professional, playful, or urgent styles. Try it now.';
+  'The P.S. gets read first, so make it count: enter your goal and offer for 6 ready-to-paste postscripts in friendly, professional, playful, or urgent tones.';
 
 export const content: ToolContent = {
   title: 'Email Ps Generator',

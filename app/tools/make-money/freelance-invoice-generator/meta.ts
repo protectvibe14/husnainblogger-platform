@@ -77,7 +77,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: "Freelance Invoice Generator",
   description:
-    "Free freelance invoice generator 2026: generate a freelance invoice with this free invoice generator. Add line items, tax and. Fast, private, no signup - try!",
+    "Free freelance invoice generator 2026: generate a freelance invoice with this free invoice generator. Add line items, tax and. Fast, private - try.",
   howTo: [
     "Enter your name and the client's name.",
     "Add line items in the box, one per line, as: description | quantity | rate (e.g. \"Logo design | 1 | 500\").",
@@ -167,7 +167,8 @@ export const content: ToolContent = {
       applicationCategory: "Utilities",
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: "Free freelance invoice generator 2026: generate a freelance invoice with this free invoice generator. Add line items, tax and. Fast, private, no signup - try!",
+      description:
+    "Free freelance invoice generator 2026: generate a freelance invoice with this free invoice generator. Add line items, tax and. Fast, private - try.",
     },
     {
       "@type": "BreadcrumbList",

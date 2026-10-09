@@ -79,22 +79,23 @@ export const outputs: ToolOutput[] = [
     id: 'roi',
     label: 'Return on investment (estimate)',
     type: 'percent',
-    description: 'Not shown when product cost is $0.',
+    description:
+    'Not shown when product cost is $0.',
   },
 ];
 
 const DESCRIPTION =
-  'Free amazon fba profit calculator 2026: Not shown when product cost is $0. Instant, private, and mobile-friendly. No signup - try it free!';
+  "Free Amazon FBA profit calculator: find out what an item actually earns per unit. Enter your sale price, landed product cost, and the fulfillment fee from Amazon's fee table — the calculator subtracts the referral fee, fulfillment fee, and fuel surcharge, then shows margin, monthly profit, and ROI (ROI appears once you add a product cost). Nothing is hardcoded; every fee is an editable estimate. No signup.";
 
 export const content: ToolContent = {
   title: 'Amazon FBA Profit Calculator',
   description: DESCRIPTION,
   howTo: [
-    'Enter your item sale price and your landed product cost per unit.',
-    'Look up your size/weight tier in Amazon\'s official FBA fee table and type the fulfillment fee in — v1 does not guess the rate card.',
-    'Set the referral fee % for your category (15% default; electronics/computers are 8%) and your expected monthly units.',
-    'Optionally add monthly storage cost and any other per-unit fees (inbound placement, low-inventory, seller-plan fee).',
-    'Run the calculator to see referral fee, fulfillment and surcharge fees, net profit per unit, monthly profit, margin, and ROI — all labeled estimates.',
+    "Type in your item's sale price, then what each unit actually costs you landed (product + freight).",
+    "Look up your size and weight tier in Amazon's official FBA fee table and enter that fulfillment fee yourself — this tool doesn't guess the rate card for you.",
+    'Pick your referral fee percentage for your category (15% is the default; electronics sit at 8%), and add how many units you expect to sell each month.',
+    'Toss in the monthly storage cost and any other per-unit fees — inbound placement, low-inventory, seller plan — if they apply to you.',
+    'Hit calculate. You get the full per-unit breakdown: referral fee, fulfillment fee, fuel surcharge, total Amazon fees, net profit per unit, plus monthly profit, margin, and ROI — every figure labeled an estimate.',
   ],
   methodology:
     'Referral fee = sale price × referral rate (15% default). Fuel surcharge = fulfillment fee × fuel rate (3.5% default). Total Amazon fees = referral + fulfillment + fuel surcharge + storage + other per-unit fees. Net profit per unit = sale price − total Amazon fees − product cost; monthly profit = per-unit profit × monthly units; margin = profit ÷ sale price; ROI = profit ÷ product cost. The fulfillment fee is user-entered because Amazon\'s size/weight rate card is too granular for v1 — nothing about the fee schedule is hardcoded as fact. All fee inputs are editable estimates; verify Amazon\'s current fees before deciding.',

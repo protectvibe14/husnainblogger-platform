@@ -5,7 +5,7 @@ import type { BuilderField } from '../../../src/templates/types.ts';
 const TOOL_URL = 'https://husnainblogger.com/tools/pinterest-social/pinterest-board-cover-maker/';
 
 const DESCRIPTION =
-  'Plan pinterest board covers with this free pinterest board cover maker — copy-ready design specs and layouts to recreate in Canva, not image files. Start now!';
+  'Design Pinterest board covers that earn the click: get copy-ready design specs and layouts to rebuild in Canva - no image files, just a clear plan.';
 
 export const inputs: ToolInput[] = [];
 
@@ -37,26 +37,28 @@ export const outputs: ToolOutput[] = [
     label: 'Cover design specs',
     type: 'list',
     description:
-      'One copy-ready cover design spec per board: palette, typography treatment, accent layout, and an 800x800 recreate recipe.',
+    'One copy-ready cover design spec per board: palette, typography treatment, accent layout, and an 800x800 recreate recipe.',
   },
   {
     id: 'html',
     label: 'Copy-ready HTML snippets',
     type: 'copy',
     description:
-      'Combined 800x800 HTML layout snippets for every board — preview the layout, then rebuild it in Canva.',
+    'Combined 800x800 HTML layout snippets for every board — preview the layout, then rebuild it in Canva.',
   },
   {
     id: 'count',
     label: 'Covers built',
     type: 'number',
-    description: 'How many cover design specs were built.',
+    description:
+    'How many cover design specs were built.',
   },
   {
     id: 'coverTips',
     label: 'Cover tips',
     type: 'list',
-    description: 'Fixed 800x800 board-cover facts: safe area, naming, and how to set the cover in Pinterest.',
+    description:
+    'Fixed 800x800 board-cover facts: safe area, naming, and how to set the cover in Pinterest.',
   },
 ];
 

@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Slow Motion FPS Planner',
   description:
-    'Free slow motion fps planner 2026: Plan smooth slow motion before you shoot: enter source fps, timeline fps, and slow factor. Fast, private, no signup - try it!',
+    'Plan buttery slow motion before you shoot: enter the source fps, timeline fps, and your slow-motion factor for clean, judder-free frame math.',
   howTo: [
     'Enter your source frame rate — what the camera actually records (24-960 fps).',
     'Pick your timeline frame rate: 24, 25, 30, or 60 fps.',
@@ -113,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free slow motion fps planner 2026: Plan smooth slow motion before you shoot: enter source fps, timeline fps, and slow factor. Fast, private, no signup - try it!',
+      description:
+    'Plan buttery slow motion before you shoot: enter the source fps, timeline fps, and your slow-motion factor for clean, judder-free frame math.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -37,20 +37,22 @@ export const outputs: ToolOutput[] = [
     id: 'combos',
     label: 'Emoji combos',
     type: 'list',
-    description: 'Free aesthetic emoji combos copy paste 2026: The requested number of curated combos for the chosen vibe. Get instant results. No signup - try it free now!',
+    description:
+    'Free aesthetic emoji combos copy paste 2026: The requested number of curated combos for the chosen vibe. Get instant results. free now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all',
     type: 'copy',
-    description: 'All combos joined with line breaks, ready to paste.',
+    description:
+    'All combos joined with line breaks, ready to paste.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Aesthetic Emoji Combos Copy Paste 2027',
+  title: 'Aesthetic Emoji Combos Copy Paste',
   description:
-    'Grab ready-to-paste aesthetic emoji combos for free: pick a vibe, choose how many you want, and copy combos for bios, captions and comments. Try it now!',
+    'Grab ready-to-paste aesthetic emoji combos for free: pick a vibe, choose how many you want, and copy combos for bios, captions and comments.',
   howTo: [
     'Choose a vibe from the Vibe dropdown (cute, aesthetic, dark, kawaii and 6 more).',
     'Enter how many combos you want (1–10) in the Number of Combos field.',
@@ -127,7 +129,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free aesthetic emoji combos copy paste 2026: The requested number of curated combos for the chosen vibe. Get instant results. No signup - try it free now!',
+      description:
+    'Free aesthetic emoji combos copy paste 2026: The requested number of curated combos for the chosen vibe. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

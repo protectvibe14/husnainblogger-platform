@@ -28,26 +28,29 @@ export const outputs: ToolOutput[] = [
     id: 'preview',
     label: 'Page preview',
     type: 'list',
-    description: 'Free link in bio page generator free 2026: The links on your page, in order. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free link in bio page generator free 2026: The links on your page, in order. free.',
   },
   {
     id: 'htmlDownload',
     label: 'HTML file (download)',
     type: 'download',
-    description: 'Single self-contained HTML file — save it with an .html extension.',
+    description:
+    'Single self-contained HTML file — save it with an.html extension.',
   },
   {
     id: 'copyEmbed',
     label: 'Copy HTML',
     type: 'copy',
-    description: 'The same HTML file, copied to your clipboard.',
+    description:
+    'The same HTML file, copied to your clipboard.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Link in Bio Page Generator Free',
   description:
-    'Build a free link in bio page in seconds: add your links, preview a clean mobile-ready page, and download it as one HTML file. No signup — create yours now!',
+    'Build a free link in bio page in seconds: add your links, preview a clean mobile-ready page, and download it as one HTML file. — create yours now.',
   howTo: [
     'Click "Add item" for every link you want on the page — type the "Link label" (e.g. "My portfolio") and paste the full "URL" starting with https://.',
     'Reorder links with the up/down buttons or remove extras so the most important link sits on top.',
@@ -110,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free link in bio page generator free 2026: The links on your page, in order. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free link in bio page generator free 2026: The links on your page, in order. free.',
     },
     {
       '@context': 'https://schema.org',

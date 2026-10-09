@@ -25,14 +25,15 @@ export const outputs: ToolOutput[] = [
     id: 'answer',
     label: 'Answer',
     type: 'copy',
-    description: 'Free chat with pdf ai 2026: Chat with any PDF using your free Gemini key — upload a document (max 15 MB), ask. Fast, private, no signup - try it now!',
+    description:
+    'Free chat with pdf ai 2026: Chat with any PDF using your free Gemini key — upload a document (max 15 MB), ask. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Chat With Pdf Ai',
   description:
-    'Chat with any PDF using your free Gemini key — upload a document (max 15 MB), ask questions, and get answers grounded in its pages. No signup needed.',
+    'Chat with any PDF using your free Gemini key — upload a document (max 15 MB), ask questions, and get answers grounded in its pages. needed.',
   howTo: [
     'Save your Gemini API key in the key vault above (free tier available from Google AI Studio).',
     'Upload a PDF — max 15 MB. It stays in your browser session and is attached to your first question.',
@@ -94,7 +95,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Chat With Pdf Ai 2026 – Free Tool - no signup required.',
+      description:
+    'Free Chat With Pdf Ai 2026 – Free Tool - required.',
     },
     {
       '@context': 'https://schema.org',

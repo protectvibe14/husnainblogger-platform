@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Extract Frame From Video',
   description:
-    'Free extract frame from video 2026: Plan a frame grab from any video: validate the timestamp against the duration, clamp. Fast, private, no signup - try it now!',
+    'Grab the perfect video frame every time: validate any timestamp against your video\.'s duration, then get the exact capture specs for the shot.',
   howTo: [
     'Enter the video duration in seconds and the timestamp where the frame should be captured.',
     'Enter the source video width and height in pixels (e.g. 1920 x 1080).',
@@ -123,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free extract frame from video 2026: Plan a frame grab from any video: validate the timestamp against the duration, clamp. Fast, private, no signup - try it now!',
+      description:
+    'Grab the perfect video frame every time: validate any timestamp against your video\.'s duration, then get the exact capture specs for the shot.',
     },
     {
       '@type': 'BreadcrumbList',

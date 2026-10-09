@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: "Sponsored Post Rate Calculator",
   description:
-    "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range — try it now.",
+    "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range —.",
   howTo: [
     "Choose the platform: Instagram, TikTok, or YouTube.",
     "Enter your follower or subscriber count and your engagement rate as a percent (e.g. 3.5).",
@@ -124,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: "Utilities",
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range — try it now.",
+      description:
+    "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range —.",
     },
     {
       "@type": "BreadcrumbList",

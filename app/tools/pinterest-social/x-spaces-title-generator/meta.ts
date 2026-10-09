@@ -25,14 +25,15 @@ export const outputs: ToolOutput[] = [
     id: 'spaceTitles',
     label: 'Spaces title ideas',
     type: 'list',
-    description: 'Free twitter spaces title ideas 2026: 8 concise, curiosity-led title ideas for your X Space. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free twitter spaces title ideas 2026: 8 concise, curiosity-led title ideas for your X Space. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Spaces Title Ideas',
   description:
-    'Generate Twitter Spaces title ideas fast: enter your topic, add guests, and get 8 curiosity-led titles that fill seats. Free, no signup — try it now!',
+    'Fill your X Space with live listeners: enter your topic and guest names for 8 curiosity-led Spaces titles that fill seats and get people tapping in today.',
   howTo: [
     'Type your Space topic in the Space topic field (for example, "ai voice agents").',
     'Optionally add guest names in the Guest names field — they rotate into some titles.',
@@ -105,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter spaces title ideas 2026: 8 concise, curiosity-led title ideas for your X Space. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free twitter spaces title ideas 2026: 8 concise, curiosity-led title ideas for your X Space. free.',
     },
     {
       '@context': 'https://schema.org',

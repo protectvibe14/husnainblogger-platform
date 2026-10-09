@@ -25,38 +25,43 @@ export const outputs: ToolOutput[] = [
     id: 'keepSegments',
     label: 'Keep segments',
     type: 'list',
-    description: 'Free jump cut planner 2026: Timeline ranges to keep, with start and end in milliseconds. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free jump cut planner 2026: Timeline ranges to keep, with start and end in milliseconds. free.',
   },
   {
     id: 'cutSegments',
     label: 'Cut segments',
     type: 'list',
-    description: 'What to cut, with a reason for each cut (filler words or pause).',
+    description:
+    'What to cut, with a reason for each cut (filler words or pause).',
   },
   {
     id: 'newDurationSec',
     label: 'New duration (seconds)',
     type: 'number',
-    description: 'Estimated video length after all cuts are applied.',
+    description:
+    'Estimated video length after all cuts are applied.',
   },
   {
     id: 'cutCount',
     label: 'Number of cuts',
     type: 'number',
-    description: 'Total cuts in the plan.',
+    description:
+    'Total cuts in the plan.',
   },
   {
     id: 'warnings',
     label: 'Warnings',
     type: 'list',
-    description: 'Warns when the plan would remove more than 60% of the footage.',
+    description:
+    'Warns when the plan would remove more than 60% of the footage.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Jump Cut Planner',
   description:
-    'Plan jump cuts from a timestamped transcript: pick aggressiveness to get keep/cut ranges, a new duration estimate, and safety warnings. Start planning now!',
+    'Plan jump cuts from a timestamped transcript: pick aggressiveness to get keep/cut ranges, a new duration estimate, and safety warnings. Start planning now.',
   howTo: [
     'Paste your transcript as JSON: each segment needs text, startMs, and endMs in ascending order.',
     'Pick aggressiveness: light, medium, or tight — tighter cuts more filler and shorter pauses.',
@@ -134,7 +139,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free jump cut planner 2026: Timeline ranges to keep, with start and end in milliseconds. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free jump cut planner 2026: Timeline ranges to keep, with start and end in milliseconds. free.',
     },
     {
       '@type': 'BreadcrumbList',

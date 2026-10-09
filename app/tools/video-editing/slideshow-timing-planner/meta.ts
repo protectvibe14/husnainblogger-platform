@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Slideshow Timing Calculator',
   description:
-    'Split video time across slides free: this slideshow timing calculator builds a start/end timeline with transitions and equal or text-weighted holds. Try it now.',
+    'Time your slideshow perfectly: enter your slide count and total duration in seconds for a start/end timeline with transitions and smart holds.',
   howTo: [
     'Enter the number of slides and the total duration in seconds.',
     'Set the transition length per cut in milliseconds (default 500).',
@@ -125,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Split video time across slides free: this slideshow timing calculator builds a start/end timeline with transitions and equal or text-weighted holds. Try it now.',
+      description:
+    'Time your slideshow perfectly: enter your slide count and total duration in seconds for a start/end timeline with transitions and smart holds.',
     },
     {
       '@type': 'BreadcrumbList',

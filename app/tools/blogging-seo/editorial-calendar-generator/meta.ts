@@ -32,26 +32,29 @@ export const outputs: ToolOutput[] = [
     id: 'calendar',
     label: 'Editorial calendar',
     type: 'table',
-    description: 'Free editorial calendar generator 2026: 4-week calendar: week, date, day, post title, content type and status. Fast, private, no signup - try it now!',
+    description:
+    'Free editorial calendar generator 2026: 4-week calendar: week, date, day, post title, content type and status. Fast, private now.',
   },
   {
     id: 'csv',
     label: 'Calendar CSV',
     type: 'download',
-    description: 'The same calendar as comma-separated values for spreadsheets.',
+    description:
+    'The same calendar as comma-separated values for spreadsheets.',
   },
   {
     id: 'totalPosts',
     label: 'Total posts',
     type: 'number',
-    description: 'Number of planned posts (posts per week × 4 weeks).',
+    description:
+    'Number of planned posts (posts per week × 4 weeks).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Editorial Calendar Generator',
   description:
-    'Build a 4-week editorial calendar in seconds: dated post ideas, content types and a spreadsheet-ready CSV spread across your week. Free — start planning now!',
+    'Build a 4-week editorial calendar in seconds: dated post ideas, content types and a spreadsheet-ready CSV spread across your week. Free — start.',
   howTo: [
     'Type your niche into the Niche field (2-80 characters).',
     'Set how many posts you want per week (1-7).',
@@ -130,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free editorial calendar generator 2026: 4-week calendar: week, date, day, post title, content type and status. Fast, private, no signup - try it now!',
+      description:
+    'Free editorial calendar generator 2026: 4-week calendar: week, date, day, post title, content type and status. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

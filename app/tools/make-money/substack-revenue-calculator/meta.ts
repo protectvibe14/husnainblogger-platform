@@ -102,7 +102,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Calculate your newsletter earnings with this free substack revenue calculator — see gross revenue, the 10% platform fee, and Stripe fees. Try it free.',
+      description:
+    'Calculate your newsletter earnings with this free substack revenue calculator — see gross revenue, the 10% platform fee, and Stripe fees. Try it free.',
     },
     {
       '@type': 'BreadcrumbList',

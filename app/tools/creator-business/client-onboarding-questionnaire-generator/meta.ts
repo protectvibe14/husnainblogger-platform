@@ -35,14 +35,14 @@ export const outputs: ToolOutput[] = [
     label: 'Questionnaire (copy)',
     type: 'copy',
     description:
-      'Free client onboarding questionnaire template 2026: Grouped onboarding questions for your service type — copy and send to the client. Fast, private, no signup!',
+    'Free client onboarding questionnaire template 2026: Grouped onboarding questions for your service type — copy and send to the client. Fast, private.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Client Onboarding Questionnaire Template 2027',
+  title: 'Client Onboarding Questionnaire Template',
   description:
-    'Build a client onboarding questionnaire in seconds: pick your service type and sections for grouped intake questions. Copy, send, start right. Try it free!',
+    'Build a client onboarding questionnaire in seconds: pick your service type and sections for grouped intake questions. Copy, send, start right. Try it free.',
   howTo: [
     'Select your "Service type" — design, writing, marketing, development, video, social media, or other.',
     'List the "Sections to include" (comma-separated): goals, brand, audience, logistics, budget.',
@@ -127,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free client onboarding questionnaire template 2026: Grouped onboarding questions for your service type — copy and send to the client. Fast, private, no signup!',
+      description:
+    'Free client onboarding questionnaire template 2026: Grouped onboarding questions for your service type — copy and send to the client. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

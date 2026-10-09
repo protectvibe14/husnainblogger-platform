@@ -33,32 +33,36 @@ export const outputs: ToolOutput[] = [
     id: 'postDrafts',
     label: 'Post drafts',
     type: 'list',
-    description: 'Free facebook post ideas 2026: 5 post drafts with hook, body, and CTA — hooks front-loaded for feed truncation. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook post ideas 2026: 5 post drafts with hook, body, and CTA — hooks front-loaded for feed truncation. Fast, private now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all drafts',
     type: 'copy',
-    description: 'All 5 drafts as plain text, ready to adapt and publish.',
+    description:
+    'All 5 drafts as plain text, ready to adapt and publish.',
   },
   {
     id: 'trimTip',
     label: 'Length guidance',
     type: 'text',
-    description: 'Front-loading and truncation guidance (best practice, not a hard cap).',
+    description:
+    'Front-loading and truncation guidance (best practice, not a hard cap).',
   },
   {
     id: 'yourDraft',
     label: 'Your draft, kept',
     type: 'text',
-    description: 'Your pasted draft, returned verbatim with a trim note if it is long.',
+    description:
+    'Your pasted draft, returned verbatim with a trim note if it is long.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Post Ideas',
   description:
-    'Generate free facebook post ideas with hooks, bodies, and CTAs. Pick a goal — engagement, traffic, or community — and get 5 drafts. Try it now!',
+    'Beat the blank page on posting day: pick an engagement, traffic, or community goal and get 5 complete post drafts with hooks, bodies, and CTAs.',
   howTo: [
     'Type your page type into the "Page type" field (e.g. bakery).',
     'Pick a "Post goal": engagement, traffic, or community. Leave blank to default to engagement.',
@@ -130,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook post ideas 2026: 5 post drafts with hook, body, and CTA — hooks front-loaded for feed truncation. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook post ideas 2026: 5 post drafts with hook, body, and CTA — hooks front-loaded for feed truncation. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

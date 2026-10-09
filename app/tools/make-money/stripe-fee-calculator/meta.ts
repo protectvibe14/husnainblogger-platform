@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Stripe Fee Calculator',
   description:
-    'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
+    'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge.',
   keywords: ['free stripe fee calculator', 'stripe fee calculator 2025', 'stripe fee calculator 2026', 'stripe fee calculator australia', 'stripe fee calculator canada'],
   howTo: [
     'Enter the charge amount in USD.',
@@ -133,7 +133,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge. No signup.',
+    'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge.',
     },
     {
       '@type': 'BreadcrumbList',

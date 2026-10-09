@@ -56,7 +56,8 @@ export const outputs: ToolOutput[] = [
     id: 'gapVsCurrent',
     label: 'Gap vs current income',
     type: 'text',
-    description: 'Yearly and monthly gap to your goal, or a prompt to enter your current income.',
+    description:
+    'Yearly and monthly gap to your goal, or a prompt to enter your current income.',
   },
 ];
 

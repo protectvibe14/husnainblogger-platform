@@ -28,20 +28,22 @@ export const outputs: ToolOutput[] = [
     id: 'monetizationTable',
     label: 'Your monetization mix table',
     type: 'table',
-    description: 'Free blog monetization planner 2026: Illustrative monthly estimate ranges for each revenue stream at your traffic level -. Fast, private, no signup - try it!',
+    description:
+    'Free blog monetization planner 2026: Illustrative monthly estimate ranges for each revenue stream at your traffic level -. Fast, private.',
   },
   {
     id: 'estimateNote',
     label: 'About these estimates',
     type: 'text',
-    description: 'Plain-language disclaimer that the ranges are planning estimates, not real revenue data.',
+    description:
+    'Plain-language disclaimer that the ranges are planning estimates, not real revenue data.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Monetization Planner',
   description:
-    'Plan your blog income mix: pick your traffic level and compare illustrative monthly ranges for ads, affiliates, products, and more. Free - start planning today!',
+    'Plan your blog income mix: pick your traffic level and compare illustrative monthly ranges for ads, affiliates, products, and more. Free - start.',
   howTo: [
     'Pick your current monthly traffic from the Your monthly traffic dropdown.',
     'Optionally, list the revenue streams you care about in the Revenue streams field (leave it blank to see all six).',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free blog monetization planner 2026: Illustrative monthly estimate ranges for each revenue stream at your traffic level -. Fast, private, no signup - try it!',
+      description:
+    'Free blog monetization planner 2026: Illustrative monthly estimate ranges for each revenue stream at your traffic level -. Fast, private.',
     },
     {
       '@context': 'https://schema.org',

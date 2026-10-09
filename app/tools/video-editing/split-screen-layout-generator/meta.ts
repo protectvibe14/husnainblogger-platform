@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  "Plan duets and comparison videos with this free split screen video layout tool — set panes, arrangement, and aspect ratio for coordinates and CSS. Try it now.";
+  "Build split-screen layouts for duets and comparisons: set your panes, arrangement, and aspect ratio for exact coordinates and copy-ready CSS.";
 
 export const content: ToolContent = {
   title: "Split Screen Video Layout",

@@ -51,20 +51,22 @@ export const outputs: ToolOutput[] = [
     id: 'tagsHtml',
     label: 'Twitter Card tags (copy)',
     type: 'copy',
-    description: 'Free twitter card generator 2026: The Twitter Card meta tags — paste them inside the <head> of your page. Get instant results. No signup - try it free now!',
+    description:
+    'Free twitter card generator 2026: The Twitter Card meta tags — paste them inside the <head> of your page. Get instant results. free now.',
   },
   {
     id: 'warnings',
     label: 'Recommendations',
     type: 'list',
-    description: 'Non-blocking tips, e.g. a missing @site handle or an unusual image URL.',
+    description:
+    'Non-blocking tips, e.g. a missing @site handle or an unusual image URL.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Card Generator',
   description:
-    'Build Twitter Card meta tags that make your links stand out on X. Add title, description, image, and handle, then copy the tags. Free, no signup!',
+    'Build Twitter Card meta tags that make your links stand out on X. Add title, description, image, and handle, then copy the tags. Free.',
   howTo: [
     'Enter the "Card title" (max 200 characters) and "Card description" (max 300 characters).',
     'Add the full "Image URL" — it must start with http:// or https://.',
@@ -79,7 +81,8 @@ export const content: ToolContent = {
       title: 'Blog post, large image card',
       inputs: {
         title: 'How to Brew Pour-Over Coffee',
-        description: 'A step-by-step guide to brewing pour-over coffee at home.',
+        description:
+    'A step-by-step guide to brewing pour-over coffee at home.',
         image: 'https://example.com/images/pour-over.jpg',
         card: 'summary_large_image',
         site: '@husnainblogger',
@@ -90,7 +93,8 @@ export const content: ToolContent = {
       title: 'Summary card without handle',
       inputs: {
         title: 'Example Blog',
-        description: 'Simple blogging tips, published weekly.',
+        description:
+    'Simple blogging tips, published weekly.',
         image: 'https://example.com/images/logo.png',
         card: 'summary',
       },
@@ -100,7 +104,8 @@ export const content: ToolContent = {
       title: 'Invalid handle rejected',
       inputs: {
         title: 'Example Blog',
-        description: 'Simple blogging tips, published weekly.',
+        description:
+    'Simple blogging tips, published weekly.',
         image: 'https://example.com/images/logo.png',
         site: 'husnainblogger',
       },
@@ -157,7 +162,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter card generator 2026: The Twitter Card meta tags — paste them inside the <head> of your page. Get instant results. No signup - try it free now!',
+      description:
+    'Free twitter card generator 2026: The Twitter Card meta tags — paste them inside the <head> of your page. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

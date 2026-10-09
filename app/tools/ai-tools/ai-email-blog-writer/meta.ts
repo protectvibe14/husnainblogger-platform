@@ -33,7 +33,8 @@ export const outputs: ToolOutput[] = [
     id: 'draft',
     label: 'Draft',
     type: 'text',
-    description: 'Free ai email writer free 2026: The generated email or blog draft for the mode you picked. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai email writer free 2026: The generated email or blog draft for the mode you picked. free.',
   },
 ];
 
@@ -41,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Email & Blog Writer',
   description:
-    'Draft cold emails, follow-ups, blog intros, and outlines with your own free Gemini, Groq, or OpenRouter key. Drafts only — edit before sending. No signup.',
+    'Draft cold emails, follow-ups, blog intros, and outlines with your own free Gemini, Groq, or OpenRouter key. Drafts only — edit before sending.',
   howTo: [
     'Choose what to write: cold email, follow-up, blog intro, or blog outline.',
     'Enter your topic and any key points you want covered.',
@@ -113,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai email writer free 2026: The generated email or blog draft for the mode you picked. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai email writer free 2026: The generated email or blog draft for the mode you picked. free.',
     },
     {
       '@context': 'https://schema.org',

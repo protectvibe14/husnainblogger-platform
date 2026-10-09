@@ -69,19 +69,19 @@ export const content: ToolContent = {
         'No. The score measures observable best practices, not views — TikTok publishes no hook weighting. Use it to remove obvious weaknesses, then test hooks with real 3-second retention data.',
     },
     {
-      question: 'How does the tiktok hook analyzer work?',
+      question: 'What makes the analyzer flag a hook as weak?',
       answer:
-        'Enter your details using the inputs above and the tiktok hook analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'It scores six observable factors: length (over 12 words loses points fast), whether it opens with a question, a contradiction or pattern-interrupt word (but, stop, never, actually), a curiosity phrase (secret, nobody talks about), a weak opener like \'hey guys\' or \'welcome back\', and specificity (a digit or concrete claim). Each factor is transparent — the breakdown shows exactly where your points went.',
     },
     {
-      question: 'Is the tiktok hook analyzer free to use?',
+      question: 'Should I rewrite a low-scoring hook from scratch?',
       answer:
-        'Yes - this tiktok hook analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Usually not — keep the idea, tighten the delivery. Cut it to 12 words or fewer, delete the filler opener, and lead with the payoff: a question, a contradiction, or a curiosity gap. Paste the rewrite back in and watch which factor\'s points you recover. Test the winner against real 3-second retention data in TikTok Analytics.',
     },
     {
-      question: 'What is a tiktok hook analyzer?',
+      question: 'Does it work for hooks in other languages?',
       answer:
-        'A tiktok hook analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Only partially. The pattern matching runs on English word lists — question words, contradiction words, curiosity phrases, weak openers — so hooks in other languages may score inaccurately even when the hooks are strong. The length check (12 words or fewer) still applies, but treat the other factors as English-only guidance.',
     },
   ],
   assumptions: [

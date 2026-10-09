@@ -41,9 +41,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Welcome Email Sequence Generator 2027',
+  title: 'Welcome Email Sequence Generator',
   description:
-    'Free welcome email sequence generator: enter your brand, lead magnet, email count, and tone to get subject lines plus body drafts for every email. No signup.',
+    'Welcome new subscribers like you mean it: enter your brand, lead magnet, and email count for subject lines plus full drafts for every email.',
   howTo: [
     'Enter your brand name in the brand field.',
     'Describe your lead magnet — the freebie new subscribers receive.',
@@ -136,7 +136,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free welcome email sequence generator: enter your brand, lead magnet, email count, and tone to get subject lines plus body drafts for every email. No signup.',
+      description:
+    'Welcome new subscribers like you mean it: enter your brand, lead magnet, and email count for subject lines plus full drafts for every email.',
     },
     {
       '@type': 'BreadcrumbList',

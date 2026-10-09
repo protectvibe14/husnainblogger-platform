@@ -50,26 +50,29 @@ export const outputs: ToolOutput[] = [
     id: 'items',
     label: 'Library phrases',
     type: 'list',
-    description: 'Free negative prompt list 2026: The curated negative-prompt phrases for your category filter. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free negative prompt list 2026: The curated negative-prompt phrases for your category filter. free.',
   },
   {
     id: 'combinedPrompt',
     label: 'Combined negative prompt',
     type: 'copy',
-    description: 'Base openers + library phrases + your custom phrases, ready to paste.',
+    description:
+    'Base openers + library phrases + your custom phrases, ready to paste.',
   },
   {
     id: 'useCaseRecommended',
     label: 'Use-case recommendations',
     type: 'list',
-    description: 'The phrase set recommended for the selected use-case preset.',
+    description:
+    'The phrase set recommended for the selected use-case preset.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Negative Prompt List',
   description:
-    'Browse 60 curated negative prompts across 6 categories — anatomy, artifacts, text, lighting and more. Filter, combine and copy a ready-to-paste negative prompt.',
+    'Browse 60 curated negative prompts across 6 categories — anatomy, artifacts, text, lighting and more. Filter, combine and copy a ready-to-paste.',
   howTo: [
     'Pick a category to browse its 10 curated negative-prompt phrases.',
     'Optionally choose a use-case preset (portraits, product shots…) to get a recommended phrase set.',
@@ -142,7 +145,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free negative prompt list 2026: The curated negative-prompt phrases for your category filter. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free negative prompt list 2026: The curated negative-prompt phrases for your category filter. free.',
     },
     {
       '@context': 'https://schema.org',

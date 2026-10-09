@@ -27,14 +27,15 @@ export const outputs: ToolOutput[] = [
     id: 'headlines',
     label: 'Ad headlines',
     type: 'list',
-    description: 'Free facebook ad headline ideas 2026: 10 benefit-led headlines, each 40 characters or fewer (strict cap). Get instant results. No signup - try it free now!',
+    description:
+    'Free facebook ad headline ideas 2026: 10 benefit-led headlines, each 40 characters or fewer (strict cap). Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Ad Headline Ideas',
   description:
-    'Create Facebook ad headline ideas under 40 characters. Enter your product and benefit for benefit-led headlines built on proven copy frameworks. Try it free!',
+    'Write Facebook ad headlines under 40 characters: enter your product and its main benefit for punchy, benefit-led lines built on proven copy frameworks.',
   howTo: [
     'Enter your product name (up to 60 characters).',
     'Enter the main benefit your ad promises (up to 80 characters).',
@@ -104,7 +105,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook ad headline ideas 2026: 10 benefit-led headlines, each 40 characters or fewer (strict cap). Get instant results. No signup - try it free now!',
+      description:
+    'Free facebook ad headline ideas 2026: 10 benefit-led headlines, each 40 characters or fewer (strict cap). Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

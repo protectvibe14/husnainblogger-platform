@@ -120,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Get email list growth ideas free: enter your niche and budget — get up to 20 tactics with effort and cost levels, plus a consent reminder. Start now.',
+      description:
+    'Get email list growth ideas free: enter your niche and budget — get up to 20 tactics with effort and cost levels, plus a consent reminder. Start now.',
     },
     {
       '@type': 'BreadcrumbList',

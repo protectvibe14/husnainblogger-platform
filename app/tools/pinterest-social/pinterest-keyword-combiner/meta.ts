@@ -34,21 +34,21 @@ export const outputs: ToolOutput[] = [
     label: 'Keyword combinations',
     type: 'list',
     description:
-      'Free pinterest keyword research 2026: Deterministic seed x modifier and seed x seed combinations, deduplicated and lowercased.. Fast, private, no signup - try!',
+    'Free pinterest keyword research 2026: Deterministic seed x modifier and seed x seed combinations, deduplicated and lowercased. Fast, private - try.',
   },
   {
     id: 'note',
     label: 'Honesty note',
     type: 'text',
     description:
-      'Reminder that these combos are idea seeds with no search-volume data attached; verify real interest in the Pinterest search bar before building content.',
+    'Reminder that these combos are idea seeds with no search-volume data attached; verify real interest in the Pinterest search bar before building content.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Keyword Research Tool',
   description:
-    'Start pinterest keyword research with this free combiner. Enter seed keywords, add modifiers, and get deduplicated long-tail idea seeds in seconds. Try it now!',
+    'Do Pinterest keyword research the fast way: enter your seed keywords, add your own modifiers, and get deduplicated long-tail ideas in seconds.',
   howTo: [
     'Enter 1–10 seed keywords, one per line (e.g. cozy bedroom, small apartment).',
     'Add your own modifiers, one per line — or leave it blank to use how to, best, ideas, easy, quick.',
@@ -124,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest keyword research 2026: Deterministic seed x modifier and seed x seed combinations, deduplicated and lowercased.. Fast, private, no signup - try!',
+      description:
+    'Free pinterest keyword research 2026: Deterministic seed x modifier and seed x seed combinations, deduplicated and lowercased. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -38,7 +38,7 @@ const DESCRIPTION =
   'Plan your blog income diversification free — enter your current streams and revenue to get a timed plan of new income streams, ranked by fit. Try it now!';
 
 export const content: ToolContent = {
-  title: 'Blog Income Diversification Guide 2027',
+  title: 'Blog Income Diversification Guide',
   description: DESCRIPTION,
   howTo: [
     'In “Current income streams”, select the revenue stream your blog relies on most today — pick “Just starting” if you have none yet.',

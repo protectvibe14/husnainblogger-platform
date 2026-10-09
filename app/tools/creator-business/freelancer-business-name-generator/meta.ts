@@ -32,14 +32,14 @@ export const outputs: ToolOutput[] = [
     label: "Business name ideas",
     type: "list",
     description:
-      "Template-based name combinations from your keywords and the chosen style's word bank.",
+    "Template-based name combinations from your keywords and the chosen style's word bank.",
   },
   {
     id: "availabilityNote",
     label: "Availability reminder",
     type: "text",
     description:
-      "Reminder that domain and trademark availability are not checked — verify yourself.",
+    "Reminder that domain and trademark availability are not checked — verify yourself.",
   },
 ];
 

@@ -49,20 +49,22 @@ export const outputs: ToolOutput[] = [
     id: 'audioWav',
     label: 'Speech audio (WAV)',
     type: 'download',
-    description: 'Free free text to speech ai voice 2026: Generated 24 kHz WAV you can play in the browser or download. Get instant results. No signup - try it free now!',
+    description:
+    'Free free text to speech ai voice 2026: Generated 24 kHz WAV you can play in the browser or download. Get instant results. free now.',
   },
   {
     id: 'durationSec',
     label: 'Audio duration',
     type: 'text',
-    description: 'Length of the generated speech in seconds.',
+    description:
+    'Length of the generated speech in seconds.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Free Text to Speech AI Voice',
   description:
-    'Turn text into natural AI speech in your browser — free text-to-speech with 10 voices, speed control and WAV download. No signup; works offline after load.',
+    'Turn text into natural AI speech in your browser — free text-to-speech with 10 voices, speed control and WAV download.; works offline after load.',
   howTo: [
     'Type or paste your text (up to 5,000 characters) into the Text to speak field.',
     'Pick a voice from the 10 verified English voices — American or British, female or male.',
@@ -135,7 +137,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free free text to speech ai voice 2026: Generated 24 kHz WAV you can play in the browser or download. Get instant results. No signup - try it free now!',
+      description:
+    'Free free text to speech ai voice 2026: Generated 24 kHz WAV you can play in the browser or download. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

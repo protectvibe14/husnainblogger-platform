@@ -51,20 +51,22 @@ export const outputs: ToolOutput[] = [
     id: 'tagsHtml',
     label: 'Open Graph tags (copy)',
     type: 'copy',
-    description: 'Free open graph generator 2026: The 5 Open Graph meta tags — paste them inside the <head> of your page. Get instant results. No signup - try it free now!',
+    description:
+    'Free open graph generator 2026: The 5 Open Graph meta tags — paste them inside the <head> of your page. Get instant results. free now.',
   },
   {
     id: 'warnings',
     label: 'Recommendations',
     type: 'list',
-    description: 'Non-blocking tips, e.g. a title that may be truncated in previews.',
+    description:
+    'Non-blocking tips, e.g. a title that may be truncated in previews.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Open Graph Generator',
   description:
-    'Create perfect Open Graph meta tags for any page in seconds. Enter title, description, URL, and image, then copy the ready-to-paste tags. Try it free!',
+    'Create perfect Open Graph meta tags for any page in seconds. Enter title, description, URL, and image, then copy the ready-to-paste tags. Try it free.',
   howTo: [
     'Enter the "Page title" (max 200 characters) and "Page description" (max 300 characters).',
     'Add the full "Page URL" and "Image URL" — both must start with http:// or https://.',
@@ -79,7 +81,8 @@ export const content: ToolContent = {
       title: 'Blog post with article type',
       inputs: {
         title: 'How to Brew Pour-Over Coffee',
-        description: 'A step-by-step guide to brewing pour-over coffee at home.',
+        description:
+    'A step-by-step guide to brewing pour-over coffee at home.',
         url: 'https://example.com/pour-over',
         image: 'https://example.com/images/pour-over.jpg',
         type: 'article',
@@ -90,7 +93,8 @@ export const content: ToolContent = {
       title: 'Homepage with defaults',
       inputs: {
         title: 'Example Blog',
-        description: 'Simple blogging tips, published weekly.',
+        description:
+    'Simple blogging tips, published weekly.',
         url: 'https://example.com/',
         image: 'https://example.com/images/logo.png',
       },
@@ -100,7 +104,8 @@ export const content: ToolContent = {
       title: 'Long title flagged',
       inputs: {
         title: 'This is a deliberately very long page title that will almost certainly be truncated in link previews',
-        description: 'Short description.',
+        description:
+    'Short description.',
         url: 'https://example.com/long',
         image: 'https://example.com/images/long.jpg',
       },
@@ -157,7 +162,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free open graph generator 2026: The 5 Open Graph meta tags — paste them inside the <head> of your page. Get instant results. No signup - try it free now!',
+      description:
+    'Free open graph generator 2026: The 5 Open Graph meta tags — paste them inside the <head> of your page. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

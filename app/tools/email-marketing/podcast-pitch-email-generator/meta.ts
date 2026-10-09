@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Podcast Guest Pitch Email',
   description:
-    'Create a podcast guest pitch email free: enter the show, topic, and credentials — get 8 subject lines plus a ready-to-send pitch. Try it now.',
+    'Land podcast guest spots with a sharper pitch: enter the show name, your topic, and credentials for 8 subject lines plus a ready-to-send email.',
   howTo: [
     'Type the podcast name you want to pitch.',
     'Describe your episode topic in one line.',
@@ -133,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Create a podcast guest pitch email free: enter the show, topic, and credentials — get 8 subject lines plus a ready-to-send pitch. Try it now.',
+      description:
+    'Land podcast guest spots with a sharper pitch: enter the show name, your topic, and credentials for 8 subject lines plus a ready-to-send email.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'pageNames',
     label: 'Page name ideas',
     type: 'list',
-    description: 'Free facebook page name ideas 2026: 8 searchable page-name candidates, each within Facebook\\u2019s 75-character limit. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook page name ideas 2026: 8 searchable page-name candidates, each within Facebook\\u2019s 75-character limit. Fast, private now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all names',
     type: 'copy',
-    description: 'All 8 candidates as plain text, ready to check on Facebook.',
+    description:
+    'All 8 candidates as plain text, ready to check on Facebook.',
   },
   {
     id: 'availabilityNote',
     label: 'Availability note',
     type: 'text',
-    description: 'Why availability must be checked manually on Facebook.',
+    description:
+    'Why availability must be checked manually on Facebook.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Page Name Ideas',
   description:
-    'Get free facebook page name ideas for your business. Enter your business type and keywords to get 8 searchable name options. Check availability on Facebook!',
+    'Pick a Page name customers can actually find: enter your business type and keywords for 8 searchable options, then check availability on Facebook.',
   howTo: [
     'Type your business type into the "Business type" field (e.g. bakery).',
     'Optionally add up to 5 keywords in "Keywords", comma or line separated (e.g. custom cakes, Chicago).',
@@ -117,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook page name ideas 2026: 8 searchable page-name candidates, each within Facebook\\\\u2019s 75-character limit. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook page name ideas 2026: 8 searchable page-name candidates, each within Facebook\\\\u2019s 75-character limit. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

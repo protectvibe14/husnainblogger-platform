@@ -26,20 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'calendar',
     label: '30-day reels calendar',
     type: 'table',
-    description: 'Free 30 day reels challenge 2026: Day, pillar, reel prompt, and format for all 30 days — all prompts unique. Fast, private, no signup - try it now!',
+    description:
+    'Free 30 day reels challenge 2026: Day, pillar, reel prompt, and format for all 30 days — all prompts unique. Fast, private now.',
   },
   {
     id: 'exportCSV',
     label: 'Export as CSV',
     type: 'download',
-    description: 'The full calendar as a CSV file you can open in a spreadsheet.',
+    description:
+    'The full calendar as a CSV file you can open in a spreadsheet.',
   },
 ];
 
 export const content: ToolContent = {
   title: '30 Day Reels Challenge',
   description:
-    'Take the 30 day reels challenge with this free tool. Enter your niche and 3–5 content pillars for a full 30-day reels calendar with unique prompts. Start now!',
+    'Take the 30 day reels challenge with this free tool. Enter your niche and 3–5 content pillars for a full 30-day reels calendar with unique prompts..',
   howTo: [
     'Enter your niche (up to 60 characters).',
     'List 3–5 content pillars, one per line (or comma-separated).',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free 30 day reels challenge 2026: Day, pillar, reel prompt, and format for all 30 days — all prompts unique. Fast, private, no signup - try it now!',
+      description:
+    'Free 30 day reels challenge 2026: Day, pillar, reel prompt, and format for all 30 days — all prompts unique. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

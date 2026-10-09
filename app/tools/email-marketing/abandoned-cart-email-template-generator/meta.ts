@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Abandoned Cart Email Template',
   description:
-    'Free abandoned cart email template generator: pick email 1, 2, or 3, add your store and product, and get subject options plus a placeholder body. No signup.',
+    'Recover lost sales with a 3-email cart sequence: choose reminder, value, or incentive, add your store details, and get subject lines plus body copy.',
   howTo: [
     'Enter your store name and the product left in the cart.',
     'Choose which email to build: 1 (reminder), 2 (value), or 3 (incentive).',
@@ -137,7 +137,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free abandoned cart email template generator: pick email 1, 2, or 3, add your store and product, and get subject options plus a placeholder body. No signup.',
+      description:
+    'Recover lost sales with a 3-email cart sequence: choose reminder, value, or incentive, add your store details, and get subject lines plus body copy.',
     },
     {
       '@type': 'BreadcrumbList',

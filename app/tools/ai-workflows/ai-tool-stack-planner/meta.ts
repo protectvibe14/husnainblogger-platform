@@ -24,20 +24,22 @@ export const outputs: ToolOutput[] = [
     id: 'toolTable',
     label: 'Your AI tool stack table',
     type: 'table',
-    description: 'Free ai tools stack for creators 2026: One recommended tool per matched category with its default monthly price and a free-plan. Fast, private, no signup - try!',
+    description:
+    'Free ai tools stack for creators 2026: One recommended tool per matched category with its default monthly price and a free-plan. Fast, private - try.',
   },
   {
     id: 'budgetSummary',
     label: 'Budget summary',
     type: 'text',
-    description: 'Estimated monthly total vs your budget, over-budget flags, and a note that prices are defaults.',
+    description:
+    'Estimated monthly total vs your budget, over-budget flags, and a note that prices are defaults.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Tools Stack for Creators',
   description:
-    'Build your AI stack: enter your monthly budget and use cases, then get one recommended tool per category with default pricing. Free - plan your stack now!',
+    'Build your AI stack: enter your monthly budget and use cases, then get one recommended tool per category with default pricing. Free - plan your stack now.',
   howTo: [
     'Enter your monthly budget in USD in the Monthly budget field (0 works too).',
     'List your use cases in the Your use cases field, separated by commas (for example, "blog writing, thumbnails, scheduling").',
@@ -109,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai tools stack for creators 2026: One recommended tool per matched category with its default monthly price and a free-plan. Fast, private, no signup - try!',
+      description:
+    'Free ai tools stack for creators 2026: One recommended tool per matched category with its default monthly price and a free-plan. Fast, private - try.',
     },
     {
       '@context': 'https://schema.org',

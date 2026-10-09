@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Repurpose one video for every platform with this free multi platform video planner: enter your master file and platforms to get specs and crop plans. Plan now.';
+  'Repurpose one video for every platform: enter your master file and target platforms for exact specs, crop plans, and upload-ready export settings.';
 
 export const content: ToolContent = {
   title: 'Multi Platform Video Planner',

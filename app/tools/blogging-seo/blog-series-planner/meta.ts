@@ -27,21 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'seriesTitle',
     label: 'Series title',
     type: 'text',
-    description: 'Free blog series planner 2026: The suggested overarching title for the whole series. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free blog series planner 2026: The suggested overarching title for the whole series. free.',
   },
   {
     id: 'parts',
     label: 'Series plan',
     type: 'table',
     description:
-      'One row per part: role, suggested title and slug, target words, read-time estimate, angle and internal-linking notes.',
+    'One row per part: role, suggested title and slug, target words, read-time estimate, angle and internal-linking notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Series Planner',
   description:
-    'Map out a multi-part blog series in minutes — this free blog series planner structures 2–12 parts with titles, slugs and linking notes. Plan your series now!',
+    'Map out a multi-part blog series in minutes — this free blog series planner structures 2–12 parts with titles, slugs and linking notes. Plan your.',
   howTo: [
     'Type your series topic into the Series topic field (2–120 characters).',
     'Enter how many installments you want (a whole number from 2 to 12).',
@@ -115,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free blog series planner 2026: The suggested overarching title for the whole series. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free blog series planner 2026: The suggested overarching title for the whole series. free.',
     },
     {
       '@context': 'https://schema.org',

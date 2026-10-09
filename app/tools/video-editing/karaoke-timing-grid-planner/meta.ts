@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Karaoke Caption Planner',
   description:
-    'Free karaoke caption planner 2026: Plan karaoke-style word-by-word captions: paste your lyric lines, set the duration and. Fast, private, no signup - try it!',
+    'Plan word-by-word karaoke captions with ease: paste your lyric lines, set the total duration in seconds, and get a timing grid for every word.',
   howTo: [
     'Paste your lyric lines — one line per line, up to 500 lines.',
     'Enter the total duration of the section in seconds.',
@@ -108,7 +108,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free karaoke caption planner 2026: Plan karaoke-style word-by-word captions: paste your lyric lines, set the duration and. Fast, private, no signup - try it!',
+      description:
+    'Plan word-by-word karaoke captions with ease: paste your lyric lines, set the total duration in seconds, and get a timing grid for every word.',
     },
     {
       '@type': 'BreadcrumbList',

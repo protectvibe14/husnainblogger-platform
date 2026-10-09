@@ -66,26 +66,29 @@ export const outputs: ToolOutput[] = [
     id: 'recommendation',
     label: 'Your format recommendation',
     type: 'text',
-    description: 'Free reels vs carousel which is better 2026: Reels, carousels, or both — with the percentage score behind it. Fast, private, no signup - try it now!',
+    description:
+    'Free reels vs carousel which is better 2026: Reels, carousels, or both — with the percentage score behind it. Fast, private now.',
   },
   {
     id: 'reasoning',
     label: 'Why this fits you',
     type: 'list',
-    description: 'The top 3 answers that tipped the result toward the recommendation.',
+    description:
+    'The top 3 answers that tipped the result toward the recommendation.',
   },
   {
     id: 'nextSteps',
     label: 'Your next steps',
     type: 'list',
-    description: 'Five concrete actions matched to your recommended format.',
+    description:
+    'Five concrete actions matched to your recommended format.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Reels vs Carousel Which Is Better 2027',
+  title: 'Reels vs Carousel Which Is Better',
   description:
-    'Answer 5 quick questions to settle reels vs carousel which is better for your goals and style. Free quiz — get your format verdict and next steps now!',
+    'Answer 5 quick questions to settle reels vs carousel which is better for your goals and style. Free quiz — get your format verdict and next steps now.',
   howTo: [
     'Pick your main goal in the "Your main goal right now" question.',
     'Answer how you feel about being on camera.',
@@ -170,7 +173,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free reels vs carousel which is better 2026: Reels, carousels, or both — with the percentage score behind it. Fast, private, no signup - try it now!',
+      description:
+    'Free reels vs carousel which is better 2026: Reels, carousels, or both — with the percentage score behind it. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok FAQ Series',
   description:
-    'Build a tiktok faq series from your questions: episode hooks, answer-beat outlines, and CTAs. Answers are yours — the tool never invents them. Try it free!',
+    'Build a tiktok faq series from your questions: episode hooks, answer-beat outlines, and CTAs. Answers are yours — the tool never invents them. Try it free.',
   howTo: [
     'Add one item per question your audience actually asks (1–20 per run).',
     'Write each question as your audience phrases it — it becomes the episode hook.',
@@ -91,7 +91,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Build a tiktok faq series from your questions: episode hooks, answer-beat outlines, and CTAs. Answers are yours — the tool never invents them. Try it free!',
+      description:
+    'Build a tiktok faq series from your questions: episode hooks, answer-beat outlines, and CTAs. Answers are yours — the tool never invents them. Try it free.',
     },
     {
       '@context': 'https://schema.org',

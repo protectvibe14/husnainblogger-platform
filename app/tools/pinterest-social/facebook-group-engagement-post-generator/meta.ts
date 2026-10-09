@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'templates',
     label: 'Post templates',
     type: 'list',
-    description: 'Free facebook group engagement posts 2026: Ready-to-adapt post drafts, each with type, draft text and a follow-up tip. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook group engagement posts 2026: Ready-to-adapt post drafts, each with type, draft text and a follow-up tip. Fast, private now.',
   },
   {
     id: 'count',
     label: 'Templates generated',
     type: 'number',
-    description: 'How many post templates were generated.',
+    description:
+    'How many post templates were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Group Engagement Posts',
   description:
-    'Get the best facebook group engagement posts for your community with this free generator: enter your group type to get conversation-led drafts. Try it now!',
+    'Wake up a quiet Facebook group: enter your group type for conversation-led post drafts - welcome posts, questions, polls, or discussion threads.',
   howTo: [
     'Type Your group type into the field (e.g. fitness beginners, Etsy sellers).',
     'Optionally choose a Post type: welcome, question, poll, or discussion — or leave it blank for one of each.',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook group engagement posts 2026: Ready-to-adapt post drafts, each with type, draft text and a follow-up tip. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook group engagement posts 2026: Ready-to-adapt post drafts, each with type, draft text and a follow-up tip. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -23,20 +23,22 @@ export const outputs: ToolOutput[] = [
     id: 'signatureHTML',
     label: 'Signature HTML',
     type: 'copy',
-    description: 'Free email signature generator 2026: Email-client-safe HTML (table-based, inline styles) — paste it into your email client’s. Fast, private, no signup - try it!',
+    description:
+    'Free email signature generator 2026: Email-client-safe HTML (table-based, inline styles) — paste it into your email client’s. Fast, private.',
   },
   {
     id: 'signatureText',
     label: 'Plain-text signature',
     type: 'copy',
-    description: 'Plain-text twin of the signature for clients that strip HTML.',
+    description:
+    'Plain-text twin of the signature for clients that strip HTML.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Email Signature Generator',
   description:
-    'Create a professional email signature with client-safe HTML. Enter your name, title, and links to get a copy-paste signature plus plain text. Free!',
+    'Create a professional email signature with client-safe HTML. Enter your name, title, and links to get a copy-paste signature plus plain text. Free.',
   howTo: [
     'Enter your name, job title, and company (required).',
     'Optionally add your phone, website, and social links ("Label: URL", comma separated).',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email signature generator 2026: Email-client-safe HTML (table-based, inline styles) — paste it into your email client’s. Fast, private, no signup - try it!',
+      description:
+    'Free email signature generator 2026: Email-client-safe HTML (table-based, inline styles) — paste it into your email client’s. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

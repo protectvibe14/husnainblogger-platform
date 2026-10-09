@@ -32,26 +32,29 @@ export const outputs: ToolOutput[] = [
     id: 'scores',
     label: 'Side-by-side scores',
     type: 'table',
-    description: 'Free pinterest pin title tester 2026: Each title scored 0-100 on the five rubric criteria. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free pinterest pin title tester 2026: Each title scored 0-100 on the five rubric criteria. free.',
   },
   {
     id: 'winner',
     label: 'Winner',
     type: 'text',
-    description: 'A, B, or tie — the higher total score wins.',
+    description:
+    'A, B, or tie — the higher total score wins.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Heuristic label plus any warnings (over-limit, identical titles, limited coverage).',
+    description:
+    'Heuristic label plus any warnings (over-limit, identical titles, limited coverage).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Pin Title Tester',
   description:
-    'Compare two Pinterest pin titles with a transparent 5-factor heuristic rubric and see which follows pin best practices better. Free, instant — test yours now!',
+    'Pick the stronger pin title with a clear scoring rubric: compare any two titles against 5 factors to see which one follows pin best practices.',
   howTo: [
     'Type your first pin title into "Title A" and the alternative into "Title B" (keep each under 100 characters).',
     'Optionally add your primary keyword (for example, "fall porch decor") so keyword placement is scored too.',
@@ -132,7 +135,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest pin title tester 2026: Each title scored 0-100 on the five rubric criteria. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free pinterest pin title tester 2026: Each title scored 0-100 on the five rubric criteria. free.',
     },
     {
       '@context': 'https://schema.org',

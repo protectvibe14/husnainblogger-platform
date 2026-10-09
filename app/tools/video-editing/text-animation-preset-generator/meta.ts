@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Text Animation Generator CSS',
   description:
-    'Generate copy-paste CSS text animations plus CapCut rebuild steps with this free text animation generator CSS tool — 5 effects, easing, and colors. Try it now.',
+    'Animate text without the guesswork: get copy-paste CSS text animations plus CapCut rebuild steps - 5 effects, easing curves, and color palettes.',
   howTo: [
     'Pick an animation effect: typewriter, pop-in, slide-up, karaoke-highlight, or glitch.',
     'Set the duration in milliseconds (100-5000) and choose an easing curve.',
@@ -122,7 +122,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Generate copy-paste CSS text animations plus CapCut rebuild steps with this free text animation generator CSS tool — 5 effects, easing, and colors. Try it now.',
+      description:
+    'Animate text without the guesswork: get copy-paste CSS text animations plus CapCut rebuild steps - 5 effects, easing curves, and color palettes.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'allocation',
     label: 'Pillar allocation',
     type: 'list',
-    description: 'Free instagram content pillars examples 2026: Each pillar with its percentage of the week and exact posts-per-week slots. Fast, private, no signup - try it now!',
+    description:
+    'Free instagram content pillars examples 2026: Each pillar with its percentage of the week and exact posts-per-week slots. Fast, private now.',
   },
   {
     id: 'balanceWarning',
     label: 'Balance check',
     type: 'text',
-    description: 'Warns if a pillar gets no weekly slot or one pillar dominates the schedule.',
+    description:
+    'Warns if a pillar gets no weekly slot or one pillar dominates the schedule.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Content Pillars Examples 2027',
+  title: 'Instagram Content Pillars Examples',
   description:
-    'Plan balanced Instagram content pillars for free: enter 3–5 pillars and your weekly post count to get exact percentages and slots per pillar. Start now!',
+    'Plan balanced Instagram content pillars for free: enter 3–5 pillars and your weekly post count to get exact percentages and slots per pillar. Start now.',
   howTo: [
     'List 3–5 content pillars in the Pillars field — one per line, or separated by commas.',
     'Enter how many posts you publish per week (1–21) in the Posts Per Week field.',
@@ -114,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram content pillars examples 2026: Each pillar with its percentage of the week and exact posts-per-week slots. Fast, private, no signup - try it now!',
+      description:
+    'Free instagram content pillars examples 2026: Each pillar with its percentage of the week and exact posts-per-week slots. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

@@ -36,7 +36,7 @@ const DESCRIPTION =
   'Build a balanced 5-hashtag mix with this free instagram hashtag strategy builder — curated niche pools, fixed tier rules, no guesswork. Start building your mix.';
 
 export const content: ToolContent = {
-  title: 'Instagram Hashtag Strategy Builder 2027',
+  title: 'Instagram Hashtag Strategy Builder',
   description: DESCRIPTION,
   howTo: [
     'Add a row and type your niche: fitness, food, travel, beauty, fashion, business, pets, or photography.',

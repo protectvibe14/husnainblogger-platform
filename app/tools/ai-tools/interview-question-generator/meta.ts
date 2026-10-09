@@ -30,14 +30,15 @@ export const outputs: ToolOutput[] = [
     id: 'questions',
     label: 'Interview questions',
     type: 'list',
-    description: 'Free interview question generator 2026: 10 bank questions plus 3 seniority-specific questions, with your role inserted. Fast, private, no signup - try it now!',
+    description:
+    'Free interview question generator 2026: 10 bank questions plus 3 seniority-specific questions, with your role inserted. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Interview Question Generator',
   description:
-    'Generate interview questions for any role: behavioral, technical or culture-fit banks with seniority-specific add-ons. Free prep list, no signup needed.',
+    'Generate interview questions for any role: behavioral, technical or culture-fit banks with seniority-specific add-ons. Free prep list needed.',
   howTo: [
     'Enter the role you are preparing for, e.g. product designer.',
     'Choose the seniority level you are targeting.',
@@ -110,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free interview question generator 2026: 10 bank questions plus 3 seniority-specific questions, with your role inserted. Fast, private, no signup - try it now!',
+      description:
+    'Free interview question generator 2026: 10 bank questions plus 3 seniority-specific questions, with your role inserted. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

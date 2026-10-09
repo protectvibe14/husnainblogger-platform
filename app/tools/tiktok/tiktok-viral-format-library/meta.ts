@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Viral TikTok Formats',
   description:
-    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore now.',
+    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore.',
   howTo: [
     'Enter your niche so every format entry is written for your audience.',
     'Pick a formatCategory: challenge, story, tutorial, trend-jack, or series.',
@@ -103,7 +103,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore now.',
+      description:
+    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore.',
     },
     {
       '@type': 'BreadcrumbList',

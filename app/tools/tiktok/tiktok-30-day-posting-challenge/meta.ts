@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: '30 Day TikTok Challenge',
   description:
-    'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start today!',
+    'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start.',
   howTo: [
     'Enter your niche — the video ideas are written around it (max 120 characters).',
     'Pick your startDate; the calendar counts 30 days forward from it.',
@@ -101,7 +101,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start today!',
+      description:
+    'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start.',
     },
     {
       '@context': 'https://schema.org',

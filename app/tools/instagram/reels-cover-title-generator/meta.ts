@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'titles',
     label: 'Cover titles',
     type: 'list',
-    description: 'Free reels cover text ideas 2026: Cover titles with character counts, built from fixed title formulas — no AI involved. Fast, private, no signup - try it now!',
+    description:
+    'Free reels cover text ideas 2026: Cover titles with character counts, built from fixed title formulas — no AI involved. Fast, private now.',
   },
   {
     id: 'safeZoneNote',
     label: 'Safe-zone guidance',
     type: 'text',
-    description: '1080x1920 cover safe zones plus auto-truncation warnings for titles over 60 characters.',
+    description:
+    '1080x1920 cover safe zones plus auto-truncation warnings for titles over 60 characters.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Reels Cover Text Ideas',
   description:
-    'Generate reels cover text ideas free. Enter your topic, pick a tone, and get short readable cover titles with safe-zone guidance. Create titles now!',
+    'Generate reels cover text ideas free. Enter your topic, pick a tone, and get short readable cover titles with safe-zone guidance. Create titles now.',
   howTo: [
     'Type your reel\'s topic in the "Reel topic" box (e.g. "meal prep").',
     'Pick a tone: bold, playful, professional, or curious.',
@@ -122,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free reels cover text ideas 2026: Cover titles with character counts, built from fixed title formulas — no AI involved. Fast, private, no signup - try it now!',
+      description:
+    'Free reels cover text ideas 2026: Cover titles with character counts, built from fixed title formulas — no AI involved. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

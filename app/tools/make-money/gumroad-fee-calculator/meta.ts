@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Gumroad Fee Calculator',
   description:
-    'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private, no signup - try it!',
+    'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private.',
   howTo: [
     'Enter your sale price per unit in USD.',
     'Choose the sale channel: direct (your own link/audience) or Discover (Gumroad\u2019s marketplace).',
@@ -114,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private, no signup - try it!',
+      description:
+    'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

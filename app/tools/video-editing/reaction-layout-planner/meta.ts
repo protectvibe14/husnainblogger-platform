@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Plan with this free reaction video layout planner — pick canvas, facecam size, and corner to get exact PIP rectangles plus safe-area notes. Try it now.';
+  'Lay out reaction videos like a pro: pick your canvas size, facecam size, and corner placement for exact PIP rectangles plus safe-area guidance.';
 
 export const content: ToolContent = {
   title: 'Reaction Video Layout Planner',

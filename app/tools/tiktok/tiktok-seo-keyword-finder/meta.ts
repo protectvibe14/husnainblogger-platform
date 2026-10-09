@@ -30,31 +30,36 @@ export const outputs: ToolOutput[] = [
     id: 'keywordPhrases',
     label: 'Keyword-style phrases',
     type: 'list',
-    description: 'Long-tail and niche-combined keyword phrases for captions and on-screen text.',
+    description:
+    'Long-tail and niche-combined keyword phrases for captions and on-screen text.',
   },
   {
     id: 'questionPhrases',
     label: 'Question-form phrases',
     type: 'list',
-    description: 'Question versions searchers actually type.',
+    description:
+    'Question versions searchers actually type.',
   },
   {
     id: 'howToPhrases',
     label: 'How-to phrases',
     type: 'list',
-    description: 'Tutorial-style phrases for how-to content.',
+    description:
+    'Tutorial-style phrases for how-to content.',
   },
   {
     id: 'captionPlacements',
     label: 'Where to place keywords',
     type: 'list',
-    description: '3 spots to put keywords so TikTok indexes them.',
+    description:
+    '3 spots to put keywords so TikTok indexes them.',
   },
   {
     id: 'disclaimer',
     label: 'Honesty note',
     type: 'text',
-    description: 'Reminder that this is a suggestion bank, not search-volume data.',
+    description:
+    'Reminder that this is a suggestion bank, not search-volume data.',
   },
 ];
 

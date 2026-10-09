@@ -40,14 +40,14 @@ export const outputs: ToolOutput[] = [
     label: 'Lead magnet titles',
     type: 'table',
     description:
-      'Free lead magnet title generator 2026: Table of 10 title options with character counts, assembled from fixed patterns in your. Fast, private, no signup - try!',
+    'Free lead magnet title generator 2026: Table of 10 title options with character counts, assembled from fixed patterns in your. Fast, private - try.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Lead Magnet Title Generator',
   description:
-    'Name your freebie with a lead magnet title generator. Enter your magnet type, topic, and outcome to get 10 catchy, character-counted titles. Try it free!',
+    'Name your freebie like a bestseller: enter the magnet format, topic, and reader outcome for 10 catchy, character-counted titles in 4 distinct tones.',
   howTo: [
     'Enter your magnet type (checklist, ebook, template, video, or email course).',
     'Enter the topic your freebie covers and the outcome the reader gets.',
@@ -129,7 +129,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free lead magnet title generator 2026: Table of 10 title options with character counts, assembled from fixed patterns in your. Fast, private, no signup - try!',
+      description:
+    'Free lead magnet title generator 2026: Table of 10 title options with character counts, assembled from fixed patterns in your. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

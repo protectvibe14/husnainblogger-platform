@@ -34,32 +34,36 @@ export const outputs: ToolOutput[] = [
     id: 'commentReply',
     label: 'Public comment reply',
     type: 'text',
-    description: 'Free comment dm automation script 2026: What to reply publicly when someone comments your trigger keyword. Fast, private, no signup - try it now!',
+    description:
+    'Free comment dm automation script 2026: What to reply publicly when someone comments your trigger keyword. Fast, private now.',
   },
   {
     id: 'dmScript',
     label: 'DM message sequence',
     type: 'list',
-    description: 'Three DM messages in order: delivery, engagement question, soft CTA — with a link slot you fill in.',
+    description:
+    'Three DM messages in order: delivery, engagement question, soft CTA — with a link slot you fill in.',
   },
   {
     id: 'followUp',
     label: 'Follow-up messages',
     type: 'list',
-    description: 'Two follow-up DMs to send 1 day and 3 days later to non-responders.',
+    description:
+    'Two follow-up DMs to send 1 day and 3 days later to non-responders.',
   },
   {
     id: 'setupChecklist',
     label: 'Funnel setup checklist',
     type: 'list',
-    description: 'Six setup steps for the post, keyword, notifications, and manual sending.',
+    description:
+    'Six setup steps for the post, keyword, notifications, and manual sending.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Comment DM Automation Script',
   description:
-    'Build a DM funnel with this free comment dm automation script tool. Enter your lead magnet and keyword for reply, DM and follow-up scripts. Try it now!',
+    'Build a DM funnel with this free comment dm automation script tool. Enter your lead magnet and keyword for reply, DM and follow-up scripts.',
   howTo: [
     'Enter your lead magnet — the freebie people get (up to 80 characters).',
     'Enter your trigger keyword — the word followers comment to start the funnel (single word works best).',
@@ -135,7 +139,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free comment dm automation script 2026: What to reply publicly when someone comments your trigger keyword. Fast, private, no signup - try it now!',
+      description:
+    'Free comment dm automation script 2026: What to reply publicly when someone comments your trigger keyword. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

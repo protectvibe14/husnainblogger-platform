@@ -24,32 +24,36 @@ export const outputs: ToolOutput[] = [
     id: 'texts',
     label: 'Countdown texts',
     type: 'table',
-    description: 'Free instagram countdown ideas 2026: Before / now / after variants matched to your event date. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram countdown ideas 2026: Before / now / after variants matched to your event date. free.',
   },
   {
     id: 'copyAll',
     label: 'Copy all texts',
     type: 'copy',
-    description: 'All countdown texts as plain text, ready to paste.',
+    description:
+    'All countdown texts as plain text, ready to paste.',
   },
   {
     id: 'daysLeft',
     label: 'Days until event',
     type: 'number',
-    description: 'Whole days from today to the event (negative = past).',
+    description:
+    'Whole days from today to the event (negative = past).',
   },
   {
     id: 'phase',
     label: 'Phase',
     type: 'text',
-    description: 'Which set of texts was generated: before, now, or after.',
+    description:
+    'Which set of texts was generated: before, now, or after.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Countdown Ideas',
   description:
-    'Get instagram countdown ideas for your launch or event: before, during, and after text variants. Enter your event and date, copy the texts — free. Try it now!',
+    'Get instagram countdown ideas for your launch or event: before, during, and after text variants. Enter your event and date, copy the texts — free.',
   howTo: [
     'Type your event name into the "Event name" box — e.g. "Summer Sale".',
     'Pick the event date with the "Event date" picker.',
@@ -126,7 +130,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram countdown ideas 2026: Before / now / after variants matched to your event date. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram countdown ideas 2026: Before / now / after variants matched to your event date. free.',
     },
     {
       '@type': 'BreadcrumbList',

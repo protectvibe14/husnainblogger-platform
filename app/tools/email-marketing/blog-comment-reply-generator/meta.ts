@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free blog comment reply generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Reply to reader comments like a pro: paste the comment, choose a friendly, professional, or witty tone, and get a thoughtful draft in seconds.';
 
 export const content: ToolContent = {
   title: 'Blog Comment Reply Generator',

@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'tweets',
     label: 'Tweet drafts',
     type: 'list',
-    description: 'Free tweet ideas 2026: 8 ready-to-post drafts, each within 280 weighted characters. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free tweet ideas 2026: 8 ready-to-post drafts, each within 280 weighted characters. free.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Weighted-count method and the link-in-reply best practice.',
+    description:
+    'Weighted-count method and the link-in-reply best practice.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Tweet Ideas Generator',
   description:
-    'Generate tweet ideas for any topic: pick a goal and get 8 ready-to-post X drafts, each checked against weighted character rules. Free — get ideas now!',
+    'Generate tweet ideas for any topic: pick a goal and get 8 ready-to-post X drafts, each checked against weighted character rules. Free — get ideas now.',
   howTo: [
     'Type your topic (for example, "sourdough baking for beginners").',
     'Pick a goal: engagement (replies and debate), traffic (link-in-reply posts), or followers (follow-me framing). Leave it blank for general ideas.',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tweet ideas 2026: 8 ready-to-post drafts, each within 280 weighted characters. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free tweet ideas 2026: 8 ready-to-post drafts, each within 280 weighted characters. free.',
     },
     {
       '@context': 'https://schema.org',

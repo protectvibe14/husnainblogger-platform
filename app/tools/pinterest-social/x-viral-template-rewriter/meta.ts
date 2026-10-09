@@ -26,20 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'rewrites',
     label: 'Rewrites',
     type: 'list',
-    description: 'Free viral tweet templates 2026: 3 rewrites of your draft in the chosen pattern, each within 280 weighted characters. Fast, private, no signup - try it now!',
+    description:
+    'Free viral tweet templates 2026: 3 rewrites of your draft in the chosen pattern, each within 280 weighted characters. Fast, private now.',
   },
   {
     id: 'fitNote',
     label: 'Fit note',
     type: 'text',
-    description: 'Character-budget summary, plus a note if your draft already matched the pattern.',
+    description:
+    'Character-budget summary, plus a note if your draft already matched the pattern.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Viral Tweet Templates',
   description:
-    'Rewrite with viral tweet templates free: pick a proven pattern and get 3 reshaped drafts that fit X’s 280-character limit. Reshape your tweet now!',
+    'Rewrite with viral tweet templates free: pick a proven pattern and get 3 reshaped drafts that fit X’s 280-character limit. Reshape your tweet now.',
   howTo: [
     'Paste your tweet draft into the "Your draft" box (up to 2,000 characters).',
     'Choose a "Viral pattern": stat-hook, question-hook, hot-take, or build-in-public.',
@@ -118,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free viral tweet templates 2026: 3 rewrites of your draft in the chosen pattern, each within 280 weighted characters. Fast, private, no signup - try it now!',
+      description:
+    'Free viral tweet templates 2026: 3 rewrites of your draft in the chosen pattern, each within 280 weighted characters. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

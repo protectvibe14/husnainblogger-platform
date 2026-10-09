@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'boardNameCandidates',
     label: 'Board name ideas',
     type: 'list',
-    description: 'Free pinterest board name ideas 2026: Keyword-led Pinterest board names from a fixed template bank, each capped at 100. Fast, private, no signup - try it now!',
+    description:
+    'Free pinterest board name ideas 2026: Keyword-led Pinterest board names from a fixed template bank, each capped at 100. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Board Name Ideas',
   description:
-    'Generate Pinterest board name ideas for any niche — pick SEO, playful, or brand tone and get keyword-led names capped at 100 characters. Try it free now!',
+    'Name boards people actually search for: pick SEO, playful, or brand tone for keyword-led board names capped at Pinterest\.'s 100-character limit.',
   howTo: [
     'Type your niche keyword into the "Niche keyword" field (e.g. small kitchen organization).',
     'Choose a name tone: seo for search-friendly names, playful for personality, or brand for a curated look.',
@@ -118,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest board name ideas 2026: Keyword-led Pinterest board names from a fixed template bank, each capped at 100. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest board name ideas 2026: Keyword-led Pinterest board names from a fixed template bank, each capped at 100. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

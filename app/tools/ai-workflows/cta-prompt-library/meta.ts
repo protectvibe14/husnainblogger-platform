@@ -25,14 +25,15 @@ export const outputs: ToolOutput[] = [
     id: 'ctaLines',
     label: 'CTA lines (copy any line)',
     type: 'list',
-    description: 'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. No signup - try it free now!',
+    description:
+    'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Call To Action Prompts',
   description:
-    'Browse a free library of human-written call to action prompts. Filter 60 lines by goal and tone, then copy them into your pages and emails. Start copying now!',
+    'Browse a free library of human-written call to action prompts. Filter 60 lines by goal and tone, then copy them into your pages and emails. Start.',
   howTo: [
     'Pick your CTA goal from the dropdown: click, subscribe, buy, or share.',
     'Choose the tone that fits your brand: direct, friendly, urgent, playful, or professional.',
@@ -107,13 +108,15 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Call To Action Prompts 2026 – Free Tool - no signup required.',
+      description:
+    'Free Call To Action Prompts 2026 – Free Tool - required.',
     },
     {
       '@type': 'WebPage',
       name: 'Call To Action Prompts 2026 – Free Tool | HusnainBlogger',
       url: TOOL_URL,
-      description: 'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. No signup - try it free now!',
+      description:
+    'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

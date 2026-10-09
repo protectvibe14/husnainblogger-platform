@@ -32,14 +32,15 @@ export const outputs: ToolOutput[] = [
     id: 'boardDescription',
     label: 'Board description',
     type: 'text',
-    description: 'Free pinterest board description 2026: A natural, keyword-rich board description under 500 characters, built from fixed sentence. Fast, private, no signup -!',
+    description:
+    'Free pinterest board description 2026: A natural, keyword-rich board description under 500 characters, built from fixed sentence. Fast, private -.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Board Description',
   description:
-    'Write a keyword-rich Pinterest board description in seconds — enter your board name and keywords for a natural, under-500-character result. Try it free now!',
+    'Write board descriptions Pinterest actually ranks: enter your board name and keywords for a natural, keyword-rich description under 500 characters.',
   howTo: [
     'Type your board name into the "Board name" field — it becomes the first sentence of the description.',
     'Add keywords in the "Keywords" field, separated by commas (e.g. pantry organization, tiny kitchens).',
@@ -117,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest board description 2026: A natural, keyword-rich board description under 500 characters, built from fixed sentence. Fast, private, no signup -!',
+      description:
+    'Free pinterest board description 2026: A natural, keyword-rich board description under 500 characters, built from fixed sentence. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

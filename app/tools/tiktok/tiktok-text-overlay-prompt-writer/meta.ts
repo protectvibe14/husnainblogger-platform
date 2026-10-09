@@ -25,26 +25,29 @@ export const outputs: ToolOutput[] = [
     id: 'hookLine',
     label: 'Hook line',
     type: 'text',
-    description: 'Free tiktok text overlay ideas 2026: The opening on-screen line, capped at 42 characters for mobile readability. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok text overlay ideas 2026: The opening on-screen line, capped at 42 characters for mobile readability. Fast, private now.',
   },
   {
     id: 'beatLines',
     label: 'Beat lines',
     type: 'list',
-    description: 'One readable line per beat; long sentences are split with a [pause] marker.',
+    description:
+    'One readable line per beat; long sentences are split with a [pause] marker.',
   },
   {
     id: 'copyAll',
     label: 'Copy all lines',
     type: 'copy',
-    description: 'Hook, beat lines, and safe-zone guidance as plain text.',
+    description:
+    'Hook, beat lines, and safe-zone guidance as plain text.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Text Overlay Ideas',
   description:
-    'Create free tiktok text overlay ideas from your scene: hook line plus beat lines, every line capped at 42 chars for mobile readability. Try it now!',
+    'Create free tiktok text overlay ideas from your scene: hook line plus beat lines, every line capped at 42 chars for mobile readability.',
   howTo: [
     'Describe the scene in the "Scene description" box (what happens, beat by beat).',
     'Enter the "Video topic" so the output stays labelled and organized.',
@@ -131,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok text overlay ideas 2026: The opening on-screen line, capped at 42 characters for mobile readability. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok text overlay ideas 2026: The opening on-screen line, capped at 42 characters for mobile readability. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -11,7 +11,7 @@ export const trackerMode: 'checklist' = 'checklist';
 export const trackerItems = TRACKER_ITEMS;
 
 const DESCRIPTION =
-  'Free email deliverability checklist 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Land in the inbox, not spam: work through this deliverability checklist covering authentication, list hygiene, and content before you hit send.';
 
 export const content: ToolContent = {
   title: 'Email Deliverability Checklist',

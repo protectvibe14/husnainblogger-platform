@@ -68,14 +68,15 @@ export const outputs: ToolOutput[] = [
     id: 'pitchEmailDraft',
     label: 'Pitch email draft (copy)',
     type: 'copy',
-    description: 'Free brand pitch email template 2026: 3 subject-line options plus the full email body, ready to copy and send. Fast, private, no signup - try it now!',
+    description:
+    'Free brand pitch email template 2026: 3 subject-line options plus the full email body, ready to copy and send. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Brand Pitch Email Template',
   description:
-    'Generate a brand pitch email in seconds. Enter your niche, metrics, and pitch angle to get 3 subject lines plus a ready-to-send draft. Try it free now!',
+    'Generate a brand pitch email in seconds. Enter your niche, metrics, and pitch angle to get 3 subject lines plus a ready-to-send draft. Try it free now.',
   howTo: [
     'Enter the brand name, your name, and your niche in the matching fields.',
     'Add your follower count and engagement rate exactly as you report them — the tool inserts them verbatim and never verifies them.',
@@ -174,7 +175,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free brand pitch email template 2026: 3 subject-line options plus the full email body, ready to copy and send. Fast, private, no signup - try it now!',
+      description:
+    'Free brand pitch email template 2026: 3 subject-line options plus the full email body, ready to copy and send. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

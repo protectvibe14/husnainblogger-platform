@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Preheader Generator',
   description:
-    'Free email preheader generator 2026: generate email preheader text free: turn your email summary into 6 preview-text options,. Fast, private, no signup - try!',
+    'Stop wasting preview text on repeats: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it.',
   howTo: [
     'Describe what your email is about in the summary field (at least 10 characters).',
     'Optionally paste your subject line so the generator avoids repeating it.',
@@ -112,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email preheader generator 2026: generate email preheader text free: turn your email summary into 6 preview-text options,. Fast, private, no signup - try!',
+      description:
+    'Stop wasting preview text on repeats: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it.',
     },
     {
       '@type': 'BreadcrumbList',

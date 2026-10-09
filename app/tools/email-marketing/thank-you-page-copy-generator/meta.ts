@@ -39,33 +39,36 @@ export const outputs: ToolOutput[] = [
     id: 'headlines',
     label: 'Headline options',
     type: 'list',
-    description: 'Free thank you page copy generator 2026: 3 thank-you page headline options assembled from fixed templates. Fast, private, no signup - try it now!',
+    description:
+    'Free thank you page copy generator 2026: 3 thank-you page headline options assembled from fixed templates. Fast, private now.',
   },
   {
     id: 'body',
     label: 'Body draft',
     type: 'copy',
     description:
-      'A short body paragraph: a tone-matched opening line plus one templated confirmation paragraph naming the action, brand, and next step.',
+    'A short body paragraph: a tone-matched opening line plus one templated confirmation paragraph naming the action, brand, and next step.',
   },
   {
     id: 'nextCta',
     label: 'Next-step CTA',
     type: 'copy',
-    description: 'A single call-to-action line pointing the reader at the next step.',
+    description:
+    'A single call-to-action line pointing the reader at the next step.',
   },
   {
     id: 'notices',
     label: 'Notices',
     type: 'list',
-    description: 'Notices about input adjustments such as truncation.',
+    description:
+    'Notices about input adjustments such as truncation.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Thank You Page Copy Generator',
   description:
-    'Draft post-signup pages with this free thank you page copy generator: get headlines, body copy, and a CTA for your action, brand, and tone. Try it now!',
+    'Make the thank-you page work harder: enter the completed action and the next step you want for headlines, body copy, and a CTA in your tone.',
   howTo: [
     'Enter the completed action (e.g. newsletter signup) — what the visitor just did.',
     'Enter the next step you want them to take (e.g. confirm your email).',
@@ -147,7 +150,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free thank you page copy generator 2026: 3 thank-you page headline options assembled from fixed templates. Fast, private, no signup - try it now!',
+      description:
+    'Free thank you page copy generator 2026: 3 thank-you page headline options assembled from fixed templates. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

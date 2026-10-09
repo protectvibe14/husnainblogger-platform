@@ -46,26 +46,29 @@ export const outputs: ToolOutput[] = [
     id: 'pitch',
     label: 'Your UGC pitch (copy)',
     type: 'copy',
-    description: 'Free ugc pitch template 2026: The full outreach message with your brand, niche, and rate filled in. Get instant results. No signup - try it free now!',
+    description:
+    'Free ugc pitch template 2026: The full outreach message with your brand, niche, and rate filled in. Get instant results. free now.',
   },
   {
     id: 'deliverablesList',
     label: 'Deliverables included',
     type: 'list',
-    description: 'What the pitch promises, matched to your content type.',
+    description:
+    'What the pitch promises, matched to your content type.',
   },
   {
     id: 'followUpTemplate',
     label: 'Follow-up message (copy)',
     type: 'copy',
-    description: 'A polite nudge to send if the brand does not reply in a week.',
+    description:
+    'A polite nudge to send if the brand does not reply in a week.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'UGC Pitch Template',
   description:
-    'Use a proven ugc pitch template to message brands: enter the brand, your niche, and content type, get a copyable pitch plus follow-up. Free — try it now!',
+    'Use a proven ugc pitch template to message brands: enter the brand, your niche, and content type, get a copyable pitch plus follow-up. Free —.',
   howTo: [
     'Type the brand name in the "Brand name" field (for example, "GlowLab").',
     'Enter your niche in the "Your niche" field (for example, "skincare for beginners").',
@@ -137,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ugc pitch template 2026: The full outreach message with your brand, niche, and rate filled in. Get instant results. No signup - try it free now!',
+      description:
+    'Free ugc pitch template 2026: The full outreach message with your brand, niche, and rate filled in. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

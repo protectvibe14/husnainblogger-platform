@@ -27,13 +27,15 @@ export const outputs: ToolOutput[] = [
     id: 'sentiment',
     label: 'Sentiment',
     type: 'text',
-    description: 'Free sentiment analyzer 2026: POSITIVE or NEGATIVE with confidence scores for both. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free sentiment analyzer 2026: POSITIVE or NEGATIVE with confidence scores for both. free.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What this binary classifier can and cannot do.',
+    description:
+    'What this binary classifier can and cannot do.',
   },
 ];
 
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free sentiment analyzer 2026: POSITIVE or NEGATIVE with confidence scores for both. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free sentiment analyzer 2026: POSITIVE or NEGATIVE with confidence scores for both. free.',
     },
     {
       '@context': 'https://schema.org',

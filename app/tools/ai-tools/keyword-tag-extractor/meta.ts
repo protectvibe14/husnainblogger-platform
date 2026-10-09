@@ -29,13 +29,15 @@ export const outputs: ToolOutput[] = [
     id: 'keywords',
     label: 'Top keywords',
     type: 'list',
-    description: 'Free keyword extractor 2026: Keywords and key phrases ranked by in-document frequency. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free keyword extractor 2026: Keywords and key phrases ranked by in-document frequency. free.',
   },
   {
     id: 'hashtags',
     label: 'Hashtag variants',
     type: 'copy',
-    description: 'CamelCase hashtag versions of the top keywords, ready to paste.',
+    description:
+    'CamelCase hashtag versions of the top keywords, ready to paste.',
   },
 ];
 
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free keyword extractor 2026: Keywords and key phrases ranked by in-document frequency. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free keyword extractor 2026: Keywords and key phrases ranked by in-document frequency. free.',
     },
     {
       '@context': 'https://schema.org',

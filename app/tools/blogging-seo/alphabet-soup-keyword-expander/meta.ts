@@ -16,20 +16,22 @@ export const outputs: ToolOutput[] = [
     id: 'expansions',
     label: 'Alphabet soup ideas',
     type: 'list',
-    description: 'Free alphabet soup keyword method 2026: Your seed followed by each letter a-z. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free alphabet soup keyword method 2026: Your seed followed by each letter a-z. free.',
   },
   {
     id: 'count',
     label: 'Ideas generated',
     type: 'number',
-    description: 'Always 26 — one per letter.',
+    description:
+    'Always 26 — one per letter.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Alphabet Soup Keyword Method',
   description:
-    'Run the alphabet soup keyword method: expand any seed with a–z suffixes for brainstorming. Free alphabet soup keyword method — try your seed now!',
+    'Run the alphabet soup keyword method: expand any seed with a–z suffixes for brainstorming. Free alphabet soup keyword method — try your seed now.',
   howTo: [
     'Type your seed keyword (2-100 characters) into the Seed keyword field.',
     'Click Generate to append each letter a-z to your seed.',
@@ -101,7 +103,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free alphabet soup keyword method 2026: Your seed followed by each letter a-z. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free alphabet soup keyword method 2026: Your seed followed by each letter a-z. free.',
     },
     {
       '@context': 'https://schema.org',

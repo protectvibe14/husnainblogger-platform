@@ -67,7 +67,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: '16:9 to 9:16 Crop Preview',
   description:
-    'Free 16:9 to 9:16 crop preview 2026: Preview a 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost,. Fast, private, no signup - try it!',
+    'Preview your 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost, and text safe zones for any source size and anchor.',
   howTo: [
     'Enter the source video width and height in pixels.',
     'Pick the target aspect ratio (16:9, 9:16, 1:1, 4:5, or a custom W:H like 3:4).',
@@ -141,7 +141,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free 16:9 to 9:16 crop preview 2026: Preview a 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost,. Fast, private, no signup - try it!',
+      description:
+    'Preview your 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost, and text safe zones for any source size and anchor.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -38,7 +38,7 @@ const DESCRIPTION =
   'Find fair freelance graphic design rates with this free graphic designer rates calculator. Choose your level and deliverable for an estimated hourly range.';
 
 export const content: ToolContent = {
-  title: 'Graphic Designer Rates Calculator 2027',
+  title: 'Graphic Designer Rates Calculator',
   description: DESCRIPTION,
   howTo: [
     'Choose your experience level: Entry (under ~2 years), Mid (2–5 years), or Senior (5+ years / art direction).',

@@ -26,7 +26,8 @@ export const outputs: ToolOutput[] = [
     id: 'enhanced',
     label: 'Enhanced bullet',
     type: 'text',
-    description: 'Free resume bullet point enhancer 2026: The rewritten bullet: strong action verb, quantified result when you provided numbers,. Fast, private, no signup - try!',
+    description:
+    'Free resume bullet point enhancer 2026: The rewritten bullet: strong action verb, quantified result when you provided numbers. Fast, private - try.',
   },
 ];
 
@@ -34,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Resume Bullet Enhancer',
   description:
-    'Turn weak resume bullets into sharp, action-led lines with your own free Gemini, Groq, or OpenRouter key. Never invents numbers — no signup, no cost to us.',
+    'Turn weak resume bullets into sharp, action-led lines with your own free Gemini, Groq, or OpenRouter key. Never invents numbers —, no cost to us.',
   howTo: [
     'Paste your raw resume bullet into the box (one bullet per generation).',
     'Optionally add the target role so the wording matches the job.',
@@ -106,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free resume bullet point enhancer 2026: The rewritten bullet: strong action verb, quantified result when you provided numbers,. Fast, private, no signup - try!',
+      description:
+    'Free resume bullet point enhancer 2026: The rewritten bullet: strong action verb, quantified result when you provided numbers. Fast, private - try.',
     },
     {
       '@context': 'https://schema.org',

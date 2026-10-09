@@ -25,44 +25,50 @@ export const outputs: ToolOutput[] = [
     id: 'palette',
     label: 'Color palette',
     type: 'list',
-    description: 'Free instagram feed theme planner 2026: 6 curated rules that keep the theme consistent. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram feed theme planner 2026: 6 curated rules that keep the theme consistent. free.',
   },
   {
     id: 'doList',
     label: 'Do list',
     type: 'list',
-    description: '6 curated rules that keep the theme consistent.',
+    description:
+    '6 curated rules that keep the theme consistent.',
   },
   {
     id: 'dontList',
     label: "Don't list",
     type: 'list',
-    description: '6 curated mistakes that break the theme.',
+    description:
+    '6 curated mistakes that break the theme.',
   },
   {
     id: 'postingRhythm',
     label: 'Posting rhythm',
     type: 'text',
-    description: 'Curated posting frequency suggestion for this theme.',
+    description:
+    'Curated posting frequency suggestion for this theme.',
   },
   {
     id: 'sampleGrid',
     label: 'Sample 3x3 grid',
     type: 'list',
-    description: 'A row-by-row sample grid pattern in this theme\'s style.',
+    description:
+    'A row-by-row sample grid pattern in this theme\.'s style.',
   },
   {
     id: 'themeNote',
     label: 'Plan summary',
     type: 'text',
-    description: 'Theme confirmation, niche tip, and the honesty note.',
+    description:
+    'Theme confirmation, niche tip, and the honesty note.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Feed Theme Planner',
   description:
-    'Plan a consistent Instagram feed theme free with a curated planner. Pick minimal, bold, pastel, moody or editorial and get palettes, dos and donts. Try it now!',
+    'Plan a consistent Instagram feed theme free with a curated planner. Pick minimal, bold, pastel, moody or editorial and get palettes, dos and donts.',
   howTo: [
     'Choose your feed theme from the dropdown: minimal, bold, pastel, moody, or editorial.',
     'Optionally add your niche (e.g. "coffee shops") to get a tailored shooting tip in the plan summary.',
@@ -138,7 +144,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram feed theme planner 2026: 6 curated rules that keep the theme consistent. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram feed theme planner 2026: 6 curated rules that keep the theme consistent. free.',
     },
     {
       '@type': 'BreadcrumbList',

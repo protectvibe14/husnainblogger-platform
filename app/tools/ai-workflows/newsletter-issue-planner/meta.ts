@@ -30,20 +30,22 @@ export const outputs: ToolOutput[] = [
     id: 'issueTemplate',
     label: 'Issue template',
     type: 'table',
-    description: 'Free newsletter content planner 2026: Named section slots with slot purposes and word-count targets. Get instant results. No signup - try it free now!',
+    description:
+    'Free newsletter content planner 2026: Named section slots with slot purposes and word-count targets. Get instant results. free now.',
   },
   {
     id: 'summary',
     label: 'Issue summary',
     type: 'text',
-    description: 'Section count, words per issue, and issues per year.',
+    description:
+    'Section count, words per issue, and issues per year.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Newsletter Content Planner',
   description:
-    'Plan each newsletter issue — arrange your sections into a fixed issue template with word-count targets. Free newsletter content planner. Plan your next issue!',
+    'Plan each newsletter issue — arrange your sections into a fixed issue template with word-count targets. Free newsletter content planner. Plan your next.',
   howTo: [
     'Enter your newsletter\'s name.',
     'List your sections, one per line (duplicates are removed automatically).',
@@ -124,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter content planner 2026: Named section slots with slot purposes and word-count targets. Get instant results. No signup - try it free now!',
+      description:
+    'Free newsletter content planner 2026: Named section slots with slot purposes and word-count targets. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

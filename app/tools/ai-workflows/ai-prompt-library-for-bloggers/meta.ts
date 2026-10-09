@@ -74,13 +74,15 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free AI Prompts for Blogging 2026 – Free Tool - no signup required.',
+      description:
+    'Free AI Prompts for Blogging 2026 – Free Tool - required.',
     },
     {
       '@type': 'WebPage',
       name: 'AI Prompts for Blogging 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/ai-prompt-library-for-bloggers/',
-      description: 'Browse a free library of AI prompts for blogging: 48 human-written templates for ideas, outlines, drafts, and SEO. Copy any prompt and start writing today.',
+      description:
+    'Browse a free library of AI prompts for blogging: 48 human-written templates for ideas, outlines, drafts, and SEO. Copy any prompt and start writing today.',
     },
     {
       '@type': 'BreadcrumbList',

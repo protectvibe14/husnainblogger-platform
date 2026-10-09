@@ -48,26 +48,29 @@ export const outputs: ToolOutput[] = [
     id: 'pitchEmail',
     label: 'Pitch email (copy)',
     type: 'copy',
-    description: 'Free newsletter sponsorship pitch 2026: Ready-to-personalize outreach email to sponsors. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free newsletter sponsorship pitch 2026: Ready-to-personalize outreach email to sponsors. free.',
   },
   {
     id: 'rateCardSnippet',
     label: 'Rate-card snippet (copy)',
     type: 'copy',
-    description: 'Ad-format list with [YOUR RATE] placeholders to fill in.',
+    description:
+    'Ad-format list with [YOUR RATE] placeholders to fill in.',
   },
   {
     id: 'notices',
     label: 'Notes',
     type: 'list',
-    description: 'Truncation notes.',
+    description:
+    'Truncation notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Newsletter Sponsorship Pitch',
   description:
-    'Write a newsletter sponsorship pitch fast — turn your stats and ad formats into an outreach email and a rate card. Free, no signup. Create your pitch now!',
+    'Write a newsletter sponsorship pitch fast — turn your stats and ad formats into an outreach email and a rate card. Free Create your pitch now.',
   howTo: [
     'Enter your newsletter’s name and describe its audience in one line.',
     'Add your subscriber count and, if you know it, your average open rate.',
@@ -150,7 +153,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter sponsorship pitch 2026: Ready-to-personalize outreach email to sponsors. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free newsletter sponsorship pitch 2026: Ready-to-personalize outreach email to sponsors. free.',
     },
     {
       '@type': 'BreadcrumbList',

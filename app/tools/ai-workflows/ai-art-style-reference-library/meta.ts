@@ -39,7 +39,8 @@ export const outputs: ToolOutput[] = [
     id: 'exampleSnippet',
     label: 'Example prompt snippet',
     type: 'copy',
-    description: 'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. free now.',
   },
   { id: 'tags', label: 'Tags', type: 'list' },
   { id: 'sampleKeywords', label: 'Sample keywords', type: 'list' },
@@ -48,7 +49,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Art Styles List',
   description:
-    'Pick a style from this curated AI art styles list to see its look, copy an example prompt snippet, and get tags plus keywords. Free, no signup - explore now!',
+    'Pick a style from this curated AI art styles list to see its look, copy an example prompt snippet, and get tags plus keywords. Free - explore now.',
   howTo: [
     'Choose an art style from the dropdown list.',
     'Read the style card: a short description of what it looks like.',
@@ -125,14 +126,16 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free AI Art Styles List 2026 – Free Tool - no signup required.',
+      description:
+    'Free AI Art Styles List 2026 – Free Tool - required.',
     },
     {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: 'AI Art Styles List 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/ai-art-style-reference-library/',
-      description: 'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -46,27 +46,29 @@ export const outputs: ToolOutput[] = [
     id: 'subjectOptions',
     label: 'Subject line options',
     type: 'list',
-    description: 'Free sale email template generator 2026: 5 subject-line options assembled from fixed templates with your offer and discount. Fast, private, no signup - try it!',
+    description:
+    'Free sale email template generator 2026: 5 subject-line options assembled from fixed templates with your offer and discount. Fast, private.',
   },
   {
     id: 'bodyDraft',
     label: 'Promo email draft',
     type: 'copy',
-    description: 'Full promo draft in your chosen tone. Contains no invented urgency.',
+    description:
+    'Full promo draft in your chosen tone. Contains no invented urgency.',
   },
   {
     id: 'urgencyBlock',
     label: 'Urgency copy',
     type: 'text',
     description:
-      'Deadline-based urgency lines generated ONLY from the deadline you entered. States plainly that no urgency was generated when no deadline is given.',
+    'Deadline-based urgency lines generated ONLY from the deadline you entered. States plainly that no urgency was generated when no deadline is given.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Sale Email Template Generator',
   description:
-    'Build a high-converting sale email with this free sale email template generator. Add your offer, discount, and real deadline for honest urgency copy. Start now!',
+    'Write sale emails that convert without hype: add your offer, exact discount, and real deadline for honest urgency copy written in your tone.',
   howTo: [
     'Enter your offer name and the exact discount (e.g. 40% or $20 off).',
     'Optionally enter the real sale deadline — urgency copy is generated only from this.',
@@ -150,7 +152,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free sale email template generator 2026: 5 subject-line options assembled from fixed templates with your offer and discount. Fast, private, no signup - try it!',
+      description:
+    'Free sale email template generator 2026: 5 subject-line options assembled from fixed templates with your offer and discount. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

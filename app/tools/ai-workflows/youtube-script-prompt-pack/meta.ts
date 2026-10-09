@@ -18,7 +18,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Prompts for YouTube Scripts',
   description:
-    'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free, no signup.',
+    'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free.',
   howTo: [
     'Choose your video type: tutorial, review, vlog, commentary, or unboxing.',
     'The matching human-written script prompt template appears instantly.',
@@ -79,13 +79,15 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free AI Prompts for YouTube Scripts 2026 – Free - no signup required.',
+      description:
+    'Free AI Prompts for YouTube Scripts 2026 – Free - required.',
     },
     {
       '@type': 'WebPage',
       name: 'AI Prompts for YouTube Scripts 2026 – Free | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/youtube-script-prompt-pack/',
-      description: 'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free, no signup.',
+      description:
+    'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free.',
     },
     {
       '@type': 'BreadcrumbList',

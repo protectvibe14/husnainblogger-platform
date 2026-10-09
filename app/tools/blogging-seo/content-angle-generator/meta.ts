@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'angles',
     label: 'Content angles',
     type: 'table',
-    description: 'Free content angle generator 2026: 12 ready-to-write angles with a note on why each works. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free content angle generator 2026: 12 ready-to-write angles with a note on why each works. free.',
   },
   {
     id: 'count',
     label: 'Angle count',
     type: 'number',
-    description: 'How many angles were generated.',
+    description:
+    'How many angles were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Angle Generator',
   description:
-    'Beat the blank page with this free content angle generator. Turn any topic into 12 ready-to-write angles for listicles, guides and more. Get angles now!',
+    'Beat the blank page with this free content angle generator. Turn any topic into 12 ready-to-write angles for listicles, guides and more. Get angles now.',
   howTo: [
     'Type your topic into the "Topic" box, e.g. email marketing.',
     'Optionally name your audience — leave it blank to target beginners.',
@@ -109,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free content angle generator 2026: 12 ready-to-write angles with a note on why each works. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free content angle generator 2026: 12 ready-to-write angles with a note on why each works. free.',
     },
     {
       '@type': 'BreadcrumbList',

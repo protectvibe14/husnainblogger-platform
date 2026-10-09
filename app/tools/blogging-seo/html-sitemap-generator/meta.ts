@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'sitemapHtml',
     label: 'HTML sitemap (copy)',
     type: 'copy',
-    description: 'Free html sitemap generator 2026: The HTML fragment — paste it into your sitemap page so it inherits your styling. Fast, private, no signup - try it now!',
+    description:
+    'Free html sitemap generator 2026: The HTML fragment — paste it into your sitemap page so it inherits your styling. Fast, private now.',
   },
   {
     id: 'pageCount',
     label: 'Page count',
     type: 'number',
-    description: 'How many pages made it into the sitemap.',
+    description:
+    'How many pages made it into the sitemap.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'HTML Sitemap Generator',
   description:
-    'Create a clean, human-readable HTML sitemap for your visitors. Paste your pages, group them into sections, and copy the HTML. Free, no signup!',
+    'Create a clean, human-readable HTML sitemap for your visitors. Paste your pages, group them into sections, and copy the HTML. Free.',
   howTo: [
     'Paste your "Page list" — one page per line as title | URL | optional section.',
     'Use full URLs (https://…) or paths starting with "/" — other values are skipped and reported.',
@@ -120,7 +122,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free html sitemap generator 2026: The HTML fragment — paste it into your sitemap page so it inherits your styling. Fast, private, no signup - try it now!',
+      description:
+    'Free html sitemap generator 2026: The HTML fragment — paste it into your sitemap page so it inherits your styling. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

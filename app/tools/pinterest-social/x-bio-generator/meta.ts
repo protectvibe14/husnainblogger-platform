@@ -35,20 +35,22 @@ export const outputs: ToolOutput[] = [
     id: 'bioVariants',
     label: 'Bio variants',
     type: 'list',
-    description: 'Free twitter bio generator 2026: 8 bio options, each within the 160-character bio limit. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free twitter bio generator 2026: 8 bio options, each within the 160-character bio limit. free.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Compression warnings and the link-field reminder.',
+    description:
+    'Compression warnings and the link-field reminder.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Bio Generator',
   description:
-    'Generate Twitter bio ideas fast: enter who you are and what you do to get 160-character X bio variants with a CTA. Free, instant — write yours now!',
+    'Generate Twitter bio ideas fast: enter who you are and what you do to get 160-character X bio variants with a CTA. Free, instant — write yours now.',
   howTo: [
     'Type who you are in the first field (for example, "fitness coach for busy moms").',
     'Type what you do in the second field (for example, "20-minute home workouts, no gym needed").',
@@ -128,7 +130,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter bio generator 2026: 8 bio options, each within the 160-character bio limit. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free twitter bio generator 2026: 8 bio options, each within the 160-character bio limit. free.',
     },
     {
       '@context': 'https://schema.org',

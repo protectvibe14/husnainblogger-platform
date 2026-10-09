@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'captions',
     label: 'Captions',
     type: 'text',
-    description: 'Free ai social media caption generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai social media caption generator 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Social Caption Generator',
   description:
-    'Write engaging captions for Instagram, TikTok, X, LinkedIn, or Facebook in any tone with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Write engaging captions for Instagram, TikTok, X, LinkedIn, or Facebook in any tone with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Describe your post topic.',
     'Pick the platform and tone.',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai social media caption generator 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai social media caption generator 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

@@ -16,25 +16,29 @@ export const outputs: ToolOutput[] = [
     id: 'formattedScript',
     label: 'Formatted script',
     type: 'copy',
-    description: 'Free elevenlabs script formatter 2026: Your script with suggested break tags for ElevenLabs. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free elevenlabs script formatter 2026: Your script with suggested break tags for ElevenLabs. free.',
   },
   {
     id: 'flags',
     label: 'Words to review',
     type: 'list',
-    description: 'ALL-CAPS words and abbreviations to check before generating audio.',
+    description:
+    'ALL-CAPS words and abbreviations to check before generating audio.',
   },
   {
     id: 'pronunciationHints',
     label: 'Pronunciation hints',
     type: 'list',
-    description: 'Suggested spoken forms for common abbreviations.',
+    description:
+    'Suggested spoken forms for common abbreviations.',
   },
   {
     id: 'estimatedDuration',
     label: 'Estimated duration',
     type: 'text',
-    description: 'Rough duration estimate at ~850 characters per minute.',
+    description:
+    'Rough duration estimate at ~850 characters per minute.',
   },
 ];
 
@@ -113,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free elevenlabs script formatter 2026: Your script with suggested break tags for ElevenLabs. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free elevenlabs script formatter 2026: Your script with suggested break tags for ElevenLabs. free.',
     },
     {
       '@context': 'https://schema.org',

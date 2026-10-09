@@ -19,32 +19,36 @@ export const outputs: ToolOutput[] = [
     id: 'score',
     label: 'Scannability score',
     type: 'number',
-    description: 'Free blog scannability checker 2026: 0–100 score from our transparent structural rubric (starts at 100, deductions per failed. Fast, private, no signup - try!',
+    description:
+    'Free blog scannability checker 2026: 0–100 score from our transparent structural rubric (starts at 100, deductions per failed. Fast, private - try.',
   },
   {
     id: 'grade',
     label: 'Grade',
     type: 'text',
-    description: 'Letter grade: A (90–100), B (75–89), C (60–74), D (40–59), F (0–39).',
+    description:
+    'Letter grade: A (90–100), B (75–89), C (60–74), D (40–59), F (0–39).',
   },
   {
     id: 'checks',
     label: 'Pass/fail checks',
     type: 'list',
-    description: 'One line per rubric check with the measured value (fails first, then passes).',
+    description:
+    'One line per rubric check with the measured value (fails first, then passes).',
   },
   {
     id: 'recommendations',
     label: 'Recommendations',
     type: 'list',
-    description: 'One concrete fix per failed check.',
+    description:
+    'One concrete fix per failed check.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Scannability Checker',
   description:
-    'Check how scannable your post is with this free blog scannability checker. Get a 0-100 score, pass/fail checks, and fixes for headings and lists. Test it now!',
+    'Check how scannable your post is with this free blog scannability checker. Get a 0-100 score, pass/fail checks, and fixes for headings and lists. Test.',
   howTo: [
     'Paste your full blog post into the content box — markdown or plain text both work.',
     'Run the tool to get a 0–100 scannability score and a letter grade.',
@@ -122,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free blog scannability checker 2026: 0–100 score from our transparent structural rubric (starts at 100, deductions per failed. Fast, private, no signup - try!',
+      description:
+    'Free blog scannability checker 2026: 0–100 score from our transparent structural rubric (starts at 100, deductions per failed. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

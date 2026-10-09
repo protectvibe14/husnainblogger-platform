@@ -51,27 +51,29 @@ export const outputs: ToolOutput[] = [
     id: 'killFeeAmount',
     label: 'Kill fee owed',
     type: 'currency',
-    description: 'Free kill fee calculator freelance 2026: Amount the client owes based on your contract percentage. Get instant results. No signup - try it free now!',
+    description:
+    'Free kill fee calculator freelance 2026: Amount the client owes based on your contract percentage. Get instant results. free now.',
   },
   {
     id: 'killFeePctApplied',
     label: 'Percentage applied',
     type: 'percent',
-    description: 'The stage percentage used in the calculation (echoed back).',
+    description:
+    'The stage percentage used in the calculation (echoed back).',
   },
   {
     id: 'clientRefund',
     label: 'Refund if prepaid in full',
     type: 'currency',
     description:
-      'Contract value minus kill fee — meaningful only if the client already paid in full.',
+    'Contract value minus kill fee — meaningful only if the client already paid in full.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Kill Fee Calculator Freelance',
   description:
-    'Calculate your freelance kill fee from your own contract terms. Enter the project value and stage, apply your percentage, and see the fee plus refund. Free!',
+    'Calculate your freelance kill fee from your own contract terms. Enter the project value and stage, apply your percentage, and see the fee plus refund..',
   howTo: [
     'Enter the total "Contract value" of the cancelled project.',
     'Select the "Project stage when cancelled" (not started, in progress, or near complete).',
@@ -159,7 +161,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free kill fee calculator freelance 2026: Amount the client owes based on your contract percentage. Get instant results. No signup - try it free now!',
+      description:
+    'Free kill fee calculator freelance 2026: Amount the client owes based on your contract percentage. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

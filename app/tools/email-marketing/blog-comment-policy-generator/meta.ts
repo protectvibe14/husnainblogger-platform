@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Blog Comment Policy Template',
   description:
-    'Create a blog comment policy template free: pick open, moderated, or strict moderation and your tone — get a full policy with rules and notes. Build it now.',
+    'Set clear comment rules without the awkwardness: pick open, moderated, or strict, choose your tone, and publish a complete policy in seconds.',
   howTo: [
     'Type your blog name.',
     'Choose a moderation stance: open, moderated (first comments held), or strict (everything pre-approved).',
@@ -111,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Create a blog comment policy template free: pick open, moderated, or strict moderation and your tone — get a full policy with rules and notes. Build it now.',
+      description:
+    'Set clear comment rules without the awkwardness: pick open, moderated, or strict, choose your tone, and publish a complete policy in seconds.',
     },
     {
       '@type': 'BreadcrumbList',

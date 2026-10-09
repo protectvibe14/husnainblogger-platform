@@ -13,7 +13,7 @@ export const trackerItems = TRACKER_ITEMS;
 export const content: ToolContent = {
   title: 'AI Voiceover Prompts',
   description:
-    'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and record today.',
+    'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and.',
   howTo: [
     'Browse the 3 categories: ad voiceover, narration, and explainer voiceover — 16 prompts each.',
     'Click any prompt to see its full text with placeholders like [PRODUCT] highlighted.',
@@ -74,13 +74,15 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free AI Voiceover Prompts 2026 – Free Tool - no signup required.',
+      description:
+    'Free AI Voiceover Prompts 2026 – Free Tool - required.',
     },
     {
       '@type': 'WebPage',
       name: 'AI Voiceover Prompts 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/ai-voiceover-script-prompt-pack/',
-      description: 'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and record today.',
+      description:
+    'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and.',
     },
     {
       '@type': 'BreadcrumbList',

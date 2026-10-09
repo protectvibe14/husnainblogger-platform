@@ -74,13 +74,15 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Faceless Video AI Prompts 2026 – Free Tool - no signup required.',
+      description:
+    'Free Faceless Video AI Prompts 2026 – Free Tool - required.',
     },
     {
       '@type': 'WebPage',
       name: 'Faceless Video AI Prompts 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/faceless-video-prompt-pack/',
-      description: 'Browse 48 free faceless video AI prompts: human-written templates for documentaries, explainers, listicles, and stories. Copy a prompt and create today.',
+      description:
+    'Browse 48 free faceless video AI prompts: human-written templates for documentaries, explainers, listicles, and stories. Copy a prompt and create today.',
     },
     {
       '@type': 'BreadcrumbList',

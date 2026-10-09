@@ -9,13 +9,15 @@ export const outputs: ToolOutput[] = [
     id: "lines",
     label: "Show notes (Markdown)",
     type: "list",
-    description: "The formatted show notes, one template line per item.",
+    description:
+    "The formatted show notes, one template line per item.",
   },
   {
     id: "html",
     label: "Show notes (HTML)",
     type: "copy",
-    description: "The same show notes as an HTML block for your website.",
+    description:
+    "The same show notes as an HTML block for your website.",
   },
 ];
 

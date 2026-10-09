@@ -51,26 +51,29 @@ export const outputs: ToolOutput[] = [
     id: 'estimatedQuarterlyPayment',
     label: 'Estimated quarterly payment',
     type: 'currency',
-    description: 'Free quarterly estimated tax calculator freelancer 2026: Estimated tax for one quarter: estimated annual tax divided by 4. Fast, private, no signup - try it!',
+    description:
+    'Free quarterly estimated tax calculator freelancer 2026: Estimated tax for one quarter: estimated annual tax divided by 4. Fast, private.',
   },
   {
     id: 'estimatedAnnualTax',
     label: 'Estimated annual tax',
     type: 'currency',
-    description: 'Estimated total tax for the year from your profit and your rate.',
+    description:
+    'Estimated total tax for the year from your profit and your rate.',
   },
   {
     id: 'rateBreakdown',
     label: 'Rate breakdown',
     type: 'list',
-    description: 'Step-by-step math showing the rates you entered and the disclaimer.',
+    description:
+    'Step-by-step math showing the rates you entered and the disclaimer.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Quarterly Estimated Tax Calculator Freelanc 2027',
+  title: 'Quarterly Estimated Tax Calculator Freelanc',
   description:
-    'Use this quarterly estimated tax calculator for freelancers to estimate payments. Enter your profit and your own tax rate — never prefilled. Try it free now!',
+    'Use this quarterly estimated tax calculator for freelancers to estimate payments. Enter your profit and your own tax rate — never prefilled. Try it.',
   howTo: [
     'Enter your estimated annual net profit (income minus business expenses).',
     'Enter YOUR effective tax rate % — the tool never prefills or assumes a rate.',
@@ -155,7 +158,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free quarterly estimated tax calculator freelancer 2026: Estimated tax for one quarter: estimated annual tax divided by 4. Fast, private, no signup - try it!',
+      description:
+    'Free quarterly estimated tax calculator freelancer 2026: Estimated tax for one quarter: estimated annual tax divided by 4. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

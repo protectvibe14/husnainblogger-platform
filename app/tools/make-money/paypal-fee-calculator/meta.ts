@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'PayPal Fee Calculator',
   description:
-    'Free paypal fee calculator 2026: calculate PayPal fees before you send or receive money: enter the amount and payment. Fast, private, no signup - try it now!',
+    'Free paypal fee calculator 2026: calculate PayPal fees before you send or receive money: enter the amount and payment. Fast, private now.',
   howTo: [
     'Enter the payment amount in USD.',
     'Choose the payment route: direct Goods & Services, PayPal checkout, or card — each has its own fee schedule.',
@@ -119,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free paypal fee calculator 2026: calculate PayPal fees before you send or receive money: enter the amount and payment. Fast, private, no signup - try it now!',
+      description:
+    'Free paypal fee calculator 2026: calculate PayPal fees before you send or receive money: enter the amount and payment. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

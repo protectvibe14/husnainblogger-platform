@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'transparentPng',
     label: 'Transparent PNG',
     type: 'download',
-    description: 'Free ai background remover 2026: Your image with the background removed, as a transparent PNG. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai background remover 2026: Your image with the background removed, as a transparent PNG. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Background Remover',
   description:
-    'Remove image backgrounds free with AI in your browser — transparent PNG download, no signup, no uploads. The model runs 100% on your device.',
+    'Remove image backgrounds free with AI in your browser — transparent PNG download, no uploads. The model runs 100% on your device.',
   howTo: [
     'Drop an image (JPG, PNG, WEBP or GIF up to 20 MB) onto the upload area, or click to browse.',
     'Choose Balanced for a fast ~44 MB model download, or Best for maximum edge quality (~176 MB).',
@@ -89,14 +90,14 @@ export const content: ToolContent = {
         'JPG, PNG, WEBP and GIF (first frame) up to 20 MB and 4096 px per side. Larger images should be resized first — the model analyzes at 1024 px internally.',
     },
     {
-      question: 'How does the ai background remover work?',
+      question: 'How does background removal actually work in the browser?',
       answer:
-        'Enter your details using the inputs above and the ai background remover calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'You upload an image and pick a quality level. The tool downloads the RMBG-1.4 AI model once (~44 MB balanced, ~176 MB best), runs it on your device to predict a foreground mask, and applies that mask as the alpha channel of your original image at full resolution — then hands you a transparent PNG. After the first load, every removal takes seconds and nothing is ever uploaded.',
     },
     {
-      question: 'Is the ai background remover free to use?',
+      question: 'Does it work offline after the first use?',
       answer:
-        'Yes - this ai background remover is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Yes. The AI model downloads once and is cached in your browser, so later removals run fully offline — handy for batch-processing product shots on a plane or with a flaky connection. Your images never leave your device either way.',
     },
   ],
   assumptions: [
@@ -113,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai background remover 2026: Your image with the background removed, as a transparent PNG. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai background remover 2026: Your image with the background removed, as a transparent PNG. free.',
     },
     {
       '@context': 'https://schema.org',

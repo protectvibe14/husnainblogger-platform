@@ -38,14 +38,14 @@ export const outputs: ToolOutput[] = [
     label: "Headline options",
     type: "list",
     description:
-      "Template-based headline options, each character-counted against the 220-character limit.",
+    "Template-based headline options, each character-counted against the 220-character limit.",
   },
   {
     id: "limitNote",
     label: "Character limit note",
     type: "text",
     description:
-      "Note about the 220-character limit and that proof points are user-provided, not verified.",
+    "Note about the 220-character limit and that proof points are user-provided, not verified.",
   },
 ];
 
@@ -53,7 +53,7 @@ const DESCRIPTION =
   "Create a stronger LinkedIn headline for freelancers. Enter role and specialties, pick a style, and get options counted under 220 characters. Free — try it now.";
 
 export const content: ToolContent = {
-  title: "Linkedin Headline for Freelancers 2027",
+  title: "Linkedin Headline for Freelancers",
   description: DESCRIPTION,
   howTo: [
     "Enter your role — the job title clients search for (e.g. Web Designer).",

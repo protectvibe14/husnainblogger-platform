@@ -56,26 +56,29 @@ export const outputs: ToolOutput[] = [
     id: 'lines',
     label: 'Tagged URLs',
     type: 'list',
-    description: 'Free utm link builder 2026: One fully built UTM-tagged URL per item, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free utm link builder 2026: One fully built UTM-tagged URL per item, ready to copy. free.',
   },
   {
     id: 'warnings',
     label: 'Build warnings',
     type: 'list',
-    description: 'Warnings such as missing campaign names or overwritten UTM parameters.',
+    description:
+    'Warnings such as missing campaign names or overwritten UTM parameters.',
   },
   {
     id: 'count',
     label: 'URLs built',
     type: 'number',
-    description: 'How many tagged URLs were built.',
+    description:
+    'How many tagged URLs were built.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'UTM Link Builder',
   description:
-    'Build tracked campaign URLs with this free utm link builder: add UTM parameters, keep existing links intact, and catch overwrites instantly. Try it now!',
+    'Build tracked campaign URLs with this free utm link builder: add UTM parameters, keep existing links intact, and catch overwrites instantly.',
   howTo: [
     'Add one item per link and paste the base URL (must start with http:// or https://).',
     'Enter the UTM source and medium — for example, newsletter and email.',
@@ -135,7 +138,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free utm link builder 2026: One fully built UTM-tagged URL per item, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free utm link builder 2026: One fully built UTM-tagged URL per item, ready to copy. free.',
     },
     {
       '@type': 'BreadcrumbList',

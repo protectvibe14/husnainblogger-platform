@@ -23,14 +23,15 @@ export const outputs: ToolOutput[] = [
     id: 'ideaMatrix',
     label: 'Your content ideas matrix',
     type: 'table',
-    description: 'Free content ideas matrix 2026: Every topic × every format, each with a working-title template. Get instant results. No signup - try it free now!',
+    description:
+    'Free content ideas matrix 2026: Every topic × every format, each with a working-title template. Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Ideas Matrix Generator',
   description:
-    'Cross your topics with your formats into a content ideas matrix: every cell gets a working-title template. Free, template-based, no signup - start now!',
+    'Cross your topics with your formats into a content ideas matrix: every cell gets a working-title template. Free, template-based - start now.',
   howTo: [
     'Type your topics in the topics box, one topic per line.',
     'Type your content formats in the formats box, one per line.',
@@ -103,7 +104,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free content ideas matrix 2026: Every topic × every format, each with a working-title template. Get instant results. No signup - try it free now!',
+      description:
+    'Free content ideas matrix 2026: Every topic × every format, each with a working-title template. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

@@ -36,7 +36,7 @@ const DESCRIPTION =
   'Free web design pricing calculator 2026: price your project by scope, page count and experience level, rounded to the nearest $50. No signup — try it now.';
 
 export const content: ToolContent = {
-  title: 'Web Design Pricing Calculator 2027',
+  title: 'Web Design Pricing Calculator',
   description: DESCRIPTION,
   howTo: [
     'Pick the project scope: a landing page, a 5-page business site, an e-commerce store, or a custom web application.',

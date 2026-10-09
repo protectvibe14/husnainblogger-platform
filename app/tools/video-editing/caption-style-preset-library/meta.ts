@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'CapCut Caption Style Presets',
   description:
-    'Copy caption styles free: pick a vibe and platform to get a full CapCut caption style presets config — font, colors, stroke, animation, steps. Try it now.',
+    'Steal pro caption styles in one click: pick a vibe and platform for a full CapCut config - font, colors, stroke, animation, and rebuild steps.',
   howTo: [
     'Pick a caption vibe: bold, minimal, hormozi, karaoke, or neon.',
     'Choose your platform — TikTok, Reels, or Shorts — for safe-zone placement guidance.',
@@ -106,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Copy caption styles free: pick a vibe and platform to get a full CapCut caption style presets config — font, colors, stroke, animation, steps. Try it now.',
+      description:
+    'Steal pro caption styles in one click: pick a vibe and platform for a full CapCut config - font, colors, stroke, animation, and rebuild steps.',
     },
     {
       '@type': 'BreadcrumbList',

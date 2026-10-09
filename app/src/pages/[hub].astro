@@ -30,9 +30,28 @@ for (const t of categoryTools) {
   byType.set(t.toolType, bucket);
 }
 
-const hubName = category.name.endsWith('Tools') ? category.name : `${category.name} Tools`;
+// Friendly plural labels for tool types (avoids raw keys like "ai" -> "Ais").
+const typeLabels: Record<string, string> = {
+  ai: 'AI Tools', calculator: 'Calculators', generator: 'Generators',
+  checker: 'Checkers', converter: 'Converters', analyzer: 'Analyzers',
+  planner: 'Planners', tracker: 'Trackers', finder: 'Finders',
+  builder: 'Builders', scorer: 'Scorers', formatter: 'Formatters',
+};
+const typeLabel = (t: string) =>
+  typeLabels[t] ?? (t.charAt(0).toUpperCase() + t.slice(1) + 's');
+
+// Natural-language category label: "Make-Money & Affiliate" -> "make money & affiliate".
+const catLabel = category.name.toLowerCase().replace(/-/g, ' ');
+const cap = (s: string) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+
+// Labels for the types actually present, for the SEO paragraph.
+const presentTypeLabels = [...byType.keys()].map(typeLabel);
+
+// Display name: de-hyphenate for human reading ("Make-Money & Affiliate Tools" -> "Make Money & Affiliate Tools").
+const displayName = category.name.replace(/-/g, ' ');
+const hubName = displayName.endsWith('Tools') ? displayName : `${displayName} Tools`;
 const title = `${hubName} — ${categoryTools.length} Free Online Tools`;
-const description = `Free ${category.name.toLowerCase()} tools — ${categoryTools.length} online tools for ${category.name.toLowerCase()}. No signup, instant results, 100% private.`;
+const description = `Free ${catLabel} tools — ${categoryTools.length} online tools for ${catLabel}. No signup, instant results, 100% private.`;
 ---
 
 <BaseLayout
@@ -45,7 +64,7 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
     <ol>
       <li><a href="/">Home</a></li>
       <li><a href={toolsIndexHref()}>Tools</a></li>
-      <li aria-current="page">{category.name}</li>
+      <li aria-current="page">{displayName}</li>
     </ol>
   </nav>
 
@@ -55,14 +74,14 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
       <span class="hb-hub-hero__eyebrow">{categoryTools.length} Free Tools</span>
       <h1 class="hb-hub-hero__title">{hubName}</h1>
       <p class="hb-hub-hero__desc">
-        Professional-grade {category.name.toLowerCase()} tools that run entirely in your browser.
+        Professional-grade {catLabel} tools that run entirely in your browser.
         No signup, no downloads — just instant results.
       </p>
       <div class="hb-hub-hero__search">
         <input
           type="search"
           id="hub-search"
-          placeholder={`Search ${categoryTools.length} ${category.name.toLowerCase()} tools...`}
+          placeholder={`Search ${categoryTools.length} ${catLabel} tools...`}
           aria-label={`Search ${category.name} tools`}
         />
       </div>
@@ -73,37 +92,32 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
 
   <!-- Tool groups -->
   <div id="hub-tools">
-    {[...byType.entries()].map(([toolType, list]) => {
-      const typeLabels: Record<string, string> = {
-        ai: 'AI Tools', calculator: 'Calculators', generator: 'Generators',
-        checker: 'Checkers', converter: 'Converters', analyzer: 'Analyzers',
-        planner: 'Planners', tracker: 'Trackers', finder: 'Finders',
-      };
-      const typeLabel = typeLabels[toolType] ?? (toolType.charAt(0).toUpperCase() + toolType.slice(1) + 's');
-      return (
+    {[...byType.entries()].map(([toolType, list]) => (
       <section class="hb-hub-section" data-tooltype={toolType}>
         <div class="hb-hub-section__head">
-          <h2>{typeLabel}</h2>
+          <h2>{typeLabel(toolType)}</h2>
           <span class="hb-hub-section__count">{list.length} tools</span>
         </div>
         <div class="hb-hub-grid">
           {list.map((t) => (
-            <a href={toolUrl(t)} class="hb-hub-card" data-tool-name={t.name.toLowerCase()}>
+            <a href={toolUrl(t)} class="hb-hub-card" data-search={(t.name + ' ' + (t.primaryKeyword ?? '')).toLowerCase()}>
               <div class="hb-hub-card__top">
                 <strong class="hb-hub-card__name">{t.name}</strong>
                 <span class="hb-hub-card__arrow" aria-hidden="true">→</span>
               </div>
               <p class="hb-hub-card__desc">
-                Free {t.primaryKeyword || t.name.toLowerCase()} — instant results, no signup.
+                Free {cap(t.primaryKeyword || t.name)} — instant results, no signup.
               </p>
-              <span class="hb-hub-card__tag">{t.toolType}</span>
+              <span class="hb-hub-card__tag">{typeLabel(t.toolType)}</span>
             </a>
           ))}
         </div>
       </section>
-      );
-    })}
+    ))}
   </div>
+  <p id="hub-no-results" class="hb-hub-no-results" hidden>
+    No tools match "<span id="hub-no-results-q"></span>". Try a different keyword.
+  </p>
 
   <AdSlot slot="hub-bottom" />
 
@@ -111,8 +125,8 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
   <section class="hb-hub-seo">
     <h2>About {hubName}</h2>
     <p>
-      Our collection of <strong>{categoryTools.length} free {category.name.toLowerCase()} tools</strong> covers
-      everything from {[...byType.keys()].slice(0, 3).join(', ')} and more.
+      Our collection of <strong>{categoryTools.length} free {catLabel} tools</strong> covers
+      everything from {presentTypeLabels.slice(0, 3).join(', ')}{presentTypeLabels.length > 3 ? ', and more' : ''}.
       Each tool is designed to be fast, private, and easy to use — no account required.
     </p>
     <p>
@@ -124,19 +138,28 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
 </BaseLayout>
 
 <script>
-  // Live search filter
+  // Live search filter: matches tool name and primary keyword.
   const input = document.getElementById('hub-search') as HTMLInputElement;
+  const noResults = document.getElementById('hub-no-results');
+  const noResultsQ = document.getElementById('hub-no-results-q');
   input?.addEventListener('input', () => {
     const q = input.value.toLowerCase().trim();
+    let anyVisible = false;
     document.querySelectorAll('.hb-hub-card').forEach((card) => {
-      const name = (card as HTMLElement).dataset.toolName || '';
-      (card as HTMLElement).style.display = name.includes(q) ? '' : 'none';
+      const hay = (card as HTMLElement).dataset.search || '';
+      const show = hay.includes(q);
+      (card as HTMLElement).style.display = show ? '' : 'none';
+      if (show) anyVisible = true;
     });
     document.querySelectorAll('.hb-hub-section').forEach((section) => {
       const visible = [...section.querySelectorAll('.hb-hub-card')]
         .some((c) => (c as HTMLElement).style.display !== 'none');
       (section as HTMLElement).style.display = visible ? '' : 'none';
     });
+    if (noResults) {
+      noResults.hidden = anyVisible;
+      if (noResultsQ) noResultsQ.textContent = input.value.trim();
+    }
   });
 </script>
 
@@ -208,6 +231,12 @@ const description = `Free ${category.name.toLowerCase()} tools — ${categoryToo
     display: inline-block; font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
     letter-spacing: 0.05em; color: #7c3aed; background: #f5f3ff;
     padding: 0.25rem 0.7rem; border-radius: 2rem;
+  }
+
+  .hb-hub-no-results {
+    max-width: 1280px; margin: 2rem auto; padding: 1.25rem 1.5rem;
+    text-align: center; color: #6b7280; background: #f9fafb;
+    border: 1px dashed #d1d5db; border-radius: 1rem;
   }
 
   .hb-hub-seo { max-width: 800px; margin: 3rem auto; padding: 0 1.5rem; color: #374151; line-height: 1.75; }

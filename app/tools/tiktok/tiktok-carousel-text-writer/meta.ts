@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'slides',
     label: 'Per-slide text',
     type: 'list',
-    description: 'Free tiktok carousel text 2026: Ready-to-use text for every slide: hook cover line, value lines, and a CTA line. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok carousel text 2026: Ready-to-use text for every slide: hook cover line, value lines, and a CTA line. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Note',
     type: 'text',
-    description: 'Confirms the slide breakdown and word guidance — and states it plainly if your request was clamped to TikTok\'s 35-slide cap.',
+    description:
+    'Confirms the slide breakdown and word guidance — and states it plainly if your request was clamped to TikTok\.'s 35-slide cap.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Carousel Text',
   description:
-    'Write tiktok carousel text in seconds: hook cover line, value lines, and CTA per slide, all under 50 words. Enter your topic — try it free now!',
+    'Write tiktok carousel text in seconds: hook cover line, value lines, and CTA per slide, all under 50 words. Enter your topic — try it free now.',
   howTo: [
     'Type your "Carousel topic" (e.g. home workouts) and enter a "Number of slides" from 2 to 35.',
     'Run the tool: Slide 1 gets a hook cover line, middle slides get value lines, and the last slide gets a CTA.',
@@ -110,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok carousel text 2026: Ready-to-use text for every slide: hook cover line, value lines, and a CTA line. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok carousel text 2026: Ready-to-use text for every slide: hook cover line, value lines, and a CTA line. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

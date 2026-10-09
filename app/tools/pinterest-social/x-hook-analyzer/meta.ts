@@ -16,38 +16,43 @@ export const outputs: ToolOutput[] = [
     id: 'scores',
     label: 'Rubric scores',
     type: 'table',
-    description: 'Free twitter hook analyzer 2026: Score (0–10) for each rubric dimension: Specificity, Curiosity gap, Clarity, Contrarian. Fast, private, no signup - try it now!',
+    description:
+    'Free twitter hook analyzer 2026: Score (0–10) for each rubric dimension: Specificity, Curiosity gap, Clarity, Contrarian. Fast, private now.',
   },
   {
     id: 'totalScore',
     label: 'Total heuristic score',
     type: 'number',
-    description: 'Weighted total out of 10 — a heuristic estimate, not a virality prediction.',
+    description:
+    'Weighted total out of 10 — a heuristic estimate, not a virality prediction.',
   },
   {
     id: 'verdict',
     label: 'Verdict',
     type: 'text',
-    description: 'strong, okay, or weak — based on the fixed rubric thresholds.',
+    description:
+    'strong, okay, or weak — based on the fixed rubric thresholds.',
   },
   {
     id: 'suggestions',
     label: 'How to improve it',
     type: 'list',
-    description: 'Concrete fixes for each dimension scoring below 7.',
+    description:
+    'Concrete fixes for each dimension scoring below 7.',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Honesty label, over-limit warning, and coverage notes.',
+    description:
+    'Honesty label, over-limit warning, and coverage notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Hook Analyzer',
   description:
-    'Analyze any Twitter hook with a free heuristic rubric scoring specificity, curiosity gap, clarity, and contrarian edge. Get a verdict plus fixes — try it now!',
+    'Score your X hook before you post it: get a verdict on specificity, curiosity gap, clarity, and contrarian edge - plus concrete fixes to try.',
   howTo: [
     'Paste your hook into the Your hook text field (one opening line of your post).',
     'Click run to score it against the four-dimension rubric.',
@@ -126,7 +131,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter hook analyzer 2026: Score (0–10) for each rubric dimension: Specificity, Curiosity gap, Clarity, Contrarian. Fast, private, no signup - try it now!',
+      description:
+    'Free twitter hook analyzer 2026: Score (0–10) for each rubric dimension: Specificity, Curiosity gap, Clarity, Contrarian. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

@@ -14,7 +14,8 @@ export const outputs: ToolOutput[] = [
     id: 'packageSalesSheet',
     label: 'Sales sheet (copy)',
     type: 'copy',
-    description: 'The full package sales sheet — copy it into a proposal, email, or DM.',
+    description:
+    'The full package sales sheet — copy it into a proposal, email, or DM.',
   },
 ];
 

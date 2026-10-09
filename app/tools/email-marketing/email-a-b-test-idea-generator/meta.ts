@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Get email a/b test ideas: pick your email type and test focus for 3 ready-to-run experiments with variants, hypotheses, and sample-size guidance. Try it now.';
+  'Stop guessing what works in email: pick your email type and test focus to get 3 ready-to-run A/B tests with variants, hypotheses, and sample sizes.';
 
 export const content: ToolContent = {
   title: 'Email A/B Test Ideas',

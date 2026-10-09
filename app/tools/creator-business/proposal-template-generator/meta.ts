@@ -60,7 +60,8 @@ export const outputs: ToolOutput[] = [
     id: 'proposal',
     label: 'Proposal document (copy)',
     type: 'copy',
-    description: 'Free freelance proposal template 2026: The full sectioned proposal: overview, deliverables, timeline, investment, terms, next. Fast, private, no signup - try!',
+    description:
+    'Free freelance proposal template 2026: The full sectioned proposal: overview, deliverables, timeline, investment, terms, next. Fast, private - try.',
   },
 ];
 
@@ -152,7 +153,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance proposal template 2026: The full sectioned proposal: overview, deliverables, timeline, investment, terms, next. Fast, private, no signup - try!',
+      description:
+    'Free freelance proposal template 2026: The full sectioned proposal: overview, deliverables, timeline, investment, terms, next. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

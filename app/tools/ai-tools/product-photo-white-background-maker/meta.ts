@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'productPhoto',
     label: 'White-background photo',
     type: 'download',
-    description: 'Free product photo white background 2026: Your product on a pure-white 2000×2000 px square, as a JPG or PNG download. Fast, private, no signup - try it now!',
+    description:
+    'Free product photo white background 2026: Your product on a pure-white 2000×2000 px square, as a JPG or PNG download. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Product Photo White Background 2027',
+  title: 'Product Photo White Background',
   description:
-    'Make marketplace-ready product photos free — AI removes the background and places your product on pure white 2000×2000. Runs in your browser, no signup.',
+    'Make marketplace-ready product photos free — AI removes the background and places your product on pure white 2000×2000. Runs in your browser.',
   howTo: [
     'Drop a product photo (JPG, PNG, WEBP or GIF up to 20 MB) onto the upload area, or click to browse.',
     'Pick JPG for a small file or PNG for lossless quality.',
@@ -113,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free product photo white background 2026: Your product on a pure-white 2000×2000 px square, as a JPG or PNG download. Fast, private, no signup - try it now!',
+      description:
+    'Free product photo white background 2026: Your product on a pure-white 2000×2000 px square, as a JPG or PNG download. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

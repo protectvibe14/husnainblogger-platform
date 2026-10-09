@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Product Launch Email Sequence',
   description:
-    'Plan a product launch email sequence fast: enter your product, launch date, and audience for 7 emails with phases, send dates, and drafts. Free, no signup.',
+    'Plan a product launch email sequence fast: enter your product, launch date, and audience for 7 emails with phases, send dates, and drafts. Free.',
   howTo: [
     'Enter your product name in the product field.',
     'Pick your launch date — send dates are calculated from it automatically.',
@@ -124,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Plan a product launch email sequence fast: enter your product, launch date, and audience for 7 emails with phases, send dates, and drafts. Free, no signup.',
+      description:
+    'Plan a product launch email sequence fast: enter your product, launch date, and audience for 7 emails with phases, send dates, and drafts. Free.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -25,26 +25,29 @@ export const outputs: ToolOutput[] = [
     id: 'slidePlan',
     label: 'Slide-by-slide plan',
     type: 'list',
-    description: 'Free tiktok photo carousel ideas 2026: One plan line per slide: cover hook slide, value slides, and a CTA slide. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok photo carousel ideas 2026: One plan line per slide: cover hook slide, value slides, and a CTA slide. Fast, private now.',
   },
   {
     id: 'guidance',
     label: 'Text-per-slide guidance',
     type: 'text',
-    description: 'Word-limit and readability guidance for every slide role (cover ≤ 12 words, value slides ≤ 50 words).',
+    description:
+    'Word-limit and readability guidance for every slide role (cover ≤ 12 words, value slides ≤ 50 words).',
   },
   {
     id: 'planNote',
     label: 'Plan note',
     type: 'text',
-    description: 'Confirms the slide breakdown — and states it plainly if your request was clamped to TikTok\'s 35-slide cap.',
+    description:
+    'Confirms the slide breakdown — and states it plainly if your request was clamped to TikTok\.'s 35-slide cap.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Photo Carousel Ideas',
   description:
-    'Plan tiktok photo carousel ideas slide by slide: cover hook, value slides with text guidance, and a CTA slide. Enter your topic — try it free now!',
+    'Plan tiktok photo carousel ideas slide by slide: cover hook, value slides with text guidance, and a CTA slide. Enter your topic — try it free now.',
   howTo: [
     'Type your "Carousel topic" (e.g. beginner meal prep) and enter a "Number of slides" from 2 to 35.',
     'Run the tool: Slide 1 becomes your cover hook, the last slide becomes your CTA, and the middle slides are value slides.',
@@ -116,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok photo carousel ideas 2026: One plan line per slide: cover hook slide, value slides, and a CTA slide. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok photo carousel ideas 2026: One plan line per slide: cover hook slide, value slides, and a CTA slide. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

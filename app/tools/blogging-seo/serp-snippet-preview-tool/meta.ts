@@ -40,26 +40,29 @@ export const outputs: ToolOutput[] = [
     id: 'previewHtml',
     label: 'Snippet mockup HTML',
     type: 'copy',
-    description: 'Free google snippet preview tool 2026: Google-style search result mockup (favicon, URL breadcrumb, title, description) as. Fast, private, no signup - try it!',
+    description:
+    'Free google snippet preview tool 2026: Google-style search result mockup (favicon, URL breadcrumb, title, description) as. Fast, private.',
   },
   {
     id: 'titleWidthPxEstimate',
     label: 'Title width estimate (px)',
     type: 'number',
-    description: 'Estimated rendered pixel width of the title using a per-character width table.',
+    description:
+    'Estimated rendered pixel width of the title using a per-character width table.',
   },
   {
     id: 'truncationWarning',
     label: 'Truncation warning',
     type: 'text',
-    description: 'Whether the title is likely to be cut off at Google\'s ~600 px desktop cutoff.',
+    description:
+    'Whether the title is likely to be cut off at Google\.'s ~600 px desktop cutoff.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Google Snippet Preview Tool',
   description:
-    'Preview your Google search result with this free google snippet preview tool. Check title width, spot truncation, and see a realistic mockup. Try it free now!',
+    'Preview your Google search result with this free google snippet preview tool. Check title width, spot truncation, and see a realistic mockup. Try it.',
   howTo: [
     'Enter your page title (1–200 characters) — the exact title tag you plan to use.',
     'Enter the page URL starting with http:// or https://.',
@@ -73,9 +76,10 @@ export const content: ToolContent = {
     {
       title: 'Blog post snippet check',
       inputs: {
-        title: 'How to Start a Blog in 2027: 12 Proven Steps',
+        title: 'How to Start a Blog in : 12 Proven Steps',
         url: 'https://example.com/how-to-start-a-blog/',
-        description: 'Learn how to start a blog step by step, from setup to your first 1,000 readers.',
+        description:
+    'Learn how to start a blog step by step, from setup to your first 1,000 readers.',
         date: '2026-01-05',
       },
       note: 'Checks whether a typical long title fits Google\'s width cutoff.',
@@ -147,7 +151,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free google snippet preview tool 2026: Google-style search result mockup (favicon, URL breadcrumb, title, description) as. Fast, private, no signup - try it!',
+      description:
+    'Free google snippet preview tool 2026: Google-style search result mockup (favicon, URL breadcrumb, title, description) as. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

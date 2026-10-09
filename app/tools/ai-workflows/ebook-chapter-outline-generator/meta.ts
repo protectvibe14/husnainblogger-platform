@@ -31,14 +31,15 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Chapter outline',
     type: 'list',
-    description: 'Free ebook outline generator 2026: Numbered chapter list with working titles and per-chapter beat slots. Get instant results. No signup - try it free now!',
+    description:
+    'Free ebook outline generator 2026: Numbered chapter list with working titles and per-chapter beat slots. Get instant results. free now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ebook Outline Generator',
   description:
-    'Generate a complete ebook chapter outline — numbered chapters with working titles and beat slots. Free ebook outline generator, no sign-up. Start planning now!',
+    'Generate a complete ebook chapter outline — numbered chapters with working titles and beat slots. Free ebook outline generator, no sign-up. Start.',
   howTo: [
     'Enter your ebook\'s working title (long titles are shortened to 80 characters).',
     'Choose how many chapters you want, from 3 to 30.',
@@ -118,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ebook outline generator 2026: Numbered chapter list with working titles and per-chapter beat slots. Get instant results. No signup - try it free now!',
+      description:
+    'Free ebook outline generator 2026: Numbered chapter list with working titles and per-chapter beat slots. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

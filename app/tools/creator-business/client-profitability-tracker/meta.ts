@@ -51,32 +51,36 @@ export const outputs: ToolOutput[] = [
     id: 'profitPerClient',
     label: 'Profit per client',
     type: 'table',
-    description: 'Free freelance client profitability tracker 2026: Revenue, total cost, and profit for each client, ranked by profit. Fast, private, no signup - try it now!',
+    description:
+    'Free freelance client profitability tracker 2026: Revenue, total cost, and profit for each client, ranked by profit. Fast, private now.',
   },
   {
     id: 'marginPctPerClient',
     label: 'Margin % per client',
     type: 'list',
-    description: 'Profit margin per client; negative margins are flagged, never hidden.',
+    description:
+    'Profit margin per client; negative margins are flagged, never hidden.',
   },
   {
     id: 'clientRanking',
     label: 'Client ranking',
     type: 'list',
-    description: 'Clients ordered from most to least profitable.',
+    description:
+    'Clients ordered from most to least profitable.',
   },
   {
     id: 'exportableCSV',
     label: 'Exportable CSV',
     type: 'download',
-    description: 'Downloadable CSV of every client record and result — this is how you keep your data.',
+    description:
+    'Downloadable CSV of every client record and result — this is how you keep your data.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Client Profitability Tracker 2027',
+  title: 'Freelance Client Profitability Tracker',
   description:
-    'Rank clients by true profit with this freelance client profitability tracker: enter revenue, hours, cost rate and expenses for profit and margins. Free \u2014 try it',
+    'Rank clients by true profit with this freelance client profitability tracker: enter revenue, hours, cost rate and expenses for profit and margins. Free.',
   howTo: [
     'Add one entry per client: a unique client name, revenue earned, hours worked, your hourly cost rate, and direct expenses — all in USD.',
     'Use your real cost rate (what an hour of your time actually costs you), not your billing rate.',
@@ -137,7 +141,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance client profitability tracker 2026: Revenue, total cost, and profit for each client, ranked by profit. Fast, private, no signup - try it now!',
+      description:
+    'Free freelance client profitability tracker 2026: Revenue, total cost, and profit for each client, ranked by profit. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

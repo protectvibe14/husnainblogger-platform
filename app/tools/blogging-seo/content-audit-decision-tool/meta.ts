@@ -26,21 +26,23 @@ export const outputs: ToolOutput[] = [
     id: 'decisions',
     label: 'Decisions',
     type: 'table',
-    description: 'One row per page: URL, 0-10 score, keep/update/merge/delete recommendation and the reason.',
+    description:
+    'One row per page: URL, 0-10 score, keep/update/merge/delete recommendation and the reason.',
   keywords: ['content analysis tool', 'content analysis tool for research', 'content analysis tool free', 'content assessment tool sas', 'content audit template'],
   },
   {
     id: 'summary',
     label: 'Audit summary',
     type: 'text',
-    description: 'Totals per decision and the average score across all audited pages.',
+    description:
+    'Totals per decision and the average score across all audited pages.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Audit Tool',
   description:
-    'Free content audit tool 2026: turn your own page ratings into keep, update, merge or delete decisions with a transparent decision tree. No signup. Start now.',
+    'Free content audit tool 2026: turn your own page ratings into keep, update, merge or delete decisions with a transparent decision tree. Start now.',
   howTo: [
     'Rate each page 0–10 on four metrics: traffic trend, conversions, quality, and cannibalization risk.',
     'Paste your pages into the Pages box as a JSON array (see the placeholder example).',
@@ -121,7 +123,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free content audit tool 2026: turn your own page ratings into keep, update, merge or delete decisions with a transparent decision tree. No signup. Start now.',
+    'Free content audit tool 2026: turn your own page ratings into keep, update, merge or delete decisions with a transparent decision tree. Start now.',
     },
     {
       '@context': 'https://schema.org',

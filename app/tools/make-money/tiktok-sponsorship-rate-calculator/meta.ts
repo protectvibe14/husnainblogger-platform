@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: "Tiktok Sponsorship Rates",
   description:
-    "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range — try it now.",
+    "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range —.",
   howTo: [
     "Enter your TikTok follower count.",
     "Enter your average views per video (use recent videos, not one viral outlier).",
@@ -107,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: "Utilities",
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range — try it now.",
+      description:
+    "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range —.",
     },
     {
       "@type": "BreadcrumbList",

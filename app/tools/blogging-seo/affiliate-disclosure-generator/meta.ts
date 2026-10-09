@@ -39,26 +39,29 @@ export const outputs: ToolOutput[] = [
     id: 'disclosureText',
     label: 'Disclosure text',
     type: 'copy',
-    description: 'Free affiliate disclosure generator 2026: Ready-to-paste plain-text disclosure for your post. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free affiliate disclosure generator 2026: Ready-to-paste plain-text disclosure for your post. free.',
   },
   {
     id: 'disclosureHtml',
     label: 'Disclosure HTML',
     type: 'copy',
-    description: 'The same disclosure as an escaped HTML paragraph you can paste into your editor.',
+    description:
+    'The same disclosure as an escaped HTML paragraph you can paste into your editor.',
   },
   {
     id: 'legalNotice',
     label: 'Legal notice',
     type: 'text',
-    description: 'Honest reminder that disclosure rules vary by country and this is template text, not legal advice.',
+    description:
+    'Honest reminder that disclosure rules vary by country and this is template text, not legal advice.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Affiliate Disclosure Generator',
   description:
-    'Create a compliant-ready affiliate disclosure with this free affiliate disclosure generator. Pick a placement, add programs, and copy text or HTML now!',
+    'Create a compliant-ready affiliate disclosure with this free affiliate disclosure generator. Pick a placement, add programs, and copy text or HTML now.',
   howTo: [
     'Choose where the disclosure will appear: top of the post, inline next to the link, or at the bottom.',
     'Optionally list your affiliate program names (one per line) — leave blank for a generic disclosure.',
@@ -146,7 +149,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free affiliate disclosure generator 2026: Ready-to-paste plain-text disclosure for your post. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free affiliate disclosure generator 2026: Ready-to-paste plain-text disclosure for your post. free.',
     },
     {
       '@type': 'BreadcrumbList',

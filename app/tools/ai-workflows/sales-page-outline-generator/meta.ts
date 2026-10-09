@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Full outline (copy)',
     type: 'copy',
-    description: 'Free sales page outline 2026: The complete 10-section outline with your details filled in — copy it whole. Fast, private, no signup - try it now!',
+    description:
+    'Free sales page outline 2026: The complete 10-section outline with your details filled in — copy it whole. Fast, private now.',
   },
   {
     id: 'sections',
     label: 'Section headings',
     type: 'list',
-    description: 'Numbered list of the 10 section headings for quick reference.',
+    description:
+    'Numbered list of the 10 section headings for quick reference.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Sales Page Outline',
   description:
-    'Build a proven sales page outline for your offer in seconds. Enter your offer details and get a 10-section structure with write prompts. Start building now!',
+    'Build a proven sales page outline for your offer in seconds. Enter your offer details and get a 10-section structure with write prompts. Start building.',
   howTo: [
     'Enter your offer name (required).',
     'Add your price and target audience (optional — placeholders are used if you skip them).',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free sales page outline 2026: The complete 10-section outline with your details filled in — copy it whole. Fast, private, no signup - try it now!',
+      description:
+    'Free sales page outline 2026: The complete 10-section outline with your details filled in — copy it whole. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

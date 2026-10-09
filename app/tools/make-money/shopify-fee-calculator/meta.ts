@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Shopify Fee Calculator',
   description:
-    'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate. No signup.',
+    'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate.',
   keywords: ['shopify fee calculator uk', 'shopify fee calculator us', 'shopify payment fee calculator', 'shopify price calculator app', 'shopify pricing calculator'],
   howTo: [
     'Enter your average order value in USD and how many orders you get per month.',
@@ -138,7 +138,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate. No signup.',
+    'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate.',
     },
     {
       '@type': 'BreadcrumbList',

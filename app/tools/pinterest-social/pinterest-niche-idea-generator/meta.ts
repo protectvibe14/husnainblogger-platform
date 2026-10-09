@@ -26,32 +26,36 @@ export const outputs: ToolOutput[] = [
     id: 'nicheIdeas',
     label: 'Niche ideas',
     type: 'table',
-    description: 'Free pinterest niche ideas 2026: Ranked niche ideas with an angle and why each fits your interests. Get instant results. No signup - try it free now!',
+    description:
+    'Free pinterest niche ideas 2026: Ranked niche ideas with an angle and why each fits your interests. Get instant results. free now.',
   },
   {
     id: 'ideaCount',
     label: 'Ideas',
     type: 'number',
-    description: 'How many niche ideas were returned.',
+    description:
+    'How many niche ideas were returned.',
   },
   {
     id: 'audienceUsed',
     label: 'Audience',
     type: 'text',
-    description: 'Which audience country the ideas are framed for.',
+    description:
+    'Which audience country the ideas are framed for.',
   },
   {
     id: 'guidance',
     label: 'Guidance',
     type: 'text',
-    description: 'Honest notes: clarifier picks for vague input, handicap warning for non-visual niches.',
+    description:
+    'Honest notes: clarifier picks for vague input, handicap warning for non-visual niches.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Niche Ideas Generator',
   description:
-    'Discover free pinterest niche ideas matched to your interests from 24 visual niches. Get angles, fit reasons, and honest guidance. Try it now!',
+    'Find your Pinterest niche with confidence: describe your interests for matched ideas from 24 visual niches, with angles and honest fit guidance.',
   howTo: [
     'Describe your "Your interests" in a few words, e.g. "home decor, baking, travel".',
     'Optionally pick an "Audience country" (US, UK, CA, or AU). Leave it blank to target all four.',
@@ -128,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest niche ideas 2026: Ranked niche ideas with an angle and why each fits your interests. Get instant results. No signup - try it free now!',
+      description:
+    'Free pinterest niche ideas 2026: Ranked niche ideas with an angle and why each fits your interests. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

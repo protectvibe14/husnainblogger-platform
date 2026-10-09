@@ -30,13 +30,15 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Case study outline',
     type: 'copy',
-    description: 'The full outline text, ready to copy into your draft.',
+    description:
+    'The full outline text, ready to copy into your draft.',
   },
   {
     id: 'sections',
     label: 'Outline sections',
     type: 'list',
-    description: 'The 9 sections of the case-study arc.',
+    description:
+    'The 9 sections of the case-study arc.',
   },
 ];
 

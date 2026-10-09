@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'cleanSlug',
     label: 'Clean slug',
     type: 'text',
-    description: 'Free url slug optimizer 2026: The shortened slug: stop words removed, words joined with hyphens. Get instant results. No signup - try it free now!',
+    description:
+    'Free url slug optimizer 2026: The shortened slug: stop words removed, words joined with hyphens. Get instant results. free now.',
   },
   {
     id: 'removedWords',
     label: 'Removed stop words',
     type: 'list',
-    description: 'Every stop word that was stripped, in order of appearance.',
+    description:
+    'Every stop word that was stripped, in order of appearance.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'URL Slug Optimizer',
   description:
-    'Shorten long URLs for better SEO. Paste any title or slug and this free url slug optimizer strips 173 English stop words into a clean permalink. Try it now!',
+    'Shorten long URLs for better SEO. Paste any title or slug and this free url slug optimizer strips 173 English stop words into a clean permalink.',
   howTo: [
     'Paste your post title or existing slug into "Title or slug".',
     'Optionally list words to protect in "Words to keep" — comma-separated, e.g. AI, SEO.',
@@ -108,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free url slug optimizer 2026: The shortened slug: stop words removed, words joined with hyphens. Get instant results. No signup - try it free now!',
+      description:
+    'Free url slug optimizer 2026: The shortened slug: stop words removed, words joined with hyphens. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

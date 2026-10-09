@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'sitemapXml',
     label: 'Sitemap XML (copy)',
     type: 'copy',
-    description: 'Free xml sitemap generator 2026: The complete XML sitemap — save it as sitemap.xml in your site root. Get instant results. No signup - try it free now!',
+    description:
+    'Free xml sitemap generator 2026: The complete XML sitemap — save it as sitemap.xml in your site root. Get instant results. free now.',
   },
   {
     id: 'urlCount',
     label: 'URL count',
     type: 'number',
-    description: 'How many URLs made it into the sitemap.',
+    description:
+    'How many URLs made it into the sitemap.',
   },
   {
     id: 'errors',
     label: 'Skipped lines',
     type: 'list',
-    description: 'Lines that were skipped (bad date, duplicate, invalid URL) and why.',
+    description:
+    'Lines that were skipped (bad date, duplicate, invalid URL) and why.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'XML Sitemap Generator',
   description:
-    'Turn your URL list into a valid XML sitemap that search engines can read. Paste up to 50,000 URLs with dates and priorities. Free, no signup!',
+    'Turn your URL list into a valid XML sitemap that search engines can read. Paste up to 50,000 URLs with dates and priorities. Free.',
   howTo: [
     'Paste your "URL list" — one absolute URL per line, optionally followed by | lastmod | changefreq | priority.',
     'Use YYYY-MM-DD for lastmod, a changefreq like daily or weekly, and a priority from 0.0 to 1.0.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free xml sitemap generator 2026: The complete XML sitemap — save it as sitemap.xml in your site root. Get instant results. No signup - try it free now!',
+      description:
+    'Free xml sitemap generator 2026: The complete XML sitemap — save it as sitemap.xml in your site root. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

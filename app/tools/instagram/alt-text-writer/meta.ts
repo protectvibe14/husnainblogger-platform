@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Alt Text Generator',
   description:
-    'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters. Try it now.',
+    'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters.',
   howTo: [
     'Describe the photo in the text box: what is visible, who is in it, where it was taken.',
     'Optionally name the main subject (a person, pet, or product).',
@@ -115,7 +115,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters. Try it now.',
+      description:
+    'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters.',
     },
     {
       '@type': 'BreadcrumbList',

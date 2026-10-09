@@ -58,32 +58,36 @@ export const outputs: ToolOutput[] = [
     id: 'lateFeeAmount',
     label: 'Late fee',
     type: 'currency',
-    description: 'Free freelance late payment fee calculator 2026: Fee owed on top of the invoice principal. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free freelance late payment fee calculator 2026: Fee owed on top of the invoice principal. free.',
   },
   {
     id: 'totalAmountDue',
     label: 'Total amount due',
     type: 'currency',
-    description: 'Invoice amount plus the late fee.',
+    description:
+    'Invoice amount plus the late fee.',
   },
   {
     id: 'effectiveAnnualizedNote',
     label: 'Annualized equivalent (informational)',
     type: 'text',
-    description: 'Simple daily-rate × 365 equivalent — informational only, not a legal standard.',
+    description:
+    'Simple daily-rate × 365 equivalent — informational only, not a legal standard.',
   },
   {
     id: 'warning',
     label: 'Warning',
     type: 'text',
-    description: 'Flags cases like a fee larger than the invoice itself.',
+    description:
+    'Flags cases like a fee larger than the invoice itself.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Late Payment Fee Calculator 2027',
+  title: 'Freelance Late Payment Fee Calculator',
   description:
-    'Calculate late fees on overdue invoices — percent-per-day or flat-plus-daily, your rate, your terms. Free, no signup. Run the numbers and get paid fairly today!',
+    'Calculate late fees on overdue invoices — percent-per-day or flat-plus-daily, your rate, your terms. Free Run the numbers and get paid fairly today.',
   howTo: [
     'Enter the invoice amount — the principal that is overdue.',
     'Pick the fee model: percent-per-day (a daily % of the invoice) or flat-plus-daily (a one-time flat fee plus a daily amount).',
@@ -177,7 +181,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance late payment fee calculator 2026: Fee owed on top of the invoice principal. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free freelance late payment fee calculator 2026: Fee owed on top of the invoice principal. free.',
     },
     {
       '@type': 'BreadcrumbList',

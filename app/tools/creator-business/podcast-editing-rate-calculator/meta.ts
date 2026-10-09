@@ -67,19 +67,22 @@ export const outputs: ToolOutput[] = [
     id: 'perEpisodePrice',
     label: 'Per-episode price (estimate)',
     type: 'currency',
-    description: 'Editing labor plus your add-on prices for one episode.',
+    description:
+    'Editing labor plus your add-on prices for one episode.',
   },
   {
     id: 'monthlyRetainerEstimate',
     label: 'Monthly retainer estimate',
     type: 'currency',
-    description: 'Per-episode price multiplied by your episodes per month.',
+    description:
+    'Per-episode price multiplied by your episodes per month.',
   },
   {
     id: 'addOnsIncluded',
     label: 'Add-ons included',
     type: 'list',
-    description: 'The add-ons priced above 0 that were included in the total.',
+    description:
+    'The add-ons priced above 0 that were included in the total.',
   },
 ];
 

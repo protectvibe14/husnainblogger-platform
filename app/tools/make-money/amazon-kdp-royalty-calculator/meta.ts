@@ -112,13 +112,15 @@ export const outputs: ToolOutput[] = [
     id: 'printingCost',
     label: 'Printing cost',
     type: 'currency',
-    description: 'Paperback only — $0 for ebooks.',
+    description:
+    'Paperback only — $0 for ebooks.',
   },
   {
     id: 'notice',
     label: 'Notices',
     type: 'text',
-    description: 'Explains automatic 70%/35% switches and any $0 floors.',
+    description:
+    'Explains automatic 70%/35% switches and any $0 floors.',
   },
 ];
 

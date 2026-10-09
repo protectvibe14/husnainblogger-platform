@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ken Burns Effect Planner',
   description:
-    'Plan pan-and-zoom motion free: this ken burns effect planner computes keyframes, crop windows, and upscale safety checks from your image and move. Try it now.',
+    'Plan smooth pan-and-zoom moves like a pro: enter your image size and aspect ratio for keyframes, crop windows, and smart upscale safety checks.',
   howTo: [
     'Enter your image width and height in pixels.',
     'Pick the video aspect ratio: 16:9, 9:16, or 1:1.',
@@ -134,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Plan pan-and-zoom motion free: this ken burns effect planner computes keyframes, crop windows, and upscale safety checks from your image and move. Try it now.',
+      description:
+    'Plan smooth pan-and-zoom moves like a pro: enter your image size and aspect ratio for keyframes, crop windows, and smart upscale safety checks.',
     },
     {
       '@type': 'BreadcrumbList',

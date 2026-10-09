@@ -22,7 +22,7 @@ export const itemFields: BuilderField[] = [
 export const content: ToolContent = {
   title: 'Prompt Template With Variables',
   description:
-    'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free, no signup.',
+    'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free.',
   howTo: [
     'Paste or type your template text with {variables} into the template text field — at least one is required.',
     'Add more rows if you want to build several reusable templates at once.',
@@ -83,7 +83,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free, no signup.',
+      description:
+    'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free.',
     },
     {
       '@type': 'BreadcrumbList',

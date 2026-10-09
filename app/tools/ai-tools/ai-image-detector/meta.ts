@@ -19,20 +19,22 @@ export const outputs: ToolOutput[] = [
     id: 'signals',
     label: 'Metadata signals',
     type: 'copy',
-    description: 'Free ai image detector 2026: Local byte-forensics findings (EXIF, XMP, C2PA, no-metadata…) — signals, never a verdict. Fast, private, no signup - try it now!',
+    description:
+    'Free ai image detector 2026: Local byte-forensics findings (EXIF, XMP, C2PA, no-metadata…) — signals, never a verdict. Fast, private now.',
   },
   {
     id: 'scores',
     label: 'Hive detection scores',
     type: 'copy',
-    description: 'Optional cloud check: Hive ai_generated vs not_ai_generated scores for the image.',
+    description:
+    'Optional cloud check: Hive ai_generated vs not_ai_generated scores for the image.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Image Detector',
   description:
-    'Free local metadata forensics on any image — EXIF, XMP, C2PA, no-metadata signals — plus an optional Hive cloud check with your key. No signup.',
+    'Free local metadata forensics on any image — EXIF, XMP, C2PA, no-metadata signals — plus an optional Hive cloud check with your key.',
   howTo: [
     'Upload an image (JPEG, PNG, or WebP — max 10 MB). The local scan runs instantly in your browser.',
     'Read the signals list: EXIF, XMP, C2PA/JUMBF, Adobe metadata, PNG text chunks, or "no metadata segments".',
@@ -104,7 +106,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Ai Image Detector 2026 – Free Tool - no signup required.',
+      description:
+    'Free Ai Image Detector 2026 – Free Tool - required.',
     },
     {
       '@context': 'https://schema.org',

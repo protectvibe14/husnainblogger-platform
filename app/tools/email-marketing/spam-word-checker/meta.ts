@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Spam Word Checker',
   description:
-    'Free email spam word checker 2026: check your email for spam trigger words free: paste any subject or body text, see flagged. Fast, private, no signup - try it!',
+    'Check your copy against 45 spam trigger words before you hit send: paste any subject or body text and see flagged terms with severity ratings.',
   howTo: [
     'Paste your email subject line or full body text into the text field.',
     'Run the check to match it against the bundled 45-term trigger-word list.',
@@ -100,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email spam word checker 2026: check your email for spam trigger words free: paste any subject or body text, see flagged. Fast, private, no signup - try it!',
+      description:
+    'Check your copy against 45 spam trigger words before you hit send: paste any subject or body text and see flagged terms with severity ratings.',
     },
     {
       '@type': 'BreadcrumbList',

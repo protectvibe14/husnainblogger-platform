@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'seasonalPlan',
     label: 'Seasonal content plan',
     type: 'table',
-    description: 'Free seasonal keyword planner 2026: Month-by-month events with content angles and publish-by dates. Get instant results. No signup - try it free now!',
+    description:
+    'Free seasonal keyword planner 2026: Month-by-month events with content angles and publish-by dates. Get instant results. free now.',
   },
   {
     id: 'eventBankVersion',
     label: 'Event bank version',
     type: 'text',
-    description: 'Version and effective date of the editorial event list used.',
+    description:
+    'Version and effective date of the editorial event list used.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Seasonal Keyword Planner',
   description:
-    'Map a year of content ideas with this free seasonal keyword planner. Turn one seed keyword into month-by-month angles with publish-by dates. Plan now!',
+    'Map a year of content ideas with this free seasonal keyword planner. Turn one seed keyword into month-by-month angles with publish-by dates. Plan now.',
   howTo: [
     'Type your seed keyword (your niche or product) into the "Seed keyword" box.',
     'Optionally set the year — leave it blank to plan the current year.',
@@ -115,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free seasonal keyword planner 2026: Month-by-month events with content angles and publish-by dates. Get instant results. No signup - try it free now!',
+      description:
+    'Free seasonal keyword planner 2026: Month-by-month events with content angles and publish-by dates. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

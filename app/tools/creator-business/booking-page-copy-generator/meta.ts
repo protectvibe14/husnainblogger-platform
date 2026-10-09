@@ -55,7 +55,8 @@ export const outputs: ToolOutput[] = [
     id: 'bookingPageCopy',
     label: 'Booking page copy (copy)',
     type: 'copy',
-    description: 'The full page draft — headline, subhead, benefits, process, FAQ stub, and CTA.',
+    description:
+    'The full page draft — headline, subhead, benefits, process, FAQ stub, and CTA.',
   },
 ];
 

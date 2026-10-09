@@ -16,32 +16,36 @@ export const outputs: ToolOutput[] = [
     id: 'intent',
     label: 'Predicted intent',
     type: 'text',
-    description: 'Free search intent checker 2026: informational, navigational, commercial, transactional or unknown. Get instant results. No signup - try it free now!',
+    description:
+    'Free search intent checker 2026: informational, navigational, commercial, transactional or unknown. Get instant results. free now.',
   },
   {
     id: 'confidence',
     label: 'Confidence (0-1)',
     type: 'number',
-    description: 'Share of matched signal weight captured by the winning intent.',
+    description:
+    'Share of matched signal weight captured by the winning intent.',
   },
   {
     id: 'matchedSignals',
     label: 'Matched signals',
     type: 'list',
-    description: 'Cue words found, shown as "intent:cue".',
+    description:
+    'Cue words found, shown as "intent:cue".',
   },
   {
     id: 'isHeuristic',
     label: 'Method',
     type: 'text',
-    description: 'Always heuristic — word-bank rules, not AI or live SERP data.',
+    description:
+    'Always heuristic — word-bank rules, not AI or live SERP data.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Search Intent Checker',
   description:
-    'Check search intent in seconds: informational, commercial, transactional or navigational. Free search intent checker — classify your keyword now!',
+    'Check search intent in seconds: informational, commercial, transactional or navigational. Free search intent checker — classify your keyword now.',
   howTo: [
     'Type the keyword you want to check into the Keyword field (up to 150 characters).',
     'Click Classify to run the heuristic word-bank rules.',
@@ -119,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free search intent checker 2026: informational, navigational, commercial, transactional or unknown. Get instant results. No signup - try it free now!',
+      description:
+    'Free search intent checker 2026: informational, navigational, commercial, transactional or unknown. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

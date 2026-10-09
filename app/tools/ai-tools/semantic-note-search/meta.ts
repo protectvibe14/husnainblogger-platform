@@ -41,13 +41,15 @@ export const outputs: ToolOutput[] = [
     id: 'matches',
     label: 'Matching notes',
     type: 'list',
-    description: 'Free semantic search notes 2026: Your notes ranked by semantic similarity to the query. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free semantic search notes 2026: Your notes ranked by semantic similarity to the query. free.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What embedding search can and cannot do.',
+    description:
+    'What embedding search can and cannot do.',
   },
 ];
 
@@ -127,7 +129,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free semantic search notes 2026: Your notes ranked by semantic similarity to the query. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free semantic search notes 2026: Your notes ranked by semantic similarity to the query. free.',
     },
     {
       '@context': 'https://schema.org',

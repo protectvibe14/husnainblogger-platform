@@ -18,20 +18,22 @@ export const outputs: ToolOutput[] = [
     id: 'storyIdeas',
     label: 'Story ideas',
     type: 'table',
-    description: 'Free facebook story ideas 2026: 8 story ideas for your goal — concept, 3–5 frame prompts, and a sticker suggestion each. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook story ideas 2026: 8 story ideas for your goal — concept, 3–5 frame prompts, and a sticker suggestion each. Fast, private now.',
   },
   {
     id: 'canvasNote',
     label: '1080x1920 canvas note',
     type: 'text',
-    description: 'Vertical canvas framing guidance for Facebook Stories.',
+    description:
+    'Vertical canvas framing guidance for Facebook Stories.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Story Ideas',
   description:
-    'Find fresh Facebook story ideas for your goal. Pick poll, Q&A, behind the scenes, or promo for ready-to-film concepts with frames and stickers. Try it free!',
+    'Post Facebook Stories worth tapping through: pick poll, Q&A, behind the scenes, or promo for 8 ready-to-film ideas with frames and sticker suggestions.',
   howTo: [
     'Choose your story goal: poll, Q&A, behind the scenes, or promo.',
     'Run the tool to get 8 story ideas for that goal.',
@@ -101,7 +103,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook story ideas 2026: 8 story ideas for your goal — concept, 3–5 frame prompts, and a sticker suggestion each. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook story ideas 2026: 8 story ideas for your goal — concept, 3–5 frame prompts, and a sticker suggestion each. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

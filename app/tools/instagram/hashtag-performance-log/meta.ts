@@ -27,7 +27,7 @@ export const itemFields: BuilderField[] = [
 export const content: ToolContent = {
   title: 'Instagram Hashtag Tracker',
   description:
-    'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare. Try it now.',
+    'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare.',
   howTo: [
     'Add one log entry per hashtag set: give the set a label (e.g. "fitness-core-set").',
     'Enter the posting date and the reach, likes, and comments you recorded for that set.',
@@ -87,7 +87,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare. Try it now.',
+      description:
+    'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare.',
     },
     {
       '@type': 'BreadcrumbList',

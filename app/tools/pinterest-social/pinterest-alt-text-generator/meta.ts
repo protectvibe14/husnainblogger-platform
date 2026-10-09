@@ -27,14 +27,14 @@ export const outputs: ToolOutput[] = [
     label: 'Alt text',
     type: 'text',
     description:
-      'Free pinterest image alt text 2026: Accessibility-first alt text built from your description, with your keyword woven in once. Fast, private, no signup - try!',
+    'Free pinterest image alt text 2026: Accessibility-first alt text built from your description, with your keyword woven in once. Fast, private - try.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Image Alt Text',
   description:
-    'Write pinterest image alt text with this free generator. Describe your image, add a keyword, and get accessible, SEO-friendly alt text instantly. Try it now!',
+    'Write alt text that helps everyone find your pins: describe your image, add a keyword, and get accessible, SEO-friendly descriptions instantly.',
   howTo: [
     'Describe what you see in the image in plain words (a keyword alone is not enough).',
     'Add your target keyword if you want it woven in naturally (optional).',
@@ -110,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest image alt text 2026: Accessibility-first alt text built from your description, with your keyword woven in once. Fast, private, no signup - try!',
+      description:
+    'Free pinterest image alt text 2026: Accessibility-first alt text built from your description, with your keyword woven in once. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -19,21 +19,23 @@ export const outputs: ToolOutput[] = [
     id: 'checklist',
     label: 'E-E-A-T checklist',
     type: 'table',
-    description: 'One row per check: what to verify and how to do it.',
+    description:
+    'One row per check: what to verify and how to do it.',
   keywords: ['checklist for din application', 'checklist in a sentence', 'eeat seo checklist'],
   },
   {
     id: 'checklistMarkdown',
     label: 'Checklist (Markdown)',
     type: 'copy',
-    description: 'The same checklist as copyable Markdown checkboxes.',
+    description:
+    'The same checklist as copyable Markdown checkboxes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'EEAT Checklist',
   description:
-    'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. No signup — try it now.',
+    'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. —.',
   howTo: [
     'Pick your content type: article, review, guide or homepage (defaults to article).',
     'Run the tool to get your E-E-A-T checklist with one-line how-tos per check.',
@@ -106,7 +108,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. No signup — try it now.',
+    'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. —.',
     },
     {
       '@context': 'https://schema.org',

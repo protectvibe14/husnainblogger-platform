@@ -43,9 +43,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Print on Demand Profit Calculator 2027',
+  title: 'Print on Demand Profit Calculator',
   description:
-    'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost,. Fast, private, no signup -!',
+    'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost. Fast, private -.',
   howTo: [
     'Enter your sale price — the retail price the customer pays, in USD.',
     'Enter your base product cost — what your POD provider charges you (base + print), always your own number.',
@@ -123,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost,. Fast, private, no signup -!',
+      description:
+    'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

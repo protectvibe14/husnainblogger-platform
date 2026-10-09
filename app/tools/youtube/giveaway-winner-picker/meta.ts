@@ -39,32 +39,36 @@ export const outputs: ToolOutput[] = [
     id: 'winners',
     label: 'Winners',
     type: 'list',
-    description: 'Free youtube giveaway winner picker 2026: The drawn winner(s) in draw order. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free youtube giveaway winner picker 2026: The drawn winner(s) in draw order. free.',
   },
   {
     id: 'audit',
     label: 'Entry audit list',
     type: 'list',
-    description: 'Every entry that was considered in the draw.',
+    description:
+    'Every entry that was considered in the draw.',
   },
   {
     id: 'compliance',
     label: 'Contest-policy reminders',
     type: 'list',
-    description: 'YouTube contest policy reminders — the tool alone does not make a giveaway compliant.',
+    description:
+    'YouTube contest policy reminders — the tool alone does not make a giveaway compliant.',
   },
   {
     id: 'summary',
     label: 'Draw summary',
     type: 'text',
-    description: 'Winner count, entry count, dedupe setting and the seed used.',
+    description:
+    'Winner count, entry count, dedupe setting and the seed used.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'YouTube Giveaway Winner Picker',
   description:
-    'Pick YouTube giveaway winners free: paste your entries, set the winner count, and draw fair seeded random winners with an audit list. Run a draw now!',
+    'Pick YouTube giveaway winners free: paste your entries, set the winner count, and draw fair seeded random winners with an audit list. Run a draw now.',
   howTo: [
     'Paste your Entries, one per line — this tool cannot pull comments from YouTube, so entry is manual.',
     'Set the Number of Winners (default 1; cannot exceed your entry count).',
@@ -138,7 +142,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free youtube giveaway winner picker 2026: The drawn winner(s) in draw order. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free youtube giveaway winner picker 2026: The drawn winner(s) in draw order. free.',
     },
     {
       '@context': 'https://schema.org',

@@ -19,27 +19,30 @@ export const outputs: ToolOutput[] = [
     id: 'jsonLd',
     label: 'JSON-LD markup (copy)',
     type: 'copy',
-    description: 'Valid schema.org FAQPage JSON-LD — paste it into your page.',
+    description:
+    'Valid schema.org FAQPage JSON-LD — paste it into your page.',
   keywords: ['faq schema code', 'faq schema example', 'faq schema generator tool', 'faq schema markup generator'],
   },
   {
     id: 'errors',
     label: 'Validation notes',
     type: 'list',
-    description: 'Pairs that were skipped and why (duplicates, length issues).',
+    description:
+    'Pairs that were skipped and why (duplicates, length issues).',
   },
   {
     id: 'pairCount',
     label: 'Pairs included',
     type: 'number',
-    description: 'Number of Q&A pairs in the generated markup.',
+    description:
+    'Number of Q&A pairs in the generated markup.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'FAQ Schema Generator – Free JSON-LD 2027',
+  title: 'FAQ Schema Generator – Free JSON-LD',
   description:
-    'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results. No signup. Fast & free Fast & free',
+    'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results. Fast & free.',
   howTo: [
     'Paste your Q&A pairs into the "Question/answer pairs" box — each question on its own line, followed by its answer, with a blank line between pairs.',
     'Run the tool to validate every pair (up to 50 pairs per block).',
@@ -127,7 +130,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results. No signup.',
+    'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results.',
     },
     {
       '@type': 'BreadcrumbList',

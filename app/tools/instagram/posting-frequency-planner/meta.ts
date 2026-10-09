@@ -43,26 +43,29 @@ export const outputs: ToolOutput[] = [
     id: 'weeklyPlan',
     label: 'Your weekly posting plan',
     type: 'table',
-    description: 'Free how often to post on instagram 2026: One row per post: the day, the format, and the task for that post. Fast, private, no signup - try it now!',
+    description:
+    'Free how often to post on instagram 2026: One row per post: the day, the format, and the task for that post. Fast, private now.',
   },
   {
     id: 'workloadWarning',
     label: 'Workload check',
     type: 'text',
-    description: 'Whether your plan fits your available hours, or a warning to scale back.',
+    description:
+    'Whether your plan fits your available hours, or a warning to scale back.',
   },
   {
     id: 'consistencyTips',
     label: 'Consistency tips',
     type: 'list',
-    description: 'Four practical tips for sticking to your posting cadence.',
+    description:
+    'Four practical tips for sticking to your posting cadence.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'How Often To Post On Instagram',
   description:
-    'Plan how often to post on instagram around your schedule: set posts per week and hours available, get an even weekly plan with workload check. Free — start now!',
+    'Plan how often to post on instagram around your schedule: set posts per week and hours available, get an even weekly plan with workload check. Free —.',
   howTo: [
     'Enter how many posts you want to publish in the "Posts per week" field (1 to 14).',
     'Tick the formats you will use: Reels, carousels, and/or stories.',
@@ -134,7 +137,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free how often to post on instagram 2026: One row per post: the day, the format, and the task for that post. Fast, private, no signup - try it now!',
+      description:
+    'Free how often to post on instagram 2026: One row per post: the day, the format, and the task for that post. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

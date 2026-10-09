@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Find Silence in Audio',
   description:
-    'Free find silence in audio 2026: find dead air in voiceovers fast: paste dB level values to get every silence gap with. Fast, private, no signup - try it now!',
+    'Find dead air in voiceovers fast: paste dB level values to map every silence gap with precise start times and durations, ready for tighter edits.',
   howTo: [
     'Paste your level values as comma-separated dB numbers — one value per analysis window (10 ms each by default), at least 8 values.',
     'Optionally set the silence threshold in dB (default -40; range -80 to -10) — anything below it counts as silent.',
@@ -128,7 +128,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free find silence in audio 2026: find dead air in voiceovers fast: paste dB level values to get every silence gap with. Fast, private, no signup - try it now!',
+      description:
+    'Find dead air in voiceovers fast: paste dB level values to map every silence gap with precise start times and durations, ready for tighter edits.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -37,13 +37,15 @@ export const outputs: ToolOutput[] = [
     id: 'prompts',
     label: 'Headshot prompt pack',
     type: 'list',
-    description: 'Free ai headshot prompt 2026: 5 copy-ready headshot prompts with different poses and settings. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai headshot prompt 2026: 5 copy-ready headshot prompts with different poses and settings. free.',
   },
   {
     id: 'negativePrompt',
     label: 'Negative prompt',
     type: 'copy',
-    description: 'One fixed negative-prompt line to pair with any prompt in the pack.',
+    description:
+    'One fixed negative-prompt line to pair with any prompt in the pack.',
   },
 ];
 
@@ -122,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai headshot prompt 2026: 5 copy-ready headshot prompts with different poses and settings. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai headshot prompt 2026: 5 copy-ready headshot prompts with different poses and settings. free.',
     },
     {
       '@context': 'https://schema.org',

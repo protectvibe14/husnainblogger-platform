@@ -32,14 +32,15 @@ export const outputs: ToolOutput[] = [
     id: 'bioVariants',
     label: 'Bio ideas',
     type: 'list',
-    description: 'Free pinterest bio ideas 2026: Short bio options, each capped at 160 characters, with your keywords and CTA woven in. Fast, private, no signup - try it now!',
+    description:
+    'Free pinterest bio ideas 2026: Short bio options, each capped at 160 characters, with your keywords and CTA woven in. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Bio Ideas',
   description:
-    'Create Pinterest bio ideas that fit the 160-character limit — enter your focus and keywords for short, searchable bio variants with your CTA. Try it free now!',
+    'Fit your whole story in 160 characters: enter your profile focus and keywords for short, searchable Pinterest bio variants complete with your CTA.',
   howTo: [
     'Describe your profile focus in the "Profile focus" field (e.g. easy weeknight dinners).',
     'Add optional keywords in the "Keywords" field, separated by commas.',
@@ -117,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest bio ideas 2026: Short bio options, each capped at 160 characters, with your keywords and CTA woven in. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest bio ideas 2026: Short bio options, each capped at 160 characters, with your keywords and CTA woven in. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

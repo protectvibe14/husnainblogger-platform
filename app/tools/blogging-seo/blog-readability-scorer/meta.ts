@@ -22,7 +22,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free blog readability scorer 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  "Paste your draft and get a genuine Flesch Reading Ease score plus grade level in seconds — the same formulas editors have used since the 1940s, computed entirely in your browser. You'll also get a plain-English verdict, text stats, and practical tips on where your sentences are getting too heavy. Free, no signup.";
 
 export const content: ToolContent = {
   title: 'Blog Readability Scorer',

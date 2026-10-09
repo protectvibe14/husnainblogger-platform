@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Day in My Life Shot List',
   description:
-    'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession,. Fast, private, no signup - try it now!',
+    'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession. Fast, private now.',
   howTo: [
     'Enter your profession (e.g. "nurse", "barista", "student").',
     'Pick the day type — morning routine, full workday, student day, and more.',
@@ -111,7 +111,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession,. Fast, private, no signup - try it now!',
+      description:
+    'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -33,38 +33,43 @@ export const outputs: ToolOutput[] = [
     id: 'subjectOptions',
     label: 'Subject-line options',
     type: 'list',
-    description: 'Free repurpose blog post into newsletter 2026: Five subject lines built from your post’s title. Get instant results. No signup - try it free now!',
+    description:
+    'Free repurpose blog post into newsletter 2026: Five subject lines built from your post’s title. Get instant results. free now.',
   },
   {
     id: 'introParagraph',
     label: 'Intro paragraph',
     type: 'text',
-    description: 'Newsletter intro in your chosen tone.',
+    description:
+    'Newsletter intro in your chosen tone.',
   },
   {
     id: 'sections',
     label: 'Sections',
     type: 'table',
-    description: 'Each heading with a verbatim excerpt of its body.',
+    description:
+    'Each heading with a verbatim excerpt of its body.',
   },
   {
     id: 'ctaBlock',
     label: 'CTA block (copy)',
     type: 'copy',
-    description: 'Closing call-to-action with a link placeholder.',
+    description:
+    'Closing call-to-action with a link placeholder.',
   },
   {
     id: 'notices',
     label: 'Notes',
     type: 'list',
-    description: 'Truncation or section-cap notes.',
+    description:
+    'Truncation or section-cap notes.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Repurpose Blog Post Into Newsletter 2027',
+  title: 'Repurpose Blog Post Into Newsletter',
   description:
-    'Turn a blog post into a newsletter — paste your text to get subject lines, an intro, excerpts, and a CTA block. Pasted text only, no signup. Convert now!',
+    'Turn a blog post into a newsletter — paste your text to get subject lines, an intro, excerpts, and a CTA block. Pasted text only Convert now.',
   howTo: [
     'Copy your blog post text and paste it into the "Blog post text" box (URL fetching is blocked by browsers — paste text only).',
     'Set how many words each section excerpt should use (default 150).',
@@ -143,7 +148,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free repurpose blog post into newsletter 2026: Five subject lines built from your post’s title. Get instant results. No signup - try it free now!',
+      description:
+    'Free repurpose blog post into newsletter 2026: Five subject lines built from your post’s title. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

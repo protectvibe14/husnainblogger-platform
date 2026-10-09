@@ -28,21 +28,21 @@ export const outputs: ToolOutput[] = [
     label: 'Page-by-page script',
     type: 'table',
     description:
-      'Free pinterest idea pin ideas 2026: One row per page: page number, visual direction, on-screen text (kept short for 9:16),. Fast, private, no signup - try it!',
+    'Free pinterest idea pin ideas 2026: One row per page: page number, visual direction, on-screen text (kept short for 9:16). Fast, private.',
   },
   {
     id: 'warning',
     label: 'Platform notes',
     type: 'text',
     description:
-      'Empty unless something needs attention — e.g. the page count was clamped to 20, or your topic hints at an outbound link (idea pins carry none).',
+    'Empty unless something needs attention — e.g. the page count was clamped to 20, or your topic hints at an outbound link (idea pins carry none).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Idea Pin Ideas',
   description:
-    'Generate pinterest idea pin ideas with this free script tool. Enter your topic and page count to get a page-by-page visual, text, and caption plan. Try it now!',
+    'Script your idea pins page by page: enter your topic and page count for a complete visual, text, and caption plan covering every single page.',
   howTo: [
     'Enter your idea pin topic (up to 120 characters).',
     'Choose the number of pages, from 1 to 20 (defaults to 5).',
@@ -118,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest idea pin ideas 2026: One row per page: page number, visual direction, on-screen text (kept short for 9:16),. Fast, private, no signup - try it!',
+      description:
+    'Free pinterest idea pin ideas 2026: One row per page: page number, visual direction, on-screen text (kept short for 9:16). Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

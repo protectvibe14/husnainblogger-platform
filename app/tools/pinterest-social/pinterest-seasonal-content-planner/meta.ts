@@ -34,32 +34,36 @@ export const outputs: ToolOutput[] = [
     id: 'seasonalAngles',
     label: 'Seasonal content angles',
     type: 'table',
-    description: 'Free pinterest seasonal content 2026: Events for your period with planning lead time, a content angle for your niche, and. Fast, private, no signup - try it!',
+    description:
+    'Free pinterest seasonal content 2026: Events for your period with planning lead time, a content angle for your niche, and. Fast, private.',
   },
   {
     id: 'planningNote',
     label: 'Planning note',
     type: 'text',
-    description: 'Which events need 4+ weeks of lead time, plus dataset provenance and honesty notes.',
+    description:
+    'Which events need 4+ weeks of lead time, plus dataset provenance and honesty notes.',
   },
   {
     id: 'eventCount',
     label: 'Events found',
     type: 'number',
-    description: 'How many seasonal events matched your period.',
+    description:
+    'How many seasonal events matched your period.',
   },
   {
     id: 'periodUsed',
     label: 'Period',
     type: 'text',
-    description: 'The months your plan was built for.',
+    description:
+    'The months your plan was built for.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Seasonal Content Ideas 2027',
+  title: 'Pinterest Seasonal Content Ideas',
   description:
-    'Plan your pinterest seasonal content with lead times and keyword seeds for every event. Enter your niche and month or quarter. Free, try it now!',
+    'Post seasonal content early enough to rank: enter your niche and a month or quarter for posting lead times plus keyword seeds for every event.',
   howTo: [
     'Type your "Your niche", e.g. "home decor" or "keto recipes".',
     'Enter a "Month (1-12)" like 11 for November, or pick a "Quarter" like Q4. You can combine both; at least one is required.',
@@ -136,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest seasonal content 2026: Events for your period with planning lead time, a content angle for your niche, and. Fast, private, no signup - try it!',
+      description:
+    'Free pinterest seasonal content 2026: Events for your period with planning lead time, a content angle for your niche, and. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

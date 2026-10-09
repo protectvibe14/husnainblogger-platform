@@ -79,7 +79,8 @@ export const content: ToolContent = {
       inputs: {
         title: 'budget travel tips for beginners',
         targetKeyword: 'budget travel tips',
-        description: 'budget travel tips for beginners: save money on flights, hotels, and food. Full guide at https://example.com. 0:00 Intro\n2:15 Flights\n5:40 Hotels',
+        description:
+    'budget travel tips for beginners: save money on flights, hotels, and food. Full guide at https://example.com. 0:00 Intro\n2:15 Flights\n5:40 Hotels.',
         tags: 'budget travel tips, travel, cheap flights',
         chapters: '0:00 Intro\n2:15 Flights\n5:40 Hotels',
         thumbnailText: 'TRAVEL CHEAP',
@@ -95,7 +96,8 @@ export const content: ToolContent = {
       title: 'Missing keyword',
       inputs: {
         title: 'Budget Travel Tips for Beginners',
-        description: 'x'.repeat(250),
+        description:
+    'x.'.repeat(250),
         tags: 'travel, cheap flights',
       },
       note: 'Without a target keyword the 4 keyword-dependent checks fail and the score drops accordingly.',

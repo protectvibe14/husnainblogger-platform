@@ -55,7 +55,7 @@ const DESCRIPTION =
   'Free social media manager pricing calculator 2026: estimate your monthly retainer from package tier, accounts and posting workload. No signup — try it now.';
 
 export const content: ToolContent = {
-  title: 'Social Media Manager Pricing 2027 Guide',
+  title: 'Social Media Manager Pricing Guide',
   description: DESCRIPTION,
   howTo: [
     'Pick a package tier: Basic (posting + light engagement), Standard (content + engagement), or Premium (full management + strategy).',

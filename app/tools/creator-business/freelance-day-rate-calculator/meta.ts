@@ -51,38 +51,43 @@ export const outputs: ToolOutput[] = [
     id: 'dayRate',
     label: 'Recommended day rate',
     type: 'currency',
-    description: 'Free freelance day rate calculator 2026: Income target + expenses, divided by your billable days. Get instant results. No signup - try it free now!',
+    description:
+    'Free freelance day rate calculator 2026: Income target + expenses, divided by your billable days. Get instant results. free now.',
   },
   {
     id: 'halfDayRate',
     label: 'Half-day rate',
     type: 'currency',
-    description: 'Day rate ÷ 2 (common convention — adjust to taste).',
+    description:
+    'Day rate ÷ 2 (common convention — adjust to taste).',
   },
   {
     id: 'hourlyRate',
     label: 'Hourly equivalent',
     type: 'currency',
-    description: 'Day rate divided by your hours per billable day.',
+    description:
+    'Day rate divided by your hours per billable day.',
   },
   {
     id: 'billableDays',
     label: 'Billable days per year',
     type: 'number',
-    description: 'Working days minus non-billable days.',
+    description:
+    'Working days minus non-billable days.',
   },
   {
     id: 'assumptions',
     label: 'Assumptions & notes',
     type: 'list',
-    description: 'Planning notes, e.g. when expenses were entered as 0.',
+    description:
+    'Planning notes, e.g. when expenses were entered as 0.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Freelance Day Rate Calculator',
   description:
-    'Calculate your freelance day rate from your income target, expenses, and billable days — free, no signup. Get your recommended rate and hourly equivalent now!',
+    'Calculate your freelance day rate from your income target, expenses, and billable days — free Get your recommended rate and hourly equivalent now.',
   howTo: [
     'Enter your annual income target — the take-home amount you want to earn.',
     'Add your annual business expenses (tools, insurance, software); enter 0 if you have none.',
@@ -178,7 +183,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance day rate calculator 2026: Income target + expenses, divided by your billable days. Get instant results. No signup - try it free now!',
+      description:
+    'Free freelance day rate calculator 2026: Income target + expenses, divided by your billable days. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

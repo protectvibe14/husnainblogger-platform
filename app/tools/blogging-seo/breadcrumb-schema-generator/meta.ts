@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'jsonLd',
     label: 'JSON-LD markup (copy)',
     type: 'copy',
-    description: 'Free breadcrumb schema generator 2026: Valid schema.org BreadcrumbList JSON-LD with positions. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free breadcrumb schema generator 2026: Valid schema.org BreadcrumbList JSON-LD with positions. free.',
   },
   {
     id: 'errors',
     label: 'Validation notes',
     type: 'list',
-    description: 'Crumbs that were skipped and why (bad or relative URLs).',
+    description:
+    'Crumbs that were skipped and why (bad or relative URLs).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Breadcrumb Schema Generator',
   description:
-    'Generate valid breadcrumb schema JSON-LD for your pages in seconds. Enter names and URLs, then copy the markup with correct positions. Try it free now!',
+    'Generate valid breadcrumb schema JSON-LD for your pages in seconds. Enter names and URLs, then copy the markup with correct positions. Try it free now.',
   howTo: [
     'Enter your "Breadcrumb trail" — one crumb per line as: Name ||| URL.',
     'Optionally add a "Base URL" so relative crumb URLs (like /blog/) resolve to absolute URLs.',
@@ -121,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free breadcrumb schema generator 2026: Valid schema.org BreadcrumbList JSON-LD with positions. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free breadcrumb schema generator 2026: Valid schema.org BreadcrumbList JSON-LD with positions. free.',
     },
     {
       '@type': 'BreadcrumbList',

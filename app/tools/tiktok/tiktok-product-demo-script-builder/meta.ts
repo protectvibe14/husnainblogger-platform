@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Tiktok Product Demo Script',
   description:
-    'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free — try it now.',
+    'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free —.',
   howTo: [
     'Add one item per product you want to demo.',
     'Enter the productName and list up to 5 keyFeatures, comma-separated (one demo beat each).',
@@ -95,7 +95,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free — try it now.',
+      description:
+    'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free —.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -40,26 +40,29 @@ export const outputs: ToolOutput[] = [
     id: 'outline',
     label: 'Newsletter outline',
     type: 'table',
-    description: 'Free newsletter outline generator 2026: Each section with its writing purpose and word budget. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free newsletter outline generator 2026: Each section with its writing purpose and word budget. free.',
   },
   {
     id: 'totalWords',
     label: 'Total words',
     type: 'number',
-    description: 'Sum of all section word budgets (equals your target).',
+    description:
+    'Sum of all section word budgets (equals your target).',
   },
   {
     id: 'notices',
     label: 'Notes',
     type: 'list',
-    description: 'Truncation or section-cap notes.',
+    description:
+    'Truncation or section-cap notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Newsletter Outline Generator',
   description:
-    'Build a newsletter outline fast — enter your topic and word count to get sections with word budgets. Free tool, no signup needed. Start planning now!',
+    'Build a newsletter outline fast — enter your topic and word count to get sections with word budgets. Free tool needed. Start planning now.',
   howTo: [
     'Enter your newsletter topic in the "Newsletter topic" field (e.g. remote work productivity).',
     'Set your target word count (100–10,000 words).',
@@ -131,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter outline generator 2026: Each section with its writing purpose and word budget. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free newsletter outline generator 2026: Each section with its writing purpose and word budget. free.',
     },
     {
       '@type': 'BreadcrumbList',

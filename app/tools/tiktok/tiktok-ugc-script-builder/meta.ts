@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'UGC Script Example TikTok',
   description:
-    'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private, no signup - try it now!',
+    'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private now.',
   howTo: [
     'Add one item per product you want a script for (up to 10 items).',
     'Enter the productName, a brandVoice (friendly, funny, bold, luxury, or professional), and a videoLength of 15, 30, or 60.',
@@ -101,7 +101,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private, no signup - try it now!',
+      description:
+    'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

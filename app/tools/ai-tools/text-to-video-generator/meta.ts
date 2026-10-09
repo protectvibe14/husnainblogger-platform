@@ -31,20 +31,22 @@ export const outputs: ToolOutput[] = [
     id: 'video',
     label: 'Generated video',
     type: 'download',
-    description: 'Free text to video ai generator 2026: AI-generated video clip (MP4) from your prompt, playable on the page with a download. Fast, private, no signup - try it!',
+    description:
+    'Free text to video ai generator 2026: AI-generated video clip (MP4) from your prompt, playable on the page with a download. Fast, private.',
   },
   {
     id: 'duration',
     label: 'Clip length',
     type: 'text',
-    description: 'The duration you requested (4s, 6s or 8s).',
+    description:
+    'The duration you requested (4s, 6s or 8s).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Text to Video AI Generator',
   description:
-    'Turn text into AI video with your own fal.ai key — Google Veo 3 clips in 4, 6 or 8 seconds. Paste your key, describe the shot, preview and download. No signup.',
+    'Turn text into AI video with your own fal.ai key — Google Veo 3 clips in 4, 6 or 8 seconds. Paste your key, describe the shot, preview and download.',
   howTo: [
     'Save your fal.ai API key in the key vault above (it stays in this browser only).',
     'Describe the shot: subject, motion, camera move, lighting. Cinematic detail gives better clips.',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Text to Video Ai Generator 2026 – Free Generator - no signup required.',
+      description:
+    'Free Text to Video Ai Generator 2026 – Free Generator - required.',
     },
     {
       '@context': 'https://schema.org',

@@ -7,6 +7,11 @@
  * slot is disabled or has no code. Ad code is injected via set:html
  * (admin-pasted AdSense/script tags).
  *
+ * SECURITY: ad code executes with full page privileges (XSS surface).
+ * scripts/validate-ads.mjs allowlists ad-network domains at build time
+ * and fails the build on javascript: URIs, inline event handlers, and
+ * <object>/<embed>/<form> tags. Trust model: docs/security/ADS_TRUST_MODEL.md
+ *
  * Props:
  *   slot — key in ads-config.json (e.g. "tool-top")
  */
@@ -20,13 +25,24 @@ const { slot } = Astro.props;
 const cfg = (adsConfig.slots as Record<string, any>)[slot];
 
 const show = cfg?.enabled && cfg?.code?.trim();
+// Device targeting: honor the admin panel's "devices" setting ("both" | "desktop" | "mobile").
+const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.devices : "both";
 ---
 
 {show && (
-  <div class={`hb-ad-slot hb-ad-slot--${slot}`} data-ad-slot={slot} role="complementary" aria-label="Advertisement">
+  <div class={`hb-ad-slot hb-ad-slot--${slot} hb-ad-slot--dev-${devices}`} data-ad-slot={slot} role="complementary" aria-label="Advertisement">
     <span class="hb-ad-label">Advertisement</span>
     <div class="hb-ad-body" set:html={cfg.code} />
   </div>
+)}
+
+{/* Sticky mobile compensation: keep the fixed banner from covering the footer/content */}
+{show && slot === "tool-sticky-mobile" && (
+  <style is:global>
+    @media (max-width: 768px) {
+      body { padding-bottom: 76px; }
+    }
+  </style>
 )}
 
 <style>
@@ -71,5 +87,12 @@ const show = cfg?.enabled && cfg?.code?.trim();
   }
   @media (max-width: 768px) {
     .hb-ad-slot--tool-sticky-mobile { display: block; }
+  }
+  /* Device targeting from admin panel: "desktop" hides on mobile, "mobile" hides on desktop */
+  @media (max-width: 768px) {
+    .hb-ad-slot--dev-desktop { display: none; }
+  }
+  @media (min-width: 769px) {
+    .hb-ad-slot--dev-mobile { display: none; }
   }
 </style>

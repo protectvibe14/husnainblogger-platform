@@ -39,10 +39,10 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free sponsorship email pitch generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Pitch sponsors with a clear, confident ask: choose your asset - blog, podcast, event, or newsletter - name the sponsor type, and describe the deal.';
 
 export const content: ToolContent = {
-  title: 'Sponsorship Email Pitch Generator 2027',
+  title: 'Sponsorship Email Pitch Generator',
   description: DESCRIPTION,
   howTo: [
     'Choose your asset: blog, podcast, event, or newsletter.',

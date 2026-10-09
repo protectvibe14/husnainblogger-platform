@@ -66,7 +66,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Easing Curve Visualizer',
   description:
-    'Use this free easing curve visualizer: sample curves with exact control points, copy the CSS string, and get honest CapCut guidance. Try it now.',
+    'See your easing curves before you animate: sample curves with exact control points, copy the CSS string, and get honest CapCut rebuild guidance.',
   howTo: [
     'Pick an easing curve — linear, ease, ease-in, ease-out, ease-in-out, or custom.',
     'For custom, enter the four cubic-bezier control points (x1 and x2 must stay within 0-1; y values may overshoot).',
@@ -141,7 +141,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this free easing curve visualizer: sample curves with exact control points, copy the CSS string, and get honest CapCut guidance. Try it now.',
+      description:
+    'See your easing curves before you animate: sample curves with exact control points, copy the CSS string, and get honest CapCut rebuild guidance.',
     },
     {
       '@type': 'BreadcrumbList',

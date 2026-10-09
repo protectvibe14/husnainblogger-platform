@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free email funnel planner 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Map your email funnel before you write a word: choose welcome, nurture, sales, or winback, set your stages, and plan every email in the sequence.';
 
 export const content: ToolContent = {
   title: 'Email Funnel Planner',

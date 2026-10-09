@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'hashtags',
     label: 'Hashtag ideas',
     type: 'list',
-    description: 'Free twitter hashtag generator 2026: Clean, space-free hashtags built from your topic plus picks from a curated generic bank —. Fast, private, no signup - try!',
+    description:
+    'Free twitter hashtag generator 2026: Clean, space-free hashtags built from your topic plus picks from a curated generic bank —. Fast, private - try.',
   },
   {
     id: 'usageNote',
     label: 'Usage note',
     type: 'text',
-    description: 'Best-practice guidance (0–2 hashtags per post) and an honest note when hashtags add little value for your topic.',
+    description:
+    'Best-practice guidance (0–2 hashtags per post) and an honest note when hashtags add little value for your topic.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Hashtag Generator',
   description:
-    'Generate free twitter hashtag ideas from any topic. Get clean, topic-based hashtags plus honest usage guidance — a curated bank, never fake trends. Try it!',
+    'Find X hashtags that fit your post: enter any topic for clean, topic-based tags plus honest usage guidance - a curated bank, never fake trends.',
   howTo: [
     'Type your topic into the "Topic" field (keep it under 100 characters).',
     'Set "How many hashtags" from 1 to 5 (leave it blank for the default of 3).',
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter hashtag generator 2026: Clean, space-free hashtags built from your topic plus picks from a curated generic bank —. Fast, private, no signup - try!',
+      description:
+    'Free twitter hashtag generator 2026: Clean, space-free hashtags built from your topic plus picks from a curated generic bank —. Fast, private - try.',
     },
     {
       '@type': 'BreadcrumbList',

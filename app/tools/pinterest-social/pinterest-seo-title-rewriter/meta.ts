@@ -28,21 +28,21 @@ export const outputs: ToolOutput[] = [
     label: 'Title rewrites',
     type: 'list',
     description:
-      'Free pinterest seo 2026: Title variants from a fixed pattern bank. Every rewrite is 100 characters or fewer,. Fast, private, no signup - try it now!',
+    'Free pinterest seo 2026: Title variants from a fixed pattern bank. Every rewrite is 100 characters or fewer. Fast, private now.',
   },
   {
     id: 'note',
     label: 'Optimization note',
     type: 'text',
     description:
-      'Empty unless your draft already front-loads the keyword — then it says so and the variants below are optional alternatives.',
+    'Empty unless your draft already front-loads the keyword — then it says so and the variants below are optional alternatives.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest SEO Title Rewriter',
   description:
-    'Boost pinterest seo with this free title rewriter. Enter your draft and keyword to get front-loaded, under-100-character title variants instantly. Try it now!',
+    'Rewrite pin titles for Pinterest search: enter your draft title and primary keyword to get front-loaded variants under 100 characters, ready to paste.',
   howTo: [
     'Enter your draft pin title (up to 200 characters).',
     'Enter your primary keyword (up to 100 characters).',
@@ -118,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest seo 2026: Title variants from a fixed pattern bank. Every rewrite is 100 characters or fewer,. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest seo 2026: Title variants from a fixed pattern bank. Every rewrite is 100 characters or fewer. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

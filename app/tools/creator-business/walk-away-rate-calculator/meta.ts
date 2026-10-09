@@ -43,32 +43,36 @@ export const outputs: ToolOutput[] = [
     id: 'floorRate',
     label: 'Cost-covering floor rate',
     type: 'currency',
-    description: 'Free minimum project fee calculator 2026: monthlyBusinessCosts / billableHoursPerMonth — the rate that just covers costs. Fast, private, no signup - try it now!',
+    description:
+    'Free minimum project fee calculator 2026: monthlyBusinessCosts / billableHoursPerMonth — the rate that just covers costs. Fast, private now.',
   },
   {
     id: 'walkAwayRate',
     label: 'Walk-away rate',
     type: 'currency',
-    description: 'Floor rate plus your buffer margin — the rate below which you walk away.',
+    description:
+    'Floor rate plus your buffer margin — the rate below which you walk away.',
   },
   {
     id: 'gapVsCurrentRate',
     label: 'Gap vs current rate',
     type: 'currency',
-    description: 'walkAwayRate minus your current rate (null when not provided).',
+    description:
+    'walkAwayRate minus your current rate (null when not provided).',
   },
   {
     id: 'notes',
     label: 'Notes',
     type: 'list',
-    description: 'Flags for survival-rate buffers, incomplete costs, and honest limitations.',
+    description:
+    'Flags for survival-rate buffers, incomplete costs, and honest limitations.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Minimum Project Fee Calculator',
   description:
-    'Find your minimum project fee in seconds. Enter monthly costs and billable hours to get your cost floor and walk-away rate with buffer. Free - try it now!',
+    'Find your minimum project fee in seconds. Enter monthly costs and billable hours to get your cost floor and walk-away rate with buffer. Free now.',
   howTo: [
     'Enter your total monthly business costs: rent, tools, insurance, taxes, subscriptions.',
     'Enter how many hours per month you can actually bill (after admin and marketing time).',
@@ -158,7 +162,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free minimum project fee calculator 2026: monthlyBusinessCosts / billableHoursPerMonth — the rate that just covers costs. Fast, private, no signup - try it now!',
+      description:
+    'Free minimum project fee calculator 2026: monthlyBusinessCosts / billableHoursPerMonth — the rate that just covers costs. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

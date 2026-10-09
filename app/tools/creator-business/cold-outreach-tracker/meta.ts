@@ -17,7 +17,8 @@ export const outputs: ToolOutput[] = [
     id: 'exportableCSV',
     label: 'CSV export (copy or download)',
     type: 'copy',
-    description: 'Your prospects as CSV text — copy or download it to keep a permanent copy.',
+    description:
+    'Your prospects as CSV text — copy or download it to keep a permanent copy.',
   },
 ];
 

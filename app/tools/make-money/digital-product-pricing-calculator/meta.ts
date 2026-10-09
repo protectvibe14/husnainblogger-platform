@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Digital Product Pricing Calculator 2027',
+  title: 'Digital Product Pricing Calculator',
   description:
     'Price your products for profit with this free digital product pricing calculator — factor in costs, margins, and platform fees. Try it free today.',
   howTo: [
@@ -118,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Price your products for profit with this free digital product pricing calculator — factor in costs, margins, and platform fees. Try it free today.',
+      description:
+    'Price your products for profit with this free digital product pricing calculator — factor in costs, margins, and platform fees. Try it free today.',
     },
     {
       '@type': 'BreadcrumbList',

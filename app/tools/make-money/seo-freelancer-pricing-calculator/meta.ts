@@ -50,9 +50,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: "SEO Freelancer Rates Calculator 2027",
+  title: "SEO Freelancer Rates Calculator",
   description:
-    "Free seo freelancer rates calculator 2026: estimate audit, retainer and link-building quotes from site pages and monthly hours. No signup — try it now.",
+    "Free seo freelancer rates calculator 2026: estimate audit, retainer and link-building quotes from site pages and monthly hours. —.",
   howTo: [
     "Choose the service type: SEO audit, monthly retainer, or link building.",
     "Enter the number of site pages in scope and your expected monthly hours.",
@@ -138,7 +138,7 @@ export const content: ToolContent = {
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       description:
-        "Free seo freelancer rates calculator 2026: estimate audit, retainer and link-building quotes from site pages and monthly hours. No signup — try it now.",
+    "Free seo freelancer rates calculator 2026: estimate audit, retainer and link-building quotes from site pages and monthly hours. —.",
     },
     {
       "@type": "BreadcrumbList",

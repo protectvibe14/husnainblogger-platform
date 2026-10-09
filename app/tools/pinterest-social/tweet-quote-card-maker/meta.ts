@@ -35,20 +35,22 @@ export const outputs: ToolOutput[] = [
     id: 'cards',
     label: 'Card summary',
     type: 'list',
-    description: 'Free tweet quote image generator 2026: Each card with its theme, PNG dimensions, font size, and character count. Fast, private, no signup - try it now!',
+    description:
+    'Free tweet quote image generator 2026: Each card with its theme, PNG dimensions, font size, and character count. Fast, private now.',
   },
   {
     id: 'specDownload',
     label: 'Render spec (download)',
     type: 'download',
-    description: 'JSON render spec per card — text, theme colors, dimensions, font size — used by the in-browser canvas renderer.',
+    description:
+    'JSON render spec per card — text, theme colors, dimensions, font size — used by the in-browser canvas renderer.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Tweet Quote Image Generator',
   description:
-    'Turn any quote into a sharp, shareable card with our tweet quote image generator: validate text, pick a theme, download the PNG. Make yours free!',
+    'Turn any quote into a sharp, shareable card with our tweet quote image generator: validate text, pick a theme, download the PNG. Make yours free.',
   howTo: [
     'Click "Add item" for each quote card — type the "Quote text" (required, max 280 characters).',
     'Optionally add the "Author" and set the "Theme" to light, dark, or brand (defaults to dark).',
@@ -111,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tweet quote image generator 2026: Each card with its theme, PNG dimensions, font size, and character count. Fast, private, no signup - try it now!',
+      description:
+    'Free tweet quote image generator 2026: Each card with its theme, PNG dimensions, font size, and character count. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

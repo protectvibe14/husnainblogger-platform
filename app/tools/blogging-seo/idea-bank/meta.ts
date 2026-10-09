@@ -85,26 +85,29 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Ideas',
     type: 'table',
-    description: 'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. free.',
   },
   {
     id: 'count',
     label: 'Idea count',
     type: 'number',
-    description: 'How many ideas are shown.',
+    description:
+    'How many ideas are shown.',
   },
   {
     id: 'exportCsv',
     label: 'Export CSV',
     type: 'download',
-    description: 'The full bank as a CSV file — download it to save your ideas between sessions.',
+    description:
+    'The full bank as a CSV file — download it to save your ideas between sessions.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Blog Idea Bank',
   description:
-    'Stop losing great post ideas: this free blog idea bank stores, tags, filters and exports your content ideas in one place. Organize your ideas now!',
+    'Stop losing great post ideas: this free blog idea bank stores, tags, filters and exports your content ideas in one place. Organize your ideas now.',
   howTo: [
     'Choose an action: add a new idea, list and filter your bank, update or delete by row number, or export.',
     'To keep ideas between sessions: download the CSV after adding, then paste your saved JSON into "Your saved ideas" next time.',
@@ -183,7 +186,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free blog idea bank 2026: Your ideas after the action: title, tags, status, notes and flags. free.',
     },
     {
       '@context': 'https://schema.org',

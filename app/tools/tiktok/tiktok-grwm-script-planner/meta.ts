@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'GRWM TikTok Script Planner',
   description:
-    'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan now.',
+    'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan.',
   howTo: [
     'Type your GRWM topic in the grwmTopic field (e.g. "5-minute work makeup").',
     'Pick your niche — Skincare and Fashion / Outfits load dedicated template branches.',
@@ -117,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan now.',
+      description:
+    'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan.',
     },
     {
       '@type': 'BreadcrumbList',

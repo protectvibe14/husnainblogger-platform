@@ -26,32 +26,36 @@ export const outputs: ToolOutput[] = [
     id: 'groupNames',
     label: 'Group name ideas',
     type: 'list',
-    description: 'Free facebook group name ideas 2026: 8 group-name candidates in your chosen tone. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free facebook group name ideas 2026: 8 group-name candidates in your chosen tone. free.',
   },
   {
     id: 'copyAll',
     label: 'Copy all names',
     type: 'copy',
-    description: 'All 8 candidates as plain text, ready to shortlist.',
+    description:
+    'All 8 candidates as plain text, ready to shortlist.',
   },
   {
     id: 'toneUsed',
     label: 'Tone used',
     type: 'text',
-    description: 'Which tone bank the names came from.',
+    description:
+    'Which tone bank the names came from.',
   },
   {
     id: 'capNote',
     label: 'Character-limit note',
     type: 'text',
-    description: 'Honest note on the secondary-sourced 75-character limit.',
+    description:
+    'Honest note on the secondary-sourced 75-character limit.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Group Name Ideas',
   description:
-    'Get free facebook group name ideas in professional or casual tone. Enter your community topic to get 8 catchy name options for your group. Try it now!',
+    'Name your Facebook group something people want to join: enter your community topic for 8 catchy name options in a professional or casual tone.',
   howTo: [
     'Type your community topic into the "Community topic" field (e.g. sourdough baking).',
     'Pick a "Tone": professional for business/networking groups, casual for hobby and fan groups. Leave blank to default to professional.',
@@ -123,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook group name ideas 2026: 8 group-name candidates in your chosen tone. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free facebook group name ideas 2026: 8 group-name candidates in your chosen tone. free.',
     },
     {
       '@type': 'BreadcrumbList',

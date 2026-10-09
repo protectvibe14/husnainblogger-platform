@@ -26,20 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'robotsTxt',
     label: 'robots.txt file (copy)',
     type: 'copy',
-    description: 'Free robots.txt generator 2026: The complete robots.txt — save it as robots.txt in your site root. Get instant results. No signup - try it free now!',
+    description:
+    'Free robots.txt generator 2026: The complete robots.txt — save it as robots.txt in your site root. Get instant results. free now.',
   },
   {
     id: 'errors',
     label: 'Notes and corrections',
     type: 'list',
-    description: 'Auto-corrections and notes, e.g. paths fixed to start with "/".',
+    description:
+    'Auto-corrections and notes, e.g. paths fixed to start with "/".',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Robots.txt Generator',
   description:
-    'Write a valid robots.txt file in minutes, not hours. Add your crawl rules and sitemap URL, then copy the ready-to-upload file. Free, no signup!',
+    'Write a valid robots.txt file in minutes, not hours. Add your crawl rules and sitemap URL, then copy the ready-to-upload file. Free.',
   howTo: [
     'Type your "Crawl rules" using one directive per line: User-agent:, Disallow:, or Allow:.',
     'Separate rule groups with a blank line — one group per crawler (e.g. "*" for all, "Googlebot" for Google).',
@@ -119,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free robots.txt generator 2026: The complete robots.txt — save it as robots.txt in your site root. Get instant results. No signup - try it free now!',
+      description:
+    'Free robots.txt generator 2026: The complete robots.txt — save it as robots.txt in your site root. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

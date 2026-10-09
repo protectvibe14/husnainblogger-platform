@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Video Storyboard Planner',
   description:
-    'Use this video storyboard planner to turn script beats into frames: paste beats, set duration and frames per beat, get camera setups and captions. Start now.',
+    'Turn script beats into shootable frames: paste your script beats, set the total duration and frames per beat, and get camera setups plus captions.',
   howTo: [
     'Paste your script beats, one per line — add an optional visual hint after " | ", e.g. "Intro | close-up of the product".',
     'Enter the total duration in seconds.',
@@ -116,7 +116,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this video storyboard planner to turn script beats into frames: paste beats, set duration and frames per beat, get camera setups and captions. Start now.',
+      description:
+    'Turn script beats into shootable frames: paste your script beats, set the total duration and frames per beat, and get camera setups plus captions.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -43,26 +43,29 @@ export const outputs: ToolOutput[] = [
     id: 'whitelistingFeeTotal',
     label: 'Total whitelisting fee',
     type: 'currency',
-    description: 'Free ugc whitelisting rates 2026: Monthly whitelisting fee × months (estimate, from your own rate). Get instant results. No signup - try it free now!',
+    description:
+    'Free ugc whitelisting rates 2026: Monthly whitelisting fee × months (estimate, from your own rate). Get instant results. free now.',
   },
   {
     id: 'monthlyFee',
     label: 'Monthly whitelisting fee',
     type: 'currency',
-    description: 'Your percentage of the content fee per month, or your flat monthly fee.',
+    description:
+    'Your percentage of the content fee per month, or your flat monthly fee.',
   },
   {
     id: 'totalDealValue',
     label: 'Total deal value',
     type: 'currency',
-    description: 'Base content fee plus the total whitelisting fee.',
+    description:
+    'Base content fee plus the total whitelisting fee.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'UGC Whitelisting Rates',
   description:
-    'Calculate UGC whitelisting rates from your content fee and your own monthly rate or flat fee. Get the whitelisting total and deal value free. Try it now!',
+    'Calculate UGC whitelisting rates from your content fee and your own monthly rate or flat fee. Get the whitelisting total and deal value free.',
   howTo: [
     'Enter your "Base content fee" — what you charge for creating the content itself.',
     'Enter your "Whitelisting rate per month" — the percentage of the content fee YOU charge per month of paid usage (no standard rate is assumed).',
@@ -139,7 +142,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ugc whitelisting rates 2026: Monthly whitelisting fee × months (estimate, from your own rate). Get instant results. No signup - try it free now!',
+      description:
+    'Free ugc whitelisting rates 2026: Monthly whitelisting fee × months (estimate, from your own rate). Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

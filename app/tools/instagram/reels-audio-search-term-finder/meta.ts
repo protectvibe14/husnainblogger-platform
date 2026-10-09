@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'searchTerms',
     label: 'Search terms',
     type: 'list',
-    description: 'Free reels trending audio search 2026: Phrases to type into Instagram\\. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free reels trending audio search 2026: Phrases to type into Instagram\\. free.',
   },
   {
     id: 'tipNote',
     label: 'How to use them',
     type: 'text',
-    description: 'How to run these phrases through Instagram\'s audio search and spot trending tracks.',
+    description:
+    'How to run these phrases through Instagram\.'s audio search and spot trending tracks.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Reels Trending Audio Search',
   description:
-    'Find the right sound faster with free reels trending audio search: mood-matched search phrases for your niche, used inside Instagram. Find your audio now!',
+    'Find the right sound faster with free reels trending audio search: mood-matched search phrases for your niche, used inside Instagram. Find your audio now.',
   howTo: [
     'Type your "niche" — what your Reels are about (e.g. fitness, home decor).',
     'Pick the "Audio mood" that fits the Reel you are making.',
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free reels trending audio search 2026: Phrases to type into Instagram\\\\. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free reels trending audio search 2026: Phrases to type into Instagram\\\\. free.',
     },
     {
       '@type': 'BreadcrumbList',

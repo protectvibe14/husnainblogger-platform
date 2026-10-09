@@ -40,26 +40,29 @@ export const outputs: ToolOutput[] = [
     id: 'calendar',
     label: '90-day calendar',
     type: 'table',
-    description: 'Free email marketing plan template 2026: Date, email type, and content pillar for every planned send across the 90 days. Fast, private, no signup - try it now!',
+    description:
+    'Free email marketing plan template 2026: Date, email type, and content pillar for every planned send across the 90 days. Fast, private now.',
   },
   {
     id: 'milestones',
     label: 'Milestones',
     type: 'list',
-    description: 'Day 1 / 30 / 60 / 90 checkpoints with cumulative send counts.',
+    description:
+    'Day 1 / 30 / 60 / 90 checkpoints with cumulative send counts.',
   },
   {
     id: 'totals',
     label: 'Plan totals',
     type: 'text',
-    description: 'Total planned emails broken down by pillar, plus skipped blackout dates.',
+    description:
+    'Total planned emails broken down by pillar, plus skipped blackout dates.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Email Marketing Plan Template',
   description:
-    'Build a 90-day email marketing plan template in seconds. Pick a start date, weekly frequency, and goal mix to get a full calendar plus milestones. Free!',
+    'Build a 90-day email marketing plan template in seconds. Pick a start date, weekly frequency, and goal mix to get a full calendar plus milestones. Free.',
   howTo: [
     'Pick the plan start date and how many emails you will send per week (1–7).',
     'Choose your goal mix — the nurture/promo/content split you want (your input, not a recommendation).',
@@ -141,7 +144,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email marketing plan template 2026: Date, email type, and content pillar for every planned send across the 90 days. Fast, private, no signup - try it now!',
+      description:
+    'Free email marketing plan template 2026: Date, email type, and content pillar for every planned send across the 90 days. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

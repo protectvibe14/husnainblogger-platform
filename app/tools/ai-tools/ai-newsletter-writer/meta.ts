@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'newsletter',
     label: 'Newsletter draft',
     type: 'text',
-    description: 'Free ai newsletter writer 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai newsletter writer 2026: The generated result, ready to copy. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Newsletter Writer',
   description:
-    'Draft a complete newsletter — subject line, sections, and sign-off — in your tone with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Draft a complete newsletter — subject line, sections, and sign-off — in your tone with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Describe your newsletter topic.',
     'Pick the length and tone.',
@@ -112,7 +113,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai newsletter writer 2026: The generated result, ready to copy. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai newsletter writer 2026: The generated result, ready to copy. free.',
     },
     {
       '@context': 'https://schema.org',

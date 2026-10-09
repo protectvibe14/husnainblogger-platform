@@ -30,18 +30,20 @@ export const outputs: ToolOutput[] = [
     id: 'scenes',
     label: 'Scene-by-scene plan',
     type: 'table',
-    description: 'Free ai video scene planner 2026: Scene number, visual prompt, narration line and duration per scene. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai video scene planner 2026: Scene number, visual prompt, narration line and duration per scene. Get instant results. free now.',
   },
   {
     id: 'totalSec',
     label: 'Total duration (seconds)',
     type: 'number',
-    description: 'Scene durations always sum exactly to this target.',
+    description:
+    'Scene durations always sum exactly to this target.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Video Scene Planner for AI Video 2027',
+  title: 'Video Scene Planner for AI Video',
   description:
     'Plan AI video scenes step-by-step: enter your idea, target length and scene count for visual prompts, narration lines and exact durations. Free planner.',
   howTo: [
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai video scene planner 2026: Scene number, visual prompt, narration line and duration per scene. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai video scene planner 2026: Scene number, visual prompt, narration line and duration per scene. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

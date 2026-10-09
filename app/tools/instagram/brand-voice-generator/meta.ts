@@ -32,32 +32,36 @@ export const outputs: ToolOutput[] = [
     id: 'doPhrases',
     label: 'Voice do’s',
     type: 'list',
-    description: 'Free instagram brand voice examples 2026: Writing rules your brand voice follows. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram brand voice examples 2026: Writing rules your brand voice follows. free.',
   },
   {
     id: 'dontPhrases',
     label: 'Voice don’ts',
     type: 'list',
-    description: 'Writing habits your brand voice avoids.',
+    description:
+    'Writing habits your brand voice avoids.',
   },
   {
     id: 'sampleLines',
     label: 'Sample captions in your voice',
     type: 'list',
-    description: 'Four caption openers using your niche and adjectives.',
+    description:
+    'Four caption openers using your niche and adjectives.',
   },
   {
     id: 'copyAll',
     label: 'Full voice profile (copy)',
     type: 'copy',
-    description: 'The complete profile as one block you can paste anywhere.',
+    description:
+    'The complete profile as one block you can paste anywhere.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Brand Voice Examples',
   description:
-    'Get instagram brand voice examples for your niche: pick 3-5 adjectives and get do’s, don’ts, and sample captions in your voice. Free, instant — try it now!',
+    'Get instagram brand voice examples for your niche: pick 3-5 adjectives and get do’s, don’ts, and sample captions in your voice. Free, instant —.',
   howTo: [
     'Tick 3 to 5 adjectives that describe how you want to sound (for example, Bold, Friendly, Honest).',
     'Type your niche in the "Your niche" field (for example, "budget travel").',
@@ -128,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram brand voice examples 2026: Writing rules your brand voice follows. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram brand voice examples 2026: Writing rules your brand voice follows. free.',
     },
     {
       '@context': 'https://schema.org',

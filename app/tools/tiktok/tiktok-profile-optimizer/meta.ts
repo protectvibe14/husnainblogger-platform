@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Optimize TikTok Profile',
   description:
-    'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private, no signup - try it!',
+    'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private.',
   howTo: [
     'Enter your niche (e.g. skincare) — every bio and suggestion is built around it.',
     'Optionally paste your currentBio to get a length review against the 80-character cap.',
@@ -84,24 +84,24 @@ export const content: ToolContent = {
         'Enter your niche, optionally add your current bio and handle, and generate. Pick one bio option, apply the checklist items, and track follower changes in TikTok Analytics over a few weeks — the tool itself cannot verify what improves your profile.',
     },
     {
-      question: 'How does the optimize tiktok profile work?',
+      question: 'Does it connect to my TikTok account?',
       answer:
-        'Enter your details using the inputs above and the optimize tiktok profile calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'No — it never asks for a login and cannot read your profile. You enter your niche (and optionally your current bio, handle, and follower count) manually, and the tool builds 3 bio options, 3 name-field keyword lines, an optimization checklist, and link-in-bio suggestions from fixed template banks using a deterministic pick. You apply the changes yourself in TikTok.',
     },
     {
-      question: 'Is the optimize tiktok profile free to use?',
+      question: 'How often should I update my TikTok profile?',
       answer:
-        'Yes - this optimize tiktok profile is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'When something real changes: a niche pivot, a new offer or link, or passing 1,000 followers (which unlocks TikTok\'s full link-in-bio and LIVE features — the checklist flags this for you). Otherwise, leave a working profile alone and spend the energy on content; re-run the optimizer after a few weeks of Analytics data to see if the bio is the bottleneck.',
     },
     {
-      question: 'What is an optimize tiktok profile?',
+      question: 'Will the bio options sound like me?',
       answer:
-        'An optimize tiktok profile is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'They will sound like your niche, not like you — they are filled from 12 fixed bio templates with your keyword and handle slotted in, then trimmed to the 80-character platform cap. Treat them as strong starting drafts: pick the closest one and rewrite it in your own voice before publishing. The templates handle structure; your personality handles the rest.',
     },
     {
-      question: 'Do I need to create an account to use the optimize tiktok profile?',
+      question: 'Can it help if my account is under 1,000 followers?',
       answer:
-        'No account needed. Open the optimize tiktok profile, enter your values, and see results immediately - nothing is stored or sent anywhere.',
+        'Yes — enter your follower count and the checklist adapts, including notes on the features still locked below 1,000 (full link-in-bio, LIVE) and what to do instead. Everything runs in your browser with no account and no TikTok login, so there is nothing to set up before you start.',
     },
   ],
   assumptions: [
@@ -117,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private, no signup - try it!',
+      description:
+    'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

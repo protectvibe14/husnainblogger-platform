@@ -114,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this video pacing planner to hold attention: enter duration, niche, and pattern for timed segments, pattern-change count, heuristic score. Free to use.',
+      description:
+    'Use this video pacing planner to hold attention: enter duration, niche, and pattern for timed segments, pattern-change count, heuristic score. Free to use.',
     },
     {
       '@type': 'BreadcrumbList',

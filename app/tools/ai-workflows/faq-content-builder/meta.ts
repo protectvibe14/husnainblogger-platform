@@ -9,19 +9,22 @@ export const outputs: ToolOutput[] = [
     id: "lines",
     label: "FAQPage JSON-LD snippet",
     type: "list",
-    description: "The ready-to-paste FAQPage JSON-LD, one line per item.",
+    description:
+    "The ready-to-paste FAQPage JSON-LD, one line per item.",
   },
   {
     id: "html",
     label: "FAQ HTML block",
     type: "copy",
-    description: "Your questions and answers as an HTML block for your page.",
+    description:
+    "Your questions and answers as an HTML block for your page.",
   },
   {
     id: "markdown",
     label: "FAQ Markdown block",
     type: "copy",
-    description: "Your questions and answers as a Markdown block.",
+    description:
+    "Your questions and answers as a Markdown block.",
   },
 ];
 
@@ -68,19 +71,19 @@ export const content: ToolContent = {
         "You enter questions with your own answers; the tool assembles them into an HTML block, a Markdown block, and a FAQPage JSON-LD snippet. Blank answers become labeled fill-in slots.",
     },
     {
-      question: 'How does the faq generator for blog work?',
+      question: 'Can I use the FAQPage schema on pages other than blog posts?',
       answer:
-        'Enter your details using the inputs above and the faq generator for blog calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Yes — FAQPage markup works on any page where the questions and answers are actually visible to readers, like product, service, or help pages. The rule is simple: the marked-up content must appear on the page itself, not be hidden. Paste the JSON-LD snippet plus the HTML block into your page and you are set.',
     },
     {
-      question: 'Is the faq generator for blog free to use?',
+      question: 'What happens if I leave an answer blank?',
       answer:
-        'Yes - this faq generator for blog is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Blank answers become clearly labeled fill-in slots in the output, so your schema stays valid while you finish writing. The tool never writes answers for you — you supply the questions and your own answers, and it handles the formatting into JSON-LD, HTML, and Markdown.',
     },
     {
-      question: 'What is a faq generator for blog?',
+      question: 'Why three output formats — JSON-LD, HTML, and Markdown?',
       answer:
-        'A faq generator for blog is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Each has a job. The JSON-LD snippet is the structured data search engines read; the HTML block is the visible FAQ section for your page; the Markdown block is for editors, docs, or static-site workflows. Copy whichever your setup needs — most bloggers paste the JSON-LD in the head and the HTML into the article body.',
     },
   ],
   assumptions: [

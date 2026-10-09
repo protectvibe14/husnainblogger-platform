@@ -26,38 +26,43 @@ export const outputs: ToolOutput[] = [
     id: 'contractValue',
     label: 'Contract value',
     type: 'currency',
-    description: 'Free freelance milestone payment schedule 2026: The contract total being split. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free freelance milestone payment schedule 2026: The contract total being split. free.',
   },
   {
     id: 'milestoneSchedule',
     label: 'Milestone schedule',
     type: 'table',
-    description: 'Each milestone with its percentage and dollar amount.',
+    description:
+    'Each milestone with its percentage and dollar amount.',
   },
   {
     id: 'sumCheck',
     label: 'Percentage sum check',
     type: 'number',
-    description: 'Total of your milestone percentages (must equal 100).',
+    description:
+    'Total of your milestone percentages (must equal 100).',
   },
   {
     id: 'paymentTimeline',
     label: 'Payment timeline',
     type: 'text',
-    description: 'Human-readable one-line-per-milestone timeline with amounts and due conditions.',
+    description:
+    'Human-readable one-line-per-milestone timeline with amounts and due conditions.',
   },
   {
     id: 'warning',
     label: 'Payment protection warning',
     type: 'text',
-    description: 'Informational flag when a single 100% milestone leaves no upfront protection.',
+    description:
+    'Informational flag when a single 100% milestone leaves no upfront protection.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance Milestone Payment Schedule 2027',
+  title: 'Freelance Milestone Payment Schedule',
   description:
-    'Plan a freelance milestone payment schedule in seconds. Split any contract into milestones, verify the 100% total, get a timeline. Free - try it now!',
+    'Plan a freelance milestone payment schedule in seconds. Split any contract into milestones, verify the 100% total, get a timeline. Free now.',
   howTo: [
     'Enter the total contract value in USD.',
     'List your milestones one per line as "Name | percentage | due condition" — for example, "Kickoff | 30 | On signing".',
@@ -143,7 +148,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance milestone payment schedule 2026: The contract total being split. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free freelance milestone payment schedule 2026: The contract total being split. free.',
     },
     {
       '@type': 'BreadcrumbList',

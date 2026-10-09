@@ -75,7 +75,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Email Subject Line Prompts 2026 – Free - no signup required.',
+      description:
+    'Free Email Subject Line Prompts 2026 – Free - required.',
     },
     {
       '@type': 'WebPage',

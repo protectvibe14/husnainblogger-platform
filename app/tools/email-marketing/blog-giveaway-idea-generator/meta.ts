@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free blog giveaway ideas generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Plan a giveaway readers actually want: enter your niche, audience, and prize budget for tier-matched prize ideas with entry mechanics that grow your list.';
 
 export const content: ToolContent = {
   title: 'Blog Giveaway Ideas Generator',

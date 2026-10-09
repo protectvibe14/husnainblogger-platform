@@ -1,1 +1,202 @@
-{"$schema": "https://openapi.vercel.sh/vercel.json", "redirects": [{"source": "/email-marketing-tips", "destination": "/blog/email-marketing-tips/", "permanent": true}, {"source": "/email-marketing-tips/", "destination": "/blog/email-marketing-tips/", "permanent": true}, {"source": "/maximize-your-blogging-time", "destination": "/blog/maximize-your-blogging-time/", "permanent": true}, {"source": "/maximize-your-blogging-time/", "destination": "/blog/maximize-your-blogging-time/", "permanent": true}, {"source": "/the-future-of-blogging-2025", "destination": "/blog/the-future-of-blogging-2025/", "permanent": true}, {"source": "/the-future-of-blogging-2025/", "destination": "/blog/the-future-of-blogging-2025/", "permanent": true}, {"source": "/the-legal-side-of-blogging-2025", "destination": "/blog/the-legal-side-of-blogging-2025/", "permanent": true}, {"source": "/the-legal-side-of-blogging-2025/", "destination": "/blog/the-legal-side-of-blogging-2025/", "permanent": true}, {"source": "/9-essential-tips-for-new-bloggers", "destination": "/blog/9-essential-tips-for-new-bloggers/", "permanent": true}, {"source": "/9-essential-tips-for-new-bloggers/", "destination": "/blog/9-essential-tips-for-new-bloggers/", "permanent": true}, {"source": "/the-biggest-blogging-mistake", "destination": "/blog/the-biggest-blogging-mistake/", "permanent": true}, {"source": "/the-biggest-blogging-mistake/", "destination": "/blog/the-biggest-blogging-mistake/", "permanent": true}, {"source": "/blogging-tips-from-a-6-figure-blogger", "destination": "/blog/blogging-tips-from-a-6-figure-blogger/", "permanent": true}, {"source": "/blogging-tips-from-a-6-figure-blogger/", "destination": "/blog/blogging-tips-from-a-6-figure-blogger/", "permanent": true}, {"source": "/what-to-do-when-page-views-are-down", "destination": "/blog/what-to-do-when-page-views-are-down/", "permanent": true}, {"source": "/what-to-do-when-page-views-are-down/", "destination": "/blog/what-to-do-when-page-views-are-down/", "permanent": true}, {"source": "/7-figure-blogger-reveals-top-secrets", "destination": "/blog/7-figure-blogger-reveals-top-secrets/", "permanent": true}, {"source": "/7-figure-blogger-reveals-top-secrets/", "destination": "/blog/7-figure-blogger-reveals-top-secrets/", "permanent": true}, {"source": "/benefits-of-selling-digital-downloads-on-etsy", "destination": "/blog/benefits-of-selling-digital-downloads-on-etsy/", "permanent": true}, {"source": "/benefits-of-selling-digital-downloads-on-etsy/", "destination": "/blog/benefits-of-selling-digital-downloads-on-etsy/", "permanent": true}, {"source": "/unlock-online-income-with-printables", "destination": "/blog/unlock-online-income-with-printables/", "permanent": true}, {"source": "/unlock-online-income-with-printables/", "destination": "/blog/unlock-online-income-with-printables/", "permanent": true}, {"source": "/best-earning-website-for-student-in-2024", "destination": "/blog/best-earning-website-for-student-in-2024/", "permanent": true}, {"source": "/best-earning-website-for-student-in-2024/", "destination": "/blog/best-earning-website-for-student-in-2024/", "permanent": true}, {"source": "/category/blogging", "destination": "/blog/", "permanent": true}, {"source": "/category/blogging/", "destination": "/blog/", "permanent": true}, {"source": "/category/earning-website", "destination": "/blog/", "permanent": true}, {"source": "/category/earning-website/", "destination": "/blog/", "permanent": true}, {"source": "/author/husnainblogger", "destination": "/blog/", "permanent": true}, {"source": "/author/husnainblogger/", "destination": "/blog/", "permanent": true}, {"source": "/youtube-automation-with-ai", "destination": "/blog/youtube-automation-with-ai/", "permanent": true}, {"source": "/youtube-automation-with-ai/", "destination": "/blog/youtube-automation-with-ai/", "permanent": true}], "rewrites": [{"destination": "/:path*", "source": "/tools/:path*/"}, {"destination": "/:path*", "source": "/tools/:path*"}]}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/email-marketing-tips",
+      "destination": "/blog/email-marketing-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/email-marketing-tips/",
+      "destination": "/blog/email-marketing-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/maximize-your-blogging-time",
+      "destination": "/blog/maximize-your-blogging-time/",
+      "permanent": true
+    },
+    {
+      "source": "/maximize-your-blogging-time/",
+      "destination": "/blog/maximize-your-blogging-time/",
+      "permanent": true
+    },
+    {
+      "source": "/the-future-of-blogging-2025",
+      "destination": "/blog/the-future-of-blogging-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/the-future-of-blogging-2025/",
+      "destination": "/blog/the-future-of-blogging-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/the-legal-side-of-blogging-2025",
+      "destination": "/blog/the-legal-side-of-blogging-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/the-legal-side-of-blogging-2025/",
+      "destination": "/blog/the-legal-side-of-blogging-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/9-essential-tips-for-new-bloggers",
+      "destination": "/blog/9-essential-tips-for-new-bloggers/",
+      "permanent": true
+    },
+    {
+      "source": "/9-essential-tips-for-new-bloggers/",
+      "destination": "/blog/9-essential-tips-for-new-bloggers/",
+      "permanent": true
+    },
+    {
+      "source": "/the-biggest-blogging-mistake",
+      "destination": "/blog/the-biggest-blogging-mistake/",
+      "permanent": true
+    },
+    {
+      "source": "/the-biggest-blogging-mistake/",
+      "destination": "/blog/the-biggest-blogging-mistake/",
+      "permanent": true
+    },
+    {
+      "source": "/blogging-tips-from-a-6-figure-blogger",
+      "destination": "/blog/blogging-tips-from-a-6-figure-blogger/",
+      "permanent": true
+    },
+    {
+      "source": "/blogging-tips-from-a-6-figure-blogger/",
+      "destination": "/blog/blogging-tips-from-a-6-figure-blogger/",
+      "permanent": true
+    },
+    {
+      "source": "/what-to-do-when-page-views-are-down",
+      "destination": "/blog/what-to-do-when-page-views-are-down/",
+      "permanent": true
+    },
+    {
+      "source": "/what-to-do-when-page-views-are-down/",
+      "destination": "/blog/what-to-do-when-page-views-are-down/",
+      "permanent": true
+    },
+    {
+      "source": "/7-figure-blogger-reveals-top-secrets",
+      "destination": "/blog/7-figure-blogger-reveals-top-secrets/",
+      "permanent": true
+    },
+    {
+      "source": "/7-figure-blogger-reveals-top-secrets/",
+      "destination": "/blog/7-figure-blogger-reveals-top-secrets/",
+      "permanent": true
+    },
+    {
+      "source": "/benefits-of-selling-digital-downloads-on-etsy",
+      "destination": "/blog/benefits-of-selling-digital-downloads-on-etsy/",
+      "permanent": true
+    },
+    {
+      "source": "/benefits-of-selling-digital-downloads-on-etsy/",
+      "destination": "/blog/benefits-of-selling-digital-downloads-on-etsy/",
+      "permanent": true
+    },
+    {
+      "source": "/unlock-online-income-with-printables",
+      "destination": "/blog/unlock-online-income-with-printables/",
+      "permanent": true
+    },
+    {
+      "source": "/unlock-online-income-with-printables/",
+      "destination": "/blog/unlock-online-income-with-printables/",
+      "permanent": true
+    },
+    {
+      "source": "/best-earning-website-for-student-in-2024",
+      "destination": "/blog/best-earning-website-for-student-in-2024/",
+      "permanent": true
+    },
+    {
+      "source": "/best-earning-website-for-student-in-2024/",
+      "destination": "/blog/best-earning-website-for-student-in-2024/",
+      "permanent": true
+    },
+    {
+      "source": "/category/blogging",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/blogging/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/earning-website",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/earning-website/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/author/husnainblogger",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/author/husnainblogger/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/youtube-automation-with-ai",
+      "destination": "/blog/youtube-automation-with-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/youtube-automation-with-ai/",
+      "destination": "/blog/youtube-automation-with-ai/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "destination": "/:path*",
+      "source": "/tools/:path*/"
+    },
+    {
+      "destination": "/:path*",
+      "source": "/tools/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.googleadservices.com https://*.amazon-adsystem.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://*.googlesyndication.com https://*.doubleclick.net; connect-src 'self' https://api.github.com; font-src 'self' data:"
+        }
+      ]
+    }
+  ]
+}

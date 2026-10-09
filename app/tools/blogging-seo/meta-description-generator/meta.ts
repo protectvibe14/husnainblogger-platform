@@ -35,27 +35,30 @@ export const outputs: ToolOutput[] = [
     id: 'suggestions',
     label: 'Description suggestions',
     type: 'list',
-    description: 'Free meta description generator 2026: Five description suggestions built from fixed templates using your topic and keyword. Fast, private, no signup - try it!',
+    description:
+    'Free meta description generator 2026: Five description suggestions built from fixed templates using your topic and keyword. Fast, private.',
   keywords: ['meta description generator ahrefs', 'meta description generator ai', 'meta description generator free', 'meta description generator free online', 'meta description generator from url'],
   },
   {
     id: 'lengthAnalysis',
     label: 'Length analysis',
     type: 'text',
-    description: 'Character count and status against the 140–160 character SERP display convention.',
+    description:
+    'Character count and status against the 140–160 character SERP display convention.',
   },
   {
     id: 'keywordPresent',
     label: 'Keyword present',
     type: 'text',
-    description: 'Whether your target keyword appears in the analyzed text.',
+    description:
+    'Whether your target keyword appears in the analyzed text.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Meta Description Generator',
   description:
-    'Write better snippets with this free meta description generator: get template-based suggestions, check length, and confirm keyword use. Start now!',
+    'Write better snippets with this free meta description generator: get template-based suggestions, check length, and confirm keyword use. Start now.',
   howTo: [
     'Enter your page topic (2–200 characters) — what the page is about.',
     'Optionally add the target keyword you want in the description.',
@@ -133,7 +136,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free meta description generator 2026: Five description suggestions built from fixed templates using your topic and keyword. Fast, private, no signup - try it!',
+      description:
+    'Free meta description generator 2026: Five description suggestions built from fixed templates using your topic and keyword. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

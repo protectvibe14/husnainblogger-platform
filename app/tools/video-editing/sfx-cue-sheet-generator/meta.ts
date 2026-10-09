@@ -25,26 +25,29 @@ export const outputs: ToolOutput[] = [
     id: 'cues',
     label: 'SFX cues',
     type: 'list',
-    description: 'Free sound effect cue sheet 2026: One cue per beat: time, sound type, search terms, and mixing volume in dB. Fast, private, no signup - try it now!',
+    description:
+    'Free sound effect cue sheet 2026: One cue per beat: time, sound type, search terms, and mixing volume in dB. Fast, private now.',
   },
   {
     id: 'cueSheetText',
     label: 'Printable cue sheet (copy)',
     type: 'copy',
-    description: 'The full cue sheet as plain text — copy it into your notes or editor.',
+    description:
+    'The full cue sheet as plain text — copy it into your notes or editor.',
   },
   {
     id: 'warnings',
     label: 'Mix warnings',
     type: 'list',
-    description: 'Timing warnings (beats too close together) and unmatched beats.',
+    description:
+    'Timing warnings (beats too close together) and unmatched beats.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Sound Effect Cue Sheet',
   description:
-    'Build a sound effect cue sheet for your video: enter timeline beats to get matched SFX, search terms, volumes, and timing warnings. Plan your mix now!',
+    'Build a sound effect cue sheet for your video: enter timeline beats to get matched SFX, search terms, volumes, and timing warnings. Plan your mix now.',
   howTo: [
     'List your timeline beats as JSON: each beat needs timeMs (milliseconds) and action (what happens).',
     'Add a mood word like energetic, calm, funny, or cinematic (optional) to tune the picks.',
@@ -119,7 +122,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free sound effect cue sheet 2026: One cue per beat: time, sound type, search terms, and mixing volume in dB. Fast, private, no signup - try it now!',
+      description:
+    'Free sound effect cue sheet 2026: One cue per beat: time, sound type, search terms, and mixing volume in dB. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

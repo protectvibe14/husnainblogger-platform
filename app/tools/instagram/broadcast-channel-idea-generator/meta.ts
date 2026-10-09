@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Channel ideas',
     type: 'list',
-    description: 'Free instagram broadcast channel ideas 2026: Channel name, description, and three first-post ideas per concept. Fast, private, no signup - try it now!',
+    description:
+    'Free instagram broadcast channel ideas 2026: Channel name, description, and three first-post ideas per concept. Fast, private now.',
   },
   {
     id: 'bankNote',
     label: 'About these ideas',
     type: 'text',
-    description: 'Which template banks the ideas were assembled from.',
+    description:
+    'Which template banks the ideas were assembled from.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Broadcast Channel Ideas – 100+ Id 2027',
+  title: 'Instagram Broadcast Channel Ideas – 100+ Id',
   description:
-    'Launch your channel with free instagram broadcast channel ideas: channel names, descriptions, and first posts matched to your goal. Generate ideas now!',
+    'Launch your channel with free instagram broadcast channel ideas: channel names, descriptions, and first posts matched to your goal. Generate ideas now.',
   howTo: [
     'Type your "niche" — what the broadcast channel will be about.',
     'Pick a "Channel goal" (educate, build community, promote offers, or behind the scenes) so each idea gets the right call-to-action.',
@@ -123,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram broadcast channel ideas 2026: Channel name, description, and three first-post ideas per concept. Fast, private, no signup - try it now!',
+      description:
+    'Free instagram broadcast channel ideas 2026: Channel name, description, and three first-post ideas per concept. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

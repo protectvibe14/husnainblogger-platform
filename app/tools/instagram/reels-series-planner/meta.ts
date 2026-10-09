@@ -33,26 +33,29 @@ export const outputs: ToolOutput[] = [
     id: 'episodePlan',
     label: 'Episode plan',
     type: 'table',
-    description: 'Free instagram reels series ideas 2026: One row per episode with its hook and story beat. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram reels series ideas 2026: One row per episode with its hook and story beat. free.',
   },
   {
     id: 'arcSummary',
     label: 'Arc summary',
     type: 'text',
-    description: 'A short summary of how your series arc is structured.',
+    description:
+    'A short summary of how your series arc is structured.',
   },
   {
     id: 'copyAll',
     label: 'Copy full plan',
     type: 'copy',
-    description: 'The entire episode plan as plain text, ready to copy.',
+    description:
+    'The entire episode plan as plain text, ready to copy.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Reels Series Ideas',
   description:
-    'Plan an episodic Reels run with free instagram reels series ideas: per-episode hooks, an escalating story arc, and a one-click copy plan. Start planning now!',
+    'Plan an episodic Reels run with free instagram reels series ideas: per-episode hooks, an escalating story arc, and a one-click copy plan. Start.',
   howTo: [
     'Type your "Series title" — the one topic the whole series is about.',
     'Set the "Number of episodes" between 4 and 12.',
@@ -129,7 +132,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram reels series ideas 2026: One row per episode with its hook and story beat. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram reels series ideas 2026: One row per episode with its hook and story beat. free.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -43,25 +43,29 @@ export const outputs: ToolOutput[] = [
     id: 'monthlyPackagePrice',
     label: 'Monthly package price (estimate)',
     type: 'currency',
-    description: 'Your monthly package price after the bundle discount.',
+    description:
+    'Your monthly package price after the bundle discount.',
   },
   {
     id: 'perThumbnailEffective',
     label: 'Effective per-thumbnail price',
     type: 'currency',
-    description: 'What each thumbnail effectively costs inside the package.',
+    description:
+    'What each thumbnail effectively costs inside the package.',
   },
   {
     id: 'tierOptions',
     label: '10 / 20 / 30 pack options',
     type: 'table',
-    description: 'Pack prices with a-la-carte comparison and savings.',
+    description:
+    'Pack prices with a-la-carte comparison and savings.',
   },
   {
     id: 'revisionsIncluded',
     label: 'Revisions included (package feature)',
     type: 'number',
-    description: 'Recorded as a package feature — it does not change the price.',
+    description:
+    'Recorded as a package feature — it does not change the price.',
   },
 ];
 

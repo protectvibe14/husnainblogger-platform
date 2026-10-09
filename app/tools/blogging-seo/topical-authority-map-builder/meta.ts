@@ -35,27 +35,30 @@ export const outputs: ToolOutput[] = [
     id: 'result',
     label: 'Topical map (Markdown)',
     type: 'copy',
-    description: 'The full topical map — pillar, clusters, article titles, and gaps — as copyable Markdown.',
+    description:
+    'The full topical map — pillar, clusters, article titles, and gaps — as copyable Markdown.',
   keywords: ['topical authority map generator'],
   },
   {
     id: 'clusters',
     label: 'Clusters',
     type: 'list',
-    description: 'Cluster names with their article counts.',
+    description:
+    'Cluster names with their article counts.',
   },
   {
     id: 'coverageGaps',
     label: 'Coverage gaps',
     type: 'list',
-    description: 'Common content angles none of your subtopics cover yet.',
+    description:
+    'Common content angles none of your subtopics cover yet.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Topical Authority Map',
   description:
-    'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown. No signup. Fast & free Fast & free',
+    'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown. Fast & free.',
   howTo: [
     'Add one item per core topic, e.g. email marketing (2–120 characters).',
     'Optionally list your subtopics — one per line or comma-separated, up to 30 — or leave blank for auto-generated starter clusters.',
@@ -116,7 +119,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown. No signup.',
+    'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown.',
     },
     {
       '@type': 'BreadcrumbList',

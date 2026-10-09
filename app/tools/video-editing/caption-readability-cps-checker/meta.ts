@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Characters Per Second Checker',
   description:
-    'Free characters per second checker 2026: Measure caption reading speed in characters per second: paste subtitles to check every. Fast, private, no signup - try!',
+    'Check caption reading speed in characters per second: paste your SRT or WebVTT subtitles to flag every cue that is too fast for your audience.',
   howTo: [
     'Paste your subtitle text (SRT or WebVTT) into the input box.',
     'Pick your audience (adult or children) and script (Latin or CJK).',
@@ -107,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free characters per second checker 2026: Measure caption reading speed in characters per second: paste subtitles to check every. Fast, private, no signup - try!',
+      description:
+    'Check caption reading speed in characters per second: paste your SRT or WebVTT subtitles to flag every cue that is too fast for your audience.',
     },
     {
       '@type': 'BreadcrumbList',

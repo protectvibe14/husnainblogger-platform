@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Find the best emoji for youtube titles — type your title, pick a tone, and get front, end, and split emoji placements. Free, no signup. Try it now.';
+  'Pick emojis that lift click-through rates: type your video title, choose a hype, calm, or funny tone, and get front, end, and split placements.';
 
 export const content: ToolContent = {
   title: 'Emoji for YouTube Titles',

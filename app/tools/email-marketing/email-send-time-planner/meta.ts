@@ -32,20 +32,22 @@ export const outputs: ToolOutput[] = [
     id: 'sendSlots',
     label: 'Converted send slots',
     type: 'list',
-    description: 'Free best time to send email 2026: Send slots with sender-local and audience-local times for each band (bands labeled as. Fast, private, no signup - try it now!',
+    description:
+    'Free best time to send email 2026: Send slots with sender-local and audience-local times for each band (bands labeled as. Fast, private now.',
   },
   {
     id: 'bestBandNote',
     label: 'Guidance note',
     type: 'text',
-    description: 'Honest note: bands are commonly-cited guidance, not verified open-rate facts; DST caveat included.',
+    description:
+    'Honest note: bands are commonly-cited guidance, not verified open-rate facts; DST caveat included.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Best Time to Send Email',
   description:
-    'Plan the best time to send email with timezone conversion. Enter sender and audience zones to get converted slots from common guidance. Free!',
+    'Plan the best time to send email with timezone conversion. Enter sender and audience zones to get converted slots from common guidance. Free.',
   howTo: [
     'Enter the audience timezone as an IANA name (e.g. America/New_York).',
     'Enter your own (sender) timezone the same way.',
@@ -125,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free best time to send email 2026: Send slots with sender-local and audience-local times for each band (bands labeled as. Fast, private, no signup - try it now!',
+      description:
+    'Free best time to send email 2026: Send slots with sender-local and audience-local times for each band (bands labeled as. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

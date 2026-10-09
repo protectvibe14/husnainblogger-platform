@@ -40,7 +40,8 @@ export const outputs: ToolOutput[] = [
     id: 'letter',
     label: 'Cover letter',
     type: 'text',
-    description: 'Free ai cover letter generator 2026: A 3-paragraph cover letter draft built only from what you provided. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai cover letter generator 2026: A 3-paragraph cover letter draft built only from what you provided. Get instant results. free now.',
   },
 ];
 
@@ -48,7 +49,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Cover Letter Generator',
   description:
-    'Generate a tailored 3-paragraph cover letter with your own free Gemini, Groq, or OpenRouter key. No invented facts — review before sending. No signup.',
+    'Generate a tailored 3-paragraph cover letter with your own free Gemini, Groq, or OpenRouter key. No invented facts — review before sending.',
   howTo: [
     'Enter the role and company you are applying for.',
     'Add your name and 2–3 real achievements (optional but recommended).',
@@ -120,7 +121,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai cover letter generator 2026: A 3-paragraph cover letter draft built only from what you provided. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai cover letter generator 2026: A 3-paragraph cover letter draft built only from what you provided. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

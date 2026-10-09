@@ -44,38 +44,43 @@ export const outputs: ToolOutput[] = [
     id: 'lines',
     label: 'Milestone progress',
     type: 'list',
-    description: 'Free instagram follower goal tracker 2026: One progress line per milestone: current/target, percent, remaining, and status. Fast, private, no signup - try it!',
+    description:
+    'Free instagram follower goal tracker 2026: One progress line per milestone: current/target, percent, remaining, and status. Fast, private.',
   },
   {
     id: 'overallPercent',
     label: 'Overall progress',
     type: 'percent',
-    description: 'Combined progress across all milestones, weighted by target.',
+    description:
+    'Combined progress across all milestones, weighted by target.',
   },
   {
     id: 'totalRemaining',
     label: 'Total followers to go',
     type: 'number',
-    description: 'Followers still needed across all milestones.',
+    description:
+    'Followers still needed across all milestones.',
   },
   {
     id: 'verdict',
     label: 'Progress verdict',
     type: 'text',
-    description: 'A plain-English summary of where you stand.',
+    description:
+    'A plain-English summary of where you stand.',
   },
   {
     id: 'notice',
     label: 'Manual-entry notice',
     type: 'copy',
-    description: 'States that follower counts are entered manually and never read live.',
+    description:
+    'States that follower counts are entered manually and never read live.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Follower Goal Tracker',
   description:
-    'Track your Instagram follower goals with this free manual milestone tracker. Add targets, log your counts by hand, and see progress instantly. Try it now!',
+    'Track your Instagram follower goals with this free manual milestone tracker. Add targets, log your counts by hand, and see progress instantly.',
   howTo: [
     'Add one item per milestone and name it in "Milestone name" (e.g. First 10K).',
     'Enter your "Target followers" and your "Current followers" — typed by hand; this tool cannot read your live Instagram count.',
@@ -135,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram follower goal tracker 2026: One progress line per milestone: current/target, percent, remaining, and status. Fast, private, no signup - try it!',
+      description:
+    'Free instagram follower goal tracker 2026: One progress line per milestone: current/target, percent, remaining, and status. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

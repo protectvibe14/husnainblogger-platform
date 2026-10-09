@@ -55,14 +55,15 @@ export const outputs: ToolOutput[] = [
     id: 'reminderEmailDraft',
     label: 'Reminder email draft (copy)',
     type: 'copy',
-    description: 'Free overdue invoice reminder email 2026: 2 subject-line options plus the full reminder email body, ready to copy and send. Fast, private, no signup - try it!',
+    description:
+    'Free overdue invoice reminder email 2026: 2 subject-line options plus the full reminder email body, ready to copy and send. Fast, private.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Overdue Invoice Reminder Email',
   description:
-    'Write an overdue invoice reminder email in seconds. Pick polite, firm, or final tone, enter the invoice details, and copy your draft. Try it free now!',
+    'Write an overdue invoice reminder email in seconds. Pick polite, firm, or final tone, enter the invoice details, and copy your draft. Try it free now.',
   howTo: [
     'Enter the client name, invoice number, amount due, and how many days overdue the invoice is.',
     'Pick a tone: polite for a first nudge, firm for a second follow-up, final for a last written warning.',
@@ -158,7 +159,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free overdue invoice reminder email 2026: 2 subject-line options plus the full reminder email body, ready to copy and send. Fast, private, no signup - try it!',
+      description:
+    'Free overdue invoice reminder email 2026: 2 subject-line options plus the full reminder email body, ready to copy and send. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

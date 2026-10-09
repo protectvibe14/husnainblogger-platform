@@ -19,26 +19,29 @@ export const outputs: ToolOutput[] = [
     id: 'gridPreview',
     label: '3x3 grid preview',
     type: 'table',
-    description: 'Free instagram grid planner 2026: All 9 slots with row, column, image/placeholder status and caption preview. Fast, private, no signup - try it now!',
+    description:
+    'Free instagram grid planner 2026: All 9 slots with row, column, image/placeholder status and caption preview. Fast, private now.',
   },
   {
     id: 'reorderState',
     label: 'Reorder state (copy)',
     type: 'copy',
-    description: 'JSON of the 9-cell layout state — the planner template uses it for saving and drag-and-drop.',
+    description:
+    'JSON of the 9-cell layout state — the planner template uses it for saving and drag-and-drop.',
   },
   {
     id: 'summary',
     label: 'Plan summary',
     type: 'text',
-    description: 'Filled/empty slot counts, storage estimate, and deterministic layout notes.',
+    description:
+    'Filled/empty slot counts, storage estimate, and deterministic layout notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Grid Planner',
   description:
-    'Plan your Instagram grid layout free with a 3x3 visual planner. Map nine posts, preview rows and gaps, and export a storage-safe plan. Start planning now!',
+    'Plan your Instagram grid layout free with a 3x3 visual planner. Map nine posts, preview rows and gaps, and export a storage-safe plan. Start planning now.',
   howTo: [
     'Paste your planned posts into the "Planned posts (JSON)" box as a JSON array — each post looks like {"slot": 0, "imageRef": "", "captionDraft": "Your caption"}.',
     'Use slots 0–8 (top-left is 0, bottom-right is 8); leave imageRef empty for a placeholder, or paste an image dataURL.',
@@ -121,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram grid planner 2026: All 9 slots with row, column, image/placeholder status and caption preview. Fast, private, no signup - try it now!',
+      description:
+    'Free instagram grid planner 2026: All 9 slots with row, column, image/placeholder status and caption preview. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

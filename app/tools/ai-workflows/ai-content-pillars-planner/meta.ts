@@ -24,14 +24,15 @@ export const outputs: ToolOutput[] = [
     id: 'pillarGrid',
     label: 'Your content pillar grid',
     type: 'table',
-    description: 'Free content pillars template 2026: Fill-in grid: numbered pillars, subtopic slots per pillar, and suggested formats. Fast, private, no signup - try it now!',
+    description:
+    'Free content pillars template 2026: Fill-in grid: numbered pillars, subtopic slots per pillar, and suggested formats. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Pillars Template',
   description:
-    'Turn your niche into a fill-in content pillars template: pick 3-7 pillars, get numbered subtopic slots and format ideas. Free, no signup - plan today!',
+    'Turn your niche into a fill-in content pillars template: pick 3-7 pillars, get numbered subtopic slots and format ideas. Free - plan today.',
   howTo: [
     'Type your niche in the Your niche field (for example, "meal prep for beginners").',
     'Choose how many pillars you want, from 3 to 7.',
@@ -103,7 +104,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free content pillars template 2026: Fill-in grid: numbered pillars, subtopic slots per pillar, and suggested formats. Fast, private, no signup - try it now!',
+      description:
+    'Free content pillars template 2026: Fill-in grid: numbered pillars, subtopic slots per pillar, and suggested formats. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'polls',
     label: 'Poll ideas',
     type: 'table',
-    description: 'Free instagram story poll questions 2026: Poll question with its two matched answer options. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free instagram story poll questions 2026: Poll question with its two matched answer options. free.',
   },
   {
     id: 'copyAll',
     label: 'Copy all polls',
     type: 'copy',
-    description: 'All poll ideas as plain text, ready to paste.',
+    description:
+    'All poll ideas as plain text, ready to paste.',
   },
   {
     id: 'pollCount',
     label: 'Polls generated',
     type: 'number',
-    description: 'How many poll ideas were generated.',
+    description:
+    'How many poll ideas were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Story Poll Questions',
   description:
-    'Generate instagram story poll questions with ready-made answer options. Pick a topic, copy your polls, and boost story replies — free, no signup. Try it now!',
+    'Generate instagram story poll questions with ready-made answer options. Pick a topic, copy your polls, and boost story replies — free.',
   howTo: [
     'Type your topic into the "Topic" box — e.g. "morning routines" or "home workouts".',
     'Choose how many polls you want with "Number of polls" (1–10, defaults to 5).',
@@ -122,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram story poll questions 2026: Poll question with its two matched answer options. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free instagram story poll questions 2026: Poll question with its two matched answer options. free.',
     },
     {
       '@type': 'BreadcrumbList',

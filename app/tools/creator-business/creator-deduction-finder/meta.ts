@@ -37,26 +37,29 @@ export const outputs: ToolOutput[] = [
     id: 'matchedDeductionCategories',
     label: 'Matched expense categories',
     type: 'list',
-    description: 'Free freelancer tax deductions list 2026: General-information list of commonly tracked categories matched to your inputs. Fast, private, no signup - try it now!',
+    description:
+    'Free freelancer tax deductions list 2026: General-information list of commonly tracked categories matched to your inputs. Fast, private now.',
   },
   {
     id: 'recordKeepingTips',
     label: 'Record-keeping tips',
     type: 'list',
-    description: '6 fixed tips for keeping clean expense records.',
+    description:
+    '6 fixed tips for keeping clean expense records.',
   },
   {
     id: 'questionsForTaxPro',
     label: 'Questions for your tax pro',
     type: 'list',
-    description: '5 fixed questions to bring to a tax professional.',
+    description:
+    '5 fixed questions to bring to a tax professional.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Freelancer Tax Deductions List',
   description:
-    'Browse this freelancer tax deductions list for creators free. Enter your creator type and expenses for a general checklist and record-keeping tips. Try it now!',
+    'Browse this freelancer tax deductions list for creators free. Enter your creator type and expenses for a general checklist and record-keeping tips.',
   howTo: [
     'Optionally pick your creator type: video, photo, audio, writer, or streamer.',
     'Type the expense categories you pay for into the expense checklist — one per line or comma-separated (e.g. camera, editing software, internet).',
@@ -133,7 +136,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelancer tax deductions list 2026: General-information list of commonly tracked categories matched to your inputs. Fast, private, no signup - try it now!',
+      description:
+    'Free freelancer tax deductions list 2026: General-information list of commonly tracked categories matched to your inputs. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

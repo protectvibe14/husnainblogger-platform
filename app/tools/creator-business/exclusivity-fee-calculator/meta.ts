@@ -43,26 +43,29 @@ export const outputs: ToolOutput[] = [
     id: 'exclusivityFee',
     label: 'Exclusivity fee',
     type: 'currency',
-    description: 'Free influencer exclusivity fee 2026: The fee for the exclusivity clause, from your own percentage or flat fee (estimate). Fast, private, no signup - try it!',
+    description:
+    'Free influencer exclusivity fee 2026: The fee for the exclusivity clause, from your own percentage or flat fee (estimate). Fast, private.',
   },
   {
     id: 'totalDealValue',
     label: 'Total deal value',
     type: 'currency',
-    description: 'Base deal fee plus the exclusivity fee.',
+    description:
+    'Base deal fee plus the exclusivity fee.',
   },
   {
     id: 'monthlyEquivalent',
     label: 'Monthly equivalent',
     type: 'currency',
-    description: 'Exclusivity fee spread across the exclusivity period, per month.',
+    description:
+    'Exclusivity fee spread across the exclusivity period, per month.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Influencer Exclusivity Fee',
   description:
-    'Calculate an influencer exclusivity fee from your base deal fee and your own percentage or flat fee. Get the deal total and monthly equivalent free. Try it now!',
+    'Calculate an influencer exclusivity fee from your base deal fee and your own percentage or flat fee. Get the deal total and monthly equivalent free.',
   howTo: [
     'Enter your "Base deal fee" — the amount already agreed for the sponsored content.',
     'Enter your "Exclusivity percentage" — the rate YOU charge for exclusivity (there is no standard rate in this tool).',
@@ -139,7 +142,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free influencer exclusivity fee 2026: The fee for the exclusivity clause, from your own percentage or flat fee (estimate). Fast, private, no signup - try it!',
+      description:
+    'Free influencer exclusivity fee 2026: The fee for the exclusivity clause, from your own percentage or flat fee (estimate). Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -35,32 +35,36 @@ export const outputs: ToolOutput[] = [
     id: 'lines',
     label: 'Hashtag blocks',
     type: 'list',
-    description: 'Free instagram hashtag sets copy paste 2026: One ready-to-paste hashtag block per item (up to 5 tags each). Fast, private, no signup - try it now!',
+    description:
+    'Free instagram hashtag sets copy paste 2026: One ready-to-paste hashtag block per item (up to 5 tags each). Fast, private now.',
   },
   {
     id: 'alternates',
     label: 'Alternate blocks',
     type: 'list',
-    description: 'Two alternate blocks per item for variety across posts.',
+    description:
+    'Two alternate blocks per item for variety across posts.',
   },
   {
     id: 'warnings',
     label: 'Build warnings',
     type: 'list',
-    description: 'Notes such as block sizes clamped to the 5-tag max.',
+    description:
+    'Notes such as block sizes clamped to the 5-tag max.',
   },
   {
     id: 'count',
     label: 'Blocks built',
     type: 'number',
-    description: 'How many hashtag blocks were built.',
+    description:
+    'How many hashtag blocks were built.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Hashtag Sets Copy Paste 2027',
+  title: 'Instagram Hashtag Sets Copy Paste',
   description:
-    'Build copy-paste Instagram hashtag sets for free: add your niche, post type and block size to get a main block plus 2 alternates. Build yours now!',
+    'Build copy-paste Instagram hashtag sets for free: add your niche, post type and block size to get a main block plus 2 alternates. Build yours now.',
   howTo: [
     'Add one item per post and type your Niche (fitness, fashion, food and 13 more).',
     'Type the Post Type: reel, carousel, photo or story — it prepends format-specific tags.',
@@ -122,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram hashtag sets copy paste 2026: One ready-to-paste hashtag block per item (up to 5 tags each). Fast, private, no signup - try it now!',
+      description:
+    'Free instagram hashtag sets copy paste 2026: One ready-to-paste hashtag block per item (up to 5 tags each). Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

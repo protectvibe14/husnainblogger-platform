@@ -41,7 +41,7 @@ const DESCRIPTION =
   'Free background music for youtube videos finder 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'Background Music for Youtube Videos Finder 2027',
+  title: 'Background Music for Youtube Videos Finder',
   description: DESCRIPTION,
   howTo: [
     'Pick the mood your scene needs from the Mood dropdown (e.g. energetic, calm, dramatic).',

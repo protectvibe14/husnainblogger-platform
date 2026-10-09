@@ -31,20 +31,22 @@ export const outputs: ToolOutput[] = [
     id: 'batchCalendar',
     label: 'Your batch calendar grid',
     type: 'table',
-    description: 'Free content batching template 2026: Per-piece task slots: outline, draft, edit, visuals, captions/SEO, and publish - each. Fast, private, no signup - try it!',
+    description:
+    'Free content batching template 2026: Per-piece task slots: outline, draft, edit, visuals, captions/SEO, and publish - each. Fast, private.',
   },
   {
     id: 'planSummary',
     label: 'Batch day summary',
     type: 'text',
-    description: 'Total task blocks, estimated focused work time, and your platform rotation.',
+    description:
+    'Total task blocks, estimated focused work time, and your platform rotation.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Content Batching Template',
   description:
-    'Plan a content batch day in minutes: choose 1-50 pieces, your batch day, and platforms, then get a task-by-task calendar grid. Free, no signup - try it now!',
+    'Plan a content batch day in minutes: choose 1-50 pieces, your batch day, and platforms, then get a task-by-task calendar grid. Free now.',
   howTo: [
     'Enter how many pieces you want to batch (from 1 to 50) in Pieces per batch.',
     'Pick your batch day from the Batch day dropdown.',
@@ -118,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free content batching template 2026: Per-piece task slots: outline, draft, edit, visuals, captions/SEO, and publish - each. Fast, private, no signup - try it!',
+      description:
+    'Free content batching template 2026: Per-piece task slots: outline, draft, edit, visuals, captions/SEO, and publish - each. Fast, private.',
     },
     {
       '@context': 'https://schema.org',

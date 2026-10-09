@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
     label: "Tagline ideas",
     type: "list",
     description:
-      "Template-based tagline ideas built from your service keywords in the chosen tone.",
+    "Template-based tagline ideas built from your service keywords in the chosen tone.",
   },
 ];
 

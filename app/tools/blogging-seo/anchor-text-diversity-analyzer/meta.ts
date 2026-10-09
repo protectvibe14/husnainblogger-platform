@@ -19,33 +19,37 @@ export const outputs: ToolOutput[] = [
     id: 'exactMatchRatio',
     label: 'Exact-match ratio (%)',
     type: 'percent',
-    description: 'Share of anchors using the single most-used anchor text (0–100).',
+    description:
+    'Share of anchors using the single most-used anchor text (0–100).',
   keywords: ['anchor text and linking checker', 'anchor text code', 'anchor text distribution checker', 'anchor text example', 'anchor text ratio checker'],
   },
   {
     id: 'entropy',
     label: 'Shannon entropy (bits)',
     type: 'number',
-    description: 'Diversity of anchor texts in bits — higher means more varied anchors.',
+    description:
+    'Diversity of anchor texts in bits — higher means more varied anchors.',
   },
   {
     id: 'distribution',
     label: 'Anchor distribution',
     type: 'table',
-    description: 'Every unique anchor text with its type (exact-match, naked-url, generic, partial), count, and share.',
+    description:
+    'Every unique anchor text with its type (exact-match, naked-url, generic, partial), count, and share.',
   },
   {
     id: 'riskFlags',
     label: 'Risk flags',
     type: 'list',
-    description: 'Editorial warnings when concentration, entropy, or naked/generic shares cross our thresholds.',
+    description:
+    'Editorial warnings when concentration, entropy, or naked/generic shares cross our thresholds.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Anchor Text Checker',
   description:
-    'Free anchor text checker 2026: measure exact-match ratio, Shannon entropy and anchor-type mix with risk flags. No signup — paste anchors, get your report.',
+    'Free anchor text checker 2026: measure exact-match ratio, Shannon entropy and anchor-type mix with risk flags. — paste anchors, get your report.',
   howTo: [
     'Paste your anchors into the box — one per line, in the format: anchor text | https://example.com/page',
     'Include up to 2,000 anchors; blank lines are ignored.',
@@ -124,7 +128,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free anchor text checker 2026: measure exact-match ratio, Shannon entropy and anchor-type mix with risk flags. No signup — paste anchors, get your report.',
+    'Free anchor text checker 2026: measure exact-match ratio, Shannon entropy and anchor-type mix with risk flags. — paste anchors, get your report.',
     },
     {
       '@type': 'BreadcrumbList',

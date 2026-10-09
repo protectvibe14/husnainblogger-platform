@@ -41,26 +41,29 @@ export const outputs: ToolOutput[] = [
     id: 'segments',
     label: 'Clip segments',
     type: 'list',
-    description: 'Free long video to shorts planner 2026: Start and end timecodes with a label for each planned clip. Get instant results. No signup - try it free now!',
+    description:
+    'Free long video to shorts planner 2026: Start and end timecodes with a label for each planned clip. Get instant results. free now.',
   },
   {
     id: 'coveragePct',
     label: 'Coverage (%)',
     type: 'percent',
-    description: 'Share of the source video covered by the planned segments.',
+    description:
+    'Share of the source video covered by the planned segments.',
   },
   {
     id: 'warnings',
     label: 'Warnings',
     type: 'list',
-    description: 'Warnings about overlapping custom ranges and template-position highlights.',
+    description:
+    'Warnings about overlapping custom ranges and template-position highlights.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Long Video To Shorts Planner',
   description:
-    'Turn a long video into shorts: enter the source and target clip lengths, pick highlights, even, or custom ranges, and get exact timecodes. Start planning now!',
+    'Turn long videos into Shorts that land: enter source and target clip lengths, pick highlights, even spacing, or custom ranges, and get exact timecodes.',
   howTo: [
     'Enter your source video length and target clip length in seconds (target must be shorter).',
     'Pick a strategy: highlights (template positions), even (evenly spaced), or custom (your own ranges).',
@@ -137,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free long video to shorts planner 2026: Start and end timecodes with a label for each planned clip. Get instant results. No signup - try it free now!',
+      description:
+    'Free long video to shorts planner 2026: Start and end timecodes with a label for each planned clip. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

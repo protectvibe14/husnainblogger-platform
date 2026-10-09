@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Subject Line Tester',
   description:
-    'Free email subject line tester 2026: Test any email subject line free: get a 0-100 rule-based score, spam-trigger flags,. Fast, private, no signup - try it now!',
+    'Test subject lines before you send: get a 0-100 rule-based score with spam-trigger flags and clear, specific fixes for anything dragging it down.',
   howTo: [
     'Type or paste your subject line into the subject line field.',
     'Optionally add an audience hint (e.g. "new subscribers") for context.',
@@ -112,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free email subject line tester 2026: Test any email subject line free: get a 0-100 rule-based score, spam-trigger flags,. Fast, private, no signup - try it now!',
+      description:
+    'Test subject lines before you send: get a 0-100 rule-based score with spam-trigger flags and clear, specific fixes for anything dragging it down.',
     },
     {
       '@type': 'BreadcrumbList',

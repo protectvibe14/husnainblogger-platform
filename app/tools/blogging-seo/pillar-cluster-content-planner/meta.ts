@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'plan',
     label: 'Topic cluster plan',
     type: 'text',
-    description: 'Free topic cluster planner 2026: Pillar page suggestion, cluster topics with slugs, linking guidance and assumptions. Fast, private, no signup - try it now!',
+    description:
+    'Free topic cluster planner 2026: Pillar page suggestion, cluster topics with slugs, linking guidance and assumptions. Fast, private now.',
   },
   {
     id: 'clusterTopics',
     label: 'Cluster topics',
     type: 'list',
-    description: 'The planned cluster-topic titles.',
+    description:
+    'The planned cluster-topic titles.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Topic Cluster Planner',
   description:
-    'Plan a pillar-and-cluster content hub in seconds: one pillar page plus 3-20 cluster topics with slugs and linking notes. Free — plan your hub now!',
+    'Plan a pillar-and-cluster content hub in seconds: one pillar page plus 3-20 cluster topics with slugs and linking notes. Free — plan your hub now.',
   howTo: [
     'Type your broad pillar topic into the Pillar Topic field (2-120 characters).',
     'Optionally set how many cluster topics you want (3-20, default 8).',
@@ -117,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free topic cluster planner 2026: Pillar page suggestion, cluster topics with slugs, linking guidance and assumptions. Fast, private, no signup - try it now!',
+      description:
+    'Free topic cluster planner 2026: Pillar page suggestion, cluster topics with slugs, linking guidance and assumptions. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

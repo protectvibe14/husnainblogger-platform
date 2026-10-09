@@ -24,26 +24,29 @@ export const outputs: ToolOutput[] = [
     id: 'pollQuestion',
     label: 'Your poll question',
     type: 'text',
-    description: 'Free twitter poll ideas 2026: One engagement-ready poll question built from your topic (within 280 chars). Fast, private, no signup - try it now!',
+    description:
+    'Free twitter poll ideas 2026: One engagement-ready poll question built from your topic (within 280 chars). Fast, private now.',
   },
   {
     id: 'options',
     label: 'Poll options',
     type: 'list',
-    description: '4 answer options, each within X\'s 25-character option limit.',
+    description:
+    '4 answer options, each within X\.'s 25-character option limit.',
   },
   {
     id: 'suggestedDuration',
     label: 'Suggested duration',
     type: 'text',
-    description: 'Your chosen duration, confirmed inside X\'s 5-minute to 7-day range.',
+    description:
+    'Your chosen duration, confirmed inside X\.'s 5-minute to 7-day range.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Poll Ideas',
   description:
-    'Get fresh Twitter poll ideas in seconds: enter any topic, pick a duration, and receive a question plus 4 options within X\'s limits. Free tool — try it now!',
+    'Run X polls people actually vote on: enter any topic, pick a duration from 5 minutes to 7 days, for a sharp question plus 4 multiple-choice options.',
   howTo: [
     'Type your poll topic in the Poll topic field (for example, "morning routines").',
     'Choose a Poll duration — 5 minutes, 1 hour, 24 hours, or 7 days (24 hours is the default).',
@@ -116,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter poll ideas 2026: One engagement-ready poll question built from your topic (within 280 chars). Fast, private, no signup - try it now!',
+      description:
+    'Free twitter poll ideas 2026: One engagement-ready poll question built from your topic (within 280 chars). Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

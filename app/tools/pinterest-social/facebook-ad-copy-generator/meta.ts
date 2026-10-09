@@ -27,26 +27,29 @@ export const outputs: ToolOutput[] = [
     id: 'primaryText',
     label: 'Primary text',
     type: 'text',
-    description: 'Free facebook ad copy generator 2026: Ad primary text with your CTA placed inside the visible first 125 characters. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook ad copy generator 2026: Ad primary text with your CTA placed inside the visible first 125 characters. Fast, private now.',
   },
   {
     id: 'description',
     label: 'Description',
     type: 'text',
-    description: 'Short ad description, 30 characters or fewer.',
+    description:
+    'Short ad description, 30 characters or fewer.',
   },
   {
     id: 'headlineTip',
     label: 'Headline tip',
     type: 'text',
-    description: 'Cross-reference to the Facebook Ad Headline Generator.',
+    description:
+    'Cross-reference to the Facebook Ad Headline Generator.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Ad Copy Generator',
   description:
-    'Write Facebook ad copy with this free generator. Get primary text with the CTA in the visible first 125 characters plus a short description. Start now!',
+    'Write Facebook ad copy with this free generator. Get primary text with the CTA in the visible first 125 characters plus a short description. Start now.',
   howTo: [
     'Describe your offer in up to 100 characters, e.g. "50% off our starter skincare kit".',
     'Optionally enter your own call to action (default: "Learn more").',
@@ -116,7 +119,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook ad copy generator 2026: Ad primary text with your CTA placed inside the visible first 125 characters. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook ad copy generator 2026: Ad primary text with your CTA placed inside the visible first 125 characters. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

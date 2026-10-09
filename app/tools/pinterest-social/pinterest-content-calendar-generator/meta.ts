@@ -34,32 +34,36 @@ export const outputs: ToolOutput[] = [
     id: 'calendar',
     label: 'Content calendar',
     type: 'table',
-    description: 'Free pinterest content calendar 2026: Dated schedule: theme, pin type, and keyword seed for every pin in the month. Fast, private, no signup - try it now!',
+    description:
+    'Free pinterest content calendar 2026: Dated schedule: theme, pin type, and keyword seed for every pin in the month. Fast, private now.',
   },
   {
     id: 'pinCount',
     label: 'Total pins',
     type: 'number',
-    description: 'How many pins the calendar contains (pins per week x weeks in the month).',
+    description:
+    'How many pins the calendar contains (pins per week x weeks in the month).',
   },
   {
     id: 'monthUsed',
     label: 'Month',
     type: 'text',
-    description: 'The month the calendar was built for (YYYY-MM).',
+    description:
+    'The month the calendar was built for (YYYY-MM).',
   },
   {
     id: 'scheduleNote',
     label: 'Schedule note',
     type: 'text',
-    description: 'How the calendar was assembled, which seasonal events were merged, and any capping applied.',
+    description:
+    'How the calendar was assembled, which seasonal events were merged, and any capping applied.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Content Calendar Free',
   description:
-    'Generate a free pinterest content calendar for any month: enter your niche, the month, and pins per week for a full dated pin schedule. Try it now!',
+    'Plan a full month of pins in minutes: enter your niche, the target month, and pins per week for a complete dated content calendar with daily slots.',
   howTo: [
     'Type your "Your niche", e.g. "home decor" or "keto recipes".',
     'Enter the "Month (YYYY-MM)" you are planning, e.g. 2026-11. Past months are rejected.',
@@ -136,7 +140,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest content calendar 2026: Dated schedule: theme, pin type, and keyword seed for every pin in the month. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest content calendar 2026: Dated schedule: theme, pin type, and keyword seed for every pin in the month. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

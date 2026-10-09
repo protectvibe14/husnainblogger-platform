@@ -26,13 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'headlines',
     label: 'Headline options',
     type: 'list',
-    description: 'Free linkedin headline generator 2026: Three distinct headline options, each within LinkedIn’s 220-character limit. Fast, private, no signup - try it now!',
+    description:
+    'Free linkedin headline generator 2026: Three distinct headline options, each within LinkedIn’s 220-character limit. Fast, private now.',
   },
   {
     id: 'about',
     label: 'About section draft',
     type: 'text',
-    description: 'A first-person About draft within LinkedIn’s 2,600-character limit.',
+    description:
+    'A first-person About draft within LinkedIn’s 2,600-character limit.',
   },
 ];
 
@@ -40,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'LinkedIn Headline Writer',
   description:
-    'Get 3 recruiter-ready headline options plus an About draft with your own free Gemini, Groq, or OpenRouter key. Stays within LinkedIn limits. No signup.',
+    'Get 3 recruiter-ready headline options plus an About draft with your own free Gemini, Groq, or OpenRouter key. Stays within LinkedIn limits.',
   howTo: [
     'Enter your current or target role.',
     'List your key skills, comma-separated.',
@@ -112,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free linkedin headline generator 2026: Three distinct headline options, each within LinkedIn’s 220-character limit. Fast, private, no signup - try it now!',
+      description:
+    'Free linkedin headline generator 2026: Three distinct headline options, each within LinkedIn’s 220-character limit. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

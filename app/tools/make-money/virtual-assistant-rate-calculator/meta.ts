@@ -51,9 +51,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: "Virtual Assistant Rates Calculator 2027",
+  title: "Virtual Assistant Rates Calculator",
   description:
-    "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range — try it now.",
+    "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range —.",
   howTo: [
     "Choose the VA's experience level: entry, intermediate, or expert.",
     "Choose the task complexity: basic admin work or specialized skills.",
@@ -138,7 +138,8 @@ export const content: ToolContent = {
       applicationCategory: "Utilities",
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range — try it now.",
+      description:
+    "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range —.",
     },
     {
       "@type": "BreadcrumbList",

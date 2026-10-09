@@ -22,37 +22,43 @@ export const outputs: ToolOutput[] = [
     id: 'intentLabel',
     label: 'Intent category',
     type: 'text',
-    description: 'how-to, review, entertainment, local, buy — or unclear when no signals match.',
+    description:
+    'how-to, review, entertainment, local, buy — or unclear when no signals match.',
   },
   {
     id: 'secondaryIntent',
     label: 'Secondary intent',
     type: 'text',
-    description: 'Runner-up intent for ambiguous phrases, or none.',
+    description:
+    'Runner-up intent for ambiguous phrases, or none.',
   },
   {
     id: 'confidence',
     label: 'Confidence note',
     type: 'text',
-    description: 'High / Moderate / Low with the matched signals that drove the call.',
+    description:
+    'High / Moderate / Low with the matched signals that drove the call.',
   },
   {
     id: 'contentAngles',
     label: 'Content angles',
     type: 'list',
-    description: 'Video angles matched to the detected intent(s), with your phrase filled in.',
+    description:
+    'Video angles matched to the detected intent(s), with your phrase filled in.',
   },
   {
     id: 'captionKeywordTips',
     label: 'Caption keyword tips',
     type: 'list',
-    description: 'Where to place the phrase so TikTok indexes it.',
+    description:
+    'Where to place the phrase so TikTok indexes it.',
   },
   {
     id: 'matchedSignals',
     label: 'Matched signals',
     type: 'list',
-    description: 'Exactly which trigger words fired per intent — full transparency.',
+    description:
+    'Exactly which trigger words fired per intent — full transparency.',
   },
 ];
 

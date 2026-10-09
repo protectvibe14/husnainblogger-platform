@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Membership Site Revenue Calculator 2027',
+  title: 'Membership Site Revenue Calculator',
   description:
     'Project your community income with this free membership site revenue calculator — model signups, churn, and MRR month by month. Start projecting now.',
   howTo: [
@@ -127,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Project your community income with this free membership site revenue calculator — model signups, churn, and MRR month by month. Start projecting now.',
+      description:
+    'Project your community income with this free membership site revenue calculator — model signups, churn, and MRR month by month. Start projecting now.',
     },
     {
       '@type': 'BreadcrumbList',

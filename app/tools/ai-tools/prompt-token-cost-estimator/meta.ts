@@ -37,19 +37,22 @@ export const outputs: ToolOutput[] = [
     id: 'estimatedInputTokens',
     label: 'Estimated input tokens',
     type: 'number',
-    description: 'Free ai token cost calculator 2026: Rough token estimate from character count — real tokenizers differ. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai token cost calculator 2026: Rough token estimate from character count — real tokenizers differ. Get instant results. free now.',
   },
   {
     id: 'totalCostDisplay',
     label: 'Estimated total cost',
     type: 'text',
-    description: 'Input + output cost in USD, shown with the full math breakdown.',
+    description:
+    'Input + output cost in USD, shown with the full math breakdown.',
   },
   {
     id: 'math',
     label: 'Cost math',
     type: 'list',
-    description: 'Step-by-step calculation so you can verify every number.',
+    description:
+    'Step-by-step calculation so you can verify every number.',
   },
 ];
 
@@ -110,19 +113,19 @@ export const content: ToolContent = {
         'Shorten the prompt, cut repeated context, ask for concise outputs, and cap max output tokens. Paste your trimmed prompt here to see the exact dollar difference before you run it.',
     },
     {
-      question: 'How does the ai token cost calculator work?',
+      question: 'How do I estimate the cost of a prompt with this tool?',
       answer:
-        'Enter your details using the inputs above and the ai token cost calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Paste your prompt text — the tool estimates tokens with a transparent character-count heuristic (roughly characters divided by 4, rounded up). Then enter the per-token input and output prices from your provider pricing page, and it does the math: estimated tokens times your rates equals the cost of one run. Adjust the text or prices and the numbers update instantly, all in your browser.',
     },
     {
-      question: 'Is the ai token cost calculator free to use?',
+      question: 'Is my prompt text sent anywhere?',
       answer:
-        'Yes - this ai token cost calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'No. Everything runs locally in your browser — your pasted prompts, pricing inputs, and results never leave your device. That matters when pasting proprietary prompts or client data to sanity-check API spend before you run anything.',
     },
     {
-      question: 'What is an ai token cost calculator?',
+      question: 'Why do input and output tokens have separate prices?',
       answer:
-        'An ai token cost calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Because most providers bill them differently — output tokens are usually priced higher than input tokens, and reasoning models also bill their internal thinking as output. A long answer therefore costs more than a long prompt at the same rate. Enter both rates from your provider pricing page and the tool keeps the two sides separate in the math.',
     },
   ],
   assumptions: [
@@ -139,7 +142,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai token cost calculator 2026: Rough token estimate from character count — real tokenizers differ. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai token cost calculator 2026: Rough token estimate from character count — real tokenizers differ. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

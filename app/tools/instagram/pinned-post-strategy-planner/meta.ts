@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'pinnedPlan',
     label: 'Your 3-slot pinned plan',
     type: 'list',
-    description: 'Free what to pin on instagram 2026: What to put in slot 1, 2, and 3 — plus why the strategy works. Get instant results. No signup - try it free now!',
+    description:
+    'Free what to pin on instagram 2026: What to put in slot 1, 2, and 3 — plus why the strategy works. Get instant results. free now.',
   },
   {
     id: 'copyAll',
     label: 'Copy full plan',
     type: 'copy',
-    description: 'The complete plan as text, ready to paste into your notes.',
+    description:
+    'The complete plan as text, ready to paste into your notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'What to Pin on Instagram',
   description:
-    "Plan what to pin on instagram: pick your goal and get a 3-slot pin strategy — each pin's job, post ideas, and the reasoning. Free, no signup — try it now!",
+    "Plan what to pin on instagram: pick your goal and get a 3-slot pin strategy — each pin's job, post ideas, and the reasoning. Free —.",
   howTo: [
     'Choose your "Your goal for the pinned row" — followers, sales, clients, authority, or a launch.',
     'Optionally list your offers in the "Your offers" box, one per line — your first offer is woven into the slot-3 pin.',
@@ -125,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: "Free what to pin on instagram 2026: What to put in slot 1, 2, and 3 — plus why the strategy works. Get instant results. No signup - try it free now!",
+      description:
+    "Free what to pin on instagram 2026: What to put in slot 1, 2, and 3 — plus why the strategy works. Get instant results. free now.",
     },
     {
       '@context': 'https://schema.org',

@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Estimate your export time with this free video render time estimator: enter duration, resolution, effects and device tier for a rough range. Try it free.';
+  'Know your export time before you wait around: enter your video duration, resolution, effects, and device tier for a realistic time estimate.';
 
 export const content: ToolContent = {
   title: 'Video Render Time Estimator',

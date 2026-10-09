@@ -31,14 +31,15 @@ export const outputs: ToolOutput[] = [
     id: 'translation',
     label: 'Translation',
     type: 'text',
-    description: 'Free offline ai translator 2026: The translated text, shown on screen for reading and copying. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free offline ai translator 2026: The translated text, shown on screen for reading and copying. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Offline Ai Translator',
   description:
-    'Translate text free with AI in your browser — 18 language pairs, no signup, no uploads. Neural translation runs 100% on your device, offline after load.',
+    'Translate text free with AI in your browser — 18 language pairs, no uploads. Neural translation runs 100% on your device, offline after load.',
   howTo: [
     'Paste or type up to 5,000 characters of text.',
     'Pick one of 18 language pairs — English to/from Spanish, French, German, Italian, Dutch, Russian, Arabic, Hindi or Chinese.',
@@ -111,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free offline ai translator 2026: The translated text, shown on screen for reading and copying. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free offline ai translator 2026: The translated text, shown on screen for reading and copying. free.',
     },
     {
       '@context': 'https://schema.org',

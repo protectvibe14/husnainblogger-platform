@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'voiceId',
     label: 'Cloned voice id',
     type: 'copy',
-    description: 'Free ai voice cloning 2026: The ElevenLabs voice id created from your samples — reusable for future generations. Fast, private, no signup - try it now!',
+    description:
+    'Free ai voice cloning 2026: The ElevenLabs voice id created from your samples — reusable for future generations. Fast, private now.',
   },
   {
     id: 'audio',
     label: 'Generated speech',
     type: 'download',
-    description: 'MP3 audio of your cloned voice speaking your text, playable on the page with a download button.',
+    description:
+    'MP3 audio of your cloned voice speaking your text, playable on the page with a download button.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Ai Voice Cloning',
   description:
-    'Clone your voice with your own ElevenLabs key — upload a minute of speech, create the voice, then type any text and download the audio. No signup.',
+    'Clone your voice with your own ElevenLabs key — upload a minute of speech, create the voice, then type any text and download the audio.',
   howTo: [
     'Save your ElevenLabs API key in the key vault above (use Test key to verify it works).',
     'Upload one or more audio samples — a minute or more of clear speech works best.',
@@ -118,7 +120,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free Ai Voice Cloning 2026 – Free Tool - no signup required.',
+      description:
+    'Free Ai Voice Cloning 2026 – Free Tool - required.',
     },
     {
       '@context': 'https://schema.org',

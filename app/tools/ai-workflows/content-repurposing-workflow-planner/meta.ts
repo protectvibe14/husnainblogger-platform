@@ -32,13 +32,15 @@ export const outputs: ToolOutput[] = [
     id: "stages",
     label: "Stage pipeline",
     type: "table",
-    description: "Ordered per-format task list with order numbers and dependencies.",
+    description:
+    "Ordered per-format task list with order numbers and dependencies.",
   },
   {
     id: "overview",
     label: "Plan overview",
     type: "copy",
-    description: "A one-paragraph summary of the repurposing pipeline, ready to copy.",
+    description:
+    "A one-paragraph summary of the repurposing pipeline, ready to copy.",
   },
 ];
 

@@ -42,20 +42,22 @@ export const outputs: ToolOutput[] = [
     id: 'dms',
     label: 'Welcome DM templates',
     type: 'list',
-    description: 'Free welcome dm new followers instagram 2026: Copy-ready welcome DM templates with your brand and offer filled in. Each stays under. Fast, private, no signup -!',
+    description:
+    'Free welcome dm new followers instagram 2026: Copy-ready welcome DM templates with your brand and offer filled in. Each stays under. Fast, private -.',
   },
   {
     id: 'personalizationSlots',
     label: 'Personalization slots',
     type: 'list',
-    description: 'Placeholders to fill per follower, e.g. {name} for the follower\'s first name.',
+    description:
+    'Placeholders to fill per follower, e.g. {name} for the follower\.'s first name.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Welcome Dm New Followers Instagram 2027',
+  title: 'Welcome Dm New Followers Instagram',
   description:
-    'Write welcome DMs for new followers with this free welcome dm new followers instagram tool. Add your brand, offer, tone for copy-ready templates. Try it now!',
+    'Write welcome DMs for new followers with this free welcome dm new followers instagram tool. Add your brand, offer, tone for copy-ready templates.',
   howTo: [
     'Enter your brand name (up to 60 characters).',
     'Describe what you offer in one line (up to 140 characters).',
@@ -131,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free welcome dm new followers instagram 2026: Copy-ready welcome DM templates with your brand and offer filled in. Each stays under. Fast, private, no signup -!',
+      description:
+    'Free welcome dm new followers instagram 2026: Copy-ready welcome DM templates with your brand and offer filled in. Each stays under. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

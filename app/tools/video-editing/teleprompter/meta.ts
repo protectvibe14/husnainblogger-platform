@@ -115,7 +115,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Use this free online teleprompter to time your script: set words-per-minute and font size, get read time plus a px/sec scroll plan. Start free.',
+      description:
+    'Use this free online teleprompter to time your script: set words-per-minute and font size, get read time plus a px/sec scroll plan. Start free.',
     },
     {
       '@type': 'BreadcrumbList',

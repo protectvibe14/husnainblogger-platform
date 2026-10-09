@@ -18,20 +18,22 @@ export const outputs: ToolOutput[] = [
     id: 'criteriaScores',
     label: 'Per-criterion breakdown',
     type: 'table',
-    description: 'Free ai prompt quality checker 2026: Your score on each of the five rubric criteria, with notes. Get instant results. No signup - try it free now!',
+    description:
+    'Free ai prompt quality checker 2026: Your score on each of the five rubric criteria, with notes. Get instant results. free now.',
   },
   {
     id: 'suggestions',
     label: 'How to improve',
     type: 'list',
-    description: 'Rule-based tips from the rubric for each criterion you did not max out.',
+    description:
+    'Rule-based tips from the rubric for each criterion you did not max out.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Prompt Quality Checker',
   description:
-    'Score your AI prompt against a published 5-criterion rubric: 0-100 score, per-criterion breakdown, rule-based tips. Free, no signup - check yours now!',
+    'Score your AI prompt against a published 5-criterion rubric: 0-100 score, per-criterion breakdown, rule-based tips. Free - check yours now.',
   howTo: [
     'Paste your full AI prompt into the Your prompt box (at least 20 characters).',
     'Click run to score it against the published rubric below.',
@@ -86,19 +88,19 @@ export const content: ToolContent = {
         'This one is a rubric scorer, not an AI judge: it checks your prompt text for observable signals like action verbs, word count, and format or constraint keywords, then totals them into a 0–100 score with rule-based improvement tips.',
     },
     {
-      question: 'How does the ai prompt quality checker work?',
+      question: 'Is my prompt text sent anywhere?',
       answer:
-        'Enter your details using the inputs above and the ai prompt quality checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'No. The analyzer is a rule-based scorer, not an AI judge — it reads the observable signals in your prompt (action verbs, word count, format and constraint keywords) entirely in your browser. Nothing is uploaded, and there are no AI calls or API costs involved at all.',
     },
     {
-      question: 'Is the ai prompt quality checker free to use?',
+      question: 'Can a low-scoring prompt still work fine?',
       answer:
-        'Yes - this ai prompt quality checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Yes — the 0–100 score measures best-practice signals, not guaranteed results. A two-line prompt for a simple task can score low and still work, because it genuinely needs less context and fewer constraints. Use the score to spot missing ingredients (a clear task, context, output format, boundaries, an example), not as a verdict on your idea.',
     },
     {
-      question: 'What is an ai prompt quality checker?',
+      question: 'Do I need AI credits or an API key to use it?',
       answer:
-        'An ai prompt quality checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'No. This analyzer uses fixed, published rules — no model calls, no tokens, no keys. Paste any prompt of 20+ characters and you get a 0–100 score with a full breakdown instantly, free, with no signup.',
     },
   ],
   assumptions: [
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai prompt quality checker 2026: Your score on each of the five rubric criteria, with notes. Get instant results. No signup - try it free now!',
+      description:
+    'Free ai prompt quality checker 2026: Your score on each of the five rubric criteria, with notes. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

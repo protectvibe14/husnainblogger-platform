@@ -20,26 +20,29 @@ export const outputs: ToolOutput[] = [
     id: 'issues',
     label: 'Issues found',
     type: 'table',
-    description: 'Free heading hierarchy checker 2026: Every rule violation with its severity and how to fix it. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free heading hierarchy checker 2026: Every rule violation with its severity and how to fix it. free.',
   },
   {
     id: 'outline',
     label: 'Heading outline',
     type: 'table',
-    description: 'Your headings in document order, with their levels.',
+    description:
+    'Your headings in document order, with their levels.',
   },
   {
     id: 'score',
     label: 'Structure score (0–100)',
     type: 'number',
-    description: 'Starts at 100; deductions per issue. Never below 0.',
+    description:
+    'Starts at 100; deductions per issue. Never below 0.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Heading Hierarchy Checker',
   description:
-    'Check your H1–H6 structure in seconds. Paste HTML into this free heading hierarchy checker to flag skipped levels, missing H1s, and empty headings. Analyze now!',
+    'Check your H1–H6 structure in seconds. Paste HTML into this free heading hierarchy checker to flag skipped levels, missing H1s, and empty headings..',
   howTo: [
     'Paste your page HTML into the "HTML" box — at least one <h1>–<h6> tag is required.',
     'Run the tool to extract every heading in document order.',
@@ -109,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free heading hierarchy checker 2026: Every rule violation with its severity and how to fix it. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free heading hierarchy checker 2026: Every rule violation with its severity and how to fix it. free.',
     },
     {
       '@type': 'BreadcrumbList',

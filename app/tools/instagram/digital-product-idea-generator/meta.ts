@@ -43,14 +43,15 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Product ideas',
     type: 'list',
-    description: 'Free digital products to sell as influencer 2026: Each idea with its title, format, your price hint, and a validation step. Fast, private, no signup - try it!',
+    description:
+    'Free digital products to sell as influencer 2026: Each idea with its title, format, your price hint, and a validation step. Fast, private.',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Digital Products to Sell As Influencer 2027',
+  title: 'Digital Products to Sell As Influencer',
   description:
-    'Generate digital product ideas for free: enter your niche and skills to get curated, ready-to-validate ideas with your own price hints. Start now!',
+    'Generate digital product ideas for free: enter your niche and skills to get curated, ready-to-validate ideas with your own price hints. Start now.',
   howTo: [
     'Type your Niche (2–80 characters) — the audience you create for.',
     'Type your Skills (2–120 characters) — what you can actually build with.',
@@ -123,7 +124,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free digital products to sell as influencer 2026: Each idea with its title, format, your price hint, and a validation step. Fast, private, no signup - try it!',
+      description:
+    'Free digital products to sell as influencer 2026: Each idea with its title, format, your price hint, and a validation step. Fast, private.',
     },
     {
       '@context': 'https://schema.org',

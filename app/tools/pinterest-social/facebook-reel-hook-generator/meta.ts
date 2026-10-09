@@ -27,20 +27,22 @@ export const outputs: ToolOutput[] = [
     id: 'hooks',
     label: 'Reel hooks',
     type: 'list',
-    description: 'Free facebook reels hooks 2026: Hook lines, each 15 words or fewer, written to be spoken in the first 2 seconds. Fast, private, no signup - try it now!',
+    description:
+    'Free facebook reels hooks 2026: Hook lines, each 15 words or fewer, written to be spoken in the first 2 seconds. Fast, private now.',
   },
   {
     id: 'framingNote',
     label: '9:16 framing note',
     type: 'text',
-    description: 'Vertical filming guidance for the 1080x1920 Facebook Reels canvas.',
+    description:
+    'Vertical filming guidance for the 1080x1920 Facebook Reels canvas.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Reels Hooks',
   description:
-    'Generate Facebook Reels hooks that stop the scroll. Enter your topic and get punchy spoken hook lines plus 9:16 framing tips — free, no signup. Try it now!',
+    'Stop the scroll in the first 2 seconds: enter your reel topic for up to 10 punchy spoken hook lines and 9:16 framing tips made for Facebook Reels.',
   howTo: [
     'Type your reel topic (up to 60 characters), e.g. "budget skincare".',
     'Choose how many hooks you want (1–10, default 5).',
@@ -110,7 +112,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook reels hooks 2026: Hook lines, each 15 words or fewer, written to be spoken in the first 2 seconds. Fast, private, no signup - try it now!',
+      description:
+    'Free facebook reels hooks 2026: Hook lines, each 15 words or fewer, written to be spoken in the first 2 seconds. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

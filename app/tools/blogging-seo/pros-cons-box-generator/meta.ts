@@ -33,20 +33,22 @@ export const outputs: ToolOutput[] = [
     id: 'boxHtml',
     label: 'Box HTML (copy)',
     type: 'copy',
-    description: 'Free pros and cons box generator 2026: Ready-to-paste pros & cons box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it!',
+    description:
+    'Free pros and cons box generator 2026: Ready-to-paste pros & cons box with minimal inline styles — works in any blog theme. Fast, private.',
   },
   {
     id: 'boxCss',
     label: 'Box CSS (copy)',
     type: 'copy',
-    description: 'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
+    description:
+    'Optional matching CSS block — the HTML already carries inline styles, so this is skippable.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pros and Cons Box Generator',
   description:
-    'Create a clean pros and cons box for your reviews in seconds. Type your pros and cons, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
+    'Create a clean pros and cons box for your reviews in seconds. Type your pros and cons, copy the ready-to-paste HTML, and drop it into any post. Try it.',
   howTo: [
     'Type your pros in the "Pros" box — one per line, up to 10.',
     'Type your cons in the "Cons" box — one per line, up to 10.',
@@ -124,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pros and cons box generator 2026: Ready-to-paste pros & cons box with minimal inline styles — works in any blog theme. Fast, private, no signup - try it!',
+      description:
+    'Free pros and cons box generator 2026: Ready-to-paste pros & cons box with minimal inline styles — works in any blog theme. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

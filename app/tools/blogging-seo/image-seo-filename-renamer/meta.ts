@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'suggestedFilename',
     label: 'Suggested filename',
     type: 'text',
-    description: 'Free seo image filename generator 2026: The SEO-friendly filename: lowercase, hyphen-separated, extension preserved. Fast, private, no signup - try it now!',
+    description:
+    'Free seo image filename generator 2026: The SEO-friendly filename: lowercase, hyphen-separated, extension preserved. Fast, private now.',
   },
   {
     id: 'downloadFilename',
     label: 'Renamed file download',
     type: 'download',
-    description: 'Download the file you supply under the new SEO-friendly name.',
+    description:
+    'Download the file you supply under the new SEO-friendly name.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'SEO Image Filename Generator',
   description:
-    'Rename images for SEO in seconds. Turn messy camera filenames into clean, keyword-rich names with this free seo image filename generator. Start renaming now!',
+    'Rename images for SEO in seconds. Turn messy camera filenames into clean, keyword-rich names with this free seo image filename generator. Start.',
   howTo: [
     'Type or paste the current file name into "Original file name" — e.g. IMG_20241001.jpg.',
     'Optionally add descriptive keywords in "Descriptive keywords" — these become the new name.',
@@ -108,7 +110,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free seo image filename generator 2026: The SEO-friendly filename: lowercase, hyphen-separated, extension preserved. Fast, private, no signup - try it now!',
+      description:
+    'Free seo image filename generator 2026: The SEO-friendly filename: lowercase, hyphen-separated, extension preserved. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

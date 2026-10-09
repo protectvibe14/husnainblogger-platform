@@ -23,26 +23,29 @@ export const outputs: ToolOutput[] = [
     id: 'score',
     label: 'Resume score',
     type: 'number',
-    description: 'Free ats resume checker 2026: Heuristic score out of 100 across 7 transparent checks. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ats resume checker 2026: Heuristic score out of 100 across 7 transparent checks. free.',
   },
   {
     id: 'checks',
     label: 'Check breakdown',
     type: 'table',
-    description: 'Each check with pass/fail, points earned and an explanation.',
+    description:
+    'Each check with pass/fail, points earned and an explanation.',
   },
   {
     id: 'keywordOverlapPct',
     label: 'JD keyword overlap',
     type: 'percent',
-    description: 'Share of job-description keywords found in the resume.',
+    description:
+    'Share of job-description keywords found in the resume.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'ATS Resume Checker',
   description:
-    'Check your resume against a transparent 100-point rubric: contact info, length, action verbs, numbers, headers, JD keyword overlap. Free heuristic resume check.',
+    'Check your resume against a transparent 100-point rubric: contact info, length, action verbs, numbers, headers, JD keyword overlap. Free heuristic.',
   howTo: [
     'Paste your full resume text into the Resume text field.',
     'Paste the job description you are targeting into the second field.',
@@ -115,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ats resume checker 2026: Heuristic score out of 100 across 7 transparent checks. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ats resume checker 2026: Heuristic score out of 100 across 7 transparent checks. free.',
     },
     {
       '@context': 'https://schema.org',

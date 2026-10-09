@@ -33,14 +33,15 @@ export const outputs: ToolOutput[] = [
     id: 'upscaledPng',
     label: 'Upscaled PNG',
     type: 'download',
-    description: 'Free ai image upscaler 2026: Your image at 2x or 4x resolution, as a PNG download. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai image upscaler 2026: Your image at 2x or 4x resolution, as a PNG download. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Image Upscaler (2x/4x, Free)',
   description:
-    'Upscale images free with AI in your browser — 2x or 4x super-resolution, PNG download, no signup, no uploads. Runs 100% on your device, offline after load.',
+    'Upscale images free with AI in your browser — 2x or 4x super-resolution, PNG download, no uploads. Runs 100% on your device, offline after load.',
   howTo: [
     'Drop an image (JPG, PNG or WEBP up to 20 MB) onto the upload area, or click to browse.',
     'Pick 2x or 4x — each factor loads its own super-resolution model (about 52–53 MB, downloaded once).',
@@ -113,7 +114,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai image upscaler 2026: Your image at 2x or 4x resolution, as a PNG download. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai image upscaler 2026: Your image at 2x or 4x resolution, as a PNG download. free.',
     },
     {
       '@context': 'https://schema.org',

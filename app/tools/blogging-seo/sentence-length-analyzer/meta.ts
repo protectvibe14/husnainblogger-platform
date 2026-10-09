@@ -19,44 +19,50 @@ export const outputs: ToolOutput[] = [
     id: 'avgSentenceLength',
     label: 'Average sentence length',
     type: 'number',
-    description: 'Free average sentence length checker 2026: Words per sentence, rounded to 2 decimals. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free average sentence length checker 2026: Words per sentence, rounded to 2 decimals. free.',
   },
   {
     id: 'fleschReadingEase',
     label: 'Flesch Reading Ease',
     type: 'number',
-    description: 'Standard Flesch Reading Ease score (higher = easier to read).',
+    description:
+    'Standard Flesch Reading Ease score (higher = easier to read).',
   },
   {
     id: 'fleschKincaidGrade',
     label: 'Flesch-Kincaid grade level',
     type: 'number',
-    description: 'US school grade level needed to understand the text.',
+    description:
+    'US school grade level needed to understand the text.',
   },
   {
     id: 'gunningFog',
     label: 'Gunning Fog index',
     type: 'number',
-    description: 'Years of education needed to understand the text on first reading.',
+    description:
+    'Years of education needed to understand the text on first reading.',
   },
   {
     id: 'ari',
     label: 'Automated Readability Index (ARI)',
     type: 'number',
-    description: 'US grade level based on characters per word and words per sentence.',
+    description:
+    'US grade level based on characters per word and words per sentence.',
   },
   {
     id: 'longSentences',
     label: 'Long sentences',
     type: 'table',
-    description: 'Sentences over 25 words with their word count and a preview (first 20).',
+    description:
+    'Sentences over 25 words with their word count and a preview (first 20).',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Average Sentence Length Checker',
   description:
-    'Measure sentence length with this free average sentence length checker. Get Flesch, Flesch-Kincaid, Gunning Fog, and ARI scores plus long sentences. Try it now!',
+    'Measure sentence length with this free average sentence length checker. Get Flesch, Flesch-Kincaid, Gunning Fog, and ARI scores plus long sentences.',
   howTo: [
     'Paste the text you want to analyze — an article, essay, or any passage.',
     'Run the tool to get average sentence length plus four standard readability scores.',
@@ -132,7 +138,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free average sentence length checker 2026: Words per sentence, rounded to 2 decimals. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free average sentence length checker 2026: Words per sentence, rounded to 2 decimals. free.',
     },
     {
       '@type': 'BreadcrumbList',

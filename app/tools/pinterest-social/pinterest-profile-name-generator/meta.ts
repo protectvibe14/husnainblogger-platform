@@ -25,20 +25,22 @@ export const outputs: ToolOutput[] = [
     id: 'displayNameCandidates',
     label: 'Display name ideas',
     type: 'list',
-    description: 'Free pinterest business name ideas 2026: Profile display-name options, each capped at 65 characters. Get instant results. No signup - try it free now!',
+    description:
+    'Free pinterest business name ideas 2026: Profile display-name options, each capped at 65 characters. Get instant results. free now.',
   },
   {
     id: 'usernameSuggestions',
     label: 'Username suggestions',
     type: 'list',
-    description: 'Format-valid username suggestions (lowercase, 3-30 chars). Availability must be checked on Pinterest.',
+    description:
+    'Format-valid username suggestions (lowercase, 3-30 chars). Availability must be checked on Pinterest.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Business Name Ideas',
   description:
-    'Brainstorm Pinterest business name ideas — display names and username ideas from your brand plus keywords. Check availability on Pinterest. Try it free now!',
+    'Brainstorm a Pinterest business name that ranks: enter your brand plus keywords for display name and username ideas, then check availability on Pinterest.',
   howTo: [
     'Type your brand or name into the "Brand or name" field (e.g. Maple & Co.).',
     'Add an optional keyword in the "Keywords" field to make names keyword-led.',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest business name ideas 2026: Profile display-name options, each capped at 65 characters. Get instant results. No signup - try it free now!',
+      description:
+    'Free pinterest business name ideas 2026: Profile display-name options, each capped at 65 characters. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

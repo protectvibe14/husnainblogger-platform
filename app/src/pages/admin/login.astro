@@ -4,7 +4,8 @@
  * Owner: Admin.
  *
  * Paste a GitHub fine-grained PAT (repo-scoped to the site repo).
- * Validated against the GitHub API, then stored in localStorage.
+ * Validated against the GitHub API, then kept in sessionStorage via
+ * lib/admin-auth (tab-scoped, 8h absolute + 30min idle expiry).
  * No server, no cookies — the token never leaves the browser.
  */
 import "../../styles/luxury.css";
@@ -30,12 +31,21 @@ import { REPO_OWNER, REPO_NAME } from "../../lib/admin-config";
       <h1>Sign in</h1>
       <p class="admin-login__hint">
         Paste your GitHub access token (repo access: <code>{REPO_OWNER}/{REPO_NAME}</code>).
-        It stays in this browser only.
+        It stays in this browser tab only.
       </p>
+      <div class="admin-login__security" role="note">
+        <strong>Security note:</strong> your token is kept in this tab's session
+        storage — it is wiped when the tab closes, after 8 hours, or after
+        30 minutes idle. Never sign in on a shared computer. Use a
+        fine-grained token scoped to this repo only.
+      </div>
       <form id="login-form">
         <label class="admin-field">
           <span>GitHub token</span>
-          <input type="text" id="token" placeholder="github_pat_…" autocomplete="off" required spellcheck="false" style="background-color:#ffffff !important;color:#1a1815 !important;color-scheme:light !important;-webkit-text-security:disc !important;" />
+          <div class="admin-field__row">
+            <input type="password" id="token" placeholder="github_pat_…" autocomplete="off" required spellcheck="false" />
+            <button type="button" id="token-toggle" class="admin-btn-ghost" aria-label="Show token">Show</button>
+          </div>
         </label>
         <p class="admin-error" id="login-error" hidden></p>
         <button type="submit" class="admin-btn" id="login-btn">Sign in →</button>
@@ -45,13 +55,23 @@ import { REPO_OWNER, REPO_NAME } from "../../lib/admin-config";
 
     <script>
       import { validateToken } from "../../lib/admin-github";
+      import { login, isLoggedIn, clearLegacyStorage } from "../../lib/admin-auth";
+      // One-time cleanup: delete old forever-lived localStorage tokens.
+      clearLegacyStorage();
       const form = document.getElementById("login-form");
       const input = document.getElementById("token") as HTMLInputElement;
+      const toggle = document.getElementById("token-toggle") as HTMLButtonElement;
       const err = document.getElementById("login-error");
       const btn = document.getElementById("login-btn") as HTMLButtonElement;
-      if (localStorage.getItem("hb_admin_session")) {
+      if (isLoggedIn()) {
         window.location.href = "/admin/";
       }
+      toggle?.addEventListener("click", () => {
+        const show = input.type === "password";
+        input.type = show ? "text" : "password";
+        toggle.textContent = show ? "Hide" : "Show";
+        toggle.setAttribute("aria-label", show ? "Hide token" : "Show token");
+      });
       form?.addEventListener("submit", async (e) => {
         e.preventDefault();
         err!.hidden = true;
@@ -59,8 +79,7 @@ import { REPO_OWNER, REPO_NAME } from "../../lib/admin-config";
         btn.textContent = "Checking…";
         try {
           const repo = await validateToken(input.value.trim());
-          localStorage.setItem("hb_admin_token", input.value.trim());
-          localStorage.setItem("hb_admin_session", JSON.stringify({ repo, at: Date.now() }));
+          login(input.value.trim(), repo);
           window.location.href = "/admin/";
         } catch (ex: any) {
           err!.textContent = ex.message ?? "Login failed.";
@@ -121,6 +140,30 @@ import { REPO_OWNER, REPO_NAME } from "../../lib/admin-config";
     border-radius: var(--radius-sm);
   }
   .admin-field { display: block; margin-bottom: var(--space-4); }
+  .admin-field__row { display: flex; gap: var(--space-2); }
+  .admin-field__row input { flex: 1; min-width: 0; }
+  .admin-btn-ghost {
+    flex-shrink: 0;
+    font: inherit;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  .admin-btn-ghost:hover { border-color: var(--color-accent); }
+  .admin-login__security {
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    background: var(--color-warning-bg, #fef6e7);
+    border: 1px solid var(--color-warning-border, #e8c56a);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3) var(--space-4);
+    margin: 0 0 var(--space-6);
+  }
   .admin-field span {
     display: block;
     font-size: var(--text-sm);

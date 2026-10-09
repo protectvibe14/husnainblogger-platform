@@ -36,14 +36,15 @@ export const outputs: ToolOutput[] = [
     id: 'idPhoto',
     label: 'ID photo',
     type: 'download',
-    description: 'Free passport photo maker online 2026: Your portrait on a pure-white background at the chosen official size, as a JPG download. Fast, private, no signup - try!',
+    description:
+    'Free passport photo maker online 2026: Your portrait on a pure-white background at the chosen official size, as a JPG download. Fast, private - try.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Passport Photo Maker',
   description:
-    'Make passport photos free in your browser — AI cutout on pure white at US, UK/Schengen or India sizes. No signup, no uploads; runs 100% on your device.',
+    'Make passport photos free in your browser — AI cutout on pure white at US, UK/Schengen or India sizes., no uploads; runs 100% on your device.',
   howTo: [
     'Drop a front-facing portrait with a plain background (JPG, PNG or WEBP up to 20 MB), or click to browse.',
     'Pick a size: US 2×2 in, UK/Schengen 35×45 mm, or India 51×51 mm.',
@@ -116,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free passport photo maker online 2026: Your portrait on a pure-white background at the chosen official size, as a JPG download. Fast, private, no signup - try!',
+      description:
+    'Free passport photo maker online 2026: Your portrait on a pure-white background at the chosen official size, as a JPG download. Fast, private - try.',
     },
     {
       '@context': 'https://schema.org',

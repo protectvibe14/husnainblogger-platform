@@ -16,14 +16,15 @@ export const outputs: ToolOutput[] = [
     id: 'pinnedTweets',
     label: 'Pinned post drafts',
     type: 'list',
-    description: 'Free pinned tweet ideas 2026: 5 self-contained, CTA-led pinned post drafts for your goal — each within 280 weighted. Fast, private, no signup - try it now!',
+    description:
+    'Free pinned tweet ideas 2026: 5 self-contained, CTA-led pinned post drafts for your goal — each within 280 weighted. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinned Tweet Ideas',
   description:
-    'Get pinned tweet ideas that convert: pick offer, proof, or announcement and receive 5 CTA-led drafts within X\'s 280-char limit. Free — try it now!',
+    'Make your pinned post pull its weight: choose offer, proof, or announcement and get 5 CTA-led drafts that fit within the 280-character limit.',
   howTo: [
     'Choose what your pinned post should do: Promote an offer, Show proof / results, or Make an announcement.',
     'Click run to get 5 self-contained draft ideas for that goal.',
@@ -102,7 +103,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinned tweet ideas 2026: 5 self-contained, CTA-led pinned post drafts for your goal — each within 280 weighted. Fast, private, no signup - try it now!',
+      description:
+    'Free pinned tweet ideas 2026: 5 self-contained, CTA-led pinned post drafts for your goal — each within 280 weighted. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

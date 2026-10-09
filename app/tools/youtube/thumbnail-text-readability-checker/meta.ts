@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Thumbnail Text Readability Checker 2027',
+  title: 'Thumbnail Text Readability Checker',
   description: DESCRIPTION,
   howTo: [
     'Type the exact text on your thumbnail into the "Thumbnail text" box.',

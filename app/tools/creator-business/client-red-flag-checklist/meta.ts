@@ -22,16 +22,21 @@ export const inputs: ToolInput[] = [
 ];
 
 export const outputs: ToolOutput[] = [
-  { id: 'riskScore', label: 'Risk score (count-based)', type: 'number', description: 'Free freelance client red flags 2026: Sum of the fixed weights of your selected signals. Instant, private, and mobile-friendly. No signup - try it free!', label: 'Risk band', type: 'text', description: 'Low, Caution, or High — a fixed rule, not a prediction.' },
-  { id: 'flaggedSignals', label: 'Flagged signals', type: 'list', description: 'The signals you selected, with their fixed severity weights.' },
-  { id: 'nextSteps', label: 'Suggested next steps', type: 'list', description: 'Generic, informational steps — not legal or financial advice.' },
-  { id: 'disclaimer', label: 'Assessment note', type: 'text', description: 'Labels the result as your assessment aid, not a factual claim.' },
+  { id: 'riskScore', label: 'Risk score (count-based)', type: 'number', description:
+    'Free freelance client red flags 2026: Sum of the fixed weights of your selected signals. free.', label: 'Risk band', type: 'text', description:
+    'Low, Caution, or High — a fixed rule, not a prediction.' },
+  { id: 'flaggedSignals', label: 'Flagged signals', type: 'list', description:
+    'The signals you selected, with their fixed severity weights.' },
+  { id: 'nextSteps', label: 'Suggested next steps', type: 'list', description:
+    'Generic, informational steps — not legal or financial advice.' },
+  { id: 'disclaimer', label: 'Assessment note', type: 'text', description:
+    'Labels the result as your assessment aid, not a factual claim.' },
 ];
 
 export const content: ToolContent = {
   title: 'Freelance Client Red Flags',
   description:
-    'Spot freelance client red flags before you commit: select the warning signs you\'ve seen to get a count-based risk score, a plain summary, and next steps. Free.',
+    'Spot freelance client red flags before you commit: select the warning signs you\.'ve seen to get a count-based risk score, a plain summary, and next steps. Free.',
   howTo: [
     'List every warning sign you have actually observed, one signal per line in the observedSignals box.',
     'Add optional private notes (project name, dates) so you remember the context later.',
@@ -112,7 +117,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free freelance client red flags 2026: Sum of the fixed weights of your selected signals. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free freelance client red flags 2026: Sum of the fixed weights of your selected signals. free.',
     },
     {
       '@type': 'BreadcrumbList',

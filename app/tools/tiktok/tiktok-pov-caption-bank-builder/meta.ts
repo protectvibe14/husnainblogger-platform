@@ -42,26 +42,29 @@ export const outputs: ToolOutput[] = [
     id: 'captions',
     label: 'POV caption templates',
     type: 'list',
-    description: 'Free tiktok pov captions 2026: Caption templates with [YOUR SPIN] placeholder slots and tone-matched hashtag sets. Fast, private, no signup - try it now!',
+    description:
+    'Free tiktok pov captions 2026: Caption templates with [YOUR SPIN] placeholder slots and tone-matched hashtag sets. Fast, private now.',
   },
   {
     id: 'count',
     label: 'Captions built',
     type: 'number',
-    description: 'How many caption templates were built.',
+    description:
+    'How many caption templates were built.',
   },
   {
     id: 'trimmedCount',
     label: 'Hashtag-trimmed captions',
     type: 'number',
-    description: 'Captions whose hashtags were trimmed to stay within the caption limit.',
+    description:
+    'Captions whose hashtags were trimmed to stay within the caption limit.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok POV Captions',
   description:
-    'Build a free tiktok pov captions bank: add caption seeds and get POV caption templates with hashtag sets, all under the caption limit. Build yours now!',
+    'Build a free tiktok pov captions bank: add caption seeds and get POV caption templates with hashtag sets, all under the caption limit. Build yours now.',
   howTo: [
     'Add one item per caption theme and type the "Caption seed" — a word, phrase, or scenario like "monday gym grind".',
     'Set the "Tone" to funny, warm, motivational, or sassy (blank = generic), and the "Bank size" to 5–50 captions (blank = 10).',
@@ -122,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok pov captions 2026: Caption templates with [YOUR SPIN] placeholder slots and tone-matched hashtag sets. Fast, private, no signup - try it now!',
+      description:
+    'Free tiktok pov captions 2026: Caption templates with [YOUR SPIN] placeholder slots and tone-matched hashtag sets. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

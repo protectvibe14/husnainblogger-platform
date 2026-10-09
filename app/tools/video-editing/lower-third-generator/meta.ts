@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Lower Third Generator',
   description:
-    'Free lower third generator 2026: generate a broadcast-style lower third free: enter a name and title, pick a style and. Fast, private, no signup - try it now!',
+    'Build broadcast-style lower thirds fast: enter a name and title, pick from 5 professional style presets, and get a polished, ready-to-use graphic spec.',
   howTo: [
     'Enter the name (up to 60 characters) and optionally a title for the lower third.',
     'Pick one of the 5 style presets: modern-bar, classic-slant, minimal-line, bold-block, or mono-card.',
@@ -126,7 +126,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free lower third generator 2026: generate a broadcast-style lower third free: enter a name and title, pick a style and. Fast, private, no signup - try it now!',
+      description:
+    'Build broadcast-style lower thirds fast: enter a name and title, pick from 5 professional style presets, and get a polished, ready-to-use graphic spec.',
     },
     {
       '@type': 'BreadcrumbList',

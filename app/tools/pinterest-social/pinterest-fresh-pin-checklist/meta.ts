@@ -18,32 +18,36 @@ export const outputs: ToolOutput[] = [
     id: 'checklist',
     label: 'Your fresh-pin checklist',
     type: 'table',
-    description: 'Free pinterest fresh pins 2026: Checklist items specific to the selected pin type, each with why it matters. Fast, private, no signup - try it now!',
+    description:
+    'Free pinterest fresh pins 2026: Checklist items specific to the selected pin type, each with why it matters. Fast, private now.',
   },
   {
     id: 'itemCount',
     label: 'Items',
     type: 'number',
-    description: 'How many checklist items were returned for this pin type.',
+    description:
+    'How many checklist items were returned for this pin type.',
   },
   {
     id: 'pinTypeUsed',
     label: 'Pin type used',
     type: 'text',
-    description: 'Which pin type the checklist was built for.',
+    description:
+    'Which pin type the checklist was built for.',
   },
   {
     id: 'disclaimer',
     label: 'Honest note',
     type: 'text',
-    description: 'What this checklist can and cannot promise about Pinterest distribution.',
+    description:
+    'What this checklist can and cannot promise about Pinterest distribution.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Fresh Pins Checklist',
   description:
-    'Build a free pinterest fresh pins checklist for standard, idea, or video pins. Get best-practice checks for new images, titles, and keywords. Try it now!',
+    'Publish the fresh pins Pinterest favors: run this best-practice checklist for standard, idea, or video pins covering images, titles, and keywords.',
   howTo: [
     'Pick your "Pin type": standard, idea, or video. Leave it blank to default to standard.',
     'Run the tool to get your checklist — each item comes with a "Why it matters" explanation.',
@@ -119,7 +123,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest fresh pins 2026: Checklist items specific to the selected pin type, each with why it matters. Fast, private, no signup - try it now!',
+      description:
+    'Free pinterest fresh pins 2026: Checklist items specific to the selected pin type, each with why it matters. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

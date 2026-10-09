@@ -26,7 +26,8 @@ export const outputs: ToolOutput[] = [
     id: 'summary',
     label: 'Summary',
     type: 'text',
-    description: 'Free ai text summarizer 2026: The summary in the length you picked: one line, 3 bullets, or a short paragraph. Fast, private, no signup - try it now!',
+    description:
+    'Free ai text summarizer 2026: The summary in the length you picked: one line, 3 bullets, or a short paragraph. Fast, private now.',
   },
 ];
 
@@ -34,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Text Summarizer',
   description:
-    'Summarize long articles into one line, 3 bullets, or a short paragraph with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+    'Summarize long articles into one line, 3 bullets, or a short paragraph with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Pick a summary length: one line, 3 bullets, or a short paragraph.',
     'Paste the text (at least 50 characters, up to 8,000).',
@@ -106,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai text summarizer 2026: The summary in the length you picked: one line, 3 bullets, or a short paragraph. Fast, private, no signup - try it now!',
+      description:
+    'Free ai text summarizer 2026: The summary in the length you picked: one line, 3 bullets, or a short paragraph. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

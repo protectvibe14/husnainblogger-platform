@@ -35,26 +35,29 @@ export const outputs: ToolOutput[] = [
     id: 'episodes',
     label: 'Episode plan',
     type: 'list',
-    description: 'Free tiktok series planner 2026: Per-episode hook, beats, and CTA in posting order. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free tiktok series planner 2026: Per-episode hook, beats, and CTA in posting order. free.',
   },
   {
     id: 'arcSummary',
     label: 'Arc summary',
     type: 'text',
-    description: 'The series arc structure and the long-form eligibility note.',
+    description:
+    'The series arc structure and the long-form eligibility note.',
   },
   {
     id: 'postingOrder',
     label: 'Posting order',
     type: 'text',
-    description: 'How to post the episodes: order, cadence, and caption numbering.',
+    description:
+    'How to post the episodes: order, cadence, and caption numbering.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Series Planner',
   description:
-    'Plan a free tiktok series planner: name your series and get an episode-by-episode plan with hooks, beats, recaps, and CTAs. Plan your series now!',
+    'Plan a free tiktok series planner: name your series and get an episode-by-episode plan with hooks, beats, recaps, and CTAs. Plan your series now.',
   howTo: [
     'Enter your "Series title" (up to 120 characters).',
     'Add your "Niche" (optional) so hooks and beats name your topic.',
@@ -131,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok series planner 2026: Per-episode hook, beats, and CTA in posting order. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free tiktok series planner 2026: Per-episode hook, beats, and CTA in posting order. free.',
     },
     {
       '@type': 'BreadcrumbList',

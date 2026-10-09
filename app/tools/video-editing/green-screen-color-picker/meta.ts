@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Chroma Key Color Picker',
   description:
-    "Free chroma key color picker 2026: Pick the right chroma key color for your shoot: enter subject colors to get a recommended. Fast, private, no signup - try it!",
+    "Pick the right green screen color for your shoot: enter your subject's colors for a screen recommendation - or check whether one color keys cleanly.",
   howTo: [
     "Choose 'suggest' to get a screen-color recommendation, or 'analyze' to check one color.",
     "In suggest mode, paste your subject's main colors as hex values (e.g. #c85a3a) — one per line or comma-separated, at least one color.",
@@ -109,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: "Free chroma key color picker 2026: Pick the right chroma key color for your shoot: enter subject colors to get a recommended. Fast, private, no signup - try it!",
+      description:
+    "Pick the right green screen color for your shoot: enter your subject's colors for a screen recommendation - or check whether one color keys cleanly.",
     },
     {
       '@type': 'BreadcrumbList',

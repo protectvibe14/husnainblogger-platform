@@ -40,20 +40,22 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Transition ideas',
     type: 'list',
-    description: 'Free video transition ideas 2026: Ranked transition ideas, each with a name, step-by-step CapCut how-to, and difficulty. Fast, private, no signup - try it now!',
+    description:
+    'Free video transition ideas 2026: Ranked transition ideas, each with a name, step-by-step CapCut how-to, and difficulty. Fast, private now.',
   },
   {
     id: 'matchReason',
     label: 'Why these were picked',
     type: 'text',
-    description: 'A plain-English explanation of the matching rules used to rank the ideas.',
+    description:
+    'A plain-English explanation of the matching rules used to rank the ideas.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Video Transition Ideas',
   description:
-    'Find video transition ideas matched to your two scenes and energy — smooth, punchy, and match-cut picks with step-by-step CapCut how-tos. Plan your edit now!',
+    'Match transitions to your actual scenes: describe both clips, pick calm or punchy energy, and get step-by-step CapCut how-tos for each pick.',
   howTo: [
     'Describe the clip you are leaving (first scene) and the clip you are entering (second scene).',
     'Pick the energy: calm for smooth, punchy for high-impact transitions.',
@@ -125,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free video transition ideas 2026: Ranked transition ideas, each with a name, step-by-step CapCut how-to, and difficulty. Fast, private, no signup - try it now!',
+      description:
+    'Free video transition ideas 2026: Ranked transition ideas, each with a name, step-by-step CapCut how-to, and difficulty. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

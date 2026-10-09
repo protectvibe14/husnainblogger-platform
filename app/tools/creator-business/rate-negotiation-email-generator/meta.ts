@@ -57,14 +57,14 @@ export const outputs: ToolOutput[] = [
     label: 'Email draft (copy)',
     type: 'copy',
     description:
-      'Free rate negotiation email template 2026: Subject line plus email body in your chosen tone — edit before sending. Fast, private, no signup - try it now!',
+    'Free rate negotiation email template 2026: Subject line plus email body in your chosen tone — edit before sending. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Rate Negotiation Email Template',
   description:
-    'Draft a rate negotiation email that wins better pay: enter the offer, your counter, and your value points, then pick a tone. Copy, edit, and send. Try it free!',
+    'Draft a rate negotiation email that wins better pay: enter the offer, your counter, and your value points, then pick a tone. Copy, edit, and send. Try.',
   howTo: [
     'Enter the "Client name" and "Your name" for the greeting and signature.',
     'Type the client’s "Current offer" and "Your counter offer" (numbers only).',
@@ -162,7 +162,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free rate negotiation email template 2026: Subject line plus email body in your chosen tone — edit before sending. Fast, private, no signup - try it now!',
+      description:
+    'Free rate negotiation email template 2026: Subject line plus email body in your chosen tone — edit before sending. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

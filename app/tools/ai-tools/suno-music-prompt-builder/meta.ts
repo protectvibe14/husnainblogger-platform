@@ -66,19 +66,22 @@ export const outputs: ToolOutput[] = [
     id: 'styleField',
     label: 'Suno style field',
     type: 'copy',
-    description: 'Free suno prompt generator 2026: Genre, mood, tempo and vocal description for Suno\\u2019s style box. Get instant results. No signup - try it free now!',
+    description:
+    'Free suno prompt generator 2026: Genre, mood, tempo and vocal description for Suno\\u2019s style box. Get instant results. free now.',
   },
   {
     id: 'lyricsDraft',
     label: 'Lyrics draft',
     type: 'copy',
-    description: 'Verse/chorus/outro lyric skeleton with your theme inserted — rewrite before use.',
+    description:
+    'Verse/chorus/outro lyric skeleton with your theme inserted — rewrite before use.',
   },
   {
     id: 'pasteNote',
     label: 'How to use',
     type: 'text',
-    description: 'Where each output goes inside Suno.',
+    description:
+    'Where each output goes inside Suno.',
   },
 ];
 
@@ -157,7 +160,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free suno prompt generator 2026: Genre, mood, tempo and vocal description for Suno\\\\u2019s style box. Get instant results. No signup - try it free now!',
+      description:
+    'Free suno prompt generator 2026: Genre, mood, tempo and vocal description for Suno\\\\u2019s style box. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

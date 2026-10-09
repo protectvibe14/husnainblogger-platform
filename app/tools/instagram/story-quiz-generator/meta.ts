@@ -26,26 +26,29 @@ export const outputs: ToolOutput[] = [
     id: 'quizzes',
     label: 'Quiz ideas',
     type: 'table',
-    description: 'Free instagram story quiz ideas 2026: Quiz question, four answer options, the correct answer, and why. Get instant results. No signup - try it free now!',
+    description:
+    'Free instagram story quiz ideas 2026: Quiz question, four answer options, the correct answer, and why. Get instant results. free now.',
   },
   {
     id: 'copyAll',
     label: 'Copy all quizzes',
     type: 'copy',
-    description: 'All quiz ideas as plain text, ready to paste.',
+    description:
+    'All quiz ideas as plain text, ready to paste.',
   },
   {
     id: 'quizCount',
     label: 'Quizzes generated',
     type: 'number',
-    description: 'How many quiz ideas were generated.',
+    description:
+    'How many quiz ideas were generated.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Instagram Story Quiz Ideas',
   description:
-    'Get instagram story quiz ideas with 4 options, the correct answer, and an explanation. Enter a topic, copy ready-to-post quizzes — free, no signup. Try it now!',
+    'Get instagram story quiz ideas with 4 options, the correct answer, and an explanation. Enter a topic, copy ready-to-post quizzes — free.',
   howTo: [
     'Type your topic into the "Topic" box — e.g. "email marketing" or "guitar".',
     'Choose how many quizzes you want with "Number of quizzes" (1–5, defaults to 3).',
@@ -122,7 +125,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free instagram story quiz ideas 2026: Quiz question, four answer options, the correct answer, and why. Get instant results. No signup - try it free now!',
+      description:
+    'Free instagram story quiz ideas 2026: Quiz question, four answer options, the correct answer, and why. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

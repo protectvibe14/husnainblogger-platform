@@ -42,14 +42,15 @@ export const outputs: ToolOutput[] = [
     id: 'prompts',
     label: 'Brand voice system prompts',
     type: 'list',
-    description: 'Free brand voice prompt 2026: One assembled system prompt per entry — copy it into your AI tool of choice. Fast, private, no signup - try it now!',
+    description:
+    'Free brand voice prompt 2026: One assembled system prompt per entry — copy it into your AI tool of choice. Fast, private now.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Brand Voice Prompt',
   description:
-    'Assemble a custom brand voice prompt from your own words. Add adjectives, do\'s and don\'ts, and an optional sample for a reusable system prompt. Build yours now!',
+    'Assemble a custom brand voice prompt from your own words. Add adjectives, do\.'s and don\'ts, and an optional sample for a reusable system prompt. Build yours now!',
   howTo: [
     'Add one entry per brand voice. Enter at least 2 adjectives, comma-separated (required).',
     'Add optional do\'s and don\'ts as comma-separated lists — empty lists are left out.',
@@ -108,7 +109,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free brand voice prompt 2026: One assembled system prompt per entry — copy it into your AI tool of choice. Fast, private, no signup - try it now!',
+      description:
+    'Free brand voice prompt 2026: One assembled system prompt per entry — copy it into your AI tool of choice. Fast, private now.',
     },
     {
       '@type': 'BreadcrumbList',

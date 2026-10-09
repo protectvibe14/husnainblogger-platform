@@ -29,19 +29,22 @@ export const outputs: ToolOutput[] = [
     id: 'pillars',
     label: 'Content pillars',
     type: 'list',
-    description: '4 pillars with formats, weekly frequency, and example topics for your niche.',
+    description:
+    '4 pillars with formats, weekly frequency, and example topics for your niche.',
   },
   {
     id: 'weeklySchedule',
     label: 'Weekly posting schedule',
     type: 'list',
-    description: 'Mon–Sun plan spreading every pillar across the week.',
+    description:
+    'Mon–Sun plan spreading every pillar across the week.',
   },
   {
     id: 'planSummary',
     label: 'Plan summary',
     type: 'text',
-    description: 'One-line recap of niche, goal, pillar count, and posts per week.',
+    description:
+    'One-line recap of niche, goal, pillar count, and posts per week.',
   },
 ];
 

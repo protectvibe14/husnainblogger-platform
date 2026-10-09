@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Newsletter Ad Slot Planner',
   description:
-    'Free newsletter ad slot planner 2026: Plan newsletter ad slots free: enter issues per month, slot prices, and fill rates — get. Fast, private, no signup - try!',
+    'Price your newsletter ads with confidence: enter issues per month, slot prices, and expected fill rates for gross and net revenue projections.',
   howTo: [
     'Enter how many newsletter issues you send per month.',
     'List your ad slots, one per line: "Name | price per issue | expected fill rate %" (fill rate is optional and defaults to 100).',
@@ -107,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter ad slot planner 2026: Plan newsletter ad slots free: enter issues per month, slot prices, and fill rates — get. Fast, private, no signup - try!',
+      description:
+    'Price your newsletter ads with confidence: enter issues per month, slot prices, and expected fill rates for gross and net revenue projections.',
     },
     {
       '@type': 'BreadcrumbList',

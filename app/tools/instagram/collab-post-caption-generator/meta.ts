@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Collab Post Caption',
   description:
-    'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options. Try it now.',
+    'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options.',
   howTo: [
     "Enter your partner's Instagram handle (the @ is added automatically).",
     'Describe the campaign — e.g. "summer skincare launch".',
@@ -107,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options. Try it now.',
+      description:
+    'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options.',
     },
     {
       '@type': 'BreadcrumbList',

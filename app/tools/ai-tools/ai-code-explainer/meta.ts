@@ -26,13 +26,15 @@ export const outputs: ToolOutput[] = [
     id: 'explanation',
     label: 'Explanation',
     type: 'text',
-    description: 'Free ai code explainer 2026: A plain-language explanation of what the code does, step by step. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai code explainer 2026: A plain-language explanation of what the code does, step by step. free.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'AI Code Explainer',
-  description: 'Paste any code snippet and get a plain-language explanation with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
+  description:
+    'Paste any code snippet and get a plain-language explanation with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
   howTo: [
     'Pick the snippet’s language (or Other).',
     'Paste the code (at least 10 characters, up to 8,000).',
@@ -98,7 +100,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai code explainer 2026: A plain-language explanation of what the code does, step by step. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai code explainer 2026: A plain-language explanation of what the code does, step by step. free.',
     },
     {
       '@type': 'BreadcrumbList',

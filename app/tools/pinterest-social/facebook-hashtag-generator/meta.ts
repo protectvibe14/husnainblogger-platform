@@ -26,20 +26,22 @@ export const outputs: ToolOutput[] = [
     id: 'hashtags',
     label: 'Hashtags',
     type: 'list',
-    description: 'Free facebook hashtags 2026: One ready-to-paste hashtag set of 1-5 curated tags for your topic. Get instant results. No signup - try it free now!',
+    description:
+    'Free facebook hashtags 2026: One ready-to-paste hashtag set of 1-5 curated tags for your topic. Get instant results. free now.',
   },
   {
     id: 'usageNote',
     label: 'Honest usage note',
     type: 'text',
-    description: 'Why Facebook hashtags carry low weight and how many to use per post.',
+    description:
+    'Why Facebook hashtags carry low weight and how many to use per post.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Facebook Hashtags',
   description:
-    'Get the best facebook hashtags for your post with this free generator: enter your topic to get 1-5 curated tags plus an honest usage note. Try it now!',
+    'Stop guessing hashtags on Facebook: enter your post topic for 1-5 curated tags plus honest guidance on whether hashtags are even worth using.',
   howTo: [
     'Type your Post topic into the field (e.g. handmade candles, home workouts).',
     'Set "Number of hashtags" to any number from 1 to 5 (default is 3).',
@@ -116,7 +118,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free facebook hashtags 2026: One ready-to-paste hashtag set of 1-5 curated tags for your topic. Get instant results. No signup - try it free now!',
+      description:
+    'Free facebook hashtags 2026: One ready-to-paste hashtag set of 1-5 curated tags for your topic. Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

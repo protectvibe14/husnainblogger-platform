@@ -60,20 +60,22 @@ export const outputs: ToolOutput[] = [
     id: 'systemPrompt',
     label: 'System prompt',
     type: 'copy',
-    description: 'Free system prompt builder 2026: Assembled system prompt block, ready to paste into your AI tool. Get instant results. No signup - try it free now!',
+    description:
+    'Free system prompt builder 2026: Assembled system prompt block, ready to paste into your AI tool. Get instant results. free now.',
   },
   {
     id: 'itemCount',
     label: 'Rules included',
     type: 'number',
-    description: 'How many Do / Do-not / Constraint items were included.',
+    description:
+    'How many Do / Do-not / Constraint items were included.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'System Prompt Builder',
   description:
-    'Assemble a clean system prompt from a fixed template: role, audience, tone, do/don\u2019t lists and constraints. Free builder — copy and paste into any AI tool.',
+    'Assemble a clean system prompt from a fixed template: role, audience, tone, do/don\u2019t lists and constraints. Free builder — copy and paste into any.',
   howTo: [
     'Type the assistant role and the audience it serves.',
     'Pick a tone from the 8 fixed options.',
@@ -145,7 +147,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free system prompt builder 2026: Assembled system prompt block, ready to paste into your AI tool. Get instant results. No signup - try it free now!',
+      description:
+    'Free system prompt builder 2026: Assembled system prompt block, ready to paste into your AI tool. Get instant results. free now.',
     },
     {
       '@context': 'https://schema.org',

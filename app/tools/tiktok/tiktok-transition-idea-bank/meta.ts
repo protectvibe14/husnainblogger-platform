@@ -39,20 +39,22 @@ export const outputs: ToolOutput[] = [
     id: 'ideas',
     label: 'Transition ideas',
     type: 'list',
-    description: 'Free tiktok transition ideas 2026: Transition ideas with a filming how-to for each. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free tiktok transition ideas 2026: Transition ideas with a filming how-to for each. free.',
   },
   {
     id: 'copyAll',
     label: 'Copy all ideas',
     type: 'copy',
-    description: 'All transition ideas as plain text, ready to paste into your shoot notes.',
+    description:
+    'All transition ideas as plain text, ready to paste into your shoot notes.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'TikTok Transition Ideas',
   description:
-    'Generate free tiktok transition ideas from a static bank of 24 hand-written transitions, each with a filming how-to. Pick your niche and count — try it now!',
+    'Generate free tiktok transition ideas from a static bank of 24 hand-written transitions, each with a filming how-to. Pick your niche and count —.',
   howTo: [
     'Choose your niche from the "Your niche" dropdown (e.g. Fashion, Fitness, Comedy).',
     'Enter the "Number of transition ideas" you want, between 1 and 20.',
@@ -129,7 +131,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free tiktok transition ideas 2026: Transition ideas with a filming how-to for each. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free tiktok transition ideas 2026: Transition ideas with a filming how-to for each. free.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -50,13 +50,15 @@ export const outputs: ToolOutput[] = [
     id: 'restoredPhoto',
     label: 'Enhanced photo',
     type: 'download',
-    description: 'Free old photo restorer 2026: Your photo with the selected enhancement filters applied, as a PNG download. Fast, private, no signup - try it now!',
+    description:
+    'Free old photo restorer 2026: Your photo with the selected enhancement filters applied, as a PNG download. Fast, private now.',
   },
   {
     id: 'honestyNote',
     label: 'About this result',
     type: 'text',
-    description: 'What classic filters can and cannot fix.',
+    description:
+    'What classic filters can and cannot fix.',
   },
 ];
 
@@ -136,7 +138,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free old photo restorer 2026: Your photo with the selected enhancement filters applied, as a PNG download. Fast, private, no signup - try it now!',
+      description:
+    'Free old photo restorer 2026: Your photo with the selected enhancement filters applied, as a PNG download. Fast, private now.',
     },
     {
       '@context': 'https://schema.org',

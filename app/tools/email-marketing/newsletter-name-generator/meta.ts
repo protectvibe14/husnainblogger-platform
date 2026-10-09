@@ -40,20 +40,22 @@ export const outputs: ToolOutput[] = [
     id: 'names',
     label: 'Generated names',
     type: 'table',
-    description: 'Free newsletter name generator 2026: Name ideas, each with a matching tagline suggestion. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free newsletter name generator 2026: Name ideas, each with a matching tagline suggestion. free.',
   },
   {
     id: 'notices',
     label: 'Notes',
     type: 'list',
-    description: 'Truncation notes and the availability-check reminder.',
+    description:
+    'Truncation notes and the availability-check reminder.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Newsletter Name Generator',
   description:
-    'Generate catchy newsletter name ideas from your niche and tone, plus tagline ideas. Free tool, no signup — check availability manually. Try it now!',
+    'Name your newsletter something memorable: enter your niche and keywords, pick from 5 tones, and get name ideas with matching taglines included.',
   howTo: [
     'Type your newsletter niche in the "Newsletter niche" field (e.g. personal finance).',
     'Optionally add a few comma-separated keywords to flavor the names.',
@@ -125,7 +127,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free newsletter name generator 2026: Name ideas, each with a matching tagline suggestion. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free newsletter name generator 2026: Name ideas, each with a matching tagline suggestion. free.',
     },
     {
       '@type': 'BreadcrumbList',

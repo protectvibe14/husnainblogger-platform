@@ -27,32 +27,36 @@ export const outputs: ToolOutput[] = [
     id: 'ratio',
     label: 'Reduced ratio',
     type: 'text',
-    description: 'Free pinterest pin size checker 2026: Your dimensions reduced to W:H form via GCD (e.g. 1000×1500 → 2:3). Get instant results. No signup - try it free now!',
+    description:
+    'Free pinterest pin size checker 2026: Your dimensions reduced to W:H form via GCD (e.g. 1000×1500 → 2:3). Get instant results. free now.',
   },
   {
     id: 'closestFormat',
     label: 'Closest pin format',
     type: 'text',
-    description: 'Which best-practice format your size matches: standard 2:3, square 1:1, idea 9:16, long 1:2.1, or off-spec.',
+    description:
+    'Which best-practice format your size matches: standard 2:3, square 1:1, idea 9:16, long 1:2.1, or off-spec.',
   },
   {
     id: 'verdict',
     label: 'Feed verdict',
     type: 'text',
-    description: 'feed-safe, cropped-in-feed, or low-visibility — how the size is expected to display.',
+    description:
+    'feed-safe, cropped-in-feed, or low-visibility — how the size is expected to display.',
   },
   {
     id: 'recommendation',
     label: 'Recommendation',
     type: 'text',
-    description: 'What to do about it, including the 2:3 best-practice size when resizing is advised.',
+    description:
+    'What to do about it, including the 2:3 best-practice size when resizing is advised.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Pinterest Pin Size Checker',
   description:
-    'Check your pinterest pin size checker result instantly — enter width and height to verify the 2:3 best-practice ratio and feed safety. Free, try it now!',
+    'Check your pin size before you post: enter the width and height in pixels to verify the ideal 2:3 best-practice ratio and feed safety instantly.',
   howTo: [
     'Enter your pin "Pin width (pixels)", e.g. 1000.',
     'Enter your "Pin height (pixels)", e.g. 1500.',
@@ -129,7 +133,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free pinterest pin size checker 2026: Your dimensions reduced to W:H form via GCD (e.g. 1000×1500 → 2:3). Get instant results. No signup - try it free now!',
+      description:
+    'Free pinterest pin size checker 2026: Your dimensions reduced to W:H form via GCD (e.g. 1000×1500 → 2:3). Get instant results. free now.',
     },
     {
       '@type': 'BreadcrumbList',

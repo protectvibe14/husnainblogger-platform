@@ -48,21 +48,23 @@ export const outputs: ToolOutput[] = [
     id: 'jsonLd',
     label: 'JSON-LD markup (copy)',
     type: 'copy',
-    description: 'Valid schema.org Review JSON-LD — paste it into your review page.',
+    description:
+    'Valid schema.org Review JSON-LD — paste it into your review page.',
   keywords: ['review rating schema generator', 'review schema markup generator'],
   },
   {
     id: 'errors',
     label: 'Validation notes',
     type: 'list',
-    description: 'Warnings about the input (e.g. missing review text).',
+    description:
+    'Warnings about the input (e.g. missing review text).',
   },
 ];
 
 export const content: ToolContent = {
-  title: 'Review Schema Generator – Free JSON-LD 2027',
+  title: 'Review Schema Generator – Free JSON-LD',
   description:
-    'Free review schema generator 2026: build valid JSON-LD review markup with item, author and rating for rich snippets. No signup — copy your code today!',
+    'Free review schema generator 2026: build valid JSON-LD review markup with item, author and rating for rich snippets. — copy your code today.',
   howTo: [
     'Enter the "Item being reviewed" and the "Reviewer name" (both required).',
     'Set the "Rating" (0 up to the best rating) and optionally change "Best rating" if your scale is not 5.',
@@ -154,7 +156,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-        'Free review schema generator 2026: build valid JSON-LD review markup with item, author and rating for rich snippets. No signup — copy your code today!',
+    'Free review schema generator 2026: build valid JSON-LD review markup with item, author and rating for rich snippets. — copy your code today.',
     },
     {
       '@type': 'BreadcrumbList',

@@ -98,7 +98,8 @@ export const outputs: ToolOutput[] = [
     id: 'warning',
     label: 'Profit warning',
     type: 'text',
-    description: 'Shown only when costs exceed the sale price.',
+    description:
+    'Shown only when costs exceed the sale price.',
   keywords: ['etsy profit calculator 2025', 'etsy profit calculator 2026', 'etsy profit calculator canada', 'etsy profit calculator digital products', 'etsy profit calculator excel'],
   },
 ];

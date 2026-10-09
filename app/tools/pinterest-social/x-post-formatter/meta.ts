@@ -19,44 +19,50 @@ export const outputs: ToolOutput[] = [
     id: 'formattedText',
     label: 'Formatted text',
     type: 'copy',
-    description: 'Free twitter bold text generator 2026: Your text with trailing spaces trimmed, extra spaces collapsed, and blank lines cleaned up. Fast, private, no signup -!',
+    description:
+    'Free twitter bold text generator 2026: Your text with trailing spaces trimmed, extra spaces collapsed, and blank lines cleaned up. Fast, private -.',
   },
   {
     id: 'boldText',
     label: 'Bold version',
     type: 'copy',
-    description: 'The formatted text in bold Unicode characters, ready to paste into an X post.',
+    description:
+    'The formatted text in bold Unicode characters, ready to paste into an X post.',
   },
   {
     id: 'weightedCount',
     label: 'Weighted character count',
     type: 'number',
-    description: 'Character count using conservative X-style weighting: URLs count 23, non-ASCII characters count 2.',
+    description:
+    'Character count using conservative X-style weighting: URLs count 23, non-ASCII characters count 2.',
   },
   {
     id: 'remaining',
     label: 'Characters remaining',
     type: 'number',
-    description: 'How many weighted characters you have left before the 280 budget (0 when over).',
+    description:
+    'How many weighted characters you have left before the 280 budget (0 when over).',
   },
   {
     id: 'overBy',
     label: 'Over budget by',
     type: 'number',
-    description: 'How many weighted characters over 280 the text is (0 when it fits). Over-budget text is flagged, never cut.',
+    description:
+    'How many weighted characters over 280 the text is (0 when it fits). Over-budget text is flagged, never cut.',
   },
   {
     id: 'changeNote',
     label: 'What changed',
     type: 'text',
-    description: 'Exactly what the formatter cleaned up — or "no changes needed" if the text was already clean.',
+    description:
+    'Exactly what the formatter cleaned up — or "no changes needed" if the text was already clean.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Twitter Bold Text Generator',
   description:
-    'Free twitter bold text generator and post formatter. Clean up spacing and line breaks, check your 280-character budget, and get a bold version. Try it!',
+    'Clean up messy X posts in one click: fix spacing and broken line breaks, check your 280-character budget, and get a bold-text version instantly.',
   howTo: [
     'Paste your X post draft into the "Post text" field.',
     'Run the tool to clean it: trailing spaces trimmed, extra spaces collapsed, messy blank lines fixed.',
@@ -128,7 +134,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free twitter bold text generator 2026: Your text with trailing spaces trimmed, extra spaces collapsed, and blank lines cleaned up. Fast, private, no signup -!',
+      description:
+    'Free twitter bold text generator 2026: Your text with trailing spaces trimmed, extra spaces collapsed, and blank lines cleaned up. Fast, private -.',
     },
     {
       '@type': 'BreadcrumbList',

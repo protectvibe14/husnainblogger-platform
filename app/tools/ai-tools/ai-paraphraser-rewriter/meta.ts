@@ -26,7 +26,8 @@ export const outputs: ToolOutput[] = [
     id: 'rewrite',
     label: 'Rewritten text',
     type: 'text',
-    description: 'Free ai paraphrasing tool 2026: Your text rewritten in the chosen tone, meaning preserved. Instant, private, and mobile-friendly. No signup - try it free!',
+    description:
+    'Free ai paraphrasing tool 2026: Your text rewritten in the chosen tone, meaning preserved. free.',
   },
 ];
 
@@ -34,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Paraphraser & Rewriter',
   description:
-    'Rewrite any text in a professional, casual, or academic tone with your own free Gemini, Groq, or OpenRouter key. Meaning preserved, no signup needed.',
+    'Rewrite any text in a professional, casual, or academic tone with your own free Gemini, Groq, or OpenRouter key. Meaning preserved needed.',
   howTo: [
     'Pick a tone: professional, casual, or academic.',
     'Paste the text you want rewritten (10 to 6,000 characters).',
@@ -106,7 +107,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free ai paraphrasing tool 2026: Your text rewritten in the chosen tone, meaning preserved. Instant, private, and mobile-friendly. No signup - try it free!',
+      description:
+    'Free ai paraphrasing tool 2026: Your text rewritten in the chosen tone, meaning preserved. free.',
     },
     {
       '@context': 'https://schema.org',

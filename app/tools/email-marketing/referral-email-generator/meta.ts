@@ -39,10 +39,10 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free referral email template generator 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
+  'Turn happy customers into referrers: enter your program name, the reward for both sides, and your audience for a ready-to-send referral email.';
 
 export const content: ToolContent = {
-  title: 'Referral Email Template Generator 2027',
+  title: 'Referral Email Template Generator',
   description: DESCRIPTION,
   howTo: [
     'Enter your referral program name (e.g. “BookClub Plus”).',

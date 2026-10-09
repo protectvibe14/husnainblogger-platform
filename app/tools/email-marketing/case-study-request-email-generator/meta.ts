@@ -39,20 +39,22 @@ export const outputs: ToolOutput[] = [
     id: 'subjectOptions',
     label: 'Subject line options',
     type: 'list',
-    description: 'Free case study request email 2026: 5 subject-line options assembled from fixed templates with the client name and result. Fast, private, no signup - try it!',
+    description:
+    'Free case study request email 2026: 5 subject-line options assembled from fixed templates with the client name and result. Fast, private.',
   },
   {
     id: 'bodyDraft',
     label: 'Request email draft',
     type: 'copy',
-    description: 'Full request draft: greeting, metric callout, format-specific ask, ease line, closer, and sign-off.',
+    description:
+    'Full request draft: greeting, metric callout, format-specific ask, ease line, closer, and sign-off.',
   },
 ];
 
 export const content: ToolContent = {
   title: 'Case Study Request Email',
   description:
-    'Write a case study request email that gets a yes. Add your client, result metric, format, and tone to get 5 subject lines plus a ready draft. Free!',
+    'Write a case study request email that gets a yes. Add your client, result metric, format, and tone to get 5 subject lines plus a ready draft. Free.',
   howTo: [
     'Enter the client name and the specific result metric you want to feature.',
     'Choose the case study format: written, video, or a short quote.',
@@ -134,7 +136,8 @@ export const content: ToolContent = {
       applicationCategory: 'Utilities',
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: 'Free case study request email 2026: 5 subject-line options assembled from fixed templates with the client name and result. Fast, private, no signup - try it!',
+      description:
+    'Free case study request email 2026: 5 subject-line options assembled from fixed templates with the client name and result. Fast, private.',
     },
     {
       '@type': 'BreadcrumbList',

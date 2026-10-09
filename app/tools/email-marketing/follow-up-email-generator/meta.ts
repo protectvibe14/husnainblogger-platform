@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Free follow up email generator: pick sequence step 1–5, enter your original subject and goal, and get 4 subject options plus a full body draft. Try it now.';
+  'Follow up without being pushy: pick your sequence step, add the original subject and your goal, and get 4 subject options plus a full draft.';
 
 export const content: ToolContent = {
   title: 'Follow Up Email Generator',

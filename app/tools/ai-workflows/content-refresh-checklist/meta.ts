@@ -16,7 +16,8 @@ export const outputs: ToolOutput[] = [
     id: "checklist",
     label: "Refresh checklist",
     type: "list",
-    description: "The fixed decision-tree checklist for your content type.",
+    description:
+    "The fixed decision-tree checklist for your content type.",
   },
 ];
 
@@ -57,19 +58,19 @@ export const content: ToolContent = {
         "You select a content type; the tool returns the matching fixed checklist branch. No content is generated — the checklist is the same every time for the same type.",
     },
     {
-      question: 'How does the content refresh checklist work?',
+      question: 'When should I delete a post instead of updating it?',
       answer:
-        'Enter your details using the inputs above and the content refresh checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
+        'Delete when the content is hopelessly outdated, gets no traffic, has no backlinks, and no longer matches what searchers want. Update when it still gets some visits or has links worth keeping. Merge when two thin posts chase the same keyword. The checklist walks you through the traffic, accuracy, and intent checks first, so the keep, update, merge, or delete call is based on evidence, not gut feeling.',
     },
     {
-      question: 'Is the content refresh checklist free to use?',
+      question: 'How do I know a post actually needs a refresh?',
       answer:
-        'Yes - this content refresh checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
+        'Look for the warning signs: traffic sliding in Search Console, facts or screenshots that are now wrong, comments saying the advice no longer works, or a ranking that is slipping to fresher competitors. If you spot two or more of these, run the checklist — pick post, video, or page and work the fixed list top to bottom.',
     },
     {
-      question: 'What is a content refresh checklist?',
+      question: 'Does this work for YouTube videos and landing pages too?',
       answer:
-        'A content refresh checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
+        'Yes — the tool has separate checklist branches for posts, videos, and pages. The checks adapt to the format (a video branch covers titles, descriptions, and pinned comments rather than headings and internal links), but the flow is the same: audit traffic, accuracy, and intent, then make the keep, update, merge, or delete decision.',
     },
   ],
   assumptions: [
