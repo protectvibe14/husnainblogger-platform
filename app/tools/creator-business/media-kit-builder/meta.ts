@@ -120,7 +120,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Influencer Media Kit Builder 2026 – Free | HusnainBlogger',
+  title: 'Influencer Media Kit Builder',
   description:
     'Build a pro influencer media kit in minutes. Add platforms, stats, services, and rates for a polished, shareable media kit. Free, no signup - try it now!',
   howTo: [
