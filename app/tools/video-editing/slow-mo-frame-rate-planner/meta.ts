@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Slow Motion FPS Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Slow Motion FPS Planner',
   description:
     'Free slow motion fps planner 2026: Plan smooth slow motion before you shoot: enter source fps, timeline fps, and slow factor. Fast, private, no signup - try it!',
   howTo: [
