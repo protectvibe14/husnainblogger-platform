@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Booking Page Copy 2026 – Free Tool | HusnainBlogger',
+  title: 'Booking Page Copy',
   description: DESCRIPTION,
   howTo: [
     'Enter your service name and target client (both required).',
