@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Text to Video AI Generator 2026 – Free | HusnainBlogger',
+  title: 'Text to Video AI Generator',
   description:
     'Turn text into AI video with your own fal.ai key — Google Veo 3 clips in 4, 6 or 8 seconds. Paste your key, describe the shot, preview and download. No signup.',
   howTo: [
