@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok TTS Script Optimizer 2026 – Free | HusnainBlogger',
+  title: 'TikTok TTS Script Optimizer',
   description:
     'Optimize a tiktok tts script optimizer draft for natural voiceover: abbreviations expanded, numbers spelled, sentences split. Paste it free — try it now!',
   howTo: [
