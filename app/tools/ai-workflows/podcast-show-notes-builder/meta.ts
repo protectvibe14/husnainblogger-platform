@@ -33,7 +33,7 @@ const DESCRIPTION =
   "Build a clean podcast show notes template from your episode details — title, guest, chapters, and links formatted in Markdown and HTML. Free, no signup.";
 
 export const content: ToolContent = {
-  title: "Podcast Show Notes Template',
+  title: "Podcast Show Notes Template",
   description: DESCRIPTION,
   howTo: [
     "Add a row and enter your episode title, guest name, and summary on it.",
