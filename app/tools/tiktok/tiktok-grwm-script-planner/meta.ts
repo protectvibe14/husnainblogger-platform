@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'GRWM TikTok Script Planner 2026 – Free | HusnainBlogger',
+  title: 'GRWM TikTok Script Planner',
   description:
     'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan now.',
   howTo: [
