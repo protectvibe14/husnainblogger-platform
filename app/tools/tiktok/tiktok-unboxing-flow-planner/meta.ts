@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Unboxing Video Script 2026 – Free | HusnainBlogger',
+  title: 'TikTok Unboxing Video Script',
   description:
     'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private, no signup - try!',
   howTo: [
