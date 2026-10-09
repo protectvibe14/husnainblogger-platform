@@ -60,7 +60,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Viral TikTok Trends for My Niche 2026 | HusnainBlogger',
+  title: 'Viral TikTok Trends for My Niche 2027',
   description: DESCRIPTION,
   howTo: [
     'Find a real trend yourself: open TikTok Discover or the TikTok Creative Center and copy a trend name or sound.',
