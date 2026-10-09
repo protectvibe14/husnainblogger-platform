@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Series Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Series Planner',
   description:
     'Plan a free tiktok series planner: name your series and get an episode-by-episode plan with hooks, beats, recaps, and CTAs. Plan your series now!',
   howTo: [
