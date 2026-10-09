@@ -11,7 +11,7 @@ export const trackerMode: 'checklist' | 'library' = 'library';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'AI Voiceover Prompts 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Voiceover Prompts',
   description:
     'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and record today.',
   howTo: [
