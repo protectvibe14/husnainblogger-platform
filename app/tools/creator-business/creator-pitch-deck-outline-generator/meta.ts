@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Creator Pitch Deck Template 2026 – Free | HusnainBlogger',
+  title: 'Creator Pitch Deck Template',
   description: DESCRIPTION,
   howTo: [
     'Enter your niche, e.g. fitness, skincare, or tech.',
