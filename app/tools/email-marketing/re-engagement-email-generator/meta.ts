@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Re-Engagement Email Generator 2026 – Free | HusnainBlogger',
+  title: 'Re-Engagement Email Generator',
   description:
     'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block. No signup.',
   howTo: [
