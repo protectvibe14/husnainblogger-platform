@@ -20,7 +20,7 @@ export const itemFields: BuilderField[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Prompt Template With Variables 2026 – Free | HusnainBlogger',
+  title: 'Prompt Template With Variables',
   description:
     'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free, no signup.',
   howTo: [
