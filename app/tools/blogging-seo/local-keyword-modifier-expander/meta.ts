@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Local Keyword Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Local Keyword Generator',
   description:
     'Turn one seed into geo-targeted ideas with this free local keyword generator. Combine proven modifiers with US, UK, CA and AU cities. Start now!',
   howTo: [
