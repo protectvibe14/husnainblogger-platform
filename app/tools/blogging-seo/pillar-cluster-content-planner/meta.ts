@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Topic Cluster Planner 2026 – Free Tool | HusnainBlogger',
+  title: 'Topic Cluster Planner',
   description:
     'Plan a pillar-and-cluster content hub in seconds: one pillar page plus 3-20 cluster topics with slugs and linking notes. Free — plan your hub now!',
   howTo: [
