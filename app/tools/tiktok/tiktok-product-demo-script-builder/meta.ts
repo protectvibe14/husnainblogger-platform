@@ -32,7 +32,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Tiktok Product Demo Script 2026 – Free Tool | HusnainBlogger',
+  title: 'Tiktok Product Demo Script',
   description:
     'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free — try it now.',
   howTo: [
