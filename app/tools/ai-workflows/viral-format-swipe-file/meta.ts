@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Browse 48 free viral content formats — hook, story, list, tutorial, and UGC format cards with structure breakdowns and copy-paste prompts. Open the swipe file.';
 
 export const content: ToolContent = {
-  title: 'Viral Content Formats 2026 – Free Tool | HusnainBlogger',
+  title: 'Viral Content Formats',
   description: DESCRIPTION,
   howTo: [
     'Browse the 8 format categories: hooks, storytelling, listicles, comparisons, tutorials, behind-the-scenes, UGC, and repurposing.',
