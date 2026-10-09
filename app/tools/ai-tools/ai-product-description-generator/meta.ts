@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Product Description Generator 2026 | HusnainBlogger',
+  title: 'AI Product Description Generator 2027',
   description:
     'Write compelling ecommerce product descriptions in any tone — under 150 words, benefit-led — with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
