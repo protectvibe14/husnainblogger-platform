@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
     label: 'Things to check',
     type: 'list',
     description:
-    'Punctuation or acronym issues to review in TikTok\.'s voice preview — brand names are flagged, never auto-pronounced.',
+    "Punctuation or acronym issues to review in TikTok's voice preview — brand names are flagged, never auto-pronounced.",
   },
 ];
 

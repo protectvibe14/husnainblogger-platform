@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
     label: 'How to use them',
     type: 'text',
     description:
-    'How to run these phrases through Instagram\.'s audio search and spot trending tracks.',
+    "How to run these phrases through Instagram's audio search and spot trending tracks.",
   },
 ];
 

@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
     label: 'Sample 3x3 grid',
     type: 'list',
     description:
-    'A row-by-row sample grid pattern in this theme\.'s style.',
+    "A row-by-row sample grid pattern in this theme's style.",
   },
   {
     id: 'themeNote',

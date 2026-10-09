@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
     label: 'Notes',
     type: 'list',
     description:
-    'Honesty labels: English-model-only notice for non-English captions, and a warning if the caption exceeds TikTok\.'s 2,200-character limit.',
+    "Honesty labels: English-model-only notice for non-English captions, and a warning if the caption exceeds TikTok's 2,200-character limit.",
   },
 ];
 

@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
     label: 'Plan note',
     type: 'text',
     description:
-    'Confirms the slide breakdown — and states it plainly if your request was clamped to TikTok\.'s 35-slide cap.',
+    "Confirms the slide breakdown — and states it plainly if your request was clamped to TikTok's 35-slide cap.",
   },
 ];
 

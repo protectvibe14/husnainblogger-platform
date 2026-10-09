@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'BPM to Beat Interval',
   description:
-    'Cut on the beat every single time: enter any track\.'s BPM and total duration for exact beat intervals in milliseconds plus the total beat count.',
+    "Cut on the beat every single time: enter any track's BPM and total duration for exact beat intervals in milliseconds plus the total beat count.",
   howTo: [
     'Enter the track BPM (30-300) — tap it out or read it from your music app.',
     'Enter the track duration in seconds.',
@@ -121,7 +121,7 @@ export const content: ToolContent = {
       operatingSystem: 'Web',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       description:
-    'Cut on the beat every single time: enter any track\.'s BPM and total duration for exact beat intervals in milliseconds plus the total beat count.',
+    "Cut on the beat every single time: enter any track's BPM and total duration for exact beat intervals in milliseconds plus the total beat count.",
     },
     {
       '@type': 'BreadcrumbList',

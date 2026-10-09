@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Pinterest Board Name Ideas',
   description:
-    'Name boards people actually search for: pick SEO, playful, or brand tone for keyword-led board names capped at Pinterest\.'s 100-character limit.',
+    "Name boards people actually search for: pick SEO, playful, or brand tone for keyword-led board names capped at Pinterest's 100-character limit.",
   howTo: [
     'Type your niche keyword into the "Niche keyword" field (e.g. small kitchen organization).',
     'Choose a name tone: seo for search-friendly names, playful for personality, or brand for a curated look.',

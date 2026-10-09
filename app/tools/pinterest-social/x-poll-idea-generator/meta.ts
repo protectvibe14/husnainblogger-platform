@@ -32,14 +32,14 @@ export const outputs: ToolOutput[] = [
     label: 'Poll options',
     type: 'list',
     description:
-    '4 answer options, each within X\.'s 25-character option limit.',
+    "4 answer options, each within X's 25-character option limit.",
   },
   {
     id: 'suggestedDuration',
     label: 'Suggested duration',
     type: 'text',
     description:
-    'Your chosen duration, confirmed inside X\.'s 5-minute to 7-day range.',
+    "Your chosen duration, confirmed inside X's 5-minute to 7-day range.",
   },
 ];
 

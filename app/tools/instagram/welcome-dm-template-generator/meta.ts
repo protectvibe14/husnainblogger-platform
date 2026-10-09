@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
     label: 'Personalization slots',
     type: 'list',
     description:
-    'Placeholders to fill per follower, e.g. {name} for the follower\.'s first name.',
+    "Placeholders to fill per follower, e.g. {name} for the follower's first name.",
   },
 ];
 

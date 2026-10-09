@@ -55,7 +55,7 @@ export const outputs: ToolOutput[] = [
     label: 'Truncation warning',
     type: 'text',
     description:
-    'Whether the title is likely to be cut off at Google\.'s ~600 px desktop cutoff.',
+    "Whether the title is likely to be cut off at Google's ~600 px desktop cutoff.",
   },
 ];
 
