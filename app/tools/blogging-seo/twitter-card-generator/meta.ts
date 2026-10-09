@@ -62,7 +62,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Twitter Card Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Twitter Card Generator',
   description:
     'Build Twitter Card meta tags that make your links stand out on X. Add title, description, image, and handle, then copy the tags. Free, no signup!',
   howTo: [
