@@ -37,7 +37,7 @@ const DESCRIPTION =
   'Split any gear budget with this free YouTube starter kit planner — camera, audio, lighting, editing, and accessories in priority order. Try it now.';
 
 export const content: ToolContent = {
-  title: 'YouTube Starter Kit Planner | HusnainBlogger',
+  title: 'YouTube Starter Kit Planner',
   description: DESCRIPTION,
   howTo: [
     'Enter your total gear budget in USD (must be greater than 0).',
