@@ -23,7 +23,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'YouTube Title Length Checker 2026 – Free | HusnainBlogger',
+  title: 'YouTube Title Length Checker | HusnainBlogger',
   description: DESCRIPTION,
   howTo: [
     'Paste your proposed video title into the "Proposed title" box.',
@@ -42,7 +42,7 @@ export const content: ToolContent = {
     },
     {
       title: 'Long title that truncates in search',
-      inputs: { title: 'I tested every AI video editing tool on the market in 2026 so you can skip the bad ones' },
+      inputs: { title: 'I tested every AI video editing tool on the market in 2027 so you can skip the bad ones' },
       note: 'Status: truncated-in-search — the tail past ~70 characters is cut off in search results.',
     },
     {
