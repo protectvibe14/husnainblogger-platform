@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Patreon Earnings Calculator 2026 – Free | HusnainBlogger',
+  title: 'Patreon Earnings Calculator',
   description:
     'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout. Try it now.',
   howTo: [
