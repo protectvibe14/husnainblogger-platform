@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Blog Outline Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Blog Outline Generator',
   description:
     'Create a structured blog outline — H2 sections, sub-points, and FAQs — at any depth with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
