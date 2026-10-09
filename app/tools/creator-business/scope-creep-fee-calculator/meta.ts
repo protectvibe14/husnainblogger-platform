@@ -67,7 +67,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Scope Creep Fee Calculator 2026 – Free | HusnainBlogger',
+  title: 'Scope Creep Fee Calculator',
   description:
     'Scope creep fee calculator: price extra hours at your hourly rate or a percentage of the original fee, and see the revised project total free. Try it now!',
   howTo: [
