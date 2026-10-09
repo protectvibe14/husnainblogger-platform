@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Course Outline Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Course Outline Generator',
   description:
     'Plan your online course fast — a module grid with lesson-name templates and duration estimates per module. Free course outline generator. Start building today!',
   howTo: [
