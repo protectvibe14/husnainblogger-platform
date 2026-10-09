@@ -63,7 +63,7 @@ const DESCRIPTION =
   'See what you keep from each order with this free fiverr profit calculator — enter order value, tips, and costs for the 20% fee and net earnings. Try it free.';
 
 export const content: ToolContent = {
-  title: 'Fiverr Profit Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'Fiverr Profit Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your order value in USD — the gig price before any fees.',
