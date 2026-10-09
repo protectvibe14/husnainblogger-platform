@@ -1,0 +1,98 @@
+---
+/**
+ * CookieConsent.astro — GDPR-friendly cookie consent banner.
+ * Owner: Site.
+ *
+ * Shows on first visit. Accept = GA4 loads normally.
+ * Decline = sets ga4MeasurementId to empty (no tracking).
+ * Choice stored in localStorage. Lightweight, no dependencies.
+ */
+---
+
+<div id="hb-cookie-banner" class="hb-cookie-banner" hidden role="dialog" aria-label="Cookie consent">
+  <p>
+    🍪 We use cookies to analyze site traffic (Google Analytics).
+    <a href="/cookies-policy/">Learn more</a>
+  </p>
+  <div class="hb-cookie-banner__actions">
+    <button type="button" id="hb-cookie-accept" class="hb-btn hb-btn--gold">Accept</button>
+    <button type="button" id="hb-cookie-decline" class="hb-btn hb-btn--secondary">Decline</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const KEY = "hb_cookie_consent";
+    const banner = document.getElementById("hb-cookie-banner");
+    const accept = document.getElementById("hb-cookie-accept");
+    const decline = document.getElementById("hb-cookie-decline");
+    if (!banner) return;
+
+    // Only show if no choice stored yet
+    try {
+      if (!localStorage.getItem(KEY)) {
+        banner.hidden = false;
+      }
+    } catch (e) {
+      banner.hidden = false;
+    }
+
+    function choose(value: string) {
+      try { localStorage.setItem(KEY, value); } catch (e) {}
+      banner!.hidden = true;
+      // If declined, disable GA4 for this page view
+      if (value === "declined") {
+        (window as any)["ga-disable-" + "G-MEASUREMENT"] = true;
+      }
+    }
+
+    accept?.addEventListener("click", () => choose("accepted"));
+    decline?.addEventListener("click", () => choose("declined"));
+  })();
+</script>
+
+<style>
+  .hb-cookie-banner {
+    position: fixed;
+    bottom: var(--space-4);
+    left: var(--space-4);
+    right: var(--space-4);
+    max-width: 32rem;
+    margin: 0 auto;
+    background: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-lg);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .hb-cookie-banner[hidden] { display: none; }
+  .hb-cookie-banner p {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text);
+    line-height: var(--leading-normal);
+  }
+  .hb-cookie-banner p a {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+  .hb-cookie-banner__actions {
+    display: flex;
+    gap: var(--space-3);
+  }
+  .hb-cookie-banner__actions .hb-btn {
+    padding: var(--space-2) var(--space-5);
+    font-size: var(--text-sm);
+  }
+  @media (max-width: 640px) {
+    .hb-cookie-banner {
+      left: var(--space-3);
+      right: var(--space-3);
+      bottom: var(--space-3);
+    }
+  }
+</style>
