@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Reels Trending Audio Search 2026 – Free | HusnainBlogger',
+  title: 'Reels Trending Audio Search | HusnainBlogger',
   description:
     'Find the right sound faster with free reels trending audio search: mood-matched search phrases for your niche, used inside Instagram. Find your audio now!',
   howTo: [
