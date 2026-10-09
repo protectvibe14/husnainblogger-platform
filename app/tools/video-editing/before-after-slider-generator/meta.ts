@@ -46,7 +46,7 @@ const DESCRIPTION =
   'Generate a before after slider generator embed — add your image URLs and labels, then paste the code into any page. Free, no signup. Try it now.';
 
 export const content: ToolContent = {
-  title: 'Before After Slider Generator 2026 – Free | HusnainBlogger',
+  title: 'Before After Slider Generator',
   description: DESCRIPTION,
   howTo: [
     'Type your BEFORE label and AFTER label (40 characters max each) — these appear as tags on the slider.',
