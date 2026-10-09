@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok POV Captions 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok POV Captions',
   description:
     'Build a free tiktok pov captions bank: add caption seeds and get POV caption templates with hashtag sets, all under the caption limit. Build yours now!',
   howTo: [
