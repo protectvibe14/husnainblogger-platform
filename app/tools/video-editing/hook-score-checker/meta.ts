@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Video Hook Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Video Hook Checker',
   description:
     'Use this video hook checker on your opening line: get a 0-100 checklist score, a criterion breakdown, and fix suggestions from a clear rubric. Score yours free.',
   howTo: [
