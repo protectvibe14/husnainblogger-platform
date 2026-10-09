@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Voice Pronunciation Fixer 2026 – Free | HusnainBlogger',
+  title: 'AI Voice Pronunciation Fixer',
   description:
     'Free ai voice pronunciation fixer 2026: Fix AI voice pronunciation fast: enter the misread word, pick your TTS engine, get. Fast, private, no signup - try it!',
   howTo: [
