@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Aesthetic Emoji Combos Copy Paste 2026 | HusnainBlogger',
+  title: 'Aesthetic Emoji Combos Copy Paste 2027 | HusnainBlogger',
   description:
     'Grab ready-to-paste aesthetic emoji combos for free: pick a vibe, choose how many you want, and copy combos for bios, captions and comments. Try it now!',
   howTo: [
