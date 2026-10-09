@@ -37,7 +37,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest Bio Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Pinterest Bio Ideas',
   description:
     'Create Pinterest bio ideas that fit the 160-character limit — enter your focus and keywords for short, searchable bio variants with your CTA. Try it free now!',
   howTo: [
