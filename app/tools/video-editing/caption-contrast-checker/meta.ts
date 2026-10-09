@@ -49,7 +49,7 @@ const DESCRIPTION =
   'Check with this free subtitle contrast checker — enter text and background colors for a WCAG ratio, AA/AAA verdict, and fix tips. Test your colors now.';
 
 export const content: ToolContent = {
-  title: 'Subtitle Contrast Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Subtitle Contrast Checker',
   description: DESCRIPTION,
   howTo: [
     'Enter your caption text color as a hex value, e.g. #FFFFFF.',
