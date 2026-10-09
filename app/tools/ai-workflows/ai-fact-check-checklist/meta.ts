@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Fact check ai content the honest way — a free 16-step verification workflow to confirm statistics, sources, quotes, and claims. Verify your draft now.';
 
 export const content: ToolContent = {
-  title: 'Fact Check AI Content 2026 – Free Tool | HusnainBlogger',
+  title: 'Fact Check AI Content',
   description: DESCRIPTION,
   howTo: [
     'Open the checklist with your AI-generated draft beside you.',
