@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'SVG Logo Composer: Free Maker 2026 – Free | HusnainBlogger',
+  title: 'SVG Logo Composer: Free Maker',
   description:
     'Build a real vector logo free: pick a shape, palette and text style, then copy or download the SVG markup. No signup — runs fully in your browser.',
   howTo: [
