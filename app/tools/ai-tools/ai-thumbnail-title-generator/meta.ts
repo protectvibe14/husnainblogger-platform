@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Thumbnail Title Generator 2026 – Free | HusnainBlogger',
+  title: 'AI Thumbnail Title Generator',
   description:
     'Generate clickable YouTube titles in 5 proven styles — curiosity gap, how-to, listicle, bold claim, or question — with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
