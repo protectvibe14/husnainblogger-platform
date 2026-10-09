@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Capcut Effects Order Planner 2026 – Free | HusnainBlogger',
+  title: 'Capcut Effects Order Planner',
   description:
     'Plan your CapCut effects order in seconds: pick a look and device tier for a correctly ordered stack with intensity and render-impact guidance. Start now!',
   howTo: [
