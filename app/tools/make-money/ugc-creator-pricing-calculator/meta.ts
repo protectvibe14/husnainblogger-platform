@@ -38,7 +38,7 @@ const DESCRIPTION =
   'Run this free ugc pricing calculator to quote packages — build an honest rate range from video count, usage rights, and posting add-ons. Start quoting now.';
 
 export const content: ToolContent = {
-  title: 'UGC Pricing Calculator 2026 – Free Tool | HusnainBlogger',
+  title: 'UGC Pricing Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter how many UGC videos the package includes in the videoCount field.',
