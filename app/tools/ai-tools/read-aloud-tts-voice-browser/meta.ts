@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Free Text-to-Speech Reader 2026 – Free | HusnainBlogger',
+  title: 'Free Text-to-Speech Reader',
   description:
     'Read text aloud free in your browser — pick a device voice, adjust rate and pitch, no signup. Uses your browser\u2019s built-in speech engine, nothing to download.',
   howTo: [
