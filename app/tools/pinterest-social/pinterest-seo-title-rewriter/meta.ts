@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Pinterest SEO Title Rewriter 2026 – Free | HusnainBlogger',
+  title: 'Pinterest SEO Title Rewriter',
   description:
     'Boost pinterest seo with this free title rewriter. Enter your draft and keyword to get front-loaded, under-100-character title variants instantly. Try it now!',
   howTo: [
