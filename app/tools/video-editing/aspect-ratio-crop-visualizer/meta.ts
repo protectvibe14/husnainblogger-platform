@@ -65,7 +65,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '16:9 to 9:16 Crop Preview 2026 – Free Tool | HusnainBlogger',
+  title: '16:9 to 9:16 Crop Preview',
   description:
     'Free 16:9 to 9:16 crop preview 2026: Preview a 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost,. Fast, private, no signup - try it!',
   howTo: [
