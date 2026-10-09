@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'AI Video Script Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'AI Video Script Generator',
   description:
     'Generate a complete video script — hook, beats, and call to action — for YouTube, TikTok, or Reels with your own free Gemini, Groq, or OpenRouter key. No signup, nothing uploaded.',
   howTo: [
