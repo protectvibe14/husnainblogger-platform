@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Topical Authority Map 2026 – SEO Clusters | HusnainBlogger',
+  title: 'Topical Authority Map',
   description:
     'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown. No signup. Fast & free Fast & free',
   howTo: [
