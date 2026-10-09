@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Instagram Giveaway Rules Template 2026 | HusnainBlogger',
+  title: 'Instagram Giveaway Rules Template 2027',
   description:
     'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist. Try it now.',
   howTo: [
