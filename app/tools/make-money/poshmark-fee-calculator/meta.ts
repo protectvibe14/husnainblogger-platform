@@ -45,7 +45,7 @@ const DESCRIPTION =
   'Free poshmark fee calculator 2026: see exactly what Poshmark takes and your net payout. Enter your sale price for the full fee breakdown. No signup, try it.';
 
 export const content: ToolContent = {
-  title: 'Poshmark Fee Calculator 2026 – Seller Fees | HusnainBlogger',
+  title: 'Poshmark Fee Calculator',
   description: DESCRIPTION,
   howTo: [
     'Enter your item sale price.',
