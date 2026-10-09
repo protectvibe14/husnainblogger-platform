@@ -29,7 +29,7 @@ const DESCRIPTION =
   'Free tiktok shop title 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'TikTok Shop Title Optimizer 2026 – Free | HusnainBlogger',
+  title: 'TikTok Shop Title Optimizer',
   description: DESCRIPTION,
   howTo: [
     'Type your product name into the "Product name" box — for example "insulated gym water bottle".',
