@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Podcast Guest Pitch Email 2026 – Free Tool | HusnainBlogger',
+  title: 'Podcast Guest Pitch Email',
   description:
     'Create a podcast guest pitch email free: enter the show, topic, and credentials — get 8 subject lines plus a ready-to-send pitch. Try it now.',
   howTo: [
