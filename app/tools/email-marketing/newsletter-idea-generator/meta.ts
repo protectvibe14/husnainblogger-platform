@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Newsletter Ideas Generator 2026 – Free | HusnainBlogger',
+  title: 'Newsletter Ideas Generator',
   description:
     'Free newsletter ideas generator 2026: Never run out of newsletter topics: enter your niche and audience to get up to 20. Fast, private, no signup - try it now!',
   howTo: [
