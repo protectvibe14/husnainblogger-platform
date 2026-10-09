@@ -31,7 +31,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '30 Day Content Plan Generator 2026 – Free | HusnainBlogger',
+  title: '30 Day Content Plan Generator',
   description:
     'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private, no signup -!',
   howTo: [
