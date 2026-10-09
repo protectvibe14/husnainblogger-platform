@@ -126,7 +126,7 @@ export function scoreReadability(text: string): ReadabilityResult {
 
   const result: ReadabilityResult = {
     fleschScore: Math.round(flesch * 10) / 10,
-    gradeLevel: Math.round(grade * 10) / 10,
+    gradeLevel: Math.max(0, Math.round(grade * 10) / 10),
     verdict: verdictFor(flesch),
     words: words.length,
     sentences: sentenceCount,
