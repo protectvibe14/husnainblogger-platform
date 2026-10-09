@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Content Angle Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Content Angle Generator',
   description:
     'Beat the blank page with this free content angle generator. Turn any topic into 12 ready-to-write angles for listicles, guides and more. Get angles now!',
   howTo: [
