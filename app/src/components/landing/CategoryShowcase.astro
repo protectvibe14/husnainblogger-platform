@@ -79,10 +79,10 @@ const { categories } = Astro.props;
     padding: var(--space-6);
     background: var(--color-surface-raised);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
+    border-radius: 5px;
     text-decoration: none;
     color: var(--color-text);
-    box-shadow: var(--shadow-sm);
+    box-shadow: rgb(238, 241, 245) 0px 0px 5px 5px;
     transition: all 0.25s ease;
     position: relative;
     overflow: hidden;
@@ -98,7 +98,7 @@ const { categories } = Astro.props;
   }
   .landing-cat:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: rgb(207, 212, 221) 0px 0px 15px 1px;
     border-color: var(--color-accent);
   }
   .landing-cat:hover::before { opacity: 1; }
@@ -106,7 +106,7 @@ const { categories } = Astro.props;
     flex-shrink: 0;
     width: 52px;
     height: 52px;
-    border-radius: var(--radius-lg);
+    border-radius: 5px;
     background: var(--gradient-gold);
     color: #fff;
     font-family: var(--font-display);

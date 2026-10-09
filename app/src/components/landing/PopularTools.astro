@@ -57,21 +57,21 @@ const { tools } = Astro.props;
     padding: var(--space-5);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
+    border-radius: 5px;
     text-decoration: none;
     color: var(--color-text);
     transition: all 0.25s ease;
   }
   .landing-tool-card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    box-shadow: rgb(238, 241, 245) 0px 0px 5px 5px;
     border-color: var(--color-accent);
   }
   .landing-tool-card__icon {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    border-radius: var(--radius-lg);
+    border-radius: 5px;
     background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark, #6d28d9));
     color: #fff;
     font-family: var(--font-display);
