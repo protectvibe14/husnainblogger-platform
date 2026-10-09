@@ -40,7 +40,7 @@ const DESCRIPTION =
   'Free tiktok challenge ideas 2026: get instant results in your browser. Instant, private, and mobile-friendly. No signup - try it free!';
 
 export const content: ToolContent = {
-  title: 'TikTok Challenge Creator Kit 2026 – Free | HusnainBlogger',
+  title: 'TikTok Challenge Creator Kit',
   description: DESCRIPTION,
   howTo: [
     'Type your challenge name — for example "Two-Minute Tidy" — and optionally your niche.',
