@@ -68,7 +68,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Freelance NDA Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Freelance NDA Template',
   description:
     'Draft a freelance NDA template fast: enter both parties, the term, and your info description for a sectioned draft. Not legal advice. Try it free!',
   howTo: [
