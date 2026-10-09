@@ -36,7 +36,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'URL Slug Optimizer 2026 – Free Tool | HusnainBlogger',
+  title: 'URL Slug Optimizer',
   description:
     'Shorten long URLs for better SEO. Paste any title or slug and this free url slug optimizer strips 173 English stop words into a clean permalink. Try it now!',
   howTo: [
