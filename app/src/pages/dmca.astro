@@ -1,0 +1,126 @@
+---
+/**
+ * pages/dmca.astro — DMCA / Copyright policy.
+ * Owner: Site.
+ *
+ * Standard DMCA takedown policy page (important for AdSense + trust).
+ */
+import BaseLayout from "../layouts/BaseLayout.astro";
+import settings from "../../../data/site-settings.json";
+
+const title = "DMCA Policy | HusnainBlogger";
+const description =
+  "HusnainBlogger DMCA copyright policy — how to report copyright infringement and our takedown procedure.";
+const email = (settings as any).contactEmail ?? "husnainblogger.com@gmail.com";
+---
+
+<BaseLayout title={title} description={description} canonical="https://husnainblogger.com/dmca/">
+  <main class="hb-legal">
+    <div class="hb-legal__hero">
+      <span class="hb-tool-eyebrow">Legal</span>
+      <h1>DMCA Copyright Policy</h1>
+      <p class="hb-legal__updated">Last updated: October 9, 2026</p>
+    </div>
+
+    <section class="hb-legal__section">
+      <h2>Our commitment</h2>
+      <p>
+        HusnainBlogger respects the intellectual property rights of others. All
+        tools, text, and design on this site are original creations. If you
+        believe any content on our site infringes your copyright, we will
+        respond promptly to valid takedown requests under the Digital Millennium
+        Copyright Act (DMCA).
+      </p>
+    </section>
+
+    <section class="hb-legal__section">
+      <h2>Filing a takedown notice</h2>
+      <p>
+        To report alleged copyright infringement, send an email to
+        <a href={`mailto:${email}`}>{email}</a> with the following information:
+      </p>
+      <ol>
+        <li>
+          Identification of the copyrighted work you claim has been infringed
+          (or a representative list if multiple works are involved).
+        </li>
+        <li>
+          Identification of the material on our site you claim is infringing,
+          including the specific URL(s) where it appears.
+        </li>
+        <li>
+          Your full name, address, telephone number, and email address.
+        </li>
+        <li>
+          A statement that you have a good-faith belief the use is not
+          authorized by the copyright owner, its agent, or the law.
+        </li>
+        <li>
+          A statement that the information in your notice is accurate, and
+          under penalty of perjury, that you are authorized to act on behalf
+          of the copyright owner.
+        </li>
+        <li>Your physical or electronic signature.</li>
+      </ol>
+    </section>
+
+    <section class="hb-legal__section">
+      <h2>Our response</h2>
+      <p>
+        Upon receiving a valid notice, we will remove or disable access to the
+        allegedly infringing material promptly — typically within 48 hours —
+        and notify the affected party where appropriate.
+      </p>
+    </section>
+
+    <section class="hb-legal__section">
+      <h2>Counter-notices</h2>
+      <p>
+        If you believe your content was removed by mistake, you may send a
+        counter-notice to the same email address with: identification of the
+        removed material and its former URL, your contact details, a
+        good-faith statement under penalty of perjury, consent to federal
+        court jurisdiction, and your signature.
+      </p>
+    </section>
+
+    <section class="hb-legal__section">
+      <h2>Repeat infringers</h2>
+      <p>
+        We do not host user uploads, so repeat-infringer scenarios do not
+        apply to this site. All content here is created and maintained by
+        the HusnainBlogger team.
+      </p>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .hb-legal {
+    max-width: var(--content-narrow);
+    margin: 0 auto;
+    padding: var(--space-16) var(--space-6) var(--space-20);
+  }
+  .hb-legal__hero { text-align: center; margin-bottom: var(--space-10); }
+  .hb-legal__hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: var(--space-4) 0 var(--space-2);
+  }
+  .hb-legal__updated { color: var(--color-muted); font-size: var(--text-sm); }
+  .hb-legal__section { margin-bottom: var(--space-8); }
+  .hb-legal__section h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+  .hb-legal__section p, .hb-legal__section li {
+    line-height: var(--leading-normal);
+    color: var(--color-text);
+    margin-bottom: var(--space-3);
+  }
+  .hb-legal__section a { color: var(--color-accent); font-weight: 600; }
+  .hb-legal__section ol { padding-left: var(--space-6); }
+</style>
