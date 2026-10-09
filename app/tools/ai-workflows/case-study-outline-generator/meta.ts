@@ -44,7 +44,7 @@ const DESCRIPTION =
   'Build a free case study template outline with verified-data placeholders — headline, challenge, solution, results, and quote sections. Create yours now.';
 
 export const content: ToolContent = {
-  title: 'Case Study Template 2026 – Free Tool | HusnainBlogger',
+  title: 'Case Study Template',
   description: DESCRIPTION,
   howTo: [
     'Enter your client type — for example dental clinic, SaaS startup, or real estate agency.',
