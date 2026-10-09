@@ -14,7 +14,7 @@ const DESCRIPTION =
   'Edit AI-written drafts with this free ai content editing checklist — humanize, fact-check, and polish articles, scripts, and emails. Start your checklist now.';
 
 export const content: ToolContent = {
-  title: 'AI Content Editing Checklist 2026 – Free | HusnainBlogger',
+  title: 'AI Content Editing Checklist',
   description: DESCRIPTION,
   howTo: [
     'Open the checklist whenever you finish an AI-generated draft.',
