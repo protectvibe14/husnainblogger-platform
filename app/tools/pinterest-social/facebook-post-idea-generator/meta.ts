@@ -56,7 +56,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Facebook Post Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'Facebook Post Ideas',
   description:
     'Generate free facebook post ideas with hooks, bodies, and CTAs. Pick a goal — engagement, traffic, or community — and get 5 drafts. Try it now!',
   howTo: [
