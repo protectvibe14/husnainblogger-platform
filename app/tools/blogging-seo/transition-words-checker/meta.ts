@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Transition Words Checker 2026 – Free Tool | HusnainBlogger',
+  title: 'Transition Words Checker',
   description:
     'Check transition word usage with this free transition words checker. Count 111 English phrases, see density per 100 words, and get a verdict. Try it now!',
   howTo: [
