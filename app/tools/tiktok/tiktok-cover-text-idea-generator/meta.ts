@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'TikTok Cover Text Ideas 2026 – Free Tool | HusnainBlogger',
+  title: 'TikTok Cover Text Ideas',
   description:
     'Get free tiktok cover text ideas: 8 big-bold cover lines capped at 25 chars for readability, with honest variants suggested for clickbait lines. Try it now!',
   howTo: [
