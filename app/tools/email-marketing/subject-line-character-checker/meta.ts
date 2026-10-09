@@ -22,7 +22,7 @@ const DESCRIPTION =
   'Check email subject line character counter length: exact counts, per-client truncation previews for Gmail, iPhone Mail, and Outlook. Try it free now.';
 
 export const content: ToolContent = {
-  title: 'Email Subject Line Character Counter 2026 | HusnainBlogger',
+  title: 'Email Subject Line Character Counter 2027',
   description: DESCRIPTION,
   howTo: [
     'Paste or type your subject line into the subject-line field.',
