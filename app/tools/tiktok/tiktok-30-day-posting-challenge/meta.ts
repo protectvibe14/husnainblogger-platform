@@ -25,7 +25,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: '30 Day TikTok Challenge 2026 – Free Tool | HusnainBlogger',
+  title: '30 Day TikTok Challenge',
   description:
     'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start today!',
   howTo: [
