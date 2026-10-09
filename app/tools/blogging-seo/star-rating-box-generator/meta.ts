@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Star Rating Generator 2026 – Free Tool | HusnainBlogger',
+  title: 'Star Rating Generator',
   description:
     'Generate a clean star rating box for your reviews in seconds. Set your 0–5 rating, copy the ready-to-paste HTML, and drop it into any post. Try it free!',
   howTo: [
