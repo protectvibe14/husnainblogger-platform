@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Listicle item counts scale with duration (3-8 items); durations under 15 seconds use the micro-pattern.',
     'Segment boundaries are rounded to whole milliseconds and always tile the full duration exactly.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

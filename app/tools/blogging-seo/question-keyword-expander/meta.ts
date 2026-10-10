@@ -94,14 +94,5 @@ export const content: ToolContent = {
     'Outputs are brainstorming idea seeds, not real "People Also Ask" data — validate phrasing against actual search results.',
     'Templates follow English question grammar; some combinations may read awkwardly for unusual seeds.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Question Keyword Expander',
-          item: 'https://husnainblogger.com/tools/blogging-seo/question-keyword-expander/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

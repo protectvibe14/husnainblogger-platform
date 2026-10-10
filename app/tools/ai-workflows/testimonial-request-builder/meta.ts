@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'The tool writes the request, never the testimonial. Any testimonial you publish must be written by the real client — never write or edit fake reviews.',
     'Only ask clients who genuinely used your product; ask permission before publishing any testimonial with their name.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

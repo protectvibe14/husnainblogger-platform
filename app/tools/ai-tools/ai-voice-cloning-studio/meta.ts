@@ -112,16 +112,7 @@ export const content: ToolContent = {
     'Voice cloning availability depends on your ElevenLabs plan — the tool reports the provider\'s error if your plan excludes it.',
     'ElevenLabs browser calls are not officially documented; CORS blocking is a known possibility, not a bug in this tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Voice Cloning Studio',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-voice-cloning-studio/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

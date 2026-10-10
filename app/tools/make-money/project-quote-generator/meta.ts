@@ -123,6 +123,5 @@ export const content: ToolContent = {
     'Rush multipliers above 5 trigger a sanity warning (the quote still computes).',
     'All amounts are USD; no market data or competitor pricing is used.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

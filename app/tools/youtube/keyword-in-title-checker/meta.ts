@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'The tool checks keyword presence only; it says nothing about search volume, competition, or ranking.',
     'Front-loading advice is a widely used best practice, not a guarantee of better performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -154,6 +154,5 @@ export const content: ToolContent = {
     'The tool checks tag syntax, not how X renders the card — X caches previews and has its own image requirements.',
     'The image-extension check is a heuristic: an unusual image URL still generates tags but triggers a warning.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

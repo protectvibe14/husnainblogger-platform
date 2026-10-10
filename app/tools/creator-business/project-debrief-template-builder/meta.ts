@@ -90,6 +90,5 @@ export const content: ToolContent = {
     'Section prompts are fixed templates to guide reflection — they do not analyze your project.',
     'The document is a starting point; add your real numbers and details before sharing it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

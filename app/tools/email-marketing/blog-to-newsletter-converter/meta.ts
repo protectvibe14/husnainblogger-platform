@@ -140,6 +140,5 @@ export const content: ToolContent = {
     'Posts under 30 words are rejected; content over 20,000 characters is truncated with a notice.',
     'Section detection is heuristic (headings, short lines, numbered lines) — check the output against your post.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

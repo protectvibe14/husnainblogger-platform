@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Copy comes from fixed templates — starting points that need your own offer details, compliance review, and voice. This tool makes no performance or delivery claims.',
     'The tool writes ad copy only; it has no Facebook Ads Manager integration and cannot create, launch, or manage ads.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

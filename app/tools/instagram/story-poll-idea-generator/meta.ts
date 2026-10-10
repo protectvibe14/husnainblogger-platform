@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Options like "Team A / Team B" are placeholders you should replace with your own choices.',
     'Poll ideas are starting points — adapt the wording to your voice before posting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

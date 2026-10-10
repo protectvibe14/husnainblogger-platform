@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'inkType only affects paperback; fileSizeMB only affects eBooks. Money rounds half-up to 2 decimals.',
     'Not financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

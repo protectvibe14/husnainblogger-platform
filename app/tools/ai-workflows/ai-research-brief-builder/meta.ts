@@ -113,6 +113,5 @@ export const content: ToolContent = {
     "Depth controls bank size: quick = 4 sub-questions + 3 checks, standard = 6 + 5, deep = 8 + 7.",
     "Source rows are capped at 15; when you add none, 5 suggested starting points are shown, not endorsed.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

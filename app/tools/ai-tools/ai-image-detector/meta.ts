@@ -98,16 +98,7 @@ export const content: ToolContent = {
     'The Hive multipart field name ("media") is unverified and may need correcting against Hive\'s docs.',
     'Outputs are signals, never verdicts — do not present them as proof to others.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Image Detector',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-image-detector/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

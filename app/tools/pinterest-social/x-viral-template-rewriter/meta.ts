@@ -111,14 +111,5 @@ export const content: ToolContent = {
     'Weighted character counting is an approximation: URLs count as 23 characters and everything else as 1; X weights some scripts and emoji differently.',
     'No facts, stats, or numbers are invented — every rewrite reuses your draft\'s own words, trimmed at a word boundary to fit the budget.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Viral Template Rewriter',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

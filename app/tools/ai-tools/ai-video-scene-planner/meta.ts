@@ -109,14 +109,5 @@ export const content: ToolContent = {
     'Visual prompts are plain shot descriptions; the actual look depends on the video tool and settings you use.',
     'Target length must be at least the scene count in seconds, so every scene gets 1+ second.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Video Scene Planner for AI Video',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-video-scene-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

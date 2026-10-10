@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'The tone only changes the opening line\u2019s voice; it does not rewrite the core prompt.',
     'Prompts are starting points — adapt the wording to your voice before posting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

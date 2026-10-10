@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Word count is informational only (pace context) and does not change the fee.',
     'All amounts are USD per project.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

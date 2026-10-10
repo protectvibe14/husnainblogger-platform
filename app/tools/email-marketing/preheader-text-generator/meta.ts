@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Apple Mail on iOS 18.2+ may show AI-generated summaries instead of your preheader.',
     'Summaries longer than 300 characters are shortened with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

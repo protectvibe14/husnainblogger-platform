@@ -106,6 +106,5 @@ export const content: ToolContent = {
     "Chains need 2–12 steps; {goal} and each step's output variable are the only auto-defined variables.",
     "Undefined variables are reported as warnings; the chain never invents their meaning.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

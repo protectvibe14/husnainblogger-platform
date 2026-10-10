@@ -141,14 +141,5 @@ export const content: ToolContent = {
     'Timeliness criteria ("posted 3 times in 7 days", "followers grew in 30 days") rely on your memory of your own analytics, not live data.',
     'The rubric is fixed; TikTok features and best practices change over time.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Account Audit Checklist',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

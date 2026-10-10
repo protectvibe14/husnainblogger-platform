@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Slide plans come from fixed templates, not AI; quality comes from the topic you enter.',
     'The 35-slide cap follows TikTok\'s Photo Mode rule; requests above it are clamped, never silently accepted.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

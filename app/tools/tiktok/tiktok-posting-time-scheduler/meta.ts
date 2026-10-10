@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'This is a plan generator, not a scheduler: it cannot post, queue, or automate TikTok uploads.',
     'Timezone validation checks the IANA name format (Region/City), not a live timezone database.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

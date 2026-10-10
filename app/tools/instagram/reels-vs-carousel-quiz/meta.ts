@@ -164,14 +164,5 @@ export const content: ToolContent = {
     'The quiz does not read your Instagram analytics; a tool with access to your real account data could give a more precise answer.',
     'Weights reflect general traits of each format, not current Instagram algorithm behavior, which changes over time.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Reels vs Carousel Quiz',
-          item: 'https://husnainblogger.com/tools/instagram/reels-vs-carousel-quiz/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

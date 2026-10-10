@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Motion is linear between keyframes; your editor\'s own easing applies on top.',
     'The tool never processes your image — output is a coordinate plan only.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

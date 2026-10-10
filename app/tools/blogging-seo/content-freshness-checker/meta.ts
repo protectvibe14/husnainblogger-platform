@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Date math uses whole UTC days; "today" is the day you run the check.',
     'The priority score is a heuristic triage aid, not a ranking prediction.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

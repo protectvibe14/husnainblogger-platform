@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'Prompts are fixed templates with your niche and pillars filled in — not AI-written scripts. Adapt each prompt to your style before filming.',
     'The tool plans the calendar only; it does not schedule or post reels for you.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'Only use tracks you have licensed or that are explicitly royalty-free — never commercial songs without permission.',
     'Taste is yours: the brief narrows the search, but you still need to preview and judge each track yourself.',
   ],
-  jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Background Music for Youtube Videos Finder | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/music-mood-matcher/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Music Mood Matcher',
-          item: 'https://husnainblogger.com/tools/youtube/music-mood-matcher/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -86,6 +86,5 @@ export const content: ToolContent = {
     "The tool never sends emails and never verifies that the blog accepts guest posts.",
     "At most 10 pitches per run; the template wording is the same for every pitch.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

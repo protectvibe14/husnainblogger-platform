@@ -94,6 +94,5 @@ export const content: ToolContent = {
     'Non-English hooks skip the pattern banks with a note — only length and formatting are scored (max 30).',
     'Same hook text always produces the same score — the rubric is fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -173,6 +173,5 @@ export const content: ToolContent = {
     'The annualized note uses simple (non-compounding) arithmetic and is informational only.',
     'Check that your contract actually permits the fee you intend to charge.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

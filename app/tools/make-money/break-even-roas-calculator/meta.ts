@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'A 0% margin is rejected with an error message (division by zero), and ad spend must be greater than 0 for actual ROAS.',
     'Gross margin should reflect cost of goods sold; excluding fees or shipping makes the break-even figure misleadingly low.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

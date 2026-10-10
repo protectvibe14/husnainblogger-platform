@@ -201,6 +201,5 @@ export const content: ToolContent = {
     'Same schedule is applied for every marketplace in v1 — KDP terms can differ by territory.',
     'KU (Kindle Unlimited) page-read revenue is not included — treat it as a separate line.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

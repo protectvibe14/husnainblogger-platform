@@ -144,14 +144,5 @@ export const content: ToolContent = {
     'All rates are user-entered; this tool contains no provider prices and makes no claim about what any provider charges.',
     'Character counts for word-count-only mode are estimated at 5 characters per word.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Voiceover Timing & Cost Calculator',
-          item: 'https://husnainblogger.com/tools/ai-tools/voiceover-timing-cost-calculator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

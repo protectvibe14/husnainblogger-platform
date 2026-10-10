@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'English stop words only — other languages pass through unchanged.',
     'Changing a published post\u2019s slug changes its URL; add a 301 redirect from the old URL to avoid broken links.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

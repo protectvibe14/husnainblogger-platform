@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'The 5–20 second clear window matches YouTube end-screen element timing; YouTube may change its interface.',
     'If you skip the next-video topic, a generic fallback phrase ("the next video in this series") fills bridge lines.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

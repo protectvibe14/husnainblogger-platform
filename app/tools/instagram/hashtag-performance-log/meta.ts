@@ -79,6 +79,5 @@ export const content: ToolContent = {
     'Engagement rate = (likes + comments) ÷ reach × 100, computed from your entered numbers only.',
     'Results compare only the sets you log; reach is also affected by content, timing, and followers.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

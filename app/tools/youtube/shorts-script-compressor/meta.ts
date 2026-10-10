@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Estimated seconds assume a steady speaking pace with no pauses, b-roll beats, or on-screen text pauses.',
     'Topic keywords are the 12 most frequent content words in your text; in a very short or repetitive draft they may be uninformative.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

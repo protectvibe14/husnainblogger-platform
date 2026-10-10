@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Check every claim against your real product before publishing; invented claims are deceptive.',
     'Avoid pasting unreleased product details you consider confidential.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Product Description Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-product-description-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

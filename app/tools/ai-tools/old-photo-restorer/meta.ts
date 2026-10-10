@@ -129,14 +129,5 @@ export const content: ToolContent = {
     'Photos are processed at up to 1200px on the long edge to keep the page responsive.',
     '2x upscale enlarges the image — it does not add genuine detail.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Old Photo Restorer',
-          item: 'https://husnainblogger.com/tools/ai-tools/old-photo-restorer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

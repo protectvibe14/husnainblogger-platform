@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'The tool inserts your words as-is; it cannot verify claims, numbers, or offers in your input.',
     'It drafts copy only — it never sends emails and cannot verify consent; follow applicable email laws for your audience.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

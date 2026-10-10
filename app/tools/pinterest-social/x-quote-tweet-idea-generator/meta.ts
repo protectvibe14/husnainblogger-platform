@@ -102,14 +102,5 @@ export const content: ToolContent = {
     'Weighted character counting (URL = 23, emoji/CJK = 2) is an approximation of X’s proprietary counting.',
     'Same context + stance always returns the same 5 drafts; no reach or virality is predicted.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Quote Tweet Idea Generator',
-          item: 'https://husnainblogger.com/tools/pinterest-social/x-quote-tweet-idea-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

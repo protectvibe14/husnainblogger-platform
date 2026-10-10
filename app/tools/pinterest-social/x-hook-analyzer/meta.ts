@@ -122,14 +122,5 @@ export const content: ToolContent = {
     'Character weighting (URL = 23, emoji/CJK = 2) is an approximation of X’s proprietary counting.',
     'Suggestions are generic hook-writing advice, not tailored to your niche or audience.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Hook Analyzer',
-          item: 'https://husnainblogger.com/tools/pinterest-social/x-hook-analyzer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

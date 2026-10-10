@@ -104,14 +104,5 @@ export const content: ToolContent = {
     'Emoji in quotes renders via the viewer\'s system font, so appearance may vary slightly across devices.',
     'Download and canvas rendering require a modern browser with JavaScript enabled.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Tweet Quote Card Maker',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

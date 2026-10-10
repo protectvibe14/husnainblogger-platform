@@ -116,6 +116,5 @@ export const content: ToolContent = {
     "Task ordering assumes you complete each task before starting its dependents.",
     "Supported formats are fixed to the 8 listed; the tool adds no platform-specific rules.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Giveaway rules and tax obligations vary by country; this is not legal advice.',
     'Ideas come from fixed template banks, not AI; wording variety is limited.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

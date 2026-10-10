@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Phrases come from 10 fixed templates, not AI — they are starting points, so try small variations if a phrase returns few results.',
     'Trending status changes fast: a phrase that works today may surface different tracks next week, so re-check inside Instagram.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

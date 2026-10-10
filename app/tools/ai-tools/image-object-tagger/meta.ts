@@ -107,14 +107,5 @@ export const content: ToolContent = {
     'Scores are model confidence, not certainty — the top label can be wrong.',
     'Single dominant-subject photos work best; crowded scenes dilute the ranking.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Image Object Tagger',
-          item: 'https://husnainblogger.com/tools/ai-tools/image-object-tagger/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

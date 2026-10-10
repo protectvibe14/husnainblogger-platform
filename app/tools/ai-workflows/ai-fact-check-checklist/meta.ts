@@ -66,6 +66,5 @@ export const content: ToolContent = {
     'A checklist of verification STEPS only — it does not verify facts, contact sources, or detect hallucinations automatically.',
     'Verification quality depends on your own source checking; start with the highest-risk claims.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

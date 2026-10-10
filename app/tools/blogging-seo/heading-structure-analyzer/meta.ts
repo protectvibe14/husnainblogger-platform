@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Analyzes only the HTML you paste — it cannot fetch your live page or see headings rendered by JavaScript.',
     'Headings are found with pattern matching; malformed or unclosed tags may not be detected.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

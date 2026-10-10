@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Results round to the nearest $10 — wide bands do not justify dollar precision.',
     'Not financial or business advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

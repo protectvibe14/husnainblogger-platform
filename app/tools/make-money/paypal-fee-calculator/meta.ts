@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'The 3–4% currency-conversion spread is shown as a note only and is never folded into the fee math.',
     'Micropayment and merchant-volume schedules are out of scope; results are estimates for planning, not financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

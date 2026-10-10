@@ -115,14 +115,5 @@ export const content: ToolContent = {
     'Prompts are template-assembled text — review the wording and adjust details (age, ethnicity, accessories) for your needs.',
     'Output quality depends on the image generator you paste into; prompt syntax support varies by tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Headshot Prompt Pack Builder',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-headshot-prompt-pack-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

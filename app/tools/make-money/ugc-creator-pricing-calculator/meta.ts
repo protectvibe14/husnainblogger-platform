@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'The base rate assumes video without posting; organic-only delivery is the floor scenario.',
     'Actual prices vary by niche, creator portfolio, and negotiation — this is guidance, not a guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

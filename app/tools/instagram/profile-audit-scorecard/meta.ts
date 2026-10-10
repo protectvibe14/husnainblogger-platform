@@ -162,14 +162,5 @@ export const content: ToolContent = {
     'Timeliness criteria ("posted in the last 14 days", "highlights updated in 60 days") rely on your memory, not live data.',
     'The rubric is fixed and English-focused; platform rules (like the 150-character bio limit) may change over time.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Profile Audit Scorecard',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

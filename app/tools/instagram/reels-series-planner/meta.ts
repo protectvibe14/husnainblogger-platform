@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'Series with more than 6 episodes reuse hooks in order; reword repeats so the series does not feel repetitive.',
     'The tool plans structure, not performance — it cannot predict views, reach, or follower growth.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

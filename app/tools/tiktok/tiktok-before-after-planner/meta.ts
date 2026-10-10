@@ -90,14 +90,5 @@ export const content: ToolContent = {
     'The honesty reminder is fixed text; following it is your responsibility when you post.',
     'One topic per run, max 150 characters; the same topic always produces the same plan.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Before/After Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Do not publish bold claims you cannot back up.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Hook Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-hook-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

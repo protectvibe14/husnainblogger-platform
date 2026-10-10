@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'The "other" service type intentionally adds no service-specific questions; it yields generic sections only.',
     'Answers are collected by you outside the tool — this generates the questionnaire, not a form backend.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

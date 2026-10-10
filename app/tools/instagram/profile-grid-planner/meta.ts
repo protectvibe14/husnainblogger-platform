@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Empty slots are treated as placeholders (gaps), not deleted posts.',
     'Caption limit of 2,200 characters follows Instagram\'s published limit; Instagram may change it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

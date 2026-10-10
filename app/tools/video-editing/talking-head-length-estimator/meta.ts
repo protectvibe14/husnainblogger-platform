@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'CJK scripts are counted by character; mixed scripts fall back to whichever system dominates.',
     'Results are deterministic: the same script and settings always produce the same estimate.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

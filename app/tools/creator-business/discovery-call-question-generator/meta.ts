@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'The question sets reflect common freelancing sales practice; adapt them to your own style and market.',
     'This tool does not record calls, give sales advice, or guarantee outcomes.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

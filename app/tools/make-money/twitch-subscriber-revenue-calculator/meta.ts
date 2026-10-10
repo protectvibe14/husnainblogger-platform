@@ -122,6 +122,5 @@ export const content: ToolContent = {
     'Gift and Prime subs are treated with the same split; Plus Program tiers are user-confirmed (qualification thresholds are not checked).',
     'Results are estimates in USD; taxes and currency conversion are not included.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

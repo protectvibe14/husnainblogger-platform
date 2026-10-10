@@ -95,6 +95,5 @@ export const content: ToolContent = {
     'Titles are assembled from fixed banks (6 prefixes × 10 hooks); they are pattern-based suggestions, not AI-written copy.',
     'This tool has no access to TikTok: it cannot check what titles are trending or guarantee any title will attract viewers.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

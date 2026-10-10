@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Income potential ratings are qualitative effort-based labels; the tool has no platform payout data and invents none.',
     'Any dollar target is arithmetic on the monthly revenue you entered (a 10–30% band) and is labeled an estimate, never a prediction.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

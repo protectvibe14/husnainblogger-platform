@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'The tool invents no facts, dates, locations, or quotes; accuracy of the announcement is your responsibility.',
     'Inputs are trimmed to documented limits with a visible notice when overlong.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

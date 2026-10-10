@@ -129,6 +129,5 @@ export const content: ToolContent = {
     'The third-party gateway output stacks Shopify\u2019s surcharge on top of your gateway\u2019s own fee rate, which you must enter yourself.',
     'Results are estimates for planning, not accounting or financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

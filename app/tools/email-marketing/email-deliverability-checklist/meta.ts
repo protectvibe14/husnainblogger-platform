@@ -67,6 +67,5 @@ export const content: ToolContent = {
     'Items cite general platform rules; your provider’s exact requirements may change — verify against Gmail/Yahoo sender guidelines.',
     'Progress is stored in your browser only; clearing site data resets it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

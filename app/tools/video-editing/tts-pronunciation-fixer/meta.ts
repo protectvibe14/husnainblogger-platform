@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Non-Latin scripts are marked unsupported — the tool does not romanize other scripts.',
     'Engine notes are fixed guidance, not live documentation — engine features may change.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

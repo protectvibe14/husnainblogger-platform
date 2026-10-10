@@ -92,6 +92,5 @@ export const content: ToolContent = {
     'Unknown platforms return an error, never a guessed spec sheet.',
     'Codec and file-size rows are baselines; exact limits vary by account, region, and upload method.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

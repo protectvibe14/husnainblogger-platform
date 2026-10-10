@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'On Facebook, hashtags carry low weight: use 1-3 per post; they are a small helper, never the strategy.',
     'Topics are normalized (lowercase, letters and numbers only, max 30 chars); symbols-only topics are rejected.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

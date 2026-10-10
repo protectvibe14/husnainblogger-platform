@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Subject slots are fixed template patterns with [bracket] placeholders — no actual email copy is written. You write the emails yourself.',
     'Sequences are capped at 12 emails and 14 days between sends; longer campaigns need multiple plans.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

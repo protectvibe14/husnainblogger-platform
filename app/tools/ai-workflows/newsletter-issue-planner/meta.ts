@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Duplicate section names are removed (case-insensitive, first occurrence kept).',
     'The tool plans layout only; it never writes newsletter content.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

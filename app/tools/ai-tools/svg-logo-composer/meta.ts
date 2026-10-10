@@ -126,14 +126,5 @@ export const content: ToolContent = {
     'Four fixed shapes and six fixed palettes; no custom colors or uploaded artwork.',
     'Text uses system fonts so the SVG renders identically everywhere without font files.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SVG Logo Composer',
-          item: 'https://husnainblogger.com/tools/ai-tools/svg-logo-composer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'The tool suggests categories to ask about — it never determines that any expense is deductible for you.',
     'Country-specific rules are not encoded; the same expense may be treated very differently depending on where you live and work.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

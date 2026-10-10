@@ -123,6 +123,5 @@ export const content: ToolContent = {
     'This is a string rule engine, not live data: it cannot read your Instagram profile or know what actually ranks in search.',
     'Keyword coverage measures your own input keywords only — it is not a ranking score and predicts nothing about discoverability.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

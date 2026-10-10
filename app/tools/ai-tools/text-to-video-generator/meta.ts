@@ -110,16 +110,7 @@ export const content: ToolContent = {
     'Durations are fixed by the Veo 3 endpoint (4s, 6s, 8s) — custom lengths are not supported.',
     'fal.ai browser calls are not officially supported by fal.ai; CORS blocking is a known possibility, not a bug in this tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Text-to-Video Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/text-to-video-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

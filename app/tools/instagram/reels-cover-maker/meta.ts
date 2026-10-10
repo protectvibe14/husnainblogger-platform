@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Upload image size and type cannot be verified by the logic module; the Builder UI checks the file before it is submitted (keep uploads under 10MB and at least 1080x1920 px).',
     'Safe-zone cropping values are general guidance — Instagram adjusts crop areas over time, so always preview before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

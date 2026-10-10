@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'The policy only works if you enforce it the way it is written — pick the stance you will truly follow.',
     'No tracking of commenter behavior — this tool generates text; it does not moderate comments.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

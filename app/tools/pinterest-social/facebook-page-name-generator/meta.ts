@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'The 75-character page-name limit is enforced on every candidate; over-long candidates are dropped.',
     'Inputs containing "official", "verified", "facebook", "meta", or "fb" are rejected to stay within Facebook\u2019s naming rules.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

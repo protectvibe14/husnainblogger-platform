@@ -107,14 +107,5 @@ export const content: ToolContent = {
     'The 60-character cap is a legibility guideline for 1500×500 banners, not an official X rule.',
     'Safe-zone guidance is static and based on X\'s documented banner/avatar layout; X may change its design over time.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Banner Text Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

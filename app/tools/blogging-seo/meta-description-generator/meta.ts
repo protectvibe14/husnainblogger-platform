@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'The 140–160 character range is a widely published display convention, not a guarantee; Google truncates and rewrites descriptions on its own.',
     'No rankings are promised or implied — meta descriptions are not a direct ranking factor.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

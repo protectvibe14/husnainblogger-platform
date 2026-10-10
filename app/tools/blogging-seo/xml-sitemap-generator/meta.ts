@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'One sitemap file supports at most 50,000 URLs; longer lists fail with an error rather than being silently cut off.',
     'Invalid lines are skipped and reported — check "Skipped lines" so no page is accidentally left out.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

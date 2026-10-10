@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'Crop guidance assumes trims are taken evenly from opposite edges; your editor may crop differently.',
     'This tool plans ratios — it does not generate or edit images.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

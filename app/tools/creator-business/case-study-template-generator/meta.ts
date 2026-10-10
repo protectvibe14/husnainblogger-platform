@@ -138,6 +138,5 @@ export const content: ToolContent = {
     'Get the client\'s written permission before publishing their name, metrics, or quote.',
     'Sections you leave empty (industry, quote) are omitted or marked as placeholders.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

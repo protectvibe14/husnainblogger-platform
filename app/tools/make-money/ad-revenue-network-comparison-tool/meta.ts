@@ -157,6 +157,5 @@ export const content: ToolContent = {
     'Traffic minimums are typical published requirements, not fetched live and not guaranteed current; eligibility is labeled an estimate.',
     'The comparison ignores each network\'s ad formats, fill rates, and site-speed impact — earnings alone do not make a network "best".',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

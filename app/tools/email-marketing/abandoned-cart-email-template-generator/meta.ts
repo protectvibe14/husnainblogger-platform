@@ -129,6 +129,5 @@ export const content: ToolContent = {
     'This tool does not connect to your store or know which carts were abandoned.',
     'It cannot predict recovery rates or deliverability.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -91,8 +91,7 @@ export const content: ToolContent = {
     'Simplified text keeps key facts but drops nuance — not for legal/medical/technical use.',
     'Reading levels are approximate; check the result fits your actual audience.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

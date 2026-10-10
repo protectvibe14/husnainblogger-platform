@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Fill in the bracketed placeholders (timestamps, links, corrections) with your real details before posting.',
     'Only one comment can be pinned per video — choose the goal that matters most for each upload.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

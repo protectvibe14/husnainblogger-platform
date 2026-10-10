@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Question picks are template-based, not personalized by AI — customize them with your own voice before posting.',
     'Best questions come from your real comments; use the bank as a starting point, not a script you must follow.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

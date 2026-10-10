@@ -117,14 +117,5 @@ export const content: ToolContent = {
     'A block never guarantees reach — tag choice is a small factor compared to content quality and audience fit.',
     'Supported niches are limited to the 16 bundled ones; anything else is rejected with the full list shown.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Hashtag Block Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

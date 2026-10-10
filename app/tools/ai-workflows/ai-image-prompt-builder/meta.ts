@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'Art style must match a preset (or falls back to photorealistic); aspect ratio must be one of 5 presets.',
     'Results depend on the image model you paste the prompt into — prompt quality is not a guarantee of image quality.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

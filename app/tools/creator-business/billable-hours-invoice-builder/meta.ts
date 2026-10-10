@@ -151,6 +151,5 @@ export const content: ToolContent = {
     'Client name, invoice number, due date, payment details, and tax rate are read from the first line item only and apply to the whole invoice.',
     'All amounts are rounded to 2 decimals; totals are computed from your hours and rates only.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

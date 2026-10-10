@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'The mobile-fit flag uses an approximate ~41-character iPhone Mail limit; actual rendering varies.',
     'Generated lines are starting points — always adapt them to your brand voice and A/B test before sending.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

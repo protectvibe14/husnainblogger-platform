@@ -112,16 +112,7 @@ export const content: ToolContent = {
     'No speaker labels (diarization) — the output is one continuous transcript.',
     'Results are a best-effort AI transcript; verify anything critical.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Audio Transcriber',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-audio-transcriber/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

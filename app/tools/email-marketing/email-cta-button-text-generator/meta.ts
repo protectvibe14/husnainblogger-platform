@@ -113,6 +113,5 @@ export const content: ToolContent = {
     'Word counts use whitespace splitting; emoji count as one character each.',
     'Actions longer than 60 characters are shortened with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

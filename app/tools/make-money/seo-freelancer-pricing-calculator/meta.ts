@@ -129,6 +129,5 @@ export const content: ToolContent = {
     "Audits are modeled as flat projects (base + per-page add-on); retainers and link building scale with monthly hours on hourly bands.",
     "Real freelance rates vary by niche, experience, region, and demand — treat every result as an estimate, not a researched market rate.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'The light-flicker warning at 240 fps+ is a heuristic — test under your actual lighting.',
     'Same inputs always produce the same plan — the formulas are fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

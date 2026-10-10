@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'Without an incentive, no offer block is invented — add a real discount or perk before sending.',
     'This tool cannot predict re-engagement rates or deliverability.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

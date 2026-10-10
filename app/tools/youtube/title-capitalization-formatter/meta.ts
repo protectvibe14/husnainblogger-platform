@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Character counts are graphemes; YouTube counts UTF-16 code units, so an emoji-heavy title may be 1–2 characters longer in YouTube\'s counter than reported here.',
     'Titles over 100 graphemes are rejected before formatting; the ~70-character search-truncation flag is a conservative display guideline.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

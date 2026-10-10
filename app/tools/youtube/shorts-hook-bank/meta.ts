@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'Templates cycle in bank order when you request more than 10 hooks in one style.',
     'The topic is inserted verbatim; check that grammar and capitalization read naturally in each line.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

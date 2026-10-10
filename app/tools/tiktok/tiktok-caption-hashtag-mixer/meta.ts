@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'No reach, view, or virality claims are made — the mixes are organizational suggestions only.',
     'The 2,200-character envelope is a conservative caption limit; hashtags are trimmed automatically when a long caption would exceed it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

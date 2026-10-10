@@ -95,14 +95,5 @@ export const content: ToolContent = {
     'This is a fill-in template — the tool does not name your pillars or invent subtopics for you.',
     'Format suggestions rotate from a fixed bank of 8 formats, not from analysis of your niche.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Pillars Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-content-pillars-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

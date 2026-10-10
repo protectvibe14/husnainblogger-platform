@@ -97,14 +97,5 @@ export const content: ToolContent = {
     'No verified X Spaces title character limit was found; the 70-character guidance is ours, not a platform rule.',
     'Same topic + guests always returns the same 8 titles; try different wording for variety.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Spaces Title Generator',
-          item: 'https://husnainblogger.com/tools/pinterest-social/x-spaces-title-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

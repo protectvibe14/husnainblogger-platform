@@ -133,6 +133,5 @@ export const content: ToolContent = {
     'Letterbox mode means no crop is possible — pad with bars or use a wider source.',
     'Results are deterministic: the same inputs always produce the same rectangle.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

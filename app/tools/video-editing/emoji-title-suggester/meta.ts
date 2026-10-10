@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Emoji rendering varies by OS and device; a suggestion that looks great on one phone may differ on another — preview before publishing.',
     'Keyword matching is simple substring matching in bank order; it does not understand context or sarcasm.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

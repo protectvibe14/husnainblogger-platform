@@ -154,6 +154,5 @@ export const content: ToolContent = {
     'The image-extension check is a heuristic: an image URL without a common extension still generates tags but triggers a warning.',
     'Recommended title/description lengths are warnings only — longer values still produce valid tags.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

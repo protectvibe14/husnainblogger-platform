@@ -131,6 +131,5 @@ export const content: ToolContent = {
     'Scripts only — the tool does not send messages automatically. Instagram forbids automated messaging; every DM is sent manually by you.',
     'Single-word keywords work best as triggers; multi-word keywords are accepted but harder for followers to type correctly.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

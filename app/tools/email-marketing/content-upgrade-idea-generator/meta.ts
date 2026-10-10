@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'Placement suggestions are general best-practice signup locations, not predictions about your conversion rate.',
     'This tool covers post-specific content upgrades; standalone lead magnets are covered by the Lead Magnet Idea Generator and quiz formats by the Quiz Lead Magnet Idea Generator.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

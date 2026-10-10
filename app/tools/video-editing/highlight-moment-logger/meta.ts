@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'Timestamps are entered by you; the tool cannot detect highlights in your footage.',
     'Ratings are your own 1–5 judgment; the tool does not score clip quality or predict performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

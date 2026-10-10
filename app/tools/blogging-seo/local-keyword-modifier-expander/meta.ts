@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'The built-in city list covers 24 major US/UK/CA/AU cities; smaller towns and non-English markets need custom locations.',
     'Templates are fixed and generic — some combinations may sound unnatural for your niche and should be filtered by hand.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

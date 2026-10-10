@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Alt text is assembled from 8 fixed templates around your own description — it is structured text, not AI-written, and it never invents details you did not describe.',
     'The keyword is woven in at most once; the tool does not measure keyword density or promise any SEO outcome.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

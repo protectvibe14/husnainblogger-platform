@@ -151,6 +151,5 @@ export const content: ToolContent = {
     "The ROI figure is an estimate from your inputs, not a prediction; referral quality and conversion rates are not modeled.",
     "Percentages are bounded 0–100 and all inputs must be finite, non-negative numbers.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

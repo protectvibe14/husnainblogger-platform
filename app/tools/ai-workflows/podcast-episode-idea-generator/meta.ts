@@ -108,6 +108,5 @@ export const content: ToolContent = {
     'Segment breakdowns follow fixed length rules; actual segment timing depends on your pacing.',
     'The tool cannot tell you which ideas your audience wants — check listener questions and comments.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

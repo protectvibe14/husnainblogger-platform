@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'The 25-character cap is cover readability guidance, not a TikTok rule.',
     'This tool produces cover text only; it does not design or render cover images.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

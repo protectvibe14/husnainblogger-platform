@@ -97,14 +97,5 @@ export const content: ToolContent = {
     'Rhyme detection is an end-of-line approximation; near-rhymes and internal rhymes are not reliably caught.',
     'English-only: the vowel-group rules do not apply to other languages.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Lyrics Rhyme & Syllable Checker',
-          item: 'https://husnainblogger.com/tools/ai-tools/lyrics-rhyme-syllable-checker/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

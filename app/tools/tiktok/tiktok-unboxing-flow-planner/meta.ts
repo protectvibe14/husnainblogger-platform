@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'ASMR-style is triggered by the "ASMR / Sensory" niche or "asmr" in the product name; it adds sound cues but cannot mix or check audio.',
     'The 7-shot sequence is a fixed structure that works for most product types, not a rule every video must follow.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

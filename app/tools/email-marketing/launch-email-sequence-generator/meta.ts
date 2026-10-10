@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'The T-7 to T+7 cadence is a common launch pattern, not a guarantee of best send times for your audience.',
     'This tool cannot predict open rates, sales, or deliverability.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

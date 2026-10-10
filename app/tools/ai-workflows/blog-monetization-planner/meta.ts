@@ -109,14 +109,5 @@ export const content: ToolContent = {
     'All monthly figures are broad illustrative estimates from a fixed table - not real revenue data and not financial advice.',
     'Ranges do not account for your niche, country, pricing, or conversion rates, which all change real results.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Monetization Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/blog-monetization-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'The ~75-character group-name limit is secondary-sourced and applied as guidance, not a guarantee — verify in Facebook before publishing.',
     'Adapt the wording to your community\u2019s voice and check the name isn\u2019t already taken on Facebook.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

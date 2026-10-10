@@ -108,6 +108,5 @@ export const content: ToolContent = {
     'Characters with no styled equivalent (e.g. most emoji, F/Q/S/X in small caps) pass through unchanged.',
     'Styled characters can double the character count; the tool warns if you exceed Instagram\'s 2,200-character caption limit.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

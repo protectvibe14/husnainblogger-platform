@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'Headlines are assembled from fixed copywriting templates — starting points that need your own offer details and voice, not AI-written copy.',
     'This tool makes no delivery or performance claims: it cannot predict or guarantee ad results.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

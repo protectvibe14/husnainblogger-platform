@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'Render impact is qualitative guidance from fixed per-effect costs, not a benchmark measured on your device.',
     'Redundancy detection only catches pairs from a fixed blur-family list; creative stacking of two filters is a style choice, not always a mistake.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

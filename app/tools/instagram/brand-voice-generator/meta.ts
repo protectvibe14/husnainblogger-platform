@@ -123,14 +123,5 @@ export const content: ToolContent = {
     'The tool assembles fixed phrase banks — it does not analyze your writing and cannot learn your real style.',
     'Phrase picks are a curated starting point; refine the wording until it sounds like you.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Brand Voice Generator',
-          item: 'https://husnainblogger.com/tools/instagram/brand-voice-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

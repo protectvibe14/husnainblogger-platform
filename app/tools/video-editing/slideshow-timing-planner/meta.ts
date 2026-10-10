@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Holds under 1.5s raise a readability note but are still planned.',
     'Output is a timing plan only — no media rendering, and holds exclude export time.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

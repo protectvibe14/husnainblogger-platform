@@ -95,14 +95,5 @@ export const content: ToolContent = {
     'Matrices are capped at 20 topics, 10 formats, and 200 cells; larger lists should be split into batches.',
     'The tool does not judge which ideas are good — that decision is yours.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Ideas Matrix Generator',
-          item: 'https://husnainblogger.com/tools/ai-workflows/content-ideas-matrix-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

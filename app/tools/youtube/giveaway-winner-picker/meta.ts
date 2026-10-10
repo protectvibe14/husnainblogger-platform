@@ -133,14 +133,5 @@ export const content: ToolContent = {
     'The included contest-policy reminders are general guidance, not legal advice; you are responsible for compliance.',
     'Winner identity is whatever text you paste per line — the tool does not verify that entries are real viewers.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Giveaway Winner Picker',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

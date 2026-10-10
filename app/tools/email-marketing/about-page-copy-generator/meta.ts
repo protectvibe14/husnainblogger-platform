@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'It cannot verify credentials or claims you enter; you are responsible for the accuracy of everything on your about page.',
     'Inputs longer than 300 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Templates are generic and may need rewording for unusual niches or non-English audiences.',
     'The statistics angle uses the current year; verify any stats you publish from primary sources.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

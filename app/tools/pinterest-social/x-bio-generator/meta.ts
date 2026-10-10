@@ -121,14 +121,5 @@ export const content: ToolContent = {
     'The 160-character cap is enforced by this tool as a conservative limit; very long inputs are compressed with a warning.',
     'Bios are plain text on X, so URLs belong in the profile website field, not in the bio.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Bio Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

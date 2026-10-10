@@ -127,6 +127,5 @@ export const content: ToolContent = {
     'The tool caps plans at 600 seconds (10 minutes). Longer uploads need special account eligibility — check the TikTok app.',
     'No performance outcome is promised or estimated; the tool plans structure, not reach.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

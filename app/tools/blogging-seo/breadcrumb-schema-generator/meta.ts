@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'The markup reflects the crumb names and URLs you typed — the tool cannot verify they match your site\'s real navigation, and no URL is fetched.',
     'Google recommends breadcrumb markup mirror the visible breadcrumb trail on the page.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

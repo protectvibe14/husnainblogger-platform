@@ -130,6 +130,5 @@ export const content: ToolContent = {
     'Values are encoded per RFC 3986 (space becomes %20); conventions such as lowercase hyphenated values are recommended for clean GA4 reports but not enforced.',
     'The URL host may be lowercased by the parser; the path, query, and fragment are otherwise preserved as typed.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

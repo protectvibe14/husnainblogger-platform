@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'Ad spend budgets and content production costs (shoots, editors) are not included.',
     'All amounts are USD per month.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

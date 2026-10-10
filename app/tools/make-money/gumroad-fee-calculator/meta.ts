@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Gumroad is the merchant of record (sales tax handled by Gumroad); there is no monthly fee modeled here.',
     'Results are estimates for planning, not accounting or financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

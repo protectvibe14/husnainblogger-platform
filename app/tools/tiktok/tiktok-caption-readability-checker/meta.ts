@@ -122,6 +122,5 @@ export const content: ToolContent = {
     'Syllable counts come from a fixed heuristic, so scores are estimates; non-English captions are labeled English-model only.',
     'TikTok\'s 2,200-character caption limit is enforced as a warning, not a hard error, so you can still score drafts.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

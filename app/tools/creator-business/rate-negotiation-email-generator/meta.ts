@@ -154,6 +154,5 @@ export const content: ToolContent = {
     'The tool never sends email; sending happens outside the tool.',
     'Amounts are formatted as USD with no currency conversion; adjust the currency manually for other regions.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

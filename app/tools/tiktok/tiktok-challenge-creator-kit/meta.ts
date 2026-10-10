@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'If a brand sponsors your challenge, disclose it with #ad in the caption and do not use a trademarked hashtag without permission.',
     'All templates are fixed — this is not AI copywriting, and nothing here guarantees your challenge will go viral.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

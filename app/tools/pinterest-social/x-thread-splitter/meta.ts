@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'The weighted count is a conservative approximation (URLs count 23, non-ASCII characters count 2); the 280 budget is the documented default, not a live check of X\u2019s current rules.',
     'A single unbreakable token longer than the budget (extremely rare; URLs are kept whole at 23) is hard-split rather than dropped — the summary tells you if this happened.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

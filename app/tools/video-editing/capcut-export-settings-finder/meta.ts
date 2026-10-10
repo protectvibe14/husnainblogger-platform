@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Frame rates above 60 fps are capped at 60 for broad player compatibility.',
     'An unrecognized platform falls back to safe H.264 / 1080p / 30 defaults with a warning rather than erroring.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Shoot-time notes are heuristic estimates, not guarantees.',
     'This enumerates general camera coverage; the B-roll-specific version is a separate tool (B-Roll Shot List Generator).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

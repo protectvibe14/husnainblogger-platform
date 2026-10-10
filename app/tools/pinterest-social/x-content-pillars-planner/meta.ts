@@ -112,14 +112,5 @@ export const content: ToolContent = {
     'A single-word niche is treated as narrow and capped at 3 pillars; this is a heuristic, not a rule of marketing.',
     'The planner has no performance data and cannot tell you which pillar your followers actually prefer — check X analytics for that.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Content Pillars Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

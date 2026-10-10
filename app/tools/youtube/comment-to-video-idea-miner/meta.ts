@@ -88,6 +88,5 @@ export const content: ToolContent = {
     'Sentences longer than 200 characters are skipped as rants; output caps at 25 ideas per run.',
     'Only English-language patterns are detected; comments in other languages are likely skipped.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

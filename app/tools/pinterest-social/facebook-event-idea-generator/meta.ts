@@ -96,6 +96,5 @@ export const content: ToolContent = {
     'Ideas are fixed templates with your business type filled in — starting points, not AI-written event plans. Rewrite descriptions in your own voice.',
     'The cover note intentionally reports conflicting cover-size sources instead of claiming one verified size; verify against Facebook\u2019s current preview.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

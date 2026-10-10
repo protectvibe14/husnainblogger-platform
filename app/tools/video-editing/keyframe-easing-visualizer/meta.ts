@@ -133,6 +133,5 @@ export const content: ToolContent = {
     'The duration input only contextualizes the curve; the math is duration-independent.',
     'No rendering engine is involved — nothing here plays an actual animation.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

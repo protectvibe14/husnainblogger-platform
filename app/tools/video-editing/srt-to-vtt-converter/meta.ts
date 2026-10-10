@@ -86,6 +86,5 @@ export const content: ToolContent = {
     'Cues with end time at or before start time are dropped as errors — the converter never invents replacement timings.',
     'Input is capped at 2,000,000 characters to protect the browser; unicode text is preserved byte-identical.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

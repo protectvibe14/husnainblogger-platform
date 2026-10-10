@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'The tool drafts concepts only; it cannot create the channel in Instagram or predict subscriber counts.',
     'Name availability is not checked — verify your chosen channel name in the Instagram app before launch.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -148,14 +148,5 @@ export const content: ToolContent = {
     'YouTube allows up to 6 membership levels — the planner enforces this verified limit.',
     'Perk suggestions come from a fixed 12-perk bank by price threshold — suggestions only, not a guarantee members will value them.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Membership Tier Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

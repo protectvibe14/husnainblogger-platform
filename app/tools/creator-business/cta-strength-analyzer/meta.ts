@@ -91,6 +91,5 @@ export const content: ToolContent = {
     'Urgency is rewarded as a copy signal — but false urgency ("ending soon" on a permanent offer) damages trust; the output says so.',
     'The tool analyzes text only; it cannot see your button design or page context.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

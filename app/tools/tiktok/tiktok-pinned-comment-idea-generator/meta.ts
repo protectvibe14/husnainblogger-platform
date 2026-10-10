@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'This tool generates comment text only; it cannot pin comments — pinning happens in the TikTok app.',
     'CTAs are written value-first; adapt the wording to your voice before posting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

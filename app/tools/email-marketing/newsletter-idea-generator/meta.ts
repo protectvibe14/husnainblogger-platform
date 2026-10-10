@@ -118,6 +118,5 @@ export const content: ToolContent = {
     '“Why it works” notes describe general format strengths, not measured performance data.',
     'This tool cannot predict open rates or subscriber growth.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

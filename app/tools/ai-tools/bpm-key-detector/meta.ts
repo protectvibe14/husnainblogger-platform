@@ -111,14 +111,5 @@ export const content: ToolContent = {
     'Analyzes up to 2 minutes of audio; longer files are truncated.',
     'Best on music with a clear, steady beat; complex or rubato material degrades results.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'BPM & Key Detector',
-          item: 'https://husnainblogger.com/tools/ai-tools/bpm-key-detector/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

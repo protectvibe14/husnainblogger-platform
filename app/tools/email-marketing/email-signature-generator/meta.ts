@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'One fixed professional layout and color palette; the tool does not offer theme or image/logo customization.',
     'Very long inputs are truncated with a visible notice (an HTML comment in the HTML, a bracketed note in the plain text).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

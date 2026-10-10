@@ -96,6 +96,5 @@ export const content: ToolContent = {
     'No rates are suggested or estimated; every amount comes from your own input.',
     'Negotiation outcomes depend on the brand, your audience, and the deal — no results are guaranteed.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

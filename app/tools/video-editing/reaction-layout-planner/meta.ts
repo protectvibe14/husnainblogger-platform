@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Platform UI overlays (TikTok right rail, YouTube end screens) change over time; safe-area notes are guidance, not guarantees.',
     'Facecam sizes and margins are fixed rules (22/32/45% width, 2.5% margin), not measurements of your footage.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

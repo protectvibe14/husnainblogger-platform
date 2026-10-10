@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'The share link opens X (Twitter)\'s intent endpoint — posting still requires the reader\'s own X account.',
     'Tweet text is limited to 280 characters, counted in Unicode code points so emoji count as one.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

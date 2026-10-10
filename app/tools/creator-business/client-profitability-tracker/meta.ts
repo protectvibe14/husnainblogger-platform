@@ -133,6 +133,5 @@ export const content: ToolContent = {
     'Margin is shown as n/a when a client’s revenue is 0; negative margins are flagged as losing money rather than hidden.',
     'Results are estimates from your entered numbers, not accounting advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

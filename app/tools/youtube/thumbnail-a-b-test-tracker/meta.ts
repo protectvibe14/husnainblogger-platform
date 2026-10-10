@@ -70,6 +70,5 @@ export const content: ToolContent = {
     'YouTube\'s own "Test & Compare" uploads three thumbnails and is the reliable source of real test data; use the native test when possible.',
     'External factors (traffic sources, seasonality) are not controlled by this log — treat results as directional.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

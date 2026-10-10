@@ -109,14 +109,5 @@ export const content: ToolContent = {
     'Keyword overlap uses simple token matching — it does not understand synonyms, so "JS" will not match "JavaScript".',
     'The tool reads English text best; other languages may fail the verb and header checks.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'ATS Resume Checker',
-          item: 'https://husnainblogger.com/tools/ai-tools/ats-resume-checker/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

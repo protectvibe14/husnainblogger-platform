@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'Lesson slots rotate through a fixed 4-3-5 pattern; fractional lesson minutes are rounded up.',
     'Duration estimates are simple arithmetic (slots × lesson length), not a pacing recommendation.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

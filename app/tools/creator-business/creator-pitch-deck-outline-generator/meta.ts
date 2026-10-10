@@ -96,6 +96,5 @@ export const content: ToolContent = {
     'The tool never invents stats, rates, or results — every placeholder must be filled with your real numbers.',
     'A convincing deck still needs your real analytics screenshots.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

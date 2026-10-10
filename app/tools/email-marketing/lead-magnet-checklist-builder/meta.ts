@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Progress tracking lives in the browser (localStorage); clearing site data resets it.',
     'The checklist is general planning guidance — it does not replace testing your actual signup flow end to end.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

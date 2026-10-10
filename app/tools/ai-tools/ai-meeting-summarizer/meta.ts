@@ -91,8 +91,7 @@ export const content: ToolContent = {
     'The summarizer never invents attendees or decisions, but it can miss nuance.',
     'Avoid pasting confidential meeting content; provider-side handling follows the provider’s policy.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

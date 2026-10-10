@@ -109,14 +109,5 @@ export const content: ToolContent = {
     'Only the first 5000 characters of a prompt are scored.',
     'English-focused: action verbs and cue lists are English.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Prompt Quality Analyzer',
-          item: 'https://husnainblogger.com/tools/ai-workflows/prompt-quality-analyzer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

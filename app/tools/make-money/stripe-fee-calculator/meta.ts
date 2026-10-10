@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'ACH\u2019s $5 cap applies to the final stacked fee; the reverse "charge this" amount uses piecewise math so the cap is respected.',
     'Results are estimates for planning, not accounting or financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

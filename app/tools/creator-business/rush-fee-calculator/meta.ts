@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'A rush percent of 0 returns the base price unchanged.',
     'Percentages above 200% are rejected as likely typos; 100–200% computes with a caution note.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

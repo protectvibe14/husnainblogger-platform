@@ -158,6 +158,5 @@ export const content: ToolContent = {
     'Blank answers default to neutral ("partially", half credit) rather than blocking the score.',
     'What works varies by niche and audience — use the score as a design checklist, not a guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -91,6 +91,5 @@ export const content: ToolContent = {
     'Matches are plain keyword substrings, not semantic matches; it will not find related phrases you did not list as keywords.',
     'Suggestions are candidates, not commands — only add a link where the anchor fits naturally for readers.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

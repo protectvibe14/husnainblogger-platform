@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'The "no business" switch only works when your business field says things like "no business", "none", or "personal" — anything else uses the business track.',
     'The Mon/Wed/Fri cadence is a fixed starting suggestion, not a proven optimal schedule — adjust to what you can sustain.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

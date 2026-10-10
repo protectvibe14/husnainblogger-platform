@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'Reading speeds outside 40-300 wpm are clamped to that range with a warning.',
     'Scripts over 10 minutes get a suggestion to split into sections; scripts over 20,000 characters are rejected.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

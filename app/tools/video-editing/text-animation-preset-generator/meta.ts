@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'Durations under 400ms raise a readability warning but still generate.',
     'Preview timing assumes a standard 60fps display; actual rendering depends on the browser or editor.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

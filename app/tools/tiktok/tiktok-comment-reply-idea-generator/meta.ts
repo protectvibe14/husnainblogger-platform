@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Abuse detection is a simple 10-word keyword list, not a content-moderation system — it can miss subtle hostility.',
     'No engagement outcome is promised; the tool drafts reply ideas, not results.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'Downloads are assumed to be real per-episode downloads; the tool cannot verify download authenticity or fraud.',
     'Actual rates vary by niche, audience demographics, episode length, and negotiation.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

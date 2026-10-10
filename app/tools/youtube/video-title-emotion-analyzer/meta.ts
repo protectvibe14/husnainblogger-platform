@@ -93,6 +93,5 @@ export const content: ToolContent = {
     'Word presence is not proof of emotional impact; the tool never claims to predict viewer feelings or click-through rate.',
     'Matching is word-boundary based, so partial matches (e.g. "celebration" for "celebrate") do not count.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

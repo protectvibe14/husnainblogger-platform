@@ -98,16 +98,7 @@ export const content: ToolContent = {
     'AI output can be wrong or outdated — verify anything important before acting on it.',
     'The keyless llm7.io lane is a community-run demo with no SLA; it may be slow, rate-limited, or unavailable.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Free AI Chatbot (Bring Your Own Key)',
-          item: 'https://husnainblogger.com/tools/ai-tools/free-ai-chatbot-byok/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

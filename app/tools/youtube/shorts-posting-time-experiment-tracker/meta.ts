@@ -70,6 +70,5 @@ export const content: ToolContent = {
     'The best slot is seasonal: re-run the test when your audience mix, school terms, or holidays change.',
     'Progress is saved in your browser\u2019s localStorage only; clearing site data resets it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

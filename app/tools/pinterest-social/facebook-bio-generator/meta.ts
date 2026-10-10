@@ -134,6 +134,5 @@ export const content: ToolContent = {
     'Character limits (101 personal, 255 Page) reflect Facebook\u2019s documented limits; if Facebook changes them, re-check before publishing.',
     'If an assembled bio exceeds the limit it is truncated at a word boundary with an ellipsis — reword your inputs if the trimmed result feels incomplete.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

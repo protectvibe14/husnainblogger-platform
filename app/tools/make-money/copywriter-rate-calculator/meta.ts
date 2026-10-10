@@ -134,6 +134,5 @@ export const content: ToolContent = {
     'Entering custom low/high rates overrides the benchmark band with your own trusted figures.',
     'All amounts are USD; no currency conversion is performed.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

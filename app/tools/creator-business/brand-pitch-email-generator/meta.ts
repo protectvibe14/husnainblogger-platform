@@ -167,6 +167,5 @@ export const content: ToolContent = {
     'Templates are starting points, not send-ready guarantees: personalizing one or two lines (a real product mention, a mutual connection) materially improves reply rates.',
     'No sending happens here — the tool produces a draft you copy into your own email client.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'The 72-word stopword list is fixed; niche slang may be filtered or kept depending on the list.',
     'Idea seeds are fixed templates filled with frequent terms — suggestions, not guaranteed video ideas.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

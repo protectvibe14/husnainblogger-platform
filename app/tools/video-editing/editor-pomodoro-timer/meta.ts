@@ -127,6 +127,5 @@ export const content: ToolContent = {
     "The live ticking countdown is UI (app shell); this logic only generates the session plan.",
     "Sessions longer than 8 hours produce a warning, not an error — the plan is still returned.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

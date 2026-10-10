@@ -118,35 +118,5 @@ export const content: ToolContent = {
     'The two columns stack vertically on screens under 600px.',
     '1–10 items per side; each item max 200 characters; title max 100 characters.',
   ],
-  jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Pros and Cons Box Generator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pros and cons box generator 2026: Ready-to-paste pros & cons box with minimal inline styles — works in any blog theme. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pros & Cons Box Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

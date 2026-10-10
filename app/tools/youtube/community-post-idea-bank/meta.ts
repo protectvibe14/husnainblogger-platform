@@ -123,14 +123,5 @@ export const content: ToolContent = {
     'Character-limit guidance is soft only: the real limit is an unverified estimate (sources vary ~1000-1500 characters).',
     'Poll option counts and quiz answer styles follow YouTube community conventions, not official rules.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Community Post Idea Bank',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

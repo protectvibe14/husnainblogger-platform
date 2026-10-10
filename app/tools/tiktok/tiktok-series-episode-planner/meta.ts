@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Long-form note: plan each episode in 600-second-or-shorter sections; 60-minute uploads need special account eligibility — check the TikTok app.',
     'No performance outcome is promised; the tool plans episode structure, not reach.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -131,14 +131,5 @@ export const content: ToolContent = {
     'Outputs are template-assembled text, not AI output — review and edit the wording before using it for important work.',
     'Midjourney parameter syntax can change; the --v 6 flag reflects the template as written, not a live lookup.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Midjourney & Flux Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-tools/midjourney-flux-prompt-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'The tool never invents follower counts, rates, or stats — add your real numbers yourself.',
     'Copy comes from a fixed template bank, not AI; always personalize before sending.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

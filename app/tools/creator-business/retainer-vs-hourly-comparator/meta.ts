@@ -180,6 +180,5 @@ export const content: ToolContent = {
     'A blank overage rate defaults to your hourly rate (surfaced in the notes).',
     'Break-even is null when the two cost lines never cross (e.g. one model is always cheaper).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

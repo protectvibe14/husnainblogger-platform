@@ -89,6 +89,5 @@ export const content: ToolContent = {
     "The tool formats only the details you enter — it writes nothing about the episode itself.",
     "Chapters and links keep the order you entered them; nothing is reordered or generated.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

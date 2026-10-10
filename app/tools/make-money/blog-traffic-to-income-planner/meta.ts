@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'The annual projection is a straight ×12 of the monthly total — it does not model traffic growth, seasonality, or rate changes.',
     'Ad income assumes every session serves ads; invalid traffic and ad blockers are ignored.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

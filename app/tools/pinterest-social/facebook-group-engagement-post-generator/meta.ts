@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'Drafts are conversation-led and never use engagement-bait wording; adapt them to your voice before posting.',
     'This tool generates text only — posting to Facebook is manual; it does not automate publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -132,6 +132,5 @@ export const content: ToolContent = {
     'Pin count always equals pins per week times the number of weeks in the month; requests above 21 per week are capped with a note.',
     'Seasonal merging covers 12 events only; check the schedule note to see which events applied to your month.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

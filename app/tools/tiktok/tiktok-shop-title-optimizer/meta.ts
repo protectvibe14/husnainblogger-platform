@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'The 255-character cap reflects TikTok Shop\'s product-name limit; the keyword-stuffing guard (max 3 repetitions) is this tool\'s own heuristic, not a published platform rule.',
     'The tool cannot check whether a title is already used by another seller or whether your keywords match real TikTok search demand.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

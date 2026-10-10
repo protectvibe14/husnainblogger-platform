@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Non-Latin-majority lines are left completely untouched by every rule.',
     'The change log is capped at 200 entries; transformations still apply beyond the cap.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

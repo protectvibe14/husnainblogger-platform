@@ -93,6 +93,5 @@ export const content: ToolContent = {
     'The #ad disclosure line is a template reminder, not legal advice; you are responsible for FTC and local disclosure rules.',
     'Maximum 10 items per run; longer 60-second scripts include an objection-handler beat that 15s scripts skip.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

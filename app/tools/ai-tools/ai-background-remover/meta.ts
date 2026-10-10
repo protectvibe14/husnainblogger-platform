@@ -105,16 +105,7 @@ export const content: ToolContent = {
     'The output is a PNG with transparency; it does not add shadows, reflections or new backgrounds.',
     'Animated GIFs are processed as a single still frame.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Background Remover',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-background-remover/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

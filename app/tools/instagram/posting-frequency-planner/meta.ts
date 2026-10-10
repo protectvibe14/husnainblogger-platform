@@ -128,14 +128,5 @@ export const content: ToolContent = {
     'The plan does not use your Instagram analytics; it cannot optimize timing or frequency from your real audience data.',
     'Even spacing is a simple starting rule, not a guarantee of better reach.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Posting Frequency Planner',
-          item: 'https://husnainblogger.com/tools/instagram/posting-frequency-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

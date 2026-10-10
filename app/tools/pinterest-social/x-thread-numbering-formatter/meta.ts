@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'The 280 weighted-character budget is a conservative approximation (URLs count 23, non-ASCII characters count 2) — confirm in X before posting.',
     'Overflow after numbering is flagged for manual trimming and never auto-cut; only existing 1/N-style markers are stripped, other text is untouched.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

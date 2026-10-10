@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'The tax buffer uses a simple effective-rate division and is not tax advice — consult a tax professional for your jurisdiction.',
     'All amounts are USD; results are estimates based on your own inputs.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

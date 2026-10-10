@@ -150,6 +150,5 @@ export const content: ToolContent = {
     'The tool knows nothing about tax brackets, deductions, credits, or filing thresholds — it multiplies your profit by your rate, nothing more.',
     'Quarterly payments are estimated as annual/4 for simplicity; real estimated-tax rules (safe harbors, due dates, penalties) are not modeled.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

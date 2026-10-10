@@ -108,14 +108,5 @@ export const content: ToolContent = {
     'Availability is not checked: popular handles may already be taken, so verify on X itself.',
     'Handles are lowercased; X treats handles as case-insensitive.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Username Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -140,6 +140,5 @@ export const content: ToolContent = {
     'The ±20% range is a sensitivity illustration around your inputs, not a market band — never a single "correct price".',
     'Money rounds half-up to 2 decimals. Not financial or business advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

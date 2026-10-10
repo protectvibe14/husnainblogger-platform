@@ -92,6 +92,5 @@ export const content: ToolContent = {
     'Trailers are capped at 20 episodes per script; longer series should be split into multiple trailers.',
     'The montage cues are filming directions, not an editing timeline — adapt them to your actual footage.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

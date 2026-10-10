@@ -66,6 +66,5 @@ export const content: ToolContent = {
     'Progress is saved in your browser\'s localStorage only; clearing site data resets it.',
     'Item details reference typical YouTube recommendations; verify current specs in YouTube Studio.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

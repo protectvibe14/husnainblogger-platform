@@ -152,6 +152,5 @@ export const content: ToolContent = {
     '"Best time" notes are general guidance, not personalized to your audience.',
     'Platforms not in the spec table are marked UNVERIFIED; their specs are never guessed.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

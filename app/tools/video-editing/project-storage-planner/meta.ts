@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'Proxy comparison models proxies at 720p / 8 Mbps (estimate); your actual proxy settings may differ.',
     'Drive recommendations are general guidance, not product recommendations.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

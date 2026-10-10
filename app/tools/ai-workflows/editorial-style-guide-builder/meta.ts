@@ -113,6 +113,5 @@ export const content: ToolContent = {
     "Unanswered core sections show a Decide later placeholder; they are not filled in for you.",
     "At least one rule for the Voice & Tone section is required; rules are capped at 40 per guide.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

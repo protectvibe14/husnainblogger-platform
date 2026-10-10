@@ -107,14 +107,5 @@ export const content: ToolContent = {
     'The first pillar you list is treated as your primary pillar and always gets the largest share.',
     'The planner has no performance data and cannot tell you which pillar your followers actually prefer — check your Insights for that.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Content Pillars Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

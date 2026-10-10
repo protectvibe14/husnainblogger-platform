@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'Every output includes a disclosure reminder; disclosure rules vary by country.',
     'Handle validation is format-only — it does not check whether the account exists.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

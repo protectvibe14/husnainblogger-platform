@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'The sales sheet is a starting draft — adjust the CTA and wording to your brand before sending.',
     'This is the generic builder by design; niche versions (e.g. wedding videographer, online coach packages) add niche-specific presets.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Word budgets are arithmetic splits of your target; adjust them to fit your style.',
     'Custom section input is capped at 12 sections; topic text is truncated at 120 characters with a notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

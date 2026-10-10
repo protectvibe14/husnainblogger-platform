@@ -99,6 +99,5 @@ export const content: ToolContent = {
     "The view-based floor uses an estimated $2–$6 CPM; actual deal prices vary by niche, engagement, audience quality, and region.",
     "Average views should reflect recent typical videos, not a single viral outlier — outliers inflate the view-based floor.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

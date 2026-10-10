@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Safe-zone guidance is advisory text — this tool never renders anything on a video frame.',
     'Sentence splitting follows punctuation rules; unusual punctuation may split differently than you expect.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

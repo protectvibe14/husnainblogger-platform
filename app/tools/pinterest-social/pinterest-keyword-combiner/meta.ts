@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Outputs are brainstorming idea seeds only — the tool has no access to Pinterest search volume, competition, or trend data, and it must never be read as providing those.',
     'Max 10 seed keywords and a 500-combo hard cap keep the list usable; very similar seeds may still produce near-duplicate ideas.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

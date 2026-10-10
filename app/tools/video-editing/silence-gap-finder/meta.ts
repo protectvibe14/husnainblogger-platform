@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'An empty result honestly means no gaps at the current settings — not an error.',
     'Same values always produce the same gaps — the algorithm is fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

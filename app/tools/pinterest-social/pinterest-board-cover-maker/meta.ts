@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Palette, typography, and layout picks are deterministic from the board name (FNV-1a hash), so the same board name always returns the same spec; a brand color overrides only the accent.',
     'Pinterest shows board covers as squares but may crop them to a circle on desktop profiles — the cover tips remind you to keep the title inside the central area.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

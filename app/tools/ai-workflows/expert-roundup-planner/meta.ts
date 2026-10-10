@@ -126,6 +126,5 @@ export const content: ToolContent = {
     "The timeline is a fixed starting point (Day 0 to Day 24); adjust the dates to your publishing schedule.",
     "Expert count is limited to 3–30 per plan.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

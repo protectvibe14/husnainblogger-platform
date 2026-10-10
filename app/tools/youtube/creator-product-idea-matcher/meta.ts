@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'Ideas are generic per niche; they are not personalized to your channel\'s topic or audience.',
     'No pricing, revenue estimates, or demand guarantees are given — validate with your own audience.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

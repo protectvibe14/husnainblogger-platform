@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Slide counts above 10 are clamped to 10 with a note; 3–10 is treated as the readable carousel range.',
     'Value slides cycle in bank order when the slide count exceeds an angle\'s value bank.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

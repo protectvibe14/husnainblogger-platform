@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'The 80-character bio cap is a TikTok platform rule; the ≤24-character handle note is guidance from a single third-party source, labeled as such.',
     'Notes about LIVE access and full link-in-bio features reflect TikTok’s published 1,000-follower rule and may change.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

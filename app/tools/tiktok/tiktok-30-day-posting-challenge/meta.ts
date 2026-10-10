@@ -92,14 +92,5 @@ export const content: ToolContent = {
     'Rest days (7, 14, 21, 28) are engagement days by design, not skipped days.',
     'Check-off state lives in your browser\'s localStorage via the page UI; this tool only generates the calendar.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok 30-Day Posting Challenge',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

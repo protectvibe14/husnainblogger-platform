@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'A 100% margin or 100% platform fee makes the price unsolvable and is rejected as invalid input.',
     'Results are estimates in USD; taxes and currency conversion are not included.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

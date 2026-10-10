@@ -96,6 +96,5 @@ export const content: ToolContent = {
     'The same 8 items apply across Instagram, TikTok, YouTube, and X with minor interpretation differences (e.g. highlights vs banner).',
     'Completeness is not a growth guarantee — it measures first-impression readiness, not content quality or algorithm favor.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

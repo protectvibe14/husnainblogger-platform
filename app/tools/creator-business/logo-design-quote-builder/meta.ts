@@ -94,6 +94,5 @@ export const content: ToolContent = {
     'Usage scope labels describe the option you picked; they are not legal terms — put final terms in your contract.',
     'The quote total is an ESTIMATE assembled from your inputs, not a binding offer.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

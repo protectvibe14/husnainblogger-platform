@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Always replace the {name} slot; unfilled placeholders look automated.',
     'For legal issues, threats, or serious complaints, a human should write and review the reply.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'Up to 22 items per run; "critical" flags are editorial judgment, not measured impact.',
     'Platform-specific items are general guidance; always confirm current upload limits in the platform app.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

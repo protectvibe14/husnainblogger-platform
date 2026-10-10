@@ -113,14 +113,5 @@ export const content: ToolContent = {
     'URL check is format-only (must start with http:// or https://); nothing is fetched or verified.',
     'Decisions are recommendations from a fixed rule set, not guarantees — editorial judgment still applies, especially for "delete".',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Audit Decision Tool',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

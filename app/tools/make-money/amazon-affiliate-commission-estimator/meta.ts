@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'The category list should be verified by the user at use time; verify the current rate on Amazon before making decisions.',
     'Returns, cancellations, and fees are not modeled — the output is a gross commission estimate, not a payout guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

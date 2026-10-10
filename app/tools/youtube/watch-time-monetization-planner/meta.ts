@@ -150,6 +150,5 @@ export const content: ToolContent = {
     'Only valid public watch time counts; Shorts watch hours never count toward the 4,000-hour requirement.',
     'Meeting the thresholds does not guarantee monetization — YouTube\'s policy review and the 1,000-subscriber requirement still apply.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -102,14 +102,5 @@ export const content: ToolContent = {
     'Milestones come from a fixed template - they are not personalized advice for your niche or market.',
     'Past launch dates are flagged in the summary; enter a future date to plan a real upcoming launch.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: '90-Day Blog Launch Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/90-day-blog-launch-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

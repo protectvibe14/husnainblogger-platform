@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'Assumes constant referrals and smooth monthly churn: no seasonality, refunds, upgrades, downgrades, or plan changes.',
     'The program\'s recurring cap is user-entered; some programs pay one-time only or cap recurring months.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Topic matching is simple text comparison (exact or containment), so paraphrased titles may be missed or mismatched.',
     'A gap is not a recommendation — uncovered topics may be uncovered because they perform badly; validate demand yourself.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

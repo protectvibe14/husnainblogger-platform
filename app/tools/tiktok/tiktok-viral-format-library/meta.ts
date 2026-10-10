@@ -95,6 +95,5 @@ export const content: ToolContent = {
     'Formats are proven structures, not guarantees; results depend on execution, niche, and consistency.',
     'Niche substitution is a text fill — entries stay generic enough to fit any niche.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

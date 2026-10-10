@@ -111,14 +111,5 @@ export const content: ToolContent = {
     'Each task block is a fixed 30-minute estimate; real work times will vary by piece and format.',
     'Large batches can total more hours than fit in one day - the summary shows the full estimate so you can split it.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Batching Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/content-batching-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

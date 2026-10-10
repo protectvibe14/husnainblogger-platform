@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Scene splitting follows line breaks — a paragraph on one line becomes a single scene.',
     'The 42-character caption wrap is a readability guideline, not a TikTok rule.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

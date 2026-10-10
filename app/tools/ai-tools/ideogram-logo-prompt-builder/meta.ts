@@ -136,14 +136,5 @@ export const content: ToolContent = {
     'Prompts are template-assembled text — adjust the wording for your brand voice before generating.',
     'Text-in-image rendering varies by tool; verify spelling in every generated logo before using it.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Ideogram Logo Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-tools/ideogram-logo-prompt-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

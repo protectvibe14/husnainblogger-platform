@@ -108,16 +108,7 @@ export const content: ToolContent = {
     'The AI cutout is an estimate; check hair and edges before official use.',
     'Output is a white-background JPG; no retouching or compliance checks are performed.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Passport/ID Photo Maker',
-          item: 'https://husnainblogger.com/tools/ai-tools/passport-id-photo-maker/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

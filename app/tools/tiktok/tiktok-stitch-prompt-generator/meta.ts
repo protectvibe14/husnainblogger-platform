@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'This tool cannot fetch, preview, or verify TikTok videos. A pasted description is quoted back as text you supplied; nothing is checked against TikTok.',
     'Stitch availability depends on the original creator\'s settings; this tool cannot enable stitches on someone else\'s video.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -82,14 +82,5 @@ export const content: ToolContent = {
     'Maximum 20 episodes per run; questions capped at 200 characters, answer points at 160 each (max 4).',
     'The series intro and CTAs are fixed templates; adapt the wording to your voice before filming.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok FAQ Series Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

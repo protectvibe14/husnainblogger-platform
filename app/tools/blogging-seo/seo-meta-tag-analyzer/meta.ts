@@ -139,6 +139,5 @@ export const content: ToolContent = {
     'Mobile snippets show fewer characters than desktop — the ranges target desktop display.',
     'The tool never contacts Google or your site; it cannot see actual search performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

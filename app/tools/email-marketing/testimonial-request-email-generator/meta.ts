@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'Always send testimonial requests yourself and only to real clients — the tool cannot verify your relationship with the recipient.',
     'Very long inputs are truncated with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

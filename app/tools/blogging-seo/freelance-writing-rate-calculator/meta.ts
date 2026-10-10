@@ -142,6 +142,5 @@ export const content: ToolContent = {
     'The currency field is only a label; no exchange-rate conversion is performed.',
     'This is a pricing math tool, not financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

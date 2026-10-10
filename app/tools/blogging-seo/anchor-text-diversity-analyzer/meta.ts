@@ -119,6 +119,5 @@ export const content: ToolContent = {
     '"Exact-match" here means the single most-used anchor text in your list; the tool has no target-keyword input, so it cannot know your intended keyword.',
     'The generic-phrase bank is English-only (28 phrases); non-English generic anchors will be labeled partial.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

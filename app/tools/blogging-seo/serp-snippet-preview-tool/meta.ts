@@ -143,6 +143,5 @@ export const content: ToolContent = {
     'Pixel widths are estimates from a fixed character table; Google\'s actual rendering can differ slightly.',
     'The ~600 px truncation cutoff is a widely published estimate for desktop, not an official Google number.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

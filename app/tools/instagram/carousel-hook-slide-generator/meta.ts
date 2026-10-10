@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Visual notes are general design guidance, not guarantees of performance.',
     'Adapt the wording to your voice and audience before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

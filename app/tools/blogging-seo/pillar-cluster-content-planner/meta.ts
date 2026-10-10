@@ -110,14 +110,5 @@ export const content: ToolContent = {
     'Suggested slugs and titles are starting templates — verify against the site\'s CMS and URL conventions before publishing.',
     'The linking note is a structural convention, not a ranking guarantee.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pillar-Cluster Content Planner',
-          item: 'https://husnainblogger.com/tools/blogging-seo/pillar-cluster-content-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

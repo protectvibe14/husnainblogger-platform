@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'The repurposed version adapts structure and voice — review it before publishing.',
     'Avoid pasting sensitive or confidential text; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Content Repurposer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-content-repurposer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

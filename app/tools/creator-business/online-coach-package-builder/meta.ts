@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'The three tiers are derived from your own numbers, not prescribed package structures.',
     'The package price is an ESTIMATE for your planning, not a binding offer — put final terms in your client agreement.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

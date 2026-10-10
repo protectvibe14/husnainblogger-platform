@@ -91,6 +91,5 @@ export const content: ToolContent = {
     'Curiosity/clarity word lists are heuristic and English-only.',
     'The tool never sends email or contacts any provider.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

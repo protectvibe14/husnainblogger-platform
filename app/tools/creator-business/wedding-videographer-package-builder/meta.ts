@@ -130,6 +130,5 @@ export const content: ToolContent = {
     'Bundle savings are arithmetic only (full price minus discounted price); they say nothing about your costs or profit margin.',
     'Amounts are shown without a currency symbol — figures refer to whatever currency you price in.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

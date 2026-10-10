@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'Results are estimates for planning, not accounting or tax advice; marketplaces can change fee schedules at any time.',
     'Ad spend, returns, taxes, and design costs are not included — add them to your base cost if you want them reflected.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

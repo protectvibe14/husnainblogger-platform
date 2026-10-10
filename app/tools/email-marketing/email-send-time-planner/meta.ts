@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'Timezone offsets use a fixed reference date (2026-10-01) for deterministic results; daylight-saving shifts can move real conversions by an hour.',
     'Send days (Tue/Wed/Thu rotation) are commonly-cited guidance, not a researched optimum for your audience.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

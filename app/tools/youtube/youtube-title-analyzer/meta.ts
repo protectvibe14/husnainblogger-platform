@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Power-word and stopword lists are English — results are less meaningful for non-English titles.',
     'The tool never contacts YouTube; it cannot see your video\'s actual performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

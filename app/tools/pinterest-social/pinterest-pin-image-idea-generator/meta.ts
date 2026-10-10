@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Ratios are fixed per format (2:3 standard, 9:16 idea/video) — pixel dimensions are intentionally not stated.',
     'Text overlays are capped at 8 words with the topic counting as one word.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -109,14 +109,5 @@ export const content: ToolContent = {
     'Without a start date the challenge begins today (UTC); dates are computed in UTC.',
     'Start dates must be real calendar dates in YYYY-MM-DD form.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: '30-Day Blogging Challenge Generator',
-          item: 'https://husnainblogger.com/tools/blogging-seo/30-day-blogging-challenge-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

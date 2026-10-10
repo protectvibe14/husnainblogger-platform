@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'A "none" (transparent) background has no single contrast ratio; the reported number is a worst-case advisory estimate, not a guarantee.',
     'Ratios are WCAG 2.x math estimates on the colors typed; always preview captions on real footage.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Heading detection covers markdown (#) and HTML <h1>–<h6> only; other formats (Google Docs styles, etc.) are not detected.',
     'Very short posts can never score 100 because the −15 length deduction applies under 100 words — that is intentional.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

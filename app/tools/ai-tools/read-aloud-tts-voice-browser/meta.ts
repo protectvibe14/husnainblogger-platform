@@ -117,16 +117,7 @@ export const content: ToolContent = {
     'Playback only — no audio file export (browser API limitation).',
     'Very long single utterances may be cut off by some browsers.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Free Text-to-Speech Reader',
-          item: 'https://husnainblogger.com/tools/ai-tools/read-aloud-tts-voice-browser/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

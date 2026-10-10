@@ -151,6 +151,5 @@ export const content: ToolContent = {
     'The monthly figure uses a fixed 5% capture heuristic and splits evenly across selected methods — illustrative, not real per-channel data.',
     'The full scoring rubric is published in the methodology section above and in the tool\'s logic source.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

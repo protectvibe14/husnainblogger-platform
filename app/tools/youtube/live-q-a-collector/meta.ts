@@ -124,14 +124,5 @@ export const content: ToolContent = {
     'Ranking is a simple votes-descending sort; it does not detect duplicates, spam, or question quality.',
     'Not affiliated with YouTube; the queue is a working aid, not an official moderation tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Live Q&A Collector',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

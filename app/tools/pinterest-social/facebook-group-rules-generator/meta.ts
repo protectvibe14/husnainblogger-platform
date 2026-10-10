@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'No hard character cap is applied because there is no verified platform cap on rule text.',
     'Compliance with Facebook\u2019s Community Standards and Terms is the group admin\u2019s responsibility — adjust the wording before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

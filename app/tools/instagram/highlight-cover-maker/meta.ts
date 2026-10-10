@@ -89,6 +89,5 @@ export const content: ToolContent = {
     'Backgrounds accept hex colors only (#RGB or #RRGGBB), or two hex colors joined with | for a gradient.',
     'Instagram crops highlight covers to a circle — keep text and icons centered.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Without a niche, the generic bank is used and titles say "your industry".',
     'The tool cannot validate whether your audience actually wants the topic — research that yourself.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

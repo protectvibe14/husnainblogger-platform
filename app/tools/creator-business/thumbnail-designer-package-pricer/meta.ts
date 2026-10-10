@@ -149,6 +149,5 @@ export const content: ToolContent = {
     'Pack tiers are arithmetic examples from your own rate, not prescribed product tiers.',
     'Results are ESTIMATES for your planning, not a promise of what clients will pay.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

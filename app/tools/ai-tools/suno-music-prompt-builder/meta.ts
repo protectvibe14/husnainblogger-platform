@@ -151,14 +151,5 @@ export const content: ToolContent = {
     'Outputs are template-assembled text, not finished songwriting — rewrite the lyric lines before using them.',
     'Suno\u2019s interface labels and prompt behavior can change; check Suno\u2019s own docs for current field names.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Suno Music Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-tools/suno-music-prompt-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

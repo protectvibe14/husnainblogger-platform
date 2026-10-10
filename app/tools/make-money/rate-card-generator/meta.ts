@@ -95,6 +95,5 @@ export const content: ToolContent = {
     'User-supplied base rates are used as-is; the tool cannot verify whether they match the market.',
     'Actual deal prices vary by niche, engagement, audience geography, deliverables, and negotiation.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

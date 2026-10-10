@@ -125,6 +125,5 @@ export const content: ToolContent = {
     'The tool checks the numbers you enter only; it cannot inspect real pins or your Pinterest account.',
     'Non-integer dimensions are rounded before the ratio is computed, so borderline sizes may match a different format than the unrounded value would.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

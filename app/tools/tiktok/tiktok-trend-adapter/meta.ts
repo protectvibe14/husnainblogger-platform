@@ -130,6 +130,5 @@ export const content: ToolContent = {
     'Concepts are assembled from fixed template banks (32 concepts, 12 hooks, 24 tips), not written by AI.',
     'Trend timing matters more than the concept: the same adaptation filmed a week late usually flops.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

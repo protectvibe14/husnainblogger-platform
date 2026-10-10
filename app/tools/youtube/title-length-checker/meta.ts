@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'The ~70-character truncation zone is a conservative display guideline, not a documented YouTube constant; exact cutoff varies by device and font.',
     'Front-load guidance is a structural heuristic (first 4+ letter non-small word), not keyword detection — it cannot know your real target keyword.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

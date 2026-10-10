@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'Volumes are mixing-guidance estimates, not measured loudness; adjust by ear against your music and dialogue.',
     'Sound matching is fixed keyword matching on your action text, not audio analysis — concrete descriptions ("door slams") beat vague ones ("scene 3").',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

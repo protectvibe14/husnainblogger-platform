@@ -113,14 +113,5 @@ export const content: ToolContent = {
     'The stemmer is a crude English suffix-stripper; results are a draft to review, not a final taxonomy.',
     'Duplicate keywords are merged case-insensitively before clustering.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Keyword Clustering Tool',
-          item: 'https://husnainblogger.com/tools/blogging-seo/keyword-clustering-tool/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

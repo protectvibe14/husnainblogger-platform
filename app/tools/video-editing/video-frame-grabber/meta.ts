@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'Dimensions are rounded down to even integers (encoder-safe); tiny rounding differences are normal.',
     'DRM-protected or unplayable files cannot be captured by the browser step — the math still validates.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

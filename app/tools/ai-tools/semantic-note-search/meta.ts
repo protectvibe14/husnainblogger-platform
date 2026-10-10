@@ -120,14 +120,5 @@ export const content: ToolContent = {
     'Notes and embeddings live in this browser’s localStorage (up to 200 notes).',
     'Similarity is a statistical guess — skim the matched note to confirm.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Semantic Note Search',
-          item: 'https://husnainblogger.com/tools/ai-tools/semantic-note-search/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

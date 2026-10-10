@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'A knownResult you enter is your own data and is used verbatim; verify it before publishing.',
     'Not legal advice — get the client to approve the final draft and any quote in writing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

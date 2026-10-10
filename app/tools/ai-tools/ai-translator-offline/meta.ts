@@ -103,16 +103,7 @@ export const content: ToolContent = {
     'Only the 18 verified pairs are offered; no other languages.',
     'Long text is split into ~500-character chunks on sentence boundaries.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Translator (offline)',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-translator-offline/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

@@ -151,6 +151,5 @@ export const content: ToolContent = {
     'The second shooter rate is treated as an hourly rate multiplied by coverage hours; if you pay a flat day fee, enter the fee divided by your coverage hours.',
     'All rates and costs are user-provided — the result is an ESTIMATE for your planning, not a promise of what clients will pay.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Tags come from your topic words plus a fixed bank of 48 curated generic hashtags — they are suggestions, not live popularity or trend data, and the tool must never be read as providing those.',
     'Very broad single-word topics get a steering note; narrowing the topic yourself produces far more useful tags.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

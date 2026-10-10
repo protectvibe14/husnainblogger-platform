@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'Options come from 8 fixed templates and a 14-word mood bank; they are not AI-written.',
     'Alt text is kept to the recommended 125 characters; longer options are trimmed and flagged.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

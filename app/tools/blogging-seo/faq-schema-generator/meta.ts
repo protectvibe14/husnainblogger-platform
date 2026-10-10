@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'HTML in questions or answers is kept as literal text, never parsed or executed.',
     'Up to 50 pairs per block; split longer FAQs into multiple blocks.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Usage rights, rush fees, and stock assets are not included — price those separately.',
     'All amounts are USD.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

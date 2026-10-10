@@ -89,14 +89,5 @@ export const content: ToolContent = {
     'The verify banner for health/finance/safety topics is a reminder, not legal or medical advice.',
     'Maximum 5 myth/fact pairs per run; myths are capped at 200 characters and facts at 400.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Myth vs Fact Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

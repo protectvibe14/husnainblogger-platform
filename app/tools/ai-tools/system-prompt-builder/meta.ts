@@ -138,14 +138,5 @@ export const content: ToolContent = {
     'Output quality depends on the rules you write — the tool formats text, it does not improve your instructions.',
     'Different AI tools interpret system prompts differently; test the result in the tool you use.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'System Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-tools/system-prompt-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

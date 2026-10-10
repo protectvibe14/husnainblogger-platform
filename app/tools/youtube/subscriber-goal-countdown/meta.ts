@@ -127,6 +127,5 @@ export const content: ToolContent = {
     'Subscriber counts are entered manually — the tool cannot read live YouTube counts (no API).',
     'Scenario factors (0.7×/1.0×/1.3×) are fixed what-ifs on your own rate, not predictions.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

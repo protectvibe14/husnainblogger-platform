@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'No personalized recommendation is possible without your channel analytics; treat output as a starting plan.',
     'Retention figures are estimates compiled from publicly reported creator benchmarks, labeled as such in every result.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

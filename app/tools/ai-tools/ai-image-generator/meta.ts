@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Output quality depends on the model and your prompt — the tool does not enhance or upscale results.',
     'fal.ai browser calls are not officially supported by fal.ai; CORS blocking is a known possibility, not a bug in this tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Image Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-image-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Titles must match the actual video — misleading titles hurt watch time and trust.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Thumbnail Title Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-thumbnail-title-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

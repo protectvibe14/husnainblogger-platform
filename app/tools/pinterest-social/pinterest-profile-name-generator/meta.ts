@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Brands with no Latin characters get a neutral fallback username base; display names keep the original script.',
     'Only the first keyword is used for keyword-led names; extra keywords are ignored.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

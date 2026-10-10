@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Dates use UTC calendar days; the plan does not account for time zones or posting times.',
     'Tasks are fixed planning prompts — the tool does not write your captions, film your reels, or guarantee any launch results.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

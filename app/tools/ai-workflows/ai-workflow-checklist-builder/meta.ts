@@ -85,6 +85,5 @@ export const content: ToolContent = {
     "The tool structures your stage list only — it adds no AI, workflow logic, or advice.",
     "Stages are capped at 25 per checklist; order is preserved exactly as you entered it.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

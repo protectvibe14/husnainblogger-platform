@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'Output is template assembly, not AI-written copy; edit it in your own voice before publishing.',
     'The tool does not publish anything — you paste the result into your channel About tab yourself.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

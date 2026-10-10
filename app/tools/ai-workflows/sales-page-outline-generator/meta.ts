@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'No sales copy is written by AI — each section only includes a fixed write prompt for you to follow. The quality of the final page depends on your own copy and proof.',
     'The proof section requires real testimonials: only use results and quotes you actually have; never invent them.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

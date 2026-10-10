@@ -118,6 +118,5 @@ export const content: ToolContent = {
     "Disclosure rules differ by platform and region — templates do not track any specific policy.",
     "The tool never invents facts about your content; it only fills disclosure wording.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

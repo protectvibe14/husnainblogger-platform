@@ -134,6 +134,5 @@ export const content: ToolContent = {
     'Whitelisting terms (platforms, ad accounts, renewals) are not modeled — only the math on your rate and period.',
     'The monthly equivalent is a simple multiplication; taxes, payment terms, and negotiation are not included.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

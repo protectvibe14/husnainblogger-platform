@@ -94,6 +94,5 @@ export const content: ToolContent = {
     'On-screen text lines are capped at 140 characters for small-screen readability; the heuristic is a design choice, not TikTok guidance.',
     'The advanced-topic check is keyword-based ("advanced", "expert", "pro", "masterclass", "deep dive", "complicated") and may misfire on casual uses of those words.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

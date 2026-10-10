@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Audience geography, list engagement, and niche are not modeled — they move real prices significantly.',
     'Actual rates vary by niche, list quality, and negotiation — this is guidance, not a guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

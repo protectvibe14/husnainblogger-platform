@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'The mobile legibility verdict is a labeled heuristic (contrast + word count + length), not a test on a real device.',
     'Hex colors must be 3 or 6 hex digits with an optional #; named colors like "red" are rejected.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

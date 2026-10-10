@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Hashtag sets are generic examples — swap in your niche tags for better targeting.',
     'No reach or virality is promised; the tool builds caption templates, not results.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

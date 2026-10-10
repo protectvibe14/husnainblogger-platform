@@ -140,6 +140,5 @@ export const content: ToolContent = {
     'Rounding remainder cents are assigned to the final milestone so the schedule totals exactly the contract value.',
     'Percentages must sum to 100 (tolerance 0.01 for float formatting); anything else is a validation error.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

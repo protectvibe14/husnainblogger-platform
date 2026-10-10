@@ -145,6 +145,5 @@ export const content: ToolContent = {
     'The 4 keyword-dependent checks cannot pass without a target keyword; the tool does not guess your keyword.',
     'Thresholds (70 title chars, 200 description chars, 500 tag chars) reflect widely recommended on-page practices and YouTube\'s real limits, not official ranking factors.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -105,16 +105,7 @@ export const content: ToolContent = {
     'Inputs are capped at 1024 px per side — larger images are downscaled before upscaling.',
     'The output is a best-effort AI reconstruction, not a true high-resolution original.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Image Upscaler',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-image-upscaler/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

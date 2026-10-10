@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Zero conversions yields EPC $0 and skips the earnings-per-conversion division (spec-defined edge).',
     'All three inputs are user-entered; the output is only as correct as the inputs — bot, duplicate, or misattributed clicks distort the ratios.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

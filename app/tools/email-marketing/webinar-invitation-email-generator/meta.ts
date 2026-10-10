@@ -137,6 +137,5 @@ export const content: ToolContent = {
     'The tool does not verify your date, time, or registration link — double-check them before sending.',
     'Very long inputs are truncated with a visible notice; benefit lists are capped at 6.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

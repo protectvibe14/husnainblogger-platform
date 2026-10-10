@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Working titles longer than 80 characters are shortened in the chapter titles.',
     'This tool plans structure only; it does not check grammar, facts, or market demand for your topic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

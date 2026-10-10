@@ -154,6 +154,5 @@ export const content: ToolContent = {
     'Per-shoot costs (assistant, gear rental) are assumed to be billed to the client on top of the base day rate.',
     'The annual capacity check assumes every planned shoot day gets booked and paid; unpaid days, cancellations, and taxes are not modeled.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

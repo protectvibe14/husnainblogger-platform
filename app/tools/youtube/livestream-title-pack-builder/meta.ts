@@ -87,6 +87,5 @@ export const content: ToolContent = {
     'Only four stream types are supported (Q&A, gaming, talk, tutorial); anything else fails validation with the allowed list.',
     'The description snippet is a starting template — add your links, timestamps, and rules before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

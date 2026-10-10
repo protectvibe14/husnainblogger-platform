@@ -131,6 +131,5 @@ export const content: ToolContent = {
     'Monthly cadence steps calendar months from the same calendar day (Jan 31 rolls to Feb 28/29); day-based cadences step fixed day counts.',
     'Dates are computed in UTC; a "day" is a calendar date, not a local timezone shift.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

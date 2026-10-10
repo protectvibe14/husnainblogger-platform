@@ -77,14 +77,5 @@ export const content: ToolContent = {
     'Suggested starter terms are common examples, not a guarantee against artifacts.',
     'Duplicate removal is case-insensitive ("Blurry" and "blurry" count as one).',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Negative Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-workflows/negative-prompt-builder/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

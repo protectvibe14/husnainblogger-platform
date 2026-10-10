@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Verdict bands (Low <1, Moderate 1–3, Good >3) are our own editorial guidance, not a Yoast or Google rule.',
     'Common words in the bank (also, when, after, still) count as transitions, so conversational writing can score higher than formal writing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

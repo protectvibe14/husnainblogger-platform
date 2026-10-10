@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'This tool brainstorms packaging; only YouTube Test & Compare measures real click performance.',
     'Titles are trimmed to 100 characters max and thumbnail text is capped at 5 words per YouTube best practice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

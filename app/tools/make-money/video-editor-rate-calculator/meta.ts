@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'Video length is context only — it does not change the hourly band.',
     'All amounts are USD. No taxes, platform fees, or revision overruns are included.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

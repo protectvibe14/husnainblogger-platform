@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'The 70-character cap is a documented heuristic for readability, not a YouTube rule; truncations are flagged and visible (…).',
     'Keyword front-loading is a fixed string operation (case-insensitive first occurrence), not semantic keyword research.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

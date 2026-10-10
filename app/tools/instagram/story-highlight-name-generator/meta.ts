@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Names come from 48 fixed patterns (24 per tone pool); they are starting points, not AI-written copy.',
     'Selection is deterministic per niche — the same inputs always return the same names.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

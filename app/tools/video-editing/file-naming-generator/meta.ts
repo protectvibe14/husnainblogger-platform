@@ -159,6 +159,5 @@ export const content: ToolContent = {
     "When no date is entered, the literal placeholder YYYYMMDD is used.",
     "Sanitization is best-effort against common filesystem-illegal characters; check your platform's own rules for edge cases.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

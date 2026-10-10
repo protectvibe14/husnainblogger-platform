@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Hosting, domains, stock assets, copywriting, and ongoing maintenance are not included.',
     'All amounts are USD.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -145,6 +145,5 @@ export const content: ToolContent = {
     'This is not a contract and not legal advice.',
     'Unlike a price-only quote, a proposal documents scope and approach — use both together.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

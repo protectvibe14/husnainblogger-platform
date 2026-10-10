@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'It cannot verify publications or expertise claims; you are responsible for accuracy.',
     'Inputs longer than 300 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

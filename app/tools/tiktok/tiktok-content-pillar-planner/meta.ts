@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'Posting frequencies (8 posts/week total) assume you can batch-film; reduce evenly across pillars if you post less.',
     'The schedule rotation is fixed, not optimized for your audience\'s active hours — check TikTok analytics for that.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

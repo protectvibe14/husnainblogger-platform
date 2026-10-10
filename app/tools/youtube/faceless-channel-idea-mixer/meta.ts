@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'YouTube\'s inauthentic-content policy (tightened July 2025) means templated, mass-produced channels face extra monetization review; original value is required.',
     'Channel-name seeds are starting points — check name availability on YouTube yourself before committing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

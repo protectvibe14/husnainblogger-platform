@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Hashtag suggestions are generic — check which tags are active in your niche.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Social Caption Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-social-caption-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

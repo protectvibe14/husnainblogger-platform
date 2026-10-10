@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'A keyword longer than 100 characters is rejected because a keyword-led name could not fit the cap.',
     'Long keywords may be trimmed at a word boundary to keep names under 100 characters; with very long keywords fewer distinct names may be returned rather than duplicates.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

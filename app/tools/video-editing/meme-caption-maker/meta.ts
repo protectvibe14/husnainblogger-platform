@@ -103,6 +103,5 @@ export const content: ToolContent = {
     "Fixed bank of 6 templates — template-based, not AI-generated.",
     "Captions are limited to 120 characters each; text over 60 characters auto-shrinks (minimum 24px).",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

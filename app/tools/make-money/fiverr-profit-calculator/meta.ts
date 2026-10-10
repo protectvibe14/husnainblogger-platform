@@ -131,6 +131,5 @@ export const content: ToolContent = {
     'Revision rounds are informational only and do not change the fee math.',
     'All amounts are USD; results are estimates — verify against Fiverr\'s current terms.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

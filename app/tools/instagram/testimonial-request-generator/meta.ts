@@ -136,14 +136,5 @@ export const content: ToolContent = {
     'The tool cannot send messages or fetch contacts — it only produces the text for you to send.',
     'Always ask permission before publishing a testimonial with the client\u2019s name.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Testimonial Request Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

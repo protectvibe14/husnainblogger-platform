@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Hook and angle detection is keyword-based scoring, not AI understanding; ambiguous captions may be classified into the closest fixed type.',
     'Gap ideas are fixed opportunity prompts, not personalized strategy; verify them against your own niche.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

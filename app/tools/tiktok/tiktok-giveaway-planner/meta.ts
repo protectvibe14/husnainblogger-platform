@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Plans are template-based (5 fixed entry methods) and cannot verify eligibility, pick real winners, or guarantee entries or follower growth.',
     'Timelines are computed from your duration only — they do not account for holidays, time zones, or TikTok algorithm behavior.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

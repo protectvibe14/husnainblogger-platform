@@ -147,6 +147,5 @@ export const content: ToolContent = {
     'The rating scale is whatever you set as Best rating (default 5); the rating must be a number between 0 and that value.',
     'Emitting Review markup does not guarantee star ratings in search results — Google decides eligibility.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

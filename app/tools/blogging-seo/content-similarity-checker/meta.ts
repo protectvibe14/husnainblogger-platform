@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'Compares only the two texts you paste — it cannot check the web or any search index, so it is not a plagiarism verdict.',
     'Shared boilerplate (quotes, disclosures, repeated headers) raises the score without meaning either text copied the other.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'Northern-hemisphere bias: event timing (e.g. summer travel in June, back to school in August) will not fit southern-hemisphere audiences without adjustment.',
     'Niche matching is simple keyword overlap, not semantic understanding — unusual niches may get only generic events.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

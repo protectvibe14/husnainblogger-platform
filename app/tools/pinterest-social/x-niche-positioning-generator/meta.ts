@@ -100,14 +100,5 @@ export const content: ToolContent = {
     'Statements over 160 characters are trimmed at a word boundary with an ellipsis, which only triggers with unusually long niche/audience text.',
     'A generated line is a starting point, not a tested bio — validate with real profile-visit and follow data on X.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Niche Positioning Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

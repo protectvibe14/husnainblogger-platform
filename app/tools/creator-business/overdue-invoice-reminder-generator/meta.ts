@@ -151,6 +151,5 @@ export const content: ToolContent = {
     'The "final" tone suggests seeking independent advice; it is not legal advice and makes no legal claims on your behalf.',
     'Amounts are shown without a currency symbol — the figures refer to whatever currency your invoice uses.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

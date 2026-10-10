@@ -98,16 +98,7 @@ export const content: ToolContent = {
     'Paraphrasing does not transfer ownership: cite sources and respect copyright and institutional policies.',
     'Very long or technical passages may lose nuance in the rewrite.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Paraphraser & Rewriter',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-paraphraser-rewriter/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

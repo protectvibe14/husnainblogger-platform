@@ -129,14 +129,5 @@ export const content: ToolContent = {
     'Length targets (title 30–60, meta 120–160) are industry guidance, not Google rules; passing does not guarantee rankings or SERP display.',
     '"Manual" items are honest unknowns: verify them on the real page instead of trusting a guess.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pre-Publish SEO Checklist',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

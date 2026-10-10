@@ -127,6 +127,5 @@ export const content: ToolContent = {
     'The rubric weights (30/25/20/15/10) are a fixed editorial choice, not derived from YouTube algorithm data.',
     'Scores are rounded integers 0–100; the weakest factor is the lowest earned share, with ties broken in rubric order.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

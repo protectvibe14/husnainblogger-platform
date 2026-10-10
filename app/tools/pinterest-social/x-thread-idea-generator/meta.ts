@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'The 280 weighted-character budget is a conservative approximation (URLs count 23, non-ASCII characters count 2) — always check the character counter in X before posting.',
     'A tweet count above 25 is capped at 25 with a note, and a very short topic may reduce a long thread to 8 tweets — both are documented in the output notes.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

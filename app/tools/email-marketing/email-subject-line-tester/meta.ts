@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Length guidance (30-50 chars) is a display rule of thumb, not a ranking factor.',
     'The audience hint is accepted for context only and does not change the score.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

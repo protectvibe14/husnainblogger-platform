@@ -133,14 +133,5 @@ export const content: ToolContent = {
     'Prices are user-entered; the tool cannot verify them against any provider.',
     'Does not account for cached-input discounts, batch pricing, or provider-specific billing quirks.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Prompt Token Cost Estimator',
-          item: 'https://husnainblogger.com/tools/ai-tools/prompt-token-cost-estimator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

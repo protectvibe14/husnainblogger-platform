@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'The tool references the comment’s excerpt; it cannot detect tone, sarcasm, or spam — use your judgment.',
     'Comments longer than 1000 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

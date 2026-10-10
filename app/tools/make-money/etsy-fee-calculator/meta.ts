@@ -133,6 +133,5 @@ export const content: ToolContent = {
     'The regulatory operating fee (0.05%-1.97%, region-specific) and the +2.5% regulated-category surcharge are EXCLUDED — your real fees may be higher.',
     'Net payout excludes product cost and shipping label cost; Etsy can change fees at any time — confirm current fees on Etsy\'s official fee page before pricing decisions.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

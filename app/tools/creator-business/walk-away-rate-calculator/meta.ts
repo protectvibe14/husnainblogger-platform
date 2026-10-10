@@ -154,6 +154,5 @@ export const content: ToolContent = {
     'The buffer percentage is your own business assumption; the tool recommends no value.',
     'Unpaid time (admin, marketing, holidays) is only covered if you excluded it from billable hours.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

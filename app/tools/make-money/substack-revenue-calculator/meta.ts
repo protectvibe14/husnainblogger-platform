@@ -94,6 +94,5 @@ export const content: ToolContent = {
     'Annual-billing discounts and taxes are out of scope.',
     'Results are estimates in USD; no currency conversion is performed.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

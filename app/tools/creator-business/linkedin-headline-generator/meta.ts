@@ -136,6 +136,5 @@ export const content: ToolContent = {
     "The 220-character limit is widely documented platform knowledge, not fetched live — confirm it in LinkedIn's current UI, as platforms change.",
     "Proof points are your own words echoed as typed; the tool does not verify any claim you make.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

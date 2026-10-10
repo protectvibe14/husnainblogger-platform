@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Wide tables scroll horizontally on small screens via the wrapper; the tool does not restyle your theme.',
     'Maximum 6 columns and 20 rows per table.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

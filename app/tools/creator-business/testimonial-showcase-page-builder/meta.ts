@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'Photo URLs must be publicly reachable http(s) links you have rights to use.',
     'Only publish testimonials you have genuine permission to share.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

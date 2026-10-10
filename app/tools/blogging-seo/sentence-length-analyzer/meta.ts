@@ -130,6 +130,5 @@ export const content: ToolContent = {
     '"Long sentence" (over 25 words) is an editorial threshold, not a published standard.',
     'Readability scores describe the text only — they say nothing about search rankings.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

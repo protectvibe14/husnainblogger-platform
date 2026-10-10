@@ -102,16 +102,7 @@ export const content: ToolContent = {
     'The tool assumes the third-party Suno-compatible contract; providers with a different contract will fail with a clear error.',
     'Browser calls depend on the chosen provider\'s CORS policy — not guaranteed by this tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Music Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-music-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

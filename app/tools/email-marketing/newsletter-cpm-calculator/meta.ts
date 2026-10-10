@@ -136,6 +136,5 @@ export const content: ToolContent = {
     'No CPM or open-rate defaults are provided; every number is entered by you.',
     'Currency values are rounded to two decimals; impressions are rounded to whole numbers.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

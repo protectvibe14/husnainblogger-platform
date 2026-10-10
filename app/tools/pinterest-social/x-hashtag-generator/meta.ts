@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'Best practice is 0–2 hashtags per post on X; more reads as spam. Topics like tax, insurance, or legal get an explicit note that hashtags add little value.',
     'All tags are normalized (letters, digits, and underscores only, no spaces); count must be a whole number between 1 and 5.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -68,6 +68,5 @@ export const content: ToolContent = {
     'Timing assumes you set a real publish datetime in YouTube Studio to anchor the T-phases.',
     'Progress is stored in your browser only; clearing site data resets it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

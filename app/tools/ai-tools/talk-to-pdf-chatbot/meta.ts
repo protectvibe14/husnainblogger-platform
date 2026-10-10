@@ -87,16 +87,7 @@ export const content: ToolContent = {
     'PDFs are capped at 15 MB by this tool before any upload.',
     'Answers are model-generated and grounded in the PDF by prompt — always verify important facts against the document itself.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Talk to PDF Chatbot',
-          item: 'https://husnainblogger.com/tools/ai-tools/talk-to-pdf-chatbot/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

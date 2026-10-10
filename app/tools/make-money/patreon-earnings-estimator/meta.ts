@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'New pages pay a flat 10%; legacy tiers are preserved only for older pages \u2014 the tool trusts the plan you select.',
     'Results are estimates in USD; taxes, currency conversion, and payout fees are not included.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

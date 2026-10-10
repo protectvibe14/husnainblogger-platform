@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'The tool assembles a prompt from your inputs only — it does not invent a brand voice for you. A vague input (e.g. only 2 generic adjectives) produces a vague prompt.',
     'An AI model follows the prompt to varying degrees; check important outputs and refine your adjectives and do/don\'t lists over time.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

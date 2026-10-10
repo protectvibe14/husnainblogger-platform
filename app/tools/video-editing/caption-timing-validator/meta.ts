@@ -85,6 +85,5 @@ export const content: ToolContent = {
     'No official timing standard exists for social short-form platforms — only the published broadcast rules are applied.',
     'Unparseable timing lines cause the block to be skipped and reported as an error on the whole run.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

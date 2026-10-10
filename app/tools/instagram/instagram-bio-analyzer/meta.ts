@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Emoji detection uses Unicode pictographic ranges; some composite emojis count as one.',
     'The tool never contacts Instagram; it cannot see your profile\'s actual performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

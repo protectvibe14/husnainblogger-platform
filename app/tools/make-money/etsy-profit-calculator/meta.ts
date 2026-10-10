@@ -183,6 +183,5 @@ export const content: ToolContent = {
     'Packaging, labor, taxes, returns, and other overheads beyond item cost and the shipping label are not modeled.',
     'Negative profit is shown as-is with a warning — the tool does not hide losing prices.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

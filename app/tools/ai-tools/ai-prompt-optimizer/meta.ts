@@ -91,8 +91,7 @@ export const content: ToolContent = {
     'The optimizer rewrites your prompt — it does not run it or guarantee better answers.',
     'Avoid pasting sensitive or confidential prompts; provider-side handling follows the provider’s policy.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

@@ -127,6 +127,5 @@ export const content: ToolContent = {
     'A seller-funded shipping discount reduces the payout dollar-for-dollar; a discount larger than the payout shows as negative.',
     'All amounts are in USD.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

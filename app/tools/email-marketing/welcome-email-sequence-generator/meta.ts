@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'The day offsets (0, 1, 3, 5, 7, 10, 14) are a common welcome cadence, not a guarantee of best send times for your audience.',
     'This tool cannot predict open rates or deliverability.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

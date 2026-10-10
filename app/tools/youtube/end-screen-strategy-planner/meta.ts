@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'The tool plans only; applying elements happens in YouTube Studio under Content → Editor → End screen.',
     'Element placement suggestions assume a standard 16:9 video.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'Stage maps are fixed templates — they do not analyze your list or past performance.',
     'Visual rendering of the funnel is the app component’s job; this tool defines the data model only.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

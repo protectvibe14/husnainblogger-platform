@@ -111,16 +111,7 @@ export const content: ToolContent = {
     'The model is instructed not to invent statistics or quotes; verify anything specific you publish.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Video Script Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-video-script-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

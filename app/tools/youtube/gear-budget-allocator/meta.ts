@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'No product recommendations, brand names, or prices are given; research specific gear yourself.',
     'Amounts are whole dollars; budgets are rounded to the nearest dollar before splitting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

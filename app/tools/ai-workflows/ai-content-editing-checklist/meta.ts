@@ -66,6 +66,5 @@ export const content: ToolContent = {
     'A fixed checklist of general guidance — it performs no editing and cannot look at your draft.',
     'Fact verification is on you: the checklist reminds you to check sources but cannot do it for you.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

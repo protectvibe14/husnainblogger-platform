@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'Suggestions are starting points: the formulas insert your topic verbatim, so light editing for grammar and your own voice is expected.',
     'Instantiated titles are truncated to 100 graphemes to fit YouTube\'s hard title limit; very long topics may produce trimmed titles.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

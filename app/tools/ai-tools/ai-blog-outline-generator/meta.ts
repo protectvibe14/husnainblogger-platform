@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'Any statistics in your post must come from real sources, not the outline.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Blog Outline Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-blog-outline-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

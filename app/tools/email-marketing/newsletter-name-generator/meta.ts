@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'Names are assembled from fixed word banks and patterns, not written by AI; treat them as starting ideas.',
     'Niche and keyword inputs are truncated at 80 and 120 characters (code points) respectively, with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

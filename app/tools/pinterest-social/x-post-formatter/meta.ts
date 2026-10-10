@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Bold text uses Unicode mathematical alphanumeric symbols, not a font setting — a few older devices or screen readers may render them differently.',
     'Over-budget text is flagged with an exact "over by" number and never cut; trimming stays your decision.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

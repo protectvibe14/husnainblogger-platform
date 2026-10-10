@@ -98,16 +98,7 @@ export const content: ToolContent = {
     'Only the OpenRouter route cartoonizes your uploaded photo — set expectations accordingly for the other routes.',
     'fal.ai browser calls are not officially supported by fal.ai; CORS blocking is a known possibility, not a bug in this tool.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Photo Cartoonizer',
-          item: 'https://husnainblogger.com/tools/ai-tools/photo-cartoonizer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

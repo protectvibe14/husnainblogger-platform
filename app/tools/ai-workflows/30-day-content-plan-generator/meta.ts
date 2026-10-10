@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'A niche without a word bank uses the generic bank, clearly labeled as a fallback.',
     'Treat bank topics as starting points — adapt them to your audience before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

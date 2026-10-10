@@ -124,14 +124,5 @@ export const content: ToolContent = {
     'Every entry is labeled "planned" — this tool tracks nothing and sends no reminders.',
     'Start dates must be real calendar dates in YYYY-MM-DD form.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Editorial Calendar Generator',
-          item: 'https://husnainblogger.com/tools/blogging-seo/editorial-calendar-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

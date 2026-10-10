@@ -113,6 +113,5 @@ export const content: ToolContent = {
     'Net payout is floored at $0 — fees can never produce a negative payout here.',
     'This is an estimate for comparison only, not financial or tax advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

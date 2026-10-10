@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'Lines come from a fixed 24-pattern template library, not AI-generated copy; it cannot verify any prospect fact.',
     'CAN-SPAM/GDPR caution: the tool cannot verify consent or legal basis to contact someone — you are responsible for complying with applicable email laws, including opt-out handling.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

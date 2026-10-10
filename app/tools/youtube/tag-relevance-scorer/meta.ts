@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Tags identical to title words are marked redundant (strong verdict) but are not penalized heavily — YouTube allows the 500-char field to include them.',
     'The tool never contacts YouTube; it cannot see your video\'s actual performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

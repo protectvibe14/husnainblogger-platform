@@ -150,6 +150,5 @@ export const content: ToolContent = {
     'The governing-law jurisdiction is your free text, echoed back unvalidated — it is not checked against any legal source.',
     'No electronic signature or signing happens here; this produces a draft only.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

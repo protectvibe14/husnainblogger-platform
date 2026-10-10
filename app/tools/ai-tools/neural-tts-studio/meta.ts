@@ -128,16 +128,7 @@ export const content: ToolContent = {
     'Very long texts are chunked, so intonation resets at chunk boundaries; splitting paragraphs yourself gives the most natural result.',
     'Voices are fixed presets — this tool cannot clone your own voice.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Neural TTS Studio',
-          item: 'https://husnainblogger.com/tools/ai-tools/neural-tts-studio/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

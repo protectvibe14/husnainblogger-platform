@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'At 100% churn there are no retained members \u2014 each month\u2019s total is just that month\u2019s new signups.',
     'Horizon is capped at 120 months as a sanity guard; amounts are USD.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

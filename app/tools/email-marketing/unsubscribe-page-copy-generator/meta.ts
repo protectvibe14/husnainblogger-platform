@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'The CAN-SPAM reminder is general information, not legal advice; check with counsel for your jurisdiction.',
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -102,14 +102,5 @@ export const content: ToolContent = {
     'Recommendations come from a fixed 12-tool database via keyword matching - not from live reviews or testing of the tools.',
     'Prices are default estimates, not live vendor pricing; verify current prices and free plans before buying.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Tool Stack Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-tool-stack-planner/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

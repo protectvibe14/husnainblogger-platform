@@ -117,6 +117,5 @@ export const content: ToolContent = {
     "Tiers are used verbatim (max 8); blank tiers produce marked default Budget / Mid-range / Premium slots.",
     "The criteria checklist is fixed at 6 criteria; publish only after real research or testing.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

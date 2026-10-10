@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'Attendees/buyers round to integers; money rounds half-up to 2 decimals.',
     'Not financial advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

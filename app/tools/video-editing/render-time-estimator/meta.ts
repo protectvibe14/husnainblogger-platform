@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'Baseline rates are estimates, not measurements: mid-tier 1080p30 light effects at ~6x realtime; 720p 0.44x, 4k 4x the 1080p cost; medium 1.6x, heavy 2.8x; device tiers low 0.45x, high 1.9x.',
     'Output is always a range, never a point estimate; the extreme 4k + heavy + low-tier case returns an extra-wide range with a strong caveat.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

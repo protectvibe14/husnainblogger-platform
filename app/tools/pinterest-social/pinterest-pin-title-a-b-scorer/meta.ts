@@ -126,14 +126,5 @@ export const content: ToolContent = {
     'The word banks (list words, action verbs, curiosity words) are English-based; non-English titles get a "limited heuristic coverage" note.',
     'Pinterest truncates long titles in feeds, which is why titles over 100 characters take a 10-point penalty.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest Pin Title A/B Scorer',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

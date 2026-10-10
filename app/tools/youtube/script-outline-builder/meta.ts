@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'Word budgets use the 150 wpm narration convention (an estimate); real pacing varies and B-roll adds unscripted time.',
     'Only the first item is treated as the video setup; additional items are sections.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

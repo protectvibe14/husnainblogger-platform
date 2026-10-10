@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Offer input is capped at 8 words so every line stays at 12 words or fewer and readable at cover scale.',
     'Cover dimensions used are page 851 x 315 px and group 1640 x 856 px; always double-check Facebook\'s current specs before finalizing a design.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

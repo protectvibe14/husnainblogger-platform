@@ -113,6 +113,5 @@ export const content: ToolContent = {
     'robots.txt is a crawling hint to search engines, not a security control — it does not keep private pages hidden from people.',
     'An empty Disallow for an agent means "allow all" per the standard; the tool notes this rather than changing it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

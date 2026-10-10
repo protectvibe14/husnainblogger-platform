@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Timing suggestions are generic best-practice labels, not personalized to your audience analytics.',
     'This planner does not publish anything to Instagram — it only produces the plan.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

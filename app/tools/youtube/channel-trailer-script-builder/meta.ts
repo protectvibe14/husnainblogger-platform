@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Word budget assumes a 150 wpm speaking pace; actual pacing varies by speaker and should be timed in rehearsal.',
     'Bracketed placeholders ([Your Name], proof numbers) must be replaced with real details before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

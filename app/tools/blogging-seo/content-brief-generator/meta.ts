@@ -127,14 +127,5 @@ export const content: ToolContent = {
     'Word targets are proportional estimates that sum to your requested total; adjust them to taste.',
     'The tool does not check keyword difficulty, search volume, or competitors.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Brief Generator',
-          item: 'https://husnainblogger.com/tools/blogging-seo/content-brief-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

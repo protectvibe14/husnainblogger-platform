@@ -77,6 +77,5 @@ export const content: ToolContent = {
     "A fixed checklist, not an AI audit — it cannot look at your analytics or your content.",
     "Traffic checks assume you can verify visits yourself (for example Search Console or YouTube Studio).",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

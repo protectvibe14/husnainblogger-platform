@@ -120,6 +120,5 @@ export const content: ToolContent = {
     'Script and style content is dropped entirely; images render as their alt text only.',
     'Line width is clamped to 40–120 characters; tokens longer than the width (e.g. long URLs) are hard-broken.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

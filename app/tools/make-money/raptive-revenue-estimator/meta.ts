@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'The eligibility warning fires below ~100,000 monthly pageviews — a published Raptive threshold, not a guarantee of acceptance at any traffic level.',
     'RPMs outside the 1-200 sanity band are rejected as likely typos or unit mix-ups.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

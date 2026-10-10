@@ -141,6 +141,5 @@ export const content: ToolContent = {
     'The tool does not verify that your disclosure is sufficient for any specific program or jurisdiction — placement and visibility are your responsibility.',
     'Up to 10 program names are used; extras are ignored.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

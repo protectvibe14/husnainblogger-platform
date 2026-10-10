@@ -108,14 +108,5 @@ export const content: ToolContent = {
     'Break tags and duration are estimates from fixed rules — actual TTS pacing depends on the voice and settings you choose.',
     'The abbreviation hint map covers 15 common terms; anything else is flagged for your manual review.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'ElevenLabs Script Formatter',
-          item: 'https://husnainblogger.com/tools/ai-tools/elevenlabs-voiceover-script-formatter/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

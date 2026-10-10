@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'URLs must be absolute or start with "/" — other values are skipped and reported in an HTML comment at the top of the output.',
     'Pages without a section are grouped under a "General" heading when other sections exist.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

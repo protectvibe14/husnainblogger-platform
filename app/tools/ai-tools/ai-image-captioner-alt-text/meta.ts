@@ -114,14 +114,5 @@ export const content: ToolContent = {
     'Alt text is trimmed to 125 characters per SEO best practice.',
     'Works on everyday photos; fine-grained or domain-specific imagery (medical, technical diagrams) is out of scope.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Image Captioner & Alt Text Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-image-captioner-alt-text/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

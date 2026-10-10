@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'The tool cannot write to YouTube Studio settings; applying presets requires manual copy-paste into Settings → Upload defaults.',
     'YouTube\'s real 500-character total tag limit is enforced during validation; individual tags should stay under 60 characters.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

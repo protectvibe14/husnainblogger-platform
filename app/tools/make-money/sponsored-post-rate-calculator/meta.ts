@@ -116,6 +116,5 @@ export const content: ToolContent = {
     "Actual sponsored-post prices vary widely by niche, engagement quality, audience demographics, and region.",
     "The story format (estimated 40–60% cheaper than posts) is not modeled here — only post, reel, and video formats are priced.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

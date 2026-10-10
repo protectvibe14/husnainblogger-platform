@@ -159,6 +159,5 @@ export const content: ToolContent = {
     "All amounts, dates, and rates are user-provided. The invoice is only as correct as its inputs; this tool performs no tax or legal validation.",
     "The document is rendered as plain text for copying; use your browser's print-to-PDF for a PDF copy.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

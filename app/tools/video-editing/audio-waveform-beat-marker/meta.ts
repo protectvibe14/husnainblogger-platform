@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Peaks are energy candidates, not true tempo beats — variable tempo, swing, and fills are not modeled.',
     'Same values always produce the same peaks — the algorithm is fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

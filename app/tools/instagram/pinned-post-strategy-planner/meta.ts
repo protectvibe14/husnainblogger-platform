@@ -118,14 +118,5 @@ export const content: ToolContent = {
     'Your first listed offer is used in the slot-3 pin; later offers appear only in the copied full plan.',
     'Pin order matters: use slot 1 → 3 as shown, left to right.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinned Post Strategy Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

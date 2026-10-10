@@ -140,6 +140,5 @@ export const content: ToolContent = {
     'FAQ answers are [bracketed] prompts for you to fill in.',
     'Edit the draft for your voice and add proof (testimonials, results) before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

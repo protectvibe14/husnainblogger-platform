@@ -68,6 +68,5 @@ export const content: ToolContent = {
     'A "shadowban" is not an official Instagram status; sudden reach drops can also come from algorithm shifts or content changes.',
     'Verify everything inside Instagram: Insights, Account Status, and a hashtag search from a non-follower account.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

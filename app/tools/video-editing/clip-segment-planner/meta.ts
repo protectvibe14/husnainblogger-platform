@@ -132,6 +132,5 @@ export const content: ToolContent = {
     'Clips are spaced to a maximum of 10 per plan to keep the output usable; very long sources should be planned in chunks.',
     'Coverage percent counts time covered, not quality — two overlapping moments merged into one count once.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

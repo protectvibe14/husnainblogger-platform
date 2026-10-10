@@ -113,6 +113,5 @@ export const content: ToolContent = {
     "No brand-conflict checking: a generated tagline may already be in use, so verify before adopting one.",
     "At most 20 service keywords are used and at most 30 taglines are returned.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

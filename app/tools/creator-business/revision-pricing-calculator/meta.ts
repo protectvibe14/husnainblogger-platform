@@ -174,6 +174,5 @@ export const content: ToolContent = {
     'Revision counts must be whole numbers; revisionPct must be between 0 and 100.',
     'A 0% pct in pct-of-fee mode makes extra revisions free and is flagged with a double-check prompt.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

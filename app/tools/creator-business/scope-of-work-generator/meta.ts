@@ -159,6 +159,5 @@ export const content: ToolContent = {
     'An empty exclusions list is flagged with a warning, not treated as "everything is included".',
     'The tool cannot enforce a signed agreement; client approval happens outside the tool.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

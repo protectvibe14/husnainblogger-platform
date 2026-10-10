@@ -98,6 +98,5 @@ export const content: ToolContent = {
     "Statuses are canonicalized case-insensitively to pending, in-progress, approved, or rejected.",
     "The optional revision limit is not persisted — set it again each session if you use it.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

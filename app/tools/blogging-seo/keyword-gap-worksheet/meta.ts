@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'Manual worksheet: it only compares the lists you paste. It does not fetch live competitor rankings, search volume, or keyword difficulty.',
     'Matching is by exact keyword text after normalization — close variants (e.g. "seo tip" vs "seo tips") are treated as different keywords.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

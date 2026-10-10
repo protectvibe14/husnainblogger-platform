@@ -105,14 +105,5 @@ export const content: ToolContent = {
     'English short texts; other languages and long documents are out of scope.',
     'A first-pass signal for triage, not a definitive judgment of tone.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Sentiment Analyzer',
-          item: 'https://husnainblogger.com/tools/ai-tools/sentiment-analyzer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

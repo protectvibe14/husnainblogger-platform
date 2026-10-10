@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'The tool formats the rating you enter — it does not verify, source, or aggregate ratings.',
     'Fractional fills are rounded to one decimal place of the star-row width.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

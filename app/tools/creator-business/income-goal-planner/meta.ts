@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'Taxes, platform fees, and unpaid time are not modeled — treat the target as pre-tax gross unless your numbers say otherwise.',
     'Average client value is your average per client per month; results scale linearly with it.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

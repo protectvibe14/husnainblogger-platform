@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Board names over 200 characters are rejected because they cannot fit a useful description under 500 characters.',
     'Non-Latin board names and keywords are inserted as-is; the tool never transliterates them.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

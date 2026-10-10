@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'Character count uses UTF-16 code units, so some emoji and CJK characters may count as two units each.',
     'A passing CPS does not guarantee the caption is in sync with the audio — timing still needs its own check.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

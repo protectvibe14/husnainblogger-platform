@@ -121,6 +121,5 @@ export const content: ToolContent = {
     'Character counts use Unicode code points (emoji count as one each), matching how most platforms measure length.',
     'Very long inputs are truncated with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

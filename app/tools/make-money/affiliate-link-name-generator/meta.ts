@@ -92,6 +92,5 @@ export const content: ToolContent = {
     'Generated names are suggestions only; they do not cloak anything until you add them to your own link-cloaking plugin.',
     'Names come from a fixed suffix list plus numbered fallbacks, not from any analysis of the product.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

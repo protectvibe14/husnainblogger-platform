@@ -93,6 +93,5 @@ export const content: ToolContent = {
     'Hashtag extraction is unicode-aware: # followed by letters (any script), numbers, and underscores.',
     'The tool never contacts Instagram; it cannot see your post\'s actual performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

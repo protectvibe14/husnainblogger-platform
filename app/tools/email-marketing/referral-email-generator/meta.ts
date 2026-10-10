@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'Copy comes from a fixed template bank, not AI; wording variety is limited to the bank.',
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -98,16 +98,7 @@ export const content: ToolContent = {
     'Summaries preserve key facts but may miss nuance — check the original before quoting.',
     'Avoid pasting sensitive or confidential text; provider-side handling follows the provider’s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Text Summarizer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-text-summarizer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

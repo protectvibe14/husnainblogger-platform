@@ -103,6 +103,5 @@ export const content: ToolContent = {
     'Unusual professions get generic shots with explicit swap-in slots; keyword matching is approximate (e.g. "coach" matches fitness).',
     'Time labels are fixed schedules per day type, not your actual times — adjust to your real routine.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

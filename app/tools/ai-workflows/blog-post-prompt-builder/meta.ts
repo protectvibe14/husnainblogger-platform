@@ -91,6 +91,5 @@ export const content: ToolContent = {
     'Post type must be one of: how-to, listicle, review, opinion, tutorial.',
     'Word count must be between 300 and 5000 (defaults to 1200 when left blank).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

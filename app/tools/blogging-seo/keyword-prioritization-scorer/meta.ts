@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'The rubric rewards relevance, volume, low difficulty, and commercial intent equally by default; adjust the weights to match your actual strategy.',
     'Tied scores keep your input order — put your preferred keyword first when scores are close.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

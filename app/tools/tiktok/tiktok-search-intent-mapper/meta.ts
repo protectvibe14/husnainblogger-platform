@@ -133,6 +133,5 @@ export const content: ToolContent = {
     'Ambiguous phrases deliberately return a top-2 blend with a confidence note instead of one forced classification.',
     'A phrase with no trigger matches returns "unclear" with all 5 intents as possibilities — the tool does not guess.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

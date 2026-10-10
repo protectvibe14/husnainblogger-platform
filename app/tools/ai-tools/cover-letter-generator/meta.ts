@@ -112,16 +112,7 @@ export const content: ToolContent = {
     'AI output can be generic; personalize and proofread before attaching it to a real application.',
     'No employment claims are invented, but phrasing should still be checked against your real history.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Cover Letter Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/cover-letter-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

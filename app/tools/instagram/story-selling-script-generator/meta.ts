@@ -138,6 +138,5 @@ export const content: ToolContent = {
     'Scripts are assembled from 70 fixed sentence frames — the wording is templated, not AI-written. Adapt the tone to your voice before posting.',
     'No sales results are promised or estimated; the tool plans structure, not outcomes.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

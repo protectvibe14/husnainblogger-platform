@@ -114,14 +114,5 @@ export const content: ToolContent = {
     'Cue banks are English-only; non-English keywords without Latin script return "unknown".',
     'Keywords with no matching cues default to informational with confidence 0.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Search Intent Classifier',
-          item: 'https://husnainblogger.com/tools/blogging-seo/search-intent-classifier/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

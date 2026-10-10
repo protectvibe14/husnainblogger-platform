@@ -105,14 +105,5 @@ export const content: ToolContent = {
     'You must replace the [Commenter], [Your Name] and [your email] placeholders before posting.',
     'Spam-adjacent templates are polite boundary-setting drafts; use YouTube Studio moderation tools for actual spam.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Comment Reply Templates',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

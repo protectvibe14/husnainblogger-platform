@@ -131,6 +131,5 @@ export const content: ToolContent = {
     'The tool trusts your timestamps; wrong segment times produce a wrong plan. Export an accurate transcript first.',
     'A plan cutting over 60% of footage is flagged, not applied — the tool never edits anything, it only produces the plan.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -117,6 +117,5 @@ export const content: ToolContent = {
     'Marked answers are common-sense defaults, not verified facts about your topic — review and adapt them before posting.',
     'Quiz ideas are starting points — adapt the wording to your voice and audience.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

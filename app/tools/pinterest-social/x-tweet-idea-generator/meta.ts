@@ -108,14 +108,5 @@ export const content: ToolContent = {
     'The weighted count (links = 23, emoji = 2, rest = 1) is a conservative client-side rule, not X\u2019s official counter — always re-check before posting.',
     'Topics longer than 280 weighted characters on their own belong in a thread, not a single tweet.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Tweet Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

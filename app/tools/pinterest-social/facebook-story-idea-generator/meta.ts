@@ -95,6 +95,5 @@ export const content: ToolContent = {
     'Ideas are fixed library entries, not AI-generated — adapt the wording to your brand voice before filming.',
     'Canvas guidance (1080x1920, center safe zone) is general best practice, not a verified platform spec.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

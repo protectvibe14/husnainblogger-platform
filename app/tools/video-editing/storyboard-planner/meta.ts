@@ -108,6 +108,5 @@ export const content: ToolContent = {
     'Beats without a visual hint are marked TBD — the planner does not invent visuals for you.',
     'This plans visual frames per beat; the general camera shot list is a separate tool (Shot List Generator).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

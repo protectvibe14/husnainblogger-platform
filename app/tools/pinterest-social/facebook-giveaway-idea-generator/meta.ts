@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'The compliance checklist is guidance only; the tool cannot verify policy compliance — check Facebook\'s current Page promotion policies and your local contest laws.',
     'Entry mechanics are intentionally spam-free: no "tag 50 friends" style mechanics are suggested.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

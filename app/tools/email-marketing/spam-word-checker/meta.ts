@@ -92,6 +92,5 @@ export const content: ToolContent = {
     'Word-boundary matching means some variants (misspellings, leetspeak, curly apostrophes) will not match.',
     'Text longer than 5000 characters is truncated with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

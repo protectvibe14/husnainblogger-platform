@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Article titles are fixed templates; rewrite them for your site and verify against your CMS conventions.',
     'Clustering uses simple shared-word overlap (words of 4+ letters, no stemming) and may split or merge topics an editor would handle differently.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

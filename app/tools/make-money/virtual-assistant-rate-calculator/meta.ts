@@ -130,6 +130,5 @@ export const content: ToolContent = {
     "Weekly cost is simple multiplication (hourly band × weekly hours); it does not model taxes, platform fees, or benefits.",
     "Real VA rates vary by region, niche, and demand — treat every result as an estimate, not a researched market rate.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

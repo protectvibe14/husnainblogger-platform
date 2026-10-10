@@ -121,6 +121,5 @@ export const content: ToolContent = {
     "The tool cannot check domain or trademark availability; every result carries a reminder to verify yourself.",
     "At most 20 keywords are used and at most 50 names are returned, even if you ask for more combinations than exist.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -105,16 +105,7 @@ export const content: ToolContent = {
     'Cold outreach must follow anti-spam rules (e.g. CAN-SPAM in the US).',
     'The writer never invents facts about you, but confident phrasing should still be checked.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Email & Blog Writer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-email-blog-writer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

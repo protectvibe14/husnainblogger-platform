@@ -87,6 +87,5 @@ export const content: ToolContent = {
     'Entries are stored in your browser by the UI layer — clearing site data wipes the log, so export the CSV for backup.',
     'Entries with 0 impressions are reported at 0% CTR (division guarded); trend needs entries across at least 3 different days.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

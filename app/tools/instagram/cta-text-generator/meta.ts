@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'A CTA formula cannot guarantee engagement; timing, audience, and content quality matter more.',
     'Adapt the wording to your voice before posting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

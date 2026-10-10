@@ -92,6 +92,5 @@ export const content: ToolContent = {
     'Font availability varies by device; always use the provided fallback stack and test on your target devices.',
     'Google Fonts links are informational search links, not downloads or license grants — check each font\'s license before commercial use.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

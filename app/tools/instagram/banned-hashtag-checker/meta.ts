@@ -88,6 +88,5 @@ export const content: ToolContent = {
     'Only a manual search inside the Instagram app can confirm a tag\'s current status.',
     'Hashtag extraction recognizes # followed by unicode letters, numbers, and underscores.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

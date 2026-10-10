@@ -120,6 +120,5 @@ export const content: ToolContent = {
     "Canvas sizes are fixed presets per aspect ratio (16:9 → 1920×1080, 9:16 → 1080×1920, 1:1 → 1080×1080, 4:3 → 1600×1200).",
     "PiP overlays render above the main pane (higher z-order) — keep important content clear of that corner.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

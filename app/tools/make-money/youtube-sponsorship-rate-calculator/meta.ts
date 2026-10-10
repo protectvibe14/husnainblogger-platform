@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Intermediate tiers are log-interpolated estimates between nano ($20–$200) and mega ($50k–$300k+).',
     'Actual rates vary by niche, engagement, audience geography, deliverables, and negotiation — this is guidance, not a guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

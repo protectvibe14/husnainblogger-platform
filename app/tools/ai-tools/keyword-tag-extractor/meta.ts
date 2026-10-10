@@ -116,14 +116,5 @@ export const content: ToolContent = {
     'Fixed English stopword list; other languages will extract poorly.',
     'Bigrams need at least 2 occurrences to qualify for the 1.5x phrase bonus.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Keyword & Tag Extractor',
-          item: 'https://husnainblogger.com/tools/ai-tools/keyword-tag-extractor/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

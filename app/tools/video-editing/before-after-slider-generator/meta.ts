@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'Handle styles come from a fixed bank of 4 presets (circle, ring, arrows, neon); the drag transition is fixed pointer-follow and cannot be customized here.',
     'The snippet pattern is standard HTML/CSS/JS but is not tested in every browser — preview the embed on your own page before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

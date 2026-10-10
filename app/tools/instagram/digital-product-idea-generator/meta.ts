@@ -115,14 +115,5 @@ export const content: ToolContent = {
     'Price hints are your own input repeated back, never market pricing — the tool has no pricing data.',
     'An idea is only as good as its validation: run the listed validation step before building.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Digital Product Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Rewrites come from 18 fixed patterns — wording is templated, not AI-written. Pick the one that sounds most natural for your niche.',
     'Keyword front-loading is a widely used SEO convention, not a ranking guarantee; the tool makes no claims about reach or traffic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

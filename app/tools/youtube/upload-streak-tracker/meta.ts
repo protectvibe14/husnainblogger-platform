@@ -78,6 +78,5 @@ export const content: ToolContent = {
     'Dates are compared as UTC calendar days; two uploads on the same day count once, and future dates are rejected.',
     'YouTube has no official upload-streak rule — streaks are a personal consistency habit, not a platform requirement.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

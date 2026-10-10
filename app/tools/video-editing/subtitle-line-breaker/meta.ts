@@ -107,6 +107,5 @@ export const content: ToolContent = {
     'Cues needing more lines than your max are returned in full with a warning to split them — the tool never drops words.',
     'Same text and settings always produce the same breaks.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

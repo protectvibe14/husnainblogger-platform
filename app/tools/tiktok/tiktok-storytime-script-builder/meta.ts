@@ -139,6 +139,5 @@ export const content: ToolContent = {
     'The narration time is an estimate (~2.5 words/second); your actual speaking pace will differ.',
     'Stories estimated over ~180 seconds are flagged for a multi-part series rather than squeezed into one video.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

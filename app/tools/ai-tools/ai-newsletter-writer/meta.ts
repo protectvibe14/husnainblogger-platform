@@ -104,16 +104,7 @@ export const content: ToolContent = {
     'The model does not invent news events or statistics; verify anything time-sensitive.',
     'Avoid pasting sensitive material; provider-side handling follows the provider\'s policy.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Newsletter Writer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-newsletter-writer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

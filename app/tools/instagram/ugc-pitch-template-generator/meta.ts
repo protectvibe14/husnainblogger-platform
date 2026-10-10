@@ -131,14 +131,5 @@ export const content: ToolContent = {
     'The pitch is a template — it cannot promise replies, deals, or payment from brands.',
     'Personalize one line per brand before sending; identical mass messages get ignored and Instagram may limit bulk DM outreach.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'UGC Pitch Template Generator',
-          item: 'https://husnainblogger.com/tools/instagram/ugc-pitch-template-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

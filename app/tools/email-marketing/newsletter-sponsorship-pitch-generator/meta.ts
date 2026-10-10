@@ -145,6 +145,5 @@ export const content: ToolContent = {
     'Open rate is optional; omit it rather than guessing a number you cannot back up.',
     'This pitches your newsletter’s ad slots to sponsors; for asking a brand to sponsor you in general, use a general sponsorship-ask template instead.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

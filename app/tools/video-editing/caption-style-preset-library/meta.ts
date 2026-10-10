@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'Unknown vibes default to "bold" with a note rather than failing.',
     'CapCut instructions are manual steps — presets are not importable files.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

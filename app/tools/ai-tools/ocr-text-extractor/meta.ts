@@ -107,14 +107,5 @@ export const content: ToolContent = {
     'Line-level model: dense pages work best cropped to a few lines at a time.',
     'Output is best-effort transcription, not a certified copy — proofread before reuse.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'OCR Text Extractor',
-          item: 'https://husnainblogger.com/tools/ai-tools/ocr-text-extractor/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -102,14 +102,5 @@ export const content: ToolContent = {
     'Technical questions are role-aware but generic; deep specialist interviews need custom questions.',
     'English templates; role names in other languages are inserted verbatim.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Interview Question Generator',
-          item: 'https://husnainblogger.com/tools/ai-tools/interview-question-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

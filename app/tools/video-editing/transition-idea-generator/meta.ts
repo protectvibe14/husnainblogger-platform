@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'CapCut menu names change between app versions — if a named menu item moved, look for the same feature under the Effects or Transition tabs.',
     'Scene matching uses simple keyword spotting on your descriptions, not video analysis, so vague descriptions give less targeted picks.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'Scripts are assembled from 72 fixed templates — the wording is structured text, not AI-written copy. Rewrite it in your own voice before filming.',
     'The 20-page cap and the no-outbound-link rule are treated as static platform facts; the tool does not verify live Pinterest limits.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

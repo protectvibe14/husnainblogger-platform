@@ -216,6 +216,5 @@ export const content: ToolContent = {
     'Advertising disclosure rules vary by country — confirm the local requirements.',
     'Review every clause before use; usage-rights pricing is not included in the draft.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -91,8 +91,7 @@ export const content: ToolContent = {
     'Explanations describe apparent behavior — not a substitute for testing or review.',
     'Avoid pasting proprietary or secret-bearing code; provider-side handling follows the provider’s policy.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

@@ -93,6 +93,5 @@ export const content: ToolContent = {
     'Scores need 30+ words to be reliable; shorter samples are rejected.',
     'The score measures reading difficulty only — not accuracy, quality, or SEO value.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

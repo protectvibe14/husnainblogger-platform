@@ -132,6 +132,5 @@ export const content: ToolContent = {
     'Content angles and keyword seeds are hand-written templates, not AI writing and not market research.',
     'Evergreen niches get timeless angles with an honest note instead of forced seasonal tie-ins.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

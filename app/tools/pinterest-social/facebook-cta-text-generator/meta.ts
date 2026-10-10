@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'All phrases are verb-led and 60 characters or fewer; they are starting points, not guaranteed click-winners.',
     'This tool writes in-post CTA text only — Facebook Page CTA buttons are Facebook\'s fixed list and cannot be customized by this tool.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

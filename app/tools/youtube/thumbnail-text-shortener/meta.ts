@@ -108,6 +108,5 @@ export const content: ToolContent = {
     'The 5-word cap and mobile-size guidance are fixed readability rules of thumb, not measured legibility data from any device.',
     'Proper nouns and brand names score only +1 for capitalization; the tool does not understand meaning or context.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

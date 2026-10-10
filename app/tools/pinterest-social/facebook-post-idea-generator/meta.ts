@@ -126,6 +126,5 @@ export const content: ToolContent = {
     'The ~125–150 character truncation guidance is best practice for mobile feeds, not a hard cap.',
     'Adapt every draft to your voice and audience; replace "[link]" placeholders with real URLs before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

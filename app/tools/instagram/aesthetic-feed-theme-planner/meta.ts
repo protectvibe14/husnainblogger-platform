@@ -136,6 +136,5 @@ export const content: ToolContent = {
     'The niche input only shapes the closing tip; it does not change any palette, rule, or grid pattern.',
     'Posting-rhythm suggestions are starting points; your audience data should override them.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

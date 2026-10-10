@@ -138,14 +138,5 @@ export const content: ToolContent = {
     'Freshness criteria ("updated in the last 90 days") rely on your memory, not live data.',
     'The rubric is fixed; Instagram\u2019s highlight features may change over time.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Highlights Audit Checklist',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

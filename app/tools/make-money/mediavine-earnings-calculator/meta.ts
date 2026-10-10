@@ -95,6 +95,5 @@ export const content: ToolContent = {
     'All outputs are estimates. The tool assumes every session serves ads; invalid traffic, ad blockers, seasonality, and geography are ignored.',
     'RPMs outside the 1-200 sanity band are rejected as likely typos or unit mix-ups.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

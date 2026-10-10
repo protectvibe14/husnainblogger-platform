@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'YouTube ignores ALL hashtags when a description lists more than 15 — the tool warns but leaves the edit to you.',
     'Descriptions over 5000 characters are rejected; the FTC disclosure appears only when affiliate links are provided.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

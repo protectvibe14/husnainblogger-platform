@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'The #ad disclosure included follows general FTC guidance for affiliate marketing, but it is general information, not legal advice.',
     'Scripts are template-based, not AI-written, and cannot promise views, clicks, or affiliate earnings.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

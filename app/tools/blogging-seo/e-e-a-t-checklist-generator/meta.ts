@@ -98,14 +98,5 @@ export const content: ToolContent = {
     'Items are fixed English strings: general guidance, not tailored legal or SEO advice.',
     'E-E-A-T describes what Google quality raters look for; it is not a confirmed direct ranking factor.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'E-E-A-T Checklist Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

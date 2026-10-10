@@ -87,6 +87,5 @@ export const content: ToolContent = {
     'The tool cannot verify what any specific device or app version actually displays; it simulates truncation from documented thresholds.',
     'Truncation length guidance is a display rule of thumb, not a deliverability or open-rate factor.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

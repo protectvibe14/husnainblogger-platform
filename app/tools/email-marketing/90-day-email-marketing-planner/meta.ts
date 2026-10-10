@@ -136,6 +136,5 @@ export const content: ToolContent = {
     'Send weekdays are fixed per frequency (e.g. 2/week = Tue and Thu); all date math is done in UTC.',
     'Milestone advice (review opens/clicks, double down on winners) is general guidance, not a performance guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -100,14 +100,5 @@ export const content: ToolContent = {
     'Templates are English-language patterns; results may read unnaturally for non-English seeds or very technical topics.',
     'Always validate shortlisted ideas with a data-backed keyword research tool before targeting them.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Long-Tail Keyword Expander',
-          item: 'https://husnainblogger.com/tools/blogging-seo/long-tail-keyword-expander/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

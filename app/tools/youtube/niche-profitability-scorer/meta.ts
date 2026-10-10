@@ -119,6 +119,5 @@ export const content: ToolContent = {
     'CPM bands are rough self-estimates; real CPMs vary by country, season, and channel.',
     'A Low band is not a verdict against the niche — it means monetization is harder and needs a plan beyond ad revenue.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -126,14 +126,5 @@ export const content: ToolContent = {
     'Rules cover common Midjourney parameters; rare or brand-new flags are dropped with a generic reason.',
     'Aspect detection on plain prose is keyword-based (wide, vertical, square…) and can misfire on ambiguous text.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Cross-Model Prompt Converter',
-          item: 'https://husnainblogger.com/tools/ai-tools/cross-model-prompt-converter/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

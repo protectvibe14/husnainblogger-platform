@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'Built from a fixed bank of 30 ideas (15 free + 15 paid), served in fixed order.',
     'This is not legal advice; consent rules vary by country — check what applies to your list.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

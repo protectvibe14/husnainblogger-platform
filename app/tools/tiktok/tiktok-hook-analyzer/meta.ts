@@ -89,6 +89,5 @@ export const content: ToolContent = {
     'Hook patterns use English word lists — results are less meaningful for non-English hooks.',
     'The tool never contacts TikTok; it cannot see your video\'s actual performance.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

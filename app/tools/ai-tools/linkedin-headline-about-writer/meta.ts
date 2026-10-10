@@ -105,16 +105,7 @@ export const content: ToolContent = {
     'Only the role and skills you provide are used — no employers, titles, or metrics are invented.',
     'Personalize before publishing; untouched AI profiles are easy to spot.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'LinkedIn Headline & About Writer',
-          item: 'https://husnainblogger.com/tools/ai-tools/linkedin-headline-about-writer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

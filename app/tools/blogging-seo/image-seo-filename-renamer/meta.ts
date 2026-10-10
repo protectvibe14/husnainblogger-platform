@@ -102,6 +102,5 @@ export const content: ToolContent = {
     'Only renames the file name as text — it never sees or edits the image itself; apply the name in your CMS, media library, or operating system.',
     'Transliteration covers accented Latin letters only; non-Latin scripts (Chinese, Arabic, etc.) fall back to the generic name "image".',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

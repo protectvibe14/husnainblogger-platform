@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'Price-drop lines are labeled samples; the tool invents no prices and makes no sales guarantees.',
     'A single session covers at most 12 products; larger catalogs should be split across sessions.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

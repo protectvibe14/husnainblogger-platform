@@ -136,14 +136,5 @@ export const content: ToolContent = {
     'Use-case presets are fixed mappings — a starting point, not a guarantee for any specific generator.',
     'This is a reference list, not generation: always test a negative prompt on your own model.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Negative Prompt Library',
-          item: 'https://husnainblogger.com/tools/ai-tools/negative-prompt-library/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

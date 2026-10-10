@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Hooks come from fixed templates with your topic filled in — they are starting points, not AI-written scripts. Rewrite them in your own voice before filming.',
     'Reel duration and audio specs are not verified by this tool, so none are claimed here; check Facebook’s current guidance before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

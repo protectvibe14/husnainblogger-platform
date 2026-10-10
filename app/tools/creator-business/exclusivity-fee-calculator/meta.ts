@@ -134,6 +134,5 @@ export const content: ToolContent = {
     'The monthly equivalent is a simple division of the fee by the exclusivity months; it does not account for negotiation, taxes, or payment terms.',
     'With a 0-month exclusivity period, the monthly equivalent equals the full fee (there is nothing to spread it across).',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

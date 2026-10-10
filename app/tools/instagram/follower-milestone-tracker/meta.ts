@@ -132,6 +132,5 @@ export const content: ToolContent = {
     'Entries persist for this browser session only; use copy/download to keep your records.',
     'Percentages describe the numbers you entered; they are not growth predictions or guarantees.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

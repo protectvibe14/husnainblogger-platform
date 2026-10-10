@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'It cannot watch your video or write in your voice — treat the output as a starting outline to personalize.',
     'Skincare and Fashion / Outfits niches load dedicated template branches; all other niches use the general branch.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

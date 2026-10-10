@@ -102,14 +102,5 @@ export const content: ToolContent = {
     'Style/lighting detection is keyword-based; describing style in unusual words will read as "missing".',
     'The score measures prompt hygiene, not artistic quality — a high score does not guarantee a great image.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Prompt Health Debugger',
-          item: 'https://husnainblogger.com/tools/ai-tools/prompt-health-debugger/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -67,6 +67,5 @@ export const content: ToolContent = {
     "A fixed, general-purpose list — it is not SEO advice tailored to your site or niche.",
     "Progress is stored in your browser only; clearing site data resets it.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

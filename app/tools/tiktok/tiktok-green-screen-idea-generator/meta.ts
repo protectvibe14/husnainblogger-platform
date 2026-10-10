@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'Ideas come from fixed template banks, not AI; variety comes from the niche and background type you enter.',
     'Always use your own screenshots or licensed images as backgrounds — never copyrighted news sites or other creators\' content.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

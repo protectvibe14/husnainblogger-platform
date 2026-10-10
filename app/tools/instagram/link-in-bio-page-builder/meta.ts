@@ -104,14 +104,5 @@ export const content: ToolContent = {
     'Only http(s) URLs are accepted; javascript: and other schemes are rejected for safety.',
     'The page is mobile-friendly by design, but always open the downloaded file on your own phone before sharing it.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Link in Bio Page Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -112,6 +112,5 @@ export const content: ToolContent = {
     '"Why it converts" notes are general best-practice explanations, not guarantees for your specific audience.',
     'This tool covers general lead-magnet ideation; sibling tools cover titles, content upgrades, and quizzes in more depth.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

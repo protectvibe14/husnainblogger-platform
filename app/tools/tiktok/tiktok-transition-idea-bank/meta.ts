@@ -123,6 +123,5 @@ export const content: ToolContent = {
     'This is a static idea bank; it does not edit, render, or automate video in the TikTok app.',
     'Advanced transitions genuinely need CapCut or another editor; they are never presented as doable in-app.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -144,6 +144,5 @@ export const content: ToolContent = {
     'dateModified is emitted equal to datePublished; update it yourself if the article changes after publishing.',
     'A future publish date is flagged as a warning — the date should reflect when the article actually went live.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

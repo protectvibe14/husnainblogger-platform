@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'Vague interests get 3 exploratory picks plus a clarifier list rather than confident rankings.',
     'Non-visual interests get an honest handicap warning, since Pinterest rewards visual, searchable categories.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

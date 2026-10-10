@@ -90,6 +90,5 @@ export const content: ToolContent = {
     'Output is capped at 5 hashtags per Instagram\'s current recommended limit.',
     'Unknown niches fall back to a general pool with a note — pick a listed niche for tailored tags.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

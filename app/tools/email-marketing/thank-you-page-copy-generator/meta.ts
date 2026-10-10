@@ -142,6 +142,5 @@ export const content: ToolContent = {
     '36 total patterns (16 headlines, 8 body paragraphs, 8 CTAs, 4 tone intros); drafts may feel formulaic by design.',
     'Template copy is a starting point — always proofread and adapt it to your brand voice before publishing.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

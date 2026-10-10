@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'A blank fill rate is assumed to be 100% and flagged in the notice — add your real rates for better estimates.',
     'Max 20 slots; prices are rounded to 2 decimals and percentages to 2 decimals.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

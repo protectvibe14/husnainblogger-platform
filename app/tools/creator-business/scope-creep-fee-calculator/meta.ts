@@ -141,6 +141,5 @@ export const content: ToolContent = {
     'Inputs from the mode you did not select are ignored; only the active mode affects the result.',
     'The calculation does not model taxes, payment terms, or contract penalties — only the fee math.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -115,6 +115,5 @@ export const content: ToolContent = {
     'Unknown acronyms and brand names are flagged, never given invented phonetic spellings.',
     'The 0–100 score uses estimated weights as guidance; it is not a measurement of any TikTok voice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

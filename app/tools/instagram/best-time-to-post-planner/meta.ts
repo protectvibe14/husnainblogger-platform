@@ -161,14 +161,5 @@ export const content: ToolContent = {
     'Timezone conversion uses fixed standard UTC offsets and ignores daylight saving — shift windows by an hour yourself when DST applies.',
     'Days with no region-specific slot get a generic midday fallback, clearly labeled as such.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Best Time to Post Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

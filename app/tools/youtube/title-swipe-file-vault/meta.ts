@@ -144,6 +144,5 @@ export const content: ToolContent = {
     'Titles over 100 graphemes are saved with a warning, not rejected — trim them before using them as real YouTube titles.',
     'This tool is a local collection, not a content generator — it creates no titles and offers no performance predictions.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

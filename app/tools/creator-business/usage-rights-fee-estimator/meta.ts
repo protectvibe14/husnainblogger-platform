@@ -179,6 +179,5 @@ export const content: ToolContent = {
     'A 0 multiplier yields a $0 fee and is flagged as a likely data-entry mistake.',
     'ESTIMATE: a negotiation starting point, not a quote and not market advice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

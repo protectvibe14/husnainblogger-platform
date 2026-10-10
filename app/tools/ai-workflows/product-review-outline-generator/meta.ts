@@ -115,6 +115,5 @@ export const content: ToolContent = {
     "Comparison reviews use a [COMPETITOR] placeholder you fill in yourself; roundups anchor on your product.",
     "Every outline ships with testing-note slots; publish only after real testing or hands-on research.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

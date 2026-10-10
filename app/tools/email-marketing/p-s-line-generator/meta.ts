@@ -98,6 +98,5 @@ export const content: ToolContent = {
     'The tool inserts your words as-is; it cannot verify that your offer wording is accurate.',
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

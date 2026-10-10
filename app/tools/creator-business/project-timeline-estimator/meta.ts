@@ -139,6 +139,5 @@ export const content: ToolContent = {
     'Partial work days are rounded up (a 7-hour task at 6 hours/day = 2 days).',
     'Leaving buffer days empty means 0 buffer days; the breakdown shows a note reminding you none was added.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

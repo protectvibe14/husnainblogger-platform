@@ -170,14 +170,5 @@ export const content: ToolContent = {
     'The clarity score measures how consistent your answers are, not market demand or competition in the niche.',
     'This quiz cannot predict income, growth speed, or brand-deal potential.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Niche Clarity Quiz',
-          item: 'https://husnainblogger.com/tools/instagram/niche-clarity-quiz/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

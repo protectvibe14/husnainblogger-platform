@@ -111,6 +111,5 @@ export const content: ToolContent = {
     'All amounts are USD; no currency conversion is performed.',
     'Results are estimates, not exact fee invoices.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

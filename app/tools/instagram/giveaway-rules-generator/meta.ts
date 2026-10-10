@@ -106,6 +106,5 @@ export const content: ToolContent = {
     'The end date must be in the future; the tool validates this before generating.',
     'Entry steps and the compliance checklist are general guidance, not tailored legal counsel.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

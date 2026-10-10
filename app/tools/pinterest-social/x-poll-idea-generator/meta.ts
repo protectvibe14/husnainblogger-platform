@@ -110,14 +110,5 @@ export const content: ToolContent = {
     'Same topic + duration always returns the same poll; variety comes from trying different topics.',
     'Duration and option limits reflect X\'s published poll rules; the tool cannot post the poll for you.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Poll Idea Generator',
-          item: 'https://husnainblogger.com/tools/pinterest-social/x-poll-idea-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

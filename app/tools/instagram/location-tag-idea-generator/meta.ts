@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Fixed pool: 24 venue types × 8 tag strategies, selected by a fixed rotation rule.',
     'Location reach also depends on the post itself — test ideas and compare in Instagram Insights.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

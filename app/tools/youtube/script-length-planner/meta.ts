@@ -114,6 +114,5 @@ export const content: ToolContent = {
     'All figures are estimates: pauses, B-roll, silence and demos add unscripted time, so finished videos usually run 10–20% longer than the script math.',
     'Section percentages (5/10/60/15/10) are a planning convention, not a requirement from YouTube.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

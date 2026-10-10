@@ -97,6 +97,5 @@ export const content: ToolContent = {
     'Format suggestions are generic guidance, not performance predictions; test what your audience actually watches.',
     'The map stays useful only if you maintain it — retire pillars that underperform and add ones viewers ask for.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

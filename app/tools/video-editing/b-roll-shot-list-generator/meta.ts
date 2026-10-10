@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'A vague or very short topic still produces a list, with a warning that the shots are generic.',
     'Requests above 24 shots cycle the bank from the top, flagged with a warning.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

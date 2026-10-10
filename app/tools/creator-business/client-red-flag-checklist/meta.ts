@@ -109,6 +109,5 @@ export const content: ToolContent = {
     'Next steps are generic information, not legal or financial advice.',
     'The signal bank is fixed at 24 items and does not cover every possible warning sign.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

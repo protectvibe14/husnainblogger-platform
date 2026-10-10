@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'A working quiz needs real scoring logic and result pages, which this tool does not build.',
     'This tool covers quiz-format lead magnets only; general ideation is the Lead Magnet Idea Generator and titles are the Lead Magnet Title Generator.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

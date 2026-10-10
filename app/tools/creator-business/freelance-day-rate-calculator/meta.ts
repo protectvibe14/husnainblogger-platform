@@ -175,6 +175,5 @@ export const content: ToolContent = {
     'Unpaid time is only covered if you excluded it from your billable days.',
     'ESTIMATE: a planning starting point, not a pricing guarantee.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

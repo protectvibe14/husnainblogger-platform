@@ -94,14 +94,5 @@ export const content: ToolContent = {
     'Weighted character counting (URL = 23, emoji/CJK = 2) is an approximation of X’s proprietary counting.',
     'Same goal always returns the same 5 drafts; variety comes from picking a different goal.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Pinned Tweet Idea Generator',
-          item: 'https://husnainblogger.com/tools/pinterest-social/x-pinned-tweet-idea-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

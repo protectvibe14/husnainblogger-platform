@@ -75,6 +75,5 @@ export const content: ToolContent = {
     'Variable names are case-sensitive and limited to 60 characters.',
     'Maximum 20 templates per run, 2,000 characters per template.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

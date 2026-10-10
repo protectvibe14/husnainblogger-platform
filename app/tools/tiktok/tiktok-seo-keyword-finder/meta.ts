@@ -129,6 +129,5 @@ export const content: ToolContent = {
     'Phrases are assembled from fixed templates; they are starting points to validate in TikTok search, not proven queries.',
     'TikTok\'s search behavior changes over time; re-check your target phrases in the app before building a series around them.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

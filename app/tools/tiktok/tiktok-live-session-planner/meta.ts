@@ -124,6 +124,5 @@ export const content: ToolContent = {
     'Gift-goal numbers are illustrative samples scaled to your duration — set your own targets based on your audience.',
     'Segment timing is a starting plan; real LIVEs run long or short, so treat the table as a guide, not a script.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -104,6 +104,5 @@ export const content: ToolContent = {
     'This tool writes text only — it does not create images or post carousels.',
     'The 35-slide cap follows TikTok\'s Photo Mode rule; requests above it are clamped, never silently accepted.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

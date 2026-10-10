@@ -105,6 +105,5 @@ export const content: ToolContent = {
     'This tool has no access to TikTok: it cannot find videos to duet, check whether duets are enabled on a video, or name trending creators.',
     'The "no partner" guidance never names real creators; you still need the TikTok app to find and film duets.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

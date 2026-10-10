@@ -116,6 +116,5 @@ export const content: ToolContent = {
     'Titles come from 48 fixed formulas (12 per tone); they are starting points, not AI-written copy.',
     'Titles over 60 characters are auto-truncated at a word boundary and flagged — review them before use.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

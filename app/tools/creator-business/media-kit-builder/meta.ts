@@ -217,6 +217,5 @@ export const content: ToolContent = {
     'Engagement rate is self-reported; the band (<1% low, 1-3% average, 3-6% strong, >6% exceptional) is a rough heuristic, not a measurement or guarantee.',
     'Output is structured data only, not a designed PDF or styled page.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -171,6 +171,5 @@ export const content: ToolContent = {
     'This tool prices editing labor only; sponsorship/ad-slot pricing is a different tool.',
     'Results are ESTIMATES for your planning, not a promise of what clients will pay.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

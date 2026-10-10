@@ -125,6 +125,5 @@ export const content: ToolContent = {
     'Templates only — the tool does not send DMs automatically. Automation of DMs is not allowed; every message is sent manually by you.',
     'Every template stays under Instagram\'s 1,000-character DM limit; {name} must be replaced by you before sending.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

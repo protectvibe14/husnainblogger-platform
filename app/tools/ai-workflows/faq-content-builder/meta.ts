@@ -90,6 +90,5 @@ export const content: ToolContent = {
     "The tool formats your questions only — it writes no answers and performs no AI Q&A.",
     "Valid JSON-LD improves eligibility for FAQ rich results but does not guarantee them.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

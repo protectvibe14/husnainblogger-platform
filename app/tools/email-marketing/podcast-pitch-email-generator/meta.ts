@@ -125,6 +125,5 @@ export const content: ToolContent = {
     'Host name is optional; when empty the email uses a "Hi there," greeting and "your team" as the fallback phrase.',
     'The signature is a placeholder — always replace it with your real name and link before sending.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

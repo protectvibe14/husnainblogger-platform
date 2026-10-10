@@ -88,6 +88,5 @@ export const content: ToolContent = {
     "Blank fields become labeled placeholders; replace them before publishing the SOP.",
     "All steps in one run must share the same process name; steps are capped at 30.",
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

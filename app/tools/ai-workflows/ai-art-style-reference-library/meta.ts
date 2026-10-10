@@ -118,22 +118,5 @@ export const content: ToolContent = {
     'Descriptions and snippets are human-written references, not AI output.',
     'Image generators vary; results differ between models and settings.',
   ],
-  jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: 'AI Art Styles List 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-art-style-reference-library/',
-      description:
-    'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. free now.',
-    },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Art Style Reference Library',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-art-style-reference-library/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

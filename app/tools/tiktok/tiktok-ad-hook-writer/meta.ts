@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'The claim guard flags words like "best" and "#1" for your review; it cannot judge whether a claim is actually true or compliant with TikTok\'s ad policies.',
     'The 140-character cap is a readability best practice chosen by this tool, not a TikTok-published rule.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

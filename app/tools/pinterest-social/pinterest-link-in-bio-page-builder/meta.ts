@@ -117,14 +117,5 @@ export const content: ToolContent = {
     'Only http(s) URLs are accepted; javascript: and other schemes are rejected for safety.',
     'Labels are capped at 60 characters and pages at 20 links.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest Link-in-Bio Page Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

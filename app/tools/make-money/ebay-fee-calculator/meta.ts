@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'Insertion fees assume 250 free listings per month at $0.35 each beyond that.',
     'Not modeled: store-tier discounts, managed-payments terms, promoted-listing ad fees, sales tax, or shipping you actually pay.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -96,6 +96,5 @@ export const content: ToolContent = {
     'A single pasted batch cannot represent a whole recording — test several sections for a real verdict.',
     'Results are deterministic: the same sample batch always produces the same measurements.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

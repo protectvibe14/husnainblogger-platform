@@ -122,6 +122,5 @@ export const content: ToolContent = {
     'The phase is computed from whole UTC days between today and the event date; it ignores the event\u2019s time of day.',
     'This tool only writes the text — you still set the actual countdown end date inside Instagram\u2019s sticker.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

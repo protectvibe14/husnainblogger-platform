@@ -112,6 +112,5 @@ export const content: ToolContent = {
     'Track duration is capped at 3600 seconds to keep the marker list usable.',
     'Same inputs always produce the same markers — the math is fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

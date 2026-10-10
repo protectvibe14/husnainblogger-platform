@@ -144,6 +144,5 @@ export const content: ToolContent = {
     'Drafts are assembled from fixed template banks (12 subject patterns, 12 openers, 4 body paragraphs, 12 CTA lines, 6 urgency lines, 4 sign-offs) — no AI copywriting is involved.',
     'The tool does not verify your discount terms or deadline — confirm them in your store before sending.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -157,6 +157,5 @@ export const content: ToolContent = {
     'Seller-plan fee (Professional $39.99/mo vs Individual $0.99/item) is not included — add it to other per-unit fees if you want it counted.',
     'Not modeled: inbound placement fees, low-inventory-level fees, returns/refunds, advertising (PPC), or taxes.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

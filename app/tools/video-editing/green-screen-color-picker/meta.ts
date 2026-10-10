@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'Near-gray samples (saturation under 0.25) key poorly; the tool warns about this instead of pretending the sample works.',
     'Same colors always produce the same recommendation — the rules are fully deterministic.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

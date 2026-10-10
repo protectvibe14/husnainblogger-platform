@@ -110,6 +110,5 @@ export const content: ToolContent = {
     'CTAs over 60 characters are rejected so they fit inside the 160-character budget.',
     'Only the first 3 keywords are used; extra keywords are ignored.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

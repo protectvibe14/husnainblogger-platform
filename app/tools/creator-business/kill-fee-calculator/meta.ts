@@ -153,6 +153,5 @@ export const content: ToolContent = {
     'The refund output assumes the client prepaid the full contract value; adjust manually for partial payments or deposits.',
     'This is a math tool, not legal advice — enforceability of a kill fee depends on your contract and jurisdiction.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

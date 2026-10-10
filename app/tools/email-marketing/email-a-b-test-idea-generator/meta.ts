@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Ideas come from a fixed 18-idea template bank, not from anyone’s real test data or AI.',
     'The sample-size guidance is a simplified rule of thumb, not a statistical power calculation; real significance needs a proper calculator.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -105,16 +105,7 @@ export const content: ToolContent = {
     'Output is always 2000×2000 px white; no shadows, reflections or styling are added.',
     'One product per photo works best — group shots may confuse the mask.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Product Photo White Background Maker',
-          item: 'https://husnainblogger.com/tools/ai-tools/product-photo-white-background-maker/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

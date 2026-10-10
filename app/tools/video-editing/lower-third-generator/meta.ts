@@ -118,6 +118,5 @@ export const content: ToolContent = {
     'Font auto-shrink keeps long names on one line down to 20px; very long names at 20px may still feel small.',
     'No visual preview is generated here — check the result in your own page before broadcasting.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

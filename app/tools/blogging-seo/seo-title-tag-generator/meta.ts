@@ -128,6 +128,5 @@ export const content: ToolContent = {
     'The 50–60 character range and ~600 px cutoff are widely published display conventions, not guarantees; Google rewrites titles on its own.',
     'No rankings are promised or implied — title tags are one small on-page factor among many.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

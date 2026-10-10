@@ -120,14 +120,5 @@ export const content: ToolContent = {
     'Combos come from a fixed curated bank of 120 combos (10 vibes x 12) — picked in bank order, not generated or personalized.',
     'Emoji rendering varies by device and app — preview a combo in your bio or caption before relying on it.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Emoji Combo Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

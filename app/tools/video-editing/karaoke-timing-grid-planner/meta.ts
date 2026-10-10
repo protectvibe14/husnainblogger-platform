@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Beat snapping aligns to a perfect metronome grid (60000 / BPM ms) — live-tempo drift still needs manual adjustment.',
     'Character weight is a proxy for sung length; melisma or held notes will still need hand-tuning.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

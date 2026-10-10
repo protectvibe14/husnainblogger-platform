@@ -135,6 +135,5 @@ export const content: ToolContent = {
     'totalTime is validated as an ISO 8601 duration format only; the tool cannot check it matches your actual steps.',
     'HowTo rich results are only eligible when the steps are visible on the page and match the markup.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

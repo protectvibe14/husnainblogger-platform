@@ -115,6 +115,5 @@ export const content: ToolContent = {
     '"Freshness" is framed as creator best practice, not Pinterest\'s internal detection logic, which is not public.',
     'Following the checklist does not guarantee a distribution boost — the disclaimer returned with every run says this explicitly.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

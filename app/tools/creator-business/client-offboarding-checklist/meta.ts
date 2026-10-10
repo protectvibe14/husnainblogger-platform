@@ -99,6 +99,5 @@ export const content: ToolContent = {
     'Checklist content comes from fixed item banks — it does not adapt to your contract terms or local laws.',
     'Always follow the terms of your own client contract first.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

@@ -101,6 +101,5 @@ export const content: ToolContent = {
     'The brand/IP scan uses a 58-term reminder list with word-boundary matching; it is not exhaustive and is not legal advice — always verify trademarks yourself.',
     'Descriptions are template-based suggestions, not AI copy, and cannot promise higher conversions or rankings.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

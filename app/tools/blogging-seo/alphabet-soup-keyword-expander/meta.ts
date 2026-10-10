@@ -94,14 +94,5 @@ export const content: ToolContent = {
     'Outputs are mechanical letter combinations, not real autocomplete suggestions — they carry no search data.',
     'For non-Latin seeds the a-z letters still apply as suffixes, which may be less useful.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Alphabet Soup Keyword Expander',
-          item: 'https://husnainblogger.com/tools/blogging-seo/alphabet-soup-keyword-expander/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

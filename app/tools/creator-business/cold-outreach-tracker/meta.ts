@@ -100,6 +100,5 @@ export const content: ToolContent = {
     'Dates must be entered as YYYY-MM-DD.',
     'This tool never sends emails — outreach itself stays manual.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };

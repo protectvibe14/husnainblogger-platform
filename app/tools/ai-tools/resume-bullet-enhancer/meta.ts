@@ -98,39 +98,7 @@ export const content: ToolContent = {
     'One bullet per generation; the tool does not restructure or format your whole resume.',
     'AI output can be generic — review every bullet before putting it on a real resume.',
   ],
-  jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Resume Bullet Enhancer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/resume-bullet-enhancer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free resume bullet point enhancer 2026: The rewritten bullet: strong action verb, quantified result when you provided numbers. Fast, private - try.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Resume Bullet Enhancer',
-          item: 'https://husnainblogger.com/tools/ai-tools/resume-bullet-enhancer/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };
 
 export const aiConfig: AiToolConfig = {

@@ -107,14 +107,5 @@ export const content: ToolContent = {
     'Read-time estimates assume ~200 words/minute — a rough planning figure, not a measurement.',
     'Internal-linking notes are fixed structural guidance, not measured linking data.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Series Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

@@ -120,14 +120,5 @@ export const content: ToolContent = {
     'H3 sub-points are generic writing prompts, not topic-specific research.',
     'The tool does not check SERPs, keyword difficulty, or search volume.',
   ],
-  jsonLd: [
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Outline Generator',
-          item: 'https://husnainblogger.com/tools/blogging-seo/blog-outline-generator/',
-        },
-      ],
-    },
-  ],
+  jsonLd: [],
 };

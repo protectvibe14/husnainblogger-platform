@@ -131,6 +131,5 @@ export const content: ToolContent = {
     'The follower count you enter is never verified; never inflate it, since brands can check.',
     'A pitch template cannot guarantee replies; targeting the right brands matters more.',
   ],
-  jsonLd: [
-  ],
+  jsonLd: [],
 };
