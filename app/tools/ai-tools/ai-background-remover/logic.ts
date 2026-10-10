@@ -79,10 +79,10 @@ export function validateInputs(inputs: Record<string, unknown>): ValidationResul
 export function getModelConfig(): ModelConfig {
   return {
     task: 'image-segmentation',
-    modelId: 'briaai/RMBG-1.4',
-    sizeMb: 176,
+    modelId: 'imgdesignart/rmbg-1-4-onnx (RMBG-1.4 ONNX)',
+    sizeMb: 44,
     license: 'BRIA — source-available, non-commercial (check BRIA\u2019s license for commercial use)',
-    notes: 'ONNX weights run in-browser via transformers.js; one-time download, then fully offline.',
+    notes: 'ONNX weights run in-browser via onnxruntime-web; one-time download (~44 MB quantized), then fully offline.',
   };
 }
 

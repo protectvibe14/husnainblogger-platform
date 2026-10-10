@@ -1,32 +1,19 @@
 /**
- * client.ts — AI Background Remover (tool-508), Lane A.
+ * client.ts — AI Background Remover (redesigned).
  *
- * Flow: image upload (drag-drop or browse) + quality select ->
- * pipeline('image-segmentation', 'briaai/RMBG-1.4') -> foreground mask ->
- * canvas composite (original RGB + mask alpha) -> before/after preview +
- * transparent PNG download. All on-device. Honest errors only.
+ * Flow: beautiful drag-drop upload zone with image preview ->
+ * ONNX RMBG-1.4 model (direct onnxruntime-web, NOT transformers.js
+ * pipeline which lacks SegformerForSemanticSegmentation support) ->
+ * foreground mask -> transparent PNG -> before/after comparison +
+ * download. All on-device. Honest errors only.
  */
 import type { AiClientContext } from '../../../src/lib/ai/types.ts';
-import type { ModelLoadProgress } from '../../../src/lib/ai/model-loader.ts';
-import { loadPipeline } from '../../../src/lib/ai/model-loader.ts';
+import { removeBackground } from './onnx-segmenter.ts';
 import {
   validateInputs,
-  getModelConfig,
   getAllowedMimes,
   MAX_FILE_MB,
 } from './logic.ts';
-
-/** Minimal pipeline-callable shape. */
-type Segmenter = (image: string) => Promise<unknown>;
-/** Minimal mask canvas shape returned by the image-segmentation pipeline. */
-interface MaskResult {
-  label?: string;
-  score?: number;
-  mask?: { toCanvas: () => HTMLCanvasElement };
-}
-
-const QUALITY_DTYPE: Record<string, string> = { balanced: 'q8', best: 'fp32' };
-const segmenterCache: Record<string, Segmenter> = {};
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
@@ -39,218 +26,283 @@ function el<K extends keyof HTMLElementTagNameMap>(
   return e;
 }
 
-function loadImageDims(url: string): Promise<{ width: number; height: number; img: HTMLImageElement }> {
+function loadImage(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    img.onload = () => resolve({ width: img.naturalWidth, height: img.naturalHeight, img });
+    img.onload = () => resolve(img);
     img.onerror = () => reject(new Error('Could not read that image file.'));
     img.src = url;
   });
 }
 
-/**
- * Composite the original image with the model's foreground mask.
- * Mask luminance becomes the alpha channel at the original resolution.
- */
-function compositeTransparent(
-  img: HTMLImageElement,
-  maskCanvas: HTMLCanvasElement,
-): HTMLCanvasElement {
-  const w = img.naturalWidth;
-  const h = img.naturalHeight;
-  const canvas = document.createElement('canvas');
-  canvas.width = w;
-  canvas.height = h;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) throw new Error('Your browser could not create an image canvas.');
-  ctx.drawImage(img, 0, 0);
-
-  const maskScaled = document.createElement('canvas');
-  maskScaled.width = w;
-  maskScaled.height = h;
-  const mctx = maskScaled.getContext('2d');
-  if (!mctx) throw new Error('Your browser could not create an image canvas.');
-  mctx.drawImage(maskCanvas, 0, 0, w, h);
-
-  const rgb = ctx.getImageData(0, 0, w, h);
-  const mask = mctx.getImageData(0, 0, w, h);
-  for (let i = 0; i < rgb.data.length; i += 4) {
-    rgb.data[i + 3] = mask.data[i]; // red channel = foreground strength
-  }
-  ctx.putImageData(rgb, 0, 0);
-  return canvas;
-}
-
-export async function mountAiTool(ctx: AiClientContext): Promise<void> {
+export function init(ctx: AiClientContext): void {
   const root = ctx.mountEl;
   root.innerHTML = '';
-  const cfg = getModelConfig();
 
-  // --- upload -------------------------------------------------------------
-  const fileLabel = el('label', 'hb-ai-label', 'Image file *');
-  fileLabel.htmlFor = 'hb-ai-bg-file';
-  root.appendChild(fileLabel);
+  // --- styles -------------------------------------------------------------
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-bg-wrap { display: flex; flex-direction: column; gap: 16px; }
+    .hb-bg-drop {
+      border: 2px dashed #9aa4b2; border-radius: 14px; padding: 36px 20px;
+      text-align: center; cursor: pointer; transition: all .2s ease;
+      background: #f8fafc;
+    }
+    .hb-bg-drop:hover, .hb-bg-drop.hb-bg-dragover {
+      border-color: #2563eb; background: #eff6ff;
+    }
+    .hb-bg-drop.hb-bg-has-image { padding: 12px; }
+    .hb-bg-icon { font-size: 40px; margin-bottom: 8px; }
+    .hb-bg-title { font-size: 17px; font-weight: 600; color: #1e293b; margin: 0 0 4px; }
+    .hb-bg-sub { font-size: 13px; color: #64748b; margin: 0; }
+    .hb-bg-browse {
+      display: inline-block; margin-top: 12px; padding: 10px 22px;
+      background: #2563eb; color: #fff; border: none; border-radius: 8px;
+      font-size: 15px; font-weight: 600; cursor: pointer;
+    }
+    .hb-bg-browse:hover { background: #1d4ed8; }
+    .hb-bg-preview { max-width: 100%; max-height: 220px; border-radius: 10px; margin: 0 auto; display: block; }
+    .hb-bg-filename { font-size: 13px; color: #475569; margin-top: 8px; word-break: break-all; }
+    .hb-bg-change { font-size: 13px; color: #2563eb; background: none; border: none; cursor: pointer; text-decoration: underline; margin-top: 4px; }
+    .hb-bg-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .hb-bg-run {
+      padding: 12px 28px; background: #16a34a; color: #fff; border: none;
+      border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer;
+    }
+    .hb-bg-run:hover:not(:disabled) { background: #15803d; }
+    .hb-bg-run:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-bg-progress { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+    .hb-bg-progress > div { height: 100%; background: #2563eb; width: 0%; transition: width .3s; }
+    .hb-bg-status { font-size: 14px; color: #475569; margin: 0; }
+    .hb-bg-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 12px 16px; border-radius: 8px; font-size: 14px;
+    }
+    .hb-bg-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .hb-bg-compare { grid-template-columns: 1fr; } }
+    .hb-bg-compare figure { margin: 0; }
+    .hb-bg-compare img {
+      width: 100%; border-radius: 10px; border: 1px solid #e2e8f0;
+      background-image: linear-gradient(45deg, #e2e8f0 25%, transparent 25%), linear-gradient(-45deg, #e2e8f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e2e8f0 75%), linear-gradient(-45deg, transparent 75%, #e2e8f0 75%);
+      background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+    }
+    .hb-bg-compare figcaption { font-size: 13px; font-weight: 600; color: #475569; margin-top: 6px; text-align: center; }
+    .hb-bg-dl {
+      display: inline-block; padding: 12px 28px; background: #2563eb; color: #fff;
+      border-radius: 8px; font-size: 16px; font-weight: 700; text-decoration: none; text-align: center;
+    }
+    .hb-bg-dl:hover { background: #1d4ed8; }
+  `;
+  root.appendChild(style);
 
-  const drop = el('div', 'hb-ai-field');
+  const wrap = el('div', 'hb-bg-wrap');
+  root.appendChild(wrap);
+
+  // --- drop zone ------------------------------------------------------------
+  const drop = el('div', 'hb-bg-drop');
   drop.setAttribute('role', 'button');
   drop.tabIndex = 0;
-  drop.setAttribute('aria-label', 'Upload an image: drag and drop, or press Enter to browse');
-  const dropHint = el('p', 'hb-ai-status', 'Drag & drop an image here, or click to browse (JPG, PNG, WEBP, GIF — up to ' + MAX_FILE_MB + ' MB).');
-  drop.appendChild(dropHint);
-  const fileName = el('p', 'hb-ai-status');
-  drop.appendChild(fileName);
-  const fileInput = el('input', 'hb-ai-input') as HTMLInputElement;
+  drop.setAttribute('aria-label', 'Upload an image: drag and drop, or click to browse');
+
+  const icon = el('div', 'hb-bg-icon', '🖼️');
+  const title = el('p', 'hb-bg-title', 'Drop your image here');
+  const sub = el('p', 'hb-bg-sub', `or click to browse — JPG, PNG, WEBP, GIF up to ${MAX_FILE_MB} MB`);
+  const browseBtn = el('button', 'hb-bg-browse', 'Choose image');
+  browseBtn.type = 'button';
+
+  drop.appendChild(icon);
+  drop.appendChild(title);
+  drop.appendChild(sub);
+  drop.appendChild(browseBtn);
+  wrap.appendChild(drop);
+
+  const fileInput = document.createElement('input');
   fileInput.type = 'file';
-  fileInput.id = 'hb-ai-bg-file';
   fileInput.accept = getAllowedMimes().join(',');
   fileInput.hidden = true;
-  drop.appendChild(fileInput);
-  root.appendChild(drop);
+  wrap.appendChild(fileInput);
 
-  const qualityLabel = el('label', 'hb-ai-label', 'Quality');
-  qualityLabel.htmlFor = 'hb-ai-bg-quality';
-  root.appendChild(qualityLabel);
-  const qualitySel = el('select', 'hb-ai-select');
-  qualitySel.id = 'hb-ai-bg-quality';
-  const qBalanced = document.createElement('option');
-  qBalanced.value = 'balanced';
-  qBalanced.textContent = 'Balanced — ~44 MB download, fast';
-  const qBest = document.createElement('option');
-  qBest.value = 'best';
-  qBest.textContent = 'Best — ~176 MB download, cleaner edges';
-  qualitySel.appendChild(qBalanced);
-  qualitySel.appendChild(qBest);
-  root.appendChild(qualitySel);
-
-  const actions = el('div', 'hb-ai-actions');
-  const runBtn = el('button', 'hb-btn hb-btn--primary', 'Remove background');
-  runBtn.type = 'button';
-  runBtn.disabled = true;
-  actions.appendChild(runBtn);
-  root.appendChild(actions);
-
-  const progress = el('div', 'hb-ai-progress');
-  progress.hidden = true;
-  progress.setAttribute('role', 'progressbar');
-  const progressBar = el('div', '');
-  progress.appendChild(progressBar);
-  root.appendChild(progress);
-
-  const status = el('p', 'hb-ai-status');
-  root.appendChild(status);
-
-  const errBox = el('div', 'hb-ai-error');
-  errBox.hidden = true;
-  errBox.setAttribute('role', 'alert');
-  root.appendChild(errBox);
-
-  const result = el('div', 'hb-ai-result');
-  result.hidden = true;
-  const beforeImg = el('img', '');
-  beforeImg.alt = 'Original image';
-  const afterImg = el('img', '');
-  afterImg.alt = 'Image with background removed';
-  const pair = el('div', 'hb-ai-actions');
-  pair.appendChild(beforeImg);
-  pair.appendChild(afterImg);
-  result.appendChild(pair);
-  const dlActions = el('div', 'hb-ai-actions');
-  const dlBtn = el('a', 'hb-btn hb-btn--ghost', 'Download transparent PNG');
-  dlBtn.setAttribute('download', 'background-removed.png');
-  dlActions.appendChild(dlBtn);
-  result.appendChild(dlActions);
-  root.appendChild(result);
-
-  // --- state --------------------------------------------------------------
+  // --- state ------------------------------------------------------------------
   let file: File | null = null;
   let objectUrl: string | null = null;
   let resultUrl: string | null = null;
 
-  function showError(msg: string): void {
-    errBox.textContent = msg;
-    errBox.hidden = false;
-    result.hidden = true;
-  }
-  function setProgress(fraction: number, label: string): void {
-    progress.hidden = false;
-    progressBar.style.width = Math.max(0, Math.min(100, Math.round(fraction * 100))) + '%';
-    status.textContent = label;
-  }
-  function hideProgress(): void {
-    progress.hidden = true;
-    progressBar.style.width = '0%';
+  function showDropEmpty(): void {
+    drop.classList.remove('hb-bg-has-image');
+    drop.innerHTML = '';
+    drop.appendChild(icon);
+    drop.appendChild(title);
+    drop.appendChild(sub);
+    drop.appendChild(browseBtn);
   }
 
-  function pickFile(f: File | undefined | null): void {
+  function showDropPreview(url: string, name: string): void {
+    drop.classList.add('hb-bg-has-image');
+    drop.innerHTML = '';
+    const preview = document.createElement('img');
+    preview.src = url;
+    preview.className = 'hb-bg-preview';
+    preview.alt = 'Selected image preview';
+    const fname = el('p', 'hb-bg-filename', name);
+    const change = el('button', 'hb-bg-change', 'Choose a different image');
+    change.type = 'button';
+    change.addEventListener('click', (e) => {
+      e.stopPropagation();
+      fileInput.click();
+    });
+    drop.appendChild(preview);
+    drop.appendChild(fname);
+    drop.appendChild(change);
+  }
+
+  function pickFile(f: File | null): void {
+    hideError();
+    resultBox.hidden = true;
+    if (resultUrl) {
+      URL.revokeObjectURL(resultUrl);
+      resultUrl = null;
+    }
     if (!f) return;
-    file = f;
+    const v = validateInputs({
+      file: { name: f.name, sizeBytes: f.size, mimeType: f.type, width: 0, height: 0 },
+    });
+    // validateInputs needs dims; do a light check here, full check on run
+    if (f.size > MAX_FILE_MB * 1024 * 1024) {
+      showError(`That file is over ${MAX_FILE_MB} MB. Please choose a smaller image.`);
+      return;
+    }
     if (objectUrl) URL.revokeObjectURL(objectUrl);
+    file = f;
     objectUrl = URL.createObjectURL(f);
-    fileName.textContent = 'Selected: ' + f.name;
+    showDropPreview(objectUrl, f.name);
     runBtn.disabled = false;
-    errBox.hidden = true;
-    result.hidden = true;
+    setStatus('Image ready — click "Remove background".');
   }
 
-  drop.addEventListener('click', (e) => {
-    if (e.target !== fileInput) fileInput.click();
-  });
+  drop.addEventListener('click', () => fileInput.click());
   drop.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       fileInput.click();
     }
   });
-  drop.addEventListener('dragover', (e) => e.preventDefault());
+  drop.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    drop.classList.add('hb-bg-dragover');
+  });
+  drop.addEventListener('dragleave', () => drop.classList.remove('hb-bg-dragover'));
   drop.addEventListener('drop', (e) => {
     e.preventDefault();
+    drop.classList.remove('hb-bg-dragover');
     const f = e.dataTransfer?.files?.[0];
     pickFile(f ?? null);
   });
   fileInput.addEventListener('change', () => pickFile(fileInput.files?.[0] ?? null));
 
-  async function getSegmenter(quality: string): Promise<Segmenter> {
-    const key = quality;
-    if (segmenterCache[key]) return segmenterCache[key];
-    const dtype = QUALITY_DTYPE[quality] ?? 'q8';
-    const pipe = (await loadPipeline('image-segmentation', cfg.modelId, {
-      dtype,
-      onProgress: (p: ModelLoadProgress) => setProgress(p.fraction < 0 ? 0 : p.fraction, p.status),
-    })) as unknown as Segmenter;
-    if (typeof pipe !== 'function') throw new Error('The AI model did not start correctly.');
-    segmenterCache[key] = pipe;
-    return pipe;
+  // --- run row ------------------------------------------------------------------
+  const row = el('div', 'hb-bg-row');
+  const runBtn = el('button', 'hb-bg-run', '✨ Remove background');
+  runBtn.type = 'button';
+  runBtn.disabled = true;
+  row.appendChild(runBtn);
+  const modelNote = el('p', 'hb-bg-status', 'AI model downloads once (~40 MB), then works offline. 100% on-device — nothing is uploaded.');
+  row.appendChild(modelNote);
+  wrap.appendChild(row);
+
+  // --- progress -------------------------------------------------------------------
+  const progressWrap = el('div', 'hb-bg-progress');
+  progressWrap.hidden = true;
+  const progressBar = el('div', '');
+  progressWrap.appendChild(progressBar);
+  wrap.appendChild(progressWrap);
+
+  const status = el('p', 'hb-bg-status');
+  wrap.appendChild(status);
+
+  const errBox = el('div', 'hb-bg-error');
+  errBox.hidden = true;
+  errBox.setAttribute('role', 'alert');
+  wrap.appendChild(errBox);
+
+  // --- result -----------------------------------------------------------------------
+  const resultBox = el('div', 'hb-bg-wrap');
+  resultBox.hidden = true;
+  const compare = el('div', 'hb-bg-compare');
+  const figBefore = document.createElement('figure');
+  const beforeImg = document.createElement('img');
+  beforeImg.alt = 'Original image';
+  const capBefore = el('figcaption', '', 'Before');
+  figBefore.appendChild(beforeImg);
+  figBefore.appendChild(capBefore);
+  const figAfter = document.createElement('figure');
+  const afterImg = document.createElement('img');
+  afterImg.alt = 'Background removed';
+  const capAfter = el('figcaption', '', 'After — transparent PNG');
+  figAfter.appendChild(afterImg);
+  figAfter.appendChild(capAfter);
+  compare.appendChild(figBefore);
+  compare.appendChild(figAfter);
+  resultBox.appendChild(compare);
+  const dlBtn = document.createElement('a');
+  dlBtn.className = 'hb-bg-dl';
+  dlBtn.textContent = '⬇ Download transparent PNG';
+  dlBtn.setAttribute('download', 'background-removed.png');
+  resultBox.appendChild(dlBtn);
+  wrap.appendChild(resultBox);
+
+  function setStatus(msg: string): void {
+    status.textContent = msg;
   }
 
+  function setProgress(fraction: number, msg: string): void {
+    progressWrap.hidden = false;
+    progressBar.style.width = `${Math.round(fraction * 100)}%`;
+    setStatus(msg);
+  }
+
+  function hideProgress(): void {
+    progressWrap.hidden = true;
+    progressBar.style.width = '0%';
+  }
+
+  function showError(msg: string): void {
+    errBox.textContent = msg;
+    errBox.hidden = false;
+  }
+
+  function hideError(): void {
+    errBox.hidden = true;
+    errBox.textContent = '';
+  }
+
+  // --- run ----------------------------------------------------------------------------
   runBtn.addEventListener('click', () => {
     void run();
   });
 
   async function run(): Promise<void> {
-    errBox.hidden = true;
-    result.hidden = true;
+    hideError();
+    resultBox.hidden = true;
     if (!file || !objectUrl) {
-      showError('Choose an image file first.');
+      showError('Please choose an image first.');
       return;
     }
-    const currentFile = file;
-    const currentUrl = objectUrl;
 
-    let dims: { width: number; height: number; img: HTMLImageElement };
+    let img: HTMLImageElement;
     try {
-      dims = await loadImageDims(currentUrl);
-    } catch (err) {
-      showError(err instanceof Error ? err.message : 'Could not read that image file.');
+      img = await loadImage(objectUrl);
+    } catch {
+      showError('Could not read that image file. Try another one.');
       return;
     }
 
     const v = validateInputs({
       file: {
-        name: currentFile.name,
-        sizeBytes: currentFile.size,
-        mimeType: currentFile.type,
-        width: dims.width,
-        height: dims.height,
+        name: file.name,
+        sizeBytes: file.size,
+        mimeType: file.type,
+        width: img.naturalWidth,
+        height: img.naturalHeight,
       },
     });
     if (!v.ok) {
@@ -260,36 +312,29 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
 
     runBtn.disabled = true;
     const origLabel = runBtn.textContent;
-    runBtn.textContent = 'Removing…';
+    runBtn.textContent = 'Working…';
     try {
-      const segmenter = await getSegmenter(qualitySel.value);
-      setProgress(0.05, 'Analyzing image…');
-      const raw = (await segmenter(currentUrl)) as unknown;
-      const entries = (Array.isArray(raw) ? raw : [raw]) as MaskResult[];
-      const withMask = entries.find((e) => e && typeof e === 'object' && e.mask && typeof e.mask.toCanvas === 'function');
-      if (!withMask || !withMask.mask) {
-        throw new Error('The model returned no foreground mask for this image.');
-      }
-      setProgress(0.85, 'Compositing transparent PNG…');
-      const out = compositeTransparent(dims.img, withMask.mask.toCanvas());
-      const blob = await new Promise<Blob | null>((resolve) => out.toBlob(resolve, 'image/png'));
+      const out = await removeBackground(img, (fraction, msg) => {
+        setProgress(fraction < 0 ? 0 : fraction, msg);
+      });
+      const blob = await new Promise<Blob | null>((resolve) =>
+        out.toBlob(resolve, 'image/png'),
+      );
       if (!blob) throw new Error('Could not encode the PNG result.');
       if (resultUrl) URL.revokeObjectURL(resultUrl);
       resultUrl = URL.createObjectURL(blob);
-      beforeImg.src = currentUrl;
+      beforeImg.src = objectUrl;
       afterImg.src = resultUrl;
       dlBtn.setAttribute('href', resultUrl);
-      result.hidden = false;
+      dlBtn.setAttribute('download', file.name.replace(/\.[^.]+$/, '') + '-no-bg.png');
+      resultBox.hidden = false;
       hideProgress();
-      status.textContent = 'Done — background removed on your device.';
+      setStatus('Done — background removed on your device. 🎉');
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     } catch (err) {
       hideProgress();
       const msg = err instanceof Error ? err.message : String(err);
-      if (/Could not load the AI model/i.test(msg)) {
-        showError(msg);
-      } else {
-        showError('Background removal failed: ' + msg + ' Your image was never uploaded — try another image or reload.');
-      }
+      showError('Background removal failed: ' + msg + ' Your image was never uploaded.');
     } finally {
       runBtn.disabled = false;
       runBtn.textContent = origLabel;
