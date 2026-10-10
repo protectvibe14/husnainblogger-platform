@@ -125,34 +125,5 @@ export const content: ToolContent = {
     'The tool plans structure, not performance — it cannot predict views, reach, or follower growth.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Reels Series Ideas 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free instagram reels series ideas 2026: One row per episode with its hook and story beat. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Reels Series Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

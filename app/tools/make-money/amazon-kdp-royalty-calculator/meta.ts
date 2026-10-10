@@ -202,34 +202,5 @@ export const content: ToolContent = {
     'KU (Kindle Unlimited) page-read revenue is not included — treat it as a separate line.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'KDP Royalty Calculator 2026 – Book Earnings | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/amazon-kdp-royalty-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-      isAccessibleForFree: true,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'KDP Royalty Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/amazon-kdp-royalty-calculator/',
-        },
-      ],
-    },
   ],
 };

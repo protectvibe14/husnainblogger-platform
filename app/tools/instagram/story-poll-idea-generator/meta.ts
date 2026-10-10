@@ -118,34 +118,5 @@ export const content: ToolContent = {
     'Poll ideas are starting points — adapt the wording to your voice before posting.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Story Poll Questions 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free instagram story poll questions 2026: Poll question with its two matched answer options. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Story Poll Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

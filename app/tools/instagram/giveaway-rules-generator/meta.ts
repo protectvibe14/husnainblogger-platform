@@ -107,34 +107,5 @@ export const content: ToolContent = {
     'Entry steps and the compliance checklist are general guidance, not tailored legal counsel.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Giveaway Rules Template 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/giveaway-rules-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Giveaway Rules Template',
-          item: 'https://husnainblogger.com/tools/instagram/giveaway-rules-generator/',
-        },
-      ],
-    },
   ],
 };

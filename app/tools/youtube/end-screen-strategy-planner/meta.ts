@@ -107,33 +107,5 @@ export const content: ToolContent = {
     'Element placement suggestions assume a standard 16:9 video.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Youtube End Screen Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/end-screen-strategy-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'End Screen Strategy Planner',
-          item: 'https://husnainblogger.com/tools/youtube/end-screen-strategy-planner/',
-        },
-      ],
-    },
   ],
 };

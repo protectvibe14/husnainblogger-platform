@@ -115,34 +115,5 @@ export const content: ToolContent = {
     'Preview timing assumes a standard 60fps display; actual rendering depends on the browser or editor.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Text Animation Generator CSS 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/text-animation-preset-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Animate text without the guesswork: get copy-paste CSS text animations plus CapCut rebuild steps - 5 effects, easing curves, and color palettes.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Text Animation Preset Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/text-animation-preset-generator/',
-        },
-      ],
-    },
   ],
 };

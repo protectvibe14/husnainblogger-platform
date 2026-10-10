@@ -100,34 +100,5 @@ export const content: ToolContent = {
     'Max 20 slots; prices are rounded to 2 decimals and percentages to 2 decimals.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Newsletter Ad Slot Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/newsletter-ad-slot-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Price your newsletter ads with confidence: enter issues per month, slot prices, and expected fill rates for gross and net revenue projections.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Newsletter Ad Slot Planner',
-          item: 'https://husnainblogger.com/tools/email-marketing/newsletter-ad-slot-planner/',
-        },
-      ],
-    },
   ],
 };

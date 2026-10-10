@@ -125,29 +125,6 @@ export const content: ToolContent = {
     'Not affiliated with YouTube; the queue is a working aid, not an official moderation tool.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Live Stream Q&A Collector 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free live stream q&a collector 2026: Open questions ranked by upvotes, highest first. free.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

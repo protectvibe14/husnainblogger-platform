@@ -93,29 +93,6 @@ export const content: ToolContent = {
     'Check-off state lives in your browser\'s localStorage via the page UI; this tool only generates the calendar.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: '30 Day TikTok Challenge 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Generate a 30 day tiktok challenge: 30 daily video ideas with format and CTA, rest days included, from your niche and start date. Free generator. Start.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

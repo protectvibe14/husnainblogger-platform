@@ -141,34 +141,5 @@ export const content: ToolContent = {
     'Percentages must sum to 100 (tolerance 0.01 for float formatting); anything else is a validation error.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Freelance Milestone Payment Schedule 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free freelance milestone payment schedule 2026: The contract total being split. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Milestone Payment Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

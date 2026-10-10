@@ -121,29 +121,6 @@ export const content: ToolContent = {
     'The tool does not check SERPs, keyword difficulty, or search volume.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Blog Outline Generator 2026 – Free SEO Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/blog-outline-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free blog outline generator 2026: build a clean H1/H2/H3 blog structure with intro, body sections and conclusion in Markdown. — start outlining now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

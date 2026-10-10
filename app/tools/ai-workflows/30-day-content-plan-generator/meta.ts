@@ -99,34 +99,5 @@ export const content: ToolContent = {
     'Treat bank topics as starting points — adapt them to your audience before publishing.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: '30 Day Content Plan Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/30-day-content-plan-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free 30 day content plan generator 2026: generate a 30-day content plan from a fixed topic bank: enter your niche, platforms, and. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: '30-Day Content Plan Generator',
-          item: 'https://husnainblogger.com/tools/ai-workflows/30-day-content-plan-generator/',
-        },
-      ],
-    },
   ],
 };

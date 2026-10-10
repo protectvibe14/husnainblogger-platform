@@ -117,34 +117,5 @@ export const content: ToolContent = {
     'Max 10 seed keywords and a 500-combo hard cap keep the list usable; very similar seeds may still produce near-duplicate ideas.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Pinterest Keyword Research Tool 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pinterest keyword research 2026: Deterministic seed x modifier and seed x seed combinations, deduplicated and lowercased. Fast, private - try.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest Keyword Combiner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

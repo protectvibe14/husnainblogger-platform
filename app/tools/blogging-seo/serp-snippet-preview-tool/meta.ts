@@ -144,34 +144,5 @@ export const content: ToolContent = {
     'The ~600 px truncation cutoff is a widely published estimate for desktop, not an official Google number.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Google Snippet Preview Tool 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free google snippet preview tool 2026: Google-style search result mockup (favicon, URL breadcrumb, title, description) as. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SERP Snippet Preview Tool',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -124,29 +124,6 @@ export const content: ToolContent = {
     'Phrase picks are a curated starting point; refine the wording until it sounds like you.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Brand Voice Examples 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/brand-voice-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free instagram brand voice examples 2026: Writing rules your brand voice follows. free.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

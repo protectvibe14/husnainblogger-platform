@@ -132,34 +132,5 @@ export const content: ToolContent = {
     'A pitch template cannot guarantee replies; targeting the right brands matters more.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Brand Pitch DM Template 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free brand pitch dm template 2026: Multi-paragraph DM pitch assembled from the pitch template. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'DM Collab Pitch Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

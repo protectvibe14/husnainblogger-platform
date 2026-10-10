@@ -106,23 +106,5 @@ export const content: ToolContent = {
     'Channel-name seeds are starting points — check name availability on YouTube yourself before committing.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Faceless YouTube Channel Ideas – 2026 Guide | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'YouTube Tools', item: 'https://husnainblogger.com/tools/youtube/' },
-        { '@type': 'ListItem', position: 4, name: 'Faceless Channel Idea Mixer', item: TOOL_URL },
-      ],
-    },
   ],
 };

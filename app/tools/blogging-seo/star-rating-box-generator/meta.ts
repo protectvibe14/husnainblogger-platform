@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'Fractional fills are rounded to one decimal place of the star-row width.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Star Rating Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free star rating generator 2026: Ready-to-paste star rating box with minimal inline styles — works in any blog theme. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Star Rating Box Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

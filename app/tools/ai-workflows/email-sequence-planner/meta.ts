@@ -118,34 +118,5 @@ export const content: ToolContent = {
     'Sequences are capped at 12 emails and 14 days between sends; longer campaigns need multiple plans.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Sequence Planner 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free email sequence planner 2026: Day-by-day grid: email number, send day, subject slot, and purpose per email. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email Sequence Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

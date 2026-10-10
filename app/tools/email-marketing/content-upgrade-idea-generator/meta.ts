@@ -106,34 +106,5 @@ export const content: ToolContent = {
     'This tool covers post-specific content upgrades; standalone lead magnets are covered by the Lead Magnet Idea Generator and quiz formats by the Quiz Lead Magnet Idea Generator.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Content Upgrade Ideas Generator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free content upgrade ideas generator 2026: Table of content upgrade ideas: number, the upgrade idea title, its format, and a. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Upgrade Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

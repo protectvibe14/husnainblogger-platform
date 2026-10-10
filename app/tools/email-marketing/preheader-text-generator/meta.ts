@@ -105,34 +105,5 @@ export const content: ToolContent = {
     'Summaries longer than 300 characters are shortened with a visible notice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Preheader Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/preheader-text-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Stop wasting preview text on repeats: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Preheader Text Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/preheader-text-generator/',
-        },
-      ],
-    },
   ],
 };

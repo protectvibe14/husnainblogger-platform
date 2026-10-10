@@ -111,29 +111,6 @@ export const content: ToolContent = {
     'The linking note is a structural convention, not a ranking guarantee.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Topic Cluster Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/pillar-cluster-content-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free topic cluster planner 2026: Pillar page suggestion, cluster topics with slugs, linking guidance and assumptions. Fast, private now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

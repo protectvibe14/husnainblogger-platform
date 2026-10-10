@@ -134,33 +134,5 @@ export const content: ToolContent = {
     'Net payout excludes product cost and shipping label cost; Etsy can change fees at any time — confirm current fees on Etsy\'s official fee page before pricing decisions.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Etsy Fee Calculator 2026 – Seller Fees | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/etsy-fee-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Etsy Fee Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/etsy-fee-calculator/',
-        },
-      ],
-    },
   ],
 };

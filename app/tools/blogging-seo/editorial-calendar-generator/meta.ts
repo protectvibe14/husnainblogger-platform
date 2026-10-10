@@ -125,29 +125,6 @@ export const content: ToolContent = {
     'Start dates must be real calendar dates in YYYY-MM-DD form.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Editorial Calendar Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/editorial-calendar-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free editorial calendar generator 2026: 4-week calendar: week, date, day, post title, content type and status. Fast, private now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

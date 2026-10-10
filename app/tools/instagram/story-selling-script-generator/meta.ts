@@ -139,34 +139,5 @@ export const content: ToolContent = {
     'No sales results are promised or estimated; the tool plans structure, not outcomes.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'How to Sell on Instagram Stories 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free how to sell on instagram stories 2026: Opening line that stops the scroll, matched to the chosen objection. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Story Selling Script Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

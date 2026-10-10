@@ -101,34 +101,5 @@ export const content: ToolContent = {
     'Location reach also depends on the post itself — test ideas and compare in Instagram Insights.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Location Tag Ideas 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/location-tag-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Get the best location tags for your niche with these free instagram location tag ideas: enter your niche and city for venue types and geotag tips.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Location Tag Ideas',
-          item: 'https://husnainblogger.com/tools/instagram/location-tag-idea-generator/',
-        },
-      ],
-    },
   ],
 };

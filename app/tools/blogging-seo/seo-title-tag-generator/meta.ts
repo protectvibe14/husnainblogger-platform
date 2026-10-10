@@ -129,34 +129,5 @@ export const content: ToolContent = {
     'No rankings are promised or implied — title tags are one small on-page factor among many.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'SEO Title Tag Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free SEO title tag generator 2026: get six keyword-optimized title suggestions with 60-char length checks and pixel-width estimates.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SEO Title Tag Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -134,34 +134,5 @@ export const content: ToolContent = {
     'Results are deterministic: the same inputs always produce the same rectangle.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: '16:9 to 9:16 Crop Preview 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/aspect-ratio-crop-visualizer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Preview your 16:9 to 9:16 crop before you cut: get the exact crop rectangle, pixels lost, and text safe zones for any source size and anchor.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Aspect Ratio Crop Visualizer',
-          item: 'https://husnainblogger.com/tools/video-editing/aspect-ratio-crop-visualizer/',
-        },
-      ],
-    },
   ],
 };

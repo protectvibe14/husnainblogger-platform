@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'No engagement outcome is promised; the tool drafts reply ideas, not results.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Comment Reply Ideas 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free tiktok comment reply ideas 2026: Eight reply ideas: two each in funny, warm, witty, and redirect-to-video flavors. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Comment Reply Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

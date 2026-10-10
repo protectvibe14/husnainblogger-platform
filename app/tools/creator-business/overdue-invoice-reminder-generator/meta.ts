@@ -152,34 +152,5 @@ export const content: ToolContent = {
     'Amounts are shown without a currency symbol — the figures refer to whatever currency your invoice uses.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Overdue Invoice Reminder Email 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free overdue invoice reminder email 2026: 2 subject-line options plus the full reminder email body, ready to copy and send. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Overdue Invoice Reminder Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

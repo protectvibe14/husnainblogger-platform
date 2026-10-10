@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'This tool cannot predict open rates or subscriber growth.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Newsletter Ideas Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/newsletter-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Never run out of newsletter topics again: enter your niche, audience, and send frequency for up to 20 fresh issue ideas tailored to your readers.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Newsletter Ideas Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/newsletter-idea-generator/',
-        },
-      ],
-    },
   ],
 };

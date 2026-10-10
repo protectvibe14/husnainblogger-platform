@@ -88,28 +88,6 @@ export const content: ToolContent = {
     'Answers are model-generated and grounded in the PDF by prompt — always verify important facts against the document itself.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Chat With Pdf Ai 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/talk-to-pdf-chatbot/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Chat With Pdf Ai 2026 – Free Tool - required.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Chat With Pdf Ai 2026 – Free Tool | HusnainBlogger', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

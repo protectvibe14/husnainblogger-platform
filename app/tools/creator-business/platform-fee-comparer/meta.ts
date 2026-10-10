@@ -114,34 +114,5 @@ export const content: ToolContent = {
     'This is an estimate for comparison only, not financial or tax advice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Gumroad Vs Etsy Fees Calculator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free gumroad vs etsy fees 2026: Platforms ranked by net payout, highest first. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Platform Fee Comparer',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

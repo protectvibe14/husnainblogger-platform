@@ -168,34 +168,5 @@ export const content: ToolContent = {
     'No sending happens here — the tool produces a draft you copy into your own email client.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Brand Pitch Email Template 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free brand pitch email template 2026: 3 subject-line options plus the full email body, ready to copy and send. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Brand Pitch Email Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

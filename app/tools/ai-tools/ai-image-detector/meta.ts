@@ -99,28 +99,6 @@ export const content: ToolContent = {
     'Outputs are signals, never verdicts — do not present them as proof to others.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Ai Image Detector 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ai-image-detector/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Ai Image Detector 2026 – Free Tool - required.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Ai Image Detector 2026 – Free Tool | HusnainBlogger', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

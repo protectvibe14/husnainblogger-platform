@@ -95,29 +95,6 @@ export const content: ToolContent = {
     'For non-Latin seeds the a-z letters still apply as suffixes, which may be less useful.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Alphabet Soup Keyword Method 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/alphabet-soup-keyword-expander/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free alphabet soup keyword method 2026: Your seed followed by each letter a-z. free.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

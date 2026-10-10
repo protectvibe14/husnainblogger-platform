@@ -140,34 +140,5 @@ export const content: ToolContent = {
     'Leaving buffer days empty means 0 buffer days; the breakdown shows a note reminding you none was added.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Editing Timeline Estimator 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free video editing timeline estimator 2026: Sum of all task hour estimates, based on your estimates. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Project Timeline Estimator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

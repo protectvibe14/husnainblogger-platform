@@ -67,33 +67,5 @@ export const content: ToolContent = {
     'Verification quality depends on your own source checking; start with the highest-risk claims.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Fact Check AI Content 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-fact-check-checklist/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Fact-Check Checklist',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-fact-check-checklist/',
-        },
-      ],
-    },
   ],
 };

@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'Entry mechanics are intentionally spam-free: no "tag 50 friends" style mechanics are suggested.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Facebook Giveaway Ideas 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free facebook giveaway ideas 2026: 4 giveaway idea frameworks, each with concept, entry mechanic and prize suggestion. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Facebook Giveaway Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

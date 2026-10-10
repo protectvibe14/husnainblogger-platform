@@ -101,33 +101,5 @@ export const content: ToolContent = {
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Unsubscribe Page Copy Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/unsubscribe-page-copy-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Unsubscribe Page Copy Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/unsubscribe-page-copy-generator/',
-        },
-      ],
-    },
   ],
 };

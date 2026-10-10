@@ -120,23 +120,5 @@ export const content: ToolContent = {
     'A Low band is not a verdict against the niche — it means monetization is harder and needs a plan beyond ad revenue.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Niche Scorer 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'YouTube Tools', item: 'https://husnainblogger.com/tools/youtube/' },
-        { '@type': 'ListItem', position: 4, name: 'Niche Profitability Scorer', item: TOOL_URL },
-      ],
-    },
   ],
 };

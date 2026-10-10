@@ -107,34 +107,5 @@ export const content: ToolContent = {
     'Segment boundaries are rounded to whole milliseconds and always tile the full duration exactly.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Pacing Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/retention-pacing-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Use this video pacing planner to hold attention: enter duration, niche, and pattern for timed segments, pattern-change count, heuristic score. Free to use.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Retention Pacing Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/retention-pacing-planner/',
-        },
-      ],
-    },
   ],
 };

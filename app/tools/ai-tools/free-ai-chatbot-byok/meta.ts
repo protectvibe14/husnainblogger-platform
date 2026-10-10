@@ -99,29 +99,6 @@ export const content: ToolContent = {
     'The keyless llm7.io lane is a community-run demo with no SLA; it may be slow, rate-limited, or unavailable.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Free AI Chatbot (BYOK) 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/free-ai-chatbot-byok/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free free ai chatbot with api key 2026: The assistant answer returned by the provider you chose. Get instant results. free now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

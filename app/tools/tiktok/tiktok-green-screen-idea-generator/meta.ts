@@ -105,34 +105,5 @@ export const content: ToolContent = {
     'Always use your own screenshots or licensed images as backgrounds — never copyrighted news sites or other creators\' content.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Green Screen Ideas 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free tiktok green screen ideas 2026: 5 commentary video concepts, each with a hook, a background asset description, and 4. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Green Screen Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

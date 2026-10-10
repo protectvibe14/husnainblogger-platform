@@ -91,29 +91,6 @@ export const content: ToolContent = {
     'One topic per run, max 150 characters; the same topic always produces the same plan.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Before and After TikTok Ideas 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan before and after tiktok ideas: 7-shot list, transition point, caption, and CTA from one topic. Includes an honesty note against fake results. Try.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

@@ -125,34 +125,5 @@ export const content: ToolContent = {
     'Invalid lines are skipped and reported — check "Skipped lines" so no page is accidentally left out.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'XML Sitemap Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free xml sitemap generator 2026: The complete XML sitemap — save it as sitemap.xml in your site root. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'XML Sitemap Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

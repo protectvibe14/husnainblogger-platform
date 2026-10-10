@@ -93,33 +93,5 @@ export const content: ToolContent = {
     'Names come from a fixed suffix list plus numbered fallbacks, not from any analysis of the product.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Affiliate Link Name Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/affiliate-link-name-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Affiliate Link Name Generator',
-          item: 'https://husnainblogger.com/tools/make-money/affiliate-link-name-generator/',
-        },
-      ],
-    },
   ],
 };

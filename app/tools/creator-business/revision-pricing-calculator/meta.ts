@@ -175,34 +175,5 @@ export const content: ToolContent = {
     'A 0% pct in pct-of-fee mode makes extra revisions free and is flagged with a double-check prompt.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'How to Charge for Extra Revisions 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free how to charge for extra revisions 2026: max(0, requestedRevisions - includedRevisions). free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Revision Pricing Calculator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

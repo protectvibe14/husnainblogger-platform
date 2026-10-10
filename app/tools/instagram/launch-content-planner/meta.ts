@@ -118,34 +118,5 @@ export const content: ToolContent = {
     'Tasks are fixed planning prompts — the tool does not write your captions, film your reels, or guarantee any launch results.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Product Launch Plan 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free instagram product launch plan 2026: Day-by-day grid: date, day label (T-7 … Launch day … T+3), phase, and the task for that. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Launch Content Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

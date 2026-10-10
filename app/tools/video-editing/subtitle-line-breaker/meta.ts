@@ -108,34 +108,5 @@ export const content: ToolContent = {
     'Same text and settings always produce the same breaks.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Subtitle Line Breaker 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/subtitle-line-breaker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Break subtitle lines the right way: paste a subtitle cue, set max characters per line and max lines, and get clean, readable breaks instantly.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Subtitle Line Breaker',
-          item: 'https://husnainblogger.com/tools/video-editing/subtitle-line-breaker/',
-        },
-      ],
-    },
   ],
 };

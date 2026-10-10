@@ -120,33 +120,5 @@ export const content: ToolContent = {
     'The tool does not publish anything — you paste the result into your channel About tab yourself.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Youtube About Page Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/channel-about-page-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Channel About Page Generator',
-          item: 'https://husnainblogger.com/tools/youtube/channel-about-page-generator/',
-        },
-      ],
-    },
   ],
 };

@@ -93,33 +93,5 @@ export const content: ToolContent = {
     'Google Fonts links are informational search links, not downloads or license grants — check each font\'s license before commercial use.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Font Pairing Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/font-pairing-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Font Pairing Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/font-pairing-generator/',
-        },
-      ],
-    },
   ],
 };

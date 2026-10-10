@@ -111,28 +111,5 @@ export const content: ToolContent = {
     'Descriptions over 5000 characters are rejected; the FTC disclosure appears only when affiliate links are provided.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Description Template 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        { '@type': 'ListItem', position: 4, name: 'Description Template Builder', item: TOOL_URL },
-      ],
-    },
   ],
 };

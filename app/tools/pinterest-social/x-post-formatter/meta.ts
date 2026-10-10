@@ -127,34 +127,5 @@ export const content: ToolContent = {
     'Over-budget text is flagged with an exact "over by" number and never cut; trimming stays your decision.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Twitter Bold Text Generator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitter bold text generator 2026: Your text with trailing spaces trimmed, extra spaces collapsed, and blank lines cleaned up. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Post Formatter',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

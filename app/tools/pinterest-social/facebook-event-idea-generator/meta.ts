@@ -97,34 +97,5 @@ export const content: ToolContent = {
     'The cover note intentionally reports conflicting cover-size sources instead of claiming one verified size; verify against Facebook\u2019s current preview.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Facebook Event Ideas 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free facebook event ideas 2026: 8 event ideas — title, online/in-person format, description seed, and cover note each. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Facebook Event Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

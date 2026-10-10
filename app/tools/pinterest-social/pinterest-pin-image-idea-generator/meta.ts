@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'Text overlays are capped at 8 words with the topic counting as one word.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Pinterest Pin Design Ideas 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pinterest pin design ideas 2026: Written creative briefs: title, composition, text overlay, color direction, and format. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest Pin Design Ideas Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

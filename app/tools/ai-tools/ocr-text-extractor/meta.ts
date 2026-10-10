@@ -108,29 +108,6 @@ export const content: ToolContent = {
     'Output is best-effort transcription, not a certified copy — proofread before reuse.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'OCR Text Extractor: Free Online 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ocr-text-extractor/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free online ocr text extractor 2026: The printed text recognized from your image, ready to copy. Get instant results. free now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

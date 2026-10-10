@@ -102,34 +102,5 @@ export const content: ToolContent = {
     'Engine notes are fixed guidance, not live documentation — engine features may change.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'AI Voice Pronunciation Fixer 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/tts-pronunciation-fixer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Fix words your AI voice keeps misreading: enter the word, pick your TTS engine - ElevenLabs, CapCut, TikTok - and get a respelling that sticks.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TTS Pronunciation Fixer',
-          item: 'https://husnainblogger.com/tools/video-editing/tts-pronunciation-fixer/',
-        },
-      ],
-    },
   ],
 };

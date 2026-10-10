@@ -116,34 +116,5 @@ export const content: ToolContent = {
     'Ad spend, returns, taxes, and design costs are not included — add them to your base cost if you want them reflected.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Print on Demand Profit Calculator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/print-on-demand-profit-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free print on demand profit calculator 2026: calculate print-on-demand profit per sale: enter your sale price, base product cost. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Print on Demand Profit Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/print-on-demand-profit-calculator/',
-        },
-      ],
-    },
   ],
 };

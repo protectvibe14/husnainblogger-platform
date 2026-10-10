@@ -106,29 +106,6 @@ export const content: ToolContent = {
     'Personalize before publishing; untouched AI profiles are easy to spot.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'LinkedIn Headline Writer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/linkedin-headline-about-writer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free linkedin headline generator 2026: Three distinct headline options, each within LinkedIn’s 220-character limit. Fast, private now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

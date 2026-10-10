@@ -130,34 +130,5 @@ export const content: ToolContent = {
     'It cannot predict recovery rates or deliverability.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Abandoned Cart Email Template 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/abandoned-cart-email-template-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Recover lost sales with a 3-email cart sequence: choose reminder, value, or incentive, add your store details, and get subject lines plus body copy.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Abandoned Cart Email Template Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/abandoned-cart-email-template-generator/',
-        },
-      ],
-    },
   ],
 };

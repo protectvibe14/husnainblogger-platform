@@ -100,33 +100,5 @@ export const content: ToolContent = {
     'The 140-character cap is a readability best practice chosen by this tool, not a TikTok-published rule.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Ad Hooks 2026 – Free Hook Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-ad-hook-writer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Ad Hook Writer',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-ad-hook-writer/',
-        },
-      ],
-    },
   ],
 };

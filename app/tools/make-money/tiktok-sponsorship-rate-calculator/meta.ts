@@ -100,34 +100,5 @@ export const content: ToolContent = {
     "Average views should reflect recent typical videos, not a single viral outlier — outliers inflate the view-based floor.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Tiktok Sponsorship Rates 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/make-money/tiktok-sponsorship-rate-calculator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description:
-    "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range —.",
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Make Money Tools",
-          item: "https://husnainblogger.com/tools/make-money/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "TikTok Sponsorship Rate Calculator",
-          item: "https://husnainblogger.com/tools/make-money/tiktok-sponsorship-rate-calculator/",
-        },
-      ],
-    },
   ],
 };

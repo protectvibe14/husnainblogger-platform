@@ -116,33 +116,5 @@ export const content: ToolContent = {
     "Every outline ships with testing-note slots; publish only after real testing or hands-on research.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Product Review Template 2026 – Free Tool | HusnainBlogger",
-      url: TOOL_URL,
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "AI Workflow Tools",
-          item: "https://husnainblogger.com/tools/ai-workflows/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Product Review Outline Generator",
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -134,33 +134,5 @@ export const content: ToolContent = {
     'A phrase with no trigger matches returns "unclear" with all 5 intents as possibilities — the tool does not guess.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'What People Search on TikTok 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Search Intent Mapper',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

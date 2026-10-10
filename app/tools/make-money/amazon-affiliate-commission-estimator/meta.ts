@@ -119,33 +119,5 @@ export const content: ToolContent = {
     'Returns, cancellations, and fees are not modeled — the output is a gross commission estimate, not a payout guarantee.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Amazon Affiliate Commission Calculator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/amazon-affiliate-commission-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Amazon Affiliate Commission Estimator',
-          item: 'https://husnainblogger.com/tools/make-money/amazon-affiliate-commission-estimator/',
-        },
-      ],
-    },
   ],
 };

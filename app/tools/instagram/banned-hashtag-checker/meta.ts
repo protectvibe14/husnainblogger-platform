@@ -89,33 +89,5 @@ export const content: ToolContent = {
     'Hashtag extraction recognizes # followed by unicode letters, numbers, and underscores.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Banned Hashtags Checker 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/banned-hashtag-checker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Banned Hashtags Checker',
-          item: 'https://husnainblogger.com/tools/instagram/banned-hashtag-checker/',
-        },
-      ],
-    },
   ],
 };

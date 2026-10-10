@@ -114,34 +114,5 @@ export const content: ToolContent = {
     'An empty Disallow for an agent means "allow all" per the standard; the tool notes this rather than changing it.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Robots.txt Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free robots.txt generator 2026: The complete robots.txt — save it as robots.txt in your site root. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Robots.txt Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -100,33 +100,5 @@ export const content: ToolContent = {
     'Visual rendering of the funnel is the app component’s job; this tool defines the data model only.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Funnel Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-funnel-mapper/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email Funnel Planner',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-funnel-mapper/',
-        },
-      ],
-    },
   ],
 };

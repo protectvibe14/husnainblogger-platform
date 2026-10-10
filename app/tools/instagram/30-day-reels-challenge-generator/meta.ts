@@ -110,34 +110,5 @@ export const content: ToolContent = {
     'The tool plans the calendar only; it does not schedule or post reels for you.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: '30 Day Reels Challenge 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free 30 day reels challenge 2026: Day, pillar, reel prompt, and format for all 30 days — all prompts unique. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: '30-Day Reels Challenge Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

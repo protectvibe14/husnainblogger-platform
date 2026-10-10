@@ -69,33 +69,5 @@ export const content: ToolContent = {
     'Progress is stored in your browser only; clearing site data resets it.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Video Launch Checklist 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/48-hour-launch-checklist/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: '48-Hour Launch Checklist',
-          item: 'https://husnainblogger.com/tools/youtube/48-hour-launch-checklist/',
-        },
-      ],
-    },
   ],
 };

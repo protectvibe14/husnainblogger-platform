@@ -99,33 +99,5 @@ export const content: ToolContent = {
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Ps Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/p-s-line-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'P.S. Line Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/p-s-line-generator/',
-        },
-      ],
-    },
   ],
 };

@@ -127,28 +127,5 @@ export const content: ToolContent = {
     "Expert count is limited to 3–30 per plan.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Expert Roundup Template 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/expert-roundup-planner/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Expert Roundup Planner",
-          item: "https://husnainblogger.com/tools/ai-workflows/expert-roundup-planner/",
-        },
-      ],
-    },
   ],
 };

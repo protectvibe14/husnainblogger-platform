@@ -101,34 +101,5 @@ export const content: ToolContent = {
     'Character weight is a proxy for sung length; melisma or held notes will still need hand-tuning.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Karaoke Caption Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/karaoke-timing-grid-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan word-by-word karaoke captions with ease: paste your lyric lines, set the total duration in seconds, and get a timing grid for every word.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Karaoke Timing Grid Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/karaoke-timing-grid-planner/',
-        },
-      ],
-    },
   ],
 };

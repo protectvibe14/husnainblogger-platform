@@ -95,29 +95,5 @@ export const content: ToolContent = {
     'The advanced-topic check is keyword-based ("advanced", "expert", "pro", "masterclass", "deep dive", "complicated") and may misfire on casual uses of those words.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'How to Structure a Tiktok Tutorial 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-tutorial-step-structurer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private - try.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Tutorial Step Structurer',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-tutorial-step-structurer/',
-        },
-      ],
-    },
   ],
 };

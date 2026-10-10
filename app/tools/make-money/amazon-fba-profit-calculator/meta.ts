@@ -158,34 +158,5 @@ export const content: ToolContent = {
     'Not modeled: inbound placement fees, low-inventory-level fees, returns/refunds, advertising (PPC), or taxes.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Amazon FBA Profit Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/amazon-fba-profit-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-      isAccessibleForFree: true,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Amazon FBA Profit Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/amazon-fba-profit-calculator/',
-        },
-      ],
-    },
   ],
 };

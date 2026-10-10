@@ -101,29 +101,6 @@ export const content: ToolContent = {
     'A generated line is a starting point, not a tested bio — validate with real profile-visit and follow data on X.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Twitter Niche Statement 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitter niche statement 2026: 5 bio-ready positioning lines, each 160 characters or fewer. Get instant results. free now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest, X & Facebook',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

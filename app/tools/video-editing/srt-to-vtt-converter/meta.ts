@@ -87,34 +87,5 @@ export const content: ToolContent = {
     'Input is capped at 2,000,000 characters to protect the browser; unicode text is preserved byte-identical.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'SRT to VTT Converter 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/srt-to-vtt-converter/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Convert SRT subtitles to WebVTT right in your browser: paste your SRT text and get clean, validated VTT output instantly - no uploads, no waiting.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SRT to VTT Converter',
-          item: 'https://husnainblogger.com/tools/video-editing/srt-to-vtt-converter/',
-        },
-      ],
-    },
   ],
 };

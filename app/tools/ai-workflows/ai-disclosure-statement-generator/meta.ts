@@ -119,28 +119,5 @@ export const content: ToolContent = {
     "The tool never invents facts about your content; it only fills disclosure wording.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "AI Disclosure Generator 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/ai-disclosure-statement-generator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "AI Disclosure Statement Generator",
-          item: "https://husnainblogger.com/tools/ai-workflows/ai-disclosure-statement-generator/",
-        },
-      ],
-    },
   ],
 };

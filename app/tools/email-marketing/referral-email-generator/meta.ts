@@ -108,33 +108,5 @@ export const content: ToolContent = {
     'Inputs longer than 200 characters are trimmed with a visible notice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Referral Email Template Generator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/referral-email-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Referral Email Template Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/referral-email-generator/',
-        },
-      ],
-    },
   ],
 };

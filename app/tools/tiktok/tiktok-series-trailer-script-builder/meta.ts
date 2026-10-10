@@ -93,33 +93,5 @@ export const content: ToolContent = {
     'The montage cues are filming directions, not an editing timeline — adapt them to your actual footage.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Series Trailer Script 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-series-trailer-script-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Series Trailer Script Builder',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-series-trailer-script-builder/',
-        },
-      ],
-    },
   ],
 };

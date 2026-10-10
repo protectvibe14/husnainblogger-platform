@@ -102,40 +102,11 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'Call To Action Prompts 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/cta-prompt-library/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Call To Action Prompts 2026 – Free Tool - required.',
-    },
-    {
       '@type': 'WebPage',
       name: 'Call To Action Prompts 2026 – Free Tool | HusnainBlogger',
       url: TOOL_URL,
       description:
     'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'CTA Prompt Library',
-          item: TOOL_URL,
-        },
-      ],
     },
   ],
 };

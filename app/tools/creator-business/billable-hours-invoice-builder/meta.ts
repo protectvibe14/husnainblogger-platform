@@ -152,34 +152,5 @@ export const content: ToolContent = {
     'All amounts are rounded to 2 decimals; totals are computed from your hours and rates only.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Billable Hours Tracker for Freelancers 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free billable hours tracker for freelancers 2026: Itemized, printable invoice text ready to copy. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Billable Hours Invoice Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

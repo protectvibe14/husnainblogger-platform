@@ -128,23 +128,5 @@ export const content: ToolContent = {
     'Scenario factors (0.7×/1.0×/1.3×) are fixed what-ifs on your own rate, not predictions.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Youtube Subscriber Goal Tracker 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'YouTube Tools', item: 'https://husnainblogger.com/tools/youtube/' },
-        { '@type': 'ListItem', position: 4, name: 'Subscriber Goal Countdown', item: TOOL_URL },
-      ],
-    },
   ],
 };

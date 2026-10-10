@@ -112,23 +112,5 @@ export const content: ToolContent = {
     'YouTube\'s real 500-character total tag limit is enforced during validation; individual tags should stay under 60 characters.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Upload Defaults Template 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'YouTube Tools', item: 'https://husnainblogger.com/tools/youtube/' },
-        { '@type': 'ListItem', position: 4, name: 'Upload Default Template Saver', item: TOOL_URL },
-      ],
-    },
   ],
 };

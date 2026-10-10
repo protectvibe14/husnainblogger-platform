@@ -121,34 +121,5 @@ export const content: ToolContent = {
     'This tool cannot predict re-engagement rates or deliverability.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Re-Engagement Email Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/re-engagement-email-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'This free re-engagement email generator builds a win-back email from proven templates: 5 subject options, a body draft, and an offer block.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Re-Engagement Email Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/re-engagement-email-generator/',
-        },
-      ],
-    },
   ],
 };

@@ -101,29 +101,6 @@ export const content: ToolContent = {
     'Always validate shortlisted ideas with a data-backed keyword research tool before targeting them.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Long Tail Keyword Generator – Free 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/long-tail-keyword-expander/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free long tail keyword generator: expand any seed keyword into idea seeds using fixed modifier templates.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

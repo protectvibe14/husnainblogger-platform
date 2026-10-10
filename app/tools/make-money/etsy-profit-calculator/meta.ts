@@ -184,34 +184,5 @@ export const content: ToolContent = {
     'Negative profit is shown as-is with a warning — the tool does not hide losing prices.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Etsy Profit Calculator 2026 – Net Margins | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/etsy-profit-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-      isAccessibleForFree: true,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Etsy Profit Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/etsy-profit-calculator/',
-        },
-      ],
-    },
   ],
 };

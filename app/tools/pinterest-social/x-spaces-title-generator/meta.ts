@@ -98,29 +98,6 @@ export const content: ToolContent = {
     'Same topic + guests always returns the same 8 titles; try different wording for variety.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Twitter Spaces Title Ideas 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/pinterest-social/x-spaces-title-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitter spaces title ideas 2026: 8 concise, curiosity-led title ideas for your X Space. free.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest, X & Facebook',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

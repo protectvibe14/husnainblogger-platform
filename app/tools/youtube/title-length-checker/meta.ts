@@ -102,23 +102,5 @@ export const content: ToolContent = {
     'Front-load guidance is a structural heuristic (first 4+ letter non-small word), not keyword detection — it cannot know your real target keyword.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Title Length Checker 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'YouTube Tools', item: 'https://husnainblogger.com/tools/youtube/' },
-        { '@type': 'ListItem', position: 4, name: 'Title Length Checker', item: TOOL_URL },
-      ],
-    },
   ],
 };

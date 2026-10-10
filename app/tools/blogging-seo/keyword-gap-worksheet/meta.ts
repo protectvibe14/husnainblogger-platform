@@ -125,34 +125,5 @@ export const content: ToolContent = {
     'Matching is by exact keyword text after normalization — close variants (e.g. "seo tip" vs "seo tips") are treated as different keywords.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Keyword Gap Analysis Template 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free keyword gap analysis template 2026: Every keyword classified as a Gap, an Overlap, or only in your list. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Keyword Gap Worksheet',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

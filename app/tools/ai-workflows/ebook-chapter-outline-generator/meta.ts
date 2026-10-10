@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'This tool plans structure only; it does not check grammar, facts, or market demand for your topic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Ebook Outline Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ebook-chapter-outline-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ebook outline generator 2026: Numbered chapter list with working titles and per-chapter beat slots. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Ebook Chapter Outline Generator',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ebook-chapter-outline-generator/',
-        },
-      ],
-    },
   ],
 };

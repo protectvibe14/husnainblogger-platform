@@ -121,23 +121,5 @@ export const content: ToolContent = {
     "PiP overlays render above the main pane (higher z-order) — keep important content clear of that corner.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Split Screen Video Layout 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/video-editing/split-screen-layout-generator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "Video Editing Tools", item: "https://husnainblogger.com/tools/video-editing/" },
-        { "@type": "ListItem", position: 4, name: "Split-Screen Layout Generator", item: "https://husnainblogger.com/tools/video-editing/split-screen-layout-generator/" },
-      ],
-    },
   ],
 };

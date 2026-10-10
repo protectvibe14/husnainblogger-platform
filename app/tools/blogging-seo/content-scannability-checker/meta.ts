@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'Very short posts can never score 100 because the −15 length deduction applies under 100 words — that is intentional.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Scannability Checker 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free blog scannability checker 2026: 0–100 score from our transparent structural rubric (starts at 100, deductions per failed. Fast, private - try.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Content Scannability Checker',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -124,34 +124,5 @@ export const content: ToolContent = {
     'Advanced transitions genuinely need CapCut or another editor; they are never presented as doable in-app.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Transition Ideas 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free tiktok transition ideas 2026: Transition ideas with a filming how-to for each. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Transition Idea Bank',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

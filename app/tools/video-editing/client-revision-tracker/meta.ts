@@ -99,23 +99,5 @@ export const content: ToolContent = {
     "The optional revision limit is not persisted — set it again each session if you use it.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Video Revision Tracker 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/video-editing/client-revision-tracker/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "Video Editing Tools", item: "https://husnainblogger.com/tools/video-editing/" },
-        { "@type": "ListItem", position: 4, name: "Client Revision Tracker", item: "https://husnainblogger.com/tools/video-editing/client-revision-tracker/" },
-      ],
-    },
   ],
 };

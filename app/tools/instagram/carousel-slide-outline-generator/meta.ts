@@ -117,34 +117,5 @@ export const content: ToolContent = {
     'Value slides cycle in bank order when the slide count exceeds an angle\'s value bank.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Carousel Ideas Generator 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free instagram carousel ideas generator 2026: Slide-by-slide outline: number, role (hook/value/proof/CTA), text, and visual note. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Carousel Slide Outline Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

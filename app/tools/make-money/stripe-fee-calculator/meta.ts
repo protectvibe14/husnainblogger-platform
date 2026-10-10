@@ -125,34 +125,5 @@ export const content: ToolContent = {
     'Results are estimates for planning, not accounting or financial advice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Stripe Fee Calculator 2026 – Fees Guide | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/stripe-fee-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Stripe fee calculator for 2027: calculate processing fees for online, in-person & ACH payments. See exact fees, net amount & gross-up charge.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Stripe Fee Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/stripe-fee-calculator/',
-        },
-      ],
-    },
   ],
 };

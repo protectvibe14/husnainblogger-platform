@@ -108,34 +108,5 @@ export const content: ToolContent = {
     'Alt text is kept to the recommended 125 characters; longer options are trimmed and flagged.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Alt Text Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/alt-text-writer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Write better alt text fast with this free instagram alt text generator: describe your photo for WCAG-style template options under 125 characters.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Alt Text Generator',
-          item: 'https://husnainblogger.com/tools/instagram/alt-text-writer/',
-        },
-      ],
-    },
   ],
 };

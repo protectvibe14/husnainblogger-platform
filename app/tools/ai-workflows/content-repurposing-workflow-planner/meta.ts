@@ -117,28 +117,5 @@ export const content: ToolContent = {
     "Supported formats are fixed to the 8 listed; the tool adds no platform-specific rules.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Content Repurposing Workflow 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/content-repurposing-workflow-planner/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Content Repurposing Workflow Planner",
-          item: "https://husnainblogger.com/tools/ai-workflows/content-repurposing-workflow-planner/",
-        },
-      ],
-    },
   ],
 };

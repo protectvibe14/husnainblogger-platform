@@ -101,33 +101,5 @@ export const content: ToolContent = {
     'The sample-size guidance is a simplified rule of thumb, not a statistical power calculation; real significance needs a proper calculator.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email A/B Test Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-a-b-test-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email A/B Test Idea Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-a-b-test-idea-generator/',
-        },
-      ],
-    },
   ],
 };

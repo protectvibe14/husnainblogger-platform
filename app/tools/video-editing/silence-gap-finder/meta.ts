@@ -121,34 +121,5 @@ export const content: ToolContent = {
     'Same values always produce the same gaps — the algorithm is fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Find Silence in Audio 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/silence-gap-finder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Find dead air in voiceovers fast: paste dB level values to map every silence gap with precise start times and durations, ready for tighter edits.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Silence Gap Finder',
-          item: 'https://husnainblogger.com/tools/video-editing/silence-gap-finder/',
-        },
-      ],
-    },
   ],
 };

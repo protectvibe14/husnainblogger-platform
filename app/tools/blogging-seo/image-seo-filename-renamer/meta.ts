@@ -103,34 +103,5 @@ export const content: ToolContent = {
     'Transliteration covers accented Latin letters only; non-Latin scripts (Chinese, Arabic, etc.) fall back to the generic name "image".',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'SEO Image Filename Generator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free seo image filename generator 2026: The SEO-friendly filename: lowercase, hyphen-separated, extension preserved. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Image SEO Filename Renamer',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

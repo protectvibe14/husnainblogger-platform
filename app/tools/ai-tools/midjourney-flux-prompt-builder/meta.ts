@@ -132,29 +132,6 @@ export const content: ToolContent = {
     'Midjourney parameter syntax can change; the --v 6 flag reflects the template as written, not a live lookup.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Midjourney & Flux Prompt Builder 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/midjourney-flux-prompt-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free midjourney prompt builder 2026: Assembled Midjourney prompt with --ar and --v flags, ready to paste. Get instant results. free now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

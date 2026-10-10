@@ -117,33 +117,5 @@ export const content: ToolContent = {
     'Not legal advice — get the client to approve the final draft and any quote in writing.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Case Study Template 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/case-study-outline-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Case Study Outline Generator',
-          item: 'https://husnainblogger.com/tools/ai-workflows/case-study-outline-generator/',
-        },
-      ],
-    },
   ],
 };

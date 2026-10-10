@@ -153,33 +153,5 @@ export const content: ToolContent = {
     'Platforms not in the spec table are marked UNVERIFIED; their specs are never guessed.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Multi Platform Video Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/multi-platform-upload-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Multi-Platform Upload Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/multi-platform-upload-planner/',
-        },
-      ],
-    },
   ],
 };

@@ -122,34 +122,5 @@ export const content: ToolContent = {
     'Up to 50 pairs per block; split longer FAQs into multiple blocks.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'FAQ Schema Generator – Free JSON-LD 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'FAQ Schema Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

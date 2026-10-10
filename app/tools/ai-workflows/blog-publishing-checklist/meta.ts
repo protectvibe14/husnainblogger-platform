@@ -68,28 +68,5 @@ export const content: ToolContent = {
     "Progress is stored in your browser only; clearing site data resets it.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Blog Post Publishing Checklist 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/blog-publishing-checklist/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Blog Publishing Checklist",
-          item: "https://husnainblogger.com/tools/ai-workflows/blog-publishing-checklist/",
-        },
-      ],
-    },
   ],
 };

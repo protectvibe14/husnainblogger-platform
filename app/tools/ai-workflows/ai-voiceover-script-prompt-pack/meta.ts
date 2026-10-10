@@ -68,40 +68,11 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'AI Voiceover Prompts 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-voiceover-script-prompt-pack/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free AI Voiceover Prompts 2026 – Free Tool - required.',
-    },
-    {
       '@type': 'WebPage',
       name: 'AI Voiceover Prompts 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/ai-voiceover-script-prompt-pack/',
       description:
     'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Voiceover Script Prompt Pack',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-voiceover-script-prompt-pack/',
-        },
-      ],
     },
   ],
 };

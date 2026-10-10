@@ -120,34 +120,5 @@ export const content: ToolContent = {
     'Overflow after numbering is flagged for manual trimming and never auto-cut; only existing 1/N-style markers are stripped, other text is untouched.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Twitter Thread Numbering 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitter thread numbering 2026: Your tweets with fresh 1/N markers applied at the start or end. Old markers are stripped. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Thread Numbering Formatter',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

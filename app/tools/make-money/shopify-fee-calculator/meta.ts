@@ -130,34 +130,5 @@ export const content: ToolContent = {
     'Results are estimates for planning, not accounting or financial advice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Shopify Fee Calculator 2026 – Plans & Fees | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/shopify-fee-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free shopify fee calculator 2026: pick your plan and enter average order value and orders per month to see fees, subscription, and effective rate.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Shopify Fee Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/shopify-fee-calculator/',
-        },
-      ],
-    },
   ],
 };

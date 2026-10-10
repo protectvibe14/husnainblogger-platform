@@ -98,33 +98,5 @@ export const content: ToolContent = {
     'RPMs outside the 1-200 sanity band are rejected as likely typos or unit mix-ups.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Raptive Earnings Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/raptive-revenue-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Raptive Revenue Estimator',
-          item: 'https://husnainblogger.com/tools/make-money/raptive-revenue-estimator/',
-        },
-      ],
-    },
   ],
 };

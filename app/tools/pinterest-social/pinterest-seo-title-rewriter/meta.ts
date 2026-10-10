@@ -111,34 +111,5 @@ export const content: ToolContent = {
     'Keyword front-loading is a widely used SEO convention, not a ranking guarantee; the tool makes no claims about reach or traffic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Pinterest SEO Title Rewriter 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pinterest seo 2026: Title variants from a fixed pattern bank. Every rewrite is 100 characters or fewer. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest SEO Title Rewriter',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

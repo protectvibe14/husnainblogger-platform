@@ -107,34 +107,5 @@ export const content: ToolContent = {
     'All tags are normalized (letters, digits, and underscores only, no spaces); count must be a whole number between 1 and 5.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Twitter Hashtag Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitter hashtag generator 2026: Clean, space-free hashtags built from your topic plus picks from a curated generic bank —. Fast, private - try.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Hashtag Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

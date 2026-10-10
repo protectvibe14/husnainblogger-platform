@@ -104,33 +104,5 @@ export const content: ToolContent = {
     'If you skip the next-video topic, a generic fallback phrase ("the next video in this series") fills bridge lines.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube End Screen Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/end-of-video-retention-extender/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'End-of-Video Retention Extender',
-          item: 'https://husnainblogger.com/tools/youtube/end-of-video-retention-extender/',
-        },
-      ],
-    },
   ],
 };

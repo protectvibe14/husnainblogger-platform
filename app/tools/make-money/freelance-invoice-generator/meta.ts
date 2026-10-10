@@ -160,34 +160,5 @@ export const content: ToolContent = {
     "The document is rendered as plain text for copying; use your browser's print-to-PDF for a PDF copy.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Freelance Invoice Generator 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/make-money/freelance-invoice-generator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description:
-    "Free freelance invoice generator 2026: generate a freelance invoice with this free invoice generator. Add line items, tax and. Fast, private - try.",
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Make Money Tools",
-          item: "https://husnainblogger.com/tools/make-money/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Freelance Invoice Generator",
-          item: "https://husnainblogger.com/tools/make-money/freelance-invoice-generator/",
-        },
-      ],
-    },
   ],
 };

@@ -118,33 +118,5 @@ export const content: ToolContent = {
     "The criteria checklist is fixed at 6 criteria; publish only after real research or testing.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Buying Guide Template 2026 – Free Tool | HusnainBlogger",
-      url: TOOL_URL,
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "AI Workflow Tools",
-          item: "https://husnainblogger.com/tools/ai-workflows/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Buying Guide Outline Generator",
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

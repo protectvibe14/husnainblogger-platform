@@ -100,28 +100,5 @@ export const content: ToolContent = {
     'Always follow the terms of your own client contract first.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: NAME,
-      url: CANONICAL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Client Offboarding Checklist', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        { '@type': 'ListItem', position: 4, name: NAME, item: CANONICAL },
-      ],
-    },
   ],
 };

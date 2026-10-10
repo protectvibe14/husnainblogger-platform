@@ -113,34 +113,5 @@ export const content: ToolContent = {
     'This is not legal advice; consent rules vary by country — check what applies to your list.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email List Growth Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-list-growth-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Get email list growth ideas free: enter your niche and budget — get up to 20 tactics with effort and cost levels, plus a consent reminder. Start now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email List Growth Idea Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-list-growth-idea-generator/',
-        },
-      ],
-    },
   ],
 };

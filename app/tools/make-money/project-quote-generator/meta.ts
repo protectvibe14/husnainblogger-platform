@@ -124,33 +124,5 @@ export const content: ToolContent = {
     'All amounts are USD; no market data or competitor pricing is used.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Freelance Project Quote Calculator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/project-quote-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Freelance Project Quote Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/project-quote-generator/',
-        },
-      ],
-    },
   ],
 };

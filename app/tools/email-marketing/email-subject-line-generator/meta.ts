@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'Generated lines are starting points — always adapt them to your brand voice and A/B test before sending.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Subject Line Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-subject-line-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Never stare at a blank subject line again: pick the email purpose, topic, audience, and tone to generate catchy lines built from 30 proven templates.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email Subject Line Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-subject-line-generator/',
-        },
-      ],
-    },
   ],
 };

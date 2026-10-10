@@ -95,34 +95,5 @@ export const content: ToolContent = {
     'Same hook text always produces the same score — the rubric is fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Hook Checker 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/hook-score-checker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Score your video hook before you film it: paste your opening line for a 0-100 checklist score, a full criterion breakdown, and practical fix suggestions.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Hook Score Checker',
-          item: 'https://husnainblogger.com/tools/video-editing/hook-score-checker/',
-        },
-      ],
-    },
   ],
 };

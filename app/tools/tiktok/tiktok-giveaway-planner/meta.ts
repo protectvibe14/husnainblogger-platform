@@ -118,33 +118,5 @@ export const content: ToolContent = {
     'Timelines are computed from your duration only — they do not account for holidays, time zones, or TikTok algorithm behavior.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Giveaway Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-giveaway-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Giveaway Planner',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-giveaway-planner/',
-        },
-      ],
-    },
   ],
 };

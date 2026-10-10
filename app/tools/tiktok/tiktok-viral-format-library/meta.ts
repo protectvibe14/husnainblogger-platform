@@ -96,29 +96,5 @@ export const content: ToolContent = {
     'Niche substitution is a text fill — entries stay generic enough to fit any niche.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Viral TikTok Formats 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-viral-format-library/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Viral Format Library',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-viral-format-library/',
-        },
-      ],
-    },
   ],
 };

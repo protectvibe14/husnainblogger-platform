@@ -107,34 +107,5 @@ export const content: ToolContent = {
     'Results are estimates for planning, not accounting or financial advice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Gumroad Fee Calculator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/gumroad-fee-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free gumroad fee calculator 2026: calculate Gumroad fees on direct and Discover sales: enter your sale price and quantity. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Gumroad Fee Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/gumroad-fee-calculator/',
-        },
-      ],
-    },
   ],
 };

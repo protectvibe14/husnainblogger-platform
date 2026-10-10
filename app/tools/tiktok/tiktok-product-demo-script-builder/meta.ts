@@ -88,29 +88,5 @@ export const content: ToolContent = {
     'Maximum 5 features per item — one demo beat each — to keep demos short and watchable.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Tiktok Product Demo Script 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-product-demo-script-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Build a TikTok product demo script from templates: hook, feature demo beats, proof moment, and CTA. Adds an #ad disclosure for paid demos. Free —.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Product Demo Script Builder',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-product-demo-script-builder/',
-        },
-      ],
-    },
   ],
 };

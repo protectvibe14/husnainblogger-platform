@@ -126,34 +126,5 @@ export const content: ToolContent = {
     'The signature is a placeholder — always replace it with your real name and link before sending.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Podcast Guest Pitch Email 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/podcast-pitch-email-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Land podcast guest spots with a sharper pitch: enter the show name, your topic, and credentials for 8 subject lines plus a ready-to-send email.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Podcast Pitch Email Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/podcast-pitch-email-generator/',
-        },
-      ],
-    },
   ],
 };

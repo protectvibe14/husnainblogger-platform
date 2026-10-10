@@ -121,34 +121,5 @@ export const content: ToolContent = {
     'Line width is clamped to 40–120 characters; tokens longer than the width (e.g. long URLs) are hard-broken.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Html to Plain Text Email Converter 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free html to plain text email converter 2026: Linearized plain-text version of the pasted HTML, wrapped to the chosen line width. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Plain-Text Email Formatter',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

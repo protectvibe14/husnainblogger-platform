@@ -131,34 +131,5 @@ export const content: ToolContent = {
     'The URL host may be lowercased by the parser; the path, query, and fragment are otherwise preserved as typed.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'UTM Link Builder 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free utm link builder 2026: One fully built UTM-tagged URL per item, ready to copy. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'UTM Link Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

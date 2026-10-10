@@ -101,33 +101,5 @@ export const content: ToolContent = {
     'Facecam sizes and margins are fixed rules (22/32/45% width, 2.5% margin), not measurements of your footage.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Reaction Video Layout Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/reaction-layout-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Reaction Layout Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/reaction-layout-planner/',
-        },
-      ],
-    },
   ],
 };

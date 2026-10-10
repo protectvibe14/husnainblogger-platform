@@ -99,34 +99,5 @@ export const content: ToolContent = {
     'CapCut instructions are manual steps — presets are not importable files.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'CapCut Caption Style Presets 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/caption-style-preset-library/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Steal pro caption styles in one click: pick a vibe and platform for a full CapCut config - font, colors, stroke, animation, and rebuild steps.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Caption Style Preset Library',
-          item: 'https://husnainblogger.com/tools/video-editing/caption-style-preset-library/',
-        },
-      ],
-    },
   ],
 };

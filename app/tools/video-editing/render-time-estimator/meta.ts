@@ -127,33 +127,5 @@ export const content: ToolContent = {
     'Output is always a range, never a point estimate; the extreme 4k + heavy + low-tier case returns an extra-wide range with a strong caveat.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Render Time Estimator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/render-time-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Render Time Estimator',
-          item: 'https://husnainblogger.com/tools/video-editing/render-time-estimator/',
-        },
-      ],
-    },
   ],
 };

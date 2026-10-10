@@ -107,33 +107,5 @@ export const content: ToolContent = {
     'Ideas come from fixed template banks, not AI; wording variety is limited.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Giveaway Ideas Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/blog-giveaway-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Giveaway Ideas Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/blog-giveaway-idea-generator/',
-        },
-      ],
-    },
   ],
 };

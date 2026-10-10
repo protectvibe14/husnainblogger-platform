@@ -100,34 +100,5 @@ export const content: ToolContent = {
     'Handle validation is format-only — it does not check whether the account exists.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Collab Post Caption 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/collab-post-caption-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Write the perfect collaboration caption with this free instagram collab post caption tool: add your partner handle, campaign, and tone for options.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Collab Post Caption',
-          item: 'https://husnainblogger.com/tools/instagram/collab-post-caption-generator/',
-        },
-      ],
-    },
   ],
 };

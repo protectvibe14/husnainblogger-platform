@@ -80,34 +80,5 @@ export const content: ToolContent = {
     'Results compare only the sets you log; reach is also affected by content, timing, and followers.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Hashtag Tracker 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/hashtag-performance-log/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Track which hashtag sets drive your reach with this free instagram hashtag tracker manual log: enter reach, likes, and comments per set to compare.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Hashtag Tracker',
-          item: 'https://husnainblogger.com/tools/instagram/hashtag-performance-log/',
-        },
-      ],
-    },
   ],
 };

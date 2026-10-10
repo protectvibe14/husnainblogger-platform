@@ -104,33 +104,5 @@ export const content: ToolContent = {
     'Any dollar target is arithmetic on the monthly revenue you entered (a 10–30% band) and is labeled an estimate, never a prediction.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Income Diversification Guide 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/blog-income-stream-diversification-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Income Stream Diversification Planner',
-          item: 'https://husnainblogger.com/tools/make-money/blog-income-stream-diversification-planner/',
-        },
-      ],
-    },
   ],
 };

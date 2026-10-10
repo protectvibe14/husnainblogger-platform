@@ -113,34 +113,5 @@ export const content: ToolContent = {
     'Same inputs always produce the same markers — the math is fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'BPM to Beat Interval 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/bpm-beat-match-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    "Cut on the beat every single time: enter any track's BPM and total duration for exact beat intervals in milliseconds plus the total beat count.",
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'BPM Beat-Match Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/bpm-beat-match-planner/',
-        },
-      ],
-    },
   ],
 };

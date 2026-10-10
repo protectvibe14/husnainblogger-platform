@@ -99,33 +99,5 @@ export const content: ToolContent = {
     'A single session covers at most 12 products; larger catalogs should be split across sessions.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Live Shopping Script 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-live-shopping-script-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Live Shopping Script Planner',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-live-shopping-script-planner/',
-        },
-      ],
-    },
   ],
 };

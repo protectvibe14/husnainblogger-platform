@@ -89,28 +89,5 @@ export const content: ToolContent = {
     "All steps in one run must share the same process name; steps are capped at 30.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Blogging SOP Template 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/blogging-sop-template-builder/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Blogging SOP Template Builder",
-          item: "https://husnainblogger.com/tools/ai-workflows/blogging-sop-template-builder/",
-        },
-      ],
-    },
   ],
 };

@@ -109,34 +109,5 @@ export const content: ToolContent = {
     'The tool cannot tell you which ideas your audience wants — check listener questions and comments.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Podcast Episode Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/podcast-episode-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free podcast episode ideas 2026: Episode title ideas, each with a segment breakdown from a fixed segment bank. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Podcast Episode Idea Generator',
-          item: 'https://husnainblogger.com/tools/ai-workflows/podcast-episode-idea-generator/',
-        },
-      ],
-    },
   ],
 };

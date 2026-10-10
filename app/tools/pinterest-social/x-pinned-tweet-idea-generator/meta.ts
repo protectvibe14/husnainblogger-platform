@@ -95,29 +95,6 @@ export const content: ToolContent = {
     'Same goal always returns the same 5 drafts; variety comes from picking a different goal.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Pinned Tweet Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/pinterest-social/x-pinned-tweet-idea-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pinned tweet ideas 2026: 5 self-contained, CTA-led pinned post drafts for your goal — each within 280 weighted. Fast, private now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest, X & Facebook',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

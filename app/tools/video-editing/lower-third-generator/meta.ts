@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'No visual preview is generated here — check the result in your own page before broadcasting.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Lower Third Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/lower-third-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Build broadcast-style lower thirds fast: enter a name and title, pick from 5 professional style presets, and get a polished, ready-to-use graphic spec.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Lower Third Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/lower-third-generator/',
-        },
-      ],
-    },
   ],
 };

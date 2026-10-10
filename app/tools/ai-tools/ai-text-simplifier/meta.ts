@@ -92,36 +92,6 @@ export const content: ToolContent = {
     'Reading levels are approximate; check the result fits your actual audience.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'AI Text Simplifier 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ai-text-simplifier/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ai text simplifier 2026: The same content rewritten at the reading level you picked. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Text Simplifier',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-text-simplifier/',
-        },
-      ],
-    },
   ],
 };
 

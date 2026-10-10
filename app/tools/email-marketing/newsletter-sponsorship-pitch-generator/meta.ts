@@ -146,34 +146,5 @@ export const content: ToolContent = {
     'This pitches your newsletter’s ad slots to sponsors; for asking a brand to sponsor you in general, use a general sponsorship-ask template instead.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Newsletter Sponsorship Pitch 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free newsletter sponsorship pitch 2026: Ready-to-personalize outreach email to sponsors. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Newsletter Sponsorship Pitch Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

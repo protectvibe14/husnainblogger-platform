@@ -111,34 +111,5 @@ export const content: ToolContent = {
     'Results are estimates in USD; taxes and currency conversion are not included.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Digital Product Pricing Calculator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/digital-product-pricing-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Price your products for profit with this free digital product pricing calculator — factor in costs, margins, and platform fees. Try it free today.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Digital Product Pricing Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/digital-product-pricing-calculator/',
-        },
-      ],
-    },
   ],
 };

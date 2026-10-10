@@ -128,23 +128,5 @@ export const content: ToolContent = {
     "Sessions longer than 8 hours produce a warning, not an error — the plan is still returned.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Video Editing Pomodoro Timer 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/video-editing/editor-pomodoro-timer/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "Video Editing Tools", item: "https://husnainblogger.com/tools/video-editing/" },
-        { "@type": "ListItem", position: 4, name: "Editor Pomodoro Timer", item: "https://husnainblogger.com/tools/video-editing/editor-pomodoro-timer/" },
-      ],
-    },
   ],
 };

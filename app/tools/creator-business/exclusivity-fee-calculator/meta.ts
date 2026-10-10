@@ -135,34 +135,5 @@ export const content: ToolContent = {
     'With a 0-month exclusivity period, the monthly equivalent equals the full fee (there is nothing to spread it across).',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Influencer Exclusivity Fee 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free influencer exclusivity fee 2026: The fee for the exclusivity clause, from your own percentage or flat fee (estimate). Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Exclusivity Fee Calculator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

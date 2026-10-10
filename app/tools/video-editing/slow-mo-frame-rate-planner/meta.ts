@@ -106,34 +106,5 @@ export const content: ToolContent = {
     'Same inputs always produce the same plan — the formulas are fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Slow Motion FPS Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/slow-mo-frame-rate-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan buttery slow motion before you shoot: enter the source fps, timeline fps, and your slow-motion factor for clean, judder-free frame math.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Slow-Mo Frame Rate Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/slow-mo-frame-rate-planner/',
-        },
-      ],
-    },
   ],
 };

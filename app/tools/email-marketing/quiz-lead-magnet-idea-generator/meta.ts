@@ -105,34 +105,5 @@ export const content: ToolContent = {
     'This tool covers quiz-format lead magnets only; general ideation is the Lead Magnet Idea Generator and titles are the Lead Magnet Title Generator.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Quiz Lead Magnet Ideas 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free quiz lead magnet ideas 2026: Table of 4 quiz concepts: number, quiz title, sample questions, result types, and the. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Quiz Lead Magnet Idea Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

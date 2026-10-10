@@ -76,34 +76,5 @@ export const content: ToolContent = {
     'Maximum 20 templates per run, 2,000 characters per template.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Prompt Template With Variables 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/prompt-variable-template-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Build a reusable prompt template with variables from your own text: detect every {variable}, preview a fill-in form, and copy it. Free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Prompt Variable Template Builder',
-          item: 'https://husnainblogger.com/tools/ai-workflows/prompt-variable-template-builder/',
-        },
-      ],
-    },
   ],
 };

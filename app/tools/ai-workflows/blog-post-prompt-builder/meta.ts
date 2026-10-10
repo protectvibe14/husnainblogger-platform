@@ -92,34 +92,5 @@ export const content: ToolContent = {
     'Word count must be between 300 and 5000 (defaults to 1200 when left blank).',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Prompt Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/blog-post-prompt-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Build a blog prompt generator template from your topic, post type, tone, keyword, and word count — get a copy-paste AI writing prompt. Free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Post Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-workflows/blog-post-prompt-builder/',
-        },
-      ],
-    },
   ],
 };

@@ -93,34 +93,5 @@ export const content: ToolContent = {
     'Codec and file-size rows are baselines; exact limits vary by account, region, and upload method.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Specs by Platform 2026 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/platform-spec-lookup/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Look up video specs by platform in seconds: aspect ratios, resolutions, max durations, and file limits for TikTok, YouTube, Reels, and more.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Platform Spec Lookup',
-          item: 'https://husnainblogger.com/tools/video-editing/platform-spec-lookup/',
-        },
-      ],
-    },
   ],
 };

@@ -151,34 +151,5 @@ export const content: ToolContent = {
     'Quarterly payments are estimated as annual/4 for simplicity; real estimated-tax rules (safe harbors, due dates, penalties) are not modeled.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Quarterly Estimated Tax Calculator Freelanc | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free quarterly estimated tax calculator freelancer 2026: Estimated tax for one quarter: estimated annual tax divided by 4. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Quarterly Tax Estimator for Freelancers',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

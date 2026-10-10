@@ -103,34 +103,5 @@ export const content: ToolContent = {
     'Changing a published post\u2019s slug changes its URL; add a 301 redirect from the old URL to avoid broken links.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'URL Slug Optimizer 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free url slug optimizer 2026: The shortened slug: stop words removed, words joined with hyphens. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Slug Stop-Word Remover',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

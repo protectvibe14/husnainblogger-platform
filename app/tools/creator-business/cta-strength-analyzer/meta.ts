@@ -92,33 +92,5 @@ export const content: ToolContent = {
     'The tool analyzes text only; it cannot see your button design or page context.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'CTA Strength Analyzer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/creator-business/cta-strength-analyzer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'CTA Strength Analyzer',
-          item: 'https://husnainblogger.com/tools/creator-business/cta-strength-analyzer/',
-        },
-      ],
-    },
   ],
 };

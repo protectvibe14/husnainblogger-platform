@@ -135,34 +135,5 @@ export const content: ToolContent = {
     'The monthly equivalent is a simple multiplication; taxes, payment terms, and negotiation are not included.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'UGC Whitelisting Rates 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ugc whitelisting rates 2026: Monthly whitelisting fee × months (estimate, from your own rate). Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Whitelisting Fee Calculator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

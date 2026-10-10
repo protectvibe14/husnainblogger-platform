@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'Same values always produce the same peaks — the algorithm is fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Audio Waveform Visualizer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/audio-waveform-beat-marker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Find beat candidates in any audio clip: paste your amplitude values, set low, medium, or high sensitivity, and get precise peak markers to cut on.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Audio Waveform Beat Marker',
-          item: 'https://husnainblogger.com/tools/video-editing/audio-waveform-beat-marker/',
-        },
-      ],
-    },
   ],
 };

@@ -120,16 +120,6 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'AI Art Styles List 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-art-style-reference-library/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free AI Art Styles List 2026 – Free Tool - required.',
-    },
-    {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: 'AI Art Styles List 2026 – Free Tool | HusnainBlogger',
@@ -137,18 +127,6 @@ export const content: ToolContent = {
       description:
     'Free ai art styles list 2026: Paste this into your image generator and adapt it to your subject. Get instant results. free now.',
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

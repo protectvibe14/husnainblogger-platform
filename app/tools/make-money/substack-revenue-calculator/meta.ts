@@ -95,34 +95,5 @@ export const content: ToolContent = {
     'Results are estimates in USD; no currency conversion is performed.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Substack Revenue Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/substack-revenue-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Calculate your newsletter earnings with this free substack revenue calculator — see gross revenue, the 10% platform fee, and Stripe fees. Try it free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Substack Revenue Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/substack-revenue-calculator/',
-        },
-      ],
-    },
   ],
 };

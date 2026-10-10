@@ -116,34 +116,5 @@ export const content: ToolContent = {
     'DRM-protected or unplayable files cannot be captured by the browser step — the math still validates.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Extract Frame From Video 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/video-frame-grabber/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    "Grab the perfect video frame every time: validate any timestamp against your video's duration, then get the exact capture specs for the shot.",
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Video Frame Grabber',
-          item: 'https://husnainblogger.com/tools/video-editing/video-frame-grabber/',
-        },
-      ],
-    },
   ],
 };

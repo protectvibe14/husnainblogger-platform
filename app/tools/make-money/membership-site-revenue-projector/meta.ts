@@ -120,34 +120,5 @@ export const content: ToolContent = {
     'Horizon is capped at 120 months as a sanity guard; amounts are USD.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Membership Site Revenue Calculator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/membership-site-revenue-projector/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Project your community income with this free membership site revenue calculator — model signups, churn, and MRR month by month. Start projecting now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Membership Site Revenue Projector',
-          item: 'https://husnainblogger.com/tools/make-money/membership-site-revenue-projector/',
-        },
-      ],
-    },
   ],
 };

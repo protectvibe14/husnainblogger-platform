@@ -108,34 +108,5 @@ export const content: ToolContent = {
     'Results are estimates in USD; taxes, currency conversion, and payout fees are not included.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Patreon Earnings Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/patreon-earnings-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Estimate your monthly Patreon income with this free patreon earnings calculator — subtract plan and processing fees to reveal your net payout.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Patreon Earnings Estimator',
-          item: 'https://husnainblogger.com/tools/make-money/patreon-earnings-estimator/',
-        },
-      ],
-    },
   ],
 };

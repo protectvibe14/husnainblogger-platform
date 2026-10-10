@@ -127,33 +127,5 @@ export const content: ToolContent = {
     'Ad income assumes every session serves ads; invalid traffic and ad blockers are ignored.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Income Calculator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/blog-traffic-to-income-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Traffic-to-Income Planner',
-          item: 'https://husnainblogger.com/tools/make-money/blog-traffic-to-income-planner/',
-        },
-      ],
-    },
   ],
 };

@@ -102,29 +102,5 @@ export const content: ToolContent = {
     'Gap ideas are fixed opportunity prompts, not personalized strategy; verify them against your own niche.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Competitor Analysis 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-competitor-angle-analyzer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Run a free TikTok competitor analysis on pasted captions: detect the hook type, content angle, and CTA, then get 6 gap ideas. Paste text only —.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Competitor Angle Analyzer',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-competitor-angle-analyzer/',
-        },
-      ],
-    },
   ],
 };

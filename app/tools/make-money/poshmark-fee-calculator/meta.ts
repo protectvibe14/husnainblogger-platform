@@ -128,34 +128,5 @@ export const content: ToolContent = {
     'All amounts are in USD.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Poshmark Fee Calculator 2026 – Seller Fees | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/poshmark-fee-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-      isAccessibleForFree: true,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Poshmark Fee Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/poshmark-fee-calculator/',
-        },
-      ],
-    },
   ],
 };

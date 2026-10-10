@@ -103,29 +103,6 @@ export const content: ToolContent = {
     'Prices are default estimates, not live vendor pricing; verify current prices and free plans before buying.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'AI Tools Stack for Creators 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-tool-stack-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ai tools stack for creators 2026: One recommended tool per matched category with its default monthly price and a free-plan. Fast, private - try.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

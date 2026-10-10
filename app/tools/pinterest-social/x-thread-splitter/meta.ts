@@ -122,34 +122,5 @@ export const content: ToolContent = {
     'A single unbreakable token longer than the budget (extremely rare; URLs are kept whole at 23) is hard-split rather than dropped — the summary tells you if this happened.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Split Text Into Tweets 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free split text into tweets 2026: Your text split into posts on sentence/word boundaries — never mid-word. Each post fits. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'X Thread Splitter',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'The tool plans layout only; it never writes newsletter content.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Newsletter Content Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/newsletter-issue-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free newsletter content planner 2026: Named section slots with slot purposes and word-count targets. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Newsletter Issue Planner',
-          item: 'https://husnainblogger.com/tools/ai-workflows/newsletter-issue-planner/',
-        },
-      ],
-    },
   ],
 };

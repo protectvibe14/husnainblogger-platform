@@ -105,29 +105,6 @@ export const content: ToolContent = {
     'Download and canvas rendering require a modern browser with JavaScript enabled.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Tweet Quote Image Generator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free tweet quote image generator 2026: Each card with its theme, PNG dimensions, font size, and character count. Fast, private now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest, X & Facebook',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

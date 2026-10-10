@@ -106,34 +106,5 @@ export const content: ToolContent = {
     'Results are deterministic: the same script and settings always produce the same estimate.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Script to Video Length 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/talking-head-length-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Convert script to video length: paste your talking-head script, set your speaking rate, and get an estimated duration range with pause allowance. Free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Talking-Head Length Estimator',
-          item: 'https://husnainblogger.com/tools/video-editing/talking-head-length-estimator/',
-        },
-      ],
-    },
   ],
 };

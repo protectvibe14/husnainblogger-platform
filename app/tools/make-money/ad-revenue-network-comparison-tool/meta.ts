@@ -88,7 +88,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Compare ad networks with this AdSense vs Mediavine vs Raptive calculator — see which network pays more at your traffic level in USD. Switch only when.';
+  'Compare ad networks with this AdSense vs Mediavine vs Raptive calculator — see which network pays more at your traffic level in USD. Switch only when the numbers prove it.';
 
 export const content: ToolContent = {
   title: 'Adsense vs Mediavine vs Raptive Calculator',
@@ -158,33 +158,5 @@ export const content: ToolContent = {
     'The comparison ignores each network\'s ad formats, fill rates, and site-speed impact — earnings alone do not make a network "best".',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Adsense vs Mediavine vs Raptive Calculator | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/ad-revenue-network-comparison-tool/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make-Money & Affiliate Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Ad Revenue Network Comparison Tool',
-          item: 'https://husnainblogger.com/tools/make-money/ad-revenue-network-comparison-tool/',
-        },
-      ],
-    },
   ],
 };

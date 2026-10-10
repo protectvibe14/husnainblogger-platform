@@ -98,33 +98,5 @@ export const content: ToolContent = {
     'The Mon/Wed/Fri cadence is a fixed starting suggestion, not a proven optimal schedule — adjust to what you can sustain.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Behind the Scenes TikTok Ideas 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-behind-the-scenes-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Behind-the-Scenes Planner',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-behind-the-scenes-planner/',
-        },
-      ],
-    },
   ],
 };

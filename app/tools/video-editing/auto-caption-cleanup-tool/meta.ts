@@ -112,34 +112,5 @@ export const content: ToolContent = {
     'The change log is capped at 200 entries; transformations still apply beyond the cap.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Clean Up Auto Captions 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/auto-caption-cleanup-tool/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Fix messy auto captions fast: strip filler words, fix caps and punctuation, and re-wrap lines from text, SRT, or VTT - with a full change log.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Auto-Caption Cleanup Tool',
-          item: 'https://husnainblogger.com/tools/video-editing/auto-caption-cleanup-tool/',
-        },
-      ],
-    },
   ],
 };

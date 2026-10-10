@@ -119,34 +119,5 @@ export const content: ToolContent = {
     'This planner does not publish anything to Instagram — it only produces the plan.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'How to Plan Instagram Stories 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free how to plan instagram stories 2026: Ordered slots with format, draft text, and posting timing. Get instant results. free now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Story Sequence Planner',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

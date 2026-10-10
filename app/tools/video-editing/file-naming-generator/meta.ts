@@ -160,23 +160,5 @@ export const content: ToolContent = {
     "Sanitization is best-effort against common filesystem-illegal characters; check your platform's own rules for edge cases.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Video File Naming Convention 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/video-editing/file-naming-generator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "Video Editing Tools", item: "https://husnainblogger.com/tools/video-editing/" },
-        { "@type": "ListItem", position: 4, name: "File Naming Generator", item: "https://husnainblogger.com/tools/video-editing/file-naming-generator/" },
-      ],
-    },
   ],
 };

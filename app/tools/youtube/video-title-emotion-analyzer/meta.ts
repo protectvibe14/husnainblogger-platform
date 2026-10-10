@@ -94,33 +94,5 @@ export const content: ToolContent = {
     'Matching is word-boundary based, so partial matches (e.g. "celebration" for "celebrate") do not count.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Youtube Title Emotion Analyzer 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/video-title-emotion-analyzer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Video Title Emotion Analyzer',
-          item: 'https://husnainblogger.com/tools/youtube/video-title-emotion-analyzer/',
-        },
-      ],
-    },
   ],
 };

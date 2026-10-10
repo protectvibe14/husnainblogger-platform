@@ -108,34 +108,5 @@ export const content: ToolContent = {
     'Scripts over 10 minutes get a suggestion to split into sections; scripts over 20,000 characters are rejected.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Online Teleprompter 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/teleprompter/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Use this free online teleprompter to time your script: set words-per-minute and font size, get read time plus a px/sec scroll plan. Start free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Teleprompter',
-          item: 'https://husnainblogger.com/tools/video-editing/teleprompter/',
-        },
-      ],
-    },
   ],
 };

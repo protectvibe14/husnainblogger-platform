@@ -67,33 +67,5 @@ export const content: ToolContent = {
     'Fact verification is on you: the checklist reminds you to check sources but cannot do it for you.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'AI Content Editing Checklist 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-content-editing-checklist/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Content Editing Checklist',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-content-editing-checklist/',
-        },
-      ],
-    },
   ],
 };

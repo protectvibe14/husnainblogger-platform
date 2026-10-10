@@ -78,28 +78,5 @@ export const content: ToolContent = {
     "Traffic checks assume you can verify visits yourself (for example Search Console or YouTube Studio).",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Content Refresh Checklist 2026 – Free Tool | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/content-refresh-checklist/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Content Refresh Checklist",
-          item: "https://husnainblogger.com/tools/ai-workflows/content-refresh-checklist/",
-        },
-      ],
-    },
   ],
 };

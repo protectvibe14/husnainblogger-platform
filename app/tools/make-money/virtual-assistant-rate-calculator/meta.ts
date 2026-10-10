@@ -131,34 +131,5 @@ export const content: ToolContent = {
     "Real VA rates vary by region, niche, and demand — treat every result as an estimate, not a researched market rate.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Virtual Assistant Rates Calculator 2026 | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/make-money/virtual-assistant-rate-calculator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description:
-    "Use our virtual assistant rates calculator to estimate VA costs free. Pick level, task type and weekly hours for an adjustable range —.",
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Make Money Tools",
-          item: "https://husnainblogger.com/tools/make-money/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Virtual Assistant Rate Calculator",
-          item: "https://husnainblogger.com/tools/make-money/virtual-assistant-rate-calculator/",
-        },
-      ],
-    },
   ],
 };

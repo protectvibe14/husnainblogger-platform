@@ -113,33 +113,5 @@ export const content: ToolContent = {
     'Actual rates vary by niche, audience demographics, episode length, and negotiation.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Podcast Sponsorship Rates 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/podcast-sponsorship-rate-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Podcast Sponsorship Rate Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/podcast-sponsorship-rate-calculator/',
-        },
-      ],
-    },
   ],
 };

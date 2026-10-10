@@ -122,33 +122,5 @@ export const content: ToolContent = {
     "At most 20 keywords are used and at most 50 names are returned, even if you ask for more combinations than exist.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Freelance Business Name Ideas 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/creator-business/freelancer-business-name-generator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Creator Business Tools",
-          item: "https://husnainblogger.com/tools/creator-business/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Freelancer Business Name Generator",
-          item: "https://husnainblogger.com/tools/creator-business/freelancer-business-name-generator/",
-        },
-      ],
-    },
   ],
 };

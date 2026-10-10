@@ -73,40 +73,11 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'AI Prompts for YouTube Scripts 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/youtube-script-prompt-pack/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free AI Prompts for YouTube Scripts 2026 – Free - required.',
-    },
-    {
       '@type': 'WebPage',
       name: 'AI Prompts for YouTube Scripts 2026 – Free | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/youtube-script-prompt-pack/',
       description:
     'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'YouTube Script Prompt Pack',
-          item: 'https://husnainblogger.com/tools/ai-workflows/youtube-script-prompt-pack/',
-        },
-      ],
     },
   ],
 };

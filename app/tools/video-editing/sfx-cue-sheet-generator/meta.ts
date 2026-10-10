@@ -115,34 +115,5 @@ export const content: ToolContent = {
     'Sound matching is fixed keyword matching on your action text, not audio analysis — concrete descriptions ("door slams") beat vague ones ("scene 3").',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Sound Effect Cue Sheet 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free sound effect cue sheet 2026: One cue per beat: time, sound type, search terms, and mixing volume in dB. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SFX Cue Sheet Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

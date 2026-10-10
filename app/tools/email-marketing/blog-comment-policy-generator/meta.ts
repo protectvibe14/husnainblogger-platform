@@ -104,34 +104,5 @@ export const content: ToolContent = {
     'No tracking of commenter behavior — this tool generates text; it does not moderate comments.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Blog Comment Policy Template 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/blog-comment-policy-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Set clear comment rules without the awkwardness: pick open, moderated, or strict, choose your tone, and publish a complete policy in seconds.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Blog Comment Policy Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/blog-comment-policy-generator/',
-        },
-      ],
-    },
   ],
 };

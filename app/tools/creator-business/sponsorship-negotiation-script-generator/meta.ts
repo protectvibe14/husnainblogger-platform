@@ -97,28 +97,5 @@ export const content: ToolContent = {
     'Negotiation outcomes depend on the brand, your audience, and the deal — no results are guaranteed.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: NAME,
-      url: CANONICAL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Sponsorship Negotiation Script 2026 – Free | HusnainBlogger', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        { '@type': 'ListItem', position: 4, name: NAME, item: CANONICAL },
-      ],
-    },
   ],
 };

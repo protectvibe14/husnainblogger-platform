@@ -109,33 +109,5 @@ export const content: ToolContent = {
     'Styled characters can double the character count; the tool warns if you exceed Instagram\'s 2,200-character caption limit.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Instagram Fonts Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/instagram/stylish-fonts-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Instagram Fonts Generator',
-          item: 'https://husnainblogger.com/tools/instagram/stylish-fonts-generator/',
-        },
-      ],
-    },
   ],
 };

@@ -121,33 +121,5 @@ export const content: ToolContent = {
     'The 2,200-character envelope is a conservative caption limit; hashtags are trimmed automatically when a long caption would exceed it.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Caption Hashtag Mixer 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-caption-hashtag-mixer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'TikTok Tools',
-          item: 'https://husnainblogger.com/tools/tiktok/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Caption Hashtag Mixer',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-caption-hashtag-mixer/',
-        },
-      ],
-    },
   ],
 };

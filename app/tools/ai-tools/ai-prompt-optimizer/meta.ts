@@ -92,36 +92,6 @@ export const content: ToolContent = {
     'Avoid pasting sensitive or confidential prompts; provider-side handling follows the provider’s policy.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'AI Prompt Optimizer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ai-prompt-optimizer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ai prompt optimizer 2026: The rewritten prompt, ready to paste into your AI tool. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Prompt Optimizer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-prompt-optimizer/',
-        },
-      ],
-    },
   ],
 };
 

@@ -103,29 +103,5 @@ export const content: ToolContent = {
     'The 7-shot sequence is a fixed structure that works for most product types, not a rule every video must follow.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'TikTok Unboxing Video Script 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-unboxing-flow-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free tiktok unboxing video script 2026: Plan a TikTok unboxing video shot by shot: teaser, opening beats, reaction lines, and a. Fast, private - try.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Unboxing Flow Planner',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-unboxing-flow-planner/',
-        },
-      ],
-    },
   ],
 };

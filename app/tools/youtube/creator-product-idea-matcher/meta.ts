@@ -115,33 +115,5 @@ export const content: ToolContent = {
     'No pricing, revenue estimates, or demand guarantees are given — validate with your own audience.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Digital Products for YouTubers 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/creator-product-idea-matcher/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Creator Product Idea Matcher',
-          item: 'https://husnainblogger.com/tools/youtube/creator-product-idea-matcher/',
-        },
-      ],
-    },
   ],
 };

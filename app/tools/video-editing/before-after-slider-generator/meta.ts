@@ -112,33 +112,5 @@ export const content: ToolContent = {
     'The snippet pattern is standard HTML/CSS/JS but is not tested in every browser — preview the embed on your own page before publishing.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Before After Slider Generator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/before-after-slider-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Before/After Slider Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/before-after-slider-generator/',
-        },
-      ],
-    },
   ],
 };

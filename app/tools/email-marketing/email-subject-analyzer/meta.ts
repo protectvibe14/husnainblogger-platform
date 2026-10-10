@@ -92,33 +92,5 @@ export const content: ToolContent = {
     'The tool never sends email or contacts any provider.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Subject Line Analyzer 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-subject-analyzer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email & Blog Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email Subject Line Analyzer',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-subject-analyzer/',
-        },
-      ],
-    },
   ],
 };

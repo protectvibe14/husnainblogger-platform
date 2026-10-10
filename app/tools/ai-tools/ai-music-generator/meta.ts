@@ -103,28 +103,6 @@ export const content: ToolContent = {
     'Browser calls depend on the chosen provider\'s CORS policy — not guaranteed by this tool.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Ai Music Generator 2026 – Free Generator | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ai-music-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Ai Music Generator 2026 – Free Generator - required.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Ai Music Generator 2026 – Free Generator | HusnainBlogger', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

@@ -118,34 +118,5 @@ export const content: ToolContent = {
     'Output is a timing plan only — no media rendering, and holds exclude export time.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Slideshow Timing Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/slideshow-timing-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Time your slideshow perfectly: enter your slide count and total duration in seconds for a start/end timeline with transitions and smart holds.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Slideshow Timing Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/slideshow-timing-planner/',
-        },
-      ],
-    },
   ],
 };

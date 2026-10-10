@@ -127,34 +127,5 @@ export const content: ToolContent = {
     'The tool never processes your image — output is a coordinate plan only.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Ken Burns Effect Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/ken-burns-path-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan smooth pan-and-zoom moves like a pro: enter your image size and aspect ratio for keyframes, crop windows, and smart upscale safety checks.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Ken Burns Path Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/ken-burns-path-planner/',
-        },
-      ],
-    },
   ],
 };

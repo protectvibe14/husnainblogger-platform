@@ -86,28 +86,5 @@ export const content: ToolContent = {
     "Stages are capped at 25 per checklist; order is preserved exactly as you entered it.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "AI Content Workflow Checklist 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/ai-workflows/ai-workflow-checklist-builder/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description: DESCRIPTION,
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        { "@type": "ListItem", position: 3, name: "AI Workflow Tools", item: "https://husnainblogger.com/tools/ai-workflows/" },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "AI Workflow Checklist Builder",
-          item: "https://husnainblogger.com/tools/ai-workflows/ai-workflow-checklist-builder/",
-        },
-      ],
-    },
   ],
 };

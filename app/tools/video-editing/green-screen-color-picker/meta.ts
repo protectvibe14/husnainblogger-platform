@@ -102,34 +102,5 @@ export const content: ToolContent = {
     'Same colors always produce the same recommendation — the rules are fully deterministic.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Chroma Key Color Picker 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/green-screen-color-picker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    "Pick the right green screen color for your shoot: enter your subject's colors for a screen recommendation - or check whether one color keys cleanly.",
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Video Editing Tools',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Green Screen Color Picker',
-          item: 'https://husnainblogger.com/tools/video-editing/green-screen-color-picker/',
-        },
-      ],
-    },
   ],
 };

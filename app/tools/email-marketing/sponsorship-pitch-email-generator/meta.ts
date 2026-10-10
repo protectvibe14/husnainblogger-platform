@@ -108,33 +108,5 @@ export const content: ToolContent = {
     'Copy comes from a fixed template bank, not AI; always personalize before sending.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Sponsorship Email Pitch Generator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/sponsorship-pitch-email-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Sponsorship Email Pitch Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/sponsorship-pitch-email-generator/',
-        },
-      ],
-    },
   ],
 };

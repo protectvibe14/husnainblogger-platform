@@ -100,34 +100,5 @@ export const content: ToolContent = {
     'A passing CPS does not guarantee the caption is in sync with the audio — timing still needs its own check.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Characters Per Second Checker 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/caption-readability-cps-checker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Check caption reading speed in characters per second: paste your SRT or WebVTT subtitles to flag every cue that is too fast for your audience.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Caption Readability (CPS) Checker',
-          item: 'https://husnainblogger.com/tools/video-editing/caption-readability-cps-checker/',
-        },
-      ],
-    },
   ],
 };

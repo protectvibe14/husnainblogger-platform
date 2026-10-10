@@ -109,29 +109,6 @@ export const content: ToolContent = {
     'The abbreviation hint map covers 15 common terms; anything else is flagged for your manual review.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'ElevenLabs Script Formatter 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/elevenlabs-voiceover-script-formatter/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free elevenlabs script formatter 2026: Your script with suggested break tags for ElevenLabs. free.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

@@ -131,34 +131,5 @@ export const content: ToolContent = {
     'Amounts are shown without a currency symbol — figures refer to whatever currency you price in.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Wedding Videography Pricing Packages 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free wedding videography pricing packages 2026: Side-by-side tier comparison: hours, shooters, deliverables, full price, package price. Fast, private, no.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Wedding Videographer Package Builder',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

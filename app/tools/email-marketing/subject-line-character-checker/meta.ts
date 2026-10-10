@@ -88,33 +88,5 @@ export const content: ToolContent = {
     'Truncation length guidance is a display rule of thumb, not a deliverability or open-rate factor.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Subject Line Character Counter 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/subject-line-character-checker/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Subject Line Character Checker',
-          item: 'https://husnainblogger.com/tools/email-marketing/subject-line-character-checker/',
-        },
-      ],
-    },
   ],
 };

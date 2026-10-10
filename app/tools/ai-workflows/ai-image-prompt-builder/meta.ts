@@ -98,34 +98,5 @@ export const content: ToolContent = {
     'Results depend on the image model you paste the prompt into — prompt quality is not a guarantee of image quality.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'AI Image Prompt Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/ai-image-prompt-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ai image prompt generator 2026: build better AI image prompts: pick a subject, art style, aspect ratio, lighting, and. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Image Prompt Builder',
-          item: 'https://husnainblogger.com/tools/ai-workflows/ai-image-prompt-builder/',
-        },
-      ],
-    },
   ],
 };

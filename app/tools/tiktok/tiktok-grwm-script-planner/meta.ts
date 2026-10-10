@@ -110,29 +110,5 @@ export const content: ToolContent = {
     'Skincare and Fashion / Outfits niches load dedicated template branches; all other niches use the general branch.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'GRWM TikTok Script Planner 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-grwm-script-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan a GRWM TikTok script step by step: hook, talking points, and product slots from fixed templates. Free, runs in your browser — build your GRWM plan.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok GRWM Script Planner',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-grwm-script-planner/',
-        },
-      ],
-    },
   ],
 };

@@ -181,34 +181,5 @@ export const content: ToolContent = {
     'Break-even is null when the two cost lines never cross (e.g. one model is always cheaper).',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Retainer vs Hourly Calculator 2026 – Free | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free retainer vs hourly calculator 2026: What the month costs billed hourly: hourlyRate x estimatedHoursPerMonth. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Retainer vs Hourly Comparator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

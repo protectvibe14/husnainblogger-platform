@@ -111,34 +111,5 @@ export const content: ToolContent = {
     'Clustering uses simple shared-word overlap (words of 4+ letters, no stemming) and may split or merge topics an editor would handle differently.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Topical Authority Map 2026 – SEO Clusters | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free topical authority map 2026: turn your core topic into a pillar page and article cluster plan with coverage gaps. Export as Markdown.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Topical Authority Map',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

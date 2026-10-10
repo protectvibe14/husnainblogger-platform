@@ -114,29 +114,6 @@ export const content: ToolContent = {
     'Duplicate keywords are merged case-insensitively before clustering.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Keyword Clustering Tool – Free SEO 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/blogging-seo/keyword-clustering-tool/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now.',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging SEO & Content Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
         {
           '@type': 'ListItem',
           position: 4,

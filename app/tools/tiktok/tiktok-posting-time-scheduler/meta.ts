@@ -102,29 +102,5 @@ export const content: ToolContent = {
     'Timezone validation checks the IANA name format (Region/City), not a live timezone database.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Best Time to Post on Tiktok Planner 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-posting-time-scheduler/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free best time to post on tiktok planner 2026: Plan the best time to post on TikTok with this free planner: enter timezone, niche, and. Fast, private, no.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Posting Time Scheduler',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-posting-time-scheduler/',
-        },
-      ],
-    },
   ],
 };

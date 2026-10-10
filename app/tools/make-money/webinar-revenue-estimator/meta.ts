@@ -116,33 +116,5 @@ export const content: ToolContent = {
     'Not financial advice.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Webinar Revenue Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/webinar-revenue-estimator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Webinar Revenue Estimator',
-          item: 'https://husnainblogger.com/tools/make-money/webinar-revenue-estimator/',
-        },
-      ],
-    },
   ],
 };

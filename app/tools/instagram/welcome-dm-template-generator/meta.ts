@@ -126,34 +126,5 @@ export const content: ToolContent = {
     'Every template stays under Instagram\'s 1,000-character DM limit; {name} must be replaced by you before sending.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Welcome Dm New Followers Instagram 2026 | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free welcome dm new followers instagram 2026: Copy-ready welcome DM templates with your brand and offer filled in. Each stays under. Fast, private -.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Instagram Tools',
-          item: 'https://husnainblogger.com/tools/instagram/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Welcome DM Template Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

@@ -94,29 +94,5 @@ export const content: ToolContent = {
     'Maximum 10 items per run; longer 60-second scripts include an objection-handler beat that 15s scripts skip.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'UGC Script Example TikTok 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-ugc-script-builder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ugc script example tiktok 2026: build a UGC script example for TikTok from templates: hook, demo beats, testimonial. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok UGC Script Builder',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-ugc-script-builder/',
-        },
-      ],
-    },
   ],
 };

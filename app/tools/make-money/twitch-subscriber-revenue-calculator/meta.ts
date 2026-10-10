@@ -123,34 +123,5 @@ export const content: ToolContent = {
     'Results are estimates in USD; taxes and currency conversion are not included.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Twitch Subscriber Calculator 2026 – Revenue | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/twitch-subscriber-revenue-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free twitch subscriber calculator 2026: enter subs by tier and your revenue split to estimate your monthly Twitch earnings. Adds bits at $0.01 each.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Twitch Subscriber Revenue Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/twitch-subscriber-revenue-calculator/',
-        },
-      ],
-    },
   ],
 };

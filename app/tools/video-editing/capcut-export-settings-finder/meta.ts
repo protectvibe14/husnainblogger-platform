@@ -117,34 +117,5 @@ export const content: ToolContent = {
     'An unrecognized platform falls back to safe H.264 / 1080p / 30 defaults with a warning rather than erroring.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Best CapCut Export Settings 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/capcut-export-settings-finder/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Export right the first time, every time: pick TikTok, YouTube, Reels, or desktop for resolution, frame rate, and codec picks from fixed rules.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'CapCut Export Settings Finder',
-          item: 'https://husnainblogger.com/tools/video-editing/capcut-export-settings-finder/',
-        },
-      ],
-    },
   ],
 };

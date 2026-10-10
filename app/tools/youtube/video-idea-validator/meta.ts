@@ -128,33 +128,5 @@ export const content: ToolContent = {
     'Scores are rounded integers 0–100; the weakest factor is the lowest earned share, with ties broken in rubric order.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'YouTube Video Idea Validator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/video-idea-validator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Video Idea Validator',
-          item: 'https://husnainblogger.com/tools/youtube/video-idea-validator/',
-        },
-      ],
-    },
   ],
 };

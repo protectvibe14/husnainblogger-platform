@@ -92,36 +92,6 @@ export const content: ToolContent = {
     'Avoid pasting proprietary or secret-bearing code; provider-side handling follows the provider’s policy.',
   ],
   jsonLd: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'AI Code Explainer 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-tools/ai-code-explainer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free ai code explainer 2026: A plain-language explanation of what the code does, step by step. free.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Tools',
-          item: 'https://husnainblogger.com/tools/ai-tools/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'AI Code Explainer',
-          item: 'https://husnainblogger.com/tools/ai-tools/ai-code-explainer/',
-        },
-      ],
-    },
   ],
 };
 

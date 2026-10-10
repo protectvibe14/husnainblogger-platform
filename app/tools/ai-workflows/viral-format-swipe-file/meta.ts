@@ -68,39 +68,10 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'Viral Content Formats 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/viral-format-swipe-file/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Viral Content Formats 2026 – Free Tool - required.',
-    },
-    {
       '@type': 'WebPage',
       name: 'Viral Content Formats 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/viral-format-swipe-file/',
       description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Viral Format Swipe File',
-          item: 'https://husnainblogger.com/tools/ai-workflows/viral-format-swipe-file/',
-        },
-      ],
     },
   ],
 };

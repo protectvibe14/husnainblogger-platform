@@ -104,29 +104,5 @@ export const content: ToolContent = {
     'Time labels are fixed schedules per day type, not your actual times — adjust to your real routine.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Day in My Life Shot List 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-day-in-my-life-shot-list/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free day in my life shot list 2026: generate a day-in-my-life TikTok shot list: timestamped shots for your profession. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Day-in-My-Life Shot List',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-day-in-my-life-shot-list/',
-        },
-      ],
-    },
   ],
 };

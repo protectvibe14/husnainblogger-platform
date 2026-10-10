@@ -67,33 +67,5 @@ export const content: ToolContent = {
     'Item details reference typical YouTube recommendations; verify current specs in YouTube Studio.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Youtube Live Stream Checklist 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/live-stream-pre-flight-checklist/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Live Stream Pre-Flight Checklist',
-          item: 'https://husnainblogger.com/tools/youtube/live-stream-pre-flight-checklist/',
-        },
-      ],
-    },
   ],
 };

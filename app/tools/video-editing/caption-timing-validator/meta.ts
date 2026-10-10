@@ -86,34 +86,5 @@ export const content: ToolContent = {
     'Unparseable timing lines cause the block to be skipped and reported as an error on the whole run.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Subtitle Timing Checker 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/caption-timing-validator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Catch subtitle timing errors before you publish: paste SRT or VTT to detect overlaps, zero-duration cues, and awkward gaps - all in one check.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Caption Timing Validator',
-          item: 'https://husnainblogger.com/tools/video-editing/caption-timing-validator/',
-        },
-      ],
-    },
   ],
 };

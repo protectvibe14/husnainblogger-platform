@@ -109,34 +109,5 @@ export const content: ToolContent = {
     'This plans visual frames per beat; the general camera shot list is a separate tool (Shot List Generator).',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Storyboard Planner 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/storyboard-planner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Turn script beats into shootable frames: paste your script beats, set the total duration and frames per beat, and get camera setups plus captions.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Storyboard Planner',
-          item: 'https://husnainblogger.com/tools/video-editing/storyboard-planner/',
-        },
-      ],
-    },
   ],
 };

@@ -68,40 +68,11 @@ export const content: ToolContent = {
   ],
   jsonLd: [
     {
-      '@type': 'SoftwareApplication',
-      name: 'Faceless Video AI Prompts 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/ai-workflows/faceless-video-prompt-pack/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free Faceless Video AI Prompts 2026 – Free Tool - required.',
-    },
-    {
       '@type': 'WebPage',
       name: 'Faceless Video AI Prompts 2026 – Free Tool | HusnainBlogger',
       url: 'https://husnainblogger.com/tools/ai-workflows/faceless-video-prompt-pack/',
       description:
     'Browse 48 free faceless video AI prompts: human-written templates for documentaries, explainers, listicles, and stories. Copy a prompt and create today.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'AI Workflow Tools',
-          item: 'https://husnainblogger.com/tools/ai-workflows/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Faceless Video Prompt Pack',
-          item: 'https://husnainblogger.com/tools/ai-workflows/faceless-video-prompt-pack/',
-        },
-      ],
     },
   ],
 };

@@ -91,28 +91,5 @@ export const content: ToolContent = {
     'The document is a starting point; add your real numbers and details before sharing it.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: NAME,
-      url: CANONICAL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Project Debrief Template 2026 – Free Tool | HusnainBlogger', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Creator Business Tools',
-          item: 'https://husnainblogger.com/tools/creator-business/',
-        },
-        { '@type': 'ListItem', position: 4, name: NAME, item: CANONICAL },
-      ],
-    },
   ],
 };

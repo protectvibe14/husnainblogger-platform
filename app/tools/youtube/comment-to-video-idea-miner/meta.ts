@@ -89,33 +89,5 @@ export const content: ToolContent = {
     'Only English-language patterns are detected; comments in other languages are likely skipped.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Turn Comments Into Video Ideas 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/youtube/comment-to-video-idea-miner/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'YouTube Tools',
-          item: 'https://husnainblogger.com/tools/youtube/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Comment-to-Video Idea Miner',
-          item: 'https://husnainblogger.com/tools/youtube/comment-to-video-idea-miner/',
-        },
-      ],
-    },
   ],
 };

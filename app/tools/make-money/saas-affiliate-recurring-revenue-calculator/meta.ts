@@ -122,33 +122,5 @@ export const content: ToolContent = {
     'The program\'s recurring cap is user-entered; some programs pay one-time only or cap recurring months.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'SaaS Affiliate Calculator 2026 – Free | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/make-money/saas-affiliate-recurring-revenue-calculator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description: DESCRIPTION,
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Make Money Tools',
-          item: 'https://husnainblogger.com/tools/make-money/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'SaaS Affiliate Recurring Revenue Calculator',
-          item: 'https://husnainblogger.com/tools/make-money/saas-affiliate-recurring-revenue-calculator/',
-        },
-      ],
-    },
   ],
 };

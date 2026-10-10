@@ -111,34 +111,5 @@ export const content: ToolContent = {
     'The 20-page cap and the no-outbound-link rule are treated as static platform facts; the tool does not verify live Pinterest limits.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Pinterest Idea Pin Ideas 2026 – 100+ Ideas | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free pinterest idea pin ideas 2026: One row per page: page number, visual direction, on-screen text (kept short for 9:16). Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Pinterest & Social Tools',
-          item: 'https://husnainblogger.com/tools/pinterest-social/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Pinterest Idea Pin Script Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

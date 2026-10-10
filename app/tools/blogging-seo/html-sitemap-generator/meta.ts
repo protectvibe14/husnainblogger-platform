@@ -115,34 +115,5 @@ export const content: ToolContent = {
     'Pages without a section are grouped under a "General" heading when other sections exist.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'HTML Sitemap Generator 2026 – Free Tool | HusnainBlogger',
-      url: TOOL_URL,
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free html sitemap generator 2026: The HTML fragment — paste it into your sitemap page so it inherits your styling. Fast, private now.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Blogging & SEO Tools',
-          item: 'https://husnainblogger.com/tools/blogging-seo/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'HTML Sitemap Generator',
-          item: TOOL_URL,
-        },
-      ],
-    },
   ],
 };

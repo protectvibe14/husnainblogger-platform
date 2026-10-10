@@ -101,34 +101,5 @@ export const content: ToolContent = {
     'Requests above 24 shots cycle the bank from the top, flagged with a warning.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'B-Roll Shot List Ideas 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/b-roll-shot-list-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Never run out of b-roll again: enter your topic and video type for shot ideas with camera angles, movement, and timing from curated shot banks.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'B-Roll Shot List Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/b-roll-shot-list-generator/',
-        },
-      ],
-    },
   ],
 };

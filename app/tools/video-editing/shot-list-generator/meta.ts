@@ -102,34 +102,5 @@ export const content: ToolContent = {
     'This enumerates general camera coverage; the B-roll-specific version is a separate tool (B-Roll Shot List Generator).',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Video Shot List Generator 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/shot-list-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Plan any scene shot by shot: pick basic or full coverage plus your camera count for shot sizes, camera angles, and lens ideas in shoot order.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Shot List Generator',
-          item: 'https://husnainblogger.com/tools/video-editing/shot-list-generator/',
-        },
-      ],
-    },
   ],
 };

@@ -117,34 +117,5 @@ export const content: ToolContent = {
     "The story format (estimated 40–60% cheaper than posts) is not modeled here — only post, reel, and video formats are priced.",
   ],
   jsonLd: [
-    {
-      "@type": "SoftwareApplication",
-      name: "Sponsored Post Rate Calculator 2026 – Free | HusnainBlogger",
-      url: "https://husnainblogger.com/tools/make-money/sponsored-post-rate-calculator/",
-      applicationCategory: "Utilities",
-      operatingSystem: "Web",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-      description:
-    "Use our free sponsored post rate calculator. Enter platform, followers, engagement and format for an honest low–high estimate range —.",
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://husnainblogger.com/" },
-        { "@type": "ListItem", position: 2, name: "Tools", item: "https://husnainblogger.com/tools/" },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Make Money Tools",
-          item: "https://husnainblogger.com/tools/make-money/",
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          name: "Sponsored Post Rate Calculator",
-          item: "https://husnainblogger.com/tools/make-money/sponsored-post-rate-calculator/",
-        },
-      ],
-    },
   ],
 };

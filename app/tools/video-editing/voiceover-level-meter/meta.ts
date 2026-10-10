@@ -97,34 +97,5 @@ export const content: ToolContent = {
     'Results are deterministic: the same sample batch always produces the same measurements.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Mic Level Tester 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/video-editing/voiceover-level-meter/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Test your mic levels before you hit record: paste audio samples for peak and RMS loudness in dBFS, plus clipping warnings and level targets.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'CapCut & Video Editing',
-          item: 'https://husnainblogger.com/tools/video-editing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Voiceover Level Meter',
-          item: 'https://husnainblogger.com/tools/video-editing/voiceover-level-meter/',
-        },
-      ],
-    },
   ],
 };

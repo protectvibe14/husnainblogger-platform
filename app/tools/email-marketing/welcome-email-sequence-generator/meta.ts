@@ -129,34 +129,5 @@ export const content: ToolContent = {
     'This tool cannot predict open rates or deliverability.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Welcome Email Sequence Generator 2026 | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/welcome-email-sequence-generator/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Welcome new subscribers like you mean it: enter your brand, lead magnet, and email count for subject lines plus full drafts for every email.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Welcome Email Sequence Generator',
-          item: 'https://husnainblogger.com/tools/email-marketing/welcome-email-sequence-generator/',
-        },
-      ],
-    },
   ],
 };

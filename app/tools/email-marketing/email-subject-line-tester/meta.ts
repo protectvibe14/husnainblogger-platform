@@ -105,34 +105,5 @@ export const content: ToolContent = {
     'The audience hint is accepted for context only and does not change the score.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Email Subject Line Tester 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/email-marketing/email-subject-line-tester/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Test subject lines before you send: get a 0-100 rule-based score with spam-trigger flags and clear, specific fixes for anything dragging it down.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: 'Email Marketing Tools',
-          item: 'https://husnainblogger.com/tools/email-marketing/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'Email Subject Line Tester',
-          item: 'https://husnainblogger.com/tools/email-marketing/email-subject-line-tester/',
-        },
-      ],
-    },
   ],
 };

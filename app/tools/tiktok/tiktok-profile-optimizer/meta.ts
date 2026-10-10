@@ -110,29 +110,5 @@ export const content: ToolContent = {
     'Notes about LIVE access and full link-in-bio features reflect TikTok’s published 1,000-follower rule and may change.',
   ],
   jsonLd: [
-    {
-      '@type': 'SoftwareApplication',
-      name: 'Optimize TikTok Profile 2026 – Free Tool | HusnainBlogger',
-      url: 'https://husnainblogger.com/tools/tiktok/tiktok-profile-optimizer/',
-      applicationCategory: 'Utilities',
-      operatingSystem: 'Web',
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      description:
-    'Free optimize tiktok profile 2026: build an optimized TikTok profile from templates: 80-character bio options, name-field. Fast, private.',
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://husnainblogger.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://husnainblogger.com/tools/' },
-        { '@type': 'ListItem', position: 3, name: 'TikTok Tools', item: 'https://husnainblogger.com/tools/tiktok/' },
-        {
-          '@type': 'ListItem',
-          position: 4,
-          name: 'TikTok Profile Optimizer',
-          item: 'https://husnainblogger.com/tools/tiktok/tiktok-profile-optimizer/',
-        },
-      ],
-    },
   ],
 };
