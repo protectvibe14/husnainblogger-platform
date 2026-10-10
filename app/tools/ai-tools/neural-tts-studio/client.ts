@@ -125,27 +125,115 @@ async function extractSamples(audio: KokoroAudio): Promise<{ samples: Float32Arr
 export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = '';
-  const cfg = getModelConfig();
 
-  // --- form ---------------------------------------------------------------
-  const textLabel = el('label', 'hb-ai-label', 'Text to speak *');
+  // --- studio styles ---------------------------------------------------------
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-tts-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-tts-header {
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-tts-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-tts-header p { margin: 0; font-size: 14px; opacity: .9; }
+    .hb-tts-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-tts-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-tts-textarea {
+      width: 100%; min-height: 140px; padding: 14px; font-size: 15px;
+      border: 2px solid #e2e8f0; border-radius: 10px; resize: vertical;
+      font-family: inherit; box-sizing: border-box;
+    }
+    .hb-tts-textarea:focus { outline: none; border-color: #7c3aed; }
+    .hb-tts-count { font-size: 12px; color: #94a3b8; text-align: right; margin: 4px 0 0; }
+    .hb-tts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .hb-tts-grid { grid-template-columns: 1fr; } }
+    .hb-tts-select {
+      width: 100%; padding: 12px; font-size: 15px; border: 2px solid #e2e8f0;
+      border-radius: 10px; background: #fff; box-sizing: border-box;
+    }
+    .hb-tts-select:focus { outline: none; border-color: #7c3aed; }
+    .hb-tts-voice-preview { font-size: 13px; color: #64748b; margin-top: 6px; }
+    .hb-tts-slider-row { display: flex; align-items: center; gap: 12px; }
+    .hb-tts-slider { flex: 1; accent-color: #7c3aed; height: 6px; }
+    .hb-tts-speed-val {
+      font-size: 15px; font-weight: 700; color: #7c3aed; min-width: 52px;
+      text-align: center; background: #f5f3ff; padding: 6px 10px; border-radius: 8px;
+    }
+    .hb-tts-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-tts-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-tts-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-tts-progress { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+    .hb-tts-progress > div { height: 100%; background: linear-gradient(90deg, #7c3aed, #4f46e5); width: 0%; transition: width .3s; }
+    .hb-tts-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-tts-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-tts-player {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+      border-radius: 14px; padding: 20px; text-align: center;
+    }
+    .hb-tts-player audio { width: 100%; margin-bottom: 12px; }
+    .hb-tts-dl {
+      display: inline-block; padding: 12px 28px; background: #16a34a; color: #fff;
+      border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none;
+    }
+    .hb-tts-dl:hover { background: #15803d; }
+    .hb-tts-sample { font-size: 13px; color: #7c3aed; background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0; }
+  `;
+  root.appendChild(style);
+
+  const wrap = el('div', 'hb-tts-wrap');
+  root.appendChild(wrap);
+
+  // --- header -------------------------------------------------------------------
+  const header = el('div', 'hb-tts-header');
+  const hTitle = el('h3', '', '🎙️ Neural TTS Studio');
+  const hSub = el('p', '', 'Type it. Pick a voice. Hear it speak — 100% in your browser, nothing uploaded.');
+  header.appendChild(hTitle);
+  header.appendChild(hSub);
+  wrap.appendChild(header);
+
+  // --- text card ------------------------------------------------------------------
+  const textCard = el('div', 'hb-tts-card');
+  const textLabel = el('label', 'hb-tts-label', '✍️ Your text');
   textLabel.htmlFor = 'hb-ai-tts-text';
-  root.appendChild(textLabel);
-  const textArea = el('textarea', 'hb-ai-textarea');
+  textCard.appendChild(textLabel);
+  const textArea = el('textarea', 'hb-tts-textarea') as HTMLTextAreaElement;
   textArea.id = 'hb-ai-tts-text';
   textArea.rows = 6;
   textArea.maxLength = TEXT_MAX_CHARS + 100;
-  textArea.placeholder = 'Type or paste up to 5,000 characters…';
-  textArea.setAttribute('aria-describedby', 'hb-ai-tts-count');
-  root.appendChild(textArea);
-  const count = el('p', 'hb-ai-status', '0 / ' + TEXT_MAX_CHARS.toLocaleString('en-US') + ' characters');
+  textArea.placeholder = 'Type or paste your script here… e.g. "Welcome to my channel! Today I\'ll show you…"';
+  textCard.appendChild(textArea);
+  const count = el('p', 'hb-tts-count', '0 / ' + TEXT_MAX_CHARS.toLocaleString('en-US'));
   count.id = 'hb-ai-tts-count';
-  root.appendChild(count);
+  textCard.appendChild(count);
+  const sampleBtn = el('button', 'hb-tts-sample', '✨ Try a sample script');
+  sampleBtn.type = 'button';
+  sampleBtn.addEventListener('click', () => {
+    textArea.value = 'Hello and welcome! This is a sample of neural text to speech, running entirely in your browser. Pick a different voice to hear how each one sounds.';
+    textArea.dispatchEvent(new Event('input'));
+  });
+  textCard.appendChild(sampleBtn);
+  wrap.appendChild(textCard);
 
-  const voiceLabel = el('label', 'hb-ai-label', 'Voice *');
+  // --- voice + speed ---------------------------------------------------------------
+  const grid = el('div', 'hb-tts-grid');
+  const voiceCard = el('div', 'hb-tts-card');
+  const voiceLabel = el('label', 'hb-tts-label', '🎭 Voice');
   voiceLabel.htmlFor = 'hb-ai-tts-voice';
-  root.appendChild(voiceLabel);
-  const voiceSel = el('select', 'hb-ai-select');
+  voiceCard.appendChild(voiceLabel);
+  const voiceSel = el('select', 'hb-tts-select') as HTMLSelectElement;
   voiceSel.id = 'hb-ai-tts-voice';
   for (const v of KOKORO_VOICES) {
     const opt = document.createElement('option');
@@ -153,56 +241,73 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     opt.textContent = v.label;
     voiceSel.appendChild(opt);
   }
-  root.appendChild(voiceSel);
+  voiceCard.appendChild(voiceSel);
+  const voiceHint = el('p', 'hb-tts-voice-preview', '10 natural voices — US & UK, male & female.');
+  voiceCard.appendChild(voiceHint);
+  grid.appendChild(voiceCard);
 
-  const speedLabel = el('label', 'hb-ai-label', 'Speed: 1.0x');
+  const speedCard = el('div', 'hb-tts-card');
+  const speedLabel = el('label', 'hb-tts-label', '⚡ Speed');
   speedLabel.htmlFor = 'hb-ai-tts-speed';
-  root.appendChild(speedLabel);
-  const speed = el('input', 'hb-ai-input') as HTMLInputElement;
+  speedCard.appendChild(speedLabel);
+  const sliderRow = el('div', 'hb-tts-slider-row');
+  const speed = el('input', 'hb-tts-slider') as HTMLInputElement;
   speed.id = 'hb-ai-tts-speed';
   speed.type = 'range';
   speed.min = String(SPEED_MIN);
   speed.max = String(SPEED_MAX);
   speed.step = '0.05';
   speed.value = '1';
-  root.appendChild(speed);
+  const speedVal = el('span', 'hb-tts-speed-val', '1.00x');
+  speed.addEventListener('input', () => {
+    speedVal.textContent = Number(speed.value).toFixed(2) + 'x';
+  });
+  sliderRow.appendChild(speed);
+  sliderRow.appendChild(speedVal);
+  speedCard.appendChild(sliderRow);
+  const speedHint = el('p', 'hb-tts-voice-preview', '0.5x = slow & dramatic, 2.0x = fast & energetic.');
+  speedCard.appendChild(speedHint);
+  grid.appendChild(speedCard);
+  wrap.appendChild(grid);
 
-  const actions = el('div', 'hb-ai-actions');
-  const genBtn = el('button', 'hb-btn hb-btn--primary', 'Generate speech');
+  // --- generate ----------------------------------------------------------------------
+  const genBtn = el('button', 'hb-tts-generate', '🔊 Generate speech');
   genBtn.type = 'button';
-  actions.appendChild(genBtn);
-  root.appendChild(actions);
+  wrap.appendChild(genBtn);
 
-  const progress = el('div', 'hb-ai-progress');
+  const progress = el('div', 'hb-tts-progress');
   progress.hidden = true;
   progress.setAttribute('role', 'progressbar');
-  progress.setAttribute('aria-valuemin', '0');
-  progress.setAttribute('aria-valuemax', '100');
   const progressBar = el('div', '');
   progress.appendChild(progressBar);
-  root.appendChild(progress);
+  wrap.appendChild(progress);
 
-  const status = el('p', 'hb-ai-status');
-  root.appendChild(status);
+  const status = el('p', 'hb-tts-status');
+  wrap.appendChild(status);
 
-  const errBox = el('div', 'hb-ai-error');
+  const errBox = el('div', 'hb-tts-error');
   errBox.hidden = true;
   errBox.setAttribute('role', 'alert');
-  root.appendChild(errBox);
+  wrap.appendChild(errBox);
 
-  const result = el('div', 'hb-ai-result');
+const result = el('div', 'hb-tts-player');
   result.hidden = true;
-  const audioEl = el('audio', '');
+  const resultTitle = el('p', 'hb-tts-label', '🎧 Your audio is ready!');
+  resultTitle.style.textAlign = 'center';
+  result.appendChild(resultTitle);
+  const audioEl = document.createElement('audio');
   audioEl.controls = true;
+  audioEl.style.width = '100%';
   result.appendChild(audioEl);
-  const resultActions = el('div', 'hb-ai-actions');
-  const dlBtn = el('a', 'hb-btn hb-btn--ghost', 'Download WAV');
+  const dlBtn = document.createElement('a');
+  dlBtn.className = 'hb-tts-dl';
+  dlBtn.textContent = '⬇ Download WAV';
   dlBtn.setAttribute('download', 'neural-tts-studio.wav');
-  resultActions.appendChild(dlBtn);
-  result.appendChild(resultActions);
-  const durationP = el('p', 'hb-ai-status');
+  result.appendChild(dlBtn);
+  const durationP = el('p', 'hb-tts-voice-preview');
+  durationP.style.textAlign = 'center';
   result.appendChild(durationP);
-  root.appendChild(result);
+  wrap.appendChild(result);
 
   let currentUrl: string | null = null;
 

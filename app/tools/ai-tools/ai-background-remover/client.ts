@@ -35,7 +35,7 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   });
 }
 
-export function init(ctx: AiClientContext): void {
+export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = '';
 
