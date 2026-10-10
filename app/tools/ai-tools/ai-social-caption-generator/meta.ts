@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Social Caption Generator',
   description:
-    'Write engaging captions for Instagram, TikTok, X, LinkedIn, or Facebook in any tone with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Write engaging captions for Instagram, TikTok, X, LinkedIn, or Facebook in any tone with your own free Gemini, Groq, or OpenRouter key. Nothing is uploaded.',
   howTo: [
     'Describe your post topic.',
     'Pick the platform and tone.',

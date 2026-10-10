@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Code Explainer',
   description:
-    'Paste any code snippet and get a plain-language explanation with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Paste any code snippet and get a plain-language explanation with your own free Gemini, Groq, or OpenRouter key. Nothing is uploaded.',
   howTo: [
     'Pick the snippet’s language (or Other).',
     'Paste the code (at least 10 characters, up to 8,000).',

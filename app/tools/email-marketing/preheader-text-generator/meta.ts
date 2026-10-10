@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Preheader Generator',
   description:
-    'Stop wasting preview text: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it. Try it now!',
+    'Stop wasting preview text: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of repeating it. Boost opens now!',
   howTo: [
     'Describe what your email is about in the summary field (at least 10 characters).',
     'Optionally paste your subject line so the generator avoids repeating it.',

@@ -49,7 +49,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Extract Frame From Video',
   description:
-    "Grab the perfect video frame every time: validate any timestamp against your video's duration, then get the exact capture specs for the shot.",
+    "Grab the perfect video frame every time: validate any timestamp, preview the exact frame, and export as a still image. Try it now!",
   howTo: [
     'Enter the video duration in seconds and the timestamp where the frame should be captured.',
     'Enter the source video width and height in pixels (e.g. 1920 x 1080).',

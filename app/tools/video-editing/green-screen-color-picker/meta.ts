@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Chroma Key Color Picker',
   description:
-    "Pick the right green screen color for your shoot: enter your subject's colors for a screen recommendation - or check whether one color keys cleanly.",
+    "Pick the right green screen color for your shoot: enter your subject and lighting setup for the optimal shade. Try it now!",
   howTo: [
     "Choose 'suggest' to get a screen-color recommendation, or 'analyze' to check one color.",
     "In suggest mode, paste your subject's main colors as hex values (e.g. #c85a3a) — one per line or comma-separated, at least one color.",

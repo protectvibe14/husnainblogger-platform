@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Blog Outline Generator',
   description:
-    'Create a structured blog outline — H2 sections, sub-points, and FAQs — at any depth with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Create a structured blog outline — H2 sections, sub-points, and FAQs — at any depth with your own free Gemini, Groq, or OpenRouter key. Nothing is uploaded.',
   howTo: [
     'Describe your blog topic.',
     'Pick the outline depth and optionally your target audience.',
