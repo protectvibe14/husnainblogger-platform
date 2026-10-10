@@ -69,7 +69,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'AI Voiceover Prompts 2026 – Free Tool | HusnainBlogger',
+      name: 'AI Voiceover Prompts 2026',
       url: 'https://husnainblogger.com/tools/ai-workflows/ai-voiceover-script-prompt-pack/',
       description:
     'Browse 48 free AI voiceover prompts: human-written templates for ads, narration, and explainers with voice direction built in. Copy any prompt and.',

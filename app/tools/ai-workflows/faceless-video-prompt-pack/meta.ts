@@ -69,7 +69,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'Faceless Video AI Prompts 2026 – Free Tool | HusnainBlogger',
+      name: 'Faceless Video AI Prompts 2026',
       url: 'https://husnainblogger.com/tools/ai-workflows/faceless-video-prompt-pack/',
       description:
     'Browse 48 free faceless video AI prompts: human-written templates for documentaries, explainers, listicles, and stories. Copy a prompt and create today.',

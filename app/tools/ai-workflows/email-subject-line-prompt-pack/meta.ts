@@ -70,7 +70,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'Email Subject Line Prompts 2026 – Free | HusnainBlogger',
+      name: 'Email Subject Line Prompts 2026 – Free',
       url: 'https://husnainblogger.com/tools/ai-workflows/email-subject-line-prompt-pack/',
       description: DESCRIPTION,
     },

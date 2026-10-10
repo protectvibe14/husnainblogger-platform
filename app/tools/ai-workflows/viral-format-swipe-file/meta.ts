@@ -69,7 +69,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'Viral Content Formats 2026 – Free Tool | HusnainBlogger',
+      name: 'Viral Content Formats 2026',
       url: 'https://husnainblogger.com/tools/ai-workflows/viral-format-swipe-file/',
       description: DESCRIPTION,
     },

@@ -112,7 +112,7 @@ const Template = TEMPLATE_MAP[tool.toolType as ToolType] as any;
 // Admin SEO overrides (from tools inventory) take precedence over generated content.
 const title = tool.seoTitle?.trim() || content.title;
 const description = tool.seoDescription?.trim() || content.description;
-const canonical = `https://husnainblogger.com/tools/${tool.categorySlug}/${tool.slug}/`;
+const canonical = `${siteConfig.site}${siteConfig.base}/${tool.categorySlug}/${tool.slug}/`;
 const robots = tool.noindex ? "noindex, follow" : undefined;
 ---
 

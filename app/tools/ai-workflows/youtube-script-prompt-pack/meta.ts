@@ -74,7 +74,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'AI Prompts for YouTube Scripts 2026 – Free | HusnainBlogger',
+      name: 'AI Prompts for YouTube Scripts 2026 – Free',
       url: 'https://husnainblogger.com/tools/ai-workflows/youtube-script-prompt-pack/',
       description:
     'Get free AI prompts for YouTube scripts: pick tutorial, review, vlog, commentary, or unboxing and copy a human-written script prompt template. Free.',

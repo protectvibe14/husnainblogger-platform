@@ -103,7 +103,7 @@ export const content: ToolContent = {
   jsonLd: [
     {
       '@type': 'WebPage',
-      name: 'Call To Action Prompts 2026 – Free Tool | HusnainBlogger',
+      name: 'Call To Action Prompts 2026',
       url: TOOL_URL,
       description:
     'Free call to action prompts 2026: 3 human-written CTA lines matching your goal and tone, ready to paste. Get instant results. free now.',
