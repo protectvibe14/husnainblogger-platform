@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'A brand voice prompt is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I build brand voice prompt?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my brand voice prompt?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'The tool assembles a prompt from your inputs only — it does not invent a brand voice for you. A vague input (e.g. only 2 generic adjectives) produces a vague prompt.',

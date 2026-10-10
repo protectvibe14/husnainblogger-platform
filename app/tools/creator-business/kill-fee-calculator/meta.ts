@@ -137,6 +137,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the kill fee calculator freelance, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good kill fee calculatorlance?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this kill fee calculatorlance calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Kill fee percentages are entirely yours — the tool suggests no standard rate, and any "industry standard" claim would be invented.',

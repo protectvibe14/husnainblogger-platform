@@ -84,6 +84,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the youtube tag checker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I check youtube tag checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'What is a good youtube tag checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
   ],
   assumptions: [
     'The score is a heuristic — YouTube publishes no official tag weighting, so it measures observable best practices, not ranking impact.',

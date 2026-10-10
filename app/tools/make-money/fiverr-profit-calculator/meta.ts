@@ -113,6 +113,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the fiverr profit calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good fiverr profit calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this fiverr profit calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Fiverr charges sellers a flat 20% commission on ALL earnings including tips (default rate; kept user-adjustable and labeled as an estimate).',

@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the newsletter sponsorship rates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good newsletter sponsorship rates?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this newsletter sponsorship rates calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'CPM benchmarks are 2026 ESTIMATES (primary ~$150, secondary ~$50), not platform-published or guaranteed rates.',

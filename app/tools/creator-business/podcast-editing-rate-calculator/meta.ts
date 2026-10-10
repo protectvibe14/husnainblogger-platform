@@ -154,6 +154,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the podcast editing rates per hour, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this podcast editing rates per hour calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'What is a good podcast editing rates per hour?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'The editing multiplier is your own assumption — actual editing time varies by audio quality, ums, and revision rounds.',

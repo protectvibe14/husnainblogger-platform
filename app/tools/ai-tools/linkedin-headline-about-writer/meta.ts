@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'No — personalize it first. Add your real roles, one concrete win, and your voice. Recruiters recognize copy-pasted AI profiles.',
     },
+      {
+      question: 'How do I use this linkedin headline writer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this linkedin headline writer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Drafts stay within LinkedIn’s 220-character headline and 2,600-character About limits as generated.',

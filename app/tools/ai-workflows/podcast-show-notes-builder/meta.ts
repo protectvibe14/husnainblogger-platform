@@ -90,6 +90,14 @@ export const content: ToolContent = {
       question: 'Should I include a full transcript?',
       answer: 'If you can, yes. Transcripts make your content accessible, improve SEO significantly, and let you repurpose the content into blog posts.',
     },
+      {
+      question: 'Can I save or export my podcast show notes template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build podcast show notes template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     "The tool formats only the details you enter — it writes nothing about the episode itself.",

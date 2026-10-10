@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'The blog income calculator uses transparent arithmetic on the values you enter - what you see is exactly what the math produces. Always double-check critical numbers against official sources, as rates and rules can change.',
     },
+      {
+      question: 'What is a good blog income calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this blog income calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'All revenue figures except ad income are user-entered; the tool performs arithmetic, not forecasting, and every result is labeled an estimate.',

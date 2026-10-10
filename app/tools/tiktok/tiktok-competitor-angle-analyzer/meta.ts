@@ -85,6 +85,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok competitor analysis, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What should I look for in the results?',
+      answer: 'Focus on the lowest-scoring areas first — those are your quickest wins. The analyzer prioritizes issues by impact so you know where to start.',
+    },
+    {
+      question: 'How do I analyze tiktok competitor analysis?',
+      answer: 'Enter your content or URL above. The analyzer breaks down the key factors and shows you a clear score with specific improvement suggestions.',
+    },
   ],
   assumptions: [
     'Manual paste only: the tool cannot look up TikTok accounts, fetch posts, or see real competitor data — analysis is limited to what you paste.',

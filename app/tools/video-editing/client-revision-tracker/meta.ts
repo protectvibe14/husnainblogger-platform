@@ -97,6 +97,14 @@ export const content: ToolContent = {
       question: 'How do I handle clients who exceed revisions?',
       answer: 'Refer to your contract, show the logged revision history, and quote for additional rounds. Clear tracking makes this conversation factual, not emotional.',
     },
+      {
+      question: 'Is this video revision tracker tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this video revision tracker tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     "Session-based: the list is NOT saved — export the CSV before closing the tab to keep your log.",

@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok unboxing video script, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan tiktok unboxing video script?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my tiktok unboxing video script plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Template-based, not AI: reaction lines are generic templates — rewrite them in your own voice for authenticity.',

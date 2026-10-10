@@ -81,6 +81,14 @@ export const content: ToolContent = {
       answer:
         'A twitter spaces title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good twitter spaces title ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create twitter spaces title ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Titles come from a fixed library of 12 templates — not AI, not personalized to your audience.',

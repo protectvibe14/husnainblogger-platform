@@ -118,6 +118,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the ugc whitelisting rates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this ugc whitelisting rates calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'What is a good ugc whitelisting rates?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'ESTIMATE: every result is computed from YOUR rate or flat fee — this tool contains no industry-rate data and does not recommend what to charge.',

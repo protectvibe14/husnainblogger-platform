@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest pin title tester is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this pinterest pin title tester tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this pinterest pin title tester tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Scores are heuristic estimates for comparing two titles, not predictions of Pinterest ranking or CTR.',

@@ -63,6 +63,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram hashtag tracker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I use this instagram hashtag tracker tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this instagram hashtag tracker tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Manual entry only — this tool CANNOT pull real hashtag reach from Instagram; all metrics are entered by you.',

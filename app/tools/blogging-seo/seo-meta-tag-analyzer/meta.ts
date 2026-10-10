@@ -121,6 +121,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the seo meta tag analyzer, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I analyze seo meta tag analyzer?',
+      answer: 'Enter your content or URL above. The analyzer breaks down the key factors and shows you a clear score with specific improvement suggestions.',
+    },
+    {
+      question: 'What should I look for in the results?',
+      answer: 'Focus on the lowest-scoring areas first — those are your quickest wins. The analyzer prioritizes issues by impact so you know where to start.',
+    },
   ],
   assumptions: [
     'The 50–60 / 140–155 character ranges are display guidelines from SEO industry consensus, not ranking factors published by Google.',

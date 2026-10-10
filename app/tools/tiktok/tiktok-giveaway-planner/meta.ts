@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok giveaway ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan tiktok giveaway ideas?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my tiktok giveaway ideas plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Giveaway and sweepstakes rules differ by country and US state — the legal reminder is general information, not legal advice; confirm local requirements before launching.',

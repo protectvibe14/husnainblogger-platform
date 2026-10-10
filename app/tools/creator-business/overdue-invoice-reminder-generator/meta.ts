@@ -135,6 +135,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the overdue invoice reminder email, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create overdue invoice reminder email?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good overdue invoice reminder email?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'The tool drafts a reminder email only — it does not send emails, add late fees, or change what you are owed. Any late fee must come from terms you already agreed with the client.',

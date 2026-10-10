@@ -84,6 +84,14 @@ export const content: ToolContent = {
       answer:
         'A youtube keyword in title checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check youtube keyword in title checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'What is a good youtube keyword in title checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
   ],
   assumptions: [
     'Case folding uses JavaScript toLowerCase — locale-specific rules (e.g. Turkish dotted-I) are not handled.',

@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'A twitter content pillars is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I plan twitter content pillars planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my twitter content pillars planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'The 12-archetype bank is a generic starter set, not measured data about your audience — adapt or rename pillars freely.',

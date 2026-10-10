@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'A facebook cover photo text is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create facebook cover photo text?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated facebook cover photo text?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Copy comes from 5 fixed hand-written templates — no AI, no image rendering or design.',

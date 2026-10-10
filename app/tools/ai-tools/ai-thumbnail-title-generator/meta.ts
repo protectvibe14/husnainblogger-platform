@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy.',
     },
+      {
+      question: 'Can I customize the generated ai thumbnail title generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create ai thumbnail title generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Every title stays under 60 characters so it is not cut off in search results.',

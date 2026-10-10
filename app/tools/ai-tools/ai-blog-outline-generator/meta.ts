@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy.',
     },
+      {
+      question: 'What makes a good ai blog outline generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create ai blog outline generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'The outline is a starting structure — research and verify facts as you write each section.',

@@ -85,6 +85,14 @@ export const content: ToolContent = {
       answer:
         'A call to action prompts is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this call to action prompts tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this call to action prompts tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Fixed bank of 60 human-written CTA lines (4 goals x 5 tones x 3 lines each). Nothing is generated at runtime and no new copy is written by AI.',

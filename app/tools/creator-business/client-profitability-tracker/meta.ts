@@ -116,6 +116,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelance client profitability tracker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this freelance client profitability tracker tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this freelance client profitability tracker tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Entries are session-based: this tool does NOT save data in your browser or anywhere else. Download the CSV export to keep your records — closing or refreshing the page loses your entries.',

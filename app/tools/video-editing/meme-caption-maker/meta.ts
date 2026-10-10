@@ -103,6 +103,14 @@ export const content: ToolContent = {
       question: 'Where do I find trending meme formats?',
       answer: 'Reddit\'s r/memes, Instagram meme pages, and KnowYourMeme.com. Use formats your audience already recognizes for instant comprehension.',
     },
+      {
+      question: 'Can I customize the generated meme text generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good meme text generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     "The logic produces a render spec, not an image — actual rasterization is the page's canvas preview.",

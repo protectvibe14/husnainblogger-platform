@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the podcast sponsorship rates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate podcast sponsorship rates?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good podcast sponsorship rates?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'CPM benchmarks are 2026 ESTIMATES (host-read 30s $18–$22, 60s $24–$26), not platform-published or guaranteed rates.',

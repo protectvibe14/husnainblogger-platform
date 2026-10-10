@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram comment reply templates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good instagram comment reply templates?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create instagram comment reply templates?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Replies come from a fixed bank of 48 templates — they are starting points, not personalized messages.',

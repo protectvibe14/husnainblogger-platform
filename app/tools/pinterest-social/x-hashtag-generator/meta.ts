@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'A twitter hashtag generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated twitter hashtag generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create twitter hashtag generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Hashtags are composed from your topic plus a fixed bank of 24 generic tags — they are ideas, not live trend data.',

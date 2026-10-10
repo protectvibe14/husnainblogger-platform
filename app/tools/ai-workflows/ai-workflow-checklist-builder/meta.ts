@@ -86,6 +86,14 @@ export const content: ToolContent = {
       question: 'How often should I update my workflow checklist?',
       answer: 'Review quarterly or whenever you change tools, team members, or process steps. Stale checklists cause more confusion than no checklist at all.',
     },
+      {
+      question: 'How do I build ai content workflow checklist?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my ai content workflow checklist?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     "The tool structures your stage list only — it adds no AI, workflow logic, or advice.",

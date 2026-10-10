@@ -99,6 +99,14 @@ export const content: ToolContent = {
       answer:
         'A slideshow timing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I calculate slideshow timing calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'Is this slideshow timing calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Non-overlapping model: sum(holds) + transitions = total; cross-dissolves that overlap holds are not modeled.',

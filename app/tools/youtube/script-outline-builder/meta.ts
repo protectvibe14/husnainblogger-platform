@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'A youtube script outline template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my youtube script outline template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build youtube script outline template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Sections are fixed template slots, not generated prose — the tool never writes your script and nothing is AI-generated.',

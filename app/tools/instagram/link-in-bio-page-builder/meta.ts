@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'A link in bio page generator free is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good link in bio page generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated link in bio page generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'No hosting is provided: the tool builds and downloads the page file, but you must upload it to your own hosting to get a public link.',

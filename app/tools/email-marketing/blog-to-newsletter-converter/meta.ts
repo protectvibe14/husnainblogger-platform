@@ -124,6 +124,14 @@ export const content: ToolContent = {
       answer:
         'A repurpose blog post into newsletter is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I convert repurpose blog post into newsletter?',
+      answer: 'Paste your input, choose your options, and get the converted result instantly. Copy it with one click.',
+    },
+    {
+      question: 'What format should I use for repurpose blog post into newsletter?',
+      answer: 'It depends on where you\'ll use the output. The tool defaults to the most compatible format, with options to adjust if needed.',
+    },
   ],
   assumptions: [
     'Pasted text only — the tool rejects URLs because browsers block client-side fetching of arbitrary URLs (CORS).',

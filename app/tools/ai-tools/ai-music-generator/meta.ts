@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'Usually 1–3 minutes. The tool polls the provider until the songs are ready, with a 10-minute cap and a Cancel button.',
     },
+      {
+      question: 'What makes a good ai music generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated ai music generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'No key + base URL = no generation. Both must be saved first.',

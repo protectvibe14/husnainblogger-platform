@@ -120,6 +120,14 @@ export const content: ToolContent = {
       question: 'Does split-screen work on mobile?',
       answer: 'Yes, but keep text large and visuals simple. What looks fine on desktop can become unreadable on a phone screen. Always preview on mobile.',
     },
+      {
+      question: 'Can I customize the generated split screen video layout?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good split screen video layout?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     "Pure geometry — the tool computes coordinates; rendering/preview is the UI's job.",

@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'A subtitle line breaker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I use this subtitle line breaker tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this subtitle line breaker tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Algorithmic breaking only — it cannot judge readability or meaning the way a human subtitler can.',

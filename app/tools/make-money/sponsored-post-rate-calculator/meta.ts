@@ -112,6 +112,14 @@ export const content: ToolContent = {
       question: 'Should I charge differently per platform?',
       answer: 'Yes. Instagram and TikTok command different rates than blogs or YouTube. Price based on the content effort required and typical rates for each platform.',
     },
+      {
+      question: 'How do I calculate sponsored post rate calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'Is this sponsored post rate calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     "All tier bands, engagement benchmarks, and format multipliers are market estimates — not guaranteed rates and not verified platform data (needs review).",

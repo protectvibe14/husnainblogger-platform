@@ -123,6 +123,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the how to sell on instagram stories, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated instagram story selling scripts?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good instagram story selling scripts?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Scripts are assembled from 70 fixed sentence frames — the wording is templated, not AI-written. Adapt the tone to your voice before posting.',

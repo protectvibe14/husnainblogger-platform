@@ -115,6 +115,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the brand pitch dm template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated brand pitch dm template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good brand pitch dm template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Pitches are assembled from fixed templates — personalize before sending; identical pitches sent at scale look like spam.',

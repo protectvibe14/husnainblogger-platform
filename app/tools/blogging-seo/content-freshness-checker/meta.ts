@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the content freshness checker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good content freshness checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
+    {
+      question: 'Why does content freshness checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
   ],
   assumptions: [
     'The Fresh / Needs update / Stale bands are editorial guidelines — Google publishes no freshness thresholds.',

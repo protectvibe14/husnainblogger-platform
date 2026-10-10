@@ -134,6 +134,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the 4000 watch hours calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good 4000 watch hours calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this 4000 watch hours calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Projections are simplified linear estimates that ignore the rolling window — hours/views older than 12 months (or 90 days for Shorts) expire, so real progress may be slower.',

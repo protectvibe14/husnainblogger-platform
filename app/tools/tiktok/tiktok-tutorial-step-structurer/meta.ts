@@ -78,6 +78,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the how to structure a tiktok tutorial, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan tiktok tutorial planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my tiktok tutorial planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Template-based, not AI: the tool cannot research your topic or verify your steps are factually correct — you are responsible for accuracy.',

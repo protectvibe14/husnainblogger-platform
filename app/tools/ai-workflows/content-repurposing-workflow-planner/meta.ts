@@ -116,6 +116,14 @@ export const content: ToolContent = {
       question: 'How far apart should I space repurposed pieces?',
       answer: 'Space them 1-2 weeks apart per platform to avoid audience fatigue. The same insight can go to different platforms simultaneously since audiences rarely overlap completely.',
     },
+      {
+      question: 'How do I plan content repurposing workflow?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my content repurposing workflow plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     "The pipeline is a fixed template — it maps formats to tasks but never transforms your content.",

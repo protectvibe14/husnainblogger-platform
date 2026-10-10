@@ -92,6 +92,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tweet ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create tweet ideas generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated tweet ideas generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Drafts come from 24 fixed templates plus 4 generic ones — the tool does not write original copy.',

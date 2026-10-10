@@ -104,6 +104,14 @@ export const content: ToolContent = {
       answer:
         'An ai image aspect ratio guide is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I plan ai image aspect ratio guide?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my ai image aspect ratio guide plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Ratio simplification is exact GCD arithmetic; decimals are rounded to 2 places.',

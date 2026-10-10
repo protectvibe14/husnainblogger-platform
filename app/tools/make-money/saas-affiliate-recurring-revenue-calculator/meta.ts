@@ -104,6 +104,14 @@ export const content: ToolContent = {
       answer:
         'A saas affiliate calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I calculate saas affiliate calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good saas affiliate calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Every value — rate, churn, referrals, plan price, duration — is user-entered; the tool holds no program-specific data.',

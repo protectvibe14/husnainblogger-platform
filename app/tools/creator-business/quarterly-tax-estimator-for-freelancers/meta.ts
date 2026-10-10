@@ -134,6 +134,14 @@ export const content: ToolContent = {
       answer:
         'A quarterly estimated tax calculator freelancer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this quarterly estimated tax calculatorlanc calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate quarterly estimated tax calculatorlanc?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'General information only, not tax advice; rules vary by country/state; verify with a tax professional.',

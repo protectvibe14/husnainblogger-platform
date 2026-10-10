@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'Files up to 25 MB — roughly an hour of MP3 or a few minutes of uncompressed WAV. Audio is processed in 30-second chunks, so length only affects processing time.',
     },
+      {
+      question: 'How do I use this ai audio transcriber tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai audio transcriber tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Models are English-focused; other languages transcribe with lower accuracy.',

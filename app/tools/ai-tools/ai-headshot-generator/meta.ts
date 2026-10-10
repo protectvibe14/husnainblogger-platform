@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'No — upload only your own photo, or a photo you have explicit permission to edit. Never generate headshots of other people without consent.',
     },
+      {
+      question: 'How do I create ai headshot generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good ai headshot generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'No key = no generation. Every provider call needs your own API key saved first.',

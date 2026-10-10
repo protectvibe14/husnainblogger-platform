@@ -117,6 +117,14 @@ export const content: ToolContent = {
       question: 'How do I structure the comparison section?',
       answer: 'Use a comparison table up top for skimmers, then detailed reviews of each product below. End with a clear verdict section matching products to reader needs.',
     },
+      {
+      question: 'What makes a good buying guide template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create buying guide template?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     "The tool structures your category and tiers only — no product recommendations are made or invented.",

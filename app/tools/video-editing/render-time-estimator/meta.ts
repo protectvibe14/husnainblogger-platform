@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the video render time estimator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this video render time estimator tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this video render time estimator tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'ROUGH ESTIMATE by design: real render speed depends on your encoder (hardware vs software), codec, effects, background apps, and thermals — no formula can know your machine.',

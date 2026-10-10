@@ -126,6 +126,14 @@ export const content: ToolContent = {
       answer:
         'A thank you page copy generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good thank you page copy generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated thank you page copy generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Copy is template-based and generic — it knows nothing about your brand, audience, or data, and makes no performance claims.',

@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'A text animation generator css is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated text animation generator css?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create text animation generator css?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Output is a template assembly from fixed banks (5 effects, 5 easings, 5 color schemes) — no AI involved.',

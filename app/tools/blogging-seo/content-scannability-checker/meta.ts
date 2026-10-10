@@ -102,6 +102,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the blog scannability checker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Why does blog scannability checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
+    {
+      question: 'What is a good blog scannability checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
   ],
   assumptions: [
     'The 0–100 score is our own editorial heuristic with published deductions — it is not a Google ranking factor and not a published industry standard.',

@@ -127,6 +127,14 @@ export const content: ToolContent = {
       question: 'Can I use longer intervals for editing?',
       answer: 'Yes. Many editors prefer 50/10 splits for deep creative work. The key is consistent breaks, not the exact interval length.',
     },
+      {
+      question: 'How do I use this video editing pomodoro timer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this video editing pomodoro timer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     "Breaks are placed between rounds only — there is no break after the final round.",

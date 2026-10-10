@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'A characters per second checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check characters per second checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'Why does characters per second checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
   ],
   assumptions: [
     'Limits are broadcast standards (Netflix Timed Text Style Guide), not platform rules for TikTok, Reels, or Shorts — no official CPS standard exists for short-form.',

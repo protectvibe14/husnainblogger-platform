@@ -128,6 +128,14 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using simple math.',
     },
+      {
+      question: 'How do I calculate voiceover cost calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good voiceover cost calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Duration is an estimate at your chosen WPM — actual TTS pacing varies by voice and settings.',

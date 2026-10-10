@@ -73,6 +73,14 @@ export const content: ToolContent = {
       answer:
         'A myth vs fact tiktok is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I build myth vs fact tiktok?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my myth vs fact tiktok?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'Template-based, not AI: the tool never invents, verifies, or corrects facts — every claim must be true and checked by you.',

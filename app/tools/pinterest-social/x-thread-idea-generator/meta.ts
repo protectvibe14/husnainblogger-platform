@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'A twitter thread ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good twitter thread ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create twitter thread ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Threads are assembled from a fixed bank of 30 hand-written templates (10 hooks, 12 points, 8 CTAs) — the tool outlines; it does not write with AI.',

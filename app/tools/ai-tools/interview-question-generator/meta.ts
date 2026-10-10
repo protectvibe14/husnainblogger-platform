@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'An interview question generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create interview question generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated interview question generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Template-based questions with role inserts — a starting point for prep, not role-expert or company-specific questions.',

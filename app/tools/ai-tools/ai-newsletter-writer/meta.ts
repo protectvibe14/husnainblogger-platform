@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy.',
     },
+      {
+      question: 'How do I use this ai newsletter writer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai newsletter writer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'The draft is a starting point — add your real news, links, and subscriber details before sending.',

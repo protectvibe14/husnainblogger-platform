@@ -98,6 +98,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the sound effect cue sheet, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated sound effect cue sheet?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create sound effect cue sheet?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'The tool generates a plan and search terms only — it provides no audio files; you must source the actual sounds from an SFX library.',

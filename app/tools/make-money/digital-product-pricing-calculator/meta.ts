@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'The digital product pricing calculator uses transparent arithmetic on the values you enter - what you see is exactly what the math produces. Always double-check critical numbers against official sources, as rates and rules can change.',
     },
+      {
+      question: 'What is a good digital product pricing calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this digital product pricing calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Cost-plus pricing is a method, not a market price \u2014 it guarantees your target margin arithmetically but does not guarantee customers will pay that price.',

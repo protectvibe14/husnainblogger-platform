@@ -105,6 +105,14 @@ export const content: ToolContent = {
       answer:
         'An aesthetic emoji combos copy paste is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create aesthetic emoji combos copy paste?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated aesthetic emoji combos copy paste?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Combos come from a fixed curated bank of 120 combos (10 vibes x 12) — picked in bank order, not generated or personalized.',

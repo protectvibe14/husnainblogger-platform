@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram carousel ideas generator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create instagram carousel ideas generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good instagram carousel ideas generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Outlines come from 76 fixed templates (19 per goal) — they are starting structures, not AI-written copy; rewrite them in your voice.',

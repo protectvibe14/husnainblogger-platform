@@ -113,6 +113,14 @@ export const content: ToolContent = {
       question: 'Does this work for academic research?',
       answer: 'The structure adapts well to academic contexts. Define your thesis question, literature scope, and methodology needs in the inputs, and the brief will organize them into a research plan.',
     },
+      {
+      question: 'Can I save or export my ai research prompt?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build ai research prompt?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     "The tool structures your question only — it performs no research and cites no sources.",

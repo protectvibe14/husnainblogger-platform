@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'A reels trending audio search is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good reels trending audio search?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
+    {
+      question: 'How do I find reels trending audio search?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
   ],
   assumptions: [
     'Outputs are search phrases, not live trending-audio data — no website can query Instagram\'s trending charts; they exist only inside the Instagram app.',

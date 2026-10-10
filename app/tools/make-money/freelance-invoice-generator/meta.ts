@@ -158,6 +158,14 @@ export const content: ToolContent = {
       question: 'Should I charge tax on freelance invoices?',
       answer: 'Depends on your location and client location. Research your local tax obligations — this tool includes a tax line item you can adjust or remove.',
     },
+      {
+      question: 'How do I create freelance invoice generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good freelance invoice generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     "Discount, if any, is applied BEFORE tax (flat discount on the subtotal, then tax on the remainder) — a documented convention, not a tax rule.",

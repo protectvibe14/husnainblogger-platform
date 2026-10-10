@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'A sentiment analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I look for in the results?',
+      answer: 'Focus on the lowest-scoring areas first — those are your quickest wins. The analyzer prioritizes issues by impact so you know where to start.',
+    },
+    {
+      question: 'How do I analyze sentiment analyzer:?',
+      answer: 'Enter your content or URL above. The analyzer breaks down the key factors and shows you a clear score with specific improvement suggestions.',
+    },
   ],
   assumptions: [
     'Binary sentiment only (POSITIVE / NEGATIVE) — no neutral, emotions or sarcasm detection.',

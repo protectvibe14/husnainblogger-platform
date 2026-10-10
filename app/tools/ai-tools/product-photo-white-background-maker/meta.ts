@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'The output format matches typical marketplace photo rules, but check the model license: RMBG-1.4 is source-available for non-commercial use, and commercial use needs an agreement with BRIA. Marketplace photo rules also change — verify current requirements.',
     },
+      {
+      question: 'How do I use this product photo white background tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this product photo white background tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'The AI cutout is an estimate — check edges (hair, glass, transparent packaging) before publishing.',

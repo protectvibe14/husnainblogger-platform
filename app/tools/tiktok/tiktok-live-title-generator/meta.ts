@@ -79,6 +79,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok live title ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create tiktok live title generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good tiktok live title generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'TikTok does NOT publish an official LIVE title character limit — the 60-character cap is a conservative best practice chosen by this tool, not a platform rule.',

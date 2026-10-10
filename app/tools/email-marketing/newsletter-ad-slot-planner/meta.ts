@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'A newsletter ad slot planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include in my newsletter ad slot planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan newsletter ad slot planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'All prices and fill rates come only from your input — the tool has no market-rate data and cannot tell you what to charge.',

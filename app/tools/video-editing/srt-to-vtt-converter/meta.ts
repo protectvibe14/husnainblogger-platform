@@ -69,6 +69,14 @@ export const content: ToolContent = {
       answer:
         'A srt to vtt converter is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I convert srt to vtt converter?',
+      answer: 'Paste your input, choose your options, and get the converted result instantly. Copy it with one click.',
+    },
+    {
+      question: 'What format should I use for srt to vtt converter?',
+      answer: 'It depends on where you\'ll use the output. The tool defaults to the most compatible format, with options to adjust if needed.',
+    },
   ],
   assumptions: [
     'SubRip has no formal spec; parsing follows the widely-observed convention (numeric sequence, HH:MM:SS,mmm --> HH:MM:SS,mmm timing line).',

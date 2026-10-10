@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the gumroad fee calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good gumroad fee calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this gumroad fee calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'All rates are documented estimates — Gumroad\u2019s fee structure has changed historically, so verify current rates on Gumroad\u2019s official pricing page before pricing decisions.',

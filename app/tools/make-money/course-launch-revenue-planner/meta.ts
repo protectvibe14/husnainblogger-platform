@@ -105,6 +105,14 @@ export const content: ToolContent = {
       answer:
         'A course launch calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this course launch calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate course launch calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'Conversion benchmarks are user-entered — the tool must not invent "typical" launch conversion rates.',

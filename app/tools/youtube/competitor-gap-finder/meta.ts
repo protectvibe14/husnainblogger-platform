@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'A youtube competitor analysis template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good youtube competitor analysis template?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
+    {
+      question: 'How do I find youtube competitor analysis template?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
   ],
   assumptions: [
     'No automated competitor analysis is performed — the tool organizes only what you paste; it cannot see views, rankings, or channel data.',

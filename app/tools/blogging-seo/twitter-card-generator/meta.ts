@@ -138,6 +138,14 @@ export const content: ToolContent = {
       answer:
         'A twitter card generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated twitter card generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create twitter card generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'The twitter:site tag is optional — leaving it out still produces valid cards, and the tool says so in Recommendations.',

@@ -99,6 +99,14 @@ export const content: ToolContent = {
       answer:
         'A product launch email sequence is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create product launch email sequence?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good product launch email sequence?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Copy comes from a fixed template library (35 subjects, 28 bodies) — it is not AI-written and needs your personal touch.',

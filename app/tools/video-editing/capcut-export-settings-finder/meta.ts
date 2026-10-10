@@ -98,6 +98,14 @@ export const content: ToolContent = {
       answer:
         'A best capcut export settings is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I find capcut export settings?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good capcut export settings?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'Bitrate tiers are typical H.264 rule-of-thumb ranges, not exact platform requirements — treat them as estimates.',

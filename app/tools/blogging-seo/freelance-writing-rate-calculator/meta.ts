@@ -125,6 +125,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelance writing rates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate freelance writing rates?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'Is this freelance writing rates calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'All rates are computed from the numbers you enter — they are your rates, not market rates, and the tool does not know what other writers charge.',

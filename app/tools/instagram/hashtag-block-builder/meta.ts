@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'An instagram hashtag sets copy paste is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my instagram hashtag sets copy paste?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build instagram hashtag sets copy paste?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Hashtags come from fixed bundled pools (384 niche tags + 32 post-type tags) — no live data on tag volume, reach, or what is trending.',

@@ -112,6 +112,14 @@ export const content: ToolContent = {
       answer:
         'Match the tone to the placement. A footer or video description can carry the detailed variant; a caption or story usually needs the short or friendly one. The tool recommends a tone for your chosen placement, and every statement is a fixed template you can paste as-is or tweak in your own voice.',
     },
+      {
+      question: 'What makes a good ai disclosure generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated ai disclosure generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     "The statements are fixed templates, not legal advice; have a human or lawyer review them before publishing.",

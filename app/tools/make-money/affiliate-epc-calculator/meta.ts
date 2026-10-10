@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the epc calculator affiliate, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate epc calculator affiliate?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good epc calculator affiliate?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'EPC follows the industry convention of earnings per 100 clicks — it is not earnings per single click.',

@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'A lower third generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create lower third generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated lower third generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'The output is code for the web (HTML + CSS), not a rendered video file — import it into your page or overlay tool.',

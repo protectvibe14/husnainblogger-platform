@@ -123,6 +123,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the storytime script tiktok, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I save or export my storytime script tiktok?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build storytime script tiktok?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Scripts are assembled from fixed templates — the hook and CTA are selected from banks of 6, not written by AI.',

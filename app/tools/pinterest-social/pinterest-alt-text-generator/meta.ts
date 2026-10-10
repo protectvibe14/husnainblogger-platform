@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest image alt text is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good pinterest image alt text?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated pinterest image alt text?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Alt text is assembled from 8 fixed templates around your own description — it is structured text, not AI-written, and it never invents details you did not describe.',

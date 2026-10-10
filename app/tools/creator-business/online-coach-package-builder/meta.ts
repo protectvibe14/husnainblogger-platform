@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the coaching package pricing, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I build coaching package pricing builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my coaching package pricing builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'All session prices, add-on prices, and the discount are yours — the tool knows no coaching market rates.',

@@ -112,6 +112,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelancer tax deductions list, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I find freelancer tax deductions list?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good freelancer tax deductions list?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'General information, not tax advice; eligibility varies by jurisdiction.',

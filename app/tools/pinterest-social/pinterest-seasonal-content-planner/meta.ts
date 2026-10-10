@@ -116,6 +116,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest seasonal content is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include in my pinterest seasonal content ideas plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan pinterest seasonal content ideas?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Seasonal events come from a fixed 24-event US-centric dataset (reviewed 2026-09-30) — it does not track live trends and may miss regional or emerging events.',

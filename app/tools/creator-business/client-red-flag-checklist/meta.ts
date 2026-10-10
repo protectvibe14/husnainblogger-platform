@@ -91,6 +91,14 @@ export const content: ToolContent = {
       answer:
         'A freelance client red flags is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I use this freelance client red flags tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this freelance client red flags tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Score and band come from a fixed, arbitrary rule over signals you selected — not a calibrated prediction.',

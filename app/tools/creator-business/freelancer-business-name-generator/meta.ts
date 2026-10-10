@@ -121,6 +121,14 @@ export const content: ToolContent = {
       question: 'Can I change my business name later?',
       answer: 'Yes, but it\'s costly — you lose brand recognition and SEO equity. Choose carefully upfront to avoid rebranding headaches later.',
     },
+      {
+      question: 'How do I create freelance business name ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good freelance business name ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     "Names are assembled from fixed word banks and patterns — template-based, never AI-generated.",

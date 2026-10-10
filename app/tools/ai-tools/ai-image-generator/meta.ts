@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'Ownership is set by the provider whose key you use, not by this tool. Check OpenRouter\'s, Hugging Face\'s or fal.ai\'s terms for the model you pick before using images commercially.',
     },
+      {
+      question: 'How do I create ai image generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated ai image generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'No key = no generation. The tool is fully wired, but every provider call needs your own API key saved first.',

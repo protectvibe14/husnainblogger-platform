@@ -164,6 +164,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the retainer vs hourly calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate retainer vs hourly calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good retainer vs hourly calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'The comparison is arithmetic only — it ignores scope creep, unpaid admin time, payment risk, and taxes, and is not pricing advice.',

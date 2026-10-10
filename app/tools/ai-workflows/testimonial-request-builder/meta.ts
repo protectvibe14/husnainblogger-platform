@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'A testimonial request template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I build testimonial request template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my testimonial request template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'The tool writes the request, never the testimonial. Any testimonial you publish must be written by the real client — never write or edit fake reviews.',

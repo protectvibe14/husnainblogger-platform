@@ -151,6 +151,14 @@ export const content: ToolContent = {
       question: 'Should I cap referral rewards?',
       answer: 'Set reasonable limits to protect margins, but make them generous enough to motivate. A 10-20% reward on first project value is typical for services.',
     },
+      {
+      question: 'How do I plan freelance referral program?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my freelance referral program plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     "Commission terms are your own policy — this planner does not give business or legal advice.",

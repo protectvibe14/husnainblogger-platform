@@ -105,6 +105,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelance project quote calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this freelance project quote calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate freelance project quote calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'Core is pricing math — the quote document is a formatted view of computed numbers, verified as calculator-first.',

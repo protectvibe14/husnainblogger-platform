@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the reels cover text ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create reels cover text ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated reels cover text ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'The 60-character readability limit and the ~200px top / ~350px bottom safe zones are practical guidance, not Instagram-published specs — always preview on a real device.',

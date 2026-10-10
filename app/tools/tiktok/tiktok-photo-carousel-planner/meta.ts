@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'A tiktok photo carousel ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I plan tiktok photo carousel ideas?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my tiktok photo carousel ideas plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'This tool produces a text plan only — it does not create images or post carousels.',

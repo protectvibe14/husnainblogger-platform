@@ -113,6 +113,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok seo keywords, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I find tiktok seo keywords?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good tiktok seo keywords?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'This is a suggestion bank, not search-volume data — no volume, competition, or CPC numbers are shown or implied.',

@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'A welcome dm new followers instagram is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good welcome dm new followers instagram?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated welcome dm new followers instagram?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Templates only — the tool does not send DMs automatically. Automation of DMs is not allowed; every message is sent manually by you.',

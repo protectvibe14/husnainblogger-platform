@@ -108,6 +108,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the podcast guest pitch email, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good podcast guest pitch email?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create podcast guest pitch email?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Template-based generator — runs no AI; output quality depends on the pattern library and on how specific your inputs are.',

@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok series planner, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What should I include in my tiktok series planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan tiktok series planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Plans are assembled from 44 fixed template frames — templated, not AI-written. Rewrite lines in your voice before filming.',

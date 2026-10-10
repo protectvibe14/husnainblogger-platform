@@ -92,6 +92,14 @@ export const content: ToolContent = {
       answer:
         'A front-facing portrait with even lighting, a plain contrasting background, and your face clearly visible — the AI cutout is most accurate when the subject stands out from the background.',
     },
+      {
+      question: 'How do I use this passport photo maker tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this passport photo maker tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Dimensions only — acceptance depends on your country\u2019s current rules, which this tool does not evaluate.',

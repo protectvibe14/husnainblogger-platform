@@ -136,6 +136,14 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates.',
     },
+      {
+      question: 'Can I save or export my suno music prompt builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build suno music prompt builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Outputs are template-assembled text, not finished songwriting — rewrite the lyric lines before using them.',

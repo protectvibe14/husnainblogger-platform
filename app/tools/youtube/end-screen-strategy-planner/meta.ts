@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'A youtube end screen planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include in my youtube end screen planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan youtube end screen planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Rules encoded here (25s minimum, 4 elements, 5–20s window, made-for-kids exclusion) reflect YouTube\'s published guidance as of 2026 — YouTube can change them; verify in YouTube Studio.',

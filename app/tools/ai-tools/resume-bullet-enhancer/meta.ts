@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'Not in one click — the tool enhances one bullet per generation so each gets full attention. Run it once per bullet; it takes seconds each.',
     },
+      {
+      question: 'How do I use this resume bullet enhancer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this resume bullet enhancer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'The enhancer never invents numbers — vague input produces a vague (if better-worded) bullet.',

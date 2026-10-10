@@ -201,6 +201,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the influencer media kit builder, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I build influencer media kit builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my influencer media kit builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'All follower counts, rates, and brand names are user-provided — the tool performs no verification of claimed metrics.',

@@ -106,6 +106,14 @@ export const content: ToolContent = {
       answer:
         'An instagram countdown ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good instagram countdown ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated instagram countdown ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Texts come from 12 fixed templates (6 before + 3 during + 3 after) — not AI generation.',

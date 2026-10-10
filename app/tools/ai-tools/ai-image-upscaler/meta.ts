@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'It improves detail and sharpness on photos, but it cannot recover information that is not there — heavy blur, noise or compression artifacts stay partly visible, and text may look softened.',
     },
+      {
+      question: 'How do I use this ai image upscaler (2x/4x,) tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai image upscaler (2x/4x,) tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Best for photos; text, logos and fine line-art may look softened rather than sharper.',

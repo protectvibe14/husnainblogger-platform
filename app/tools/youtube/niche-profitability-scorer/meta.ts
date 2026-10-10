@@ -103,6 +103,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the youtube niche scorer, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this youtube niche scorer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this youtube niche scorer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'The score is an opinionated heuristic built from your estimates, not real CPM or competition data — the tool cannot fetch either client-side.',

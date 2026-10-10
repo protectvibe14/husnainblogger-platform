@@ -121,6 +121,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram highlights strategy, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this instagram highlights strategy tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this instagram highlights strategy tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'A manual self-audit: the tool cannot read your real Instagram highlights — answers are your own judgment, so answer honestly.',

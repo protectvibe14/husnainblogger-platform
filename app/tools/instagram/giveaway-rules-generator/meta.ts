@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram giveaway rules template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good instagram giveaway rules template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated instagram giveaway rules template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Template only — not legal advice; check Instagram\'s promotion guidelines and your local laws.',

@@ -125,6 +125,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the scope creep fee calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this scope creep fee calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate scope creep fee calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'ESTIMATE: every result is computed from YOUR hourly rate or percentage — this tool contains no standard rates and does not recommend what to charge.',

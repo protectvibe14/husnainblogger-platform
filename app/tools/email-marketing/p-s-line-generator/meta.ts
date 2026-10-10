@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the email ps generator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good email ps generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated email ps generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Lines come from a fixed 24-pattern template library — not AI-generated copy.',

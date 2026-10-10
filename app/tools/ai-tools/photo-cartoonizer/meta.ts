@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'No. Style names like "3d animated" are descriptive words only. This tool is not affiliated with, endorsed by, or connected to any animation studio.',
     },
+      {
+      question: 'Is this photo to cartoon tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this photo to cartoon tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'No key = no generation. Every provider call needs your own API key saved first.',

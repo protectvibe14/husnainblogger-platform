@@ -89,6 +89,14 @@ export const content: ToolContent = {
       answer:
         'It is instructed not to invent statistics, but AI can still phrase guesses confidently. Verify every claim before you publish or send.',
     },
+      {
+      question: 'Is this ai email & blog writer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this ai email & blog writer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Outputs are first drafts, not send-ready copy — edit in your own voice.',

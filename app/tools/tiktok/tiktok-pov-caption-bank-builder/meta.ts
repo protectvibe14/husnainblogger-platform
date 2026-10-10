@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'A tiktok pov captions is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my tiktok pov captions?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build tiktok pov captions?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Captions are assembled from 47 fixed template entries — templated, not AI-written. Customize the [YOUR SPIN] slot before posting.',

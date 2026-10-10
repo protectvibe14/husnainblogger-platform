@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the email list growth ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good email list growth ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated email list growth ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Idea list only — the tool does not predict signup rates, subscriber counts, or results.',

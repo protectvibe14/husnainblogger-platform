@@ -108,6 +108,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the rush fee calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate rush fee calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'Is this rush fee calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Math only — the rush percentage is your own pricing policy; no market-standard rush fee exists here.',

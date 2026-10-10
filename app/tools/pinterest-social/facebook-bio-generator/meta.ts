@@ -118,6 +118,14 @@ export const content: ToolContent = {
       answer:
         'A facebook bio is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated facebook bio generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create facebook bio generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Bios come from a fixed bank of 12 templates (6 personal + 6 page) — the tool assembles text; it does not write with AI.',

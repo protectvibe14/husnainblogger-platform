@@ -159,6 +159,14 @@ export const content: ToolContent = {
       question: 'How do I organize project folders?',
       answer: 'Standard structure: 01_Footage, 02_Audio, 03_Graphics, 04_Project_Files, 05_Exports. Consistent folders plus consistent naming equals findable everything.',
     },
+      {
+      question: 'What makes a good video file naming convention?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create video file naming convention?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     "Fixed bank of 6 patterns — template-based, not AI-generated.",

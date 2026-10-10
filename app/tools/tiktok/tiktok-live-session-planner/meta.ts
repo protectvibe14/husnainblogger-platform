@@ -107,6 +107,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok live ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan tiktok live session planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my tiktok live session planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'This is a static template planner — it cannot check your TikTok account, your follower count, or whether you are eligible to go live.',

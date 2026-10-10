@@ -138,6 +138,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the photography day rate calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this photography day rate calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate photography day rate calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'ESTIMATE: the result is based entirely on your own inputs — it is not market data and does not say what clients in your area will pay.',

@@ -81,6 +81,14 @@ export const content: ToolContent = {
       answer:
         'A facebook event ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create facebook event ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated facebook event ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Ideas are fixed templates with your business type filled in — starting points, not AI-written event plans. Rewrite descriptions in your own voice.',

@@ -85,6 +85,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok shop description, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this tiktok shop description writer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this tiktok shop description writer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Specs and box contents are emitted as [bracketed] placeholders — the tool never invents material, size, weight, or contents, and placeholders must be replaced before publishing.',

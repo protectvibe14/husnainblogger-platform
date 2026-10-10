@@ -80,6 +80,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the sponsorship negotiation script, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good sponsorship negotiation script?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated sponsorship negotiation script?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'These are template scripts for guidance only — not legal or financial advice.',

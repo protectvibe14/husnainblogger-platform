@@ -75,6 +75,14 @@ export const content: ToolContent = {
       answer:
         'A video specs by platform 2026 is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this video specs by platform tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this video specs by platform tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Specs are estimates as of 2026-10-01 (next review 2027-01-01) — never presented as live platform data.',

@@ -83,6 +83,14 @@ export const content: ToolContent = {
       answer:
         'A youtube title analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I analyze youtube title analyzer?',
+      answer: 'Enter your content or URL above. The analyzer breaks down the key factors and shows you a clear score with specific improvement suggestions.',
+    },
+    {
+      question: 'What should I look for in the results?',
+      answer: 'Focus on the lowest-scoring areas first — those are your quickest wins. The analyzer prioritizes issues by impact so you know where to start.',
+    },
   ],
   assumptions: [
     'The score is a heuristic — YouTube publishes no official title weighting, so it measures observable best practices, not ranking or CTR impact.',

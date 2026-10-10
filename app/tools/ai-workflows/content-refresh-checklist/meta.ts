@@ -72,6 +72,14 @@ export const content: ToolContent = {
       answer:
         'Yes — the tool has separate checklist branches for posts, videos, and pages. The checks adapt to the format (a video branch covers titles, descriptions, and pinned comments rather than headings and internal links), but the flow is the same: audit traffic, accuracy, and intent, then make the keep, update, merge, or delete decision.',
     },
+      {
+      question: 'How do I use this content refresh checklist tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this content refresh checklist tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     "A fixed checklist, not an AI audit — it cannot look at your analytics or your content.",

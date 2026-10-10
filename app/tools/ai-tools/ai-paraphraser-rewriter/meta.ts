@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'Between 10 and 6,000 characters per rewrite. Longer passages can be split and rewritten in parts.',
     },
+      {
+      question: 'How do I use this ai paraphraser & rewriter tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai paraphraser & rewriter tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Rewrites preserve meaning, not wording — re-check critical facts against the original.',

@@ -68,6 +68,14 @@ export const content: ToolContent = {
       question: 'What about social sharing setup?',
       answer: 'Confirm your OG image, title, and description are set so shares look professional. Test with Facebook\'s sharing debugger or Twitter\'s card validator before publishing.',
     },
+      {
+      question: 'How do I use this blog post publishing checklist tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this blog post publishing checklist tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     "A fixed, general-purpose list — it is not SEO advice tailored to your site or niche.",

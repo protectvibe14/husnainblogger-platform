@@ -136,6 +136,14 @@ export const content: ToolContent = {
       question: 'How often should I update my headline?',
       answer: 'Update when your focus shifts or you have new proof points (results, clients, credentials). Review quarterly to keep it current.',
     },
+      {
+      question: 'What makes a good linkedin headline forlancers?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated linkedin headline forlancers?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     "Headlines are assembled from fixed templates — template-based, never AI-written.",

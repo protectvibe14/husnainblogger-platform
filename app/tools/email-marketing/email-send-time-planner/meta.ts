@@ -103,6 +103,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the best time to send email, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan email send time planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my email send time planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'All "best time" bands are commonly-cited general guidance, NOT verified open-rate facts — no open-rate percentages are presented or implied.',

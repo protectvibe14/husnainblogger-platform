@@ -105,6 +105,14 @@ export const content: ToolContent = {
       answer:
         'A lead magnet title generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated lead magnet title generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good lead magnet title generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Titles are assembled from fixed banks (12 title patterns, 16 tone adjectives) — no AI copywriting is involved; results are formulaic by design.',

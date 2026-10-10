@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the video editor rates calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this video editor rates calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'What is a good video editor rates calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Benchmark bands (Entry $15–$40, Mid $50–$100, Senior $100–$250 per hour) are survey/market estimates of typical freelance asking rates — NOT official union or guild rates and NOT current verified market data.',

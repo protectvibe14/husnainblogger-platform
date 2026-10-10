@@ -97,6 +97,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the digital products for youtubers, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this digital products for youtubers tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this digital products for youtubers tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Fit scores (1–5) are opinionated judgments from a fixed table — not backed by sales or trend data.',

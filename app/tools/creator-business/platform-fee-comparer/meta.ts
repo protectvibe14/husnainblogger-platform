@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'A gumroad vs etsy fees is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this gumroad vs etsy fees calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'What is a good gumroad vs etsy fees calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'All fees are entered by you — the tool contains no platform fee schedules. Verify every fee % and fixed fee against the platform’s official pricing docs.',

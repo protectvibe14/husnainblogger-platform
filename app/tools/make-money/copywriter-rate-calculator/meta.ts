@@ -116,6 +116,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the copywriter rates calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this copywriter rates calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate copywriter rates calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'ALL benchmark figures are survey estimates from classification-level research — NOT official rates, NOT verified market data. Never treat them as what you "should" charge.',

@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'A seasonal keyword planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include in my seasonal keyword planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan seasonal keyword planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Editorial bank (v1.0.0, effective 2026-10-01): 36 events with fixed human-written angle templates. No live trend data — verify seasonality in Google Trends.',

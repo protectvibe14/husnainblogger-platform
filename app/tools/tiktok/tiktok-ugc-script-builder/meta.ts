@@ -77,6 +77,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the ugc script example tiktok, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I save or export my ugc script example tiktok?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build ugc script example tiktok?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Template-based, not AI: the tool cannot test your product or verify claims — every claim in the final video must be true.',

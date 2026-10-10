@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the slow motion fps planner, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan slow motion fps planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my slow motion fps planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Pure arithmetic planning — no video is processed and no frames are analyzed.',

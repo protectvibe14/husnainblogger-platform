@@ -94,6 +94,14 @@ export const content: ToolContent = {
       answer:
         'No — do not use this to depict real, identifiable people or events as if real. AI video is invented footage; use it for b-roll, backgrounds, and creative scenes.',
     },
+      {
+      question: 'How do I create text to video ai generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated text to video ai generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'No key = no generation. The tool is fully wired, but fal.ai needs your own API key saved first.',

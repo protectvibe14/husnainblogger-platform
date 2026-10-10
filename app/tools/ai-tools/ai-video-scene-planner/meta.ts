@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates and simple math.',
     },
+      {
+      question: 'How do I plan video scene planner for ai video?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my video scene planner for ai video plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Narration lines are template placeholders, not a finished voiceover script — rewrite them before recording or generating audio.',

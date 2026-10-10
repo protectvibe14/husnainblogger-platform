@@ -95,6 +95,14 @@ export const content: ToolContent = {
       question: 'Should I offer package deals?',
       answer: 'Yes. Bundling 3-5 posts at a slight discount increases deal size and gives brands more exposure. It also reduces your pitching overhead.',
     },
+      {
+      question: 'Is this tiktok sponsorship rates calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate tiktok sponsorship rates?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     "Tier bands are 2026 compiled survey estimates (nano $5–$25/video to mega $5k–$25k+) — not guaranteed rates and not verified platform data (needs review).",

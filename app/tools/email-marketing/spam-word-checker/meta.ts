@@ -74,6 +74,14 @@ export const content: ToolContent = {
       answer:
         'An email spam word checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What is a good email spam word checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
+    {
+      question: 'How do I check email spam word checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
   ],
   assumptions: [
     'Pattern linter only — NOT a live spam-filter test; it cannot predict inbox placement.',

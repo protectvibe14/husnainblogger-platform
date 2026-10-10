@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the youtube video idea validator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I use this youtube video idea validator tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this youtube video idea validator tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'The score comes entirely from YOUR 1–5 ratings — honest input is required; the tool cannot verify your ratings.',

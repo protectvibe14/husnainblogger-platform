@@ -70,6 +70,14 @@ export const content: ToolContent = {
       answer:
         'A youtube live stream title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my youtube live stream title ideas?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build youtube live stream title ideas?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Titles come from fixed templates with your topic filled in — rewrite any variant that does not sound like your channel.',

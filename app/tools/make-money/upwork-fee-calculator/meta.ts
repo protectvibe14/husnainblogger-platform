@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the upwork fee calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this upwork fee calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'What is a good upwork fee calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'The 10% default service fee rate is a labeled ESTIMATE — Upwork\'s fee is variable per contract (0–15%) and can change; always verify the current schedule.',

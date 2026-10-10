@@ -75,6 +75,14 @@ export const content: ToolContent = {
       answer:
         'A tiktok series trailer script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my tiktok series trailer script?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build tiktok series trailer script?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'This is a static template builder — it never invents episode outcomes or series details beyond what you type.',

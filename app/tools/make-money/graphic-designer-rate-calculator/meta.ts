@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the graphic designer rates calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good graphic designer rates calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'How do I calculate graphic designer rates calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'Base bands (Entry $30–$50, Mid $60–$95, Senior $110–$150 per hour) and deliverable factors (logo ×1.0, brand ×1.25, social ×0.85, print ×1.1) are survey/market estimates — NOT official union or guild rates and NOT current verified market data.',

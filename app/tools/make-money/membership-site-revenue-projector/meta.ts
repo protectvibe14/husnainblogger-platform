@@ -102,6 +102,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the membership site revenue calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate membership site revenue calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good membership site revenue calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Projections are scenario math on user-entered assumptions \u2014 conversion and churn are guesses, not forecasts; real results vary with seasonality, promos, and pricing changes.',

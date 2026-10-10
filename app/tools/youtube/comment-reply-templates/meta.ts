@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the youtube comment reply templates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I use this youtube comment reply templates tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this youtube comment reply templates tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Fixed 30-template bank (5 types x 3 tones x 2) — drafts are starting points, not AI-personalized replies.',

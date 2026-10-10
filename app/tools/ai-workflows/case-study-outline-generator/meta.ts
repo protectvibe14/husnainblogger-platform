@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'A case study template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good case study template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create case study template?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Template only — it assembles a fixed outline from fixed word banks (4 headlines, 3 challenge framings, 3 CTAs) and never invents client results or metrics.',

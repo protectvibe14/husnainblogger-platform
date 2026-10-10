@@ -79,6 +79,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the social profile completeness checker, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Why does social profile completeness checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
+    {
+      question: 'How do I check social profile completeness checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
   ],
   assumptions: [
     'All inputs are self-reported — the tool cannot fetch or verify your actual profiles.',

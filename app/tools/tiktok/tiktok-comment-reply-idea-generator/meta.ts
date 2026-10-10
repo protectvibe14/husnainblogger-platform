@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok comment reply ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create tiktok comment reply ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good tiktok comment reply ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Reply ideas are assembled from 30 fixed template frames — templated, not AI-written. Adapt them to your voice before posting.',

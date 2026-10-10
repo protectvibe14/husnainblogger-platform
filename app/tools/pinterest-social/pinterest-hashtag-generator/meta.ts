@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest hashtags is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated pinterest hashtag generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good pinterest hashtag generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Tags come from your topic words plus a fixed bank of 48 curated generic hashtags — they are suggestions, not live popularity or trend data, and the tool must never be read as providing those.',

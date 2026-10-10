@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'A freelance service packages is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I save or export my freelance service packages?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build freelance service packages?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Package name, discount, and description are read from the first row that has them (the form passes item rows only); defaults are "My Service Package", a 10% discount, and no description.',

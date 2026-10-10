@@ -134,6 +134,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the blog niche profitability calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate blog niche profitability calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good blog niche profitability calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'The score is a HEURISTIC for comparing niches — not a researched metric and not a profit prediction.',

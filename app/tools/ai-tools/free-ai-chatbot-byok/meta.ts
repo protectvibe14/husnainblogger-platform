@@ -82,6 +82,14 @@ export const content: ToolContent = {
       answer:
         'No. The assistant answers from its training knowledge only. Treat answers as a starting point and verify anything important — especially prices, dates, and facts that change.',
     },
+      {
+      question: 'How do I use this ai chatbot (byok) tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai chatbot (byok) tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'The assistant has no web access and no memory of previous messages; answers reflect the model\'s training, not live information.',

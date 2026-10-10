@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the patreon earnings calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good patreon earnings calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this patreon earnings calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'Fee rates reflect the schedule captured in the spec (sourceDate 2026-10-01); Patreon can change them \u2014 verify the current fee schedule on Patreon\u2019s pricing page before relying on the numbers.',

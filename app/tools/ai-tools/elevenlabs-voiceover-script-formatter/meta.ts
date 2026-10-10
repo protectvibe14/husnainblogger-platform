@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed rules.',
     },
+      {
+      question: 'How do I use this elevenlabs script formatter tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this elevenlabs script formatter tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Break tags and duration are estimates from fixed rules — actual TTS pacing depends on the voice and settings you choose.',

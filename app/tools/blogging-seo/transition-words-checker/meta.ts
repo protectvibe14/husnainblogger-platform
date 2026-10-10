@@ -102,6 +102,14 @@ export const content: ToolContent = {
       answer:
         'A transition words checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What is a good transition words checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
+    {
+      question: 'Why does transition words checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
   ],
   assumptions: [
     'The 111-phrase bank is English-only: non-English content will score Low regardless of its actual flow.',

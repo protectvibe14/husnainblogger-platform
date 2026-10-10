@@ -90,6 +90,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok voiceover script, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I use this tiktok voiceover script tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this tiktok voiceover script tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'This is pure text formatting: it does not generate audio, translate, or perform text-to-speech.',

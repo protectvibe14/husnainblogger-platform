@@ -113,6 +113,14 @@ export const content: ToolContent = {
       question: 'How often should I update my tagline?',
       answer: 'When your services, audience, or positioning changes. Otherwise, keep it stable — changing too often confuses your audience.',
     },
+      {
+      question: 'What makes a good freelancer tagline ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create freelancer tagline ideas?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     "Taglines are assembled from fixed templates — pattern-based, never AI-written.",

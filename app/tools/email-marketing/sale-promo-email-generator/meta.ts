@@ -128,6 +128,14 @@ export const content: ToolContent = {
       answer:
         'A sale email template generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated sale email template generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good sale email template generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'HONESTY GUARDRAIL: urgency copy is generated ONLY from the deadline you enter. Without a deadline, no urgency claims appear in subjects, body, or the urgency block — the tool never invents false scarcity, countdowns, or seat limits.',

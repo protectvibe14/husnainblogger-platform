@@ -113,6 +113,14 @@ export const content: ToolContent = {
       question: 'How do I enforce style guide compliance?',
       answer: 'Include it in your editing checklist. Editors should flag violations with reference to specific guide sections, not just personal preference.',
     },
+      {
+      question: 'How do I build editorial style guide template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my editorial style guide template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     "The tool compiles your answers only — it sets no standards, defaults, or recommendations.",

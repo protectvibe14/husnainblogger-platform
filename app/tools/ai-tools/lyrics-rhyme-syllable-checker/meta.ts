@@ -81,6 +81,14 @@ export const content: ToolContent = {
       answer:
         'A lyrics rhyme checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check lyrics rhyme & syllable checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'Why does lyrics rhyme & syllable checker matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
   ],
   assumptions: [
     'Syllable counts are heuristic estimates, not dictionary scansion — verify by ear.',

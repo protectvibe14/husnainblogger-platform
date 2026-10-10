@@ -107,6 +107,14 @@ export const content: ToolContent = {
       answer:
         'An instagram name seo optimizer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this instagram name seo optimizer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this instagram name seo optimizer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Uses a conservative 30-character budget (per the tool\'s rule set) so every suggestion fits even the tightest display — list your keywords most-important-first.',

@@ -103,6 +103,14 @@ export const content: ToolContent = {
       answer:
         'A facebook group rules template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good facebook group rules template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create facebook group rules template?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Rules come from a fixed bank of 30 hand-written rules — the tool assembles a starting template; it does not give legal advice.',

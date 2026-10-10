@@ -151,6 +151,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the brand pitch email template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated brand pitch email template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good brand pitch email template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Follower counts, engagement rates, and past results are inserted exactly as you type them — the tool cannot access your analytics and does not verify any metric. Only pitch numbers you can back up.',

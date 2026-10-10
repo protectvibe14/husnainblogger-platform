@@ -98,6 +98,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the youtube script length calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good youtube script length calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'How do I calculate youtube script length calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     '150 wpm is a narration convention (an estimate), not a YouTube rule — budgets are only as accurate as the speaking rate you set.',

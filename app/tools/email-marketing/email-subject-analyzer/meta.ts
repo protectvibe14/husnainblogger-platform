@@ -73,6 +73,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the email subject line analyzer, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What should I look for in the results?',
+      answer: 'Focus on the lowest-scoring areas first — those are your quickest wins. The analyzer prioritizes issues by impact so you know where to start.',
+    },
+    {
+      question: 'How do I analyze email subject line analyzer?',
+      answer: 'Enter your content or URL above. The analyzer breaks down the key factors and shows you a clear score with specific improvement suggestions.',
+    },
   ],
   assumptions: [
     'The score is a heuristic — open rates depend on your list, sender reputation, and timing, which no tool can see.',

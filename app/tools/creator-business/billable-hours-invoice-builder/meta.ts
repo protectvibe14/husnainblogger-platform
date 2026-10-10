@@ -135,6 +135,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the billable hours tracker for freelancers, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I save or export my billable hours tracker forlancers?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build billable hours tracker forlancers?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'The tax rate is entered by you only — nothing is pre-filled, and an empty tax rate means no tax line (not 0%). This is not tax advice; check your local tax rules.',

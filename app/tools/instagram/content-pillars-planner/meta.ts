@@ -91,6 +91,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram content pillars examples, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What should I include in my instagram content pillars examples plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan instagram content pillars examples?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Allocation uses fixed starter weight presets — a common convention, not measured data about your audience.',

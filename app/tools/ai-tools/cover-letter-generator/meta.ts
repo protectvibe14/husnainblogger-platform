@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'Three concise paragraphs: your enthusiasm for the role, 2–3 achievements tied to it, and a closing call to action. Short enough to be read, specific enough to matter.',
     },
+      {
+      question: 'How do I create ai cover letter generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated ai cover letter generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'The letter only uses what you provide — thin input produces a thin letter.',

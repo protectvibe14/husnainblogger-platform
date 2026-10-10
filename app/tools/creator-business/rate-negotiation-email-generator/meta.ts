@@ -138,6 +138,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the rate negotiation email template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good rate negotiation email template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated rate negotiation email template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'The output is a draft only — always edit it in your own voice before sending.',

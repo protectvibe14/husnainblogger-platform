@@ -118,6 +118,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the influencer exclusivity fee, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good influencer exclusivity fee?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'Is this influencer exclusivity fee calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'ESTIMATE: every result is computed from YOUR percentage or flat fee — this tool contains no industry-rate data and does not recommend what to charge.',

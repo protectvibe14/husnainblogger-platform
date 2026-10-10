@@ -76,6 +76,14 @@ export const content: ToolContent = {
       answer:
         'A video hook checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check video hook checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'What is a good video hook checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
   ],
   assumptions: [
     'The score is a rule-based checklist (max 75), not a virality or view-count prediction.',

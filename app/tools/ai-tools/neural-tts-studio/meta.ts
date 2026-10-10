@@ -112,6 +112,14 @@ export const content: ToolContent = {
       answer:
         'The first run downloads the ~86 MB model and warms up your device\'s AI runtime. Later runs skip the download entirely and are much faster, especially in browsers with WebGPU (Chrome/Edge 113+).',
     },
+      {
+      question: 'How do I use this ai text to speech voice tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this ai text to speech voice tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Output is 24 kHz mono WAV — fine for voiceovers and podcasts, not studio-grade music production.',

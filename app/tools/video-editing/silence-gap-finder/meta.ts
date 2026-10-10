@@ -102,6 +102,14 @@ export const content: ToolContent = {
       answer:
         'A find silence in audio is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I find find silence in audio?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good find silence in audio?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'Accepts numeric dB series only — it does NOT read audio files; file decoding is the app shell’s job.',

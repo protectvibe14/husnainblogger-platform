@@ -126,6 +126,14 @@ export const content: ToolContent = {
       question: 'How do I price specialized VA services?',
       answer: 'Charge 50-100% more than general admin rates for specialized skills. If you manage email marketing or bookkeeping, your expertise commands premium pricing.',
     },
+      {
+      question: 'Is this virtual assistant rates calculator calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
+    {
+      question: 'How do I calculate virtual assistant rates calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     "Rate bands are survey estimates ($15–$50/hr by level/region) — not a verified 2026 market benchmark. Adjust them to your market; this is not pay advice.",

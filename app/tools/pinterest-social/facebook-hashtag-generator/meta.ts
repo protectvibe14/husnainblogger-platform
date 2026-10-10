@@ -94,6 +94,14 @@ export const content: ToolContent = {
       answer:
         'A facebook hashtags is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create facebook hashtags?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good facebook hashtags?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Hashtags come from a fixed bundled bank of 68 curated tags — no live data on tag volume, reach, or what is trending.',

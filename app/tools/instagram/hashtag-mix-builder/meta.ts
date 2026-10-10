@@ -73,6 +73,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram hashtag strategy builder, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I build instagram hashtag strategy builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my instagram hashtag strategy builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     'Hashtag pools are curated starter mixes (216 bundled tags) — not live popularity rankings and not personalized.',

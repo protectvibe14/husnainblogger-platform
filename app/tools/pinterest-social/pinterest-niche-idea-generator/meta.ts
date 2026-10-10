@@ -108,6 +108,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest niche ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated pinterest niche ideas generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create pinterest niche ideas generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Ideas come from a fixed bank of 24 visual niches — the tool matches patterns; it does not analyze markets or predict profitability.',

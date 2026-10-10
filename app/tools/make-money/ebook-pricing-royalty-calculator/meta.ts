@@ -107,6 +107,14 @@ export const content: ToolContent = {
       answer:
         'An ebook pricing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I calculate ebook pricing calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good ebook pricing calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Implements the KDP schedule from the spec (same rule set as tool-060): 70% band $2.99–$9.99 with $0.15/MB delivery; 35% otherwise; paperback 60% minus print cost.',

@@ -86,6 +86,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the voiceover rates calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate voiceover rates calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good voiceover rates calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'All bands (narration tiers $350–$2,200; e-learning $300–$600/hr; audiobook $200–$400 PFH; commercial $350–$1,000 flat; IVR $100–$300/min) are GVAA-derived survey/market estimates — NOT official union or guild rates and NOT current verified market data.',

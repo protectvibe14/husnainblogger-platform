@@ -113,6 +113,14 @@ export const content: ToolContent = {
       answer:
         'An average sentence length checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check average sentence length checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
+    {
+      question: 'What is a good average sentence length checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
   ],
   assumptions: [
     'Syllable counting uses a deterministic vowel-group heuristic (approximation); scores can differ slightly from tools using dictionary-based syllable counts.',

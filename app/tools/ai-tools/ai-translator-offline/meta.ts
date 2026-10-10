@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'Each language pair needs its own full neural translation model (~150–300 MB). It downloads once and is cached, so repeat translations are instant and offline.',
     },
+      {
+      question: 'Is this offline ai translator tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this offline ai translator tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Machine-quality translation — verify important text with a native speaker.',

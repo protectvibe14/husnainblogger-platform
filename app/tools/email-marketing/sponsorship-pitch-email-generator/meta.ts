@@ -91,6 +91,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the sponsorship email pitch generator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good sponsorship email pitch generator?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated sponsorship email pitch generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'This is the sponsorship ASK (you seek a sponsor) — the opposite direction is the Newsletter Sponsorship Pitch Generator (tool-419).',

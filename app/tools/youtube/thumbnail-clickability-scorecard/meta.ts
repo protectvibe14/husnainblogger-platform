@@ -141,6 +141,14 @@ export const content: ToolContent = {
       answer:
         'A youtube thumbnail checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Is this youtube thumbnail checklist tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this youtube thumbnail checklist tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Self-assessed: the score reflects YOUR answers, so be honest — generous answers inflate the score without improving the thumbnail.',

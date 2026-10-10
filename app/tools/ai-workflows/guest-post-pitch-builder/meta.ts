@@ -86,6 +86,14 @@ export const content: ToolContent = {
       question: 'How do I follow up without being annoying?',
       answer: 'Wait 7-10 days, then send one brief follow-up. If no response after that, move on. Never follow up more than twice.',
     },
+      {
+      question: 'Can I save or export my guest post pitch template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build guest post pitch template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     "The email is a fixed template; personalization beyond the slots is the user's job.",

@@ -93,6 +93,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the grwm tiktok script, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What should I include in my grwm tiktok script planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan grwm tiktok script planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Template-based planner, not AI: plans are assembled from fixed banks (8 hooks, 8 CTAs, 10 step templates per niche branch, 6 product-slot lines).',

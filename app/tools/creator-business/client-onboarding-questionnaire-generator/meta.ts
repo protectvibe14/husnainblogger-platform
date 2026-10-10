@@ -103,6 +103,14 @@ export const content: ToolContent = {
       answer:
         'A client onboarding questionnaire template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I create client onboarding questionnaire template?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'What makes a good client onboarding questionnaire template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Questions are a curated fixed bank, not personalized advice — edit or add questions for unusual projects.',

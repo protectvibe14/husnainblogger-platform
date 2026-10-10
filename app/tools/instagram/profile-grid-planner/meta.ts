@@ -99,6 +99,14 @@ export const content: ToolContent = {
       answer:
         'An instagram grid planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include in my instagram grid planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
+    {
+      question: 'How do I plan instagram grid planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
   ],
   assumptions: [
     'Image data stored as dataURLs lives under a typical ~5 MB localStorage quota — an estimate that varies by browser; the tool warns when your images approach or exceed it.',

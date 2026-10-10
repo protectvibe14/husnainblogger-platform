@@ -87,6 +87,14 @@ export const content: ToolContent = {
       answer:
         'An ai tools stack for creators is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I plan ais stack for creators?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my ais stack for creators plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Recommendations come from a fixed 12-tool database via keyword matching - not from live reviews or testing of the tools.',

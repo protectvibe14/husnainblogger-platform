@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'Some browsers cap a single utterance\u2019s length. Split long text into a few paragraphs and read them one at a time.',
     },
+      {
+      question: 'Is this text-to-speech reader tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this text-to-speech reader tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Voice quality and availability depend entirely on the visitor\u2019s device and browser.',

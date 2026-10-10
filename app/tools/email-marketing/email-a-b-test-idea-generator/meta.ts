@@ -84,6 +84,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the email a/b test ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good email a/b test ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated email a/b test ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'This tool generates test IDEAS only — it does not run tests, send emails, or analyze results.',

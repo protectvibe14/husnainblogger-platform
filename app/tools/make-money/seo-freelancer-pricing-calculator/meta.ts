@@ -143,6 +143,14 @@ export const content: ToolContent = {
       question: 'Do I need different pricing for local vs national SEO?',
       answer: 'Yes. Local SEO is typically less competitive and priced lower ($500-$2,000/month). National campaigns in competitive niches command premium rates.',
     },
+      {
+      question: 'How do I calculate seolancer rates calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good seolancer rates calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     "Rate bands are unverified placeholder estimates — no 2026 benchmark source was verified. Adjust them to your market; this is not pricing advice.",

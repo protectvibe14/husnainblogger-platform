@@ -75,6 +75,14 @@ export const content: ToolContent = {
       answer:
         'An internal link finder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I find internal link finder?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good internal link finder?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'Cannot crawl a live site — it only analyzes the article text and target pages you paste.',

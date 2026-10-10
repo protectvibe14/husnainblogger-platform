@@ -106,6 +106,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok captions too fast, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Why does tiktok captions too fast matter?',
+      answer: 'It directly affects your visibility, credibility, and results. Poor scores mean missed opportunities; the checker shows you where you stand and how to improve.',
+    },
+    {
+      question: 'How do I check tiktok captions too fast?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
   ],
   assumptions: [
     'Flesch Reading Ease is a general English readability formula — it measures text complexity, not viewer behavior or views.',

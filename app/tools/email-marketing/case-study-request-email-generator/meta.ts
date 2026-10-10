@@ -112,6 +112,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the case study request email, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I create case study request email?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
+    {
+      question: 'Can I customize the generated case study request email?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     'Drafts are assembled from fixed template banks (10 subject patterns, 6 openers, 12 ask paragraphs, 5 metric lines, 5 ease lines, 6 closers, 4 sign-offs) — no AI copywriting is involved.',

@@ -95,6 +95,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest idea pin ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated pinterest idea pin ideas?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good pinterest idea pin ideas?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Scripts are assembled from 72 fixed templates — the wording is structured text, not AI-written copy. Rewrite it in your own voice before filming.',

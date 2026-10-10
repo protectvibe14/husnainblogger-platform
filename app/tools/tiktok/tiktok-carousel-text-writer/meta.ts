@@ -88,6 +88,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok carousel text, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I use this tiktok carousel text tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this tiktok carousel text tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Text comes from fixed template banks, not AI; quality comes from the topic you enter.',

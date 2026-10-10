@@ -116,6 +116,14 @@ export const content: ToolContent = {
       answer:
         'It is picked deterministically from a fixed bank of 6 lighting phrases based on your subject text, so the same subject always produces the same lighting line.',
     },
+      {
+      question: 'Can I save or export my midjourney & flux prompt builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build midjourney & flux prompt builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Outputs are template-assembled text, not AI output — review and edit the wording before using it for important work.',

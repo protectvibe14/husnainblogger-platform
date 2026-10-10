@@ -100,6 +100,14 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates.',
     },
+      {
+      question: 'Can I save or export my ai headshot prompt pack builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build ai headshot prompt pack builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     'Prompts are template-assembled text — review the wording and adjust details (age, ethnicity, accessories) for your needs.',

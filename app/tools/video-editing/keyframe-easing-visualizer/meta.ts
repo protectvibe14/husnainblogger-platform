@@ -115,6 +115,14 @@ export const content: ToolContent = {
       answer:
         'An easing curve visualizer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I use this easing curve visualizer tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
+    {
+      question: 'Is this easing curve visualizer tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
   ],
   assumptions: [
     'Curve points are computed samples (Newton-Raphson, 1e-6 tolerance) — the drawing is a math preview, not a rendered animation.',

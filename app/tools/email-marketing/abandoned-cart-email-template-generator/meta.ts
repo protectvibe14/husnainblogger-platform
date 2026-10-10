@@ -112,6 +112,14 @@ export const content: ToolContent = {
       answer:
         'An abandoned cart email template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Can I customize the generated abandoned cart email template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good abandoned cart email template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Templates are fixed — not AI-written — and keep {{placeholders}} for your ESP merge tags; nothing is sent by this tool.',

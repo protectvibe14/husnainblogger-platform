@@ -106,6 +106,14 @@ export const content: ToolContent = {
       question: 'What\'s the ideal chain length?',
       answer: 'Three to five steps. Longer chains accumulate errors and become hard to debug. If you need more steps, consider whether the task should be split into separate workflows.',
     },
+      {
+      question: 'Can I save or export my ai prompt chain builder?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
+    {
+      question: 'How do I build ai prompt chain builder?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
   ],
   assumptions: [
     "Step prompts are fixed templates you edit — the tool writes no prompt content for you.",

@@ -99,6 +99,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the digital products to sell as influencer, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated digital products to sell as influencer?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good digital products to sell as influencer?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'Ideas are assembled from fixed template banks (14 formats, 10 title templates, 8 validation steps) — starting points, not researched market opportunities.',

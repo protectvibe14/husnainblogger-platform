@@ -116,6 +116,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the ugc pitch template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated ugc pitch template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good ugc pitch template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     'The pitch is a template — it cannot promise replies, deals, or payment from brands.',

@@ -110,6 +110,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok script template, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Is this tiktok script template tool really free?',
+      answer: 'Yes, completely free with no account required. Use it as many times as you want — there are no usage limits or hidden paywalls.',
+    },
+    {
+      question: 'How do I use this tiktok script template tool?',
+      answer: 'Enter your details in the fields above and get instant results. Everything runs in your browser — no signup, no waiting, no data uploaded.',
+    },
   ],
   assumptions: [
     'Scripts are assembled from 82 fixed template frames — the wording is templated, not AI-written. Rewrite lines in your own voice before filming.',

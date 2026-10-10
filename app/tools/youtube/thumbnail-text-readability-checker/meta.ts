@@ -103,6 +103,10 @@ export const content: ToolContent = {
       answer:
         'A thumbnail text readability checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I check thumbnail text readability checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
   ],
   assumptions: [
     'This tool does exact math on the flat colors you enter — it cannot analyze an uploaded thumbnail image\'s pixels; a canvas-based pixel-sampling variant is out of scope.',

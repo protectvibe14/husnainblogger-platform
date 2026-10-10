@@ -115,6 +115,14 @@ export const content: ToolContent = {
       question: 'How do I handle negative aspects honestly?',
       answer: 'Be specific about drawbacks and who they\'d affect. \'Battery lasts 6 hours, which is short for travelers but fine for desk use\' is more helpful than just \'bad battery.\'',
     },
+      {
+      question: 'Can I customize the generated product review template?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'What makes a good product review template?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
   ],
   assumptions: [
     "The tool provides structure only — no review opinions, scores, or verdicts are written or invented.",

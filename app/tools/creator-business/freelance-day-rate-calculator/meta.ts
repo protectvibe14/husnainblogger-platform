@@ -158,6 +158,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelance day rate calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is a good freelance day rate calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
+    {
+      question: 'How do I calculate freelance day rate calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
   ],
   assumptions: [
     'Based entirely on YOUR inputs — not market data, and no guarantee of what clients will pay.',

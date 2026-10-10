@@ -124,6 +124,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the freelance milestone payment schedule, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan freelance milestone payment schedule?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my freelance milestone payment schedule plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Percentages are user-defined — the tool does pure split math and gives no legal or financial advice.',

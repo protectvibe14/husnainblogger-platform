@@ -85,6 +85,14 @@ export const content: ToolContent = {
       answer:
         'Each has a job. The JSON-LD snippet is the structured data search engines read; the HTML block is the visible FAQ section for your page; the Markdown block is for editors, docs, or static-site workflows. Copy whichever your setup needs — most bloggers paste the JSON-LD in the head and the HTML into the article body.',
     },
+      {
+      question: 'What makes a good faq generator for blog?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'Can I customize the generated faq generator for blog?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
   ],
   assumptions: [
     "The tool formats your questions only — it writes no answers and performs no AI Q&A.",

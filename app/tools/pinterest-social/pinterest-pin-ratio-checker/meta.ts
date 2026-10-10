@@ -109,6 +109,14 @@ export const content: ToolContent = {
       answer:
         'A pinterest pin size checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What is a good pinterest pin size checker score?',
+      answer: 'Aim for the top rating band shown in the results. If your score is low, the tool highlights exactly what to fix — usually small changes make a big difference.',
+    },
+    {
+      question: 'How do I check pinterest pin size checker?',
+      answer: 'Paste or enter your content above and the checker analyzes it instantly. Review the results and apply the suggested fixes.',
+    },
   ],
   assumptions: [
     'The 2:3 "ideal pin" size is widely documented creator best practice, not an official Pinterest requirement — the tool never claims platform endorsement.',

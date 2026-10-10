@@ -101,6 +101,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the instagram broadcast channel ideas, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What makes a good instagram broadcast channel ideas – 100+ id?',
+      answer: 'Clarity, specificity, and relevance to your audience. Avoid generic phrases — the more specific your input, the better the output.',
+    },
+    {
+      question: 'How do I create instagram broadcast channel ideas – 100+ id?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Ideas come from 26 fixed templates, not AI — rewrite the winning concept in your own voice before creating the channel.',

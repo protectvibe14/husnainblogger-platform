@@ -125,6 +125,14 @@ export const content: ToolContent = {
       question: 'Should I let experts approve their quotes?',
       answer: 'Send them the draft quote for approval before publishing. It\'s courteous, prevents misquotes, and they may share the post more enthusiastically.',
     },
+      {
+      question: 'How do I plan expert roundup template?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my expert roundup template plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     "Expert names and contacts are never fabricated; tracker rows are empty slots for you to fill in.",

@@ -96,6 +96,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the best youtube video length, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I find youtube video length finder?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good youtube video length finder?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'Bands are generic guidance from third-party benchmark estimates, not YouTube-published optima and not predictions of your video\'s performance.',

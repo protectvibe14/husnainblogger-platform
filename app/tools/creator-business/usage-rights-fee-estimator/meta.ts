@@ -162,6 +162,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the usage rights calculator photography, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate usage rights calculator photography?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'Is this usage rights calculator photography calculator accurate?',
+      answer: 'Yes, it uses standard formulas and up-to-date rates. However, treat the result as an estimate for planning — actual figures may vary based on your specific situation.',
+    },
   ],
   assumptions: [
     'No factual licensing-rate tables — every multiplier is your own pricing assumption.',

@@ -154,6 +154,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the how to find my niche instagram, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I find instagram niche finder?',
+      answer: 'Enter your criteria above and the finder surfaces the most relevant options. Refine your inputs for more targeted results.',
+    },
+    {
+      question: 'What makes a good instagram niche finder?',
+      answer: 'Relevance to your specific needs, not just popularity. The finder helps you filter by what actually matters for your situation.',
+    },
   ],
   assumptions: [
     'The niche bank has 16 fixed profiles — if your topic is unusual, the closest match is shown, not a custom analysis.',

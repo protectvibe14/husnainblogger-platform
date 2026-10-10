@@ -103,6 +103,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the video project storage planner, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I plan video project storage planner?',
+      answer: 'Start by entering your goals and constraints above. The planner organizes everything into a step-by-step plan you can follow or share with your team.',
+    },
+    {
+      question: 'What should I include in my video project storage planner plan?',
+      answer: 'Cover your objectives, timeline, resources needed, and success metrics. This tool prompts you for each element so nothing gets missed.',
+    },
   ],
   assumptions: [
     'Clip size = durationSec × bitrateMbps ÷ 8. Real files vary with codec, scene complexity, and variable bitrate — results are planning figures, not exact predictions.',

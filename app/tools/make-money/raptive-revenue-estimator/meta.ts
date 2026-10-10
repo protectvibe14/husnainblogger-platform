@@ -80,6 +80,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the raptive earnings calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How do I calculate raptive earnings calculator?',
+      answer: 'Enter your numbers in the fields above and the calculator does the math instantly. You can adjust any input to see how it affects the result in real time.',
+    },
+    {
+      question: 'What is a good raptive earnings calculator?',
+      answer: 'It depends on your industry, location, and experience level. Use the calculator to benchmark different scenarios, then compare against published averages for your niche.',
+    },
   ],
   assumptions: [
     'Page RPM is niche- and geography-dependent; the default of 30 is a benchmark estimate (Raptive typical $20-$50), fully user-editable — never presented as real payout data.',

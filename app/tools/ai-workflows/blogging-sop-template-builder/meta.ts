@@ -88,6 +88,14 @@ export const content: ToolContent = {
       question: 'How often should I update my blogging SOP?',
       answer: 'Update whenever your process changes — new SEO requirements, different tools, team feedback. Review quarterly at minimum to catch outdated steps.',
     },
+      {
+      question: 'How do I build blogging sop template?',
+      answer: 'Fill in the fields with your details and the builder assembles everything into a polished result. Edit any section until it feels right.',
+    },
+    {
+      question: 'Can I save or export my blogging sop template?',
+      answer: 'Yes, copy the result or use your browser\'s print-to-PDF. Everything stays on your device — nothing is uploaded or stored.',
+    },
   ],
   assumptions: [
     "The tool adds no process knowledge — every step, owner, and frequency comes from you.",

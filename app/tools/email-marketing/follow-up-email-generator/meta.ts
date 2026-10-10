@@ -91,6 +91,14 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the follow up email generator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'Can I customize the generated follow up email generator?',
+      answer: 'Yes. Use the output as a starting point, then edit the wording, tone, or format to match your voice. The generator gives you a strong draft to refine.',
+    },
+    {
+      question: 'How do I create follow up email generator?',
+      answer: 'Describe what you need in the input fields, then click generate. You can regenerate as many times as you like and copy the version that fits best.',
+    },
   ],
   assumptions: [
     'Drafts come from a fixed 35-pattern template library (20 subject + 15 body patterns) — not AI-written copy.',
