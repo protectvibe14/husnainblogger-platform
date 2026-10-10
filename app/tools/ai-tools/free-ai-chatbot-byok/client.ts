@@ -1,10 +1,11 @@
 /**
- * client.ts — Free AI Chatbot (BYOK), Lane B.
+ * client.ts — Free AI Chatbot (BYOK), Lane B (redesigned).
  *
- * Flow: key-vault card (providers from logic.getProviders()) -> provider
- * select + message form -> Generate -> loading -> result + Copy button.
- * Errors surface through humanizeFetchError / humanizeHttpStatus.
- * Keys are never logged and are sent only to the chosen provider.
+ * Flow: gradient header -> key-vault card -> provider card -> message card
+ * (with "Try a sample") -> big gradient Generate button -> progress/status
+ * -> result card + Copy button. Errors surface through humanizeFetchError /
+ * humanizeHttpStatus. Keys are never logged and are sent only to the chosen
+ * provider. User text is injected via textContent only.
  */
 import {
   renderKeyVault,
@@ -23,27 +24,7 @@ import {
   buildPrompts,
 } from './logic.ts';
 
-interface FieldDef {
-  id: string;
-  label: string;
-  kind: 'textarea' | 'text' | 'select';
-  required: boolean;
-  placeholder?: string;
-  rows?: number;
-  options?: { value: string; label: string }[];
-  hint?: string;
-}
-
-const FIELDS: FieldDef[] = [
-  {
-    id: 'message',
-    label: 'Your message',
-    kind: 'textarea',
-    required: true,
-    rows: 4,
-    placeholder: 'e.g. Explain compound interest in simple terms',
-  },
-];
+const SAMPLE_MESSAGE = 'Explain compound interest in simple terms';
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
@@ -56,29 +37,120 @@ function el<K extends keyof HTMLElementTagNameMap>(
   return e;
 }
 
-export function mountAiTool(ctx: AiClientContext): void {
+export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = '';
   const providers = getProviders();
 
-  // --- key vault -----------------------------------------------------------
-  const vault = el('div', 'hb-ai-vault');
-  root.appendChild(vault);
+  // --- styles ---------------------------------------------------------------
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-chat-wrap { display: flex; flex-direction: column; gap: 16px; }
+    .hb-chat-header {
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-chat-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-chat-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-chat-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-chat-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-chat-textarea {
+      width: 100%; min-height: 120px; padding: 14px; font-size: 15px;
+      border: 2px solid #e2e8f0; border-radius: 10px; resize: vertical;
+      font-family: inherit; box-sizing: border-box;
+    }
+    .hb-chat-textarea:focus { outline: none; border-color: #0284c7; }
+    .hb-chat-select {
+      width: 100%; padding: 12px; font-size: 15px; border: 2px solid #e2e8f0;
+      border-radius: 10px; background: #fff; box-sizing: border-box;
+    }
+    .hb-chat-select:focus { outline: none; border-color: #0284c7; }
+    .hb-chat-hint { font-size: 13px; color: #64748b; margin: 8px 0 0; }
+    .hb-chat-sample {
+      font-size: 13px; color: #0284c7; background: none; border: none;
+      cursor: pointer; text-decoration: underline; padding: 8px 0 0;
+    }
+    .hb-chat-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-chat-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-chat-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-chat-progress {
+      height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden;
+    }
+    .hb-chat-progress > div {
+      height: 100%; width: 40%; border-radius: 5px;
+      background: linear-gradient(90deg, #0284c7, #4f46e5);
+      animation: hb-chat-slide 1.2s ease-in-out infinite;
+    }
+    @keyframes hb-chat-slide {
+      0% { margin-left: -40%; } 100% { margin-left: 100%; }
+    }
+    .hb-chat-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-chat-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-chat-result {
+      background: linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%);
+      border: 1px solid #c7d2fe; border-radius: 14px; padding: 20px;
+    }
+    .hb-chat-result h4 { margin: 0 0 10px; font-size: 15px; font-weight: 700; color: #1e293b; }
+    .hb-chat-result__text {
+      font-size: 15px; line-height: 1.65; color: #1e293b; white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .hb-chat-copy {
+      margin-top: 14px; padding: 10px 24px; background: #4f46e5; color: #fff;
+      border: none; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer;
+    }
+    .hb-chat-copy:hover { background: #4338ca; }
+    @media (max-width: 640px) {
+      .hb-chat-header { padding: 18px; }
+      .hb-chat-card { padding: 16px; }
+    }
+  `;
+  root.appendChild(style);
+
+  const wrap = el('div', 'hb-chat-wrap');
+  root.appendChild(wrap);
+
+  // --- header -----------------------------------------------------------------
+  const header = el('div', 'hb-chat-header');
+  header.appendChild(el('h3', '', '💬 AI Chatbot Free (BYOK)'));
+  header.appendChild(
+    el('p', '', 'Uses YOUR free Gemini/Groq/OpenRouter key — or the keyless llm7.io demo lane. Nothing runs until you choose.'),
+  );
+  wrap.appendChild(header);
+
+  // --- key vault --------------------------------------------------------------
+  const vaultCard = el('div', 'hb-chat-card');
+  const vaultLabel = el('span', 'hb-chat-label', '🔑 Your API key');
+  vaultCard.appendChild(vaultLabel);
+  const vault = el('div', '');
+  vaultCard.appendChild(vault);
+  wrap.appendChild(vaultCard);
   renderKeyVault(vault, {
     providers,
     intro:
       'Pick a provider and paste your free key — or use the keyless llm7.io demo lane below (community-run, no SLA).',
   });
 
-  // --- tool card -----------------------------------------------------------
-  const card = el('div', 'hb-ai-tool');
-  root.appendChild(card);
-
-  const provLabel = el('label', 'hb-ai-label', 'Provider');
-  provLabel.htmlFor = 'hb-ai-provider';
-  card.appendChild(provLabel);
-  const provSel = el('select', 'hb-ai-select');
-  provSel.id = 'hb-ai-provider';
+  // --- provider card ------------------------------------------------------------
+  const provCard = el('div', 'hb-chat-card');
+  const provLabel = el('label', 'hb-chat-label', '⚙️ Provider');
+  provLabel.htmlFor = 'hb-ai-chat-provider';
+  provCard.appendChild(provLabel);
+  const provSel = el('select', 'hb-chat-select') as HTMLSelectElement;
+  provSel.id = 'hb-ai-chat-provider';
   for (const pid of providers) {
     const info = getProviderInfo(pid);
     const opt = document.createElement('option');
@@ -87,64 +159,59 @@ export function mountAiTool(ctx: AiClientContext): void {
       (info ? info.name : pid) + (pid === 'llm7' ? ' — no key needed (community demo)' : '');
     provSel.appendChild(opt);
   }
-  card.appendChild(provSel);
+  provCard.appendChild(provSel);
+  const hint = el('p', 'hb-chat-hint');
+  provCard.appendChild(hint);
+  wrap.appendChild(provCard);
 
-  const controls: Record<string, HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement> = {};
-  for (const f of FIELDS) {
-    const label = el('label', 'hb-ai-label', f.label + (f.required ? ' *' : ''));
-    label.htmlFor = 'hb-ai-' + f.id;
-    card.appendChild(label);
-    let control: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
-    if (f.kind === 'textarea') {
-      const ta = el('textarea', 'hb-ai-textarea');
-      ta.rows = f.rows ?? 4;
-      if (f.placeholder) ta.placeholder = f.placeholder;
-      control = ta;
-    } else if (f.kind === 'select') {
-      const sel = el('select', 'hb-ai-select');
-      for (const o of f.options ?? []) {
-        const opt = document.createElement('option');
-        opt.value = o.value;
-        opt.textContent = o.label;
-        sel.appendChild(opt);
-      }
-      control = sel;
-    } else {
-      const inp = el('input', 'hb-ai-input');
-      inp.type = 'text';
-      if (f.placeholder) inp.placeholder = f.placeholder;
-      control = inp;
-    }
-    control.id = 'hb-ai-' + f.id;
-    controls[f.id] = control;
-    card.appendChild(control);
-    if (f.hint) card.appendChild(el('p', 'hb-ai-field-hint', f.hint));
-  }
+  // --- message card ---------------------------------------------------------------
+  const msgCard = el('div', 'hb-chat-card');
+  const msgLabel = el('label', 'hb-chat-label', '✍️ Your message *');
+  msgLabel.htmlFor = 'hb-ai-chat-message';
+  msgCard.appendChild(msgLabel);
+  const msgArea = el('textarea', 'hb-chat-textarea') as HTMLTextAreaElement;
+  msgArea.id = 'hb-ai-chat-message';
+  msgArea.rows = 5;
+  msgArea.placeholder = 'e.g. Explain compound interest in simple terms';
+  msgCard.appendChild(msgArea);
+  const sampleBtn = el('button', 'hb-chat-sample', '✨ Try a sample message');
+  sampleBtn.type = 'button';
+  sampleBtn.addEventListener('click', () => {
+    msgArea.value = SAMPLE_MESSAGE;
+  });
+  msgCard.appendChild(sampleBtn);
+  wrap.appendChild(msgCard);
 
-  const hint = el('p', 'hb-ai-hint');
-  card.appendChild(hint);
+  // --- generate ---------------------------------------------------------------------
+  const genBtn = el('button', 'hb-chat-generate', '💬 Get AI reply');
+  genBtn.type = 'button';
+  wrap.appendChild(genBtn);
 
-  const actions = el('div', 'hb-ai-actions');
-  const gen = el('button', 'hb-btn hb-btn--primary', 'Generate');
-  gen.type = 'button';
-  actions.appendChild(gen);
-  card.appendChild(actions);
+  const progress = el('div', 'hb-chat-progress');
+  progress.hidden = true;
+  progress.appendChild(el('div', ''));
+  wrap.appendChild(progress);
 
-  const errBox = el('div', 'hb-ai-error');
+  const status = el('p', 'hb-chat-status');
+  wrap.appendChild(status);
+
+  const errBox = el('div', 'hb-chat-error');
   errBox.hidden = true;
   errBox.setAttribute('role', 'alert');
-  card.appendChild(errBox);
+  wrap.appendChild(errBox);
 
-  const resBox = el('div', 'hb-ai-result');
+  // --- result ---------------------------------------------------------------------------
+  const resBox = el('div', 'hb-chat-result');
   resBox.hidden = true;
-  const resText = el('div', 'hb-ai-result__text');
+  resBox.appendChild(el('h4', '', '🤖 AI reply'));
+  const resText = el('div', 'hb-chat-result__text');
   resBox.appendChild(resText);
-  const copyBtn = el('button', 'hb-btn hb-btn--ghost', 'Copy');
+  const copyBtn = el('button', 'hb-chat-copy', '⧉ Copy reply');
   copyBtn.type = 'button';
   resBox.appendChild(copyBtn);
-  card.appendChild(resBox);
+  wrap.appendChild(resBox);
 
-  // --- state ---------------------------------------------------------------
+  // --- state ----------------------------------------------------------------------------
   function selectedProvider(): string {
     return provSel.value;
   }
@@ -157,18 +224,20 @@ export function mountAiTool(ctx: AiClientContext): void {
   }
   function refresh(): void {
     const p = selectedProvider();
-    gen.disabled = !canGenerate();
+    genBtn.disabled = !canGenerate();
     if (p === 'llm7') {
       hint.textContent =
         'Using the keyless llm7.io demo lane (community-run, no SLA). For higher limits, pick a key provider and save your free key above.';
     } else if (getKey(p)) {
-      hint.textContent = 'Key saved for ' + providerName(p) + '. Nothing runs until you click Generate.';
+      hint.textContent =
+        'Key saved for ' + providerName(p) + '. Nothing runs until you click Get AI reply.';
     } else {
       hint.textContent =
-        'Paste your free ' + providerName(p) + ' key above to enable Generate — or switch provider.';
+        'Paste your free ' + providerName(p) + ' key above to enable the button — or switch provider.';
     }
   }
   function showError(msg: string): void {
+    hideProgress();
     errBox.textContent = msg;
     errBox.hidden = false;
     resBox.hidden = true;
@@ -177,6 +246,15 @@ export function mountAiTool(ctx: AiClientContext): void {
     errBox.hidden = true;
     resText.textContent = text;
     resBox.hidden = false;
+    resBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  function showProgress(label: string): void {
+    progress.hidden = false;
+    status.textContent = label;
+  }
+  function hideProgress(): void {
+    progress.hidden = true;
+    status.textContent = '';
   }
 
   provSel.addEventListener('change', refresh);
@@ -187,7 +265,7 @@ export function mountAiTool(ctx: AiClientContext): void {
     const done = (): void => {
       copyBtn.textContent = 'Copied ✓';
       window.setTimeout(() => {
-        copyBtn.textContent = 'Copy';
+        copyBtn.textContent = '⧉ Copy reply';
       }, 1500);
     };
     if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
@@ -213,16 +291,16 @@ export function mountAiTool(ctx: AiClientContext): void {
     done();
   }
 
-  gen.addEventListener('click', () => {
+  genBtn.addEventListener('click', () => {
     void run();
   });
 
   async function run(): Promise<void> {
     errBox.hidden = true;
-    const values: Record<string, string> = {};
-    for (const f of FIELDS) values[f.id] = controls[f.id].value.trim();
+    resBox.hidden = true;
+    const message = msgArea.value.trim();
 
-    const v = validateInputs(values);
+    const v = validateInputs({ message });
     if (!v.ok) {
       showError(v.errors.join(' '));
       return;
@@ -235,7 +313,7 @@ export function mountAiTool(ctx: AiClientContext): void {
       return;
     }
 
-    const prompt = buildPrompts(values);
+    const prompt = buildPrompts({ message });
     let req;
     try {
       req = buildRequest(p, key ?? '', prompt);
@@ -244,9 +322,10 @@ export function mountAiTool(ctx: AiClientContext): void {
       return;
     }
 
-    gen.disabled = true;
-    const originalLabel = gen.textContent;
-    gen.textContent = 'Generating…';
+    genBtn.disabled = true;
+    const originalLabel = genBtn.textContent;
+    genBtn.textContent = 'Working…';
+    showProgress('Asking ' + providerName(p) + '…');
     try {
       const ctrl = new AbortController();
       const timer = window.setTimeout(() => ctrl.abort(), 60000);
@@ -280,11 +359,12 @@ export function mountAiTool(ctx: AiClientContext): void {
         showError(out.message ?? 'The provider returned an empty response.');
         return;
       }
+      hideProgress();
       showResult(out.data.text);
     } catch (err) {
       showError(humanizeFetchError(err, providerName(p)));
     } finally {
-      gen.textContent = originalLabel;
+      genBtn.textContent = originalLabel;
       refresh();
     }
   }

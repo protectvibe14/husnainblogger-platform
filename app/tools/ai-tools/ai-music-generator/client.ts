@@ -1,12 +1,10 @@
 /**
- * AI Music Generator — browser client (Lane D, custom Suno-compatible API).
+ * AI Music Generator — browser client (Lane D, custom Suno-compatible API, redesigned).
  *
- * The 'custom-music-api' provider is NOT in the shared providers registry,
- * so this client builds its own key card with setKey/getKey/clearKey/
- * onKeyChange ('custom-music-api') plus the base URL in
- * 'hb-music-endpoint' (localStorage). Flow: key card → prompt +
- * instrumental → Generate → poll record-info (backoff + Cancel, 10-min
- * cap) → two audio players + Download MP3 → errors.
+ * Flow: gradient header -> key card (base URL + key, stay in browser) ->
+ * prompt + instrumental -> Generate -> progress + status -> poll
+ * record-info (backoff + Cancel, 10-min cap) -> two track cards with audio
+ * players + Download MP3 -> errors.
  * Keys are never logged; user text via textContent.
  */
 
@@ -71,94 +69,214 @@ function clearEndpoint(): void {
   }
 }
 
-export function mountAiTool(ctx: AiClientContext): () => void {
+export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = "";
-  const wrap = el("div", "hb-ai-tool");
+
+  // --- styles -------------------------------------------------------------
+  const style = document.createElement("style");
+  style.textContent = `
+    .hb-mu-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-mu-header {
+      background: linear-gradient(135deg, #a21caf 0%, #ec4899 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-mu-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-mu-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-mu-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-mu-card h3 { margin: 0 0 8px; font-size: 16px; font-weight: 700; color: #1e293b; }
+    .hb-mu-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin: 16px 0 8px;
+    }
+    .hb-mu-label:first-of-type { margin-top: 0; }
+    .hb-mu-input, .hb-mu-textarea {
+      width: 100%; padding: 12px 14px; font-size: 15px;
+      border: 2px solid #e2e8f0; border-radius: 10px;
+      box-sizing: border-box; font-family: inherit; background: #fff; color: #0f172a;
+    }
+    .hb-mu-textarea { min-height: 90px; resize: vertical; }
+    .hb-mu-input:focus, .hb-mu-textarea:focus { outline: none; border-color: #a21caf; }
+    .hb-mu-hint { font-size: 13px; color: #64748b; margin: 8px 0 0; }
+    .hb-mu-intro { font-size: 13px; color: #64748b; margin: 0 0 6px; line-height: 1.5; }
+    .hb-mu-count { font-size: 12px; color: #94a3b8; text-align: right; margin: 4px 0 0; }
+    .hb-mu-check { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: 15px; color: #1e293b; cursor: pointer; }
+    .hb-mu-check input { width: 18px; height: 18px; accent-color: #a21caf; }
+    .hb-mu-row { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+    .hb-mu-btn {
+      padding: 12px 26px; font-size: 15px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #a21caf 0%, #ec4899 100%);
+      border: none; border-radius: 10px; cursor: pointer;
+    }
+    .hb-mu-btn:hover { opacity: .92; }
+    .hb-mu-btn--ghost {
+      padding: 12px 26px; font-size: 15px; font-weight: 700;
+      background: #fff; color: #a21caf; border: 2px solid #a21caf;
+      border-radius: 10px; cursor: pointer;
+    }
+    .hb-mu-btn--ghost:hover { background: #fdf4ff; }
+    .hb-mu-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #a21caf 0%, #ec4899 100%);
+      border: none; border-radius: 12px; cursor: pointer; margin-top: 18px;
+    }
+    .hb-mu-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-mu-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-mu-note { font-size: 13px; color: #059669; font-weight: 600; margin: 10px 0 0; min-height: 18px; }
+    .hb-mu-progress { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+    .hb-mu-progress > div {
+      height: 100%; width: 30%; border-radius: 5px;
+      background: linear-gradient(90deg, #a21caf, #ec4899);
+      animation: hb-mu-slide 1.1s ease-in-out infinite;
+    }
+    @keyframes hb-mu-slide { 0% { margin-left: -30%; } 100% { margin-left: 100%; } }
+    .hb-mu-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-mu-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-mu-result { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; }
+    .hb-mu-result-title { font-size: 16px; font-weight: 700; color: #1e293b; margin: 0 0 14px; }
+    .hb-mu-track {
+      background: linear-gradient(135deg, #fdf4ff 0%, #fce7f3 100%);
+      border: 1px solid #f5d0fe; border-radius: 12px; padding: 16px;
+      margin-bottom: 12px;
+    }
+    .hb-mu-track:last-child { margin-bottom: 0; }
+    .hb-mu-track-title { font-size: 15px; font-weight: 700; color: #1e293b; margin: 0 0 10px; }
+    .hb-mu-track audio { width: 100%; margin-bottom: 10px; }
+    @media (max-width: 640px) {
+      .hb-mu-header { padding: 18px; }
+      .hb-mu-card { padding: 16px; }
+      .hb-mu-generate { font-size: 16px; }
+    }
+  `;
+  root.appendChild(style);
+
+  const wrap = el("div", "hb-mu-wrap");
   root.appendChild(wrap);
+
+  // --- header ---------------------------------------------------------------
+  const header = el("div", "hb-mu-header");
+  header.appendChild(el("h3", "", "🎵 AI Music Generator"));
+  header.appendChild(
+    el("p", "", "Describe the vibe — get two songs. Powered by a Suno-compatible API with your own key."),
+  );
+  wrap.appendChild(header);
 
   let pollTimer: number | null = null;
   let pollStart = 0;
   let cancelled = false;
 
   // --- custom key card (provider not in registry) ---
-  const vaultBox = el("div", "hb-ai-section hb-ai-vault");
-  wrap.appendChild(vaultBox);
-  vaultBox.appendChild(el("h3", "hb-ai-vault__title", "Your compatible-API key"));
-  vaultBox.appendChild(
+  const vaultCard = el("div", "hb-mu-card");
+  wrap.appendChild(vaultCard);
+  vaultCard.appendChild(el("h3", "", "🔑 Your compatible-API key"));
+  vaultCard.appendChild(
     el(
       "p",
-      "hb-ai-vault__intro",
+      "hb-mu-intro",
       "Suno offers no official API — this tool uses the widely-used third-party Suno-compatible convention. Paste your provider's base URL + key; both stay in your browser only.",
     ),
   );
 
-  vaultBox.appendChild(el("label", "hb-ai-label", "API base URL"));
-  const baseInput = el("input", "hb-ai-input") as HTMLInputElement;
+  vaultCard.appendChild(el("label", "hb-mu-label", "API base URL"));
+  const baseInput = el("input", "hb-mu-input") as HTMLInputElement;
   baseInput.type = "url";
   baseInput.placeholder = "e.g. https://api.sunoapi.org";
   baseInput.value = getEndpoint();
   baseInput.setAttribute("aria-label", "Compatible API base URL");
-  vaultBox.appendChild(baseInput);
+  vaultCard.appendChild(baseInput);
 
-  vaultBox.appendChild(el("label", "hb-ai-label", "API key"));
-  const keyInput = el("input", "hb-ai-input") as HTMLInputElement;
+  vaultCard.appendChild(el("label", "hb-mu-label", "API key"));
+  const keyInput = el("input", "hb-mu-input") as HTMLInputElement;
   keyInput.type = "password";
   keyInput.placeholder = "Paste your API key";
   keyInput.autocomplete = "off";
   keyInput.setAttribute("aria-label", "API key");
   if (getKey(PROVIDER_ID)) keyInput.placeholder = "Key saved ✓ — paste to replace";
-  vaultBox.appendChild(keyInput);
+  vaultCard.appendChild(keyInput);
 
-  const vaultRow = el("div", "hb-ai-actions");
-  const saveBtn = el("button", "hb-btn hb-btn--primary", "Save key");
+  const vaultRow = el("div", "hb-mu-row");
+  const saveBtn = el("button", "hb-mu-btn", "Save key");
   saveBtn.type = "button";
-  const clearBtn = el("button", "hb-btn hb-btn--ghost", "Clear");
+  const clearBtn = el("button", "hb-mu-btn--ghost", "Clear");
   clearBtn.type = "button";
   vaultRow.appendChild(saveBtn);
   vaultRow.appendChild(clearBtn);
-  vaultBox.appendChild(vaultRow);
-  const vaultMsg = el("p", "hb-ai-note");
-  vaultBox.appendChild(vaultMsg);
+  vaultCard.appendChild(vaultRow);
+  const vaultMsg = el("p", "hb-mu-note");
+  vaultCard.appendChild(vaultMsg);
 
-  const noKeyBox = el("div", "hb-ai-section hb-ai-nokey");
+  const noKeyBox = el("div", "hb-mu-card");
   wrap.appendChild(noKeyBox);
 
   // --- generation form ---
-  const form = el("div", "hb-ai-section");
-  wrap.appendChild(form);
-  form.appendChild(el("label", "hb-ai-label", "Describe the music"));
-  const promptInput = el("textarea", "hb-ai-input hb-ai-textarea") as HTMLTextAreaElement;
+  const formCard = el("div", "hb-mu-card");
+  wrap.appendChild(formCard);
+  const promptLabel = el("label", "hb-mu-label", "Describe the music *");
+  promptLabel.htmlFor = "hb-mu-prompt";
+  formCard.appendChild(promptLabel);
+  const promptInput = el("textarea", "hb-mu-textarea") as HTMLTextAreaElement;
+  promptInput.id = "hb-mu-prompt";
   promptInput.rows = 3;
   promptInput.placeholder = "e.g. An upbeat pop song about summer mornings, acoustic guitar and warm vocals";
   promptInput.maxLength = 500;
   promptInput.setAttribute("aria-label", "Describe the music");
-  form.appendChild(promptInput);
+  formCard.appendChild(promptInput);
+  const count = el("p", "hb-mu-count", "0 / 500 characters");
+  formCard.appendChild(count);
+  promptInput.addEventListener("input", () => {
+    const n = promptInput.value.trim().length;
+    count.textContent = n.toLocaleString("en-US") + " / 500 characters";
+  });
+  const sampleBtn = el("button", "hb-mu-btn--ghost", "✨ Try a sample");
+  sampleBtn.type = "button";
+  sampleBtn.style.marginTop = "8px";
+  sampleBtn.addEventListener("click", () => {
+    promptInput.value = "An upbeat pop song about summer mornings, acoustic guitar and warm vocals";
+    promptInput.dispatchEvent(new Event("input"));
+    errorBox.hidden = true;
+  });
+  formCard.appendChild(sampleBtn);
 
-  const instWrap = el("label", "hb-ai-consent");
-  const instInput = el("input", "") as HTMLInputElement;
+  const instWrap = el("label", "hb-mu-check");
+  const instInput = document.createElement("input");
   instInput.type = "checkbox";
   instWrap.appendChild(instInput);
   instWrap.appendChild(el("span", "", "Instrumental (no vocals)"));
-  form.appendChild(instWrap);
+  formCard.appendChild(instWrap);
 
-  const formRow = el("div", "hb-ai-actions");
-  const genBtn = el("button", "hb-btn hb-btn--primary", "Generate");
+  const formRow = el("div", "hb-mu-row");
+  const genBtn = el("button", "hb-mu-btn", "🎵 Generate");
   genBtn.type = "button";
-  const cancelBtn = el("button", "hb-btn hb-btn--ghost", "Cancel");
+  const cancelBtn = el("button", "hb-mu-btn--ghost", "Cancel");
   cancelBtn.type = "button";
   cancelBtn.hidden = true;
   formRow.appendChild(genBtn);
   formRow.appendChild(cancelBtn);
-  form.appendChild(formRow);
+  formCard.appendChild(formRow);
 
-  const statusBox = el("div", "hb-ai-section hb-ai-status");
+  // --- progress + status + error -----------------------------------------------------
+  const progress = el("div", "hb-mu-progress");
+  progress.hidden = true;
+  progress.setAttribute("role", "progressbar");
+  progress.appendChild(el("div", ""));
+  wrap.appendChild(progress);
+
+  const statusBox = el("p", "hb-mu-status");
   statusBox.setAttribute("role", "status");
   wrap.appendChild(statusBox);
-  const errorBox = el("div", "hb-ai-section hb-ai-error");
+
+  const errorBox = el("div", "hb-mu-error");
   errorBox.hidden = true;
+  errorBox.setAttribute("role", "alert");
   wrap.appendChild(errorBox);
-  const resultBox = el("div", "hb-ai-section hb-ai-result");
+
+  const resultBox = el("div", "hb-mu-result");
   resultBox.hidden = true;
   wrap.appendChild(resultBox);
 
@@ -166,42 +284,46 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     statusBox.textContent = text;
   }
   function setError(text: string | null): void {
+    progress.hidden = true;
     errorBox.hidden = text === null;
     errorBox.textContent = text ?? "";
   }
   function setBusy(b: boolean): void {
     genBtn.disabled = b;
     cancelBtn.hidden = !b;
+    progress.hidden = !b;
   }
 
   function showTracks(tracks: MusicTrack[]): void {
     resultBox.innerHTML = "";
     resultBox.hidden = false;
-    resultBox.appendChild(el("h3", "hb-ai-result__title", "Your songs"));
+    resultBox.appendChild(el("p", "hb-mu-result-title", "🎶 Your songs"));
     tracks.forEach((t, i) => {
-      const card = el("div", "hb-ai-media__item");
-      card.appendChild(el("p", "hb-ai-media__caption", t.title || `Variation ${i + 1}`));
-      const audio = el("audio", "hb-ai-result__audio") as HTMLAudioElement;
+      const card = el("div", "hb-mu-track");
+      card.appendChild(el("p", "hb-mu-track-title", t.title || "Variation " + (i + 1)));
+      const audio = document.createElement("audio");
       audio.src = t.audioUrl;
       audio.controls = true;
       audio.preload = "metadata";
       card.appendChild(audio);
-      const row = el("div", "hb-ai-actions");
-      const dl = el("button", "hb-btn hb-btn--secondary", "Download MP3");
+      const row = el("div", "hb-mu-row");
+      row.style.marginTop = "0";
+      const dl = el("button", "hb-mu-btn", "⬇ Download MP3");
       dl.type = "button";
       dl.addEventListener("click", () => {
-        downloadAudio(t.audioUrl, `song-${i + 1}-${new Date().toISOString().slice(0, 10)}.mp3`);
+        downloadAudio(t.audioUrl, "song-" + (i + 1) + "-" + new Date().toISOString().slice(0, 10) + ".mp3");
       });
       row.appendChild(dl);
       card.appendChild(row);
       resultBox.appendChild(card);
     });
+    resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   async function downloadAudio(url: string, filename: string): Promise<void> {
     try {
       const res = await fetch(url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) throw new Error("HTTP " + res.status);
       const blob = await res.blob();
       const obj = URL.createObjectURL(blob);
       const a = el("a", "");
@@ -224,10 +346,10 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     }
     noKeyBox.hidden = false;
     const cfg = ctx.config;
-    noKeyBox.appendChild(el("h3", "hb-ai-nokey__title", cfg.noKeyHeadline ?? "Save your key to unlock"));
-    noKeyBox.appendChild(el("p", "hb-ai-nokey__body", cfg.noKeyBody ?? "Save your key above first."));
+    noKeyBox.appendChild(el("h3", "", cfg.noKeyHeadline ?? "Save your key to unlock"));
+    noKeyBox.appendChild(el("p", "hb-mu-hint", cfg.noKeyBody ?? "Save your key above first."));
     noKeyBox.appendChild(
-      el("p", "hb-ai-nokey__hint", "Save → Generate → two songs in a few minutes → download MP3."),
+      el("p", "hb-mu-hint", "Save → Generate → two songs in a few minutes → download MP3."),
     );
   }
 
@@ -238,16 +360,19 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     const key = keyInput.value.trim();
     if (!base || !/^https?:\/\/.+\..+/.test(base)) {
       vaultMsg.textContent = "Paste your provider's base URL first (must start with http:// or https://).";
+      vaultMsg.style.color = "#b91c1c";
       return;
     }
     if (!key && !getKey(PROVIDER_ID)) {
       vaultMsg.textContent = "Paste your API key, then press Save key.";
+      vaultMsg.style.color = "#b91c1c";
       return;
     }
     setEndpoint(base);
     if (key) setKey(PROVIDER_ID, key);
     keyInput.value = "";
     keyInput.placeholder = "Key saved ✓ — paste to replace";
+    vaultMsg.style.color = "#059669";
     vaultMsg.textContent = "Saved ✓ — your key and base URL stay in this browser only.";
     renderNoKey();
   });
@@ -256,6 +381,7 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     clearEndpoint();
     baseInput.value = "";
     keyInput.placeholder = "Paste your API key";
+    vaultMsg.style.color = "#64748b";
     vaultMsg.textContent = "Cleared.";
     renderNoKey();
   });
@@ -267,6 +393,7 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     }
     setBusy(false);
     cancelBtn.hidden = true;
+    progress.hidden = true;
     setStatus("");
   }
 
@@ -367,14 +494,9 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     setStatus("Cancelled.");
   });
 
-  const unsubscribe = onKeyChange(() => {
+  onKeyChange(() => {
     renderNoKey();
   });
 
   renderNoKey();
-  return () => {
-    cancelled = true;
-    stopPoll();
-    unsubscribe();
-  };
 }

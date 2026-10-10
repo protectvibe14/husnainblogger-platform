@@ -1,9 +1,10 @@
 /**
- * Text-to-Video Generator — browser client (Lane D, fal.ai only).
+ * Text-to-Video Generator — browser client (Lane D, fal.ai only, redesigned).
  *
- * UI order: key-vault card → tool form → Generate → live poll status →
- * <video controls> + Download → errors. No-key state explains what
- * unlocking needs. Keys are never logged; user text via textContent.
+ * UI order: gradient header -> key-vault card -> styled tool form ->
+ * Generate -> live poll progress -> <video controls> result card +
+ * Download -> errors. No-key state explains what unlocking needs.
+ * Keys are never logged; user text via textContent.
  */
 
 import {
@@ -131,36 +132,147 @@ async function downloadUrl(url: string, filename: string): Promise<void> {
 export function mountAiTool(ctx: AiClientContext): () => void {
   const root = ctx.mountEl;
   root.innerHTML = "";
-  const wrap = el("div", "hb-ai-tool");
+
+  // --- styles ---------------------------------------------------------------
+  const style = document.createElement("style");
+  style.textContent = `
+    .hb-t2v-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-t2v-header {
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-t2v-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-t2v-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-t2v-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-t2v-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-t2v-textarea, .hb-t2v-select {
+      width: 100%; padding: 12px 14px; font-size: 15px; font-family: inherit;
+      border: 2px solid #e2e8f0; border-radius: 10px; background: #fff;
+      box-sizing: border-box; color: #1e293b;
+    }
+    .hb-t2v-textarea:focus, .hb-t2v-select:focus { outline: none; border-color: #ec4899; }
+    .hb-t2v-textarea { min-height: 104px; resize: vertical; }
+    .hb-t2v-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    @media (max-width: 640px) { .hb-t2v-grid { grid-template-columns: 1fr; } }
+    .hb-t2v-sample {
+      font-size: 13px; color: #db2777; background: none; border: none;
+      cursor: pointer; text-decoration: underline; padding: 0; margin-top: 8px;
+    }
+    .hb-t2v-actions { display: flex; gap: 12px; margin-top: 18px; }
+    .hb-t2v-generate {
+      flex: 1; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-t2v-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-t2v-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-t2v-cancel {
+      padding: 16px 24px; font-size: 16px; font-weight: 700; color: #b91c1c;
+      background: #fef2f2; border: 2px solid #fecaca; border-radius: 12px; cursor: pointer;
+    }
+    .hb-t2v-cancel:hover { background: #fee2e2; }
+    .hb-t2v-progress { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+    .hb-t2v-progress > div {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, #ec4899, #8b5cf6);
+      transition: width .3s;
+    }
+    .hb-t2v-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-t2v-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-t2v-result {
+      background: linear-gradient(135deg, #fdf4ff 0%, #faf5ff 100%);
+      border: 1px solid #e9d5ff; border-radius: 14px; padding: 20px;
+    }
+    .hb-t2v-result h3 { margin: 0 0 12px; font-size: 16px; font-weight: 700; color: #6d28d9; }
+    .hb-t2v-result video {
+      width: 100%; border-radius: 10px; background: #0f172a;
+    }
+    .hb-t2v-result-actions { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+    .hb-t2v-dl {
+      padding: 12px 28px; font-size: 16px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border: none; border-radius: 10px; cursor: pointer;
+    }
+    .hb-t2v-dl:hover { opacity: .92; }
+    .hb-t2v-open {
+      display: inline-block; padding: 12px 24px; font-size: 15px; font-weight: 700;
+      color: #6d28d9; background: #f5f3ff; border: 2px solid #ddd6fe;
+      border-radius: 10px; text-decoration: none;
+    }
+    .hb-t2v-open:hover { background: #ede9fe; }
+    .hb-t2v-nokey h3 { margin: 0 0 8px; font-size: 16px; color: #1e293b; }
+    .hb-t2v-nokey p { font-size: 14px; color: #475569; margin: 0 0 8px; }
+    .hb-t2v-getkey {
+      display: inline-block; padding: 10px 22px; font-size: 14px; font-weight: 700;
+      color: #fff; background: #0284c7; border-radius: 10px; text-decoration: none;
+    }
+    .hb-t2v-getkey:hover { background: #0369a1; }
+    .hb-t2v-cost { font-size: 13px; color: #64748b; margin: 0; text-align: center; }
+    @media (max-width: 640px) { .hb-t2v-header { padding: 18px; } }
+  `;
+  root.appendChild(style);
+
+  const wrap = el("div", "hb-t2v-wrap");
   root.appendChild(wrap);
+
+  // --- header -----------------------------------------------------------------
+  const header = el("div", "hb-t2v-header");
+  header.appendChild(el("h3", "", "🎬 Text-to-Video Generator"));
+  header.appendChild(
+    el("p", "", "Describe the shot — get an MP4 video clip back, playable right here and downloadable."),
+  );
+  wrap.appendChild(header);
 
   let pollController: AbortController | null = null;
 
-  const vaultBox = el("div", "hb-ai-section");
-  wrap.appendChild(vaultBox);
+  // --- key vault --------------------------------------------------------------
+  const vaultCard = el("div", "hb-t2v-card");
+  vaultCard.appendChild(el("label", "hb-t2v-label", "🔑 API key"));
+  const vaultBox = el("div", "");
+  vaultCard.appendChild(vaultBox);
   renderKeyVault(vaultBox, {
     providers: ["falai"],
     intro: "Video generation bills YOUR fal.ai account per second — the priciest category. Paste a key, press Save, then Generate.",
   });
+  wrap.appendChild(vaultCard);
 
-  const noKeyBox = el("div", "hb-ai-section hb-ai-nokey");
+  const noKeyBox = el("div", "hb-t2v-card hb-t2v-nokey");
   wrap.appendChild(noKeyBox);
 
-  const formBox = el("div", "hb-ai-section");
-  wrap.appendChild(formBox);
-
-  const promptLabel = el("label", "hb-ai-label", "Video prompt");
-  const promptInput = el("textarea", "hb-ai-input hb-ai-textarea") as HTMLTextAreaElement;
+  // --- form ---------------------------------------------------------------------
+  const formCard = el("div", "hb-t2v-card");
+  const promptLabel = el("label", "hb-t2v-label", "🎥 Video prompt");
+  promptLabel.htmlFor = "hb-t2v-prompt";
+  formCard.appendChild(promptLabel);
+  const promptInput = el("textarea", "hb-t2v-textarea") as HTMLTextAreaElement;
+  promptInput.id = "hb-t2v-prompt";
   promptInput.rows = 4;
   promptInput.placeholder = "e.g. slow aerial shot over a misty pine forest at sunrise, cinematic";
   promptInput.setAttribute("aria-label", "Video prompt");
-  formBox.appendChild(promptLabel);
-  formBox.appendChild(promptInput);
+  formCard.appendChild(promptInput);
+  const sampleBtn = el("button", "hb-t2v-sample", "✨ Try a sample prompt") as HTMLButtonElement;
+  sampleBtn.addEventListener("click", () => {
+    promptInput.value =
+      "Slow aerial shot over a misty pine forest at sunrise, golden light breaking through the fog, cinematic drone move";
+  });
+  formCard.appendChild(sampleBtn);
 
-  const row2 = el("div", "hb-ai-row");
-  const durWrap = el("div", "hb-ai-field");
-  durWrap.appendChild(el("label", "hb-ai-label", "Duration"));
-  const durInput = el("select", "hb-ai-input hb-ai-select") as HTMLSelectElement;
+  const grid = el("div", "hb-t2v-grid");
+  const durWrap = el("div", "");
+  const durLabel = el("label", "hb-t2v-label", "⏱ Duration");
+  durLabel.htmlFor = "hb-t2v-dur";
+  durWrap.appendChild(durLabel);
+  const durInput = el("select", "hb-t2v-select") as HTMLSelectElement;
+  durInput.id = "hb-t2v-dur";
   for (const d of VIDEO_DURATIONS) {
     const opt = el("option", "", d) as HTMLOptionElement;
     opt.value = d;
@@ -168,9 +280,14 @@ export function mountAiTool(ctx: AiClientContext): () => void {
   }
   durInput.value = "6s";
   durWrap.appendChild(durInput);
-  const aspWrap = el("div", "hb-ai-field");
-  aspWrap.appendChild(el("label", "hb-ai-label", "Aspect ratio"));
-  const aspInput = el("select", "hb-ai-input hb-ai-select") as HTMLSelectElement;
+  grid.appendChild(durWrap);
+
+  const aspWrap = el("div", "");
+  const aspLabel = el("label", "hb-t2v-label", "🖼 Aspect ratio");
+  aspLabel.htmlFor = "hb-t2v-asp";
+  aspWrap.appendChild(aspLabel);
+  const aspInput = el("select", "hb-t2v-select") as HTMLSelectElement;
+  aspInput.id = "hb-t2v-asp";
   for (const a of VIDEO_ASPECTS) {
     const opt = el("option", "", a) as HTMLOptionElement;
     opt.value = a;
@@ -178,29 +295,47 @@ export function mountAiTool(ctx: AiClientContext): () => void {
   }
   aspInput.value = "16:9";
   aspWrap.appendChild(aspInput);
-  row2.appendChild(durWrap);
-  row2.appendChild(aspWrap);
-  formBox.appendChild(row2);
+  grid.appendChild(aspWrap);
+  formCard.appendChild(grid);
 
-  const actions = el("div", "hb-ai-actions");
-  const genBtn = el("button", "hb-btn hb-btn--primary", "Generate video");
+  const actions = el("div", "hb-t2v-actions");
+  const genBtn = el("button", "hb-t2v-generate", "🎬 Generate video") as HTMLButtonElement;
   genBtn.type = "button";
-  const cancelBtn = el("button", "hb-btn hb-btn--ghost", "Cancel");
+  const cancelBtn = el("button", "hb-t2v-cancel", "Cancel") as HTMLButtonElement;
   cancelBtn.type = "button";
   cancelBtn.hidden = true;
   actions.appendChild(genBtn);
   actions.appendChild(cancelBtn);
-  formBox.appendChild(actions);
+  formCard.appendChild(actions);
+  wrap.appendChild(formCard);
 
-  const statusBox = el("div", "hb-ai-section hb-ai-status");
+  // --- progress -------------------------------------------------------------------
+  const progress = el("div", "hb-t2v-progress");
+  progress.hidden = true;
+  progress.setAttribute("role", "progressbar");
+  const progressBar = el("div", "");
+  progress.appendChild(progressBar);
+  wrap.appendChild(progress);
+
+  const statusBox = el("p", "hb-t2v-status");
   statusBox.setAttribute("role", "status");
   wrap.appendChild(statusBox);
-  const errorBox = el("div", "hb-ai-section hb-ai-error");
+  const errorBox = el("div", "hb-t2v-error");
   errorBox.hidden = true;
+  errorBox.setAttribute("role", "alert");
   wrap.appendChild(errorBox);
-  const resultBox = el("div", "hb-ai-section hb-ai-result");
+
+  // --- result -----------------------------------------------------------------------
+  const resultBox = el("div", "hb-t2v-result");
   resultBox.hidden = true;
   wrap.appendChild(resultBox);
+
+  const costNote = el(
+    "p",
+    "hb-t2v-cost",
+    "A 6–8 second clip can cost over a dollar on fal.ai — check your dashboard before generating in volume.",
+  );
+  wrap.appendChild(costNote);
 
   function setStatus(text: string): void {
     statusBox.textContent = text;
@@ -209,26 +344,37 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     errorBox.hidden = text === null;
     errorBox.textContent = text ?? "";
   }
+  function setProgress(fraction: number, msg: string): void {
+    progress.hidden = false;
+    const pct = Math.max(0, Math.min(100, Math.round(fraction * 100)));
+    progressBar.style.width = pct + "%";
+    setStatus(msg);
+  }
+  function hideProgress(): void {
+    progress.hidden = true;
+    progressBar.style.width = "0%";
+  }
   function setBusy(busy: boolean): void {
     genBtn.disabled = busy;
     promptInput.disabled = busy;
     durInput.disabled = busy;
     aspInput.disabled = busy;
     cancelBtn.hidden = !busy;
+    if (busy) setProgress(0.05, "Submitting…");
   }
 
   function showResult(videoUrl: string): void {
     resultBox.innerHTML = "";
     resultBox.hidden = false;
-    resultBox.appendChild(el("h3", "hb-ai-result__title", "Your video"));
-    const video = el("video", "hb-ai-result__video") as HTMLVideoElement;
+    resultBox.appendChild(el("h3", "", "🎉 Your video is ready"));
+    const video = el("video", "") as HTMLVideoElement;
     video.src = videoUrl;
     video.controls = true;
     video.preload = "metadata";
     video.setAttribute("playsinline", "");
     resultBox.appendChild(video);
-    const row = el("div", "hb-ai-actions");
-    const dl = el("button", "hb-btn hb-btn--primary", "Download MP4");
+    const row = el("div", "hb-t2v-result-actions");
+    const dl = el("button", "hb-t2v-dl", "⬇ Download MP4") as HTMLButtonElement;
     dl.type = "button";
     dl.addEventListener("click", () => {
       const stamp = new Date().toISOString().slice(0, 10);
@@ -236,13 +382,14 @@ export function mountAiTool(ctx: AiClientContext): () => void {
         setError("Download failed — try playing the video and using your browser's save option.");
       });
     });
-    const open = el("a", "hb-btn hb-btn--ghost", "Open video");
+    const open = el("a", "hb-t2v-open", "Open video") as HTMLAnchorElement;
     open.href = videoUrl;
     open.target = "_blank";
     open.rel = "noopener noreferrer";
     row.appendChild(dl);
     row.appendChild(open);
     resultBox.appendChild(row);
+    resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   function renderNoKey(): void {
@@ -254,18 +401,18 @@ export function mountAiTool(ctx: AiClientContext): () => void {
     }
     noKeyBox.hidden = false;
     const cfg = ctx.config;
-    noKeyBox.appendChild(el("h3", "hb-ai-nokey__title", cfg.noKeyHeadline ?? "Save an API key to unlock"));
-    noKeyBox.appendChild(el("p", "hb-ai-nokey__body", cfg.noKeyBody ?? "Paste a key above, press Save, then Generate."));
+    noKeyBox.appendChild(el("h3", "", cfg.noKeyHeadline ?? "Save an API key to unlock"));
+    noKeyBox.appendChild(el("p", "", cfg.noKeyBody ?? "Paste a key above, press Save, then Generate."));
     if (info) {
-      noKeyBox.appendChild(el("p", "hb-ai-nokey__cost", `${info.freeTier} ${info.costNote}`));
-      const link = el("a", "hb-btn hb-btn--secondary", `Get a ${info.name} key`);
+      noKeyBox.appendChild(el("p", "", `${info.freeTier} ${info.costNote}`));
+      const link = el("a", "hb-t2v-getkey", `Get a ${info.name} key`);
       link.href = info.keyUrl;
       link.target = "_blank";
       link.rel = "noopener noreferrer nofollow";
       noKeyBox.appendChild(link);
     }
     noKeyBox.appendChild(
-      el("p", "hb-ai-nokey__hint", "Paste → Save → Generate works immediately. Nothing else to configure."),
+      el("p", "", "Paste → Save → Generate works immediately. Nothing else to configure."),
     );
   }
 
@@ -313,10 +460,12 @@ export function mountAiTool(ctx: AiClientContext): () => void {
           throw new Error(mapped ?? out.message ?? "fal.ai rejected the request.");
         }
         const requestId = String((out.data as Record<string, unknown>)["requestId"] ?? "");
-        const url = await pollVideoUrl({ key, requestId, signal, onStatus: setStatus });
+        const url = await pollVideoUrl({ key, requestId, signal, onStatus: (m) => setProgress(0.3, m) });
+        hideProgress();
         setStatus("");
         showResult(url);
       } catch (err) {
+        hideProgress();
         if (signal.aborted || (err as Error)?.message === "cancelled") {
           setStatus("Cancelled.");
         } else if ((err as Error)?.message === "timeout") {

@@ -1,9 +1,10 @@
 /**
- * client.ts — Product Photo White Background Maker (tool-513), Lane A.
+ * client.ts — Product Photo White Background Maker (redesigned, tool-513), Lane A.
  *
- * Flow: product photo upload + JPG/PNG select -> RMBG-1.4 foreground mask ->
- * cutout composited over a pure-white 2000×2000 px canvas (5% margin) ->
- * preview + download. All on-device. Honest errors only.
+ * Flow: drag-drop product photo upload with preview + JPG/PNG select ->
+ * RMBG-1.4 foreground mask -> cutout composited over a pure-white
+ * 2000×2000 px canvas (5% margin) -> preview + download. All on-device.
+ * Honest errors only.
  */
 import type { AiClientContext } from '../../../src/lib/ai/types.ts';
 import type { ModelLoadProgress } from '../../../src/lib/ai/model-loader.ts';
@@ -13,6 +14,7 @@ import {
   getModelConfig,
   getOutputFormat,
   getAllowedMimes,
+  getDisclosures,
   MAX_FILE_MB,
   OUTPUT_PX,
 } from './logic.ts';
@@ -97,74 +99,153 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   root.innerHTML = '';
   const cfg = getModelConfig();
 
-  // --- upload -------------------------------------------------------------
-  const fileLabel = el('label', 'hb-ai-label', 'Product photo *');
-  fileLabel.htmlFor = 'hb-ai-prod-file';
-  root.appendChild(fileLabel);
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-pwb-wrap { display: flex; flex-direction: column; gap: 16px; }
+    .hb-pwb-header {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-pwb-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-pwb-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-pwb-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px;
+    }
+    .hb-pwb-label { display: block; font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+    .hb-pwb-drop {
+      border: 2px dashed #9aa4b2; border-radius: 14px; padding: 36px 20px;
+      text-align: center; cursor: pointer; transition: all .2s ease; background: #f8fafc;
+    }
+    .hb-pwb-drop:hover, .hb-pwb-drop.hb-pwb-dragover { border-color: #059669; background: #ecfdf5; }
+    .hb-pwb-drop.hb-pwb-has-image { padding: 12px; }
+    .hb-pwb-icon { font-size: 40px; margin-bottom: 8px; }
+    .hb-pwb-title { font-size: 17px; font-weight: 600; color: #1e293b; margin: 0 0 4px; }
+    .hb-pwb-sub { font-size: 13px; color: #64748b; margin: 0; }
+    .hb-pwb-preview { max-width: 100%; max-height: 240px; border-radius: 10px; margin: 0 auto; display: block; }
+    .hb-pwb-filename { font-size: 13px; color: #475569; margin-top: 8px; word-break: break-all; }
+    .hb-pwb-change { font-size: 13px; color: #059669; background: none; border: none; cursor: pointer; text-decoration: underline; margin-top: 4px; }
+    .hb-pwb-select {
+      width: 100%; padding: 12px; font-size: 15px; border: 2px solid #e2e8f0;
+      border-radius: 10px; background: #fff; box-sizing: border-box; color: #1e293b;
+    }
+    .hb-pwb-select:focus { outline: none; border-color: #059669; }
+    .hb-pwb-hint { font-size: 13px; color: #64748b; margin: 8px 0 0; }
+    .hb-pwb-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-pwb-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-pwb-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-pwb-progress { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+    .hb-pwb-progress > div { height: 100%; background: linear-gradient(90deg, #059669, #047857); width: 0%; transition: width .3s; }
+    .hb-pwb-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-pwb-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-pwb-result {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+      border-radius: 14px; padding: 20px; text-align: center; border: 1px solid #a7f3d0;
+    }
+    .hb-pwb-result img {
+      max-width: 100%; max-height: 420px; border-radius: 10px;
+      border: 1px solid #e2e8f0; background: #fff; display: block; margin: 0 auto 14px;
+    }
+    .hb-pwb-dl {
+      display: inline-block; padding: 12px 28px; background: #059669; color: #fff;
+      border-radius: 10px; font-size: 16px; font-weight: 700; text-decoration: none;
+    }
+    .hb-pwb-dl:hover { background: #047857; }
+    .hb-pwb-note { font-size: 12px; color: #94a3b8; margin: 0; line-height: 1.6; }
+    @media (max-width: 640px) { .hb-pwb-header { padding: 18px; } }
+  `;
+  root.appendChild(style);
 
-  const drop = el('div', 'hb-ai-field');
+  const wrap = el('div', 'hb-pwb-wrap');
+  root.appendChild(wrap);
+
+  // --- header --------------------------------------------------------------------
+  const header = el('div', 'hb-pwb-header');
+  header.appendChild(el('h3', '', '🛍️ Product Photo White Background Maker'));
+  header.appendChild(el('p', '', 'Turn any product photo into a clean, marketplace-ready ' + OUTPUT_PX + '×' + OUTPUT_PX + ' white-background shot — on your device.'));
+  wrap.appendChild(header);
+
+  // --- upload ----------------------------------------------------------------------
+  const upCard = el('div', 'hb-pwb-card');
+  upCard.appendChild(el('label', 'hb-pwb-label', '📦 Your product photo'));
+  const drop = el('div', 'hb-pwb-drop');
   drop.setAttribute('role', 'button');
   drop.tabIndex = 0;
   drop.setAttribute('aria-label', 'Upload a product photo: drag and drop, or press Enter to browse');
-  drop.appendChild(el('p', 'hb-ai-status', 'Drag & drop a product photo here, or click to browse (JPG, PNG, WEBP, GIF — up to ' + MAX_FILE_MB + ' MB).'));
-  const fileName = el('p', 'hb-ai-status');
-  drop.appendChild(fileName);
-  const fileInput = el('input', 'hb-ai-input') as HTMLInputElement;
+  const icon = el('div', 'hb-pwb-icon', '📸');
+  const title = el('p', 'hb-pwb-title', 'Drop your product photo here');
+  const sub = el('p', 'hb-pwb-sub', 'or click to browse — JPG, PNG, WEBP, GIF up to ' + MAX_FILE_MB + ' MB');
+  drop.append(icon, title, sub);
+  upCard.appendChild(drop);
+  const fileInput = el('input', '') as HTMLInputElement;
   fileInput.type = 'file';
-  fileInput.id = 'hb-ai-prod-file';
   fileInput.accept = getAllowedMimes().join(',');
   fileInput.hidden = true;
-  drop.appendChild(fileInput);
-  root.appendChild(drop);
+  upCard.appendChild(fileInput);
+  upCard.appendChild(el('p', 'hb-pwb-hint', 'Tip: clear separation between product and background gives the cleanest cut-out.'));
+  wrap.appendChild(upCard);
 
-  const formatLabel = el('label', 'hb-ai-label', 'Output format');
-  formatLabel.htmlFor = 'hb-ai-prod-format';
-  root.appendChild(formatLabel);
-  const formatSel = el('select', 'hb-ai-select');
+  // --- format ------------------------------------------------------------------------
+  const fmtCard = el('div', 'hb-pwb-card');
+  const fmtLabel = el('label', 'hb-pwb-label', '💾 Output format');
+  fmtLabel.htmlFor = 'hb-ai-prod-format';
+  fmtCard.appendChild(fmtLabel);
+  const formatSel = el('select', 'hb-pwb-select');
   formatSel.id = 'hb-ai-prod-format';
   for (const f of ['jpg', 'png']) {
     const o = document.createElement('option');
     o.value = f;
-    o.textContent = f === 'jpg' ? 'JPG — smaller file' : 'PNG — lossless';
+    o.textContent = f === 'jpg' ? 'JPG — smaller file, great for listings' : 'PNG — lossless quality';
     formatSel.appendChild(o);
   }
-  root.appendChild(formatSel);
+  fmtCard.appendChild(formatSel);
+  wrap.appendChild(fmtCard);
 
-  const actions = el('div', 'hb-ai-actions');
-  const runBtn = el('button', 'hb-btn hb-btn--primary', 'Make white background');
+  // --- action ---------------------------------------------------------------------------
+  const runBtn = el('button', 'hb-pwb-generate', '✨ Make white background') as HTMLButtonElement;
   runBtn.type = 'button';
   runBtn.disabled = true;
-  actions.appendChild(runBtn);
-  root.appendChild(actions);
+  wrap.appendChild(runBtn);
 
-  const progress = el('div', 'hb-ai-progress');
+  const progress = el('div', 'hb-pwb-progress');
   progress.hidden = true;
   progress.setAttribute('role', 'progressbar');
   const progressBar = el('div', '');
   progress.appendChild(progressBar);
-  root.appendChild(progress);
+  wrap.appendChild(progress);
 
-  const status = el('p', 'hb-ai-status');
-  root.appendChild(status);
+  const status = el('p', 'hb-pwb-status');
+  wrap.appendChild(status);
 
-  const errBox = el('div', 'hb-ai-error');
+  const errBox = el('div', 'hb-pwb-error');
   errBox.hidden = true;
   errBox.setAttribute('role', 'alert');
-  root.appendChild(errBox);
+  wrap.appendChild(errBox);
 
-  const result = el('div', 'hb-ai-result');
+  // --- result ------------------------------------------------------------------------------
+  const result = el('div', 'hb-pwb-result');
   result.hidden = true;
-  const outImg = el('img', '');
+  result.appendChild(el('p', 'hb-pwb-label', '🎉 Your product shot is ready'));
+  const outImg = document.createElement('img');
   outImg.alt = 'Product on a pure white background';
   result.appendChild(outImg);
-  const dlActions = el('div', 'hb-ai-actions');
-  const dlBtn = el('a', 'hb-btn hb-btn--ghost', 'Download photo');
+  const dlBtn = document.createElement('a');
+  dlBtn.className = 'hb-pwb-dl';
+  dlBtn.textContent = '⬇ Download JPG';
   dlBtn.setAttribute('download', 'product-white-background.jpg');
-  dlActions.appendChild(dlBtn);
-  result.appendChild(dlActions);
-  root.appendChild(result);
+  result.appendChild(dlBtn);
+  wrap.appendChild(result);
 
-  // --- state --------------------------------------------------------------
+  const note = el('p', 'hb-pwb-note', getDisclosures().join(' '));
+  wrap.appendChild(note);
+
+  // --- state ----------------------------------------------------------------------------------
   let file: File | null = null;
   let objectUrl: string | null = null;
   let resultUrl: string | null = null;
@@ -184,15 +265,33 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     progressBar.style.width = '0%';
   }
 
+  function showDropPreview(url: string, name: string): void {
+    drop.classList.add('hb-pwb-has-image');
+    drop.innerHTML = '';
+    const preview = document.createElement('img');
+    preview.src = url;
+    preview.className = 'hb-pwb-preview';
+    preview.alt = 'Selected product photo preview';
+    const fname = el('p', 'hb-pwb-filename', name);
+    const change = el('button', 'hb-pwb-change', 'Choose a different photo');
+    change.type = 'button';
+    change.addEventListener('click', (e) => {
+      e.stopPropagation();
+      fileInput.click();
+    });
+    drop.append(preview, fname, change);
+  }
+
   function pickFile(f: File | undefined | null): void {
     if (!f) return;
     file = f;
     if (objectUrl) URL.revokeObjectURL(objectUrl);
     objectUrl = URL.createObjectURL(f);
-    fileName.textContent = 'Selected: ' + f.name;
+    showDropPreview(objectUrl, f.name);
     runBtn.disabled = false;
     errBox.hidden = true;
     result.hidden = true;
+    status.textContent = 'Photo ready — pick a format and click “Make white background”.';
   }
 
   drop.addEventListener('click', (e) => {
@@ -285,10 +384,11 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       outImg.src = resultUrl;
       dlBtn.setAttribute('href', resultUrl);
       dlBtn.setAttribute('download', 'product-white-background.' + format);
-      dlBtn.textContent = 'Download ' + format.toUpperCase();
+      dlBtn.textContent = '⬇ Download ' + format.toUpperCase();
       result.hidden = false;
       hideProgress();
-      status.textContent = 'Done — ' + OUTPUT_PX + '×' + OUTPUT_PX + ' white-background photo, made on your device.';
+      status.textContent = 'Done — ' + OUTPUT_PX + '×' + OUTPUT_PX + ' white-background photo, made on your device. 🎉';
+      result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     } catch (err) {
       hideProgress();
       const msg = err instanceof Error ? err.message : String(err);

@@ -125,6 +125,7 @@ async function extractSamples(audio: KokoroAudio): Promise<{ samples: Float32Arr
 export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = '';
+  const cfg = getModelConfig();
 
   // --- studio styles ---------------------------------------------------------
   const style = document.createElement('style');

@@ -1,10 +1,12 @@
 /**
- * client.ts — AI Code Explainer, Lane B.
+ * client.ts — AI Code Explainer, Lane B (redesigned).
  *
- * Flow: key-vault card (providers from logic.getProviders()) -> provider
- * select + form -> Generate -> loading -> result + Copy button.
+ * Flow: gradient header -> key-vault card (providers from
+ * logic.getProviders()) -> provider card + input cards -> big gradient
+ * Generate button -> progress + status -> beautiful result card + Copy.
  * Errors surface through humanizeFetchError / humanizeHttpStatus.
  * Keys are never logged and are sent only to the chosen provider.
+ * User data is rendered via textContent only.
  */
 import {
   renderKeyVault,
@@ -61,6 +63,11 @@ const FIELDS: FieldDef[] = [
   },
 ];
 
+const SAMPLE: Record<string, string> = {
+  language: 'python',
+  code: 'def greet(name):\n    return f"Hello, {name}!"\n\nprint(greet("world"))',
+};
+
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
   cls: string,
@@ -77,22 +84,104 @@ export function mountAiTool(ctx: AiClientContext): void {
   root.innerHTML = '';
   const providers = getProviders();
 
-  // --- key vault -----------------------------------------------------------
-  const vault = el('div', 'hb-ai-vault');
-  root.appendChild(vault);
-  renderKeyVault(vault, {
+  // --- styles ---------------------------------------------------------------
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-ce-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-ce-header {
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-ce-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-ce-header p { margin: 0; font-size: 14px; opacity: .9; }
+    .hb-ce-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-ce-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-ce-input, .hb-ce-textarea, .hb-ce-select {
+      width: 100%; padding: 12px 14px; font-size: 15px; font-family: inherit;
+      border: 2px solid #e2e8f0; border-radius: 10px; background: #fff;
+      box-sizing: border-box;
+    }
+    .hb-ce-textarea { resize: vertical; min-height: 110px; }
+    .hb-ce-input:focus, .hb-ce-textarea:focus, .hb-ce-select:focus {
+      outline: none; border-color: #0ea5e9;
+    }
+    .hb-ce-hint { font-size: 13px; color: #64748b; margin: 8px 0 0; }
+    .hb-ce-sample {
+      font-size: 13px; color: #0ea5e9; background: none; border: none;
+      cursor: pointer; text-decoration: underline; padding: 0; margin-top: 8px;
+    }
+    .hb-ce-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-ce-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-ce-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-ce-progress {
+      height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden;
+    }
+    .hb-ce-progress > div {
+      height: 100%; background: linear-gradient(90deg, #0ea5e9 0%, #6366f1);
+      width: 0%; transition: width .3s;
+    }
+    .hb-ce-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-ce-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-ce-result-card {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+      border-radius: 14px; padding: 20px;
+    }
+    .hb-ce-result-title { font-size: 16px; font-weight: 700; color: #1e293b; margin: 0 0 12px; }
+    .hb-ce-result-text {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+      padding: 16px; font-size: 15px; line-height: 1.7; color: #1e293b;
+      white-space: pre-wrap; word-break: break-word; max-height: 480px; overflow-y: auto;
+    }
+    .hb-ce-actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .hb-ce-copy {
+      padding: 12px 24px; background: #16a34a; color: #fff; border: none;
+      border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer;
+    }
+    .hb-ce-copy:hover { background: #15803d; }
+    @media (max-width: 640px) {
+      .hb-ce-header { padding: 18px; }
+      .hb-ce-header h3 { font-size: 18px; }
+      .hb-ce-card, .hb-ce-result-card { padding: 16px; }
+    }
+  `;
+  root.appendChild(style);
+
+  const wrap = el('div', 'hb-ce-wrap');
+  root.appendChild(wrap);
+
+  // --- header ---------------------------------------------------------------
+  const header = el('div', 'hb-ce-header');
+  header.appendChild(el('h3', '', '💻 AI Code Explainer'));
+  header.appendChild(el('p', '', 'Paste a snippet, pick the language — get a plain-English walkthrough of what your code actually does. Uses YOUR free Gemini/Groq/OpenRouter key.'));
+  wrap.appendChild(header);
+
+  // --- key vault card -------------------------------------------------------
+  const vaultCard = el('div', 'hb-ce-card');
+  wrap.appendChild(vaultCard);
+  renderKeyVault(vaultCard, {
     providers,
     intro: 'Pick a provider and paste your free key. The tool does nothing until you do.',
   });
 
-  // --- tool card -----------------------------------------------------------
-  const card = el('div', 'hb-ai-tool');
-  root.appendChild(card);
-
-  const provLabel = el('label', 'hb-ai-label', 'Provider');
+  // --- provider card --------------------------------------------------------
+  const provCard = el('div', 'hb-ce-card');
+  const provLabel = el('label', 'hb-ce-label', '🤖 Provider');
   provLabel.htmlFor = 'hb-ai-provider';
-  card.appendChild(provLabel);
-  const provSel = el('select', 'hb-ai-select');
+  provCard.appendChild(provLabel);
+  const provSel = el('select', 'hb-ce-select');
   provSel.id = 'hb-ai-provider';
   for (const pid of providers) {
     const info = getProviderInfo(pid);
@@ -102,21 +191,26 @@ export function mountAiTool(ctx: AiClientContext): void {
       (info ? info.name : pid) + (pid === 'llm7' ? ' — no key needed (community demo)' : '');
     provSel.appendChild(opt);
   }
-  card.appendChild(provSel);
+  provCard.appendChild(provSel);
+  const hint = el('p', 'hb-ce-hint');
+  provCard.appendChild(hint);
+  wrap.appendChild(provCard);
 
+  // --- input cards ----------------------------------------------------------
   const controls: Record<string, HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement> = {};
   for (const f of FIELDS) {
-    const label = el('label', 'hb-ai-label', f.label + (f.required ? ' *' : ''));
+    const card = el('div', 'hb-ce-card');
+    const label = el('label', 'hb-ce-label', f.label + (f.required ? ' *' : ''));
     label.htmlFor = 'hb-ai-' + f.id;
     card.appendChild(label);
     let control: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
     if (f.kind === 'textarea') {
-      const ta = el('textarea', 'hb-ai-textarea');
+      const ta = el('textarea', 'hb-ce-textarea');
       ta.rows = f.rows ?? 4;
       if (f.placeholder) ta.placeholder = f.placeholder;
       control = ta;
     } else if (f.kind === 'select') {
-      const sel = el('select', 'hb-ai-select');
+      const sel = el('select', 'hb-ce-select');
       for (const o of f.options ?? []) {
         const opt = document.createElement('option');
         opt.value = o.value;
@@ -125,7 +219,7 @@ export function mountAiTool(ctx: AiClientContext): void {
       }
       control = sel;
     } else {
-      const inp = el('input', 'hb-ai-input');
+      const inp = el('input', 'hb-ce-input');
       inp.type = 'text';
       if (f.placeholder) inp.placeholder = f.placeholder;
       control = inp;
@@ -133,33 +227,55 @@ export function mountAiTool(ctx: AiClientContext): void {
     control.id = 'hb-ai-' + f.id;
     controls[f.id] = control;
     card.appendChild(control);
-    if (f.hint) card.appendChild(el('p', 'hb-ai-field-hint', f.hint));
+    if (f.hint) card.appendChild(el('p', 'hb-ce-hint', f.hint));
+    if (f.id === 'code') {
+      const sampleBtn = el('button', 'hb-ce-sample', '✨ Try a sample');
+      sampleBtn.type = 'button';
+      sampleBtn.addEventListener('click', () => {
+        for (const key of Object.keys(SAMPLE)) {
+          const c = controls[key];
+          if (c) c.value = SAMPLE[key];
+        }
+      });
+      card.appendChild(sampleBtn);
+    }
+    wrap.appendChild(card);
   }
 
-  const hint = el('p', 'hb-ai-hint');
-  card.appendChild(hint);
-
-  const actions = el('div', 'hb-ai-actions');
-  const gen = el('button', 'hb-btn hb-btn--primary', 'Explain code');
+  // --- generate --------------------------------------------------------------
+  const gen = el('button', 'hb-ce-generate', '✨ Explain Code');
   gen.type = 'button';
-  actions.appendChild(gen);
-  card.appendChild(actions);
+  wrap.appendChild(gen);
 
-  const errBox = el('div', 'hb-ai-error');
+  const progress = el('div', 'hb-ce-progress');
+  progress.hidden = true;
+  progress.setAttribute('role', 'progressbar');
+  const progressBar = el('div', '');
+  progress.appendChild(progressBar);
+  wrap.appendChild(progress);
+
+  const status = el('p', 'hb-ce-status');
+  wrap.appendChild(status);
+
+  const errBox = el('div', 'hb-ce-error');
   errBox.hidden = true;
   errBox.setAttribute('role', 'alert');
-  card.appendChild(errBox);
+  wrap.appendChild(errBox);
 
-  const resBox = el('div', 'hb-ai-result');
-  resBox.hidden = true;
-  const resText = el('div', 'hb-ai-result__text');
-  resBox.appendChild(resText);
-  const copyBtn = el('button', 'hb-btn hb-btn--ghost', 'Copy');
+  // --- result -----------------------------------------------------------------
+  const resCard = el('div', 'hb-ce-result-card');
+  resCard.hidden = true;
+  resCard.appendChild(el('p', 'hb-ce-result-title', '📖 Explanation'));
+  const resText = el('div', 'hb-ce-result-text');
+  resCard.appendChild(resText);
+  const actions = el('div', 'hb-ce-actions');
+  const copyBtn = el('button', 'hb-ce-copy', '📋 Copy explanation');
   copyBtn.type = 'button';
-  resBox.appendChild(copyBtn);
-  card.appendChild(resBox);
+  actions.appendChild(copyBtn);
+  resCard.appendChild(actions);
+  wrap.appendChild(resCard);
 
-  // --- state ---------------------------------------------------------------
+  // --- state -------------------------------------------------------------------
   function selectedProvider(): string {
     return provSel.value;
   }
@@ -180,15 +296,27 @@ export function mountAiTool(ctx: AiClientContext): void {
         'Paste your free ' + providerName(p) + ' key above to enable Generate — or switch provider.';
     }
   }
+  function setProgress(fraction: number, label: string): void {
+    progress.hidden = false;
+    progressBar.style.width = Math.max(0, Math.min(100, Math.round(fraction * 100))) + '%';
+    status.textContent = label;
+  }
+  function hideProgress(): void {
+    progress.hidden = true;
+    progressBar.style.width = '0%';
+  }
   function showError(msg: string): void {
+    hideProgress();
+    status.textContent = '';
     errBox.textContent = msg;
     errBox.hidden = false;
-    resBox.hidden = true;
+    resCard.hidden = true;
   }
   function showResult(text: string): void {
     errBox.hidden = true;
     resText.textContent = text;
-    resBox.hidden = false;
+    resCard.hidden = false;
+    resCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   provSel.addEventListener('change', refresh);
@@ -199,7 +327,7 @@ export function mountAiTool(ctx: AiClientContext): void {
     const done = (): void => {
       copyBtn.textContent = 'Copied ✓';
       window.setTimeout(() => {
-        copyBtn.textContent = 'Copy';
+        copyBtn.textContent = '📋 Copy explanation';
       }, 1500);
     };
     if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
@@ -231,6 +359,7 @@ export function mountAiTool(ctx: AiClientContext): void {
 
   async function run(): Promise<void> {
     errBox.hidden = true;
+    resCard.hidden = true;
     const values: Record<string, string> = {};
     for (const f of FIELDS) values[f.id] = controls[f.id].value.trim();
 
@@ -259,6 +388,7 @@ export function mountAiTool(ctx: AiClientContext): void {
     gen.disabled = true;
     const originalLabel = gen.textContent;
     gen.textContent = 'Generating…';
+    setProgress(0.1, 'Contacting ' + providerName(p) + '…');
     try {
       const ctrl = new AbortController();
       const timer = window.setTimeout(() => ctrl.abort(), 60000);
@@ -273,6 +403,7 @@ export function mountAiTool(ctx: AiClientContext): void {
       } finally {
         window.clearTimeout(timer);
       }
+      setProgress(0.7, 'Writing…');
 
       let json: unknown = null;
       try {
@@ -292,6 +423,9 @@ export function mountAiTool(ctx: AiClientContext): void {
         showError(out.message ?? 'The provider returned an empty response.');
         return;
       }
+      setProgress(1, 'Done.');
+      hideProgress();
+      status.textContent = 'Explanation ready — review it and paste it into your docs.';
       showResult(out.data.text);
     } catch (err) {
       showError(humanizeFetchError(err, providerName(p)));

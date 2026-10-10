@@ -1,8 +1,9 @@
 /**
- * Photo Cartoonizer — browser client (Lane D).
+ * Photo Cartoonizer — browser client (redesigned, Lane D).
  *
- * UI order: key-vault card → provider tabs → photo upload + style →
- * Generate → progress/status → result + Download → errors.
+ * UI order: gradient header → key-vault card → no-key card →
+ * provider tabs → photo upload + style → Generate → progress/status →
+ * result + Download → errors.
  * OpenRouter cartoonizes YOUR photo; HF and fal.ai generate a cartoon
  * illustration from text (disclosed).
  */
@@ -155,108 +156,155 @@ function fileToDataUrl(file: File): Promise<string> {
 export function mountAiTool(ctx: AiClientContext): () => void {
   const root = ctx.mountEl;
   root.innerHTML = "";
-  const wrap = el("div", "hb-ai-tool");
+
+  const style = document.createElement("style");
+  style.textContent = `
+    .hb-ctn-wrap { display: flex; flex-direction: column; gap: 16px; }
+    .hb-ctn-header {
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-ctn-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-ctn-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-ctn-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px;
+    }
+    .hb-ctn-label { display: block; font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+    .hb-ctn-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+    .hb-ctn-tab {
+      padding: 10px 18px; border-radius: 10px; border: 2px solid #e2e8f0;
+      background: #fff; font-size: 14px; font-weight: 600; color: #475569; cursor: pointer;
+    }
+    .hb-ctn-tab:hover { border-color: #ec4899; color: #ec4899; }
+    .hb-ctn-tab.is-active {
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border-color: transparent; color: #fff;
+    }
+    .hb-ctn-note {
+      font-size: 13px; color: #92400e; background: #fffbeb; border: 1px solid #fde68a;
+      border-radius: 10px; padding: 10px 14px; margin: 0 0 16px; line-height: 1.5;
+    }
+    .hb-ctn-drop {
+      border: 2px dashed #9aa4b2; border-radius: 14px; padding: 28px 20px;
+      text-align: center; cursor: pointer; transition: all .2s ease; background: #f8fafc;
+    }
+    .hb-ctn-drop:hover { border-color: #ec4899; background: #fdf2f8; }
+    .hb-ctn-title { font-size: 16px; font-weight: 600; color: #1e293b; margin: 0 0 4px; }
+    .hb-ctn-sub { font-size: 13px; color: #64748b; margin: 0; }
+    .hb-ctn-preview { max-width: 100%; max-height: 220px; border-radius: 10px; margin: 12px auto 0; display: block; }
+    .hb-ctn-select {
+      width: 100%; padding: 12px; font-size: 15px; border: 2px solid #e2e8f0;
+      border-radius: 10px; background: #fff; box-sizing: border-box; color: #1e293b;
+      margin-bottom: 16px;
+    }
+    .hb-ctn-select:focus { outline: none; border-color: #ec4899; }
+    .hb-ctn-hint { font-size: 13px; color: #64748b; margin: -10px 0 16px; }
+    .hb-ctn-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .hb-ctn-generate {
+      flex: 1; min-width: 200px; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-ctn-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-ctn-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-ctn-cancel {
+      padding: 16px 24px; font-size: 16px; font-weight: 700; color: #64748b;
+      background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; cursor: pointer;
+    }
+    .hb-ctn-cancel:hover { border-color: #f43f5e; color: #f43f5e; }
+    .hb-ctn-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-ctn-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-ctn-result {
+      background: linear-gradient(135deg, #fdf2f8 0%, #f5f3ff 100%);
+      border-radius: 14px; padding: 20px; text-align: center; border: 1px solid #f9a8d4;
+    }
+    .hb-ctn-result img {
+      max-width: 100%; max-height: 460px; border-radius: 12px;
+      border: 1px solid #e2e8f0; display: block; margin: 0 auto 14px;
+    }
+    .hb-ctn-result-meta { font-size: 13px; color: #64748b; margin: 0 0 12px; }
+    .hb-ctn-dl {
+      display: inline-block; padding: 12px 28px; background: #16a34a; color: #fff;
+      border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; border: none; margin-right: 8px;
+    }
+    .hb-ctn-dl:hover { background: #15803d; }
+    .hb-ctn-open {
+      display: inline-block; padding: 10px 24px; background: #fff; color: #8b5cf6;
+      border: 2px solid #c4b5fd; border-radius: 10px; font-size: 15px; font-weight: 700; text-decoration: none;
+    }
+    .hb-ctn-open:hover { background: #f5f3ff; }
+    @media (max-width: 640px) { .hb-ctn-header { padding: 18px; } }
+  `;
+  root.appendChild(style);
+
+  const wrap = el("div", "hb-ctn-wrap");
   root.appendChild(wrap);
+
+  // --- header ---------------------------------------------------------------------
+  const header = el("div", "hb-ctn-header");
+  header.appendChild(el("h3", "", "🎨 Photo Cartoonizer"));
+  header.appendChild(el("p", "", "Turn your photo into a cartoon — or generate a cartoon illustration from text. Billed to YOUR provider account."));
+  wrap.appendChild(header);
+
+  // --- key vault --------------------------------------------------------------------
+  const vaultCard = el("div", "hb-ctn-card");
+  wrap.appendChild(vaultCard);
+
+  const noKeyCard = el("div", "hb-ctn-card");
+  wrap.appendChild(noKeyCard);
+
+  // --- provider tabs ------------------------------------------------------------------
+  const tabsCard = el("div", "hb-ctn-card");
+  wrap.appendChild(tabsCard);
+
+  // --- form -----------------------------------------------------------------------------
+  const formCard = el("div", "hb-ctn-card");
+  wrap.appendChild(formCard);
+
+  const status = el("p", "hb-ctn-status");
+  wrap.appendChild(status);
+  const errorBox = el("div", "hb-ctn-error");
+  errorBox.hidden = true;
+  errorBox.setAttribute("role", "alert");
+  wrap.appendChild(errorBox);
+  const resultBox = el("div", "hb-ctn-result");
+  resultBox.hidden = true;
+  wrap.appendChild(resultBox);
 
   const providers = getProviders();
   let active: CartoonProviderId = providers[0];
   let pollController: AbortController | null = null;
   let photoDataUrl: string | null = null;
 
-  const vaultBox = el("div", "hb-ai-section");
-  wrap.appendChild(vaultBox);
-  renderKeyVault(vaultBox, {
+  renderKeyVault(vaultCard, {
     providers,
     intro: "Generation is billed to YOUR provider account. Only OpenRouter restyles your actual photo — HF and fal.ai draw from text.",
   });
 
-  const noKeyBox = el("div", "hb-ai-section hb-ai-nokey");
-  wrap.appendChild(noKeyBox);
-
-  const tabsBox = el("div", "hb-ai-section");
-  wrap.appendChild(tabsBox);
-
-  const formBox = el("div", "hb-ai-section");
-  wrap.appendChild(formBox);
-
-  const routeNote = el("p", "hb-ai-note");
-  formBox.appendChild(routeNote);
-
-  formBox.appendChild(el("label", "hb-ai-label", "Your photo"));
-  const fileInput = el("input", "hb-ai-input") as HTMLInputElement;
-  fileInput.type = "file";
-  fileInput.accept = "image/*";
-  formBox.appendChild(fileInput);
-  const preview = el("img", "hb-ai-preview") as HTMLImageElement;
-  preview.hidden = true;
-  preview.alt = "Your uploaded photo preview";
-  formBox.appendChild(preview);
-  formBox.appendChild(el("p", "hb-ai-hint", "Bright, clear photos with a visible subject. Max 10 MB. Sent only to the provider you pick."));
-
-  formBox.appendChild(el("label", "hb-ai-label", "Cartoon style"));
-  const styleInput = el("select", "hb-ai-input hb-ai-select") as HTMLSelectElement;
-  for (const s of CARTOON_STYLES) {
-    const opt = el("option", "", s) as HTMLOptionElement;
-    opt.value = s;
-    styleInput.appendChild(opt);
-  }
-  styleInput.value = "3d animated";
-  formBox.appendChild(styleInput);
-
-  const actions = el("div", "hb-ai-actions");
-  const genBtn = el("button", "hb-btn hb-btn--primary", "Cartoonize photo");
-  genBtn.type = "button";
-  const cancelBtn = el("button", "hb-btn hb-btn--ghost", "Cancel");
-  cancelBtn.type = "button";
-  cancelBtn.hidden = true;
-  actions.appendChild(genBtn);
-  actions.appendChild(cancelBtn);
-  formBox.appendChild(actions);
-
-  const statusBox = el("div", "hb-ai-section hb-ai-status");
-  statusBox.setAttribute("role", "status");
-  wrap.appendChild(statusBox);
-  const errorBox = el("div", "hb-ai-section hb-ai-error");
-  errorBox.hidden = true;
-  wrap.appendChild(errorBox);
-  const resultBox = el("div", "hb-ai-section hb-ai-result");
-  resultBox.hidden = true;
-  wrap.appendChild(resultBox);
-
   function setStatus(text: string): void {
-    statusBox.textContent = text;
+    status.textContent = text;
   }
   function setError(text: string | null): void {
     errorBox.hidden = text === null;
     errorBox.textContent = text ?? "";
-  }
-  function setBusy(busy: boolean): void {
-    genBtn.disabled = busy;
-    fileInput.disabled = busy;
-    styleInput.disabled = busy;
-    cancelBtn.hidden = !busy;
-  }
-
-  function renderRouteNote(): void {
-    routeNote.textContent =
-      active === "openrouter"
-        ? "OpenRouter route: restyles YOUR uploaded photo as a cartoon."
-        : "Heads up: this route draws a cartoon illustration from text — it will NOT be your photo in cartoon form. Pick OpenRouter to restyle your photo.";
   }
 
   function showResult(imageUrl: string, providerId: CartoonProviderId): void {
     resultBox.innerHTML = "";
     resultBox.hidden = false;
     const info = getProviderInfo(providerId);
-    resultBox.appendChild(el("h3", "hb-ai-result__title", "Your cartoon"));
-    if (info) resultBox.appendChild(el("p", "hb-ai-result__meta", `Generated with ${info.name}`));
-    const img = el("img", "hb-ai-result__image") as HTMLImageElement;
+    resultBox.appendChild(el("p", "hb-ctn-label", "🎉 Your cartoon"));
+    if (info) resultBox.appendChild(el("p", "hb-ctn-result-meta", "Generated with " + info.name));
+    const img = el("img", "") as HTMLImageElement;
     img.src = imageUrl;
     img.alt = "Cartoonized image";
     img.loading = "lazy";
     resultBox.appendChild(img);
-    const row = el("div", "hb-ai-actions");
-    const dl = el("button", "hb-btn hb-btn--primary", "Download cartoon");
+    const row = el("div", "hb-ctn-actions");
+    const dl = el("button", "hb-ctn-dl", "⬇ Download cartoon") as HTMLButtonElement;
     dl.type = "button";
     dl.addEventListener("click", () => {
       const stamp = new Date().toISOString().slice(0, 10);
@@ -264,45 +312,46 @@ export function mountAiTool(ctx: AiClientContext): () => void {
         setError("Download failed — try opening the full-size image instead.");
       });
     });
-    const open = el("a", "hb-btn hb-btn--ghost", "Open full size");
+    const open = el("a", "hb-ctn-open", "Open full size") as HTMLAnchorElement;
     open.href = imageUrl;
     open.target = "_blank";
     open.rel = "noopener noreferrer";
     row.appendChild(dl);
     row.appendChild(open);
     resultBox.appendChild(row);
+    resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   function renderNoKey(): void {
-    noKeyBox.innerHTML = "";
+    noKeyCard.innerHTML = "";
     const info = getProviderInfo(active);
     if (getKey(active)) {
-      noKeyBox.hidden = true;
+      noKeyCard.hidden = true;
       return;
     }
-    noKeyBox.hidden = false;
+    noKeyCard.hidden = false;
     const cfg = ctx.config;
-    noKeyBox.appendChild(el("h3", "hb-ai-nokey__title", cfg.noKeyHeadline ?? "Save an API key to unlock"));
-    noKeyBox.appendChild(el("p", "hb-ai-nokey__body", cfg.noKeyBody ?? "Paste a key above, press Save, then Generate."));
+    noKeyCard.appendChild(el("p", "hb-ctn-label", cfg.noKeyHeadline ?? "🔑 Save an API key to unlock"));
+    noKeyCard.appendChild(el("p", "hb-ctn-hint", cfg.noKeyBody ?? "Paste a key above, press Save, then Generate."));
     if (info) {
-      noKeyBox.appendChild(el("p", "hb-ai-nokey__cost", `${info.freeTier} ${info.costNote}`));
-      const link = el("a", "hb-btn hb-btn--secondary", `Get a ${info.name} key`);
+      noKeyCard.appendChild(el("p", "hb-ctn-result-meta", `${info.freeTier} ${info.costNote}`));
+      const link = el("a", "hb-ctn-open", `Get a ${info.name} key`) as HTMLAnchorElement;
       link.href = info.keyUrl;
       link.target = "_blank";
       link.rel = "noopener noreferrer nofollow";
-      noKeyBox.appendChild(link);
+      noKeyCard.appendChild(link);
     }
-    noKeyBox.appendChild(el("p", "hb-ai-nokey__hint", "Paste → Save → Generate works immediately. Nothing else to configure."));
+    noKeyCard.appendChild(el("p", "hb-ctn-hint", "Paste → Save → Generate works immediately. Nothing else to configure."));
   }
 
   function renderTabs(): void {
-    tabsBox.innerHTML = "";
-    tabsBox.appendChild(el("span", "hb-ai-label", "Provider"));
-    const row = el("div", "hb-ai-tabs");
+    tabsCard.innerHTML = "";
+    tabsCard.appendChild(el("span", "hb-ctn-label", "⚡ Provider"));
+    const row = el("div", "hb-ctn-tabs");
     row.setAttribute("role", "tablist");
     for (const p of providers) {
       const info = getProviderInfo(p);
-      const tab = el("button", "hb-ai-tab" + (p === active ? " is-active" : ""), info?.name ?? p);
+      const tab = el("button", "hb-ctn-tab" + (p === active ? " is-active" : ""), info?.name ?? p) as HTMLButtonElement;
       tab.type = "button";
       tab.setAttribute("role", "tab");
       tab.setAttribute("aria-selected", p === active ? "true" : "false");
@@ -315,16 +364,83 @@ export function mountAiTool(ctx: AiClientContext): () => void {
       });
       row.appendChild(tab);
     }
-    tabsBox.appendChild(row);
+    tabsCard.appendChild(row);
   }
 
-  fileInput.addEventListener("change", () => {
-    const file = fileInput.files?.[0];
-    if (!file) {
-      photoDataUrl = null;
-      preview.hidden = true;
-      return;
+  const routeNote = el("p", "hb-ctn-note");
+  function renderRouteNote(): void {
+    routeNote.textContent =
+      active === "openrouter"
+        ? "OpenRouter route: restyles YOUR uploaded photo as a cartoon."
+        : "Heads up: this route draws a cartoon illustration from text — it will NOT be your photo in cartoon form. Pick OpenRouter to restyle your photo.";
+  }
+
+  // --- form fields --------------------------------------------------------------------
+  formCard.appendChild(routeNote);
+  formCard.appendChild(el("label", "hb-ctn-label", "📷 Your photo"));
+
+  const drop = el("div", "hb-ctn-drop");
+  drop.setAttribute("role", "button");
+  drop.tabIndex = 0;
+  drop.setAttribute("aria-label", "Upload a photo: click to browse");
+  drop.appendChild(el("p", "hb-ctn-title", "Click to choose a photo"));
+  drop.appendChild(el("p", "hb-ctn-sub", "Bright, clear photos with a visible subject. Max 10 MB."));
+  const fileInput = el("input", "") as HTMLInputElement;
+  fileInput.type = "file";
+  fileInput.accept = "image/*";
+  fileInput.hidden = true;
+  drop.appendChild(fileInput);
+  const preview = el("img", "hb-ctn-preview") as HTMLImageElement;
+  preview.hidden = true;
+  preview.alt = "Your uploaded photo preview";
+  drop.appendChild(preview);
+  formCard.appendChild(drop);
+
+  formCard.appendChild(el("label", "hb-ctn-label", "🎭 Cartoon style"));
+  const styleInput = el("select", "hb-ctn-select") as HTMLSelectElement;
+  for (const s of CARTOON_STYLES) {
+    const opt = el("option", "", s) as HTMLOptionElement;
+    opt.value = s;
+    styleInput.appendChild(opt);
+  }
+  styleInput.value = "3d animated";
+  formCard.appendChild(styleInput);
+  formCard.appendChild(el("p", "hb-ctn-hint", "Only OpenRouter applies this style to your photo — HF and fal.ai interpret the style as a text prompt."));
+
+  const actions = el("div", "hb-ctn-actions");
+  const genBtn = el("button", "hb-ctn-generate", "🎨 Cartoonize") as HTMLButtonElement;
+  genBtn.type = "button";
+  const cancelBtn = el("button", "hb-ctn-cancel", "Cancel") as HTMLButtonElement;
+  cancelBtn.type = "button";
+  cancelBtn.hidden = true;
+  actions.appendChild(genBtn);
+  actions.appendChild(cancelBtn);
+  formCard.appendChild(actions);
+
+  function setBusy(busy: boolean): void {
+    genBtn.disabled = busy;
+    fileInput.disabled = busy;
+    styleInput.disabled = busy;
+    cancelBtn.hidden = !busy;
+  }
+
+  drop.addEventListener("click", (e) => {
+    if (e.target !== fileInput) fileInput.click();
+  });
+  drop.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      fileInput.click();
     }
+  });
+  drop.addEventListener("dragover", (e) => e.preventDefault());
+  drop.addEventListener("drop", (e) => {
+    e.preventDefault();
+    const f = e.dataTransfer?.files?.[0];
+    if (f) handleFile(f);
+  });
+
+  function handleFile(file: File): void {
     if (file.size > MAX_FILE_BYTES) {
       setError("That image is over 10 MB — pick a smaller file.");
       fileInput.value = "";
@@ -338,6 +454,16 @@ export function mountAiTool(ctx: AiClientContext): () => void {
         preview.hidden = false;
       })
       .catch((err) => setError((err as Error).message));
+  }
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files?.[0];
+    if (!file) {
+      photoDataUrl = null;
+      preview.hidden = true;
+      return;
+    }
+    handleFile(file);
   });
 
   async function runOpenRouter(key: string, dataUrl: string, style: CartoonStyle): Promise<string> {

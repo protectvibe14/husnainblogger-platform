@@ -1,5 +1,5 @@
 /**
- * Semantic Note Search — client.ts (tool-543).
+ * Semantic Note Search — client.ts (tool-543, redesigned).
  * Save notes (embedded on-device with Xenova/bge-small-en-v1.5, stored in
  * localStorage) -> search by meaning via cosine similarity ranking.
  * Nothing is ever uploaded.
@@ -16,6 +16,12 @@ import {
   QUERY_PREFIX,
   MAX_NOTES,
 } from "./logic.ts";
+
+const SAMPLE_NOTE = {
+  title: "Project kickoff ideas",
+  text: "The new dashboard needs a bold hero section, a weekly summary email, and a mobile-first settings page. Launch before the holiday rush.",
+};
+const SAMPLE_QUERY = "what do we need for the dashboard launch?";
 
 function el<K extends keyof HTMLElementTagNameMap>(
   tag: K,
@@ -104,21 +110,217 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   host.innerHTML = "";
   const cfg = getModelConfig();
 
+  // --- styles ---------------------------------------------------------------
+  const style = document.createElement("style");
+  style.textContent = `
+    .hb-sns-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-sns-header {
+      background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-sns-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-sns-header p { margin: 0; font-size: 14px; opacity: .92; }
+    .hb-sns-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-sns-card h4 { margin: 0 0 12px; font-size: 16px; font-weight: 700; color: #1e293b; }
+    .hb-sns-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-sns-input, .hb-sns-textarea {
+      width: 100%; padding: 12px 14px; font-size: 15px; font-family: inherit;
+      border: 2px solid #e2e8f0; border-radius: 10px; background: #fff;
+      box-sizing: border-box; color: #1e293b;
+    }
+    .hb-sns-input:focus, .hb-sns-textarea:focus { outline: none; border-color: #0ea5e9; }
+    .hb-sns-textarea { min-height: 96px; resize: vertical; }
+    .hb-sns-count { font-size: 12px; color: #94a3b8; text-align: right; margin: 6px 0 0; }
+    .hb-sns-btn {
+      padding: 12px 24px; font-size: 15px; font-weight: 700; color: #fff;
+      background: #0284c7; border: none; border-radius: 10px; cursor: pointer;
+    }
+    .hb-sns-btn:hover:not(:disabled) { background: #0369a1; }
+    .hb-sns-btn:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-sns-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-sns-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-sns-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-sns-sample {
+      font-size: 13px; color: #0284c7; background: none; border: none;
+      cursor: pointer; text-decoration: underline; padding: 0; margin-top: 8px;
+    }
+    .hb-sns-progress { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+    .hb-sns-progress > div {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, #0ea5e9, #2563eb);
+      transition: width .3s;
+    }
+    .hb-sns-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-sns-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-sns-match {
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px;
+      padding: 14px 16px; margin-bottom: 10px;
+    }
+    .hb-sns-match-head {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 10px; margin-bottom: 6px;
+    }
+    .hb-sns-match-title { font-size: 15px; font-weight: 700; color: #1e293b; }
+    .hb-sns-score {
+      font-size: 12px; font-weight: 700; color: #0284c7; background: #e0f2fe;
+      padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+    }
+    .hb-sns-match-body { font-size: 14px; color: #475569; margin: 0; line-height: 1.55; }
+    .hb-sns-note { font-size: 13px; color: #64748b; margin: 0; }
+    .hb-sns-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .hb-sns-chip {
+      font-size: 12px; font-weight: 600; color: #334155; background: #f1f5f9;
+      border: 1px solid #e2e8f0; border-radius: 999px; padding: 5px 12px;
+    }
+    @media (max-width: 640px) {
+      .hb-sns-header { padding: 18px; }
+      .hb-sns-card { padding: 16px; }
+    }
+  `;
+  host.appendChild(style);
+
+  const wrap = el("div", "hb-sns-wrap");
+  host.appendChild(wrap);
+
+  // --- header -----------------------------------------------------------------
+  const header = el("div", "hb-sns-header");
+  header.appendChild(el("h3", "", "🔍 Semantic Note Search"));
+  header.appendChild(
+    el("p", "", "Search your own notes by meaning, not keywords — on-device embeddings, nothing uploaded."),
+  );
+  wrap.appendChild(header);
+
+  // --- save-note card ------------------------------------------------------------
+  const saveCard = el("div", "hb-sns-card");
+  saveCard.appendChild(el("h4", "", "1️⃣ Save a note — stored only in this browser"));
+  const titleLabel = el("label", "hb-sns-label", "Note title (optional)");
+  titleLabel.htmlFor = "hb-sns-title";
+  saveCard.appendChild(titleLabel);
+  const titleInput = el("input", "hb-sns-input") as HTMLInputElement;
+  titleInput.id = "hb-sns-title";
+  titleInput.placeholder = "e.g. Meeting notes";
+  saveCard.appendChild(titleInput);
+  const textLabel = el("label", "hb-sns-label", "Note text");
+  textLabel.htmlFor = "hb-sns-text";
+  textLabel.style.marginTop = "14px";
+  saveCard.appendChild(textLabel);
+  const textInput = el("textarea", "hb-sns-textarea") as HTMLTextAreaElement;
+  textInput.id = "hb-sns-text";
+  textInput.rows = 4;
+  textInput.placeholder = "Write or paste a note…";
+  saveCard.appendChild(textInput);
+  const saveRow = el("div", "");
+  saveRow.style.marginTop = "12px";
+  saveRow.style.display = "flex";
+  saveRow.style.gap = "12px";
+  saveRow.style.alignItems = "center";
+  saveRow.style.flexWrap = "wrap";
+  const saveBtn = el("button", "hb-sns-btn", "💾 Save note") as HTMLButtonElement;
+  saveRow.appendChild(saveBtn);
+  const saveStatus = el("p", "hb-sns-count", "0 notes saved.");
+  saveRow.appendChild(saveStatus);
+  saveCard.appendChild(saveRow);
+  const sampleNoteBtn = el("button", "hb-sns-sample", "✨ Try a sample note") as HTMLButtonElement;
+  sampleNoteBtn.addEventListener("click", () => {
+    titleInput.value = SAMPLE_NOTE.title;
+    textInput.value = SAMPLE_NOTE.text;
+  });
+  saveCard.appendChild(sampleNoteBtn);
+  const savedList = el("div", "hb-sns-list");
+  saveCard.appendChild(savedList);
+  wrap.appendChild(saveCard);
+
+  // --- search card ----------------------------------------------------------------
+  const searchCard = el("div", "hb-sns-card");
+  searchCard.appendChild(el("h4", "", "2️⃣ Search your notes by meaning"));
+  const queryLabel = el("label", "hb-sns-label", "What are you looking for?");
+  queryLabel.htmlFor = "hb-sns-query";
+  searchCard.appendChild(queryLabel);
+  const queryInput = el("input", "hb-sns-input") as HTMLInputElement;
+  queryInput.id = "hb-sns-query";
+  queryInput.placeholder = "Describe it in your own words…";
+  searchCard.appendChild(queryInput);
+  const sampleQueryBtn = el("button", "hb-sns-sample", "✨ Try a sample search") as HTMLButtonElement;
+  sampleQueryBtn.addEventListener("click", () => {
+    queryInput.value = SAMPLE_QUERY;
+  });
+  searchCard.appendChild(sampleQueryBtn);
+  const searchBtn = el("button", "hb-sns-generate", "🔍 Search notes") as HTMLButtonElement;
+  searchBtn.style.marginTop = "14px";
+  searchCard.appendChild(searchBtn);
+  const progress = el("div", "hb-sns-progress");
+  progress.hidden = true;
+  progress.setAttribute("role", "progressbar");
+  const progressBar = el("div", "");
+  progress.appendChild(progressBar);
+  searchCard.appendChild(progress);
+  const status = el("p", "hb-sns-status");
+  status.setAttribute("role", "status");
+  searchCard.appendChild(status);
+  wrap.appendChild(searchCard);
+
+  const errorBox = el("div", "hb-sns-error");
+  errorBox.hidden = true;
+  errorBox.setAttribute("role", "alert");
+  wrap.appendChild(errorBox);
+
+  // --- results card ------------------------------------------------------------------
+  const resultCard = el("div", "hb-sns-card");
+  resultCard.hidden = true;
+  resultCard.appendChild(el("h4", "", "🎯 Matches"));
+  const resultList = el("div", "");
+  resultCard.appendChild(resultList);
+  wrap.appendChild(resultCard);
+
+  const noteBox = el("p", "hb-sns-note", getDisclosures()[3]);
+  noteBox.style.textAlign = "center";
+  wrap.appendChild(noteBox);
+
+  // --- state --------------------------------------------------------------------------
   let notes = loadNotes();
   let pipePromise: Promise<unknown> | null = null;
 
-  const status = el("p", "hb-ai-status");
-  status.setAttribute("role", "status");
-  const errorBox = el("p", "hb-ai-error");
-  errorBox.style.display = "none";
-  const showError = (msg: string): void => {
+  function refreshSaved(): void {
+    saveStatus.textContent = `${notes.length} note${notes.length === 1 ? "" : "s"} saved.`;
+    savedList.innerHTML = "";
+    for (const n of notes.slice(0, 12)) {
+      const chip = el("span", "hb-sns-chip", n.title || n.text.slice(0, 28));
+      chip.title = n.text.slice(0, 120);
+      savedList.appendChild(chip);
+    }
+  }
+
+  function showError(msg: string): void {
     errorBox.textContent = msg;
-    errorBox.style.display = "";
-  };
-  const clearError = (): void => {
+    errorBox.hidden = false;
+  }
+  function clearError(): void {
     errorBox.textContent = "";
-    errorBox.style.display = "none";
-  };
+    errorBox.hidden = true;
+  }
+  function setProgress(fraction: number, msg: string): void {
+    progress.hidden = false;
+    const pct = Math.max(0, Math.min(100, Math.round(fraction * 100)));
+    progressBar.style.width = pct + "%";
+    status.textContent = msg;
+  }
+  function hideProgress(): void {
+    progress.hidden = true;
+    progressBar.style.width = "0%";
+  }
 
   const getPipe = async (onProgress: ProgressCallback): Promise<EmbedFn> => {
     if (!pipePromise) {
@@ -139,42 +341,7 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     return poolEmbedding(await pipe(text, { pooling: "mean", normalize: true }));
   };
 
-  // ---- Save-note section ----
-  const saveTitle = el("p", "hb-ai-label", "1. Save a note (stored only in this browser)");
-  const titleInput = el("input", "hb-ai-input") as HTMLInputElement;
-  titleInput.placeholder = "Note title (optional)";
-  const textInput = el("textarea", "hb-ai-textarea") as HTMLTextAreaElement;
-  textInput.rows = 4;
-  textInput.placeholder = "Write or paste a note…";
-  const saveBtn = el("button", "hb-btn", "Save note") as HTMLButtonElement;
-  const saveStatus = el("p", "hb-ai-label", `${notes.length} note(s) saved.`);
-
-  // ---- Search section ----
-  const searchTitle = el("p", "hb-ai-label", "2. Search your notes by meaning");
-  const queryInput = el("input", "hb-ai-input") as HTMLInputElement;
-  queryInput.placeholder = "Describe what you are looking for…";
-  const searchBtn = el("button", "hb-btn hb-btn--primary", "Search") as HTMLButtonElement;
-  const progress = el("div", "hb-ai-progress");
-  progress.style.display = "none";
-  const resultBox = el("div", "hb-ai-result");
-  resultBox.style.display = "none";
-  const noteBox = el("p", "hb-ai-label", getDisclosures()[3]);
-
-  host.append(
-    saveTitle,
-    titleInput,
-    textInput,
-    saveBtn,
-    saveStatus,
-    searchTitle,
-    queryInput,
-    searchBtn,
-    progress,
-    status,
-    errorBox,
-    resultBox,
-    noteBox,
-  );
+  refreshSaved();
 
   saveBtn.addEventListener("click", async () => {
     clearError();
@@ -188,10 +355,10 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       return;
     }
     saveBtn.disabled = true;
-    status.textContent = "Embedding note (first run downloads ~22 MB)…";
+    setProgress(0.05, "Embedding note (first run downloads ~22 MB)…");
     try {
       const embedding = await embed(textInput.value.trim(), (p) => {
-        status.textContent = p.status;
+        setProgress(p.fraction < 0 ? 0 : p.fraction, p.status);
       });
       const note: StoredNote = {
         id: `${Date.now()}-${Math.floor(Math.random() * 1e6)}`,
@@ -203,19 +370,20 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       saveNotes(notes);
       titleInput.value = "";
       textInput.value = "";
-      saveStatus.textContent = `${notes.length} note(s) saved.`;
+      refreshSaved();
       status.textContent = "Note saved.";
     } catch (err) {
       showError(err instanceof Error ? `Could not embed the note: ${err.message}` : "Could not save the note.");
     } finally {
+      hideProgress();
       saveBtn.disabled = false;
     }
   });
 
   searchBtn.addEventListener("click", async () => {
     clearError();
-    resultBox.style.display = "none";
-    resultBox.innerHTML = "";
+    resultCard.hidden = true;
+    resultList.innerHTML = "";
     const check = validateQuery({ query: queryInput.value });
     if (!check.ok) {
       showError(check.error ?? "Type a search query first.");
@@ -226,11 +394,10 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       return;
     }
     searchBtn.disabled = true;
-    progress.style.display = "";
-    status.textContent = "Embedding query…";
+    setProgress(0.05, "Embedding query…");
     try {
       const queryEmb = await embed(QUERY_PREFIX + queryInput.value.trim(), (p) => {
-        status.textContent = p.status;
+        setProgress(p.fraction < 0 ? 0 : p.fraction, p.status);
       });
       if (!queryEmb) {
         showError("Could not embed the query — please try again.");
@@ -238,27 +405,26 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       }
       const ranked = rankNotes(queryEmb, notes, (n) => n.embedding).slice(0, 10);
       if (ranked.length === 0) {
-        resultBox.append(el("p", "hb-ai-label", "No embedded notes to search."));
+        resultList.appendChild(el("p", "hb-sns-note", "No embedded notes to search."));
       } else {
         for (const r of ranked) {
-          const item = el("div", "");
-          item.style.marginBottom = "12px";
-          const head = el(
-            "p",
-            "hb-ai-label",
-            `${r.note.title || "(untitled)"} — ${(r.score * 100).toFixed(1)}%`,
-          );
-          const body = el("p", "", r.note.text.slice(0, 300));
-          item.append(head, body);
-          resultBox.append(item);
+          const item = el("div", "hb-sns-match");
+          const head = el("div", "hb-sns-match-head");
+          head.appendChild(el("span", "hb-sns-match-title", r.note.title || "(untitled)"));
+          head.appendChild(el("span", "hb-sns-score", `${(r.score * 100).toFixed(1)}% match`));
+          item.appendChild(head);
+          item.appendChild(el("p", "hb-sns-match-body", r.note.text.slice(0, 300)));
+          resultList.appendChild(item);
         }
       }
-      resultBox.style.display = "";
+      resultCard.hidden = false;
+      hideProgress();
       status.textContent = `Done — ${ranked.length} match(es). Skim the note to confirm.`;
+      resultCard.scrollIntoView({ behavior: "smooth", block: "nearest" });
     } catch (err) {
+      hideProgress();
       showError(err instanceof Error ? `Search failed: ${err.message}` : "Search failed.");
     } finally {
-      progress.style.display = "none";
       searchBtn.disabled = false;
     }
   });

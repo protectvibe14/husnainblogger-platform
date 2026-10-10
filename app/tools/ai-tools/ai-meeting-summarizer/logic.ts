@@ -14,7 +14,7 @@ export interface ValidationResult {
   errors: string[];
 }
 
-/** Allowed optimization goals. */
+/** Allowed output formats. */
 export const OPTIONS = ['action-items', 'bullets', 'minutes'] as const;
 
 const MAX_TEXT = 8000;
@@ -26,7 +26,7 @@ export function validateInputs(inputs: Record<string, string>): ValidationResult
   const notes = (inputs.notes ?? '').trim();
 
   if (!(OPTIONS as readonly string[]).includes(format)) {
-    errors.push('Pick an optimization goal (clearer, more detailed, or shorter).');
+    errors.push('Pick an output format (action items, key bullets, or meeting minutes).');
   }
 
   if (!notes) {

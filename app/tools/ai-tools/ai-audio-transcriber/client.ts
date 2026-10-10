@@ -1,10 +1,12 @@
 /**
- * client.ts — AI Audio Transcriber (tool-510), Lane A.
+ * client.ts — AI Audio Transcriber (tool-510), Lane A (redesigned).
  *
- * Flow: audio upload + tiny/base select -> decode to 16 kHz mono in-browser ->
- * pipeline('automatic-speech-recognition', verified Whisper model, 30 s chunks,
- * 5 s stride) -> transcript in editable textarea + copy + .txt download.
- * All on-device. Honest errors only.
+ * Flow: gradient header -> drop-zone card + model card -> big gradient
+ * Transcribe button -> progress + status -> transcript card (editable
+ * textarea + copy + .txt download). Pipeline: audio upload -> decode to
+ * 16 kHz mono in-browser -> pipeline('automatic-speech-recognition',
+ * verified Whisper model, 30 s chunks, 5 s stride). All on-device.
+ * Honest errors only. User data rendered via textContent only.
  */
 import type { AiClientContext } from '../../../src/lib/ai/types.ts';
 import type { ModelLoadProgress } from '../../../src/lib/ai/model-loader.ts';
@@ -66,30 +68,143 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
   const root = ctx.mountEl;
   root.innerHTML = '';
 
-  // --- upload -------------------------------------------------------------
-  const fileLabel = el('label', 'hb-ai-label', 'Audio file *');
-  fileLabel.htmlFor = 'hb-ai-tr-file';
-  root.appendChild(fileLabel);
+  // --- styles ---------------------------------------------------------------
+  const style = document.createElement('style');
+  style.textContent = `
+    .hb-tr-wrap { display: flex; flex-direction: column; gap: 18px; }
+    .hb-tr-header {
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      border-radius: 16px; padding: 24px; color: #fff;
+    }
+    .hb-tr-header h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; }
+    .hb-tr-header p { margin: 0; font-size: 14px; opacity: .9; }
+    .hb-tr-card {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+      padding: 20px;
+    }
+    .hb-tr-label {
+      display: block; font-size: 14px; font-weight: 700; color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .hb-tr-drop {
+      border: 2px dashed #9aa4b2; border-radius: 12px; padding: 32px 20px;
+      text-align: center; cursor: pointer; transition: all .2s ease;
+      background: #f8fafc;
+    }
+    .hb-tr-drop:hover, .hb-tr-drop.hb-tr-dragover {
+      border-color: #0ea5e9; background: #f0f9ff;
+    }
+    .hb-tr-drop-icon { font-size: 38px; margin-bottom: 8px; }
+    .hb-tr-drop-title { font-size: 16px; font-weight: 600; color: #1e293b; margin: 0 0 4px; }
+    .hb-tr-drop-sub { font-size: 13px; color: #64748b; margin: 0; }
+    .hb-tr-browse {
+      display: inline-block; margin-top: 12px; padding: 10px 22px;
+      background: #0ea5e9; color: #fff; border: none; border-radius: 8px;
+      font-size: 15px; font-weight: 600; cursor: pointer;
+    }
+    .hb-tr-browse:hover { background: #0284c7; }
+    .hb-tr-filename {
+      font-size: 14px; font-weight: 600; color: #0369a1; margin: 10px 0 0;
+      word-break: break-all;
+    }
+    .hb-tr-select {
+      width: 100%; padding: 12px 14px; font-size: 15px; font-family: inherit;
+      border: 2px solid #e2e8f0; border-radius: 10px; background: #fff;
+      box-sizing: border-box;
+    }
+    .hb-tr-select:focus { outline: none; border-color: #0ea5e9; }
+    .hb-tr-hint { font-size: 13px; color: #64748b; margin: 8px 0 0; }
+    .hb-tr-generate {
+      width: 100%; padding: 16px; font-size: 18px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      border: none; border-radius: 12px; cursor: pointer;
+    }
+    .hb-tr-generate:hover:not(:disabled) { opacity: .92; }
+    .hb-tr-generate:disabled { background: #94a3b8; cursor: not-allowed; }
+    .hb-tr-progress {
+      height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden;
+    }
+    .hb-tr-progress > div {
+      height: 100%; background: linear-gradient(90deg, #0ea5e9, #6366f1);
+      width: 0%; transition: width .3s;
+    }
+    .hb-tr-status { font-size: 14px; color: #475569; margin: 0; text-align: center; }
+    .hb-tr-error {
+      background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c;
+      padding: 14px 18px; border-radius: 10px; font-size: 14px;
+    }
+    .hb-tr-result-card {
+      background: linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%);
+      border-radius: 14px; padding: 20px;
+    }
+    .hb-tr-result-title { font-size: 16px; font-weight: 700; color: #1e293b; margin: 0 0 12px; }
+    .hb-tr-textarea {
+      width: 100%; min-height: 200px; padding: 14px; font-size: 15px; line-height: 1.6;
+      border: 2px solid #e2e8f0; border-radius: 10px; resize: vertical;
+      font-family: inherit; box-sizing: border-box; background: #fff;
+    }
+    .hb-tr-textarea:focus { outline: none; border-color: #0ea5e9; }
+    .hb-tr-actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .hb-tr-copy {
+      padding: 12px 24px; background: #16a34a; color: #fff; border: none;
+      border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer;
+    }
+    .hb-tr-copy:hover { background: #15803d; }
+    .hb-tr-dl {
+      display: inline-block; padding: 12px 24px; background: #0ea5e9; color: #fff;
+      border-radius: 10px; font-size: 15px; font-weight: 700; text-decoration: none;
+    }
+    .hb-tr-dl:hover { background: #0284c7; }
+    @media (max-width: 640px) {
+      .hb-tr-header { padding: 18px; }
+      .hb-tr-header h3 { font-size: 18px; }
+      .hb-tr-card, .hb-tr-result-card { padding: 16px; }
+      .hb-tr-drop { padding: 24px 14px; }
+    }
+  `;
+  root.appendChild(style);
 
-  const drop = el('div', 'hb-ai-field');
+  const wrap = el('div', 'hb-tr-wrap');
+  root.appendChild(wrap);
+
+  // --- header ---------------------------------------------------------------
+  const header = el('div', 'hb-tr-header');
+  header.appendChild(el('h3', '', '🎙️ AI Audio Transcriber'));
+  header.appendChild(el('p', '', 'Upload your audio — get an editable transcript in minutes. Whisper runs 100% on your device; your audio is never uploaded.'));
+  wrap.appendChild(header);
+
+  // --- upload card ----------------------------------------------------------
+  const uploadCard = el('div', 'hb-tr-card');
+  uploadCard.appendChild(el('label', 'hb-tr-label', '🎵 Audio file *'));
+  const drop = el('div', 'hb-tr-drop');
   drop.setAttribute('role', 'button');
   drop.tabIndex = 0;
   drop.setAttribute('aria-label', 'Upload an audio file: drag and drop, or press Enter to browse');
-  drop.appendChild(el('p', 'hb-ai-status', 'Drag & drop an audio file here, or click to browse (MP3, WAV, M4A, OGG, WEBM, FLAC — up to ' + MAX_FILE_MB + ' MB).'));
-  const fileName = el('p', 'hb-ai-status');
+  const dropIcon = el('div', 'hb-tr-drop-icon', '🎧');
+  const dropTitle = el('p', 'hb-tr-drop-title', 'Drag & drop your audio here');
+  const dropSub = el('p', 'hb-tr-drop-sub', 'or click to browse — MP3, WAV, M4A, OGG, WEBM, FLAC up to ' + MAX_FILE_MB + ' MB');
+  const browseBtn = el('button', 'hb-tr-browse', 'Choose audio file');
+  browseBtn.type = 'button';
+  drop.appendChild(dropIcon);
+  drop.appendChild(dropTitle);
+  drop.appendChild(dropSub);
+  drop.appendChild(browseBtn);
+  const fileName = el('p', 'hb-tr-filename');
   drop.appendChild(fileName);
-  const fileInput = el('input', 'hb-ai-input') as HTMLInputElement;
+  const fileInput = document.createElement('input');
   fileInput.type = 'file';
-  fileInput.id = 'hb-ai-tr-file';
   fileInput.accept = getAllowedMimes().join(',');
   fileInput.hidden = true;
   drop.appendChild(fileInput);
-  root.appendChild(drop);
+  uploadCard.appendChild(drop);
+  wrap.appendChild(uploadCard);
 
-  const modelLabel = el('label', 'hb-ai-label', 'Model');
+  // --- model card -----------------------------------------------------------
+  const modelCard = el('div', 'hb-tr-card');
+  const modelLabel = el('label', 'hb-tr-label', '🤖 Transcription model');
   modelLabel.htmlFor = 'hb-ai-tr-model';
-  root.appendChild(modelLabel);
-  const modelSel = el('select', 'hb-ai-select');
+  modelCard.appendChild(modelLabel);
+  const modelSel = el('select', 'hb-tr-select');
   modelSel.id = 'hb-ai-tr-model';
   for (const id of ['tiny', 'base']) {
     const opt = getModelOption(id);
@@ -98,55 +213,59 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     o.textContent = opt?.label ?? id;
     modelSel.appendChild(o);
   }
-  root.appendChild(modelSel);
+  modelCard.appendChild(modelSel);
+  modelCard.appendChild(el('p', 'hb-tr-hint', 'Tiny (~39 MB) is fast — good for clear voice memos. Base (~74 MB) is more accurate on longer recordings. The model downloads once, then is cached.'));
+  wrap.appendChild(modelCard);
 
-  const actions = el('div', 'hb-ai-actions');
-  const runBtn = el('button', 'hb-btn hb-btn--primary', 'Transcribe');
+  // --- generate -------------------------------------------------------------
+  const runBtn = el('button', 'hb-tr-generate', '✨ Transcribe audio');
   runBtn.type = 'button';
   runBtn.disabled = true;
-  actions.appendChild(runBtn);
-  root.appendChild(actions);
+  wrap.appendChild(runBtn);
 
-  const progress = el('div', 'hb-ai-progress');
+  const progress = el('div', 'hb-tr-progress');
   progress.hidden = true;
   progress.setAttribute('role', 'progressbar');
   const progressBar = el('div', '');
   progress.appendChild(progressBar);
-  root.appendChild(progress);
+  wrap.appendChild(progress);
 
-  const status = el('p', 'hb-ai-status');
-  root.appendChild(status);
+  const status = el('p', 'hb-tr-status');
+  wrap.appendChild(status);
 
-  const errBox = el('div', 'hb-ai-error');
+  const errBox = el('div', 'hb-tr-error');
   errBox.hidden = true;
   errBox.setAttribute('role', 'alert');
-  root.appendChild(errBox);
+  wrap.appendChild(errBox);
 
-  const result = el('div', 'hb-ai-result');
+  // --- result ---------------------------------------------------------------
+  const result = el('div', 'hb-tr-result-card');
   result.hidden = true;
-  const transcriptLabel = el('label', 'hb-ai-label', 'Transcript (editable)');
-  transcriptLabel.htmlFor = 'hb-ai-tr-output';
-  result.appendChild(transcriptLabel);
-  const transcriptBox = el('textarea', 'hb-ai-textarea') as HTMLTextAreaElement;
+  result.appendChild(el('p', 'hb-tr-result-title', '📝 Transcript (editable)'));
+  const transcriptBox = el('textarea', 'hb-tr-textarea') as HTMLTextAreaElement;
   transcriptBox.id = 'hb-ai-tr-output';
   transcriptBox.rows = 12;
   transcriptBox.placeholder = 'Your transcript appears here.';
   result.appendChild(transcriptBox);
-  const outActions = el('div', 'hb-ai-actions');
-  const copyBtn = el('button', 'hb-btn hb-btn--ghost', 'Copy text');
+  const outActions = el('div', 'hb-tr-actions');
+  const copyBtn = el('button', 'hb-tr-copy', '📋 Copy transcript');
   copyBtn.type = 'button';
-  const dlBtn = el('a', 'hb-btn hb-btn--ghost', 'Download .txt');
+  const dlBtn = document.createElement('a');
+  dlBtn.className = 'hb-tr-dl';
+  dlBtn.textContent = '⬇ Download .txt';
   dlBtn.setAttribute('download', 'transcript.txt');
   outActions.appendChild(copyBtn);
   outActions.appendChild(dlBtn);
   result.appendChild(outActions);
-  root.appendChild(result);
+  wrap.appendChild(result);
 
-  // --- state --------------------------------------------------------------
+  // --- state ------------------------------------------------------------------
   let file: File | null = null;
   let resultUrl: string | null = null;
 
   function showError(msg: string): void {
+    hideProgress();
+    status.textContent = '';
     errBox.textContent = msg;
     errBox.hidden = false;
     result.hidden = true;
@@ -168,6 +287,7 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     runBtn.disabled = false;
     errBox.hidden = true;
     result.hidden = true;
+    status.textContent = 'Audio ready — click "Transcribe audio".';
   }
 
   drop.addEventListener('click', (e) => {
@@ -179,9 +299,14 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       fileInput.click();
     }
   });
-  drop.addEventListener('dragover', (e) => e.preventDefault());
+  drop.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    drop.classList.add('hb-tr-dragover');
+  });
+  drop.addEventListener('dragleave', () => drop.classList.remove('hb-tr-dragover'));
   drop.addEventListener('drop', (e) => {
     e.preventDefault();
+    drop.classList.remove('hb-tr-dragover');
     pickFile(e.dataTransfer?.files?.[0] ?? null);
   });
   fileInput.addEventListener('change', () => pickFile(fileInput.files?.[0] ?? null));
@@ -206,7 +331,10 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
     void (async () => {
       try {
         await navigator.clipboard.writeText(transcriptBox.value);
-        status.textContent = 'Transcript copied to clipboard.';
+        copyBtn.textContent = 'Copied ✓';
+        window.setTimeout(() => {
+          copyBtn.textContent = '📋 Copy transcript';
+        }, 1500);
       } catch {
         status.textContent = 'Copy failed — select the text manually and press Ctrl/Cmd+C.';
       }
@@ -249,9 +377,14 @@ export async function mountAiTool(ctx: AiClientContext): Promise<void> {
       if (resultUrl) URL.revokeObjectURL(resultUrl);
       resultUrl = URL.createObjectURL(new Blob([text], { type: 'text/plain' }));
       dlBtn.setAttribute('href', resultUrl);
+      dlBtn.setAttribute(
+        'download',
+        currentFile.name.replace(/\.[^.]+$/, '') + '-transcript.txt',
+      );
       result.hidden = false;
       hideProgress();
-      status.textContent = 'Done — transcribed on your device.';
+      status.textContent = 'Done — transcribed on your device. Edit freely, then copy or download.';
+      result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     } catch (err) {
       hideProgress();
       const msg = err instanceof Error ? err.message : String(err);
