@@ -87,6 +87,22 @@ export const content: ToolContent = {
       answer:
         'A meme text generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a meme caption funny?',
+      answer: 'Relatability plus surprise. The best memes capture a universal experience with an unexpected twist. Keep it short — the image does half the work.',
+    },
+    {
+      question: 'How long should meme text be?',
+      answer: 'Under 15 words for top/bottom text. Memes are scanned, not read. If it needs explanation, it\'s not working.',
+    },
+    {
+      question: 'Can I use memes for business marketing?',
+      answer: 'Yes, if it fits your brand voice. Memes humanize brands and get high engagement. Just avoid controversial templates and always check the meme\'s origin.',
+    },
+    {
+      question: 'Where do I find trending meme formats?',
+      answer: 'Reddit\'s r/memes, Instagram meme pages, and KnowYourMeme.com. Use formats your audience already recognizes for instant comprehension.',
+    },
   ],
   assumptions: [
     "The logic produces a render spec, not an image — actual rasterization is the page's canvas preview.",

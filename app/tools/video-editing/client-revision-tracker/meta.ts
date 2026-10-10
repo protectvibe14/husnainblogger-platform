@@ -81,6 +81,22 @@ export const content: ToolContent = {
       answer:
         'A video revision tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How many revisions should I include?',
+      answer: 'Two to three rounds is standard. More than that suggests unclear briefs, not generous service. State your revision limit in the contract upfront.',
+    },
+    {
+      question: 'How do I track revision requests clearly?',
+      answer: 'Log each request with a timestamp, description, and status. This tool helps you track what was asked, what was done, and what counts toward the revision limit.',
+    },
+    {
+      question: 'What counts as a revision vs new work?',
+      answer: 'Revisions are adjustments to existing work within the original brief. New scenes, different concepts, or added deliverables are new work — charge accordingly.',
+    },
+    {
+      question: 'How do I handle clients who exceed revisions?',
+      answer: 'Refer to your contract, show the logged revision history, and quote for additional rounds. Clear tracking makes this conversation factual, not emotional.',
+    },
   ],
   assumptions: [
     "Session-based: the list is NOT saved — export the CSV before closing the tab to keep your log.",

@@ -135,6 +135,22 @@ export const content: ToolContent = {
       answer:
         'A freelance referral program is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What incentive works best for referrals?',
+      answer: 'Double-sided incentives (both referrer and new client get a reward) outperform single-sided. Cash, discounts, or service credits all work — test what motivates your audience.',
+    },
+    {
+      question: 'When should I ask for referrals?',
+      answer: 'Right after delivering great results, when client satisfaction is highest. Don\'t wait — strike while the positive experience is fresh.',
+    },
+    {
+      question: 'How do I track referral sources?',
+      answer: 'Use unique referral codes or links per client. This lets you reward accurately and identify your best referral sources for extra nurturing.',
+    },
+    {
+      question: 'Should I cap referral rewards?',
+      answer: 'Set reasonable limits to protect margins, but make them generous enough to motivate. A 10-20% reward on first project value is typical for services.',
+    },
   ],
   assumptions: [
     "Commission terms are your own policy — this planner does not give business or legal advice.",

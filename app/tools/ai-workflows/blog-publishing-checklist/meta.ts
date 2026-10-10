@@ -52,6 +52,22 @@ export const content: ToolContent = {
       answer:
         'A blog post publishing checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I check before hitting publish?',
+      answer: 'Verify your headline, meta description, featured image, internal links, spelling, formatting on mobile, and that all images have alt text. This checklist walks through each item systematically.',
+    },
+    {
+      question: 'How do I ensure my post is SEO-ready?',
+      answer: 'Check that your primary keyword appears in the title, first paragraph, at least one H2, the URL slug, and meta description. Also confirm you have 3-5 internal links to related content.',
+    },
+    {
+      question: 'Should I preview on mobile before publishing?',
+      answer: 'Always. Over 60% of blog traffic is mobile. Check that images resize properly, text is readable without zooming, and buttons are tappable.',
+    },
+    {
+      question: 'What about social sharing setup?',
+      answer: 'Confirm your OG image, title, and description are set so shares look professional. Test with Facebook\'s sharing debugger or Twitter\'s card validator before publishing.',
+    },
   ],
   assumptions: [
     "A fixed, general-purpose list — it is not SEO advice tailored to your site or niche.",

@@ -70,6 +70,22 @@ export const content: ToolContent = {
       answer:
         'A guest post pitch template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a guest post pitch get accepted?',
+      answer: 'Show you\'ve read their blog, propose a specific topic that fills a gap in their content, and include 2-3 headline options. Generic pitches get deleted.',
+    },
+    {
+      question: 'How long should my pitch email be?',
+      answer: 'Under 150 words. Introduce yourself in one line, propose the topic in two lines, and close with your credentials. Editors are busy — respect their time.',
+    },
+    {
+      question: 'Should I include writing samples?',
+      answer: 'Yes, link to 2-3 relevant published pieces. Choose samples similar to what you\'re pitching so the editor can see you can deliver.',
+    },
+    {
+      question: 'How do I follow up without being annoying?',
+      answer: 'Wait 7-10 days, then send one brief follow-up. If no response after that, move on. Never follow up more than twice.',
+    },
   ],
   assumptions: [
     "The email is a fixed template; personalization beyond the slots is the user's job.",

@@ -72,6 +72,22 @@ export const content: ToolContent = {
       answer:
         'A blogging sop template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What is a blogging SOP?',
+      answer: 'A Standard Operating Procedure documents your exact blogging process — from topic selection through publishing and promotion — so anyone on your team can produce consistent quality content.',
+    },
+    {
+      question: 'What sections should a blogging SOP include?',
+      answer: 'Include topic research criteria, outline template, writing guidelines, editing checklist, image requirements, SEO requirements, publishing steps, and promotion tasks. This tool generates all of these.',
+    },
+    {
+      question: 'How detailed should each SOP step be?',
+      answer: 'Detailed enough that a new team member can follow it without asking questions, but not so detailed it becomes rigid. Include the what and why, leave room for judgment on the how.',
+    },
+    {
+      question: 'How often should I update my blogging SOP?',
+      answer: 'Update whenever your process changes — new SEO requirements, different tools, team feedback. Review quarterly at minimum to catch outdated steps.',
+    },
   ],
   assumptions: [
     "The tool adds no process knowledge — every step, owner, and frequency comes from you.",

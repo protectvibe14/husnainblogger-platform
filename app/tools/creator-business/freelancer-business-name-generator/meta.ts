@@ -105,6 +105,22 @@ export const content: ToolContent = {
       answer:
         'A freelance business name ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Should I use my own name or a business name?',
+      answer: 'Your own name works for personal brands and consultants. A business name is better if you plan to scale, sell, or hire — it separates you from the business.',
+    },
+    {
+      question: 'What makes a good freelancer business name?',
+      answer: 'Memorable, easy to spell, relevant to your service, and available as a domain. Avoid clever spellings that people can\'t find when searching.',
+    },
+    {
+      question: 'How do I check if a name is available?',
+      answer: 'Search domain registrars, check social media handles, and look up trademark databases. This tool suggests names, but always verify availability before committing.',
+    },
+    {
+      question: 'Can I change my business name later?',
+      answer: 'Yes, but it\'s costly — you lose brand recognition and SEO equity. Choose carefully upfront to avoid rebranding headaches later.',
+    },
   ],
   assumptions: [
     "Names are assembled from fixed word banks and patterns — template-based, never AI-generated.",

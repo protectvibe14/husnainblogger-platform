@@ -90,6 +90,22 @@ export const content: ToolContent = {
       answer:
         'An ai prompt chain builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What is a prompt chain?',
+      answer: 'A sequence where each AI prompt\'s output feeds into the next prompt\'s input. For example: prompt 1 generates an outline, prompt 2 expands each section, prompt 3 polishes the tone.',
+    },
+    {
+      question: 'When should I use prompt chains vs single prompts?',
+      answer: 'Use chains for complex tasks with multiple distinct steps. Single prompts work for simple tasks. If your prompt has more than 3 instructions, consider splitting it into a chain.',
+    },
+    {
+      question: 'How do I handle errors in the middle of a chain?',
+      answer: 'Build validation checkpoints between steps. If step 2\'s output looks wrong, don\'t feed it to step 3 — add a review or retry logic at each handoff point.',
+    },
+    {
+      question: 'What\'s the ideal chain length?',
+      answer: 'Three to five steps. Longer chains accumulate errors and become hard to debug. If you need more steps, consider whether the task should be split into separate workflows.',
+    },
   ],
   assumptions: [
     "Step prompts are fixed templates you edit — the tool writes no prompt content for you.",

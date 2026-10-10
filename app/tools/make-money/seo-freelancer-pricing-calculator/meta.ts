@@ -123,6 +123,26 @@ export const content: ToolContent = {
       answer:
         "No — the tool is explicit that no benchmark source was verified for its bands, and every result is labeled an estimate. Use the range as a starting bracket, then replace the bands with your own low/high overrides for quotes you actually send.",
     },
+      {
+      question: 'How much should I charge for SEO services?',
+      answer: 'Freelance SEO rates range from $75-$200/hour or $1,000-$5,000/month for retainers. Price based on your experience, results delivered, and the client\'s market competition.',
+    },
+    {
+      question: 'Should I charge hourly or per project?',
+      answer: 'Monthly retainers work best for ongoing SEO. Project pricing suits audits and one-time optimizations. Hourly is fine for consulting but caps your earning potential.',
+    },
+    {
+      question: 'How do I justify higher SEO rates?',
+      answer: 'Show case studies with traffic and revenue impact. Clients pay for outcomes, not hours. Document your wins and lead with results in proposals.',
+    },
+    {
+      question: 'When should I raise my rates?',
+      answer: 'When you\'re consistently booked, when your results improve, or annually at minimum. Existing clients expect periodic increases — communicate value, not just the price change.',
+    },
+    {
+      question: 'Do I need different pricing for local vs national SEO?',
+      answer: 'Yes. Local SEO is typically less competitive and priced lower ($500-$2,000/month). National campaigns in competitive niches command premium rates.',
+    },
   ],
   assumptions: [
     "Rate bands are unverified placeholder estimates — no 2026 benchmark source was verified. Adjust them to your market; this is not pricing advice.",

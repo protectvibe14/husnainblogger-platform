@@ -83,6 +83,18 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the tiktok sponsorship rates, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What is the going rate for TikTok sponsorships?',
+      answer: 'Nano-influencers (1K-10K) charge $50-$250/post. Micro (10K-100K) charge $250-$1,500. Larger accounts scale from there based on views and engagement.',
+    },
+    {
+      question: 'Do views or followers matter more for pricing?',
+      answer: 'Average views matter more than followers. Brands want eyeballs — show your last 10 videos\' average views when negotiating rates.',
+    },
+    {
+      question: 'Should I offer package deals?',
+      answer: 'Yes. Bundling 3-5 posts at a slight discount increases deal size and gives brands more exposure. It also reduces your pitching overhead.',
+    },
   ],
   assumptions: [
     "Tier bands are 2026 compiled survey estimates (nano $5–$25/video to mega $5k–$25k+) — not guaranteed rates and not verified platform data (needs review).",

@@ -143,6 +143,22 @@ export const content: ToolContent = {
       answer:
         'A video file naming convention is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'Why does file naming matter for video projects?',
+      answer: 'Consistent naming prevents lost files, speeds up searching, and makes collaboration smooth. \'Final_v2_REAL_final.mp4\' helps no one.',
+    },
+    {
+      question: 'What is a good video file naming convention?',
+      answer: 'Include project, date, version, and description: \'ClientName_2026-10-10_v02_RoughCut.mp4\'. Sortable, searchable, unambiguous.',
+    },
+    {
+      question: 'Should I include version numbers?',
+      answer: 'Always. Use v01, v02 (not \'final\'). Version numbers prevent the \'which final is actually final\' problem that plagues every editor.',
+    },
+    {
+      question: 'How do I organize project folders?',
+      answer: 'Standard structure: 01_Footage, 02_Audio, 03_Graphics, 04_Project_Files, 05_Exports. Consistent folders plus consistent naming equals findable everything.',
+    },
   ],
   assumptions: [
     "Fixed bank of 6 patterns — template-based, not AI-generated.",

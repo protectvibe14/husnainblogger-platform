@@ -70,6 +70,22 @@ export const content: ToolContent = {
       answer:
         'An ai content workflow checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a good AI workflow checklist?',
+      answer: 'A good checklist breaks the workflow into sequential steps, assigns responsibility for each, includes quality gates where human review is needed, and notes which steps are automated versus manual.',
+    },
+    {
+      question: 'How do I know which steps to automate?',
+      answer: 'Automate steps that are repetitive, rule-based, and high-volume. Keep human review for creative decisions, edge cases, and anything affecting customers directly. This tool helps you map that split.',
+    },
+    {
+      question: 'Should checklists differ for content vs data workflows?',
+      answer: 'Yes. Content workflows need creativity checkpoints and brand voice reviews. Data workflows need validation steps and error handling. Build separate checklists for each type.',
+    },
+    {
+      question: 'How often should I update my workflow checklist?',
+      answer: 'Review quarterly or whenever you change tools, team members, or process steps. Stale checklists cause more confusion than no checklist at all.',
+    },
   ],
   assumptions: [
     "The tool structures your stage list only — it adds no AI, workflow logic, or advice.",

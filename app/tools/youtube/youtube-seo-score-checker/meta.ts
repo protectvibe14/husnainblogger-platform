@@ -80,7 +80,7 @@ export const content: ToolContent = {
         title: 'budget travel tips for beginners',
         targetKeyword: 'budget travel tips',
         description:
-    'budget travel tips for beginners: save money on flights, hotels, and food. Full guide at https://example.com. 0:00 Intro\n2:15 Flights\n5:40 Hotels.',
+    'Check your YouTube SEO score free — analyze titles, descriptions, tags, and thumbnails against ranking factors. Get actionable fixes to rank higher. Try it now!',
         tags: 'budget travel tips, travel, cheap flights',
         chapters: '0:00 Intro\n2:15 Flights\n5:40 Hotels',
         thumbnailText: 'TRAVEL CHEAP',

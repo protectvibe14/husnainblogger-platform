@@ -97,6 +97,22 @@ export const content: ToolContent = {
       answer:
         'A freelancer tagline ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a tagline effective?',
+      answer: 'It communicates what you do and who you serve in under 10 words. \'I help SaaS startups write onboarding emails that convert\' beats \'Creative wordsmith crafting compelling narratives.\'',
+    },
+    {
+      question: 'Where should I use my tagline?',
+      answer: 'Your website header, LinkedIn headline, email signature, proposals, and social bios. Consistency builds recognition — use the same tagline everywhere.',
+    },
+    {
+      question: 'Should my tagline mention my niche?',
+      answer: 'Yes, if you have one. Specificity attracts ideal clients and repels bad fits. \'Email copywriter for fitness coaches\' will outperform generic alternatives.',
+    },
+    {
+      question: 'How often should I update my tagline?',
+      answer: 'When your services, audience, or positioning changes. Otherwise, keep it stable — changing too often confuses your audience.',
+    },
   ],
   assumptions: [
     "Taglines are assembled from fixed templates — pattern-based, never AI-written.",

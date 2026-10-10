@@ -111,6 +111,22 @@ export const content: ToolContent = {
       answer:
         'A video editing pomodoro timer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How does Pomodoro help video editors?',
+      answer: 'Editing requires sustained focus. 25-minute focused sprints with 5-minute breaks prevent burnout and maintain creative quality through long projects.',
+    },
+    {
+      question: 'What should I do during Pomodoro breaks?',
+      answer: 'Step away from the screen. Stretch, hydrate, rest your eyes. Avoid checking email — true breaks restore focus better than task-switching.',
+    },
+    {
+      question: 'How many Pomodoros for a typical edit?',
+      answer: 'A 5-minute finished video might take 8-12 Pomodoros (4-6 hours). Complex projects with effects can take 20+. Track your averages to improve estimates.',
+    },
+    {
+      question: 'Can I use longer intervals for editing?',
+      answer: 'Yes. Many editors prefer 50/10 splits for deep creative work. The key is consistent breaks, not the exact interval length.',
+    },
   ],
   assumptions: [
     "Breaks are placed between rounds only — there is no break after the final round.",

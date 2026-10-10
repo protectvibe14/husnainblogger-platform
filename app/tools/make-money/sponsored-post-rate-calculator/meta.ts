@@ -100,6 +100,18 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the sponsored post rate calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'How much should I charge for a sponsored post?',
+      answer: 'Rates depend on your audience size, engagement rate, and niche. Micro-influencers charge $100-$500/post; larger accounts charge $1,000+. This calculator factors in your specific metrics.',
+    },
+    {
+      question: 'Does engagement rate affect my rates?',
+      answer: 'Significantly. Brands pay for engaged audiences, not just follower counts. A 10K account with 8% engagement can charge more than a 50K account with 1%.',
+    },
+    {
+      question: 'Should I charge differently per platform?',
+      answer: 'Yes. Instagram and TikTok command different rates than blogs or YouTube. Price based on the content effort required and typical rates for each platform.',
+    },
   ],
   assumptions: [
     "All tier bands, engagement benchmarks, and format multipliers are market estimates — not guaranteed rates and not verified platform data (needs review).",

@@ -97,6 +97,22 @@ export const content: ToolContent = {
       answer:
         'An ai research prompt is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should a research brief include?',
+      answer: 'A solid research brief covers your topic, target audience, key questions to answer, preferred sources, scope boundaries, and deliverable format. This tool structures all of these into a clear brief you can follow or hand to a researcher.',
+    },
+    {
+      question: 'How detailed should my research brief be?',
+      answer: 'Aim for one page covering the essentials: what you need to learn, why it matters, and what good looks like. Too vague and research wanders; too detailed and you constrain discovery. This tool finds the right balance.',
+    },
+    {
+      question: 'Can I use this for client research projects?',
+      answer: 'Yes. The generated brief works as a project scoping document — share it with clients to align on research goals before you start, which prevents scope creep and revision cycles.',
+    },
+    {
+      question: 'Does this work for academic research?',
+      answer: 'The structure adapts well to academic contexts. Define your thesis question, literature scope, and methodology needs in the inputs, and the brief will organize them into a research plan.',
+    },
   ],
   assumptions: [
     "The tool structures your question only — it performs no research and cites no sources.",

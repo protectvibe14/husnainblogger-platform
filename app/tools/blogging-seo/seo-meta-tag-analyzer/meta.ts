@@ -73,7 +73,7 @@ export const content: ToolContent = {
       inputs: {
         title: 'Best Sourdough Bread Recipe for Beginners at Home Today',
         description:
-    'Learn how to bake the best sourdough bread recipe for beginners with this step-by-step home guide, tips, and timing for perfect loaves.',
+    'Analyze your meta tags free — check title length, description quality, and missing tags. Get specific fixes to improve click-through rates. Try it now!',
         keyword: 'sourdough bread recipe',
         ogTitle: true,
         ogDescription: true,

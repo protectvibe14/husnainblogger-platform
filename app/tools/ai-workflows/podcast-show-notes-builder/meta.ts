@@ -74,6 +74,22 @@ export const content: ToolContent = {
       answer:
         'A podcast show notes template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should podcast show notes include?',
+      answer: 'Episode summary, key timestamps, guest bio and links, resources mentioned, and a CTA. Good show notes help discovery and give listeners a reason to visit your site.',
+    },
+    {
+      question: 'How detailed should timestamps be?',
+      answer: 'Include 5-8 timestamps for major topic shifts. Listeners use these to jump to relevant sections, which increases engagement and shares.',
+    },
+    {
+      question: 'Do show notes help with SEO?',
+      answer: 'Yes. Search engines can\'t index audio, but they index your show notes. Include your target keywords naturally and link to related episodes.',
+    },
+    {
+      question: 'Should I include a full transcript?',
+      answer: 'If you can, yes. Transcripts make your content accessible, improve SEO significantly, and let you repurpose the content into blog posts.',
+    },
   ],
   assumptions: [
     "The tool formats only the details you enter — it writes nothing about the episode itself.",

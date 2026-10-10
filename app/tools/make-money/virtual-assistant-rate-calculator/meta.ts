@@ -114,6 +114,18 @@ export const content: ToolContent = {
       answer:
         'No account needed. Open the virtual assistant rates calculator, enter your values, and see results immediately - nothing is stored or sent anywhere.',
     },
+      {
+      question: 'What do virtual assistants typically charge?',
+      answer: 'General VAs charge $15-$30/hour. Specialized VAs (bookkeeping, tech, marketing) charge $30-$60/hour. Rates vary by experience and location.',
+    },
+    {
+      question: 'Should I charge hourly or offer packages?',
+      answer: 'Packages (10, 20, 40 hours/month) provide stable income and incentivize longer commitments. Offer a small discount for larger packages.',
+    },
+    {
+      question: 'How do I price specialized VA services?',
+      answer: 'Charge 50-100% more than general admin rates for specialized skills. If you manage email marketing or bookkeeping, your expertise commands premium pricing.',
+    },
   ],
   assumptions: [
     "Rate bands are survey estimates ($15–$50/hr by level/region) — not a verified 2026 market benchmark. Adjust them to your market; this is not pay advice.",

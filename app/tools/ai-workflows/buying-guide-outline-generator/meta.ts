@@ -101,6 +101,22 @@ export const content: ToolContent = {
       answer:
         'A buying guide template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a buying guide convert well?',
+      answer: 'Clear comparison criteria, honest pros and cons for each option, a recommendation for different use cases, and answers to common objections. Readers should feel confident choosing after reading.',
+    },
+    {
+      question: 'How many products should I compare?',
+      answer: 'Three to five is ideal. Fewer feels thin; more overwhelms readers. Include a budget pick, a best-overall, and a premium option to cover the main buyer segments.',
+    },
+    {
+      question: 'Should I include products I don\'t recommend?',
+      answer: 'Briefly mention popular alternatives you\'re not recommending and explain why. This builds trust — readers see you\'re honest, not just pushing affiliate links.',
+    },
+    {
+      question: 'How do I structure the comparison section?',
+      answer: 'Use a comparison table up top for skimmers, then detailed reviews of each product below. End with a clear verdict section matching products to reader needs.',
+    },
   ],
   assumptions: [
     "The tool structures your category and tiers only — no product recommendations are made or invented.",

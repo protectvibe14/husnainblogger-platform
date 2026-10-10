@@ -109,6 +109,22 @@ export const content: ToolContent = {
       answer:
         'An expert roundup template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'How do I get experts to participate in a roundup?',
+      answer: 'Ask a specific, interesting question they can answer in 2-3 sentences. Make participation easy — no one wants homework. Mention you\'ll link to their site.',
+    },
+    {
+      question: 'How many experts should I include?',
+      answer: 'Aim for 10-20. Fewer feels thin; more becomes unwieldy to organize. Quality matters more than quantity — one insightful expert beats five generic answers.',
+    },
+    {
+      question: 'What question gets the best responses?',
+      answer: 'Ask about a specific challenge, prediction, or tactic — not generic advice. \'What\'s your #1 tip for X?\' works better than \'Tell me about X.\'',
+    },
+    {
+      question: 'Should I let experts approve their quotes?',
+      answer: 'Send them the draft quote for approval before publishing. It\'s courteous, prevents misquotes, and they may share the post more enthusiastically.',
+    },
   ],
   assumptions: [
     "Expert names and contacts are never fabricated; tracker rows are empty slots for you to fill in.",

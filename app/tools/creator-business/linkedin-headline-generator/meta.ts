@@ -120,6 +120,22 @@ export const content: ToolContent = {
       answer:
         'A linkedin headline for freelancers is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should my LinkedIn headline say?',
+      answer: 'Your headline should state who you help and how, not just your job title. \'Helping B2B SaaS companies 3x demo bookings | Outbound strategist\' beats \'Sales Consultant.\'',
+    },
+    {
+      question: 'How long can a LinkedIn headline be?',
+      answer: '220 characters. Use them — most people waste this prime real estate on just a job title. Include keywords your ideal clients search for.',
+    },
+    {
+      question: 'Should I include emojis in my headline?',
+      answer: 'Sparingly. One or two can improve visual scanning, but overuse looks unprofessional. Test what works for your industry.',
+    },
+    {
+      question: 'How often should I update my headline?',
+      answer: 'Update when your focus shifts or you have new proof points (results, clients, credentials). Review quarterly to keep it current.',
+    },
   ],
   assumptions: [
     "Headlines are assembled from fixed templates — template-based, never AI-written.",

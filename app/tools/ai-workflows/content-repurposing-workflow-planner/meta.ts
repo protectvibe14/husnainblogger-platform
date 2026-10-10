@@ -100,6 +100,22 @@ export const content: ToolContent = {
       answer:
         'A content repurposing workflow is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What content repurposes best?',
+      answer: 'Long-form cornerstone content — detailed guides, research posts, video transcripts. One comprehensive piece can become social posts, email sequences, infographics, and short videos.',
+    },
+    {
+      question: 'How do I plan a repurposing workflow?',
+      answer: 'Start with your pillar content, identify the key insights, then map each insight to the best format per platform. This tool creates that mapping with timelines and assignments.',
+    },
+    {
+      question: 'Should I repurpose everything I publish?',
+      answer: 'No. Focus on evergreen content with proven engagement. Check your analytics for top performers, then repurpose those. Timely news posts rarely justify the effort.',
+    },
+    {
+      question: 'How far apart should I space repurposed pieces?',
+      answer: 'Space them 1-2 weeks apart per platform to avoid audience fatigue. The same insight can go to different platforms simultaneously since audiences rarely overlap completely.',
+    },
   ],
   assumptions: [
     "The pipeline is a fixed template — it maps formats to tasks but never transforms your content.",

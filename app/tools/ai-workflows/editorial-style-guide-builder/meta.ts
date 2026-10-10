@@ -97,6 +97,22 @@ export const content: ToolContent = {
       answer:
         'An editorial style guide template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What belongs in an editorial style guide?',
+      answer: 'Voice and tone guidelines, grammar preferences, formatting rules, brand terminology, image standards, and examples of do\'s and don\'ts. This tool generates a complete template.',
+    },
+    {
+      question: 'How is this different from a brand style guide?',
+      answer: 'Brand guides cover visual identity (logos, colors). Editorial guides cover language — how you write, what words to use or avoid, and how your content should sound.',
+    },
+    {
+      question: 'Should freelancers follow my style guide?',
+      answer: 'Absolutely. Share it during onboarding and require adherence. Consistent voice across writers is what makes content feel like it comes from one brand.',
+    },
+    {
+      question: 'How do I enforce style guide compliance?',
+      answer: 'Include it in your editing checklist. Editors should flag violations with reference to specific guide sections, not just personal preference.',
+    },
   ],
   assumptions: [
     "The tool compiles your answers only — it sets no standards, defaults, or recommendations.",

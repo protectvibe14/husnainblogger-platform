@@ -142,6 +142,22 @@ export const content: ToolContent = {
       answer:
         'A freelance invoice generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What should I include on a freelance invoice?',
+      answer: 'Include your business name and contact, client details, unique invoice number, issue and due dates, itemized services with rates, subtotal, tax if applicable, total due, and payment terms.',
+    },
+    {
+      question: 'How do I number my invoices?',
+      answer: 'Use sequential numbering like INV-001, INV-002. This keeps records organized and helps track which invoices are paid or overdue.',
+    },
+    {
+      question: 'What payment terms should I set?',
+      answer: 'Net 14 or Net 30 are standard. For new clients, consider requiring 50% upfront. Always state late payment fees clearly on the invoice.',
+    },
+    {
+      question: 'Should I charge tax on freelance invoices?',
+      answer: 'Depends on your location and client location. Research your local tax obligations — this tool includes a tax line item you can adjust or remove.',
+    },
   ],
   assumptions: [
     "Discount, if any, is applied BEFORE tax (flat discount on the subtotal, then tax on the remainder) — a documented convention, not a tax rule.",

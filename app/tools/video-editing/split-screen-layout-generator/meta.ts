@@ -104,6 +104,22 @@ export const content: ToolContent = {
       answer:
         'A split screen video layout is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'When should I use split-screen in videos?',
+      answer: 'For comparisons, reactions, before/after reveals, or showing two perspectives simultaneously. It keeps viewers engaged by delivering more visual information.',
+    },
+    {
+      question: 'What is the best split-screen ratio?',
+      answer: '50/50 for equal emphasis. 70/30 when one side is primary. Vertical splits work for comparisons; horizontal for top/bottom context like gameplay plus facecam.',
+    },
+    {
+      question: 'How do I keep split-screen from looking cluttered?',
+      answer: 'Use clean dividers, ensure each side has a clear focal point, and avoid busy backgrounds. Less is more — two clear visuals beat four confusing ones.',
+    },
+    {
+      question: 'Does split-screen work on mobile?',
+      answer: 'Yes, but keep text large and visuals simple. What looks fine on desktop can become unreadable on a phone screen. Always preview on mobile.',
+    },
   ],
   assumptions: [
     "Pure geometry — the tool computes coordinates; rendering/preview is the UI's job.",

@@ -99,6 +99,22 @@ export const content: ToolContent = {
       answer:
         'A product review template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
     },
+      {
+      question: 'What makes a product review trustworthy?',
+      answer: 'Hands-on testing, specific measurements, honest cons alongside pros, and comparison to alternatives. Readers can tell when you haven\'t actually used the product.',
+    },
+    {
+      question: 'How should I structure my review?',
+      answer: 'Start with a verdict summary, then cover design/build, performance testing, pros and cons, comparison to competitors, and who should/shouldn\'t buy it.',
+    },
+    {
+      question: 'Should I include a rating score?',
+      answer: 'Scores help skimmers but can oversimplify. If you use them, explain your scoring criteria so readers understand what the number means.',
+    },
+    {
+      question: 'How do I handle negative aspects honestly?',
+      answer: 'Be specific about drawbacks and who they\'d affect. \'Battery lasts 6 hours, which is short for travelers but fine for desk use\' is more helpful than just \'bad battery.\'',
+    },
   ],
   assumptions: [
     "The tool provides structure only — no review opinions, scores, or verdicts are written or invented.",
