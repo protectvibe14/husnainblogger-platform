@@ -33,6 +33,7 @@ import {
   toolHref,
   hubHref,
   toolsIndexHref,
+  siteConfig,
 } from "../../../../config/site.config";
 
 export function getStaticPaths() {
@@ -120,7 +121,7 @@ const robots = tool.noindex ? "noindex, follow" : undefined;
   description={description}
   canonical={canonical}
   robots={robots}
-  ogImage="https://husnainblogger.com/tools/images/og-default.png"
+  ogImage={`${siteConfig.site}${siteConfig.base}/images/og-default.png`}
 >
   <meta property="og:url" content={canonical} slot="head" />
 

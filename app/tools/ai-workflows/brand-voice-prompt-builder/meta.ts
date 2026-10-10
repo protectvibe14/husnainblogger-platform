@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Brand Voice Prompt',
   description:
-    "Assemble a custom brand voice prompt from your own words. Add adjectives, do's and don\'ts, and an optional sample for a reusable system prompt. Build yours now!",
+    "Assemble a custom brand voice prompt from your own words. Add adjectives, do's and don'ts, and an optional sample for a reusable system prompt. Build yours!",
   howTo: [
     'Add one entry per brand voice. Enter at least 2 adjectives, comma-separated (required).',
     'Add optional do\'s and don\'ts as comma-separated lists — empty lists are left out.',
