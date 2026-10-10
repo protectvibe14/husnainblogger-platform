@@ -23,7 +23,8 @@ export const inputs: ToolInput[] = [
 
 export const outputs: ToolOutput[] = [
   { id: 'riskScore', label: 'Risk score (count-based)', type: 'number', description:
-    'Free freelance client red flags 2026: Sum of the fixed weights of your selected signals. free.', label: 'Risk band', type: 'text', description:
+    'Sum of the fixed weights of your selected signals.' },
+  { id: 'riskBand', label: 'Risk band', type: 'text', description:
     'Low, Caution, or High — a fixed rule, not a prediction.' },
   { id: 'flaggedSignals', label: 'Flagged signals', type: 'list', description:
     'The signals you selected, with their fixed severity weights.' },
