@@ -1,5 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import {
   RUBRIC,
   HONESTY_NOTE,
@@ -172,10 +173,20 @@ describe("meta contract (scorer)", () => {
       for (const k of Object.keys(e.inputs)) assert.ok(ids.has(k), k);
     }
   });
-  it("canonical url is absolute and matches the slug", () => {
+  it("schema contract: ToolShell auto-emits SoftwareApplication for every tool page", () => {
+    // Architecture: ToolShell.astro emits SoftwareApplication for ALL tool
+    // pages from tool meta (name + description). content.jsonLd in meta.ts is
+    // reserved for tool-specific extras only — tools must not duplicate the
+    // shell's block, and the canonical page URL comes from the router.
     const ld = content.jsonLd ?? [];
-    const app = ld.find((o) => o["@type"] === "SoftwareApplication") as Record<string, unknown>;
-    assert.equal(app["url"], "https://husnainblogger.com/tools/youtube/thumbnail-clickability-scorecard/");
+    const app = ld.find((o) => o["@type"] === "SoftwareApplication");
+    assert.equal(app, undefined, "ToolShell auto-generates SoftwareApplication — tools must not duplicate it");
+    assert.ok((content.description ?? "").length > 0, "shell builds SoftwareApplication.description from the tool description");
+    const shell = readFileSync(
+      new URL("../../../src/templates/ToolShell.astro", import.meta.url),
+      "utf8",
+    );
+    assert.ok(shell.includes("'@type': 'SoftwareApplication'"), "ToolShell emits SoftwareApplication");
   });
   it("methodology is honest (rubric, never claims AI generation)", () => {
     const m = (content.methodology ?? "").toLowerCase();

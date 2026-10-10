@@ -5,6 +5,7 @@
  */
 import { describe, it } from "node:test";
 import assert from "node:assert";
+import { readFileSync } from "node:fs";
 import {
   runTool,
   readCount,
@@ -200,21 +201,27 @@ describe("meta contract", () => {
     );
   });
 
-  it("jsonLd has SoftwareApplication, no FAQPage, correct breadcrumb crumb 3", () => {
-    const jsonLd = metaContent.jsonLd as Array<Record<string, unknown>>;
-    const types = jsonLd.map((j) => j["@type"]);
-    assert.ok(types.includes("SoftwareApplication"), "interactive tool");
+  it("schema contract: ToolShell auto-emits SoftwareApplication + BreadcrumbList + FAQPage for every tool page", () => {
+    // Architecture: ToolShell.astro emits FAQPage/SoftwareApplication/
+    // BreadcrumbList for ALL tool pages from tool meta. content.jsonLd in
+    // meta.ts is reserved for tool-specific extras only, so the tool's job
+    // is to feed the shell valid meta — and never duplicate the shell's blocks.
+    const types = (metaContent.jsonLd as Array<Record<string, unknown>>).map((j) => j["@type"]);
+    assert.ok(!types.includes("SoftwareApplication"), "ToolShell auto-generates SoftwareApplication");
+    assert.ok(!types.includes("BreadcrumbList"), "ToolShell auto-generates BreadcrumbList");
     assert.ok(!types.includes("FAQPage"), "ToolShell auto-generates FAQPage");
-    const bc = jsonLd.find((j) => j["@type"] === "BreadcrumbList") as {
-      itemListElement: Array<{ position: number; name: string; item: string }>;
-    };
-    const crumb3 = bc.itemListElement.find((e) => e.position === 3);
-    assert.strictEqual(crumb3!.name, "Email Marketing Tools");
-    assert.strictEqual(crumb3!.item, "https://husnainblogger.com/tools/email-marketing/");
-    const app = jsonLd.find((j) => j["@type"] === "SoftwareApplication") as { url: string };
-    assert.strictEqual(
-      app.url,
-      "https://husnainblogger.com/tools/email-marketing/content-upgrade-idea-generator/",
+    assert.ok(
+      (metaContent.description ?? "").length > 0,
+      "shell builds SoftwareApplication.description from the tool description",
     );
+    const shell = readFileSync(
+      new URL("../../../src/templates/ToolShell.astro", import.meta.url),
+      "utf8",
+    );
+    assert.ok(shell.includes("'@type': 'SoftwareApplication'"), "ToolShell emits SoftwareApplication");
+    assert.ok(shell.includes("'@type': 'BreadcrumbList'"), "ToolShell emits BreadcrumbList");
+    assert.ok(shell.includes("'@type': 'FAQPage'"), "ToolShell emits FAQPage");
+    // Breadcrumb is built from tool data: Home / Tools / category / tool
+    assert.ok(shell.includes("position: 3") && shell.includes("tool.category"), "shell builds the category crumb from tool data");
   });
 });

@@ -1,5 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { TRACKER_ITEMS, describeProgress } from "./logic.ts";
 import { inputs, outputs, trackerMode, trackerItems, content } from "./meta.ts";
 
@@ -113,26 +114,27 @@ describe("email-deliverability-checklist (tool-445)", () => {
     );
   });
 
-  it("meta: jsonLd has SoftwareApplication + BreadcrumbList, never FAQPage", () => {
+  it("meta: ToolShell auto-emits SoftwareApplication + BreadcrumbList (never in content.jsonLd)", () => {
+    // Architecture: ToolShell.astro emits FAQPage/SoftwareApplication/
+    // BreadcrumbList for ALL tool pages from tool meta. content.jsonLd in
+    // meta.ts is reserved for tool-specific extras only — the tool feeds the
+    // shell valid meta and never duplicates the shell's blocks.
     const types = (content.jsonLd as { "@type": string }[]).map((j) => j["@type"]);
-    assert.ok(types.includes("SoftwareApplication"));
-    assert.ok(types.includes("BreadcrumbList"));
-    assert.ok(!types.includes("FAQPage"));
-  });
-
-  it("meta: breadcrumb crumb 3 is Email Marketing Tools", () => {
-    const bc = (content.jsonLd as { "@type": string; itemListElement: { position: number; name: string }[] }[]).find(
-      (j) => j["@type"] === "BreadcrumbList",
+    assert.ok(!types.includes("SoftwareApplication"), "ToolShell auto-generates SoftwareApplication");
+    assert.ok(!types.includes("BreadcrumbList"), "ToolShell auto-generates BreadcrumbList");
+    assert.ok(!types.includes("FAQPage"), "ToolShell auto-generates FAQPage");
+    assert.ok(
+      (content.description ?? "").length > 0,
+      "shell builds SoftwareApplication.description from the tool description",
     );
-    const crumb3 = bc?.itemListElement.find((e) => e.position === 3);
-    assert.equal(crumb3?.name, "Email Marketing Tools");
-  });
-
-  it("meta: canonical category URL in jsonLd", () => {
-    const app = (content.jsonLd as { "@type": string; url: string }[]).find(
-      (j) => j["@type"] === "SoftwareApplication",
+    const shell = readFileSync(
+      new URL("../../../src/templates/ToolShell.astro", import.meta.url),
+      "utf8",
     );
-    assert.equal(app?.url, "https://husnainblogger.com/tools/email-marketing/email-deliverability-checklist/");
+    assert.ok(shell.includes("'@type': 'SoftwareApplication'"), "ToolShell emits SoftwareApplication");
+    assert.ok(shell.includes("'@type': 'BreadcrumbList'"), "ToolShell emits BreadcrumbList");
+    // Breadcrumb is built from tool data: Home / Tools / category / tool
+    assert.ok(shell.includes("position: 3") && shell.includes("tool.category"), "shell builds the category crumb from tool data");
   });
 
   it("meta: assumptions include the guidance-only limitation", () => {
