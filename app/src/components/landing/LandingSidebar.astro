@@ -7,7 +7,7 @@
  * Ads are admin-controlled via ads-config.json.
  */
 import AdSlot from "../ads/AdSlot.astro";
-import { toolHref } from "../../../../config/site.config";
+import { toolHref, hubHref } from "../../../../config/site.config";
 
 interface Tool {
   name: string;
@@ -66,17 +66,17 @@ const { popularTools } = Astro.props;
   <div class="sidebar-box">
     <h3 class="sidebar-box__title">Categories</h3>
     <ul class="sidebar-tools">
-      <li><a href="/tools/blogging-seo-content/">Blogging SEO & Content</a></li>
-      <li><a href="/tools/make-money-affiliate/">Make-Money & Affiliate</a></li>
-      <li><a href="/tools/youtube/">YouTube</a></li>
-      <li><a href="/tools/tiktok/">TikTok</a></li>
-      <li><a href="/tools/instagram/">Instagram</a></li>
-      <li><a href="/tools/capcut-video-editing/">CapCut & Video Editing</a></li>
-      <li><a href="/tools/ai-workflow/">AI Workflow</a></li>
-      <li><a href="/tools/email-blog-marketing/">Email & Blog Marketing</a></li>
-      <li><a href="/tools/creator-business/">Creator Business</a></li>
-      <li><a href="/tools/ai-tools/">AI Tools</a></li>
-      <li><a href="/tools/pinterest/">Pinterest</a></li>
+      <li><a href={hubHref("blogging-seo")}>Blogging SEO & Content</a></li>
+      <li><a href={hubHref("make-money")}>Make-Money & Affiliate</a></li>
+      <li><a href={hubHref("youtube")}>YouTube</a></li>
+      <li><a href={hubHref("tiktok")}>TikTok</a></li>
+      <li><a href={hubHref("instagram")}>Instagram</a></li>
+      <li><a href={hubHref("video-editing")}>CapCut & Video Editing</a></li>
+      <li><a href={hubHref("ai-workflows")}>AI Workflow</a></li>
+      <li><a href={hubHref("email-marketing")}>Email & Blog Marketing</a></li>
+      <li><a href={hubHref("creator-business")}>Creator Business</a></li>
+      <li><a href={hubHref("ai-tools")}>AI Tools</a></li>
+      <li><a href={hubHref("pinterest-social")}>Pinterest</a></li>
     </ul>
   </div>
 

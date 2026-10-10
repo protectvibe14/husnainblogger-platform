@@ -14,7 +14,7 @@
  */
 import { CATEGORIES } from "../lib/registry/types";
 import { byCategory } from "../data/registry.generated";
-import { toolsIndexHref } from "../../../config/site.config";
+import { toolsIndexHref, siteConfig } from "../../../config/site.config";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LandingHero from "../components/landing/LandingHero.astro";
 import BrowseAllTools from "../components/landing/BrowseAllTools.astro";
@@ -70,11 +70,34 @@ const popularTools = [
   title={title}
   description={description}
   canonical={toolsIndexHref()}
+  ogImage={`${siteConfig.site}${siteConfig.base}/images/og-default.png`}
 >
   <meta property="og:url" content={toolsIndexHref()} slot="head" />
   <meta name="twitter:card" content="summary_large_image" slot="head" />
   <meta name="twitter:title" content={title} slot="head" />
   <meta name="twitter:description" content={description} slot="head" />
+
+  {/* Homepage structured data: WebSite + Organization */}
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.site}/#website`,
+        "url": siteConfig.site + "/",
+        "name": "HusnainBlogger",
+        "description": description,
+        "inLanguage": "en",
+      },
+      {
+        "@type": "Organization",
+        "@id": `${siteConfig.site}/#organization`,
+        "name": "HusnainBlogger",
+        "url": siteConfig.site + "/",
+        "logo": `${siteConfig.site}${siteConfig.base}/images/og-default.png`,
+      }
+    ]
+  })} />
 
   <main>
     <LandingHero toolCount={toolCount} categoryCount={categories.length} />
