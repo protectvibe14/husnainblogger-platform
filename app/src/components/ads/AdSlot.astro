@@ -25,6 +25,9 @@ const { slot } = Astro.props;
 const cfg = (adsConfig.slots as Record<string, any>)[slot];
 
 const show = cfg?.enabled && cfg?.code?.trim();
+// Show a visible placeholder when no ad is configured — so the owner
+// can see exactly where ad spaces are. Real ad code replaces this.
+const showPlaceholder = !show;
 // Device targeting: honor the admin panel's "devices" setting ("both" | "desktop" | "mobile").
 const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.devices : "both";
 ---
@@ -33,6 +36,16 @@ const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.de
   <div class={`hb-ad-slot hb-ad-slot--${slot} hb-ad-slot--dev-${devices}`} data-ad-slot={slot} role="complementary" aria-label="Advertisement">
     <span class="hb-ad-label">Advertisement</span>
     <div class="hb-ad-body" set:html={cfg.code} />
+  </div>
+)}
+
+{showPlaceholder && (
+  <div class={`hb-ad-slot hb-ad-slot--placeholder hb-ad-slot--${slot} hb-ad-slot--dev-${devices}`} data-ad-slot={slot} role="complementary" aria-label="Ad space">
+    <span class="hb-ad-label">Advertisement</span>
+    <div class="hb-ad-placeholder">
+      <span>Ad Space — {slot}</span>
+      <small>Add your ad code in Admin → Ads</small>
+    </div>
   </div>
 )}
 
@@ -71,6 +84,35 @@ const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.de
   .hb-ad-slot--tool-sidebar-top,
   .hb-ad-slot--tool-sidebar-bottom {
     margin: 0;
+  }
+  /* Placeholder: visible ad space when no ad code configured */
+  .hb-ad-slot--placeholder {
+    margin: var(--space-4) auto;
+  }
+  .hb-ad-placeholder {
+    border: 2px dashed var(--color-border);
+    border-radius: 5px;
+    background: var(--color-surface);
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  .hb-ad-placeholder span {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-muted);
+  }
+  .hb-ad-placeholder small {
+    font-size: 12px;
+    color: var(--color-muted);
+    opacity: 0.7;
+  }
+  /* Sidebar placeholders are narrower */
+  .hb-ad-slot--tool-sidebar-top .hb-ad-placeholder,
+  .hb-ad-slot--tool-sidebar-bottom .hb-ad-placeholder {
+    padding: 48px 12px;
   }
   /* Sticky mobile: fixed bottom, mobile only */
   .hb-ad-slot--tool-sticky-mobile {

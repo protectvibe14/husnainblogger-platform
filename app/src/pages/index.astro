@@ -17,11 +17,10 @@ import { byCategory } from "../data/registry.generated";
 import { toolsIndexHref } from "../../../config/site.config";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LandingHero from "../components/landing/LandingHero.astro";
-import PopularTools from "../components/landing/PopularTools.astro";
 import BrowseAllTools from "../components/landing/BrowseAllTools.astro";
-import ValueProps from "../components/landing/ValueProps.astro";
-import HowItWorks from "../components/landing/HowItWorks.astro";
+import LandingSidebar from "../components/landing/LandingSidebar.astro";
 import LandingFaq from "../components/landing/LandingFaq.astro";
+import AdSlot from "../components/ads/AdSlot.astro";
 
 const taglines: Record<string, string> = {
   "ai-tools": "AI generators, writers & helpers",
@@ -79,7 +78,51 @@ const popularTools = [
 
   <main>
     <LandingHero toolCount={toolCount} categoryCount={categories.length} />
-    <BrowseAllTools categories={categories} />
+
+    {/* Top ad banner */}
+    <div class="landing-top-ad">
+      <AdSlot slot="hub-top" />
+    </div>
+
+    {/* 2-column: content + sidebar (SST format) */}
+    <div class="landing-columns">
+      <div class="landing-columns__main">
+        <BrowseAllTools categories={categories} />
+      </div>
+      <LandingSidebar popularTools={popularTools} />
+    </div>
+
     <LandingFaq />
   </main>
 </BaseLayout>
+
+<style>
+  .landing-top-ad {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .landing-top-ad:empty {
+    display: none;
+  }
+  .landing-columns {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+    align-items: start;
+  }
+  .landing-columns__main {
+    min-width: 0;
+  }
+  @media (max-width: 1024px) {
+    .landing-columns {
+      grid-template-columns: 1fr;
+    }
+    .landing-sidebar {
+      display: none;
+    }
+  }
+</style>
