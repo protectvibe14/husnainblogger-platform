@@ -32,6 +32,8 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
     const esc = (s: any) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
     const SLOT_ORDER = [
+      "home-top", "home-between",
+      "home-sidebar-top", "home-sidebar-mid", "home-sidebar-bottom",
       "tool-top", "tool-incontent", "tool-mid", "tool-bottom",
       "tool-sidebar-top", "tool-sidebar-bottom",
       "tool-sponsor", "tool-sticky-mobile",
@@ -81,6 +83,10 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
               </div>
             ` : `
               <label class="admin-field"><span>Ad code (HTML / AdSense script)</span><textarea data-f="code" rows="4" placeholder='<ins class="adsbygoogle" …></ins>'></textarea></label>
+              <label class="admin-field admin-check">
+                <input type="checkbox" data-f="placeholder" ${slot.placeholder ? "checked" : ""} />
+                <span>Show placeholder preview <small>(dashed "Ad Space" box — for previewing placement)</small></span>
+              </label>
               <label class="admin-field"><span>Show on</span>
                 <select data-f="devices" class="admin-select">
                   <option value="both" ${slot.devices === "both" ? "selected" : ""}>Desktop + Mobile</option>
@@ -119,7 +125,11 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
       const status = card.querySelector(`[data-status="${key}"]`) as HTMLElement;
       card.querySelectorAll("[data-f]").forEach((el) => {
         const f = (el as HTMLElement).dataset.f!;
-        slot[f] = (el as HTMLInputElement).value;
+        if ((el as HTMLInputElement).type === "checkbox") {
+          slot[f] = (el as HTMLInputElement).checked;
+        } else {
+          slot[f] = (el as HTMLInputElement).value;
+        }
       });
       if (!silent) status.textContent = "Saving…";
       try {
@@ -170,6 +180,16 @@ import AdminLayout from "../../../layouts/AdminLayout.astro";
     background: var(--color-surface-raised); color: var(--color-text);
     box-sizing: border-box; color-scheme: light;
   }
+  .admin-check {
+    display: flex; align-items: center; gap: var(--space-2);
+    cursor: pointer;
+  }
+  .admin-check input[type="checkbox"] {
+    width: 1.1rem; height: 1.1rem; accent-color: var(--color-accent);
+    flex-shrink: 0;
+  }
+  .admin-check span { margin: 0; font-weight: 400; }
+  .admin-check small { color: var(--color-muted); }
   .admin-field textarea { resize: vertical; }
   .admin-form__grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
   .admin-select {

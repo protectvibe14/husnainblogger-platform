@@ -25,9 +25,12 @@ const { slot } = Astro.props;
 const cfg = (adsConfig.slots as Record<string, any>)[slot];
 
 const show = cfg?.enabled && cfg?.code?.trim();
-// Show a visible placeholder when no ad is configured — so the owner
-// can see exactly where ad spaces are. Real ad code replaces this.
-const showPlaceholder = !show;
+// Placeholder: visible ONLY when explicitly enabled in admin panel.
+// This lets the owner preview ad placement spaces. Public visitors
+// never see placeholders — slots render nothing when disabled.
+// Enable via: Admin → Ads → toggle slot ON but leave code empty,
+// OR set "placeholder: true" in ads-config.json for that slot.
+const showPlaceholder = !show && cfg?.placeholder === true;
 // Device targeting: honor the admin panel's "devices" setting ("both" | "desktop" | "mobile").
 const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.devices : "both";
 ---
@@ -50,7 +53,7 @@ const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.de
 )}
 
 {/* Sticky mobile compensation: keep the fixed banner from covering the footer/content */}
-{show && slot === "tool-sticky-mobile" && (
+{(show || showPlaceholder) && slot === "tool-sticky-mobile" && (
   <style is:global>
     @media (max-width: 768px) {
       body { padding-bottom: 76px; }
@@ -82,7 +85,10 @@ const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.de
   }
   /* Sidebar slots are narrower */
   .hb-ad-slot--tool-sidebar-top,
-  .hb-ad-slot--tool-sidebar-bottom {
+  .hb-ad-slot--tool-sidebar-bottom,
+  .hb-ad-slot--home-sidebar-top,
+  .hb-ad-slot--home-sidebar-mid,
+  .hb-ad-slot--home-sidebar-bottom {
     margin: 0;
   }
   /* Placeholder: visible ad space when no ad code configured */
@@ -111,7 +117,10 @@ const devices = cfg?.devices === "desktop" || cfg?.devices === "mobile" ? cfg.de
   }
   /* Sidebar placeholders are narrower */
   .hb-ad-slot--tool-sidebar-top .hb-ad-placeholder,
-  .hb-ad-slot--tool-sidebar-bottom .hb-ad-placeholder {
+  .hb-ad-slot--tool-sidebar-bottom .hb-ad-placeholder,
+  .hb-ad-slot--home-sidebar-top .hb-ad-placeholder,
+  .hb-ad-slot--home-sidebar-mid .hb-ad-placeholder,
+  .hb-ad-slot--home-sidebar-bottom .hb-ad-placeholder {
     padding: 48px 12px;
   }
   /* Sticky mobile: fixed bottom, mobile only */

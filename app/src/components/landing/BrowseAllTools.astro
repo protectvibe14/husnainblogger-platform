@@ -58,7 +58,7 @@ const { categories } = Astro.props;
       {/* Ad banner after every category */}
       {ci < categories.length - 1 && (
         <div class="sst-ad-between">
-          <AdSlot slot={ci % 2 === 0 ? "hub-top" : "hub-bottom"} />
+          <AdSlot slot="home-between" />
         </div>
       )}
     </>
