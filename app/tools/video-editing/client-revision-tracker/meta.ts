@@ -77,16 +77,6 @@ export const content: ToolContent = {
         "You add each revision as an entry with a round number, request, and status; the tool validates the entries, sorts them by round, and shows a summary with the open count. If you set a revision limit and exceed it, the summary flags that you are over the limit.",
     },
     {
-      question: 'How does the video revision tracker work?',
-      answer:
-        'Enter your details using the inputs above and the video revision tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video revision tracker free to use?',
-      answer:
-        'Yes - this video revision tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video revision tracker?',
       answer:
         'A video revision tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'Type your 3–5 pillars (one per line or comma-separated) and your weekly post count, then click Generate. The tool shows each pillar’s share and slot count, and flags imbalance — for example a pillar getting zero weekly posts — so you can adjust your schedule or merge pillars.',
     },
     {
-      question: 'How does the instagram content pillars examples work?',
-      answer:
-        'Enter your details using the inputs above and the instagram content pillars examples calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram content pillars examples free to use?',
-      answer:
-        'Yes - this instagram content pillars examples is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram content pillars examples?',
       answer:
         'An instagram content pillars examples is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

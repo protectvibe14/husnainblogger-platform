@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'Paste your post into the tool and review the seven structural checks: content length, headings, heading density, longest paragraph, paragraph density, lists, and average sentence length. Fix the failed checks — add subheadings, break up long paragraphs, and turn grouped ideas into lists — then re-run.',
     },
     {
-      question: 'How does the blog scannability checker work?',
-      answer:
-        'Enter your details using the inputs above and the blog scannability checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog scannability checker free to use?',
-      answer:
-        'Yes - this blog scannability checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog scannability checker?',
       answer:
         'A blog scannability checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

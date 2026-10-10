@@ -98,16 +98,6 @@ export const content: ToolContent = {
         'It scans your text for a fixed list of transition words and phrases — 111 here, matched case-insensitively with word boundaries, longest phrases first — then divides occurrences by word count for a per-100-words density and applies editorial verdict bands. No AI, no guessing.',
     },
     {
-      question: 'How does the transition words checker work?',
-      answer:
-        'Enter your details using the inputs above and the transition words checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the transition words checker free to use?',
-      answer:
-        'Yes - this transition words checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a transition words checker?',
       answer:
         'A transition words checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

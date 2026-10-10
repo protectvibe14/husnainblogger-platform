@@ -88,16 +88,6 @@ export const content: ToolContent = {
         'This one is template-based, not AI: your theme fills 6 fixed title formulas, and a fixed rule assigns segments by episode length — 2 segments under 20 minutes, 3 for 20–45 minutes, 4 above 45 minutes. The same inputs always produce the same ideas.',
     },
     {
-      question: 'How does the podcast episode ideas work?',
-      answer:
-        'Enter your details using the inputs above and the podcast episode ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the podcast episode ideas free to use?',
-      answer:
-        'Yes - this podcast episode ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a podcast episode ideas?',
       answer:
         'A podcast episode ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

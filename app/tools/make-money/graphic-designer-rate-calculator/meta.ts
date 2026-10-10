@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'Take your hourly rate (or a benchmark band for your level), adjust for the deliverable — a full brand identity costs more per hour than one-off social creatives — and multiply by your estimated hours. This tool applies those adjustments with labeled estimate factors so you can quote with confidence.',
     },
     {
-      question: 'How does the graphic designer rates calculator work?',
-      answer:
-        'Enter your details using the inputs above and the graphic designer rates calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the graphic designer rates calculator free to use?',
-      answer:
-        'Yes - this graphic designer rates calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a graphic designer rates calculator?',
       answer:
         'A graphic designer rates calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'Long text cannot stay legible inside a 200×200 mark. For longer names, use the monogram style or shorten to the brand’s core word.',
     },
     {
-      question: 'How does the svg logo maker work?',
-      answer:
-        'Enter your details using the inputs above and the svg logo maker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the svg logo maker free to use?',
-      answer:
-        'Yes - this svg logo maker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a svg logo maker?',
       answer:
         'A svg logo maker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

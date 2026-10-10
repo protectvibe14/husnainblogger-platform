@@ -87,16 +87,6 @@ export const content: ToolContent = {
         'The tool runs your tagline and offer through 6 fixed layout frames with a bank of 6 CTA one-liners, trimming every line at a word boundary to 60 characters. It outputs text copy only — no images — and adds a fixed safe-zone note based on X\'s banner layout.',
     },
     {
-      question: 'How does the twitter banner text ideas work?',
-      answer:
-        'Enter your details using the inputs above and the twitter banner text ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter banner text ideas free to use?',
-      answer:
-        'Yes - this twitter banner text ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter banner text ideas?',
       answer:
         'A twitter banner text ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

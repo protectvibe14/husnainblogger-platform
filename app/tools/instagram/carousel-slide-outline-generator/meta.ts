@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'Start with a topic and a goal, then outline slide 1 as the hook, middle slides as one idea each, a proof slide, and a final CTA. This tool does the outlining for you from 76 hand-written templates — your job is rewriting it in your voice and designing the slides.',
     },
     {
-      question: 'How does the instagram carousel ideas generator work?',
-      answer:
-        'Enter your details using the inputs above and the instagram carousel ideas generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram carousel ideas generator free to use?',
-      answer:
-        'Yes - this instagram carousel ideas generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram carousel ideas generator?',
       answer:
         'An instagram carousel ideas generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

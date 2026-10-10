@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'It takes your details and renders them into a fixed, email-client-safe HTML template — a table-based layout with inline styles — that you paste into your email client. This one is pure string templating with no live preview: the only true test is sending yourself an email and checking how it looks.',
     },
     {
-      question: 'How does the email signature generator work?',
-      answer:
-        'Enter your details using the inputs above and the email signature generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email signature generator free to use?',
-      answer:
-        'Yes - this email signature generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email signature generator?',
       answer:
         'An email signature generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -76,7 +76,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Account Audit',
   description:
-    'Run a tiktok account audit with a free self-scored checklist: 4 categories, 0–100 scores, gap list, and prioritized fixes on a published rubric.',
+    'Run a free TikTok account audit with a self-scored checklist: 4 categories, 0–100 scores, gap list, and prioritized fixes. Audit yours now!',
   howTo: [
     'Open your TikTok profile and analytics in another tab so you answer honestly.',
     'Rate each of the 16 checklist questions 0–5 (0 = not true, 5 = fully true) across Bio & profile, Content quality, Consistency, and Engagement.',
@@ -113,16 +113,6 @@ export const content: ToolContent = {
       question: 'How to use tiktok account?',
       answer:
         'Open your TikTok profile alongside the tool, rate each of the 16 questions honestly from 0 to 5, then run the audit. Work through the prioritized fixes from the top down and re-audit after each round of changes. The score is a self-audit estimate, not TikTok analytics.',
-    },
-    {
-      question: 'How does the tiktok account audit work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok account audit calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok account audit free to use?',
-      answer:
-        'Yes - this tiktok account audit is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tiktok account audit?',

@@ -81,16 +81,6 @@ export const content: ToolContent = {
         'This suggester matches words in your title against a fixed keyword-to-emoji bank, fills any leftover slots with tone-based defaults, and renders front, end, and split placements. Emoji already in your title count toward the limit, and ZWJ sequences count as one emoji.',
     },
     {
-      question: 'How does the emoji for youtube titles work?',
-      answer:
-        'Enter your details using the inputs above and the emoji for youtube titles calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the emoji for youtube titles free to use?',
-      answer:
-        'Yes - this emoji for youtube titles is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an emoji for youtube titles?',
       answer:
         'An emoji for youtube titles is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

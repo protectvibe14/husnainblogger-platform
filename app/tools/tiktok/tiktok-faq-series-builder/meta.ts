@@ -62,16 +62,6 @@ export const content: ToolContent = {
         'It turns your comment section into a content engine: each answered question trains viewers to ask the next one, and the series format gives followers a reason to keep coming back. The builder structures the series; your real answers make it work.',
     },
     {
-      question: 'How does the tiktok faq series work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok faq series calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok faq series free to use?',
-      answer:
-        'Yes - this tiktok faq series is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok faq series?',
       answer:
         'A tiktok faq series is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

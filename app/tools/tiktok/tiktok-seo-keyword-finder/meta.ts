@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'Pick a phrase from the tool, say it out loud in the first 3 seconds of your video, put it in your on-screen text, and repeat it naturally in the caption. Then type it into TikTok search yourself to confirm real people search it — this tool shows no volume data.',
     },
     {
-      question: 'How does the tiktok seo keywords work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok seo keywords calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok seo keywords free to use?',
-      answer:
-        'Yes - this tiktok seo keywords is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok seo keywords?',
       answer:
         'A tiktok seo keywords is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

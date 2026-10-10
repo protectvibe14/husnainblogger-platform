@@ -47,16 +47,6 @@ export const content: ToolContent = {
         'It does not edit anything itself — it is a fixed 18-item list you work through manually. Checking items off tracks your progress toward a publish-ready draft.',
     },
     {
-      question: 'How does the ai content editing checklist work?',
-      answer:
-        'Enter your details using the inputs above and the ai content editing checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai content editing checklist free to use?',
-      answer:
-        'Yes - this ai content editing checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai content editing checklist?',
       answer:
         'An ai content editing checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'This one is template-based, not AI: your sections are matched by keyword to 6 fixed presets with set word targets and slot purposes, duplicates are removed, and your frequency maps to issues per year. No content is written for you — the same inputs always produce the same template.',
     },
     {
-      question: 'How does the newsletter content planner work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter content planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter content planner free to use?',
-      answer:
-        'Yes - this newsletter content planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a newsletter content planner?',
       answer:
         'A newsletter content planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

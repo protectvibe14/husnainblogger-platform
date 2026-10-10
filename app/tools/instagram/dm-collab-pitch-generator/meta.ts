@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'Enter the brand name, your niche, your follower count, and what you offer. Copy the generated pitch, personalize the opening line with something genuine about the brand, and send it — one polite follow-up after 5–7 days is fine.',
     },
     {
-      question: 'How does the brand pitch dm template work?',
-      answer:
-        'Enter your details using the inputs above and the brand pitch dm template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the brand pitch dm template free to use?',
-      answer:
-        'Yes - this brand pitch dm template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a brand pitch dm template?',
       answer:
         'A brand pitch dm template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

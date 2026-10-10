@@ -57,16 +57,6 @@ export const content: ToolContent = {
         'You list everything you want the image generator to avoid, and the tool joins them into a single comma-separated string. Paste that string into the negative prompt field of Stable Diffusion, Midjourney, or any tool that supports one.',
     },
     {
-      question: 'How does the negative prompt generator work?',
-      answer:
-        'Enter your details using the inputs above and the negative prompt generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the negative prompt generator free to use?',
-      answer:
-        'Yes - this negative prompt generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a negative prompt generator?',
       answer:
         'A negative prompt generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

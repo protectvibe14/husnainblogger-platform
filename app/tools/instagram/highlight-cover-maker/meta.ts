@@ -68,16 +68,6 @@ export const content: ToolContent = {
         'It assembles a 1080x1080 SVG file from your choices: background fill or gradient, centered icon, and label text. Everything happens in your browser — no uploads, no accounts.',
     },
     {
-      question: 'How does the instagram highlight cover maker work?',
-      answer:
-        'Enter your details using the inputs above and the instagram highlight cover maker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram highlight cover maker free to use?',
-      answer:
-        'Yes - this instagram highlight cover maker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram highlight cover maker?',
       answer:
         'An instagram highlight cover maker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

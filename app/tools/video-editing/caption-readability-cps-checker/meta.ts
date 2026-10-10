@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'It is pure math, not AI: for each cue it counts characters (spaces and punctuation included, per the Netflix counting rule), divides by the cue duration in seconds, and compares the result to a fixed limit — 20 CPS for Latin adults, 17 for children, 9 for CJK. Cues exactly at the limit pass with a note.',
     },
     {
-      question: 'How does the characters per second checker work?',
-      answer:
-        'Enter your details using the inputs above and the characters per second checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the characters per second checker free to use?',
-      answer:
-        'Yes - this characters per second checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a characters per second checker?',
       answer:
         'A characters per second checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

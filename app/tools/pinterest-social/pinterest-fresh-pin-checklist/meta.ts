@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Pinterest Fresh Pins Checklist',
   description:
-    'Publish the fresh pins Pinterest favors: run this best-practice checklist for standard, idea, or video pins covering images, titles, and keywords.',
+    'Publish the fresh pins Pinterest favors: run this best-practice checklist for standard, idea, or video pins covering images, titles, and keywords. Start now!',
   howTo: [
     'Pick your "Pin type": standard, idea, or video. Leave it blank to default to standard.',
     'Run the tool to get your checklist — each item comes with a "Why it matters" explanation.',
@@ -93,16 +93,6 @@ export const content: ToolContent = {
       question: 'Does this checklist guarantee my pins get more distribution?',
       answer:
         'No, and any tool that promises that is misleading you. This checklist reflects creator best practice for making pins that look and read as new; it does not describe Pinterest\'s internal freshness detection, and only Pinterest\'s systems decide how a pin is distributed.',
-    },
-    {
-      question: 'How does the pinterest fresh pins work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest fresh pins calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest fresh pins free to use?',
-      answer:
-        'Yes - this pinterest fresh pins is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a pinterest fresh pins?',

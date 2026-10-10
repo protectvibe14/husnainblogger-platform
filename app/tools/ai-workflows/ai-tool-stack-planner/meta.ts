@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'It matches your use cases against a fixed keyword list to find your categories, then picks the cheapest tool in a curated 12-tool database that fits your budget for each category. Prices shown are defaults - always check the vendor site for current pricing.',
     },
     {
-      question: 'How does the ai tools stack for creators work?',
-      answer:
-        'Enter your details using the inputs above and the ai tools stack for creators calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai tools stack for creators free to use?',
-      answer:
-        'Yes - this ai tools stack for creators is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai tools stack for creators?',
       answer:
         'An ai tools stack for creators is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

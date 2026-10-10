@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'It percent-encodes your text into an X (Twitter) intent URL and wraps it in a styled box with a share button. When a reader clicks, their compose window opens with your text pre-filled. Nothing is written by AI — the box contains only your words.',
     },
     {
-      question: 'How does the click to tweet generator work?',
-      answer:
-        'Enter your details using the inputs above and the click to tweet generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the click to tweet generator free to use?',
-      answer:
-        'Yes - this click to tweet generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a click to tweet generator?',
       answer:
         'A click to tweet generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

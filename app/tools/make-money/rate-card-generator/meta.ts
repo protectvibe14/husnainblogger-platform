@@ -74,16 +74,6 @@ export const content: ToolContent = {
         'This one parses each line of your platform list, uses your base rates where given, and fills missing rates with generic audience-size estimate bands ($50–$200 under 10k followers up to $50k–$300k at 10M+). It renders a copy-ready document with every row tagged as your rate or an estimate, plus a disclaimer that the card is only as accurate as your inputs.',
     },
     {
-      question: 'How does the creator rate card generator work?',
-      answer:
-        'Enter your details using the inputs above and the creator rate card generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the creator rate card generator free to use?',
-      answer:
-        'Yes - this creator rate card generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a creator rate card generator?',
       answer:
         'A creator rate card generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

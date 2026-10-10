@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'This tester runs both titles through a fixed heuristic rubric in your browser: it checks keyword placement, specificity signals like numbers and list words, title length, action verbs, and curiosity markers, then weights the five criteria into a 0-100 score per title. It is a heuristic estimate for comparison — it does not predict Pinterest ranking or real click-through rates.',
     },
     {
-      question: 'How does the pinterest pin title tester work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest pin title tester calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest pin title tester free to use?',
-      answer:
-        'Yes - this pinterest pin title tester is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest pin title tester?',
       answer:
         'A pinterest pin title tester is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

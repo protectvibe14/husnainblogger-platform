@@ -76,16 +76,6 @@ export const content: ToolContent = {
         'Enter your business type and the tool picks 8 moments from a fixed BTS bank (business or creator-personal track, based on your answer), 4 captions from a fixed caption bank, and lays out a 7-day posting schedule. Picks are deterministic — the same inputs always produce the same plan.',
     },
     {
-      question: 'How does the behind the scenes tiktok ideas work?',
-      answer:
-        'Enter your details using the inputs above and the behind the scenes tiktok ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the behind the scenes tiktok ideas free to use?',
-      answer:
-        'Yes - this behind the scenes tiktok ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a behind the scenes tiktok ideas?',
       answer:
         'A behind the scenes tiktok ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

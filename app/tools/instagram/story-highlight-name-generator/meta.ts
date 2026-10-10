@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'It combines your niche with fixed name patterns in your chosen tone — for example "fitness 101" or "About fitness". This tool picks patterns deterministically from a hand-written bank of 48, never AI-generated, and flags any name over 15 characters that Instagram would truncate.',
     },
     {
-      question: 'How does the instagram highlight names ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram highlight names ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram highlight names ideas free to use?',
-      answer:
-        'Yes - this instagram highlight names ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram highlight names ideas?',
       answer:
         'An instagram highlight names ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

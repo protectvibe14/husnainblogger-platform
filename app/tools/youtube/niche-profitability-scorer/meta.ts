@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'Weigh four factors: what advertisers pay (CPM), whether the audience buys things, how crowded the niche is, and how expensive videos are to make. This tool applies fixed weights (35/25/25/15) to your ratings — but the score is only as good as the honesty of your inputs.',
     },
     {
-      question: 'How does the youtube niche scorer work?',
-      answer:
-        'Enter your details using the inputs above and the youtube niche scorer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube niche scorer free to use?',
-      answer:
-        'Yes - this youtube niche scorer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube niche scorer?',
       answer:
         'A youtube niche scorer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

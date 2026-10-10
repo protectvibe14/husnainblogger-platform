@@ -15,7 +15,7 @@ export const trackerMode: 'checklist' = 'checklist';
 export const trackerItems = TRACKER_ITEMS;
 
 export const content: ToolContent = {
-  title: 'Best Time To Post Shorts Tracker',
+  title: 'Shorts Posting Time Tracker',
   description: DESCRIPTION,
   howTo: [
     'Work through the 12-step experiment checklist: set a 2–3 week test window and pick 3–4 posting slots.',
@@ -46,16 +46,6 @@ export const content: ToolContent = {
       question: 'How does a best time to post shorts tracker work?',
       answer:
         'You log every Short manually: when you posted it, its views at exactly 24 hours, and its average view duration. The tracker groups entries by posting hour and averages the metrics per slot. A winner is declared only with 5+ Shorts per slot; otherwise you get an honest "keep testing" verdict. It never invents data — YouTube analytics cannot be fetched from the browser.',
-    },
-    {
-      question: 'How does the best time to post shorts tracker work?',
-      answer:
-        'Enter your details using the inputs above and the best time to post shorts tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the best time to post shorts tracker free to use?',
-      answer:
-        'Yes - this best time to post shorts tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a best time to post shorts tracker?',

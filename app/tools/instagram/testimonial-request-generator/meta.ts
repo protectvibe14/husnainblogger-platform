@@ -52,9 +52,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Ask for Testimonial',
+  title: 'Testimonial Request Generator',
   description:
-    'Get how to ask for testimonial scripts that work: ready-to-send DM, email, or in-person requests plus six smart prompts. Free — build yours now.',
+    'Ask for testimonials the easy way with this testimonial request generator — ready-to-send DM, email, or in-person requests plus smart prompts. Try it now!',
   howTo: [
     'Type the client\u2019s name in the "Client name" box.',
     'Describe the work in the "Project or service" box so the script feels personal.',
@@ -114,16 +114,6 @@ export const content: ToolContent = {
       question: 'How does a how to ask for testimonial work?',
       answer:
         'This tool picks a request template from a fixed bank of 12 channel-specific scripts, fills in your client\u2019s name and project, and pairs it with six fixed guiding questions and a thank-you note. Everything runs in your browser — no AI, no signup, and your entries are never sent anywhere.',
-    },
-    {
-      question: 'How does the how to ask for testimonial work?',
-      answer:
-        'Enter your details using the inputs above and the how to ask for testimonial calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to ask for testimonial free to use?',
-      answer:
-        'Yes - this how to ask for testimonial is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to ask for testimonial?',

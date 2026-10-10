@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Twitter Thread Ideas',
   description:
-    'Outline threads worth reading to the end: enter any topic for a strong hook, supporting points, and CTA structured within the character budget.',
+    'Outline threads worth reading to the end: enter any topic for a strong hook, supporting points, and a CTA within the character budget. Get started!',
   howTo: [
     'Type your thread topic into the "Thread topic" field (keep it under 140 characters).',
     'Set "Number of tweets" between 2 and 25 (leave it blank for the default of 7).',
@@ -84,16 +84,6 @@ export const content: ToolContent = {
       question: 'How long should a twitter thread be?',
       answer:
         'Most effective threads are 5–10 tweets: long enough to deliver real value, short enough that readers finish. This tool defaults to 7 and caps at 25 with a note, since very long threads rarely get finished — and it reduces the count automatically if your topic is too thin to fill it.',
-    },
-    {
-      question: 'How does the twitter thread ideas work?',
-      answer:
-        'Enter your details using the inputs above and the twitter thread ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter thread ideas free to use?',
-      answer:
-        'Yes - this twitter thread ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a twitter thread ideas?',

@@ -105,16 +105,6 @@ export const content: ToolContent = {
         "It organizes your outreach instead of writing it. You get generic question templates to personalize, a blank tracker for the experts you choose, and a fixed timeline with follow-up reminders. No names or quotes are ever invented.",
     },
     {
-      question: 'How does the expert roundup template work?',
-      answer:
-        'Enter your details using the inputs above and the expert roundup template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the expert roundup template free to use?',
-      answer:
-        'Yes - this expert roundup template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an expert roundup template?',
       answer:
         'An expert roundup template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

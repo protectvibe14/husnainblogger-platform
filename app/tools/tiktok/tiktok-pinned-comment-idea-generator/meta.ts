@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Pinned Comment Ideas',
   description:
-    'Drive replies with these TikTok pinned comment ideas — questions and prompts that keep your comment section buzzing daily. Spark long reply threads.',
+    'Drive replies with TikTok pinned comment ideas — questions and prompts that keep your comment section buzzing daily. Try it now!',
   howTo: [
     'Enter your "Video topic" (up to 60 characters).',
     'Run the tool to get 8 pinned comment ideas: 2 questions, 2 calls to action, 2 link-in-bio pointers, and 2 follow-ups.',
@@ -70,16 +70,6 @@ export const content: ToolContent = {
       question: 'How to use tiktok pinned comment?',
       answer:
         'Copy one of the generated ideas, post it as a comment on your own TikTok video, then long-press the comment and tap "Pin comment" in the TikTok app. A pinned comment sits at the top of your comment section, so use it to ask a question, offer a freebie, or point viewers to the link in your bio.',
-    },
-    {
-      question: 'How does the tiktok pinned comment ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok pinned comment ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok pinned comment ideas free to use?',
-      answer:
-        'Yes - this tiktok pinned comment ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tiktok pinned comment ideas?',

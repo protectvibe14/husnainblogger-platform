@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Viral TikTok Formats',
   description:
-    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Explore.',
+    'Browse viral TikTok formats in a free evergreen library: pick challenge, story, tutorial, trend-jack, or series for 6 proven format breakdowns. Start now!',
   howTo: [
     'Enter your niche so every format entry is written for your audience.',
     'Pick a formatCategory: challenge, story, tutorial, trend-jack, or series.',
@@ -68,21 +68,6 @@ export const content: ToolContent = {
       question: 'How do I use the viral format library?',
       answer:
         'Enter your niche, pick a category, and generate. Each entry tells you the setup, the beats to film, and when to use it. Film one format this week and reuse it with new topics to build consistency.',
-    },
-    {
-      question: 'How does the viral format library work?',
-      answer:
-        'It retrieves fixed, evergreen format entries from a 30-entry library for your chosen category and fills in your niche. It does not track live trends — for what is viral right now, check TikTok’s Creative Center or trending page.',
-    },
-    {
-      question: 'How does the viral tiktok formats work?',
-      answer:
-        'Enter your details using the inputs above and the viral tiktok formats calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the viral tiktok formats free to use?',
-      answer:
-        'Yes - this viral tiktok formats is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a viral tiktok formats?',

@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'FAQ Schema Generator – Free JSON-LD',
   description:
-    'Free FAQ schema generator 2026: turn your Q&A pairs into valid FAQPage JSON-LD markup in seconds. Copy, paste, and validate rich results. Fast & free.',
+    'Generate valid schema.org FAQPage JSON-LD for free — copy the markup and paste it straight into your page. Generate yours now!',
   howTo: [
     'Paste your Q&A pairs into the "Question/answer pairs" box — each question on its own line, followed by its answer, with a blank line between pairs.',
     'Run the tool to validate every pair (up to 50 pairs per block).',

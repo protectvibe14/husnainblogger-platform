@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Giveaway Rules Template',
   description:
-    'Run a fair giveaway with this free instagram giveaway rules template: add your prize, entry method, and end date for rules text plus a checklist.',
+    'Run a fair giveaway with this free rules template: add your prize, entry method, and end date for rules text plus a checklist. Get started!',
   howTo: [
     'Describe the prize — e.g. "a $100 gift card".',
     'Pick an entry method: Like + comment, Follow both accounts, Tag a friend, or Share to your story.',
@@ -79,16 +79,6 @@ export const content: ToolContent = {
       question: 'How to use instagram giveaway rules?',
       answer:
         'Generate the rules text, paste it into your giveaway post or a linked page, set the end date with a timezone, and announce the winner exactly as the rules describe. For high-value prizes, have a lawyer review the rules first.',
-    },
-    {
-      question: 'How does the instagram giveaway rules template work?',
-      answer:
-        'Enter your details using the inputs above and the instagram giveaway rules template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram giveaway rules template free to use?',
-      answer:
-        'Yes - this instagram giveaway rules template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an instagram giveaway rules template?',

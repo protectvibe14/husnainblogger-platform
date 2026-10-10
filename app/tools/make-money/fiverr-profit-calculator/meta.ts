@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'Add your order value and any tips, subtract Fiverr\'s 20% commission on that total, then subtract your delivery costs (outsourcing, tools). Divide what remains by your hours worked for the effective hourly rate.',
     },
     {
-      question: 'How does the fiverr profit calculator work?',
-      answer:
-        'Enter your details using the inputs above and the fiverr profit calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the fiverr profit calculator free to use?',
-      answer:
-        'Yes - this fiverr profit calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a fiverr profit calculator?',
       answer:
         'A fiverr profit calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

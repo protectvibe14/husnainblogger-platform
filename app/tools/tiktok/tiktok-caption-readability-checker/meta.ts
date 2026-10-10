@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Tiktok Captions Too Fast',
   description:
-    'Fix tiktok captions too fast with free Flesch scoring: Reading Ease score, grade level, flagged long sentences, rewrite tips. Paste a caption —.',
+    'Fix TikTok captions too fast with free Flesch scoring: Reading Ease score, grade level, flagged long sentences, rewrite tips. Check yours now!',
   howTo: [
     'Paste your full TikTok caption into the "Your TikTok caption" box, hashtags included.',
     'Run the tool to get your Flesch Reading Ease score (0–100) and estimated US grade level.',
@@ -95,16 +95,6 @@ export const content: ToolContent = {
       question: 'How to use tiktok captions too fast?',
       answer:
         'Paste your caption into the box and run the tool. If the Reading Ease score is low, split every flagged long sentence into two, replace the named complex words with simpler ones, and keep hashtags to 3–5. Re-run to confirm the score improved, then post.',
-    },
-    {
-      question: 'How does the tiktok captions too fast work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok captions too fast calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok captions too fast free to use?',
-      answer:
-        'Yes - this tiktok captions too fast is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tiktok captions too fast?',

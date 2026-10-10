@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'On a direct sale, take 10% + $0.50 per unit, then add card processing (2.9% + $0.30) on top. On a Discover sale, take a flat 30% per unit — processing is already included, so don\u2019t add it again. Multiply per-unit fees by your quantity for the totals.',
     },
     {
-      question: 'How does the gumroad fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the gumroad fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the gumroad fee calculator free to use?',
-      answer:
-        'Yes - this gumroad fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a gumroad fee calculator?',
       answer:
         'A gumroad fee calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

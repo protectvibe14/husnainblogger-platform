@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Hashtags',
   description:
-    'Stop guessing hashtags on Facebook: enter your post topic for 1-5 curated tags plus honest guidance on whether hashtags are even worth using.',
+    'Stop guessing hashtags on Facebook: enter your post topic for 1-5 curated tags plus guidance on whether hashtags are worth using. Check yours now!',
   howTo: [
     'Type your Post topic into the field (e.g. handmade candles, home workouts).',
     'Set "Number of hashtags" to any number from 1 to 5 (default is 3).',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'How does a facebook hashtags generator work?',
       answer:
         'This one normalizes your topic into the first tag, matches the topic to a category pool (business, fitness, food, travel, beauty, or general) by keyword, and fills the rest deterministically from the fixed 68-tag bank. It has no live data on which tags are trending.',
-    },
-    {
-      question: 'How does the facebook hashtags work?',
-      answer:
-        'Enter your details using the inputs above and the facebook hashtags calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook hashtags free to use?',
-      answer:
-        'Yes - this facebook hashtags is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook hashtags?',

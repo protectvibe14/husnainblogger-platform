@@ -66,16 +66,6 @@ export const content: ToolContent = {
         "It fills fixed email and subject-line templates with your details. No AI writing happens — the personalization that actually wins placements is the part only you can add.",
     },
     {
-      question: 'How does the guest post pitch template work?',
-      answer:
-        'Enter your details using the inputs above and the guest post pitch template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the guest post pitch template free to use?',
-      answer:
-        'Yes - this guest post pitch template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a guest post pitch template?',
       answer:
         'A guest post pitch template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

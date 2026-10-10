@@ -125,16 +125,6 @@ export const content: ToolContent = {
         'This one applies 10 fixed checks with published weights totaling 100 points: keyword in title and front-loaded, title length, description length and keyword placement, valid chapters, a description link, tag limits and relevance, and thumbnail text presence. Failed checks produce concrete fixes. It measures metadata completeness, never ranking likelihood.',
     },
     {
-      question: 'How does the youtube seo score checker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube seo score checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube seo score checker free to use?',
-      answer:
-        'Yes - this youtube seo score checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube seo score checker?',
       answer:
         'A youtube seo score checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

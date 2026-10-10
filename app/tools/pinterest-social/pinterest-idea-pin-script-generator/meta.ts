@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'You give the tool a topic and page count, and it assembles a script from a fixed template bank — one visual direction, one short on-screen text, and one caption line per page. It is deterministic: the same inputs always return the same script, and it warns you if your topic hints at an outbound link, which idea pins do not support.',
     },
     {
-      question: 'How does the pinterest idea pin ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest idea pin ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest idea pin ideas free to use?',
-      answer:
-        'Yes - this pinterest idea pin ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest idea pin ideas?',
       answer:
         'A pinterest idea pin ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

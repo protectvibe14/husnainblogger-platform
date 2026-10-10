@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'Paste the full script, set your speaking rate (time yourself reading a paragraph if you do not know it — 140 wpm is a typical conversational pace), set the pause allowance for breaths and beats, and run the estimator. Use the low-high range for planning your edit, not the point estimate.',
     },
     {
-      question: 'How does the script to video length work?',
-      answer:
-        'Enter your details using the inputs above and the script to video length calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the script to video length free to use?',
-      answer:
-        'Yes - this script to video length is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a script to video length?',
       answer:
         'A script to video length is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

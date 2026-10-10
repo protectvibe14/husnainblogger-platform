@@ -161,7 +161,7 @@ const breadcrumbJsonLd = {
 
       <!-- ===== ABOUT (primary + secondary keyword content) ===== -->
       <section class="hb-section" aria-labelledby="hb-about">
-        <h2 id="hb-about">What is {cap(primaryKw)}? <span class="hb-year">2027 Guide</span></h2>
+        <h2 id="hb-about">What is {cap(primaryKw)}?</h2>
         <div class="hb-prose">
           <p>
             <strong>{tool.name}</strong> — {content.description}
@@ -213,8 +213,8 @@ const breadcrumbJsonLd = {
           </div>
           <div class="hb-card">
             <div class="hb-card__icon">🔄</div>
-            <h3>Updated for 2027</h3>
-            <p>Regularly maintained and reviewed to ensure accuracy for 2027.</p>
+            <h3>Regularly updated</h3>
+            <p>Regularly maintained and reviewed to ensure accuracy.</p>
           </div>
           <div class="hb-card">
             <div class="hb-card__icon">💡</div>
@@ -226,7 +226,7 @@ const breadcrumbJsonLd = {
 
       <!-- ===== HOW TO USE ===== -->
       <section class="hb-section" aria-labelledby="hb-howto">
-        <h2 id="hb-howto">How to use {tool.name} in 2027</h2>
+        <h2 id="hb-howto">How to use {tool.name}</h2>
         <ol class="hb-steps">
           {content.howTo.map((step, i) => (
             <li>
@@ -313,7 +313,7 @@ const breadcrumbJsonLd = {
       <!-- ===== FAQ ===== -->
       {content.faqs.length > 0 && (
         <section class="hb-section" aria-labelledby="hb-faq">
-          <h2 id="hb-faq">Frequently asked questions <span class="hb-year">2027</span></h2>
+          <h2 id="hb-faq">Frequently asked questions</h2>
           <Accordion
             items={content.faqs.map((f) => ({ question: f.question, answerHtml: f.answer }))}
           />

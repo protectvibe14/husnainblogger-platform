@@ -94,9 +94,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time To Post On Instagram',
+  title: 'Instagram Posting Time Planner',
   description:
-    'Plan the best time to post on Instagram for free: pick your audience region and timezone for generic slot suggestions. Get your schedule now.',
+    'Get one ideal slot per day with this Instagram posting time planner — audience-local windows, your-timezone conversion, and rationale. Try it now!',
   howTo: [
     'Choose your Audience Region from the dropdown (or Global / not sure).',
     'Choose Your Timezone so slots convert from audience-local time to your clock.',

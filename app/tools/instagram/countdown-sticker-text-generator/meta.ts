@@ -102,16 +102,6 @@ export const content: ToolContent = {
         'You provide an event name and date; the tool computes whole days from today to the event (in UTC) and fills 12 fixed, hand-written templates with your event details. It shows the before, happening-now, or after set depending on whether the date is in the future, today, or past.',
     },
     {
-      question: 'How does the instagram countdown ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram countdown ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram countdown ideas free to use?',
-      answer:
-        'Yes - this instagram countdown ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram countdown ideas?',
       answer:
         'An instagram countdown ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

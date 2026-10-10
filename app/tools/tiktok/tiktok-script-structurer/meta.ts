@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'For scripting: enter your video topic, optionally add your niche for matched hooks, set your target duration, and film the beat sheet the tool returns — hook first, value in the middle, CTA last. The tool caps plans at 600 seconds, the standard TikTok upload ceiling.',
     },
     {
-      question: 'How does the tiktok script template work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok script template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok script template free to use?',
-      answer:
-        'Yes - this tiktok script template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok script template?',
       answer:
         'A tiktok script template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

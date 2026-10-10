@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'Pick a draft that fits your goal, rewrite it in your own voice, and post it — then put any link as the first reply rather than in the tweet text, which keeps the main tweet clean and readable. Every draft this tool returns already fits the 280 weighted-character limit.',
     },
     {
-      question: 'How does the tweet ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tweet ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tweet ideas free to use?',
-      answer:
-        'Yes - this tweet ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tweet ideas?',
       answer:
         'A tweet ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

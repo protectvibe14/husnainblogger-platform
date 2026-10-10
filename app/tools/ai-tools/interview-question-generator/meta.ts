@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'Yes. The banks work as a structured interview checklist — pick the type that matches the round you are running and add your own role-specific technical deep-dives on top.',
     },
     {
-      question: 'How does the interview question generator work?',
-      answer:
-        'Enter your details using the inputs above and the interview question generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the interview question generator free to use?',
-      answer:
-        'Yes - this interview question generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an interview question generator?',
       answer:
         'An interview question generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -73,16 +73,6 @@ export const content: ToolContent = {
         'This one uses lexicon matching, not AI: it compares your title word-by-word against a published 103-word list (sizes: curiosity 21, power 17, urgency 15, fear 18, joy 16, trust 16) and counts matches per category. The method is fully transparent — the word list is fixed and documented.',
     },
     {
-      question: 'How does the youtube title emotion analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the youtube title emotion analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube title emotion analyzer free to use?',
-      answer:
-        'Yes - this youtube title emotion analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube title emotion analyzer?',
       answer:
         'A youtube title emotion analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

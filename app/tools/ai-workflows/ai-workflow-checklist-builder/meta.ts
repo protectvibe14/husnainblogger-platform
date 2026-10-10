@@ -66,16 +66,6 @@ export const content: ToolContent = {
         "You enter your workflow stages with owners; the tool formats them into a numbered checklist in plain text and Markdown. It adds no workflow logic of its own.",
     },
     {
-      question: 'How does the ai content workflow checklist work?',
-      answer:
-        'Enter your details using the inputs above and the ai content workflow checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai content workflow checklist free to use?',
-      answer:
-        'Yes - this ai content workflow checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai content workflow checklist?',
       answer:
         'An ai content workflow checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

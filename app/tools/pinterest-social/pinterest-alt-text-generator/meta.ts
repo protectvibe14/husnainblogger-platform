@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'Pinterest truncates very long alt text, so the tool compresses anything over 500 characters with an ellipsis. Short, accurate descriptions also work better for screen-reader users than long keyword-stuffed paragraphs.',
     },
     {
-      question: 'How does the pinterest image alt text work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest image alt text calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest image alt text free to use?',
-      answer:
-        'Yes - this pinterest image alt text is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest image alt text?',
       answer:
         'A pinterest image alt text is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

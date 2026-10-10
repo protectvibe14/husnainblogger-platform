@@ -47,16 +47,6 @@ export const content: ToolContent = {
         'A subject line prompt tells an AI tool what kind of email subject lines to write and what rules to follow. This page does not run any AI itself — it hands you ready-made, copy-paste prompt templates.',
     },
     {
-      question: 'How does the email subject line prompts work?',
-      answer:
-        'Enter your details using the inputs above and the email subject line prompts calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email subject line prompts free to use?',
-      answer:
-        'Yes - this email subject line prompts is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email subject line prompts?',
       answer:
         'An email subject line prompts is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

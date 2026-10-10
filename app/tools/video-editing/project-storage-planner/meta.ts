@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'List every clip with its duration and bitrate, multiply out by how many projects you run, then multiply again by the backup copies you keep (two is a sensible default). This tool does that math for you, labels any bitrate it had to estimate, and suggests a drive tier — from a plain external drive up to a multi-terabyte setup.',
     },
     {
-      question: 'How does the video project storage planner work?',
-      answer:
-        'Enter your details using the inputs above and the video project storage planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video project storage planner free to use?',
-      answer:
-        'Yes - this video project storage planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video project storage planner?',
       answer:
         'A video project storage planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'It slots your offer and CTA into a fixed bank of proven copy templates, guaranteeing the CTA sits within the first 125 characters and the description stays under 30. No AI is involved — the same offer and CTA always return the same copy.',
     },
     {
-      question: 'How does the facebook ad copy generator work?',
-      answer:
-        'Enter your details using the inputs above and the facebook ad copy generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook ad copy generator free to use?',
-      answer:
-        'Yes - this facebook ad copy generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook ad copy generator?',
       answer:
         'A facebook ad copy generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

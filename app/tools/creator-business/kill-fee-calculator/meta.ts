@@ -128,16 +128,6 @@ export const content: ToolContent = {
         'Multiply the contract value by your kill fee percentage for the project stage, divided by 100. For example, a $2,000 contract cancelled before work with a 25% kill clause gives $2,000 × 0.25 = $500. If the client prepaid, subtract the fee from the contract value to find the refund.',
     },
     {
-      question: 'How does the kill fee calculator freelance work?',
-      answer:
-        'Enter your details using the inputs above and the kill fee calculator freelance calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the kill fee calculator freelance free to use?',
-      answer:
-        'Yes - this kill fee calculator freelance is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a kill fee calculator freelance?',
       answer:
         'A kill fee calculator freelance is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'This one matches your keyword against four hand-built cue-word banks (transactional, commercial, navigational, informational) and picks the bucket with the most matches. It is a heuristic, not AI, and it never looks at live search results — treat the output as a planning starting point.',
     },
     {
-      question: 'How does the search intent checker work?',
-      answer:
-        'Enter your details using the inputs above and the search intent checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the search intent checker free to use?',
-      answer:
-        'Yes - this search intent checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a search intent checker?',
       answer:
         'A search intent checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

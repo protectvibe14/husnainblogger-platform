@@ -66,16 +66,6 @@ export const content: ToolContent = {
         'Instagram does not publish its restricted list. This tool flags widely reported engagement-bait patterns (#likeforlike, #followforfollow, #l4l and similar) as risky — a heuristic pre-screen, not a live Instagram check. The only reliable test is searching the tag inside the Instagram app.',
     },
     {
-      question: 'How does the hashtag strength checker work?',
-      answer:
-        'Enter your details using the inputs above and the hashtag strength checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the hashtag strength checker free to use?',
-      answer:
-        'Yes - this hashtag strength checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a hashtag strength checker?',
       answer:
         'A hashtag strength checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

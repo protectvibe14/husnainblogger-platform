@@ -112,16 +112,6 @@ export const content: ToolContent = {
         'A follower comments your keyword, you reply publicly, then you send them the lead magnet in DMs followed by one engaging question and a soft CTA, with follow-ups for non-responders. This tool writes the scripts; you run the funnel by hand.',
     },
     {
-      question: 'How does the comment dm automation script work?',
-      answer:
-        'Enter your details using the inputs above and the comment dm automation script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the comment dm automation script free to use?',
-      answer:
-        'Yes - this comment dm automation script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a comment dm automation script?',
       answer:
         'A comment dm automation script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

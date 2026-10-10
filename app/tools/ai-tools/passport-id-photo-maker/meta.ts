@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Passport Photo Maker',
   description:
-    'Make passport photos free in your browser — AI cutout on pure white at US, UK/Schengen or India sizes., no uploads; runs 100% on your device.',
+    'Make passport and ID photos free — your portrait on a pure-white background at official sizes, JPG download. Make yours now!',
   howTo: [
     'Drop a front-facing portrait with a plain background (JPG, PNG or WEBP up to 20 MB), or click to browse.',
     'Pick a size: US 2×2 in, UK/Schengen 35×45 mm, or India 51×51 mm.',
@@ -91,16 +91,6 @@ export const content: ToolContent = {
       question: 'What photo should I upload for the best result?',
       answer:
         'A front-facing portrait with even lighting, a plain contrasting background, and your face clearly visible — the AI cutout is most accurate when the subject stands out from the background.',
-    },
-    {
-      question: 'How does the passport photo maker online work?',
-      answer:
-        'Enter your details using the inputs above and the passport photo maker online calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the passport photo maker online free to use?',
-      answer:
-        'Yes - this passport photo maker online is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

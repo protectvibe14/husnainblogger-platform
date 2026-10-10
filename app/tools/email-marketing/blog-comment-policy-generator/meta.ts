@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Blog Comment Policy Template',
   description:
-    'Set clear comment rules without the awkwardness: pick open, moderated, or strict, choose your tone, and publish a complete policy in seconds.',
+    'Set clear comment rules without the awkwardness — pick open, moderated, or strict, choose your tone. Generate yours now!',
   howTo: [
     'Type your blog name.',
     'Choose a moderation stance: open, moderated (first comments held), or strict (everything pre-approved).',
@@ -80,16 +80,6 @@ export const content: ToolContent = {
       question: 'How does a blog comment policy template work?',
       answer:
         'This generator assembles your blog name, moderation stance, and tone into a bundled set of policy sections: what is welcome, what is banned, how moderation works, consequences, privacy, and change notices. It is template text, not legal advice — have a lawyer review it for your jurisdiction.',
-    },
-    {
-      question: 'How does the blog comment policy template work?',
-      answer:
-        'Enter your details using the inputs above and the blog comment policy template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog comment policy template free to use?',
-      answer:
-        'Yes - this blog comment policy template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a blog comment policy template?',

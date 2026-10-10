@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'This generator fills fixed code templates with your labels, orientation, and start position. The output clips the before image with CSS and moves a drag handle with plain JavaScript — no libraries, no image processing, and no hosting on our side.',
     },
     {
-      question: 'How does the before after slider generator work?',
-      answer:
-        'Enter your details using the inputs above and the before after slider generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the before after slider generator free to use?',
-      answer:
-        'Yes - this before after slider generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a before after slider generator?',
       answer:
         'A before after slider generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

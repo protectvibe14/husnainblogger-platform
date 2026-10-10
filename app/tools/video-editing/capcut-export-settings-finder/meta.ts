@@ -43,9 +43,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best CapCut Export Settings',
+  title: 'CapCut Export Settings',
   description:
-    'Export right the first time, every time: pick TikTok, YouTube, Reels, or desktop for resolution, frame rate, and codec picks from fixed rules.',
+    'Export right the first time, every time: pick TikTok, YouTube, Reels, or desktop for resolution, frame rate, and codec picks. Find yours now! Try it now!',
   howTo: [
     'Pick your target platform: TikTok, YouTube, Shorts, Instagram Reels, Facebook, or desktop.',
     'Select your source footage resolution (480p up to 4320p / 8K).',
@@ -92,16 +92,6 @@ export const content: ToolContent = {
       question: 'How does a best CapCut export settings work?',
       answer:
         'It is a deterministic rule lookup, not AI: fixed tables map your platform to an aspect ratio and native resolution, your source resolution caps the export (never upscales), your frame rate is matched or rounded to a standard rate, and your priority selects a bitrate tier from typical H.264 ranges. The same inputs always produce the same picks.',
-    },
-    {
-      question: 'How does the best capcut export settings work?',
-      answer:
-        'Enter your details using the inputs above and the best capcut export settings calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the best capcut export settings free to use?',
-      answer:
-        'Yes - this best capcut export settings is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a best capcut export settings?',

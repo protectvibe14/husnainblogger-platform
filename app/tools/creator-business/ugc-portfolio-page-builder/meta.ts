@@ -73,16 +73,6 @@ export const content: ToolContent = {
         'Add one entry per sample: your creator name, the niche it belongs to, the link, and a short caption. Keep the same name across entries, cover up to 10 niches, and lead with your strongest work.',
     },
     {
-      question: 'How does the ugc portfolio builder work?',
-      answer:
-        'Enter your details using the inputs above and the ugc portfolio builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ugc portfolio builder free to use?',
-      answer:
-        'Yes - this ugc portfolio builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ugc portfolio builder?',
       answer:
         'An ugc portfolio builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

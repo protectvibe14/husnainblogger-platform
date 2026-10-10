@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'No. It formats your own words into one of 3 fixed hand-written press-release structures. It is deterministic and free, but it cannot invent quotes, dates, or facts — everything substantive must come from you.',
     },
     {
-      question: 'How does the blogger press release template work?',
-      answer:
-        'Enter your details using the inputs above and the blogger press release template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blogger press release template free to use?',
-      answer:
-        'Yes - this blogger press release template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blogger press release template?',
       answer:
         'A blogger press release template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

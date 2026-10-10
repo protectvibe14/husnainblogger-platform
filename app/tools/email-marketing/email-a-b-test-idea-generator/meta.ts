@@ -75,16 +75,6 @@ export const content: ToolContent = {
         'Pick one variable, write two variants, split your list evenly, and let it run at least 24–48 hours. As a rough rule of thumb, aim for 1,000 recipients per variant — this is not a power calculation, so larger lists give more reliable winners.',
     },
     {
-      question: 'How does the email a/b test ideas work?',
-      answer:
-        'Enter your details using the inputs above and the email a/b test ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email a/b test ideas free to use?',
-      answer:
-        'Yes - this email a/b test ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email a/b test ideas?',
       answer:
         'An email a/b test ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

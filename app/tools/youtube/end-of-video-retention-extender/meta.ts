@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'This tool takes your video topic and an optional next-video topic, then fills a fixed 5-beat template for your chosen pattern — loop-back, next-video bridge, open loop, or end-screen runway. Every beat has a timing label, and the runway rule reminds you to keep the final 5–20 seconds clear. It is template assembly, not AI, and it promises no retention numbers.',
     },
     {
-      question: 'How does the youtube end screen ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube end screen ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube end screen ideas free to use?',
-      answer:
-        'Yes - this youtube end screen ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube end screen ideas?',
       answer:
         'A youtube end screen ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

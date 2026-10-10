@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Email & Blog Writer',
   description:
-    'Draft cold emails, follow-ups, blog intros, and outlines with your own free Gemini, Groq, or OpenRouter key. Drafts only — edit before sending.',
+    'Write emails and blog posts with AI — pick a mode and get a polished draft ready to copy in seconds. Generate yours free!',
   howTo: [
     'Choose what to write: cold email, follow-up, blog intro, or blog outline.',
     'Enter your topic and any key points you want covered.',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'Will it invent statistics or claims?',
       answer:
         'It is instructed not to invent statistics, but AI can still phrase guesses confidently. Verify every claim before you publish or send.',
-    },
-    {
-      question: 'How does the ai email writer free work?',
-      answer:
-        'Enter your details using the inputs above and the ai email writer free calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai email writer free free to use?',
-      answer:
-        'Yes - this ai email writer free is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

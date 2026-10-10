@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'You enter a title and background per cover. The tool validates the title length, resolves the background to a color, gradient, or image URL, and produces a 1080x1920 cover spec with a safe-zone guide. The Builder preview then paints that spec onto a canvas you download as a PNG.',
     },
     {
-      question: 'How does the instagram reels cover maker work?',
-      answer:
-        'Enter your details using the inputs above and the instagram reels cover maker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram reels cover maker free to use?',
-      answer:
-        'Yes - this instagram reels cover maker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram reels cover maker?',
       answer:
         'An instagram reels cover maker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

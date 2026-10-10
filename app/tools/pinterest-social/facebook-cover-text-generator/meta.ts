@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'This tool inserts your offer into 5 fixed templates and attaches a safe-zone note for the cover type you chose. It does not design or render any image — text copy and layout guidance only.',
     },
     {
-      question: 'How does the facebook cover photo text work?',
-      answer:
-        'Enter your details using the inputs above and the facebook cover photo text calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook cover photo text free to use?',
-      answer:
-        'Yes - this facebook cover photo text is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook cover photo text?',
       answer:
         'A facebook cover photo text is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

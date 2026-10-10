@@ -87,16 +87,6 @@ export const content: ToolContent = {
         'It inserts your program details into a fixed template bank of 20 subjects, 4 body templates, and a share block. No AI is involved, so results are consistent and transparent — it writes the email copy, not your program rules.',
     },
     {
-      question: 'How does the referral email template generator work?',
-      answer:
-        'Enter your details using the inputs above and the referral email template generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the referral email template generator free to use?',
-      answer:
-        'Yes - this referral email template generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a referral email template generator?',
       answer:
         'A referral email template generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

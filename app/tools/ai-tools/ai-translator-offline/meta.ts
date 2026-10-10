@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Offline Ai Translator',
   description:
-    'Translate text free with AI in your browser — 18 language pairs, no uploads. Neural translation runs 100% on your device, offline after load.',
+    'Translate text free with offline AI — the translated text shown on screen for reading and copying instantly. Translate yours now!',
   howTo: [
     'Paste or type up to 5,000 characters of text.',
     'Pick one of 18 language pairs — English to/from Spanish, French, German, Italian, Dutch, Russian, Arabic, Hindi or Chinese.',
@@ -86,16 +86,6 @@ export const content: ToolContent = {
       question: 'Why is the model download so large?',
       answer:
         'Each language pair needs its own full neural translation model (~150–300 MB). It downloads once and is cached, so repeat translations are instant and offline.',
-    },
-    {
-      question: 'How does the offline ai translator work?',
-      answer:
-        'Enter your details using the inputs above and the offline ai translator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the offline ai translator free to use?',
-      answer:
-        'Yes - this offline ai translator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

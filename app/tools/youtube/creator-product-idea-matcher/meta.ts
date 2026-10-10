@@ -88,16 +88,6 @@ export const content: ToolContent = {
         'Pick your niche, audience size band, and effort level, then review the ranked ideas with their fit rationales. Start with the top low-effort idea, pre-sell or poll your audience, and only build once you see real interest.',
     },
     {
-      question: 'How does the digital products for youtubers work?',
-      answer:
-        'Enter your details using the inputs above and the digital products for youtubers calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the digital products for youtubers free to use?',
-      answer:
-        'Yes - this digital products for youtubers is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a digital products for youtubers?',
       answer:
         'A digital products for youtubers is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

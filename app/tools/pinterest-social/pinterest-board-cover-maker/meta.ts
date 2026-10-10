@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'You enter one board name per item, plus an optional theme and brand color. The tool validates each item and deterministically assigns a palette, typography treatment, and accent layout from its fixed banks, then produces a copy-ready design brief and 800x800 HTML snippet per board. It does not create actual image files — you recreate the cover in Canva from the spec.',
     },
     {
-      question: 'How does the pinterest board cover maker work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest board cover maker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest board cover maker free to use?',
-      answer:
-        'Yes - this pinterest board cover maker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest board cover maker?',
       answer:
         'A pinterest board cover maker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -80,7 +80,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Voiceover Cost Calculator',
   description:
-    'Estimate voiceover timing and cost: paste a script, set WPM and your own per-1k-character rate. Duration, character count and cost — all estimates. Free.',
+    'Calculate voiceover cost and timing free — counted from your script text or your own override, free. Calculate yours now!',
   howTo: [
     'Paste your script text, or enter a word count directly.',
     'Set the speech rate in words per minute (default 150 — an estimate).',
@@ -127,16 +127,6 @@ export const content: ToolContent = {
       question: 'Is the calculator free?',
       answer:
         'Yes — completely free, no signup. It runs in your browser using simple math.',
-    },
-    {
-      question: 'How does the voiceover cost calculator work?',
-      answer:
-        'Enter your details using the inputs above and the voiceover cost calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the voiceover cost calculator free to use?',
-      answer:
-        'Yes - this voiceover cost calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

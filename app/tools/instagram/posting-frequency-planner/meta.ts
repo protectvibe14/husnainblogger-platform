@@ -63,9 +63,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How Often To Post On Instagram',
+  title: 'Instagram Posting Frequency Planner',
   description:
-    'Plan how often to post on instagram around your schedule: set posts per week and hours available, get an even weekly plan with workload check. Free —.',
+    'Plan how often to post on Instagram with this posting frequency planner — set posts per week and hours available for an even weekly plan. Try it now!',
   howTo: [
     'Enter how many posts you want to publish in the "Posts per week" field (1 to 14).',
     'Tick the formats you will use: Reels, carousels, and/or stories.',
@@ -101,16 +101,6 @@ export const content: ToolContent = {
       question: 'How to use how often to post on instagram?',
       answer:
         'Enter how many posts you want per week (1-14), tick the formats you use, and add how many hours you can spend creating content. The tool spreads your posts evenly across the week, rotates your formats, and warns you if the workload exceeds your available time.',
-    },
-    {
-      question: 'How does the how often to post on instagram work?',
-      answer:
-        'Enter your details using the inputs above and the how often to post on instagram calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how often to post on instagram free to use?',
-      answer:
-        'Yes - this how often to post on instagram is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how often to post on instagram?',

@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Event Ideas',
   description:
-    'Fill your events calendar with ideas that draw crowds: enter your business type for 8 online and in-person events with titles and description seeds.',
+    'Fill your events calendar with ideas that draw crowds: enter your business type for 8 online and in-person events with title seeds. Start now!',
   howTo: [
     'Type your business type (up to 60 characters), e.g. "coffee shop".',
     'Run the tool to get 8 event ideas — titles, formats, and description seeds.',
@@ -75,16 +75,6 @@ export const content: ToolContent = {
       question: 'How does a facebook event ideas work?',
       answer:
         'It slots your business type into a fixed bank of 8 event templates across online and in-person formats — no AI. The same business type always returns the same ideas, so results are fully predictable.',
-    },
-    {
-      question: 'How does the facebook event ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook event ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook event ideas free to use?',
-      answer:
-        'Yes - this facebook event ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook event ideas?',

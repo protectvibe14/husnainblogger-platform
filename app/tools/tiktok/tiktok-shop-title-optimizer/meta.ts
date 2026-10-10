@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'You type a product name and keyword list; the tool combines them into 8 keyword-first title patterns, trims each to 255 characters, and rejects any title where a keyword repeats more than 3 times. It is rule-based — there is no AI and no access to TikTok\'s search data.',
     },
     {
-      question: 'How does the tiktok shop title work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok shop title calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok shop title free to use?',
-      answer:
-        'Yes - this tiktok shop title is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok shop title?',
       answer:
         'A tiktok shop title is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

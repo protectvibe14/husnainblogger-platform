@@ -75,16 +75,6 @@ export const content: ToolContent = {
         'It places your topics down one side and your formats across the top; each cell is one concrete idea. This tool fills every cell with a working-title template you can adapt, so you get dozens of starting points in seconds.',
     },
     {
-      question: 'How does the content ideas matrix work?',
-      answer:
-        'Enter your details using the inputs above and the content ideas matrix calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content ideas matrix free to use?',
-      answer:
-        'Yes - this content ideas matrix is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content ideas matrix?',
       answer:
         'A content ideas matrix is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

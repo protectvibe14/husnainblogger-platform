@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'It gives you the skeleton of a video — hook, setup, value beats, payoff, CTA — with a word budget per section so the script fits your target length. This tool builds that skeleton from your topic, duration, and format; the talking points and the script itself stay yours to write.',
     },
     {
-      question: 'How does the youtube script outline template work?',
-      answer:
-        'Enter your details using the inputs above and the youtube script outline template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube script outline template free to use?',
-      answer:
-        'Yes - this youtube script outline template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube script outline template?',
       answer:
         'A youtube script outline template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

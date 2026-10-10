@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'It splits your target word count across fixed section templates using fixed weights, so every section gets a word budget and a writing purpose. If you supply your own section names, the word count is split equally instead.',
     },
     {
-      question: 'How does the newsletter outline generator work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter outline generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter outline generator free to use?',
-      answer:
-        'Yes - this newsletter outline generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a newsletter outline generator?',
       answer:
         'A newsletter outline generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

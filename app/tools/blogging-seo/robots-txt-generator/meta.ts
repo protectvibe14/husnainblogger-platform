@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'It takes the crawl rules you type and formats them into a valid robots.txt file with correct User-agent groups and path syntax, correcting small mistakes like missing leading slashes. Nothing is invented by AI — every rule comes from your own input.',
     },
     {
-      question: 'How does the robots.txt generator work?',
-      answer:
-        'Enter your details using the inputs above and the robots.txt generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the robots.txt generator free to use?',
-      answer:
-        'Yes - this robots.txt generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a robots.txt generator?',
       answer:
         'A robots.txt generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

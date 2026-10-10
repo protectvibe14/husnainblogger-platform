@@ -64,16 +64,6 @@ export const content: ToolContent = {
         'Industry studies consistently show personalized subject lines (e.g. including the recipient\'s first name via a merge token like {{first_name}}) lift open rates versus generic ones. This checker awards 15 points for a detected token.',
     },
     {
-      question: 'How does the email subject line analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the email subject line analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email subject line analyzer free to use?',
-      answer:
-        'Yes - this email subject line analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email subject line analyzer?',
       answer:
         'An email subject line analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

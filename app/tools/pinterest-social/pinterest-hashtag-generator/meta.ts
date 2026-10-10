@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'You enter a topic and the tool builds camelCase tags from your topic words, then fills the list from a fixed bank of 48 curated hashtags in deterministic rotation. Because the bank and rotation are fixed, identical inputs always return the identical list.',
     },
     {
-      question: 'How does the pinterest hashtags work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest hashtags calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest hashtags free to use?',
-      answer:
-        'Yes - this pinterest hashtags is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest hashtags?',
       answer:
         'A pinterest hashtags is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

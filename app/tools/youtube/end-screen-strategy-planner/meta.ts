@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'This one encodes YouTube\'s end-screen rules and maps your goal to a fixed element set, then staggers the elements across the final 20 seconds with timestamps. It is a rule-based planner, not AI, and you apply the finished plan inside YouTube Studio.',
     },
     {
-      question: 'How does the youtube end screen planner work?',
-      answer:
-        'Enter your details using the inputs above and the youtube end screen planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube end screen planner free to use?',
-      answer:
-        'Yes - this youtube end screen planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube end screen planner?',
       answer:
         'A youtube end screen planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

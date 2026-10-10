@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Giveaway Ideas',
   description:
-    'Run a giveaway that grows your page safely: enter your business for 4 concept frameworks plus a compliance checklist to stay out of trouble.',
+    'Run a giveaway that grows your page safely: enter your business for 4 concept frameworks plus a compliance checklist. Get started!',
   howTo: [
     'Type Your business name into the field (e.g. Sunny Side Bakery).',
     'Optionally type the Prize you want to offer — or leave it blank for a prize suggestion.',
@@ -89,16 +89,6 @@ export const content: ToolContent = {
       question: 'How does a facebook giveaway ideas work?',
       answer:
         'This tool inserts your business and prize into 4 fixed concept templates and always attaches the same 5-item compliance checklist. It cannot verify that your giveaway complies with Facebook policies or local laws — check those yourself before launching.',
-    },
-    {
-      question: 'How does the facebook giveaway ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook giveaway ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook giveaway ideas free to use?',
-      answer:
-        'Yes - this facebook giveaway ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook giveaway ideas?',

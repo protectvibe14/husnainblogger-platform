@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Plan Instagram Stories',
+  title: 'Instagram Story Sequence Planner',
   description:
     'Learn how to plan instagram stories: pick a goal, get an ordered story sequence with formats, drafts, and timing. Free planner.',
   howTo: [
@@ -95,16 +95,6 @@ export const content: ToolContent = {
       question: 'How does a how to plan instagram stories work?',
       answer:
         'You choose a goal, and the tool lays out a fixed, hand-written playbook for that goal into your chosen number of slots — always opening with a hook and closing with a call-to-action, with format, draft text, and timing per slot. It only produces the plan; you publish the stories yourself.',
-    },
-    {
-      question: 'How does the how to plan instagram stories work?',
-      answer:
-        'Enter your details using the inputs above and the how to plan instagram stories calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to plan instagram stories free to use?',
-      answer:
-        'Yes - this how to plan instagram stories is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to plan instagram stories?',

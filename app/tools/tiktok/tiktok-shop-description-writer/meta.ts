@@ -76,16 +76,6 @@ export const content: ToolContent = {
         'Enter your product name and features (one per line), generate the description, replace the [bracketed] placeholders with your real supplier info, review the policy note, then paste it into your TikTok Shop listing editor.',
     },
     {
-      question: 'How does the tiktok shop description work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok shop description calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok shop description free to use?',
-      answer:
-        'Yes - this tiktok shop description is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok shop description?',
       answer:
         'A tiktok shop description is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'Enter your subscriber count and average views, pick dedicated or integration, and read the suggested range. Use it as a negotiation starting point: strong engagement or a premium niche lets you price toward the top of the range, not the bottom.',
     },
     {
-      question: 'How does the youtube sponsorship rates work?',
-      answer:
-        'Enter your details using the inputs above and the youtube sponsorship rates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube sponsorship rates free to use?',
-      answer:
-        'Yes - this youtube sponsorship rates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube sponsorship rates?',
       answer:
         'A youtube sponsorship rates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

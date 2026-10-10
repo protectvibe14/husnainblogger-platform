@@ -145,16 +145,6 @@ export const content: ToolContent = {
         'Enter the episode length, your editing-hours-per-hour estimate, and your hourly rate, then price each add-on (show notes, audiogram, chapters) with 0 meaning not included. The tool returns a per-episode price and a monthly retainer estimate.',
     },
     {
-      question: 'How does the podcast editing rates per hour work?',
-      answer:
-        'Enter your details using the inputs above and the podcast editing rates per hour calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the podcast editing rates per hour free to use?',
-      answer:
-        'Yes - this podcast editing rates per hour is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a podcast editing rates per hour?',
       answer:
         'A podcast editing rates per hour is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

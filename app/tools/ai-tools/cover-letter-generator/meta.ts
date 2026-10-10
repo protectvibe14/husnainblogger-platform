@@ -96,16 +96,6 @@ export const content: ToolContent = {
       answer:
         'Three concise paragraphs: your enthusiasm for the role, 2–3 achievements tied to it, and a closing call to action. Short enough to be read, specific enough to matter.',
     },
-    {
-      question: 'How does the ai cover letter generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai cover letter generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai cover letter generator free to use?',
-      answer:
-        'Yes - this ai cover letter generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'The letter only uses what you provide — thin input produces a thin letter.',

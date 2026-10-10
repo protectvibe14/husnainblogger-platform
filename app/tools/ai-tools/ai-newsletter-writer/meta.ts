@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Newsletter Writer',
   description:
-    'Draft a complete newsletter — subject line, sections, and sign-off — in your tone with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Write your newsletter with AI — get a complete, polished draft ready to copy in seconds, totally free. Start writing now!',
   howTo: [
     'Describe your newsletter topic.',
     'Pick the length and tone.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'Does it store or train on my topic?',
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy.',
-    },
-    {
-      question: 'How does the ai newsletter writer work?',
-      answer:
-        'Enter your details using the inputs above and the ai newsletter writer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai newsletter writer free to use?',
-      answer:
-        'Yes - this ai newsletter writer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

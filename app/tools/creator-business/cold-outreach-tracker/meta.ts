@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'You enter one record per prospect — name, company, contact, status, dates, notes. The tool counts prospects by status, lists follow-ups due on or before today, calculates reply and win rates from your entries, and builds a CSV you can export. It never sends emails automatically and saves nothing server-side.',
     },
     {
-      question: 'How does the cold outreach tracker work?',
-      answer:
-        'Enter your details using the inputs above and the cold outreach tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the cold outreach tracker free to use?',
-      answer:
-        'Yes - this cold outreach tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a cold outreach tracker?',
       answer:
         'A cold outreach tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

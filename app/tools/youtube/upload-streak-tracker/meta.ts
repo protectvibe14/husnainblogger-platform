@@ -58,16 +58,6 @@ export const content: ToolContent = {
         'You log each upload date; the tracker counts consecutive upload days (or ISO weeks) for the current and longest streaks, divides total uploads by the time span for a weekly rate, and counts scheduled slots with no upload as missed. This one is manual — no YouTube API — so it only ever describes the dates you entered.',
     },
     {
-      question: 'How does the youtube upload streak tracker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube upload streak tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube upload streak tracker free to use?',
-      answer:
-        'Yes - this youtube upload streak tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube upload streak tracker?',
       answer:
         'A youtube upload streak tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -76,16 +76,6 @@ export const content: ToolContent = {
         'It lays out each pillar in a grid with numbered subtopic slots and suggested content formats. You fill in the slot names with your own topics, which turns a vague posting plan into an organized content system.',
     },
     {
-      question: 'How does the content pillars template work?',
-      answer:
-        'Enter your details using the inputs above and the content pillars template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content pillars template free to use?',
-      answer:
-        'Yes - this content pillars template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content pillars template?',
       answer:
         'A content pillars template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

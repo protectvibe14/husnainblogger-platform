@@ -73,16 +73,6 @@ export const content: ToolContent = {
         'Describe your email goal and your offer, pick a tone, and generate. You get 6 postscript options — choose the one that best restates your call to action, then tweak it to your voice.',
     },
     {
-      question: 'How does the email ps generator work?',
-      answer:
-        'Enter your details using the inputs above and the email ps generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email ps generator free to use?',
-      answer:
-        'Yes - this email ps generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email ps generator?',
       answer:
         'An email ps generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

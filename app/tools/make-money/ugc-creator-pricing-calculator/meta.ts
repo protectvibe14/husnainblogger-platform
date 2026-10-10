@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'Multiply your video count by a base rate (this tool uses $500 per video without posting as a labeled estimate), then apply usage-rights multipliers (paid ads 1.5–2.5×, whitelisting 2.0–3.0×) and add 25–50% if you must post. This tool runs that formula for you and shows both the total and per-video ranges.',
     },
     {
-      question: 'How does the ugc pricing calculator work?',
-      answer:
-        'Enter your details using the inputs above and the ugc pricing calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ugc pricing calculator free to use?',
-      answer:
-        'Yes - this ugc pricing calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ugc pricing calculator?',
       answer:
         'An ugc pricing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

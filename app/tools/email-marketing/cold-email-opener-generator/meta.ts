@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'It does not use AI. It inserts your prospect context and industry into a fixed library of 24 hand-written opener patterns and returns 6 options in your chosen tone, flagging each personalization slot to fill in.',
     },
     {
-      question: 'How does the cold email opener generator work?',
-      answer:
-        'Enter your details using the inputs above and the cold email opener generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the cold email opener generator free to use?',
-      answer:
-        'Yes - this cold email opener generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a cold email opener generator?',
       answer:
         'A cold email opener generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

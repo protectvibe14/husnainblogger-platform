@@ -111,16 +111,6 @@ export const content: ToolContent = {
         'You give it a transcript with start and end times per segment. It cuts segments that are entirely filler words (text-pattern matching, not audio analysis) and trims pauses beyond an aggressiveness threshold, then returns keep and cut ranges plus the new estimated duration.',
     },
     {
-      question: 'How does the jump cut planner work?',
-      answer:
-        'Enter your details using the inputs above and the jump cut planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the jump cut planner free to use?',
-      answer:
-        'Yes - this jump cut planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a jump cut planner?',
       answer:
         'A jump cut planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

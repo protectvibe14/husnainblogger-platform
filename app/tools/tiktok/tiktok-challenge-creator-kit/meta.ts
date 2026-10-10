@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'For challenges specifically: name your challenge, pick a format (dance, how-to, before-after, or duet-chain), film a launch video showing exactly what to do, and post it with your challenge hashtag. This kit writes your rules text, example script, judging criteria, and CTA so you can launch faster.',
     },
     {
-      question: 'How does the tiktok challenge ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok challenge ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok challenge ideas free to use?',
-      answer:
-        'Yes - this tiktok challenge ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok challenge ideas?',
       answer:
         'A tiktok challenge ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

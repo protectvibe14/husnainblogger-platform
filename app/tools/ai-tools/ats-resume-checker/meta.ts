@@ -93,16 +93,6 @@ export const content: ToolContent = {
       answer:
         'No. Every check runs in your browser — your resume and the job description never leave your device.',
     },
-    {
-      question: 'How does the ats resume checker work?',
-      answer:
-        'Enter your details using the inputs above and the ats resume checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ats resume checker free to use?',
-      answer:
-        'Yes - this ats resume checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'The score is a heuristic checklist result, not a prediction of hiring outcomes or of any real ATS score.',

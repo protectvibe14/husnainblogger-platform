@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Image Upscaler (2x/4x, Free)',
   description:
-    'Upscale images free with AI in your browser — 2x or 4x super-resolution, PNG download, no uploads. Runs 100% on your device, offline after load.',
+    'Upscale images free with AI — boost your photo to 2x or 4x resolution, download it as a PNG in seconds. Upscale yours now!',
   howTo: [
     'Drop an image (JPG, PNG or WEBP up to 20 MB) onto the upload area, or click to browse.',
     'Pick 2x or 4x — each factor loads its own super-resolution model (about 52–53 MB, downloaded once).',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'Will upscaling fix a very blurry photo?',
       answer:
         'It improves detail and sharpness on photos, but it cannot recover information that is not there — heavy blur, noise or compression artifacts stay partly visible, and text may look softened.',
-    },
-    {
-      question: 'How does the ai image upscaler work?',
-      answer:
-        'Enter your details using the inputs above and the ai image upscaler calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai image upscaler free to use?',
-      answer:
-        'Yes - this ai image upscaler is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

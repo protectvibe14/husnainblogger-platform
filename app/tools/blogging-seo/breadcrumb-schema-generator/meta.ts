@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'It takes your breadcrumb names and URLs and assembles them into a schema.org BreadcrumbList JSON-LD block with numbered ListItem positions. Nothing is written by AI — the tool only formats the trail you provide into valid markup.',
     },
     {
-      question: 'How does the breadcrumb schema generator work?',
-      answer:
-        'Enter your details using the inputs above and the breadcrumb schema generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the breadcrumb schema generator free to use?',
-      answer:
-        'Yes - this breadcrumb schema generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a breadcrumb schema generator?',
       answer:
         'A breadcrumb schema generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

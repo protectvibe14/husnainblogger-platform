@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Cross-Model Prompt Converter',
   description:
-    'Convert image prompts between Midjourney, Flux, SDXL, DALL-E 3 and Ideogram. Best-effort syntax mapping shows what carried over — and what didn’t.',
+    'Convert Midjourney prompts to Flux free — your prompt rewritten in the target model’s syntax instantly. Convert yours now!',
   howTo: [
     'Paste the prompt you wrote for your source model, parameters included.',
     'Choose the source model and the target model from the dropdowns.',
@@ -104,16 +104,6 @@ export const content: ToolContent = {
       question: 'Which conversions are supported?',
       answer:
         'All pairs between Midjourney, Flux, SDXL, DALL-E 3 and Ideogram — 20 directions. Same-model conversion is rejected since there is nothing to convert.',
-    },
-    {
-      question: 'How does the midjourney to flux prompt converter work?',
-      answer:
-        'Enter your details using the inputs above and the midjourney to flux prompt converter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the midjourney to flux prompt converter free to use?',
-      answer:
-        'Yes - this midjourney to flux prompt converter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a midjourney to flux prompt converter?',

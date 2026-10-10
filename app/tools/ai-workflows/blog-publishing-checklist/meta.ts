@@ -48,16 +48,6 @@ export const content: ToolContent = {
         "You tick off each fixed checklist item; the tool tracks your progress and saves it in your browser's local storage. The list itself never changes.",
     },
     {
-      question: 'How does the blog post publishing checklist work?',
-      answer:
-        'Enter your details using the inputs above and the blog post publishing checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog post publishing checklist free to use?',
-      answer:
-        'Yes - this blog post publishing checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog post publishing checklist?',
       answer:
         'A blog post publishing checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

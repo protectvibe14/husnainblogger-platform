@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'Enter the client name, the product they used, and the specific point you want them to mention, plus an optional thank-you incentive. Run the tool, pick a subject line, copy the draft, replace [Your Name], and send it personally.',
     },
     {
-      question: 'How does the testimonial request email template work?',
-      answer:
-        'Enter your details using the inputs above and the testimonial request email template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the testimonial request email template free to use?',
-      answer:
-        'Yes - this testimonial request email template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a testimonial request email template?',
       answer:
         'A testimonial request email template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

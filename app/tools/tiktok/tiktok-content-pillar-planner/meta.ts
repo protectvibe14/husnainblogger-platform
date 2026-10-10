@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'A pillar is a repeatable content theme (like "quick tips" or "before/afters") with its own formats and posting rhythm. This planner gives you 4 pillars tuned to your business goal, each with 3 starter topics, so you never stare at a blank content calendar.',
     },
     {
-      question: 'How does the tiktok content pillars work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok content pillars calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok content pillars free to use?',
-      answer:
-        'Yes - this tiktok content pillars is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok content pillars?',
       answer:
         'A tiktok content pillars is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

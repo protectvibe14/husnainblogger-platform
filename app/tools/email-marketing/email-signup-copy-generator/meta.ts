@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Signup Copy Generator',
   description:
-    'Grow your list faster with better opt-in copy: enter your freebie, placement, and tone for headlines, subtext, and button text that converts.',
+    'Grow your list faster with better opt-in copy: enter your freebie, placement, and tone for headlines and button text that converts. Try it now!',
   howTo: [
     'Enter your incentive — the freebie people get for signing up (e.g. free SEO checklist).',
     'Pick the placement: popup, inline form, landing page, or sidebar.',
@@ -103,16 +103,6 @@ export const content: ToolContent = {
       question: 'How does an email signup copy generator work?',
       answer:
         'It fills fixed copy patterns with your incentive — headline, subtext, and button templates — and deterministically picks a set of options based on your placement and tone. The output is assembled from a bundled template library, with no network calls or AI.',
-    },
-    {
-      question: 'How does the email signup copy generator work?',
-      answer:
-        'Enter your details using the inputs above and the email signup copy generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email signup copy generator free to use?',
-      answer:
-        'Yes - this email signup copy generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an email signup copy generator?',

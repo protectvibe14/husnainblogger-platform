@@ -125,16 +125,6 @@ export const content: ToolContent = {
         'Subtract your current valid public watch hours (last 12 months) from 4,000 to get the gap, then divide by your daily watch hours (views/day × avg view duration ÷ 60). This tool does that math and also checks the fan-funding tier and Shorts path.',
     },
     {
-      question: 'How does the 4000 watch hours calculator work?',
-      answer:
-        'Enter your details using the inputs above and the 4000 watch hours calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the 4000 watch hours calculator free to use?',
-      answer:
-        'Yes - this 4000 watch hours calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a 4000 watch hours calculator?',
       answer:
         'A 4000 watch hours calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

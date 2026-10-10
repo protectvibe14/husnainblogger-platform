@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'It maps regular A–Z, a–z, and 0–9 characters to their bold counterparts in the Unicode mathematical alphanumeric symbols block — X and most apps render those as bold. This tool does that conversion deterministically, with no fonts installed and no AI involved.',
     },
     {
-      question: 'How does the twitter bold text generator work?',
-      answer:
-        'Enter your details using the inputs above and the twitter bold text generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter bold text generator free to use?',
-      answer:
-        'Yes - this twitter bold text generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter bold text generator?',
       answer:
         'A twitter bold text generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

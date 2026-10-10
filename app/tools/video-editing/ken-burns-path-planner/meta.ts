@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ken Burns Effect Planner',
   description:
-    'Plan smooth pan-and-zoom moves like a pro: enter your image size and aspect ratio for keyframes, crop windows, and smart upscale safety checks.',
+    'Plan smooth pan-and-zoom moves with this Ken Burns effect planner — keyframes, crop windows, and upscale safety checks for your image size. Start now!',
   howTo: [
     'Enter your image width and height in pixels.',
     'Pick the video aspect ratio: 16:9, 9:16, or 1:1.',
@@ -102,16 +102,6 @@ export const content: ToolContent = {
       question: 'How does a ken burns effect planner work?',
       answer:
         'It is pure geometry, not AI: the tool fits the largest crop of your target aspect inside the image, then linearly interpolates the crop center and scale across 11 keyframes. If the max-zoom crop would be smaller than a 1080p frame, it errors instead of planning an upscale. The result is coordinates for your editor — no image processing or rendered video involved.',
-    },
-    {
-      question: 'How does the ken burns effect planner work?',
-      answer:
-        'Enter your details using the inputs above and the ken burns effect planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ken burns effect planner free to use?',
-      answer:
-        'Yes - this ken burns effect planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a ken burns effect planner?',

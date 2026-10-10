@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'Rate the idea honestly on this tool\'s five-factor rubric to find its weak spots, then check YouTube autocomplete and Google Trends for the topic and look at what competing videos already exist. This validator structures your judgment — it does not replace real research, and it cannot predict views.',
     },
     {
-      question: 'How does the youtube video idea validator work?',
-      answer:
-        'Enter your details using the inputs above and the youtube video idea validator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube video idea validator free to use?',
-      answer:
-        'Yes - this youtube video idea validator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube video idea validator?',
       answer:
         'A youtube video idea validator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

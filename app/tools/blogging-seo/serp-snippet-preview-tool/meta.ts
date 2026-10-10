@@ -123,16 +123,6 @@ export const content: ToolContent = {
         'It renders your title, URL breadcrumb, and description in a Google-style layout and estimates the title\'s pixel width with a per-character width table. Important: it is a static mockup and an estimate — it does not fetch live Google data, and Google sometimes rewrites titles and descriptions on its own.',
     },
     {
-      question: 'How does the google snippet preview tool work?',
-      answer:
-        'Enter your details using the inputs above and the google snippet preview tool calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the google snippet preview tool free to use?',
-      answer:
-        'Yes - this google snippet preview tool is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a google snippet preview tool?',
       answer:
         'A google snippet preview tool is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

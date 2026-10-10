@@ -47,16 +47,6 @@ export const content: ToolContent = {
         'It does not check facts automatically — no client-side page can. This tool is a fixed 16-step checklist that organizes the manual verification work so no claim slips through.',
     },
     {
-      question: 'How does the fact check ai content work?',
-      answer:
-        'Enter your details using the inputs above and the fact check ai content calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the fact check ai content free to use?',
-      answer:
-        'Yes - this fact check ai content is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a fact check ai content?',
       answer:
         'A fact check ai content is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'It multiplies your budget by fixed category percentages (or your custom five, which must total 100), rounds to whole dollars with largest-remainder rounding so the total matches exactly, and outputs a priority-ranked shopping order. It recommends categories only — never specific products or prices.',
     },
     {
-      question: 'How does the youtube starter kit planner work?',
-      answer:
-        'Enter your details using the inputs above and the youtube starter kit planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube starter kit planner free to use?',
-      answer:
-        'Yes - this youtube starter kit planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube starter kit planner?',
       answer:
         'A youtube starter kit planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

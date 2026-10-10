@@ -70,16 +70,6 @@ export const content: ToolContent = {
         "You enter your episode title, guest, chapters, and links; the tool arranges them into a fixed template in Markdown and HTML. It writes no episode content itself.",
     },
     {
-      question: 'How does the podcast show notes template work?',
-      answer:
-        'Enter your details using the inputs above and the podcast show notes template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the podcast show notes template free to use?',
-      answer:
-        'Yes - this podcast show notes template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a podcast show notes template?',
       answer:
         'A podcast show notes template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -155,16 +155,6 @@ export const content: ToolContent = {
         'Multiply your hourly rate by estimated monthly hours for the hourly cost. For the retainer, take the fee plus any overage: (hours beyond the included hours) x overage rate. Whichever is lower costs less; the break-even point is where they match. This tool runs all of it for you.',
     },
     {
-      question: 'How does the retainer vs hourly calculator work?',
-      answer:
-        'Enter your details using the inputs above and the retainer vs hourly calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the retainer vs hourly calculator free to use?',
-      answer:
-        'Yes - this retainer vs hourly calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a retainer vs hourly calculator?',
       answer:
         'A retainer vs hourly calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

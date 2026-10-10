@@ -47,7 +47,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Lead Magnet Title Generator',
   description:
-    'Name your freebie like a bestseller: enter the magnet format, topic, and reader outcome for 10 catchy, character-counted titles in 4 distinct tones.',
+    'Name your freebie like a bestseller: enter the format, topic, and reader outcome for 10 catchy, character-counted titles in 4 tones. Get started!',
   howTo: [
     'Enter your magnet type (checklist, ebook, template, video, or email course).',
     'Enter the topic your freebie covers and the outcome the reader gets.',
@@ -99,16 +99,6 @@ export const content: ToolContent = {
       question: 'How does a lead magnet title generator work?',
       answer:
         'It fills fixed title patterns with your magnet type, topic, outcome, and a tone adjective, then counts the characters of each result. Every title is assembled from template banks — nothing is written by AI.',
-    },
-    {
-      question: 'How does the lead magnet title generator work?',
-      answer:
-        'Enter your details using the inputs above and the lead magnet title generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the lead magnet title generator free to use?',
-      answer:
-        'Yes - this lead magnet title generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a lead magnet title generator?',

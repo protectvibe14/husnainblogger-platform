@@ -80,7 +80,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Freelance Client Profitability Tracker',
   description:
-    'Rank clients by true profit with this freelance client profitability tracker: enter revenue, hours, cost rate and expenses for profit and margins. Free.',
+    'Track client profitability free — revenue, total cost, and profit for each client, ranked by profit, free. Track yours now!',
   howTo: [
     'Add one entry per client: a unique client name, revenue earned, hours worked, your hourly cost rate, and direct expenses — all in USD.',
     'Use your real cost rate (what an hour of your time actually costs you), not your billing rate.',
@@ -105,16 +105,6 @@ export const content: ToolContent = {
       question: 'How to track freelance client profitability?',
       answer:
         'For each client, record what they paid you, how many hours you spent, what each hour costs you, and any direct expenses. This tool turns those four numbers into profit and margin per client — then download the CSV, because entries are session-based and are not saved in your browser.',
-    },
-    {
-      question: 'How does the freelance client profitability tracker work?',
-      answer:
-        'Enter your details using the inputs above and the freelance client profitability tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance client profitability tracker free to use?',
-      answer:
-        'Yes - this freelance client profitability tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a freelance client profitability tracker?',

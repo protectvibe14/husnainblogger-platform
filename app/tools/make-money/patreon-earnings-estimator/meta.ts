@@ -81,16 +81,6 @@ export const content: ToolContent = {
         'Multiply paying patrons by your average pledge, subtract your plan\u2019s platform fee (10% on new pages; 5%\u201312% on legacy tiers), then subtract payment-processing fees (2.9% + $0.30 per pledge over $3; 5% + $0.10 at or under $3). This tool runs that exact calculation for you.',
     },
     {
-      question: 'How does the patreon earnings calculator work?',
-      answer:
-        'Enter your details using the inputs above and the patreon earnings calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the patreon earnings calculator free to use?',
-      answer:
-        'Yes - this patreon earnings calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a patreon earnings calculator?',
       answer:
         'A patreon earnings calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

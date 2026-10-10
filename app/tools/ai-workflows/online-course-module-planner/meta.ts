@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'This one works with fixed rules, not AI: modules rotate through a 4-3-5 lesson-slot pattern and three lesson-name templates, and durations are computed as slots × your lesson length. The same inputs always produce the same grid.',
     },
     {
-      question: 'How does the course outline generator work?',
-      answer:
-        'Enter your details using the inputs above and the course outline generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the course outline generator free to use?',
-      answer:
-        'Yes - this course outline generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a course outline generator?',
       answer:
         'A course outline generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

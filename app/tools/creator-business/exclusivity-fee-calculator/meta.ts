@@ -109,16 +109,6 @@ export const content: ToolContent = {
         'Decide what percentage of your base deal fee (or what flat amount) the exclusivity clause is worth to you, enter it with the exclusivity period, and use the resulting fee in your brand-deal contract. The monthly equivalent helps you compare offers of different lengths.',
     },
     {
-      question: 'How does the influencer exclusivity fee work?',
-      answer:
-        'Enter your details using the inputs above and the influencer exclusivity fee calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the influencer exclusivity fee free to use?',
-      answer:
-        'Yes - this influencer exclusivity fee is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an influencer exclusivity fee?',
       answer:
         'An influencer exclusivity fee is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

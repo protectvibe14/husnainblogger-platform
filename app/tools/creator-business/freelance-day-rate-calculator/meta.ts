@@ -149,16 +149,6 @@ export const content: ToolContent = {
         'Add your annual income target to your annual business expenses, then divide by your billable days (working days minus vacation, admin, and marketing days). That gives your day rate. This tool runs that exact formula and also derives half-day and hourly equivalents.',
     },
     {
-      question: 'How does the freelance day rate calculator work?',
-      answer:
-        'Enter your details using the inputs above and the freelance day rate calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance day rate calculator free to use?',
-      answer:
-        'Yes - this freelance day rate calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance day rate calculator?',
       answer:
         'A freelance day rate calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

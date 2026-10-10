@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'This one spreads your weekly post count evenly across each 7-day week from your start date, assigns each post a title from a fixed bank of 28 templates filled with your niche, and cycles content-type labels. It is template assembly, not AI — the same inputs always give the same calendar.',
     },
     {
-      question: 'How does the editorial calendar generator work?',
-      answer:
-        'Enter your details using the inputs above and the editorial calendar generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the editorial calendar generator free to use?',
-      answer:
-        'Yes - this editorial calendar generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an editorial calendar generator?',
       answer:
         'An editorial calendar generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

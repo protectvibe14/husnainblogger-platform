@@ -114,16 +114,6 @@ export const content: ToolContent = {
         'Your bio is the short text shown at the top of your profile or Page — personal bios cap at 101 characters, Page short descriptions at 255. This tool fills hand-written templates with your details and trims them to fit, so the text you paste never gets cut off.',
     },
     {
-      question: 'How does the facebook bio work?',
-      answer:
-        'Enter your details using the inputs above and the facebook bio calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook bio free to use?',
-      answer:
-        'Yes - this facebook bio is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook bio?',
       answer:
         'A facebook bio is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

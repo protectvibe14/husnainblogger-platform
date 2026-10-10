@@ -110,16 +110,6 @@ export const content: ToolContent = {
         'It appends standardized UTM query parameters to your URL — values like newsletter, email, and spring-launch become ?utm_source=newsletter&utm_medium=email&utm_campaign=spring-launch. Analytics tools such as Google Analytics read these parameters to attribute traffic to the right campaign.',
     },
     {
-      question: 'How does the utm link builder work?',
-      answer:
-        'Enter your details using the inputs above and the utm link builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the utm link builder free to use?',
-      answer:
-        'Yes - this utm link builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an utm link builder?',
       answer:
         'An utm link builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Newsletter Ad Slot Planner',
   description:
-    'Price your newsletter ads with confidence: enter issues per month, slot prices, and expected fill rates for gross and net revenue projections.',
+    'Price your newsletter ads with confidence: enter issues per month, slot prices, and expected fill rates for revenue projections. Calculate yours now!',
   howTo: [
     'Enter how many newsletter issues you send per month.',
     'List your ad slots, one per line: "Name | price per issue | expected fill rate %" (fill rate is optional and defaults to 100).',
@@ -76,16 +76,6 @@ export const content: ToolContent = {
       question: 'How does a newsletter ad slot planner work?',
       answer:
         'This one does pure arithmetic on your inputs: it sums your slot prices for gross revenue, applies your expected fill rates for a fill-adjusted net figure, and divides net by gross for utilization. It contains no market-rate data and never presents benchmarks as facts — everything is labeled an estimate.',
-    },
-    {
-      question: 'How does the newsletter ad slot planner work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter ad slot planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter ad slot planner free to use?',
-      answer:
-        'Yes - this newsletter ad slot planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a newsletter ad slot planner?',

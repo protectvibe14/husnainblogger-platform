@@ -47,16 +47,6 @@ export const content: ToolContent = {
         'A format is a reusable structure — hook, story arc, list, comparison — that you fill with your own content. This page is a fixed reference library, not a prediction tool: it shows you the pattern, you supply the substance.',
     },
     {
-      question: 'How does the viral content formats work?',
-      answer:
-        'Enter your details using the inputs above and the viral content formats calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the viral content formats free to use?',
-      answer:
-        'Yes - this viral content formats is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a viral content formats?',
       answer:
         'A viral content formats is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

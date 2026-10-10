@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'No — and be skeptical of any tool that claims to. This analyzer gives a heuristic estimate of how well your hook follows proven hook-writing patterns; actual reach depends on your audience, timing, and the X algorithm, which no public tool can predict.',
     },
     {
-      question: 'How does the twitter hook analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the twitter hook analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter hook analyzer free to use?',
-      answer:
-        'Yes - this twitter hook analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter hook analyzer?',
       answer:
         'A twitter hook analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

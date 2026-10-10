@@ -27,9 +27,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Structure a Tiktok Tutorial',
+  title: 'TikTok Tutorial Planner',
   description:
-    'Free how to structure a tiktok tutorial 2026: Structure your TikTok tutorial with a clear template: hook, numbered steps, short. Fast, private - try.',
+    'Structure a TikTok tutorial with this TikTok tutorial planner — hook, numbered steps, and a short template that keeps viewers watching. Try it now!',
   howTo: [
     'Type your tutorialTopic — what you are teaching (e.g. "tie a tie").',
     'Set stepCount between 2 and 12 for how many teaching steps the video needs.',
@@ -67,16 +67,6 @@ export const content: ToolContent = {
       question: 'How do I use the tutorial structurer?',
       answer:
         'Enter your tutorial topic and how many steps you need, then generate. Replace the template step actions with your real method, film one step per clip, and keep each on-screen text line short enough to read at a glance.',
-    },
-    {
-      question: 'How does the how to structure a tiktok tutorial work?',
-      answer:
-        'Enter your details using the inputs above and the how to structure a tiktok tutorial calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to structure a tiktok tutorial free to use?',
-      answer:
-        'Yes - this how to structure a tiktok tutorial is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to structure a tiktok tutorial?',

@@ -98,16 +98,6 @@ export const content: ToolContent = {
         'It is a reference: each entry describes what the style looks like and gives you words to use in your prompts. Select a style on this page to see its full card with a copyable example snippet.',
     },
     {
-      question: 'How does the ai art styles list work?',
-      answer:
-        'Enter your details using the inputs above and the ai art styles list calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai art styles list free to use?',
-      answer:
-        'Yes - this ai art styles list is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai art styles list?',
       answer:
         'An ai art styles list is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

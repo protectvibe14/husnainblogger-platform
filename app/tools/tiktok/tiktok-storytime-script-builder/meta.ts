@@ -114,16 +114,6 @@ export const content: ToolContent = {
         'Add a story item, write at least the setup and conflict beats, and run the builder. Film the hook in the first 3 seconds, follow the on-screen-text cues, pause where the pacing beats tell you, and close with the CTA. If your story is very long, the tool suggests splitting it into a multi-part series.',
     },
     {
-      question: 'How does the storytime script tiktok work?',
-      answer:
-        'Enter your details using the inputs above and the storytime script tiktok calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the storytime script tiktok free to use?',
-      answer:
-        'Yes - this storytime script tiktok is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a storytime script tiktok?',
       answer:
         'A storytime script tiktok is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

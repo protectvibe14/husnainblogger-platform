@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'You enter who you are, what you do, and an optional call to action. The tool fills 12 fixed bio templates with your words, picks a deterministic set of 8 variants, checks each against the 160-character limit (compressing long inputs first), and shows you the list. Everything runs in your browser — no AI, no accounts.',
     },
     {
-      question: 'How does the twitter bio generator work?',
-      answer:
-        'Enter your details using the inputs above and the twitter bio generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter bio generator free to use?',
-      answer:
-        'Yes - this twitter bio generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter bio generator?',
       answer:
         'A twitter bio generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

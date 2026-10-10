@@ -91,16 +91,6 @@ export const content: ToolContent = {
         "Start from a follower-tier band, adjust up for video formats and strong engagement, then sanity-check against your niche. This tool automates the math and shows the assumptions it used.",
     },
     {
-      question: 'How does the sponsored post rate calculator work?',
-      answer:
-        'Enter your details using the inputs above and the sponsored post rate calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sponsored post rate calculator free to use?',
-      answer:
-        'Yes - this sponsored post rate calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sponsored post rate calculator?',
       answer:
         'A sponsored post rate calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

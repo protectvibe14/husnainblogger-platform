@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'Pick the script matching your situation, personalize the bracketed parts with your real deliverables and numbers, and send it. Start from your ask, justify with value, and lock terms in writing.',
     },
     {
-      question: 'How does the sponsorship negotiation script work?',
-      answer:
-        'Enter your details using the inputs above and the sponsorship negotiation script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sponsorship negotiation script free to use?',
-      answer:
-        'Yes - this sponsorship negotiation script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sponsorship negotiation script?',
       answer:
         'A sponsorship negotiation script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

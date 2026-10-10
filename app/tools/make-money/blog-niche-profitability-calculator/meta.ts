@@ -125,16 +125,6 @@ export const content: ToolContent = {
         'Combine search volume (traffic opportunity), competition (difficulty), your monetization methods, and average RPM into one score. This tool weights all four equally in a published rubric and estimates traffic value as volume × 5% capture × RPM ÷ 1000 — remember the result is a heuristic, not a prediction.',
     },
     {
-      question: 'How does the blog niche profitability calculator work?',
-      answer:
-        'Enter your details using the inputs above and the blog niche profitability calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog niche profitability calculator free to use?',
-      answer:
-        'Yes - this blog niche profitability calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog niche profitability calculator?',
       answer:
         'A blog niche profitability calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'Enter a future launch date and your offer, pick how many tease days you want, then work through the timeline day by day. Tease tasks build curiosity before launch, launch-day tasks cover the announcement, and post-launch tasks handle questions and the final push.',
     },
     {
-      question: 'How does the instagram product launch plan work?',
-      answer:
-        'Enter your details using the inputs above and the instagram product launch plan calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram product launch plan free to use?',
-      answer:
-        'Yes - this instagram product launch plan is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram product launch plan?',
       answer:
         'An instagram product launch plan is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

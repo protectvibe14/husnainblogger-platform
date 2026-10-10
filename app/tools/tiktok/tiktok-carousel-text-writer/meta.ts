@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Paste your topic and slide count, run the tool, then copy each line onto its slide in the TikTok app\'s Photo mode. Keep text big and high-contrast, one idea per slide, and put your CTA on the final slide. Every generated line is already written under 50 words.',
     },
     {
-      question: 'How does the tiktok carousel text work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok carousel text calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok carousel text free to use?',
-      answer:
-        'Yes - this tiktok carousel text is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok carousel text?',
       answer:
         'A tiktok carousel text is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

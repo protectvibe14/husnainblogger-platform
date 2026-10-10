@@ -76,16 +76,6 @@ export const content: ToolContent = {
         'Paste the competitor’s caption or transcript text (not their @handle — the tool cannot fetch accounts), optionally add your niche, and generate. Use one of the 6 gap ideas to make a differentiated version of the same topic.',
     },
     {
-      question: 'How does the tiktok competitor analysis work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok competitor analysis calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok competitor analysis free to use?',
-      answer:
-        'Yes - this tiktok competitor analysis is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok competitor analysis?',
       answer:
         'A tiktok competitor analysis is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

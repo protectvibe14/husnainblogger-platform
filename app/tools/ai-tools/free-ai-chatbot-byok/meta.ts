@@ -33,9 +33,9 @@ export const outputs: ToolOutput[] = [
 
 
 export const content: ToolContent = {
-  title: 'Free AI Chatbot (BYOK)',
+  title: 'AI Chatbot Free (BYOK)',
   description:
-    'Chat with AI using your own free Gemini, Groq, or OpenRouter key — or try the keyless demo lane. Your key stays in your browser., no cost to us.',
+    'Chat with this free AI chatbot (BYOK) using your own Gemini, Groq, or OpenRouter key — or try the keyless demo lane. Your key stays in your browser. Start now!',
   howTo: [
     'Pick a provider below (Gemini, Groq, OpenRouter) and paste your free API key — or choose the keyless llm7.io demo lane.',
     'Type your message in the box and click Generate.',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'Can the AI browse the web or see real-time data?',
       answer:
         'No. The assistant answers from its training knowledge only. Treat answers as a starting point and verify anything important — especially prices, dates, and facts that change.',
-    },
-    {
-      question: 'How does the free ai chatbot with api key work?',
-      answer:
-        'Enter your details using the inputs above and the free ai chatbot with api key calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the free ai chatbot with api key free to use?',
-      answer:
-        'Yes - this free ai chatbot with api key is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

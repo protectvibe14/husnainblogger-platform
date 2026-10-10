@@ -38,7 +38,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ai Music Generator',
   description:
-    'Make AI songs with your own Suno-compatible API key — describe the track, generate two variations, then play and download the MP3s. needed.',
+    'Make songs with this free AI music generator — describe the track, get two variations to play and download as MP3 with your own Suno-compatible key. Try it now!',
   howTo: [
     'Get a key from a Suno-compatible API provider and paste its base URL + key into the key vault above.',
     'Describe the music you want (up to 500 characters) and tick instrumental if you want no vocals.',
@@ -85,16 +85,6 @@ export const content: ToolContent = {
       question: 'How long does it take?',
       answer:
         'Usually 1–3 minutes. The tool polls the provider until the songs are ready, with a 10-minute cap and a Cancel button.',
-    },
-    {
-      question: 'How does the ai music generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai music generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai music generator free to use?',
-      answer:
-        'Yes - this ai music generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

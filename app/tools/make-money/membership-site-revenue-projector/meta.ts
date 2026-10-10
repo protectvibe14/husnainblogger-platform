@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'Multiply monthly visitors by your conversion rate for new signups each month, reduce the existing member base by your churn rate (compounding monthly), and multiply total members by price for MRR. This tool runs that exact month-by-month calculation for you.',
     },
     {
-      question: 'How does the membership site revenue calculator work?',
-      answer:
-        'Enter your details using the inputs above and the membership site revenue calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the membership site revenue calculator free to use?',
-      answer:
-        'Yes - this membership site revenue calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a membership site revenue calculator?',
       answer:
         'A membership site revenue calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

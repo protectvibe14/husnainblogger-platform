@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'This one is template-based, not AI: your niche and pain point are inserted into 8 fixed title formulas and paired with 8 fixed angle variants. If you skip the niche, a generic bank is used and clearly labeled as generic. The same inputs always produce the same list.',
     },
     {
-      question: 'How does the webinar topic ideas work?',
-      answer:
-        'Enter your details using the inputs above and the webinar topic ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the webinar topic ideas free to use?',
-      answer:
-        'Yes - this webinar topic ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a webinar topic ideas?',
       answer:
         'A webinar topic ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

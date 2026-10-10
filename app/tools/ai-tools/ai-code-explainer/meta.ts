@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'It describes what the code appears to do — useful for learning, but verify against actual behavior before relying on it for fixes.',
     },
     {
-      question: 'How does the ai code explainer work?',
-      answer:
-        'Enter your details using the inputs above and the ai code explainer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai code explainer free to use?',
-      answer:
-        'Yes - this ai code explainer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai code explainer?',
       answer:
         'An ai code explainer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

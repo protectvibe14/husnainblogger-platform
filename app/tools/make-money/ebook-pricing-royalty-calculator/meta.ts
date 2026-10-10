@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'In the schedule this calculator uses, Kindle eBooks priced $2.99–$9.99 earn a 70% royalty minus a $0.15/MB delivery fee; prices outside that band earn 35%. This schedule can change — always verify the current band with Amazon KDP before you set your price.',
     },
     {
-      question: 'How does the ebook pricing calculator work?',
-      answer:
-        'Enter your details using the inputs above and the ebook pricing calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ebook pricing calculator free to use?',
-      answer:
-        'Yes - this ebook pricing calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ebook pricing calculator?',
       answer:
         'An ebook pricing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

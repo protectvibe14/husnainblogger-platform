@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'It combines your segment details with a fixed library of win-back templates. Subject options are picked by deterministic rotation and the body from a fixed set, so the same inputs always produce the same email — no AI involved.',
     },
     {
-      question: 'How does the re-engagement email generator work?',
-      answer:
-        'Enter your details using the inputs above and the re-engagement email generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the re-engagement email generator free to use?',
-      answer:
-        'Yes - this re-engagement email generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a re-engagement email generator?',
       answer:
         'A re-engagement email generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

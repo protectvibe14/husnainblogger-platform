@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Podcast Guest Pitch Email',
   description:
-    'Land podcast guest spots with a sharper pitch: enter the show name, your topic, and credentials for 8 subject lines plus a ready-to-send email.',
+    'Land podcast guest spots with a sharper pitch: enter the show name, topic, and credentials for 8 subject lines plus a ready-to-send email. Start now!',
   howTo: [
     'Type the podcast name you want to pitch.',
     'Describe your episode topic in one line.',
@@ -97,16 +97,6 @@ export const content: ToolContent = {
       question: 'How to use a podcast guest pitch email?',
       answer:
         'Fill in the podcast name, episode topic, optional host name, and your credentials, then run the tool. Copy the pitch email, add one personal line about the show, replace the signature block, and send from an email address that matches your credentials.',
-    },
-    {
-      question: 'How does the podcast guest pitch email work?',
-      answer:
-        'Enter your details using the inputs above and the podcast guest pitch email calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the podcast guest pitch email free to use?',
-      answer:
-        'Yes - this podcast guest pitch email is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a podcast guest pitch email?',

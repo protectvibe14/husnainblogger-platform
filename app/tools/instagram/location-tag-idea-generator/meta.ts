@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'You enter your niche and city; the tool picks venue-type ideas from a fixed 24-item pool and pairs each with one of 8 fixed tag strategies. It does not search live locations — it gives you idea starters to test.',
     },
     {
-      question: 'How does the instagram location tag ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram location tag ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram location tag ideas free to use?',
-      answer:
-        'Yes - this instagram location tag ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram location tag ideas?',
       answer:
         'An instagram location tag ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

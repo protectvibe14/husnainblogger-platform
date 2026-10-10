@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Clean Up Auto Captions',
   description:
-    'Fix messy auto captions fast: strip filler words, fix caps and punctuation, and re-wrap lines from text, SRT, or VTT - with a full change log.',
+    'Fix messy auto captions fast: strip filler words, fix caps and punctuation, and re-wrap lines from text, SRT, or VTT with a change log. Try it now!',
   howTo: [
     'Paste your raw caption text — plain text, SRT, or VTT all work (timestamps and cue tags are stripped automatically).',
     'Toggle the fixes you want: fix capitalization, fix punctuation, and remove filler words like um and uh.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'How does a clean up auto captions work?',
       answer:
         'It applies fixed string rules, not AI: filler removal from a 13-word bank, sentence-casing, punctuation normalization, and greedy word-wrapping with hard-breaks for overlong words. ALL-CAPS lines are preserved as intentional shouting, and non-Latin lines are left untouched. Every transformation is logged with before and after.',
-    },
-    {
-      question: 'How does the clean up auto captions work?',
-      answer:
-        'Enter your details using the inputs above and the clean up auto captions calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the clean up auto captions free to use?',
-      answer:
-        'Yes - this clean up auto captions is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a clean up auto captions?',

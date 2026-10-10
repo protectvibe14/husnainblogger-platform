@@ -66,16 +66,6 @@ export const content: ToolContent = {
         'You add one item per stream with a topic and type. The tool fills your topic into fixed templates for the announcement, live, and replay phases (two variants each) and appends a description snippet with hashtags. Titles are validated against the 100-character limit. These are hand-written templates, not AI copywriting.',
     },
     {
-      question: 'How does the youtube live stream title ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube live stream title ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube live stream title ideas free to use?',
-      answer:
-        'Yes - this youtube live stream title ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube live stream title ideas?',
       answer:
         'A youtube live stream title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

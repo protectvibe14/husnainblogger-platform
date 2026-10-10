@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'You add one row per link with a label and a URL, plus your brand name and a theme. The tool validates every URL, then assembles the rows into a single self-contained HTML page — one file you can download and upload to any web host. Everything runs in your browser; no hosting or accounts are involved.',
     },
     {
-      question: 'How does the pinterest link in bio page work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest link in bio page calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest link in bio page free to use?',
-      answer:
-        'Yes - this pinterest link in bio page is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest link in bio page?',
       answer:
         'A pinterest link in bio page is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

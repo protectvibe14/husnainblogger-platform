@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'This tool takes your niche, your stance (agree, debunk, add-context, or funny), and optionally a short description you paste of the target video, then assembles 5 prompts from fixed template banks. It cannot fetch or preview videos from TikTok — you still pick and stitch the video inside the TikTok app.',
     },
     {
-      question: 'How does the tiktok stitch ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok stitch ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok stitch ideas free to use?',
-      answer:
-        'Yes - this tiktok stitch ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok stitch ideas?',
       answer:
         'A tiktok stitch ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

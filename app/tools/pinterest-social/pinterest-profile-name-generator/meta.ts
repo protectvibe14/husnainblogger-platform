@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'It takes your brand and keyword, then fills 4 fixed display-name patterns and slugifies the brand into Pinterest\'s username format (lowercase, 3-30 characters, letters/numbers/underscores only). No AI is involved, and availability checking is explicitly out of scope — you must verify names on Pinterest.',
     },
     {
-      question: 'How does the pinterest business name ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest business name ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest business name ideas free to use?',
-      answer:
-        'Yes - this pinterest business name ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest business name ideas?',
       answer:
         'A pinterest business name ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

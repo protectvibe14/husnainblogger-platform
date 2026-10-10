@@ -20,7 +20,7 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props;
-const categoryTools = (byCategory[category.slug] ?? []).filter((t) => t.enabled !== false);
+const categoryTools = (byCategory[category.slug] ?? []).filter((t) => t.enabled !== false && t.status !== "DEPRECATED");
 
 // Group by toolType
 const byType = new Map<string, typeof categoryTools>();

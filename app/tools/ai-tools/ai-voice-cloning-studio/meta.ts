@@ -96,16 +96,6 @@ export const content: ToolContent = {
       answer:
         'A minute or more of clear, single-speaker speech with minimal background noise. Phone recordings work — just avoid music, echo, and other voices in the sample.',
     },
-    {
-      question: 'How does the ai voice cloning work?',
-      answer:
-        'Enter your details using the inputs above and the ai voice cloning calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai voice cloning free to use?',
-      answer:
-        'Yes - this ai voice cloning is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'No key = no generation. Every call needs your own ElevenLabs key saved first.',

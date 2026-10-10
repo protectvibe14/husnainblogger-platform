@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'The most common convention is the marker at the end of each tweet (e.g. "… 3/8"), which keeps the hook readable. Markers at the start work too and are easier to scan. This tool supports both — pick "end" or "start" under "Marker placement".',
     },
     {
-      question: 'How does the twitter thread numbering work?',
-      answer:
-        'Enter your details using the inputs above and the twitter thread numbering calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter thread numbering free to use?',
-      answer:
-        'Yes - this twitter thread numbering is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter thread numbering?',
       answer:
         'A twitter thread numbering is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

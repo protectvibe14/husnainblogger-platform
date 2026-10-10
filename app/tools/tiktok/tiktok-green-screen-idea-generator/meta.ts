@@ -84,16 +84,6 @@ export const content: ToolContent = {
         'You enter your niche and pick a background type (article, screenshot, map, or chart). The tool deterministically assembles 5 concepts from fixed template banks — hooks, background-asset descriptions, and 4 script beats each — so the same inputs always return the same ideas. It never edits video; you film the concepts in the TikTok app.',
     },
     {
-      question: 'How does the tiktok green screen ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok green screen ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok green screen ideas free to use?',
-      answer:
-        'Yes - this tiktok green screen ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok green screen ideas?',
       answer:
         'A tiktok green screen ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -90,16 +90,6 @@ export const content: ToolContent = {
         'It is pure arithmetic: 60000 / BPM gives the milliseconds per beat, and markers are placed at regular multiples from your intro offset. These are calculated markers, not detected beats — the tool does not analyze audio, so it assumes a constant tempo.',
     },
     {
-      question: 'How does the bpm to beat interval work?',
-      answer:
-        'Enter your details using the inputs above and the bpm to beat interval calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the bpm to beat interval free to use?',
-      answer:
-        'Yes - this bpm to beat interval is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a bpm to beat interval?',
       answer:
         'A bpm to beat interval is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

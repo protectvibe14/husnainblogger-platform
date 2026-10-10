@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'Multiply your target minutes by your speaking rate (around 150 words per minute for narration): a 10-minute video needs roughly 1,500 words. This tool does the math both ways and splits the total into section budgets — just remember pauses and B-roll add unscripted time on top.',
     },
     {
-      question: 'How does the youtube script length calculator work?',
-      answer:
-        'Enter your details using the inputs above and the youtube script length calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube script length calculator free to use?',
-      answer:
-        'Yes - this youtube script length calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube script length calculator?',
       answer:
         'A youtube script length calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

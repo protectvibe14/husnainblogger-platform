@@ -129,16 +129,6 @@ export const content: ToolContent = {
         'Fill in both offers, add your value points, and pick a tone. Copy the generated draft, edit it in your own voice, and send it yourself — the tool only drafts, it never sends email.',
     },
     {
-      question: 'How does the rate negotiation email template work?',
-      answer:
-        'Enter your details using the inputs above and the rate negotiation email template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the rate negotiation email template free to use?',
-      answer:
-        'Yes - this rate negotiation email template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a rate negotiation email template?',
       answer:
         'A rate negotiation email template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Multiply your hourly rate by your estimated hours (including revisions), then sanity-check the total against the finished video length. This tool does exactly that using fixed benchmark bands per experience level — treat the result as a starting point and adjust for your niche and client.',
     },
     {
-      question: 'How does the video editor rates calculator work?',
-      answer:
-        'Enter your details using the inputs above and the video editor rates calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video editor rates calculator free to use?',
-      answer:
-        'Yes - this video editor rates calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video editor rates calculator?',
       answer:
         'A video editor rates calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

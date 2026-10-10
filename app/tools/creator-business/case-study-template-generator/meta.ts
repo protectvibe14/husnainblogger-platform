@@ -117,16 +117,6 @@ export const content: ToolContent = {
         'It does not write or research anything. It places your inputs into a fixed sectioned template and echoes your results back with an explicit "user-provided, not independently verified" label. Always get the client\'s written permission before publishing their name or metrics.',
     },
     {
-      question: 'How does the freelance case study template work?',
-      answer:
-        'Enter your details using the inputs above and the freelance case study template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance case study template free to use?',
-      answer:
-        'Yes - this freelance case study template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance case study template?',
       answer:
         'A freelance case study template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

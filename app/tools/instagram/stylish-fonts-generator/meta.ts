@@ -87,16 +87,6 @@ export const content: ToolContent = {
         'It replaces each letter and digit with a lookalike Unicode character from a fixed substitution map — for example, A becomes 𝐀 in the bold style. Characters with no styled form are kept unchanged.',
     },
     {
-      question: 'How does the instagram fonts generator work?',
-      answer:
-        'Enter your details using the inputs above and the instagram fonts generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram fonts generator free to use?',
-      answer:
-        'Yes - this instagram fonts generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram fonts generator?',
       answer:
         'An instagram fonts generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

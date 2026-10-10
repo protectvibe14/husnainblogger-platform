@@ -112,16 +112,6 @@ export const content: ToolContent = {
         'Open your highlights row, answer the 10 questions (Yes, No, or N/A), and run the audit. Add the missing elements starting from the top of the fix list — the heaviest-weight items come first — then re-audit to confirm your score improved.',
     },
     {
-      question: 'How does the instagram highlights strategy work?',
-      answer:
-        'Enter your details using the inputs above and the instagram highlights strategy calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram highlights strategy free to use?',
-      answer:
-        'Yes - this instagram highlights strategy is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram highlights strategy?',
       answer:
         'An instagram highlights strategy is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

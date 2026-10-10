@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'It takes the rating you enter and renders it as a gold star row clipped over a gray star row, so partial ratings show a partially filled star. The markup carries minimal inline styles that work in any blog theme, and nothing is written by AI — the stars reflect your number.',
     },
     {
-      question: 'How does the star rating generator work?',
-      answer:
-        'Enter your details using the inputs above and the star rating generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the star rating generator free to use?',
-      answer:
-        'Yes - this star rating generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a star rating generator?',
       answer:
         'A star rating generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

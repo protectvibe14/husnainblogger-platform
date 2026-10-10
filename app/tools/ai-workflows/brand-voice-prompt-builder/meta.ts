@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'It turns your inputs into a structured system prompt: a voice sentence from your adjectives, do/don\'t rules from your lists, an optional example section, and 2 fixed behavior rules. The tool only assembles what you supplied — it does not invent voice traits.',
     },
     {
-      question: 'How does the brand voice prompt work?',
-      answer:
-        'Enter your details using the inputs above and the brand voice prompt calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the brand voice prompt free to use?',
-      answer:
-        'Yes - this brand voice prompt is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a brand voice prompt?',
       answer:
         'A brand voice prompt is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

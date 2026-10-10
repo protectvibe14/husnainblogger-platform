@@ -88,16 +88,6 @@ export const content: ToolContent = {
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy; avoid pasting unreleased product details you consider confidential.',
     },
-    {
-      question: 'How does the ai product description generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai product description generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai product description generator free to use?',
-      answer:
-        'Yes - this ai product description generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Only the features you provide are described — the model never invents specs, materials, or reviews.',

@@ -45,16 +45,6 @@ export const content: ToolContent = {
         'A prompt is the instruction you give an AI tool. This library does not run any AI itself — it is a fixed collection of ready-made instructions you copy, customize, and run in tools like ChatGPT, Claude, or Gemini.',
     },
     {
-      question: 'How does the ai prompts for blogging work?',
-      answer:
-        'Enter your details using the inputs above and the ai prompts for blogging calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai prompts for blogging free to use?',
-      answer:
-        'Yes - this ai prompts for blogging is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai prompts for blogging?',
       answer:
         'An ai prompts for blogging is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

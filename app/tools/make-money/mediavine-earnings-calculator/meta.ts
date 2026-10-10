@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'Multiply your monthly sessions by your session RPM and divide by 1000. Example: 50,000 sessions × $25 RPM ÷ 1000 = an estimated $1,250/month. The RPM is publisher-dependent — typical Mediavine RPMs fall around $15-$40 — so treat the default 25 as a benchmark estimate and test your own number.',
     },
     {
-      question: 'How does the mediavine earnings calculator work?',
-      answer:
-        'Enter your details using the inputs above and the mediavine earnings calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the mediavine earnings calculator free to use?',
-      answer:
-        'Yes - this mediavine earnings calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a mediavine earnings calculator?',
       answer:
         'A mediavine earnings calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'Look up the going band for the project type (tiered by finished minutes for narration, per finished hour for e-learning and audiobooks, flat for commercials and IVR), multiply by your length, and round sensibly. This tool does that with fixed, labeled estimate tables — then add usage/buyout terms, which it deliberately does not model.',
     },
     {
-      question: 'How does the voiceover rates calculator work?',
-      answer:
-        'Enter your details using the inputs above and the voiceover rates calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the voiceover rates calculator free to use?',
-      answer:
-        'Yes - this voiceover rates calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a voiceover rates calculator?',
       answer:
         'A voiceover rates calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

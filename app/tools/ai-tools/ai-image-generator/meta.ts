@@ -39,7 +39,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ai Image Generator',
   description:
-    'Turn text into AI images with your own API key — OpenRouter, Hugging Face or fal.ai. Describe the image, pick a ratio, and download the result.',
+    'Generate AI images from your prompt free — shown on the page with a download button, fast and private. Create yours now!',
   howTo: [
     'Save your API key in the key vault above — OpenRouter, Hugging Face Inference, or fal.ai (your key stays in this browser only).',
     'Describe the image you want in the prompt box. Concrete details (subject, lighting, style) give better results.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'Who owns the images I generate?',
       answer:
         'Ownership is set by the provider whose key you use, not by this tool. Check OpenRouter\'s, Hugging Face\'s or fal.ai\'s terms for the model you pick before using images commercially.',
-    },
-    {
-      question: 'How does the ai image generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai image generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai image generator free to use?',
-      answer:
-        'Yes - this ai image generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'Enter your downloads per episode and ad format, then read the estimated range. Quote sponsors the middle or top of the range for premium mid-roll slots, and remember under 1,000 downloads per episode the tool recommends flat-fee pricing of $300–$500 per episode instead of CPM math.',
     },
     {
-      question: 'How does the podcast sponsorship rates work?',
-      answer:
-        'Enter your details using the inputs above and the podcast sponsorship rates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the podcast sponsorship rates free to use?',
-      answer:
-        'Yes - this podcast sponsorship rates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a podcast sponsorship rates?',
       answer:
         'A podcast sponsorship rates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

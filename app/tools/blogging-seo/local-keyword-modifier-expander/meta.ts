@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'You provide a seed keyword and optional locations. The tool applies 6 fixed location-modifier templates to every location, producing ideas like "affordable dentist in Denver" or "dentist Denver prices". It does not show search volume — check ideas in a keyword research tool before building pages around them.',
     },
     {
-      question: 'How does the local keyword generator work?',
-      answer:
-        'Enter your details using the inputs above and the local keyword generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the local keyword generator free to use?',
-      answer:
-        'Yes - this local keyword generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a local keyword generator?',
       answer:
         'A local keyword generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

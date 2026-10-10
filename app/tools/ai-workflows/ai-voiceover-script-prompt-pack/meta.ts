@@ -13,7 +13,7 @@ export const trackerItems = TRACKER_ITEMS;
 export const content: ToolContent = {
   title: 'AI Voiceover Prompts',
   description:
-    'Browse 48 AI voiceover prompts — human-written templates for ads, narration, and explainers with detailed voice direction notes built right in.',
+    'Browse 48 AI voiceover prompts — human-written templates for ads, narration, and explainers with voice direction notes. Get yours now!',
   howTo: [
     'Browse the 3 categories: ad voiceover, narration, and explainer voiceover — 16 prompts each.',
     'Click any prompt to see its full text with placeholders like [PRODUCT] highlighted.',
@@ -43,16 +43,6 @@ export const content: ToolContent = {
       question: 'How does an ai voiceover prompts work?',
       answer:
         'A prompt tells an AI tool what script to write and how it should sound. This page does not run any AI itself — it is a fixed library of ready-made prompt templates you copy, customize, and run in your own AI tool.',
-    },
-    {
-      question: 'How does the ai voiceover prompts work?',
-      answer:
-        'Enter your details using the inputs above and the ai voiceover prompts calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai voiceover prompts free to use?',
-      answer:
-        'Yes - this ai voiceover prompts is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an ai voiceover prompts?',

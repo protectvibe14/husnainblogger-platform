@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'You supply the pillar names; the tool attaches fixed subtopic prompt patterns (12-template bank) and format suggestions (8-format list) in deterministic rotation. It does not research topics — validate demand for each idea yourself.',
     },
     {
-      question: 'How does the youtube content pillars template work?',
-      answer:
-        'Enter your details using the inputs above and the youtube content pillars template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube content pillars template free to use?',
-      answer:
-        'Yes - this youtube content pillars template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube content pillars template?',
       answer:
         'A youtube content pillars template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

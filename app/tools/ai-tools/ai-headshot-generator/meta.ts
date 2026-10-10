@@ -89,16 +89,6 @@ export const content: ToolContent = {
       answer:
         'No — upload only your own photo, or a photo you have explicit permission to edit. Never generate headshots of other people without consent.',
     },
-    {
-      question: 'How does the ai headshot generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai headshot generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai headshot generator free to use?',
-      answer:
-        'Yes - this ai headshot generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'No key = no generation. Every provider call needs your own API key saved first.',

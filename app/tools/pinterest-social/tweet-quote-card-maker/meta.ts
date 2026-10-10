@@ -50,7 +50,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Tweet Quote Image Generator',
   description:
-    'Turn any quote into a sharp, shareable card with our tweet quote image generator: validate text, pick a theme, download the PNG. Make yours free.',
+    'Turn any quote into a sharp, shareable card: validate your text, pick a theme, and download the PNG in seconds. Make yours free!',
   howTo: [
     'Click "Add item" for each quote card — type the "Quote text" (required, max 280 characters).',
     'Optionally add the "Author" and set the "Theme" to light, dark, or brand (defaults to dark).',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'How does a tweet quote image generator work?',
       answer:
         'It validates your text, applies fixed layout rules (dimension by length, font-size tiers from 64px to a 34px floor, three fixed color themes), and produces a render spec. The actual PNG is drawn client-side in the browser — no image is ever sent to a server, and emoji renders via your system font.',
-    },
-    {
-      question: 'How does the tweet quote image generator work?',
-      answer:
-        'Enter your details using the inputs above and the tweet quote image generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tweet quote image generator free to use?',
-      answer:
-        'Yes - this tweet quote image generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tweet quote image generator?',

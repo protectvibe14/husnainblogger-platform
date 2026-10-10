@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'You enter your products and duration; the tool assigns each product a deterministic segment template, times everything to sum exactly to your duration, and adds pin-product cues, sample price-drop lines, and urgency CTAs. Same inputs always produce the same script.',
     },
     {
-      question: 'How does the tiktok live shopping script work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok live shopping script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok live shopping script free to use?',
-      answer:
-        'Yes - this tiktok live shopping script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok live shopping script?',
       answer:
         'A tiktok live shopping script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

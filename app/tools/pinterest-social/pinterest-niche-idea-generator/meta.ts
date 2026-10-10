@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'It matches your interests against a fixed bank of 24 Pinterest-native niches by counting keyword hits — the more keywords that match, the higher the niche ranks. No AI is involved, and it never claims to know which niches are profitable: the guidance tells you to validate demand with real data before committing.',
     },
     {
-      question: 'How does the pinterest niche ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest niche ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest niche ideas free to use?',
-      answer:
-        'Yes - this pinterest niche ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest niche ideas?',
       answer:
         'A pinterest niche ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

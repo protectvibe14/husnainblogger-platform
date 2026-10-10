@@ -124,16 +124,6 @@ export const content: ToolContent = {
         'It does not write or price anything for you. It places your inputs into a fixed proposal structure and marks anything you skipped as a visible placeholder. It is not a contract and not legal advice — have a qualified professional review your agreements.',
     },
     {
-      question: 'How does the freelance proposal template work?',
-      answer:
-        'Enter your details using the inputs above and the freelance proposal template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance proposal template free to use?',
-      answer:
-        'Yes - this freelance proposal template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance proposal template?',
       answer:
         'A freelance proposal template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

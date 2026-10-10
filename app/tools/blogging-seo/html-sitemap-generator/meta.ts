@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'It takes the page list you paste and renders it as an HTML fragment with headings and linked lists, grouped by the sections you provide. Nothing is crawled or invented by AI — every page comes from your own list.',
     },
     {
-      question: 'How does the html sitemap generator work?',
-      answer:
-        'Enter your details using the inputs above and the html sitemap generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the html sitemap generator free to use?',
-      answer:
-        'Yes - this html sitemap generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a html sitemap generator?',
       answer:
         'A html sitemap generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

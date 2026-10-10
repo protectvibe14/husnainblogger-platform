@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'Paste your draft, choose a pattern (e.g. hot-take), and copy the rewrite that sounds most like you. The tool reuses your own words inside the frame and trims to 280 weighted characters — it does not invent stats or facts for you.',
     },
     {
-      question: 'How does the viral tweet templates work?',
-      answer:
-        'Enter your details using the inputs above and the viral tweet templates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the viral tweet templates free to use?',
-      answer:
-        'Yes - this viral tweet templates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a viral tweet templates?',
       answer:
         'A viral tweet templates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

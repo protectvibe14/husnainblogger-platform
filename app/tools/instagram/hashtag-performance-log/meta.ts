@@ -54,16 +54,6 @@ export const content: ToolContent = {
         'Use one consistent set of hashtags per post for a while, note the reach in Instagram Insights, then log that set here with its likes and comments. Repeat for other sets; the tool totals reach and shows which set earned the highest engagement rate.',
     },
     {
-      question: 'How does the instagram hashtag tracker work?',
-      answer:
-        'Enter your details using the inputs above and the instagram hashtag tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram hashtag tracker free to use?',
-      answer:
-        'Yes - this instagram hashtag tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram hashtag tracker?',
       answer:
         'An instagram hashtag tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

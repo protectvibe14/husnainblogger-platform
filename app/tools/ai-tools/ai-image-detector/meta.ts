@@ -82,16 +82,6 @@ export const content: ToolContent = {
       answer:
         'The multipart field name used ("media") could not be verified in Hive\'s docs — if Hive rejects the upload, confirm the field name in your Hive dashboard docs. Browser calls are also not officially documented (CORS unverified), so a blocked call shows a clear error instead of failing silently.',
     },
-    {
-      question: 'How does the ai image detector work?',
-      answer:
-        'Enter your details using the inputs above and the ai image detector calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai image detector free to use?',
-      answer:
-        'Yes - this ai image detector is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'No key = local scan only. The Hive cloud check needs your own Hive key saved first.',

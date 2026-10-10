@@ -139,16 +139,6 @@ export const content: ToolContent = {
         "It joins ordered tokens (project, date, scene, take, platform, version) with a single separator into one predictable string. This tool also strips filesystem-illegal characters, warns on names over 200 characters, and can batch-generate versioned names like v01–v03.",
     },
     {
-      question: 'How does the video file naming convention work?',
-      answer:
-        'Enter your details using the inputs above and the video file naming convention calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video file naming convention free to use?',
-      answer:
-        'Yes - this video file naming convention is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video file naming convention?',
       answer:
         'A video file naming convention is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

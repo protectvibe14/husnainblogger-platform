@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'This one slices fixed bundled tag pools — 384 niche tags and 32 post-type tags — into blocks of your chosen size, deterministically. It does not check live tag volume or trends; blocks are intentionally small (1–5 tags), well under Instagram’s per-post cap.',
     },
     {
-      question: 'How does the instagram hashtag sets copy paste work?',
-      answer:
-        'Enter your details using the inputs above and the instagram hashtag sets copy paste calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram hashtag sets copy paste free to use?',
-      answer:
-        'Yes - this instagram hashtag sets copy paste is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram hashtag sets copy paste?',
       answer:
         'An instagram hashtag sets copy paste is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

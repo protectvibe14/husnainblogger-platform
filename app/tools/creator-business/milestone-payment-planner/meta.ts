@@ -115,16 +115,6 @@ export const content: ToolContent = {
         'Enter your contract value, then list milestones one per line as "Name | percentage | due condition" with percentages totaling 100. Run the tool to get each milestone amount and a payment timeline you can paste into your contract.',
     },
     {
-      question: 'How does the freelance milestone payment schedule work?',
-      answer:
-        'Enter your details using the inputs above and the freelance milestone payment schedule calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance milestone payment schedule free to use?',
-      answer:
-        'Yes - this freelance milestone payment schedule is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance milestone payment schedule?',
       answer:
         'A freelance milestone payment schedule is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

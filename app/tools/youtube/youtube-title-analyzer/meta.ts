@@ -79,16 +79,6 @@ export const content: ToolContent = {
         '40–60 characters. Titles longer than 60 get cut off in search results and suggested videos, hiding your key words.',
     },
     {
-      question: 'How does the youtube title analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the youtube title analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube title analyzer free to use?',
-      answer:
-        'Yes - this youtube title analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube title analyzer?',
       answer:
         'A youtube title analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

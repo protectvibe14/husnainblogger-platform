@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook CTA Examples',
   description:
-    'End your posts with CTAs that actually get clicks: enter your goal to get 6 short, verb-led call-to-action phrases matched to your captions.',
+    'End your posts with real clicks: get 6 short, verb-led Facebook CTA examples matched to your goal and captions. Try it now!',
   howTo: [
     'Type Your goal into the field (e.g. shop now, book a call, learn more).',
     'Click run to get 6 short, verb-led CTA phrases matched to your goal.',
@@ -80,16 +80,6 @@ export const content: ToolContent = {
       question: 'How does a facebook cta examples work?',
       answer:
         'This tool matches your goal to one of 7 families by keyword and returns that family\'s 6 fixed phrases deterministically. It never touches your Page CTA button, which Facebook controls — the platform note says this prominently.',
-    },
-    {
-      question: 'How does the facebook cta examples work?',
-      answer:
-        'Enter your details using the inputs above and the facebook cta examples calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook cta examples free to use?',
-      answer:
-        'Yes - this facebook cta examples is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook cta examples?',

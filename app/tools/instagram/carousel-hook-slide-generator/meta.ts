@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'It takes your topic and angle, then fills hand-written hook templates from a fixed 25-template bank — cycling the bank in order if you request more than 5. No AI is involved; the output is template assembly with your topic inserted.',
     },
     {
-      question: 'How does the carousel hook ideas work?',
-      answer:
-        'Enter your details using the inputs above and the carousel hook ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the carousel hook ideas free to use?',
-      answer:
-        'Yes - this carousel hook ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a carousel hook ideas?',
       answer:
         'A carousel hook ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

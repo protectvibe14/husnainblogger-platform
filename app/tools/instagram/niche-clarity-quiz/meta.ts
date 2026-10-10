@@ -92,9 +92,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How To Find My Niche Instagram',
+  title: 'Instagram Niche Finder',
   description:
-    'Take a free quiz to learn how to find my niche instagram creators actually use: answer 5 questions, get 3 ranked niche matches plus a clarity score..',
+    'Find your Instagram niche with this Instagram niche finder quiz — ranked niche profiles with positioning angle and match score. Try it now!',
   howTo: [
     'Pick the topic you could talk about for an hour without notes.',
     'Choose your experience level in that topic and who you want to help.',
@@ -143,16 +143,6 @@ export const content: ToolContent = {
       question: 'How to use how to find my niche instagram?',
       answer:
         'Answer the five quiz questions about your topic, experience, audience, format, and goal. The tool scores your answers against 16 fixed niche profiles, shows your top 3 matches with a clarity score, and gives you five validation steps to test the winner in the real world.',
-    },
-    {
-      question: 'How does the how to find my niche instagram work?',
-      answer:
-        'Enter your details using the inputs above and the how to find my niche instagram calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to find my niche instagram free to use?',
-      answer:
-        'Yes - this how to find my niche instagram is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to find my niche instagram?',

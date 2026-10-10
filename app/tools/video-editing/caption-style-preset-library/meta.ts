@@ -26,7 +26,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'CapCut Caption Style Presets',
   description:
-    'Steal pro caption styles in one click: pick a vibe and platform for a full CapCut config - font, colors, stroke, animation, and rebuild steps.',
+    'Steal pro caption styles in one click: pick a vibe and platform for a full CapCut config — font, colors, stroke, animation. Try it now!',
   howTo: [
     'Pick a caption vibe: bold, minimal, hormozi, karaoke, or neon.',
     'Choose your platform — TikTok, Reels, or Shorts — for safe-zone placement guidance.',
@@ -74,16 +74,6 @@ export const content: ToolContent = {
       question: 'How does a capcut caption style presets work?',
       answer:
         'It is a curated content bank, not AI: each vibe maps to a hand-written preset with fixed font, fallback fonts, size, stroke, shadow, background, colors, and animation. The platform input only changes placement and safe-zone guidance. An unknown vibe defaults to "bold" with a clear note.',
-    },
-    {
-      question: 'How does the capcut caption style presets work?',
-      answer:
-        'Enter your details using the inputs above and the capcut caption style presets calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the capcut caption style presets free to use?',
-      answer:
-        'Yes - this capcut caption style presets is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a capcut caption style presets?',

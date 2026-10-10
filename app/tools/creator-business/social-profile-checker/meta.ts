@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'Brands and sponsors need a way to reach you for paid deals. Creators without a visible business email routinely miss inbound partnership offers — it carries 10 of the 100 points here.',
     },
     {
-      question: 'How does the social profile completeness checker work?',
-      answer:
-        'Enter your details using the inputs above and the social profile completeness checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the social profile completeness checker free to use?',
-      answer:
-        'Yes - this social profile completeness checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a social profile completeness checker?',
       answer:
         'A social profile completeness checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

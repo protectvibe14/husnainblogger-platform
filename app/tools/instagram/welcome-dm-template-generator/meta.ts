@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'You generate a template, personalize it with the follower\'s name, and send it yourself. Templates only — the tool does not connect to Instagram and does not send anything automatically, which keeps your account safe.',
     },
     {
-      question: 'How does the welcome dm new followers instagram work?',
-      answer:
-        'Enter your details using the inputs above and the welcome dm new followers instagram calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the welcome dm new followers instagram free to use?',
-      answer:
-        'Yes - this welcome dm new followers instagram is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a welcome dm new followers instagram?',
       answer:
         'A welcome dm new followers instagram is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -54,16 +54,6 @@ export const content: ToolContent = {
         'A template keeps the fixed instructions in place and swaps only the {variables} each time you run it. This tool finds those variables in your text, checks the braces are matched, and renders a fill-in form — no AI runs and nothing is written for you.',
     },
     {
-      question: 'How does the prompt template with variables work?',
-      answer:
-        'Enter your details using the inputs above and the prompt template with variables calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the prompt template with variables free to use?',
-      answer:
-        'Yes - this prompt template with variables is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a prompt template with variables?',
       answer:
         'A prompt template with variables is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

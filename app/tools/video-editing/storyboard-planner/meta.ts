@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Video Storyboard Planner',
   description:
-    'Turn script beats into shootable frames: paste your script beats, set the total duration and frames per beat, and get camera setups plus captions.',
+    'Turn script beats into shootable frames with this video storyboard planner — set duration and frames per beat, get camera setups plus captions. Start now!',
   howTo: [
     'Paste your script beats, one per line — add an optional visual hint after " | ", e.g. "Intro | close-up of the product".',
     'Enter the total duration in seconds.',
@@ -85,16 +85,6 @@ export const content: ToolContent = {
       question: 'How does a video storyboard planner work?',
       answer:
         'It is pure allocation logic, not AI: it splits the total duration evenly across your beats (times frames per beat), cycles camera setups through a fixed 6-entry bank, truncates long beats into captions, and marks missing visuals as TBD. The frame durations always sum exactly to your total.',
-    },
-    {
-      question: 'How does the video storyboard planner work?',
-      answer:
-        'Enter your details using the inputs above and the video storyboard planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video storyboard planner free to use?',
-      answer:
-        'Yes - this video storyboard planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a video storyboard planner?',

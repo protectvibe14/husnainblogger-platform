@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'After uploading your reel, tap "Edit cover" and add your title as centered text in the middle vertical band of the 1080x1920 frame — the top is cropped in the profile grid and the bottom sits under the caption and buttons. Keep it under 60 characters so it stays readable as a thumbnail.',
     },
     {
-      question: 'How does the reels cover text ideas work?',
-      answer:
-        'Enter your details using the inputs above and the reels cover text ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the reels cover text ideas free to use?',
-      answer:
-        'Yes - this reels cover text ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a reels cover text ideas?',
       answer:
         'A reels cover text ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

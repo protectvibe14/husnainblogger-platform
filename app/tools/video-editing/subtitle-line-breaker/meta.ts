@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'It uses fixed algorithms, not AI: punctuation mode greedily takes the best linguistic break point within your character limit, while balanced mode runs dynamic programming to minimize raggedness. CJK text automatically uses 16 chars/line per Netflix CJK guidance, and single words longer than the limit are hard-broken with a warning.',
     },
     {
-      question: 'How does the subtitle line breaker work?',
-      answer:
-        'Enter your details using the inputs above and the subtitle line breaker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the subtitle line breaker free to use?',
-      answer:
-        'Yes - this subtitle line breaker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a subtitle line breaker?',
       answer:
         'A subtitle line breaker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -99,7 +99,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Billable Hours Tracker for Freelancers',
   description:
-    'Turn tracked hours into invoices with this billable hours tracker for freelancers: add line items, your tax rate, and copy the itemized result. Free.',
+    'Build professional freelance invoices free — itemized, printable invoice text ready to copy in seconds. Build yours today!',
   howTo: [
     'Add one line per piece of work: a description, the hours spent, and your hourly rate in USD.',
     'On the FIRST line only, fill in the client name, invoice number, due date, payment details, and (optionally) your tax rate % — these apply to the whole invoice.',
@@ -124,16 +124,6 @@ export const content: ToolContent = {
       question: 'How to track billable hours tracker for freelancers?',
       answer:
         'Log each task with its hours as you work, then paste them here as line items with your hourly rate. Fill the client name, invoice number, and due date once on the first line, add your tax rate if one applies, and run the tool to get your invoice.',
-    },
-    {
-      question: 'How does the billable hours tracker for freelancers work?',
-      answer:
-        'Enter your details using the inputs above and the billable hours tracker for freelancers calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the billable hours tracker for freelancers free to use?',
-      answer:
-        'Yes - this billable hours tracker for freelancers is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a billable hours tracker for freelancers?',

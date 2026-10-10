@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'You enter a topic and optional guests; the tool fills 12 hand-written templates with your words and keeps each title within a 70-character guidance. Nothing is AI-generated — the same inputs always return the same 8 titles.',
     },
     {
-      question: 'How does the twitter spaces title ideas work?',
-      answer:
-        'Enter your details using the inputs above and the twitter spaces title ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter spaces title ideas free to use?',
-      answer:
-        'Yes - this twitter spaces title ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter spaces title ideas?',
       answer:
         'A twitter spaces title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

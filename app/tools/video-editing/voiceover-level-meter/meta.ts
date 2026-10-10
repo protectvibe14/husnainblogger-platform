@@ -30,7 +30,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Mic Level Tester',
   description:
-    'Test your mic levels before you hit record: paste audio samples for peak and RMS loudness in dBFS, plus clipping warnings and level targets.',
+    'Test your mic levels before you hit record: paste audio samples for peak and RMS loudness in dBFS, plus clipping warnings. Try it now!',
   howTo: [
     'Paste audio sample values (normalized -1 to 1, comma-separated, at least 8) into the samples box.',
     'Set your target level in dBFS — -12 is the default for voiceover work.',
@@ -72,16 +72,6 @@ export const content: ToolContent = {
       question: 'How does a mic level tester work?',
       answer:
         'It measures, it does not listen: peakDb = 20*log10(loudest sample), rmsDb = 20*log10(root-mean-square), and clipping = any sample at 0 dBFS. The result is compared to your target level (±3 dB tolerance). This page measures one pasted batch of samples — it is not a live meter, so capture the samples from your recording first.',
-    },
-    {
-      question: 'How does the mic level tester work?',
-      answer:
-        'Enter your details using the inputs above and the mic level tester calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the mic level tester free to use?',
-      answer:
-        'Yes - this mic level tester is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a mic level tester?',

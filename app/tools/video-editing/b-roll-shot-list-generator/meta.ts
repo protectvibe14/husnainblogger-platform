@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'B-Roll Shot List Ideas',
   description:
-    'Never run out of b-roll again: enter your topic and video type for shot ideas with camera angles, movement, and timing from curated shot banks.',
+    'Never run out of b-roll again: enter your topic and video type for shot ideas with camera angles, movement, and timing. Build yours today!',
   howTo: [
     'Type your video topic — e.g. "making sourdough bread".',
     'Choose the video type: tutorial, vlog, ad, or documentary.',
@@ -77,16 +77,6 @@ export const content: ToolContent = {
       question: 'How does a b-roll shot list ideas work?',
       answer:
         'It does not use AI. It takes your topic and video type, picks shots from a fixed curated bank of 96 entries (the starting point rotates deterministically from your topic text), and pairs the list with a coverage checklist across five angle categories.',
-    },
-    {
-      question: 'How does the b-roll shot list ideas work?',
-      answer:
-        'Enter your details using the inputs above and the b-roll shot list ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the b-roll shot list ideas free to use?',
-      answer:
-        'Yes - this b-roll shot list ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a b-roll shot list ideas?',

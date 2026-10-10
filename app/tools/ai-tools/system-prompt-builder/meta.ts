@@ -75,7 +75,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'System Prompt Builder',
   description:
-    'Assemble a clean system prompt from a fixed template: role, audience, tone, do/don\u2019t lists and constraints. Free builder — copy and paste into any.',
+    'Build system prompts free — get an assembled system prompt block ready to paste into your favorite AI tool. Build yours now!',
   howTo: [
     'Type the assistant role and the audience it serves.',
     'Pick a tone from the 8 fixed options.',
@@ -122,16 +122,6 @@ export const content: ToolContent = {
       question: 'Is the builder free?',
       answer:
         'Yes — completely free, no signup. It runs in your browser.',
-    },
-    {
-      question: 'How does the system prompt builder work?',
-      answer:
-        'Enter your details using the inputs above and the system prompt builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the system prompt builder free to use?',
-      answer:
-        'Yes - this system prompt builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

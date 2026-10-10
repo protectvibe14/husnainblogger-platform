@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'It is a structured comparison, not software analysis: you supply both topic lists manually. This tool normalizes them, marks exact or containing matches as covered, and attaches angle prompts to the gaps from a fixed 12-template bank.',
     },
     {
-      question: 'How does the youtube competitor analysis template work?',
-      answer:
-        'Enter your details using the inputs above and the youtube competitor analysis template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube competitor analysis template free to use?',
-      answer:
-        'Yes - this youtube competitor analysis template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube competitor analysis template?',
       answer:
         'A youtube competitor analysis template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

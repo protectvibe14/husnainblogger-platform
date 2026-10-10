@@ -54,7 +54,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Instagram Name SEO Optimizer',
   description:
-    'Fit more keywords into your profile with this Instagram name SEO optimizer — 30-character names with keyword coverage scored for better discovery.',
+    'Fit more keywords into your profile: 30-character Instagram names with keyword coverage scored for better discovery. Check yours now!',
   howTo: [
     'Paste your "Keywords" — one per line or comma-separated, most important first.',
     'Optionally add your "Current name" to get name-plus-keyword combinations.',
@@ -101,16 +101,6 @@ export const content: ToolContent = {
       question: 'how does an instagram name seo optimizer work?',
       answer:
         'It takes your keywords in priority order, tries separators and keyword subsets, and keeps only combinations that fit a 30-character budget. When the full set does not fit, it drops the lowest-priority keywords first and tells you which ones were cut.',
-    },
-    {
-      question: 'How does the instagram name seo optimizer work?',
-      answer:
-        'Enter your details using the inputs above and the instagram name seo optimizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram name seo optimizer free to use?',
-      answer:
-        'Yes - this instagram name seo optimizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an instagram name seo optimizer?',

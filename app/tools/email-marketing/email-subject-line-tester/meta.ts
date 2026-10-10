@@ -81,16 +81,6 @@ export const content: ToolContent = {
         'It runs your subject line through transparent rules — length, spam-trigger words, caps, emoji, curiosity cues, exclamation marks, and personalization — and combines them into a score with fix-it suggestions. The weights here are documented estimates for guidance, not measured open-rate predictors, so always confirm with an A/B test.',
     },
     {
-      question: 'How does the email subject line tester work?',
-      answer:
-        'Enter your details using the inputs above and the email subject line tester calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email subject line tester free to use?',
-      answer:
-        'Yes - this email subject line tester is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email subject line tester?',
       answer:
         'An email subject line tester is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

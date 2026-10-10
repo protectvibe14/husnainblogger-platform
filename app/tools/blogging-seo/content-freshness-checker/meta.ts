@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'Best practice is to keep the original publish date and show a visible "Last updated" date. Some publishers update the displayed date on substantial rewrites — either way, enter both dates honestly in the checker above.',
     },
     {
-      question: 'How does the content freshness checker work?',
-      answer:
-        'Enter your details using the inputs above and the content freshness checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content freshness checker free to use?',
-      answer:
-        'Yes - this content freshness checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content freshness checker?',
       answer:
         'A content freshness checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

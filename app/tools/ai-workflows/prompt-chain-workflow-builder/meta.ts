@@ -86,16 +86,6 @@ export const content: ToolContent = {
         "You enter your steps in order with optional prompt templates; the tool assigns each step an output variable, lists every step's inputs and outputs, and reports undefined variables in a warnings panel. The prompts are fixed templates you edit — nothing is AI-written.",
     },
     {
-      question: 'How does the ai prompt chain builder work?',
-      answer:
-        'Enter your details using the inputs above and the ai prompt chain builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai prompt chain builder free to use?',
-      answer:
-        'Yes - this ai prompt chain builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai prompt chain builder?',
       answer:
         'An ai prompt chain builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

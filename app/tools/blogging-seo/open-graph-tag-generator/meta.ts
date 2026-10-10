@@ -134,16 +134,6 @@ export const content: ToolContent = {
         'It takes the title, description, URL, image, and page type you provide and assembles them into the five standard Open Graph meta tags with proper HTML escaping. Nothing is written by AI — the tool only formats your own input into valid markup.',
     },
     {
-      question: 'How does the open graph generator work?',
-      answer:
-        'Enter your details using the inputs above and the open graph generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the open graph generator free to use?',
-      answer:
-        'Yes - this open graph generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an open graph generator?',
       answer:
         'An open graph generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

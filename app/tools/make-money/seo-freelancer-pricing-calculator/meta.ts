@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: "SEO Freelancer Rates Calculator",
   description:
-    "Free seo freelancer rates calculator 2026: estimate audit, retainer and link-building quotes from site pages and monthly hours. —.",
+    "Free SEO freelancer rates calculator: estimate audit, retainer and link-building quotes from site pages and monthly hours. Calculate yours now!",
   howTo: [
     "Choose the service type: SEO audit, monthly retainer, or link building.",
     "Enter the number of site pages in scope and your expected monthly hours.",
@@ -121,7 +121,7 @@ export const content: ToolContent = {
     {
       question: "Are the built-in rate bands reliable market data?",
       answer:
-        "No — the tool is explicit that no 2026 benchmark source was verified for its bands, and every result is labeled an estimate. Use the range as a starting bracket, then replace the bands with your own low/high overrides for quotes you actually send.",
+        "No — the tool is explicit that no benchmark source was verified for its bands, and every result is labeled an estimate. Use the range as a starting bracket, then replace the bands with your own low/high overrides for quotes you actually send.",
     },
   ],
   assumptions: [

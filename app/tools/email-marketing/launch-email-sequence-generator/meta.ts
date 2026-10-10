@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'It maps your product and launch date onto a fixed 7-phase launch arc and fills each phase from a template library. Send dates are calculated from your launch date, and template selection is deterministic: the same inputs always produce the same sequence.',
     },
     {
-      question: 'How does the product launch email sequence work?',
-      answer:
-        'Enter your details using the inputs above and the product launch email sequence calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the product launch email sequence free to use?',
-      answer:
-        'Yes - this product launch email sequence is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a product launch email sequence?',
       answer:
         'A product launch email sequence is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

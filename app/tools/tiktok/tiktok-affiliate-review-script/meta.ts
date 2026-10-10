@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'Enter the product name, say whether you have tried it, add your real experience notes, then generate the script. Fill in the bracketed lines with your own words, film the 5 demo shots, and include the #ad disclosure when you post.',
     },
     {
-      question: 'How does the tiktok affiliate marketing video work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok affiliate marketing video calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok affiliate marketing video free to use?',
-      answer:
-        'Yes - this tiktok affiliate marketing video is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok affiliate marketing video?',
       answer:
         'A tiktok affiliate marketing video is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

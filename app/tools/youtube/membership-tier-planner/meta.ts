@@ -127,16 +127,6 @@ export const content: ToolContent = {
         'This worksheet multiplies your estimated members by your tier price and YouTube\'s 70% creator revenue share for each tier, then totals them. Perk suggestions are drawn from a fixed 12-perk bank by price threshold. All member counts are your guesses — the tool cannot predict actual signups.',
     },
     {
-      question: 'How does the youtube membership tiers ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube membership tiers ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube membership tiers ideas free to use?',
-      answer:
-        'Yes - this youtube membership tiers ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube membership tiers ideas?',
       answer:
         'A youtube membership tiers ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

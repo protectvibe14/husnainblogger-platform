@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'Start from your video\'s duration, then scale by what makes renders slow: 4k costs roughly 4x the encode time of 1080p, heavy effects multiply it further, and a low-tier device multiplies it again. This tool applies those documented scaling factors and returns a planning range — always budget toward the high end.',
     },
     {
-      question: 'How does the video render time estimator work?',
-      answer:
-        'Enter your details using the inputs above and the video render time estimator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video render time estimator free to use?',
-      answer:
-        'Yes - this video render time estimator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video render time estimator?',
       answer:
         'A video render time estimator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Pure math, not AI: it reserves 833ms per line, shares the leftover time in proportion to each line\'s character length, snaps boundaries to the nearest beat when a BPM is set, and splits each line\'s span across its words by word length. It never analyzes audio, so word timings are estimates for manual sync — never measured sync points.',
     },
     {
-      question: 'How does the karaoke caption planner work?',
-      answer:
-        'Enter your details using the inputs above and the karaoke caption planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the karaoke caption planner free to use?',
-      answer:
-        'Yes - this karaoke caption planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a karaoke caption planner?',
       answer:
         'A karaoke caption planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

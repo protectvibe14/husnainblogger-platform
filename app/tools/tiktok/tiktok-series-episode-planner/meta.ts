@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'Name the series, decide the episode count (1–50), and plan the arc before filming: hook the promise in episode 1, deliver one lesson per episode, recap every 5th episode, twist before the finale, and close with a follow CTA. This tool generates that full plan for you.',
     },
     {
-      question: 'How does the tiktok series planner work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok series planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok series planner free to use?',
-      answer:
-        'Yes - this tiktok series planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok series planner?',
       answer:
         'A tiktok series planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

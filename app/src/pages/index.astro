@@ -39,9 +39,9 @@ const taglines: Record<string, string> = {
 const categories = CATEGORIES.map((c) => ({
   name: c.name,
   slug: c.slug,
-  count: (byCategory[c.slug] ?? []).length,
+  count: (byCategory[c.slug] ?? []).filter((t) => t.status !== "DEPRECATED").length,
   tagline: taglines[c.slug] ?? "Free creator tools",
-  tools: (byCategory[c.slug] ?? []).map((t) => ({
+  tools: (byCategory[c.slug] ?? []).filter((t) => t.status !== "DEPRECATED").map((t) => ({
     name: t.name,
     slug: t.slug,
     categorySlug: c.slug,

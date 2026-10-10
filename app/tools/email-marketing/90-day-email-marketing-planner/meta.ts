@@ -116,16 +116,6 @@ export const content: ToolContent = {
         'It turns your inputs into a dated schedule: sends are placed on fixed weekdays per your frequency, your chosen mix is interleaved across the 90 days, each send gets a rotating content-pillar topic, and blackout dates are skipped. This template does all of that locally and deterministically — the goal mix stays your choice, not a recommendation.',
     },
     {
-      question: 'How does the email marketing plan template work?',
-      answer:
-        'Enter your details using the inputs above and the email marketing plan template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email marketing plan template free to use?',
-      answer:
-        'Yes - this email marketing plan template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email marketing plan template?',
       answer:
         'An email marketing plan template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

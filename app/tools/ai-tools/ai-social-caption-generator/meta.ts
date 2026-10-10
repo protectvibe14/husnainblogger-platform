@@ -88,16 +88,6 @@ export const content: ToolContent = {
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy.',
     },
-    {
-      question: 'How does the ai social media caption generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai social media caption generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai social media caption generator free to use?',
-      answer:
-        'Yes - this ai social media caption generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'You get 3 captions per run; rephrase the topic or change the tone for more.',

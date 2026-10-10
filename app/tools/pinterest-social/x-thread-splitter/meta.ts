@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'It packs your text into chunks of at most 280 weighted characters (URLs count 23, non-ASCII characters count 2), splitting on sentence and then word boundaries. The numbering marker\u2019s characters are reserved before splitting and verified after, so a post like "… 3/12" never silently exceeds the limit.',
     },
     {
-      question: 'How does the split text into tweets work?',
-      answer:
-        'Enter your details using the inputs above and the split text into tweets calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the split text into tweets free to use?',
-      answer:
-        'Yes - this split text into tweets is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a split text into tweets?',
       answer:
         'A split text into tweets is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

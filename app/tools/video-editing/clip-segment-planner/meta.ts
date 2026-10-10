@@ -112,16 +112,6 @@ export const content: ToolContent = {
         'You give it the source length, the target clip length, and a strategy. It computes exact start/end timecodes with fixed interval math — highlights uses template positions (it does not watch your video), even spreads clips across the timeline, and custom validates your own ranges.',
     },
     {
-      question: 'How does the long video to shorts planner work?',
-      answer:
-        'Enter your details using the inputs above and the long video to shorts planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the long video to shorts planner free to use?',
-      answer:
-        'Yes - this long video to shorts planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a long video to shorts planner?',
       answer:
         'A long video to shorts planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

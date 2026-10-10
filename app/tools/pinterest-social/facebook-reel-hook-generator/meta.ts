@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Reels Hooks',
   description:
-    'Stop the scroll in the first 2 seconds: enter your reel topic for up to 10 punchy spoken hook lines and 9:16 framing tips made for Facebook Reels.',
+    'Stop the scroll in the first 2 seconds: enter your reel topic for up to 10 punchy spoken hook lines and 9:16 framing tips. Try it now!',
   howTo: [
     'Type your reel topic (up to 60 characters), e.g. "budget skincare".',
     'Choose how many hooks you want (1–10, default 5).',
@@ -83,16 +83,6 @@ export const content: ToolContent = {
       question: 'How does a facebook reels hooks work?',
       answer:
         'It slots your topic into a fixed bank of 16 proven hook templates (mistakes, tips, POV, before/after) and trims the result to 15 words or fewer. There is no AI — the same topic always returns the same hooks.',
-    },
-    {
-      question: 'How does the facebook reels hooks work?',
-      answer:
-        'Enter your details using the inputs above and the facebook reels hooks calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook reels hooks free to use?',
-      answer:
-        'Yes - this facebook reels hooks is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook reels hooks?',

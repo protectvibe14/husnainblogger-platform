@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Photo to Cartoon',
   description:
-    'Turn a photo into a cartoon with your own API key — 3d animated, anime or comic-book styles. OpenRouter cartoonizes your photo; HF/fal.ai illustrate.',
+    'Turn photos into cartoons free with AI — get a cartoon-style version of your own photo in seconds. Cartoonize yours now!',
   howTo: [
     'Save your API key in the key vault above — OpenRouter, Hugging Face Inference, or fal.ai.',
     'Upload the photo you want cartoonized. Bright, clear photos with a visible subject work best.',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'Is this affiliated with any animation studio?',
       answer:
         'No. Style names like "3d animated" are descriptive words only. This tool is not affiliated with, endorsed by, or connected to any animation studio.',
-    },
-    {
-      question: 'How does the photo to cartoon work?',
-      answer:
-        'Enter your details using the inputs above and the photo to cartoon calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the photo to cartoon free to use?',
-      answer:
-        'Yes - this photo to cartoon is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

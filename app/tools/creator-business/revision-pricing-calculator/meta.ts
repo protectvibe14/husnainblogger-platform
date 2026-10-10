@@ -85,9 +85,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Charge for Extra Revisions',
+  title: 'Revision Pricing Calculator',
   description:
-    'Price extra revisions fairly in seconds. Enter your fee, included rounds, and pricing mode to get the revision fee and new total. Free now.',
+    'Work out what to charge for extra revisions with this revision pricing calculator — fair per-round rates, no awkward client talks. Try it now!',
   howTo: [
     'Enter your base project fee and how many revision rounds it includes.',
     'Enter how many revision rounds the client actually requested.',
@@ -152,16 +152,6 @@ export const content: ToolContent = {
       question: 'How does a how to charge for extra revisions work?',
       answer:
         'It subtracts included rounds from requested rounds to find the extra revisions, then multiplies by your rate: either a percentage of the project fee or a flat price per revision. Requested rounds within the included count cost $0. The tool never sets your rate — that is your pricing policy.',
-    },
-    {
-      question: 'How does the how to charge for extra revisions work?',
-      answer:
-        'Enter your details using the inputs above and the how to charge for extra revisions calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to charge for extra revisions free to use?',
-      answer:
-        'Yes - this how to charge for extra revisions is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to charge for extra revisions?',

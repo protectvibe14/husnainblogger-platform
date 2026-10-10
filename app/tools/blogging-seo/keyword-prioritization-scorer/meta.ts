@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Keyword Prioritization Matrix',
   description:
-    'Rank keywords by real trade-offs with this free keyword prioritization matrix. Score relevance, volume, difficulty and intent transparently. Score.',
+    'Prioritize keywords free — rank your keywords by composite score with clear priority bands. Prioritize yours today, free!',
   howTo: [
     'List your keywords in the box, one per line, as: term | relevance | volume | difficulty | commercial intent.',
     'Rate each factor 0-10 from your own research (difficulty: 10 = hardest to rank).',
@@ -82,16 +82,6 @@ export const content: ToolContent = {
       question: 'How to use keyword prioritization?',
       answer:
         'Rate every candidate keyword 0-10 on relevance, volume, difficulty, and commercial intent using your own research, then score them with consistent weights. Target high-priority keywords first, schedule medium ones next, and revisit low ones later — this tool does the scoring and ranking for you.',
-    },
-    {
-      question: 'How does the keyword prioritization matrix work?',
-      answer:
-        'Enter your details using the inputs above and the keyword prioritization matrix calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the keyword prioritization matrix free to use?',
-      answer:
-        'Yes - this keyword prioritization matrix is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a keyword prioritization matrix?',

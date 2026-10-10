@@ -69,16 +69,6 @@ export const content: ToolContent = {
         'It works on curiosity and correction: viewers stop for a claim they recognize, stay for the reveal, and remember the fact. The builder assembles that flow from fixed templates; the persuasion comes from your real, verified facts.',
     },
     {
-      question: 'How does the myth vs fact tiktok work?',
-      answer:
-        'Enter your details using the inputs above and the myth vs fact tiktok calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the myth vs fact tiktok free to use?',
-      answer:
-        'Yes - this myth vs fact tiktok is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a myth vs fact tiktok?',
       answer:
         'A myth vs fact tiktok is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

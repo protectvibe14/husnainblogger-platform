@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'No. It fills a fixed library of 6 hand-written templates (3 lengths × 2 points of view) with your details. It is deterministic and free, but it cannot write original prose — always review and personalize the draft.',
     },
     {
-      question: 'How does the author bio generator work?',
-      answer:
-        'Enter your details using the inputs above and the author bio generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the author bio generator free to use?',
-      answer:
-        'Yes - this author bio generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an author bio generator?',
       answer:
         'An author bio generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

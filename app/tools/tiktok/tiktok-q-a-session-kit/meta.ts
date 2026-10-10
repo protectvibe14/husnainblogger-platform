@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'Enter your niche and choose "live" or "video-comments". The tool deterministically picks 14 questions from fixed warm-up, rapid-fire, and deep-dive banks and arranges them into a 4-phase run-of-show (warm-up, rapid-fire, deep-dive, CTA) with scripts matched to your format. Same inputs always produce the same kit.',
     },
     {
-      question: 'How does the tiktok q&a ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok q&a ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok q&a ideas free to use?',
-      answer:
-        'Yes - this tiktok q&a ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok q&a ideas?',
       answer:
         'A tiktok q&a ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'It does not use AI. It takes your niche, matches it to a fixed 12-topic word bank (or a generic bank with a clear label), then rotates topics, formats, and CTAs across 30 days using a fixed, repeatable rule.',
     },
     {
-      question: 'How does the 30 day content plan generator work?',
-      answer:
-        'Enter your details using the inputs above and the 30 day content plan generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the 30 day content plan generator free to use?',
-      answer:
-        'Yes - this 30 day content plan generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a 30 day content plan generator?',
       answer:
         'A 30 day content plan generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -116,16 +116,6 @@ export const content: ToolContent = {
         "It is template-based, not AI: your role, specialties, and proof point are inserted into 24 fixed headline templates (8 per style). Proof points are echoed exactly as you type them — the tool does not verify any claim — and every headline is counted to stay within LinkedIn's 220-character limit.",
     },
     {
-      question: 'How does the linkedin headline for freelancers work?',
-      answer:
-        'Enter your details using the inputs above and the linkedin headline for freelancers calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the linkedin headline for freelancers free to use?',
-      answer:
-        'Yes - this linkedin headline for freelancers is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a linkedin headline for freelancers?',
       answer:
         'A linkedin headline for freelancers is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

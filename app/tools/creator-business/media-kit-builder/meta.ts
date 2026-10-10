@@ -192,16 +192,6 @@ export const content: ToolContent = {
         'Start with your name, niche, and bio, then list each platform with follower counts and your engagement rate. Add the services you sell, any past brand deals, and your contact details. This builder formats all of it into a one-page-ready media kit document.',
     },
     {
-      question: 'How does the influencer media kit builder work?',
-      answer:
-        'Enter your details using the inputs above and the influencer media kit builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the influencer media kit builder free to use?',
-      answer:
-        'Yes - this influencer media kit builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an influencer media kit builder?',
       answer:
         'An influencer media kit builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

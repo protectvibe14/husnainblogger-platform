@@ -50,16 +50,6 @@ export const content: ToolContent = {
         'A script prompt tells an AI tool what video to outline and how to structure it. This page does not run any AI itself — it hands you a ready-made prompt template that you copy into tools like ChatGPT, Claude, or Gemini.',
     },
     {
-      question: 'How does the ai prompts for youtube scripts work?',
-      answer:
-        'Enter your details using the inputs above and the ai prompts for youtube scripts calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai prompts for youtube scripts free to use?',
-      answer:
-        'Yes - this ai prompts for youtube scripts is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai prompts for youtube scripts?',
       answer:
         'An ai prompts for youtube scripts is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

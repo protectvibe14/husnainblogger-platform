@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email Preheader Generator',
   description:
-    'Stop wasting preview text on repeats: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it.',
+    'Stop wasting preview text: summarize your email for 6 preheader options in 5 tones that complement your subject line instead of echoing it. Try it now!',
   howTo: [
     'Describe what your email is about in the summary field (at least 10 characters).',
     'Optionally paste your subject line so the generator avoids repeating it.',
@@ -80,16 +80,6 @@ export const content: ToolContent = {
       question: 'How does an email preheader generator work?',
       answer:
         'This one assembles your summary into bundled preview-text templates and applies tone modifiers in a fixed, deterministic order — no AI. Note: Apple Mail on iOS 18.2 and later may show an AI-generated summary instead of your preheader, so keep the first sentence of your email strong too.',
-    },
-    {
-      question: 'How does the email preheader generator work?',
-      answer:
-        'Enter your details using the inputs above and the email preheader generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email preheader generator free to use?',
-      answer:
-        'Yes - this email preheader generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an email preheader generator?',

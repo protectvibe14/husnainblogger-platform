@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'It takes your goal and optional topic, then fills hand-written CTA formulas from a fixed 36-template library — 6 per goal — cycling the bank in order when you ask for more than 6. No AI is involved; the output is template assembly.',
     },
     {
-      question: 'How does the call to action instagram post work?',
-      answer:
-        'Enter your details using the inputs above and the call to action instagram post calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the call to action instagram post free to use?',
-      answer:
-        'Yes - this call to action instagram post is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a call to action instagram post?',
       answer:
         'A call to action instagram post is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

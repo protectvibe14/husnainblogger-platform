@@ -102,16 +102,6 @@ export const content: ToolContent = {
         'This tool fills your niche into fixed hand-written templates (10 per post type) and returns the requested number deterministically — the same inputs always give the same ideas. Each idea shows its character count with soft guidance, since the exact community post limit is an unverified estimate.',
     },
     {
-      question: 'How does the youtube community post ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube community post ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube community post ideas free to use?',
-      answer:
-        'Yes - this youtube community post ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube community post ideas?',
       answer:
         'A youtube community post ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

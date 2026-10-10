@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'It sums your service prices, subtracts your bundle discount percent, and assembles a sales sheet — package name, included services, prices, discount, savings, and a booking call-to-action. No AI: just arithmetic plus document assembly from your own inputs.',
     },
     {
-      question: 'How does the freelance service packages work?',
-      answer:
-        'Enter your details using the inputs above and the freelance service packages calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance service packages free to use?',
-      answer:
-        'Yes - this freelance service packages is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance service packages?',
       answer:
         'A freelance service packages is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

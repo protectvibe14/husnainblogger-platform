@@ -90,16 +90,6 @@ export const content: ToolContent = {
         'Type your niche and skills, optionally add how many ideas you want and your own price hint, then click Generate. Pick the idea that excites you, run its validation step (e.g. pre-sell to 10 people) to prove demand, and only then build it.',
     },
     {
-      question: 'How does the digital products to sell as influencer work?',
-      answer:
-        'Enter your details using the inputs above and the digital products to sell as influencer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the digital products to sell as influencer free to use?',
-      answer:
-        'Yes - this digital products to sell as influencer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a digital products to sell as influencer?',
       answer:
         'A digital products to sell as influencer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

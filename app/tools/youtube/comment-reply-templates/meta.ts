@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Choose the comment type and tone that match the situation, copy one of the two drafts, replace the [Commenter] and [Your Name] placeholders, and paste it as your reply under the YouTube comment. The tool cannot post replies for you — YouTube has no supported auto-reply path here, and automated replies risk spam flags.',
     },
     {
-      question: 'How does the youtube comment reply templates work?',
-      answer:
-        'Enter your details using the inputs above and the youtube comment reply templates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube comment reply templates free to use?',
-      answer:
-        'Yes - this youtube comment reply templates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube comment reply templates?',
       answer:
         'A youtube comment reply templates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

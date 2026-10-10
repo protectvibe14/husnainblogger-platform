@@ -93,16 +93,6 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates and simple math.',
     },
-    {
-      question: 'How does the ai video scene planner work?',
-      answer:
-        'Enter your details using the inputs above and the ai video scene planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai video scene planner free to use?',
-      answer:
-        'Yes - this ai video scene planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Narration lines are template placeholders, not a finished voiceover script — rewrite them before recording or generating audio.',

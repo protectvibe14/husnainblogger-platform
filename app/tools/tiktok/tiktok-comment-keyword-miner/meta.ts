@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'It strips URLs and @handles from each pasted line, tokenizes the text, removes 72 fixed stopwords, and ranks words and phrases by frequency. It cannot scrape TikTok directly — you paste the comments in — and samples under 5 comments get a low-confidence warning.',
     },
     {
-      question: 'How does the tiktok comment analysis work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok comment analysis calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok comment analysis free to use?',
-      answer:
-        'Yes - this tiktok comment analysis is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok comment analysis?',
       answer:
         'A tiktok comment analysis is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

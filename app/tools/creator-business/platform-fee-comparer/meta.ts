@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'The tool computes fee amount = price × (fee % / 100) + fixed fee, then net payout = price − fees, for each platform you listed. It stores no platform fee schedules: every fee number must be entered by you, so verify them against the platform’s official pricing before deciding.',
     },
     {
-      question: 'How does the gumroad vs etsy fees work?',
-      answer:
-        'Enter your details using the inputs above and the gumroad vs etsy fees calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the gumroad vs etsy fees free to use?',
-      answer:
-        'Yes - this gumroad vs etsy fees is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a gumroad vs etsy fees?',
       answer:
         'A gumroad vs etsy fees is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

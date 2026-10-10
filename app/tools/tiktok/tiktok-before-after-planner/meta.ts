@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'It works on contrast and curiosity: viewers watch the process to earn the reveal. The planner structures that arc with templates; what makes it land is real footage — faked before/afters break trust, which is why every plan includes an honesty reminder.',
     },
     {
-      question: 'How does the before and after tiktok ideas work?',
-      answer:
-        'Enter your details using the inputs above and the before and after tiktok ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the before and after tiktok ideas free to use?',
-      answer:
-        'Yes - this before and after tiktok ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a before and after tiktok ideas?',
       answer:
         'A before and after tiktok ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

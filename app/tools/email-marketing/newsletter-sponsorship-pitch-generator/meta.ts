@@ -125,16 +125,6 @@ export const content: ToolContent = {
         'Yes — describe your buyer audience in the audience field and list the ad formats you sell. Sponsors care about who reads you, so the more specific your audience description, the stronger the pitch.',
     },
     {
-      question: 'How does the newsletter sponsorship pitch work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter sponsorship pitch calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter sponsorship pitch free to use?',
-      answer:
-        'Yes - this newsletter sponsorship pitch is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a newsletter sponsorship pitch?',
       answer:
         'A newsletter sponsorship pitch is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

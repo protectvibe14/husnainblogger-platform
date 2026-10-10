@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'It picks one hand-written rule per category (spam, self-promo, respect, off-topic, moderation) at your chosen strictness from a fixed 30-rule bank — no AI involved. You are still responsible for keeping the rules within Facebook\u2019s Community Standards.',
     },
     {
-      question: 'How does the facebook group rules template work?',
-      answer:
-        'Enter your details using the inputs above and the facebook group rules template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook group rules template free to use?',
-      answer:
-        'Yes - this facebook group rules template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook group rules template?',
       answer:
         'A facebook group rules template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

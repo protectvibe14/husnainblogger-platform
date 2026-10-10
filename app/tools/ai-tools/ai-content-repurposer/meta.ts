@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Content Repurposer',
   description:
-    'Turn one piece of content into many: repurpose a blog post, script, or transcript into threads, LinkedIn posts, carousels, or newsletters with your own.',
+    'Repurpose one piece of content into many — turn a blog post, script, or transcript into threads, LinkedIn posts, or newsletters. Start now!',
   howTo: [
     'Paste your original content (100–8,000 characters).',
     'Pick its source format and the format to repurpose into.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'Does it store or train on my content?',
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy; avoid pasting sensitive or confidential text.',
-    },
-    {
-      question: 'How does the ai content repurposer work?',
-      answer:
-        'Enter your details using the inputs above and the ai content repurposer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai content repurposer free to use?',
-      answer:
-        'Yes - this ai content repurposer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

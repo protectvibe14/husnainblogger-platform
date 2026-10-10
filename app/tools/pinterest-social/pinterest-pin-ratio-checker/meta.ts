@@ -105,16 +105,6 @@ export const content: ToolContent = {
         'It does deterministic math: your dimensions are reduced to their simplest ratio using the greatest common divisor, then the aspect ratio is compared against known best-practice formats (2:3, 1:1, 9:16, 1:2.1). No AI is involved and it does not fetch or inspect your actual Pinterest pins — it only evaluates the numbers you type.',
     },
     {
-      question: 'How does the pinterest pin size checker work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest pin size checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest pin size checker free to use?',
-      answer:
-        'Yes - this pinterest pin size checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest pin size checker?',
       answer:
         'A pinterest pin size checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

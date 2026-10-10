@@ -64,16 +64,6 @@ export const content: ToolContent = {
         'It applies fixed timing rules to each cue, not AI: it compares each cue start and end against the previous cue, measures gaps and durations in milliseconds, and sorts violations into errors (overlaps, zero duration, empty text) and warnings (flash risk, short gaps, overlong cues). It never analyzes your audio, so it cannot verify actual sync.',
     },
     {
-      question: 'How does the subtitle timing checker work?',
-      answer:
-        'Enter your details using the inputs above and the subtitle timing checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the subtitle timing checker free to use?',
-      answer:
-        'Yes - this subtitle timing checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a subtitle timing checker?',
       answer:
         'A subtitle timing checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

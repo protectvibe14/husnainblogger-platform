@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'This one fills a fixed template with your inputs and picks one of 4 call-to-action lines deterministically from your channel name. It is template assembly, not AI — same inputs always give the same result, and the output is capped at 1000 characters.',
     },
     {
-      question: 'How does the youtube about page generator work?',
-      answer:
-        'Enter your details using the inputs above and the youtube about page generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube about page generator free to use?',
-      answer:
-        'Yes - this youtube about page generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube about page generator?',
       answer:
         'A youtube about page generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

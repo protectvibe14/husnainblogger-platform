@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'Take each cue\'s timecode and search terms, find the sound in a free library like Pixabay, Mixkit, or the YouTube Audio Library, drop it on your timeline at the timecode, and set the suggested volume as your starting point.',
     },
     {
-      question: 'How does the sound effect cue sheet work?',
-      answer:
-        'Enter your details using the inputs above and the sound effect cue sheet calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sound effect cue sheet free to use?',
-      answer:
-        'Yes - this sound effect cue sheet is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sound effect cue sheet?',
       answer:
         'A sound effect cue sheet is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

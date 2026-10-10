@@ -87,16 +87,6 @@ export const content: ToolContent = {
         'It does not use AI and it makes no prediction about the client. You pick signals from a fixed 24-item bank, the tool adds up their fixed weights into a score, and a fixed rule (0-2 Low, 3-6 Caution, 7+ High) sets the band. It is your assessment aid, not a factual claim.',
     },
     {
-      question: 'How does the freelance client red flags work?',
-      answer:
-        'Enter your details using the inputs above and the freelance client red flags calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance client red flags free to use?',
-      answer:
-        'Yes - this freelance client red flags is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance client red flags?',
       answer:
         'A freelance client red flags is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

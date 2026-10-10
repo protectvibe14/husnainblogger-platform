@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'This one lowercases both the keyword and the title and searches for the keyword as a substring — or, in whole-word mode, as a consecutive token sequence using Unicode word segmentation. Position is classified as front, middle, or end, and a fixed recommendation follows. It is pure string math, not an SEO ranking prediction.',
     },
     {
-      question: 'How does the youtube keyword in title checker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube keyword in title checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube keyword in title checker free to use?',
-      answer:
-        'Yes - this youtube keyword in title checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube keyword in title checker?',
       answer:
         'A youtube keyword in title checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

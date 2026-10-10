@@ -98,16 +98,6 @@ export const content: ToolContent = {
         'You generally need at least 1,000 followers to access TikTok LIVE (verify in the TikTok app, as rules change). Then tap the + button, swipe to LIVE, add a title, and start. Use this planner first to map out what happens in each segment of your broadcast.',
     },
     {
-      question: 'How does the tiktok live ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok live ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok live ideas free to use?',
-      answer:
-        'Yes - this tiktok live ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok live ideas?',
       answer:
         'A tiktok live ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

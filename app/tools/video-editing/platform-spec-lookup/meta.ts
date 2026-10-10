@@ -27,7 +27,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Video Specs by Platform',
   description:
-    'Look up video specs by platform in seconds: aspect ratios, resolutions, max durations, and file limits for TikTok, YouTube, Reels, and more.',
+    'Look up video specs by platform in seconds: aspect ratios, resolutions, max durations, and file limits for TikTok, YouTube, Reels, and more. Find yours now!',
   howTo: [
     'Pick the platform: TikTok, YouTube, YouTube Shorts, Instagram Reels, Facebook, X, or Pinterest.',
     'Pick the spec type: video, image, or all.',
@@ -69,16 +69,6 @@ export const content: ToolContent = {
       question: 'How does a video specs by platform 2026 work?',
       answer:
         'It is a fixed rule table (7 platforms x 2 spec types, last verified 2026-10-01), not a live feed: the tool matches your platform and spec type and returns the stored spec sheet. Because platforms change specs frequently, every value is labeled an estimate and unknown platforms return an error rather than a guess.',
-    },
-    {
-      question: 'How does the video specs by platform 2026 work?',
-      answer:
-        'Enter your details using the inputs above and the video specs by platform 2026 calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video specs by platform 2026 free to use?',
-      answer:
-        'Yes - this video specs by platform 2026 is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a video specs by platform 2026?',

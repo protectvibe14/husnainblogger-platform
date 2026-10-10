@@ -72,16 +72,6 @@ export const content: ToolContent = {
         'This one looks up your mood and use case in a fixed curated bank of 24 hand-picked pairs and adds per-use-case contrast guidance. Every font named is a real, widely available font — no names are invented — and there is no AI or live font preview involved.',
     },
     {
-      question: 'How does the font pairing generator work?',
-      answer:
-        'Enter your details using the inputs above and the font pairing generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the font pairing generator free to use?',
-      answer:
-        'Yes - this font pairing generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a font pairing generator?',
       answer:
         'A font pairing generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

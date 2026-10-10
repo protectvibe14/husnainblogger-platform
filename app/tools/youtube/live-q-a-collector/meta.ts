@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'This collector ranks the questions you enter manually: open questions are sorted by upvote count, highest first, while answered and archived questions are kept in separate lists. It cannot read YouTube live chat itself — entry is manual, which keeps it free and private.',
     },
     {
-      question: 'How does the live stream q&a collector work?',
-      answer:
-        'Enter your details using the inputs above and the live stream q&a collector calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the live stream q&a collector free to use?',
-      answer:
-        'Yes - this live stream q&a collector is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a live stream q&a collector?',
       answer:
         'A live stream q&a collector is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

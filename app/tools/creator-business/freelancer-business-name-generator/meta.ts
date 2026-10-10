@@ -101,16 +101,6 @@ export const content: ToolContent = {
         "It is template-based, not AI: your keywords are combined with a fixed bank of 30 suffix words (10 per style) through 4 fixed patterns, producing up to 40 combinations per keyword. It cannot check whether a name is taken — you must verify domain and trademark availability yourself.",
     },
     {
-      question: 'How does the freelance business name ideas work?',
-      answer:
-        'Enter your details using the inputs above and the freelance business name ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance business name ideas free to use?',
-      answer:
-        'Yes - this freelance business name ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance business name ideas?',
       answer:
         'A freelance business name ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

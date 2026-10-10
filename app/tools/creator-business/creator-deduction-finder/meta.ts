@@ -59,7 +59,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Freelancer Tax Deductions List',
   description:
-    'Browse this freelancer tax deductions list for creators free. Enter your creator type and expenses for a general checklist and record-keeping tips.',
+    'Find freelancer tax deductions free — a general-information list of commonly tracked categories matched to your inputs. Find yours now!',
   howTo: [
     'Optionally pick your creator type: video, photo, audio, writer, or streamer.',
     'Type the expense categories you pay for into the expense checklist — one per line or comma-separated (e.g. camera, editing software, internet).',
@@ -101,16 +101,6 @@ export const content: ToolContent = {
       question: 'How to use freelancer tax deductions?',
       answer:
         'Enter the expense categories you pay for and tick home office or vehicle use if they apply. The tool returns matched categories from its 18-item general list, 6 record-keeping tips, and 5 questions for your tax professional. Then confirm everything with a tax pro — eligibility varies by jurisdiction and the tool never decides what is deductible for you.',
-    },
-    {
-      question: 'How does the freelancer tax deductions list work?',
-      answer:
-        'Enter your details using the inputs above and the freelancer tax deductions list calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelancer tax deductions list free to use?',
-      answer:
-        'Yes - this freelancer tax deductions list is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a freelancer tax deductions list?',

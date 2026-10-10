@@ -110,16 +110,6 @@ export const content: ToolContent = {
         'You enter a series title, episode count, publishing cadence, and start date. The planner steps forward by fixed intervals to date every episode, then labels EP1 as the intro, the middle episodes as deep-dive slots, and the last episode as the finale — with template working titles you rewrite with real topics. No AI is involved; it is date math plus a fixed arc template.',
     },
     {
-      question: 'How does the youtube series planner work?',
-      answer:
-        'Enter your details using the inputs above and the youtube series planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube series planner free to use?',
-      answer:
-        'Yes - this youtube series planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube series planner?',
       answer:
         'A youtube series planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

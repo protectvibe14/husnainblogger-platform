@@ -84,16 +84,6 @@ export const content: ToolContent = {
         'It fills fixed quiz-title patterns with your niche and audience, attaches 3 sample questions from a bank written for your goal (segment, entertain, or qualify), and 3 result types per idea. Every concept is assembled from template banks — nothing is written by AI.',
     },
     {
-      question: 'How does the quiz lead magnet ideas work?',
-      answer:
-        'Enter your details using the inputs above and the quiz lead magnet ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the quiz lead magnet ideas free to use?',
-      answer:
-        'Yes - this quiz lead magnet ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a quiz lead magnet ideas?',
       answer:
         'A quiz lead magnet ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

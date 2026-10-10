@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'You enter a topic and optional audience; the tool fills 12 fixed editorial templates with your words. Nothing is written by AI — the angles are pre-written frames, so results are identical for the same inputs every time.',
     },
     {
-      question: 'How does the content angle generator work?',
-      answer:
-        'Enter your details using the inputs above and the content angle generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content angle generator free to use?',
-      answer:
-        'Yes - this content angle generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content angle generator?',
       answer:
         'A content angle generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

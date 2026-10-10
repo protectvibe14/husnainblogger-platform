@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'Enter your prize, duration (1–30 days), and entry method, then generate the plan. Fill in the bracketed placeholders (dates, eligibility, winner handle), read the legal reminder, post the announcement video, and follow the day-by-day timeline.',
     },
     {
-      question: 'How does the tiktok giveaway ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok giveaway ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok giveaway ideas free to use?',
-      answer:
-        'Yes - this tiktok giveaway ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok giveaway ideas?',
       answer:
         'A tiktok giveaway ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

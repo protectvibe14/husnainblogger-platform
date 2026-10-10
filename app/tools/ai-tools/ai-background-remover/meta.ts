@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ai Background Remover',
   description:
-    'Remove image backgrounds free with AI in your browser — transparent PNG download, no uploads. The model runs 100% on your device.',
+    'Remove image backgrounds free with AI — your image with the background removed, as a transparent PNG download. Try it now!',
   howTo: [
     'Drop an image (JPG, PNG, WEBP or GIF up to 20 MB) onto the upload area, or click to browse.',
     'Choose Balanced for a fast ~44 MB model download, or Best for maximum edge quality (~176 MB).',

@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'It splits your scene description into sentences by fixed rules — the first sentence becomes the hook, the rest become beats — then word-wraps every line to 42 characters and inserts a [pause] beat wherever a sentence needs two lines. No AI is involved; it is template and rule-based text processing.',
     },
     {
-      question: 'How does the tiktok text overlay ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok text overlay ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok text overlay ideas free to use?',
-      answer:
-        'Yes - this tiktok text overlay ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok text overlay ideas?',
       answer:
         'A tiktok text overlay ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

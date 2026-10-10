@@ -110,16 +110,6 @@ export const content: ToolContent = {
         'Enter your how-to title and steps (step name on the first line, step text after it), add an ISO 8601 total time like PT30M if you want, then copy the generated JSON-LD into your tutorial page. Test the live page in Google\'s Rich Results Test to confirm it is detected.',
     },
     {
-      question: 'How does the howto schema generator work?',
-      answer:
-        'Enter your details using the inputs above and the howto schema generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the howto schema generator free to use?',
-      answer:
-        'Yes - this howto schema generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a howto schema generator?',
       answer:
         'A howto schema generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

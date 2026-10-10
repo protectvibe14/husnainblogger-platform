@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'The vague-word, conflict, length, style and lighting checks apply to any image prompt. The parameter-typo check is Midjourney-specific and simply will not trigger on plain prose.',
     },
     {
-      question: 'How does the ai prompt debugger work?',
-      answer:
-        'Enter your details using the inputs above and the ai prompt debugger calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai prompt debugger free to use?',
-      answer:
-        'Yes - this ai prompt debugger is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai prompt debugger?',
       answer:
         'An ai prompt debugger is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

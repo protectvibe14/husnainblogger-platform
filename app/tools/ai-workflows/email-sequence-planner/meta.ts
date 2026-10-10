@@ -98,16 +98,6 @@ export const content: ToolContent = {
         'It turns your goal, email count, and spacing into a calendar grid: each email gets a send day (day 1 + gap x position), a fixed subject-line template slot, and a purpose label. No copy is written — it plans the structure only.',
     },
     {
-      question: 'How does the email sequence planner work?',
-      answer:
-        'Enter your details using the inputs above and the email sequence planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email sequence planner free to use?',
-      answer:
-        'Yes - this email sequence planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email sequence planner?',
       answer:
         'An email sequence planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

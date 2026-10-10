@@ -53,7 +53,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Audit your pages with this SEO meta tag analyzer — title, description, and Open Graph tags checked against current best practices. Fix issues hurting.';
+  'Audit your pages with this SEO meta tag analyzer — title, description, and Open Graph tags checked against best practices. Fix ranking issues. Try it now!';
 
 export const content: ToolContent = {
   title: 'SEO Meta Tag Analyzer',
@@ -110,16 +110,6 @@ export const content: ToolContent = {
       question: 'Do meta descriptions affect Google rankings?',
       answer:
         'Google has stated meta descriptions are not a direct ranking factor, but they strongly affect click-through rate from search results. A clear, keyword-relevant description inside 140–155 characters earns more clicks.',
-    },
-    {
-      question: 'How does the seo meta tag analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the seo meta tag analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the seo meta tag analyzer free to use?',
-      answer:
-        'Yes - this seo meta tag analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a seo meta tag analyzer?',

@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'You supply seed keywords and modifiers; the tool computes every seed x modifier and seed x seed combination deterministically, then removes duplicates after normalizing case and spacing. Because everything is computed from your inputs, the same inputs always produce the identical list — no AI and no external data involved.',
     },
     {
-      question: 'How does the pinterest keyword research work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest keyword research calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest keyword research free to use?',
-      answer:
-        'Yes - this pinterest keyword research is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest keyword research?',
       answer:
         'A pinterest keyword research is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

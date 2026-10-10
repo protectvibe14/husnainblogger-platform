@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'It takes the text you type, escapes it so it can\'t break your page, and assembles it into a semantic HTML table with minimal inline styling that works in any blog theme. Nothing is written by AI — the table contains only your own content.',
     },
     {
-      question: 'How does the comparison table generator work?',
-      answer:
-        'Enter your details using the inputs above and the comparison table generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the comparison table generator free to use?',
-      answer:
-        'Yes - this comparison table generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a comparison table generator?',
       answer:
         'A comparison table generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

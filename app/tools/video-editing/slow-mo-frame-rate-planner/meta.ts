@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'Multiply your camera fps by your slow factor — the result must be at least your timeline fps (e.g. 120 fps × 0.5 = 60, which covers a 24 fps timeline). If it falls short, reshoot at a higher fps. This planner does that math and warns about judder and light flicker.',
     },
     {
-      question: 'How does the slow motion fps planner work?',
-      answer:
-        'Enter your details using the inputs above and the slow motion fps planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the slow motion fps planner free to use?',
-      answer:
-        'Yes - this slow motion fps planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a slow motion fps planner?',
       answer:
         'A slow motion fps planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

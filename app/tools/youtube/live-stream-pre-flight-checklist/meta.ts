@@ -46,16 +46,6 @@ export const content: ToolContent = {
         'You tick off each of the 18 fixed items as you complete them — speed test, mic test, stream key, backup plan, and more. The tracker shows your completion percentage and remembers it in your browser for next time.',
     },
     {
-      question: 'How does the youtube live stream checklist work?',
-      answer:
-        'Enter your details using the inputs above and the youtube live stream checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube live stream checklist free to use?',
-      answer:
-        'Yes - this youtube live stream checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube live stream checklist?',
       answer:
         'A youtube live stream checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

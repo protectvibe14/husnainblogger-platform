@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'Spot a trend in TikTok Discover, paste its name into the tool, choose whether it is a sound, dance, meme, or format, and enter your niche. You get 4 adapted concepts — film the strongest one within 48 hours, since trends decay fast.',
     },
     {
-      question: 'How does the viral tiktok trends for my niche work?',
-      answer:
-        'Enter your details using the inputs above and the viral tiktok trends for my niche calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the viral tiktok trends for my niche free to use?',
-      answer:
-        'Yes - this viral tiktok trends for my niche is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a viral tiktok trends for my niche?',
       answer:
         'A viral tiktok trends for my niche is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

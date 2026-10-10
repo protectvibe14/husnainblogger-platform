@@ -96,16 +96,6 @@ export const content: ToolContent = {
         "Your formats are mapped onto a fixed pipeline template — prep tasks, then 4 tasks per target format (extract, adapt, hook + CTA, publish), then wrap-up. The tool plans the work; it does not transform any content itself.",
     },
     {
-      question: 'How does the content repurposing workflow work?',
-      answer:
-        'Enter your details using the inputs above and the content repurposing workflow calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content repurposing workflow free to use?',
-      answer:
-        'Yes - this content repurposing workflow is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content repurposing workflow?',
       answer:
         'A content repurposing workflow is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

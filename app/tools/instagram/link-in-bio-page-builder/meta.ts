@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'You add one row per link with a label and a URL. The tool validates every URL, then assembles the rows into a single self-contained HTML page with inline styles — one file you can download, copy, and upload to any web host. Everything runs in your browser; no hosting or accounts are involved.',
     },
     {
-      question: 'How does the link in bio page generator free work?',
-      answer:
-        'Enter your details using the inputs above and the link in bio page generator free calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the link in bio page generator free free to use?',
-      answer:
-        'Yes - this link in bio page generator free is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a link in bio page generator free?',
       answer:
         'A link in bio page generator free is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

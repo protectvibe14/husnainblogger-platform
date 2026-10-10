@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'It takes your board name and keywords, then fills fixed sentence templates from a 28-template bank — the board name opens the first sentence and keywords are woven into natural middle sentences. No AI is involved, and the result is always capped at 500 characters.',
     },
     {
-      question: 'How does the pinterest board description work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest board description calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest board description free to use?',
-      answer:
-        'Yes - this pinterest board description is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest board description?',
       answer:
         'A pinterest board description is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

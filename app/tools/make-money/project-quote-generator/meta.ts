@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'Multiply your estimated hours by your hourly rate, add material and pass-through costs for a subtotal, add your profit margin percentage, then multiply by a rush multiplier only if the client agreed to a rush fee. The result is your quote total.',
     },
     {
-      question: 'How does the freelance project quote calculator work?',
-      answer:
-        'Enter your details using the inputs above and the freelance project quote calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance project quote calculator free to use?',
-      answer:
-        'Yes - this freelance project quote calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance project quote calculator?',
       answer:
         'A freelance project quote calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

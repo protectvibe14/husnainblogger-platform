@@ -98,16 +98,6 @@ export const content: ToolContent = {
         'This one works on numbers, not audio files: it scans your dB series for consecutive windows below the threshold, keeps runs that last at least your minimum gap length, and reports their times. Real audio decoding from an uploaded file is the app shell’s job — the logic here is pure math on the values you paste.',
     },
     {
-      question: 'How does the find silence in audio work?',
-      answer:
-        'Enter your details using the inputs above and the find silence in audio calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the find silence in audio free to use?',
-      answer:
-        'Yes - this find silence in audio is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a find silence in audio?',
       answer:
         'A find silence in audio is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

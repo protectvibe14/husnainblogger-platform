@@ -55,7 +55,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Group Name Ideas',
   description:
-    'Name your Facebook group something people want to join: enter your community topic for 8 catchy name options in a professional or casual tone.',
+    'Name your Facebook group something people want to join: enter your community topic for 8 catchy options in professional or casual tone. Start now!',
   howTo: [
     'Type your community topic into the "Community topic" field (e.g. sourdough baking).',
     'Pick a "Tone": professional for business/networking groups, casual for hobby and fan groups. Leave blank to default to professional.',
@@ -97,16 +97,6 @@ export const content: ToolContent = {
       question: 'How does a facebook group name ideas work?',
       answer:
         'It inserts your community topic into 20 hand-written name patterns (10 per tone), picking 8 deterministically from your inputs — no AI involved. Each candidate stays within 75 characters, presented as guidance rather than a guaranteed Facebook limit.',
-    },
-    {
-      question: 'How does the facebook group name ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook group name ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook group name ideas free to use?',
-      answer:
-        'Yes - this facebook group name ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook group name ideas?',

@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'Readability itself is not a confirmed ranking factor, but easier text keeps readers on the page longer — and engagement signals matter. Either way, clear writing serves your readers.',
     },
     {
-      question: 'How does the blog readability scorer work?',
-      answer:
-        'Enter your details using the inputs above and the blog readability scorer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog readability scorer free to use?',
-      answer:
-        'Yes - this blog readability scorer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog readability scorer?',
       answer:
         'A blog readability scorer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

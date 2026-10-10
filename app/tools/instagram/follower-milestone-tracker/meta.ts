@@ -112,16 +112,6 @@ export const content: ToolContent = {
         'You enter milestone targets and your current follower counts manually — the tool has no API access and cannot read live Instagram numbers. It then calculates percent complete and remaining followers with simple arithmetic and shows a progress verdict per milestone.',
     },
     {
-      question: 'How does the instagram follower goal tracker work?',
-      answer:
-        'Enter your details using the inputs above and the instagram follower goal tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram follower goal tracker free to use?',
-      answer:
-        'Yes - this instagram follower goal tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram follower goal tracker?',
       answer:
         'An instagram follower goal tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

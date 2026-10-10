@@ -116,16 +116,6 @@ export const content: ToolContent = {
         'Enter your hourly rate and how many words you write per hour, then optionally add a project word count and a 3-letter currency code. The tool shows your per-word rate, per-1,000-word rate, and a project quote, plus a breakdown of the exact math.',
     },
     {
-      question: 'How does the freelance writing rates work?',
-      answer:
-        'Enter your details using the inputs above and the freelance writing rates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance writing rates free to use?',
-      answer:
-        'Yes - this freelance writing rates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance writing rates?',
       answer:
         'A freelance writing rates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

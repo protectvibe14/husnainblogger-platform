@@ -68,9 +68,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'How to Sell on Instagram Stories',
+  title: 'Instagram Story Selling Scripts',
   description:
-    'Sell on stories with this free how to sell on instagram stories tool. Enter your product, pick an objection, and get a 6-slide selling script.',
+    'Sell on Instagram Stories with these Instagram story selling scripts — pick your product and objection, get a 6-slide selling sequence. Try it now!',
   howTo: [
     'Enter your product name (up to 60 characters).',
     'Add the price if you want it woven into the offer line (optional).',
@@ -112,16 +112,6 @@ export const content: ToolContent = {
       question: 'How to use how to sell on instagram stories?',
       answer:
         'Enter your product and optional price, pick your audience\'s main objection, then film the six slides the tool gives you and add the suggested sticker on each one. The script handles one objection per story — run it again for other objections.',
-    },
-    {
-      question: 'How does the how to sell on instagram stories work?',
-      answer:
-        'Enter your details using the inputs above and the how to sell on instagram stories calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the how to sell on instagram stories free to use?',
-      answer:
-        'Yes - this how to sell on instagram stories is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a how to sell on instagram stories?',

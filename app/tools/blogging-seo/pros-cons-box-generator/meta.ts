@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'It takes the lists you type, escapes them so they can\'t break your page, and assembles them into a styled two-column box with inline CSS that works in any blog theme. Nothing is written by AI — the box contains only your own words.',
     },
     {
-      question: 'How does the pros and cons box generator work?',
-      answer:
-        'Enter your details using the inputs above and the pros and cons box generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pros and cons box generator free to use?',
-      answer:
-        'Yes - this pros and cons box generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pros and cons box generator?',
       answer:
         'A pros and cons box generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

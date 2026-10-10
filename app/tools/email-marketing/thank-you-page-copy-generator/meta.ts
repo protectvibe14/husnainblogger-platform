@@ -68,7 +68,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Thank You Page Copy Generator',
   description:
-    'Make the thank-you page work harder: enter the completed action and the next step you want for headlines, body copy, and a CTA in your tone.',
+    'Make the thank-you page work harder: enter the completed action and the next step you want for headlines, body copy, and a CTA in your tone. Get started!',
   howTo: [
     'Enter the completed action (e.g. newsletter signup) — what the visitor just did.',
     'Enter the next step you want them to take (e.g. confirm your email).',
@@ -120,16 +120,6 @@ export const content: ToolContent = {
       question: 'How does a thank you page copy generator work?',
       answer:
         'It fills fixed copy patterns with your completed action, next step, and brand, prefixes the body with an opening line matched to your tone, and deterministically picks the set from your inputs. The output is assembled from a bundled template library, with no network calls or AI.',
-    },
-    {
-      question: 'How does the thank you page copy generator work?',
-      answer:
-        'Enter your details using the inputs above and the thank you page copy generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the thank you page copy generator free to use?',
-      answer:
-        'Yes - this thank you page copy generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a thank you page copy generator?',

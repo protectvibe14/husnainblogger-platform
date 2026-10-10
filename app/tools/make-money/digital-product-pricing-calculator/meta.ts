@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Yes \u2014 this digital product pricing calculator is completely free with no signup. Enter your cost, target margin, platform fee rate, and expected sales to get a suggested price, per-unit profit, and estimated monthly profit.',
     },
     {
-      question: 'How does the digital product pricing calculator work?',
-      answer:
-        'Enter your details using the inputs above and the digital product pricing calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the digital product pricing calculator free to use?',
-      answer:
-        'Yes - this digital product pricing calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a digital product pricing calculator?',
       answer:
         'A digital product pricing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

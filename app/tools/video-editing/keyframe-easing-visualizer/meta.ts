@@ -111,16 +111,6 @@ export const content: ToolContent = {
         'It is pure math, not AI: a Newton-Raphson solver finds where the cubic-bezier curve sits for each time value, producing sampled (t, value) points. Overshoot (y outside 0-1) is flagged as an anticipation effect. CapCut mappings are nearest-standard-curve approximations, labeled as such, since CapCut cannot reproduce arbitrary bezier curves.',
     },
     {
-      question: 'How does the easing curve visualizer work?',
-      answer:
-        'Enter your details using the inputs above and the easing curve visualizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the easing curve visualizer free to use?',
-      answer:
-        'Yes - this easing curve visualizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an easing curve visualizer?',
       answer:
         'An easing curve visualizer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

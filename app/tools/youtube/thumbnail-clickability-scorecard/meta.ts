@@ -137,16 +137,6 @@ export const content: ToolContent = {
         'You answer each of the 8 rubric items with "yes", "partially", or "no"; each answer earns full, half, or zero of its weight, and the total becomes your 0–100 score. No AI is involved — it is fixed arithmetic over your own answers, and it cannot predict how viewers will actually respond.',
     },
     {
-      question: 'How does the youtube thumbnail checklist work?',
-      answer:
-        'Enter your details using the inputs above and the youtube thumbnail checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube thumbnail checklist free to use?',
-      answer:
-        'Yes - this youtube thumbnail checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube thumbnail checklist?',
       answer:
         'A youtube thumbnail checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

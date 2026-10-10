@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'The timing layer is simple math: read time = words / wpm x 60, scroll duration adds a 3s lead-in, and the px/sec rate is derived from your font size with documented viewport assumptions. CJK scripts use characters-per-minute instead of words-per-minute. The actual scrolling display is separate UI — this tool supplies the timing plan behind it.',
     },
     {
-      question: 'How does the online teleprompter work?',
-      answer:
-        'Enter your details using the inputs above and the online teleprompter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the online teleprompter free to use?',
-      answer:
-        'Yes - this online teleprompter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an online teleprompter?',
       answer:
         'An online teleprompter is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

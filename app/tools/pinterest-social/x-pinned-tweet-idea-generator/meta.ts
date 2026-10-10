@@ -73,16 +73,6 @@ export const content: ToolContent = {
         'No — and that is deliberate. The drafts use [BRACKETED] placeholders for your offer, results, links, and prices because the tool cannot know your business. Fill them in with your real details before posting; never post placeholder text.',
     },
     {
-      question: 'How does the pinned tweet ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinned tweet ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinned tweet ideas free to use?',
-      answer:
-        'Yes - this pinned tweet ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinned tweet ideas?',
       answer:
         'A pinned tweet ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

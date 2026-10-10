@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'It validates your chapter lines (timestamps, order, gaps) and runs five fixed rules over each title — no AI, no semantic rewriting. The per-title checks show exactly what changed: final length, keyword front-loads, and truncations.',
     },
     {
-      question: 'How does the youtube chapter title ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube chapter title ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube chapter title ideas free to use?',
-      answer:
-        'Yes - this youtube chapter title ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube chapter title ideas?',
       answer:
         'A youtube chapter title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

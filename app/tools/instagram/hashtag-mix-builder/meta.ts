@@ -64,16 +64,6 @@ export const content: ToolContent = {
         'Combine tag tiers instead of stacking only huge tags: pair broad tags for reach with niche and community tags that match your actual audience. Keep it to 5 tags per post, place them in the caption or first comment, and rotate mixes across posts.',
     },
     {
-      question: 'How does the instagram hashtag strategy builder work?',
-      answer:
-        'Enter your details using the inputs above and the instagram hashtag strategy builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram hashtag strategy builder free to use?',
-      answer:
-        'Yes - this instagram hashtag strategy builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram hashtag strategy builder?',
       answer:
         'An instagram hashtag strategy builder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

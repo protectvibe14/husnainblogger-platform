@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'Multiply the amount by your route\u2019s rate and add its fixed fee: direct Goods & Services is 2.99% with no fixed fee, checkout is 3.49% + $0.49, and card is 2.99% + $0.49. Add 1.5% for international payments, and treat currency conversion\u2019s 3–4% spread as a separate cost.',
     },
     {
-      question: 'How does the paypal fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the paypal fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the paypal fee calculator free to use?',
-      answer:
-        'Yes - this paypal fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a paypal fee calculator?',
       answer:
         'A paypal fee calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'It does not generate anything with AI. It filters a fixed 29-question bank by your call goal — qualify (19 questions), scope (18), or close (29) — and fills "{service}" placeholders with your service type. Same inputs always give the same list.',
     },
     {
-      question: 'How does the discovery call questions work?',
-      answer:
-        'Enter your details using the inputs above and the discovery call questions calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the discovery call questions free to use?',
-      answer:
-        'Yes - this discovery call questions is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a discovery call questions?',
       answer:
         'A discovery call questions is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

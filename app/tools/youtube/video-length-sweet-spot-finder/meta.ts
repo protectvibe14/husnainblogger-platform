@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Youtube Video Length',
+  title: 'YouTube Video Length Finder',
   description: DESCRIPTION,
   howTo: [
     'Pick your content type: tutorial, review, vlog, video essay, or Shorts.',
@@ -85,16 +85,6 @@ export const content: ToolContent = {
       question: 'how to use best youtube video length?',
       answer:
         'Pick your content type and topic depth in the tool, take the suggested duration band as your editing target, then check your own channel analytics — audience retention on your past videos is the only real answer for your audience.',
-    },
-    {
-      question: 'How does the best youtube video length work?',
-      answer:
-        'Enter your details using the inputs above and the best youtube video length calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the best youtube video length free to use?',
-      answer:
-        'Yes - this best youtube video length is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a best youtube video length?',

@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'Yes — any line-based text works the same way. For dense internal rhymes or multis, though, the end-of-line approximation will miss a lot; it is tuned for end rhymes.',
     },
     {
-      question: 'How does the lyrics rhyme checker work?',
-      answer:
-        'Enter your details using the inputs above and the lyrics rhyme checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the lyrics rhyme checker free to use?',
-      answer:
-        'Yes - this lyrics rhyme checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a lyrics rhyme checker?',
       answer:
         'A lyrics rhyme checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

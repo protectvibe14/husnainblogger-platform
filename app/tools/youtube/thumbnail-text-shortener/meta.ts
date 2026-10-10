@@ -88,16 +88,6 @@ export const content: ToolContent = {
         'This tool uses deterministic rules, not AI: it removes 64 fixed stopwords, scores the remaining words (numbers and 40 fixed hook words score highest), and keeps the top 5 in original order. Text that is already 5 words or fewer is returned as-is.',
     },
     {
-      question: 'How does the shorten text for thumbnails work?',
-      answer:
-        'Enter your details using the inputs above and the shorten text for thumbnails calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the shorten text for thumbnails free to use?',
-      answer:
-        'Yes - this shorten text for thumbnails is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a shorten text for thumbnails?',
       answer:
         'A shorten text for thumbnails is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

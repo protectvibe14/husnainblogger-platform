@@ -88,16 +88,6 @@ export const content: ToolContent = {
         'It substitutes your topic into fixed title formulas — for example the curiosity formula "Why {topic} Will Change Everything You Know" becomes "Why sourdough baking Will Change Everything You Know". This tool uses a fixed 60-template bank, never AI generation, and labels every output with the template that produced it.',
     },
     {
-      question: 'How does the youtube title templates work?',
-      answer:
-        'Enter your details using the inputs above and the youtube title templates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube title templates free to use?',
-      answer:
-        'Yes - this youtube title templates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube title templates?',
       answer:
         'A youtube title templates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

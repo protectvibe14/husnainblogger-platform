@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Resume Bullet Enhancer',
   description:
-    'Turn weak resume bullets into sharp, action-led lines with your own free Gemini, Groq, or OpenRouter key. Never invents numbers —, no cost to us.',
+    'Enhance resume bullets free with AI — stronger action verbs and quantified results from your numbers. Upgrade yours now!',
   howTo: [
     'Paste your raw resume bullet into the box (one bullet per generation).',
     'Optionally add the target role so the wording matches the job.',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'Can I enhance my whole resume at once?',
       answer:
         'Not in one click — the tool enhances one bullet per generation so each gets full attention. Run it once per bullet; it takes seconds each.',
-    },
-    {
-      question: 'How does the resume bullet point enhancer work?',
-      answer:
-        'Enter your details using the inputs above and the resume bullet point enhancer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the resume bullet point enhancer free to use?',
-      answer:
-        'Yes - this resume bullet point enhancer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

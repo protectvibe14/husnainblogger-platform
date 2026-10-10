@@ -126,16 +126,6 @@ export const content: ToolContent = {
         'Fill in the invoice details and choose the tone that matches how many times you have already chased payment. Run the tool, pick a subject line, copy the body into your email client, and send it yourself — the tool drafts only, it never sends.',
     },
     {
-      question: 'How does the overdue invoice reminder email work?',
-      answer:
-        'Enter your details using the inputs above and the overdue invoice reminder email calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the overdue invoice reminder email free to use?',
-      answer:
-        'Yes - this overdue invoice reminder email is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an overdue invoice reminder email?',
       answer:
         'An overdue invoice reminder email is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

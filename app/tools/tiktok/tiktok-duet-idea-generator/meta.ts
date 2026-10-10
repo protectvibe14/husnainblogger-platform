@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'This tool takes your niche and chosen duet type (react, reply, collab, or challenge) and assembles 5 concept ideas from fixed template banks, each with setup instructions, a hook tip, and a call to action. It does not connect to TikTok — you still film and post the duet in the TikTok app.',
     },
     {
-      question: 'How does the tiktok duet ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok duet ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok duet ideas free to use?',
-      answer:
-        'Yes - this tiktok duet ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok duet ideas?',
       answer:
         'A tiktok duet ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

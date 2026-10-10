@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'Multiply your base project price by your rush percentage (as a decimal). A $1,000 project with a 25% rush policy costs an extra $250, for a $1,250 total. This tool runs that formula and flags percentages above 100% for a double-check.',
     },
     {
-      question: 'How does the rush fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the rush fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the rush fee calculator free to use?',
-      answer:
-        'Yes - this rush fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a rush fee calculator?',
       answer:
         'A rush fee calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

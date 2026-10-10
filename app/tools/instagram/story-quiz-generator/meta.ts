@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'You provide a topic, and the tool fills 8 fixed, hand-written quiz templates with your topic — each with four labeled options, a marked correct answer, and a one-line explanation. The answers are common-sense defaults, not verified facts, so give them a quick review before posting.',
     },
     {
-      question: 'How does the instagram story quiz ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram story quiz ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram story quiz ideas free to use?',
-      answer:
-        'Yes - this instagram story quiz ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram story quiz ideas?',
       answer:
         'An instagram story quiz ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

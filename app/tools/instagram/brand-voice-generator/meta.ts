@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'Pick 3-5 adjectives for your tone, enter your niche, and run the tool. Then keep the profile open while you write captions and check each draft against your do’s and don’ts — consistency is what makes a voice recognizable.',
     },
     {
-      question: 'How does the instagram brand voice examples work?',
-      answer:
-        'Enter your details using the inputs above and the instagram brand voice examples calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram brand voice examples free to use?',
-      answer:
-        'Yes - this instagram brand voice examples is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram brand voice examples?',
       answer:
         'An instagram brand voice examples is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

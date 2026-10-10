@@ -109,16 +109,6 @@ export const content: ToolContent = {
         'Decide what percentage of your content fee (or what flat amount) each month of whitelisting is worth to you, enter it with the usage period, and use the resulting total in your UGC contract. The monthly fee helps you compare usage offers of different lengths.',
     },
     {
-      question: 'How does the ugc whitelisting rates work?',
-      answer:
-        'Enter your details using the inputs above and the ugc whitelisting rates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ugc whitelisting rates free to use?',
-      answer:
-        'Yes - this ugc whitelisting rates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ugc whitelisting rates?',
       answer:
         'An ugc whitelisting rates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

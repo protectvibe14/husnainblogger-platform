@@ -123,16 +123,6 @@ export const content: ToolContent = {
         'Enter your monthly thumbnail volume and your per-thumbnail price, add revisions and your bundle discount percent, then run the tool. You get a monthly package price, the effective per-thumbnail rate, and ready-to-present pack tiers.',
     },
     {
-      question: 'How does the thumbnail designer pricing work?',
-      answer:
-        'Enter your details using the inputs above and the thumbnail designer pricing calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the thumbnail designer pricing free to use?',
-      answer:
-        'Yes - this thumbnail designer pricing is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a thumbnail designer pricing?',
       answer:
         'A thumbnail designer pricing is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: '30 Day Reels Challenge',
   description:
-    'Take the 30 day reels challenge with this free tool. Enter your niche and 3–5 content pillars for a full 30-day reels calendar with unique prompts..',
+    'Take the 30 day reels challenge with this free tool: enter your niche and 3–5 content pillars for a 30-day calendar with unique prompts. Start now!',
   howTo: [
     'Enter your niche (up to 60 characters).',
     'List 3–5 content pillars, one per line (or comma-separated).',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'How does a 30 day reels challenge work?',
       answer:
         'You commit to posting one reel a day for 30 days. This tool removes the planning work: it assigns each day a pillar, a specific prompt, and a reel format, cycling deterministically so you get 30 different ideas with no repeats.',
-    },
-    {
-      question: 'How does the 30 day reels challenge work?',
-      answer:
-        'Enter your details using the inputs above and the 30 day reels challenge calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the 30 day reels challenge free to use?',
-      answer:
-        'Yes - this 30 day reels challenge is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a 30 day reels challenge?',

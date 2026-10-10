@@ -21,7 +21,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'SRT to VTT Converter',
   description:
-    'Convert SRT subtitles to WebVTT right in your browser: paste your SRT text and get clean, validated VTT output instantly - no uploads, no waiting.',
+    'Convert SRT to VTT with this SRT to VTT converter — paste subtitles in your browser and get clean, validated WebVTT instantly. No uploads. Try it now!',
   howTo: [
     'Paste your .srt subtitle text into the input box (or drag in the file contents).',
     'Run the converter — blank-line separated blocks are parsed and validated.',
@@ -63,16 +63,6 @@ export const content: ToolContent = {
       question: 'How does a srt to vtt converter work?',
       answer:
         'It reads each subtitle block (sequence number, timing line, text lines), rewrites the timestamps from comma decimals to dot decimals, and prefixes the file with WEBVTT. This one additionally validates every cue and reports errors and warnings instead of silently dropping problems.',
-    },
-    {
-      question: 'How does the srt to vtt converter work?',
-      answer:
-        'Enter your details using the inputs above and the srt to vtt converter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the srt to vtt converter free to use?',
-      answer:
-        'Yes - this srt to vtt converter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a srt to vtt converter?',

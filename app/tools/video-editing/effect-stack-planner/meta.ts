@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'You describe the look you want, and the tool keyword-matches it to one of 8 curated presets, each with a fixed effect order. It then checks your device tier, flags heavy or redundant effects, and gives a qualitative low/med/high render-impact estimate.',
     },
     {
-      question: 'How does the capcut effects order planner work?',
-      answer:
-        'Enter your details using the inputs above and the capcut effects order planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the capcut effects order planner free to use?',
-      answer:
-        'Yes - this capcut effects order planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a capcut effects order planner?',
       answer:
         'A capcut effects order planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

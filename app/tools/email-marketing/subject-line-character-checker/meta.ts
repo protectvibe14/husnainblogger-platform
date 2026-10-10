@@ -62,16 +62,6 @@ export const content: ToolContent = {
         'Paste your subject line and run the tool. Aim to fit the first 40 characters of your key message so it survives truncation on mobile clients, then re-check after any edit.',
     },
     {
-      question: 'How does the email subject line character counter work?',
-      answer:
-        'Enter your details using the inputs above and the email subject line character counter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email subject line character counter free to use?',
-      answer:
-        'Yes - this email subject line character counter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email subject line character counter?',
       answer:
         'An email subject line character counter is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'It is template-driven, not AI: it fills a fixed 12-entry coverage bank with your scene description, batches the entries by camera setup into a shoot order, and adds warnings for single-camera resets or very short scene descriptions. The same inputs always produce the same list.',
     },
     {
-      question: 'How does the video shot list generator work?',
-      answer:
-        'Enter your details using the inputs above and the video shot list generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video shot list generator free to use?',
-      answer:
-        'Yes - this video shot list generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video shot list generator?',
       answer:
         'A video shot list generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

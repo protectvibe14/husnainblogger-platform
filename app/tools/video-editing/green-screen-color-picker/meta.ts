@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'It converts your hex colors to HSV and measures hue distance to the two standard key colors. It does not key video itself — real chroma keying needs per-pixel access to your footage, which happens in your editor (Premiere, CapCut, DaVinci).',
     },
     {
-      question: 'How does the chroma key color picker work?',
-      answer:
-        'Enter your details using the inputs above and the chroma key color picker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the chroma key color picker free to use?',
-      answer:
-        'Yes - this chroma key color picker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a chroma key color picker?',
       answer:
         'A chroma key color picker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

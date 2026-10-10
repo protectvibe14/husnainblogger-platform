@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'This tool fills your niche, target viewer, and schedule into a fixed 7-beat template with timestamps and a word budget at 150 words per minute. It is a scaffold, not AI copywriting — replace the bracketed placeholders with your real name and numbers before recording.',
     },
     {
-      question: 'How does the youtube channel trailer script work?',
-      answer:
-        'Enter your details using the inputs above and the youtube channel trailer script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube channel trailer script free to use?',
-      answer:
-        'Yes - this youtube channel trailer script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube channel trailer script?',
       answer:
         'A youtube channel trailer script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

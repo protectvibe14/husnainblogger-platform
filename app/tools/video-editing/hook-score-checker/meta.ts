@@ -28,7 +28,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Video Hook Checker',
   description:
-    'Score your video hook before you film it: paste your opening line for a 0-100 checklist score, a full criterion breakdown, and practical fix suggestions.',
+    'Score your video hook before you film it: paste your opening line for a 0-100 checklist score, breakdown, and fix suggestions. Check yours now!',
   howTo: [
     'Paste your hook — the first line viewers hear (3-280 characters).',
     'Optionally add your niche so suggestions read in your context.',
@@ -70,16 +70,6 @@ export const content: ToolContent = {
       question: 'How does a video hook checker work?',
       answer:
         'It applies fixed rules, not AI: six weighted criteria score your text 0-75 and map to bands (60+ strong, 40-59 good, 20-39 needs work, under 20 weak). The score is a checklist result — it cannot predict views or virality. Non-English hooks are scored on length and formatting only, with a clear note.',
-    },
-    {
-      question: 'How does the video hook checker work?',
-      answer:
-        'Enter your details using the inputs above and the video hook checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video hook checker free to use?',
-      answer:
-        'Yes - this video hook checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a video hook checker?',

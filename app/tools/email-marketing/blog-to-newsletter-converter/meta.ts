@@ -120,16 +120,6 @@ export const content: ToolContent = {
         'It detects your post’s headings, splits the text into sections, and takes the first N words of each as excerpts. Subject lines and the intro are built from fixed templates using your post’s title — your words are never rewritten by AI.',
     },
     {
-      question: 'How does the repurpose blog post into newsletter work?',
-      answer:
-        'Enter your details using the inputs above and the repurpose blog post into newsletter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the repurpose blog post into newsletter free to use?',
-      answer:
-        'Yes - this repurpose blog post into newsletter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a repurpose blog post into newsletter?',
       answer:
         'A repurpose blog post into newsletter is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

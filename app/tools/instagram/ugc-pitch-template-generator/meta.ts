@@ -107,16 +107,6 @@ export const content: ToolContent = {
         'Fill in the brand name, your niche, and the content type you offer, then run the tool. Copy the pitch, replace "[Your Name]" with your name, personalize one line about the brand, and send it. If you hear nothing in a week, send the generated follow-up.',
     },
     {
-      question: 'How does the ugc pitch template work?',
-      answer:
-        'Enter your details using the inputs above and the ugc pitch template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ugc pitch template free to use?',
-      answer:
-        'Yes - this ugc pitch template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ugc pitch template?',
       answer:
         'An ugc pitch template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

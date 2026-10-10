@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'OCR Text Extractor: Free Online',
   description:
-    'Extract printed text from any image with a free on-device OCR model. No uploads and no API key — your image never leaves your browser, ever.',
+    'Extract text from images free with online OCR — printed text recognized and ready to copy in seconds. Extract yours now!',
   howTo: [
     'Upload an image containing printed text (PNG, JPG — under 25 MB).',
     'Wait for the on-device model to download (~120 MB, once) and scan the image.',

@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Text to Video AI Generator',
   description:
-    'Turn text into AI video with your own fal.ai key — Google Veo 3 clips in 4, 6 or 8 seconds. Paste your key, describe the shot, preview and download.',
+    'Generate AI videos from text free — an MP4 video clip from your prompt, playable on the page and downloadable. Create yours now!',
   howTo: [
     'Save your fal.ai API key in the key vault above (it stays in this browser only).',
     'Describe the shot: subject, motion, camera move, lighting. Cinematic detail gives better clips.',
@@ -93,16 +93,6 @@ export const content: ToolContent = {
       question: 'Can I generate videos of real people?',
       answer:
         'No — do not use this to depict real, identifiable people or events as if real. AI video is invented footage; use it for b-roll, backgrounds, and creative scenes.',
-    },
-    {
-      question: 'How does the text to video ai generator work?',
-      answer:
-        'Enter your details using the inputs above and the text to video ai generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the text to video ai generator free to use?',
-      answer:
-        'Yes - this text to video ai generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

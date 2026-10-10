@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'It applies simple arithmetic to your inputs: platform fee = sale price × fee rate, then profit = sale price − platform fee − base cost − shipping. It never invents provider prices — Printful, Printify, and others change pricing, so your own numbers are the only honest inputs.',
     },
     {
-      question: 'How does the print on demand profit calculator work?',
-      answer:
-        'Enter your details using the inputs above and the print on demand profit calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the print on demand profit calculator free to use?',
-      answer:
-        'Yes - this print on demand profit calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a print on demand profit calculator?',
       answer:
         'A print on demand profit calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

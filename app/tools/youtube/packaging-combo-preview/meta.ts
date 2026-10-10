@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'This one combines fixed template banks — 18 title templates across 6 styles and 20 thumbnail-text templates across 5 styles — pairing them deterministically into combos shown as text-only layout mockups. Titles stay within 100 characters and thumbnail text within 5 words. It never generates images.',
     },
     {
-      question: 'How does the youtube packaging tester work?',
-      answer:
-        'Enter your details using the inputs above and the youtube packaging tester calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube packaging tester free to use?',
-      answer:
-        'Yes - this youtube packaging tester is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube packaging tester?',
       answer:
         'A youtube packaging tester is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

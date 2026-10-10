@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'Type your niche and the tool deterministically picks 6 niche hashtags, 4 broad ones, and 4 community ones from fixed banks, uses any trending tags you pasted (never invented ones), and merges everything with your caption into a combined caption kept inside the 2,200-character limit. Same inputs always produce the same mixes.',
     },
     {
-      question: 'How does the tiktok caption hashtag mixer work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok caption hashtag mixer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok caption hashtag mixer free to use?',
-      answer:
-        'Yes - this tiktok caption hashtag mixer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok caption hashtag mixer?',
       answer:
         'A tiktok caption hashtag mixer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

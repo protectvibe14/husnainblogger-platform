@@ -93,16 +93,6 @@ export const content: ToolContent = {
         'Two layers: pure math validates the timestamp (clamping past-the-end requests to the last frame) and scales the frame to the target size while preserving aspect ratio; then the app seeks an HTML <video> to that timestamp and draws the frame to a canvas. No decoding or image output happens in the math layer — and nothing is ever uploaded.',
     },
     {
-      question: 'How does the extract frame from video work?',
-      answer:
-        'Enter your details using the inputs above and the extract frame from video calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the extract frame from video free to use?',
-      answer:
-        'Yes - this extract frame from video is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an extract frame from video?',
       answer:
         'An extract frame from video is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

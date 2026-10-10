@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'You enter a seed keyword and the tool matches it against a fixed bank of 36 seasonal events. Niche-relevant events are marked "Yes" in the niche-match column; generic ones are marked "Generic". Each row includes three ready-to-use content angles and a publish-by date.',
     },
     {
-      question: 'How does the seasonal keyword planner work?',
-      answer:
-        'Enter your details using the inputs above and the seasonal keyword planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the seasonal keyword planner free to use?',
-      answer:
-        'Yes - this seasonal keyword planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a seasonal keyword planner?',
       answer:
         'A seasonal keyword planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

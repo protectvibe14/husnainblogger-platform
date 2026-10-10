@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'You describe the two scenes and the energy, and the tool matches them against a fixed bank of 30 hand-written transitions using fixed rules: identical scenes get match cuts, calm energy excludes punchy transitions, and scene keywords adjust the ranking. Nothing is AI-generated — the bank and rules are curated.',
     },
     {
-      question: 'How does the video transition ideas work?',
-      answer:
-        'Enter your details using the inputs above and the video transition ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video transition ideas free to use?',
-      answer:
-        'Yes - this video transition ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video transition ideas?',
       answer:
         'A video transition ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

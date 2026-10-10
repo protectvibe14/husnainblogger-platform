@@ -116,16 +116,6 @@ export const content: ToolContent = {
       answer:
         'It is picked deterministically from a fixed bank of 6 lighting phrases based on your subject text, so the same subject always produces the same lighting line.',
     },
-    {
-      question: 'How does the midjourney prompt builder work?',
-      answer:
-        'Enter your details using the inputs above and the midjourney prompt builder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the midjourney prompt builder free to use?',
-      answer:
-        'Yes - this midjourney prompt builder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Outputs are template-assembled text, not AI output — review and edit the wording before using it for important work.',

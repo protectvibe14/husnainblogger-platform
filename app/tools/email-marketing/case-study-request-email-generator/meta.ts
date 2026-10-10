@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'Enter the client name and the result metric, choose written, video, or quote format, and pick a tone. Run the tool, choose a subject line, copy the draft, replace [Your Name], and send it personally — always get the client’s written approval before publishing.',
     },
     {
-      question: 'How does the case study request email work?',
-      answer:
-        'Enter your details using the inputs above and the case study request email calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the case study request email free to use?',
-      answer:
-        'Yes - this case study request email is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a case study request email?',
       answer:
         'A case study request email is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

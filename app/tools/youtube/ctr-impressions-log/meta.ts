@@ -67,16 +67,6 @@ export const content: ToolContent = {
         'You log impressions and clicks per video (or per thumbnail variant) with dates; the tracker computes per-entry CTR, aggregates it by day, week, or month, ranks best/worst entries, and derives trend direction from the daily series. This one is manual — no YouTube API, no automatic imports — so it only ever describes the entries you logged.',
     },
     {
-      question: 'How does the youtube ctr tracker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube ctr tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube ctr tracker free to use?',
-      answer:
-        'Yes - this youtube ctr tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube ctr tracker?',
       answer:
         'A youtube ctr tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

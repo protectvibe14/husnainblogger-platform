@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'You enter your offer details and the tool slots them into a fixed 10-section template, each with a fixed write prompt explaining what that section must cover. Nothing is AI-written — it is a planning structure that keeps your page complete and in the right order.',
     },
     {
-      question: 'How does the sales page outline work?',
-      answer:
-        'Enter your details using the inputs above and the sales page outline calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sales page outline free to use?',
-      answer:
-        'Yes - this sales page outline is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sales page outline?',
       answer:
         'A sales page outline is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

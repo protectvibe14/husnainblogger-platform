@@ -62,16 +62,6 @@ export const content: ToolContent = {
         'Add each product as an item with its name and up to 5 comma-separated features, mark sponsored demos as "yes" to get the #ad disclosure line, then generate. Film each beat as written, testing the product live with no edits for credibility.',
     },
     {
-      question: 'How does the tiktok product demo script work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok product demo script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok product demo script free to use?',
-      answer:
-        'Yes - this tiktok product demo script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok product demo script?',
       answer:
         'A tiktok product demo script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -68,16 +68,6 @@ export const content: ToolContent = {
         'Enter your settings on the first row — concepts, revisions, formats, your base rate, rush, and usage scope — then add one row per extra line item with quantity and unit price. The tool itemizes everything and produces a quote document you can send to your client.',
     },
     {
-      question: 'How does the logo design quote template work?',
-      answer:
-        'Enter your details using the inputs above and the logo design quote template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the logo design quote template free to use?',
-      answer:
-        'Yes - this logo design quote template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a logo design quote template?',
       answer:
         'A logo design quote template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

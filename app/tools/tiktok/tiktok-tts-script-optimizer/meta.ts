@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'It applies fixed text-rewrite rules, not AI: a 47-entry abbreviation map expands short forms, fixed English rules spell out integers, ordinals, decimals, percents, currency, and years, and sentences longer than 25 words are split at commas or conjunctions. Unknown acronyms are flagged for you to check in the voice preview instead of being auto-pronounced.',
     },
     {
-      question: 'How does the tiktok text to speech tips work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok text to speech tips calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok text to speech tips free to use?',
-      answer:
-        'Yes - this tiktok text to speech tips is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok text to speech tips?',
       answer:
         'A tiktok text to speech tips is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -45,9 +45,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Best Time to Send Email',
+  title: 'Email Send Time Planner',
   description:
-    'Plan the best time to send email with timezone conversion. Enter sender and audience zones to get converted slots from common guidance. Free.',
+    'Find the best time to send email with this email send time planner — send slots in sender-local and audience-local times for every band. Try it now!',
   howTo: [
     'Enter the audience timezone as an IANA name (e.g. America/New_York).',
     'Enter your own (sender) timezone the same way.',
@@ -92,16 +92,6 @@ export const content: ToolContent = {
       question: 'How to use best time to send email guidance?',
       answer:
         'Enter both IANA timezones and your cadence, then run the tool. It shows when each guidance band lands in both timezones. Treat the bands as a starting hypothesis, send at those times, then adjust based on your own open-rate data — and double-check conversions near daylight-saving changes.',
-    },
-    {
-      question: 'How does the best time to send email work?',
-      answer:
-        'Enter your details using the inputs above and the best time to send email calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the best time to send email free to use?',
-      answer:
-        'Yes - this best time to send email is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a best time to send email?',

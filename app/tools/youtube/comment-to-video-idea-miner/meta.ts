@@ -67,16 +67,6 @@ export const content: ToolContent = {
         'This one is honest pattern extraction, not AI: it splits your pasted text into sentences and flags question marks, request phrases like "can you make a video about", and "how do I" hints. Matches are rephrased as video-idea cards with their source comment quoted. Duplicates merge; plain praise is skipped. It cannot fetch comments itself — you must paste them.',
     },
     {
-      question: 'How does the turn comments into video ideas work?',
-      answer:
-        'Enter your details using the inputs above and the turn comments into video ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the turn comments into video ideas free to use?',
-      answer:
-        'Yes - this turn comments into video ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a turn comments into video ideas?',
       answer:
         'A turn comments into video ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'It scans your text for words and phrases historically associated with spam, using case-insensitive whole-word matching against a bundled list. Important: this is a writing aid, not a live filter test — real spam filters weigh sender reputation, authentication (SPF/DKIM/DMARC), and engagement, which no browser tool can check.',
     },
     {
-      question: 'How does the email spam word checker work?',
-      answer:
-        'Enter your details using the inputs above and the email spam word checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email spam word checker free to use?',
-      answer:
-        'Yes - this email spam word checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email spam word checker?',
       answer:
         'An email spam word checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

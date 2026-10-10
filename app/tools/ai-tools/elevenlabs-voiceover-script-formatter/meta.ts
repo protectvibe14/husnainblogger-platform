@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'ElevenLabs Script Formatter',
   description:
-    'Format scripts for ElevenLabs TTS: suggested break tags, ALL-CAPS and abbreviation flags, pronunciation hints, plus an estimated duration. Free formatter.',
+    'Format your script for ElevenLabs free — get suggested break tags and voiceover-ready formatting instantly. Format yours now!',
   howTo: [
     'Paste your raw voiceover script into the text field.',
     'Click Format script to add suggested pause tags and scan the text.',
@@ -92,16 +92,6 @@ export const content: ToolContent = {
       question: 'Is the formatter free?',
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed rules.',
-    },
-    {
-      question: 'How does the elevenlabs script formatter work?',
-      answer:
-        'Enter your details using the inputs above and the elevenlabs script formatter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the elevenlabs script formatter free to use?',
-      answer:
-        'Yes - this elevenlabs script formatter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

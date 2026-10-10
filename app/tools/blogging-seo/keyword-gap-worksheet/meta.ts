@@ -105,16 +105,6 @@ export const content: ToolContent = {
         'You paste both lists and the tool normalizes them (lowercase, trimmed) so "SEO Tips" and "seo tips" count as one keyword. It then marks each keyword as a gap (competitor-only), an overlap (in both), or only in your list, sorted with gaps first.',
     },
     {
-      question: 'How does the keyword gap analysis template work?',
-      answer:
-        'Enter your details using the inputs above and the keyword gap analysis template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the keyword gap analysis template free to use?',
-      answer:
-        'Yes - this keyword gap analysis template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a keyword gap analysis template?',
       answer:
         'A keyword gap analysis template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

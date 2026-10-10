@@ -86,16 +86,6 @@ export const content: ToolContent = {
         'Enter your niche, pick a budget (free, paid, or both), and choose how many ideas you want. Work through the lowest-effort ideas first, measure what actually converts for you, and always grow with permission — never buy or scrape lists.',
     },
     {
-      question: 'How does the email list growth ideas work?',
-      answer:
-        'Enter your details using the inputs above and the email list growth ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email list growth ideas free to use?',
-      answer:
-        'Yes - this email list growth ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email list growth ideas?',
       answer:
         'An email list growth ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

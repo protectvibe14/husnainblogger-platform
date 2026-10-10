@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'You provide a product name and angle; the tool fills 10 fixed hook templates for that angle with your product name, orders them deterministically, and scans each for unverifiable superlatives to flag. It is template-based — there is no AI and no ad performance data.',
     },
     {
-      question: 'How does the tiktok ad hooks work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok ad hooks calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok ad hooks free to use?',
-      answer:
-        'Yes - this tiktok ad hooks is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok ad hooks?',
       answer:
         'A tiktok ad hooks is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

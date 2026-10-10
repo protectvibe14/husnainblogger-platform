@@ -136,16 +136,6 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates.',
     },
-    {
-      question: 'How does the suno prompt generator work?',
-      answer:
-        'Enter your details using the inputs above and the suno prompt generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the suno prompt generator free to use?',
-      answer:
-        'Yes - this suno prompt generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Outputs are template-assembled text, not finished songwriting — rewrite the lyric lines before using them.',

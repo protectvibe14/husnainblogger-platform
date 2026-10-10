@@ -90,16 +90,6 @@ export const content: ToolContent = {
         'It takes your topic and format, then fills fixed brief templates from a 42-component bank — cycling in order so results are deterministic. It outputs TEXT briefs only (concept direction), never rendered images; no AI image generation is involved.',
     },
     {
-      question: 'How does the pinterest pin design ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest pin design ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest pin design ideas free to use?',
-      answer:
-        'Yes - this pinterest pin design ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest pin design ideas?',
       answer:
         'A pinterest pin design ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

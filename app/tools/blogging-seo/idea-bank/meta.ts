@@ -107,7 +107,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Blog Idea Bank',
   description:
-    'Stop losing great post ideas: this free blog idea bank stores, tags, filters and exports your content ideas in one place. Organize your ideas now.',
+    'Store and organize your blog ideas for free — titles, tags, status, notes, and flags for every idea you save. Build yours today!',
   howTo: [
     'Choose an action: add a new idea, list and filter your bank, update or delete by row number, or export.',
     'To keep ideas between sessions: download the CSV after adding, then paste your saved JSON into "Your saved ideas" next time.',
@@ -154,16 +154,6 @@ export const content: ToolContent = {
       question: 'How does a blog idea bank work?',
       answer:
         'You add ideas with titles, tags, statuses and notes; the bank holds them in a table you can filter and update. This one is stateless — it does not remember anything between visits, so paste your saved JSON back in or download the CSV to carry your ideas forward.',
-    },
-    {
-      question: 'How does the blog idea bank work?',
-      answer:
-        'Enter your details using the inputs above and the blog idea bank calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog idea bank free to use?',
-      answer:
-        'Yes - this blog idea bank is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a blog idea bank?',

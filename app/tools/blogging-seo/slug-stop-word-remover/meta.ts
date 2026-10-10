@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'URL Slug Optimizer',
   description:
-    'Shorten long URLs for better SEO. Paste any title or slug and this free url slug optimizer strips 173 English stop words into a clean permalink.',
+    'Optimize your URL slugs free — stop words removed, words joined with hyphens for a cleaner slug, free. Optimize yours now!',
   howTo: [
     'Paste your post title or existing slug into "Title or slug".',
     'Optionally list words to protect in "Words to keep" — comma-separated, e.g. AI, SEO.',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'How does an url slug optimizer work?',
       answer:
         'It tokenizes your title, drops every word on a fixed English stop-word list (unless you protected it), and joins the remaining words with hyphens. The rules are fixed, so results are identical for the same input.',
-    },
-    {
-      question: 'How does the url slug optimizer work?',
-      answer:
-        'Enter your details using the inputs above and the url slug optimizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the url slug optimizer free to use?',
-      answer:
-        'Yes - this url slug optimizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an url slug optimizer?',

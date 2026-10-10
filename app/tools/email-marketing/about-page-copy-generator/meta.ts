@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'No. It assembles your draft from a fixed library of 12 hand-written templates (4 tones × 3 lengths) and 10 headline patterns. That makes it deterministic — the same inputs always produce the same draft — but it cannot write original prose like a human copywriter.',
     },
     {
-      question: 'How does the about page copy generator work?',
-      answer:
-        'Enter your details using the inputs above and the about page copy generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the about page copy generator free to use?',
-      answer:
-        'Yes - this about page copy generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an about page copy generator?',
       answer:
         'An about page copy generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

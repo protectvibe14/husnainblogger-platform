@@ -90,16 +90,6 @@ export const content: ToolContent = {
         'This one is template-based, not AI: your inputs are placed into fixed chapter patterns — an opening overview chapter, rotating body-chapter titles, and a closing 30-day action plan — and each chapter gets fill-in beat slots. The same inputs always produce the same outline.',
     },
     {
-      question: 'How does the ebook outline generator work?',
-      answer:
-        'Enter your details using the inputs above and the ebook outline generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ebook outline generator free to use?',
-      answer:
-        'Yes - this ebook outline generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ebook outline generator?',
       answer:
         'An ebook outline generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

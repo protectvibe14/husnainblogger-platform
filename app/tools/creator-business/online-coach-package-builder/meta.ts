@@ -73,16 +73,6 @@ export const content: ToolContent = {
         'Enter your package settings on the first row — sessions, session length, your price per session, and your discount — then add one row per support add-on with your price. The tool computes the package price, three tiers, and a description you can send to clients.',
     },
     {
-      question: 'How does the coaching package pricing work?',
-      answer:
-        'Enter your details using the inputs above and the coaching package pricing calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the coaching package pricing free to use?',
-      answer:
-        'Yes - this coaching package pricing is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a coaching package pricing?',
       answer:
         'A coaching package pricing is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -61,7 +61,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Webinar Invitation Email Template',
   description:
-    'Fill your webinar seats with a better invite: enter the title, date, time, speaker, and attendee benefits for 5 subject lines plus a complete draft.',
+    'Fill your webinar seats with a better invite: enter the title, date, speaker, and attendee benefits for 5 subject lines plus a complete draft. Start now!',
   howTo: [
     'Enter your webinar title exactly as you want it to appear.',
     'Enter the date and time, including the timezone (e.g. Oct 15, 2026 at 2:00 PM EST).',
@@ -115,16 +115,6 @@ export const content: ToolContent = {
       question: 'How does a webinar invitation email template work?',
       answer:
         'It fills fixed template patterns with your details: the title, speaker, and date go into the greeting and body, your benefits become bullet points, and your link becomes the call to action. Nothing is invented — every fact in the draft comes from what you entered.',
-    },
-    {
-      question: 'How does the webinar invitation email template work?',
-      answer:
-        'Enter your details using the inputs above and the webinar invitation email template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the webinar invitation email template free to use?',
-      answer:
-        'Yes - this webinar invitation email template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a webinar invitation email template?',

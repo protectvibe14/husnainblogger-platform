@@ -45,7 +45,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Keyword Clustering Tool – Free SEO',
   description:
-    'Free keyword clustering tool 2026: group keywords into topic clusters to avoid cannibalization. Paste your list, tune the threshold, cluster now.',
+    'Cluster keywords free — group 2+ related keywords with a representative label for each cluster, free. Cluster yours now!',
   howTo: [
     'Paste your keyword list into the Keywords box, one keyword per line (2-500 unique keywords).',
     'Optionally set a Similarity threshold between 0.1 and 0.9 (default 0.35; lower groups more loosely, higher splits more strictly).',

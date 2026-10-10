@@ -107,16 +107,6 @@ export const content: ToolContent = {
         "It splits your editing session into timed focus rounds separated by short breaks, and this tool computes the full schedule: each phase's start and end time, the total minutes, and when you finish. Sessions over 8 hours get a warning to split across days.",
     },
     {
-      question: 'How does the video editing pomodoro timer work?',
-      answer:
-        'Enter your details using the inputs above and the video editing pomodoro timer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video editing pomodoro timer free to use?',
-      answer:
-        'Yes - this video editing pomodoro timer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video editing pomodoro timer?',
       answer:
         'A video editing pomodoro timer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

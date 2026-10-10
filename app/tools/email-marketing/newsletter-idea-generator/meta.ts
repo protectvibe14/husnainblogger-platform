@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Newsletter Ideas Generator',
   description:
-    'Never run out of newsletter topics again: enter your niche, audience, and send frequency for up to 20 fresh issue ideas tailored to your readers.',
+    'Never run out of newsletter topics again: enter your niche and send frequency for up to 20 fresh issue ideas tailored to your readers. Get started!',
   howTo: [
     'Enter your newsletter niche in a few words.',
     'Describe your target audience.',
@@ -95,16 +95,6 @@ export const content: ToolContent = {
       question: 'How does a newsletter ideas generator work?',
       answer:
         'It combines your niche with 24 fixed title patterns and pairs each with a content angle and a plain-language explanation of why the format engages readers. Selection is deterministic: the same inputs always produce the same ideas.',
-    },
-    {
-      question: 'How does the newsletter ideas generator work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter ideas generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter ideas generator free to use?',
-      answer:
-        'Yes - this newsletter ideas generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a newsletter ideas generator?',

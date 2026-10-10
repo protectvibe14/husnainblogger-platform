@@ -44,7 +44,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Keyword & Tag Extractor',
   description:
-    'Extract keywords and hashtags from any text: frequency-based ranking with stopword removal and key-phrase detection. Free, runs in your browser.',
+    'Extract keywords from text free — get keywords and key phrases ranked by in-document frequency, free. Extract yours now!',
   howTo: [
     'Paste the text you want to analyze — an article, caption or description.',
     'Choose how many keywords to extract (5–50, default 15).',
@@ -94,16 +94,6 @@ export const content: ToolContent = {
       question: 'How are the hashtags formed?',
       answer:
         'Each keyword is joined into CamelCase with a # prefix — "email marketing" becomes #EmailMarketing. Non-alphanumeric characters are stripped.',
-    },
-    {
-      question: 'How does the keyword extractor work?',
-      answer:
-        'Enter your details using the inputs above and the keyword extractor calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the keyword extractor free to use?',
-      answer:
-        'Yes - this keyword extractor is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a keyword extractor?',

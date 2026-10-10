@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'You manually mark moments as you review footage — the logger only organizes what you enter. This tool sorts your highest-rated moments to the top, flags duplicate timestamps, and produces a CSV export. It does not detect highlights automatically and does not save your session; export the CSV to keep your log.',
     },
     {
-      question: 'How does the video timestamp logger work?',
-      answer:
-        'Enter your details using the inputs above and the video timestamp logger calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video timestamp logger free to use?',
-      answer:
-        'Yes - this video timestamp logger is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video timestamp logger?',
       answer:
         'A video timestamp logger is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

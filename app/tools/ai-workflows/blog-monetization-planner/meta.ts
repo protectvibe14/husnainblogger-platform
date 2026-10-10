@@ -90,16 +90,6 @@ export const content: ToolContent = {
         'No - they are broad illustrative estimates from a fixed planning table, clearly labeled as estimates on every row. Real income depends on your niche, pricing, audience, and execution; use the table to plan, not to predict.',
     },
     {
-      question: 'How does the blog monetization planner work?',
-      answer:
-        'Enter your details using the inputs above and the blog monetization planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog monetization planner free to use?',
-      answer:
-        'Yes - this blog monetization planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog monetization planner?',
       answer:
         'A blog monetization planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

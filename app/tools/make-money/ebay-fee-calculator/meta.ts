@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'Published sources show different most-categories rates — 13.6% and 13.25% have both been seen since July 2026 — so different calculators pick different figures. This tool defaults to 13.6% but labels it an estimate and lets you type the current rate yourself; always verify in eBay\'s official fee schedule.',
     },
     {
-      question: 'How does the ebay fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the ebay fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ebay fee calculator free to use?',
-      answer:
-        'Yes - this ebay fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ebay fee calculator?',
       answer:
         'An ebay fee calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

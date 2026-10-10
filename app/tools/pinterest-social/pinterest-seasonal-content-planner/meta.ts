@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Pinterest Seasonal Content Ideas',
   description:
-    'Post seasonal content early enough to rank: enter your niche and a month or quarter for posting lead times plus keyword seeds for every event.',
+    'Post seasonal content early enough to rank: enter your niche and a month or quarter for posting lead times plus keyword seeds. Plan yours now!',
   howTo: [
     'Type your "Your niche", e.g. "home decor" or "keto recipes".',
     'Enter a "Month (1-12)" like 11 for November, or pick a "Quarter" like Q4. You can combine both; at least one is required.',
@@ -110,16 +110,6 @@ export const content: ToolContent = {
       question: 'Is this based on live Pinterest trend data?',
       answer:
         'No — and it does not claim to be. The planner uses a fixed in-repo dataset of 24 seasonal events (reviewed 2026-09-30) plus hand-written angle templates filled with your niche. For live trend signals, check Pinterest Trends directly; this tool gives you the planning structure, not the data.',
-    },
-    {
-      question: 'How does the pinterest seasonal content work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest seasonal content calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest seasonal content free to use?',
-      answer:
-        'Yes - this pinterest seasonal content is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a pinterest seasonal content?',

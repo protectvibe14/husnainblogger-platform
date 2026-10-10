@@ -139,16 +139,6 @@ export const content: ToolContent = {
         'Answer all 5 questions about your goal, camera comfort, available time, content style, and weekly posting frequency. The tool scores your answers with a weighted heuristic and returns a Reels, carousel, or both-formats recommendation with reasons and five concrete next steps.',
     },
     {
-      question: 'How does the reels vs carousel which is better work?',
-      answer:
-        'Enter your details using the inputs above and the reels vs carousel which is better calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the reels vs carousel which is better free to use?',
-      answer:
-        'Yes - this reels vs carousel which is better is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a reels vs carousel which is better?',
       answer:
         'A reels vs carousel which is better is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

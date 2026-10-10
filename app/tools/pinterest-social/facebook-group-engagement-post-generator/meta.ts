@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Group Engagement Posts',
   description:
-    'Wake up a quiet Facebook group: enter your group type for conversation-led post drafts - welcome posts, questions, polls, or discussion threads.',
+    'Wake up a quiet Facebook group: enter your group type for conversation-led post drafts — welcome posts, questions, polls, threads. Try it now!',
   howTo: [
     'Type Your group type into the field (e.g. fitness beginners, Etsy sellers).',
     'Optionally choose a Post type: welcome, question, poll, or discussion — or leave it blank for one of each.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'How does a facebook group engagement posts work?',
       answer:
         'This tool inserts your group type into fixed hand-written templates and attaches a follow-up tip to each. Picking a post type returns all 3 of its drafts; leaving it blank returns one draft per type (4 archetypes). No engagement-bait wording is used anywhere.',
-    },
-    {
-      question: 'How does the facebook group engagement posts work?',
-      answer:
-        'Enter your details using the inputs above and the facebook group engagement posts calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook group engagement posts free to use?',
-      answer:
-        'Yes - this facebook group engagement posts is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook group engagement posts?',

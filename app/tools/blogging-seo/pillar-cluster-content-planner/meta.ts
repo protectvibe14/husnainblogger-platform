@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'This one fills a fixed bank of 24 cluster-topic templates (e.g. "What is {pillar}?", "{pillar} vs. alternatives") with your pillar topic and returns the first N in order, plus suggested slugs and a pillar<->cluster linking note. It is template assembly, not AI and not keyword research.',
     },
     {
-      question: 'How does the topic cluster planner work?',
-      answer:
-        'Enter your details using the inputs above and the topic cluster planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the topic cluster planner free to use?',
-      answer:
-        'Yes - this topic cluster planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a topic cluster planner?',
       answer:
         'A topic cluster planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

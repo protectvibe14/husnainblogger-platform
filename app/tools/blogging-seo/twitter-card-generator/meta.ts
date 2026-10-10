@@ -134,16 +134,6 @@ export const content: ToolContent = {
         'It takes the title, description, image URL, card type, and handle you provide and assembles them into the standard Twitter Card meta tags with proper HTML escaping. Nothing is written by AI — the tool only formats your own input into valid markup.',
     },
     {
-      question: 'How does the twitter card generator work?',
-      answer:
-        'Enter your details using the inputs above and the twitter card generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter card generator free to use?',
-      answer:
-        'Yes - this twitter card generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a twitter card generator?',
       answer:
         'A twitter card generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

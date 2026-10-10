@@ -131,16 +131,6 @@ export const content: ToolContent = {
         "You reward people who send you clients: each successful referral earns a commission, a flat bounty, or both. This planner computes the payout from your inputs (client value × commission % + bounty) and projects the quarterly cost at your expected referral volume.",
     },
     {
-      question: 'How does the freelance referral program work?',
-      answer:
-        'Enter your details using the inputs above and the freelance referral program calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance referral program free to use?',
-      answer:
-        'Yes - this freelance referral program is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance referral program?',
       answer:
         'A freelance referral program is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

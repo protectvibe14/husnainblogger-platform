@@ -52,7 +52,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Aesthetic Emoji Combos Copy Paste',
   description:
-    'Grab ready-to-paste aesthetic emoji combos for free: pick a vibe, choose how many you want, and copy combos for bios, captions and comments.',
+    'Grab free ready-to-paste aesthetic emoji combos: pick a vibe, choose how many, and copy combos for bios, captions and comments. Try it now!',
   howTo: [
     'Choose a vibe from the Vibe dropdown (cute, aesthetic, dark, kawaii and 6 more).',
     'Enter how many combos you want (1–10) in the Number of Combos field.',
@@ -99,16 +99,6 @@ export const content: ToolContent = {
       question: 'How does an aesthetic emoji combos copy paste work?',
       answer:
         'This one takes the first N combos from your chosen vibe’s curated bank in order — N is the count you enter. It is a fixed library lookup, not AI generation, and everything runs in your browser with no account needed.',
-    },
-    {
-      question: 'How does the aesthetic emoji combos copy paste work?',
-      answer:
-        'Enter your details using the inputs above and the aesthetic emoji combos copy paste calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the aesthetic emoji combos copy paste free to use?',
-      answer:
-        'Yes - this aesthetic emoji combos copy paste is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an aesthetic emoji combos copy paste?',

@@ -81,16 +81,6 @@ export const content: ToolContent = {
         'It depends on your goal: quote tweets put your take in front of your own followers, while replies live under the original post. This tool only drafts the comment text — it cannot predict reach, so test both formats with your audience.',
     },
     {
-      question: 'How does the quote tweet ideas work?',
-      answer:
-        'Enter your details using the inputs above and the quote tweet ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the quote tweet ideas free to use?',
-      answer:
-        'Yes - this quote tweet ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a quote tweet ideas?',
       answer:
         'A quote tweet ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

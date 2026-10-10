@@ -100,16 +100,6 @@ export const content: ToolContent = {
         "The canvas is divided into integer-pixel rectangles with a fixed gap between them; this tool lists every pane's coordinates, gives you a copy-paste CSS grid snippet, and warns when a pane comes out too narrow to read on a phone.",
     },
     {
-      question: 'How does the split screen video layout work?',
-      answer:
-        'Enter your details using the inputs above and the split screen video layout calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the split screen video layout free to use?',
-      answer:
-        'Yes - this split screen video layout is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a split screen video layout?',
       answer:
         'A split screen video layout is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'This one matches your inputs against a fixed bank of editorial QA rules: 10 base checks plus a 4-item pack for your platform, caption checks (or a critical "add captions" warning when you have none), music licensing and loudness checks, and duration-specific checks. It cannot inspect your actual project or exported file — you verify each item yourself.',
     },
     {
-      question: 'How does the video export checklist work?',
-      answer:
-        'Enter your details using the inputs above and the video export checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video export checklist free to use?',
-      answer:
-        'Yes - this video export checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video export checklist?',
       answer:
         'A video export checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

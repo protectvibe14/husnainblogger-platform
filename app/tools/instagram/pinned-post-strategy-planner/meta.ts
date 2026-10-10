@@ -46,9 +46,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'What to Pin on Instagram',
+  title: 'Instagram Pinned Post Planner',
   description:
-    "Plan what to pin on instagram: pick your goal and get a 3-slot pin strategy — each pin's job, post ideas, and the reasoning. Free —.",
+    "Decide what to pin on Instagram with this Instagram pinned post planner — what to put in slots 1, 2, and 3, plus why it works. Try it now!",
   howTo: [
     'Choose your "Your goal for the pinned row" — followers, sales, clients, authority, or a launch.',
     'Optionally list your offers in the "Your offers" box, one per line — your first offer is woven into the slot-3 pin.',
@@ -95,16 +95,6 @@ export const content: ToolContent = {
       question: 'How does a what to pin on instagram work?',
       answer:
         'Instagram gives you 3 pinned slots at the top of your grid. This tool picks a fixed 3-slot strategy for your goal — what each pin should accomplish, with post ideas — and weaves your first offer into the final pin. It plans the strategy only; pinning itself is manual because Instagram has no pinning API.',
-    },
-    {
-      question: 'How does the what to pin on instagram work?',
-      answer:
-        'Enter your details using the inputs above and the what to pin on instagram calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the what to pin on instagram free to use?',
-      answer:
-        'Yes - this what to pin on instagram is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a what to pin on instagram?',

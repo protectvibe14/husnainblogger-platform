@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'It maps each planned post to one of the 9 grid slots (0–8), shows which slots are filled or placeholders, and flags rows that look unbalanced. This version runs entirely in your browser: it validates your input, estimates image data against a typical ~5 MB localStorage quota, and exports a copyable layout state.',
     },
     {
-      question: 'How does the instagram grid planner work?',
-      answer:
-        'Enter your details using the inputs above and the instagram grid planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram grid planner free to use?',
-      answer:
-        'Yes - this instagram grid planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram grid planner?',
       answer:
         'An instagram grid planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'Enter your product name and niche, then generate. Film the 7 shots in the listed order, say the reaction lines in your own words, and finish with the reveal CTA. For ASMR-style plans, record each sound cue close to the microphone.',
     },
     {
-      question: 'How does the tiktok unboxing video script work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok unboxing video script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok unboxing video script free to use?',
-      answer:
-        'Yes - this tiktok unboxing video script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok unboxing video script?',
       answer:
         'A tiktok unboxing video script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

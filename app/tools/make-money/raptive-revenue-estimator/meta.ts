@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'Multiply your monthly pageviews by your page RPM and divide by 1000. Example: 120,000 pageviews × $30 RPM ÷ 1000 = an estimated $3,600/month. RPM is niche- and geography-dependent — typical Raptive RPMs fall around $20-$50 — so treat the default 30 as a benchmark estimate, and remember Raptive generally wants about 100,000 monthly pageviews before you can join.',
     },
     {
-      question: 'How does the raptive earnings calculator work?',
-      answer:
-        'Enter your details using the inputs above and the raptive earnings calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the raptive earnings calculator free to use?',
-      answer:
-        'Yes - this raptive earnings calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a raptive earnings calculator?',
       answer:
         'A raptive earnings calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

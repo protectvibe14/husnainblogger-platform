@@ -106,16 +106,6 @@ export const content: ToolContent = {
         'It inserts your page type into 24 hand-written post ideas (8 per goal), picking 5 deterministically from your inputs — no AI involved. Drafts are front-loaded for feed truncation as best practice; the 63,206-character technical maximum is noted but not a target.',
     },
     {
-      question: 'How does the facebook post ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook post ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook post ideas free to use?',
-      answer:
-        'Yes - this facebook post ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook post ideas?',
       answer:
         'A facebook post ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

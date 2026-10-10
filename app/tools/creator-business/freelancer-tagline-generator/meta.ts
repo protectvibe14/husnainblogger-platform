@@ -93,16 +93,6 @@ export const content: ToolContent = {
         "It is pattern-based, not AI: your keywords are inserted into 24 fixed sentence templates (8 per tone), producing 8 taglines per keyword. It does not check whether a tagline is already used by another brand, so verify before adopting one.",
     },
     {
-      question: 'How does the freelancer tagline ideas work?',
-      answer:
-        'Enter your details using the inputs above and the freelancer tagline ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelancer tagline ideas free to use?',
-      answer:
-        'Yes - this freelancer tagline ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelancer tagline ideas?',
       answer:
         'A freelancer tagline ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

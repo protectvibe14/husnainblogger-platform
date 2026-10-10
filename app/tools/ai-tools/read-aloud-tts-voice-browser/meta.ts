@@ -51,9 +51,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Free Text-to-Speech Reader',
+  title: 'Text-to-Speech Reader',
   description:
-    'Read text aloud free in your browser — pick a device voice, adjust rate and pitch Uses your browser\u2019s built-in speech engine, nothing to download.',
+    'Read text aloud with this free text-to-speech reader — pick a device voice, adjust rate and pitch, all in your browser. Nothing to download. Try it now!',
   howTo: [
     'Paste up to 5,000 characters of text into the box.',
     'Pick a voice from the list (loaded from your device), or leave the default.',
@@ -100,16 +100,6 @@ export const content: ToolContent = {
       question: 'Why does long text stop halfway?',
       answer:
         'Some browsers cap a single utterance\u2019s length. Split long text into a few paragraphs and read them one at a time.',
-    },
-    {
-      question: 'How does the read aloud text to speech work?',
-      answer:
-        'Enter your details using the inputs above and the read aloud text to speech calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the read aloud text to speech free to use?',
-      answer:
-        'Yes - this read aloud text to speech is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

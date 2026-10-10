@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'It uses fixed string rules, not AI: known tricky words map to proven respellings from a 24-word bank, and unknown words are split into syllables by a deterministic heuristic with stress variants. A simplified stress hint (CAPS = stressed syllable, not true IPA) guides you. It cannot hear or verify your TTS output — every suggestion must be tested with a short preview.',
     },
     {
-      question: 'How does the ai voice pronunciation fixer work?',
-      answer:
-        'Enter your details using the inputs above and the ai voice pronunciation fixer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai voice pronunciation fixer free to use?',
-      answer:
-        'Yes - this ai voice pronunciation fixer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai voice pronunciation fixer?',
       answer:
         'An ai voice pronunciation fixer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

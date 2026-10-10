@@ -100,16 +100,6 @@ export const content: ToolContent = {
       answer:
         'Yes — completely free, no signup. It runs in your browser using fixed templates.',
     },
-    {
-      question: 'How does the ai headshot prompt work?',
-      answer:
-        'Enter your details using the inputs above and the ai headshot prompt calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai headshot prompt free to use?',
-      answer:
-        'Yes - this ai headshot prompt is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Prompts are template-assembled text — review the wording and adjust details (age, ethnicity, accessories) for your needs.',

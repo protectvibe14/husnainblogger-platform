@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'You enter a topic and a slide count (2–35). The planner assigns Slide 1 as the cover hook and the last slide as the CTA, then fills the middle with value slides cycling through 8 fixed templates. Requests above 35 slides are clamped to TikTok\'s Photo Mode cap with an honest note. It produces a text plan — you supply the photos.',
     },
     {
-      question: 'How does the tiktok photo carousel ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok photo carousel ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok photo carousel ideas free to use?',
-      answer:
-        'Yes - this tiktok photo carousel ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok photo carousel ideas?',
       answer:
         'A tiktok photo carousel ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

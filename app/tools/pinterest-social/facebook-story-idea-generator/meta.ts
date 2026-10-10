@@ -33,7 +33,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Facebook Story Ideas',
   description:
-    'Post Facebook Stories worth tapping through: pick poll, Q&A, behind the scenes, or promo for 8 ready-to-film ideas with frames and sticker suggestions.',
+    'Post Facebook Stories worth tapping through: pick poll, Q&A, behind the scenes, or promo for 8 ready-to-film ideas with sticker suggestions. Start now!',
   howTo: [
     'Choose your story goal: poll, Q&A, behind the scenes, or promo.',
     'Run the tool to get 8 story ideas for that goal.',
@@ -74,16 +74,6 @@ export const content: ToolContent = {
       question: 'How does a facebook story ideas work?',
       answer:
         'You select a goal and the tool pulls 8 ideas from a fixed library for that goal — each with a concept, 3–5 frame prompts, and a matching sticker. No AI is used, so results are the same every time for the same goal.',
-    },
-    {
-      question: 'How does the facebook story ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook story ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook story ideas free to use?',
-      answer:
-        'Yes - this facebook story ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a facebook story ideas?',

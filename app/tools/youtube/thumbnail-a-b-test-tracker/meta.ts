@@ -49,16 +49,6 @@ export const content: ToolContent = {
         'This tracker walks you through a 10-step checklist: describe variants A/B (or C), record impressions and clicks from YouTube Studio, validate the numbers, and apply the winner rule. The helper computes CTR per variant and declares a winner only at full sample; below the sample rule the verdict is "inconclusive".',
     },
     {
-      question: 'How does the youtube thumbnail ab test tracker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube thumbnail ab test tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube thumbnail ab test tracker free to use?',
-      answer:
-        'Yes - this youtube thumbnail ab test tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube thumbnail ab test tracker?',
       answer:
         'A youtube thumbnail ab test tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

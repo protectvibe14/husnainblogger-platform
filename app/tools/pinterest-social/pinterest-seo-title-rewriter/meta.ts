@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'Long titles get cut off in Pinterest feeds and search results, so the tool drops any pattern that exceeds 100 characters after filling in your keyword and draft. Short, front-loaded titles stay fully readable everywhere your pin appears.',
     },
     {
-      question: 'How does the pinterest seo work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest seo calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest seo free to use?',
-      answer:
-        'Yes - this pinterest seo is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a pinterest seo?',
       answer:
         'A pinterest seo is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Text Summarizer',
   description:
-    'Summarize long articles into one line, 3 bullets, or a short paragraph with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Summarize long articles with this AI text summarizer — one line, 3 bullets, or a short paragraph using your own free Gemini key. Try it now!',
   howTo: [
     'Pick a summary length: one line, 3 bullets, or a short paragraph.',
     'Paste the text (at least 50 characters, up to 8,000).',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'Does it store or train on my text?',
       answer:
         'Not on our side — we have no backend to store it with. What the provider does with API content is governed by that provider\'s own policy; avoid pasting sensitive or confidential text.',
-    },
-    {
-      question: 'How does the ai text summarizer work?',
-      answer:
-        'Enter your details using the inputs above and the ai text summarizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai text summarizer free to use?',
-      answer:
-        'Yes - this ai text summarizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

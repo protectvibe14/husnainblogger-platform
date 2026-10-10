@@ -121,16 +121,6 @@ export const content: ToolContent = {
         'It assembles your disclosure from a fixed bank of proven disclosure templates — here, 12 templates covering three placements, two tones, and named or generic programs. Your program names are filled into the chosen template, and you get both plain text and an escaped HTML paragraph.',
     },
     {
-      question: 'How does the affiliate disclosure generator work?',
-      answer:
-        'Enter your details using the inputs above and the affiliate disclosure generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the affiliate disclosure generator free to use?',
-      answer:
-        'Yes - this affiliate disclosure generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an affiliate disclosure generator?',
       answer:
         'An affiliate disclosure generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

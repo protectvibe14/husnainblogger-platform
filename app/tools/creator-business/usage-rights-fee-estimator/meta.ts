@@ -88,7 +88,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Usage Rights Calculator Photography',
   description:
-    'Estimate photo usage-rights fees from your base fee and your own duration, territory, and channel multipliers. No rate tables — free forever.',
+    'Estimate photography usage rights fees free — base fee times your duration, territory, and channel multipliers. Estimate yours now!',
   howTo: [
     'Enter your base creative fee — what you charge to produce the work.',
     'Enter the usage duration in months for context in the breakdown.',
@@ -151,16 +151,6 @@ export const content: ToolContent = {
       question: 'How to calculate usage rights calculator photography?',
       answer:
         'Multiply your base creative fee by the factors you choose for duration, territory, and media channel, then add any exclusivity add-on. For example, a $500 fee with a combined ×6 factor gives a $3,000 usage fee. This tool runs that exact math from your inputs.',
-    },
-    {
-      question: 'How does the usage rights calculator photography work?',
-      answer:
-        'Enter your details using the inputs above and the usage rights calculator photography calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the usage rights calculator photography free to use?',
-      answer:
-        'Yes - this usage rights calculator photography is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an usage rights calculator photography?',

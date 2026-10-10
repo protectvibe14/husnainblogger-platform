@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'It filters a fixed bank of 43 onboarding questions down to the sections and service-specific questions you select. Nothing is written by AI; the tool only groups and numbers the curated questions for you.',
     },
     {
-      question: 'How does the client onboarding questionnaire template work?',
-      answer:
-        'Enter your details using the inputs above and the client onboarding questionnaire template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the client onboarding questionnaire template free to use?',
-      answer:
-        'Yes - this client onboarding questionnaire template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a client onboarding questionnaire template?',
       answer:
         'A client onboarding questionnaire template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

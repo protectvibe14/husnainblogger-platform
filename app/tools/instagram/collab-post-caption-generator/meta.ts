@@ -74,16 +74,6 @@ export const content: ToolContent = {
         'Generate a caption, keep the #ad or #paidpartnership label near the start, tag your partner with the Collab invite feature in Instagram so the post shows on both profiles, and tag the paid partnership in Advanced settings when it is paid.',
     },
     {
-      question: 'How does the instagram collab post caption work?',
-      answer:
-        'Enter your details using the inputs above and the instagram collab post caption calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram collab post caption free to use?',
-      answer:
-        'Yes - this instagram collab post caption is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram collab post caption?',
       answer:
         'An instagram collab post caption is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

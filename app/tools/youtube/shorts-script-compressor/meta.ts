@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'You paste a draft and set target seconds and words per minute. The tool computes a word budget, keeps your first sentence as the hook, then fills the budget with your most keyword-dense sentences and appends a fixed CTA. Every keep/drop decision is shown in the cut list with its reason — keyword counting, not AI summarization.',
     },
     {
-      question: 'How does the youtube shorts script template work?',
-      answer:
-        'Enter your details using the inputs above and the youtube shorts script template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube shorts script template free to use?',
-      answer:
-        'Yes - this youtube shorts script template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube shorts script template?',
       answer:
         'A youtube shorts script template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

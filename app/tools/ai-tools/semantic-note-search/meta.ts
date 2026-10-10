@@ -100,16 +100,6 @@ export const content: ToolContent = {
         'No. A 22 MB on-device model is a lightweight similarity engine, not a large language model. It finds related notes well; it does not understand, summarize or answer questions.',
     },
     {
-      question: 'How does the semantic search notes work?',
-      answer:
-        'Enter your details using the inputs above and the semantic search notes calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the semantic search notes free to use?',
-      answer:
-        'Yes - this semantic search notes is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a semantic search notes?',
       answer:
         'A semantic search notes is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

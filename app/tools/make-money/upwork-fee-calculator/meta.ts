@@ -84,16 +84,6 @@ export const content: ToolContent = {
         'Multiply your contract amount by your service fee rate (0–15% depending on the contract type), then subtract the fee from the contract amount to get your net payout. Do not forget the pre-sale bidding cost: each Connect you spent costs about $0.15.',
     },
     {
-      question: 'How does the upwork fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the upwork fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the upwork fee calculator free to use?',
-      answer:
-        'Yes - this upwork fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an upwork fee calculator?',
       answer:
         'An upwork fee calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

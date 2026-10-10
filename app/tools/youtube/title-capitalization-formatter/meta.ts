@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'It applies fixed capitalization rules to your text: Title Case capitalizes the first and last word and all major words; Sentence case capitalizes only the first word; ALL CAPS and lowercase transform everything. This tool adds acronym preservation and grapheme-aware character counting, so emoji-heavy titles are measured by visible characters.',
     },
     {
-      question: 'How does the youtube title capitalization tool work?',
-      answer:
-        'Enter your details using the inputs above and the youtube title capitalization tool calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube title capitalization tool free to use?',
-      answer:
-        'Yes - this youtube title capitalization tool is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube title capitalization tool?',
       answer:
         'A youtube title capitalization tool is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

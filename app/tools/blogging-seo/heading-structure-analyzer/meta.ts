@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'It parses your HTML for h1–h6 tags, then applies fixed rules: it flags a missing or duplicated H1, any jump that skips a level, empty headings, and repeated heading text, deducting points per issue from a starting score of 100.',
     },
     {
-      question: 'How does the heading hierarchy checker work?',
-      answer:
-        'Enter your details using the inputs above and the heading hierarchy checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the heading hierarchy checker free to use?',
-      answer:
-        'Yes - this heading hierarchy checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a heading hierarchy checker?',
       answer:
         'A heading hierarchy checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

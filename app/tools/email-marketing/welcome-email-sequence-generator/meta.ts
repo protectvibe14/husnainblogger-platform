@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Welcome Email Sequence Generator',
   description:
-    'Welcome new subscribers like you mean it: enter your brand, lead magnet, and email count for subject lines plus full drafts for every email.',
+    'Welcome new subscribers like you mean it: enter your brand, lead magnet, and email count for subject lines plus full drafts for every email. Try it now!',
   howTo: [
     'Enter your brand name in the brand field.',
     'Describe your lead magnet — the freebie new subscribers receive.',
@@ -105,16 +105,6 @@ export const content: ToolContent = {
       question: 'How does a welcome email sequence generator work?',
       answer:
         'It combines your brand, lead magnet, and tone with a fixed library of subject and body templates arranged in a proven welcome arc (delivery → introduction → quick win → proof → offer → FAQ → recap). Selection is deterministic: identical inputs always produce the identical sequence.',
-    },
-    {
-      question: 'How does the welcome email sequence generator work?',
-      answer:
-        'Enter your details using the inputs above and the welcome email sequence generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the welcome email sequence generator free to use?',
-      answer:
-        'Yes - this welcome email sequence generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a welcome email sequence generator?',

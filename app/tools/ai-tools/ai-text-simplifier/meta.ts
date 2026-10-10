@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Text Simplifier',
   description:
-    'Rewrite complex text in plain, easy, or kid-friendly language with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Simplify complex text free with AI — rewrite any content at the exact reading level you pick. Paste yours and simplify now!',
   howTo: [
     'Pick a reading level: plain language, easy read, or kid-friendly.',
     'Paste the text (at least 50 characters, up to 8,000).',
@@ -69,16 +69,6 @@ export const content: ToolContent = {
       question: 'Can I use simplified text for legal or medical content?',
       answer:
         'No — simplification drops nuance. Use the original for legal, medical, or technical decisions.',
-    },
-    {
-      question: 'How does the ai text simplifier work?',
-      answer:
-        'Enter your details using the inputs above and the ai text simplifier calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai text simplifier free to use?',
-      answer:
-        'Yes - this ai text simplifier is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an ai text simplifier?',

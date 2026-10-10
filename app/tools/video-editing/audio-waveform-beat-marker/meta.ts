@@ -89,16 +89,6 @@ export const content: ToolContent = {
         'This one works on numbers, not audio files: it normalizes your amplitude series, keeps local maxima above mean + k·std (k depends on your low/med/high sensitivity), enforces a 100 ms gap between peaks, and lists each peak’s time and strength. Real waveform rendering from an uploaded file is the app shell’s job — the logic here is pure math on the values you paste.',
     },
     {
-      question: 'How does the audio waveform visualizer work?',
-      answer:
-        'Enter your details using the inputs above and the audio waveform visualizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the audio waveform visualizer free to use?',
-      answer:
-        'Yes - this audio waveform visualizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an audio waveform visualizer?',
       answer:
         'An audio waveform visualizer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

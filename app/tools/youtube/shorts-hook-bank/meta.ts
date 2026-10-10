@@ -100,16 +100,6 @@ export const content: ToolContent = {
         'You enter a topic and choose a style (question, bold claim, visual, or loop). The tool fills your topic into hand-written hook templates and serves them in bank order with template attribution. These are fixed formulas, not AI-generated lines, so quality is your judgment — test them with real viewers.',
     },
     {
-      question: 'How does the youtube shorts hook ideas work?',
-      answer:
-        'Enter your details using the inputs above and the youtube shorts hook ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube shorts hook ideas free to use?',
-      answer:
-        'Yes - this youtube shorts hook ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube shorts hook ideas?',
       answer:
         'A youtube shorts hook ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

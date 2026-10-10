@@ -46,7 +46,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Twitter Poll Ideas',
   description:
-    'Run X polls people actually vote on: enter any topic, pick a duration from 5 minutes to 7 days, for a sharp question plus 4 multiple-choice options.',
+    'Run X polls people actually vote on: enter any topic, pick a duration from 5 minutes to 7 days, for a sharp question plus 4 options. Try it now!',
   howTo: [
     'Type your poll topic in the Poll topic field (for example, "morning routines").',
     'Choose a Poll duration — 5 minutes, 1 hour, 24 hours, or 7 days (24 hours is the default).',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'How does a twitter poll ideas work?',
       answer:
         'You enter a topic and duration; the tool picks a matching question template and option set from its fixed library and checks everything against X\'s poll limits. Nothing is AI-generated — the ideas come from hand-written templates, so re-running the same topic gives the same result.',
-    },
-    {
-      question: 'How does the twitter poll ideas work?',
-      answer:
-        'Enter your details using the inputs above and the twitter poll ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the twitter poll ideas free to use?',
-      answer:
-        'Yes - this twitter poll ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a twitter poll ideas?',

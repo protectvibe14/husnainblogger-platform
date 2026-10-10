@@ -103,16 +103,6 @@ export const content: ToolContent = {
         'This tool works as a static idea bank: it deterministically picks transitions from a fixed 24-idea bank based on your niche and the count you request. It does not edit or render video — transitions marked "Needs CapCut or manual editing" must be finished in an editor rather than the TikTok app.',
     },
     {
-      question: 'How does the tiktok transition ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok transition ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok transition ideas free to use?',
-      answer:
-        'Yes - this tiktok transition ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok transition ideas?',
       answer:
         'A tiktok transition ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

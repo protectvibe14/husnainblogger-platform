@@ -95,16 +95,6 @@ export const content: ToolContent = {
         'It is pure arithmetic, not AI: transitions are subtracted from the total (non-overlapping model), then the remaining hold time is split equally or weighted by character counts, allocated in whole milliseconds with the largest-remainder method. If transitions would eat the whole duration, it errors instead of producing an impossible plan.',
     },
     {
-      question: 'How does the slideshow timing calculator work?',
-      answer:
-        'Enter your details using the inputs above and the slideshow timing calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the slideshow timing calculator free to use?',
-      answer:
-        'Yes - this slideshow timing calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a slideshow timing calculator?',
       answer:
         'A slideshow timing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

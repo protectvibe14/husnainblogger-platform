@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Lead Magnet Ideas Generator',
   description:
-    'Brainstorm lead magnets worth downloading: enter your niche and audience for up to 20 titled ideas across 5 formats, each with the reason it converts.',
+    'Brainstorm lead magnets worth downloading: enter your niche for up to 20 titled ideas across 5 formats, each with the reason it converts. Start now!',
   howTo: [
     'Enter your niche (e.g. email marketing) and your target audience (e.g. bloggers).',
     'Optionally lock a format — ebook, checklist, template, video, or email course — or leave "any" to mix them.',
@@ -90,16 +90,6 @@ export const content: ToolContent = {
       question: 'How does a lead magnet ideas generator work?',
       answer:
         'It fills fixed title patterns with your niche and audience, assigns each idea a format (or cycles through all five), and attaches a general "why it converts" reason per format. Every idea is assembled from template banks — nothing is written by AI.',
-    },
-    {
-      question: 'How does the lead magnet ideas generator work?',
-      answer:
-        'Enter your details using the inputs above and the lead magnet ideas generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the lead magnet ideas generator free to use?',
-      answer:
-        'Yes - this lead magnet ideas generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a lead magnet ideas generator?',

@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'Create a broadcast channel from your Instagram profile, give it a clear name and description, then post consistently — updates, polls, and behind-the-scenes drops work well. Use this tool to draft the name, description, and your first three posts before you launch.',
     },
     {
-      question: 'How does the instagram broadcast channel ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram broadcast channel ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram broadcast channel ideas free to use?',
-      answer:
-        'Yes - this instagram broadcast channel ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram broadcast channel ideas?',
       answer:
         'An instagram broadcast channel ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

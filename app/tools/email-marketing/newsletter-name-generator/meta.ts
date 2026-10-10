@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'Yes — enter your blog’s niche and the tone your readers expect, then generate names that match your existing brand. Pair a winning name with one of the suggested taglines as your signup-page headline.',
     },
     {
-      question: 'How does the newsletter name generator work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter name generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter name generator free to use?',
-      answer:
-        'Yes - this newsletter name generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a newsletter name generator?',
       answer:
         'A newsletter name generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Pinterest Board Name Ideas',
   description:
-    "Name boards people actually search for: pick SEO, playful, or brand tone for keyword-led board names capped at Pinterest's 100-character limit.",
+    "Name boards people actually search for: pick SEO, playful, or brand tone for keyword-led board names capped at the 100-character limit. Try it now!",
   howTo: [
     'Type your niche keyword into the "Niche keyword" field (e.g. small kitchen organization).',
     'Choose a name tone: seo for search-friendly names, playful for personality, or brand for a curated look.',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'How does a pinterest board name ideas work?',
       answer:
         'It takes your niche keyword and tone, then fills hand-written name templates from a fixed 36-template bank — cycling in bank order, so results are fully deterministic. No AI is involved, and every name is capped at 100 characters.',
-    },
-    {
-      question: 'How does the pinterest board name ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest board name ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest board name ideas free to use?',
-      answer:
-        'Yes - this pinterest board name ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a pinterest board name ideas?',

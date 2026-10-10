@@ -142,16 +142,6 @@ export const content: ToolContent = {
         'Fill in the brand name, your name, and niche, add your follower count and engagement rate as you report them, optionally list past results, and choose a pitch angle. Run the tool, pick one of the 3 subject lines, copy the body, and personalize the final line — for example, mention a specific product you genuinely like — before sending.',
     },
     {
-      question: 'How does the brand pitch email template work?',
-      answer:
-        'Enter your details using the inputs above and the brand pitch email template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the brand pitch email template free to use?',
-      answer:
-        'Yes - this brand pitch email template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a brand pitch email template?',
       answer:
         'A brand pitch email template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

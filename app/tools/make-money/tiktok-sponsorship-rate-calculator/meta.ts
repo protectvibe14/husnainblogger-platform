@@ -29,7 +29,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: "Tiktok Sponsorship Rates",
   description:
-    "Estimate tiktok sponsorship rates with this free brand-deal calculator. Enter followers and average views for an honest per-video estimate range —.",
+    "Estimate TikTok sponsorship rates with this free brand-deal calculator: enter followers and average views for an honest per-video range. Check yours now!",
   howTo: [
     "Enter your TikTok follower count.",
     "Enter your average views per video (use recent videos, not one viral outlier).",
@@ -72,16 +72,6 @@ export const content: ToolContent = {
       question: "How to use tiktok sponsorship rates?",
       answer:
         "Enter your follower count and average views per video, then read the suggested range. Use it as a floor for brand-deal negotiations and adjust for your niche and engagement.",
-    },
-    {
-      question: 'How does the tiktok sponsorship rates work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok sponsorship rates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok sponsorship rates free to use?',
-      answer:
-        'Yes - this tiktok sponsorship rates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tiktok sponsorship rates?',

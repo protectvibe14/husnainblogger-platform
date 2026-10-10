@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'BPM & Key Detector: Free Online',
   description:
-    'Detect any track’s tempo (BPM) and musical key free, right in your browser. On-device audio analysis — no uploads, and no AI claims are made.',
+    'This free online BPM and key detector finds any track tempo and musical key in your browser — on-device audio analysis, no uploads. Start now!',
   howTo: [
     'Upload an audio file (MP3, WAV, OGG — under 50 MB).',
     'The tool decodes it locally and analyzes up to 2 minutes.',
@@ -89,16 +89,6 @@ export const content: ToolContent = {
       question: 'Is my audio uploaded?',
       answer:
         'No. The file is decoded with the Web Audio API on your device and never leaves your browser.',
-    },
-    {
-      question: 'How does the bpm detector online work?',
-      answer:
-        'Enter your details using the inputs above and the bpm detector online calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the bpm detector online free to use?',
-      answer:
-        'Yes - this bpm detector online is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a bpm detector online?',

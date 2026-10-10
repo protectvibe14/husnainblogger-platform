@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Pinterest Bio Ideas',
   description:
-    'Fit your whole story in 160 characters: enter your profile focus and keywords for short, searchable Pinterest bio variants complete with your CTA.',
+    'Fit your whole story in 160 characters: enter your profile focus and keywords for short, searchable Pinterest bio variants. Build yours today!',
   howTo: [
     'Describe your profile focus in the "Profile focus" field (e.g. easy weeknight dinners).',
     'Add optional keywords in the "Keywords" field, separated by commas.',
@@ -87,16 +87,6 @@ export const content: ToolContent = {
       question: 'How does a pinterest bio ideas work?',
       answer:
         'It takes your focus, keywords, and CTA, then fills 4 fixed hand-written bio patterns — keywords go first so trimming to 160 characters never cuts them. No AI is involved; the output is template assembly with your words inserted.',
-    },
-    {
-      question: 'How does the pinterest bio ideas work?',
-      answer:
-        'Enter your details using the inputs above and the pinterest bio ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the pinterest bio ideas free to use?',
-      answer:
-        'Yes - this pinterest bio ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a pinterest bio ideas?',

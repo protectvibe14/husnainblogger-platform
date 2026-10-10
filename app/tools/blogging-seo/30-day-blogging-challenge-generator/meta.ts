@@ -88,16 +88,6 @@ export const content: ToolContent = {
         'This generator assigns you one fixed daily blogging prompt for 30 days — from setup and writing tasks to SEO, promotion and review days — dated from your chosen start date. It is a fixed prompt bank, not AI coaching, so the same inputs always give the same plan.',
     },
     {
-      question: 'How does the 30 day blog challenge work?',
-      answer:
-        'Enter your details using the inputs above and the 30 day blog challenge calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the 30 day blog challenge free to use?',
-      answer:
-        'Yes - this 30 day blog challenge is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a 30 day blog challenge?',
       answer:
         'A 30 day blog challenge is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

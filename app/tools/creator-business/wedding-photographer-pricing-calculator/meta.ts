@@ -126,16 +126,6 @@ export const content: ToolContent = {
         'Multiply your coverage hours by your hourly rate for shooting labor, add your editing time (coverage hours × your editing-hours-per-hour estimate × your rate), then add extras like a second shooter, prints, and albums. The total is your package price — an estimate based on your own rates, which is what this tool computes.',
     },
     {
-      question: 'How does the wedding photography pricing calculator work?',
-      answer:
-        'Enter your details using the inputs above and the wedding photography pricing calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the wedding photography pricing calculator free to use?',
-      answer:
-        'Yes - this wedding photography pricing calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a wedding photography pricing calculator?',
       answer:
         'A wedding photography pricing calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

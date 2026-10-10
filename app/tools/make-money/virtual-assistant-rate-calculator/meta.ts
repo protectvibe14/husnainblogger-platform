@@ -105,16 +105,6 @@ export const content: ToolContent = {
         "Pick the experience level and task complexity, enter weekly hours, and multiply the hourly band by hours. For a realistic number, replace the estimate bands with rates you have actually seen in your market.",
     },
     {
-      question: 'How does the virtual assistant rates calculator work?',
-      answer:
-        'Enter your details using the inputs above and the virtual assistant rates calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the virtual assistant rates calculator free to use?',
-      answer:
-        'Yes - this virtual assistant rates calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a virtual assistant rates calculator?',
       answer:
         'A virtual assistant rates calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

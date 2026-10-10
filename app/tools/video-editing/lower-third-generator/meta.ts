@@ -97,16 +97,6 @@ export const content: ToolContent = {
         'A template engine, not AI: it fills fixed HTML/CSS templates with your name, title, and brand color, auto-shrinks the font if the name is long, computes fade-in/hold/fade-out timing from your duration, and estimates whether the text fits the safe area and can be read in time.',
     },
     {
-      question: 'How does the lower third generator work?',
-      answer:
-        'Enter your details using the inputs above and the lower third generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the lower third generator free to use?',
-      answer:
-        'Yes - this lower third generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a lower third generator?',
       answer:
         'A lower third generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -96,16 +96,6 @@ export const content: ToolContent = {
         'You add a caption seed per item (a word, phrase, or scenario), choose a tone, and the tool assembles captions from fixed template banks — openers, scenarios, emojis, and hashtag sets — then saves the bank in your browser. It never posts to TikTok for you.',
     },
     {
-      question: 'How does the tiktok pov captions work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok pov captions calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok pov captions free to use?',
-      answer:
-        'Yes - this tiktok pov captions is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok pov captions?',
       answer:
         'A tiktok pov captions is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

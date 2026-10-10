@@ -133,16 +133,6 @@ export const content: ToolContent = {
         'Amazon\'s fulfillment fee depends on a detailed size-and-weight tier table that changes — hardcoding it would mean silently wrong numbers. You look up your tier once in Amazon\'s official fee table and type it in; the calculator is honest about what it does not know.',
     },
     {
-      question: 'How does the amazon fba profit calculator work?',
-      answer:
-        'Enter your details using the inputs above and the amazon fba profit calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the amazon fba profit calculator free to use?',
-      answer:
-        'Yes - this amazon fba profit calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an amazon fba profit calculator?',
       answer:
         'An amazon fba profit calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

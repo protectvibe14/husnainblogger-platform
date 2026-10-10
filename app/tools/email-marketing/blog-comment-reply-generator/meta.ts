@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'No. It assembles drafts from a fixed library of 18 hand-written templates (3 tones × 6). That makes it deterministic and free, but it cannot understand nuance the way you can — always review drafts before posting.',
     },
     {
-      question: 'How does the blog comment reply generator work?',
-      answer:
-        'Enter your details using the inputs above and the blog comment reply generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog comment reply generator free to use?',
-      answer:
-        'Yes - this blog comment reply generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog comment reply generator?',
       answer:
         'A blog comment reply generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

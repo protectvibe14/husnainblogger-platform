@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'Describe what is visible in the photo (subject, action, setting), pick how many options you want, and generate. Copy the best option into the "Write alt text" field under Advanced settings when you post on Instagram.',
     },
     {
-      question: 'How does the instagram alt text generator work?',
-      answer:
-        'Enter your details using the inputs above and the instagram alt text generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram alt text generator free to use?',
-      answer:
-        'Yes - this instagram alt text generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram alt text generator?',
       answer:
         'An instagram alt text generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

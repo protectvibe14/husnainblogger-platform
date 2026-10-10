@@ -34,7 +34,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Meeting Notes Summarizer',
   description:
-    'Turn messy meeting notes into action items, key bullets, or minutes with your own free Gemini, Groq, or OpenRouter key., nothing uploaded.',
+    'Summarize meeting notes with AI — get action items, key bullets, or full minutes in the format you picked. Summarize yours now!',
   howTo: [
     'Pick an output format: action items, key bullets, or meeting minutes.',
     'Paste your raw meeting notes (at least 50 characters, up to 8,000).',
@@ -69,16 +69,6 @@ export const content: ToolContent = {
       question: 'Can I trust the action items?',
       answer:
         'Names and commitments are preserved as written, but nuance can be missed. Always verify against the original notes before assigning work.',
-    },
-    {
-      question: 'How does the ai meeting notes summarizer work?',
-      answer:
-        'Enter your details using the inputs above and the ai meeting notes summarizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai meeting notes summarizer free to use?',
-      answer:
-        'Yes - this ai meeting notes summarizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an ai meeting notes summarizer?',

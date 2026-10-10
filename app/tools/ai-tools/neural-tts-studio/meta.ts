@@ -62,9 +62,9 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'Free Text to Speech AI Voice',
+  title: 'AI Text to Speech Voice',
   description:
-    'Turn text into natural AI speech in your browser — free text-to-speech with 10 voices, speed control and WAV download.; works offline after load.',
+    'Turn text into a natural AI text to speech voice — generated 24 kHz WAV you can play in the browser or download. Try it now!',
   howTo: [
     'Type or paste your text (up to 5,000 characters) into the Text to speak field.',
     'Pick a voice from the 10 verified English voices — American or British, female or male.',
@@ -111,16 +111,6 @@ export const content: ToolContent = {
       question: 'Why does the first generation take so long?',
       answer:
         'The first run downloads the ~86 MB model and warms up your device\'s AI runtime. Later runs skip the download entirely and are much faster, especially in browsers with WebGPU (Chrome/Edge 113+).',
-    },
-    {
-      question: 'How does the free text to speech ai voice work?',
-      answer:
-        'Enter your details using the inputs above and the free text to speech ai voice calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the free text to speech ai voice free to use?',
-      answer:
-        'Yes - this free text to speech ai voice is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'You paste your article and a list of target pages with keywords. The tool searches the text for each keyword (case-insensitive), skips anything inside existing links, and returns the matched keyword, the target URL, and the surrounding sentence as context.',
     },
     {
-      question: 'How does the internal link finder work?',
-      answer:
-        'Enter your details using the inputs above and the internal link finder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the internal link finder free to use?',
-      answer:
-        'Yes - this internal link finder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an internal link finder?',
       answer:
         'An internal link finder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

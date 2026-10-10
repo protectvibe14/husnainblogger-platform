@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'EEAT Checklist',
   description:
-    'Free EEAT checklist 2026: audit any article, review, guide or page against E-E-A-T trust signals with a copyable Markdown checklist. —.',
+    'Generate an E-E-A-T SEO checklist free — one row per check with exactly what to verify and how to do it. Generate yours now!',
   howTo: [
     'Pick your content type: article, review, guide or homepage (defaults to article).',
     'Run the tool to get your E-E-A-T checklist with one-line how-tos per check.',

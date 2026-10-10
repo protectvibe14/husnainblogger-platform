@@ -108,16 +108,6 @@ export const content: ToolContent = {
         'You pick which of the 3 series emails to build, enter your store and product, and the tool returns a fixed template with placeholders intact plus 4 subject options and a placeholder reference list. You fill in the placeholders with your platform’s merge tags — the tool sends nothing itself.',
     },
     {
-      question: 'How does the abandoned cart email template work?',
-      answer:
-        'Enter your details using the inputs above and the abandoned cart email template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the abandoned cart email template free to use?',
-      answer:
-        'Yes - this abandoned cart email template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an abandoned cart email template?',
       answer:
         'An abandoned cart email template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

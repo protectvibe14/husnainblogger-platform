@@ -104,16 +104,6 @@ export const content: ToolContent = {
         'You provide a series title, episode count, and goal. The tool picks a matching set of hand-written hook templates, assigns one hook and one story beat per episode — premise first, payoff last — and summarizes the arc so you can see the whole series at a glance.',
     },
     {
-      question: 'How does the instagram reels series ideas work?',
-      answer:
-        'Enter your details using the inputs above and the instagram reels series ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram reels series ideas free to use?',
-      answer:
-        'Yes - this instagram reels series ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram reels series ideas?',
       answer:
         'An instagram reels series ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

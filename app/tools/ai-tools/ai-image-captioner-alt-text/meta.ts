@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'The browser downloads ~350 MB of model weights the first time. After that the model is cached and later runs start much faster, even offline.',
     },
     {
-      question: 'How does the ai image caption generator work?',
-      answer:
-        'Enter your details using the inputs above and the ai image caption generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai image caption generator free to use?',
-      answer:
-        'Yes - this ai image caption generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai image caption generator?',
       answer:
         'An ai image caption generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

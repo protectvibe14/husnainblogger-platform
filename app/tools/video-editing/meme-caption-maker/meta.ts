@@ -83,16 +83,6 @@ export const content: ToolContent = {
         "You choose a template and type top and bottom captions; the tool assigns the template's font, colors, and text positions and computes the font size, shrinking long captions to fit. The spec is then rendered as an image by the page preview — the logic itself never draws pixels.",
     },
     {
-      question: 'How does the meme text generator work?',
-      answer:
-        'Enter your details using the inputs above and the meme text generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the meme text generator free to use?',
-      answer:
-        'Yes - this meme text generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a meme text generator?',
       answer:
         'A meme text generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'XML Sitemap Generator',
   description:
-    'Turn your URL list into a valid XML sitemap that search engines can read. Paste up to 50,000 URLs with dates and priorities. Free.',
+    'Generate a free XML sitemap for your site — the complete sitemap file, ready to save as sitemap.xml in seconds. Generate yours now!',
   howTo: [
     'Paste your "URL list" — one absolute URL per line, optionally followed by | lastmod | changefreq | priority.',
     'Use YYYY-MM-DD for lastmod, a changefreq like daily or weekly, and a priority from 0.0 to 1.0.',
@@ -102,16 +102,6 @@ export const content: ToolContent = {
       question: 'How does a xml sitemap generator work?',
       answer:
         'It takes the URL list you paste, validates each entry against the sitemap protocol (absolute URLs, real dates, valid priorities), and assembles them into the standard XML format. Nothing is crawled or invented by AI — every URL comes from your own list.',
-    },
-    {
-      question: 'How does the xml sitemap generator work?',
-      answer:
-        'Enter your details using the inputs above and the xml sitemap generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the xml sitemap generator free to use?',
-      answer:
-        'Yes - this xml sitemap generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a xml sitemap generator?',

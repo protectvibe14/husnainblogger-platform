@@ -65,7 +65,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Old Photo Restorer: Free Online',
   description:
-    'Clean up old scanned photos free: auto-contrast, fade correction and dust reduction with classic filters. No AI claims — runs in your browser.',
+    'Restore old photos free with AI — pick enhancement filters and download the restored photo as a PNG, free. Restore yours now!',
   howTo: [
     'Upload a scanned old photo (JPG or PNG, under 25 MB).',
     'Toggle the filters: auto-contrast, fade correction, dust reduction, 2x upscale.',
@@ -107,16 +107,6 @@ export const content: ToolContent = {
       question: 'Can it fix tears or missing pieces?',
       answer:
         'No. Filters enhance what is there — they cannot invent missing content. Tears, stains over faces and severe blur need a professional restoration service.',
-    },
-    {
-      question: 'How does the old photo restorer work?',
-      answer:
-        'Enter your details using the inputs above and the old photo restorer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the old photo restorer free to use?',
-      answer:
-        'Yes - this old photo restorer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an old photo restorer?',

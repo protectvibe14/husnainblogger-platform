@@ -108,16 +108,6 @@ export const content: ToolContent = {
         'This one fills your topic and keyword into a fixed bank of five proven description templates — no AI writing involved. It then analyzes character length (unicode-safe) against the widely published 140–160 character SERP convention and checks whether your keyword appears. Note: Google may rewrite descriptions itself, so treat the convention as guidance, not a guarantee.',
     },
     {
-      question: 'How does the meta description generator work?',
-      answer:
-        'Enter your details using the inputs above and the meta description generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the meta description generator free to use?',
-      answer:
-        'Yes - this meta description generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a meta description generator?',
       answer:
         'A meta description generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

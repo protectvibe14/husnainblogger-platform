@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Ai Audio Transcriber',
   description:
-    'Transcribe audio free with AI in your browser — MP3, WAV, M4A to text.txt download Speech recognition runs 100% on your device.',
+    'Transcribe audio to text free with AI — speech shown on screen for reading and copying with instant results. Transcribe yours now!',
   howTo: [
     'Drop an audio file (MP3, WAV, M4A, OGG, WEBM or FLAC up to 25 MB) onto the upload area, or click to browse.',
     'Pick Tiny for a fast ~39 MB model, or Base (~74 MB) for more accurate transcription.',
@@ -95,16 +95,6 @@ export const content: ToolContent = {
       question: 'How long an audio file can I transcribe?',
       answer:
         'Files up to 25 MB — roughly an hour of MP3 or a few minutes of uncompressed WAV. Audio is processed in 30-second chunks, so length only affects processing time.',
-    },
-    {
-      question: 'How does the ai audio transcriber work?',
-      answer:
-        'Enter your details using the inputs above and the ai audio transcriber calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai audio transcriber free to use?',
-      answer:
-        'Yes - this ai audio transcriber is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

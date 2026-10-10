@@ -78,16 +78,6 @@ export const content: ToolContent = {
         'It slots your product and benefit into a fixed bank of 18 proven headline templates, then compresses each result at a word boundary so none exceed 40 characters. No AI is involved — the same inputs always return the same headlines.',
     },
     {
-      question: 'How does the facebook ad headline ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook ad headline ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook ad headline ideas free to use?',
-      answer:
-        'Yes - this facebook ad headline ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook ad headline ideas?',
       answer:
         'A facebook ad headline ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

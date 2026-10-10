@@ -77,16 +77,6 @@ export const content: ToolContent = {
         'Build a short, specific freebie around one outcome, plan it with this checklist, gate it behind an opt-in form on a relevant page, and deliver it instantly by email. Follow up with a short sequence that turns downloaders into buyers.',
     },
     {
-      question: 'How does the lead magnet checklist template work?',
-      answer:
-        'Enter your details using the inputs above and the lead magnet checklist template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the lead magnet checklist template free to use?',
-      answer:
-        'Yes - this lead magnet checklist template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a lead magnet checklist template?',
       answer:
         'A lead magnet checklist template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

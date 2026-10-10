@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Email CTA Generator',
   description:
-    'Write CTA buttons people actually click: describe the action, pick from 4 tones, and get verb-first button copy capped at your chosen word count.',
+    'Generate email CTA buttons people actually click with this email CTA generator — describe the action, pick a tone, and get verb-first button copy. Try it now!',
   howTo: [
     'Describe the action your button triggers (e.g. "free guide").',
     'Optionally add your audience and pick a tone: direct, friendly, urgent, or playful.',
@@ -89,16 +89,6 @@ export const content: ToolContent = {
       question: 'How does an email cta generator work?',
       answer:
         'This one combines your action with bundled verb-first button templates and applies tone modifiers in a fixed, deterministic order — no AI. Every option is checked against your word limit, and long labels get a mobile tap-width warning.',
-    },
-    {
-      question: 'How does the email cta generator work?',
-      answer:
-        'Enter your details using the inputs above and the email cta generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email cta generator free to use?',
-      answer:
-        'Yes - this email cta generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an email cta generator?',

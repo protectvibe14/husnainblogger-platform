@@ -35,7 +35,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'AI Paraphraser & Rewriter',
   description:
-    'Rewrite any text in a professional, casual, or academic tone with your own free Gemini, Groq, or OpenRouter key. Meaning preserved needed.',
+    'Rewrite text with this AI paraphraser & rewriter — professional, casual, or academic tone, meaning preserved, using your own free Gemini key. Try it now!',
   howTo: [
     'Pick a tone: professional, casual, or academic.',
     'Paste the text you want rewritten (10 to 6,000 characters).',
@@ -81,16 +81,6 @@ export const content: ToolContent = {
       question: 'How long can the text be?',
       answer:
         'Between 10 and 6,000 characters per rewrite. Longer passages can be split and rewritten in parts.',
-    },
-    {
-      question: 'How does the ai paraphrasing tool work?',
-      answer:
-        'Enter your details using the inputs above and the ai paraphrasing tool calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai paraphrasing tool free to use?',
-      answer:
-        'Yes - this ai paraphrasing tool is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

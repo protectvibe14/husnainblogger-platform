@@ -105,16 +105,6 @@ export const content: ToolContent = {
         'Add one row per tier with its name, hours of coverage, shooters, and deliverables. Enter your base price and any add-on prices per tier, set an optional bundle discount %, then run the tool. Copy the summary document into your proposal or price sheet, and adjust any tier that does not convert.',
     },
     {
-      question: 'How does the wedding videography pricing packages work?',
-      answer:
-        'Enter your details using the inputs above and the wedding videography pricing packages calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the wedding videography pricing packages free to use?',
-      answer:
-        'Yes - this wedding videography pricing packages is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a wedding videography pricing packages?',
       answer:
         'A wedding videography pricing packages is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -80,16 +80,6 @@ export const content: ToolContent = {
         'This planner applies fixed layout math: it sizes the facecam as a fraction of a standard canvas, insets it from the edges, and checks the corner against known platform UI zones (like the TikTok right rail). It plans rectangles — it does not analyze or edit your video.',
     },
     {
-      question: 'How does the reaction video layout planner work?',
-      answer:
-        'Enter your details using the inputs above and the reaction video layout planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the reaction video layout planner free to use?',
-      answer:
-        'Yes - this reaction video layout planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a reaction video layout planner?',
       answer:
         'A reaction video layout planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

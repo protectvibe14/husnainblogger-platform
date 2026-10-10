@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'It maps fixed launch milestones - like setting up hosting, writing cornerstone posts, and sending your first newsletter - onto your actual launch date using date arithmetic. You get a dated action plan instead of a generic to-do list.',
     },
     {
-      question: 'How does the blog launch checklist work?',
-      answer:
-        'Enter your details using the inputs above and the blog launch checklist calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog launch checklist free to use?',
-      answer:
-        'Yes - this blog launch checklist is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog launch checklist?',
       answer:
         'A blog launch checklist is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

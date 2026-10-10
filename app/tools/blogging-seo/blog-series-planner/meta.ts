@@ -42,7 +42,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Blog Series Planner',
   description:
-    'Map out a multi-part blog series in minutes with this blog series planner — 2-12 parts structured with titles, slugs, and smart linking notes.',
+    'Plan a blog series free — get a suggested overarching title plus a structured plan for the whole series. Plan yours now!',
   howTo: [
     'Type your series topic into the Series topic field (2–120 characters).',
     'Enter how many installments you want (a whole number from 2 to 12).',
@@ -79,16 +79,6 @@ export const content: ToolContent = {
       question: 'How to plan a blog series?',
       answer:
         'Start with one clear topic, decide on 2–12 installments, and give the series a narrative arc: overview first, foundations and process in the middle, action items and conclusion last. Enter your topic above and the planner lays that arc out for you — then rewrite the suggested titles for your audience before publishing.',
-    },
-    {
-      question: 'How does the blog series planner work?',
-      answer:
-        'Enter your details using the inputs above and the blog series planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog series planner free to use?',
-      answer:
-        'Yes - this blog series planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a blog series planner?',

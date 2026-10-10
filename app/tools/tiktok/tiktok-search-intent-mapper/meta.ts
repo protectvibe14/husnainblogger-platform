@@ -63,7 +63,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 export const content: ToolContent = {
-  title: 'What People Search on TikTok',
+  title: 'TikTok Search Intent Mapper',
   description: DESCRIPTION,
   howTo: [
     'Type the exact phrase a viewer might search — e.g. "best budget mic" or "ramen near me".',
@@ -111,16 +111,6 @@ export const content: ToolContent = {
       question: 'How does a what people search on tiktok work?',
       answer:
         'This tool matches your phrase against 75 fixed trigger words across 5 intents and scores each one. Strong signals get a high-confidence single intent; weak or mixed signals show the top-2 intents as a blend. It uses word-bank matching, not TikTok search data.',
-    },
-    {
-      question: 'How does the what people search on tiktok work?',
-      answer:
-        'Enter your details using the inputs above and the what people search on tiktok calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the what people search on tiktok free to use?',
-      answer:
-        'Yes - this what people search on tiktok is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a what people search on tiktok?',

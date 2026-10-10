@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'Choose your asset type, enter the sponsor type and your ask, and pick a tone. The tool assembles subject lines, a pitch email, and a follow-up nudge from a fixed template bank — then you personalize it before sending.',
     },
     {
-      question: 'How does the sponsorship email pitch generator work?',
-      answer:
-        'Enter your details using the inputs above and the sponsorship email pitch generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sponsorship email pitch generator free to use?',
-      answer:
-        'Yes - this sponsorship email pitch generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sponsorship email pitch generator?',
       answer:
         'A sponsorship email pitch generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

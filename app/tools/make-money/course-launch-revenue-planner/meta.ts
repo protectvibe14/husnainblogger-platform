@@ -101,16 +101,6 @@ export const content: ToolContent = {
         'Your own historical number — we deliberately provide no "typical" benchmark because launches vary enormously. If you have never launched, run several scenarios (pessimistic, realistic, optimistic) and treat each as a projection, not a prediction.',
     },
     {
-      question: 'How does the course launch calculator work?',
-      answer:
-        'Enter your details using the inputs above and the course launch calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the course launch calculator free to use?',
-      answer:
-        'Yes - this course launch calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a course launch calculator?',
       answer:
         'A course launch calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

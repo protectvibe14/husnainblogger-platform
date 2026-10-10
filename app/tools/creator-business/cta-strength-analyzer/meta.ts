@@ -64,16 +64,6 @@ export const content: ToolContent = {
         'Yes — it describes the mechanics (clicking) instead of the outcome (what the reader gets). Replace it with verb + benefit, e.g. "Get your free template" instead of "Click here".',
     },
     {
-      question: 'How does the cta strength analyzer work?',
-      answer:
-        'Enter your details using the inputs above and the cta strength analyzer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the cta strength analyzer free to use?',
-      answer:
-        'Yes - this cta strength analyzer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a cta strength analyzer?',
       answer:
         'A cta strength analyzer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

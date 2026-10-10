@@ -116,16 +116,6 @@ export const content: ToolContent = {
         'This calculator cannot tell you what CPM to charge — it only does arithmetic on the CPM you enter. Research what comparable newsletters in your niche charge, enter your own numbers, and adjust with real sponsor feedback.',
     },
     {
-      question: 'How does the newsletter cpm calculator work?',
-      answer:
-        'Enter your details using the inputs above and the newsletter cpm calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the newsletter cpm calculator free to use?',
-      answer:
-        'Yes - this newsletter cpm calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a newsletter cpm calculator?',
       answer:
         'A newsletter cpm calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

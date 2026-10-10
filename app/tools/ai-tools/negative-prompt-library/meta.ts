@@ -72,7 +72,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Negative Prompt List',
   description:
-    'Browse 60 curated negative prompts across 6 categories — anatomy, artifacts, text, lighting and more. Filter, combine and copy a ready-to-paste.',
+    'Browse the free negative prompt library — curated negative-prompt phrases for every category, ready to copy. Find yours now!',
   howTo: [
     'Pick a category to browse its 10 curated negative-prompt phrases.',
     'Optionally choose a use-case preset (portraits, product shots…) to get a recommended phrase set.',
@@ -114,16 +114,6 @@ export const content: ToolContent = {
       question: 'Are these phrases AI-generated?',
       answer:
         'No. They are a fixed, hand-curated word bank of common artifact descriptions. The tool only filters, maps and joins them — it never generates new phrases.',
-    },
-    {
-      question: 'How does the negative prompt list work?',
-      answer:
-        'Enter your details using the inputs above and the negative prompt list calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the negative prompt list free to use?',
-      answer:
-        'Yes - this negative prompt list is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a negative prompt list?',

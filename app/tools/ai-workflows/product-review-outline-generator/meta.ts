@@ -95,16 +95,6 @@ export const content: ToolContent = {
         "You enter your product name and review type; the tool assembles a fixed 10-section outline with write prompts and testing-note slots. It writes no opinions for you — the review's credibility comes from your real testing.",
     },
     {
-      question: 'How does the product review template work?',
-      answer:
-        'Enter your details using the inputs above and the product review template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the product review template free to use?',
-      answer:
-        'Yes - this product review template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a product review template?',
       answer:
         'A product review template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

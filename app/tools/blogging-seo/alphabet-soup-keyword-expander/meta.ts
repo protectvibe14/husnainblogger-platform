@@ -75,16 +75,6 @@ export const content: ToolContent = {
         'It mechanically produces "{seed} a" through "{seed} z" so you can brainstorm what searchers might type after each letter. This tool does the letter-appending for you; it never queries Google, so the outputs are idea seeds, not real suggestions.',
     },
     {
-      question: 'How does the alphabet soup keyword method work?',
-      answer:
-        'Enter your details using the inputs above and the alphabet soup keyword method calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the alphabet soup keyword method free to use?',
-      answer:
-        'Yes - this alphabet soup keyword method is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an alphabet soup keyword method?',
       answer:
         'An alphabet soup keyword method is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

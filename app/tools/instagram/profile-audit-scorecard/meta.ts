@@ -136,16 +136,6 @@ export const content: ToolContent = {
         'Open your profile alongside the tool, answer each of the 15 questions honestly (Yes, Partially, No, or N/A), then run the audit. Work through the prioritized fixes from the top down — they are ordered by impact — and re-audit after each round of changes.',
     },
     {
-      question: 'How does the instagram profile audit work?',
-      answer:
-        'Enter your details using the inputs above and the instagram profile audit calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram profile audit free to use?',
-      answer:
-        'Yes - this instagram profile audit is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram profile audit?',
       answer:
         'An instagram profile audit is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

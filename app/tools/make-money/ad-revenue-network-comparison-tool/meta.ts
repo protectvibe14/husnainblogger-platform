@@ -88,7 +88,7 @@ export const outputs: ToolOutput[] = [
 ];
 
 const DESCRIPTION =
-  'Compare ad networks with this AdSense vs Mediavine vs Raptive calculator — see which network pays more at your traffic level in USD. Switch only when the numbers prove it.';
+  'Compare ad networks with this AdSense vs Mediavine vs Raptive calculator — see which pays more at your traffic level in USD. Switch when the numbers prove it.';
 
 export const content: ToolContent = {
   title: 'Adsense vs Mediavine vs Raptive Calculator',
@@ -134,16 +134,6 @@ export const content: ToolContent = {
       question: 'How does an adsense vs mediavine vs raptive calculator work?',
       answer:
         'This one takes your sessions, applies your editable benchmark RPM per network, scales each RPM down for non-US traffic and up or down by niche, computes estimated monthly earnings per network, and ranks the five rows. Network minimums (e.g. ~50k sessions for Mediavine, ~100k pageviews for Raptive) come from a static table and are checked against your sessions in the eligibility column.',
-    },
-    {
-      question: 'How does the adsense vs mediavine vs raptive calculator work?',
-      answer:
-        'Enter your details using the inputs above and the adsense vs mediavine vs raptive calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the adsense vs mediavine vs raptive calculator free to use?',
-      answer:
-        'Yes - this adsense vs mediavine vs raptive calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an adsense vs mediavine vs raptive calculator?',

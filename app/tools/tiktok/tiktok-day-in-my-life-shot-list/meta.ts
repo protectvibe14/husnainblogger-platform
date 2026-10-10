@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'It is a filming checklist: each entry pairs a time of day with a specific shot to capture. You work through the list during your day so the edit assembles itself in order — no guessing what to film next.',
     },
     {
-      question: 'How does the day in my life shot list work?',
-      answer:
-        'Enter your details using the inputs above and the day in my life shot list calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the day in my life shot list free to use?',
-      answer:
-        'Yes - this day in my life shot list is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a day in my life shot list?',
       answer:
         'A day in my life shot list is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

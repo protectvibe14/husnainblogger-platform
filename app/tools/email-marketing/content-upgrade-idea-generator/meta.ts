@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'Start from a post that already gets traffic, identify the audience reading it, then offer a bonus that completes the post — a checklist, worksheet, or template pack. This tool does the brainstorming; you build the winning bonus and gate it behind an opt-in form.',
     },
     {
-      question: 'How does the content upgrade ideas generator work?',
-      answer:
-        'Enter your details using the inputs above and the content upgrade ideas generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content upgrade ideas generator free to use?',
-      answer:
-        'Yes - this content upgrade ideas generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content upgrade ideas generator?',
       answer:
         'A content upgrade ideas generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

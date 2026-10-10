@@ -72,16 +72,6 @@ export const content: ToolContent = {
         'It slugifies your product name with fixed text rules (lowercase, hyphens instead of spaces and symbols, 40-character cap), then appends a fixed list of 24 suffixes and numbered fallbacks. Same input, same output every time — no AI involved.',
     },
     {
-      question: 'How does the affiliate link name generator work?',
-      answer:
-        'Enter your details using the inputs above and the affiliate link name generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the affiliate link name generator free to use?',
-      answer:
-        'Yes - this affiliate link name generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an affiliate link name generator?',
       answer:
         'An affiliate link name generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

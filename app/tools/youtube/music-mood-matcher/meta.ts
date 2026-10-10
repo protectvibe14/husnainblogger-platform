@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'This one is a static mapping table, not a music player: you pick a mood and video segment, and it returns a written music brief (tempo, genres, instrumentation) plus ready-to-paste search terms for royalty-free libraries. It provides descriptors and search terms only — never audio files or licenses.',
     },
     {
-      question: 'How does the background music for youtube videos finder work?',
-      answer:
-        'Enter your details using the inputs above and the background music for youtube videos finder calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the background music for youtube videos finder free to use?',
-      answer:
-        'Yes - this background music for youtube videos finder is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a background music for youtube videos finder?',
       answer:
         'A background music for youtube videos finder is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

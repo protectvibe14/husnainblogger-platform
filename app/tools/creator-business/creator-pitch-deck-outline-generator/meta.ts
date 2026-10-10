@@ -76,16 +76,6 @@ export const content: ToolContent = {
         'It fills a fixed 8-section template with your niche and audience size. All stats, rates, and results stay as placeholders — you fill them with real data from your analytics.',
     },
     {
-      question: 'How does the creator pitch deck template work?',
-      answer:
-        'Enter your details using the inputs above and the creator pitch deck template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the creator pitch deck template free to use?',
-      answer:
-        'Yes - this creator pitch deck template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a creator pitch deck template?',
       answer:
         'A creator pitch deck template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

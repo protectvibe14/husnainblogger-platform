@@ -124,16 +124,6 @@ export const content: ToolContent = {
         'It takes your article metadata and assembles it into a schema.org Article JSON-LD block with the correct headline, author, and date fields. Nothing is written by AI — the tool only formats the metadata you provide into valid markup.',
     },
     {
-      question: 'How does the article schema generator work?',
-      answer:
-        'Enter your details using the inputs above and the article schema generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the article schema generator free to use?',
-      answer:
-        'Yes - this article schema generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an article schema generator?',
       answer:
         'An article schema generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

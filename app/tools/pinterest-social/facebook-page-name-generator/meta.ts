@@ -92,16 +92,6 @@ export const content: ToolContent = {
         'It inserts your business type and keywords into 16 hand-written name patterns, picking them deterministically from your inputs — no AI involved. Every candidate stays within Facebook\u2019s 75-character page-name limit, and availability must be checked manually on Facebook.',
     },
     {
-      question: 'How does the facebook page name ideas work?',
-      answer:
-        'Enter your details using the inputs above and the facebook page name ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the facebook page name ideas free to use?',
-      answer:
-        'Yes - this facebook page name ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a facebook page name ideas?',
       answer:
         'A facebook page name ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

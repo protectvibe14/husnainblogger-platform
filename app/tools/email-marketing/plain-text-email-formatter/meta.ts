@@ -48,7 +48,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Html to Plain Text Email Converter',
   description:
-    'Convert an HTML email to a clean plain-text version. Paste your HTML, pick inline or footnote links, and copy the wrapped result with line stats. Free.',
+    'Convert an HTML email to clean plain text: paste your HTML, pick inline or footnote links, and copy the wrapped result with line stats. Try it now!',
   howTo: [
     'Paste your HTML email content into the text box.',
     'Set the line width (default 72 characters, allowed 40–120).',
@@ -98,16 +98,6 @@ export const content: ToolContent = {
       question: 'How does a html to plain text email converter work?',
       answer:
         'It applies fixed transformation rules: it strips markup, turns block elements into line breaks, converts links to text-plus-URL (inline or footnoted), replaces images with their alt text, decodes entities, and wraps lines. This converter does all of that locally and deterministically — it never claims to show how an email client will render the HTML.',
-    },
-    {
-      question: 'How does the html to plain text email converter work?',
-      answer:
-        'Enter your details using the inputs above and the html to plain text email converter calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the html to plain text email converter free to use?',
-      answer:
-        'Yes - this html to plain text email converter is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a html to plain text email converter?',

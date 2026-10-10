@@ -130,16 +130,6 @@ export const content: ToolContent = {
         'It takes two things from you — estimated annual net profit and a tax rate you provide — multiplies them for an annual estimate, and divides by 4 for the quarterly figure. This tool never prefills a rate, shows every step in the breakdown, and labels the result an estimate, not tax advice.',
     },
     {
-      question: 'How does the quarterly estimated tax calculator freelancer work?',
-      answer:
-        'Enter your details using the inputs above and the quarterly estimated tax calculator freelancer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the quarterly estimated tax calculator freelancer free to use?',
-      answer:
-        'Yes - this quarterly estimated tax calculator freelancer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a quarterly estimated tax calculator freelancer?',
       answer:
         'A quarterly estimated tax calculator freelancer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -74,16 +74,6 @@ export const content: ToolContent = {
         'Pick a goal (welcome, nurture, sales, or winback), set the number of stages and emails per stage. The planner outputs each stage’s trigger, goal, and email purposes with suggested day offsets — then adjust the timing to your audience.',
     },
     {
-      question: 'How does the email funnel planner work?',
-      answer:
-        'Enter your details using the inputs above and the email funnel planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the email funnel planner free to use?',
-      answer:
-        'Yes - this email funnel planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an email funnel planner?',
       answer:
         'An email funnel planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

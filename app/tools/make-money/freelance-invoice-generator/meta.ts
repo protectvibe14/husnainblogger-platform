@@ -138,16 +138,6 @@ export const content: ToolContent = {
         "It multiplies each line's quantity by its rate, sums the lines into a subtotal, adds a flat tax percent, and renders the document with dates and an invoice number. Everything runs client-side — your data never leaves your browser.",
     },
     {
-      question: 'How does the freelance invoice generator work?',
-      answer:
-        'Enter your details using the inputs above and the freelance invoice generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance invoice generator free to use?',
-      answer:
-        'Yes - this freelance invoice generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance invoice generator?',
       answer:
         'A freelance invoice generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

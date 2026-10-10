@@ -99,16 +99,6 @@ export const content: ToolContent = {
         'It computes the WCAG contrast ratio — (L1 + 0.05) / (L2 + 0.05) from the relative luminance of your two colors — and bands the result against WCAG thresholds. This tool adds word-count guidance (3 ideal, 5 max) and a labeled mobile heuristic. It analyzes the colors you enter, not an uploaded image: gradients, photos, outlines, and shadows are not modeled.',
     },
     {
-      question: 'How does the thumbnail text readability checker work?',
-      answer:
-        'Enter your details using the inputs above and the thumbnail text readability checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the thumbnail text readability checker free to use?',
-      answer:
-        'Yes - this thumbnail text readability checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a thumbnail text readability checker?',
       answer:
         'A thumbnail text readability checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

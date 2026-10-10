@@ -111,16 +111,6 @@ export const content: ToolContent = {
         'Pure geometry: the tool computes the largest 9:16 rectangle that fits inside your frame, positions it by your anchor, and reports the coordinates plus the discarded pixel percentage. It outputs numbers the app draws as an overlay — it does not render an image itself. When the target is wider than the source, it switches to letterbox mode and tells you to pad with bars.',
     },
     {
-      question: 'How does the 16:9 to 9:16 crop preview work?',
-      answer:
-        'Enter your details using the inputs above and the 16:9 to 9:16 crop preview calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the 16:9 to 9:16 crop preview free to use?',
-      answer:
-        'Yes - this 16:9 to 9:16 crop preview is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a 16:9 to 9:16 crop preview?',
       answer:
         'A 16:9 to 9:16 crop preview is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

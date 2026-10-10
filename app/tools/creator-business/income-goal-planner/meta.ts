@@ -107,16 +107,6 @@ export const content: ToolContent = {
         'It divides and multiplies your inputs: (annual goal + annual expenses) ÷ 12 = monthly revenue target; monthly revenue ÷ average client value = clients per month; total ÷ working weeks = weekly target. The outputs are plan math, not an earnings promise.',
     },
     {
-      question: 'How does the freelance income goal planner work?',
-      answer:
-        'Enter your details using the inputs above and the freelance income goal planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the freelance income goal planner free to use?',
-      answer:
-        'Yes - this freelance income goal planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a freelance income goal planner?',
       answer:
         'A freelance income goal planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

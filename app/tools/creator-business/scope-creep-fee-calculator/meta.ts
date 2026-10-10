@@ -72,7 +72,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Scope Creep Fee Calculator',
   description:
-    'Scope creep fee calculator: price extra hours at your hourly rate or a percentage of the original fee, and see the revised project total free.',
+    'Calculate scope creep fees free — estimate the extra fee for out-of-scope work from your rate or percentage. Calculate yours now!',
   howTo: [
     'Enter the "Original project fee" you agreed with the client.',
     'Pick a "Pricing mode": hourly (extra hours × your hourly rate) or percentage (% of the original fee).',
@@ -114,16 +114,6 @@ export const content: ToolContent = {
       question: 'How to calculate scope creep fee?',
       answer:
         'Multiply the extra hours by your hourly rate, or take your chosen percentage of the original project fee — then add it to the original fee for the revised total. This tool does both calculations for you from your own numbers.',
-    },
-    {
-      question: 'How does the scope creep fee calculator work?',
-      answer:
-        'Enter your details using the inputs above and the scope creep fee calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the scope creep fee calculator free to use?',
-      answer:
-        'Yes - this scope creep fee calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a scope creep fee calculator?',

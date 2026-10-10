@@ -109,16 +109,6 @@ export const content: ToolContent = {
         'It splits text into sentences, counts words, syllables (via a deterministic vowel-group heuristic), and characters, then applies the published Flesch, Flesch-Kincaid, Gunning Fog, and ARI formulas. Scores are descriptive of the text — they are not claims about search rankings.',
     },
     {
-      question: 'How does the average sentence length checker work?',
-      answer:
-        'Enter your details using the inputs above and the average sentence length checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the average sentence length checker free to use?',
-      answer:
-        'Yes - this average sentence length checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an average sentence length checker?',
       answer:
         'An average sentence length checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

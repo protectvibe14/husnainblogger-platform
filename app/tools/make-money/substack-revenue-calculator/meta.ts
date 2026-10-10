@@ -69,16 +69,6 @@ export const content: ToolContent = {
         'Multiply paid subscribers by your monthly price, subtract 10% for Substack\u2019s platform fee, then subtract Stripe\u2019s 2.9% + $0.30 per subscriber. This tool runs that exact stacked calculation for you.',
     },
     {
-      question: 'How does the substack revenue calculator work?',
-      answer:
-        'Enter your details using the inputs above and the substack revenue calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the substack revenue calculator free to use?',
-      answer:
-        'Yes - this substack revenue calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a substack revenue calculator?',
       answer:
         'A substack revenue calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

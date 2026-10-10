@@ -85,16 +85,6 @@ export const content: ToolContent = {
         'It is heuristic math, not AI and not a prediction engine: hand-written pattern templates (fractions of total time) are converted to exact start/end milliseconds, pattern changes are counted, and a fixed rule produces a 0-100 guidance score. Videos under 15 seconds get a compact 3-segment micro-pattern.',
     },
     {
-      question: 'How does the video pacing planner work?',
-      answer:
-        'Enter your details using the inputs above and the video pacing planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the video pacing planner free to use?',
-      answer:
-        'Yes - this video pacing planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a video pacing planner?',
       answer:
         'A video pacing planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

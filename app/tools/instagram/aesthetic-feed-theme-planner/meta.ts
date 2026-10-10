@@ -111,16 +111,6 @@ export const content: ToolContent = {
         'Pick one theme and commit for at least a month: lock a 6-color palette, edit every photo with the same preset, and alternate post types in a repeating 3x3 pattern. This tool hands you the palette, the rules, and the sample grid — your job is shooting and editing consistently.',
     },
     {
-      question: 'How does the instagram feed theme planner work?',
-      answer:
-        'Enter your details using the inputs above and the instagram feed theme planner calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram feed theme planner free to use?',
-      answer:
-        'Yes - this instagram feed theme planner is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram feed theme planner?',
       answer:
         'An instagram feed theme planner is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

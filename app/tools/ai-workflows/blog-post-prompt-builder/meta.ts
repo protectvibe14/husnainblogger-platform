@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'It takes your topic, post type, tone, keyword, and word count and fills them into a proven prompt template. This site does not write anything for you — you copy the assembled prompt into your own AI tool, which does the writing.',
     },
     {
-      question: 'How does the blog prompt generator work?',
-      answer:
-        'Enter your details using the inputs above and the blog prompt generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog prompt generator free to use?',
-      answer:
-        'Yes - this blog prompt generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog prompt generator?',
       answer:
         'A blog prompt generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -73,7 +73,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Photography Day Rate Calculator',
   description:
-    'Photography day rate calculator: enter your income target, expenses, and per-shoot costs for a free instant estimate. —.',
+    'Plan your photography day rate free — your target rate from your own numbers (estimate, not market data). Plan yours now!',
   howTo: [
     'Enter your "Annual income target" — the take-home pay you want from photography this year.',
     'Enter your "Shoot days per year" — only the days you can actually book and bill.',
@@ -127,16 +127,6 @@ export const content: ToolContent = {
       question: 'How to calculate photography day rate?',
       answer:
         'Add your annual income target and annual business expenses, divide by the number of shoot days you can realistically book per year, then add per-shoot costs like assistants and gear rental. The result is the day rate you need to charge to hit your target — this tool does the math for you.',
-    },
-    {
-      question: 'How does the photography day rate calculator work?',
-      answer:
-        'Enter your details using the inputs above and the photography day rate calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the photography day rate calculator free to use?',
-      answer:
-        'Yes - this photography day rate calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a photography day rate calculator?',

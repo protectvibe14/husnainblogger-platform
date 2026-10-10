@@ -43,7 +43,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Image Object Tagger: Free Online',
   description:
-    'Tag objects in any photo with a free on-device image classifier. Top-8 labels with confidence bars — no uploads and no API key needed, ever.',
+    'Tag objects in images free with AI — get the top 8 predicted object labels with confidence scores instantly. Tag yours now!',
   howTo: [
     'Upload a photo (PNG, JPG — under 25 MB).',
     'Wait for the on-device model to download (~70 MB, once) and analyze it.',
@@ -85,16 +85,6 @@ export const content: ToolContent = {
       question: 'Why is the first run slow?',
       answer:
         'The browser downloads ~70 MB of model weights the first time. After that the model is cached and later runs start much faster, even offline.',
-    },
-    {
-      question: 'How does the image object tagger work?',
-      answer:
-        'Enter your details using the inputs above and the image object tagger calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the image object tagger free to use?',
-      answer:
-        'Yes - this image object tagger is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is an image object tagger?',

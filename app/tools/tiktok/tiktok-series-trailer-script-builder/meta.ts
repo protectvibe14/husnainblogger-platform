@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'You list your episodes; the tool writes one tease beat per episode (spoiler-free mystery teases by default, payoff-promise teases if you opt in), adds 6 fixed montage direction cues and a subscribe CTA, and stitches everything into a copy-ready script. Same items always produce the same script.',
     },
     {
-      question: 'How does the tiktok series trailer script work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok series trailer script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok series trailer script free to use?',
-      answer:
-        'Yes - this tiktok series trailer script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok series trailer script?',
       answer:
         'A tiktok series trailer script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

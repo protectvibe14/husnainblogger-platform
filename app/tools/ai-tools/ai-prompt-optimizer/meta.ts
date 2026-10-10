@@ -71,16 +71,6 @@ export const content: ToolContent = {
         'Not guaranteed — it is a rewrite, not a proven improvement. Test the rewritten prompt on your task and keep whichever version performs better.',
     },
     {
-      question: 'How does the ai prompt optimizer work?',
-      answer:
-        'Enter your details using the inputs above and the ai prompt optimizer calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai prompt optimizer free to use?',
-      answer:
-        'Yes - this ai prompt optimizer is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai prompt optimizer?',
       answer:
         'An ai prompt optimizer is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

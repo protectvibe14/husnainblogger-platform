@@ -79,16 +79,6 @@ export const content: ToolContent = {
         'Divide your total commission by your total clicks, then multiply by 100. For example, $300 commission from 1,000 clicks = $30 EPC. This tool runs that formula plus your conversion rate and earnings per conversion automatically.',
     },
     {
-      question: 'How does the epc calculator affiliate work?',
-      answer:
-        'Enter your details using the inputs above and the epc calculator affiliate calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the epc calculator affiliate free to use?',
-      answer:
-        'Yes - this epc calculator affiliate is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an epc calculator affiliate?',
       answer:
         'An epc calculator affiliate is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

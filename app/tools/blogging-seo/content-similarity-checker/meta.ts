@@ -105,16 +105,6 @@ export const content: ToolContent = {
         'It breaks each text into overlapping word sequences (shingles), then computes the Jaccard index: shared sequences divided by total unique sequences. The math is fixed and published, so the same texts always give the same score.',
     },
     {
-      question: 'How does the duplicate content checker work?',
-      answer:
-        'Enter your details using the inputs above and the duplicate content checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the duplicate content checker free to use?',
-      answer:
-        'Yes - this duplicate content checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a duplicate content checker?',
       answer:
         'A duplicate content checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

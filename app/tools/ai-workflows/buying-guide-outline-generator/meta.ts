@@ -97,16 +97,6 @@ export const content: ToolContent = {
         "You enter your product category and budget tiers; the tool builds the guide's structure — intro, criteria, one section per tier, what to avoid, and final recommendation — with empty pick slots. The recommendations themselves are yours to make after real research or testing.",
     },
     {
-      question: 'How does the buying guide template work?',
-      answer:
-        'Enter your details using the inputs above and the buying guide template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the buying guide template free to use?',
-      answer:
-        'Yes - this buying guide template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a buying guide template?',
       answer:
         'A buying guide template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

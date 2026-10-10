@@ -83,16 +83,6 @@ export const content: ToolContent = {
         'You pick your current stream (and revenue, if you know it). The tool applies fixed pairing rules to score the remaining streams by fit, ranks the top four with effort, qualitative income potential, and timing, and writes a strategy note with your concentration level. No AI, no blog analysis — just documented rules.',
     },
     {
-      question: 'How does the blog income diversification work?',
-      answer:
-        'Enter your details using the inputs above and the blog income diversification calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blog income diversification free to use?',
-      answer:
-        'Yes - this blog income diversification is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blog income diversification?',
       answer:
         'A blog income diversification is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

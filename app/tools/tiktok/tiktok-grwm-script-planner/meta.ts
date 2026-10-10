@@ -84,16 +84,6 @@ export const content: ToolContent = {
         'GRWM means "get ready with me": you film yourself getting ready while talking viewers through each step. Use the planner to structure your topic, talking points, and product mentions before filming, then record each step as a separate clip and stitch them together.',
     },
     {
-      question: 'How does the grwm tiktok script work?',
-      answer:
-        'Enter your details using the inputs above and the grwm tiktok script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the grwm tiktok script free to use?',
-      answer:
-        'Yes - this grwm tiktok script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a grwm tiktok script?',
       answer:
         'A grwm tiktok script is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

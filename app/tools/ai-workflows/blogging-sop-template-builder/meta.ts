@@ -68,16 +68,6 @@ export const content: ToolContent = {
         "It formats your steps — it never invents them. Each step gets owner, frequency, and QA checkpoint slots; anything you leave blank becomes a clearly-labeled fill-in slot so nothing reads as a real assignment by accident.",
     },
     {
-      question: 'How does the blogging sop template work?',
-      answer:
-        'Enter your details using the inputs above and the blogging sop template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the blogging sop template free to use?',
-      answer:
-        'Yes - this blogging sop template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a blogging sop template?',
       answer:
         'A blogging sop template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

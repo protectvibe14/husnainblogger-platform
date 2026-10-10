@@ -93,16 +93,6 @@ export const content: ToolContent = {
         "It structures your question into a brief instead of doing research for you. This tool assembles fixed sub-question templates around your question, adds a source checklist and verification steps, and performs no research and cites no sources itself.",
     },
     {
-      question: 'How does the ai research prompt work?',
-      answer:
-        'Enter your details using the inputs above and the ai research prompt calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai research prompt free to use?',
-      answer:
-        'Yes - this ai research prompt is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai research prompt?',
       answer:
         'An ai research prompt is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

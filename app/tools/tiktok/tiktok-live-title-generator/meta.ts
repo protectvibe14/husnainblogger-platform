@@ -70,16 +70,6 @@ export const content: ToolContent = {
         'Enter your stream topic (and optional niche), generate 8 title options, pick one, then paste it into the title field on TikTok\'s LIVE setup screen before you go live. Keep it under 60 characters as a safe practice — TikTok does not publish an official limit.',
     },
     {
-      question: 'How does the tiktok live title ideas work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok live title ideas calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok live title ideas free to use?',
-      answer:
-        'Yes - this tiktok live title ideas is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a tiktok live title ideas?',
       answer:
         'A tiktok live title ideas is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

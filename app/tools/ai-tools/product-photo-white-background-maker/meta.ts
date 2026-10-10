@@ -41,7 +41,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'Product Photo White Background',
   description:
-    'Make marketplace-ready product photos free — AI removes the background and places your product on pure white 2000×2000. Runs in your browser.',
+    'Put product photos on a white background free — pure-white 2000×2000 px square, JPG or PNG download, free. Make yours now!',
   howTo: [
     'Drop a product photo (JPG, PNG, WEBP or GIF up to 20 MB) onto the upload area, or click to browse.',
     'Pick JPG for a small file or PNG for lossless quality.',
@@ -88,16 +88,6 @@ export const content: ToolContent = {
       question: 'Can I use the results on Amazon or my store?',
       answer:
         'The output format matches typical marketplace photo rules, but check the model license: RMBG-1.4 is source-available for non-commercial use, and commercial use needs an agreement with BRIA. Marketplace photo rules also change — verify current requirements.',
-    },
-    {
-      question: 'How does the product photo white background work?',
-      answer:
-        'Enter your details using the inputs above and the product photo white background calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the product photo white background free to use?',
-      answer:
-        'Yes - this product photo white background is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
   ],
   assumptions: [

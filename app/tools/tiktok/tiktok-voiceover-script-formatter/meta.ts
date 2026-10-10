@@ -40,7 +40,7 @@ export const outputs: ToolOutput[] = [
 export const content: ToolContent = {
   title: 'TikTok Voiceover Script',
   description:
-    'Format a free tiktok voiceover script: scene-numbered lines, pause markers, and caption-ready lines wrapped at 42 chars. Paste your raw script —.',
+    'Format a free TikTok voiceover script: scene-numbered lines, pause markers, and caption-ready lines wrapped at 42 chars. Paste your script now!',
   howTo: [
     'Paste your raw voiceover script into the "Raw voiceover script" box (one line per beat works best).',
     'Run the tool: every non-empty line becomes a numbered scene with a [pause] marker between scenes.',
@@ -79,16 +79,6 @@ export const content: ToolContent = {
       question: 'How to use tiktok voiceover?',
       answer:
         'Record your voiceover in the TikTok app by tapping the microphone icon after filming, or record it in your editor against the formatted script. Paste your script here first to get scene numbers and [pause] markers so you know exactly where to breathe between beats, then read each scene in one take.',
-    },
-    {
-      question: 'How does the tiktok voiceover script work?',
-      answer:
-        'Enter your details using the inputs above and the tiktok voiceover script calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the tiktok voiceover script free to use?',
-      answer:
-        'Yes - this tiktok voiceover script is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a tiktok voiceover script?',

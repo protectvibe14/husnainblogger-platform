@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'A template is just reusable text: a title suffix, a description footer, default tags, and a visibility setting you paste into the Upload defaults panel once, so every future upload inherits them. This tool composes those pieces into named presets and a copy-paste guide — it cannot change your YouTube settings directly because it has no YouTube API connection.',
     },
     {
-      question: 'How does the youtube upload defaults template work?',
-      answer:
-        'Enter your details using the inputs above and the youtube upload defaults template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube upload defaults template free to use?',
-      answer:
-        'Yes - this youtube upload defaults template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube upload defaults template?',
       answer:
         'A youtube upload defaults template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

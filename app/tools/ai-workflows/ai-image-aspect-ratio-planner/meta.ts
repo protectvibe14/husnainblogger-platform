@@ -100,16 +100,6 @@ export const content: ToolContent = {
         'It divides your width and height by their greatest common divisor to find the simplest ratio (for example 1920x1080 becomes 16:9), then measures how far that ratio sits from known platform presets. No AI is involved — it is arithmetic plus a fixed reference table.',
     },
     {
-      question: 'How does the ai image aspect ratio guide work?',
-      answer:
-        'Enter your details using the inputs above and the ai image aspect ratio guide calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the ai image aspect ratio guide free to use?',
-      answer:
-        'Yes - this ai image aspect ratio guide is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an ai image aspect ratio guide?',
       answer:
         'An ai image aspect ratio guide is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

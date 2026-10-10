@@ -107,16 +107,6 @@ export const content: ToolContent = {
         'Start from a benchmark band for your experience level and deliverable (for example, per-word rates commonly run $0.10–$2.00+ by level), adjust upward for specialized niches, and for flat projects divide the project price by the word count to sanity-check the per-word equivalent.',
     },
     {
-      question: 'How does the copywriter rates calculator work?',
-      answer:
-        'Enter your details using the inputs above and the copywriter rates calculator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the copywriter rates calculator free to use?',
-      answer:
-        'Yes - this copywriter rates calculator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a copywriter rates calculator?',
       answer:
         'A copywriter rates calculator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

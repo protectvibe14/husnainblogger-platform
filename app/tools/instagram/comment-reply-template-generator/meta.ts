@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'Pick the comment type and tone, optionally add your brand name, then copy a reply and replace {name} with the commenter\u2019s name. Personalizing the name slot and tweaking one line makes template replies feel genuine.',
     },
     {
-      question: 'How does the instagram comment reply templates work?',
-      answer:
-        'Enter your details using the inputs above and the instagram comment reply templates calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the instagram comment reply templates free to use?',
-      answer:
-        'Yes - this instagram comment reply templates is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an instagram comment reply templates?',
       answer:
         'An instagram comment reply templates is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -82,16 +82,6 @@ export const content: ToolContent = {
         'State your step in the sequence, the original subject, and your goal, then generate. Use the strongest subject, fill in the {{firstName}} and {{yourName}} placeholders with real details, and send from your own email tool.',
     },
     {
-      question: 'How does the follow up email generator work?',
-      answer:
-        'Enter your details using the inputs above and the follow up email generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the follow up email generator free to use?',
-      answer:
-        'Yes - this follow up email generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a follow up email generator?',
       answer:
         'A follow up email generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

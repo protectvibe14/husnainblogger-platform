@@ -67,7 +67,7 @@ export const itemFields: BuilderField[] = [
 export const content: ToolContent = {
   title: 'Testimonial Showcase Page',
   description:
-    'Turn client quotes into a testimonial showcase page: add testimonials, pick a brand color, and copy a ready-to-host HTML page plus an embed snippet. Free.',
+    'Build a testimonial showcase page free — a complete, styled HTML page displaying your testimonials online. Build yours today!',
   howTo: [
     'Add one row per testimonial: paste the quote and the client name (both required).',
     'Optionally add each client\'s role or company and a photo URL.',
@@ -97,16 +97,6 @@ export const content: ToolContent = {
       question: 'How does a testimonial showcase page work?',
       answer:
         'It assembles your rows into static HTML — a card grid with your brand color as the accent — with all text HTML-escaped for safety. You host the result yourself. It verifies nothing: testimonials are user-provided, so always use quotes you have genuine permission to publish.',
-    },
-    {
-      question: 'How does the testimonial showcase page work?',
-      answer:
-        'Enter your details using the inputs above and the testimonial showcase page calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the testimonial showcase page free to use?',
-      answer:
-        'Yes - this testimonial showcase page is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
     },
     {
       question: 'What is a testimonial showcase page?',

@@ -89,16 +89,6 @@ export const content: ToolContent = {
       answer:
         'No — personalize it first. Add your real roles, one concrete win, and your voice. Recruiters recognize copy-pasted AI profiles.',
     },
-    {
-      question: 'How does the linkedin headline generator work?',
-      answer:
-        'Enter your details using the inputs above and the linkedin headline generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the linkedin headline generator free to use?',
-      answer:
-        'Yes - this linkedin headline generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
   ],
   assumptions: [
     'Drafts stay within LinkedIn’s 220-character headline and 2,600-character About limits as generated.',

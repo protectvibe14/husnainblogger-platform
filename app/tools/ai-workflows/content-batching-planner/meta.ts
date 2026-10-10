@@ -91,16 +91,6 @@ export const content: ToolContent = {
         'You enter your batch size, batch day, and platforms; the template expands each piece into 6 ordered tasks with 30-minute time slots starting 9:00 AM and rotates pieces across your platforms. You follow the grid and do the creating yourself.',
     },
     {
-      question: 'How does the content batching template work?',
-      answer:
-        'Enter your details using the inputs above and the content batching template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the content batching template free to use?',
-      answer:
-        'Yes - this content batching template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a content batching template?',
       answer:
         'A content batching template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

@@ -93,16 +93,6 @@ export const content: ToolContent = {
         "You enter your own rules per section; the tool formats them into a numbered, Markdown-ready style guide. It compiles your answers — it never chooses standards for you, and unanswered sections are marked Decide later.",
     },
     {
-      question: 'How does the editorial style guide template work?',
-      answer:
-        'Enter your details using the inputs above and the editorial style guide template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the editorial style guide template free to use?',
-      answer:
-        'Yes - this editorial style guide template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is an editorial style guide template?',
       answer:
         'An editorial style guide template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

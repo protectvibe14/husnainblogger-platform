@@ -124,16 +124,6 @@ export const content: ToolContent = {
         'It fills fixed template patterns with your details — offer, discount, audience, and tone shape the copy, while the deadline field alone controls any urgency wording. Leave the deadline empty and no urgency claims are generated at all.',
     },
     {
-      question: 'How does the sale email template generator work?',
-      answer:
-        'Enter your details using the inputs above and the sale email template generator calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the sale email template generator free to use?',
-      answer:
-        'Yes - this sale email template generator is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a sale email template generator?',
       answer:
         'A sale email template generator is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

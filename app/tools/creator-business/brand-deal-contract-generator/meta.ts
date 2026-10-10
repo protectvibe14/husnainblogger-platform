@@ -194,16 +194,6 @@ export const content: ToolContent = {
         'It fills fixed template clauses with your values — no AI and no legal research. Deliverable types, usage-rights options, and payment terms come from fixed lists, dates use ISO format, and a kill-fee clause is added when you set one. The output always carries a "template only — not legal advice" disclaimer.',
     },
     {
-      question: 'How does the brand deal contract template work?',
-      answer:
-        'Enter your details using the inputs above and the brand deal contract template calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the brand deal contract template free to use?',
-      answer:
-        'Yes - this brand deal contract template is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a brand deal contract template?',
       answer:
         'A brand deal contract template is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

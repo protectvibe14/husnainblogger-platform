@@ -107,16 +107,6 @@ export const content: ToolContent = {
         'It projects your goal linearly: (target − current) ÷ daily growth rate = estimated days, then adds those days to today for a target date. This tool adds scenario multipliers and a reverse calculation (daily rate needed by a chosen date). It cannot read your live count — you enter the numbers manually.',
     },
     {
-      question: 'How does the youtube subscriber goal tracker work?',
-      answer:
-        'Enter your details using the inputs above and the youtube subscriber goal tracker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the youtube subscriber goal tracker free to use?',
-      answer:
-        'Yes - this youtube subscriber goal tracker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a youtube subscriber goal tracker?',
       answer:
         'A youtube subscriber goal tracker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',

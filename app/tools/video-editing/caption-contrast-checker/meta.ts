@@ -94,16 +94,6 @@ export const content: ToolContent = {
         'This one applies the WCAG relative-luminance formula to the two colors you enter and compares the result to the AA/AAA bars for your text size. It checks color pairs only — it cannot see your video, so for transparent backgrounds it reports a worst-case estimate against black and white frames and labels it advisory.',
     },
     {
-      question: 'How does the subtitle contrast checker work?',
-      answer:
-        'Enter your details using the inputs above and the subtitle contrast checker calculates everything instantly in your browser. No data leaves your device, and you get results the moment you change any value.',
-    },
-    {
-      question: 'Is the subtitle contrast checker free to use?',
-      answer:
-        'Yes - this subtitle contrast checker is completely free with no signup, no account, and no usage limits. It runs 100% in your browser.',
-    },
-    {
       question: 'What is a subtitle contrast checker?',
       answer:
         'A subtitle contrast checker is a free online tool that gives you quick, accurate results without spreadsheets or manual math. This version runs entirely in your browser for instant, private results.',
